@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline p-10">
-      Krsiak Daniel
-    </h1>
+    <div className="p-10">
+      <h1 className="text-3xl font-bold underline hover:no-underline cursor-pointer">Krsiak Daniel</h1>
+    </div>
   )
 }
