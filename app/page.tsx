@@ -6,13 +6,13 @@ import Jobs from '@/components/Jobs'
 
 const Page = () => {
   return (
-    <>
+    <div className="pt-20">
       <Hero />
       <Skills />
       <Services />
       <About />
       <Jobs />
-    </>
+    </div>
   )
 }
 

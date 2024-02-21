@@ -7,7 +7,7 @@ import Code from '../public/images/service-icons/code.svg'
 
 const Services = () => {
   return (
-    <div id="#services">
+    <div id="services">
       <div className="md:container md:mx-auto">
         <div className="pt-5 pb-20 md:pb-20 lg:pt-0">
           <div className="flex flex-col relative bg-green-100 lg:py-0 py-10">

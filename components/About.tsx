@@ -9,16 +9,16 @@ const About = () => {
     { count: '3', label: 'QA TEAM LEADER' },
   ]
   return (
-    <div id="#about">
+    <div id="about">
       <div className="container mx-auto">
         <div className="pb-20">
-          <div className="flex justify-center relative pb-1">
+          <div className="flex justify-center relative pb-1 pt-5">
             <span className="absolute block h-px bg-white bottom-1/2 left-0 right-0 bg-skills-line"></span>
             <div className="bg-white px-6 py-3 relative">
               <p className="text-body-sm font-semibold tracking-2 text-neutral-500 uppercase">About Me</p>
             </div>
           </div>
-          <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-12 items-center pt-5">
+          <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-12 items-start pt-5">
             <div className="lg:col-span-5 flex flex-row items-center gap-8">
               <div className="flex flex-col xl:pr-8">
                 <h2 className="md:text-display-lg text-display-md font-semibold md:pb-6 pb-4 text-primary-600 uppercase">
@@ -37,7 +37,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="lg:col-span-7 lg:grid lg:grid-cols-7 flex md:flex-row flex-col items-center md:gap-8 gap-12">
+            <div className="lg:col-span-7 lg:grid lg:grid-cols-7 flex md:flex-row flex-col items-start md:gap-8 gap-12">
               <div className="lg:col-span-4 flex">
                 <Image
                   src={krsiak}

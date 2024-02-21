@@ -65,10 +65,10 @@ const workData: JobProps[] = [
 
 const Jobs = () => {
   return (
-    <div id="#work">
+    <div id="work">
       <div className="container mx-auto">
         <div className="pb-20">
-          <div className="flex justify-center relative pb-1">
+          <div className="flex justify-center relative pb-1 pt-5">
             <span className="absolute block h-px bg-white bottom-1/2 left-0 right-0 bg-skills-line"></span>
             <div className="bg-white px-6 py-3 relative">
               <p className="text-body-sm font-semibold tracking-2 text-neutral-500 uppercase">Work Experience</p>

@@ -9,9 +9,9 @@ const Header = () => {
     { name: 'Contact', href: '#contact' },
   ]
   return (
-    <header>
+    <header className="sticky top-0 bg-white z-10 border-b border-neutral-400">
       <div className="container mx-auto">
-        <div className="flex py-6 justify-between items-center">
+        <div className="flex py-4 justify-between items-center">
           <div className="flex flex-row gap-8 items-center">
             <Link href="/">
               <p className="text-body-md font-bold text-neutral-700 hover:text-primary-600 px-4 cursor-pointer">
