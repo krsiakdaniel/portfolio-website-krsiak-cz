@@ -67,7 +67,7 @@ const Jobs = () => {
   return (
     <div id="work">
       <div className="container mx-auto">
-        <div className="pb-20">
+        <div className="pb-10">
           <div className="flex justify-center relative pb-1 pt-5">
             <span className="absolute block h-px bg-white bottom-1/2 left-0 right-0 bg-skills-line"></span>
             <div className="bg-white px-6 py-3 relative">
@@ -85,16 +85,13 @@ const Jobs = () => {
             <h3 className="text-display-xs font-semibold">My job roles</h3>
             <div>
               <p className="text-body-md font-normal text-neutral-700 pb-4">
-                In my previous roles, I have developed new features, updated legacy codebases, and implemented
-                responsive design for various <span className="font-semibold">SAAS web projects</span>, such as a{' '}
-                <span className="font-semibold">chat dashboard for customer care teams</span> and redesigned chatbot
-                settings.
+                In my previous jobs, I developed new features, redesigned websites, implemented responsive design,
+                updated legacy codebases, was responsible for text localization, QA testing, automation and team leading
+                on various projects.
               </p>
+              <h3 className="text-display-xs font-semibold">Projects I worked on</h3>
               <p className="text-body-md font-normal text-neutral-700 pb-4">
-                I worked on <span className="font-semibold">Société Générale bank website</span> with ATM and branches
-                search and exchange rates functionalities used by 2 million customers. And I was responsible for QA team
-                and Automation for <span className="font-semibold">Groupon - Online Marketplace</span> with 17 million
-                customers.
+                Below are the companies that I worked for and respective websites and applications where I was involved.
               </p>
             </div>
             <div className="flex flex-col">

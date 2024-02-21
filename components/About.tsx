@@ -37,14 +37,19 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="lg:col-span-7 lg:grid lg:grid-cols-7 flex md:flex-row flex-col items-start md:gap-8 gap-12">
+            <div className="lg:col-span-7 lg:grid lg:grid-cols-7 flex sm:flex-row flex-col items-start md:gap-8 gap-12">
               <div className="lg:col-span-4 flex">
                 <Image
                   src={krsiak}
                   className="rounded-lg border border-neutral-300"
                   alt="Krsiak Daniel"
-                  width={384}
-                  height={319}
+                  placeholder="blur"
+                  style={{
+                    width: '100%',
+                    maxWidth: '385px',
+                    maxHeight: '415px',
+                    height: 'auto',
+                  }}
                 />
               </div>
               <div className="lg:col-span-3 flex md:self-auto self-stretch grow flex-col gap-6 sm:gap-8 xl:gap-12 xl:pl-8">
