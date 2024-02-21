@@ -49,39 +49,3 @@ I have also led a QA automation team, setting up Playwright for E2E tests, writi
 I am passionate about delivering high-quality products that meet the needs and expectations of the users and the client.
 
 ![what-is-it-i-do](https://github.com/krsiakdaniel/krsiakdaniel/assets/564906/d4c7dde2-2256-464a-9a43-2479815be5e1)
-
----
-
-# Site runs on Netlify and Next.js v14
-
-## Run development
-
-Run Next.js on local machine.
-
-### Dependencies
-
-Install dependencies:
-
-```bash
-npm i
-```
-
-### Localhost
-
-Run the development server:
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Testing
-
-### Included Default Testing
-
-- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
-
-### Removing Renovate
-
-In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
