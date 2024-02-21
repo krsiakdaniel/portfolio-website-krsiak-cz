@@ -2,12 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 
 const Header = () => {
-  const navigation = [
-    { name: 'Skills', href: '#skills' },
-    { name: 'About', href: '#about' },
-    { name: 'Work', href: '#work' },
-    { name: 'Contact', href: '#contact' },
-  ]
   return (
     <header className="sticky top-0 bg-white z-10 border-b border-neutral-400">
       <div className="container mx-auto">
@@ -19,17 +13,14 @@ const Header = () => {
               </p>
             </Link>
           </div>
-          <div className="hidden md:flex md:flex-row md:gap-6 md:visible">
+          <div className="md:flex md:flex-row md:gap-6">
             <div className="md:flex flex-row gap-6 items-center">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-body-md font-bold uppercase text-neutral-700 hover:text-primary-600 px-4 cursor-pointer"
-                >
-                  {item.name}
-                </Link>
-              ))}
+              <Link
+                href="https://www.linkedin.com/in/krsiakdaniel/"
+                className="text-body-md font-bold uppercase text-neutral-700 hover:text-primary-600 px-4 cursor-pointer"
+              >
+                LinkedIn →
+              </Link>
             </div>
           </div>
         </div>

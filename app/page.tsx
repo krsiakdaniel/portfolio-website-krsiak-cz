@@ -6,7 +6,7 @@ import Jobs from '@/components/Jobs'
 
 const Page = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-10">
       <Hero />
       <Skills />
       <Services />
