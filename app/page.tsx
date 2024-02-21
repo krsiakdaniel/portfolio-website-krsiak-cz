@@ -1,9 +1,13 @@
+import Skills from '@/components/Skills'
+import Hero from '@/components/Hero'
+import Services from '@/components/Services'
+
 const Page = () => {
   return (
     <>
-      <div className="p-10">
-        <h1 className="text-3xl">Krsiak Daniel</h1>
-      </div>
+      <Hero />
+      <Skills />
+      <Services />
     </>
   )
 }
