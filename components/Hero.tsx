@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div>
       <div className="container mx-auto">
-        <div className="grid pt-20 pb-10 grid-cols-1 lg:grid-cols-12 flex-col justify-between items-center text-center">
+        <div className="grid pt-20 pb-20 grid-cols-1 lg:grid-cols-12 flex-col justify-between items-center text-center">
           <div className="lg:col-span-1"></div>
           <div className="lg:col-span-10 flex flex-col items-center">
             <h1 className="lg:text-display-2xl md:text-display-xl text-display-md font-semibold pb-8">

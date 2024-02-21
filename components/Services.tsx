@@ -9,12 +9,12 @@ const Services = () => {
   return (
     <div id="#services">
       <div className="md:container md:mx-auto">
-        <div className="pt-5 pb-12 lg:pb-20 lg:pt-0 md:py-16">
+        <div className="pt-5 pb-20 md:pb-20 lg:pt-0">
           <div className="flex flex-col relative bg-green-100 lg:py-0 py-10">
             <div className="absolute lg:block hidden h-16 bg-white bottom-0 left-0 right-0"></div>
             <div className="absolute lg:block hidden h-16 bg-white top-0 left-0 right-0"></div>
             <div className="grid lg:grid-cols-12 grid-cols-1 xl:gap-8 items-center  relative">
-              <div className="lg:col-span-5 flex flex-col items-start xl:px-18 lg:px-10 md:px-8 lg:py-32 md:pb-0 pb-4 px-5">
+              <div className="lg:col-span-5 flex flex-col items-start px-6 sm:px-16 md:px-8 lg:px-10 xl:px-18 lg:py-32 md:pb-0 pb-4">
                 <h2 className="lg:text-display-lg text-display-md font-semibold pb-4 uppercase">What I do</h2>
                 <p className="text-body-md font-normal text-neutral-600 pb-8">
                   I am passionate about delivering high-quality products that meet the needs and expectations of the

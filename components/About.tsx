@@ -11,14 +11,14 @@ const About = () => {
   return (
     <div id="#about">
       <div className="container mx-auto">
-        <div className="md:pt-10 md:pb-0 pt-8 pb-6">
+        <div className="pb-20">
           <div className="flex justify-center relative pb-1">
             <span className="absolute block h-px bg-white bottom-1/2 left-0 right-0 bg-skills-line"></span>
             <div className="bg-white px-6 py-3 relative">
               <p className="text-body-sm font-semibold tracking-2 text-neutral-500 uppercase">About Me</p>
             </div>
           </div>
-          <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-12 items-center lg:pt-10 lg:pb-20 md:pt-12 md:pb-28 pt-10 pb-20">
+          <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-12 items-center pt-5">
             <div className="lg:col-span-5 flex flex-row items-center gap-8">
               <div className="flex flex-col xl:pr-8">
                 <h2 className="md:text-display-lg text-display-md font-semibold md:pb-6 pb-4 text-primary-600 uppercase">
@@ -47,11 +47,11 @@ const About = () => {
                   height={319}
                 />
               </div>
-              <div className="lg:col-span-3 flex md:self-auto self-stretch grow flex-col xl:gap-12 lg:gap-8 gap-12 xl:pl-8">
+              <div className="lg:col-span-3 flex md:self-auto self-stretch grow flex-col gap-6 sm:gap-8 xl:gap-12 xl:pl-8">
                 {experience.map((item) => (
                   <div
                     key={item.label}
-                    className="flex flex-col self-stretch gap-2 pb-4 border-b border-solid border-neutral-400"
+                    className="flex flex-col self-stretch gap-2 pb-4 border-b border-solid border-neutral-300 last:border-none last:pb-0"
                   >
                     <p className="md:text-display-lg text-display-md font-semibold">
                       <span className="text-primary-600">{item.count}</span> years

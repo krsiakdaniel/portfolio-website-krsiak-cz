@@ -6,7 +6,7 @@ const Footer = () => {
     { emoji: '📧', text: 'krsiak.daniel@gmail.com', href: 'mailto:krsiak.daniel@gmail.com' },
     {
       emoji: '💬',
-      text: 'https://www.linkedin.com/in/krsiakdaniel/',
+      text: 'LinkedIn',
       href: 'https://www.linkedin.com/in/krsiakdaniel/',
     },
   ]
