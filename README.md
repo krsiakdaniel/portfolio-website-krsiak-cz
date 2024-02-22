@@ -18,7 +18,7 @@ I work with JavaScript, TypeScript, React, and Redux. I focus on UI/UX, responsi
 
 > _HTML, CSS, Tailwind CSS, Sass, JavaScript, TypeScript, React, Next.js, Figma_
 
-## 🖥️ Web portfolio
+## 🖥️ Portfolio website
 
 My website: <https://krsiak.cz/>
 
