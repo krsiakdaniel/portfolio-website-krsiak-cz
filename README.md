@@ -20,7 +20,7 @@ I work with JavaScript, TypeScript, React, and Redux. I focus on UI/UX, responsi
 
 ## 🖥️ Web portfolio
 
-My website: <https://www.krsiak.cz/>
+My website: <https://krsiak.cz/>
 
 ## 📫 Contact me
 
