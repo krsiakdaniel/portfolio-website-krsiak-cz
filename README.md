@@ -24,7 +24,7 @@ My website: <https://krsiak.cz/>
 
 ## 📫 Contact me
 
-You can call me, send email or chat with me on LinkedIn:
+You can call me, send me an email, or chat with me on LinkedIn:
 
 - 📱(+420) 734 496 308
 - 📧 krsiak.daniel@gmail.com
@@ -38,14 +38,22 @@ Download my resume in PDF.
 
 ## 👨‍💻 About me
 
-I am **React Developer** with over 4 years of experience in creating user-friendly and responsive web applications. I have worked with JavaScript, TypeScript, React, and Redux, as well as other technologies such as Figma, and Tailwind CSS. I have a strong background in UI design, functional components, and code quality.
+### Front End Developer - 10 years
 
-In my previous roles, I have developed new features, updated legacy codebases, and implemented responsive design for various web projects, such as a chat solution for customer care teams, chatbot settings, and also bank website with search and exchange rates functionalities.
+In the past, I used to create websites and set up WordPress for small businesses as a freelancer.
 
-I have also led a QA automation team, setting up Playwright for E2E tests, writing test scripts in JavaScript and TypeScript, and coordinating unit and integration tests.
+### React Developer - 4 years
 
-## 💻 What I do
+Now I create user-friendly and responsive web applications. I work with **JavaScript**, **TypeScript**, **React**, **Next.js**, and **Redux**, also big fan of **Figma**, and **Tailwind CSS**. I have a strong background in UI design, functional components, and code quality.
 
-I am passionate about delivering high-quality products that meet the needs and expectations of the users and the client.
+### QA Team Leader - 3 years
+
+I have led QA automation teams, setting up Cypress and Playwright for E2E tests, writing test scripts in JavaScript and TypeScript, and coordinating unit and integration tests. Also, I was a team leader of localization and translation teams.
+
+![about-me](https://github.com/krsiakdaniel/krsiakdaniel/assets/564906/385eb904-f166-408e-8e38-c7a07d7374c3)
+
+## 💻 Work
+
+In my previous roles, I have developed new features, updated legacy codebases, and implemented responsive design for various web projects, such as a chat solution for customer care teams, chatbot settings, and also bank website with search and exchange rates functionalities. 
 
 ![what-is-it-i-do](https://github.com/krsiakdaniel/krsiakdaniel/assets/564906/d4c7dde2-2256-464a-9a43-2479815be5e1)
