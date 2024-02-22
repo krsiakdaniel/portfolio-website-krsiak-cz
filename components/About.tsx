@@ -42,7 +42,7 @@ const About = () => {
                 <Image
                   src={krsiak}
                   className="rounded-lg border border-neutral-300"
-                  alt="Krsiak Daniel"
+                  alt="Daniel Kršiak"
                   placeholder="blur"
                   style={{
                     width: '100%',

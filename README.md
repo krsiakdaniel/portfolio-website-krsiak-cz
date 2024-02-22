@@ -1,4 +1,4 @@
-# Hi! My name is Krsiak Daniel 👋
+# Hi! My name is Daniel Kršiak 👋
 
 I am **React Developer** based in Brno, Czech Republic.
 
