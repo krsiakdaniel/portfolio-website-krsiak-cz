@@ -21,7 +21,7 @@ const About = () => {
           <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-12 items-start pt-5">
             <div className="lg:col-span-5 flex flex-row items-center gap-8">
               <div className="flex flex-col xl:pr-8">
-                <h2 className="md:text-display-lg text-display-md font-semibold md:pb-6 pb-4 text-primary-600 uppercase">
+                <h2 className="md:text-display-lg text-display-md font-semibold md:pb-6 pb-4 text-primary-500 uppercase">
                   About
                 </h2>
                 <h3 className="text-display-xs font-semibold">React Developer</h3>
@@ -57,7 +57,7 @@ const About = () => {
                     className="flex flex-col items-center sm:items-start self-stretch gap-2 pb-4 border-b border-solid border-neutral-300 last:border-none last:pb-0"
                   >
                     <h4 className="md:text-display-lg text-display-md font-semibold">
-                      <span className="text-primary-600">{item.count}</span> years
+                      <span className="text-primary-500">{item.count}</span> years
                     </h4>
                     <p className="text-body-sm font-semibold tracking-2 text-neutral-500">{item.label}</p>
                   </div>

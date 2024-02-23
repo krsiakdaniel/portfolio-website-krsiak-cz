@@ -17,7 +17,7 @@ const JobItem = ({ image, title, role, description, techStack, link, linkText, c
     <div className="flex basis-1/2 flex-col lg:odd:pl-0 lg:odd:pr-14 lg:even:pr-0 lg:even:pl-14 md:odd:pr-4 md:even:pl-4 px-0 md:odd:pb-10 md:even:pb-0 pb-10">
       <div className="flex flex-col self-stretch pt-8">
         <h4 className="text-display-xs font-semibold">{title}</h4>
-        <p className="text-body-lg font-semibold text-primary-600 pb-4">{role}</p>
+        <p className="text-body-lg font-semibold text-primary-500 pb-4">{role}</p>
         <p className="text-body-md font-normal text-neutral-700">{description}</p>
       </div>
       <div className="mt-4">
@@ -42,7 +42,7 @@ const JobItem = ({ image, title, role, description, techStack, link, linkText, c
       )}
       {link && (
         <p className="pt-0 text-body-sm">
-          <a href={link} target="_blank" className="underline hover:no-underline text-primary-600">
+          <a href={link} target="_blank" className="underline hover:no-underline text-primary-500">
             {linkText}
           </a>
         </p>

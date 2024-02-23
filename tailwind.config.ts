@@ -25,10 +25,10 @@ const config: Config = {
       white: '#FFFFFF',
       black: '#000000',
       primary: {
-        600: '#7C3AED',
+        500: '#7C3AED',
       },
       secondary: {
-        600: '#2980B9',
+        500: '#2980B9',
         100: '#3498DB',
       },
 
@@ -36,7 +36,7 @@ const config: Config = {
         100: '#F0FEFA',
       },
       red: {
-        600: '#C0392B',
+        500: '#C0392B',
       },
       neutral: {
         900: '#111827',
@@ -133,14 +133,6 @@ const config: Config = {
         },
       ],
     },
-    boxShadow: {
-      xs: '0px 2px 8px -3px rgba(28, 44, 64, 0.16)',
-      sm: '0px 4px 12px -3px rgba(28, 44, 64, 0.1)',
-      md: '0px 8px 16px -4px rgba(28, 44, 64, 0.08)',
-      lg: '0px 10px 20px rgba(28, 44, 64, 0.08)',
-      xl: '24px 24px 40px -12px rgba(28, 44, 64, 0.08)',
-      '2xl': '8px 16px 48px rgba(28, 44, 64, 0.12)',
-    },
     extend: {
       spacing: {
         18: '72px',
@@ -148,8 +140,6 @@ const config: Config = {
         30: '120px',
       },
       backgroundImage: {
-        'hero-line':
-          'linear-gradient(90deg, #9CA3AF 0%, rgba(156, 163, 175, 0) 45.82%, rgba(156, 163, 175, 0) 50%, rgba(156, 163, 175, 0) 54.38%, #9CA3AF 100%);',
         'skills-line':
           'linear-gradient(90deg, #9CA3AF 0%, rgba(156, 163, 175, 0) 39.47%, rgba(156, 163, 175, 0) 50%, rgba(156, 163, 175, 0) 60.51%, #9CA3AF 100%);',
       },

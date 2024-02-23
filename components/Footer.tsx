@@ -25,7 +25,7 @@ const Footer = () => {
                 {contacts.map((contact) => (
                   <li className="text-body-md font-normal" key={contact.href}>
                     {contact.emoji}{' '}
-                    <a href={contact.href} className="hover:text-primary-600 underline hover:no-underline">
+                    <a href={contact.href} className="hover:text-primary-500 underline hover:no-underline">
                       {contact.text}
                     </a>
                   </li>
@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="pb-8">
           <p>
             Copyright © 2024.{' '}
-            <Link href="/" className="hover:text-primary-600 underline hover:no-underline">
+            <Link href="/" className="hover:text-primary-500 underline hover:no-underline">
               krsiak.cz
             </Link>
           </p>

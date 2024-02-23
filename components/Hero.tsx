@@ -9,7 +9,7 @@ const Hero = () => {
           <div className="lg:col-span-1"></div>
           <div className="lg:col-span-10 flex flex-col items-center">
             <h1 className="lg:text-display-2xl md:text-display-xl text-display-md font-semibold pb-8">
-              <span className="text-primary-600">Daniel Kršiak</span> <br /> React Developer
+              <span className="text-primary-500">Daniel Kršiak</span> <br /> React Developer
             </h1>
             <p className="md:text-body-xl text-body-lg font-medium pb-2">
               Hi 👋 I am React Developer based in Brno, Czech Republic. 🌍
@@ -27,7 +27,7 @@ const Hero = () => {
                   label="DOWNLOAD RESUME"
                   link="https://drive.google.com/file/d/1x0LWu8I_3aqW34TJbxkciqNGX642bdvF/view?usp=sharing"
                   size="lg"
-                  type="bg-red-600"
+                  type="bg-red-500"
                 />
               </div>
             </div>

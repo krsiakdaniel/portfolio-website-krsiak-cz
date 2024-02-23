@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex py-4 justify-between items-center">
           <div className="flex flex-row gap-8 items-center">
             <Link href="/">
-              <p className="text-body-md font-bold text-neutral-700 hover:text-primary-600 px-4 cursor-pointer">
+              <p className="text-body-md font-bold text-neutral-700 hover:text-primary-500 px-4 cursor-pointer">
                 krsiak.cz
               </p>
             </Link>
@@ -17,7 +17,7 @@ const Header = () => {
             <div className="md:flex flex-row gap-6 items-center">
               <Link
                 href="https://www.linkedin.com/in/krsiakdaniel/"
-                className="text-body-md font-bold uppercase text-neutral-700 hover:text-primary-600 px-4 cursor-pointer"
+                className="text-body-md font-bold uppercase text-neutral-700 hover:text-primary-500 px-4 cursor-pointer"
               >
                 LinkedIn →
               </Link>
