@@ -14,16 +14,16 @@ const Footer = () => {
   return (
     <footer id="contact" className="bg-neutral-900 text-white">
       <div className="container mx-auto">
-        <div className="flex flex-col md:py-30 pt-12 pb-20 md:gap-24 gap-16">
+        <div className="flex">
           <div>
-            <h3 className="md:text-display-lg text-display-md font-semibold pb-0 text-white uppercase">Contact me</h3>
-            <p className="lg:text-body-md text-body-sm font-normal text-white mb-4">
+            <h3 className="md:text-display-lg text-display-md font-semibold pt-8 text-white uppercase">Contact me</h3>
+            <p className="text-body-md font-normal text-white mb-8">
               You can call me, send email or chat with me on LinkedIn.
             </p>
-            <div className="mt-8">
+            <div className="mb-8">
               <ul>
                 {contacts.map((contact) => (
-                  <li className="text-display-xs font-normal" key={contact.href}>
+                  <li className="text-body-md font-normal" key={contact.href}>
                     {contact.emoji}{' '}
                     <a href={contact.href} className="hover:text-primary-600 underline hover:no-underline">
                       {contact.text}

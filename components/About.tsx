@@ -56,9 +56,9 @@ const About = () => {
                     key={item.label}
                     className="flex flex-col items-center sm:items-start self-stretch gap-2 pb-4 border-b border-solid border-neutral-300 last:border-none last:pb-0"
                   >
-                    <p className="md:text-display-lg text-display-md font-semibold">
+                    <h4 className="md:text-display-lg text-display-md font-semibold">
                       <span className="text-primary-600">{item.count}</span> years
-                    </p>
+                    </h4>
                     <p className="text-body-sm font-semibold tracking-2 text-neutral-500">{item.label}</p>
                   </div>
                 ))}

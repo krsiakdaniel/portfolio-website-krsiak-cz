@@ -25,7 +25,7 @@ const Services = () => {
                 <div className="flex flex-col basis-1/2 lg:gap-8 gap-6 relative w-full sm:w-4/5 rounded-lg border border-neutral-300">
                   <div className="bg-white p-8 rounded-lg">
                     <Image src={UI} alt="UI" className="pb-8" />
-                    <p className="text-display-xs font-semibold pb-4">UI/UX Design</p>
+                    <h3 className="text-display-xs font-semibold pb-4">UI/UX Design</h3>
                     <p className="text-body-md font-normal text-neutral-600">
                       I make products more user-friendly and effective.
                     </p>
@@ -35,14 +35,14 @@ const Services = () => {
                 <div className="flex flex-col basis-1/2 lg:gap-8 gap-6 relative w-full sm:w-4/5 ">
                   <div className="bg-white p-8 rounded-lg border border-neutral-300">
                     <Image src={Responsive} alt="Responsive" className="pb-8" />
-                    <p className="text-display-xs font-semibold pb-4">Responsive Design</p>
+                    <h3 className="text-display-xs font-semibold pb-4">Responsive Design</h3>
                     <p className="text-body-md font-normal text-neutral-600">
                       Every interaction should be seeamless and intuitive.
                     </p>
                   </div>
                   <div className="bg-white p-8 rounded-lg border border-neutral-300">
                     <Image src={Code} alt="Code" className="pb-8" />
-                    <p className="text-display-xs font-semibold pb-4">Components</p>
+                    <h3 className="text-display-xs font-semibold pb-4">Components</h3>
                     <p className="text-body-md font-normal text-neutral-600">
                       I create components that are reusable and easy to maintain.
                     </p>
