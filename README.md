@@ -8,9 +8,9 @@ I work with JavaScript, TypeScript, React, and Redux. I focus on UI/UX, responsi
 
 HTML, CSS, Tailwind CSS, Sass, JavaScript, TypeScript, React, Next.js, Figma.
 
-![screenshot-1](/screenshot-1.png)
+![screenshot-1](/screenshots/screenshot-1.png)
 
-![screenshot-2](/screenshot-2.png)
+![screenshot-2](/screenshots/screenshot-2.png)
 
 ## ⚡ Portfolio Website
 
@@ -44,10 +44,10 @@ Now I create user-friendly and responsive web applications. I work with **JavaSc
 
 I have led QA automation teams, setting up Cypress and Playwright for E2E tests, writing test scripts in JavaScript and TypeScript, and coordinating unit and integration tests. Also, I was a team leader of localization and translation teams.
 
-![screenshot-3](/screenshot-3.png)
+![screenshot-3](/screenshots/screenshot-3.png)
 
 ## 💻 Work
 
 In my previous roles, I have developed new features, updated legacy codebases, and implemented responsive design for various web projects, such as a chat solution for customer care teams, chatbot settings, and also bank website with search and exchange rates functionalities.
 
-![screenshot-4](/screenshot-4.png)
+![screenshot-4](/screenshots/screenshot-4.png)
