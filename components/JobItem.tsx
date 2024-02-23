@@ -6,24 +6,25 @@ type Props = {
   title: string
   role: string
   description: string
+  techStack: string
   linkText: string
   link: string
   customers: string
 }
 
-const JobItem = ({ image, title, role, description, link, linkText, customers }: Props) => {
+const JobItem = ({ image, title, role, description, techStack, link, linkText, customers }: Props) => {
   return (
     <div className="flex basis-1/2 flex-col lg:odd:pl-0 lg:odd:pr-14 lg:even:pr-0 lg:even:pl-14 md:odd:pr-4 md:even:pl-4 px-0 md:odd:pb-10 md:even:pb-0 pb-10">
       <div className="flex flex-col self-stretch pt-8">
         <h4 className="text-display-xs font-semibold">{title}</h4>
         <p className="text-display-xxs font-semibold text-primary-600 pb-4">{role}</p>
-        <p className="lg:text-body-md text-body-sm font-normal text-neutral-700">{description}</p>
+        <p className="text-body-md font-normal text-neutral-700">{description}</p>
       </div>
       <div className="mt-4">
         <Image
           src={image}
           alt={title}
-          className="rounded-lg border border-neutral-300"
+          className="rounded-lg border-4 border-neutral-300 bg-neutral-700"
           placeholder="blur"
           blurDataURL={image}
           width={620}
@@ -35,10 +36,11 @@ const JobItem = ({ image, title, role, description, link, linkText, customers }:
           }}
         />
       </div>
-      <p className="pt-2">
+      <p className="pt-2 text-body-sm">{techStack}</p>
+      <p className="pt-2 text-body-sm">
         <span className="text-neutral-400">Used by {customers} people</span>
       </p>
-      <p className="pt-0">
+      <p className="pt-0 text-body-sm">
         <a href={link} target="_blank" className="underline hover:no-underline text-primary-600">
           {linkText}
         </a>

@@ -13,6 +13,7 @@ type JobProps = {
   title: string
   role: string
   description: string
+  techStack: string
   linkText: string
   link: string
   customers: string
@@ -25,6 +26,7 @@ const workData: JobProps[] = [
     title: '🚀 Smartsupp - SAAS company website',
     role: 'Front End Developer',
     description: 'I created the company website. And worked closely with UX on design decisions.',
+    techStack: 'JavaScript · PHP · Responsive Web Design · SASS · BEM',
     linkText: 'Go to website →',
     link: 'https://www.smartsupp.com/',
     customers: '4 000 000+',
@@ -35,6 +37,7 @@ const workData: JobProps[] = [
     title: '👨‍💻 Smartsupp - Customer care chat dashboard',
     role: 'React Developer',
     description: 'I worked on the customer care chat dashboard. Also redesigned the settings of the application.',
+    techStack: 'React · JavaScript · TypeScript · Redux · Chakra UI · Adobe XD',
     linkText: 'Go to website →',
     link: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/',
     customers: '100 000+',
@@ -46,6 +49,7 @@ const workData: JobProps[] = [
     role: 'React Developer',
     description:
       'I created search page for ATM and branches, with detail pages. And also Exchange rates page with details for each currency.',
+    techStack: 'React · JavaScript · TypeScript · Tailwind CSS · Figma · Kentico',
     linkText: 'Go to website →',
     link: 'https://www.kb.cz/en/branches-and-atms',
     customers: '2 000 000+',
@@ -57,6 +61,7 @@ const workData: JobProps[] = [
     role: 'QA Automation Team Leader',
     description:
       'I was responsible for setting up QA processes, hiring and managing QA team, creating test plans, test cases, and testing the website.',
+    techStack: 'JavaScript · TypeScript · React · Next.js · Playwright · Figma · Jira',
     linkText: 'Go to website →',
     link: 'https://www.groupon.com/',
     customers: '17 000 000+',
@@ -104,6 +109,7 @@ const Jobs = () => {
                       title={item.title}
                       role={item.role}
                       description={item.description}
+                      techStack={item.techStack}
                       link={item.link}
                       linkText={item.linkText}
                       customers={item.customers}
