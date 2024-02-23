@@ -2,7 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 
 const Footer = () => {
-  const contacts = [
+  interface Contact {
+    emoji: string
+    text: string
+    href: string
+  }
+
+  const contacts: Contact[] = [
     { emoji: '📱', text: '(+420) 734 496 308', href: 'tel:+420734496308' },
     { emoji: '📧', text: 'krsiak.daniel@gmail.com', href: 'mailto:krsiak.daniel@gmail.com' },
     {
@@ -22,11 +28,11 @@ const Footer = () => {
             </p>
             <div className="mb-8">
               <ul>
-                {contacts.map((contact) => (
-                  <li className="text-body-md font-normal" key={contact.href}>
-                    {contact.emoji}{' '}
-                    <a href={contact.href} className="hover:text-primary-500 underline hover:no-underline">
-                      {contact.text}
+                {contacts.map((item) => (
+                  <li className="text-body-md font-normal" key={item.href}>
+                    {item.emoji}{' '}
+                    <a href={item.href} className="hover:text-primary-500 underline hover:no-underline">
+                      {item.text}
                     </a>
                   </li>
                 ))}

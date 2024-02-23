@@ -2,8 +2,8 @@ import Skills from '@/components/Skills'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import About from '@/components/About'
-import Jobs from '@/components/Jobs'
-import Personal from '@/components/Personal'
+import ProjectsWork from '@/components/ProjectsWork'
+import ProjectsPersonal from '@/components/ProjectsPersonal'
 import DividerLogo from '@/components/DividerLogo'
 
 const Page = () => {
@@ -13,8 +13,8 @@ const Page = () => {
       <Skills />
       <Services />
       <About />
-      <Jobs />
-      <Personal />
+      <ProjectsWork />
+      <ProjectsPersonal />
       <DividerLogo />
     </div>
   )

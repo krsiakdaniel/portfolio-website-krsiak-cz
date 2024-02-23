@@ -3,11 +3,40 @@ import Image from 'next/image'
 import krsiak from '../public/images/krsiak.jpg'
 
 const About = () => {
-  const experience = [
+  interface Role {
+    count: string
+    label: string
+  }
+
+  interface Job {
+    title: string
+    description: string
+  }
+
+  const jobs: Job[] = [
+    {
+      title: 'React Developer',
+      description: `
+        I create user-friendly and responsive web applications. I have worked with JavaScript, TypeScript,
+        React, and Redux, as well as other technologies such as Figma, and Tailwind CSS. I have a strong
+        background in UI design, functional components, and code quality.
+      `,
+    },
+    {
+      title: 'QA Team Leader',
+      description: `
+        I have also led a QA automation team, setting up Playwright for E2E tests, writing test scripts in
+        JavaScript and TypeScript, and coordinating unit and integration tests.
+      `,
+    },
+  ]
+
+  const roles: Role[] = [
     { count: '10', label: 'FRONT END EXPERIENCE' },
     { count: '4', label: 'REACT DEVELOPER' },
     { count: '3', label: 'QA TEAM LEADER' },
   ]
+
   return (
     <div id="about">
       <div className="container mx-auto">
@@ -24,17 +53,12 @@ const About = () => {
                 <h2 className="md:text-display-lg text-display-md font-semibold md:pb-6 pb-4 text-primary-500 uppercase">
                   About
                 </h2>
-                <h3 className="text-display-xs font-semibold">React Developer</h3>
-                <p className="text-body-md font-normal text-neutral-700 pb-4">
-                  I create user-friendly and responsive web applications. I have worked with JavaScript, TypeScript,
-                  React, and Redux, as well as other technologies such as Figma, and Tailwind CSS. I have a strong
-                  background in UI design, functional components, and code quality.
-                </p>
-                <h3 className="text-display-xs font-semibold">QA Team Leader</h3>
-                <p className="text-body-md font-normal text-neutral-700 pb-4">
-                  I have also led a QA automation team, setting up Playwright for E2E tests, writing test scripts in
-                  JavaScript and TypeScript, and coordinating unit and integration tests.
-                </p>
+                {jobs.map((item) => (
+                  <div key={item.title} className="flex flex-col gap-4 pb-4">
+                    <h3 className="text-display-xs font-semibold">{item.title}</h3>
+                    <p className="text-body-md font-normal text-neutral-700 pb-4">{item.description}</p>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="lg:col-span-7 lg:grid lg:grid-cols-7 flex sm:flex-row flex-col items-center sm:items-start md:gap-8 gap-12">
@@ -51,7 +75,7 @@ const About = () => {
                 />
               </div>
               <div className="lg:col-span-3 flex md:self-auto self-stretch grow flex-col gap-6 sm:gap-8 xl:gap-12 xl:pl-8">
-                {experience.map((item) => (
+                {roles.map((item) => (
                   <div
                     key={item.label}
                     className="flex flex-col items-center sm:items-start self-stretch gap-2 pb-4 border-b border-solid border-neutral-300 last:border-none last:pb-0"

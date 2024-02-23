@@ -12,6 +12,49 @@ import react from '../public/icons/svg/react.svg'
 import next from '../public/icons/svg/next.svg'
 import figma from '../public/icons/svg/figma.svg'
 
+interface Icon {
+  name: string
+  path: string
+}
+
+const iconsSection1: Icon[] = [
+  {
+    name: 'html',
+    path: html,
+  },
+  {
+    name: 'css',
+    path: css,
+  },
+  {
+    name: 'scss',
+    path: scss,
+  },
+  {
+    name: 'tailwind',
+    path: tailwind,
+  },
+]
+
+const iconsSection2: Icon[] = [
+  {
+    name: 'js',
+    path: js,
+  },
+  {
+    name: 'ts',
+    path: ts,
+  },
+  {
+    name: 'react',
+    path: react,
+  },
+  {
+    name: 'next',
+    path: next,
+  },
+]
+
 const Skills = () => {
   return (
     <div id="skills">
@@ -25,16 +68,14 @@ const Skills = () => {
           </div>
           <div className="flex flex-col sm:flex-row justify-center pt-5">
             <div className="flex justify-center mb-4 sm:mb-0">
-              <Image src={html} alt="html" className="mr-2" width={48} height={48} />
-              <Image src={css} alt="css" className="mr-2" width={48} height={48} />
-              <Image src={scss} alt="scss" className="mr-2" width={48} height={48} />
-              <Image src={tailwind} alt="tailwind" className="sm:mr-2" width={48} height={48} />
+              {iconsSection1.map((item) => {
+                return <Image key={item.name} src={item.path} alt="html" className="mr-2" width={48} height={48} />
+              })}
             </div>
             <div className="flex justify-center mb-4 sm:mb-0">
-              <Image src={js} alt="js" className="mr-2" width={48} height={48} />
-              <Image src={ts} alt="ts" className="mr-2" width={48} height={48} />
-              <Image src={react} alt="react" className="mr-2" width={48} height={48} />
-              <Image src={next} alt="next" className="sm:mr-2" width={48} height={48} />
+              {iconsSection2.map((item) => {
+                return <Image key={item.name} src={item.path} alt="html" className="mr-2" width={48} height={48} />
+              })}
             </div>
             <div className="flex justify-center">
               <Image src={figma} alt="figma" width={48} height={48} />

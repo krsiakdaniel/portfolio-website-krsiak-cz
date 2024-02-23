@@ -1,25 +1,14 @@
 import React from 'react'
 
 import JobItem from './JobItem'
+import { Project } from '../utils/constants'
 
 import project1 from '../public/images/personal-projects/png/personal-1-thumb.png'
 import project2 from '../public/images/personal-projects/png/personal-2-thumb.png'
 import project3 from '../public/images/personal-projects/png/personal-3-thumb.png'
 
-// TODO: unify into shared component
-type JobProps = {
-  id: number
-  image: string
-  title: string
-  role: string
-  description: string
-  techStack: string
-  linkText: string
-  link?: string | undefined
-  customers?: string | undefined
-}
-
-const workData: JobProps[] = [
+// TODO: refactor + unify into shared components
+const projects: Project[] = [
   {
     id: 1,
     image: project1.src,
@@ -55,9 +44,9 @@ const workData: JobProps[] = [
   },
 ]
 
-const Jobs = () => {
+const ProjectsPersonal = () => {
   return (
-    <div id="personal">
+    <div id="projects-personal">
       <div className="container mx-auto">
         <div className="pb-10">
           <div className="flex justify-center relative pb-1 pt-5">
@@ -86,7 +75,7 @@ const Jobs = () => {
             </div>
             <div className="flex flex-col">
               <div className="flex md:flex-row flex-col flex-wrap">
-                {workData.map((item) => {
+                {projects.map((item) => {
                   return (
                     <JobItem
                       key={item.id}
@@ -110,4 +99,4 @@ const Jobs = () => {
   )
 }
 
-export default Jobs
+export default ProjectsPersonal
