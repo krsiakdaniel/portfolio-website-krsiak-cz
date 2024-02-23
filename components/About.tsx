@@ -37,7 +37,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="lg:col-span-7 lg:grid lg:grid-cols-7 flex sm:flex-row flex-col items-start md:gap-8 gap-12">
+            <div className="lg:col-span-7 lg:grid lg:grid-cols-7 flex sm:flex-row flex-col items-center sm:items-start md:gap-8 gap-12">
               <div className="lg:col-span-4 flex">
                 <Image
                   src={krsiak}
@@ -54,7 +54,7 @@ const About = () => {
                 {experience.map((item) => (
                   <div
                     key={item.label}
-                    className="flex flex-col self-stretch gap-2 pb-4 border-b border-solid border-neutral-300 last:border-none last:pb-0"
+                    className="flex flex-col items-center sm:items-start self-stretch gap-2 pb-4 border-b border-solid border-neutral-300 last:border-none last:pb-0"
                   >
                     <p className="md:text-display-lg text-display-md font-semibold">
                       <span className="text-primary-600">{item.count}</span> years

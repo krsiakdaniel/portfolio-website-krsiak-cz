@@ -30,9 +30,7 @@ const JobItem = ({ image, title, role, description, techStack, link, linkText, c
           width={544}
           height={337}
           style={{
-            width: '100%',
-            maxHeight: '100%',
-            height: 'auto',
+            maxHeight: '345px',
           }}
         />
       </div>

@@ -34,7 +34,7 @@ const workData: JobProps[] = [
   {
     id: 2,
     image: project2.src,
-    title: '💰 CryptoMania - Crypto currency prices',
+    title: '💰 CryptoMania',
     role: 'React App',
     description: 'Crypto currency price tracker using CoinGecko API.',
     techStack: 'JavaScript · TypeScript · React App · Chakra UI · CoinGecko API',
@@ -63,7 +63,7 @@ const Jobs = () => {
           <div className="flex justify-center relative pb-1 pt-5">
             <span className="absolute block h-px bg-white bottom-1/2 left-0 right-0 bg-skills-line"></span>
             <div className="bg-white px-6 pb-3 pt-0 relative">
-              <p className="text-body-sm font-semibold tracking-2 text-neutral-500 uppercase">Personal Projects</p>
+              <p className="text-body-sm font-semibold tracking-2 text-neutral-500 uppercase">In My Free Time</p>
             </div>
           </div>
           <div className="flex flex-col pt-5">
@@ -81,7 +81,7 @@ const Jobs = () => {
               </p>
               <h3 className="text-display-xs font-semibold">Projects I worked on</h3>
               <p className="text-body-md font-normal text-neutral-700 pb-4">
-                Below are some of the projects that I created lately.
+                Below are some of the projects that I created.
               </p>
             </div>
             <div className="flex flex-col">

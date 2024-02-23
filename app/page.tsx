@@ -4,6 +4,7 @@ import Services from '@/components/Services'
 import About from '@/components/About'
 import Jobs from '@/components/Jobs'
 import Personal from '@/components/Personal'
+import DividerLogo from '@/components/DividerLogo'
 
 const Page = () => {
   return (
@@ -14,6 +15,7 @@ const Page = () => {
       <About />
       <Jobs />
       <Personal />
+      <DividerLogo />
     </div>
   )
 }
