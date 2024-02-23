@@ -1,53 +1,55 @@
-# Hi! My name is Daniel Kršiak 👋
+# React Developer - Portfolio Website | krsiak.cz
 
-I am **React Developer** based in Brno, Czech Republic.
+React Developer portfolio website 👨‍💻
 
-I work with JavaScript, TypeScript, React, and Redux. I focus on UI/UX, responsive design, and functional components that are easy to maintain.
+## ⚡ Project Website
 
-## ⚡ Portfolio Website
+Website: <https://krsiak.cz>
 
-Website: <https://krsiak.cz/>
+## 🛠️ Tech Stack
 
-## 📫 Contact me
+Using the following technologies.
 
-You can call me, send me an email, or chat with me on LinkedIn:
+![javascript](tech-stack-logos/javascript.png) ![typescript](tech-stack-logos/typescript.png) ![react](tech-stack-logos/react.png) ![next](tech-stack-logos/next.png) ![netlify](tech-stack-logos/netlify.png)
 
-- 📱(+420) 734 496 308
-- 📧 krsiak.daniel@gmail.com
-- 💬 <https://www.linkedin.com/in/krsiakdaniel/>
+Website built with:
 
-## 📝 Resume
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://react.dev/) - JavaScript library
+- [Next.js](https://nextjs.org/) - React Framework
+- [Netlify](https://www.netlify.com/) - Deployment
 
-Download my resume in PDF.
+## 📝 Features
 
-[![resume](https://github.com/krsiakdaniel/krsiakdaniel/assets/564906/1c095868-ab0f-44a2-a54a-4916f8000732)](https://drive.google.com/file/d/1x0LWu8I_3aqW34TJbxkciqNGX642bdvF/view?usp=sharing)
+- [x] links to linkedin, github, resume
+- [x] section - work projects
+- [x] section - personal projects
 
-## 🛠️ Skills
+## 💻 Scripts
 
-HTML, CSS, Tailwind CSS, Sass, JavaScript, TypeScript, React, Next.js, Figma.
+Install dependencies.
+
+```bash
+npm i
+```
+
+Runs the app in the development mode.
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## 🖼️ Screenshots
+
+Project screenshots.
 
 ![screenshot-1](/screenshots/screenshot-1.png)
 
 ![screenshot-2](/screenshots/screenshot-2.png)
 
-## 👨‍💻 About me
-
-### Front End Developer - 10 years
-
-In the past, I used to create websites and set up WordPress for small businesses as a freelancer.
-
-### React Developer - 4 years
-
-Now I create user-friendly and responsive web applications. I work with **JavaScript**, **TypeScript**, **React**, **Next.js**, and **Redux**, also big fan of **Figma**, and **Tailwind CSS**. I have a strong background in UI design, functional components, and code quality.
-
-### QA Team Leader - 3 years
-
-I have led QA automation teams, setting up Cypress and Playwright for E2E tests, writing test scripts in JavaScript and TypeScript, and coordinating unit and integration tests. Also, I was a team leader of localization and translation teams.
-
 ![screenshot-3](/screenshots/screenshot-3.png)
-
-## 💻 Work
-
-In my previous roles, I have developed new features, updated legacy codebases, and implemented responsive design for various web projects, such as a chat solution for customer care teams, chatbot settings, and also bank website with search and exchange rates functionalities.
 
 ![screenshot-4](/screenshots/screenshot-4.png)
