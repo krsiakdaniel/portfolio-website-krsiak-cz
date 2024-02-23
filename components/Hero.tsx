@@ -14,7 +14,7 @@ const Hero = () => {
             <h2 className="lg:text-display-2xl md:text-display-xl text-display-md">
               <span className="font-semibold">React Developer</span>
             </h2>
-            <p className="md:text-body-xl text-body-lg py-2">
+            <p className="md:text-body-xl text-body-lg pb-1 pt-4 font-medium">
               Hi 👋 I am React Developer based in Brno, Czech Republic. 🌍
             </p>
             <p className="md:text-body-xl text-body-lg pb-8">I work with JavaScript, TypeScript, React, and Redux.</p>
