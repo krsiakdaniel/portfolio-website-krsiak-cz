@@ -12,9 +12,9 @@ HTML, CSS, Tailwind CSS, Sass, JavaScript, TypeScript, React, Next.js, Figma.
 
 ![screenshot-2](/screenshot-2.png)
 
-## ⚡ Portfolio website
+## ⚡ Portfolio Website
 
-My website: <https://krsiak.cz/>
+Website: <https://krsiak.cz/>
 
 ## 📫 Contact me
 
