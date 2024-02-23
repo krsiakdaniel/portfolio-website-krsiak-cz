@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import krsiak from '../public/images/krsiak.avif'
+import krsiak from '../public/images/krsiak.jpg'
 
 const About = () => {
   const experience = [
