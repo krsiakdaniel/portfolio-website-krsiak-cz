@@ -10,7 +10,7 @@ Website: <https://krsiak.cz>
 
 Using the following technologies.
 
-![javascript](tech-stack-logos/javascript.png) ![typescript](tech-stack-logos/typescript.png) ![react](tech-stack-logos/react.png) ![next](tech-stack-logos/next.png) ![tailwind](tech-stack-logos/tailwind.png)![netlify](tech-stack-logos/netlify.png)
+![My Skills](https://skillicons.dev/icons?i=js,ts,react,next,tailwind,netlify)
 
 Website built with:
 
@@ -23,7 +23,7 @@ Website built with:
 
 ## 📝 Features
 
-- [x] links to linkedin, github, resume
+- [x] links to LinkedIn, GitHub, Download resume
 - [x] section - work projects
 - [x] section - personal projects
 
