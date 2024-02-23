@@ -1,6 +1,10 @@
 import React from 'react'
 import Button from './Button'
 
+const LINK_LINKEDIN = 'https://www.linkedin.com/in/krsiakdaniel/'
+const LINK_GITHUB = 'https://github.com/krsiakdaniel/'
+const LINK_RESUME = 'https://drive.google.com/file/d/1x0LWu8I_3aqW34TJbxkciqNGX642bdvF/view?usp=sharing'
+
 const Hero = () => {
   return (
     <div>
@@ -23,18 +27,13 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center">
               <div className="flex mb-4 sm:mr-4 sm:mb-0">
-                <Button label="LINKEDIN" link="https://www.linkedin.com/in/krsiakdaniel/" size="lg" />
+                <Button label="LINKEDIN" link={LINK_LINKEDIN} size="lg" />
               </div>
               <div className="flex mb-4 sm:mr-4 sm:mb-0">
-                <Button label="GITHUB" link="https://github.com/krsiakdaniel/" size="lg" type="bg-neutral-900" />
+                <Button label="GITHUB" link={LINK_GITHUB} size="lg" type="bg-neutral-900" />
               </div>
               <div className="flex mb-0 mr-0">
-                <Button
-                  label="DOWNLOAD RESUME"
-                  link="https://drive.google.com/file/d/1x0LWu8I_3aqW34TJbxkciqNGX642bdvF/view?usp=sharing"
-                  size="lg"
-                  type="bg-red-500"
-                />
+                <Button label="DOWNLOAD RESUME" link={LINK_RESUME} size="lg" type="bg-red-500" />
               </div>
             </div>
           </div>
