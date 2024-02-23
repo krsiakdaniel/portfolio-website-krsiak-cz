@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
         <div className="pb-8">
           <p>
-            Copyright © 2024.{' '}
+            Copyright © 2024 |{' '}
             <Link href="/" className="hover:text-primary-500 underline hover:no-underline">
               krsiak.cz
             </Link>

@@ -11,6 +11,7 @@ import ts from '../public/icons/svg/ts.svg'
 import react from '../public/icons/svg/react.svg'
 import next from '../public/icons/svg/next.svg'
 import figma from '../public/icons/svg/figma.svg'
+import redux from '../public/icons/svg/redux.svg'
 
 interface Icon {
   name: string
@@ -69,21 +70,22 @@ const Skills = () => {
           <div className="flex flex-col sm:flex-row justify-center pt-5">
             <div className="flex justify-center mb-4 sm:mb-0">
               {iconsSection1.map((item) => {
-                return <Image key={item.name} src={item.path} alt="html" className="mr-2" width={48} height={48} />
+                return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
               })}
             </div>
             <div className="flex justify-center mb-4 sm:mb-0">
               {iconsSection2.map((item) => {
-                return <Image key={item.name} src={item.path} alt="html" className="mr-2" width={48} height={48} />
+                return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
               })}
             </div>
             <div className="flex justify-center">
+              <Image src={redux} alt="redux" width={48} height={48} className="mr-2" />
               <Image src={figma} alt="figma" width={48} height={48} />
             </div>
           </div>
           <div>
-            <p className="italic text-neutral-500 mt-4 text-center">
-              HTML, CSS, Sass, Tailwind CSS, JavaScript, TypeScript, React, Next.js, Figma
+            <p className="text-body-sm italic text-neutral-500 mt-4 text-center">
+              HTML, CSS, Sass, Tailwind CSS, JavaScript, TypeScript, React, Next.js, Redux, Figma
             </p>
           </div>
         </div>
