@@ -27,8 +27,8 @@ const JobItem = ({ image, title, role, description, techStack, link, linkText, c
           className="rounded-lg border-4 border-neutral-300 bg-neutral-700"
           placeholder="blur"
           blurDataURL={image}
-          width={620}
-          height={575}
+          width={544}
+          height={337}
           style={{
             width: '100%',
             maxHeight: '100%',
@@ -39,7 +39,7 @@ const JobItem = ({ image, title, role, description, techStack, link, linkText, c
       <p className="pt-2 text-body-sm">{techStack}</p>
       {customers && (
         <p className="pt-2 text-body-sm">
-          <span className="text-neutral-400">Used by {customers} people</span>
+          <span className="text-neutral-500">Used by {customers} people</span>
         </p>
       )}
       {link && (

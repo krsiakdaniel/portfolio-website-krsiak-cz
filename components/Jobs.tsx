@@ -2,10 +2,10 @@ import React from 'react'
 
 import JobItem from './JobItem'
 
-import work1 from '../public/images/work/work-1.png'
-import work2 from '../public/images/work/work-2.png'
-import work3 from '../public/images/work/work-3.png'
-import work4 from '../public/images/work/work-4.png'
+import work1 from '../public/images/work/png/work-1-thumb.png'
+import work2 from '../public/images/work/png/work-2-thumb.png'
+import work3 from '../public/images/work/png/work-3-thumb.png'
+import work4 from '../public/images/work/png/work-4-thumb.png'
 
 type JobProps = {
   id: number

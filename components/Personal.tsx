@@ -2,9 +2,9 @@ import React from 'react'
 
 import JobItem from './JobItem'
 
-import project1 from '../public/images/personal-projects/personal-1.png'
-import project2 from '../public/images/personal-projects/personal-2.png'
-import project3 from '../public/images/personal-projects/personal-3.png'
+import project1 from '../public/images/personal-projects/png/personal-1-thumb.png'
+import project2 from '../public/images/personal-projects/png/personal-2-thumb.png'
+import project3 from '../public/images/personal-projects/png/personal-3-thumb.png'
 
 // TODO: unify into shared component
 type JobProps = {

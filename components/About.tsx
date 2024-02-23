@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import krsiak from '../public/images/krsiak.jpg'
+import krsiak from '../public/images/krsiak.avif'
 
 const About = () => {
   const experience = [
@@ -45,9 +45,7 @@ const About = () => {
                   alt="Daniel Kršiak"
                   placeholder="blur"
                   style={{
-                    width: '100%',
-                    maxWidth: '385px',
-                    maxHeight: '415px',
+                    width: '385px',
                     height: 'auto',
                   }}
                 />

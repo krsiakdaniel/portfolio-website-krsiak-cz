@@ -17,12 +17,7 @@ const Hero = () => {
             <p className="md:text-body-xl text-body-lg pb-8">I work with JavaScript, TypeScript, React, and Redux.</p>
             <div className="flex flex-col sm:flex-row justify-center items-center">
               <div className="flex mb-4 sm:mr-4 sm:mb-0">
-                <Button
-                  label="LINKEDIN"
-                  link="https://www.linkedin.com/in/krsiakdaniel/"
-                  size="lg"
-                  type="bg-secondary-600"
-                />
+                <Button label="LINKEDIN" link="https://www.linkedin.com/in/krsiakdaniel/" size="lg" />
               </div>
               <div className="flex mb-4 sm:mr-4 sm:mb-0">
                 <Button label="GITHUB" link="https://github.com/krsiakdaniel/" size="lg" type="bg-neutral-900" />
