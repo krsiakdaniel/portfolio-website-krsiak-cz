@@ -8,8 +8,8 @@ type Props = {
   description: string
   techStack: string
   linkText: string
-  link: string
-  customers: string
+  link: string | undefined
+  customers: string | undefined
 }
 
 const JobItem = ({ image, title, role, description, techStack, link, linkText, customers }: Props) => {
@@ -37,14 +37,18 @@ const JobItem = ({ image, title, role, description, techStack, link, linkText, c
         />
       </div>
       <p className="pt-2 text-body-sm">{techStack}</p>
-      <p className="pt-2 text-body-sm">
-        <span className="text-neutral-400">Used by {customers} people</span>
-      </p>
-      <p className="pt-0 text-body-sm">
-        <a href={link} target="_blank" className="underline hover:no-underline text-primary-600">
-          {linkText}
-        </a>
-      </p>
+      {customers && (
+        <p className="pt-2 text-body-sm">
+          <span className="text-neutral-400">Used by {customers} people</span>
+        </p>
+      )}
+      {link && (
+        <p className="pt-0 text-body-sm">
+          <a href={link} target="_blank" className="underline hover:no-underline text-primary-600">
+            {linkText}
+          </a>
+        </p>
+      )}
     </div>
   )
 }
