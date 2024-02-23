@@ -10,7 +10,7 @@ Website: <https://krsiak.cz>
 
 Using the following technologies.
 
-![javascript](tech-stack-logos/javascript.png) ![typescript](tech-stack-logos/typescript.png) ![react](tech-stack-logos/react.png) ![next](tech-stack-logos/next.png) ![netlify](tech-stack-logos/netlify.png)
+![javascript](tech-stack-logos/javascript.png) ![typescript](tech-stack-logos/typescript.png) ![react](tech-stack-logos/react.png) ![next](tech-stack-logos/next.png) ![tailwind](tech-stack-logos/tailwind.png)![netlify](tech-stack-logos/netlify.png)
 
 Website built with:
 
@@ -18,6 +18,7 @@ Website built with:
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://react.dev/) - JavaScript library
 - [Next.js](https://nextjs.org/) - React Framework
+- [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
 - [Netlify](https://www.netlify.com/) - Deployment
 
 ## 📝 Features
