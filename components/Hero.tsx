@@ -22,8 +22,9 @@ const Hero = () => {
               Hi 👋 I am React Developer based in Brno, Czech Republic 🇨🇿
             </p>
             <p className="md:text-body-xl text-body-lg pb-8">
-              I enjoy working with <span className="text-primary-500">JavaScript</span>,{' '}
-              <span className="text-primary-500">TypeScript</span>, and <span className="text-primary-500">React</span>.
+              I enjoy working with <span className="text-primary-500 font-bold">JavaScript</span>,{' '}
+              <span className="text-primary-500 font-bold">TypeScript</span>, and{' '}
+              <span className="text-primary-500 font-bold">React</span>.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center">
               <div className="flex mb-4 sm:mr-4 sm:mb-0">

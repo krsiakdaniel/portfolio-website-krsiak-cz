@@ -27,11 +27,6 @@ const config: Config = {
       primary: {
         500: '#7C3AED',
       },
-      secondary: {
-        500: '#2980B9',
-        100: '#3498DB',
-      },
-
       green: {
         100: '#F0FEFA',
       },
