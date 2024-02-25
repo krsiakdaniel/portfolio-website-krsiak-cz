@@ -62,7 +62,7 @@ const ProjectItem = ({ isFeatured, image, title, role, description, mySkills, cu
 
         {isFeatured && (
           <div>
-            <p className="text-display-2xl absolute -right-4 lg:-right-8 -top-9 z-10">
+            <p className="text-display-2xl absolute -right-4 lg:-right-8 -top-7 z-10">
               <Image src={starIcon64} width={64} height={64} alt="star" />
             </p>
           </div>
