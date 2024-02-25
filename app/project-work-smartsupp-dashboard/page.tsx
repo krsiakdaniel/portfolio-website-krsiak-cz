@@ -39,7 +39,7 @@ const WebsiteInformation = () => {
   )
 }
 
-const ProjectWorkSmartsuppWeb = () => {
+const ProjectWorkSmartsuppDashboard = () => {
   return (
     <>
       <div id="project-work-smartsupp-web">
@@ -118,4 +118,4 @@ const ProjectWorkSmartsuppWeb = () => {
   )
 }
 
-export default ProjectWorkSmartsuppWeb
+export default ProjectWorkSmartsuppDashboard

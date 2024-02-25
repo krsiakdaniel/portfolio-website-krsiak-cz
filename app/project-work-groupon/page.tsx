@@ -9,7 +9,6 @@ import { projectsWork } from '@/data/projects-work'
 const { title, role, description, mySkills, customers, link, imageShowcase } = projectsWork[3]
 const linkGoToWebsite = link[0]
 
-// TODO: extract this to a separate file with props and pass in each project page
 const WebsiteInformation = () => {
   return (
     <>
@@ -40,8 +39,7 @@ const WebsiteInformation = () => {
   )
 }
 
-// TODO: rename each page file
-const ProjectWorkSmartsuppWeb = () => {
+const ProjectWorkGroupon = () => {
   return (
     <>
       <div id="project-work-smartsupp-web">
@@ -117,4 +115,4 @@ const ProjectWorkSmartsuppWeb = () => {
   )
 }
 
-export default ProjectWorkSmartsuppWeb
+export default ProjectWorkGroupon

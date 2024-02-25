@@ -11,11 +11,12 @@ import { projectsWork } from '@/data/projects-work'
 // TODO: add jobs description from linkedin
 // TODO: create a new page for each project - WORK and PERSONAL - with all the details
 // TODO: test and click all links on PROJECTS main page + subpages
-// TODO: take more screenshots for dashboard + KB, with dark mode browser
+// TODO: take more screenshots for dashboard + KB, with dark mode browser (folder all-screenshots)
 
 const { title, role, description, mySkills, customers, link, imageShowcase } = projectsWork[0]
 const linkGoToWebsite = link[0]
 
+// TODO: extract this to a separate file with props  and pass in each project page
 const WebsiteInformation = () => {
   return (
     <>
