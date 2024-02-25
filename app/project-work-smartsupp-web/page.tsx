@@ -6,12 +6,12 @@ import ListItem from '../../components/shared/ListItem'
 
 import { projectsWork } from '@/data/projects'
 
-// TODO: resize images THUMB to max width for given space, not bigger
 // TODO: RESIZE IMAGES to be MAX on what is on the big screen, not bigger!
 // TODO: make images into JPEG?
 // TODO: add jobs description from linkedin
 // TODO: create a new page for each project - WORK and PERSONAL - with all the details
 // TODO: test and click all links on PROJECTS main page + subpages
+// TODO: take more screenshots for dashboard + KB, with dark mode browser
 
 const { title, role, description, mySkills, customers, link, imageShowcase } = projectsWork[0]
 const linkGoToWebsite = link[0]
@@ -46,10 +46,10 @@ const WebsiteInformation = () => {
   )
 }
 
-const ProjectWorkSmartsupp = () => {
+const ProjectWorkSmartsuppWeb = () => {
   return (
     <>
-      <div id="project-work-smartsupp">
+      <div id="project-work-smartsupp-web">
         <div className="container mx-auto my-20">
           <div>
             <h1 className="md:text-display-lg text-display-md font-bold">{title}</h1>
@@ -98,4 +98,4 @@ const ProjectWorkSmartsupp = () => {
   )
 }
 
-export default ProjectWorkSmartsupp
+export default ProjectWorkSmartsuppWeb

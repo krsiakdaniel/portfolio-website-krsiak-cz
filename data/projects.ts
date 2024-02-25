@@ -26,7 +26,7 @@ export const projectsWork: Project[] = [
     linkText: 'Read more →',
     link: ['https://www.smartsupp.com/'],
     customers: '100 000+',
-    linkProjectPage: '/project-work-smartsupp',
+    linkProjectPage: '/project-work-smartsupp-web',
   },
   {
     id: 2,
