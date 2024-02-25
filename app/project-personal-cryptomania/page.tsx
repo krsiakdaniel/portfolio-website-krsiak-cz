@@ -6,7 +6,7 @@ import ListItem from '../../components/shared/ListItem'
 
 import { projectsPersonal } from '@/data/projects-personal'
 
-const { title, role, description, mySkills, link, imageShowcase } = projectsPersonal[0]
+const { title, role, description, mySkills, link, imageShowcase } = projectsPersonal[1]
 const linkGoToWebsite = link[0]
 
 const WebsiteInformation = () => {
@@ -38,10 +38,10 @@ const WebsiteInformation = () => {
   )
 }
 
-const ProjectPersonalKrsiak = () => {
+const ProjectPersonalCryptomania = () => {
   return (
     <>
-      <div id="project-personal-krsiak">
+      <div id="project-personal-cryptomania">
         <div className="container mx-auto my-20">
           <div>
             <h1 className="md:text-display-lg text-display-md font-bold">{title}</h1>
@@ -58,7 +58,8 @@ const ProjectPersonalKrsiak = () => {
               <h3 className="pb-2 font-bold">Description:</h3>
               <List>
                 <ListItem>
-                  I needed a new website for my personal presentation. I learnt Next.js, and used Tailwind CSS.
+                  This site was created to display cryptocurrencies with the ability to search for them and display
+                  their current value.
                 </ListItem>
               </List>
             </div>
@@ -77,4 +78,4 @@ const ProjectPersonalKrsiak = () => {
   )
 }
 
-export default ProjectPersonalKrsiak
+export default ProjectPersonalCryptomania
