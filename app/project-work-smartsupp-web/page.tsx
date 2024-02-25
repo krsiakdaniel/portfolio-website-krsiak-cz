@@ -4,7 +4,7 @@ import Link from 'next/link'
 import List from '../../components/shared/List'
 import ListItem from '../../components/shared/ListItem'
 
-import { projectsWork } from '@/data/projects'
+import { projectsWork } from '@/data/projects-work'
 
 // TODO: RESIZE IMAGES to be MAX on what is on the big screen, not bigger!
 // TODO: make images into JPEG?

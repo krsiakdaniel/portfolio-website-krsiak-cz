@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { projectsPersonal } from '@/data/projects'
+import { projectsPersonal } from '@/data/projects-personal'
 
 import ProjectsLayout from '@/components/ProjectsLayout'
 import ProjectItem from './ProjectItem'
