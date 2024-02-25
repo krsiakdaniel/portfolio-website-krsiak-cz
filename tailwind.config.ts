@@ -110,7 +110,7 @@ const config: Config = {
         '16px',
         {
           letterSpacing: '0em',
-          lineHeight: '28px',
+          lineHeight: '26px',
         },
       ],
       'body-sm': [

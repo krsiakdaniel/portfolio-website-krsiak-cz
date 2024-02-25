@@ -6,9 +6,6 @@
 
 @layer base {
   @layer utilities {
-    html {
-      @apply scroll-smooth;
-    }
     body {
       @apply text-neutral-900;
     }
