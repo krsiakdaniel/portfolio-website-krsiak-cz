@@ -12,6 +12,7 @@ import { projectsWork } from '@/data/projects-work'
 // TODO: create a new page for each project - WORK and PERSONAL - with all the details
 // TODO: test and click all links on PROJECTS main page + subpages
 // TODO: take more screenshots for dashboard + KB, with dark mode browser (folder all-screenshots)
+// TODO: KB, add more links to the page, name each differently
 
 const { title, role, description, mySkills, customers, link, imageShowcase } = projectsWork[0]
 const linkGoToWebsite = link[0]

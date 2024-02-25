@@ -1,14 +1,19 @@
 import { Project } from '@/utils/types'
 
-import image1 from '../public/images/projects-personal/png/personal-1-thumb.png'
-import image2 from '../public/images/projects-personal/png/personal-2-thumb.png'
-import image3 from '../public/images/projects-personal/png/personal-3-thumb.png'
+import cryptomaniaThumb from '../public/images/projects-personal/png/cryptomania-thumb.png'
+import cryptomania1 from '../public/images/projects-personal/png/cryptomania-1.png'
+
+import krsiakThumb from '../public/images/projects-personal/png/krsiak-thumb.png'
+import krsiak1 from '../public/images/projects-personal/png/krsiak-1.png'
+
+import eshopThumb from '../public/images/projects-personal/png/eshop-thumb.png'
+import eshop1 from '../public/images/projects-personal/png/eshop-1.png'
 
 export const projectsPersonal: Project[] = [
   {
     id: 1,
-    image: image1.src,
-    imageShowcase: [image1.src, image2.src, image3.src],
+    image: krsiakThumb.src,
+    imageShowcase: [krsiak1.src],
     title: '👨‍💻 Portfolio Website',
     role: 'Next.js App',
     description: 'My personal portfolio website to showcase my work and skills.',
@@ -20,8 +25,8 @@ export const projectsPersonal: Project[] = [
   },
   {
     id: 2,
-    image: image2.src,
-    imageShowcase: [image1.src, image2.src, image3.src],
+    image: cryptomaniaThumb.src,
+    imageShowcase: [cryptomania1.src],
     title: '💰 CryptoMania',
     role: 'React App',
     description: 'Crypto currency price tracker using CoinGecko API.',
@@ -33,8 +38,8 @@ export const projectsPersonal: Project[] = [
   },
   {
     id: 3,
-    image: image3.src,
-    imageShowcase: [image1.src, image2.src, image3.src],
+    image: eshopThumb.src,
+    imageShowcase: [eshop1.src],
     title: '🛒 eCommerce Website',
     role: 'Vue.js App',
     description: 'Simple eCommerce website. First time coding with Vue and Nuxt.',
