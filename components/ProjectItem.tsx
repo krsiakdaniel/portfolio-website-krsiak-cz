@@ -2,7 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import starIcon32 from '@/public/icons/icon-32x32.png'
+import starIcon64 from '@/public/icons/icon-64x64.png'
+
 type Props = {
+  isFeatured?: boolean | undefined
   image: string
   title: string
   role: string
@@ -10,14 +14,23 @@ type Props = {
   mySkills: string
   linkText: string
   link: string[]
-  customers: string
+  customers: string | undefined
   linkProjectPage: string
 }
 
-const ProjectItem = ({ image, title, role, description, mySkills, customers, linkProjectPage }: Props) => {
+const getFeaturedColors = (isFeatured: boolean) => {
+  if (isFeatured) {
+    return 'border-l-4 bg-orange-100 border-orange-500'
+  }
+  return 'bg-neutral-50 border-neutral-400'
+}
+
+const ProjectItem = ({ isFeatured, image, title, role, description, mySkills, customers, linkProjectPage }: Props) => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row lg:space-x-10 mt-8 bg-neutral-50 border border-neutral-400 rounded-lg px-8 py-6">
+      <div
+        className={`flex flex-col lg:flex-row lg:space-x-10 mt-8 border rounded-lg px-8 py-6 relative ${getFeaturedColors(isFeatured || false)}`}
+      >
         <div className="flex flex-col lg:w-1/2">
           <div>
             <h4 className="text-display-xs font-semibold">{title}</h4>
@@ -47,6 +60,13 @@ const ProjectItem = ({ image, title, role, description, mySkills, customers, lin
           </div>
         </div>
 
+        {isFeatured && (
+          <div>
+            <p className="text-display-2xl absolute -right-4 lg:-right-8 -top-9 z-10">
+              <Image src={starIcon64} width={64} height={64} alt="star" />
+            </p>
+          </div>
+        )}
         <div className="flex lg:justify-end mt-8 lg:mt-0 lg:w-1/2">
           <Link href={linkProjectPage}>
             <Image

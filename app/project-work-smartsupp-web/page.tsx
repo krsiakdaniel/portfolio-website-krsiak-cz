@@ -6,13 +6,11 @@ import ListItem from '../../components/shared/ListItem'
 
 import { projectsWork } from '@/data/projects-work'
 
-// TODO: RESIZE IMAGES to be MAX on what is on the big screen, not bigger!
-// TODO: make images into JPEG?
-// TODO: add jobs description from linkedin
-// TODO: create a new page for each project - WORK and PERSONAL - with all the details
-// TODO: test and click all links on PROJECTS main page + subpages
 // TODO: take more screenshots for dashboard + KB, with dark mode browser (folder all-screenshots)
 // TODO: KB, add more links to the page, name each differently
+// TODO: RESIZE IMAGES to be MAX on what is on the big screen, not bigger!
+// TODO: make images into JPEG?
+// TODO: test and click all links on PROJECTS main page + subpages
 
 const { title, role, description, mySkills, customers, link, imageShowcase } = projectsWork[0]
 const linkGoToWebsite = link[0]

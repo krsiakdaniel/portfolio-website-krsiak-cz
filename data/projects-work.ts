@@ -4,21 +4,31 @@ import smartsuppWebThumb from '../public/images/projects-work/png/smartsupp-web-
 import smartsuppWeb1 from '../public/images/projects-work/png/smartsupp-web-1.png'
 import smartsuppWeb2 from '../public/images/projects-work/png/smartsupp-web-2.png'
 import smartsuppWeb3 from '../public/images/projects-work/png/smartsupp-web-3.png'
+import smartsuppWeb4 from '../public/images/projects-work/png/smartsupp-web-4.png'
 
 import smartsuppDashboardThumb from '../public/images/projects-work/png/smartsupp-dashboard-thumb.png'
 import smartsuppDashboard1 from '../public/images/projects-work/png/smartsupp-dashboard-1.png'
+import smartsuppDashboard2 from '../public/images/projects-work/png/smartsupp-dashboard-2.png'
+import smartsuppDashboard3 from '../public/images/projects-work/png/smartsupp-dashboard-3.png'
+import smartsuppDashboard4 from '../public/images/projects-work/png/smartsupp-dashboard-4.png'
+import smartsuppDashboard5 from '../public/images/projects-work/png/smartsupp-dashboard-5.png'
 
 import grouponThumb from '../public/images/projects-work/png/groupon-thumb.png'
 import groupon1 from '../public/images/projects-work/png/groupon-1.png'
+import groupon2 from '../public/images/projects-work/png/groupon-2.png'
 
 import komercniBankaThumb from '../public/images/projects-work/png/komercni-banka-thumb.png'
 import komercniBanka1 from '../public/images/projects-work/png/komercni-banka-1.png'
+import komercniBanka2 from '../public/images/projects-work/png/komercni-banka-2.png'
+import komercniBanka3 from '../public/images/projects-work/png/komercni-banka-3.png'
+import komercniBanka4 from '../public/images/projects-work/png/komercni-banka-4.png'
 
 export const projectsWork: Project[] = [
   {
     id: 1,
+    isFeatured: true,
     image: smartsuppWebThumb.src,
-    imageShowcase: [smartsuppWeb1.src, smartsuppWeb2.src, smartsuppWeb3.src],
+    imageShowcase: [smartsuppWeb1.src, smartsuppWeb2.src, smartsuppWeb3.src, smartsuppWeb4.src],
     title: '🚀 Smartsupp - SaaS company website',
     role: 'Front End Developer',
     description:
@@ -31,8 +41,15 @@ export const projectsWork: Project[] = [
   },
   {
     id: 2,
+    isFeatured: false,
     image: smartsuppDashboardThumb.src,
-    imageShowcase: [smartsuppDashboard1.src],
+    imageShowcase: [
+      smartsuppDashboard1.src,
+      smartsuppDashboard2.src,
+      smartsuppDashboard3.src,
+      smartsuppDashboard4.src,
+      smartsuppDashboard5.src,
+    ],
     title: '👨‍💻 Smartsupp - Customer care chat dashboard',
     role: 'React Developer',
     description:
@@ -45,8 +62,9 @@ export const projectsWork: Project[] = [
   },
   {
     id: 3,
+    isFeatured: false,
     image: komercniBankaThumb.src,
-    imageShowcase: [komercniBanka1.src],
+    imageShowcase: [komercniBanka1.src, komercniBanka2.src, komercniBanka3.src, komercniBanka4.src],
     title: '🏦 Komerční banka - Commerce Bank website',
     role: 'React Developer',
     description:
@@ -59,8 +77,9 @@ export const projectsWork: Project[] = [
   },
   {
     id: 4,
+    isFeatured: false,
     image: grouponThumb.src,
-    imageShowcase: [groupon1.src],
+    imageShowcase: [groupon1.src, groupon2.src],
     title: '🛒 Groupon - Online marketplace',
     role: 'QA Automation Team Leader',
     description:

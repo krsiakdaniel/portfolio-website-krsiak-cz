@@ -20,6 +20,7 @@ const ProjectsWork = () => {
               return (
                 <ProjectItem
                   key={item.id}
+                  isFeatured={item.isFeatured}
                   image={item.image}
                   title={item.title}
                   role={item.role}

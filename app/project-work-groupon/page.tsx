@@ -77,7 +77,9 @@ const ProjectWorkGroupon = () => {
             </div>
 
             <div className="mt-8">
-              <h3 className="pb-2 font-bold">My responsibility: 1.) Automation and testing scripts</h3>
+              <h3 className="pb-2 font-bold">
+                My responsibility: <span className="text-primary-500">1.) Automation and testing scripts</span>
+              </h3>
               <List>
                 <ListItem>Setting up automation, including Playwright for E2E.</ListItem>
                 <ListItem>Writing E2E tests in JavaScript and TypeScript.</ListItem>
@@ -88,7 +90,9 @@ const ProjectWorkGroupon = () => {
             </div>
 
             <div className="mt-8">
-              <h3 className="pb-2 font-bold">My responsibility: 2.) Team coordination:</h3>
+              <h3 className="pb-2 font-bold">
+                My responsibility: <span className="text-primary-500">2.) Team coordination</span>
+              </h3>
               <List>
                 <ListItem>Involved in hiring new SDET members for QA team.</ListItem>
                 <ListItem>Work across 4 teams.</ListItem>

@@ -12,6 +12,7 @@ import eshop1 from '../public/images/projects-personal/png/eshop-1.png'
 export const projectsPersonal: Project[] = [
   {
     id: 1,
+    isFeatured: false,
     image: krsiakThumb.src,
     imageShowcase: [krsiak1.src],
     title: '👨‍💻 Portfolio Website',
@@ -24,6 +25,7 @@ export const projectsPersonal: Project[] = [
   },
   {
     id: 2,
+    isFeatured: false,
     image: cryptomaniaThumb.src,
     imageShowcase: [cryptomania1.src],
     title: '💰 CryptoMania',
@@ -36,6 +38,7 @@ export const projectsPersonal: Project[] = [
   },
   {
     id: 3,
+    isFeatured: false,
     image: eshopThumb.src,
     imageShowcase: [eshop1.src],
     title: '🛒 eCommerce Website',

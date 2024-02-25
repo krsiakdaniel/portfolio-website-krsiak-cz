@@ -92,7 +92,7 @@ const ProjectWorkKomercniBanka = () => {
           <div className="mt-8">
             <div className="mt-4">
               {imageShowcase.map((image, index) => (
-                <Image key={index} src={image} alt={`smartsupp-web-${index + 1}`} width={1216} height={754} />
+                <Image key={index} src={image} alt={`smartsupp-web-${index + 1}`} width={1216} height={1334} />
               ))}
             </div>
           </div>

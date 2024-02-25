@@ -1,5 +1,6 @@
 export type Project = {
   id: number
+  isFeatured?: boolean | undefined
   image: string
   imageShowcase: string[]
   title: string

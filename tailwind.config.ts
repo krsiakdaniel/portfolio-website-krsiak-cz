@@ -33,6 +33,10 @@ const config: Config = {
       red: {
         500: '#C0392B',
       },
+      orange: {
+        100: '#ffedd5',
+        500: '#f97316',
+      },
       neutral: {
         900: '#111827',
         800: '#1F2937',
