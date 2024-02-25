@@ -20,8 +20,7 @@ export const projectsPersonal: Project[] = [
     mySkills: 'JavaScript · TypeScript · Next.js · Tailwind CSS',
     linkText: 'Read more →',
     link: [''],
-    customers: '',
-    linkProjectPage: '',
+    linkProjectPage: '/project-personal-krsiak',
   },
   {
     id: 2,
@@ -33,8 +32,7 @@ export const projectsPersonal: Project[] = [
     mySkills: 'JavaScript · TypeScript · React App · Chakra UI · CoinGecko API',
     linkText: 'Read more →',
     link: ['https://cryptomania-currency-prices.netlify.app/'],
-    customers: '',
-    linkProjectPage: '',
+    linkProjectPage: '/project-personal-cryptomania',
   },
   {
     id: 3,
@@ -46,7 +44,6 @@ export const projectsPersonal: Project[] = [
     mySkills: 'JavaScript · Vue.js · Nuxt.js · Vuetify',
     linkText: 'Read more →',
     link: ['https://ecommerce-vue-nuxt.onrender.com/'],
-    customers: '',
-    linkProjectPage: '',
+    linkProjectPage: '/project-personal-eshop',
   },
 ]

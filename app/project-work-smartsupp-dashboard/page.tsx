@@ -42,7 +42,7 @@ const WebsiteInformation = () => {
 const ProjectWorkSmartsuppDashboard = () => {
   return (
     <>
-      <div id="project-work-smartsupp-web">
+      <div id="project-work-smartsupp-dashboard">
         <div className="container mx-auto my-20">
           <div>
             <h1 className="md:text-display-lg text-display-md font-bold">{title}</h1>

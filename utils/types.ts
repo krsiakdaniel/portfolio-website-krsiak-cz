@@ -8,6 +8,6 @@ export type Project = {
   mySkills: string
   linkText: string
   link: string[]
-  customers: string
+  customers?: string
   linkProjectPage: string
 }
