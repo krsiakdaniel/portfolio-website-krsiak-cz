@@ -9,6 +9,7 @@ import smartsuppDashboardThumb from '../public/images/projects-work/png/smartsup
 import smartsuppDashboard1 from '../public/images/projects-work/png/smartsupp-dashboard-1.png'
 
 import grouponThumb from '../public/images/projects-work/png/groupon-thumb.png'
+import groupon1 from '../public/images/projects-work/png/groupon-1.png'
 
 import komercniBankaThumb from '../public/images/projects-work/png/komercni-banka-thumb.png'
 import komercniBanka1 from '../public/images/projects-work/png/komercni-banka-1.png'
@@ -63,7 +64,7 @@ export const projectsWork: Project[] = [
   {
     id: 4,
     image: grouponThumb.src,
-    imageShowcase: [image1.src, image2.src, image3.src],
+    imageShowcase: [groupon1.src],
     title: '🛒 Groupon - Online marketplace',
     role: 'QA Automation Team Leader',
     description:
