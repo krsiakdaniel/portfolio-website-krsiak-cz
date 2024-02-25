@@ -5,22 +5,37 @@ import gmail from '../public/icons/png/gmail.png'
 import linkedin from '../public/icons/png/linkedin.png'
 
 interface Contact {
-  emoji: string
-  text: string
+  image: string
+  heading: string
+  description: string
   href: string
+  linkText: string
 }
 
 const contacts: Contact[] = [
-  { emoji: '📱', text: '(+420) 734 496 308', href: 'tel:+420734496308' },
-  { emoji: '📧', text: 'krsiak.daniel@gmail.com', href: 'mailto:krsiak.daniel@gmail.com' },
   {
-    emoji: '💬',
-    text: 'LinkedIn →',
+    image: phone.src,
+    heading: 'Phone',
+    description: 'Time zone GMT+1',
+    href: 'tel:+420734496308',
+    linkText: '(+420) 734 496 308',
+  },
+  {
+    image: gmail.src,
+    heading: 'Eamil',
+    description: 'I read it daily',
+    href: 'mailto:krsiak.daniel@gmail.com',
+    linkText: 'krsiak.daniel@gmail.com',
+  },
+  {
+    image: linkedin.src,
+    heading: 'LinkedIn',
+    description: 'Easy and fast',
     href: 'https://www.linkedin.com/in/krsiakdaniel/',
+    linkText: 'Send me message',
   },
 ]
 
-// TODO: map contacts data
 const ContactMe = () => {
   return (
     <div className="container mx-auto">
@@ -32,57 +47,36 @@ const ContactMe = () => {
       </div>
       <div className="mb-20">
         <div className="flex flex-col lg:flex-row lg:space-x-10">
-          <div className="w-full max-w-3xl lg:max-w-sm bg-white border border-neutral-400 rounded-lg shadow mt-8">
-            <div className="flex justify-end px-4 pt-8"></div>
-            <div className="flex flex-col items-center pb-10">
-              <Image className="w-24 h-24 mb-3 rounded-full shadow-lg" src={phone} alt="phone" />
-              <h5 className="mb-1 text-xl font-medium text-gray-900 uppercase">Phone</h5>
-              <span className="text-sm text-gray-500 text-neutral-600">Time zone GMT+1</span>
-              <div className="flex mt-4 md:mt-6">
-                <a
-                  href="tel:+420734496308"
-                  target="_blank"
-                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-primary-500 rounded-lg hover:opacity-90 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  (+420) 734 496 308
-                </a>
+          {contacts.map((contact) => {
+            return (
+              <div
+                key={contact.heading}
+                className="w-full max-w-3xl lg:max-w-sm bg-white border border-neutral-400 rounded-lg shadow mt-8"
+              >
+                <div className="flex justify-end px-4 pt-8"></div>
+                <div className="flex flex-col items-center pb-10">
+                  <Image
+                    className="w-24 h-24 mb-3 rounded-full shadow-lg"
+                    src={contact.image}
+                    alt={contact.heading}
+                    width={128}
+                    height={128}
+                  />
+                  <h5 className="mb-1 text-xl font-medium text-gray-900 uppercase">{contact.heading}</h5>
+                  <span className="text-sm text-gray-500 text-neutral-600">{contact.description}</span>
+                  <div className="flex mt-4 md:mt-6">
+                    <a
+                      href={contact.href}
+                      target="_blank"
+                      className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-primary-500 rounded-lg hover:opacity-90 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    >
+                      {contact.linkText}
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="w-full max-w-3xl lg:max-w-sm bg-white border border-neutral-400 rounded-lg shadow mt-8">
-            <div className="flex justify-end px-4 pt-8"></div>
-            <div className="flex flex-col items-center pb-10">
-              <Image className="w-24 h-24 mb-3 rounded-full shadow-lg" src={gmail} alt="email" />
-              <h5 className="mb-1 text-xl font-medium text-gray-900 uppercase">Email</h5>
-              <span className="text-sm text-gray-500 text-neutral-600">I read it daily</span>
-              <div className="flex mt-4 md:mt-6">
-                <a
-                  href="mailto:krsiak.daniel@gmail.com"
-                  target="_blank"
-                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-primary-500 rounded-lg hover:opacity-90 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  krsiak.daniel@gmail.com
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="w-full max-w-3xl lg:max-w-sm bg-white border border-neutral-400 rounded-lg shadow mt-8">
-            <div className="flex justify-end px-4 pt-8"></div>
-            <div className="flex flex-col items-center pb-10">
-              <Image className="w-24 h-24 mb-3 rounded-full shadow-lg" src={linkedin} alt="linkedin" />
-              <h5 className="mb-1 text-xl font-medium text-gray-900 uppercase">LinkedIn</h5>
-              <span className="text-sm text-gray-500 text-neutral-600">Easy and fast</span>
-              <div className="flex mt-4 md:mt-6">
-                <a
-                  href="https://www.linkedin.com/in/krsiakdaniel/"
-                  target="_blank"
-                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-primary-500 rounded-lg hover:opacity-90 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Send me message
-                </a>
-              </div>
-            </div>
-          </div>
+            )
+          })}
         </div>
       </div>
     </div>
