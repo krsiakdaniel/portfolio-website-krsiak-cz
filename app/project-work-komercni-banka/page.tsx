@@ -6,14 +6,7 @@ import ListItem from '../../components/shared/ListItem'
 
 import { projectsWork } from '@/data/projects-work'
 
-// TODO: RESIZE IMAGES to be MAX on what is on the big screen, not bigger!
-// TODO: make images into JPEG?
-// TODO: add jobs description from linkedin
-// TODO: create a new page for each project - WORK and PERSONAL - with all the details
-// TODO: test and click all links on PROJECTS main page + subpages
-// TODO: take more screenshots for dashboard + KB, with dark mode browser
-
-const { title, role, description, mySkills, customers, link, imageShowcase } = projectsWork[0]
+const { title, role, description, mySkills, customers, link, imageShowcase } = projectsWork[2]
 const linkGoToWebsite = link[0]
 
 const WebsiteInformation = () => {
@@ -65,24 +58,33 @@ const ProjectWorkSmartsuppWeb = () => {
             <div className="mt-8">
               <h3 className="pb-2 font-bold">My job:</h3>
               <List>
-                <ListItem>I was responsible for the entire company’s FrontEnd and website presentation.</ListItem>
+                <ListItem>
+                  I worked for the 3rd biggest bank in the Czech Republic, Komerční banka, owned by Société Générale.
+                </ListItem>
+                <ListItem>I worked on a website that is used by 2,240,000 customers.</ListItem>
               </List>
             </div>
 
             <div className="mt-8">
-              <h3 className="pb-2 font-bold">Developed new website:</h3>
-              <List>
-                <ListItem>The main company website was built with PHP and JavaScript.</ListItem>
-              </List>
-            </div>
-
-            <div className="mt-8">
-              <h3 className="pb-2 font-bold">Created new documentation site:</h3>
+              <h3 className="pb-2 font-bold">Developed new features:</h3>
               <List>
                 <ListItem>
-                  I created a documentation site that was running on Jekyll, Markdown, and Shopify’s Liquid template
-                  language, and later the site was moved to VuePress.
+                  I was tasked with creating a search page, with filters and results pagination for the bank branches
+                  and ATM locations and detail sub-pages.
                 </ListItem>
+                <ListItem>
+                  My task was to provide an easy user experience for all customers, using the Geolocation API and the
+                  Google Places Autocomplete API, so they could find their nearest bank branch or ATM.
+                </ListItem>
+                <ListItem>I created an Exchange Rates page with rates detail pages.</ListItem>
+              </List>
+            </div>
+
+            <div className="mt-8">
+              <h3 className="pb-2 font-bold">Responsive web design:</h3>
+              <List>
+                <ListItem>I was responsible for the responsive aspects of the web as well.</ListItem>
+                <ListItem>Making sure it works well for users across desktop, tablet, and mobile platforms.</ListItem>
               </List>
             </div>
           </div>

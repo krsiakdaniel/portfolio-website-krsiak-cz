@@ -11,6 +11,7 @@ import smartsuppDashboard1 from '../public/images/projects-work/png/smartsupp-da
 import grouponThumb from '../public/images/projects-work/png/groupon-thumb.png'
 
 import komercniBankaThumb from '../public/images/projects-work/png/komercni-banka-thumb.png'
+import komercniBanka1 from '../public/images/projects-work/png/komercni-banka-1.png'
 
 import image1 from '../public/images/projects-work/png/smartsupp-web-1.png'
 import image2 from '../public/images/projects-work/png/smartsupp-web-2.png'
@@ -48,7 +49,7 @@ export const projectsWork: Project[] = [
   {
     id: 3,
     image: komercniBankaThumb.src,
-    imageShowcase: [image1.src, image2.src, image3.src],
+    imageShowcase: [komercniBanka1.src],
     title: '🏦 Komerční banka - Commerce Bank website',
     role: 'React Developer',
     description:

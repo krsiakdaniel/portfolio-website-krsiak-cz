@@ -5,8 +5,8 @@ type Props = {
 const ListItem = ({ children }: Props) => {
   return (
     <>
-      <li className="flex space-x-2 rtl:space-x-reverse items-start xl:items-center">
-        <div className="pt-1 xl:pt-0">
+      <li className="flex space-x-2 rtl:space-x-reverse items-start">
+        <div className="pt-1">
           <svg
             className="flex-shrink-0 w-3.5 h-3.5 text-primary-500"
             aria-hidden="true"

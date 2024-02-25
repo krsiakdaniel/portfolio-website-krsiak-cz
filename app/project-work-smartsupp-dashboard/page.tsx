@@ -54,53 +54,55 @@ const ProjectWorkSmartsuppWeb = () => {
 
           <WebsiteInformation />
 
-          <div className="mt-8">
-            <h3 className="pb-2 font-bold">My job:</h3>
-            <List>
-              <ListItem>I worked for a company that creates a chat solution for customer care teams.</ListItem>
-              <ListItem>
-                The product is a chat box for e-commerce and regular websites, and integrates with an email inbox and
-                Facebook Messenger, all-in-one messaging platform.
-              </ListItem>
-            </List>
-          </div>
+          <div>
+            <div className="mt-8">
+              <h3 className="pb-2 font-bold">My job:</h3>
+              <List>
+                <ListItem>I worked for a company that creates a chat solution for customer care teams.</ListItem>
+                <ListItem>
+                  The product is a chat box for e-commerce and regular websites, and integrates with an email inbox and
+                  Facebook Messenger, all-in-one messaging platform.
+                </ListItem>
+              </List>
+            </div>
 
-          <div className="mt-8">
-            <h3 className="pb-2 font-bold">Developed new features:</h3>
-            <List>
-              <ListItem>
-                I participated in the implementation of new features for the chat application dashboard.
-              </ListItem>
-              <ListItem>
-                Ranging from new chat features to working on a chatbot page and creating graphs for statistics.
-              </ListItem>
-              <ListItem>I also updated the old JavaScript codebase to a modern one using REACT with hooks.</ListItem>
-            </List>
-          </div>
+            <div className="mt-8">
+              <h3 className="pb-2 font-bold">Developed new features:</h3>
+              <List>
+                <ListItem>
+                  I participated in the implementation of new features for the chat application dashboard.
+                </ListItem>
+                <ListItem>
+                  Ranging from new chat features to working on a chatbot page and creating graphs for statistics.
+                </ListItem>
+                <ListItem>I also updated the old JavaScript codebase to a modern one using REACT with hooks.</ListItem>
+              </List>
+            </div>
 
-          <div className="mt-8">
-            <h3 className="pb-2 font-bold">Responsive web design:</h3>
-            <List>
-              <ListItem>
-                A crucial aspect of my role was to make sure the application dashboard was optimized for various devices
-                and screen sizes.
-              </ListItem>
-              <ListItem>
-                I implemented the latest responsive design principles to guarantee a consistent and enjoyable user
-                experience across desktop, tablet, and mobile platforms.
-              </ListItem>
-            </List>
-          </div>
+            <div className="mt-8">
+              <h3 className="pb-2 font-bold">Responsive web design:</h3>
+              <List>
+                <ListItem>
+                  A crucial aspect of my role was to make sure the application dashboard was optimized for various
+                  devices and screen sizes.
+                </ListItem>
+                <ListItem>
+                  I implemented the latest responsive design principles to guarantee a consistent and enjoyable user
+                  experience across desktop, tablet, and mobile platforms.
+                </ListItem>
+              </List>
+            </div>
 
-          <div className="mt-8">
-            <h3 className="pb-2 font-bold">User Interface enhancements:</h3>
-            <List>
-              <ListItem>I took charge of improving the dashboard User Interface.</ListItem>
-              <ListItem>
-                This included all visual elements, unifying the layout and colors for the entire application, so the
-                user experience was seamless and engaging for customers.
-              </ListItem>
-            </List>
+            <div className="mt-8">
+              <h3 className="pb-2 font-bold">User Interface enhancements:</h3>
+              <List>
+                <ListItem>I took charge of improving the dashboard User Interface.</ListItem>
+                <ListItem>
+                  This included all visual elements, unifying the layout and colors for the entire application, so the
+                  user experience was seamless and engaging for customers.
+                </ListItem>
+              </List>
+            </div>
           </div>
 
           <div className="mt-8">
