@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { LINK_LINKEDIN } from '../utils/constants'
+import { LINK_LINKEDIN } from '@/utils/constants'
 
 const Header = () => {
   return (

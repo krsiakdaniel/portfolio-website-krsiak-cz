@@ -1,7 +1,7 @@
 import { projectsPersonal } from '@/data/projects-personal'
 
-import ProjectItem from './ProjectItem'
-import ProjectsLayout from './ProjectsLayout'
+import ProjectItem from '@/components/projects/ProjectItem'
+import ProjectsLayout from '@/components/projects/ProjectsLayout'
 
 const ProjectsPersonal = () => {
   return (

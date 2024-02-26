@@ -1,4 +1,4 @@
-import Button from './Button'
+import Button from '@/components/shared/Button'
 
 import {
   EMAIL_HREF,
@@ -8,7 +8,7 @@ import {
   LINK_RESUME,
   PHONE_HREF,
   PHONE_TEXT,
-} from '../utils/constants'
+} from '@/utils/constants'
 
 const Hero = () => {
   return (

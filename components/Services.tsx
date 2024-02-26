@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-import Code from '../public/images/service-icons/code.svg'
-import Responsive from '../public/images/service-icons/responsive.svg'
-import UI from '../public/images/service-icons/ui.svg'
+import Code from '@/public/images/service-icons/code.svg'
+import Responsive from '@/public/images/service-icons/responsive.svg'
+import UI from '@/public/images/service-icons/ui.svg'
 
 const Services = () => {
   return (

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import ProjectInformation from '@/components/ProjectInformation'
+import ProjectInformation from '@/components/projects/ProjectInformation'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 import { projectsWork } from '@/data/projects-work'
