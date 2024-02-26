@@ -59,11 +59,9 @@ const ProjectItem = ({ isFeatured, image, title, role, description, mySkills, cu
         </div>
 
         {isFeatured && (
-          <div>
-            <p className="text-display-2xl absolute -right-4 lg:-right-8 -top-7 z-10">
-              <Image src={starIcon64} width={64} height={64} alt="star" />
-            </p>
-          </div>
+          <p className="text-display-2xl absolute -right-4 lg:-right-8 -top-7 z-10">
+            <Image src={starIcon64} width={64} height={64} alt="star" />
+          </p>
         )}
         <div className="flex lg:justify-end mt-8 lg:mt-0 lg:w-1/2">
           <Link href={linkProjectPage}>
