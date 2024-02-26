@@ -1,10 +1,10 @@
-import Skills from '@/components/Skills'
-import Hero from '@/components/Hero'
-import Services from '@/components/Services'
 import About from '@/components/About'
-import ProjectsWork from '@/components/ProjectsWork'
-import ProjectsPersonal from '@/components/ProjectsPersonal'
 import ContactMe from '@/components/ContactMe'
+import Hero from '@/components/Hero'
+import ProjectsPersonal from '@/components/ProjectsPersonal'
+import ProjectsWork from '@/components/ProjectsWork'
+import Services from '@/components/Services'
+import Skills from '@/components/Skills'
 
 const Page = () => {
   return (

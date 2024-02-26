@@ -1,8 +1,6 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import starIcon32 from '@/public/icons/icon-32x32.png'
 import starIcon64 from '@/public/icons/icon-64x64.png'
 
 type Props = {

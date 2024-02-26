@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import krsiak from '../public/images/krsiak.jpg'
 

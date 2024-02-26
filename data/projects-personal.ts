@@ -1,22 +1,22 @@
 import { Project } from '@/utils/types'
 
-import cryptomaniaThumb from '../public/images/projects-personal/png/cryptomania-thumb.png'
 import cryptomania1 from '../public/images/projects-personal/png/cryptomania-1.png'
 import cryptomania2 from '../public/images/projects-personal/png/cryptomania-2.png'
 import cryptomania3 from '../public/images/projects-personal/png/cryptomania-3.png'
 import cryptomania4 from '../public/images/projects-personal/png/cryptomania-4.png'
 import cryptomania5 from '../public/images/projects-personal/png/cryptomania-5.png'
 import cryptomania6 from '../public/images/projects-personal/png/cryptomania-6.png'
+import cryptomaniaThumb from '../public/images/projects-personal/png/cryptomania-thumb.png'
 
-import krsiakThumb from '../public/images/projects-personal/png/krsiak-thumb.png'
 import krsiak1 from '../public/images/projects-personal/png/krsiak-1.png'
 import krsiak2 from '../public/images/projects-personal/png/krsiak-2.png'
+import krsiakThumb from '../public/images/projects-personal/png/krsiak-thumb.png'
 
-import eshopThumb from '../public/images/projects-personal/png/eshop-thumb.png'
 import eshop1 from '../public/images/projects-personal/png/eshop-1.png'
 import eshop2 from '../public/images/projects-personal/png/eshop-2.png'
 import eshop3 from '../public/images/projects-personal/png/eshop-3.png'
 import eshop4 from '../public/images/projects-personal/png/eshop-4.png'
+import eshopThumb from '../public/images/projects-personal/png/eshop-thumb.png'
 
 export const projectsPersonal: Project[] = [
   {

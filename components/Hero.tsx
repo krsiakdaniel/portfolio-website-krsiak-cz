@@ -1,14 +1,13 @@
-import React from 'react'
 import Button from './Button'
 
 import {
-  PHONE_HREF,
-  PHONE_TEXT,
   EMAIL_HREF,
   EMAIL_TEXT,
-  LINK_LINKEDIN,
   LINK_GITHUB,
+  LINK_LINKEDIN,
   LINK_RESUME,
+  PHONE_HREF,
+  PHONE_TEXT,
 } from '../utils/constants'
 
 const Hero = () => {

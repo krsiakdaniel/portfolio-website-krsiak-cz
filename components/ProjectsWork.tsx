@@ -1,9 +1,7 @@
-import React from 'react'
-
 import { projectsWork } from '@/data/projects-work'
 
-import ProjectsLayout from './ProjectsLayout'
 import ProjectItem from './ProjectItem'
+import ProjectsLayout from './ProjectsLayout'
 
 const ProjectsWork = () => {
   return (
