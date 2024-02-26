@@ -4,6 +4,8 @@ import phone from '../public/icons/png/phone.png'
 import gmail from '../public/icons/png/gmail.png'
 import linkedin from '../public/icons/png/linkedin.png'
 
+import { PHONE_HREF, PHONE_TEXT, EMAIL_HREF, EMAIL_TEXT, LINK_LINKEDIN } from '../utils/constants'
+
 interface Contact {
   image: string
   heading: string
@@ -17,21 +19,21 @@ const contacts: Contact[] = [
     image: phone.src,
     heading: 'Phone',
     description: 'Time zone GMT+1',
-    href: 'tel:+420734496308',
-    linkText: '(+420) 734 496 308',
+    href: PHONE_HREF,
+    linkText: PHONE_TEXT,
   },
   {
     image: gmail.src,
-    heading: 'Eamil',
+    heading: 'Email',
     description: 'I read it daily',
-    href: 'mailto:krsiak.daniel@gmail.com',
-    linkText: 'krsiak.daniel@gmail.com',
+    href: EMAIL_HREF,
+    linkText: EMAIL_TEXT,
   },
   {
     image: linkedin.src,
     heading: 'LinkedIn',
     description: 'Easy and fast',
-    href: 'https://www.linkedin.com/in/krsiakdaniel/',
+    href: LINK_LINKEDIN,
     linkText: 'Send me message',
   },
 ]

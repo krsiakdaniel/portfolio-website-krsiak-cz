@@ -1,9 +1,15 @@
 import React from 'react'
 import Button from './Button'
 
-const LINK_LINKEDIN = 'https://www.linkedin.com/in/krsiakdaniel/'
-const LINK_GITHUB = 'https://github.com/krsiakdaniel/'
-const LINK_RESUME = 'https://drive.google.com/file/d/1x0LWu8I_3aqW34TJbxkciqNGX642bdvF/view?usp=sharing'
+import {
+  PHONE_HREF,
+  PHONE_TEXT,
+  EMAIL_HREF,
+  EMAIL_TEXT,
+  LINK_LINKEDIN,
+  LINK_GITHUB,
+  LINK_RESUME,
+} from '../utils/constants'
 
 const Hero = () => {
   return (
@@ -18,14 +24,25 @@ const Hero = () => {
             <h2 className="lg:text-display-2xl md:text-display-xl text-display-md">
               <span className="font-semibold">React Developer</span>
             </h2>
-            <p className="md:text-body-xl text-body-lg pb-1 pt-4 font-medium">
-              Hi 👋 I am React Developer based in Brno, Czech Republic 🇨🇿
-            </p>
-            <p className="md:text-body-xl text-body-lg pb-8">
-              I enjoy working with <span className="text-primary-500 font-bold">JavaScript</span>,{' '}
-              <span className="text-primary-500 font-bold">TypeScript</span>, and{' '}
-              <span className="text-primary-500 font-bold">React</span>.
-            </p>
+            <div>
+              <p className="md:text-body-xl text-body-lg pb-1 pt-4 font-medium">
+                Hi 👋 I am React Developer based in Brno, Czech Republic 🇨🇿
+              </p>
+              <p className="md:text-body-xl text-body-lg mb-4">
+                I enjoy working with <span className="text-primary-500 font-bold">JavaScript</span>,{' '}
+                <span className="text-primary-500 font-bold">TypeScript</span>, and{' '}
+                <span className="text-primary-500 font-bold">React</span>.
+              </p>
+            </div>
+            <div className="mb-6 text-neutral-500">
+              <a href={PHONE_HREF} className="font-semibold hover:underline hover:text-primary-500">
+                {PHONE_TEXT}
+              </a>{' '}
+              |{' '}
+              <a href={EMAIL_HREF} className="font-semibold hover:underline hover:text-primary-500">
+                {EMAIL_TEXT}
+              </a>
+            </div>
             <div className="flex flex-col sm:flex-row justify-center items-center">
               <div className="flex mb-4 sm:mr-4 sm:mb-0">
                 <Button label="LINKEDIN" link={LINK_LINKEDIN} size="lg" />

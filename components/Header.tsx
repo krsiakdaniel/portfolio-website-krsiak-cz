@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
+import { LINK_LINKEDIN } from '../utils/constants'
+
 const Header = () => {
   return (
     <header className="sticky top-0 bg-white z-20 border-b border-neutral-400">
@@ -16,7 +18,7 @@ const Header = () => {
           <div className="md:flex md:flex-row md:gap-6">
             <div className="md:flex flex-row gap-6 items-center">
               <Link
-                href="https://www.linkedin.com/in/krsiakdaniel/"
+                href={LINK_LINKEDIN}
                 className="text-body-md font-bold uppercase text-neutral-700 hover:text-primary-500 px-4 cursor-pointer"
               >
                 LinkedIn →
