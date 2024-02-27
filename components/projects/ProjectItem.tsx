@@ -8,6 +8,7 @@ type Props = {
   image: string
   title: string
   role: string
+  years?: string
   description: string
   mySkills: string
   linkText: string
@@ -23,7 +24,17 @@ const getFeaturedColors = (isFeatured: boolean) => {
   return 'bg-neutral-50 border-neutral-400'
 }
 
-const ProjectItem = ({ isFeatured, image, title, role, description, mySkills, customers, linkProjectPage }: Props) => {
+const ProjectItem = ({
+  isFeatured,
+  image,
+  title,
+  role,
+  years,
+  description,
+  mySkills,
+  customers,
+  linkProjectPage,
+}: Props) => {
   return (
     <>
       <div
@@ -32,7 +43,13 @@ const ProjectItem = ({ isFeatured, image, title, role, description, mySkills, cu
         <div className="flex flex-col lg:w-1/2">
           <div>
             <h4 className="text-display-xs font-semibold">{title}</h4>
-            <p className="text-body-lg font-semibold text-primary-500">{role}</p>
+            <p className="text-body-lg font-semibold text-primary-500">
+              {role}{' '}
+              <small className="text-neutral-600">
+                {years && '· '}
+                {years}
+              </small>
+            </p>
           </div>
 
           <div className="mt-4">

@@ -23,25 +23,13 @@ import komercniBanka3 from '@/public/images/projects-work/png/komercni-banka-3.p
 import komercniBanka4 from '@/public/images/projects-work/png/komercni-banka-4.png'
 import komercniBankaThumb from '@/public/images/projects-work/png/komercni-banka-thumb.png'
 
+// TODO: add Smartsupp setup team QA and Cypress
+// TODO: add Moravia IT 1 year team leader on Windows localization
+
 export const projectsWork: Project[] = [
   {
     id: 1,
     isFeatured: true,
-    image: smartsuppWebThumb.src,
-    imageShowcase: [smartsuppWeb1.src, smartsuppWeb2.src, smartsuppWeb3.src, smartsuppWeb4.src],
-    title: '🚀 Smartsupp - SaaS company website',
-    role: 'Front End Developer',
-    description:
-      'I created the company website. I also worked closely with UX on design decisions and new color scheme.',
-    mySkills: 'JavaScript · PHP · Responsive Web Design · SASS · BEM',
-    linkText: 'Read more →',
-    link: ['https://www.smartsupp.com/'],
-    customers: '100 000+',
-    linkProjectPage: '/project-work-smartsupp-web',
-  },
-  {
-    id: 2,
-    isFeatured: false,
     image: smartsuppDashboardThumb.src,
     imageShowcase: [
       smartsuppDashboard1.src,
@@ -50,8 +38,9 @@ export const projectsWork: Project[] = [
       smartsuppDashboard4.src,
       smartsuppDashboard5.src,
     ],
-    title: '👨‍💻 Smartsupp - Customer care chat dashboard',
+    title: '👨‍💻 Smartsupp - Customer Care Chat Dashboard',
     role: 'React Developer',
+    years: '3 years 2 months',
     description:
       'I worked on the customer care chat dashboard. I also redesigned completely settings of the application.',
     mySkills: 'React · JavaScript · TypeScript · Redux · Chakra UI · Adobe XD',
@@ -61,12 +50,29 @@ export const projectsWork: Project[] = [
     linkProjectPage: '/project-work-smartsupp-dashboard',
   },
   {
+    id: 2,
+    isFeatured: false,
+    image: smartsuppWebThumb.src,
+    imageShowcase: [smartsuppWeb1.src, smartsuppWeb2.src, smartsuppWeb3.src, smartsuppWeb4.src],
+    title: '🚀 Smartsupp - SaaS Company Website',
+    role: 'Front End Developer',
+    years: '1 year',
+    description:
+      'I created the company website. I also worked closely with UX on design decisions and new color scheme.',
+    mySkills: 'JavaScript · PHP · Responsive Web Design · SASS · BEM',
+    linkText: 'Read more →',
+    link: ['https://www.smartsupp.com/'],
+    customers: '100 000+',
+    linkProjectPage: '/project-work-smartsupp-web',
+  },
+  {
     id: 3,
     isFeatured: false,
     image: komercniBankaThumb.src,
     imageShowcase: [komercniBanka1.src, komercniBanka2.src, komercniBanka3.src, komercniBanka4.src],
-    title: '🏦 Komerční banka - Commerce Bank website',
+    title: '🏦 Komerční banka - Commerce Bank Website',
     role: 'React Developer',
+    years: '10 months',
     description:
       'I created search page for ATM and branches, with detail pages. And also Exchange rates page with details for each currency.',
     mySkills: 'React · JavaScript · TypeScript · Tailwind CSS · Figma · Kentico',
@@ -80,8 +86,9 @@ export const projectsWork: Project[] = [
     isFeatured: false,
     image: grouponThumb.src,
     imageShowcase: [groupon1.src, groupon2.src],
-    title: '🛒 Groupon - Online marketplace',
+    title: '🛒 Groupon - Online Marketplace',
     role: 'QA Automation Team Leader',
+    years: '4 months',
     description:
       'I was responsible QA processes, hiring and managing QA team, creating test plans, test cases, and testing the website.',
     mySkills: 'JavaScript · TypeScript · React · Next.js · Playwright · Figma · Jira',

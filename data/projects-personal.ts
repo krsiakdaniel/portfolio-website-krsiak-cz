@@ -21,7 +21,7 @@ import eshopThumb from '@/public/images/projects-personal/png/eshop-thumb.png'
 export const projectsPersonal: Project[] = [
   {
     id: 1,
-    isFeatured: false,
+    isFeatured: true,
     image: krsiakThumb.src,
     imageShowcase: [krsiak1.src, krsiak2.src],
     title: '👨‍💻 Portfolio Website',
@@ -29,12 +29,13 @@ export const projectsPersonal: Project[] = [
     description: 'My personal portfolio website to showcase my work and skills.',
     mySkills: 'JavaScript · TypeScript · Next.js · Tailwind CSS',
     linkText: 'Read more →',
-    link: [''],
+    link: ['https://krsiak.cz/'],
+    linkGitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
     linkProjectPage: '/project-personal-krsiak',
   },
   {
     id: 2,
-    isFeatured: true,
+    isFeatured: false,
     image: cryptomaniaThumb.src,
     imageShowcase: [
       cryptomania1.src,
@@ -50,6 +51,7 @@ export const projectsPersonal: Project[] = [
     mySkills: 'JavaScript · TypeScript · React App · Chakra UI · CoinGecko API',
     linkText: 'Read more →',
     link: ['https://cryptomania-currency-prices.netlify.app/'],
+    linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
     linkProjectPage: '/project-personal-cryptomania',
   },
   {
@@ -63,6 +65,7 @@ export const projectsPersonal: Project[] = [
     mySkills: 'JavaScript · Vue.js · Nuxt.js · Vuetify',
     linkText: 'Read more →',
     link: ['https://ecommerce-vue-nuxt.onrender.com/'],
+    linkGitHub: 'https://github.com/krsiakdaniel/ecommerce-website-vuejs-nuxtjs-vuetify',
     linkProjectPage: '/project-personal-eshop',
   },
 ]

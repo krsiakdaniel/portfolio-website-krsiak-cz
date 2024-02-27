@@ -6,7 +6,7 @@ import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 import { projectsWork } from '@/data/projects-work'
 
-const { title, role, description, mySkills, customers, link, imageShowcase } = projectsWork[0]
+const { title, role, years, description, mySkills, customers, link, imageShowcase } = projectsWork[1]
 const linkGoToWebsite = link[0]
 
 const ProjectWorkSmartsuppWeb = () => {
@@ -16,7 +16,9 @@ const ProjectWorkSmartsuppWeb = () => {
         <div className="container mx-auto my-20">
           <div>
             <h1 className="md:text-display-lg text-display-md font-bold">{title}</h1>
-            <h2 className="text-display-xs font-semibold text-primary-500">{role}</h2>
+            <h2 className="text-display-xs font-semibold text-primary-500">
+              {role} <small className="text-neutral-600 text-body-md">{`· ${years}`}</small>
+            </h2>
             <Link href="/#projects-work" className="text-neutral-500 mb-8">
               ← Go back
             </Link>

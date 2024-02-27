@@ -22,6 +22,7 @@ const ProjectsWork = () => {
                   image={item.image}
                   title={item.title}
                   role={item.role}
+                  years={item.years}
                   description={item.description}
                   mySkills={item.mySkills}
                   linkProjectPage={item.linkProjectPage}
