@@ -9,7 +9,7 @@ export type Project = {
   role: string
   years?: string
   description: string
-  mySkills: string
+  mySkills: string[]
   linkText: string
   links: LinkItem[]
   linkGitHub?: string

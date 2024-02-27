@@ -4,7 +4,7 @@ import { LinkItem } from '@/utils/types'
 
 type Props = {
   description: string
-  mySkills: string
+  mySkills: string[]
   customers?: string | undefined
   links: LinkItem[]
   linkGitHub?: string
@@ -24,7 +24,15 @@ const ProjectInformation = ({ description, mySkills, customers, links, linkGitHu
         <h3 className="pb-2 font-bold">Information:</h3>
         <List>
           <ListItem>
-            My skills: <span className="text-primary-500">{mySkills}</span>
+            My skills:{' '}
+            {mySkills.map((skill, index) => (
+              <span
+                key={index}
+                className="mr-1 border font-medium bg-primary-100 text-primary-500 text-body-sm px-2.5 py-0.5 rounded"
+              >
+                {skill}
+              </span>
+            ))}
           </ListItem>
           {customers && (
             <ListItem>

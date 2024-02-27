@@ -10,7 +10,7 @@ type Props = {
   role: string
   years?: string
   description: string
-  mySkills: string
+  mySkills: string[]
   customers: string | undefined
   linkText: string
   linkProjectPage: string
@@ -56,7 +56,12 @@ const ProjectItem = ({
           </div>
 
           <div className="mt-4">
-            <p className="text-body-sm text-primary-500">{mySkills}</p>
+            {mySkills.map((skill, index) => (
+              <span key={index} className="text-body-sm text-primary-500">
+                {skill}
+                {index < mySkills.length - 1 && <span> · </span>}
+              </span>
+            ))}
             {customers && (
               <p className="text-body-sm">
                 <span className="text-neutral-500">Customers: {customers}</span>
