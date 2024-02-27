@@ -32,9 +32,9 @@ const About = () => {
   ]
 
   const roles: Role[] = [
-    { count: '10', label: 'FRONT END EXPERIENCE' },
-    { count: '4', label: 'REACT DEVELOPER' },
-    { count: '3', label: 'QA TEAM LEADER' },
+    { years: '10', label: 'FRONT END EXPERIENCE' },
+    { years: '4', label: 'REACT DEVELOPER' },
+    { years: '2', label: 'QA TEAM LEADER' },
   ]
 
   return (
@@ -81,7 +81,7 @@ const About = () => {
                     className="flex flex-col items-center sm:items-start self-stretch gap-2 pb-4 border-b border-solid border-neutral-300 last:border-none last:pb-0"
                   >
                     <h4 className="md:text-display-lg text-display-md font-semibold">
-                      <span className="text-primary-500">{item.count}</span> years
+                      <span className="text-primary-500">{item.years}</span> years
                     </h4>
                     <p className="text-body-sm font-semibold tracking-2 text-neutral-500">{item.label}</p>
                   </div>
