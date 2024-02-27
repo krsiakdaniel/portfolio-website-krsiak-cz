@@ -7,8 +7,7 @@ import ListItem from '@/components/shared/ListItem'
 import { projectsPersonal } from '@/data/projects-personal'
 
 const ProjectPersonalKrsiak = () => {
-  const { title, role, description, mySkills, link, linkGitHub, imageShowcase } = projectsPersonal[0]
-  const linkGoToWebsite = link[0]
+  const { title, role, description, mySkills, links, linkGitHub, imageShowcase } = projectsPersonal[0]
 
   return (
     <>
@@ -22,12 +21,7 @@ const ProjectPersonalKrsiak = () => {
             </Link>
           </div>
 
-          <ProjectInformation
-            description={description}
-            mySkills={mySkills}
-            linkGoToWebsite={linkGoToWebsite}
-            linkGitHub={linkGitHub}
-          />
+          <ProjectInformation description={description} mySkills={mySkills} links={links} linkGitHub={linkGitHub} />
 
           <div>
             <div className="mt-8">

@@ -1,3 +1,5 @@
+export type LinkItem = { urlText: string; url: string }
+
 export type Project = {
   id: number
   isFeatured?: boolean | undefined
@@ -9,7 +11,7 @@ export type Project = {
   description: string
   mySkills: string
   linkText: string
-  link: string[]
+  links: LinkItem[]
   linkGitHub?: string
   customers?: string
   linkProjectPage: string

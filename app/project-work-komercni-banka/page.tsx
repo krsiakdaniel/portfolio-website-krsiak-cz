@@ -5,11 +5,11 @@ import ProjectInformation from '@/components/projects/ProjectInformation'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 import { projectsWork } from '@/data/projects-work'
-
-const { title, role, years, description, mySkills, customers, link, imageShowcase } = projectsWork[2]
-const linkGoToWebsite = link[0]
+import link from 'next/link'
 
 const ProjectWorkKomercniBanka = () => {
+  const { title, role, years, description, mySkills, customers, links, imageShowcase } = projectsWork[2]
+
   return (
     <>
       <div id="project-work-komercni-banka">
@@ -24,12 +24,7 @@ const ProjectWorkKomercniBanka = () => {
             </Link>
           </div>
 
-          <ProjectInformation
-            description={description}
-            mySkills={mySkills}
-            customers={customers}
-            linkGoToWebsite={linkGoToWebsite}
-          />
+          <ProjectInformation description={description} mySkills={mySkills} customers={customers} links={links} />
 
           <div>
             <div className="mt-8">

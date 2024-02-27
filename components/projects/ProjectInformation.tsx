@@ -1,15 +1,16 @@
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
+import { LinkItem } from '@/utils/types'
 
 type Props = {
   description: string
   mySkills: string
   customers?: string | undefined
-  linkGoToWebsite: string
+  links: LinkItem[]
   linkGitHub?: string
 }
 
-const ProjectInformation = ({ description, mySkills, customers, linkGoToWebsite, linkGitHub }: Props) => {
+const ProjectInformation = ({ description, mySkills, customers, links, linkGitHub }: Props) => {
   return (
     <>
       <div className="flex flex-col mt-8">
@@ -27,18 +28,30 @@ const ProjectInformation = ({ description, mySkills, customers, linkGoToWebsite,
               Company customers: <span className="text-neutral-500">{customers}</span>
             </ListItem>
           )}
-          <ListItem>
-            <span className="leading-tight">
-              <a href={linkGoToWebsite} target="_blank" className="underline hover:no-underline text-primary-500">
-                Go to website →
-              </a>
-            </span>
-          </ListItem>
+        </List>
+      </div>
+
+      <div className="mt-8">
+        <h3 className="pb-2 font-bold">Links:</h3>
+        <List>
+          {links &&
+            links.map((link, index) => (
+              <div key={index}>
+                <ListItem>
+                  <span className="leading-tight">
+                    <a href={link.url} target="_blank" className="underline hover:no-underline text-primary-500">
+                      {link.urlText}
+                    </a>
+                  </span>
+                </ListItem>
+              </div>
+            ))}
+
           {linkGitHub && (
             <ListItem>
               <span className="leading-tight">
                 <a href={linkGitHub} target="_blank" className="underline hover:no-underline text-primary-500">
-                  GitHub repo →
+                  GitHub repository →
                 </a>
               </span>
             </ListItem>

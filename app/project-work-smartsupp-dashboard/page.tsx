@@ -6,10 +6,9 @@ import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 import { projectsWork } from '@/data/projects-work'
 
-const { title, role, years, description, mySkills, customers, link, imageShowcase } = projectsWork[0]
-const linkGoToWebsite = link[0]
-
 const ProjectWorkSmartsuppDashboard = () => {
+  const { title, role, years, description, mySkills, customers, links, imageShowcase } = projectsWork[0]
+
   return (
     <>
       <div id="project-work-smartsupp-dashboard">
@@ -24,12 +23,7 @@ const ProjectWorkSmartsuppDashboard = () => {
             </Link>
           </div>
 
-          <ProjectInformation
-            description={description}
-            mySkills={mySkills}
-            customers={customers}
-            linkGoToWebsite={linkGoToWebsite}
-          />
+          <ProjectInformation description={description} mySkills={mySkills} customers={customers} links={links} />
 
           <div>
             <div className="mt-8">
