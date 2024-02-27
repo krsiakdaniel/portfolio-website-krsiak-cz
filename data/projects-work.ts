@@ -23,9 +23,6 @@ import komercniBanka3 from '@/public/images/projects-work/png/komercni-banka-3.p
 import komercniBanka4 from '@/public/images/projects-work/png/komercni-banka-4.png'
 import komercniBankaThumb from '@/public/images/projects-work/png/komercni-banka-thumb.png'
 
-// TODO: add Smartsupp setup team QA and Cypress
-// TODO: add Moravia IT 1 year team leader on Windows localization
-
 export const projectsWork: Project[] = [
   {
     id: 1,
