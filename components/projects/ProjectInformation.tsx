@@ -11,6 +11,9 @@ type Props = {
 }
 
 const ProjectInformation = ({ description, mySkills, customers, links, linkGitHub }: Props) => {
+  const hasMoreLinks = links.length > 1
+  const hasGithub = linkGitHub ? true : false
+
   return (
     <>
       <div className="flex flex-col mt-8">
@@ -32,7 +35,7 @@ const ProjectInformation = ({ description, mySkills, customers, links, linkGitHu
       </div>
 
       <div className="mt-8">
-        <h3 className="pb-2 font-bold">Links:</h3>
+        <h3 className="pb-2 font-bold">{hasMoreLinks || hasGithub ? 'Links:' : 'Link:'}</h3>
         <List>
           {links &&
             links.map((link, index) => (
