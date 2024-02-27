@@ -25,10 +25,9 @@ const ProjectsWork = () => {
                   years={item.years}
                   description={item.description}
                   mySkills={item.mySkills}
-                  linkProjectPage={item.linkProjectPage}
-                  link={item.link}
-                  linkText={item.linkText}
                   customers={item.customers}
+                  linkText={item.linkText}
+                  linkProjectPage={item.linkProjectPage}
                 />
               )
             })}

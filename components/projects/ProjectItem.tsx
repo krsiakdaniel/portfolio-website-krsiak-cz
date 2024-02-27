@@ -11,9 +11,8 @@ type Props = {
   years?: string
   description: string
   mySkills: string
-  linkText: string
-  link: string[]
   customers: string | undefined
+  linkText: string
   linkProjectPage: string
 }
 
