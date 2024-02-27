@@ -4,7 +4,7 @@ import krsiak from '@/public/images/krsiak.jpg'
 
 const About = () => {
   interface Role {
-    count: string
+    years: string
     label: string
   }
 
