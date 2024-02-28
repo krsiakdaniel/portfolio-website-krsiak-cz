@@ -41,13 +41,13 @@ const contacts: Contact[] = [
 const ContactMe = () => {
   return (
     <div className="container mx-auto">
-      <div className="flex justify-center relative pb-1 pt-5 mt-20">
+      <div className="flex justify-center relative pb-1 pt-5">
         <span className="absolute block h-px bg-white bottom-1/2 left-0 right-0 bg-skills-line"></span>
         <div className="bg-white px-6 pb-3 pt-0 relative">
           <p className="text-body-sm font-semibold tracking-2 text-neutral-500 uppercase">How to reach me</p>
         </div>
       </div>
-      <div className="mb-20">
+      <div className="pb-20">
         <div className="flex flex-col lg:flex-row lg:space-x-10">
           {contacts.map((contact) => {
             return (
