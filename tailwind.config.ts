@@ -2,11 +2,13 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}', // New - App Router https://nextjs.org/docs/app
-    './pages/**/*.{js,ts,jsx,tsx,mdx}', // Old - routing if using  'pages' directory
+    './node_modules/flowbite-react/lib/**/*.js',
+    './app/**/*.{js,ts,jsx,tsx,mdx}', // New - https://nextjs.org/docs/app
+    './pages/**/*.{js,ts,jsx,tsx,mdx}', // Old version - https://nextjs.org/docs/pages/building-your-application/routing
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/**/*.{js,ts,jsx,tsx,mdx}', // Old - if using 'src' directory
+    './src/**/*.{js,ts,jsx,tsx,mdx}', // https://nextjs.org/docs/app/building-your-application/configuring/src-directory
   ],
+  // TODO: remove theme content, to allow tailwindcss to use the default theme
   theme: {
     container: {
       center: true,
@@ -157,6 +159,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }
 export default config
