@@ -32,9 +32,9 @@ const About = () => {
   ]
 
   const roles: Role[] = [
-    { years: '10', label: 'FRONT END EXPERIENCE' },
-    { years: '4', label: 'REACT DEVELOPER' },
-    { years: '2', label: 'QA TEAM LEADER' },
+    { years: '10', label: 'Front End Experience' },
+    { years: '4', label: 'React Developer' },
+    { years: '2', label: 'QA Team Leader' },
   ]
 
   return (
@@ -83,7 +83,7 @@ const About = () => {
                     <h4 className="md:text-display-lg text-display-md font-semibold">
                       <span className="text-primary-500">{item.years}</span> years
                     </h4>
-                    <p className="text-body-sm font-semibold tracking-2 text-neutral-500">{item.label}</p>
+                    <p className="text-body-sm font-semibold tracking-2 text-neutral-500 uppercase">{item.label}</p>
                   </div>
                 ))}
               </div>
