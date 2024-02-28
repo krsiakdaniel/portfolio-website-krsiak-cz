@@ -9,6 +9,7 @@ const config: Config = {
     './src/**/*.{js,ts,jsx,tsx,mdx}', // https://nextjs.org/docs/app/building-your-application/configuring/src-directory
   ],
   // TODO: remove theme content, to allow tailwindcss to use the default theme
+  // TODO: use default TW + flowbite
   theme: {
     container: {
       center: true,
@@ -32,7 +33,7 @@ const config: Config = {
         200: '#ddd6fe',
         300: '#c4b5fd',
         400: '#a78bfa',
-        500: '#8b5cf6',
+        500: '#8b5cf6', // tailwind color: Violet
         600: '#7c3aed',
         700: '#6d28d9',
         800: '#5b21b6',
