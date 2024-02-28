@@ -1,49 +1,37 @@
-import Image from 'next/image'
-import Link from 'next/link'
-
 import ProjectInformation from '@/components/projects/ProjectInformation'
-import List from '@/components/shared/List'
-import ListItem from '@/components/shared/ListItem'
-import { projectsPersonal } from '@/data/projects-personal'
+import HeaderSection from '@/components/projects/projectPage/HeaderSection'
+import Section from '@/components/projects/projectPage/Section'
+import ContainerSubPage from '@/components/projects/projectPage/SubPageContainer'
+import { sections } from '@/data/projects/personal/krsiak'
+import { projectsPersonal } from '@/data/projects/personal/projectsOverview'
+import { ID_PROJECTS_PERSONAL } from '@/utils/constants'
+import Image from 'next/image'
+
+const SUB_PAGE_ID = 'project-personal-krsiak'
 
 const ProjectPersonalKrsiak = () => {
   const { title, role, description, mySkills, links, linkGitHub, imageShowcase } = projectsPersonal[0]
 
   return (
-    <>
-      <div id="project-personal-krsiak">
-        <div className="container mx-auto my-20">
-          <div>
-            <h1 className="md:text-display-lg text-display-md font-bold">{title}</h1>
-            <h2 className="text-display-xs font-semibold text-primary-500">{role}</h2>
-            <Link href="/#projects-personal" className="text-neutral-500 mb-8">
-              ← Go back
-            </Link>
-          </div>
+    <ContainerSubPage id={SUB_PAGE_ID}>
+      <HeaderSection title={title} role={role} link={ID_PROJECTS_PERSONAL} />
 
-          <ProjectInformation description={description} mySkills={mySkills} links={links} linkGitHub={linkGitHub} />
+      <ProjectInformation description={description} mySkills={mySkills} links={links} linkGitHub={linkGitHub} />
 
-          <div>
-            <div className="mt-8">
-              <h3 className="pb-2 font-bold">Description:</h3>
-              <List>
-                <ListItem>
-                  I needed a new website for my personal presentation. I learnt Next.js, and used Tailwind CSS.
-                </ListItem>
-              </List>
-            </div>
-          </div>
+      <div>
+        {sections.map((section, index) => (
+          <Section key={index} title={section.title} items={section.items} />
+        ))}
+      </div>
 
-          <div className="mt-8">
-            <div className="mt-4">
-              {imageShowcase.map((image, index) => (
-                <Image key={index} src={image} alt={`smartsupp-web-${index + 1}`} width={1216} height={754} />
-              ))}
-            </div>
-          </div>
+      <div className="mt-8">
+        <div className="mt-4">
+          {imageShowcase.map((image, index) => (
+            <Image key={index} src={image} alt={`smartsupp-web-${index + 1}`} width={1216} height={754} />
+          ))}
         </div>
       </div>
-    </>
+    </ContainerSubPage>
   )
 }
 

@@ -1,11 +1,11 @@
-import { projectsWork } from '@/data/projects-work'
-
 import ProjectItem from '@/components/projects/ProjectItem'
 import ProjectsLayout from '@/components/projects/ProjectsLayout'
+import { projectsWork } from '@/data/projects/work/projectsOverview'
+import { ID_PROJECTS_WORK } from '@/utils/constants'
 
 const ProjectsWork = () => {
   return (
-    <div id="projects-work">
+    <div id={ID_PROJECTS_WORK}>
       <div className="container mx-auto">
         <div className="pb-20">
           <ProjectsLayout

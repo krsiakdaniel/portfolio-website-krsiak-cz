@@ -28,7 +28,7 @@ const ProjectInformation = ({ description, mySkills, customers, links, linkGitHu
             {mySkills.map((skill, index) => (
               <span
                 key={index}
-                className="mr-1 border font-medium bg-primary-100 text-primary-500 text-body-sm px-2.5 py-0.5 rounded"
+                className="mr-1 border border-primary-500 font-medium bg-primary-100 text-primary-500 text-body-sm px-2.5 py-0.5 rounded"
               >
                 {skill}
               </span>

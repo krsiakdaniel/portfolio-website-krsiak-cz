@@ -7,3 +7,6 @@ export const PHONE_TEXT = '(+420) 734 496 308'
 
 export const EMAIL_HREF = 'mailto:krsiak.daniel@gmail.com'
 export const EMAIL_TEXT = 'krsiak.daniel@gmail.com'
+
+export const ID_PROJECTS_PERSONAL = 'projects-personal'
+export const ID_PROJECTS_WORK = 'projects-work'

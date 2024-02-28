@@ -1,3 +1,4 @@
+// project item
 export type LinkItem = { urlText: string; url: string }
 
 export type Project = {
@@ -15,4 +16,10 @@ export type Project = {
   linkGitHub?: string
   customers?: string
   linkProjectPage: string
+}
+
+// project sub page
+export type SectionItem = {
+  title: string
+  items: string[]
 }
