@@ -6,8 +6,5 @@
 
 @layer base {
   @layer utilities {
-    body {
-      @apply text-neutral-900;
-    }
   }
 }

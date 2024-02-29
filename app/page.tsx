@@ -8,7 +8,7 @@ import Skills from '@/components/Skills'
 
 const Page = () => {
   return (
-    <div className="pt-10">
+    <div>
       <Hero />
       <Skills />
       <Services />

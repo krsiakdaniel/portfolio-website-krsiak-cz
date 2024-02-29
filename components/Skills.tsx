@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import DividerWithText from '@/components/shared/DividerWithText'
 import css from '@/public/icons/svg/css.svg'
 import figma from '@/public/icons/svg/figma.svg'
 import html from '@/public/icons/svg/html.svg'
@@ -54,38 +55,45 @@ const iconsSection2: Icon[] = [
   },
 ]
 
+const iconsSection3: Icon[] = [
+  {
+    name: 'redux',
+    path: redux,
+  },
+  {
+    name: 'figma',
+    path: figma,
+  },
+]
+
 const Skills = () => {
   return (
-    <div id="skills">
+    <div id="skills" className="mt-20">
       <div className="container mx-auto">
-        <div className="md:pb-10 pb-5">
-          <div className="flex justify-center relative pb-1 pt-5">
-            <span className="absolute block h-px bg-white bottom-1/2 left-0 right-0 bg-skills-line"></span>
-            <div className="bg-white px-6 pb-3 pt-0 relative">
-              <p className="text-body-sm font-semibold tracking-2 text-neutral-500 uppercase">My Skills</p>
-            </div>
+        <div>
+          <DividerWithText text="Skills" />
+        </div>
+        <div className="flex flex-col sm:flex-row justify-center">
+          <div className="flex justify-center mb-4 sm:mb-0">
+            {iconsSection1.map((item) => {
+              return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
+            })}
           </div>
-          <div className="flex flex-col sm:flex-row justify-center pt-5">
-            <div className="flex justify-center mb-4 sm:mb-0">
-              {iconsSection1.map((item) => {
-                return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
-              })}
-            </div>
-            <div className="flex justify-center mb-4 sm:mb-0">
-              {iconsSection2.map((item) => {
-                return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
-              })}
-            </div>
-            <div className="flex justify-center">
-              <Image src={redux} alt="redux" width={48} height={48} className="mr-2" />
-              <Image src={figma} alt="figma" width={48} height={48} />
-            </div>
+          <div className="flex justify-center mb-4 sm:mb-0">
+            {iconsSection2.map((item) => {
+              return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
+            })}
           </div>
-          <div>
-            <p className="text-body-sm italic text-neutral-500 mt-4 text-center">
-              HTML, CSS, Sass, Tailwind CSS, JavaScript, TypeScript, React, Next.js, Redux, Figma
-            </p>
+          <div className="flex justify-center">
+            {iconsSection3.map((item) => {
+              return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
+            })}
           </div>
+        </div>
+        <div>
+          <p className="text-body-sm italic text-neutral-500 mt-4 text-center">
+            HTML, CSS, Sass, Tailwind CSS, JavaScript, TypeScript, React, Next.js, Redux, Figma
+          </p>
         </div>
       </div>
     </div>
