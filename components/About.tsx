@@ -30,7 +30,12 @@ const Jobs = () => {
               {item.title}{' '}
               <small className="text-md text-neutral-500">
                 {item.years && '· '}
-                {item.years} years
+                {item.years} years{' '}
+                {item.partTimeJob && (
+                  <small className="text-xs text-neutral-400">
+                    <em>(part-time job)</em>
+                  </small>
+                )}
               </small>
             </h3>
           </div>
