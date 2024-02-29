@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import { LINK_LINKEDIN } from '@/utils/constants'
 
+// FIXME: primary -> purple
 const Header = () => {
   return (
     <header className="sticky top-0 bg-white z-20 border-b border-neutral-400">

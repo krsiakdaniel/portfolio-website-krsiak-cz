@@ -23,3 +23,12 @@ export type SectionItem = {
   title: string
   items: string[]
 }
+
+// contact
+export interface Contact {
+  image: string
+  heading: string
+  description: string
+  href: string
+  linkText: string
+}

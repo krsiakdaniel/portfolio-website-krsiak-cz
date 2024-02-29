@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <div id="services" className="mt-20">
       <div className="md:container md:mx-auto">
-        <div className="flex flex-col lg:flex-row bg-green-100 w-full py-10 px-8">
+        <div className="flex flex-col lg:flex-row bg-green-100 w-full py-10 px-5 mb-20">
           <div className="flex flex-col w-full justify-center lg:w-1/2 lg:px-10 py-10">
             <h2 className="text-4xl font-extrabold dark:text-white uppercase">What I do</h2>
             <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400 lg:max-w-[550px]">

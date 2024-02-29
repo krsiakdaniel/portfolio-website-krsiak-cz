@@ -4,12 +4,10 @@ import Image from 'next/image'
 
 const Skills = () => {
   return (
-    <div id="skills" className="mt-20">
+    <div id="skills" className="mt-20 px-5">
       <div className="container mx-auto">
-        <div>
-          <DividerWithText text="Skills" />
-        </div>
-        <div className="flex flex-col sm:flex-row justify-center">
+        <DividerWithText text="Skills" />
+        <div className="flex flex-col sm:flex-row justify-center mt-5">
           <div className="flex justify-center mb-4 sm:mb-0">
             {iconsSection1.map((item) => {
               return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
