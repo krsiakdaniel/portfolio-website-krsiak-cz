@@ -6,18 +6,20 @@ const getCurrentYear = () => {
 
 const Footer = () => {
   return (
-    <footer id="contact" className="">
+    <div id="contact" className="mt-20">
       <div className="container mx-auto">
-        <div className="flex py-4 border-t border-dashed border-neutral-500">
-          <p className="text-neutral-500">
-            Copyright © {getCurrentYear()} |{' '}
-            <Link href="/" className="hover:text-primary-500 underline hover:no-underline">
-              krsiak.cz
-            </Link>
-          </p>
-        </div>
+        <footer className="bg-white dark:bg-gray-800 border-t border-dashed">
+          <div className="w-full mx-auto max-w-screen-xl py-4 md:flex md:items-center md:justify-between text-center">
+            <p className="text-gray-400 dark:text-gray-300">
+              Copyright © {getCurrentYear()} |{' '}
+              <Link href="/" className="hover:text-purple-500 underline hover:no-underline">
+                krsiak.cz
+              </Link>
+            </p>
+          </div>
+        </footer>
       </div>
-    </footer>
+    </div>
   )
 }
 export default Footer
