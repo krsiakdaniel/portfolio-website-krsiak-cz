@@ -13,7 +13,6 @@ const Page = () => {
       <Skills />
       <Services />
       <About />
-      <ContactMe />
       <ProjectsWork />
       <ProjectsPersonal />
       <ContactMe />
