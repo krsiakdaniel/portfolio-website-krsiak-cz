@@ -18,7 +18,7 @@ const HeadingInfo = () => {
 
 const Jobs = () => {
   return (
-    <div className="flex flex-col w-full md:w-1/2">
+    <div className="flex flex-col w-full sm:1/2 lg:w-2/3">
       {jobs.map((item) => (
         <div key={item.title} className="flex flex-col gap-4 pt-4 pb-8">
           <div className="flex flex-col lg:flex-row items-start lg:items-center">
@@ -33,7 +33,9 @@ const Jobs = () => {
               </small>
             </h3>
           </div>
-          <p className="mb-3 text-gray-500 dark:text-gray-400 last:mb-0">{item.description}</p>
+          <p className="mb-3 text-gray-500 dark:text-gray-400 last:mb-0 md:max-w-[640px] lg:max-w-[768px]">
+            {item.description}
+          </p>
         </div>
       ))}
     </div>
@@ -42,7 +44,7 @@ const Jobs = () => {
 
 const Photo = () => {
   return (
-    <div className="flex flex-col w-full md:w-1/2 items-center justify-start lg:justify-center">
+    <div className="flex flex-col w-full sm:1/2 lg:w-1/3 items-center justify-start lg:justify-center">
       <Image
         src={krsiak}
         className="rounded-lg border border-neutral-300 mt-4 mb-8 md:mt-0 md:mb-0"
