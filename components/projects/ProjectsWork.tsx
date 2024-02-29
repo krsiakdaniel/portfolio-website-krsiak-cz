@@ -7,7 +7,7 @@ const ProjectsWork = () => {
   return (
     <div id={ID_PROJECTS_WORK}>
       <div className="container mx-auto">
-        <div className="pb-20">
+        <div className="mb-20">
           <ProjectsLayout
             dividerText="Work Experience"
             heading="Work"

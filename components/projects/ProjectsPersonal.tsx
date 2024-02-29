@@ -7,7 +7,7 @@ const ProjectsPersonal = () => {
   return (
     <div id={ID_PROJECTS_PERSONAL}>
       <div className="container mx-auto">
-        <div className="pb-20">
+        <div className="mb-20">
           <ProjectsLayout
             dividerText="In My Free Time"
             heading="Personal Projects"

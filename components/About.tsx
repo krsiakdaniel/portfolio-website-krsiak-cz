@@ -1,89 +1,72 @@
+import DividerWithText from '@/components/shared/DividerWithText'
+import { jobs } from '@/data/about'
+import krsiak from '@/public/images/krsiak.jpg'
 import Image from 'next/image'
 
-import DividerWithText from '@/components/shared/DividerWithText'
-import krsiak from '@/public/images/krsiak.jpg'
+const HeadingInfo = () => {
+  return (
+    <div>
+      <h2 className="text-4xl font-extrabold text-purple-600 dark:text-purple-500 uppercase">About</h2>
+      <p className="my-4 text-lg text-gray-500">
+        I am Front End - <span className="text-purple-500 font-bold">React Developer</span>, who knows{' '}
+        <span className="text-purple-500 font-bold">QA Automation</span> and is used to leading people as a{' '}
+        <span className="text-purple-500 font-bold">Team Leader</span>.
+      </p>
+    </div>
+  )
+}
+
+const Jobs = () => {
+  return (
+    <div className="flex flex-col w-full md:w-1/2">
+      {jobs.map((item) => (
+        <div key={item.title} className="flex flex-col gap-4 pt-4 pb-8">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center">
+            <div className="flex justify-center items-center w-12 h-12 rounded-full bg-blue-100  dark:bg-blue-900 mb-2 lg:mb-0 md:mr-4">
+              <Image key={item.title} src={item.path} alt={item.title} width={24} height={24} />
+            </div>
+            <h3 className="text-3xl font-bold dark:text-white">
+              {item.title}{' '}
+              <small className="text-md text-neutral-500">
+                {item.years && '· '}
+                {item.years} years
+              </small>
+            </h3>
+          </div>
+          <p className="mb-3 text-gray-500 dark:text-gray-400 last:mb-0">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+const Photo = () => {
+  return (
+    <div className="flex flex-col w-full md:w-1/2 items-center justify-start lg:justify-center">
+      <Image
+        src={krsiak}
+        className="rounded-lg border border-neutral-300 mt-4 mb-8 md:mt-0 md:mb-0"
+        alt="Daniel Kršiak"
+        placeholder="blur"
+        style={{
+          width: '385px',
+          height: 'auto',
+        }}
+      />
+    </div>
+  )
+}
 
 const About = () => {
-  interface Role {
-    years: string
-    label: string
-  }
-
-  interface Job {
-    title: string
-    description: string
-  }
-
-  const jobs: Job[] = [
-    {
-      title: 'React Developer',
-      description: `
-        I create user-friendly and responsive web applications. I have worked with JavaScript, TypeScript,
-        React, and Redux, as well as other technologies such as Figma, and Tailwind CSS. I have a strong
-        background in UI design, functional components, and code quality.
-      `,
-    },
-    {
-      title: 'QA Team Leader',
-      description: `
-        I have also led a QA automation team, setting up Playwright for E2E tests, writing test scripts in
-        JavaScript and TypeScript, and coordinating unit and integration tests.
-      `,
-    },
-  ]
-
-  const roles: Role[] = [
-    { years: '10', label: 'Front End Experience' },
-    { years: '4', label: 'React Developer' },
-    { years: '2', label: 'QA Team Leader' },
-  ]
-
   return (
-    <div id="about">
+    <div id="about" className="mt-20 px-5">
       <div className="container mx-auto">
-        <div className="pb-20">
+        <div className="mb-20">
           <DividerWithText text="About me" />
-          <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-12 items-start pt-5">
-            <div className="lg:col-span-5 flex flex-row items-center gap-8">
-              <div className="flex flex-col xl:pr-8">
-                <h2 className="md:text-display-lg text-display-md font-semibold md:pb-6 pb-4 text-primary-500 uppercase">
-                  About
-                </h2>
-                {jobs.map((item) => (
-                  <div key={item.title} className="flex flex-col gap-4 pb-4">
-                    <h3 className="text-display-xs font-semibold">{item.title}</h3>
-                    <p className="text-body-md font-normal text-neutral-700 pb-4">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="lg:col-span-7 lg:grid lg:grid-cols-7 flex sm:flex-row flex-col items-center sm:items-start md:gap-8 gap-12">
-              <div className="lg:col-span-4 flex">
-                <Image
-                  src={krsiak}
-                  className="rounded-lg border border-neutral-300"
-                  alt="Daniel Kršiak"
-                  placeholder="blur"
-                  style={{
-                    width: '385px',
-                    height: 'auto',
-                  }}
-                />
-              </div>
-              <div className="lg:col-span-3 flex md:self-auto self-stretch grow flex-col gap-6 sm:gap-8 xl:gap-12 xl:pl-8">
-                {roles.map((item) => (
-                  <div
-                    key={item.label}
-                    className="flex flex-col items-center sm:items-start self-stretch gap-2 pb-4 border-b border-solid border-neutral-300 last:border-none last:pb-0"
-                  >
-                    <h4 className="md:text-display-lg text-display-md font-semibold">
-                      <span className="text-primary-500">{item.years}</span> years
-                    </h4>
-                    <p className="text-body-sm font-semibold tracking-2 text-neutral-500 uppercase">{item.label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <HeadingInfo />
+          <div className="flex flex-col-reverse md:flex-row justify-between md:space-x-10 mt-8">
+            <Jobs />
+            <Photo />
           </div>
         </div>
       </div>
