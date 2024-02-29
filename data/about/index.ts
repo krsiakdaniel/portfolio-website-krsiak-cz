@@ -1,6 +1,7 @@
 import check from '/public/icons/svg/about/check.svg'
 import globe from '/public/icons/svg/about/globe.svg'
 import reactLogo from '/public/icons/svg/about/react-logo.svg'
+import text from '/public/icons/svg/about/text.svg'
 
 interface Job {
   path: string
@@ -30,11 +31,19 @@ export const jobs: Job[] = [
       `,
   },
   {
+    path: text,
+    title: 'Localization Manager',
+    years: '2',
+    description: `
+        I had the amazing chance to work on Microsoft's projects. I was responsible for the localization of Windows, and Windows Phone. I also managed localization of SaaS company website into 10 languages.
+      `,
+  },
+  {
     path: globe,
     title: 'WordPress Developer',
     years: '5',
     description: `
-        In the past when I started in Front End, I developed custom WordPress themes and websites for clients and small companies. I have some experience with PHP.
+        In the past when I started in Front End, I developed custom WordPress websites for clients and small companies. I have some experience with PHP.
       `,
   },
 ]

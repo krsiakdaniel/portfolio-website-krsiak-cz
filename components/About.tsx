@@ -10,7 +10,8 @@ const HeadingInfo = () => {
       <p className="my-4 text-lg text-gray-500">
         I am Front End - <span className="text-purple-500 font-bold">React Developer</span>, who knows{' '}
         <span className="text-purple-500 font-bold">QA Automation</span> and is used to leading people as a{' '}
-        <span className="text-purple-500 font-bold">Team Leader</span>.
+        <span className="text-purple-500 font-bold">Team Leader</span> and was{' '}
+        <span className="text-purple-500 font-bold">Localization Manager</span>.
       </p>
     </div>
   )
