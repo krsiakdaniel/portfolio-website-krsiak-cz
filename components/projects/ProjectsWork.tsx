@@ -10,8 +10,7 @@ const ProjectsWork = () => {
         <ProjectsLayout
           dividerText="Work Experience"
           heading="Work"
-          rolesHeading="My job roles"
-          rolesDescription="In my previous jobs, I developed new features, redesigned websites, implemented responsive design, updated legacy codebases, was responsible for text localization, QA testing, automation and team leading on various projects."
+          description="In my previous jobs, I developed new features, redesigned websites, implemented responsive design, updated legacy codebases, was responsible for text localization, QA testing, automation and team leading on various projects."
         >
           {projectsWork.map((item) => {
             return (
