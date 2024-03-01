@@ -4,40 +4,56 @@ import { ProjectInformationProps } from '@/utils/types'
 
 type Props = ProjectInformationProps
 
+const getSkillBadgeColor = (categoryDescription: string): string => {
+  switch (categoryDescription) {
+    case 'Frontend':
+      return 'purple'
+    case 'Design':
+      return 'green'
+    case 'Other':
+      return 'yellow'
+    default:
+      return 'neutral'
+  }
+}
+
 const ProjectInformation = ({ description, mySkills, customers, projectLinks, linkGitHub }: Props) => {
   const hasMoreLinks = projectLinks.length > 1
   const hasGithub = linkGitHub ? true : false
 
   return (
     <>
-      <div className="flex flex-col mt-8">
-        <p className="mb-3 text-gray-500 dark:text-gray-400 max-w-screen-lg">{description}</p>
+      <div className="mt-8">
+        <h3 className="text-3xl font-bold dark:text-white mb-4">Information</h3>
+        {customers && (
+          <List>
+            <ListItem>
+              Company customers: <span className="text-neutral-500 ml-2 font-bold">{customers}</span>
+            </ListItem>
+          </List>
+        )}
+        <List>
+          <ListItem>{description}</ListItem>
+        </List>
       </div>
 
       <div className="mt-8">
-        <h3 className="text-3xl font-bold dark:text-white mb-4">Information</h3>
+        <h3 className="text-3xl font-bold dark:text-white mb-4">Skills</h3>
         <List>
-          <ListItem>
-            <div className="flex items-center">
-              <span className="hidden md:inline mr-2">My skills: </span>
-              {/* FIXME: responsive issue in tags, separate them ?*/}
+          {mySkills.map((category, index) => (
+            <ListItem key={index}>
               <div className="flex flex-col md:flex-row">
-                {mySkills.map((skill, index) => (
+                {category.skills.map((skill, index) => (
                   <span
                     key={index}
-                    className="bg-purple-100 text-purple-800 text-xs font-medium mr-0 sm:mr-2 mb-2 last:mb-0 last:mr-0 text-center sm:mb-0 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400"
+                    className={`bg-${getSkillBadgeColor(category.description)}-100 text-${getSkillBadgeColor(category.description)}-800 text-xs font-medium text-center mb-2 md:mb-0 md:mr-2 last:mr-0 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-${getSkillBadgeColor(category.description)}-400 border border-${getSkillBadgeColor(category.description)}-400`}
                   >
                     {skill}
                   </span>
                 ))}
               </div>
-            </div>
-          </ListItem>
-          {customers && (
-            <ListItem>
-              Company customers: <span className="text-neutral-500 ml-2 font-bold">{customers}</span>
             </ListItem>
-          )}
+          ))}
         </List>
       </div>
 

@@ -27,7 +27,13 @@ export const projectsPersonal: Project[] = [
     title: '👨‍💻 Portfolio Website',
     role: 'Next.js App',
     description: 'My personal portfolio website to showcase my work and skills.',
-    mySkills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
+    mySkills: [
+      {
+        color: 'purple',
+        description: 'Programming',
+        skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
+      },
+    ],
     linkText: 'Read more →',
     projectLinks: [{ urlText: 'Website →', url: 'https://krsiak.cz/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
@@ -48,7 +54,13 @@ export const projectsPersonal: Project[] = [
     title: '💰 CryptoMania',
     role: 'React App',
     description: 'Crypto currency prices using CoinGecko API. UI has dark mode.',
-    mySkills: ['JavaScript', 'TypeScript', 'React', 'React App', 'Chakra UI', 'CoinGecko API'],
+    mySkills: [
+      {
+        color: 'purple',
+        description: 'Programming',
+        skills: ['JavaScript', 'TypeScript', 'React', 'React App', 'Chakra UI', 'CoinGecko API'],
+      },
+    ],
     linkText: 'Read more →',
     projectLinks: [{ urlText: 'Website →', url: 'https://cryptomania-currency-prices.netlify.app/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
@@ -62,7 +74,13 @@ export const projectsPersonal: Project[] = [
     title: '🛒 eCommerce Website',
     role: 'Vue.js App',
     description: 'Simple eCommerce website. First time coding with Vue and Nuxt.',
-    mySkills: ['JavaScript', 'Vue.js', 'Nuxt.js', 'Vuetify'],
+    mySkills: [
+      {
+        color: 'purple',
+        description: 'Programming',
+        skills: ['JavaScript', 'Vue.js', 'Nuxt.js', 'Vuetify'],
+      },
+    ],
     linkText: 'Read more →',
     projectLinks: [{ urlText: 'Website →', url: 'https://ecommerce-vue-nuxt.onrender.com/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/ecommerce-website-vuejs-nuxtjs-vuetify',

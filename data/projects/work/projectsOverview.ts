@@ -38,20 +38,17 @@ export const projectsWork: Project[] = [
     title: '💬 Smartsupp - Customer Care Chat Dashboard',
     role: 'React Developer',
     years: '3 years 2 months',
-    description:
-      'I worked on chat dashboard features and new design. I was part of team that redesigned old settings. Also due to my previous experince I was involved in the UX team and had a say in the direction and design of new features.',
+    description: `I worked on chat dashboard features and new design.
+      I was part of team that redesigned old settings.
+      Also due to my previous experience I was involved in the UX team and could influence design of new features.`,
     mySkills: [
-      'JavaScript',
-      'TypeScript',
-      'React',
-      'Redux',
-      'Chakra UI',
-      'Cypress',
-      'UX',
-      'Adobe XD',
-      'Responsive Web Design',
-      'Trello',
-      'Pair Programming',
+      {
+        color: 'purple',
+        description: 'Frontend',
+        skills: ['JavaScript', 'TypeScript', 'React', 'Redux', 'Chakra UI', 'Cypress', 'Pair Programming'],
+      },
+      { color: 'green', description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Web Design'] },
+      { color: 'yellow', description: 'Other', skills: ['Trello'] },
     ],
     linkText: 'Read more →',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/' }],
@@ -69,16 +66,9 @@ export const projectsWork: Project[] = [
     description:
       'I created the company website. I also worked closely with UX on design decisions and new color theme.',
     mySkills: [
-      'JavaScript',
-      'PHP',
-      'SASS',
-      'BEM',
-      'Cypress',
-      'UX',
-      'Adobe XD',
-      'Responsive Web Design',
-      'Trello',
-      'Pair Programming',
+      { color: 'purple', description: 'Frontend', skills: ['JavaScript', 'PHP', 'SASS', 'BEM', 'Cypress'] },
+      { color: 'green', description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Web Design'] },
+      { color: 'yellow', description: 'Other', skills: ['Trello'] },
     ],
     linkText: 'Read more →',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/' }],
@@ -96,15 +86,13 @@ export const projectsWork: Project[] = [
     description:
       'I created search page for ATM and branches, with detail pages. And also Exchange rates page with details for each currency.',
     mySkills: [
-      'JavaScript',
-      'TypeScript',
-      'React',
-      'Tailwind CSS',
-      'Figma',
-      'Responsive Web Design',
-      'Kentico',
-      'Jira',
-      'Pair Programming',
+      {
+        color: 'purple',
+        description: 'Frontend',
+        skills: ['JavaScript', 'TypeScript', 'React', 'Tailwind CSS', 'Pair Programming'],
+      },
+      { color: 'green', description: 'Design', skills: ['Figma', 'Responsive Web Design'] },
+      { color: 'yellow', description: 'Other', skills: ['Jira', 'Confluence', 'Tempo', 'Kentico'] },
     ],
     linkText: 'Read more →',
     projectLinks: [
@@ -138,7 +126,15 @@ export const projectsWork: Project[] = [
     years: '4 months',
     description:
       'I was responsible QA processes, hiring and managing QA team, creating test plans, test cases, and testing the website.',
-    mySkills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Playwright', 'Figma', 'Jira'],
+    mySkills: [
+      {
+        color: 'purple',
+        description: 'Frontend',
+        skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Playwright'],
+      },
+      { color: 'green', description: 'Design', skills: ['Figma'] },
+      { color: 'yellow', description: 'Other', skills: ['Jira', 'Confluence', 'Tempo', 'QA', 'Team Management'] },
+    ],
     linkText: 'Read more →',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.groupon.com/' }],
     customers: '17 000 000+',

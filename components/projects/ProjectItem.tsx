@@ -1,7 +1,9 @@
+import List from '@/components/shared/List'
+import ListItem from '@/components/shared/ListItem'
+import starIcon64 from '@/public/icons/icon-64x64.png'
+import { SkillItem } from '@/utils/types'
 import Image from 'next/image'
 import Link from 'next/link'
-
-import starIcon64 from '@/public/icons/icon-64x64.png'
 
 type Props = {
   isFeatured?: boolean | undefined
@@ -10,7 +12,7 @@ type Props = {
   role: string
   years?: string
   description: string
-  mySkills: string[]
+  mySkills: SkillItem[]
   customers: string | undefined
   linkText: string
   linkProjectPage: string
@@ -57,12 +59,24 @@ const ProjectItem = ({
           </div>
 
           <div className="mt-4">
-            {mySkills.map((skill, index) => (
-              <span key={index} className="text-body-sm text-primary-500">
-                {skill}
-                {index < mySkills.length - 1 && <span> · </span>}
-              </span>
-            ))}
+            <div>
+              <List>
+                {mySkills.map((category, index) => (
+                  <ListItem key={index}>
+                    <div className="flex flex-col md:flex-row">
+                      {category.skills.map((skill, index) => (
+                        <span
+                          key={index}
+                          className="bg-purple-100 text-purple-800 text-xs font-medium text-center mb-2 md:mb-0 md:mr-2 last:mr-0 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </ListItem>
+                ))}
+              </List>
+            </div>
             {customers && (
               <p className="text-body-sm">
                 <span className="text-neutral-500">Customers: {customers}</span>
