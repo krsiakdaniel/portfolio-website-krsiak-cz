@@ -3,8 +3,6 @@ import { sections } from '@/data/projects/personal/eshop'
 import { projectsPersonal } from '@/data/projects/personal/projectsOverview'
 import { projectPages } from '@/utils/constants'
 
-const SUB_PAGE_ID = 'project-personal-eshop'
-
 const ProjectPersonalEshop = () => {
   const { title, role, description, mySkills, projectLinks, linkGitHub, imageShowcase } = projectsPersonal[2]
 

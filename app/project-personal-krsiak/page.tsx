@@ -1,6 +1,6 @@
 import ProjectPageLayout from '@/components/projects/projectPage/ProjectPageLayout'
+import { sections } from '@/data/projects/personal/krsiak'
 import { projectsPersonal } from '@/data/projects/personal/projectsOverview'
-import { sections } from '@/data/projects/work/smartsuppWeb'
 import { projectPages } from '@/utils/constants'
 
 const ProjectPersonalKrsiak = () => {

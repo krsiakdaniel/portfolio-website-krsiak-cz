@@ -4,7 +4,7 @@ export const sections: SectionItem[] = [
   {
     title: 'My job',
     titleHighlight: '',
-    items: ['I was responsible for the entire company’s FrontEnd and website presentation.'],
+    items: ['I was responsible for the entire company’s Front End and website presentation.'],
   },
   {
     title: 'Developed new website',

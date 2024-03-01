@@ -18,7 +18,6 @@ import eshop3 from '@/public/images/projects-personal/png/eshop-3.png'
 import eshop4 from '@/public/images/projects-personal/png/eshop-4.png'
 import eshopThumb from '@/public/images/projects-personal/png/eshop-thumb.png'
 
-// BUG: somehow I map on the pages different texts, check both PERSONAL and WORK
 export const projectsPersonal: Project[] = [
   {
     id: 1,
