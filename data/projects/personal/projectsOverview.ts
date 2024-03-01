@@ -30,7 +30,7 @@ export const projectsPersonal: Project[] = [
     mySkills: [
       {
         color: 'purple',
-        description: 'Programming',
+        description: 'Frontend',
         skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
       },
     ],
@@ -57,7 +57,7 @@ export const projectsPersonal: Project[] = [
     mySkills: [
       {
         color: 'purple',
-        description: 'Programming',
+        description: 'Frontend',
         skills: ['JavaScript', 'TypeScript', 'React', 'React App', 'Chakra UI', 'CoinGecko API'],
       },
     ],
@@ -77,7 +77,7 @@ export const projectsPersonal: Project[] = [
     mySkills: [
       {
         color: 'purple',
-        description: 'Programming',
+        description: 'Frontend',
         skills: ['JavaScript', 'Vue.js', 'Nuxt.js', 'Vuetify'],
       },
     ],
