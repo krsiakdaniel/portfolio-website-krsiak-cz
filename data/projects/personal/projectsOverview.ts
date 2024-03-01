@@ -29,7 +29,6 @@ export const projectsPersonal: Project[] = [
     description: 'My personal portfolio website to showcase my work and skills.',
     mySkills: [
       {
-        color: 'purple',
         description: 'Frontend',
         skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
       },
@@ -56,7 +55,6 @@ export const projectsPersonal: Project[] = [
     description: 'Crypto currency prices using CoinGecko API. UI has dark mode.',
     mySkills: [
       {
-        color: 'purple',
         description: 'Frontend',
         skills: ['JavaScript', 'TypeScript', 'React', 'React App', 'Chakra UI', 'CoinGecko API'],
       },
@@ -76,7 +74,6 @@ export const projectsPersonal: Project[] = [
     description: 'Simple eCommerce website. First time coding with Vue and Nuxt.',
     mySkills: [
       {
-        color: 'purple',
         description: 'Frontend',
         skills: ['JavaScript', 'Vue.js', 'Nuxt.js', 'Vuetify'],
       },

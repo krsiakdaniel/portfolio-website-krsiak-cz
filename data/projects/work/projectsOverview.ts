@@ -43,12 +43,11 @@ export const projectsWork: Project[] = [
       Also due to my previous experience I was involved in the UX team and could influence design of new features.`,
     mySkills: [
       {
-        color: 'purple',
         description: 'Frontend',
         skills: ['JavaScript', 'TypeScript', 'React', 'Redux', 'Chakra UI', 'Cypress', 'Pair Programming'],
       },
-      { color: 'green', description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Web Design'] },
-      { color: 'yellow', description: 'Other', skills: ['Trello'] },
+      { description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Web Design'] },
+      { description: 'Other', skills: ['Trello'] },
     ],
     linkText: 'Read more →',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/' }],
@@ -66,9 +65,9 @@ export const projectsWork: Project[] = [
     description:
       'I created the company website. I also worked closely with UX on design decisions and new color theme.',
     mySkills: [
-      { color: 'purple', description: 'Frontend', skills: ['JavaScript', 'PHP', 'SASS', 'BEM', 'Cypress'] },
-      { color: 'green', description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Web Design'] },
-      { color: 'yellow', description: 'Other', skills: ['Trello'] },
+      { description: 'Frontend', skills: ['JavaScript', 'PHP', 'SASS', 'BEM', 'Cypress'] },
+      { description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Web Design'] },
+      { description: 'Other', skills: ['Trello'] },
     ],
     linkText: 'Read more →',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/' }],
@@ -87,12 +86,11 @@ export const projectsWork: Project[] = [
       'I created search page for ATM and branches, with detail pages. And also Exchange rates page with details for each currency.',
     mySkills: [
       {
-        color: 'purple',
         description: 'Frontend',
         skills: ['JavaScript', 'TypeScript', 'React', 'Tailwind CSS', 'Pair Programming'],
       },
-      { color: 'green', description: 'Design', skills: ['Figma', 'Responsive Web Design'] },
-      { color: 'yellow', description: 'Other', skills: ['Jira', 'Confluence', 'Tempo', 'Kentico'] },
+      { description: 'Design', skills: ['Figma', 'Responsive Web Design'] },
+      { description: 'Other', skills: ['Jira', 'Confluence', 'Tempo', 'Kentico'] },
     ],
     linkText: 'Read more →',
     projectLinks: [
@@ -128,12 +126,11 @@ export const projectsWork: Project[] = [
       'I was responsible QA processes, hiring and managing QA team, creating test plans, test cases, and testing the website.',
     mySkills: [
       {
-        color: 'purple',
         description: 'Frontend',
         skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Playwright'],
       },
-      { color: 'green', description: 'Design', skills: ['Figma'] },
-      { color: 'yellow', description: 'Other', skills: ['Jira', 'Confluence', 'Tempo', 'QA', 'Team Management'] },
+      { description: 'Design', skills: ['Figma'] },
+      { description: 'Other', skills: ['Jira', 'Confluence', 'Tempo', 'QA', 'Team Management'] },
     ],
     linkText: 'Read more →',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.groupon.com/' }],

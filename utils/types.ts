@@ -1,7 +1,16 @@
-// project item
-export type LinkItem = { urlText: string; url: string }
+// skills
+export type CategoryDescriptionType = 'Frontend' | 'Design' | 'Other'
 
-export type SkillItem = { color: string; description: string; skills: string[] }
+export type SkillItem = {
+  description: CategoryDescriptionType
+  skills: string[]
+}
+
+// project item
+export type LinkItem = {
+  urlText: string
+  url: string
+}
 
 export type Project = {
   id: number
@@ -25,7 +34,7 @@ export type HeaderSectionProps = {
   title: string
   role: string
   years?: string | undefined
-  goBackLink: ProjectType
+  goBackLink: GoBackLinkType
 }
 
 export type ProjectInformationProps = {
@@ -52,4 +61,4 @@ export interface Contact {
 }
 
 // utils
-export type ProjectType = 'work' | 'personal'
+export type GoBackLinkType = 'work' | 'personal'

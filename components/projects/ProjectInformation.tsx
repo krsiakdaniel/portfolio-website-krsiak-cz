@@ -1,10 +1,10 @@
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
-import { ProjectInformationProps } from '@/utils/types'
+import { CategoryDescriptionType, ProjectInformationProps } from '@/utils/types'
 
 type Props = ProjectInformationProps
 
-const getSkillBadgeColor = (categoryDescription: string): string => {
+const getSkillBadgeColor = (categoryDescription: CategoryDescriptionType): string => {
   switch (categoryDescription) {
     case 'Frontend':
       return 'purple'
@@ -46,7 +46,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
                 {category.skills.map((skill, index) => (
                   <span
                     key={index}
-                    className={`bg-${getSkillBadgeColor(category.description)}-100 text-${getSkillBadgeColor(category.description)}-800 text-xs font-medium text-center mb-2 md:mb-0 md:mr-2 last:mr-0 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-${getSkillBadgeColor(category.description)}-400 border border-${getSkillBadgeColor(category.description)}-400`}
+                    className={`bg-${getSkillBadgeColor(category.description)}-100 text-${getSkillBadgeColor(category.description)}-800 dark:text-${getSkillBadgeColor(category.description)}-400 border border-${getSkillBadgeColor(category.description)}-400 text-xs font-medium text-center mb-2 md:mb-0 md:mr-2 last:mr-0 px-2.5 py-0.5 rounded dark:bg-gray-700`}
                   >
                     {skill}
                   </span>
