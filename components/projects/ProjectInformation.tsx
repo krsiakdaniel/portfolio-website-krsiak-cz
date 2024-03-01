@@ -7,11 +7,11 @@ type Props = ProjectInformationProps
 const getSkillBadgeColor = (categoryDescription: CategoryDescriptionType): string => {
   switch (categoryDescription) {
     case 'Frontend':
-      return 'purple'
-    case 'Design':
-      return 'green'
-    case 'Other':
       return 'yellow'
+    case 'Design':
+      return 'purple'
+    case 'Other':
+      return 'lime'
     default:
       return 'neutral'
   }
