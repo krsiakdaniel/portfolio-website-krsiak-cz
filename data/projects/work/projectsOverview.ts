@@ -42,7 +42,7 @@ export const projectsWork: Project[] = [
       'I worked on the customer care chat dashboard. I also redesigned completely settings of the application.',
     mySkills: ['React', 'JavaScript', 'TypeScript', 'Redux', 'Chakra UI', 'Adobe XD'],
     linkText: 'Read more →',
-    links: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/' }],
+    projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/' }],
     customers: '100 000+',
     linkProjectPage: '/project-work-smartsupp-dashboard',
   },
@@ -58,7 +58,7 @@ export const projectsWork: Project[] = [
       'I created the company website. I also worked closely with UX on design decisions and new color scheme.',
     mySkills: ['JavaScript', 'PHP', 'Responsive Web Design', 'SASS', 'BEM'],
     linkText: 'Read more →',
-    links: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/' }],
+    projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/' }],
     customers: '100 000+',
     linkProjectPage: '/project-work-smartsupp-web',
   },
@@ -74,7 +74,7 @@ export const projectsWork: Project[] = [
       'I created search page for ATM and branches, with detail pages. And also Exchange rates page with details for each currency.',
     mySkills: ['React', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'Figma', 'Kentico'],
     linkText: 'Read more →',
-    links: [
+    projectLinks: [
       {
         urlText: 'Branches & ATMs',
         url: 'https://www.kb.cz/en/branches-and-atms',
@@ -107,7 +107,7 @@ export const projectsWork: Project[] = [
       'I was responsible QA processes, hiring and managing QA team, creating test plans, test cases, and testing the website.',
     mySkills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Playwright', 'Figma', 'Jira'],
     linkText: 'Read more →',
-    links: [{ urlText: 'Website →', url: 'https://www.groupon.com/' }],
+    projectLinks: [{ urlText: 'Website →', url: 'https://www.groupon.com/' }],
     customers: '17 000 000+',
     linkProjectPage: '/project-work-groupon',
   },

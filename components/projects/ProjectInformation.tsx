@@ -1,17 +1,11 @@
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
-import { LinkItem } from '@/utils/types'
+import { ProjectInformationProps } from '@/utils/types'
 
-type Props = {
-  description: string
-  mySkills: string[]
-  customers?: string | undefined
-  links: LinkItem[]
-  linkGitHub?: string
-}
+type Props = ProjectInformationProps
 
-const ProjectInformation = ({ description, mySkills, customers, links, linkGitHub }: Props) => {
-  const hasMoreLinks = links.length > 1
+const ProjectInformation = ({ description, mySkills, customers, projectLinks, linkGitHub }: Props) => {
+  const hasMoreLinks = projectLinks.length > 1
   const hasGithub = linkGitHub ? true : false
 
   return (
@@ -49,8 +43,8 @@ const ProjectInformation = ({ description, mySkills, customers, links, linkGitHu
       <div className="mt-8">
         <h3 className="pb-2 font-bold">{hasMoreLinks || hasGithub ? 'Links:' : 'Link:'}</h3>
         <List>
-          {links &&
-            links.map((link, index) => (
+          {projectLinks &&
+            projectLinks.map((link, index) => (
               <div key={index}>
                 <ListItem>
                   <span className="leading-tight">

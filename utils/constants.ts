@@ -10,3 +10,17 @@ export const EMAIL_TEXT = 'krsiak.daniel@gmail.com'
 
 export const ID_PROJECTS_PERSONAL = 'projects-personal'
 export const ID_PROJECTS_WORK = 'projects-work'
+
+export const projectPages = {
+  work: {
+    smartsuppDashboard: 'project-work-smartsupp-dashboard',
+    smartsuppWeb: 'project-work-smartsupp-web',
+    komercniBanka: 'project-work-komercni-banka',
+    groupon: 'project-work-groupon',
+  },
+  personal: {
+    krsiak: 'project-personal-krsiak',
+    eshop: 'project-personal-eshop',
+    cryptoMania: 'project-personal-cryptomania',
+  },
+}
