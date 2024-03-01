@@ -35,7 +35,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
           </ListItem>
           {customers && (
             <ListItem>
-              Company customers: <span className="text-neutral-500">{customers}</span>
+              Company customers: <span className="text-neutral-500 ml-2 font-bold">{customers}</span>
             </ListItem>
           )}
         </List>
