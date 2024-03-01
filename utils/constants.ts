@@ -11,6 +11,10 @@ export const EMAIL_TEXT = 'krsiak.daniel@gmail.com'
 export const ID_PROJECTS_PERSONAL = 'projects-personal'
 export const ID_PROJECTS_WORK = 'projects-work'
 
+export const ID_ERROR_404 = 'error-404'
+export const ID_ERROR_GENERAL = 'error-general'
+export const ID_ERROR_GLOBAL = 'error-global'
+
 export const projectPages = {
   work: {
     smartsuppDashboard: 'project-work-smartsupp-dashboard',

@@ -11,9 +11,9 @@ import {
 const Hero = () => {
   return (
     <div id="hero" className="mt-20 px-5">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5 max-w-screen-xl">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-7xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white text-center mb-4">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white text-center mb-4">
             Daniel Kršiak <span className="block text-purple-600 dark:text-purple-500">React Developer</span>
           </h1>
 
@@ -48,21 +48,21 @@ const Hero = () => {
           <a
             href={LINK_LINKEDIN}
             target="_blank"
-            className="uppercase mb-2 sm:mb-0 sm:mr-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            className="uppercase w-40 text-center mb-2 sm:mb-0 sm:mr-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             LinkedIn
           </a>
           <a
             href={LINK_GITHUB}
             target="_blank"
-            className="uppercase mb-2 sm:mb-0 sm:mr-2 text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-md px-5 py-2.5 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+            className="uppercase w-40 text-center mb-2 sm:mb-0 sm:mr-2 text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-md px-5 py-2.5 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
           >
             GitHub
           </a>
           <a
             href={LINK_RESUME}
             target="_blank"
-            className="uppercase sm:mb-0 text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-md px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800"
+            className="uppercase w-40 text-center sm:mb-0 text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-md px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800"
           >
             Resume
           </a>

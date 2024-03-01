@@ -23,7 +23,7 @@ const getFeaturedColors = (isFeatured: boolean) => {
   return 'bg-neutral-50 border-neutral-400'
 }
 
-// FIXME: add to pages layouts "max-w-screen-xl" and test resize
+// FIXME: new design and layout
 const ProjectItem = ({
   isFeatured,
   image,

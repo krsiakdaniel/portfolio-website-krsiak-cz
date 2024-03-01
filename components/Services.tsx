@@ -5,10 +5,10 @@ import UI from '@/public/icons/svg/ui.svg'
 
 const Services = () => {
   return (
-    <div id="services" className="mt-20">
-      <div className="md:container md:mx-auto">
-        <div className="flex flex-col lg:flex-row bg-green-100 w-full py-10 px-5 mb-20 md:rounded-lg">
-          <div className="flex flex-col w-full justify-center lg:w-1/2 lg:px-10 py-10 text-center lg:text-left">
+    <div id="services" className="mt-20 px-5">
+      <div className="container mx-auto px-5 max-w-screen-xl">
+        <div className="flex flex-col lg:flex-row bg-green-100 py-10 px-5 mb-20 rounded-lg">
+          <div className="flex flex-col justify-center lg:w-1/2 lg:px-10 py-10 text-center lg:text-left">
             <h2 className="text-4xl font-extrabold dark:text-white uppercase">What I do</h2>
             <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400 lg:max-w-[550px]">
               I am passionate about creating high-quality products that meet the needs and expectations both of the

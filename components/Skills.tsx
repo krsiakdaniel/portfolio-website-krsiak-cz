@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Skills = () => {
   return (
     <div id="skills" className="mt-20 px-5">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5 max-w-screen-xl">
         <DividerWithText text="Skills" />
         <div className="flex flex-col sm:flex-row justify-center mt-5">
           <div className="flex justify-center mb-4 sm:mb-0">

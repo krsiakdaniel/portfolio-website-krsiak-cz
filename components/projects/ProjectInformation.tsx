@@ -20,7 +20,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
           <ListItem>
             <div className="flex items-center">
               <span className="hidden md:inline mr-2">My skills: </span>
-              {/* FIXME: create separate lists for skills by category + map them in different color = create BADGE shared cmp */}
+              {/* FIXME: responsive issue in tags, separate them ?*/}
               <div className="flex flex-col md:flex-row">
                 {mySkills.map((skill, index) => (
                   <span

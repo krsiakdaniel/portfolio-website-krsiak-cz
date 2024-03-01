@@ -26,8 +26,8 @@ const ProjectPageLayout = ({
   imageShowcase,
 }: Props) => {
   return (
-    <div id={id}>
-      <div className="container mx-auto pt-20 px-5">
+    <div id={id} className="mt-20 px-5">
+      <div className="container mx-auto px-5 max-w-screen-xl">
         <HeaderSection title={title} role={role} years={years} goBackLink={goBackLink} />
         <ProjectInformation
           description={description}

@@ -23,7 +23,7 @@ export type HeaderSectionProps = {
   title: string
   role: string
   years?: string | undefined
-  goBackLink: string
+  goBackLink: ProjectType
 }
 
 export type ProjectInformationProps = {
@@ -48,3 +48,6 @@ export interface Contact {
   href: string
   linkText: string
 }
+
+// utils
+export type ProjectType = 'work' | 'personal'

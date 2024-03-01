@@ -8,9 +8,9 @@ const HeadingInfo = () => {
     <div>
       <h2 className="text-4xl font-bold text-purple-600 dark:text-purple-500 uppercase">About</h2>
       <p className="my-4 text-lg text-gray-500">
-        I am Front End - <span className="text-purple-500 font-bold">React Developer</span>, who knows{' '}
-        <span className="text-purple-500 font-bold">QA Automation</span> and is used to leading people as a{' '}
-        <span className="text-purple-500 font-bold">Team Leader</span> and was{' '}
+        I am <span className="text-purple-500 font-bold">React Developer</span>, who knows{' '}
+        <span className="text-purple-500 font-bold">QA Automation</span> and is capable of leading people as{' '}
+        <span className="text-purple-500 font-bold">Team Leader</span>. I was also{' '}
         <span className="text-purple-500 font-bold">Localization Manager</span>.
       </p>
     </div>
@@ -68,7 +68,7 @@ const Photo = () => {
 const About = () => {
   return (
     <div id="about" className="mt-20 px-5">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5 max-w-screen-xl">
         <div className="mb-20">
           <DividerWithText text="About me" />
           <HeadingInfo />
