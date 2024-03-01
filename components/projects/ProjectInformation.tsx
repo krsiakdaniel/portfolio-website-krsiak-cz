@@ -49,7 +49,11 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
               <div key={index}>
                 <ListItem>
                   <span className="leading-tight">
-                    <a href={link.url} target="_blank" className="underline hover:no-underline text-primary-500">
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      className="font-medium text-purple-500 dark:text-purple-500 underline hover:no-underline"
+                    >
                       {link.urlText}
                     </a>
                   </span>
@@ -60,7 +64,11 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
           {linkGitHub && (
             <ListItem>
               <span className="leading-tight">
-                <a href={linkGitHub} target="_blank" className="underline hover:no-underline text-primary-500">
+                <a
+                  href={linkGitHub}
+                  target="_blank"
+                  className="font-medium text-purple-500 dark:text-purple-500 underline hover:no-underline"
+                >
                   GitHub repository →
                 </a>
               </span>
