@@ -27,7 +27,7 @@ const ProjectPageLayout = ({
 }: Props) => {
   return (
     <div id={id}>
-      <div className="container mx-auto my-20">
+      <div className="container mx-auto pt-20 px-5">
         <HeaderSection title={title} role={role} years={years} goBackLink={goBackLink} />
         <ProjectInformation
           description={description}
@@ -39,7 +39,7 @@ const ProjectPageLayout = ({
 
         <div className="pb-10">
           {sections.map((section, index) => (
-            <Section key={index} title={section.title} items={section.items} />
+            <Section key={index} title={section.title} titleHighlight={section.titleHighlight} items={section.items} />
           ))}
         </div>
 

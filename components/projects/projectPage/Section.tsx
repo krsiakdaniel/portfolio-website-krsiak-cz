@@ -2,9 +2,11 @@ import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 import { SectionItem } from '@/utils/types'
 
-const Section = ({ title, items }: SectionItem) => (
+const Section = ({ title, titleHighlight, items }: SectionItem) => (
   <div className="mt-8">
-    <h3 className="pb-2 font-bold">{title}</h3>
+    <h3 className="text-3xl font-bold dark:text-white mb-4">
+      {title} {titleHighlight && <span className="text-purple-500">{titleHighlight}</span>}
+    </h3>
     <List>
       {items.map((item, index) => (
         <ListItem key={index}>{item}</ListItem>

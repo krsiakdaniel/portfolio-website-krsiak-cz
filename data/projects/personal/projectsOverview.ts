@@ -18,6 +18,7 @@ import eshop3 from '@/public/images/projects-personal/png/eshop-3.png'
 import eshop4 from '@/public/images/projects-personal/png/eshop-4.png'
 import eshopThumb from '@/public/images/projects-personal/png/eshop-thumb.png'
 
+// BUG: somehow I map on the pages different texts, check both PERSONAL and WORK
 export const projectsPersonal: Project[] = [
   {
     id: 1,
@@ -27,7 +28,7 @@ export const projectsPersonal: Project[] = [
     title: '👨‍💻 Portfolio Website',
     role: 'Next.js App',
     description: 'My personal portfolio website to showcase my work and skills.',
-    mySkills: ['JavaScript', 'TypeScript', 'Next.js', 'Tailwind CSS'],
+    mySkills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
     linkText: 'Read more →',
     projectLinks: [{ urlText: 'Website →', url: 'https://krsiak.cz/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
@@ -48,7 +49,7 @@ export const projectsPersonal: Project[] = [
     title: '💰 CryptoMania',
     role: 'React App',
     description: 'Crypto currency prices using CoinGecko API. UI has dark mode.',
-    mySkills: ['JavaScript', 'TypeScript', 'React App', 'Chakra UI', 'CoinGecko API'],
+    mySkills: ['JavaScript', 'TypeScript', 'React', 'React App', 'Chakra UI', 'CoinGecko API'],
     linkText: 'Read more →',
     projectLinks: [{ urlText: 'Website →', url: 'https://cryptomania-currency-prices.netlify.app/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',

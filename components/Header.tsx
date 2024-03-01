@@ -5,7 +5,7 @@ import { LINK_LINKEDIN } from '@/utils/constants'
 const Header = () => {
   return (
     <header className="sticky top-0 bg-white z-20 border-b border-neutral-400">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-screen-xl">
         <div className="flex py-4 justify-between items-center">
           <div className="flex flex-row gap-8 items-center">
             <Link href="/">

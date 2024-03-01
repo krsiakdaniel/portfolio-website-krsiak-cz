@@ -1,6 +1,8 @@
 import { ID_PROJECTS_PERSONAL, ID_PROJECTS_WORK } from '@/utils/constants'
 
-export const getGoBackLinkID = (goBackLink: string) => {
+type ProjectType = 'work' | 'personal'
+
+export const getGoBackLinkID = (goBackLink: ProjectType): string => {
   switch (goBackLink) {
     case 'work':
       return `/#${ID_PROJECTS_WORK}`

@@ -2,21 +2,24 @@ import type { SectionItem } from '@/utils/types'
 
 export const sections: SectionItem[] = [
   {
-    title: 'My job:',
+    title: 'My job',
+    titleHighlight: '',
     items: [
       'I worked on automation, testing scripts and team coordination.',
       'Groupon is an online marketplace, offering discounts on products and services, with 17 million customers.',
     ],
   },
   {
-    title: 'My role:',
+    title: 'My role',
+    titleHighlight: '',
     items: [
       'SDET = Software Development Engineer in Testing.',
       'In testing, it is an IT professional who can work equally in both development and testing.',
     ],
   },
   {
-    title: 'My responsibility: 1.) Automation and testing scripts',
+    title: 'Responsibility #1:',
+    titleHighlight: 'QA Automation and Testing Scripts',
     items: [
       'Setting up automation, including Playwright for E2E.',
       'Writing E2E tests in JavaScript and TypeScript.',
@@ -26,7 +29,8 @@ export const sections: SectionItem[] = [
     ],
   },
   {
-    title: 'My responsibility: 2.) Team coordination',
+    title: 'Responsibility #2:',
+    titleHighlight: 'Team Coordination',
     items: [
       'Involved in hiring new SDET members for QA team.',
       'Work across 4 teams.',

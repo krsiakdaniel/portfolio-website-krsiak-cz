@@ -13,7 +13,7 @@ const Hero = () => {
     <div id="hero" className="mt-20 px-5">
       <div className="container mx-auto">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
+          <h1 className="text-7xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white text-center mb-4">
             Daniel Kršiak <span className="block text-purple-600 dark:text-purple-500">React Developer</span>
           </h1>
 

@@ -31,11 +31,12 @@ export type ProjectInformationProps = {
   mySkills: string[]
   customers?: string | undefined
   projectLinks: LinkItem[]
-  linkGitHub?: string
+  linkGitHub?: string | undefined
 }
 
 export type SectionItem = {
   title: string
+  titleHighlight?: string | undefined
   items: string[]
 }
 

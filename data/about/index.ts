@@ -25,7 +25,7 @@ export const jobs: Job[] = [
   },
   {
     path: check,
-    title: 'QA Team Leader',
+    title: 'QA Automation Team Leader',
     years: '2',
     description: `
         I had the opportunity to create, setup and team lead  2x QA automation teams. Setting up Cypress and Playwright for E2E tests, writing test scripts in

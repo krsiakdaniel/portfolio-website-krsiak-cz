@@ -11,20 +11,21 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
   return (
     <>
       <div className="flex flex-col mt-8">
-        <p className="text-body-md font-normal text-neutral-700">{description}</p>
+        <p className="mb-3 text-gray-500 dark:text-gray-400 max-w-screen-lg">{description}</p>
       </div>
 
       <div className="mt-8">
-        <h3 className="pb-2 font-bold">Information:</h3>
+        <h3 className="text-3xl font-bold dark:text-white mb-4">Information</h3>
         <List>
           <ListItem>
             <div className="flex items-center">
               <span className="hidden md:inline mr-2">My skills: </span>
-              <div className="flex flex-col sm:flex-row">
+              {/* FIXME: create separate lists for skills by category + map them in different color = create BADGE shared cmp */}
+              <div className="flex flex-col md:flex-row">
                 {mySkills.map((skill, index) => (
                   <span
                     key={index}
-                    className="mr-1 border border-primary-500 font-medium bg-primary-100 text-primary-500 text-body-sm px-2.5 py-0.5 rounded mb-1 sm:mb-0 last:mb-0 text-center"
+                    className="bg-purple-100 text-purple-800 text-xs font-medium mr-0 sm:mr-2 mb-2 last:mb-0 last:mr-0 text-center sm:mb-0 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400"
                   >
                     {skill}
                   </span>
@@ -41,7 +42,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
       </div>
 
       <div className="mt-8">
-        <h3 className="pb-2 font-bold">{hasMoreLinks || hasGithub ? 'Links:' : 'Link:'}</h3>
+        <h3 className="text-3xl font-bold dark:text-white mb-4">{hasMoreLinks || hasGithub ? 'Links' : 'Link'}</h3>
         <List>
           {projectLinks &&
             projectLinks.map((link, index) => (
