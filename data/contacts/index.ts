@@ -1,6 +1,6 @@
-import gmail from '@/public/icons/png/gmail.png'
-import linkedin from '@/public/icons/png/linkedin.png'
-import phone from '@/public/icons/png/phone.png'
+import gmail from '@/public/images/illustrations/gmail.png'
+import linkedin from '@/public/images/illustrations/linkedin.png'
+import phone from '@/public/images/illustrations/phone.png'
 
 import { EMAIL_HREF, EMAIL_TEXT, LINK_LINKEDIN, PHONE_HREF, PHONE_TEXT } from '@/utils/constants'
 

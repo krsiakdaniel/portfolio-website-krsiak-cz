@@ -1,7 +1,7 @@
 'use client'
 
 import PageContainer from '@/components/layout/PageContainer'
-import imgError from '@/public/images/error.png'
+import imgError from '@/public/images/illustrations/error.png'
 import { ID_ERROR_GLOBAL } from '@/utils/constants'
 import Image from 'next/image'
 import { useEffect } from 'react'

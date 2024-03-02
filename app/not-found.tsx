@@ -1,5 +1,5 @@
 import PageContainer from '@/components/layout/PageContainer'
-import img404 from '@/public/images/404.png'
+import img404 from '@/public/images/illustrations/404.png'
 import { ID_ERROR_404 } from '@/utils/constants'
 import Image from 'next/image'
 import Link from 'next/link'

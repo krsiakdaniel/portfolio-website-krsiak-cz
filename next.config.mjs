@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    domains: ['flowbite.com', 'skillicons.dev'],
-  },
-}
+const nextConfig = {}
 
 export default nextConfig
