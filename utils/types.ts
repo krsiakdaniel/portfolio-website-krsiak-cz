@@ -27,6 +27,7 @@ export type Project = {
   role: string
   years?: string
   description: string
+  mySkillsIcons: Icon[]
   mySkills: SkillItem[]
   linkText: string
   projectLinks: LinkItem[]

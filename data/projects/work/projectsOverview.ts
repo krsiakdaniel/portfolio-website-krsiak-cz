@@ -1,11 +1,12 @@
+import {
+  iconsSkillsProjectsWork1,
+  iconsSkillsProjectsWork2,
+  iconsSkillsProjectsWork3,
+  iconsSkillsProjectsWork4,
+} from '@/data/skills/skills-projects-work'
 import { Project } from '@/utils/types'
 
-import smartsuppWeb1 from '@/public/images/projects-work/png/smartsupp-web-1.png'
-import smartsuppWeb2 from '@/public/images/projects-work/png/smartsupp-web-2.png'
-import smartsuppWeb3 from '@/public/images/projects-work/png/smartsupp-web-3.png'
-import smartsuppWeb4 from '@/public/images/projects-work/png/smartsupp-web-4.png'
-import smartsuppWebThumb from '@/public/images/projects-work/png/smartsupp-web-thumb-light.png'
-
+// project images
 import smartsuppDashboard1 from '@/public/images/projects-work/png/smartsupp-dashboard-1.png'
 import smartsuppDashboard2 from '@/public/images/projects-work/png/smartsupp-dashboard-2.png'
 import smartsuppDashboard3 from '@/public/images/projects-work/png/smartsupp-dashboard-3.png'
@@ -13,15 +14,21 @@ import smartsuppDashboard4 from '@/public/images/projects-work/png/smartsupp-das
 import smartsuppDashboard5 from '@/public/images/projects-work/png/smartsupp-dashboard-5.png'
 import smartsuppDashboardThumb from '@/public/images/projects-work/png/smartsupp-dashboard-thumb-light.png'
 
-import groupon1 from '@/public/images/projects-work/png/groupon-1.png'
-import groupon2 from '@/public/images/projects-work/png/groupon-2.png'
-import grouponThumb from '@/public/images/projects-work/png/groupon-thumb-light.png'
+import smartsuppWeb1 from '@/public/images/projects-work/png/smartsupp-web-1.png'
+import smartsuppWeb2 from '@/public/images/projects-work/png/smartsupp-web-2.png'
+import smartsuppWeb3 from '@/public/images/projects-work/png/smartsupp-web-3.png'
+import smartsuppWeb4 from '@/public/images/projects-work/png/smartsupp-web-4.png'
+import smartsuppWebThumb from '@/public/images/projects-work/png/smartsupp-web-thumb-light.png'
 
 import komercniBanka1 from '@/public/images/projects-work/png/komercni-banka-1.png'
 import komercniBanka2 from '@/public/images/projects-work/png/komercni-banka-2.png'
 import komercniBanka3 from '@/public/images/projects-work/png/komercni-banka-3.png'
 import komercniBanka4 from '@/public/images/projects-work/png/komercni-banka-4.png'
 import komercniBankaThumb from '@/public/images/projects-work/png/komercni-banka-thumb-light.png'
+
+import groupon1 from '@/public/images/projects-work/png/groupon-1.png'
+import groupon2 from '@/public/images/projects-work/png/groupon-2.png'
+import grouponThumb from '@/public/images/projects-work/png/groupon-thumb-light.png'
 
 export const projectsWork: Project[] = [
   {
@@ -40,6 +47,7 @@ export const projectsWork: Project[] = [
     years: '3 years 2 months',
     description:
       'I worked on chat dashboard features and new design, including redesign of settings. I was involved in UX team to learn.',
+    mySkillsIcons: iconsSkillsProjectsWork1,
     mySkills: [
       {
         description: 'Frontend',
@@ -63,6 +71,7 @@ export const projectsWork: Project[] = [
     years: '1 year',
     description:
       'I created the company website Front End. I worked closely with the main UX designer on new brand color theme and layout decisions.',
+    mySkillsIcons: iconsSkillsProjectsWork2,
     mySkills: [
       { description: 'Frontend', skills: ['JavaScript', 'PHP', 'SASS', 'BEM', 'Cypress'] },
       { description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Web Design'] },
@@ -83,6 +92,7 @@ export const projectsWork: Project[] = [
     years: '10 months',
     description:
       'I created search page for ATM and branches, with their detail pages. And also Exchange rates page with details for each currency.',
+    mySkillsIcons: iconsSkillsProjectsWork3,
     mySkills: [
       {
         description: 'Frontend',
@@ -123,6 +133,7 @@ export const projectsWork: Project[] = [
     years: '4 months',
     description:
       'I was responsible setting up new QA team, related processes, hiring and managing people, making test plans, test cases, and scripts.',
+    mySkillsIcons: iconsSkillsProjectsWork4,
     mySkills: [
       {
         description: 'Frontend',

@@ -1,4 +1,14 @@
+import {
+  iconsSkillsProjectsPersonal1,
+  iconsSkillsProjectsPersonal2,
+  iconsSkillsProjectsPersonal3,
+} from '@/data/skills/skills-projects-personal'
 import { Project } from '@/utils/types'
+
+// project images
+import krsiak1 from '@/public/images/projects-personal/png/krsiak-1.png'
+import krsiak2 from '@/public/images/projects-personal/png/krsiak-2.png'
+import krsiakThumb from '@/public/images/projects-personal/png/krsiak-thumb-light.png'
 
 import cryptomania1 from '@/public/images/projects-personal/png/cryptomania-1.png'
 import cryptomania2 from '@/public/images/projects-personal/png/cryptomania-2.png'
@@ -7,10 +17,6 @@ import cryptomania4 from '@/public/images/projects-personal/png/cryptomania-4.pn
 import cryptomania5 from '@/public/images/projects-personal/png/cryptomania-5.png'
 import cryptomania6 from '@/public/images/projects-personal/png/cryptomania-6.png'
 import cryptomaniaThumb from '@/public/images/projects-personal/png/cryptomania-thumb-light.png'
-
-import krsiak1 from '@/public/images/projects-personal/png/krsiak-1.png'
-import krsiak2 from '@/public/images/projects-personal/png/krsiak-2.png'
-import krsiakThumb from '@/public/images/projects-personal/png/krsiak-thumb-light.png'
 
 import eshop1 from '@/public/images/projects-personal/png/eshop-1.png'
 import eshop2 from '@/public/images/projects-personal/png/eshop-2.png'
@@ -28,6 +34,7 @@ export const projectsPersonal: Project[] = [
     role: 'Next.js App',
     description:
       'My personal portfolio website to showcase my work and skills. The latest iteration of what I know and can code as React Developer.',
+    mySkillsIcons: iconsSkillsProjectsPersonal1,
     mySkills: [
       {
         description: 'Frontend',
@@ -55,6 +62,7 @@ export const projectsPersonal: Project[] = [
     role: 'React App',
     description:
       'Crypto currency prices app fetching latest data from CoinGecko API. This is fun little project created in Chakra UI with dark mode available.',
+    mySkillsIcons: iconsSkillsProjectsPersonal2,
     mySkills: [
       {
         description: 'Frontend',
@@ -75,6 +83,7 @@ export const projectsPersonal: Project[] = [
     role: 'Vue.js App',
     description:
       'Simple eCommerce website. First time coding with Vue and Nuxt. Used Vuetify for styling. Exercise in creating Vue project.',
+    mySkillsIcons: iconsSkillsProjectsPersonal3,
     mySkills: [
       {
         description: 'Frontend',

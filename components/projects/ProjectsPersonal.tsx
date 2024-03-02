@@ -22,6 +22,7 @@ const ProjectsPersonal = () => {
               role={item.role}
               years={item.years}
               description={item.description}
+              mySkillsIcons={item.mySkillsIcons}
               customers={item.customers}
               linkText={item.linkText}
               linkProjectPage={item.linkProjectPage}

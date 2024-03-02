@@ -1,5 +1,5 @@
-import { iconsSkillsProjectsWork1 } from '@/data/skills/skills-projects-work'
 import { getFeaturedBorderColor } from '@/utils/getFeaturedBorderColor'
+import { Icon } from '@/utils/types'
 import Image from 'next/image'
 
 type Props = {
@@ -9,12 +9,13 @@ type Props = {
   role: string
   years?: string
   description: string
+  mySkillsIcons: Icon[]
   customers: string | undefined
   linkText: string
   linkProjectPage: string
 }
 
-const ProjectItem = ({ isFeatured, image, title, role, years, description, customers, linkProjectPage }: Props) => {
+const ProjectItem = ({ isFeatured, image, title, role, years, description, mySkillsIcons, customers, linkProjectPage }: Props) => {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-10">
       <div className="gap-8 items-start py-8 mx-auto xl:gap-16 md:grid md:grid-cols-2 lg:py-16">
@@ -47,9 +48,8 @@ const ProjectItem = ({ isFeatured, image, title, role, years, description, custo
 
           <p className="mb-6 mt-6 font-light text-gray-500 md:text-lg dark:text-gray-400">{description}</p>
 
-          {/* FIXME: namapovat ruzne ikony podle projektu */}
           <div className="flex flex-row mb-6">
-            {iconsSkillsProjectsWork1.map((item) => {
+            {mySkillsIcons.map((item) => {
               return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={32} height={32} />
             })}
           </div>
