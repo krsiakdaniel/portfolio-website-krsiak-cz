@@ -23,14 +23,12 @@ const getFeaturedColors = (isFeatured: boolean): string => {
 const ProjectItem = ({ isFeatured, image, title, role, years, description, customers, linkProjectPage }: Props) => {
   return (
     <>
-      <div
-        className={`flex flex-col lg:flex-row lg:space-x-10 mt-8 border rounded-lg px-8 py-6 relative ${getFeaturedColors(isFeatured || false)}`}
-      >
-        <div className="flex flex-col lg:w-1/2">
+      <div className="flex flex-col lg:flex-row lg:space-x-10 mt-8 py-6">
+        <div className="flex flex-col bg-blue-300">
           <div className="mt-4">
             <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-              {isFeatured && <p className="text-5xl absolute -right-6 -top-6 z-10">⭐</p>}
-              <div className="flex lg:justify-end mt-8 lg:mt-0 lg:w-1/2">
+              <div className="flex lg:justify-end mt-8 lg:mt-0 relative">
+                {isFeatured && <p className="text-5xl absolute -right-6 -top-6 z-10">⭐</p>}
                 <Image
                   src={image}
                   alt={title}
@@ -42,16 +40,27 @@ const ProjectItem = ({ isFeatured, image, title, role, years, description, custo
                 />
               </div>
 
-              <div className="mt-4 md:mt-0">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{title}</h2>
-                <p className="text-2xl font-semibold text-purple-500">
+              <div className="mt-4 md:mt-0 bg-green-300">
+                <h2 className="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{title}</h2>
+                <h3 className="text-2xl font-semibold text-purple-500 mb-4">
                   {role}{' '}
                   <small className="text-neutral-600">
                     {years && '· '}
                     {years}
                   </small>
-                </p>
+                </h3>
+
+                {/* FIXME: namapovat ruzne ikony podle projektu */}
+                <div className="flex flex-row mb-4">
+                  {iconsWork1.map((item) => {
+                    return (
+                      <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={32} height={32} />
+                    )
+                  })}
+                </div>
+
                 <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">{description}</p>
+
                 {customers && (
                   <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
                     <span className="font-bold">{customers}</span> customers.
@@ -76,14 +85,6 @@ const ProjectItem = ({ isFeatured, image, title, role, years, description, custo
                   </svg>
                 </a>
               </div>
-            </div>
-          </div>
-          {/* FIXME: namapovat ruzne ikony podle projektu */}
-          <div className="mt-4">
-            <div className="flex flex-row">
-              {iconsWork1.map((item) => {
-                return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
-              })}
             </div>
           </div>
         </div>
