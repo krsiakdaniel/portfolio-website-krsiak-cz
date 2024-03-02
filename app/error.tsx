@@ -1,7 +1,8 @@
 'use client' // Error components must be Client Components
 
+import PageContainer from '@/components/layout/PageContainer'
 import imgError from '@/public/images/error.png'
-import { ID_ERROR_GENERAL } from '@/utils/constants'
+import { ID_ERROR } from '@/utils/constants'
 import Image from 'next/image'
 import { useEffect } from 'react'
 
@@ -12,8 +13,8 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
   }, [error])
 
   return (
-    <div id={ID_ERROR_GENERAL} className="mt-20 px-5">
-      <div className="container mx-auto px-5 max-w-screen-xl">
+    <PageContainer id={ID_ERROR}>
+      <div className="mb-20">
         <div className="flex flex-col items-center text-center">
           <Image src={imgError} alt="404" width={400} height={417} className="mb-10 bt-5" />
           <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-purple-600 dark:text-purple-500 uppercase">
@@ -32,6 +33,6 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
           </button>
         </div>
       </div>
-    </div>
+    </PageContainer>
   )
 }

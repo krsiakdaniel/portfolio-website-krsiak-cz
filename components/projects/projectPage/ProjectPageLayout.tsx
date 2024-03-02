@@ -1,3 +1,4 @@
+import PageContainer from '@/components/layout/PageContainer'
 import ProjectInformation from '@/components/projects/ProjectInformation'
 import HeaderSection from '@/components/projects/projectPage/HeaderSection'
 import Section from '@/components/projects/projectPage/Section'
@@ -26,30 +27,28 @@ const ProjectPageLayout = ({
   imageShowcase,
 }: Props) => {
   return (
-    <div id={id} className="mt-20 px-5">
-      <div className="container mx-auto px-5 max-w-screen-xl">
-        <HeaderSection title={title} role={role} years={years} goBackLink={goBackLink} />
-        <ProjectInformation
-          description={description}
-          mySkills={mySkills}
-          customers={customers}
-          projectLinks={projectLinks}
-          linkGitHub={linkGitHub}
-        />
+    <PageContainer id={id}>
+      <HeaderSection title={title} role={role} years={years} goBackLink={goBackLink} />
+      <ProjectInformation
+        description={description}
+        mySkills={mySkills}
+        customers={customers}
+        projectLinks={projectLinks}
+        linkGitHub={linkGitHub}
+      />
 
-        <div className="pb-10">
-          {sections.map((section, index) => (
-            <Section key={index} title={section.title} titleHighlight={section.titleHighlight} items={section.items} />
-          ))}
-        </div>
-
-        <div>
-          {imageShowcase.map((image, index) => (
-            <Image key={index} src={image} alt={`smartsupp-web-${index + 1}`} width={1216} height={754} />
-          ))}
-        </div>
+      <div className="pb-10">
+        {sections.map((section, index) => (
+          <Section key={index} title={section.title} titleHighlight={section.titleHighlight} items={section.items} />
+        ))}
       </div>
-    </div>
+
+      <div>
+        {imageShowcase.map((image, index) => (
+          <Image key={index} src={image} alt={`smartsupp-web-${index + 1}`} width={1216} height={754} />
+        ))}
+      </div>
+    </PageContainer>
   )
 }
 
