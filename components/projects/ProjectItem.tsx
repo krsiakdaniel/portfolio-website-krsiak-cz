@@ -22,7 +22,7 @@ const ProjectItem = ({ isFeatured, image, title, role, years, description, custo
           {isFeatured && <p className="text-5xl absolute -left-6 -top-6 z-10">⭐</p>}
           <Image
             src={image}
-            className={`rounded-lg shadow-md bg-neutral-100 object-cover border ${getFeaturedBorderColor(isFeatured)} mb-4 md:mb-0`}
+            className={`rounded-lg shadow-md bg-neutral-100 object-cover ${getFeaturedBorderColor(isFeatured)} mb-4 md:mb-0`}
             alt={title}
             placeholder="blur"
             blurDataURL={image}
