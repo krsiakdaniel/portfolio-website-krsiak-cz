@@ -15,7 +15,17 @@ type Props = {
   linkProjectPage: string
 }
 
-const ProjectItem = ({ isFeatured, image, title, role, years, description, mySkillsIcons, customers, linkProjectPage }: Props) => {
+const ProjectItem = ({
+  isFeatured,
+  image,
+  title,
+  role,
+  years,
+  description,
+  mySkillsIcons,
+  customers,
+  linkProjectPage,
+}: Props) => {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-10">
       <div className="gap-8 items-start py-8 mx-auto xl:gap-16 md:grid md:grid-cols-2 lg:py-16">

@@ -12,23 +12,23 @@ import smartsuppDashboard2 from '@/public/images/projects-work/png/smartsupp-das
 import smartsuppDashboard3 from '@/public/images/projects-work/png/smartsupp-dashboard-3.png'
 import smartsuppDashboard4 from '@/public/images/projects-work/png/smartsupp-dashboard-4.png'
 import smartsuppDashboard5 from '@/public/images/projects-work/png/smartsupp-dashboard-5.png'
-import smartsuppDashboardThumb from '@/public/images/projects-work/png/smartsupp-dashboard-thumb-light.png'
+import smartsuppDashboardThumb from '@/public/images/projects-work/png/smartsupp-dashboard-thumb-dark.png'
 
 import smartsuppWeb1 from '@/public/images/projects-work/png/smartsupp-web-1.png'
 import smartsuppWeb2 from '@/public/images/projects-work/png/smartsupp-web-2.png'
 import smartsuppWeb3 from '@/public/images/projects-work/png/smartsupp-web-3.png'
 import smartsuppWeb4 from '@/public/images/projects-work/png/smartsupp-web-4.png'
-import smartsuppWebThumb from '@/public/images/projects-work/png/smartsupp-web-thumb-light.png'
+import smartsuppWebThumb from '@/public/images/projects-work/png/smartsupp-web-thumb-dark.png'
 
 import komercniBanka1 from '@/public/images/projects-work/png/komercni-banka-1.png'
 import komercniBanka2 from '@/public/images/projects-work/png/komercni-banka-2.png'
 import komercniBanka3 from '@/public/images/projects-work/png/komercni-banka-3.png'
 import komercniBanka4 from '@/public/images/projects-work/png/komercni-banka-4.png'
-import komercniBankaThumb from '@/public/images/projects-work/png/komercni-banka-thumb-light.png'
+import komercniBankaThumb from '@/public/images/projects-work/png/komercni-banka-thumb-dark.png'
 
 import groupon1 from '@/public/images/projects-work/png/groupon-1.png'
 import groupon2 from '@/public/images/projects-work/png/groupon-2.png'
-import grouponThumb from '@/public/images/projects-work/png/groupon-thumb-light.png'
+import grouponThumb from '@/public/images/projects-work/png/groupon-thumb-dark.png'
 
 export const projectsWork: Project[] = [
   {
