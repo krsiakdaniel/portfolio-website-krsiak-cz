@@ -26,8 +26,8 @@ import komercniBanka3 from '@/public/images/projects-work/png/komercni-banka-3.p
 import komercniBanka4 from '@/public/images/projects-work/png/komercni-banka-4.png'
 import komercniBankaThumb from '@/public/images/projects-work/png/komercni-banka-thumb-light.png'
 
-import groupon1 from '@/public/images/projects-work/png/groupon-1.png'
-import groupon2 from '@/public/images/projects-work/png/groupon-2.png'
+import groupon1 from '@/public/images/projects-work/png/groupon-1-light.png'
+import groupon2 from '@/public/images/projects-work/png/groupon-2-light.png'
 import grouponThumb from '@/public/images/projects-work/png/groupon-thumb-light.png'
 
 export const projectsWork: Project[] = [
