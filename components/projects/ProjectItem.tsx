@@ -22,7 +22,7 @@ const ProjectItem = ({ isFeatured, image, title, role, years, description, custo
           {isFeatured && <p className="text-5xl absolute -left-6 -top-6 z-10">⭐</p>}
           <Image
             src="https://flowbite.com/marketing-ui/demo/images/billing-mockup.png"
-            className={`rounded-lg shadow-md bg-neutral-100 object-cover border ${getFeaturedBorderColor(isFeatured)}`}
+            className={`rounded-lg shadow-md bg-neutral-100 object-cover border ${getFeaturedBorderColor(isFeatured)} mb-4 md:mb-0`}
             alt={title}
             placeholder="blur"
             blurDataURL={image}

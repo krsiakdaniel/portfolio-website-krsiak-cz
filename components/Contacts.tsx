@@ -12,10 +12,10 @@ const Contacts = () => {
         <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
           <div className="flex flex-col md:flex-row lg:flex-row space-y-8 md:space-y-0 md:space-x-8 lg:w-2/3">
             <ContactCard contact={contacts[0]} color="purple" />
-            <ContactCard contact={contacts[1]} color="green" />
+            <ContactCard contact={contacts[1]} color="purple" />
           </div>
           <div className="flex lg:w-1/3">
-            <ContactCard contact={contacts[2]} color="blue" />
+            <ContactCard contact={contacts[2]} color="purple" />
           </div>
         </div>
       </div>
