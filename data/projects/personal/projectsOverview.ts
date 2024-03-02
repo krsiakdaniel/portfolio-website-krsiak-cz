@@ -8,6 +8,7 @@ import { Project } from '@/utils/types'
 // project images
 import krsiak1 from '@/public/images/projects-personal/png/krsiak-1-light.png'
 import krsiak2 from '@/public/images/projects-personal/png/krsiak-2-light.png'
+import krsiak3 from '@/public/images/projects-personal/png/krsiak-3-light.png'
 import krsiakThumb from '@/public/images/projects-personal/png/krsiak-thumb-light.png'
 
 import cryptomania4 from '@/public/images/projects-personal/png/cryptomania-1-dark.png'
@@ -29,7 +30,7 @@ export const projectsPersonal: Project[] = [
     id: 1,
     isFeatured: true,
     image: krsiakThumb.src,
-    imageShowcase: [krsiak1.src, krsiak2.src],
+    imageShowcase: [krsiak1.src, krsiak2.src, krsiak3.src],
     title: '👨‍💻 Portfolio Website',
     role: 'Next.js App',
     description:
