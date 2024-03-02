@@ -35,12 +35,16 @@ const ProjectItem = ({
             <a href={linkProjectPage}>
               <Image
                 src={image}
-                className={`rounded-lg shadow-md bg-neutral-100 object-cover ${getFeaturedBorderColor(isFeatured)} mb-4 md:mb-0`}
+                className={`
+                  rounded-lg shadow-md bg-neutral-100 object-cover mb-4 md:mb-0 
+                  cursor-pointer hover:opacity-85 hover:border-purple-500
+                  border ${getFeaturedBorderColor(isFeatured)}
+                `}
                 alt={title}
                 placeholder="blur"
                 blurDataURL={image}
-                width={600}
-                height={500}
+                width={588}
+                height={604}
               />
             </a>
           </div>
