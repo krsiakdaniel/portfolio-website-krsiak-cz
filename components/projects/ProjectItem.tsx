@@ -29,19 +29,21 @@ const ProjectItem = ({
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-10">
       <div className="gap-8 items-start py-8 mx-auto xl:gap-16 md:grid md:grid-cols-2 lg:py-16">
-        <div className="flex lg:justify-end relative mt-8 lg:mt-0 first:mt-0">
-          {isFeatured && <p className="text-5xl absolute -left-6 -top-6 z-10">⭐</p>}
-          <a href={linkProjectPage}>
-            <Image
-              src={image}
-              className={`rounded-lg shadow-md bg-neutral-100 object-cover ${getFeaturedBorderColor(isFeatured)} mb-4 md:mb-0`}
-              alt={title}
-              placeholder="blur"
-              blurDataURL={image}
-              width={600}
-              height={500}
-            />
-          </a>
+        <div className="flex lg:justify-end mt-8 lg:mt-0 first:mt-0">
+          <div className="relative">
+            {isFeatured && <p className="text-4xl absolute -right-4 -top-5 z-10">⭐</p>}
+            <a href={linkProjectPage}>
+              <Image
+                src={image}
+                className={`rounded-lg shadow-md bg-neutral-100 object-cover ${getFeaturedBorderColor(isFeatured)} mb-4 md:mb-0`}
+                alt={title}
+                placeholder="blur"
+                blurDataURL={image}
+                width={600}
+                height={500}
+              />
+            </a>
+          </div>
         </div>
 
         <div className="mt-4 md:mt-0">
