@@ -38,9 +38,8 @@ export const projectsWork: Project[] = [
     title: '💬 Smartsupp - Customer Care Chat Dashboard',
     role: 'React Developer',
     years: '3 years 2 months',
-    description: `I worked on chat dashboard features and new design.
-      I was part of team that redesigned old settings.
-      Also due to my previous experience I was involved in the UX team and could influence design of new features.`,
+    description:
+      'I worked on chat dashboard features and new design, including settings. I was involved in UX team to learn and assist with ideas.',
     mySkills: [
       {
         description: 'Frontend',
