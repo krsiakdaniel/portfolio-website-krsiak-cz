@@ -1,6 +1,6 @@
 import chakra from '@/public/icons/svg/skills/chakra.svg'
-import figma from '@/public/icons/svg/skills/figma.svg'
 import js from '@/public/icons/svg/skills/js.svg'
+import netlify from '@/public/icons/svg/skills/netlify.svg'
 import next from '@/public/icons/svg/skills/next.svg'
 import nuxt from '@/public/icons/svg/skills/nuxt.svg'
 import react from '@/public/icons/svg/skills/react.svg'
@@ -32,6 +32,10 @@ export const iconsSkillsProjectsPersonal1: Icon[] = [
     name: 'tailwind',
     path: tailwind,
   },
+  {
+    name: 'netlify',
+    path: netlify,
+  },
 ]
 
 export const iconsSkillsProjectsPersonal2: Icon[] = [
@@ -51,6 +55,10 @@ export const iconsSkillsProjectsPersonal2: Icon[] = [
     name: 'chakra',
     path: chakra,
   },
+  {
+    name: 'netlify',
+    path: netlify,
+  },
 ]
 
 export const iconsSkillsProjectsPersonal3: Icon[] = [
@@ -69,9 +77,5 @@ export const iconsSkillsProjectsPersonal3: Icon[] = [
   {
     name: 'vuetify',
     path: vuetify,
-  },
-  {
-    name: 'figma',
-    path: figma,
   },
 ]
