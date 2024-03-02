@@ -13,13 +13,6 @@ type Props = {
   linkProjectPage: string
 }
 
-const getFeaturedColors = (isFeatured: boolean): string => {
-  if (isFeatured) {
-    return 'border-l-4 bg-orange-100 border-orange-500'
-  }
-  return 'bg-neutral-50 border-neutral-400'
-}
-
 const ProjectItem = ({ isFeatured, image, title, role, years, description, customers, linkProjectPage }: Props) => {
   return (
     <>
