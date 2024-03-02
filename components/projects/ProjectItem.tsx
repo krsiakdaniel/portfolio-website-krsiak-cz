@@ -31,15 +31,17 @@ const ProjectItem = ({
       <div className="gap-8 items-start py-8 mx-auto xl:gap-16 md:grid md:grid-cols-2 lg:py-16">
         <div className="flex lg:justify-end relative mt-8 lg:mt-0 first:mt-0">
           {isFeatured && <p className="text-5xl absolute -left-6 -top-6 z-10">⭐</p>}
-          <Image
-            src={image}
-            className={`rounded-lg shadow-md bg-neutral-100 object-cover ${getFeaturedBorderColor(isFeatured)} mb-4 md:mb-0`}
-            alt={title}
-            placeholder="blur"
-            blurDataURL={image}
-            width={600}
-            height={500}
-          />
+          <a href={linkProjectPage}>
+            <Image
+              src={image}
+              className={`rounded-lg shadow-md bg-neutral-100 object-cover ${getFeaturedBorderColor(isFeatured)} mb-4 md:mb-0`}
+              alt={title}
+              placeholder="blur"
+              blurDataURL={image}
+              width={600}
+              height={500}
+            />
+          </a>
         </div>
 
         <div className="mt-4 md:mt-0">

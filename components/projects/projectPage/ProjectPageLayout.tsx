@@ -46,7 +46,14 @@ const ProjectPageLayout = ({
       {/* FIXME: new style LIGHT + DARK screenshots retake + keep same CSS as for images on homepage */}
       <div>
         {imageShowcase.map((image, index) => (
-          <Image key={index} src={image} alt={`smartsupp-web-${index + 1}`} width={1216} height={754} />
+          <Image
+            key={index}
+            src={image}
+            alt={`smartsupp-web-${index + 1}`}
+            width={1200}
+            height={1234}
+            className="rounded-lg shadow-md bg-neutral-100 border border-neutral-300 mt-4 mb-16 md:mt-0 last:mb-0"
+          />
         ))}
       </div>
     </PageContainer>
