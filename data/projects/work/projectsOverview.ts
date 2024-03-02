@@ -42,7 +42,8 @@ export const projectsWork: Project[] = [
       smartsuppDashboard4.src,
       smartsuppDashboard5.src,
     ],
-    title: '💬 Smartsupp - Customer Care Chat Dashboard',
+    title: '💬 Customer Care Chat Dashboard',
+    company: 'Smartsupp',
     role: 'React Developer',
     years: '3 years 2 months',
     description:
@@ -66,7 +67,8 @@ export const projectsWork: Project[] = [
     isFeatured: false,
     image: smartsuppWebThumb.src,
     imageShowcase: [smartsuppWeb1.src, smartsuppWeb2.src, smartsuppWeb3.src, smartsuppWeb4.src],
-    title: '🚀 Smartsupp - SaaS Company Website',
+    title: '🚀 SaaS Company Website',
+    company: 'Smartsupp',
     role: 'Front End Developer',
     years: '1 year',
     description:
@@ -87,7 +89,8 @@ export const projectsWork: Project[] = [
     isFeatured: false,
     image: komercniBankaThumb.src,
     imageShowcase: [komercniBanka1.src, komercniBanka2.src, komercniBanka3.src, komercniBanka4.src],
-    title: '🏦 Komerční banka - Commerce Bank Website',
+    title: '🏦 Commerce Bank Website',
+    company: 'Komerční banka',
     role: 'React Developer',
     years: '10 months',
     description:
@@ -128,7 +131,8 @@ export const projectsWork: Project[] = [
     isFeatured: false,
     image: grouponThumb.src,
     imageShowcase: [groupon1.src, groupon2.src],
-    title: '🛒 Groupon - Online Marketplace',
+    title: '🛒 Online Marketplace',
+    company: 'Groupon',
     role: 'QA Automation Team Leader',
     years: '4 months',
     description:

@@ -19,6 +19,7 @@ const ProjectsPersonal = () => {
               isFeatured={item.isFeatured}
               image={item.image}
               title={item.title}
+              company={item.company}
               role={item.role}
               years={item.years}
               description={item.description}

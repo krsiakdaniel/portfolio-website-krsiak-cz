@@ -24,6 +24,7 @@ export type Project = {
   image: string
   imageShowcase: string[]
   title: string
+  company: string
   role: string
   years?: string
   description: string

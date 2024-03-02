@@ -6,6 +6,7 @@ type Props = {
   isFeatured?: boolean | undefined
   image: string
   title: string
+  company: string
   role: string
   years?: string
   description: string
@@ -19,6 +20,7 @@ const ProjectItem = ({
   isFeatured,
   image,
   title,
+  company,
   role,
   years,
   description,
@@ -51,11 +53,13 @@ const ProjectItem = ({
         </div>
 
         <div className="mt-4 md:mt-0">
-          <h2 className="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{title}</h2>
-          <h3 className="text-2xl font-semibold text-purple-500 mb-8">
-            {role}{' '}
+          <h2 className="text-4xl font-bold mb-2 tracking-tight text-gray-900 dark:text-white">{title}</h2>
+          <h3 className="text-2xl font-semibold mb-8">
+            {company}
+            <small className="text-neutral-500">{' · '}</small>
+            <span className="text-purple-500">{role}</span>
             <small className="text-neutral-500">
-              {years && '· '}
+              {years && ' · '}
               {years}
             </small>
           </h3>
