@@ -1,4 +1,4 @@
-import { iconsWork1 } from '@/data/skills/projects-work'
+import { iconsSkillsProjectsWork1 } from '@/data/skills/skills-projects-work'
 import { getFeaturedBorderColor } from '@/utils/getFeaturedBorderColor'
 import Image from 'next/image'
 
@@ -49,7 +49,7 @@ const ProjectItem = ({ isFeatured, image, title, role, years, description, custo
 
           {/* FIXME: namapovat ruzne ikony podle projektu */}
           <div className="flex flex-row mb-6">
-            {iconsWork1.map((item) => {
+            {iconsSkillsProjectsWork1.map((item) => {
               return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={32} height={32} />
             })}
           </div>

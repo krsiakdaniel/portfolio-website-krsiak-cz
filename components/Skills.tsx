@@ -1,6 +1,6 @@
 import PageContainer from '@/components/layout/PageContainer'
 import DividerWithText from '@/components/shared/DividerWithText'
-import { iconsSection1, iconsSection2, iconsSection3 } from '@/data/skills/main'
+import { iconsSkills1, iconsSkills2, iconsSkills3 } from '@/data/skills/skills-main'
 import { ID_SKILLS } from '@/utils/constants'
 import Image from 'next/image'
 
@@ -10,17 +10,17 @@ const Skills = () => {
       <DividerWithText text="Skills" />
       <div className="flex flex-col sm:flex-row justify-center mt-5">
         <div className="flex justify-center mb-4 sm:mb-0">
-          {iconsSection1.map((item) => {
+          {iconsSkills1.map((item) => {
             return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
           })}
         </div>
         <div className="flex justify-center mb-4 sm:mb-0">
-          {iconsSection2.map((item) => {
+          {iconsSkills2.map((item) => {
             return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
           })}
         </div>
         <div className="flex justify-center">
-          {iconsSection3.map((item) => {
+          {iconsSkills3.map((item) => {
             return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
           })}
         </div>

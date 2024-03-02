@@ -1,8 +1,8 @@
 import PageContainer from '@/components/layout/PageContainer'
 import Card from '@/components/shared/Card'
-import Components from '@/public/icons/svg/components.svg'
-import Responsive from '@/public/icons/svg/responsive.svg'
-import UI from '@/public/icons/svg/ui.svg'
+import Components from '@/public/icons/svg/services/components.svg'
+import Responsive from '@/public/icons/svg/services/responsive.svg'
+import UI from '@/public/icons/svg/services/ui.svg'
 import { ID_SERVICES } from '@/utils/constants'
 
 const Services = () => {

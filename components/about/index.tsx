@@ -3,7 +3,7 @@ import JobsDescription from '@/components/about/JobsDescription'
 import Photo from '@/components/about/Photo'
 import DividerWithText from '@/components/shared/DividerWithText'
 import { ID_ABOUT } from '@/utils/constants'
-import PageContainer from '../layout/PageContainer'
+import PageContainer from '@/components/layout/PageContainer'
 
 const About = () => {
   return (
