@@ -43,6 +43,7 @@ const ProjectPageLayout = ({
         ))}
       </div>
 
+      {/* FIXME: new style LIGHT + DARK screenshots retake + keep same CSS as for images on homepage */}
       <div>
         {imageShowcase.map((image, index) => (
           <Image key={index} src={image} alt={`smartsupp-web-${index + 1}`} width={1216} height={754} />

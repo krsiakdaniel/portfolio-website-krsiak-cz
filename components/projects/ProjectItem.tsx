@@ -20,8 +20,9 @@ const ProjectItem = ({ isFeatured, image, title, role, years, description, custo
       <div className="gap-8 items-center py-8 mx-auto xl:gap-16 md:grid md:grid-cols-2 sm:py-16">
         <div className="flex lg:justify-end mt-8 lg:mt-0 relative">
           {isFeatured && <p className="text-5xl absolute -left-6 -top-6 z-10">⭐</p>}
+          {/* TODO: take new screenshots in more 'square' format in Firefox visible part of site */}
           <Image
-            src="https://flowbite.com/marketing-ui/demo/images/billing-mockup.png"
+            src={image}
             className={`rounded-lg shadow-md bg-neutral-100 object-cover border ${getFeaturedBorderColor(isFeatured)} mb-4 md:mb-0`}
             alt={title}
             placeholder="blur"

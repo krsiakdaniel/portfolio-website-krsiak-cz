@@ -10,7 +10,7 @@ const ProjectsPersonal = () => {
       <ProjectsLayout
         dividerText="In My Free Time"
         heading="Personal Projects"
-        description="I like to learn new technologies and create personal projects. Especially durign night"
+        description="I like to learn new technologies and create personal projects where I can apply what I know and keep up on the latest trends."
       >
         {projectsPersonal.map((item) => {
           return (
