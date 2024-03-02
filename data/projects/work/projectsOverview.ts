@@ -39,7 +39,7 @@ export const projectsWork: Project[] = [
     role: 'React Developer',
     years: '3 years 2 months',
     description:
-      'I worked on chat dashboard features and new design, including settings. I was involved in UX team to learn and assist with ideas.',
+      'I worked on chat dashboard features and new design, including redesign of settings. I was involved in UX team to learn.',
     mySkills: [
       {
         description: 'Frontend',
@@ -62,7 +62,7 @@ export const projectsWork: Project[] = [
     role: 'Front End Developer',
     years: '1 year',
     description:
-      'I created the company website. I also worked closely with UX on design decisions and new color theme.',
+      'I created the company website Front End. I worked closely with the main UX designer on new brand color theme and layout decisions.',
     mySkills: [
       { description: 'Frontend', skills: ['JavaScript', 'PHP', 'SASS', 'BEM', 'Cypress'] },
       { description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Web Design'] },
@@ -82,7 +82,7 @@ export const projectsWork: Project[] = [
     role: 'React Developer',
     years: '10 months',
     description:
-      'I created search page for ATM and branches, with detail pages. And also Exchange rates page with details for each currency.',
+      'I created search page for ATM and branches, with their detail pages. And also Exchange rates page with details for each currency.',
     mySkills: [
       {
         description: 'Frontend',
@@ -122,7 +122,7 @@ export const projectsWork: Project[] = [
     role: 'QA Automation Team Leader',
     years: '4 months',
     description:
-      'I was responsible QA processes, hiring and managing QA team, creating test plans, test cases, and testing the website.',
+      'I was responsible setting up new QA team, related processes, hiring and managing people, making test plans, test cases, and scripts.',
     mySkills: [
       {
         description: 'Frontend',
