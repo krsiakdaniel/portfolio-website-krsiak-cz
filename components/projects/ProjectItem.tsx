@@ -1,4 +1,5 @@
 import { iconsWork1 } from '@/data/skills/projects-work'
+import { getFeaturedBorderColor } from '@/utils/getFeaturedBorderColor'
 import Image from 'next/image'
 
 type Props = {
@@ -16,12 +17,12 @@ type Props = {
 const ProjectItem = ({ isFeatured, image, title, role, years, description, customers, linkProjectPage }: Props) => {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-10">
-      <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+      <div className="gap-8 items-center py-8 mx-auto xl:gap-16 md:grid md:grid-cols-2 sm:py-16">
         <div className="flex lg:justify-end mt-8 lg:mt-0 relative">
-          {isFeatured && <p className="text-5xl absolute -right-6 -top-6 z-10">⭐</p>}
+          {isFeatured && <p className="text-5xl absolute -left-6 -top-6 z-10">⭐</p>}
           <Image
             src="https://flowbite.com/marketing-ui/demo/images/billing-mockup.png"
-            className="rounded-lg shadow-md bg-neutral-100 border border-neutral-300 object-cover"
+            className={`rounded-lg shadow-md bg-neutral-100 object-cover border ${getFeaturedBorderColor(isFeatured)}`}
             alt={title}
             placeholder="blur"
             blurDataURL={image}
@@ -34,7 +35,7 @@ const ProjectItem = ({ isFeatured, image, title, role, years, description, custo
           <h2 className="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{title}</h2>
           <h3 className="text-2xl font-semibold text-purple-500 mb-8">
             {role}{' '}
-            <small className="text-neutral-600">
+            <small className="text-neutral-500">
               {years && '· '}
               {years}
             </small>

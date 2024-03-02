@@ -17,9 +17,9 @@ export const jobs: Job[] = [
     title: 'React Developer',
     years: '4',
     description: `
-    I create user-friendly and responsive web applications. I have worked with JavaScript, TypeScript,
-    React, and Redux, as well as other technologies such as Figma, and Tailwind CSS. I have a strong
-    background in UI design, functional components, and code quality.
+    I work with JavaScript, TypeScript, React, and Redux.
+    I have a strong background writing functional components.
+    I use Tailwind CSS for styling and create user-friendly, responsive applications.
     `,
     partTimeJob: false,
   },
@@ -28,7 +28,8 @@ export const jobs: Job[] = [
     title: 'QA Automation Team Leader',
     years: '2',
     description: `
-        I had the opportunity to create, setup and team lead  2x QA automation teams. Setting up Cypress and Playwright for E2E tests, writing test scripts in
+        I was asked to create and lead 2x QA automation teams.
+        Setting up Cypress and Playwright for E2E tests, writing test scripts in
         JavaScript and TypeScript, and coordinating unit and integration tests.
       `,
     partTimeJob: false,
@@ -38,7 +39,7 @@ export const jobs: Job[] = [
     title: 'Localization Manager',
     years: '2',
     description: `
-    I had the amazing chance to work on Microsoft's projects. I was responsible for the localization of Windows, and Windows Phone. I also managed localization of SaaS company website into 10 languages.
+    I had the amazing chance to work on Microsoft's projects. I was involved in localization of Windows, and Windows Phone. I also managed localization of SaaS company website into 10 languages.
       `,
     partTimeJob: false,
   },
@@ -47,7 +48,7 @@ export const jobs: Job[] = [
     title: 'WordPress Developer',
     years: '5',
     description: `
-        In the past when I started in Front End, I developed custom WordPress websites for clients and small companies. I have some experience with PHP.
+        In the past when I started in Front End, I developed custom WordPress websites for clients and small companies. In doing so I gained some experience with PHP.
       `,
     partTimeJob: true,
   },
