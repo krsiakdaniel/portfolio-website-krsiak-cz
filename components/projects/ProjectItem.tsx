@@ -17,18 +17,17 @@ type Props = {
 const ProjectItem = ({ isFeatured, image, title, role, years, description, customers, linkProjectPage }: Props) => {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-10">
-      <div className="gap-8 items-center py-8 mx-auto xl:gap-16 md:grid md:grid-cols-2 sm:py-16">
-        <div className="flex lg:justify-end mt-8 lg:mt-0 relative">
+      <div className="gap-8 items-start py-8 mx-auto xl:gap-16 md:grid md:grid-cols-2 lg:py-16">
+        <div className="flex lg:justify-end relative mt-8 lg:mt-0 first:mt-0">
           {isFeatured && <p className="text-5xl absolute -left-6 -top-6 z-10">⭐</p>}
-          {/* TODO: take new screenshots in more 'square' format in Firefox visible part of site */}
           <Image
             src={image}
             className={`rounded-lg shadow-md bg-neutral-100 object-cover border ${getFeaturedBorderColor(isFeatured)} mb-4 md:mb-0`}
             alt={title}
             placeholder="blur"
             blurDataURL={image}
-            width={592}
-            height={515}
+            width={600}
+            height={500}
           />
         </div>
 
