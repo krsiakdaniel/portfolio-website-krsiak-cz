@@ -129,7 +129,7 @@ export const projectsWork: Project[] = [
         description: 'Frontend',
         skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Playwright'],
       },
-      { description: 'Design', skills: ['Figma'] },
+      { description: 'Design', skills: ['Figma', 'Storybook'] },
       { description: 'Other', skills: ['Jira', 'Confluence', 'Tempo', 'QA', 'Team Management'] },
     ],
     linkText: 'Read more →',

@@ -1,3 +1,9 @@
+// icons
+export interface Icon {
+  name: string
+  path: string
+}
+
 // skills
 export type CategoryDescriptionType = 'Frontend' | 'Design' | 'Other'
 

@@ -1,5 +1,5 @@
 import DividerWithText from '@/components/shared/DividerWithText'
-import { iconsSection1, iconsSection2, iconsSection3 } from '@/data/skills'
+import { iconsSection1, iconsSection2, iconsSection3 } from '@/data/skills/main'
 import Image from 'next/image'
 
 const Skills = () => {

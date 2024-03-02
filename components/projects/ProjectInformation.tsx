@@ -28,7 +28,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
         {customers && (
           <List>
             <ListItem>
-              Company customers: <span className="text-neutral-500 ml-2 font-bold">{customers}</span>
+              <span className="text-neutral-500 mr-1 font-bold">{customers}</span> customers.
             </ListItem>
           </List>
         )}

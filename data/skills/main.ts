@@ -9,10 +9,7 @@ import scss from '@/public/icons/svg/scss.svg'
 import tailwind from '@/public/icons/svg/tailwind.svg'
 import ts from '@/public/icons/svg/ts.svg'
 
-interface Icon {
-  name: string
-  path: string
-}
+import { Icon } from '@/utils/types'
 
 export const iconsSection1: Icon[] = [
   {

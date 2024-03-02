@@ -6,7 +6,7 @@ import Link from 'next/link'
 const NotFoundPage = () => {
   return (
     <div id={ID_ERROR_404} className="mt-20 px-5">
-      <div className="container mx-auto px-5 max-w-screen-xl border-x border-black">
+      <div className="container mx-auto px-5 max-w-screen-xl">
         <div className="flex flex-col items-center text-center">
           <Image src={img404} alt="404" width={400} height={417} className="mb-10 bt-5" />
           <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-purple-600 dark:text-purple-500 uppercase">
