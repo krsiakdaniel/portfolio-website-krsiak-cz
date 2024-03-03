@@ -9,13 +9,13 @@ const getCurrentYear = () => {
 const Footer = () => {
   return (
     <PageContainer id={ID_FOOTER}>
-      <footer className="bg-white dark:bg-gray-800 border-t border-dashed">
-        <div className="w-full mx-auto py-4 flex flex-col md:flex-row md:gap-2 items-center text-neutral-600 dark:text-gray-300">
+      <footer className="border-t border-dashed bg-white dark:bg-gray-800">
+        <div className="mx-auto flex w-full flex-col items-center py-4 text-neutral-600 dark:text-gray-300 md:flex-row md:gap-2">
           <span>😼 😺</span>
           <span>Copyright © {getCurrentYear()}</span>
           <span className="hidden md:inline-flex">|</span>
           <span>
-            <Link href="/" className="hover:text-violet-600 underline hover:no-underline">
+            <Link href="/" className="underline hover:text-violet-600 hover:no-underline">
               krsiak.cz
             </Link>
           </span>

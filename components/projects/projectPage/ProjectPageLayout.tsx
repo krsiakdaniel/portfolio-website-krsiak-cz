@@ -49,13 +49,13 @@ const ProjectPageLayout = ({
       </div>
 
       <div className="mt-8">
-        <h3 className="text-3xl font-bold dark:text-white mb-4">Gallery</h3>
+        <h3 className="mb-4 text-3xl font-bold dark:text-white">Gallery</h3>
         <p className="mb-3 text-neutral-600 dark:text-neutral-600">
           👇 Click on image thumbnails to see them in full size.
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-8 mt-4">
+      <div className="mt-4 flex flex-col gap-8 lg:flex-row">
         <div className="flex flex-row gap-4 lg:flex-col">
           {imageShowcase.map((image, index) => (
             <div key={index} onClick={() => setSelectedImage(image)}>
@@ -66,7 +66,7 @@ const ProjectPageLayout = ({
                 height={280}
                 placeholder="blur"
                 blurDataURL={image}
-                className="rounded-lg shadow-md bg-neutral-100 border border-neutral-300 cursor-pointer hover:opacity-85  hover:border-purple-500"
+                className="cursor-pointer rounded-lg border border-neutral-300 bg-neutral-100 shadow-md hover:border-purple-500  hover:opacity-85"
               />
             </div>
           ))}
@@ -79,7 +79,7 @@ const ProjectPageLayout = ({
             height={1313}
             placeholder="blur"
             blurDataURL={selectedImage}
-            className="rounded-lg shadow-md bg-neutral-100 border border-neutral-300 sticky top-[70px]"
+            className="sticky top-[70px] rounded-lg border border-neutral-300 bg-neutral-100 shadow-md"
           />
         </div>
       </div>

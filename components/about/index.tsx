@@ -11,7 +11,7 @@ const About = () => {
       <div className="mb-20">
         <DividerWithText text="About me" />
         <HeadingInfo />
-        <div className="flex flex-col-reverse md:flex-row justify-between md:space-x-10 mt-8">
+        <div className="mt-8 flex flex-col-reverse justify-between md:flex-row md:space-x-10">
           <JobsDescription />
           <Photo />
         </div>

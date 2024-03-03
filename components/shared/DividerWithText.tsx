@@ -4,9 +4,9 @@ type Props = {
 
 const DividerWithText = ({ text }: Props) => {
   return (
-    <div className="inline-flex items-center justify-center w-full mb-0">
-      <hr className="w-96 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-      <span className="uppercase absolute px-3 font-medium text-neutral-600 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900 text-center">
+    <div className="mb-0 inline-flex w-full items-center justify-center">
+      <hr className="my-8 h-px w-96 border-0 bg-gray-200 dark:bg-gray-700" />
+      <span className="absolute left-1/2 -translate-x-1/2 bg-white px-3 text-center font-medium uppercase text-neutral-600 dark:bg-gray-900 dark:text-white">
         {text}
       </span>
     </div>

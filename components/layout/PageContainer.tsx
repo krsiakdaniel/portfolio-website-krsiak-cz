@@ -8,7 +8,7 @@ type props = {
 function PageContainer({ id, children }: props) {
   return (
     <div id={id} className="mt-20 px-5">
-      <div className="container mx-auto px-5 max-w-screen-xl">{children}</div>
+      <div className="container mx-auto max-w-screen-xl px-5">{children}</div>
     </div>
   )
 }

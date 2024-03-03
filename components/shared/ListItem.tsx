@@ -5,10 +5,10 @@ type Props = {
 const ListItem = ({ children }: Props) => {
   return (
     <>
-      <li className="flex flex-start">
+      <li className="flex-start flex">
         <span className="flex">
           <svg
-            className="w-3.5 h-3.5 mt-1 mr-2 text-violet-600 dark:text-violet-400"
+            className="mr-2 mt-1 h-3.5 w-3.5 text-violet-600 dark:text-violet-400"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"

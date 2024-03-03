@@ -8,13 +8,13 @@ const Skills = () => {
   return (
     <PageContainer id={ID_SKILLS}>
       <DividerWithText text="Skills" />
-      <div className="flex flex-col sm:flex-row justify-center mt-5">
-        <div className="flex justify-center mb-4 sm:mb-0">
+      <div className="mt-5 flex flex-col justify-center sm:flex-row">
+        <div className="mb-4 flex justify-center sm:mb-0">
           {iconsSkills1.map((item) => {
             return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
           })}
         </div>
-        <div className="flex justify-center mb-4 sm:mb-0">
+        <div className="mb-4 flex justify-center sm:mb-0">
           {iconsSkills2.map((item) => {
             return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={48} height={48} />
           })}
@@ -26,7 +26,7 @@ const Skills = () => {
         </div>
       </div>
       <div>
-        <p className="text-body-sm italic text-neutral-500 mt-4 text-center">
+        <p className="text-body-sm mt-4 text-center italic text-neutral-500">
           HTML, CSS, Sass, Tailwind CSS, JavaScript, TypeScript, React, Next.js, Redux, Figma
         </p>
       </div>
