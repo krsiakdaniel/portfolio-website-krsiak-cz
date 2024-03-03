@@ -23,7 +23,7 @@ const JobsDescription = () => {
               </small>
             </h3>
           </div>
-          <p className="mb-3 text-gray-500 dark:text-gray-400 last:mb-0 md:max-w-[640px] lg:max-w-[768px]">
+          <p className="mb-3 text-neutral-600 dark:text-neutral-600 last:mb-0 md:max-w-[640px] lg:max-w-[768px]">
             {item.description}
           </p>
         </div>

@@ -18,7 +18,7 @@ const ProjectsLayout = ({ dividerText, heading, description, children }: Props) 
           </div>
         </div>
         <div>
-          <p className="my-4 text-lg text-gray-500">{description}</p>
+          <p className="my-4 text-lg text-neutral-600">{description}</p>
         </div>
         {/* This is ProjectItem */}
         <div>{children}</div>

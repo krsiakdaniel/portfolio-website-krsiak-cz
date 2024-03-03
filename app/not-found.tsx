@@ -12,10 +12,10 @@ const NotFoundPage = () => {
         <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-purple-600 dark:text-purple-500 uppercase">
           404
         </h1>
-        <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
+        <p className="mb-4 text-3xl tracking-tight font-bold text-neutral-900 md:text-4xl dark:text-white">
           Sorry, we can&apos;t find that page.
         </p>
-        <p className="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
+        <p className="mb-4 text-lg font-light text-neutral-600 dark:text-neutral-600">
           It looks like we are fresh out of yarn!
         </p>
         <Link

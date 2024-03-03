@@ -14,15 +14,15 @@ const Hero = () => {
   return (
     <PageContainer id={ID_HERO}>
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white text-center mb-4">
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-none tracking-tight text-neutral-900 dark:text-white text-center mb-4">
           Daniel Kršiak <span className="block text-purple-600 dark:text-purple-500">React Developer</span>
         </h1>
 
-        <p className="mb-3 text-gray-500 dark:text-gray-400 font-semibold text-lg text-center">
+        <p className="mb-3 text-neutral-600 dark:text-neutral-600 font-semibold text-lg text-center">
           Hi 👋 I am React Developer based in Brno, Czech Republic 🇨🇿
         </p>
 
-        <p className="text-gray-500 dark:text-gray-400 text-center">
+        <p className="text-neutral-600 dark:text-neutral-600 text-center">
           I enjoy working with <span className="text-purple-500 font-bold">JavaScript</span>,{' '}
           <span className="text-purple-500 font-bold">TypeScript</span>, and{' '}
           <span className="text-purple-500 font-bold">React</span>.
@@ -56,13 +56,13 @@ const Hero = () => {
       <div className="flex flex-col items-center mt-8">
         <a
           href={EMAIL_HREF}
-          className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+          className="text-neutral-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
         >
           {EMAIL_TEXT}
         </a>
         <a
           href={PHONE_HREF}
-          className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+          className="text-neutral-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
         >
           {PHONE_TEXT}
         </a>

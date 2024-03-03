@@ -72,7 +72,7 @@ const ProjectItem = ({
             <hr />
           </div>
 
-          <p className="mb-6 mt-6 font-light text-gray-500 md:text-lg dark:text-gray-400">{description}</p>
+          <p className="mb-6 mt-6 font-light text-neutral-600 md:text-lg dark:text-neutral-600">{description}</p>
 
           <div className="flex flex-row mb-6">
             {mySkillsIcons.map((item) => {
@@ -81,7 +81,7 @@ const ProjectItem = ({
           </div>
 
           {customers && (
-            <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+            <p className="mb-6 font-light text-neutral-600 md:text-lg dark:text-neutral-600">
               <span className="font-bold">{customers}</span> customers.
             </p>
           )}

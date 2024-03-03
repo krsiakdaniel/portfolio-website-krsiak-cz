@@ -50,7 +50,9 @@ const ProjectPageLayout = ({
 
       <div className="mt-8">
         <h3 className="text-3xl font-bold dark:text-white mb-4">Gallery</h3>
-        <p className="mb-3 text-gray-500 dark:text-gray-400">👇 Click on image thumbnails to see them in full size.</p>
+        <p className="mb-3 text-neutral-600 dark:text-neutral-600">
+          👇 Click on image thumbnails to see them in full size.
+        </p>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-8 mt-4">

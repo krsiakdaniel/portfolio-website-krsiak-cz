@@ -5,7 +5,7 @@ type Props = {
 const List = ({ children }: Props) => {
   return (
     <>
-      <ul className="space-y-2 text-gray-500 list-inside dark:text-gray-400 ml-2">{children}</ul>
+      <ul className="space-y-2 text-neutral-600 list-inside dark:text-neutral-600 ml-2">{children}</ul>
     </>
   )
 }

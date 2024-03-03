@@ -20,10 +20,12 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
           <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-purple-600 dark:text-purple-500 uppercase">
             Error
           </h1>
-          <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
+          <p className="mb-4 text-3xl tracking-tight font-bold text-neutral-900 md:text-4xl dark:text-white">
             Sorry, something got tangled up.
           </p>
-          <p className="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">Too many yarns, not enough time!</p>
+          <p className="mb-4 text-lg font-light text-neutral-600 dark:text-neutral-600">
+            Too many yarns, not enough time!
+          </p>
           <button
             type="button"
             onClick={() => reset()}

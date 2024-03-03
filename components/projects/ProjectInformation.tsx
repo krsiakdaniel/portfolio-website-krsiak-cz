@@ -1,21 +1,9 @@
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
-import { CategoryDescriptionType, ProjectInformationProps } from '@/utils/types'
+import { getSkillBadgeColor } from '@/utils/getSkillBadgeColor'
+import { ProjectInformationProps } from '@/utils/types'
 
 type Props = ProjectInformationProps
-
-const getSkillBadgeColor = (categoryDescription: CategoryDescriptionType): string => {
-  switch (categoryDescription) {
-    case 'Frontend':
-      return 'yellow'
-    case 'Design':
-      return 'purple'
-    case 'Other':
-      return 'lime'
-    default:
-      return 'neutral'
-  }
-}
 
 const ProjectInformation = ({ description, mySkills, customers, projectLinks, linkGitHub }: Props) => {
   const hasMoreLinks = projectLinks.length > 1
