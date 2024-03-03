@@ -8,10 +8,10 @@ import { ID_SERVICES } from '@/utils/constants'
 const Services = () => {
   return (
     <PageContainer id={ID_SERVICES}>
-      <div className="flex flex-col lg:flex-row bg-blue-100 py-10 px-5 mb-20 rounded-lg">
+      <div className="flex flex-col lg:flex-row py-10 px-5 mb-20 rounded-lg border border-dashed bg-green-100">
         <div className="flex flex-col justify-center lg:w-1/2 lg:px-10 py-10 text-center lg:text-left">
           <h2 className="text-5xl font-bold dark:text-white uppercase">What I do</h2>
-          <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400 lg:max-w-[550px]">
+          <p className="mb-4 text-lg font-normal text-gray-600 dark:text-gray-400 lg:max-w-[550px]">
             I am passionate about creating high-quality products that meet the needs and expectations both of the client
             and the users.
           </p>
