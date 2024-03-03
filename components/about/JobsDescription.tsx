@@ -16,7 +16,7 @@ const JobsDescription = () => {
                 {item.years && '· '}
                 {item.years} years{' '}
                 {item.partTimeJob && (
-                  <small className="text-xs text-neutral-400">
+                  <small className="text-xs text-neutral-500">
                     <em>(part-time job)</em>
                   </small>
                 )}
