@@ -16,6 +16,9 @@ type Props = {
   linkProjectPage: string
 }
 
+// TODO: Add WordPress experience? tutorials, sceenshots, text from Linkedin
+// TODO: split the work into sub groups with small header? REACT, FRONTEND (web), WODPRESS, QA AUTOMATION + PRIDAT CYPRESS SMARTSUPP NEJAK JAKO TIMELINE MEZI TO?
+
 const ProjectItem = ({
   isFeatured,
   image,

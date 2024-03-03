@@ -22,26 +22,10 @@ const Hero = () => {
           Hi 👋 I am React Developer based in Brno, Czech Republic 🇨🇿
         </p>
 
-        <p className="mb-3 text-gray-500 dark:text-gray-400 text-center">
+        <p className="text-gray-500 dark:text-gray-400 text-center">
           I enjoy working with <span className="text-purple-500 font-bold">JavaScript</span>,{' '}
           <span className="text-purple-500 font-bold">TypeScript</span>, and{' '}
           <span className="text-purple-500 font-bold">React</span>.
-        </p>
-
-        <p className="mb-3 text-gray-500 dark:text-gray-400 text-center">
-          <a
-            href={PHONE_HREF}
-            className="font-medium text-gray-600 dark:text-gray-500 hover:underline hover:text-purple-500"
-          >
-            {PHONE_TEXT}
-          </a>
-          <span className=""> | </span>
-          <a
-            href={EMAIL_HREF}
-            className="font-medium text-gray-600 dark:text-gray-500 hover:underline hover:text-purple-500"
-          >
-            {EMAIL_TEXT}
-          </a>
         </p>
       </div>
 
@@ -66,6 +50,21 @@ const Hero = () => {
           className="uppercase w-40 text-center sm:mb-0 text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-md px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800"
         >
           Resume
+        </a>
+      </div>
+
+      <div className="flex flex-col items-center mt-8">
+        <a
+          href={EMAIL_HREF}
+          className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        >
+          {EMAIL_TEXT}
+        </a>
+        <a
+          href={PHONE_HREF}
+          className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        >
+          {PHONE_TEXT}
         </a>
       </div>
     </PageContainer>

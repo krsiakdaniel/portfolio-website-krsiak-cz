@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Daniel Kršiak - React Developer',
   description:
-    'Check out my developer portfolio. Discover a variety of projects and web applications demonstrating my skills in creating dynamic and interactive user interfaces.',
+    'Check out my React Developer portfolio. Discover a variety of projects and web applications demonstrating my skills in creating responsive and interactive user interfaces.',
 }
 
 export default function RootLayout({

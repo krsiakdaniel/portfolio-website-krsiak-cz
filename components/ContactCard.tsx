@@ -13,7 +13,7 @@ const ContactCard = ({ contact, color }: Props) => (
         width={128}
         height={128}
       />
-      <h5 className="mb-1 text-xl font-medium text-gray-900">{contact.heading}</h5>
+      <div className="mb-1 text-xl font-medium text-gray-900">{contact.heading}</div>
       <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">{contact.description}</p>
 
       <div className="flex mt-4 md:mt-6">

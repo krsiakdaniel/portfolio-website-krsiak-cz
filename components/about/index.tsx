@@ -1,9 +1,9 @@
 import HeadingInfo from '@/components/about/HeadingInfo'
 import JobsDescription from '@/components/about/JobsDescription'
 import Photo from '@/components/about/Photo'
+import PageContainer from '@/components/layout/PageContainer'
 import DividerWithText from '@/components/shared/DividerWithText'
 import { ID_ABOUT } from '@/utils/constants'
-import PageContainer from '@/components/layout/PageContainer'
 
 const About = () => {
   return (
