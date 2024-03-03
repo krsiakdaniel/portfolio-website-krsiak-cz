@@ -9,5 +9,6 @@
     { "files": ".eslintrc", "options": { "useTabs": false } },
     { "files": ".prettierrc", "options": { "useTabs": false } },
     { "files": ".stylelintrc", "options": { "useTabs": false } }
-  ]
+  ],
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
