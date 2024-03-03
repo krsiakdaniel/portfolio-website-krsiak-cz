@@ -61,7 +61,7 @@ const ProjectItem = ({
           <h3 className="text-2xl font-semibold mb-8">
             {company}
             <small className="text-neutral-500">{' · '}</small>
-            <span className="text-purple-500">{role}</span>
+            <span className="text-violet-600">{role}</span>
             <small className="text-neutral-500">
               {years && ' · '}
               {years}

@@ -15,7 +15,7 @@ const Footer = () => {
           <span>Copyright © {getCurrentYear()}</span>
           <span className="hidden md:inline-flex">|</span>
           <span>
-            <Link href="/" className="hover:text-purple-500 underline hover:no-underline">
+            <Link href="/" className="hover:text-violet-600 underline hover:no-underline">
               krsiak.cz
             </Link>
           </span>

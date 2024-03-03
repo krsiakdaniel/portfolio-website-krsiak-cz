@@ -14,8 +14,8 @@ const Hero = () => {
   return (
     <PageContainer id={ID_HERO}>
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-none tracking-tight text-neutral-900 dark:text-white text-center mb-4">
-          Daniel Kršiak <span className="block text-purple-600 dark:text-purple-500">React Developer</span>
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-none tracking-tight text-neutral-900 dark:text-white text-center mb-4">
+          Daniel Kršiak <span className="block text-violet-600 dark:text-violet-600">React Developer</span>
         </h1>
 
         <p className="mb-3 text-neutral-600 dark:text-neutral-600 font-semibold text-lg text-center">
@@ -23,9 +23,9 @@ const Hero = () => {
         </p>
 
         <p className="text-neutral-600 dark:text-neutral-600 text-center">
-          I enjoy working with <span className="text-purple-500 font-bold">JavaScript</span>,{' '}
-          <span className="text-purple-500 font-bold">TypeScript</span>, and{' '}
-          <span className="text-purple-500 font-bold">React</span>.
+          I enjoy working with <span className="text-violet-600 font-bold">JavaScript</span>,{' '}
+          <span className="text-violet-600 font-bold">TypeScript</span>, and{' '}
+          <span className="text-violet-600 font-bold">React</span>.
         </p>
       </div>
 

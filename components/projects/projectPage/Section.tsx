@@ -5,7 +5,7 @@ import { SectionItem } from '@/utils/types'
 const Section = ({ title, titleHighlight, items }: SectionItem) => (
   <div className="mt-8">
     <h3 className="text-3xl font-bold dark:text-white mb-4">
-      {title} {titleHighlight && <span className="text-purple-500">{titleHighlight}</span>}
+      {title} {titleHighlight && <span className="text-violet-600">{titleHighlight}</span>}
     </h3>
     <List>
       {items.map((item, index) => (

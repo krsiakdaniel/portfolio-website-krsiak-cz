@@ -56,7 +56,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
                     <a
                       href={link.url}
                       target="_blank"
-                      className="font-medium text-purple-500 dark:text-purple-500 underline hover:no-underline"
+                      className="font-medium text-violet-600 dark:text-violet-600 underline hover:no-underline"
                     >
                       {link.urlText}
                     </a>
@@ -71,7 +71,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
                 <a
                   href={linkGitHub}
                   target="_blank"
-                  className="font-medium text-purple-500 dark:text-purple-500 underline hover:no-underline"
+                  className="font-medium text-violet-600 dark:text-violet-600 underline hover:no-underline"
                 >
                   GitHub repository →
                 </a>

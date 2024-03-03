@@ -9,7 +9,7 @@ const Header = () => {
           <div>
             <Link href="/" className="flex flex-row gap-3 items-center group">
               <p className="text-2xl">⭐</p>
-              <p className="text-body-md font-bold text-neutral-700 group-hover:text-purple-500 cursor-pointer">
+              <p className="text-body-md font-bold text-neutral-700 group-hover:text-violet-600 cursor-pointer">
                 krsiak.cz
               </p>
             </Link>
@@ -18,7 +18,7 @@ const Header = () => {
             <div className="md:flex flex-row gap-6 items-center">
               <Link
                 href={LINK_LINKEDIN}
-                className="text-body-md font-bold uppercase text-neutral-700 hover:text-purple-500 cursor-pointer"
+                className="text-body-md font-bold uppercase text-neutral-700 hover:text-violet-600 cursor-pointer"
               >
                 LinkedIn →
               </Link>
