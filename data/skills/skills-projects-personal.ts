@@ -11,7 +11,7 @@ import vuetify from '@/public/icons/svg/skills/vuetify.svg'
 
 import { Icon } from '@/utils/types'
 
-export const iconsSkillsProjectsPersonal1: Icon[] = [
+export const iconsSkillsProjectsPersonalKrsiak: Icon[] = [
   {
     name: 'js',
     path: js,
@@ -38,7 +38,7 @@ export const iconsSkillsProjectsPersonal1: Icon[] = [
   },
 ]
 
-export const iconsSkillsProjectsPersonal2: Icon[] = [
+export const iconsSkillsProjectsPersonalCryptomania: Icon[] = [
   {
     name: 'js',
     path: js,
@@ -61,7 +61,7 @@ export const iconsSkillsProjectsPersonal2: Icon[] = [
   },
 ]
 
-export const iconsSkillsProjectsPersonal3: Icon[] = [
+export const iconsSkillsProjectsPersonalEshop: Icon[] = [
   {
     name: 'js',
     path: js,

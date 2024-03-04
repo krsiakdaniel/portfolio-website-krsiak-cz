@@ -1,8 +1,8 @@
 import {
-  iconsSkillsProjectsWork1,
-  iconsSkillsProjectsWork2,
-  iconsSkillsProjectsWork3,
-  iconsSkillsProjectsWork4,
+  iconsSkillsProjectsWorkSmartsuppDashboard,
+  iconsSkillsProjectsWorkSmartsuppWeb,
+  iconsSkillsProjectsWorkKomercniBanka,
+  iconsSkillsProjectsWorkGroupon,
   iconsSkillsProjectsWorkSmartsuppHelp,
 } from '@/data/skills/skills-projects-work'
 import { Project } from '@/utils/types'
@@ -55,7 +55,7 @@ export const projectsWorkReact: Project[] = [
     years: '3 years 2 months',
     description:
       'I worked on chat dashboard features and new design, including redesign of settings. I was involved in UX team to learn.',
-    mySkillsIcons: iconsSkillsProjectsWork1,
+    mySkillsIcons: iconsSkillsProjectsWorkSmartsuppDashboard,
     mySkills: [
       {
         description: 'Frontend',
@@ -67,7 +67,7 @@ export const projectsWorkReact: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/' }],
     customers: '100 000+',
-    linkProjectPage: '/project-work-smartsupp-dashboard',
+    linkProjectPage: `/${projectPages.work.smartsupp.dashboard}`,
   },
   {
     id: 'komercni-banka',
@@ -80,7 +80,7 @@ export const projectsWorkReact: Project[] = [
     years: '10 months',
     description:
       'I created search page for ATM and branches, with their detail pages. And also Exchange rates page with details for each currency.',
-    mySkillsIcons: iconsSkillsProjectsWork3,
+    mySkillsIcons: iconsSkillsProjectsWorkKomercniBanka,
     mySkills: [
       {
         description: 'Frontend',
@@ -109,7 +109,7 @@ export const projectsWorkReact: Project[] = [
       },
     ],
     customers: '2 000 000+',
-    linkProjectPage: '/project-work-komercni-banka',
+    linkProjectPage: `/${projectPages.work.komercniBanka}`,
   },
 ]
 
@@ -125,7 +125,7 @@ export const projectsWorkFrontEnd: Project[] = [
     years: '1 year',
     description:
       'I created the company website Front End. I worked closely with the\u00A0main UX designer on new brand color theme and layout decisions.',
-    mySkillsIcons: iconsSkillsProjectsWork2,
+    mySkillsIcons: iconsSkillsProjectsWorkSmartsuppWeb,
     mySkills: [
       { description: 'Frontend', skills: ['JavaScript', 'PHP', 'SASS', 'BEM', 'Cypress'] },
       { description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Web Design'] },
@@ -134,7 +134,7 @@ export const projectsWorkFrontEnd: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/' }],
     customers: '100 000+',
-    linkProjectPage: '/project-work-smartsupp-web',
+    linkProjectPage: `/${projectPages.work.smartsupp.web}`,
   },
 ]
 
@@ -160,7 +160,7 @@ export const projectsWorkWordPress: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://help.smartsupp.com/' }],
     customers: '100 000+',
-    linkProjectPage: `/${projectPages.work.smartsuppHelp}`,
+    linkProjectPage: `/${projectPages.work.smartsupp.help}`,
   },
 ]
 
@@ -176,7 +176,7 @@ export const projectsWorkQA: Project[] = [
     years: '4 months',
     description:
       'I was responsible setting up new QA team, related processes, hiring and managing people, making test plans, test cases, and scripts.',
-    mySkillsIcons: iconsSkillsProjectsWork4,
+    mySkillsIcons: iconsSkillsProjectsWorkGroupon,
     mySkills: [
       {
         description: 'Frontend',
@@ -188,6 +188,6 @@ export const projectsWorkQA: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.groupon.com/' }],
     customers: '17 000 000+',
-    linkProjectPage: '/project-work-groupon',
+    linkProjectPage: `/${projectPages.work.groupon}`,
   },
 ]

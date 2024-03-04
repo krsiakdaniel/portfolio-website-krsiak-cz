@@ -23,9 +23,11 @@ export const ID_ERROR_GLOBAL = 'error-global'
 
 export const projectPages = {
   work: {
-    smartsuppDashboard: 'project-work-smartsupp-dashboard',
-    smartsuppWeb: 'project-work-smartsupp-web',
-    smartsuppHelp: 'project-work-smartsupp-help',
+    smartsupp: {
+      dashboard: 'project-work-smartsupp-dashboard',
+      web: 'project-work-smartsupp-web',
+      help: 'project-work-smartsupp-help',
+    },
     komercniBanka: 'project-work-komercni-banka',
     groupon: 'project-work-groupon',
   },

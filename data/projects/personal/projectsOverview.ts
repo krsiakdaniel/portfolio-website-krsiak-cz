@@ -1,7 +1,7 @@
 import {
-  iconsSkillsProjectsPersonal1,
-  iconsSkillsProjectsPersonal2,
-  iconsSkillsProjectsPersonal3,
+  iconsSkillsProjectsPersonalKrsiak,
+  iconsSkillsProjectsPersonalCryptomania,
+  iconsSkillsProjectsPersonalEshop,
 } from '@/data/skills/skills-projects-personal'
 import { Project } from '@/utils/types'
 
@@ -24,6 +24,7 @@ import eshop2 from '@/public/images/projects-personal/eshop/eshop-2-light.png'
 import eshop3 from '@/public/images/projects-personal/eshop/eshop-3-light.png'
 import eshop4 from '@/public/images/projects-personal/eshop/eshop-4-light.png'
 import eshopThumb from '@/public/images/projects-personal/eshop/eshop-thumb-light.png'
+import { projectPages } from '@/utils/constants'
 
 export const projectsPersonal: Project[] = [
   {
@@ -36,7 +37,7 @@ export const projectsPersonal: Project[] = [
     role: 'Next.js App',
     description:
       'My personal portfolio website to showcase my work and skills. The\u00A0latest iteration of what I know and can code as React Developer.',
-    mySkillsIcons: iconsSkillsProjectsPersonal1,
+    mySkillsIcons: iconsSkillsProjectsPersonalKrsiak,
     mySkills: [
       {
         description: 'Frontend',
@@ -47,7 +48,7 @@ export const projectsPersonal: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://krsiak.cz/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
-    linkProjectPage: '/project-personal-krsiak',
+    linkProjectPage: `/${projectPages.personal.krsiak}`,
   },
   {
     id: 'cryptomania',
@@ -66,7 +67,7 @@ export const projectsPersonal: Project[] = [
     role: 'React App',
     description:
       'Crypto currency prices app fetching latest data from CoinGecko API. This is fun little project created in Chakra UI with dark mode available.',
-    mySkillsIcons: iconsSkillsProjectsPersonal2,
+    mySkillsIcons: iconsSkillsProjectsPersonalCryptomania,
     mySkills: [
       {
         description: 'Frontend',
@@ -77,7 +78,7 @@ export const projectsPersonal: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://cryptomania-currency-prices.netlify.app/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
-    linkProjectPage: '/project-personal-cryptomania',
+    linkProjectPage: `/${projectPages.personal.cryptoMania}`,
   },
   {
     id: 'e-commerce',
@@ -89,7 +90,7 @@ export const projectsPersonal: Project[] = [
     role: 'Vue.js App',
     description:
       'Simple E-Commerce website. First time coding with Vue and Nuxt. Used\u00A0Vuetify for styling. Exercise in creating Vue project.',
-    mySkillsIcons: iconsSkillsProjectsPersonal3,
+    mySkillsIcons: iconsSkillsProjectsPersonalEshop,
     mySkills: [
       {
         description: 'Frontend',
@@ -99,6 +100,6 @@ export const projectsPersonal: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://ecommerce-vue-nuxt.onrender.com/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/ecommerce-website-vuejs-nuxtjs-vuetify',
-    linkProjectPage: '/project-personal-eshop',
+    linkProjectPage: `/${projectPages.personal.eshop}`,
   },
 ]

@@ -16,7 +16,7 @@ import xd from '@/public/icons/svg/skills/xd.svg'
 
 import { Icon } from '@/utils/types'
 
-export const iconsSkillsProjectsWork1: Icon[] = [
+export const iconsSkillsProjectsWorkSmartsuppDashboard: Icon[] = [
   {
     name: 'js',
     path: js,
@@ -47,7 +47,7 @@ export const iconsSkillsProjectsWork1: Icon[] = [
   },
 ]
 
-export const iconsSkillsProjectsWork2: Icon[] = [
+export const iconsSkillsProjectsWorkSmartsuppWeb: Icon[] = [
   {
     name: 'js',
     path: js,
@@ -70,7 +70,7 @@ export const iconsSkillsProjectsWork2: Icon[] = [
   },
 ]
 
-export const iconsSkillsProjectsWork3: Icon[] = [
+export const iconsSkillsProjectsWorkKomercniBanka: Icon[] = [
   {
     name: 'js',
     path: js,
@@ -93,7 +93,7 @@ export const iconsSkillsProjectsWork3: Icon[] = [
   },
 ]
 
-export const iconsSkillsProjectsWork4: Icon[] = [
+export const iconsSkillsProjectsWorkGroupon: Icon[] = [
   {
     name: 'js',
     path: js,
