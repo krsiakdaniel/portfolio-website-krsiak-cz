@@ -96,7 +96,7 @@ const ProjectsWork = () => {
         {/* TODO: project page */}
         <p>
           I was responsible for SmartSupp HELP website running on WordPress. All tutorials content and localization into
-          8 languages 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇵🇱
+          9 languages. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱
         </p>
         <ExperienceOtherTitle />
         <ExperienceCard
