@@ -32,7 +32,7 @@ export const projectsPersonal: Project[] = [
     image: krsiakThumb.src,
     imageShowcase: [krsiak1.src, krsiak2.src, krsiak3.src],
     title: '👨‍💻 Portfolio Website',
-    company: 'Personal',
+    company: 'Personal project',
     role: 'Next.js App',
     description:
       'My personal portfolio website to showcase my work and skills. The latest iteration of what I know and can code as React Developer.',
@@ -62,7 +62,7 @@ export const projectsPersonal: Project[] = [
       cryptomania6.src,
     ],
     title: '💰 CryptoMania',
-    company: 'Personal',
+    company: 'Personal project',
     role: 'React App',
     description:
       'Crypto currency prices app fetching latest data from CoinGecko API. This is fun little project created in Chakra UI with dark mode available.',
@@ -85,7 +85,7 @@ export const projectsPersonal: Project[] = [
     image: eshopThumb.src,
     imageShowcase: [eshop1.src, eshop2.src, eshop3.src, eshop4.src],
     title: '🛒 eCommerce Website',
-    company: 'Personal',
+    company: 'Personal project',
     role: 'Vue.js App',
     description:
       'Simple eCommerce website. First time coding with Vue and Nuxt. Used Vuetify for styling. Exercise in creating Vue project.',

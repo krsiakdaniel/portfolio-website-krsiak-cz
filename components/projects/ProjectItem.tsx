@@ -34,8 +34,8 @@ const ProjectItem = ({
 }: Props) => {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-10">
-      <div className="mx-auto items-start gap-8 py-8 md:grid md:grid-cols-2 lg:py-16 xl:gap-16">
-        <div className="mt-8 flex first:mt-0 lg:mt-0 lg:justify-end">
+      <div className="mx-auto items-start gap-8 py-8 md:grid md:grid-cols-2 lg:py-8">
+        <div className="mt-8 flex first:mt-0 lg:mt-0 lg:justify-start">
           <div className="relative">
             {isFeatured && <p className="absolute -right-4 -top-5 z-10 text-4xl">⭐</p>}
             <a href={linkProjectPage}>
@@ -57,20 +57,15 @@ const ProjectItem = ({
         </div>
 
         <div className="mt-4 md:mt-0">
-          <h2 className="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h2>
-          <h3 className="mb-8 text-2xl font-semibold">
-            {company}
-            <small className="text-neutral-500">{' · '}</small>
+          <h2 className="mb-2 text-4xl font-bold tracking-tight text-neutral-900 dark:text-white">{title}</h2>
+          <div className="mb-4 text-xl font-semibold text-neutral-500">{company}</div>
+          <h3 className="mb-4 border-b pb-2 text-2xl font-semibold">
             <span className="text-violet-600">{role}</span>
             <small className="text-neutral-500">
               {years && ' · '}
               {years}
             </small>
           </h3>
-
-          <div className="mb-2">
-            <hr />
-          </div>
 
           <p className="mb-6 mt-6 font-light text-neutral-600 dark:text-neutral-600 md:text-lg">{description}</p>
 

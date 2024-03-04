@@ -42,7 +42,7 @@ export const projectsWork: Project[] = [
       smartsuppDashboard4.src,
       smartsuppDashboard5.src,
     ],
-    title: '💬 Customer Care Chat Dashboard',
+    title: '💬 Customer Care - Chat Dashboard',
     company: 'Smartsupp',
     role: 'React Developer',
     years: '3 years 2 months',
