@@ -1,10 +1,10 @@
 import ProjectPageLayout from '@/components/projects/projectPage/ProjectPageLayout'
-import { projectsWork } from '@/data/projects/work/projectsOverview'
+import { projectsWorkFrontEnd } from '@/data/projects/work/projectsOverview'
 import { sections } from '@/data/projects/work/smartsuppWeb'
 import { projectPages } from '@/utils/constants'
 
 const ProjectWorkSmartsuppWeb = () => {
-  const { title, role, years, description, mySkills, customers, projectLinks, imageShowcase } = projectsWork[1]
+  const { title, role, years, description, mySkills, customers, projectLinks, imageShowcase } = projectsWorkFrontEnd[0]
 
   return (
     <>

@@ -1,10 +1,10 @@
 import ProjectPageLayout from '@/components/projects/projectPage/ProjectPageLayout'
 import { sections } from '@/data/projects/work/komercniBanka'
-import { projectsWork } from '@/data/projects/work/projectsOverview'
+import { projectsWorkReact } from '@/data/projects/work/projectsOverview'
 import { projectPages } from '@/utils/constants'
 
 const ProjectWorkKomercniBanka = () => {
-  const { title, role, years, description, mySkills, customers, projectLinks, imageShowcase } = projectsWork[2]
+  const { title, role, years, description, mySkills, customers, projectLinks, imageShowcase } = projectsWorkReact[1]
 
   return (
     <>
