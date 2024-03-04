@@ -1,4 +1,6 @@
+import logo from '@/public/favicon-32x32.png'
 import { LINK_LINKEDIN } from '@/utils/constants'
+import Image from 'next/image'
 import Link from 'next/link'
 
 const Header = () => {
@@ -8,7 +10,9 @@ const Header = () => {
         <div className="flex items-center justify-between py-3">
           <div>
             <Link href="/" className="group flex flex-row items-center gap-3">
-              <p className="text-2xl">⭐</p>
+              <div>
+                <Image src={logo} alt="Logo" width={32} height={32} />
+              </div>
               <p className="text-body-md cursor-pointer font-bold text-neutral-700 group-hover:text-violet-600">
                 krsiak.cz
               </p>
