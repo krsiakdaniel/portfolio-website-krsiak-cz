@@ -6,24 +6,24 @@ import {
 import { Project } from '@/utils/types'
 
 // project images
-import krsiak1 from '@/public/images/projects-personal/png/krsiak-1-light.png'
-import krsiak2 from '@/public/images/projects-personal/png/krsiak-2-light.png'
-import krsiak3 from '@/public/images/projects-personal/png/krsiak-3-light.png'
-import krsiakThumb from '@/public/images/projects-personal/png/krsiak-thumb-light.png'
+import krsiak1 from '@/public/images/projects-personal/krsiak/krsiak-1-light.png'
+import krsiak2 from '@/public/images/projects-personal/krsiak/krsiak-2-light.png'
+import krsiak3 from '@/public/images/projects-personal/krsiak/krsiak-3-light.png'
+import krsiakThumb from '@/public/images/projects-personal/krsiak/krsiak-thumb-light.png'
 
-import cryptomania4 from '@/public/images/projects-personal/png/cryptomania-1-dark.png'
-import cryptomania1 from '@/public/images/projects-personal/png/cryptomania-1-light.png'
-import cryptomania5 from '@/public/images/projects-personal/png/cryptomania-2-dark.png'
-import cryptomania2 from '@/public/images/projects-personal/png/cryptomania-2-light.png'
-import cryptomania6 from '@/public/images/projects-personal/png/cryptomania-3-dark.png'
-import cryptomania3 from '@/public/images/projects-personal/png/cryptomania-3-light.png'
-import cryptomaniaThumb from '@/public/images/projects-personal/png/cryptomania-thumb-light.png'
+import cryptomania4 from '@/public/images/projects-personal/cryptomania/cryptomania-1-dark.png'
+import cryptomania1 from '@/public/images/projects-personal/cryptomania/cryptomania-1-light.png'
+import cryptomania5 from '@/public/images/projects-personal/cryptomania/cryptomania-2-dark.png'
+import cryptomania2 from '@/public/images/projects-personal/cryptomania/cryptomania-2-light.png'
+import cryptomania6 from '@/public/images/projects-personal/cryptomania/cryptomania-3-dark.png'
+import cryptomania3 from '@/public/images/projects-personal/cryptomania/cryptomania-3-light.png'
+import cryptomaniaThumb from '@/public/images/projects-personal/cryptomania/cryptomania-thumb-light.png'
 
-import eshop1 from '@/public/images/projects-personal/png/eshop-1-light.png'
-import eshop2 from '@/public/images/projects-personal/png/eshop-2-light.png'
-import eshop3 from '@/public/images/projects-personal/png/eshop-3-light.png'
-import eshop4 from '@/public/images/projects-personal/png/eshop-4-light.png'
-import eshopThumb from '@/public/images/projects-personal/png/eshop-thumb-light.png'
+import eshop1 from '@/public/images/projects-personal/eshop/eshop-1-light.png'
+import eshop2 from '@/public/images/projects-personal/eshop/eshop-2-light.png'
+import eshop3 from '@/public/images/projects-personal/eshop/eshop-3-light.png'
+import eshop4 from '@/public/images/projects-personal/eshop/eshop-4-light.png'
+import eshopThumb from '@/public/images/projects-personal/eshop/eshop-thumb-light.png'
 
 export const projectsPersonal: Project[] = [
   {

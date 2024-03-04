@@ -7,28 +7,28 @@ import {
 import { Project } from '@/utils/types'
 
 // project images
-import smartsuppDashboard1 from '@/public/images/projects-work/png/smartsupp-dashboard-1-light.png'
-import smartsuppDashboard2 from '@/public/images/projects-work/png/smartsupp-dashboard-2-light.png'
-import smartsuppDashboard3 from '@/public/images/projects-work/png/smartsupp-dashboard-3-light.png'
-import smartsuppDashboard4 from '@/public/images/projects-work/png/smartsupp-dashboard-4-light.png'
-import smartsuppDashboard5 from '@/public/images/projects-work/png/smartsupp-dashboard-5-light.png'
-import smartsuppDashboardThumb from '@/public/images/projects-work/png/smartsupp-dashboard-thumb-light.png'
+import smartsuppDashboard1 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-1-light.png'
+import smartsuppDashboard2 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-2-light.png'
+import smartsuppDashboard3 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-3-light.png'
+import smartsuppDashboard4 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-4-light.png'
+import smartsuppDashboard5 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-5-light.png'
+import smartsuppDashboardThumb from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-thumb-light.png'
 
-import smartsuppWeb1 from '@/public/images/projects-work/png/smartsupp-web-1-light.png'
-import smartsuppWeb2 from '@/public/images/projects-work/png/smartsupp-web-2-light.png'
-import smartsuppWeb3 from '@/public/images/projects-work/png/smartsupp-web-3-light.png'
-import smartsuppWeb4 from '@/public/images/projects-work/png/smartsupp-web-4-light.png'
-import smartsuppWebThumb from '@/public/images/projects-work/png/smartsupp-web-thumb-light.png'
+import smartsuppWeb1 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-1-light.png'
+import smartsuppWeb2 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-2-light.png'
+import smartsuppWeb3 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-3-light.png'
+import smartsuppWeb4 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-4-light.png'
+import smartsuppWebThumb from '@/public/images/projects-work/smartsupp-web/smartsupp-web-thumb-light.png'
 
-import komercniBanka1 from '@/public/images/projects-work/png/komercni-banka-1-light.png'
-import komercniBanka2 from '@/public/images/projects-work/png/komercni-banka-2-light.png'
-import komercniBanka3 from '@/public/images/projects-work/png/komercni-banka-3-light.png'
-import komercniBanka4 from '@/public/images/projects-work/png/komercni-banka-4-light.png'
-import komercniBankaThumb from '@/public/images/projects-work/png/komercni-banka-thumb-light.png'
+import komercniBanka1 from '@/public/images/projects-work/komercni-banka/komercni-banka-1-light.png'
+import komercniBanka2 from '@/public/images/projects-work/komercni-banka/komercni-banka-2-light.png'
+import komercniBanka3 from '@/public/images/projects-work/komercni-banka/komercni-banka-3-light.png'
+import komercniBanka4 from '@/public/images/projects-work/komercni-banka/komercni-banka-4-light.png'
+import komercniBankaThumb from '@/public/images/projects-work/komercni-banka/komercni-banka-thumb-light.png'
 
-import groupon1 from '@/public/images/projects-work/png/groupon-1-light.png'
-import groupon2 from '@/public/images/projects-work/png/groupon-2-light.png'
-import grouponThumb from '@/public/images/projects-work/png/groupon-thumb-light.png'
+import groupon1 from '@/public/images/projects-work/groupon/groupon-1-light.png'
+import groupon2 from '@/public/images/projects-work/groupon/groupon-2-light.png'
+import grouponThumb from '@/public/images/projects-work/groupon/groupon-thumb-light.png'
 
 export const projectsWork: Project[] = [
   {
