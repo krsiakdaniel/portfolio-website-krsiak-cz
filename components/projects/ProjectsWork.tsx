@@ -63,7 +63,6 @@ const ProjectsWork = () => {
             />
           )
         })}
-
         <ExperienceSection text="Front End" />
         {projectsWorkFrontEnd.map((item) => {
           return (
@@ -83,7 +82,6 @@ const ProjectsWork = () => {
             />
           )
         })}
-
         <ExperienceOtherTitle />
         <ExperienceCard
           partTime={true}
@@ -94,17 +92,19 @@ const ProjectsWork = () => {
           title="Freelance · Web Developer"
           description="First time web company job was 1 year coding website layouts."
         />
-
         <ExperienceSection text="WordPress" />
-        <p>SmartSupp HELP website - item project</p>
+        {/* TODO: project page */}
+        <p>
+          I was responsible for SmartSupp HELP website running on WordPress. All tutorials content and localization into
+          8 languages 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇵🇱
+        </p>
         <ExperienceOtherTitle />
         <ExperienceCard
           partTime={true}
           title="Freelance · WordPress Consultant"
           description="For 5 years I used to create websites for clients and small companies."
         />
-
-        <ExperienceSection text="QA Automation" />
+        <ExperienceSection text="QA Automation & Testing" />
         {projectsWorkQA.map((item) => {
           return (
             <ProjectItem
@@ -123,16 +123,27 @@ const ProjectsWork = () => {
             />
           )
         })}
-
         <ExperienceOtherTitle />
         <ExperienceCard
           title="Smartsupp · QA Automation - Team Leader"
-          description={`I set up Cypress E2E testing for the entire company application.
-            I also wrote E2E tests in JavaScript and TypeScript. Mentoring juniors QA.`}
+          description="I set up Cypress E2E testing for the entire company application. I also wrote E2E tests in JavaScript and TypeScript. Mentoring juniors QA."
+        />
+        <ExperienceCard
+          title="Moravia IT · Localization - Tester"
+          description="Making sure translations fit UI layout on Windows 7 + Windows Store."
         />
 
         <ExperienceSection text="Localization" />
-        <p>Smartsupp - item project 10 diff langs + Other: Localization Moravia</p>
+        {/* TODO: project page */}
+        <p>
+          I managed a team of 3 people. I was responsible for translation delivery and quality checks for Microsoft
+          projects Windows 8 + Windows Phone.
+        </p>
+        <ExperienceOtherTitle />
+        <ExperienceCard
+          title="Smartsupp · Localization - Manager"
+          description="Responsible for translation of the company website and application into 9 languages. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱"
+        />
       </ProjectsLayout>
     </PageContainer>
   )
