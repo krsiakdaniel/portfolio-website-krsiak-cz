@@ -59,7 +59,7 @@ const ProjectItem = ({
         <div className="mt-4 md:mt-0">
           <h2 className="mb-2 text-4xl font-bold tracking-tight text-neutral-900 dark:text-white">{title}</h2>
           <div className="mb-4 text-xl font-semibold text-neutral-500">{company}</div>
-          <h3 className="mb-4 border-b pb-2 text-2xl font-semibold">
+          <h3 className="mb-4 text-2xl font-semibold">
             <span className="text-violet-600">{role}</span>
             <small className="text-neutral-500">
               {years && ' · '}

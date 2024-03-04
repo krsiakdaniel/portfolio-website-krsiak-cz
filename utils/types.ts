@@ -19,7 +19,7 @@ export type LinkItem = {
 }
 
 export type Project = {
-  id: number
+  id: string
   isFeatured?: boolean | undefined
   image: string
   imageShowcase: string[]

@@ -1,3 +1,4 @@
+import PartTimeLabel from '@/components/shared/PartTimeLabel'
 import { jobs } from '@/data/about'
 import Image from 'next/image'
 
@@ -14,12 +15,7 @@ const JobsDescription = () => {
               {item.title}{' '}
               <small className="text-md text-neutral-500">
                 {item.years && '· '}
-                {item.years} years{' '}
-                {item.partTimeJob && (
-                  <small className="text-xs text-neutral-500">
-                    <em>(part-time job)</em>
-                  </small>
-                )}
+                {item.years} years {item.partTimeJob && <PartTimeLabel />}
               </small>
             </h3>
           </div>

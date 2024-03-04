@@ -25,14 +25,13 @@ import komercniBanka2 from '@/public/images/projects-work/komercni-banka/komercn
 import komercniBanka3 from '@/public/images/projects-work/komercni-banka/komercni-banka-3-light.png'
 import komercniBanka4 from '@/public/images/projects-work/komercni-banka/komercni-banka-4-light.png'
 import komercniBankaThumb from '@/public/images/projects-work/komercni-banka/komercni-banka-thumb-light.png'
-
 import groupon1 from '@/public/images/projects-work/groupon/groupon-1-light.png'
 import groupon2 from '@/public/images/projects-work/groupon/groupon-2-light.png'
 import grouponThumb from '@/public/images/projects-work/groupon/groupon-thumb-light.png'
 
-export const projectsWork: Project[] = [
+export const projectsWorkReact: Project[] = [
   {
-    id: 1,
+    id: 'smartsupp-dashboard',
     isFeatured: true,
     image: smartsuppDashboardThumb.src,
     imageShowcase: [
@@ -63,29 +62,7 @@ export const projectsWork: Project[] = [
     linkProjectPage: '/project-work-smartsupp-dashboard',
   },
   {
-    id: 2,
-    isFeatured: false,
-    image: smartsuppWebThumb.src,
-    imageShowcase: [smartsuppWeb1.src, smartsuppWeb2.src, smartsuppWeb3.src, smartsuppWeb4.src],
-    title: '🚀 SaaS Company Website',
-    company: 'Smartsupp',
-    role: 'Front End Developer',
-    years: '1 year',
-    description:
-      'I created the company website Front End. I worked closely with the main UX designer on new brand color theme and layout decisions.',
-    mySkillsIcons: iconsSkillsProjectsWork2,
-    mySkills: [
-      { description: 'Frontend', skills: ['JavaScript', 'PHP', 'SASS', 'BEM', 'Cypress'] },
-      { description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Web Design'] },
-      { description: 'Other', skills: ['Trello'] },
-    ],
-    linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/' }],
-    customers: '100 000+',
-    linkProjectPage: '/project-work-smartsupp-web',
-  },
-  {
-    id: 3,
+    id: 'komercni-banka',
     isFeatured: false,
     image: komercniBankaThumb.src,
     imageShowcase: [komercniBanka1.src, komercniBanka2.src, komercniBanka3.src, komercniBanka4.src],
@@ -126,14 +103,42 @@ export const projectsWork: Project[] = [
     customers: '2 000 000+',
     linkProjectPage: '/project-work-komercni-banka',
   },
+]
+
+export const projectsWorkFrontEnd: Project[] = [
   {
-    id: 4,
+    id: 'smartsupp-web',
+    isFeatured: false,
+    image: smartsuppWebThumb.src,
+    imageShowcase: [smartsuppWeb1.src, smartsuppWeb2.src, smartsuppWeb3.src, smartsuppWeb4.src],
+    title: '🚀 SaaS Company Website',
+    company: 'Smartsupp',
+    role: 'Front End Developer',
+    years: '1 year',
+    description:
+      'I created the company website Front End. I worked closely with the main UX designer on new brand color theme and layout decisions.',
+    mySkillsIcons: iconsSkillsProjectsWork2,
+    mySkills: [
+      { description: 'Frontend', skills: ['JavaScript', 'PHP', 'SASS', 'BEM', 'Cypress'] },
+      { description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Web Design'] },
+      { description: 'Other', skills: ['Trello'] },
+    ],
+    linkText: 'Project details',
+    projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/' }],
+    customers: '100 000+',
+    linkProjectPage: '/project-work-smartsupp-web',
+  },
+]
+
+export const projectsWorkQA: Project[] = [
+  {
+    id: 'groupon',
     isFeatured: false,
     image: grouponThumb.src,
     imageShowcase: [groupon1.src, groupon2.src],
     title: '🛒 Online Marketplace',
     company: 'Groupon',
-    role: 'QA Automation Team Leader',
+    role: 'QA Automation - Team Leader',
     years: '4 months',
     description:
       'I was responsible setting up new QA team, related processes, hiring and managing people, making test plans, test cases, and scripts.',

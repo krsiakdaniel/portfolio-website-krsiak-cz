@@ -25,7 +25,7 @@ export const jobs: Job[] = [
   },
   {
     path: check,
-    title: 'QA Automation Team Leader',
+    title: 'QA Automation - Team Leader',
     years: '2',
     description: `
         I was asked to create and lead 2x QA automation teams.
@@ -36,7 +36,7 @@ export const jobs: Job[] = [
   },
   {
     path: text,
-    title: 'Localization Manager',
+    title: 'Localization - Manager',
     years: '2',
     description: `
     I had the amazing chance to work on Microsoft's projects. I was involved in localization of Windows, and Windows Phone. I also managed localization of SaaS company website into 10 languages.

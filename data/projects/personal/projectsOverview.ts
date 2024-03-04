@@ -27,7 +27,7 @@ import eshopThumb from '@/public/images/projects-personal/eshop/eshop-thumb-ligh
 
 export const projectsPersonal: Project[] = [
   {
-    id: 1,
+    id: 'portfolio-website',
     isFeatured: true,
     image: krsiakThumb.src,
     imageShowcase: [krsiak1.src, krsiak2.src, krsiak3.src],
@@ -50,7 +50,7 @@ export const projectsPersonal: Project[] = [
     linkProjectPage: '/project-personal-krsiak',
   },
   {
-    id: 2,
+    id: 'cryptomania',
     isFeatured: false,
     image: cryptomaniaThumb.src,
     imageShowcase: [
@@ -80,7 +80,7 @@ export const projectsPersonal: Project[] = [
     linkProjectPage: '/project-personal-cryptomania',
   },
   {
-    id: 3,
+    id: 'ecommerce',
     isFeatured: false,
     image: eshopThumb.src,
     imageShowcase: [eshop1.src, eshop2.src, eshop3.src, eshop4.src],
