@@ -1,7 +1,7 @@
 import ProjectPageLayout from '@/components/projects/projectPage/ProjectPageLayout'
 import { projectsWorkWordPress } from '@/data/projects/work/projectsOverview'
 import { sections } from '@/data/projects/work/smartsuppHelp'
-import { projectPages } from '@/utils/constants'
+import { ID_SECTION_WORDPRESS, projectPages } from '@/utils/constants'
 
 const ProjectWorkSmartsuppHelp = () => {
   const { title, role, years, description, mySkills, customers, projectLinks, imageShowcase } = projectsWorkWordPress[0]
@@ -14,6 +14,7 @@ const ProjectWorkSmartsuppHelp = () => {
         role={role}
         years={years}
         goBackLink="work"
+        sectionID={ID_SECTION_WORDPRESS}
         description={description}
         mySkills={mySkills}
         customers={customers}

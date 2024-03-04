@@ -21,6 +21,7 @@ const ProjectPageLayout = ({
   role,
   years,
   goBackLink,
+  sectionID,
   description,
   mySkills,
   customers,
@@ -33,7 +34,7 @@ const ProjectPageLayout = ({
 
   return (
     <PageContainer id={id}>
-      <HeaderSection title={title} role={role} years={years} goBackLink={goBackLink} />
+      <HeaderSection title={title} role={role} years={years} goBackLink={goBackLink} sectionID={sectionID} />
       <ProjectInformation
         description={description}
         mySkills={mySkills}

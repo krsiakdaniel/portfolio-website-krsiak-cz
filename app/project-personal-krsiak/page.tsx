@@ -1,7 +1,7 @@
 import ProjectPageLayout from '@/components/projects/projectPage/ProjectPageLayout'
 import { sections } from '@/data/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/data/projects/personal/projectsOverview'
-import { projectPages } from '@/utils/constants'
+import { ID_SECTION_NEXT, projectPages } from '@/utils/constants'
 
 const ProjectPersonalKrsiak = () => {
   const { title, role, description, mySkills, projectLinks, linkGitHub, imageShowcase } = projectsPersonalNext[0]
@@ -13,6 +13,7 @@ const ProjectPersonalKrsiak = () => {
         title={title}
         role={role}
         goBackLink="personal"
+        sectionID={ID_SECTION_NEXT}
         description={description}
         mySkills={mySkills}
         projectLinks={projectLinks}

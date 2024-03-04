@@ -1,7 +1,7 @@
 import ProjectPageLayout from '@/components/projects/projectPage/ProjectPageLayout'
 import { sections } from '@/data/projects/work/komercniBanka'
 import { projectsWorkReact } from '@/data/projects/work/projectsOverview'
-import { projectPages } from '@/utils/constants'
+import { ID_SECTION_REACT, projectPages } from '@/utils/constants'
 
 const ProjectWorkKomercniBanka = () => {
   const { title, role, years, description, mySkills, customers, projectLinks, imageShowcase } = projectsWorkReact[1]
@@ -14,6 +14,7 @@ const ProjectWorkKomercniBanka = () => {
         role={role}
         years={years}
         goBackLink="work"
+        sectionID={ID_SECTION_REACT}
         description={description}
         mySkills={mySkills}
         customers={customers}

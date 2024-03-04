@@ -1,7 +1,7 @@
 import ProjectPageLayout from '@/components/projects/projectPage/ProjectPageLayout'
 import { projectsWorkReact } from '@/data/projects/work/projectsOverview'
 import { sections } from '@/data/projects/work/smartsuppDashboard'
-import { projectPages } from '@/utils/constants'
+import { ID_SECTION_REACT, projectPages } from '@/utils/constants'
 
 const ProjectWorkSmartsuppDashboard = () => {
   const { title, role, years, description, mySkills, customers, projectLinks, imageShowcase } = projectsWorkReact[0]
@@ -14,6 +14,7 @@ const ProjectWorkSmartsuppDashboard = () => {
         role={role}
         years={years}
         goBackLink="work"
+        sectionID={ID_SECTION_REACT}
         description={description}
         mySkills={mySkills}
         customers={customers}

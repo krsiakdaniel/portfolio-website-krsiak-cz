@@ -40,6 +40,7 @@ export type Project = {
 // project sub page
 export type HeaderSectionProps = {
   title: string
+  sectionID: string
   role: string
   years?: string | undefined
   goBackLink: GoBackLinkType
