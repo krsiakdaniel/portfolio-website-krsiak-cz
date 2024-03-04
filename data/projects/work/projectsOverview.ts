@@ -3,6 +3,7 @@ import {
   iconsSkillsProjectsWork2,
   iconsSkillsProjectsWork3,
   iconsSkillsProjectsWork4,
+  iconsSkillsProjectsWorkSmartsuppHelp,
 } from '@/data/skills/skills-projects-work'
 import { Project } from '@/utils/types'
 
@@ -23,11 +24,18 @@ import smartsuppWebThumb from '@/public/images/projects-work/smartsupp-web/smart
 import groupon1 from '@/public/images/projects-work/groupon/groupon-1-light.png'
 import groupon2 from '@/public/images/projects-work/groupon/groupon-2-light.png'
 import grouponThumb from '@/public/images/projects-work/groupon/groupon-thumb-light.png'
+
 import komercniBanka1 from '@/public/images/projects-work/komercni-banka/komercni-banka-1-light.png'
 import komercniBanka2 from '@/public/images/projects-work/komercni-banka/komercni-banka-2-light.png'
 import komercniBanka3 from '@/public/images/projects-work/komercni-banka/komercni-banka-3-light.png'
 import komercniBanka4 from '@/public/images/projects-work/komercni-banka/komercni-banka-4-light.png'
 import komercniBankaThumb from '@/public/images/projects-work/komercni-banka/komercni-banka-thumb-light.png'
+
+import smartsuppHelp1 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-1-light.png'
+import smartsuppHelp2 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-2-light.png'
+import smartsuppHelp3 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-3-light.png'
+import smartsuppHelpThumb from '@/public/images/projects-work/smartsupp-help/smartsupp-help-thumb-light.png'
+import { projectPages } from '@/utils/constants'
 
 export const projectsWorkReact: Project[] = [
   {
@@ -66,7 +74,7 @@ export const projectsWorkReact: Project[] = [
     isFeatured: false,
     image: komercniBankaThumb.src,
     imageShowcase: [komercniBanka1.src, komercniBanka2.src, komercniBanka3.src, komercniBanka4.src],
-    title: '🏦 Commerce Bank Website',
+    title: '🏦 Commerce Bank - Website',
     company: 'Komerční banka',
     role: 'React Developer',
     years: '10 months',
@@ -111,7 +119,7 @@ export const projectsWorkFrontEnd: Project[] = [
     isFeatured: false,
     image: smartsuppWebThumb.src,
     imageShowcase: [smartsuppWeb1.src, smartsuppWeb2.src, smartsuppWeb3.src, smartsuppWeb4.src],
-    title: '🚀 SaaS Company Website',
+    title: '🚀 SaaS Company - Website',
     company: 'Smartsupp',
     role: 'Front End Developer',
     years: '1 year',
@@ -130,32 +138,29 @@ export const projectsWorkFrontEnd: Project[] = [
   },
 ]
 
-// TODO: update screenshots, and skills, do not include emoji flags
 export const projectsWorkWordPress: Project[] = [
   {
     id: 'smartsupp-help',
     isFeatured: false,
-    image: grouponThumb.src,
-    imageShowcase: [groupon1.src, groupon2.src],
-    title: '📚 Company HELP Website',
+    image: smartsuppHelpThumb.src,
+    imageShowcase: [smartsuppHelp1.src, smartsuppHelp2.src, smartsuppHelp3.src],
+    title: '📚 SaaS Company - HELP Website',
     company: 'Smartsupp',
     role: 'WordPress - Admin & Content Writer',
     years: '6 months',
     description:
       'Responsible for the company HELP website running on WordPress and\u00A0writing tutorials. Localization into 9 languages.',
-    mySkillsIcons: iconsSkillsProjectsWork4,
+    mySkillsIcons: iconsSkillsProjectsWorkSmartsuppHelp,
     mySkills: [
       {
         description: 'Frontend',
-        skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Playwright'],
+        skills: ['JavaScript', 'WordPress', 'PHP'],
       },
-      { description: 'Design', skills: ['Figma', 'Storybook'] },
-      { description: 'Other', skills: ['Jira', 'Confluence', 'Tempo', 'QA', 'Team Management'] },
     ],
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website →', url: 'https://www.groupon.com/' }],
+    projectLinks: [{ urlText: 'Website →', url: 'https://help.smartsupp.com/' }],
     customers: '100 000+',
-    linkProjectPage: '/project-work-groupon',
+    linkProjectPage: `/${projectPages.work.smartsuppHelp}`,
   },
 ]
 
@@ -165,7 +170,7 @@ export const projectsWorkQA: Project[] = [
     isFeatured: false,
     image: grouponThumb.src,
     imageShowcase: [groupon1.src, groupon2.src],
-    title: '🛒 Online Marketplace',
+    title: '🛒 E-Commerce - Marketplace',
     company: 'Groupon',
     role: 'QA Automation - Team Leader',
     years: '4 months',

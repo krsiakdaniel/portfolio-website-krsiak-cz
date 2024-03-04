@@ -25,6 +25,7 @@ export const projectPages = {
   work: {
     smartsuppDashboard: 'project-work-smartsupp-dashboard',
     smartsuppWeb: 'project-work-smartsupp-web',
+    smartsuppHelp: 'project-work-smartsupp-help',
     komercniBanka: 'project-work-komercni-banka',
     groupon: 'project-work-groupon',
   },

@@ -80,15 +80,15 @@ export const projectsPersonal: Project[] = [
     linkProjectPage: '/project-personal-cryptomania',
   },
   {
-    id: 'ecommerce',
+    id: 'e-commerce',
     isFeatured: false,
     image: eshopThumb.src,
     imageShowcase: [eshop1.src, eshop2.src, eshop3.src, eshop4.src],
-    title: '🛒 eCommerce Website',
+    title: '🛒 E-Commerce Website',
     company: 'Personal project',
     role: 'Vue.js App',
     description:
-      'Simple eCommerce website. First time coding with Vue and Nuxt. Used\u00A0Vuetify for styling. Exercise in creating Vue project.',
+      'Simple E-Commerce website. First time coding with Vue and Nuxt. Used\u00A0Vuetify for styling. Exercise in creating Vue project.',
     mySkillsIcons: iconsSkillsProjectsPersonal3,
     mySkills: [
       {

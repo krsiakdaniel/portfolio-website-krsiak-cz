@@ -103,7 +103,6 @@ const ProjectsWork = () => {
           description="First time web company job was 1 year coding website layouts."
         />
         <ExperienceSection text="WordPress" />
-        {/* TODO: create project page + THUMB + 3 screenshots */}
         {projectsWorkWordPress.map((item) => {
           return (
             <ProjectItem
@@ -130,7 +129,7 @@ const ProjectsWork = () => {
           description="For 5 years I used to create websites for clients and small companies."
           isPartTime
         />
-        <ExperienceSection text="QA Automation & Testing" />
+        <ExperienceSection text="QA - Automation & Testing" />
         {projectsWorkQA.map((item) => {
           return (
             <ProjectItem

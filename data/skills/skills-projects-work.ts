@@ -11,6 +11,7 @@ import scss from '@/public/icons/svg/skills/scss.svg'
 import storybook from '@/public/icons/svg/skills/storybook.svg'
 import tailwind from '@/public/icons/svg/skills/tailwind.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
+import wordpress from '@/public/icons/svg/skills/wordpress.svg'
 import xd from '@/public/icons/svg/skills/xd.svg'
 
 import { Icon } from '@/utils/types'
@@ -120,5 +121,20 @@ export const iconsSkillsProjectsWork4: Icon[] = [
   {
     name: 'storybook',
     path: storybook,
+  },
+]
+
+export const iconsSkillsProjectsWorkSmartsuppHelp: Icon[] = [
+  {
+    name: 'js',
+    path: js,
+  },
+  {
+    name: 'wordpress',
+    path: wordpress,
+  },
+  {
+    name: 'php',
+    path: php,
   },
 ]
