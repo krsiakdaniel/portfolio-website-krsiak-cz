@@ -6,7 +6,7 @@ export const sections: SectionItem[] = [
     titleHighlight: '',
     items: [
       'I worked for the 3rd biggest bank in the Czech Republic, Komerční banka, owned by Société Générale.',
-      'I worked on a website that is used by 2,240,000 customers.',
+      'I worked on a website that is used by 2 000 000+ customers.',
     ],
   },
   {

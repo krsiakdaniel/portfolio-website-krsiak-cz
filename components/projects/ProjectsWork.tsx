@@ -95,8 +95,8 @@ const ProjectsWork = () => {
         <ExperienceOtherTitle />
         <ExperienceCard
           company="Freelance"
-          role="Web Consultant"
-          description="In the past I was creating static websites for clients."
+          role="Web Developer / Consultant"
+          description="In the past I was creating  websites for clients."
           isPartTime
         />
         <ExperienceCard
@@ -158,7 +158,7 @@ const ProjectsWork = () => {
           description="I set up Cypress E2E testing for the entire company application. I also wrote E2E tests in JavaScript and TypeScript. Mentoring juniors QA."
         />
         <ExperienceCard
-          company="Moravia IT"
+          company="RWS (Moravia IT)"
           role="Localization - Tester"
           description="Making sure translations fit UI layout on Windows 7 + Windows Store."
         />
