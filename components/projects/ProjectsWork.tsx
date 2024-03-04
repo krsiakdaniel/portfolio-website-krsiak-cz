@@ -2,12 +2,18 @@ import PageContainer from '@/components/layout/PageContainer'
 import ProjectItem from '@/components/projects/ProjectItem'
 import ProjectsLayout from '@/components/projects/ProjectsLayout'
 import PartTimeLabel from '@/components/shared/PartTimeLabel'
-import { projectsWorkFrontEnd, projectsWorkQA, projectsWorkReact } from '@/data/projects/work/projectsOverview'
+import {
+  projectsWorkFrontEnd,
+  projectsWorkQA,
+  projectsWorkReact,
+  projectsWorkWordPress,
+} from '@/data/projects/work/projectsOverview'
 import { ID_PROJECTS_WORK } from '@/utils/constants'
 
 type ExperienceCardProps = {
-  title: string
-  partTime?: boolean
+  company: string
+  role: string
+  isPartTime?: boolean
   description: string
 }
 
@@ -23,12 +29,14 @@ const ExperienceOtherTitle = () => {
   return <h4 className="mb-4 mt-8 text-xl font-bold dark:text-white">Other experience</h4>
 }
 
-const ExperienceCard = ({ title, partTime, description }: ExperienceCardProps) => {
+const ExperienceCard = ({ company, role, isPartTime, description }: ExperienceCardProps) => {
   return (
     <div className="mb-8 w-full rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800 md:max-w-[588px]">
       <div>
         <h5 className="mr-3 font-semibold dark:text-white">
-          {title} {partTime && <PartTimeLabel />}
+          {company}
+          {' · '}
+          <span className="text-violet-600">{role}</span> {isPartTime && <PartTimeLabel />}
         </h5>
         <p className="text-neutral-500 dark:text-neutral-400">{description}</p>
       </div>
@@ -84,25 +92,43 @@ const ProjectsWork = () => {
         })}
         <ExperienceOtherTitle />
         <ExperienceCard
-          partTime={true}
-          title="Freelance · Web Consultant"
+          company="Freelance"
+          role="Web Consultant"
           description="In the past I was creating static websites for clients."
+          isPartTime
         />
         <ExperienceCard
-          title="Freelance · Web Developer"
+          company="Freelance"
+          role="Web Developer"
           description="First time web company job was 1 year coding website layouts."
         />
         <ExperienceSection text="WordPress" />
-        {/* TODO: project page */}
-        <p>
-          I was responsible for SmartSupp HELP website running on WordPress. All tutorials content and localization into
-          9 languages. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱
-        </p>
+        {/* TODO: create project page + THUMB + 3 screenshots */}
+        {projectsWorkWordPress.map((item) => {
+          return (
+            <ProjectItem
+              key={item.id}
+              isFeatured={item.isFeatured}
+              image={item.image}
+              title={item.title}
+              company={item.company}
+              role={item.role}
+              years={item.years}
+              description={item.description}
+              mySkillsIcons={item.mySkillsIcons}
+              customers={item.customers}
+              linkText={item.linkText}
+              linkProjectPage={item.linkProjectPage}
+            />
+          )
+        })}
+
         <ExperienceOtherTitle />
         <ExperienceCard
-          partTime={true}
-          title="Freelance · WordPress Consultant"
+          company="Freelance"
+          role="WordPress Consultant"
           description="For 5 years I used to create websites for clients and small companies."
+          isPartTime
         />
         <ExperienceSection text="QA Automation & Testing" />
         {projectsWorkQA.map((item) => {
@@ -125,23 +151,26 @@ const ProjectsWork = () => {
         })}
         <ExperienceOtherTitle />
         <ExperienceCard
-          title="Smartsupp · QA Automation - Team Leader"
+          company="Smartsupp"
+          role="QA Automation - Team Leader"
           description="I set up Cypress E2E testing for the entire company application. I also wrote E2E tests in JavaScript and TypeScript. Mentoring juniors QA."
         />
         <ExperienceCard
-          title="Moravia IT · Localization - Tester"
+          company="Moravia IT"
+          role="Localization - Tester"
           description="Making sure translations fit UI layout on Windows 7 + Windows Store."
         />
 
         <ExperienceSection text="Localization" />
-        {/* TODO: project page */}
+        {/* TODO: create project page + THUMB + 3 screenshots */}
         <p>
           I managed a team of 3 people. I was responsible for translation delivery and quality checks for Microsoft
           projects Windows 8 + Windows Phone.
         </p>
         <ExperienceOtherTitle />
         <ExperienceCard
-          title="Smartsupp · Localization - Manager"
+          company="Smartsupp"
+          role="Localization - Manager"
           description="Responsible for translation of the company website and application into 9 languages. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱"
         />
       </ProjectsLayout>

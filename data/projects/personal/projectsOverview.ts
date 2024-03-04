@@ -35,7 +35,7 @@ export const projectsPersonal: Project[] = [
     company: 'Personal project',
     role: 'Next.js App',
     description:
-      'My personal portfolio website to showcase my work and skills. The latest iteration of what I know and can code as React Developer.',
+      'My personal portfolio website to showcase my work and skills. The\u00A0latest iteration of what I know and can code as React Developer.',
     mySkillsIcons: iconsSkillsProjectsPersonal1,
     mySkills: [
       {
@@ -88,7 +88,7 @@ export const projectsPersonal: Project[] = [
     company: 'Personal project',
     role: 'Vue.js App',
     description:
-      'Simple eCommerce website. First time coding with Vue and Nuxt. Used Vuetify for styling. Exercise in creating Vue project.',
+      'Simple eCommerce website. First time coding with Vue and Nuxt. Used\u00A0Vuetify for styling. Exercise in creating Vue project.',
     mySkillsIcons: iconsSkillsProjectsPersonal3,
     mySkills: [
       {

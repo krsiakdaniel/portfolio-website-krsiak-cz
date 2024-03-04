@@ -20,14 +20,14 @@ import smartsuppWeb3 from '@/public/images/projects-work/smartsupp-web/smartsupp
 import smartsuppWeb4 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-4-light.png'
 import smartsuppWebThumb from '@/public/images/projects-work/smartsupp-web/smartsupp-web-thumb-light.png'
 
+import groupon1 from '@/public/images/projects-work/groupon/groupon-1-light.png'
+import groupon2 from '@/public/images/projects-work/groupon/groupon-2-light.png'
+import grouponThumb from '@/public/images/projects-work/groupon/groupon-thumb-light.png'
 import komercniBanka1 from '@/public/images/projects-work/komercni-banka/komercni-banka-1-light.png'
 import komercniBanka2 from '@/public/images/projects-work/komercni-banka/komercni-banka-2-light.png'
 import komercniBanka3 from '@/public/images/projects-work/komercni-banka/komercni-banka-3-light.png'
 import komercniBanka4 from '@/public/images/projects-work/komercni-banka/komercni-banka-4-light.png'
 import komercniBankaThumb from '@/public/images/projects-work/komercni-banka/komercni-banka-thumb-light.png'
-import groupon1 from '@/public/images/projects-work/groupon/groupon-1-light.png'
-import groupon2 from '@/public/images/projects-work/groupon/groupon-2-light.png'
-import grouponThumb from '@/public/images/projects-work/groupon/groupon-thumb-light.png'
 
 export const projectsWorkReact: Project[] = [
   {
@@ -116,7 +116,7 @@ export const projectsWorkFrontEnd: Project[] = [
     role: 'Front End Developer',
     years: '1 year',
     description:
-      'I created the company website Front End. I worked closely with the main UX designer on new brand color theme and layout decisions.',
+      'I created the company website Front End. I worked closely with the\u00A0main UX designer on new brand color theme and layout decisions.',
     mySkillsIcons: iconsSkillsProjectsWork2,
     mySkills: [
       { description: 'Frontend', skills: ['JavaScript', 'PHP', 'SASS', 'BEM', 'Cypress'] },
@@ -127,6 +127,35 @@ export const projectsWorkFrontEnd: Project[] = [
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/' }],
     customers: '100 000+',
     linkProjectPage: '/project-work-smartsupp-web',
+  },
+]
+
+// TODO: update screenshots, and skills, do not include emoji flags
+export const projectsWorkWordPress: Project[] = [
+  {
+    id: 'smartsupp-help',
+    isFeatured: false,
+    image: grouponThumb.src,
+    imageShowcase: [groupon1.src, groupon2.src],
+    title: '📚 Company HELP Website',
+    company: 'Smartsupp',
+    role: 'WordPress - Admin & Content Writer',
+    years: '6 months',
+    description:
+      'Responsible for the company HELP website running on WordPress and\u00A0writing tutorials. Localization into 9 languages.',
+    mySkillsIcons: iconsSkillsProjectsWork4,
+    mySkills: [
+      {
+        description: 'Frontend',
+        skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Playwright'],
+      },
+      { description: 'Design', skills: ['Figma', 'Storybook'] },
+      { description: 'Other', skills: ['Jira', 'Confluence', 'Tempo', 'QA', 'Team Management'] },
+    ],
+    linkText: 'Project details',
+    projectLinks: [{ urlText: 'Website →', url: 'https://www.groupon.com/' }],
+    customers: '100 000+',
+    linkProjectPage: '/project-work-groupon',
   },
 ]
 
