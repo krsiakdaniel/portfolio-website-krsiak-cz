@@ -9,7 +9,7 @@ import {
 import { projectPages } from '@/utils/constants'
 import { Project } from '@/utils/types'
 
-// smartupp-dashboard
+// smartsupp-dashboard
 import smartsuppDashboard1 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-1-light.png'
 import smartsuppDashboard2 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-2-light.png'
 import smartsuppDashboard3 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-3-light.png'

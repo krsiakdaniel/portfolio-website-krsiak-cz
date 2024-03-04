@@ -1,7 +1,7 @@
 import {
-  iconsSkillsProjectsPersonalKrsiak,
   iconsSkillsProjectsPersonalCryptomania,
   iconsSkillsProjectsPersonalEshop,
+  iconsSkillsProjectsPersonalKrsiak,
 } from '@/data/skills/skills-projects-personal'
 import { Project } from '@/utils/types'
 
@@ -26,7 +26,7 @@ import eshop4 from '@/public/images/projects-personal/eshop/eshop-4-light.png'
 import eshopThumb from '@/public/images/projects-personal/eshop/eshop-thumb-light.png'
 import { projectPages } from '@/utils/constants'
 
-export const projectsPersonal: Project[] = [
+export const projectsPersonalNext: Project[] = [
   {
     id: 'portfolio-website',
     isFeatured: true,
@@ -34,7 +34,7 @@ export const projectsPersonal: Project[] = [
     imageShowcase: [krsiak1.src, krsiak2.src, krsiak3.src],
     title: '👨‍💻 Portfolio Website',
     company: 'Personal project',
-    role: 'Next.js App',
+    role: 'Front End - Next.js',
     description:
       'My personal portfolio website to showcase my work and skills. The\u00A0latest iteration of what I know and can code as React Developer.',
     mySkillsIcons: iconsSkillsProjectsPersonalKrsiak,
@@ -50,6 +50,9 @@ export const projectsPersonal: Project[] = [
     linkGitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
     linkProjectPage: `/${projectPages.personal.krsiak}`,
   },
+]
+
+export const projectsPersonalReact: Project[] = [
   {
     id: 'cryptomania',
     isFeatured: false,
@@ -64,7 +67,7 @@ export const projectsPersonal: Project[] = [
     ],
     title: '💰 CryptoMania',
     company: 'Personal project',
-    role: 'React App',
+    role: 'Front End - React',
     description:
       'Crypto currency prices app fetching latest data from CoinGecko API. This is fun little project created in Chakra UI with dark mode available.',
     mySkillsIcons: iconsSkillsProjectsPersonalCryptomania,
@@ -80,6 +83,9 @@ export const projectsPersonal: Project[] = [
     linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
     linkProjectPage: `/${projectPages.personal.cryptoMania}`,
   },
+]
+
+export const projectsPersonalVue: Project[] = [
   {
     id: 'e-commerce',
     isFeatured: false,
@@ -87,7 +93,7 @@ export const projectsPersonal: Project[] = [
     imageShowcase: [eshop1.src, eshop2.src, eshop3.src, eshop4.src],
     title: '🛒 E-Commerce Website',
     company: 'Personal project',
-    role: 'Vue.js App',
+    role: 'Front End - Vue.js',
     description:
       'Simple E-Commerce website. First time coding with Vue and Nuxt. Used\u00A0Vuetify for styling. Exercise in creating Vue project.',
     mySkillsIcons: iconsSkillsProjectsPersonalEshop,

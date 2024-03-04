@@ -1,7 +1,9 @@
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectItem from '@/components/projects/ProjectItem'
 import ProjectsLayout from '@/components/projects/ProjectsLayout'
-import PartTimeLabel from '@/components/shared/PartTimeLabel'
+import ExperienceCard from '@/components/projects/experience/ExperienceCard'
+import ExperienceOtherTitle from '@/components/projects/experience/ExperienceOtherTitle'
+import ExperienceSection from '@/components/projects/experience/ExperienceSection'
 import {
   projectsWorkFrontEnd,
   projectsWorkLocalization,
@@ -10,40 +12,6 @@ import {
   projectsWorkWordPress,
 } from '@/data/projects/work/projectsOverview'
 import { ID_PROJECTS_WORK } from '@/utils/constants'
-
-type ExperienceCardProps = {
-  company: string
-  role: string
-  isPartTime?: boolean
-  description: string
-}
-
-type ExperienceSectionProps = {
-  text: string
-}
-
-const ExperienceSection = ({ text }: ExperienceSectionProps) => {
-  return <h3 className="mb-2 mt-16 border-b pb-2 text-2xl font-bold uppercase">{text}</h3>
-}
-
-const ExperienceOtherTitle = () => {
-  return <h4 className="mb-4 mt-8 text-xl font-bold dark:text-white">Other experience</h4>
-}
-
-const ExperienceCard = ({ company, role, isPartTime, description }: ExperienceCardProps) => {
-  return (
-    <div className="mb-8 w-full rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800 md:max-w-[588px]">
-      <div>
-        <h5 className="mr-3 font-semibold dark:text-white">
-          {company}
-          {' · '}
-          <span className="text-violet-600">{role}</span> {isPartTime && <PartTimeLabel />}
-        </h5>
-        <p className="text-neutral-500 dark:text-neutral-400">{description}</p>
-      </div>
-    </div>
-  )
-}
 
 const ProjectsWork = () => {
   return (
