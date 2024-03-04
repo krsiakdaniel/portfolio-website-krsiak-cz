@@ -1,6 +1,8 @@
 import chakra from '@/public/icons/svg/skills/chakra.svg'
+import css from '@/public/icons/svg/skills/css.svg'
 import cypress from '@/public/icons/svg/skills/cypress.svg'
 import figma from '@/public/icons/svg/skills/figma.svg'
+import html from '@/public/icons/svg/skills/html.svg'
 import js from '@/public/icons/svg/skills/js.svg'
 import next from '@/public/icons/svg/skills/next.svg'
 import php from '@/public/icons/svg/skills/php.svg'
@@ -136,5 +138,20 @@ export const iconsSkillsProjectsWorkSmartsuppHelp: Icon[] = [
   {
     name: 'php',
     path: php,
+  },
+]
+
+export const iconsSkillsProjectsWorkMoravia: Icon[] = [
+  {
+    name: 'html',
+    path: html,
+  },
+  {
+    name: 'css',
+    path: css,
+  },
+  {
+    name: 'js',
+    path: js,
   },
 ]

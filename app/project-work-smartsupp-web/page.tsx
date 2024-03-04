@@ -9,7 +9,7 @@ const ProjectWorkSmartsuppWeb = () => {
   return (
     <>
       <ProjectPageLayout
-        id={projectPages.work.smartsuppWeb}
+        id={projectPages.work.smartsupp.web}
         title={title}
         role={role}
         years={years}

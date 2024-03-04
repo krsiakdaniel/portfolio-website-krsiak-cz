@@ -30,6 +30,7 @@ export const projectPages = {
     },
     komercniBanka: 'project-work-komercni-banka',
     groupon: 'project-work-groupon',
+    moravia: 'project-work-moravia',
   },
   personal: {
     krsiak: 'project-personal-krsiak',

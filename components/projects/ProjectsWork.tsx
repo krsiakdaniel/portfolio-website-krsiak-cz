@@ -4,6 +4,7 @@ import ProjectsLayout from '@/components/projects/ProjectsLayout'
 import PartTimeLabel from '@/components/shared/PartTimeLabel'
 import {
   projectsWorkFrontEnd,
+  projectsWorkLocalization,
   projectsWorkQA,
   projectsWorkReact,
   projectsWorkWordPress,
@@ -71,6 +72,7 @@ const ProjectsWork = () => {
             />
           )
         })}
+
         <ExperienceSection text="Front End" />
         {projectsWorkFrontEnd.map((item) => {
           return (
@@ -102,6 +104,7 @@ const ProjectsWork = () => {
           role="Web Developer"
           description="First time web company job was 1 year coding website layouts."
         />
+
         <ExperienceSection text="WordPress" />
         {projectsWorkWordPress.map((item) => {
           return (
@@ -121,7 +124,6 @@ const ProjectsWork = () => {
             />
           )
         })}
-
         <ExperienceOtherTitle />
         <ExperienceCard
           company="Freelance"
@@ -129,6 +131,7 @@ const ProjectsWork = () => {
           description="For 5 years I used to create websites for clients and small companies."
           isPartTime
         />
+
         <ExperienceSection text="QA - Automation & Testing" />
         {projectsWorkQA.map((item) => {
           return (
@@ -161,11 +164,24 @@ const ProjectsWork = () => {
         />
 
         <ExperienceSection text="Localization" />
-        {/* TODO: create project page + THUMB + 3 screenshots */}
-        <p>
-          I managed a team of 3 people. I was responsible for translation delivery and quality checks for Microsoft
-          projects Windows 8 + Windows Phone.
-        </p>
+        {projectsWorkLocalization.map((item) => {
+          return (
+            <ProjectItem
+              key={item.id}
+              isFeatured={item.isFeatured}
+              image={item.image}
+              title={item.title}
+              company={item.company}
+              role={item.role}
+              years={item.years}
+              description={item.description}
+              mySkillsIcons={item.mySkillsIcons}
+              customers={item.customers}
+              linkText={item.linkText}
+              linkProjectPage={item.linkProjectPage}
+            />
+          )
+        })}
         <ExperienceOtherTitle />
         <ExperienceCard
           company="Smartsupp"

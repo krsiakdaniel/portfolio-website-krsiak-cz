@@ -1,15 +1,16 @@
 import ProjectPageLayout from '@/components/projects/projectPage/ProjectPageLayout'
-import { projectsWorkReact } from '@/data/projects/work/projectsOverview'
-import { sections } from '@/data/projects/work/smartsuppDashboard'
+import { sections } from '@/data/projects/work/moravia'
+import { projectsWorkLocalization } from '@/data/projects/work/projectsOverview'
 import { projectPages } from '@/utils/constants'
 
-const ProjectWorkSmartsuppDashboard = () => {
-  const { title, role, years, description, mySkills, customers, projectLinks, imageShowcase } = projectsWorkReact[0]
+const ProjectWorkMoravia = () => {
+  const { title, role, years, description, mySkills, customers, projectLinks, imageShowcase } =
+    projectsWorkLocalization[0]
 
   return (
     <>
       <ProjectPageLayout
-        id={projectPages.work.smartsupp.dashboard}
+        id={projectPages.work.smartsupp.web}
         title={title}
         role={role}
         years={years}
@@ -25,4 +26,4 @@ const ProjectWorkSmartsuppDashboard = () => {
   )
 }
 
-export default ProjectWorkSmartsuppDashboard
+export default ProjectWorkMoravia

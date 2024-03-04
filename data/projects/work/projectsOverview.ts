@@ -1,13 +1,15 @@
 import {
-  iconsSkillsProjectsWorkSmartsuppDashboard,
-  iconsSkillsProjectsWorkSmartsuppWeb,
-  iconsSkillsProjectsWorkKomercniBanka,
   iconsSkillsProjectsWorkGroupon,
+  iconsSkillsProjectsWorkKomercniBanka,
+  iconsSkillsProjectsWorkMoravia,
+  iconsSkillsProjectsWorkSmartsuppDashboard,
   iconsSkillsProjectsWorkSmartsuppHelp,
+  iconsSkillsProjectsWorkSmartsuppWeb,
 } from '@/data/skills/skills-projects-work'
+import { projectPages } from '@/utils/constants'
 import { Project } from '@/utils/types'
 
-// project images
+// smartupp-dashboard
 import smartsuppDashboard1 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-1-light.png'
 import smartsuppDashboard2 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-2-light.png'
 import smartsuppDashboard3 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-3-light.png'
@@ -15,27 +17,36 @@ import smartsuppDashboard4 from '@/public/images/projects-work/smartsupp-dashboa
 import smartsuppDashboard5 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-5-light.png'
 import smartsuppDashboardThumb from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-thumb-light.png'
 
+// smartsupp-web
 import smartsuppWeb1 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-1-light.png'
 import smartsuppWeb2 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-2-light.png'
 import smartsuppWeb3 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-3-light.png'
 import smartsuppWeb4 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-4-light.png'
 import smartsuppWebThumb from '@/public/images/projects-work/smartsupp-web/smartsupp-web-thumb-light.png'
 
+// groupon
 import groupon1 from '@/public/images/projects-work/groupon/groupon-1-light.png'
 import groupon2 from '@/public/images/projects-work/groupon/groupon-2-light.png'
 import grouponThumb from '@/public/images/projects-work/groupon/groupon-thumb-light.png'
 
+// komercni-banka
 import komercniBanka1 from '@/public/images/projects-work/komercni-banka/komercni-banka-1-light.png'
 import komercniBanka2 from '@/public/images/projects-work/komercni-banka/komercni-banka-2-light.png'
 import komercniBanka3 from '@/public/images/projects-work/komercni-banka/komercni-banka-3-light.png'
 import komercniBanka4 from '@/public/images/projects-work/komercni-banka/komercni-banka-4-light.png'
 import komercniBankaThumb from '@/public/images/projects-work/komercni-banka/komercni-banka-thumb-light.png'
 
+// smartsupp-help
 import smartsuppHelp1 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-1-light.png'
 import smartsuppHelp2 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-2-light.png'
 import smartsuppHelp3 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-3-light.png'
 import smartsuppHelpThumb from '@/public/images/projects-work/smartsupp-help/smartsupp-help-thumb-light.png'
-import { projectPages } from '@/utils/constants'
+
+// moravia
+import moravia1 from '@/public/images/projects-work/moravia/moravia-1-light.png'
+import moravia2 from '@/public/images/projects-work/moravia/moravia-2-light.png'
+import moravia3 from '@/public/images/projects-work/moravia/moravia-3-light.png'
+import moraviaThumb from '@/public/images/projects-work/moravia/moravia-thumb-light.png'
 
 export const projectsWorkReact: Project[] = [
   {
@@ -189,5 +200,31 @@ export const projectsWorkQA: Project[] = [
     projectLinks: [{ urlText: 'Website →', url: 'https://www.groupon.com/' }],
     customers: '17 000 000+',
     linkProjectPage: `/${projectPages.work.groupon}`,
+  },
+]
+
+export const projectsWorkLocalization: Project[] = [
+  {
+    id: 'moravia',
+    isFeatured: true,
+    image: moraviaThumb.src,
+    imageShowcase: [moravia1.src, moravia2.src, moravia3.src],
+    title: '🖥️ Windows',
+    company: 'RWS (Moravia - IT)',
+    role: 'QA Automation - Team Leader',
+    years: '1 year',
+    description:
+      'I had amazing chance to be team leader on Microsoft products, doing quality checks for Microsoft projects Windows 8 + Windows Phone.',
+    mySkillsIcons: iconsSkillsProjectsWorkMoravia,
+    mySkills: [
+      {
+        description: 'Frontend',
+        skills: ['HTML', 'CSS', 'JavaScript'],
+      },
+    ],
+    linkText: 'Project details',
+    projectLinks: [{ urlText: 'Website →', url: 'https://www.rws.com/' }],
+    customers: '80 percent of the world top 100 brands',
+    linkProjectPage: `/${projectPages.work.moravia}`,
   },
 ]
