@@ -17,10 +17,21 @@ export const ID_PROJECTS_PERSONAL = 'projects-personal'
 export const ID_CONTACT = 'contact'
 export const ID_FOOTER = 'footer'
 
+// IDs for work and personal sections
+export const ID_SECTION_REACT = 'react'
+export const ID_SECTION_FRONT_END = 'front-end'
+export const ID_SECTION_WORDPRESS = 'wordpress'
+export const ID_SECTION_QA = 'qa-automation-testing'
+export const ID_SECTION_LOCALIZATION = 'localization'
+export const ID_SECTION_NEXT = 'next'
+export const ID_SECTION_VUE = 'vue'
+
+// error pages
 export const ID_ERROR_404 = 'error-404'
 export const ID_ERROR = 'error'
 export const ID_ERROR_GLOBAL = 'error-global'
 
+// project pages IDs
 export const projectPages = {
   work: {
     smartsupp: {

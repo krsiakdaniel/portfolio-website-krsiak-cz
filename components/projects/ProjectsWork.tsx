@@ -11,7 +11,14 @@ import {
   projectsWorkReact,
   projectsWorkWordPress,
 } from '@/data/projects/work/projectsOverview'
-import { ID_PROJECTS_WORK } from '@/utils/constants'
+import {
+  ID_PROJECTS_WORK,
+  ID_SECTION_FRONT_END,
+  ID_SECTION_LOCALIZATION,
+  ID_SECTION_QA,
+  ID_SECTION_REACT,
+  ID_SECTION_WORDPRESS,
+} from '@/utils/constants'
 
 const ProjectsWork = () => {
   return (
@@ -21,7 +28,7 @@ const ProjectsWork = () => {
         heading="Work"
         description="In my previous jobs, I developed new features, redesigned websites, implemented responsive design, updated legacy codebases, was responsible for text localization, QA testing, QA automation and team leading on various projects."
       >
-        <ExperienceSection text="React" />
+        <ExperienceSection id={`${ID_PROJECTS_WORK}-${ID_SECTION_REACT}`} text="React" />
         {projectsWorkReact.map((item) => {
           return (
             <ProjectItem
@@ -41,7 +48,7 @@ const ProjectsWork = () => {
           )
         })}
 
-        <ExperienceSection text="Front End" />
+        <ExperienceSection id={`${ID_PROJECTS_WORK}-${ID_SECTION_FRONT_END}`} text="Front End" />
         {projectsWorkFrontEnd.map((item) => {
           return (
             <ProjectItem
@@ -73,7 +80,7 @@ const ProjectsWork = () => {
           description="First time web company job was 1 year coding website layouts."
         />
 
-        <ExperienceSection text="WordPress" />
+        <ExperienceSection id={`${ID_PROJECTS_WORK}-${ID_SECTION_WORDPRESS}`} text="WordPress" />
         {projectsWorkWordPress.map((item) => {
           return (
             <ProjectItem
@@ -100,7 +107,7 @@ const ProjectsWork = () => {
           isPartTime
         />
 
-        <ExperienceSection text="QA - Automation & Testing" />
+        <ExperienceSection id={`${ID_PROJECTS_WORK}-${ID_SECTION_QA}`} text="QA Automation & Testing" />
         {projectsWorkQA.map((item) => {
           return (
             <ProjectItem
@@ -131,7 +138,7 @@ const ProjectsWork = () => {
           description="Making sure translations fit UI layout on Windows 7 + Windows Store."
         />
 
-        <ExperienceSection text="Localization" />
+        <ExperienceSection id={`${ID_PROJECTS_WORK}-${ID_SECTION_LOCALIZATION}`} text="Localization" />
         {projectsWorkLocalization.map((item) => {
           return (
             <ProjectItem

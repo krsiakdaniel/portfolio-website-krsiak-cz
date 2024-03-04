@@ -7,7 +7,7 @@ import {
   projectsPersonalReact,
   projectsPersonalVue,
 } from '@/data/projects/personal/projectsOverview'
-import { ID_PROJECTS_PERSONAL } from '@/utils/constants'
+import { ID_PROJECTS_PERSONAL, ID_SECTION_NEXT, ID_SECTION_REACT, ID_SECTION_VUE } from '@/utils/constants'
 
 const ProjectsPersonal = () => {
   return (
@@ -17,7 +17,7 @@ const ProjectsPersonal = () => {
         heading="Personal Projects"
         description="I like to learn new technologies and create personal projects where I can apply what I know and keep up on the latest trends."
       >
-        <ExperienceSection text="Next" />
+        <ExperienceSection id={`${ID_PROJECTS_PERSONAL}-${ID_SECTION_NEXT}`} text="Next" />
         {projectsPersonalNext.map((item) => {
           return (
             <ProjectItem
@@ -37,7 +37,7 @@ const ProjectsPersonal = () => {
           )
         })}
 
-        <ExperienceSection text="React" />
+        <ExperienceSection id={`${ID_PROJECTS_PERSONAL}-${ID_SECTION_REACT}`} text="React" />
         {projectsPersonalReact.map((item) => {
           return (
             <ProjectItem
@@ -57,7 +57,7 @@ const ProjectsPersonal = () => {
           )
         })}
 
-        <ExperienceSection text="Vue" />
+        <ExperienceSection id={`${ID_PROJECTS_PERSONAL}-${ID_SECTION_VUE}`} text="Vue" />
         {projectsPersonalVue.map((item) => {
           return (
             <ProjectItem
