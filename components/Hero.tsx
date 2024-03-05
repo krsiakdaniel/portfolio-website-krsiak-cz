@@ -15,7 +15,7 @@ const Hero = () => {
     <PageContainer id={ID_HERO}>
       <div className="flex flex-col items-center justify-center">
         <h1 className="mb-4 text-center text-5xl font-bold leading-none tracking-tight text-neutral-900 dark:text-white sm:text-6xl lg:text-7xl">
-          Daniel Kršiak <span className="block text-violet-600 dark:text-violet-600">React Developer</span>
+          Daniel Krsiak <span className="block text-violet-600 dark:text-violet-600">React Developer</span>
         </h1>
 
         <p className="mb-3 text-center text-lg font-semibold text-neutral-600 dark:text-neutral-600">

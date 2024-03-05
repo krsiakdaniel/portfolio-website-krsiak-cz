@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Daniel Kršiak - React Developer',
+  title: 'Daniel Krsiak - React Developer',
   description:
     'Check out my React Developer portfolio. Discover a variety of projects and web applications demonstrating my skills in creating responsive and interactive user interfaces.',
 }

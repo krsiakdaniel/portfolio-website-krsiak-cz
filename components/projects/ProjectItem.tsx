@@ -35,6 +35,8 @@ const ProjectItem = ({
         <div className="mt-8 flex first:mt-0 lg:mt-0 lg:justify-start">
           <div className="relative">
             {isFeatured && <p className="absolute -right-4 -top-5 z-10 text-4xl">⭐</p>}
+
+            {/* TODO: optimize images dimensions + format webp or avif? item + subpages = sub thumb + sub view */}
             <Image
               src={image}
               className={`
