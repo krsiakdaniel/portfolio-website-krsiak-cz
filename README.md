@@ -175,9 +175,7 @@ npx playwright codegen
 
 This app uses GitHub Actions for CI and Netlify for CD.
 
-### CI - Continuous Integration
-
-[![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
+### CI - Continuous Integration · [![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
 
 This app uses GitHub Actions for CI.
 
@@ -206,6 +204,12 @@ The `build` job follows these steps:
 2. Setup Node.js environment using the `actions/setup-node@v3` action with Node.js version 18.
 3. It installs the dependencies of your project using `npm ci`. This command is similar to `npm install`, but it's designed to be used in automated environments such as this one.
 4. Run JEST tests using `npm test`.
+5. Upload the test report as an artifact:
+   - Using the `actions/upload-artifact@v3` action.
+   - This step is always executed regardless of the success or failure of previous steps.
+   - The artifact is named `jest-report`
+   - It is located at path `jest-report/`
+   - It is retained for 7 days.
 
 </details>
 
@@ -233,15 +237,22 @@ The `test` job follows these steps:
 3. It installs the dependencies of your project using `npm ci`. This command is similar to `npm install`, but it's designed to be used in automated environments such as this one.
 4. Install Playwright browsers using `npx playwright install --with-deps`.
 5. Run Playwright tests using `npx playwright test`.
-6. Upload the test report as an artifact using the `actions/upload-artifact@v3` action. This step is always executed regardless of the success or failure of previous steps. The artifact is named `playwright-report`, it is located at the `playwright-report/` path, and it is retained for 30 days.
+6. Upload the test report as an artifact:
+   - Using the `actions/upload-artifact@v3` action.
+   - This step is always executed regardless of the success or failure of previous steps.
+   - The artifact is named `playwright-report`
+   - It is located at path `playwright-report/`
+   - It is retained for 7 days.
 
 </details>
 
-### CD - Continuous Deployment
-
-[![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
+### CD - Continuous Deployment · [![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
 
 This app is deployed on Netlify.
+
+#### Netlify
+
+Build starts when a new commit is pushed to the `master` branch.
 
 Using build plugin:
 
