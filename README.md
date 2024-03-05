@@ -23,9 +23,24 @@ Website built with:
 
 ## 📝 Features
 
-- [x] links to LinkedIn, GitHub, Download resume
-- [x] section - work projects
-- [x] section - personal projects
+The website contains the following sections and pages.
+
+**Links:**
+
+- 👉 LinkedIn, GitHub, Resume
+
+**Sections:**
+
+- 👉 skills
+- 👉 about
+- 👉 work projects
+- 👉 personal projects
+- 👉 contact
+
+**Project pages:**
+
+- 👉 page for each project
+- 👉 project image gallery
 
 ## 💻 Scripts
 
@@ -42,6 +57,37 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## 🐛 Testing
+
+The app uses Jest for testing.
+
+### JEST 🃏
+
+Tests are located in the `__tests__` directory.
+
+```bash
+npm run test
+```
+
+#### TODO
+
+- [x] tests are now in folder `__tests__`
+- [ ] but they test will be added to folders side by side with tested modules and components
+- [ ] Using GitHub Actions for CI/CD?
+
+## 🚀 Deployment
+
+This app is deployed on [Netlify](https://www.netlify.com/).
+
+**Build plugin:**
+
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) to automatically run a Lighthouse audit on website after every build.
+
+**Deploys:**
+
+- [portfolio-website-krsiak-cz/deploys](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
+- You can click on the last 2 deploys to see the details.
 
 ## 🖼️ Screenshots
 
