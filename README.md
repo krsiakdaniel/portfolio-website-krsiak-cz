@@ -2,6 +2,8 @@
 
 React Developer portfolio website 👨‍💻
 
+[![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys) [![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
+
 ## ⚡ Project Website
 
 Website: <https://krsiak.cz>
@@ -112,9 +114,15 @@ This app uses GitHub Actions for CI and Netlify for CD.
 
 This app uses GitHub Actions for CI.
 
+Status:
+
+[![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
+
 #### GitHub Actions - Workflow "Jest"
 
 File location: [.github/workflows/jest.yml](.github/workflows/jest.yml)
+
+This workflow ensures that tests are run in a clean environment for every push and pull request to the `master` branch. You can view the results of the workflow in the **["Actions"](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) tab of GitHub repository**.
 
 This workflow is triggered in 2 scenarios:
 
@@ -130,17 +138,19 @@ The `build` job follows these steps:
 3. It installs the dependencies of your project using `npm ci`. This command is similar to `npm install`, but it's designed to be used in automated environments such as this one. It's faster and more reliable because it bypasses a package's `package.json` to install modules from a package's `npm-shrinkwrap.json` or `package-lock.json`, and it doesn't modify these `lock` files.
 4. It runs your Jest tests using `npm test`.
 
-This workflow ensures that tests are run in a clean environment for every push and pull request to the `master` branch. You can view the results of the workflow in the **["Actions"](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) tab of GitHub repository**.
-
 ### CD - Continuous Deployment 🚦
 
 This app is deployed on [Netlify](https://www.netlify.com/).
 
-**Build plugin:**
+Status:
+
+[![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
+
+Build plugin:
 
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) to automatically run a Lighthouse audit on website after every build.
 
-**Deploys:**
+Deploys:
 
 - [portfolio-website-krsiak-cz/deploys](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
 - You can click on the last 2 deploys to see the details.
