@@ -60,7 +60,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## 🐛 Testing
 
-The app uses Jest for testing.
+This app uses Jest for unit testing.
 
 ### JEST 🃏
 
@@ -68,6 +68,17 @@ Tests are located in the `__tests__` directory.
 
 ```bash
 npm run test
+```
+
+#### Test coverage
+
+Jest will generate a code coverage report.
+
+- The report will be output to the console.
+- It will also be saved to a `/coverage` directory in project root as HTML file.
+
+```bash
+npm run test:coverage
 ```
 
 #### TODO
