@@ -41,9 +41,9 @@ export const projectsPersonalNext: Project[] = [
     mySkills: [
       {
         description: 'Frontend',
-        skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'JEST'],
+        skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
       },
-      { description: 'Other', skills: ['GitHub', 'GitHub Actions', 'Netlify'] },
+      { description: 'Other', skills: ['JEST', 'Playwright', 'GitHub Actions', 'Netlify'] },
     ],
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://krsiak.cz/' }],

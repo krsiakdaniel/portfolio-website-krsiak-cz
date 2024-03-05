@@ -5,6 +5,7 @@ import js from '@/public/icons/svg/skills/js.svg'
 import netlify from '@/public/icons/svg/skills/netlify.svg'
 import next from '@/public/icons/svg/skills/next.svg'
 import nuxt from '@/public/icons/svg/skills/nuxt.svg'
+import playwright from '@/public/icons/svg/skills/playwright.svg'
 import react from '@/public/icons/svg/skills/react.svg'
 import tailwind from '@/public/icons/svg/skills/tailwind.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
@@ -37,6 +38,10 @@ export const iconsSkillsProjectsPersonalKrsiak: Icon[] = [
   {
     name: 'jest',
     path: jest,
+  },
+  {
+    name: 'playwright',
+    path: playwright,
   },
   {
     name: 'github-actions',
