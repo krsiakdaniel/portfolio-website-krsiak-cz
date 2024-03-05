@@ -37,6 +37,7 @@ const Hero = () => {
 
       <div className="mt-8 flex flex-col items-center justify-center sm:flex-row">
         <a
+          data-testid="hero-link-linkedin"
           href={LINK_LINKEDIN}
           target="_blank"
           className="text-md mb-2 w-40 rounded-lg bg-blue-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:mb-0 sm:mr-2"
@@ -44,6 +45,7 @@ const Hero = () => {
           LinkedIn
         </a>
         <a
+          data-testid="hero-link-github"
           href={LINK_GITHUB}
           target="_blank"
           className="text-md mb-2 w-40 rounded-lg bg-gray-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800 sm:mb-0 sm:mr-2"
@@ -51,6 +53,7 @@ const Hero = () => {
           GitHub
         </a>
         <a
+          data-testid="hero-link-resume"
           href={LINK_RESUME}
           target="_blank"
           className="text-md w-40 rounded-lg bg-red-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 sm:mb-0"
