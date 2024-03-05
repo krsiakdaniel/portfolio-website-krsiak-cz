@@ -98,13 +98,35 @@ Jest will generate a code coverage report.
 npm run test:coverage
 ```
 
-#### TODO
+## 🚀 Deployment CI / CD
 
-- [x] tests are now in folder `__tests__`
-- [ ] but they test will be added to folders side by side with tested modules and components
-- [ ] Using GitHub Actions for CI/CD?
+This app uses GitHub Actions for CI and Netlify for CD.
 
-## 🚀 Deployment
+### CI - Continuous Integration 🚦
+
+This app uses GitHub Actions for CI.
+
+#### GitHub Actions - Workflow "Jest"
+
+File location: [.github/workflows/jest.yml](.github/workflows/jest.yml)
+
+This workflow is triggered in 2 scenarios:
+
+1. When a push is made to the `master` branch.
+2. When a pull request is opened against the `master` branch.
+
+The workflow consists of a single job named `build`, which is executed on the latest version of Ubuntu.
+
+The `build` job follows these steps:
+
+1. It checks out your repository using the `actions/checkout@v2` action.
+2. It sets up a Node.js environment using the `actions/setup-node@v2` action, specifically using Node.js version 14.x.
+3. It installs the dependencies of your project using `npm ci`. This command is similar to `npm install`, but it's designed to be used in automated environments such as this one. It's faster and more reliable because it bypasses a package's `package.json` to install modules from a package's `npm-shrinkwrap.json` or `package-lock.json`, and it doesn't modify these `lock` files.
+4. It runs your Jest tests using `npm test`.
+
+This workflow ensures that tests are run in a clean environment for every push and pull request to the `master` branch. You can view the results of the workflow in the **["Actions"](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) tab of GitHub repository**.
+
+### CD - Continuous Deployment 🚦
 
 This app is deployed on [Netlify](https://www.netlify.com/).
 
