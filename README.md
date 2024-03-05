@@ -80,7 +80,7 @@ npm run prettier:fix
 
 ## 🐛 Testing
 
-This app uses Jest for unit testing.
+This app uses **Jest** for unit testing and **Playwright** for E2E testing.
 
 ### JEST 🃏
 
@@ -89,13 +89,13 @@ Jest is JavaScript Testing Framework.
 - Test are located in the same folder next to each file being tested.
 - If there is file `getSkillBadgeColor.ts`, the test file will be `getSkillBadgeColor.test.tsx`.
 
-Run tests in command line.
+Runs the unit tests.
 
 ```bash
 npm run test
 ```
 
-#### Test coverage
+#### Test coverage - Jest
 
 Jest will generate a code coverage report.
 
@@ -104,6 +104,71 @@ Jest will generate a code coverage report.
 
 ```bash
 npm run test:coverage
+```
+
+### Playwright 🎭
+
+Playwright is library for browser automation E2E testing.
+
+### TODO
+
+- [x] install Playwright
+- [ ] write E2E tests
+- [ ] run E2E tests in CI github actions
+- [ ] update readme
+
+Runs the E2E tests.
+
+```bash
+npx playwright test
+```
+
+Runs the E2E tests using alias for `npx playwright test`
+
+```bash
+npm run test:e2e
+```
+
+#### Test coverage - Playwright
+
+Playwright will generate a code coverage report.
+
+- It serves HTML report on new localhost port.
+
+```bash
+  npx playwright show-report
+```
+
+#### Other Playwright commands
+
+Starts the interactive UI mode.
+
+```bash
+npx playwright test --ui
+```
+
+Runs the tests only on Desktop Chrome.
+
+```bash
+npx playwright test --project=chromium
+```
+
+Runs the tests in a specific file.
+
+```bash
+npx playwright test file_name.spec.ts
+```
+
+Runs the tests in debug mode.
+
+```bash
+npx playwright test --debug
+```
+
+Auto generate tests with Codegen.
+
+```bash
+npx playwright codegen
 ```
 
 ## 🚀 Deployment CI / CD

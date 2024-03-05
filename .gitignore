@@ -42,6 +42,10 @@ __benchmarks__
 cypress/integration/examples
 cypress/screenshots
 cypress/videos
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
 
 # production
 dist/
