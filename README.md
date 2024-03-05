@@ -175,33 +175,25 @@ npx playwright codegen
 
 This app uses GitHub Actions for CI and Netlify for CD.
 
-### GitHub Actions
-
-Workflow files in project root:
-
-- [jest.yml](.github/workflows/jest.yml)
-- [playwright.yml](.github/workflows/playwright.yml)
-
-Workflows on GitHub:
-
-- [actions/workflows/jest.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
-- [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
-
-### CI - Continuous Integration 🚦
-
-This app uses GitHub Actions for CI.
-
-Status:
+### CI - Continuous Integration
 
 [![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
 
+This app uses GitHub Actions for CI.
+
 #### GitHub Actions - Workflow "Jest"
 
-File location: [.github/workflows/jest.yml](.github/workflows/jest.yml)
+- Workflow file: [jest.yml](.github/workflows/jest.yml)
+- View the results on GitHub: [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
 
-This workflow ensures that tests are run in a clean environment for every push and pull request to the `master` branch. You can view the results of the workflow in the **["Actions"](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) tab of GitHub repository**.
+<details>
+<summary>Read workflow description ...</summary>
 
-This workflow is triggered in 2 scenarios:
+---
+
+This GitHub Actions workflow is named **"Jest"**.
+
+It is triggered in 2 scenarios:
 
 1. When a push is made to the `master` branch.
 2. When a pull request is opened against the `master` branch.
@@ -210,12 +202,44 @@ The workflow consists of a single job named `build`, which is executed on the la
 
 The `build` job follows these steps:
 
-1. It checks out your repository using the `actions/checkout@v2` action.
-2. It sets up a Node.js environment using the `actions/setup-node@v2` action, specifically using Node.js version 14.x.
-3. It installs the dependencies of your project using `npm ci`. This command is similar to `npm install`, but it's designed to be used in automated environments such as this one. It's faster and more reliable because it bypasses a package's `package.json` to install modules from a package's `npm-shrinkwrap.json` or `package-lock.json`, and it doesn't modify these `lock` files.
-4. It runs your Jest tests using `npm test`.
+1. Checkout the repository using the `actions/checkout@v3` action.
+2. Setup Node.js environment using the `actions/setup-node@v3` action with Node.js version 18.
+3. It installs the dependencies of your project using `npm ci`. This command is similar to `npm install`, but it's designed to be used in automated environments such as this one.
+4. Run JEST tests using `npm test`.
 
-### CD - Continuous Deployment [![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
+</details>
+
+#### GitHub Actions - Workflow "Playwright"
+
+- Workflow files in project root: [playwright.yml](.github/workflows/playwright.yml)
+- View the results on GitHub: [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
+
+<details>
+<summary>Read workflow description ...</summary>
+
+---
+
+It is triggered in 2 scenarios:
+
+1. When a push is made to the `master` branch.
+2. When a pull request is opened against `master` branch.
+
+The workflow consists of a single job named `test`, which is executed on the latest version of Ubuntu.
+
+The `test` job follows these steps:
+
+1. Checkout the repository using the `actions/checkout@v3` action.
+2. Setup Node.js environment using the `actions/setup-node@v3` action with Node.js version 18.
+3. It installs the dependencies of your project using `npm ci`. This command is similar to `npm install`, but it's designed to be used in automated environments such as this one.
+4. Install Playwright browsers using `npx playwright install --with-deps`.
+5. Run Playwright tests using `npx playwright test`.
+6. Upload the test report as an artifact using the `actions/upload-artifact@v3` action. This step is always executed regardless of the success or failure of previous steps. The artifact is named `playwright-report`, it is located at the `playwright-report/` path, and it is retained for 30 days.
+
+</details>
+
+### CD - Continuous Deployment
+
+[![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
 
 This app is deployed on Netlify.
 
