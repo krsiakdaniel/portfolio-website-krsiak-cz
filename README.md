@@ -86,8 +86,8 @@ This app uses **Jest** for unit testing and **Playwright** for E2E testing.
 
 Jest is JavaScript Testing Framework.
 
-- Test are located in the same folder next to each file being tested.
-- If there is file `getSkillBadgeColor.ts`, the test file will be `getSkillBadgeColor.test.tsx`.
+- Test are located folder in `__tests__/jest`
+- If file name is `getSkillBadgeColor.ts`, then test name is `getSkillBadgeColor.test.ts`.
 
 Runs the unit tests.
 
@@ -108,14 +108,13 @@ npm run test:coverage
 
 ### Playwright 🎭
 
+TODO:
+
+- [ ] write E2E tests
+
 Playwright is library for browser automation E2E testing.
 
-### TODO
-
-- [x] install Playwright
-- [ ] write E2E tests
-- [x] run E2E tests in CI github actions
-- [x] update readme
+- Test are located folder in `__tests__/playwright`
 
 Runs the E2E tests.
 

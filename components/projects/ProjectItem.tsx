@@ -35,21 +35,18 @@ const ProjectItem = ({
         <div className="mt-8 flex first:mt-0 lg:mt-0 lg:justify-start">
           <div className="relative">
             {isFeatured && <p className="absolute -right-4 -top-5 z-10 text-4xl">⭐</p>}
-            <a href={linkProjectPage}>
-              <Image
-                src={image}
-                className={`
-                  mb-4 cursor-pointer rounded-lg border bg-neutral-100 object-cover 
-                  shadow-md hover:border-purple-500 hover:opacity-85
-                  md:mb-0 ${getFeaturedBorderColor(isFeatured)}
+            <Image
+              src={image}
+              className={`
+                  mb-4 rounded-lg border bg-neutral-100 object-cover shadow-md md:mb-0 
+                  ${getFeaturedBorderColor(isFeatured)}
                 `}
-                alt={title}
-                placeholder="blur"
-                blurDataURL={image}
-                width={588}
-                height={604}
-              />
-            </a>
+              alt={title}
+              placeholder="blur"
+              blurDataURL={image}
+              width={588}
+              height={604}
+            />
           </div>
         </div>
 
