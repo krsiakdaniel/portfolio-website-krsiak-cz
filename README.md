@@ -22,6 +22,7 @@ Website built with:
 - [Next.js](https://nextjs.org/) - React Framework
 - [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
 - [JEST](https://jestjs.io/) - UNIT testing
+- [Playwright](https://playwright.dev/) - E2E testing
 - [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) - CI - Continuous Integration
 - [Netlify](https://www.netlify.com/) - CD - Continuous Deployment
 
@@ -184,7 +185,7 @@ This app uses GitHub Actions for CI.
 - View the results on GitHub: [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
 
 <details>
-<summary>Read workflow description ...</summary>
+<summary>👀 Read workflow description ...</summary>
 
 ---
 
@@ -218,7 +219,7 @@ The `build` job follows these steps:
 - View the results on GitHub: [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
 
 <details>
-<summary>Read workflow description ...</summary>
+<summary>👀 Read workflow description ...</summary>
 
 ---
 

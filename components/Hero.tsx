@@ -14,15 +14,21 @@ const Hero = () => {
   return (
     <PageContainer id={ID_HERO}>
       <div className="flex flex-col items-center justify-center">
-        <h1 className="mb-4 text-center text-5xl font-bold leading-none tracking-tight text-neutral-900 dark:text-white sm:text-6xl lg:text-7xl">
+        <h1
+          data-testid="hero-heading"
+          className="mb-4 text-center text-5xl font-bold leading-none tracking-tight text-neutral-900 dark:text-white sm:text-6xl lg:text-7xl"
+        >
           Daniel Krsiak <span className="block text-violet-600 dark:text-violet-600">React Developer</span>
         </h1>
 
-        <p className="mb-3 text-center text-lg font-semibold text-neutral-600 dark:text-neutral-600">
+        <p
+          data-testid="hero-paragraph-1"
+          className="mb-3 text-center text-lg font-semibold text-neutral-600 dark:text-neutral-600"
+        >
           Hi 👋 I am React Developer based in Brno, Czech Republic 🇨🇿
         </p>
 
-        <p className="text-center text-neutral-600 dark:text-neutral-600">
+        <p data-testid="hero-paragraph-2" className="text-center text-neutral-600 dark:text-neutral-600">
           I enjoy working with <span className="font-bold text-violet-600">JavaScript</span>,{' '}
           <span className="font-bold text-violet-600">TypeScript</span>, and{' '}
           <span className="font-bold text-violet-600">React</span>.
