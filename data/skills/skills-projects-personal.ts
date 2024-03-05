@@ -1,4 +1,5 @@
 import chakra from '@/public/icons/svg/skills/chakra.svg'
+import jest from '@/public/icons/svg/skills/jest.svg'
 import js from '@/public/icons/svg/skills/js.svg'
 import netlify from '@/public/icons/svg/skills/netlify.svg'
 import next from '@/public/icons/svg/skills/next.svg'
@@ -31,6 +32,10 @@ export const iconsSkillsProjectsPersonalKrsiak: Icon[] = [
   {
     name: 'tailwind',
     path: tailwind,
+  },
+  {
+    name: 'jest',
+    path: jest,
   },
   {
     name: 'netlify',

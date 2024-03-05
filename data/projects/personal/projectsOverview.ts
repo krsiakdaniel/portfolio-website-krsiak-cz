@@ -41,7 +41,7 @@ export const projectsPersonalNext: Project[] = [
     mySkills: [
       {
         description: 'Frontend',
-        skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
+        skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'JEST'],
       },
       { description: 'Other', skills: ['Netlify'] },
     ],
