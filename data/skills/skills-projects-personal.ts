@@ -1,4 +1,5 @@
 import chakra from '@/public/icons/svg/skills/chakra.svg'
+import githubActions from '@/public/icons/svg/skills/github-actions.svg'
 import jest from '@/public/icons/svg/skills/jest.svg'
 import js from '@/public/icons/svg/skills/js.svg'
 import netlify from '@/public/icons/svg/skills/netlify.svg'
@@ -36,6 +37,10 @@ export const iconsSkillsProjectsPersonalKrsiak: Icon[] = [
   {
     name: 'jest',
     path: jest,
+  },
+  {
+    name: 'github-actions',
+    path: githubActions,
   },
   {
     name: 'netlify',

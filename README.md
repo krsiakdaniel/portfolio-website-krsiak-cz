@@ -10,7 +10,7 @@ Website: <https://krsiak.cz>
 
 Using the following technologies.
 
-![My Skills](https://skillicons.dev/icons?i=js,ts,react,next,tailwind,netlify)
+![My Skills](https://skillicons.dev/icons?i=js,ts,react,next,tailwind,jest,githubactions,netlify)
 
 Website built with:
 
@@ -20,7 +20,8 @@ Website built with:
 - [Next.js](https://nextjs.org/) - React Framework
 - [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
 - [JEST](https://jestjs.io/) - UNIT testing
-- [Netlify](https://www.netlify.com/) - Deployment
+- [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) - CI - Continuous Integration
+- [Netlify](https://www.netlify.com/) - CD - Continuous Deployment
 
 ## 📝 Features
 
