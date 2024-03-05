@@ -2,7 +2,7 @@
 
 React Developer portfolio website 👨‍💻
 
-[![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys) [![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
+[![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml) [![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
 
 ## ⚡ Project Website
 
