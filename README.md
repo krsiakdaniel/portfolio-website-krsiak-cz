@@ -19,6 +19,7 @@ Website built with:
 - [React](https://react.dev/) - JavaScript library
 - [Next.js](https://nextjs.org/) - React Framework
 - [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
+- [JEST](https://jestjs.io/) - UNIT testing
 - [Netlify](https://www.netlify.com/) - Deployment
 
 ## 📝 Features
