@@ -114,8 +114,8 @@ Playwright is library for browser automation E2E testing.
 
 - [x] install Playwright
 - [ ] write E2E tests
-- [ ] run E2E tests in CI github actions
-- [ ] update readme
+- [x] run E2E tests in CI github actions
+- [x] update readme
 
 Runs the E2E tests.
 
@@ -175,6 +175,18 @@ npx playwright codegen
 
 This app uses GitHub Actions for CI and Netlify for CD.
 
+### GitHub Actions
+
+Workflow files in project root:
+
+- [jest.yml](.github/workflows/jest.yml)
+- [playwright.yml](.github/workflows/playwright.yml)
+
+Workflows on GitHub:
+
+- [actions/workflows/jest.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
+- [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
+
 ### CI - Continuous Integration 🚦
 
 This app uses GitHub Actions for CI.
@@ -203,21 +215,17 @@ The `build` job follows these steps:
 3. It installs the dependencies of your project using `npm ci`. This command is similar to `npm install`, but it's designed to be used in automated environments such as this one. It's faster and more reliable because it bypasses a package's `package.json` to install modules from a package's `npm-shrinkwrap.json` or `package-lock.json`, and it doesn't modify these `lock` files.
 4. It runs your Jest tests using `npm test`.
 
-### CD - Continuous Deployment 🚦
+### CD - Continuous Deployment [![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
 
-This app is deployed on [Netlify](https://www.netlify.com/).
+This app is deployed on Netlify.
 
-Status:
+Using build plugin:
 
-[![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
-
-Build plugin:
-
-- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) to automatically run a Lighthouse audit on website after every build.
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) to automatically run audit on website after every build.
 
 Deploys:
 
-- [portfolio-website-krsiak-cz/deploys](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
+- Netlify page [portfolio-website-krsiak-cz/deploys](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
 - You can click on the last 2 deploys to see the details.
 
 ## 🖼️ Screenshots
