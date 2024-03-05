@@ -81,7 +81,12 @@ This app uses Jest for unit testing.
 
 ### JEST 🃏
 
-Tests are located in the `__tests__` directory.
+Jest is JavaScript Testing Framework.
+
+- Test are located in the same folder next to each file being tested.
+- If there is file `getSkillBadgeColor.ts`, the test file will be `getSkillBadgeColor.test.tsx`.
+
+Run tests in command line.
 
 ```bash
 npm run test
