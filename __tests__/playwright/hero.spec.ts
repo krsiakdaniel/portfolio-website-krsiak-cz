@@ -1,6 +1,6 @@
 import { Browser, BrowserContext, Page, chromium, expect, test } from '@playwright/test'
 
-import { LINK_GITHUB, LINK_LINKEDIN, LINK_RESUME } from '@/utils/constants'
+import { EMAIL_HREF, LINK_GITHUB, LINK_LINKEDIN, LINK_RESUME, PHONE_HREF } from '@/utils/constants'
 
 let browser: Browser
 let context: BrowserContext
@@ -56,5 +56,19 @@ test.describe('Hero - Links', () => {
     await page.goto('http://localhost:3000') // replace with  app's url
     const resumeLink = await page.getAttribute('[data-testid="hero-link-resume"]', 'href')
     expect(resumeLink).toBe(LINK_RESUME)
+  })
+})
+
+test.describe('Hero - Email & Phone', () => {
+  test('should have the correct Email link', async () => {
+    await page.goto('http://localhost:3000') // replace with your app's url
+    const emailLink = await page.getAttribute('[data-testid="hero-link-email"]', 'href')
+    expect(emailLink).toBe(EMAIL_HREF)
+  })
+
+  test('should have the correct Phone link', async () => {
+    await page.goto('http://localhost:3000') // replace with your app's url
+    const phoneLink = await page.getAttribute('[data-testid="hero-link-phone"]', 'href')
+    expect(phoneLink).toBe(PHONE_HREF)
   })
 })

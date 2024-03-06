@@ -64,12 +64,14 @@ const Hero = () => {
 
       <div className="mt-8 flex flex-col items-center">
         <a
+          data-testid="hero-link-email"
           href={EMAIL_HREF}
           className="mb-2 rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-neutral-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
         >
           {EMAIL_TEXT}
         </a>
         <a
+          data-testid="hero-link-phone"
           href={PHONE_HREF}
           className="rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-neutral-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
         >
