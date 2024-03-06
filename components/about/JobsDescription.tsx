@@ -9,13 +9,13 @@ const JobsDescription = () => {
         <div key={item.title} className="flex flex-col gap-4 pb-4 pt-4">
           <div className="flex flex-col items-start lg:flex-row lg:items-center">
             <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-full  bg-blue-100 dark:bg-blue-900 md:mr-4 lg:mb-0">
-              <Image key={item.title} src={item.path} alt={item.title} width={20} height={20} />
+              <Image key={item.title} src={item.path} alt={item.title} width={22} height={22} />
             </div>
             <h3 className="text-2xl font-bold dark:text-white">
               {item.title}{' '}
               <small className="text-md text-neutral-500">
                 {item.years && '· '}
-                {item.years} years {item.partTimeJob && <PartTimeLabel />}
+                {item.years} {item.years === '1' ? 'year' : 'years'} {item.partTimeJob && <PartTimeLabel />}
               </small>
             </h3>
           </div>

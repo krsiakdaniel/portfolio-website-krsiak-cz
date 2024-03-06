@@ -39,6 +39,7 @@ const ProjectItem = ({
             {isFeatured && <p className="absolute -right-4 -top-5 z-10 text-4xl">⭐</p>}
 
             {/* TODO: optimize images dimensions + format webp or avif? item + subpages = sub thumb + sub view */}
+            {/* TODO: img source set */}
             <Image
               src={image}
               className={`
