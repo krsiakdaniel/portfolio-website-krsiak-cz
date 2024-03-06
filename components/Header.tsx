@@ -1,4 +1,4 @@
-import logo from '@/public/favicon-32x32.png'
+import logo from '@/public/logo.webp'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -10,7 +10,7 @@ const Header = () => {
           <div>
             <Link href="/" className="group flex flex-row items-center gap-3">
               <div>
-                <Image src={logo} alt="Logo" width={32} height={32} />
+                <Image src={logo} alt="logo" width={32} height={32} />
               </div>
               <p className="text-body-md cursor-pointer font-bold text-neutral-700 group-hover:text-violet-600">
                 krsiak.cz

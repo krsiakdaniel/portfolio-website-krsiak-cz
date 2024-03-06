@@ -1,4 +1,4 @@
-import krsiak from '@/public/images/krsiak.jpg'
+import krsiak from '@/public/images/krsiak.webp'
 import Image from 'next/image'
 
 const Photo = () => {

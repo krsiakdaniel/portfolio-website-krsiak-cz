@@ -7,7 +7,7 @@ const ContactCard = ({ contact, color }: Props) => (
   <div className="w-full max-w-full rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
     <div className="flex flex-col items-center">
       <Image
-        className="mb-3 h-24 w-24 rounded-full shadow-lg"
+        className="mb-3 h-24 w-24 rounded-full bg-neutral-100 shadow-lg"
         src={contact.image}
         alt={contact.heading}
         width={128}
