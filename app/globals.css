@@ -6,5 +6,11 @@
 
 @layer base {
   @layer utilities {
+    ::-moz-selection {
+      @apply bg-violet-400 text-white;
+    }
+    ::selection {
+      @apply bg-violet-400 text-white;
+    }
   }
 }
