@@ -6,7 +6,7 @@ import HeaderSection from '@/components/projects/projectPage/HeaderSection'
 import Section from '@/components/projects/projectPage/Section'
 import { HeaderSectionProps, ProjectInformationProps, SectionItem } from '@/utils/types'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 type Props = {
   id: string
@@ -30,7 +30,18 @@ const ProjectPageLayout = ({
   sections,
   imageShowcase,
 }: Props) => {
+  // Set new image for gallery
   const [selectedImage, setSelectedImage] = useState(imageShowcase[0])
+
+  // Preload images
+  const preloadImage = (url: string) => {
+    const img = new window.Image()
+    img.src = url
+  }
+
+  useEffect(() => {
+    imageShowcase.forEach((image) => preloadImage(image))
+  }, [imageShowcase])
 
   return (
     <PageContainer id={id}>
