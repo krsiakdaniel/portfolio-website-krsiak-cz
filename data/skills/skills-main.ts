@@ -1,8 +1,10 @@
 import css from '@/public/icons/svg/skills/css.svg'
 import figma from '@/public/icons/svg/skills/figma.svg'
 import html from '@/public/icons/svg/skills/html.svg'
+import jest from '@/public/icons/svg/skills/jest.svg'
 import js from '@/public/icons/svg/skills/js.svg'
 import next from '@/public/icons/svg/skills/next.svg'
+import playwright from '@/public/icons/svg/skills/playwright.svg'
 import react from '@/public/icons/svg/skills/react.svg'
 import redux from '@/public/icons/svg/skills/redux.svg'
 import scss from '@/public/icons/svg/skills/scss.svg'
@@ -53,6 +55,14 @@ export const iconsSkills3: Icon[] = [
   {
     name: 'redux',
     path: redux,
+  },
+  {
+    name: 'jest',
+    path: jest,
+  },
+  {
+    name: 'playwright',
+    path: playwright,
   },
   {
     name: 'figma',
