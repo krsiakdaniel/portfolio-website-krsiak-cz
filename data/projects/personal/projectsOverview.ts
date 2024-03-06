@@ -24,11 +24,11 @@ import eshop2 from '@/public/images/projects-personal/eshop/eshop-2-light.png'
 import eshop3 from '@/public/images/projects-personal/eshop/eshop-3-light.png'
 import eshop4 from '@/public/images/projects-personal/eshop/eshop-4-light.png'
 import eshopThumb from '@/public/images/projects-personal/eshop/eshop-thumb-light.png'
-import { projectPages } from '@/utils/constants'
+import { projectIDs, projectPages } from '@/utils/constants'
 
 export const projectsPersonalNext: Project[] = [
   {
-    id: 'portfolio-website',
+    id: projectIDs.personal.krsiak,
     isFeatured: true,
     image: krsiakThumb.src,
     imageShowcase: [krsiak1.src, krsiak2.src, krsiak3.src],
@@ -54,7 +54,7 @@ export const projectsPersonalNext: Project[] = [
 
 export const projectsPersonalReact: Project[] = [
   {
-    id: 'cryptomania',
+    id: projectIDs.personal.cryptoMania,
     isFeatured: false,
     image: cryptomaniaThumb.src,
     imageShowcase: [
@@ -87,7 +87,7 @@ export const projectsPersonalReact: Project[] = [
 
 export const projectsPersonalVue: Project[] = [
   {
-    id: 'e-commerce',
+    id: projectIDs.personal.eshop,
     isFeatured: false,
     image: eshopThumb.src,
     imageShowcase: [eshop1.src, eshop2.src, eshop3.src, eshop4.src],

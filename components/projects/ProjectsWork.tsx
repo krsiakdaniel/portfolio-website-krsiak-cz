@@ -44,6 +44,7 @@ const ProjectsWork = () => {
               customers={item.customers}
               linkText={item.linkText}
               linkProjectPage={item.linkProjectPage}
+              dataTestId={item.id}
             />
           )
         })}
@@ -64,6 +65,7 @@ const ProjectsWork = () => {
               customers={item.customers}
               linkText={item.linkText}
               linkProjectPage={item.linkProjectPage}
+              dataTestId={item.id}
             />
           )
         })}
@@ -96,6 +98,7 @@ const ProjectsWork = () => {
               customers={item.customers}
               linkText={item.linkText}
               linkProjectPage={item.linkProjectPage}
+              dataTestId={item.id}
             />
           )
         })}
@@ -123,6 +126,7 @@ const ProjectsWork = () => {
               customers={item.customers}
               linkText={item.linkText}
               linkProjectPage={item.linkProjectPage}
+              dataTestId={item.id}
             />
           )
         })}
@@ -154,6 +158,7 @@ const ProjectsWork = () => {
               customers={item.customers}
               linkText={item.linkText}
               linkProjectPage={item.linkProjectPage}
+              dataTestId={item.id}
             />
           )
         })}

@@ -14,6 +14,7 @@ type Props = {
   customers: string | undefined
   linkText: string
   linkProjectPage: string
+  dataTestId: string
 }
 
 const ProjectItem = ({
@@ -28,6 +29,7 @@ const ProjectItem = ({
   customers,
   linkText,
   linkProjectPage,
+  dataTestId,
 }: Props) => {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-10">
@@ -77,6 +79,7 @@ const ProjectItem = ({
             </p>
           )}
           <a
+            data-testid={dataTestId}
             href={linkProjectPage}
             className="inline-flex items-center rounded-lg bg-purple-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-900"
           >

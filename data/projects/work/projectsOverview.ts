@@ -6,7 +6,7 @@ import {
   iconsSkillsProjectsWorkSmartsuppHelp,
   iconsSkillsProjectsWorkSmartsuppWeb,
 } from '@/data/skills/skills-projects-work'
-import { projectPages } from '@/utils/constants'
+import { projectIDs, projectPages } from '@/utils/constants'
 import { Project } from '@/utils/types'
 
 // smartsupp-dashboard
@@ -50,7 +50,7 @@ import moraviaThumb from '@/public/images/projects-work/moravia/moravia-thumb-li
 
 export const projectsWorkReact: Project[] = [
   {
-    id: 'smartsupp-dashboard',
+    id: projectIDs.work.smartsupp.dashboard,
     isFeatured: true,
     image: smartsuppDashboardThumb.src,
     imageShowcase: [
@@ -81,7 +81,7 @@ export const projectsWorkReact: Project[] = [
     linkProjectPage: `/${projectPages.work.smartsupp.dashboard}`,
   },
   {
-    id: 'komercni-banka',
+    id: projectIDs.work.komercniBanka,
     isFeatured: false,
     image: komercniBankaThumb.src,
     imageShowcase: [komercniBanka1.src, komercniBanka2.src, komercniBanka3.src, komercniBanka4.src],
@@ -126,7 +126,7 @@ export const projectsWorkReact: Project[] = [
 
 export const projectsWorkFrontEnd: Project[] = [
   {
-    id: 'smartsupp-web',
+    id: projectIDs.work.smartsupp.web,
     isFeatured: false,
     image: smartsuppWebThumb.src,
     imageShowcase: [smartsuppWeb1.src, smartsuppWeb2.src, smartsuppWeb3.src, smartsuppWeb4.src],
@@ -151,7 +151,7 @@ export const projectsWorkFrontEnd: Project[] = [
 
 export const projectsWorkWordPress: Project[] = [
   {
-    id: 'smartsupp-help',
+    id: projectIDs.work.smartsupp.help,
     isFeatured: false,
     image: smartsuppHelpThumb.src,
     imageShowcase: [smartsuppHelp1.src, smartsuppHelp2.src, smartsuppHelp3.src],
@@ -177,7 +177,7 @@ export const projectsWorkWordPress: Project[] = [
 
 export const projectsWorkQA: Project[] = [
   {
-    id: 'groupon',
+    id: projectIDs.work.groupon,
     isFeatured: false,
     image: grouponThumb.src,
     imageShowcase: [groupon1.src, groupon2.src],
@@ -205,7 +205,7 @@ export const projectsWorkQA: Project[] = [
 
 export const projectsWorkLocalization: Project[] = [
   {
-    id: 'moravia',
+    id: projectIDs.work.moravia,
     isFeatured: true,
     image: moraviaThumb.src,
     imageShowcase: [moravia1.src, moravia2.src, moravia3.src],

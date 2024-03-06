@@ -33,6 +33,7 @@ const ProjectsPersonal = () => {
               customers={item.customers}
               linkText={item.linkText}
               linkProjectPage={item.linkProjectPage}
+              dataTestId={item.id}
             />
           )
         })}
@@ -53,6 +54,7 @@ const ProjectsPersonal = () => {
               customers={item.customers}
               linkText={item.linkText}
               linkProjectPage={item.linkProjectPage}
+              dataTestId={item.id}
             />
           )
         })}
@@ -73,6 +75,7 @@ const ProjectsPersonal = () => {
               customers={item.customers}
               linkText={item.linkText}
               linkProjectPage={item.linkProjectPage}
+              dataTestId={item.id}
             />
           )
         })}

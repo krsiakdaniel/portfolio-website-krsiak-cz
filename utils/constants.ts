@@ -31,7 +31,7 @@ export const ID_ERROR_404 = 'error-404'
 export const ID_ERROR = 'error'
 export const ID_ERROR_GLOBAL = 'error-global'
 
-// project pages IDs
+// project pages URLs
 export const projectPages = {
   work: {
     smartsupp: {
@@ -47,5 +47,24 @@ export const projectPages = {
     krsiak: 'project-personal-krsiak',
     eshop: 'project-personal-eshop',
     cryptoMania: 'project-personal-cryptomania',
+  },
+}
+
+// project pages IDs
+export const projectIDs = {
+  work: {
+    smartsupp: {
+      dashboard: 'link-project-work-smartsupp-dashboard',
+      web: 'link-project-work-smartsupp-web',
+      help: 'link-project-work-smartsupp-help',
+    },
+    komercniBanka: 'link-project-work-komercni-banka',
+    groupon: 'link-project-work-groupon',
+    moravia: 'link-project-work-moravia',
+  },
+  personal: {
+    krsiak: 'link-project-personal-krsiak',
+    eshop: 'link-project-personal-eshop',
+    cryptoMania: 'link-project-personal-cryptomania',
   },
 }
