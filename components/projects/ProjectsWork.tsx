@@ -26,7 +26,7 @@ const ProjectsWork = () => {
       <ProjectsLayout
         dividerText="Work Experience"
         heading="Work"
-        description="In my previous jobs, I developed new features, redesigned websites, implemented responsive design, updated legacy codebases, was responsible for text localization, QA testing, QA automation and team leading on various projects."
+        description="I worked on modern products, developed new features, redesigned websites, implemented responsive design, updated legacy codebase, was responsible for localization, QA automation and testing, including work as team leader."
       >
         <ExperienceSection id={`${ID_PROJECTS_WORK}-${ID_SECTION_REACT}`} text="React" />
         {projectsWorkReact.map((item) => {

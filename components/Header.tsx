@@ -1,5 +1,4 @@
 import logo from '@/public/favicon-32x32.png'
-import { LINK_LINKEDIN } from '@/utils/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -17,16 +16,6 @@ const Header = () => {
                 krsiak.cz
               </p>
             </Link>
-          </div>
-          <div className="md:flex md:flex-row md:gap-6">
-            <div className="flex-row items-center gap-6 md:flex">
-              <Link
-                href={LINK_LINKEDIN}
-                className="text-body-md cursor-pointer font-bold uppercase text-neutral-700 hover:text-violet-600"
-              >
-                LinkedIn →
-              </Link>
-            </div>
           </div>
         </div>
       </div>
