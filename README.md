@@ -109,10 +109,6 @@ npm run test:coverage
 
 ### Playwright 🎭
 
-TODO:
-
-- [ ] write E2E tests
-
 Playwright is library for browser automation E2E testing.
 
 - Test are located folder in `__tests__/playwright`
