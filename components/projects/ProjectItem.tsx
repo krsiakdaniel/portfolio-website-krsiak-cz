@@ -43,14 +43,14 @@ const ProjectItem = ({
             <Image
               src={image}
               className={`
-                  mb-4 rounded-lg border bg-neutral-100 object-cover shadow-md md:mb-0 
+                  mb-4 rounded-lg border bg-neutral-100 shadow-md md:mb-0 
                   ${getFeaturedBorderColor(isFeatured)}
                 `}
               alt={title}
               placeholder="blur"
               blurDataURL={image}
-              width={588}
-              height={604}
+              width={600}
+              height={617}
             />
           </div>
         </div>
