@@ -68,7 +68,7 @@ const ProjectPageLayout = ({
       </div>
 
       <div className="mt-4 flex flex-col gap-8 lg:flex-row">
-        <div className="flex flex-row gap-4 lg:flex-col">
+        <div className="flex flex-row gap-4 lg:w-[212px] lg:flex-col">
           {imageShowcase.map((image, index) => (
             <div key={index} onClick={() => setSelectedImage(image)}>
               <Image
@@ -83,7 +83,7 @@ const ProjectPageLayout = ({
             </div>
           ))}
         </div>
-        <div>
+        <div className="lg:w-[995px]">
           <Image
             src={selectedImage}
             alt="image gallery view"
