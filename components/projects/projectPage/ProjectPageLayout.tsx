@@ -70,7 +70,12 @@ const ProjectPageLayout = ({
       <div className="mt-4 flex flex-col gap-8 lg:flex-row">
         <div className="flex flex-row gap-4 lg:flex-col">
           {imageShowcase.map((image, index) => (
-            <div key={index} onClick={() => setSelectedImage(image)} className="lg:w-[212px]">
+            <div
+              key={index}
+              onClick={() => setSelectedImage(image)}
+              className="lg:w-[212px]"
+              data-testid="gallery-thumb"
+            >
               <Image
                 src={image}
                 alt={`thumb-${index + 1}`}
@@ -83,7 +88,7 @@ const ProjectPageLayout = ({
             </div>
           ))}
         </div>
-        <div className="lg:w-[995px]">
+        <div className="lg:w-[995px]" data-testid="gallery-preview">
           <Image
             src={selectedImage}
             alt="image gallery view"
