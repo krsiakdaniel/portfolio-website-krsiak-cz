@@ -15,38 +15,38 @@ import smartsuppDashboard2 from '@/public/images/projects-work/smartsupp-dashboa
 import smartsuppDashboard3 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-3-light.png'
 import smartsuppDashboard4 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-4-light.png'
 import smartsuppDashboard5 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-5-light.png'
-import smartsuppDashboardThumb from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-thumb-light-600.png'
+import smartsuppDashboardThumb from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-thumb-light-600.webp'
 
 // smartsupp-web
 import smartsuppWeb1 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-1-light.png'
 import smartsuppWeb2 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-2-light.png'
 import smartsuppWeb3 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-3-light.png'
 import smartsuppWeb4 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-4-light.png'
-import smartsuppWebThumb from '@/public/images/projects-work/smartsupp-web/smartsupp-web-thumb-light-600.png'
+import smartsuppWebThumb from '@/public/images/projects-work/smartsupp-web/smartsupp-web-thumb-light-600.webp'
 
 // groupon
 import groupon1 from '@/public/images/projects-work/groupon/groupon-1-light.png'
 import groupon2 from '@/public/images/projects-work/groupon/groupon-2-light.png'
-import grouponThumb from '@/public/images/projects-work/groupon/groupon-thumb-light-600.png'
+import grouponThumb from '@/public/images/projects-work/groupon/groupon-thumb-light-600.webp'
 
 // komercni-banka
 import komercniBanka1 from '@/public/images/projects-work/komercni-banka/komercni-banka-1-light.png'
 import komercniBanka2 from '@/public/images/projects-work/komercni-banka/komercni-banka-2-light.png'
 import komercniBanka3 from '@/public/images/projects-work/komercni-banka/komercni-banka-3-light.png'
 import komercniBanka4 from '@/public/images/projects-work/komercni-banka/komercni-banka-4-light.png'
-import komercniBankaThumb from '@/public/images/projects-work/komercni-banka/komercni-banka-thumb-light-600.png'
+import komercniBankaThumb from '@/public/images/projects-work/komercni-banka/komercni-banka-thumb-light-600.webp'
 
 // smartsupp-help
 import smartsuppHelp1 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-1-light.png'
 import smartsuppHelp2 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-2-light.png'
 import smartsuppHelp3 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-3-light.png'
-import smartsuppHelpThumb from '@/public/images/projects-work/smartsupp-help/smartsupp-help-thumb-light-600.png'
+import smartsuppHelpThumb from '@/public/images/projects-work/smartsupp-help/smartsupp-help-thumb-light-600.webp'
 
 // moravia
 import moravia1 from '@/public/images/projects-work/moravia/moravia-1-light.png'
 import moravia2 from '@/public/images/projects-work/moravia/moravia-2-light.png'
 import moravia3 from '@/public/images/projects-work/moravia/moravia-3-light.png'
-import moraviaThumb from '@/public/images/projects-work/moravia/moravia-thumb-light-600.png'
+import moraviaThumb from '@/public/images/projects-work/moravia/moravia-thumb-light-600.webp'
 
 export const projectsWorkReact: Project[] = [
   {
