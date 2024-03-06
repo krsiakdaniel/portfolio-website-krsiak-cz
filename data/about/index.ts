@@ -28,7 +28,7 @@ export const jobs: Job[] = [
     years: '1',
     description: `
         I created new website using PHP and JavaScript for SaaS company.
-        Including new responsive design. I was also working closely with UX designer.
+        Including new responsive design. I\u00A0was also working closely with UX designer.
       `,
   },
   {
@@ -46,7 +46,7 @@ export const jobs: Job[] = [
     title: 'Localization - Manager',
     years: '2',
     description: `
-      I worked on localization of Microsoft Windows, and Windows Phone.
+      I worked on localization of Microsoft Windows 8, and Windows Phone.
       I also managed localization of\u00A0SaaS company website into 9 languages.
       `,
   },
@@ -55,7 +55,7 @@ export const jobs: Job[] = [
     title: 'Localization - Tester',
     years: '3',
     description: `
-      I worked on Microsoft projects testing layouts for Windows + Windows Store.
+      I worked on Microsoft projects testing layouts for Windows 7, and Windows Store.
       `,
   },
 ]
