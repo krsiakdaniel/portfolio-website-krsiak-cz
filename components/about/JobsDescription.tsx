@@ -16,14 +16,6 @@ const JobsDescription = () => {
                 {item.years && ' · '}
                 {item.years} {item.years === '1' ? 'year' : 'years'}
               </small>
-              {item.myCareerFocus && (
-                <span
-                  key={item.title}
-                  className={`ml-2 rounded border border-violet-400 bg-violet-100 px-2.5 py-0.5 text-center text-xs font-medium text-violet-800 last:mr-0 dark:bg-gray-700 dark:text-violet-400 md:mb-0 md:mr-2`}
-                >
-                  My Career Focus
-                </span>
-              )}
             </h3>
           </div>
           <p className="mb-3 text-neutral-600 last:mb-0 dark:text-neutral-600 md:max-w-[640px] lg:max-w-[768px]">

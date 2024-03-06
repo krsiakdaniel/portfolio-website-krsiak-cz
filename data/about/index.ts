@@ -5,7 +5,6 @@ import reactLogo from '@/public/icons/svg/about/react-logo.svg'
 import text from '@/public/icons/svg/about/text.svg'
 
 interface Job {
-  myCareerFocus: boolean
   path: string
   title: string
   years: string
@@ -14,7 +13,6 @@ interface Job {
 
 export const jobs: Job[] = [
   {
-    myCareerFocus: true,
     path: reactLogo,
     title: 'Front End - React Developer',
     years: '4',
@@ -25,7 +23,6 @@ export const jobs: Job[] = [
     `,
   },
   {
-    myCareerFocus: false,
     path: globe,
     title: 'Front End - JavaScript Developer',
     years: '1',
@@ -35,7 +32,6 @@ export const jobs: Job[] = [
       `,
   },
   {
-    myCareerFocus: false,
     path: check,
     title: 'QA Automation - Team Leader',
     years: '1',
@@ -46,7 +42,6 @@ export const jobs: Job[] = [
       `,
   },
   {
-    myCareerFocus: false,
     path: text,
     title: 'Localization - Manager',
     years: '2',
@@ -56,7 +51,6 @@ export const jobs: Job[] = [
       `,
   },
   {
-    myCareerFocus: false,
     path: bug,
     title: 'Localization - Tester',
     years: '3',
