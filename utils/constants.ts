@@ -10,6 +10,7 @@ export const EMAIL_TEXT = 'krsiak.daniel@gmail.com'
 
 export const ID_HERO = 'hero'
 export const ID_SKILLS = 'skills'
+export const ID_SKILLS_MAIN = 'skills-main'
 export const ID_SERVICES = 'services'
 export const ID_ABOUT = 'about'
 export const ID_PROJECTS_WORK = 'projects-work'
