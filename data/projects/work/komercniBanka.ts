@@ -19,7 +19,7 @@ export const sections: SectionItem[] = [
     ],
   },
   {
-    title: 'Responsive web design',
+    title: 'Responsive design',
     titleHighlight: '',
     items: [
       'I was responsible for the responsive aspects of the web as well.',

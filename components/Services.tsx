@@ -5,7 +5,6 @@ import Responsive from '@/public/icons/svg/services/responsive.svg'
 import UI from '@/public/icons/svg/services/ui.svg'
 import { ID_SERVICES } from '@/utils/constants'
 
-// TODO: change to 4 main skills, JS, TS, React, Redux with icons and 4 boxes resposnive row and 2x2
 const Services = () => {
   return (
     <PageContainer id={ID_SERVICES}>
