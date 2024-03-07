@@ -27,10 +27,8 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Start the application
-        run: npm run dev &
-        env:
-          CI: true
+      # Start local development server
+      # playwright.config.ts = should start the webServer:{}
 
       - name: Run Playwright tests
         run: npx playwright test
