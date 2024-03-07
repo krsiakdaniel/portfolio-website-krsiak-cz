@@ -18,7 +18,9 @@ const Hero = () => {
           data-testid="hero-heading"
           className="mb-4 text-center text-5xl font-bold leading-none tracking-tight text-neutral-900 dark:text-white sm:text-6xl lg:text-7xl"
         >
-          Daniel Krsiak <span className="block text-violet-600 dark:text-violet-600">React Developer</span>
+          Daniel Krsiak
+          <br />
+          <span className="text-violet-600 dark:text-violet-600">React Developer</span>
         </h1>
 
         <p
