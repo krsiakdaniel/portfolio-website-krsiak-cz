@@ -68,9 +68,18 @@ const ProjectItem = ({
 
           <p className="mb-6 mt-6 font-light text-neutral-600 dark:text-neutral-600 md:text-lg">{description}</p>
 
-          <div className="mb-6 flex flex-row">
+          <div className="mb-6 flex flex-wrap">
             {mySkillsIcons.map((item) => {
-              return <Image key={item.name} src={item.path} alt={item.name} className="mr-2" width={32} height={32} />
+              return (
+                <Image
+                  key={item.name}
+                  src={item.path}
+                  alt={item.name}
+                  className="mb-2 mr-2 lg:mb-0"
+                  width={32}
+                  height={32}
+                />
+              )
             })}
           </div>
 
