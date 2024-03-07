@@ -1,8 +1,8 @@
 # React Developer - Portfolio Website | krsiak.cz
 
-React Developer portfolio website 👨‍💻
+[![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml) [![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml) [![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
 
-[![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml) [![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
+React Developer portfolio website 👨‍💻
 
 ## ⚡ Project Website
 
@@ -40,14 +40,13 @@ The website contains the following sections and pages.
 - 👉 about
 - 👉 work projects
 - 👉 personal projects
-- 👉 contact
 
 **Project pages:**
 
 - 👉 page for each project
 - 👉 project image gallery
 
-## 💻 Scripts
+## 💻 Commands
 
 Install dependencies.
 
@@ -79,16 +78,12 @@ Format the code via Prettier.
 npm run prettier:fix
 ```
 
-## 🐛 Testing
-
-This app uses **Jest** for unit testing and **Playwright** for E2E testing.
-
-### JEST 🃏
+## 🐛 Testing - 🃏 JEST
 
 Jest is JavaScript Testing Framework.
 
 - Test are located folder in `__tests__/jest`
-- If file name is `getSkillBadgeColor.ts`, then test name is `getSkillBadgeColor.test.ts`.
+- Naming is `file.test.ts`
 
 Runs the unit tests.
 
@@ -96,7 +91,7 @@ Runs the unit tests.
 npm run test
 ```
 
-#### Test coverage - Jest
+### Test coverage
 
 Jest will generate a code coverage report.
 
@@ -107,11 +102,12 @@ Jest will generate a code coverage report.
 npm run test:coverage
 ```
 
-### Playwright 🎭
+## 🐛 Testing - 🎭 Playwright
 
 Playwright is library for browser automation E2E testing.
 
 - Test are located folder in `__tests__/playwright`
+- Naming is `file.spec.ts`
 
 Runs the E2E tests.
 
@@ -125,7 +121,7 @@ Runs the E2E tests using alias for `npx playwright test`
 npm run test:e2e
 ```
 
-#### Test coverage - Playwright
+### Test coverage
 
 Playwright will generate a code coverage report.
 
@@ -135,7 +131,7 @@ Playwright will generate a code coverage report.
   npx playwright show-report
 ```
 
-#### Other Playwright commands
+### Other Playwright commands
 
 Starts the interactive UI mode.
 
@@ -167,15 +163,13 @@ Auto generate tests with Codegen.
 npx playwright codegen
 ```
 
-## 🚀 Deployment CI / CD
-
-This app uses GitHub Actions for CI and Netlify for CD.
-
-### CI - Continuous Integration · [![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
+## 🚀♻️ CI - Continuous Integration
 
 This app uses GitHub Actions for CI.
 
-#### GitHub Actions - Workflow "Jest"
+### GitHub Actions - Workflow "Jest"
+
+[![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
 
 - Workflow file: [jest.yml](.github/workflows/jest.yml)
 - View the results on GitHub: [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
@@ -209,7 +203,9 @@ The `build` job follows these steps:
 
 </details>
 
-#### GitHub Actions - Workflow "Playwright"
+### GitHub Actions - Workflow "Playwright"
+
+[![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
 
 - Workflow files in project root: [playwright.yml](.github/workflows/playwright.yml)
 - View the results on GitHub: [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
@@ -242,11 +238,14 @@ The `test` job follows these steps:
 
 </details>
 
-### CD - Continuous Deployment · [![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
+
+## 🚀 ✅ CD - Continuous Deployment
 
 This app is deployed on Netlify.
 
-#### Netlify
+### Netlify
+
+[![Build Status](https://badges.netlify.com/api/portfolio-website-krsiak-cz.svg?branch=master)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
 
 Build starts when a new commit is pushed to the `master` branch.
 
