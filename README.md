@@ -6,15 +6,13 @@ React Developer portfolio website 👨‍💻
 
 ## ⚡ Project Website
 
-Website: <https://krsiak.cz>
+<https://krsiak.cz>
 
 ## 🛠️ Tech Stack
 
 Using the following technologies.
 
 ![My Skills](https://skillicons.dev/icons?i=js,ts,react,next,tailwind,jest,githubactions,netlify)
-
-Website built with:
 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 - [TypeScript](https://www.typescriptlang.org/)
