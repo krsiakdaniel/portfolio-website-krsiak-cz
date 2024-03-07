@@ -1,8 +1,8 @@
 import PageContainer from '@/components/layout/PageContainer'
 import Card from '@/components/shared/Card'
-import Components from '@/public/icons/svg/services/components.svg'
-import Responsive from '@/public/icons/svg/services/responsive.svg'
-import UI from '@/public/icons/svg/services/ui.svg'
+import js from '@/public/icons/svg/skills/js.svg'
+import react from '@/public/icons/svg/skills/react.svg'
+import ts from '@/public/icons/svg/skills/ts.svg'
 import { ID_SERVICES } from '@/utils/constants'
 
 const Services = () => {
@@ -19,29 +19,32 @@ const Services = () => {
 
         <div className="mb-4 flex justify-center md:items-center lg:mb-0 lg:mr-8">
           <Card
-            src={Components}
-            alt="Code"
-            title="React Components"
-            description="I create components that are reusable and easy to maintain."
+            src={js}
+            alt="JS"
+            title="JavaScript"
+            titleHighlight="5 years"
+            description="Essential for creating modern interactive web applications."
           />
         </div>
 
         <div className="flex flex-col items-center lg:mr-10">
           <div className="mb-4 lg:mb-8">
             <Card
-              src={Responsive}
-              alt="Responsive"
-              title="Responsive Design"
-              description="I make sure that the product looks good on all devices."
+              src={ts}
+              alt="TS"
+              title="TypeScript"
+              titleHighlight="3 years"
+              description="Ensuring type safety, enhancing code reliability and scalability."
             />
           </div>
 
           <div>
             <Card
-              src={UI}
-              alt="UI"
-              title="UI / UX"
-              description="I improve the product UI to be more user-friendly and effective."
+              src={react}
+              alt="React"
+              title="React"
+              titleHighlight="4 years"
+              description="Great for components that are reusable and easy to maintain."
             />
           </div>
         </div>
