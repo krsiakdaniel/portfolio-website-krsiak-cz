@@ -17,7 +17,7 @@ test.afterAll(async () => {
 test.beforeEach(async () => {
   context = await browser.newContext()
   page = await context.newPage()
-  await page.goto('http://localhost:3000') // replace with app's url
+  await page.goto('/')
 })
 
 test.afterEach(async () => {
@@ -41,19 +41,19 @@ test.describe('Hero - Heading and texts', () => {
 
 test.describe('Hero - Links', () => {
   test('should have the correct LinkedIn link', async () => {
-    await page.goto('http://localhost:3000') // replace with  app's url
+    await page.goto('/')
     const linkedinLink = await page.getAttribute('[data-testid="hero-link-linkedin"]', 'href')
     expect(linkedinLink).toBe(LINK_LINKEDIN)
   })
 
   test('should have the correct GitHub link', async () => {
-    await page.goto('http://localhost:3000') // replace with  app's url
+    await page.goto('/')
     const githubLink = await page.getAttribute('[data-testid="hero-link-github"]', 'href')
     expect(githubLink).toBe(LINK_GITHUB)
   })
 
   test('should have the correct Resume link', async () => {
-    await page.goto('http://localhost:3000') // replace with  app's url
+    await page.goto('/')
     const resumeLink = await page.getAttribute('[data-testid="hero-link-resume"]', 'href')
     expect(resumeLink).toBe(LINK_RESUME)
   })
@@ -61,13 +61,13 @@ test.describe('Hero - Links', () => {
 
 test.describe('Hero - Email & Phone', () => {
   test('should have the correct Email link', async () => {
-    await page.goto('http://localhost:3000') // replace with your app's url
+    await page.goto('/')
     const emailLink = await page.getAttribute('[data-testid="hero-link-email"]', 'href')
     expect(emailLink).toBe(EMAIL_HREF)
   })
 
   test('should have the correct Phone link', async () => {
-    await page.goto('http://localhost:3000') // replace with your app's url
+    await page.goto('/')
     const phoneLink = await page.getAttribute('[data-testid="hero-link-phone"]', 'href')
     expect(phoneLink).toBe(PHONE_HREF)
   })

@@ -16,7 +16,7 @@ test.afterAll(async () => {
 test.beforeEach(async () => {
   context = await browser.newContext()
   page = await context.newPage()
-  await page.goto('http://localhost:3000') // replace with app's url
+  await page.goto('/')
 })
 
 test.afterEach(async () => {
