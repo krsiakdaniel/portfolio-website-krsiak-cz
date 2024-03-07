@@ -56,7 +56,7 @@ const ProjectItem = ({
         </div>
 
         <div className="mt-4 md:mt-0">
-          <h2 className="mb-2 text-4xl font-bold tracking-tight text-neutral-900 dark:text-white">{title}</h2>
+          <h2 className="mb-2 text-4xl font-bold tracking-tight text-neutral-900">{title}</h2>
           <div className="mb-4 text-xl font-semibold text-neutral-500">{company}</div>
           <h3 className="mb-4 text-2xl font-semibold">
             <span className="text-violet-600">{role}</span>
@@ -66,7 +66,7 @@ const ProjectItem = ({
             </small>
           </h3>
 
-          <p className="mb-6 mt-6 font-light text-neutral-600 dark:text-neutral-600 md:text-lg">{description}</p>
+          <p className="mb-6 mt-6 font-light text-neutral-600 md:text-lg">{description}</p>
 
           <div className="mb-6 flex flex-wrap">
             {mySkillsIcons.map((item) => {
@@ -84,14 +84,14 @@ const ProjectItem = ({
           </div>
 
           {customers && (
-            <p className="mb-6 font-light text-neutral-600 dark:text-neutral-600 md:text-lg">
+            <p className="mb-6 font-light text-neutral-600 md:text-lg">
               <span className="font-bold">{customers}</span> customers.
             </p>
           )}
           <a
             data-testid={dataTestId}
             href={linkProjectPage}
-            className="inline-flex items-center rounded-lg bg-purple-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-900"
+            className="inline-flex items-center rounded-lg bg-purple-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-800 focus:ring-4 focus:ring-purple-300"
           >
             {linkText} →
           </a>

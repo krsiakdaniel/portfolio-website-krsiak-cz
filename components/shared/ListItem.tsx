@@ -8,7 +8,7 @@ const ListItem = ({ children }: Props) => {
       <li className="flex-start flex">
         <span className="flex">
           <svg
-            className="mr-2 mt-1 h-3.5 w-3.5 text-violet-600 dark:text-violet-400"
+            className="mr-2 mt-1 h-3.5 w-3.5 text-violet-600"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"

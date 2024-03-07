@@ -49,8 +49,8 @@ const SkillsMain = () => {
     <PageContainer id={ID_SKILLS_MAIN}>
       <div className="mb-20 flex flex-col rounded-lg border border-dashed bg-green-100 px-10 py-10 lg:flex-row">
         <div className="mb-10 flex flex-col justify-center pt-10 text-center lg:mb-0 lg:w-1/2 lg:pl-5 lg:pr-10 lg:pt-0 lg:text-left">
-          <h2 className="text-5xl font-bold uppercase dark:text-white">What I&nbsp;do</h2>
-          <p className="text-lg font-normal text-neutral-600 dark:text-neutral-600 lg:max-w-[550px]">
+          <h2 className="text-5xl font-bold uppercase">What I&nbsp;do</h2>
+          <p className="text-lg font-normal text-neutral-600 lg:max-w-[550px]">
             I am passionate about creating high-quality products that meet the needs and expectations both of the client
             and the users.
           </p>

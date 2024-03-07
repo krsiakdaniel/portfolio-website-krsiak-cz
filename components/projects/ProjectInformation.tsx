@@ -12,7 +12,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
   return (
     <>
       <div className="mt-8">
-        <h3 className="mb-4 text-3xl font-bold dark:text-white">Information</h3>
+        <h3 className="mb-4 text-3xl font-bold">Information</h3>
         {customers && (
           <List>
             <ListItem>
@@ -26,7 +26,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
       </div>
 
       <div className="mt-8">
-        <h3 className="mb-4 text-3xl font-bold dark:text-white">Skills</h3>
+        <h3 className="mb-4 text-3xl font-bold">Skills</h3>
         <List>
           {mySkills.map((category, index) => (
             <ListItem key={index}>
@@ -34,7 +34,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
                 {category.skills.map((skill, index) => (
                   <span
                     key={index}
-                    className={`bg-${getSkillBadgeColor(category.description)}-100 text-${getSkillBadgeColor(category.description)}-800 dark:text-${getSkillBadgeColor(category.description)}-400 border border-${getSkillBadgeColor(category.description)}-400 mb-2 rounded px-2.5 py-0.5 text-center text-xs font-medium last:mr-0 dark:bg-gray-700 md:mb-0 md:mr-2`}
+                    className={`bg-${getSkillBadgeColor(category.description)}-100 text-${getSkillBadgeColor(category.description)}-800 border border-${getSkillBadgeColor(category.description)}-400 mb-2 rounded px-2.5 py-0.5 text-center text-xs font-medium last:mr-0 md:mb-0 md:mr-2`}
                   >
                     {skill}
                   </span>
@@ -46,7 +46,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
       </div>
 
       <div className="mt-8">
-        <h3 className="mb-4 text-3xl font-bold dark:text-white">{hasMoreLinks || hasGithub ? 'Links' : 'Link'}</h3>
+        <h3 className="mb-4 text-3xl font-bold">{hasMoreLinks || hasGithub ? 'Links' : 'Link'}</h3>
         <List>
           {projectLinks &&
             projectLinks.map((link, index) => (
@@ -56,7 +56,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
                     <a
                       href={link.url}
                       target="_blank"
-                      className="font-medium text-violet-600 underline hover:no-underline dark:text-violet-600"
+                      className="font-medium text-violet-600 underline hover:no-underline"
                     >
                       {link.urlText}
                     </a>
@@ -71,7 +71,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
                 <a
                   href={linkGitHub}
                   target="_blank"
-                  className="font-medium text-violet-600 underline hover:no-underline dark:text-violet-600"
+                  className="font-medium text-violet-600 underline hover:no-underline"
                 >
                   GitHub repository →
                 </a>

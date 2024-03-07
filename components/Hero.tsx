@@ -20,14 +20,11 @@ const Hero = () => {
           <span className="text-violet-600">React Developer</span>
         </h1>
 
-        <p
-          data-testid="hero-paragraph-1"
-          className="mb-3 mt-4 text-center text-lg font-semibold text-neutral-600 dark:text-neutral-600"
-        >
+        <p data-testid="hero-paragraph-1" className="mb-3 mt-4 text-center text-lg font-semibold text-neutral-600">
           Hi 👋 I am React Developer based in Brno, Czech Republic 🇨🇿
         </p>
 
-        <p data-testid="hero-paragraph-2" className="text-center text-neutral-600 dark:text-neutral-600">
+        <p data-testid="hero-paragraph-2" className="text-center text-neutral-600">
           I enjoy working with <span className="font-bold text-violet-600">JavaScript</span>,{' '}
           <span className="font-bold text-violet-600">TypeScript</span>, and{' '}
           <span className="font-bold text-violet-600">React</span>.
@@ -39,7 +36,7 @@ const Hero = () => {
           data-testid="hero-link-linkedin"
           href={LINK_LINKEDIN}
           target="_blank"
-          className="text-md mb-2 w-40 rounded-lg bg-blue-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:mb-0 sm:mr-2"
+          className="text-md mb-2 w-40 rounded-lg bg-blue-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 sm:mb-0 sm:mr-2"
         >
           LinkedIn
         </a>
@@ -47,7 +44,7 @@ const Hero = () => {
           data-testid="hero-link-github"
           href={LINK_GITHUB}
           target="_blank"
-          className="text-md mb-2 w-40 rounded-lg bg-gray-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800 sm:mb-0 sm:mr-2"
+          className="text-md mb-2 w-40 rounded-lg bg-gray-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 sm:mb-0 sm:mr-2"
         >
           GitHub
         </a>
@@ -55,7 +52,7 @@ const Hero = () => {
           data-testid="hero-link-resume"
           href={LINK_RESUME}
           target="_blank"
-          className="text-md w-40 rounded-lg bg-red-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 sm:mb-0"
+          className="text-md w-40 rounded-lg bg-red-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 sm:mb-0"
         >
           Resume
         </a>
@@ -65,14 +62,14 @@ const Hero = () => {
         <a
           data-testid="hero-link-email"
           href={EMAIL_HREF}
-          className="mb-2 rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-neutral-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+          className="mb-2 rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-neutral-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100"
         >
           {EMAIL_TEXT}
         </a>
         <a
           data-testid="hero-link-phone"
           href={PHONE_HREF}
-          className="rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-neutral-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+          className="rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-neutral-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 "
         >
           {PHONE_TEXT}
         </a>
