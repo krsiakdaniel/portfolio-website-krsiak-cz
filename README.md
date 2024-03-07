@@ -131,7 +131,7 @@ Playwright will generate a code coverage report.
   npx playwright show-report
 ```
 
-### Other Playwright commands
+### Other commands
 
 Starts the interactive UI mode.
 
@@ -175,7 +175,7 @@ This app uses GitHub Actions for CI.
 - View the results on GitHub: [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
 
 <details>
-<summary>👀 Read workflow description ...</summary>
+<summary>Click to read workflow description 👀</summary>
 
 ---
 
@@ -211,7 +211,7 @@ The `build` job follows these steps:
 - View the results on GitHub: [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
 
 <details>
-<summary>👀 Read workflow description ...</summary>
+<summary>Click to read workflow description 👀</summary>
 
 ---
 
