@@ -14,6 +14,9 @@ This project uses GitHub Actions for CI and Netlify for CD.
   - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
     - [Status of CD](#status-of-cd)
     - [Netlify](#netlify)
+      - [Branches and deploy contexts](#branches-and-deploy-contexts)
+      - [Build plugins](#build-plugins)
+      - [Deploys](#deploys)
 
 ---
 
@@ -36,10 +39,11 @@ The entire process and information is visible on GitHub when pull request is mad
    1. If there are any issues, fix must be made.
    2. Process starts again.
 7. All should be reviewed and approved ✅
-8. Now **pull request** can be merged to `master` branch.
-9. Branch is automatically deleted.
-10. The **Production Build** starts on **merge** to `master` branch.
-11. Auto publish is enabled, so the **website** is **automatically deployed** to production.
+8. Use **Squash and merge** to keep the history clean.
+9. Merge **pull request** to `master` branch.
+10. Branch is automatically deleted.
+11. The **Production Build** starts on **merge** to `master` branch.
+12. Auto publish is enabled, so the **website** is **automatically deployed** to production.
 
 ## 🛠️ CI - Continuous Integration
 
@@ -130,11 +134,22 @@ The website is deployed on Netlify.
 
 The website is build and deployed on Netlify.
 
-Build plugins:
+#### Branches and deploy contexts
+
+Deploy contexts are branch-based environments that enable you to configure builds depending on the context. This includes production and preview environments.
+
+- Production branch: **master**
+- Branch deploys: **Deploy only the production branch**
+- Deploy Previews: **Any pull request against your production branch / branch deploy branches**
+
+#### Build plugins
+
+The website can uses different build plugins.
 
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) - automatically runs audit on website after every build.
 
-Deploys:
+#### Deploys
+
+You can click on the last 2 deploys to see the details.
 
 - [netlify.com/sites/portfolio-website-krsiak-cz/deploys](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
-- You can click on the last 2 deploys to see the details.
