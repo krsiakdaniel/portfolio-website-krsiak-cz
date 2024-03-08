@@ -4,15 +4,16 @@ import js from '@/public/icons/svg/skills/js.svg'
 import react from '@/public/icons/svg/skills/react.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
 import { ID_SKILLS_MAIN } from '@/utils/constants'
+import { getYearsExperience } from '@/utils/getYearsExperience'
 
 const SkillsSection1 = () => {
   return (
     <div className="mb-4 flex justify-center md:mb-8 md:items-center lg:mb-0 lg:mr-8">
       <Card
-        src={js}
-        alt="JS"
+        imgSrc={js}
+        imgAlt="JS"
         title="JavaScript"
-        titleHighlight="5 years"
+        titleYears={`${getYearsExperience(2019)}`}
         description="Essential for creating modern interactive web applications."
       />
     </div>
@@ -24,19 +25,19 @@ const SkillsSection2 = () => {
     <div className="flex flex-col items-center justify-center md:flex-row lg:mr-0 lg:flex-col">
       <div className="mb-4 mr-0 md:mb-0 md:mr-8 lg:mb-8 lg:mr-0">
         <Card
-          src={ts}
-          alt="TS"
+          imgSrc={ts}
+          imgAlt="TS"
           title="TypeScript"
-          titleHighlight="3 years"
+          titleYears={`${getYearsExperience(2021)}`}
           description="Ensuring type safety, enhancing code reliability and scalability."
         />
       </div>
       <div>
         <Card
-          src={react}
-          alt="React"
+          imgSrc={react}
+          imgAlt="React"
           title="React"
-          titleHighlight="4 years"
+          titleYears={`${getYearsExperience(2020)}`}
           description="Great for components that are reusable and easy to maintain."
         />
       </div>
