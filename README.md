@@ -1,6 +1,6 @@
 # React Developer - Portfolio Website | krsiak.cz
 
-[![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml) [![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml) [![Netlify Status](https://api.netlify.com/api/v1/badges/eb322254-0169-4941-9416-3806b0bd5be6/deploy-status)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
+[![Jest Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml) [![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml) [![Netlify Status](https://api.netlify.com/api/v1/badges/eb322254-0169-4941-9416-3806b0bd5be6/deploy-status)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
 
 React Developer portfolio website 👨‍💻
 
@@ -146,7 +146,7 @@ npx playwright test --project=chromium
 Runs the tests in a specific file.
 
 ```bash
-npx playwright test file_name.spec.ts
+npx playwright test file.spec.ts
 ```
 
 Runs the tests in debug mode.
@@ -161,13 +161,13 @@ Auto generate tests with Codegen.
 npx playwright codegen
 ```
 
-## 🚀♻️ CI - Continuous Integration
+## 🚀 🛠️ CI - Continuous Integration
 
 This app uses GitHub Actions for CI.
 
 ### GitHub Actions - Workflow "Jest"
 
-[![Jest](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
+[![Jest Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
 
 - Workflow file: [jest.yml](.github/workflows/jest.yml)
 - View the results on GitHub: [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
@@ -235,7 +235,6 @@ The `test` job follows these steps:
    - It is retained for 7 days.
 
 </details>
-
 
 ## 🚀 ✅ CD - Continuous Deployment
 
