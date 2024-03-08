@@ -46,8 +46,7 @@ The website contains the following sections and pages.
 
 **Sections:**
 
-- 👉 Intro
-- 👉 Links: LinkedIn, GitHub, Resume
+- 👉 Introduction
 - 👉 Skills
 - 👉 About
 - 👉 Work projects
@@ -61,7 +60,7 @@ The website contains the following sections and pages.
 
 ## 💻 Development
 
-Development: [README-development.md](README-development.md)
+Read: [README-development.md](README-development.md)
 
 ## 🐛 Testing
 
