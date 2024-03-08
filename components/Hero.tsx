@@ -36,7 +36,7 @@ const Hero = () => {
           data-testid="hero-link-linkedin"
           href={LINK_LINKEDIN}
           target="_blank"
-          className="text-md mb-2 w-40 rounded-lg bg-blue-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 sm:mb-0 sm:mr-2"
+          className="text-md mb-2 w-[208px] rounded-lg bg-blue-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 sm:mb-0 sm:mr-2"
         >
           LinkedIn
         </a>
@@ -44,7 +44,7 @@ const Hero = () => {
           data-testid="hero-link-github"
           href={LINK_GITHUB}
           target="_blank"
-          className="text-md mb-2 w-40 rounded-lg bg-gray-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 sm:mb-0 sm:mr-2"
+          className="text-md mb-2 w-[208px] rounded-lg bg-gray-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 sm:mb-0 sm:mr-2"
         >
           GitHub
         </a>
@@ -52,24 +52,24 @@ const Hero = () => {
           data-testid="hero-link-resume"
           href={LINK_RESUME}
           target="_blank"
-          className="text-md w-40 rounded-lg bg-red-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 sm:mb-0"
+          className="text-md w-[208px] rounded-lg bg-red-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 sm:mb-0"
         >
           Resume
         </a>
       </div>
 
-      <div className="mt-8 flex flex-col items-center">
+      <div className="mt-4 flex flex-col items-center justify-center sm:flex-row">
         <a
           data-testid="hero-link-email"
           href={EMAIL_HREF}
-          className="mb-2 rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-neutral-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100"
+          className="mb-2 w-[208px] rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-center text-sm font-medium text-neutral-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 sm:mb-0 sm:mr-2"
         >
           {EMAIL_TEXT}
         </a>
         <a
           data-testid="hero-link-phone"
           href={PHONE_HREF}
-          className="rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-neutral-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 "
+          className="w-[208px] rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-center text-sm font-medium text-neutral-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 "
         >
           {PHONE_TEXT}
         </a>
