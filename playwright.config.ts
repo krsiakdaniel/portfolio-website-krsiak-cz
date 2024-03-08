@@ -72,7 +72,12 @@ export default defineConfig({
     // },
   ],
 
-  // Run your local dev server before starting the tests
+  /**
+   * RUN LOCAL SERVER
+   * It runs server in the background so it can run the tests.
+   * This way tests will run even if you do not run server manually by "npm run dev".
+   */
+  //
   webServer: {
     command: 'npm run dev',
     url: 'http://localhost:3000',

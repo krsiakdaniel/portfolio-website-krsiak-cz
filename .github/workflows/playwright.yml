@@ -1,9 +1,6 @@
 name: Playwright Tests
 
 on:
-  push:
-    branches:
-      - master
   pull_request:
     branches:
       - master
@@ -27,8 +24,8 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      # Start local development server
-      # playwright.config.ts = should start the webServer:{}
+      # Run local server
+      # playwright.config.ts = should run the webServer:{}
 
       - name: Run Playwright tests
         run: npx playwright test
