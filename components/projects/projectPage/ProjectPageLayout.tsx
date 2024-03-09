@@ -9,7 +9,7 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 type Props = {
-  id: string
+  pageID: string
   sections: SectionItem[]
   imageShowcase: string[]
 } & HeaderSectionProps &
@@ -17,7 +17,7 @@ type Props = {
 
 // TODO: Add E2E tests for this page and other, add data-testid, test links, images if are rendered
 const ProjectPageLayout = ({
-  id,
+  pageID,
   title,
   role,
   years,
@@ -45,7 +45,7 @@ const ProjectPageLayout = ({
   }, [imageShowcase])
 
   return (
-    <PageContainer id={id}>
+    <PageContainer id={pageID}>
       <HeaderSection title={title} role={role} years={years} goBackLink={goBackLink} sectionID={sectionID} />
       <ProjectInformation
         description={description}
