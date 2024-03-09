@@ -23,6 +23,7 @@ Website: <https://krsiak.cz>
 
 ## 🚦 Project Status
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a40e413cc75544a5ab0b5fdd31f91889)](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz?utm_source=github.com&utm_medium=referral&utm_content=krsiakdaniel/portfolio-website-krsiak-cz&utm_campaign=Badge_Grade)
 [![Jest Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml) [![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml) [![Netlify Status](https://api.netlify.com/api/v1/badges/eb322254-0169-4941-9416-3806b0bd5be6/deploy-status)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eaa72f9b0a7242ae9179b0dfdd58faf5)](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ## 🛠️ Tech Stack
