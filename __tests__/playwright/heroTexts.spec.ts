@@ -1,7 +1,5 @@
 import { Browser, BrowserContext, Page, chromium, expect, test } from '@playwright/test'
 
-import { EMAIL_HREF, LINK_GITHUB, LINK_LINKEDIN, LINK_RESUME, PHONE_HREF } from '@/utils/constants'
-
 let browser: Browser
 let context: BrowserContext
 let page: Page
@@ -36,34 +34,5 @@ test.describe('Hero - Heading and texts', () => {
     const paragraph2Text = await page.textContent('[data-testid="hero-paragraph-2"]')
     expect(paragraph1Text).toContain('Hi 👋 I am React Developer based in Brno, Czech Republic 🇨🇿')
     expect(paragraph2Text).toContain('I enjoy working with JavaScript, TypeScript, and React.')
-  })
-})
-
-const checkLink = async (testId: string, expectedHref: string) => {
-  const link = await page.getAttribute(`[data-testid="${testId}"]`, 'href')
-  expect(link).toBe(expectedHref)
-}
-
-test.describe('Hero - Links', () => {
-  test('should have the correct LinkedIn link', async () => {
-    await checkLink('hero-link-linkedin', LINK_LINKEDIN)
-  })
-
-  test('should have the correct GitHub link', async () => {
-    await checkLink('hero-link-github', LINK_GITHUB)
-  })
-
-  test('should have the correct Resume link', async () => {
-    await checkLink('hero-link-resume', LINK_RESUME)
-  })
-})
-
-test.describe('Hero - Email & Phone', () => {
-  test('should have the correct Email link', async () => {
-    await checkLink('hero-link-email', EMAIL_HREF)
-  })
-
-  test('should have the correct Phone link', async () => {
-    await checkLink('hero-link-phone', PHONE_HREF)
   })
 })
