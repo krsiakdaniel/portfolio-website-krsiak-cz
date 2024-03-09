@@ -60,15 +60,15 @@ The website contains the following sections and pages.
 
 ## 💻 Development
 
-Read: [README-development.md](README-development.md)
+[README-development.md](README-development.md)
 
 ## 🐛 Testing
 
-Testing: [README-testing.md](README-testing.md)
+[README-testing.md](README-testing.md)
 
 ## 🚀 CI/CD - Continuous Integration / Deployment
 
-CI/CD: [README-continuous-integration-deployment.md](README-continuous-integration-deployment.md)
+[README-continuous-integration-deployment.md](README-continuous-integration-deployment.md)
 
 ## 🖼️ Screenshots
 
