@@ -24,24 +24,22 @@ test.afterEach(async () => {
   await context.close()
 })
 
+const projectsWorkTests = [
+  {
+    name: 'Smartsupp Dashboard',
+    projectPage: projectPages.work.smartsupp.dashboard,
+    projectID: projectIDs.work.smartsupp.dashboard,
+  },
+  { name: 'Komercni banka', projectPage: projectPages.work.komercniBanka, projectID: projectIDs.work.komercniBanka },
+  { name: 'Smartsupp Web', projectPage: projectPages.work.smartsupp.web, projectID: projectIDs.work.smartsupp.web },
+  { name: 'Smartsupp Help', projectPage: projectPages.work.smartsupp.help, projectID: projectIDs.work.smartsupp.help },
+  { name: 'Moravia', projectPage: projectPages.work.moravia, projectID: projectIDs.work.moravia },
+]
+
 test.describe('Projects Work - Page links', () => {
-  test('Project - Smartsupp Dashboard', async () => {
-    await testProjectLink(page, projectPages.work.smartsupp.dashboard, projectIDs.work.smartsupp.dashboard)
-  })
-
-  test('Project - Komercni banka', async () => {
-    await testProjectLink(page, projectPages.work.komercniBanka, projectIDs.work.komercniBanka)
-  })
-
-  test('Project - Smartsupp Web', async () => {
-    await testProjectLink(page, projectPages.work.smartsupp.web, projectIDs.work.smartsupp.web)
-  })
-
-  test('Project - Smartsupp Help', async () => {
-    await testProjectLink(page, projectPages.work.smartsupp.help, projectIDs.work.smartsupp.help)
-  })
-
-  test('Project - Moravia', async () => {
-    await testProjectLink(page, projectPages.work.moravia, projectIDs.work.moravia)
+  projectsWorkTests.forEach(({ name, projectPage, projectID }) => {
+    test(`Project - ${name}`, async () => {
+      await testProjectLink(page, projectPage, projectID)
+    })
   })
 })

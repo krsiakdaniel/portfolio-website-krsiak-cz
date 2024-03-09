@@ -24,16 +24,16 @@ test.afterEach(async () => {
   await context.close()
 })
 
+const projectsPersonalTests = [
+  { name: 'Krsiak', projectPage: projectPages.personal.krsiak, projectID: projectIDs.personal.krsiak },
+  { name: 'Cryptomania', projectPage: projectPages.personal.cryptoMania, projectID: projectIDs.personal.cryptoMania },
+  { name: 'Eshop', projectPage: projectPages.personal.eshop, projectID: projectIDs.personal.eshop },
+]
+
 test.describe('Projects Personal - Page links', () => {
-  test('Project - Krsiak', async () => {
-    await testProjectLink(page, projectPages.personal.krsiak, projectIDs.personal.krsiak)
-  })
-
-  test('Project - Cryptomania', async () => {
-    await testProjectLink(page, projectPages.personal.cryptoMania, projectIDs.personal.cryptoMania)
-  })
-
-  test('Project - Eshop', async () => {
-    await testProjectLink(page, projectPages.personal.eshop, projectIDs.personal.eshop)
+  projectsPersonalTests.forEach(({ name, projectPage, projectID }) => {
+    test(`Project - ${name}`, async () => {
+      await testProjectLink(page, projectPage, projectID)
+    })
   })
 })
