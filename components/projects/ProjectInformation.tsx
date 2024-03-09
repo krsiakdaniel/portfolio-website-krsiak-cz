@@ -56,6 +56,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
                     <a
                       href={link.url}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="font-medium text-violet-600 underline hover:no-underline"
                     >
                       {link.urlText}
@@ -71,6 +72,7 @@ const ProjectInformation = ({ description, mySkills, customers, projectLinks, li
                 <a
                   href={linkGitHub}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="font-medium text-violet-600 underline hover:no-underline"
                 >
                   GitHub repository →

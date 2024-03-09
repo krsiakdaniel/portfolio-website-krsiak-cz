@@ -36,6 +36,7 @@ const Hero = () => {
           data-testid="hero-link-linkedin"
           href={LINK_LINKEDIN}
           target="_blank"
+          rel="noopener noreferrer"
           className="text-md mb-2 w-[208px] rounded-lg bg-blue-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 sm:mb-0 sm:mr-2"
         >
           LinkedIn
@@ -44,6 +45,7 @@ const Hero = () => {
           data-testid="hero-link-github"
           href={LINK_GITHUB}
           target="_blank"
+          rel="noopener noreferrer"
           className="text-md mb-2 w-[208px] rounded-lg bg-gray-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 sm:mb-0 sm:mr-2"
         >
           GitHub
@@ -52,6 +54,7 @@ const Hero = () => {
           data-testid="hero-link-resume"
           href={LINK_RESUME}
           target="_blank"
+          rel="noopener noreferrer"
           className="text-md w-[208px] rounded-lg bg-red-700 px-5 py-2.5 text-center font-medium uppercase text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 sm:mb-0"
         >
           Resume
