@@ -69,14 +69,13 @@ Workflows are defined in `.github/workflows` directory.
 
 ---
 
-This workflow is triggered in 2 scenarios:
+This workflow is triggered:
 
-1. When a push is made to the `master` branch.
-2. When a pull request is opened against the `master` branch.
+- When a pull request is opened against the `master` branch.
+- The workflow consists of a single job named `run-tests-jest`.
+- The job is executed on the latest version of Ubuntu.
 
-The workflow consists of a single job named `build`, which is executed on the latest version of Ubuntu.
-
-The `build` job follows these steps:
+The `run-tests-jest` job follows these steps:
 
 1. Checkout the repository using the `actions/checkout@v3` action.
 2. Setup Node.js environment using the `actions/setup-node@v3` action with Node.js version 18.
@@ -101,14 +100,13 @@ The `build` job follows these steps:
 
 ---
 
-This workflow is triggered in 2 scenarios:
+This workflow is triggered:
 
-1. When a push is made to the `master` branch.
-2. When a pull request is opened against `master` branch.
+- When a pull request is opened against the `master` branch.
+- The workflow consists of a single job named `run-tests-playwright`.
+- The job is executed on the latest version of Ubuntu.
 
-The workflow consists of a single job named `test`, which is executed on the latest version of Ubuntu.
-
-The `test` job follows these steps:
+The `run-tests-playwright` job follows these steps:
 
 1. Checkout the repository using the `actions/checkout@v3` action.
 2. Setup Node.js environment using the `actions/setup-node@v3` action with Node.js version 18.

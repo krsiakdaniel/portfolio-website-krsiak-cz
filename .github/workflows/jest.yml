@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build:
+  run-tests-jest:
     runs-on: ubuntu-latest
 
     steps:
