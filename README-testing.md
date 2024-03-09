@@ -1,6 +1,6 @@
 # 🐛 Testing
 
-This project uses the following tools.
+This project uses the following tools for testing.
 
 **Table of Contents:**
 
