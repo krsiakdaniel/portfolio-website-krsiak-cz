@@ -24,16 +24,24 @@ test.afterEach(async () => {
   await context.close()
 })
 
-const heroLinksTests = [
-  { name: 'LinkedIn', id: 'hero-link-linkedin', link: LINK_LINKEDIN },
-  { name: 'GitHub', id: 'hero-link-github', link: LINK_GITHUB },
-  { name: 'Resume', id: 'hero-link-resume', link: LINK_RESUME },
-  { name: 'Email', id: 'hero-link-email', link: EMAIL_HREF },
-  { name: 'Phone', id: 'hero-link-phone', link: PHONE_HREF },
-]
+test.describe('Hero Links', () => {
+  test('should have the correct LinkedIn link', async () => {
+    await checkLink(page, 'hero-link-linkedin', LINK_LINKEDIN)
+  })
 
-heroLinksTests.forEach(({ name, id, link }) => {
-  test(`should have the correct ${name} link`, async () => {
-    await checkLink(page, id, link)
+  test('should have the correct GitHub link', async () => {
+    await checkLink(page, 'hero-link-github', LINK_GITHUB)
+  })
+
+  test('should have the correct Resume link', async () => {
+    await checkLink(page, 'hero-link-resume', LINK_RESUME)
+  })
+
+  test('should have the correct Email link', async () => {
+    await checkLink(page, 'hero-link-email', EMAIL_HREF)
+  })
+
+  test('should have the correct Phone link', async () => {
+    await checkLink(page, 'hero-link-phone', PHONE_HREF)
   })
 })
