@@ -12,6 +12,7 @@ React Developer portfolio website 👨‍💻
   - [💻 Development](#-development)
   - [🐛 Testing](#-testing)
   - [🚀 CI/CD - Continuous Integration / Deployment](#-cicd---continuous-integration--deployment)
+  - [🔒 Security](#-security)
   - [🖼️ Screenshots](#️-screenshots)
 
 ---
@@ -69,6 +70,10 @@ The website contains the following sections and pages.
 ## 🚀 CI/CD - Continuous Integration / Deployment
 
 [README-continuous-integration-deployment.md](README-continuous-integration-deployment.md)
+
+## 🔒 Security
+
+[README-security.md](README-security.md)
 
 ## 🖼️ Screenshots
 

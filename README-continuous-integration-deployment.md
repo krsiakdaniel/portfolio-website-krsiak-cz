@@ -5,8 +5,6 @@ This project uses GitHub Actions for CI and Netlify for CD.
 **Table of Contents:**
 
 - [🚀 CI/CD - Continuous Integration / Deployment](#-cicd---continuous-integration--deployment)
-  - [🤖 Codacy](#-codacy)
-    - [Quality of the Code](#quality-of-the-code)
   - [ℹ️ CI/CD Process](#ℹ️-cicd-process)
   - [🛠️ CI - Continuous Integration](#️-ci---continuous-integration)
     - [Status of CI](#status-of-ci)
@@ -21,19 +19,6 @@ This project uses GitHub Actions for CI and Netlify for CD.
       - [Deploys](#deploys)
 
 ---
-
-## 🤖 Codacy
-
-Measuring code quality in a CI/CD pipeline.
-
-- Using [Codacy](https://www.codacy.com/) tool.
-- Overview of the files [code quality](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz/files).
-
-### Quality of the Code
-
-The badge shows the average grade of the project.
-
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/eaa72f9b0a7242ae9179b0dfdd58faf5)](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ## ℹ️ CI/CD Process
 
