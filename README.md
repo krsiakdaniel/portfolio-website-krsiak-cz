@@ -43,7 +43,7 @@ Using the following technologies:
 
 ## 📝 Features
 
-The website contains the following sections and pages.
+The website contains these following sections and pages.
 
 **Sections:**
 
