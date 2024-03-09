@@ -29,7 +29,6 @@ Automatically creates pull requests to update dependencies to the latest version
 
 Measuring code quality in the repository.
 
-- **Files:** [code quality](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz/files)
 - Done by static code analysis tool: [Codacy](https://www.codacy.com/)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eaa72f9b0a7242ae9179b0dfdd58faf5)](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
