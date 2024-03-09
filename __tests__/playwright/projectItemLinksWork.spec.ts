@@ -1,5 +1,6 @@
 import { projectIDs, projectPages } from '@/utils/constants'
-import { Browser, BrowserContext, Page, chromium, expect, test } from '@playwright/test'
+import { testProjectLink } from '@/utils/testing-playwright/testProjectLink'
+import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
 
 let browser: Browser
 let context: BrowserContext
@@ -23,90 +24,24 @@ test.afterEach(async () => {
   await context.close()
 })
 
-test.describe('Projects Work - Page links - React', () => {
-  test('Smartsupp Dashboard - should contain "Project details", project URL, and the same URL should be on the next page', async () => {
-    const pageLink = `/${projectPages.work.smartsupp.dashboard}`
-
-    const projectDetailsLink = page.getByTestId(projectIDs.work.smartsupp.dashboard)
-
-    const linkText = await projectDetailsLink.innerText()
-    expect(linkText).toContain('Project details')
-
-    const linkUrl = await projectDetailsLink.getAttribute('href')
-    expect(linkUrl).toBe(pageLink)
-
-    await projectDetailsLink.click()
-
-    expect(page.url()).toContain(pageLink)
+test.describe('Projects Work - Page links', () => {
+  test('Project - Smartsupp Dashboard', async () => {
+    await testProjectLink(page, projectPages.work.smartsupp.dashboard, projectIDs.work.smartsupp.dashboard)
   })
 
-  test('Komercni banka - should contain "Project details", project URL, and the same URL should be on the next page', async () => {
-    const pageLink = `/${projectPages.work.komercniBanka}`
-
-    const projectDetailsLink = page.getByTestId(projectIDs.work.komercniBanka)
-
-    const linkText = await projectDetailsLink.innerText()
-    expect(linkText).toContain('Project details')
-
-    const linkUrl = await projectDetailsLink.getAttribute('href')
-    expect(linkUrl).toBe(pageLink)
-
-    await projectDetailsLink.click()
-
-    expect(page.url()).toContain(pageLink)
+  test('Project - Komercni banka', async () => {
+    await testProjectLink(page, projectPages.work.komercniBanka, projectIDs.work.komercniBanka)
   })
-})
 
-test.describe('Projects Work - Page links - Frontend', () => {
-  test('Smartsupp Web - should contain "Project details", project URL, and the same URL should be on the next page', async () => {
-    const pageLink = `/${projectPages.work.smartsupp.web}`
-
-    const projectDetailsLink = page.getByTestId(projectIDs.work.smartsupp.web)
-
-    const linkText = await projectDetailsLink.innerText()
-    expect(linkText).toContain('Project details')
-
-    const linkUrl = await projectDetailsLink.getAttribute('href')
-    expect(linkUrl).toBe(pageLink)
-
-    await projectDetailsLink.click()
-
-    expect(page.url()).toContain(pageLink)
+  test('Project - Smartsupp Web', async () => {
+    await testProjectLink(page, projectPages.work.smartsupp.web, projectIDs.work.smartsupp.web)
   })
-})
 
-test.describe('Projects Work - Page links - WordPress', () => {
-  test('Smartsupp Help - should contain "Project details", project URL, and the same URL should be on the next page', async () => {
-    const pageLink = `/${projectPages.work.smartsupp.help}`
-
-    const projectDetailsLink = page.getByTestId(projectIDs.work.smartsupp.help)
-
-    const linkText = await projectDetailsLink.innerText()
-    expect(linkText).toContain('Project details')
-
-    const linkUrl = await projectDetailsLink.getAttribute('href')
-    expect(linkUrl).toBe(pageLink)
-
-    await projectDetailsLink.click()
-
-    expect(page.url()).toContain(pageLink)
+  test('Project - Smartsupp Help', async () => {
+    await testProjectLink(page, projectPages.work.smartsupp.help, projectIDs.work.smartsupp.help)
   })
-})
 
-test.describe('Projects Work - Page links - Localization', () => {
-  test('Moravia - should contain "Project details", project URL, and the same URL should be on the next page', async () => {
-    const pageLink = `/${projectPages.work.moravia}`
-
-    const projectDetailsLink = page.getByTestId(projectIDs.work.moravia)
-
-    const linkText = await projectDetailsLink.innerText()
-    expect(linkText).toContain('Project details')
-
-    const linkUrl = await projectDetailsLink.getAttribute('href')
-    expect(linkUrl).toBe(pageLink)
-
-    await projectDetailsLink.click()
-
-    expect(page.url()).toContain(pageLink)
+  test('Project - Moravia', async () => {
+    await testProjectLink(page, projectPages.work.moravia, projectIDs.work.moravia)
   })
 })

@@ -1,5 +1,6 @@
 import { projectIDs, projectPages } from '@/utils/constants'
-import { Browser, BrowserContext, Page, chromium, expect, test } from '@playwright/test'
+import { testProjectLink } from '@/utils/testing-playwright/testProjectLink'
+import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
 
 let browser: Browser
 let context: BrowserContext
@@ -24,51 +25,15 @@ test.afterEach(async () => {
 })
 
 test.describe('Projects Personal - Page links', () => {
-  test('project - krsiak - should contain "Project details", project URL, and the same URL should be on the next page', async () => {
-    const pageLink = `/${projectPages.personal.krsiak}`
-
-    const projectDetailsLink = page.getByTestId(projectIDs.personal.krsiak)
-
-    const linkText = await projectDetailsLink.innerText()
-    expect(linkText).toContain('Project details')
-
-    const linkUrl = await projectDetailsLink.getAttribute('href')
-    expect(linkUrl).toBe(pageLink)
-
-    await projectDetailsLink.click()
-
-    expect(page.url()).toContain(pageLink)
+  test('Project - Krsiak', async () => {
+    await testProjectLink(page, projectPages.personal.krsiak, projectIDs.personal.krsiak)
   })
 
-  test('project - cryptomania - should contain "Project details", project URL, and the same URL should be on the next page', async () => {
-    const pageLink = `/${projectPages.personal.cryptoMania}`
-
-    const projectDetailsLink = page.getByTestId(projectIDs.personal.cryptoMania)
-
-    const linkText = await projectDetailsLink.innerText()
-    expect(linkText).toContain('Project details')
-
-    const linkUrl = await projectDetailsLink.getAttribute('href')
-    expect(linkUrl).toBe(pageLink)
-
-    await projectDetailsLink.click()
-
-    expect(page.url()).toContain(pageLink)
+  test('Project - Cryptomania', async () => {
+    await testProjectLink(page, projectPages.personal.cryptoMania, projectIDs.personal.cryptoMania)
   })
 
-  test('project - eshop - should contain "Project details", project URL, and the same URL should be on the next page', async () => {
-    const pageLink = `/${projectPages.personal.eshop}`
-
-    const projectDetailsLink = page.getByTestId(projectIDs.personal.eshop)
-
-    const linkText = await projectDetailsLink.innerText()
-    expect(linkText).toContain('Project details')
-
-    const linkUrl = await projectDetailsLink.getAttribute('href')
-    expect(linkUrl).toBe(pageLink)
-
-    await projectDetailsLink.click()
-
-    expect(page.url()).toContain(pageLink)
+  test('Project - Eshop', async () => {
+    await testProjectLink(page, projectPages.personal.eshop, projectIDs.personal.eshop)
   })
 })

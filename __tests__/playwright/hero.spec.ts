@@ -39,36 +39,31 @@ test.describe('Hero - Heading and texts', () => {
   })
 })
 
+const checkLink = async (testId: string, expectedHref: string) => {
+  const link = await page.getAttribute(`[data-testid="${testId}"]`, 'href')
+  expect(link).toBe(expectedHref)
+}
+
 test.describe('Hero - Links', () => {
   test('should have the correct LinkedIn link', async () => {
-    await page.goto('/')
-    const linkedinLink = await page.getAttribute('[data-testid="hero-link-linkedin"]', 'href')
-    expect(linkedinLink).toBe(LINK_LINKEDIN)
+    await checkLink('hero-link-linkedin', LINK_LINKEDIN)
   })
 
   test('should have the correct GitHub link', async () => {
-    await page.goto('/')
-    const githubLink = await page.getAttribute('[data-testid="hero-link-github"]', 'href')
-    expect(githubLink).toBe(LINK_GITHUB)
+    await checkLink('hero-link-github', LINK_GITHUB)
   })
 
   test('should have the correct Resume link', async () => {
-    await page.goto('/')
-    const resumeLink = await page.getAttribute('[data-testid="hero-link-resume"]', 'href')
-    expect(resumeLink).toBe(LINK_RESUME)
+    await checkLink('hero-link-resume', LINK_RESUME)
   })
 })
 
 test.describe('Hero - Email & Phone', () => {
   test('should have the correct Email link', async () => {
-    await page.goto('/')
-    const emailLink = await page.getAttribute('[data-testid="hero-link-email"]', 'href')
-    expect(emailLink).toBe(EMAIL_HREF)
+    await checkLink('hero-link-email', EMAIL_HREF)
   })
 
   test('should have the correct Phone link', async () => {
-    await page.goto('/')
-    const phoneLink = await page.getAttribute('[data-testid="hero-link-phone"]', 'href')
-    expect(phoneLink).toBe(PHONE_HREF)
+    await checkLink('hero-link-phone', PHONE_HREF)
   })
 })
