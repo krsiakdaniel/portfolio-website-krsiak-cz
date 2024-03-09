@@ -62,3 +62,9 @@ export type SectionItem = {
 
 // go back link
 export type GoBackLinkType = 'work' | 'personal'
+
+// error pages
+export type ErrorProps = {
+  error: Error & { digest?: string }
+  reset: () => void
+}
