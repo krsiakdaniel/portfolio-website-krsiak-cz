@@ -43,9 +43,7 @@ The entire process and information is visible on GitHub when pull request is mad
 9. Merge **pull request** to `master` branch.
 10. Branch is automatically deleted.
 11. The **Production Build** starts on **merge** to `master` branch.
-12. **Auto Publishing is locked**, to prevent builds on accidental push to `master` branch.
-13. The **website** does not **automatically deploys** to production.
-14. Each production build must be **manually published** via **Publish deploy**.
+12. Once finished the **website automatically deploys** to production.
 
 ## 🛠️ CI - Continuous Integration
 
