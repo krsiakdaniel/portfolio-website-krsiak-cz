@@ -1,9 +1,8 @@
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsLayout from '@/components/layout/ProjectsLayout'
-import ProjectItem from '@/components/projects/ProjectItem'
+import { ProjectSection } from '@/components/projects/ProjectSection'
 import ExperienceCard from '@/components/projects/experience/ExperienceCard'
 import ExperienceOtherTitle from '@/components/projects/experience/ExperienceOtherTitle'
-import ExperienceSection from '@/components/projects/experience/ExperienceSection'
 import {
   projectsWorkFrontEnd,
   projectsWorkLocalization,
@@ -28,47 +27,17 @@ const ProjectsWork = () => {
         heading="Work"
         description="I worked on modern products, developed new features, redesigned websites, implemented responsive design, updated legacy codebase, was responsible for localization, QA automation and testing, including work as team leader."
       >
-        <ExperienceSection id={`${ID_PROJECTS_WORK}-${ID_SECTION_REACT}`} text="React" />
-        {projectsWorkReact.map((item) => {
-          return (
-            <ProjectItem
-              key={item.id}
-              isFeatured={item.isFeatured}
-              image={item.image}
-              title={item.title}
-              company={item.company}
-              role={item.role}
-              years={item.years}
-              description={item.description}
-              mySkillsIcons={item.mySkillsIcons}
-              customers={item.customers}
-              linkText={item.linkText}
-              linkProjectPage={item.linkProjectPage}
-              dataTestId={item.id}
-            />
-          )
-        })}
+        <ProjectSection
+          sectionId={`${ID_PROJECTS_WORK}-${ID_SECTION_REACT}`}
+          sectionText="React"
+          projectData={projectsWorkReact}
+        />
 
-        <ExperienceSection id={`${ID_PROJECTS_WORK}-${ID_SECTION_FRONT_END}`} text="Front End" />
-        {projectsWorkFrontEnd.map((item) => {
-          return (
-            <ProjectItem
-              key={item.id}
-              isFeatured={item.isFeatured}
-              image={item.image}
-              title={item.title}
-              company={item.company}
-              role={item.role}
-              years={item.years}
-              description={item.description}
-              mySkillsIcons={item.mySkillsIcons}
-              customers={item.customers}
-              linkText={item.linkText}
-              linkProjectPage={item.linkProjectPage}
-              dataTestId={item.id}
-            />
-          )
-        })}
+        <ProjectSection
+          sectionId={`${ID_PROJECTS_WORK}-${ID_SECTION_FRONT_END}`}
+          sectionText="Front End"
+          projectData={projectsWorkFrontEnd}
+        />
         <ExperienceOtherTitle />
         <ExperienceCard
           company="Freelance"
@@ -82,26 +51,11 @@ const ProjectsWork = () => {
           description="First time web company job was 1 year coding website layouts."
         />
 
-        <ExperienceSection id={`${ID_PROJECTS_WORK}-${ID_SECTION_WORDPRESS}`} text="WordPress" />
-        {projectsWorkWordPress.map((item) => {
-          return (
-            <ProjectItem
-              key={item.id}
-              isFeatured={item.isFeatured}
-              image={item.image}
-              title={item.title}
-              company={item.company}
-              role={item.role}
-              years={item.years}
-              description={item.description}
-              mySkillsIcons={item.mySkillsIcons}
-              customers={item.customers}
-              linkText={item.linkText}
-              linkProjectPage={item.linkProjectPage}
-              dataTestId={item.id}
-            />
-          )
-        })}
+        <ProjectSection
+          sectionId={`${ID_PROJECTS_WORK}-${ID_SECTION_WORDPRESS}`}
+          sectionText="WordPress"
+          projectData={projectsWorkWordPress}
+        />
         <ExperienceOtherTitle />
         <ExperienceCard
           company="Freelance"
@@ -110,26 +64,11 @@ const ProjectsWork = () => {
           isPartTime
         />
 
-        <ExperienceSection id={`${ID_PROJECTS_WORK}-${ID_SECTION_QA}`} text="QA Automation & Testing" />
-        {projectsWorkQA.map((item) => {
-          return (
-            <ProjectItem
-              key={item.id}
-              isFeatured={item.isFeatured}
-              image={item.image}
-              title={item.title}
-              company={item.company}
-              role={item.role}
-              years={item.years}
-              description={item.description}
-              mySkillsIcons={item.mySkillsIcons}
-              customers={item.customers}
-              linkText={item.linkText}
-              linkProjectPage={item.linkProjectPage}
-              dataTestId={item.id}
-            />
-          )
-        })}
+        <ProjectSection
+          sectionId={`${ID_PROJECTS_WORK}-${ID_SECTION_QA}`}
+          sectionText="QA Automation & Testing"
+          projectData={projectsWorkQA}
+        />
         <ExperienceOtherTitle />
         <ExperienceCard
           company="Smartsupp"
@@ -142,26 +81,11 @@ const ProjectsWork = () => {
           description="Making sure translations fit UI layout on Windows 7 + Windows Store."
         />
 
-        <ExperienceSection id={`${ID_PROJECTS_WORK}-${ID_SECTION_LOCALIZATION}`} text="Localization" />
-        {projectsWorkLocalization.map((item) => {
-          return (
-            <ProjectItem
-              key={item.id}
-              isFeatured={item.isFeatured}
-              image={item.image}
-              title={item.title}
-              company={item.company}
-              role={item.role}
-              years={item.years}
-              description={item.description}
-              mySkillsIcons={item.mySkillsIcons}
-              customers={item.customers}
-              linkText={item.linkText}
-              linkProjectPage={item.linkProjectPage}
-              dataTestId={item.id}
-            />
-          )
-        })}
+        <ProjectSection
+          sectionId={`${ID_PROJECTS_WORK}-${ID_SECTION_LOCALIZATION}`}
+          sectionText="Localization"
+          projectData={projectsWorkLocalization}
+        />
         <ExperienceOtherTitle />
         <ExperienceCard
           company="Smartsupp"
