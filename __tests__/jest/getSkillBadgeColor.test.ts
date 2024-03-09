@@ -13,4 +13,14 @@ describe('getSkillBadgeColor', () => {
   it('return "lime" color for "Other"', () => {
     expect(getSkillBadgeColor('Other' as CategoryDescriptionType)).toEqual('lime')
   })
+
+  it('returns "neutral" for unknown category', () => {
+    const category: CategoryDescriptionType = 'unknown' as CategoryDescriptionType
+    expect(getSkillBadgeColor(category)).toEqual('neutral')
+  })
+
+  it('returns "neutral" for empty category', () => {
+    const category: CategoryDescriptionType = '' as CategoryDescriptionType
+    expect(getSkillBadgeColor(category)).toEqual('neutral')
+  })
 })

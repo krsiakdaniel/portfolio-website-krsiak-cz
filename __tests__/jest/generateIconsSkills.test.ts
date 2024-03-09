@@ -1,5 +1,3 @@
-// FILEPATH: /Users/krsiak/github/personal/portfolio-website-krsiak-cz/__tests__/jest/generateIconsSkills.test.ts
-
 import { generateIconsSkills, skillIcons } from '@/utils/generateIconsSkills'
 
 describe('generateIconsSkills', () => {

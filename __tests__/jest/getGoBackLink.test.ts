@@ -12,4 +12,9 @@ describe('getGoBackLinkID', () => {
     const sectionID = 'next'
     expect(getGoBackLinkID('personal' as GoBackLinkType, sectionID)).toEqual(`/#${ID_PROJECTS_PERSONAL}-${sectionID}`)
   })
+
+    it('returns default link for unknown type', () => {
+      const sectionID = 'unknown'
+      expect(getGoBackLinkID('unknown' as GoBackLinkType, sectionID)).toEqual('/')
+    })
 })
