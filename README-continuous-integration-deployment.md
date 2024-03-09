@@ -5,6 +5,8 @@ This project uses GitHub Actions for CI and Netlify for CD.
 **Table of Contents:**
 
 - [🚀 CI/CD - Continuous Integration / Deployment](#-cicd---continuous-integration--deployment)
+  - [🤖 Codacy](#-codacy)
+    - [Quality of the Code](#quality-of-the-code)
   - [ℹ️ CI/CD Process](#ℹ️-cicd-process)
   - [🛠️ CI - Continuous Integration](#️-ci---continuous-integration)
     - [Status of CI](#status-of-ci)
@@ -19,6 +21,19 @@ This project uses GitHub Actions for CI and Netlify for CD.
       - [Deploys](#deploys)
 
 ---
+
+## 🤖 Codacy
+
+Measuring code quality in a CI/CD pipeline.
+
+- Using [Codacy](https://www.codacy.com/) tool.
+- Overview of the files [code quality](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz/files).
+
+### Quality of the Code
+
+The badge shows the average grade of the project.
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/eaa72f9b0a7242ae9179b0dfdd58faf5)](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ## ℹ️ CI/CD Process
 
@@ -52,6 +67,8 @@ The entire process and information is visible on GitHub when pull request is mad
 This app uses GitHub Actions for CI.
 
 ### Status of CI
+
+The badges show the status of the workflows.
 
 [![Jest Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml) [![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
 
@@ -129,6 +146,8 @@ The `test` job follows these steps:
 The website is deployed on Netlify.
 
 ### Status of CD
+
+The badge shows the status of the last deploy.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/eb322254-0169-4941-9416-3806b0bd5be6/deploy-status)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
 
