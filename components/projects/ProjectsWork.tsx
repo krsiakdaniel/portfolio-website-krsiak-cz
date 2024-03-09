@@ -1,6 +1,6 @@
 import PageContainer from '@/components/layout/PageContainer'
+import ProjectsLayout from '@/components/layout/ProjectsLayout'
 import ProjectItem from '@/components/projects/ProjectItem'
-import ProjectsLayout from '@/components/projects/ProjectsLayout'
 import ExperienceCard from '@/components/projects/experience/ExperienceCard'
 import ExperienceOtherTitle from '@/components/projects/experience/ExperienceOtherTitle'
 import ExperienceSection from '@/components/projects/experience/ExperienceSection'
