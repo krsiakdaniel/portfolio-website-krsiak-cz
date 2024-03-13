@@ -9,7 +9,7 @@ type Props = {
 
 const ExperienceCard = ({ company, role, isPartTime, description }: Props) => {
   return (
-    <div className="mb-8 w-full rounded-lg border border-gray-200 bg-white p-6 shadow-md md:max-w-[588px]">
+    <div className="mb-8 w-full rounded-lg border border-gray-200 bg-white p-6 shadow-md md:max-w-[600px]">
       <div>
         <h5 className="mr-3 font-semibold">
           {company}
