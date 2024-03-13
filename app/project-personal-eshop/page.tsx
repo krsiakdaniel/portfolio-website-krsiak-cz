@@ -9,7 +9,7 @@ const ProjectPersonalEshop = () => {
   return (
     <>
       <ProjectPageLayout
-        id={projectPages.personal.eshop}
+        pageID={projectPages.personal.eshop}
         title={title}
         role={role}
         goBackLink="personal"

@@ -9,7 +9,7 @@ const ProjectPersonalKrsiak = () => {
   return (
     <>
       <ProjectPageLayout
-        id={projectPages.personal.krsiak}
+        pageID={projectPages.personal.krsiak}
         title={title}
         role={role}
         goBackLink="personal"
