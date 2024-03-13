@@ -25,7 +25,33 @@ import xd from '@/public/icons/svg/skills/xd.svg'
 
 import { Icon } from '@/utils/types'
 
-export const skillIcons: Record<string, string> = {
+type SkillKeys =
+  | 'chakra'
+  | 'css'
+  | 'cypress'
+  | 'figma'
+  | 'githubActions'
+  | 'graphql'
+  | 'html'
+  | 'jest'
+  | 'js'
+  | 'netlify'
+  | 'next'
+  | 'nuxt'
+  | 'php'
+  | 'playwright'
+  | 'react'
+  | 'redux'
+  | 'scss'
+  | 'storybook'
+  | 'tailwind'
+  | 'ts'
+  | 'vue'
+  | 'vuetify'
+  | 'wordpress'
+  | 'xd'
+
+export const skillIcons: Record<SkillKeys, string> = {
   chakra,
   css,
   cypress,
@@ -52,7 +78,7 @@ export const skillIcons: Record<string, string> = {
   xd,
 }
 
-export function generateIconsSkills(skills: string[]): Icon[] {
+export function generateIconsSkills(skills: SkillKeys[]): Icon[] {
   return skills.map((skill) => ({
     name: skill,
     path: skillIcons[skill],
