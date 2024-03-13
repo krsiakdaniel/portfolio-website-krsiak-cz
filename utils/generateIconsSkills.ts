@@ -3,6 +3,7 @@ import css from '@/public/icons/svg/skills/css.svg'
 import cypress from '@/public/icons/svg/skills/cypress.svg'
 import figma from '@/public/icons/svg/skills/figma.svg'
 import githubActions from '@/public/icons/svg/skills/github-actions.svg'
+import graphql from '@/public/icons/svg/skills/graphql.svg'
 import html from '@/public/icons/svg/skills/html.svg'
 import jest from '@/public/icons/svg/skills/jest.svg'
 import js from '@/public/icons/svg/skills/js.svg'
@@ -30,6 +31,7 @@ export const skillIcons: Record<string, string> = {
   cypress,
   figma,
   githubActions,
+  graphql,
   html,
   jest,
   js,

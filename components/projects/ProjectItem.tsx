@@ -38,7 +38,8 @@ const ProjectItem = ({
           <div className="relative">
             {isFeatured && <p className="absolute -right-4 -top-5 z-10 text-4xl">⭐</p>}
 
-            {/* TODO: optimize images dimensions + format webp or avif? item + subpages = sub thumb + sub view */}
+            {/* FIXME: remove gallery, include screenshots directly */}
+            {/* TODO: optimize images dimensions + format webp */}
             {/* TODO: img source set */}
             <Image
               src={image}

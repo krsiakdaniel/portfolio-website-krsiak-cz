@@ -1,5 +1,5 @@
 import PageContainer from '@/components/layout/PageContainer'
-import Card from '@/components/shared/Card'
+import SkillsCard from '@/components/shared/SkillsCard'
 import js from '@/public/icons/svg/skills/js.svg'
 import react from '@/public/icons/svg/skills/react.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
@@ -9,7 +9,7 @@ import { getYearsExperience } from '@/utils/getYearsExperience'
 const SkillsSection1 = () => {
   return (
     <div className="mb-4 flex justify-center md:mb-8 md:items-center lg:mb-0 lg:mr-8">
-      <Card
+      <SkillsCard
         imgSrc={js}
         imgAlt="JS"
         title="JavaScript"
@@ -24,16 +24,16 @@ const SkillsSection2 = () => {
   return (
     <div className="flex flex-col items-center justify-center md:flex-row lg:mr-0 lg:flex-col">
       <div className="mb-4 mr-0 md:mb-0 md:mr-8 lg:mb-8 lg:mr-0">
-        <Card
+        <SkillsCard
           imgSrc={ts}
           imgAlt="TS"
           title="TypeScript"
-          titleYears={`${getYearsExperience(2021)}`}
-          description="Ensuring type safety, enhancing code reliability and scalability."
+          titleYears={`${getYearsExperience(2020)}`}
+          description="Ensuring type safety, code reliability and scalability."
         />
       </div>
       <div>
-        <Card
+        <SkillsCard
           imgSrc={react}
           imgAlt="React"
           title="React"
