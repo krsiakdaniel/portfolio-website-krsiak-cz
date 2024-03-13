@@ -1,5 +1,5 @@
+import { testProjectLink } from '@/__tests__/playwright/utils/testProjectLink'
 import { projectIDs, projectPages } from '@/utils/constants'
-import { testProjectLink } from '@/utils/testing-playwright/testProjectLink'
 import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
 
 let browser: Browser

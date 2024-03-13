@@ -1,5 +1,5 @@
+import { checkLink } from '@/__tests__/playwright/utils/checkLink'
 import { EMAIL_HREF, LINK_GITHUB, LINK_LINKEDIN, LINK_RESUME, PHONE_HREF } from '@/utils/constants'
-import { checkLink } from '@/utils/testing-playwright/checkLink'
 import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
 
 let browser: Browser
