@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container mx-auto max-w-screen-xl px-5">
         <div className="flex items-center justify-between py-3">
           <div>
-            <Link href="/" className="group flex flex-row items-center gap-3">
+            <Link href="/" className="group flex flex-row items-center gap-3" data-testid="header-logo">
               <div>
                 <Image src={logo} alt="logo" width={32} height={32} />
               </div>
