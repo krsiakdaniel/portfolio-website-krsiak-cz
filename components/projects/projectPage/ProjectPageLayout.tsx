@@ -14,7 +14,6 @@ type Props = {
 } & HeaderSectionProps &
   ProjectInformationProps
 
-// TODO: Add E2E tests for this page and other, add data-testid, test links, images if are rendered
 const ProjectPageLayout = ({
   pageID,
   title,
