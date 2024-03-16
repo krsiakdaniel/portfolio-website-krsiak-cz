@@ -1,4 +1,4 @@
-import ProjectPageLayout from '@/components/projects/projectPage/ProjectPageLayout'
+import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
 import { sections } from '@/data/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/data/projects/personal/projectsOverview'
 import { ID_SECTION_NEXT, projectPages } from '@/utils/constants'

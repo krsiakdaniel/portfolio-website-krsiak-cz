@@ -1,4 +1,4 @@
-import { ProjectPageLayoutWrapper } from '@/components/projects/projectPage/ProjectPageLayoutWrapper'
+import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { sections } from '@/data/projects/work/moravia'
 import { projectsWorkLocalization } from '@/data/projects/work/projectsOverview'
 import { ID_SECTION_LOCALIZATION, projectPages } from '@/utils/constants'

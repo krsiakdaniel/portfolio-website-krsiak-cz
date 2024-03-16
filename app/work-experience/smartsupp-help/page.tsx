@@ -1,4 +1,4 @@
-import { ProjectPageLayoutWrapper } from '@/components/projects/projectPage/ProjectPageLayoutWrapper'
+import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { projectsWorkWordPress } from '@/data/projects/work/projectsOverview'
 import { sections } from '@/data/projects/work/smartsuppHelp'
 import { ID_SECTION_WORDPRESS, projectPages } from '@/utils/constants'

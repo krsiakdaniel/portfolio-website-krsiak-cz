@@ -1,4 +1,4 @@
-import { ProjectPageLayoutWrapper } from '@/components/projects/projectPage/ProjectPageLayoutWrapper'
+import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { projectsWorkReact } from '@/data/projects/work/projectsOverview'
 import { sections } from '@/data/projects/work/smartsuppDashboard'
 import { ID_SECTION_REACT, projectPages } from '@/utils/constants'

@@ -1,4 +1,4 @@
-import ProjectPageLayout from '@/components/projects/projectPage/ProjectPageLayout'
+import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
 import { sections } from '@/data/projects/personal/cryptoMania'
 import { projectsPersonalReact } from '@/data/projects/personal/projectsOverview'
 import { ID_SECTION_REACT, projectPages } from '@/utils/constants'

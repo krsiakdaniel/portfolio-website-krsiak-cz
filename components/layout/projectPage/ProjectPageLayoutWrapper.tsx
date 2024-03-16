@@ -1,4 +1,4 @@
-import ProjectPageLayout from '@/components/projects/projectPage/ProjectPageLayout'
+import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
 import { GoBackLinkType, Project, SectionItem } from '@/utils/types'
 
 type Props = {

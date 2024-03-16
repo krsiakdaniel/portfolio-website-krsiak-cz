@@ -1,4 +1,4 @@
-import { ProjectPageLayoutWrapper } from '@/components/projects/projectPage/ProjectPageLayoutWrapper'
+import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { projectsWorkFrontEnd } from '@/data/projects/work/projectsOverview'
 import { sections } from '@/data/projects/work/smartsuppWeb'
 import { ID_SECTION_FRONT_END, projectPages } from '@/utils/constants'

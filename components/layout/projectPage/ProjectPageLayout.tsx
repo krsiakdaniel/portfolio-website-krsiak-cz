@@ -1,9 +1,9 @@
 'use client'
 
 import PageContainer from '@/components/layout/PageContainer'
+import HeaderSection from '@/components/layout/projectPage/HeaderSection'
+import Section from '@/components/layout/projectPage/Section'
 import ProjectInformation from '@/components/projects/ProjectInformation'
-import HeaderSection from '@/components/projects/projectPage/HeaderSection'
-import Section from '@/components/projects/projectPage/Section'
 import { HeaderSectionProps, ProjectInformationProps, SectionItem } from '@/utils/types'
 import Image from 'next/image'
 
