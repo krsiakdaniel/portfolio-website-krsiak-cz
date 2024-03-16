@@ -1,9 +1,7 @@
-import About from '@/components/about'
 import Hero from '@/components/Hero'
-import ProjectsPersonal from '@/components/projects/ProjectsPersonal'
-import ProjectsWork from '@/components/projects/ProjectsWork'
-import SkillsMain from '@/components/SkillsMain'
 import Skills from '@/components/Skills'
+import SkillsMain from '@/components/SkillsMain'
+import About from '@/components/about'
 
 const Page = () => {
   return (
@@ -12,8 +10,8 @@ const Page = () => {
       <Skills />
       <SkillsMain />
       <About />
-      <ProjectsWork />
-      <ProjectsPersonal />
+      {/* <ProjectsWork /> */}
+      {/* <ProjectsPersonal /> */}
     </div>
   )
 }

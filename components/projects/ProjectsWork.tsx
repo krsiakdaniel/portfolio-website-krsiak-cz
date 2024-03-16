@@ -24,7 +24,7 @@ const ProjectsWork = () => {
     <PageContainer id={ID_PROJECTS_WORK}>
       <ProjectsLayout
         dividerText="Work Experience"
-        heading="Work"
+        heading="Work Experience"
         description="I worked on modern products, developed new features, redesigned websites, implemented responsive design, updated legacy codebase, was responsible for localization, QA automation and testing, including work as team leader."
       >
         <ProjectSection
