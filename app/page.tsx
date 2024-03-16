@@ -10,8 +10,6 @@ const Page = () => {
       <Skills />
       <SkillsMain />
       <About />
-      {/* <ProjectsWork /> */}
-      {/* <ProjectsPersonal /> */}
     </div>
   )
 }

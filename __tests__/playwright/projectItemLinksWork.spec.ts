@@ -17,7 +17,7 @@ test.afterAll(async () => {
 test.beforeEach(async () => {
   context = await browser.newContext()
   page = await context.newPage()
-  await page.goto('/')
+  await page.goto('/work-experience')
 })
 
 test.afterEach(async () => {
