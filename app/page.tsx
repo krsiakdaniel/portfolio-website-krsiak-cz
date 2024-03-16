@@ -1,6 +1,6 @@
-import Hero from '@/components/Hero'
-import Skills from '@/components/Skills'
-import SkillsMain from '@/components/SkillsMain'
+import Hero from '@/components/homepage/Hero'
+import Skills from '@/components/homepage/Skills'
+import SkillsMain from '@/components/homepage/SkillsMain'
 
 const Page = () => {
   return (

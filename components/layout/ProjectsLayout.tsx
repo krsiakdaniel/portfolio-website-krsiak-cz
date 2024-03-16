@@ -1,4 +1,5 @@
-import PageHeading from '@/components/PageHeading'
+import PageHeading from '@/components/shared/PageHeading'
+
 type Props = {
   heading: string
   description: string

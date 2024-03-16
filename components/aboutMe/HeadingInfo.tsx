@@ -1,4 +1,4 @@
-import PageHeading from '@/components/PageHeading'
+import PageHeading from '@/components/shared/PageHeading'
 
 const HeadingInfo = () => {
   return (

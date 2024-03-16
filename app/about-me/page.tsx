@@ -1,6 +1,6 @@
-import HeadingInfo from '@/app/about-me/HeadingInfo'
-import JobsDescription from '@/app/about-me/JobsDescription'
-import Photo from '@/app/about-me/Photo'
+import HeadingInfo from '@/components/aboutMe/HeadingInfo'
+import JobsDescription from '@/components/aboutMe/JobsDescription'
+import Photo from '@/components/aboutMe/Photo'
 import PageContainer from '@/components/layout/PageContainer'
 import { ID_ABOUT } from '@/utils/constants'
 
