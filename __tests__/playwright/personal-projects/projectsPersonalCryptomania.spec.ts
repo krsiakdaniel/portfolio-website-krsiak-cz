@@ -22,14 +22,20 @@ test.afterEach(async () => {
   await context.close()
 })
 
-test.describe('Project - RWS (Moravia)', () => {
-  test('Link', async () => {
-    await page.goto('/project-work-moravia')
+test.describe('Project - Cryptomania', () => {
+  test('Links', async () => {
+    await page.goto('/personal-projects/cryptomania')
 
     const link = page.getByRole('link', { name: 'Website →' })
     const href = await link.getAttribute('href')
 
-    const expectedUrl = 'https://www.rws.com/'
+    const expectedUrl = 'https://cryptomania-currency-prices.netlify.app/'
     expect(href).toBe(expectedUrl)
+
+    const linkGitHub = page.getByRole('link', { name: 'GitHub repository →' })
+    const hrefGitHub = await linkGitHub.getAttribute('href')
+
+    const expectedUrlGitHub = 'https://github.com/krsiakdaniel/cryptocurrency-prices'
+    expect(hrefGitHub).toBe(expectedUrlGitHub)
   })
 })

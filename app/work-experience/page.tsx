@@ -26,17 +26,9 @@ const ProjectsWork = () => {
         heading="Work Experience"
         description="I worked on modern products, developed new features, redesigned websites, implemented responsive design, updated legacy codebase, was responsible for localization, QA automation and testing, including work as team leader."
       >
-        <ProjectSection
-          sectionId={`${ID_PROJECTS_WORK}-${ID_SECTION_REACT}`}
-          sectionText="React"
-          projectData={projectsWorkReact}
-        />
+        <ProjectSection sectionId={ID_SECTION_REACT} sectionText="React" projectData={projectsWorkReact} />
 
-        <ProjectSection
-          sectionId={`${ID_PROJECTS_WORK}-${ID_SECTION_FRONT_END}`}
-          sectionText="Front End"
-          projectData={projectsWorkFrontEnd}
-        />
+        <ProjectSection sectionId={ID_SECTION_FRONT_END} sectionText="Front End" projectData={projectsWorkFrontEnd} />
         <ExperienceOtherTitle />
         <ExperienceCard
           company="Freelance"
@@ -50,11 +42,7 @@ const ProjectsWork = () => {
           description="First time web company job was 1 year coding website layouts."
         />
 
-        <ProjectSection
-          sectionId={`${ID_PROJECTS_WORK}-${ID_SECTION_WORDPRESS}`}
-          sectionText="WordPress"
-          projectData={projectsWorkWordPress}
-        />
+        <ProjectSection sectionId={ID_SECTION_WORDPRESS} sectionText="WordPress" projectData={projectsWorkWordPress} />
         <ExperienceOtherTitle />
         <ExperienceCard
           company="Freelance"
@@ -63,11 +51,7 @@ const ProjectsWork = () => {
           isPartTime
         />
 
-        <ProjectSection
-          sectionId={`${ID_PROJECTS_WORK}-${ID_SECTION_QA}`}
-          sectionText="QA Automation & Testing"
-          projectData={projectsWorkQA}
-        />
+        <ProjectSection sectionId={ID_SECTION_QA} sectionText="QA Automation & Testing" projectData={projectsWorkQA} />
         <ExperienceOtherTitle />
         <ExperienceCard
           company="Smartsupp"
@@ -81,7 +65,7 @@ const ProjectsWork = () => {
         />
 
         <ProjectSection
-          sectionId={`${ID_PROJECTS_WORK}-${ID_SECTION_LOCALIZATION}`}
+          sectionId={ID_SECTION_LOCALIZATION}
           sectionText="Localization"
           projectData={projectsWorkLocalization}
         />

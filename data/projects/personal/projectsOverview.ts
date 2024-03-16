@@ -50,7 +50,7 @@ export const projectsPersonalNext: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://krsiak.cz/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
-    linkProjectPage: `/${projectPages.personal.krsiak}`,
+    linkProjectPage: projectPages.personal.krsiak,
   },
 ]
 
@@ -83,7 +83,7 @@ export const projectsPersonalReact: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://cryptomania-currency-prices.netlify.app/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
-    linkProjectPage: `/${projectPages.personal.cryptoMania}`,
+    linkProjectPage: projectPages.personal.cryptoMania,
   },
 ]
 
@@ -108,6 +108,6 @@ export const projectsPersonalVue: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://ecommerce-vue-nuxt.onrender.com/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/ecommerce-website-vuejs-nuxtjs-vuetify',
-    linkProjectPage: `/${projectPages.personal.eshop}`,
+    linkProjectPage: projectPages.personal.eshop,
   },
 ]

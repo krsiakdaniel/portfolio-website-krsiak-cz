@@ -1,3 +1,4 @@
+// TODO: refactor into better structure
 export const LINK_LINKEDIN = 'https://www.linkedin.com/in/krsiakdaniel/'
 export const LINK_GITHUB = 'https://github.com/krsiakdaniel/'
 export const LINK_RESUME = 'https://drive.google.com/file/d/1x0LWu8I_3aqW34TJbxkciqNGX642bdvF/view?usp=sharing'
@@ -13,8 +14,8 @@ export const ID_SKILLS = 'skills'
 export const ID_SKILLS_MAIN = 'skills-main'
 export const ID_SERVICES = 'services'
 export const ID_ABOUT = 'about'
-export const ID_PROJECTS_WORK = 'projects-work'
-export const ID_PROJECTS_PERSONAL = 'projects-personal'
+export const ID_PROJECTS_WORK = 'work'
+export const ID_PROJECTS_PERSONAL = 'personal'
 export const ID_CONTACT = 'contact'
 export const ID_FOOTER = 'footer'
 
@@ -33,21 +34,24 @@ export const ID_ERROR = 'error'
 export const ID_ERROR_GLOBAL = 'error-global'
 
 // project pages URLs
+const URL_WORK_EXPERIENCE = '/work-experience'
+const URL_PERSONAL_PROJECTS = '/personal-projects'
+
 export const projectPages = {
   work: {
     smartsupp: {
-      dashboard: 'project-work-smartsupp-dashboard',
-      web: 'project-work-smartsupp-web',
-      help: 'project-work-smartsupp-help',
+      dashboard: `${URL_WORK_EXPERIENCE}/smartsupp-dashboard`,
+      web: `${URL_WORK_EXPERIENCE}/smartsupp-web`,
+      help: `${URL_WORK_EXPERIENCE}/smartsupp-help`,
     },
-    komercniBanka: 'project-work-komercni-banka',
-    groupon: 'project-work-groupon',
-    moravia: 'project-work-moravia',
+    komercniBanka: `${URL_WORK_EXPERIENCE}/komercni-banka`,
+    groupon: `${URL_WORK_EXPERIENCE}/groupon`,
+    moravia: `${URL_WORK_EXPERIENCE}/moravia`,
   },
   personal: {
-    krsiak: 'project-personal-krsiak',
-    eshop: 'project-personal-eshop',
-    cryptoMania: 'project-personal-cryptomania',
+    krsiak: `${URL_PERSONAL_PROJECTS}/krsiak`,
+    eshop: `${URL_PERSONAL_PROJECTS}/eshop`,
+    cryptoMania: `${URL_PERSONAL_PROJECTS}/cryptomania`,
   },
 }
 

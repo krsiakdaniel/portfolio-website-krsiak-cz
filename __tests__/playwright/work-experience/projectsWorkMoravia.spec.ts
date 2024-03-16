@@ -22,20 +22,14 @@ test.afterEach(async () => {
   await context.close()
 })
 
-test.describe('Project - Eshop', () => {
-  test('Links', async () => {
-    await page.goto('/project-personal-eshop')
+test.describe('Project - RWS (Moravia)', () => {
+  test('Link', async () => {
+    await page.goto('/work-experience/moravia')
 
     const link = page.getByRole('link', { name: 'Website →' })
     const href = await link.getAttribute('href')
 
-    const expectedUrl = 'https://ecommerce-vue-nuxt.onrender.com/'
+    const expectedUrl = 'https://www.rws.com/'
     expect(href).toBe(expectedUrl)
-
-    const linkGitHub = page.getByRole('link', { name: 'GitHub repository →' })
-    const hrefGitHub = await linkGitHub.getAttribute('href')
-
-    const expectedUrlGitHub = 'https://github.com/krsiakdaniel/ecommerce-website-vuejs-nuxtjs-vuetify'
-    expect(hrefGitHub).toBe(expectedUrlGitHub)
   })
 })

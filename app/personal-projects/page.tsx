@@ -15,21 +15,9 @@ const ProjectsPersonal = () => {
         heading="Personal Projects"
         description="I like to learn new technologies and create personal projects where I can apply what I know and keep up on the latest trends."
       >
-        <ProjectSection
-          sectionId={`${ID_PROJECTS_PERSONAL}-${ID_SECTION_NEXT}`}
-          sectionText="Next"
-          projectData={projectsPersonalNext}
-        />
-        <ProjectSection
-          sectionId={`${ID_PROJECTS_PERSONAL}-${ID_SECTION_REACT}`}
-          sectionText="React"
-          projectData={projectsPersonalReact}
-        />
-        <ProjectSection
-          sectionId={`${ID_PROJECTS_PERSONAL}-${ID_SECTION_VUE}`}
-          sectionText="Vue"
-          projectData={projectsPersonalVue}
-        />
+        <ProjectSection sectionId={ID_SECTION_NEXT} sectionText="Next" projectData={projectsPersonalNext} />
+        <ProjectSection sectionId={ID_SECTION_REACT} sectionText="React" projectData={projectsPersonalReact} />
+        <ProjectSection sectionId={ID_SECTION_VUE} sectionText="Vue" projectData={projectsPersonalVue} />
       </ProjectsLayout>
     </PageContainer>
   )

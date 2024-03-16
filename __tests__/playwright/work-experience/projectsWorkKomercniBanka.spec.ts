@@ -24,7 +24,7 @@ test.afterEach(async () => {
 
 test.describe('Project - Komercni Banka', () => {
   test('Links', async () => {
-    await page.goto('/project-work-komercni-banka')
+    await page.goto('/work-experience/komercni-banka')
 
     // link 1
     const link1 = page.getByRole('link', { name: 'Branches & ATMs', exact: true })

@@ -78,7 +78,7 @@ export const projectsWorkReact: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/' }],
     customers: '100 000+',
-    linkProjectPage: `/${projectPages.work.smartsupp.dashboard}`,
+    linkProjectPage: projectPages.work.smartsupp.dashboard,
   },
   {
     id: projectIDs.work.komercniBanka,
@@ -120,7 +120,7 @@ export const projectsWorkReact: Project[] = [
       },
     ],
     customers: '2 000 000+',
-    linkProjectPage: `/${projectPages.work.komercniBanka}`,
+    linkProjectPage: projectPages.work.komercniBanka,
   },
 ]
 
@@ -145,7 +145,7 @@ export const projectsWorkFrontEnd: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/' }],
     customers: '100 000+',
-    linkProjectPage: `/${projectPages.work.smartsupp.web}`,
+    linkProjectPage: projectPages.work.smartsupp.web,
   },
 ]
 
@@ -171,7 +171,7 @@ export const projectsWorkWordPress: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://help.smartsupp.com/' }],
     customers: '100 000+',
-    linkProjectPage: `/${projectPages.work.smartsupp.help}`,
+    linkProjectPage: projectPages.work.smartsupp.help,
   },
 ]
 
@@ -199,7 +199,7 @@ export const projectsWorkQA: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.groupon.com/' }],
     customers: '17 000 000+',
-    linkProjectPage: `/${projectPages.work.groupon}`,
+    linkProjectPage: projectPages.work.groupon,
   },
 ]
 
@@ -225,6 +225,6 @@ export const projectsWorkLocalization: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.rws.com/' }],
     customers: '80 out of the world top 100 brands',
-    linkProjectPage: `/${projectPages.work.moravia}`,
+    linkProjectPage: projectPages.work.moravia,
   },
 ]

@@ -24,7 +24,7 @@ test.afterEach(async () => {
 
 test.describe('Project - Groupon', () => {
   test('Link', async () => {
-    await page.goto('/project-work-groupon')
+    await page.goto('/work-experience/groupon')
 
     const link = page.getByRole('link', { name: 'Website →' })
     const href = await link.getAttribute('href')

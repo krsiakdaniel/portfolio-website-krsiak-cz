@@ -24,7 +24,7 @@ test.afterEach(async () => {
 
 test.describe('Project - Smartsupp', () => {
   test('Dashboard - Link', async () => {
-    await page.goto('/project-work-smartsupp-dashboard')
+    await page.goto('/work-experience/smartsupp-dashboard')
 
     const link = page.getByRole('link', { name: 'Website →' })
     const href = await link.getAttribute('href')
@@ -34,7 +34,7 @@ test.describe('Project - Smartsupp', () => {
   })
 
   test('Web - Link', async () => {
-    await page.goto('/project-work-smartsupp-web')
+    await page.goto('/work-experience/smartsupp-web')
 
     const link = page.getByRole('link', { name: 'Website →' })
     const href = await link.getAttribute('href')
@@ -44,7 +44,7 @@ test.describe('Project - Smartsupp', () => {
   })
 
   test('HELP - Link', async () => {
-    await page.goto('/project-work-smartsupp-help')
+    await page.goto('/work-experience/smartsupp-help')
 
     const link = page.getByRole('link', { name: 'Website →' })
     const href = await link.getAttribute('href')

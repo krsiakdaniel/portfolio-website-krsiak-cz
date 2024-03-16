@@ -1,7 +1,7 @@
 import { Page, expect } from '@playwright/test'
 
 export const testProjectLink = async (page: Page, projectPage: string, projectID: string) => {
-  const pageLink = `/${projectPage}`
+  const pageLink = projectPage
 
   const projectDetailsLink = page.getByTestId(projectID)
 

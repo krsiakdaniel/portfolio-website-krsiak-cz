@@ -22,20 +22,20 @@ test.afterEach(async () => {
   await context.close()
 })
 
-test.describe('Project - Cryptomania', () => {
+test.describe('Project - Eshop', () => {
   test('Links', async () => {
-    await page.goto('/project-personal-cryptomania')
+    await page.goto('/personal-projects/eshop')
 
     const link = page.getByRole('link', { name: 'Website →' })
     const href = await link.getAttribute('href')
 
-    const expectedUrl = 'https://cryptomania-currency-prices.netlify.app/'
+    const expectedUrl = 'https://ecommerce-vue-nuxt.onrender.com/'
     expect(href).toBe(expectedUrl)
 
     const linkGitHub = page.getByRole('link', { name: 'GitHub repository →' })
     const hrefGitHub = await linkGitHub.getAttribute('href')
 
-    const expectedUrlGitHub = 'https://github.com/krsiakdaniel/cryptocurrency-prices'
+    const expectedUrlGitHub = 'https://github.com/krsiakdaniel/ecommerce-website-vuejs-nuxtjs-vuetify'
     expect(hrefGitHub).toBe(expectedUrlGitHub)
   })
 })

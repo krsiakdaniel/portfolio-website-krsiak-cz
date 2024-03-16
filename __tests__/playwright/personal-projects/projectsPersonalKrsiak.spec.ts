@@ -24,7 +24,7 @@ test.afterEach(async () => {
 
 test.describe('Project - Krsiak', () => {
   test('Links', async () => {
-    await page.goto('/project-personal-krsiak')
+    await page.goto('/personal-projects/krsiak')
 
     const link = page.getByRole('link', { name: 'Website →' })
     const href = await link.getAttribute('href')
