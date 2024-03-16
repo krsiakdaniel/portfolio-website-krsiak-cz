@@ -1,11 +1,10 @@
 type Props = {
-  dividerText: string
   heading: string
   description: string
   children: React.ReactNode
 }
 
-const ProjectsLayout = ({ dividerText, heading, description, children }: Props) => {
+const ProjectsLayout = ({ heading, description, children }: Props) => {
   return (
     <>
       <div className="flex flex-col">

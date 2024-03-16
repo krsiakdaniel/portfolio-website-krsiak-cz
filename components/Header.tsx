@@ -39,7 +39,7 @@ const Logo = () => {
 
 const MenuToggle = ({ isOpen, handleToggle }: MenuToggleProps) => {
   return (
-    <button onClick={handleToggle} className="lg:hidden">
+    <button onClick={handleToggle} className="lg:hidden" aria-label="Toggle Menu">
       {!isOpen ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"

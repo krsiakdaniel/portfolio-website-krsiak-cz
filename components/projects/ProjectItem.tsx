@@ -1,5 +1,6 @@
 import { getFeaturedBorderColor } from '@/utils/getFeaturedBorderColor'
 import { Icon } from '@/utils/types'
+import Head from 'next/head'
 import Image from 'next/image'
 
 type Props = {
@@ -37,6 +38,11 @@ const ProjectItem = ({
         <div className="mt-8 flex first:mt-0 lg:mt-0 lg:justify-start">
           <div className="relative">
             {isFeatured && <p className="absolute -right-4 -top-5 z-10 text-4xl">⭐</p>}
+
+            {/* preload image for better performance */}
+            <Head>
+              <link rel="preload" href={image} as="image" />
+            </Head>
 
             {/* TODO: change to webp format */}
             <Image
