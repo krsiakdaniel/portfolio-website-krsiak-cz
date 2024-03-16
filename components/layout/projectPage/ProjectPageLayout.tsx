@@ -4,10 +4,12 @@ import PageContainer from '@/components/layout/PageContainer'
 import HeaderSection from '@/components/layout/projectPage/HeaderSection'
 import Section from '@/components/layout/projectPage/Section'
 import ProjectInformation from '@/components/projects/ProjectInformation'
-import { HeaderSectionProps, ProjectInformationProps, SectionItem } from '@/utils/types'
+import BreadCrumbsComponent from '@/components/shared/Breadcrumbs'
+import { BreadCrumbs, HeaderSectionProps, ProjectInformationProps, SectionItem } from '@/utils/types'
 import Image from 'next/image'
 
 type Props = {
+  breadCrumbs: BreadCrumbs
   pageID: string
   sections: SectionItem[]
   imageShowcase: string[]
@@ -15,6 +17,7 @@ type Props = {
   ProjectInformationProps
 
 const ProjectPageLayout = ({
+  breadCrumbs,
   pageID,
   title,
   role,
@@ -31,6 +34,12 @@ const ProjectPageLayout = ({
 }: Props) => {
   return (
     <PageContainer id={pageID}>
+      <BreadCrumbsComponent
+        linkLevel1={breadCrumbs.linkLevel1}
+        textLevel1={breadCrumbs.textLevel1}
+        linkLevel2={breadCrumbs.linkLevel2}
+        textLevel2={breadCrumbs.textLevel2}
+      />
       <HeaderSection title={title} role={role} years={years} goBackLink={goBackLink} sectionID={sectionID} />
       <ProjectInformation
         description={description}

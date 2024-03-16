@@ -3,6 +3,7 @@ import ProjectsLayout from '@/components/layout/ProjectsLayout'
 import { ProjectSection } from '@/components/projects/ProjectSection'
 import ExperienceCard from '@/components/projects/experience/ExperienceCard'
 import ExperienceOtherTitle from '@/components/projects/experience/ExperienceOtherTitle'
+import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import {
   projectsWorkFrontEnd,
   projectsWorkLocalization,
@@ -22,6 +23,7 @@ import {
 const ProjectsWork = () => {
   return (
     <PageContainer id={ID_PROJECTS_WORK}>
+      <BreadCrumbs linkLevel1="/work-experience" textLevel1="Work Experience" />
       <ProjectsLayout
         heading="🖥️ Work Experience"
         description="I worked on modern products, developed new features, redesigned websites, implemented responsive design, updated legacy codebase, was responsible for localization, QA automation and testing, including work as team leader."

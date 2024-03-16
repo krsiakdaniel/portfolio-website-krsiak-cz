@@ -68,3 +68,11 @@ export type ErrorProps = {
   error: Error & { digest?: string }
   reset: () => void
 }
+
+// breadcrumbs
+export type BreadCrumbs = {
+  textLevel1: string
+  linkLevel1: string
+  textLevel2?: string
+  linkLevel2?: string
+}

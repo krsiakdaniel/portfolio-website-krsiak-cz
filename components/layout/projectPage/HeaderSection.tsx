@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 const HeaderSection = ({ title, role, years, goBackLink, sectionID }: HeaderSectionProps) => {
   return (
-    <div>
-      <h1 className="text-5xl font-bold leading-none tracking-tight text-neutral-900">{title}</h1>
+    <div className="mb-16">
+      <h1 className="text-5xl font-bold leading-none tracking-tight text-neutral-900 sm:text-7xl">{title}</h1>
       <h2 className="mt-4 text-4xl font-bold text-violet-600">
         {role}
         {years && <small className="text-md text-neutral-500">{` · ${years}`}</small>}

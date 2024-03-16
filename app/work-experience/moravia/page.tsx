@@ -2,10 +2,19 @@ import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/Projec
 import { sections } from '@/data/projects/work/moravia'
 import { projectsWorkLocalization } from '@/data/projects/work/projectsOverview'
 import { ID_SECTION_LOCALIZATION, projectPages } from '@/utils/constants'
+import { BreadCrumbs } from '@/utils/types'
+
+const breadCrumbs: BreadCrumbs = {
+  linkLevel1: '/work-experience',
+  textLevel1: 'Work Experience',
+  linkLevel2: '/work-experience/moravia',
+  textLevel2: 'Moravia',
+}
 
 const ProjectWorkMoravia = () => {
   return (
     <ProjectPageLayoutWrapper
+      breadCrumbs={breadCrumbs}
       pageID={projectPages.work.moravia}
       goBackLink="work"
       sectionID={ID_SECTION_LOCALIZATION}

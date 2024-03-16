@@ -1,7 +1,8 @@
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
-import { GoBackLinkType, Project, SectionItem } from '@/utils/types'
+import { BreadCrumbs, GoBackLinkType, Project, SectionItem } from '@/utils/types'
 
 type Props = {
+  breadCrumbs: BreadCrumbs
   pageID: string
   goBackLink: GoBackLinkType
   sectionID: string
@@ -9,11 +10,19 @@ type Props = {
   sections: SectionItem[]
 }
 
-export const ProjectPageLayoutWrapper = ({ pageID, goBackLink, sectionID, projectData, sections }: Props) => {
+export const ProjectPageLayoutWrapper = ({
+  breadCrumbs,
+  pageID,
+  goBackLink,
+  sectionID,
+  projectData,
+  sections,
+}: Props) => {
   const { title, role, years, description, mySkills, customers, projectLinks, imageShowcase } = projectData
 
   return (
     <ProjectPageLayout
+      breadCrumbs={breadCrumbs}
       pageID={pageID}
       title={title}
       role={role}
