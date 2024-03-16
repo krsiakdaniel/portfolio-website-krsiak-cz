@@ -12,7 +12,6 @@ const ProjectsPersonal = () => {
   return (
     <PageContainer id={ID_PROJECTS_PERSONAL}>
       <ProjectsLayout
-        dividerText="In My Free Time"
         heading="Personal Projects"
         description="I like to learn new technologies and create personal projects where I can apply what I know and keep up on the latest trends."
       >
