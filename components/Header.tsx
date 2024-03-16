@@ -72,6 +72,7 @@ const MenuDesktop = () => {
         <Link
           href={URLS.workExperience}
           className="text-body-md cursor-pointer font-bold text-neutral-700 hover:text-violet-600"
+          data-testid="desktop-work-experience-link"
         >
           {TEXTS.workExperience}
         </Link>
@@ -80,6 +81,7 @@ const MenuDesktop = () => {
         <Link
           href={URLS.personalProjects}
           className="text-body-md cursor-pointer font-bold text-neutral-700 hover:text-violet-600"
+          data-testid="desktop-personal-projects-link"
         >
           {TEXTS.personalProjects}
         </Link>
@@ -95,6 +97,7 @@ const MenuMobile = () => {
         <Link
           href={URLS.workExperience}
           className="block border-b border-neutral-100 py-2 pl-3 pr-4 font-bold text-neutral-700 hover:bg-neutral-50 hover:text-violet-700"
+          data-testid="mobile-work-experience-link"
         >
           {TEXTS.workExperience}
         </Link>
@@ -103,6 +106,7 @@ const MenuMobile = () => {
         <Link
           href={URLS.personalProjects}
           className="block py-2 pl-3 pr-4 font-bold text-neutral-700 hover:bg-neutral-50 hover:text-violet-700"
+          data-testid="mobile-personal-projects-link"
         >
           {TEXTS.personalProjects}
         </Link>
