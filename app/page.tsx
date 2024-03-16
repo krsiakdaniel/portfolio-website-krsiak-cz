@@ -1,7 +1,6 @@
 import Hero from '@/components/Hero'
 import Skills from '@/components/Skills'
 import SkillsMain from '@/components/SkillsMain'
-import About from '@/components/about'
 
 const Page = () => {
   return (
@@ -9,7 +8,6 @@ const Page = () => {
       <Hero />
       <Skills />
       <SkillsMain />
-      <About />
     </div>
   )
 }

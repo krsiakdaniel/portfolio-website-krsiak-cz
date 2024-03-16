@@ -1,4 +1,4 @@
-import JobItem from '@/components/about/JobItem'
+import JobItem from '@/app/about-me/JobItem'
 import { jobs } from '@/data/about'
 
 const JobsDescription = () => {

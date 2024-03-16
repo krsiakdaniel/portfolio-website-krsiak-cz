@@ -12,7 +12,7 @@ const ProjectsPersonal = () => {
   return (
     <PageContainer id={ID_PROJECTS_PERSONAL}>
       <ProjectsLayout
-        heading="Personal Projects"
+        heading="🚀 Personal Projects"
         description="I like to learn new technologies and create personal projects where I can apply what I know and keep up on the latest trends."
       >
         <ProjectSection sectionId={ID_SECTION_NEXT} sectionText="Next" projectData={projectsPersonalNext} />

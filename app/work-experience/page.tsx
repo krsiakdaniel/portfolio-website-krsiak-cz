@@ -23,7 +23,7 @@ const ProjectsWork = () => {
   return (
     <PageContainer id={ID_PROJECTS_WORK}>
       <ProjectsLayout
-        heading="Work Experience"
+        heading="🖥️ Work Experience"
         description="I worked on modern products, developed new features, redesigned websites, implemented responsive design, updated legacy codebase, was responsible for localization, QA automation and testing, including work as team leader."
       >
         <ProjectSection sectionId={ID_SECTION_REACT} sectionText="React" projectData={projectsWorkReact} />

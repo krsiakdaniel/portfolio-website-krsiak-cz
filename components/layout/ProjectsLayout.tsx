@@ -1,3 +1,4 @@
+import PageHeading from '@/components/PageHeading'
 type Props = {
   heading: string
   description: string
@@ -8,7 +9,7 @@ const ProjectsLayout = ({ heading, description, children }: Props) => {
   return (
     <>
       <div className="flex flex-col">
-        <h1 className="text-5xl font-bold uppercase text-violet-600">{heading}</h1>
+        <PageHeading title={heading} />
         <p className="mt-4 text-lg text-neutral-600">{description}</p>
       </div>
       {/* This is ProjectItem */}

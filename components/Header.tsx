@@ -12,12 +12,14 @@ type MenuToggleProps = {
 
 const TEXTS = {
   logo: 'krsiak.cz',
-  workExperience: 'Work Experience',
-  personalProjects: 'Personal Projects',
+  aboutMe: '👨‍💻 About Me',
+  workExperience: '🖥️ Work Experience',
+  personalProjects: '🚀 Personal Projects',
 }
 
 const URLS = {
   home: '/',
+  aboutMe: '/about-me',
   workExperience: '/work-experience',
   personalProjects: '/personal-projects',
 }
@@ -67,7 +69,16 @@ const MenuToggle = ({ isOpen, handleToggle }: MenuToggleProps) => {
 
 const MenuDesktop = () => {
   return (
-    <ul className="hidden gap-4 lg:flex" id="menu">
+    <ul className="hidden gap-8 lg:flex" id="menu">
+      <li>
+        <Link
+          href={URLS.aboutMe}
+          className="text-body-md cursor-pointer font-bold text-neutral-700 hover:text-violet-600"
+          data-testid="desktop-about-me-link"
+        >
+          {TEXTS.aboutMe}
+        </Link>
+      </li>
       <li>
         <Link
           href={URLS.workExperience}
@@ -93,6 +104,15 @@ const MenuDesktop = () => {
 const MenuMobile = () => {
   return (
     <ul className="mb-5 mt-2 flex flex-col lg:hidden" id="mobile-menu">
+      <li>
+        <Link
+          href={URLS.aboutMe}
+          className="block border-b border-neutral-100 py-2 pl-3 pr-4 font-bold text-neutral-700 hover:bg-neutral-50 hover:text-violet-700"
+          data-testid="mobile-about-me-link"
+        >
+          {TEXTS.aboutMe}
+        </Link>
+      </li>
       <li>
         <Link
           href={URLS.workExperience}

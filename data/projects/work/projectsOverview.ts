@@ -130,7 +130,7 @@ export const projectsWorkFrontEnd: Project[] = [
     isFeatured: false,
     image: smartsuppWebThumb.src,
     imageShowcase: [smartsuppWeb1.src, smartsuppWeb2.src, smartsuppWeb3.src, smartsuppWeb4.src],
-    title: '🚀 SaaS Company - Website',
+    title: '🖥️ SaaS Company - Website',
     company: 'Smartsupp',
     role: 'Front End Developer',
     years: '1 year',
