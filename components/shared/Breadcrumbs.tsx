@@ -1,4 +1,4 @@
-import { BreadCrumbs } from '@/utils/types'
+import { BreadCrumbsType } from '@/utils/types'
 
 const IconHome = () => {
   return (
@@ -29,7 +29,7 @@ const IconCaretRight = () => {
 }
 
 // TODO: write tests for all pages breadcrumbs and links
-const BreadCrumbs = ({ linkLevel1, textLevel1, linkLevel2, textLevel2 }: BreadCrumbs) => {
+const BreadCrumbs = ({ linkLevel1, textLevel1, linkLevel2, textLevel2 }: BreadCrumbsType) => {
   return (
     <>
       <nav className="mb-10 flex  text-neutral-700" aria-label="Breadcrumb">
