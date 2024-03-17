@@ -3,11 +3,11 @@
 import logo from '@/public/logo.webp'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 type MenuToggleProps = {
   isOpen: boolean
-  handleToggle: () => void
+  handleMenuToggle: () => void
 }
 
 const TEXTS = {
@@ -39,9 +39,9 @@ const Logo = () => {
   )
 }
 
-const MenuToggle = ({ isOpen, handleToggle }: MenuToggleProps) => {
+const MenuToggle = ({ isOpen, handleMenuToggle }: MenuToggleProps) => {
   return (
-    <button onClick={handleToggle} className="lg:hidden" aria-label="Toggle Menu">
+    <button onClick={handleMenuToggle} className="lg:hidden" aria-label="Toggle Menu">
       {!isOpen ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -137,9 +137,26 @@ const MenuMobile = () => {
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const handleToggle = () => {
+
+  const handleMenuToggle = () => {
     setIsOpen(!isOpen)
   }
+
+  const [scroll, setScroll] = useState(0)
+
+  const checkScroll = () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    const scrolled = (winScroll / height) * 100
+    setScroll(scrolled)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', checkScroll)
+    return () => {
+      window.removeEventListener('scroll', checkScroll)
+    }
+  }, [])
 
   return (
     <header className="sticky top-0 z-20 border-b border-neutral-400 bg-white px-5">
@@ -147,10 +164,12 @@ const Header = () => {
         <div className="flex items-center justify-between py-3">
           <Logo />
           <MenuDesktop />
-          <MenuToggle isOpen={isOpen} handleToggle={handleToggle} />
+          <MenuToggle isOpen={isOpen} handleMenuToggle={handleMenuToggle} />
         </div>
         {isOpen && <MenuMobile />}
       </div>
+
+      <div className="absolute bottom-0 left-0 h-1 bg-violet-600" style={{ width: `${scroll}%` }}></div>
     </header>
   )
 }
