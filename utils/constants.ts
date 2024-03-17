@@ -74,3 +74,22 @@ export const projectIDs = {
     cryptoMania: 'link-project-personal-cryptomania',
   },
 }
+
+// header
+export const TEXTS = {
+  logo: 'krsiak.cz',
+  aboutMe: '👨‍💻 About Me',
+  workExperience: '🖥️ Work Experience',
+  personalProjects: '🚀 Personal Projects',
+}
+
+export const URLS = {
+  home: '/',
+  aboutMe: '/about-me',
+  workExperience: '/work-experience',
+  personalProjects: '/personal-projects',
+}
+
+export const MENU_MOBILE_ID = 'menu-mobile'
+export const MENU_DESKTOP_ID = 'menu-desktop'
+export const MENU_TOGGLE_ID = 'menu-toggle'
