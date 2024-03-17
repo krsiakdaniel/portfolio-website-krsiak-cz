@@ -1,4 +1,3 @@
-import PageContainer from '@/components/layout/PageContainer'
 import DividerWithText from '@/components/shared/DividerWithText'
 import { iconsSkills1, iconsSkills2, iconsSkills3, iconsSkills4 } from '@/data/skills/skills-main'
 import { ID_SKILLS } from '@/utils/constants'
@@ -24,7 +23,7 @@ const SkillsIconGroup = ({ icons, className = '' }: SkillsIconGroupProps) => (
 
 const Skills = () => {
   return (
-    <PageContainer id={ID_SKILLS}>
+    <div id={ID_SKILLS} className="mt-20">
       <DividerWithText text="Skills" />
       <div className="mt-5 flex flex-col justify-center space-y-2 md:flex-row md:space-x-2 md:space-y-0">
         <SkillsIconGroup icons={iconsSkills1} />
@@ -37,7 +36,7 @@ const Skills = () => {
           HTML, CSS, Sass, Tailwind CSS, JavaScript, TypeScript, React, Next.js, Redux, GraphQL, Jest, Playwright, Figma
         </p>
       </div>
-    </PageContainer>
+    </div>
   )
 }
 

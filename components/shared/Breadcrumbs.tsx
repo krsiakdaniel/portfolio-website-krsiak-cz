@@ -14,10 +14,10 @@ const IconHome = () => {
   )
 }
 
-const IconArrowRight = () => {
+const IconCaretRight = () => {
   return (
     <svg
-      className="mx-1 block h-3 w-3 text-neutral-400 rtl:rotate-180 "
+      className="mx-1 block h-3 w-3 text-neutral-400"
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -43,7 +43,7 @@ const BreadCrumbs = ({ linkLevel1, textLevel1, linkLevel2, textLevel2 }: BreadCr
           {linkLevel1 && textLevel1 && (
             <li>
               <div className="flex items-center">
-                <IconArrowRight />
+                <IconCaretRight />
                 <a
                   href={linkLevel1}
                   className="ms-1 text-sm font-medium text-neutral-700 hover:text-violet-600 md:ms-2"
@@ -56,7 +56,7 @@ const BreadCrumbs = ({ linkLevel1, textLevel1, linkLevel2, textLevel2 }: BreadCr
           {linkLevel2 && textLevel2 && (
             <li>
               <div className="flex items-center">
-                <IconArrowRight />
+                <IconCaretRight />
                 <a
                   href={linkLevel2}
                   className="ms-1 text-sm font-medium text-neutral-700 hover:text-violet-600 md:ms-2"

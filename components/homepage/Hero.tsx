@@ -1,4 +1,3 @@
-import PageContainer from '@/components/layout/PageContainer'
 import {
   EMAIL_HREF,
   EMAIL_TEXT,
@@ -12,7 +11,7 @@ import {
 
 const Hero = () => {
   return (
-    <PageContainer id={ID_HERO}>
+    <div id={ID_HERO}>
       <div className="flex flex-col items-center justify-center">
         <h1 data-testid="hero-heading" className="text-center text-5xl font-bold sm:text-7xl">
           Daniel Krsiak
@@ -77,7 +76,7 @@ const Hero = () => {
           {PHONE_TEXT}
         </a>
       </div>
-    </PageContainer>
+    </div>
   )
 }
 

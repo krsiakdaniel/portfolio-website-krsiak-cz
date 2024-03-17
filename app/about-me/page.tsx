@@ -1,3 +1,4 @@
+import NextPageNavigation from '@/components/NextPageNavigation'
 import HeadingInfo from '@/components/aboutMe/HeadingInfo'
 import JobsDescription from '@/components/aboutMe/JobsDescription'
 import Photo from '@/components/aboutMe/Photo'
@@ -16,6 +17,12 @@ const About = () => {
           <Photo />
         </div>
       </div>
+      <NextPageNavigation
+        pageLinkPrevious="/"
+        pageNamePrevious="Home"
+        pageLinkNext="/work-experience"
+        pageNameNext="Work Experience"
+      />
     </PageContainer>
   )
 }

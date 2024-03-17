@@ -1,3 +1,4 @@
+import NextPageNavigation from '@/components/NextPageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsLayout from '@/components/layout/ProjectsLayout'
 import { ProjectSection } from '@/components/projects/ProjectSection'
@@ -78,6 +79,14 @@ const ProjectsWork = () => {
           description="Responsible for translation of the company website and application into 9 languages. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱"
         />
       </ProjectsLayout>
+      <div className="mt-20">
+        <NextPageNavigation
+          pageLinkPrevious="/about-me"
+          pageNamePrevious="About Me"
+          pageLinkNext="/personal-projects"
+          pageNameNext="Personal Projects"
+        />
+      </div>
     </PageContainer>
   )
 }

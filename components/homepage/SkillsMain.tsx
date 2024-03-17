@@ -1,4 +1,3 @@
-import PageContainer from '@/components/layout/PageContainer'
 import SkillsCard from '@/components/shared/SkillsCard'
 import js from '@/public/icons/svg/skills/js.svg'
 import react from '@/public/icons/svg/skills/react.svg'
@@ -47,8 +46,8 @@ const SkillsSection2 = () => {
 
 const SkillsMain = () => {
   return (
-    <PageContainer id={ID_SKILLS_MAIN}>
-      <div className="mb-20 flex flex-col rounded-lg border border-dashed bg-green-100 px-10 py-10 lg:flex-row">
+    <div id={ID_SKILLS_MAIN} className="mt-20">
+      <div className="mb-20 flex flex-col rounded-lg bg-green-100 px-10 py-10 lg:flex-row">
         <div className="mb-10 flex flex-col justify-center pt-10 text-center lg:mb-0 lg:w-1/2 lg:pl-5 lg:pr-10 lg:pt-0 lg:text-left">
           <h2 className="text-5xl font-bold uppercase">What I&nbsp;do</h2>
           <p className="text-lg font-normal text-neutral-600 lg:max-w-[550px]">
@@ -60,7 +59,7 @@ const SkillsMain = () => {
         <SkillsSection1 />
         <SkillsSection2 />
       </div>
-    </PageContainer>
+    </div>
   )
 }
 

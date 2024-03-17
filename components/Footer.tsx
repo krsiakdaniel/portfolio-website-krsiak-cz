@@ -1,10 +1,7 @@
 import PageContainer from '@/components/layout/PageContainer'
 import { ID_FOOTER } from '@/utils/constants'
+import { getCurrentYear } from '@/utils/getCurrentYear'
 import Link from 'next/link'
-
-const getCurrentYear = () => {
-  return new Date().getFullYear()
-}
 
 const Footer = () => {
   return (
