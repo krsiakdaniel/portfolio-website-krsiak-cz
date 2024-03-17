@@ -1,8 +1,8 @@
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
-import { BreadCrumbs, GoBackLinkType, Project, SectionItem } from '@/utils/types'
+import { BreadCrumbsType, GoBackLinkType, Project, SectionItem } from '@/utils/types'
 
 type Props = {
-  breadCrumbs: BreadCrumbs
+  breadCrumbs: BreadCrumbsType
   pageID: string
   goBackLink: GoBackLinkType
   sectionID: string

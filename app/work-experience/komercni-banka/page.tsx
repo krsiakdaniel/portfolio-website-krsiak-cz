@@ -2,9 +2,9 @@ import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/Projec
 import { sections } from '@/data/projects/work/komercniBanka'
 import { projectsWorkReact } from '@/data/projects/work/projectsOverview'
 import { ID_SECTION_REACT, projectPages } from '@/utils/constants'
-import { BreadCrumbs } from '@/utils/types'
+import { BreadCrumbsType } from '@/utils/types'
 
-const breadCrumbs: BreadCrumbs = {
+const breadCrumbs: BreadCrumbsType = {
   linkLevel1: '/work-experience',
   textLevel1: 'Work Experience',
   linkLevel2: '/work-experience/komercni-banka',

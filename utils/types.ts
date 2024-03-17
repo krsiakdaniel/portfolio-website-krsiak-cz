@@ -70,7 +70,7 @@ export type ErrorProps = {
 }
 
 // breadcrumbs
-export type BreadCrumbs = {
+export type BreadCrumbsType = {
   textLevel1: string
   linkLevel1: string
   textLevel2?: string

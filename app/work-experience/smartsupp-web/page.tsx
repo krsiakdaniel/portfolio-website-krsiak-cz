@@ -2,9 +2,9 @@ import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/Projec
 import { projectsWorkFrontEnd } from '@/data/projects/work/projectsOverview'
 import { sections } from '@/data/projects/work/smartsuppWeb'
 import { ID_SECTION_FRONT_END, projectPages } from '@/utils/constants'
-import { BreadCrumbs } from '@/utils/types'
+import { BreadCrumbsType } from '@/utils/types'
 
-const breadCrumbs: BreadCrumbs = {
+const breadCrumbs: BreadCrumbsType = {
   linkLevel1: '/work-experience',
   textLevel1: 'Work Experience',
   linkLevel2: '/work-experience/smartsupp-web',

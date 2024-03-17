@@ -2,9 +2,9 @@ import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout
 import { sections } from '@/data/projects/personal/eshop'
 import { projectsPersonalVue } from '@/data/projects/personal/projectsOverview'
 import { ID_SECTION_VUE, projectPages } from '@/utils/constants'
-import { BreadCrumbs } from '@/utils/types'
+import { BreadCrumbsType } from '@/utils/types'
 
-const breadCrumbs: BreadCrumbs = {
+const breadCrumbs: BreadCrumbsType = {
   linkLevel1: '/personal-projects',
   textLevel1: 'Personal Projects',
   linkLevel2: '/personal-projects/eshop',
