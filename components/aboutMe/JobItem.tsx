@@ -10,8 +10,8 @@ interface Props {
 const JobItem = ({ path, title, description, years }: Props) => {
   return (
     <li className="mb-10 ms-6 last:mb-0">
-      <span className="absolute -start-6 flex h-12 w-12 items-center justify-center rounded-full bg-violet-100 ring-2 ring-violet-600">
-        <Image src={path} alt={title} width={32} height={32} />
+      <span className="absolute -start-5 flex h-10 w-10 items-center justify-center rounded-full bg-violet-100 ring-2 ring-violet-600">
+        <Image src={path} alt={title} width={28} height={28} />
       </span>
       <h3 className="mb-1 ml-4 flex flex-col items-start text-3xl font-bold text-neutral-900 lg:flex-row">
         {title}
