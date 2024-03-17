@@ -157,7 +157,7 @@ export const projectsWorkWordPress: Project[] = [
     imageShowcase: [smartsuppHelp1.src, smartsuppHelp2.src, smartsuppHelp3.src],
     title: '📚 SaaS Company - HELP Website',
     company: 'Smartsupp',
-    role: 'WordPress - Admin & Content Writer',
+    role: 'Admin & Content Writer',
     years: '6 months',
     description:
       'Responsible for the company HELP website running on WordPress and\u00A0writing tutorials. Localization into 9 languages.',
@@ -183,7 +183,7 @@ export const projectsWorkQA: Project[] = [
     imageShowcase: [groupon1.src, groupon2.src],
     title: '🛒 E-Commerce - Marketplace',
     company: 'Groupon',
-    role: 'QA Automation SDET - Team Leader',
+    role: 'QA Automation - Team Leader',
     years: '4 months',
     description:
       'I was responsible setting up new QA team, related processes, hiring and managing people, making test plans, test cases, and scripts.',
