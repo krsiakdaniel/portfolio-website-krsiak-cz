@@ -6,7 +6,7 @@ import {
   iconsSkillsProjectsWorkSmartsuppHelp,
   iconsSkillsProjectsWorkSmartsuppWeb,
 } from '@/data/skills/skills-projects-work'
-import { projectIDs, projectPages } from '@/utils/constants'
+import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
 import { Project } from '@/utils/types'
 
 // smartsupp-dashboard
@@ -50,7 +50,7 @@ import moraviaThumb from '@/public/images/projects-work/moravia/moravia-thumb-li
 
 export const projectsWorkReact: Project[] = [
   {
-    id: projectIDs.work.smartsupp.dashboard,
+    id: PROJECT_ID.work.smartsupp.dashboard,
     isFeatured: true,
     image: smartsuppDashboardThumb.src,
     imageShowcase: [
@@ -78,10 +78,10 @@ export const projectsWorkReact: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/' }],
     customers: '100 000+',
-    linkProjectPage: projectPages.work.smartsupp.dashboard,
+    linkProjectPage: PAGES_URL.work.smartsupp.dashboard,
   },
   {
-    id: projectIDs.work.komercniBanka,
+    id: PROJECT_ID.work.komercniBanka,
     isFeatured: false,
     image: komercniBankaThumb.src,
     imageShowcase: [komercniBanka1.src, komercniBanka2.src, komercniBanka3.src, komercniBanka4.src],
@@ -120,13 +120,13 @@ export const projectsWorkReact: Project[] = [
       },
     ],
     customers: '2 000 000+',
-    linkProjectPage: projectPages.work.komercniBanka,
+    linkProjectPage: PAGES_URL.work.komercniBanka,
   },
 ]
 
 export const projectsWorkFrontEnd: Project[] = [
   {
-    id: projectIDs.work.smartsupp.web,
+    id: PROJECT_ID.work.smartsupp.web,
     isFeatured: false,
     image: smartsuppWebThumb.src,
     imageShowcase: [smartsuppWeb1.src, smartsuppWeb2.src, smartsuppWeb3.src, smartsuppWeb4.src],
@@ -145,13 +145,13 @@ export const projectsWorkFrontEnd: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/' }],
     customers: '100 000+',
-    linkProjectPage: projectPages.work.smartsupp.web,
+    linkProjectPage: PAGES_URL.work.smartsupp.web,
   },
 ]
 
 export const projectsWorkWordPress: Project[] = [
   {
-    id: projectIDs.work.smartsupp.help,
+    id: PROJECT_ID.work.smartsupp.help,
     isFeatured: false,
     image: smartsuppHelpThumb.src,
     imageShowcase: [smartsuppHelp1.src, smartsuppHelp2.src, smartsuppHelp3.src],
@@ -171,13 +171,13 @@ export const projectsWorkWordPress: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://help.smartsupp.com/' }],
     customers: '100 000+',
-    linkProjectPage: projectPages.work.smartsupp.help,
+    linkProjectPage: PAGES_URL.work.smartsupp.help,
   },
 ]
 
 export const projectsWorkQA: Project[] = [
   {
-    id: projectIDs.work.groupon,
+    id: PROJECT_ID.work.groupon,
     isFeatured: false,
     image: grouponThumb.src,
     imageShowcase: [groupon1.src, groupon2.src],
@@ -199,13 +199,13 @@ export const projectsWorkQA: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.groupon.com/' }],
     customers: '17 000 000+',
-    linkProjectPage: projectPages.work.groupon,
+    linkProjectPage: PAGES_URL.work.groupon,
   },
 ]
 
 export const projectsWorkLocalization: Project[] = [
   {
-    id: projectIDs.work.moravia,
+    id: PROJECT_ID.work.moravia,
     isFeatured: true,
     image: moraviaThumb.src,
     imageShowcase: [moravia1.src, moravia2.src, moravia3.src],
@@ -225,6 +225,6 @@ export const projectsWorkLocalization: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.rws.com/' }],
     customers: '80 out of the world top 100 brands',
-    linkProjectPage: projectPages.work.moravia,
+    linkProjectPage: PAGES_URL.work.moravia,
   },
 ]

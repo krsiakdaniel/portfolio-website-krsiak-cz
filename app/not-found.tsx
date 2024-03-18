@@ -1,12 +1,12 @@
 import PageContainer from '@/components/layout/PageContainer'
 import img404 from '@/public/images/illustrations/404.webp'
-import { ID_ERROR_404 } from '@/utils/constants'
+import { ID } from '@/utils/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const NotFoundPage = () => {
   return (
-    <PageContainer id={ID_ERROR_404}>
+    <PageContainer id={ID.error.err404}>
       <div className="flex flex-col items-center text-center">
         <Image src={img404} alt="404" width={400} height={417} className="bt-5 mb-10" />
         <h1 className="mb-4 text-7xl font-extrabold uppercase tracking-tight text-violet-600 lg:text-9xl">404</h1>

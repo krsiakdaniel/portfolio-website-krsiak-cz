@@ -1,4 +1,4 @@
-import { ID_FOOTER } from '@/utils/constants'
+import { ID } from '@/utils/constants'
 import { expect, test } from '@playwright/test'
 
 const FOOTER_COPYRIGHT_SELECTOR = '[data-testid="footer-copyright"]'
@@ -12,7 +12,7 @@ test.describe('Footer', () => {
     await page.goto(HOME_PAGE_PATH)
 
     // Check if the footer is present on the page
-    const isFooterVisible = await page.isVisible(`#${ID_FOOTER}`)
+    const isFooterVisible = await page.isVisible(`#${ID.footer}`)
     expect(isFooterVisible).toBe(true)
 
     // Check if the copyright year is correct

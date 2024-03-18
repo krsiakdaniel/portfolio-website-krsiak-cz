@@ -1,34 +1,35 @@
-import { MENU_DESKTOP_ID, TEXTS, URLS } from '@/utils/constants'
+import { TEXT } from '@/localization/texts_en'
+import { ID, PAGES_URL } from '@/utils/constants'
 import Link from 'next/link'
 
 const MenuDesktop = () => {
   return (
-    <ul className="hidden gap-8 lg:flex" id={MENU_DESKTOP_ID} data-testid={MENU_DESKTOP_ID}>
+    <ul className="hidden gap-8 lg:flex" id={ID.menu.desktop} data-testid={ID.menu.desktop}>
       <li>
         <Link
-          href={URLS.aboutMe}
+          href={PAGES_URL.aboutMe}
           className="text-body-md cursor-pointer font-bold text-neutral-700 hover:text-violet-600"
           data-testid="desktop-about-me-link"
         >
-          {TEXTS.aboutMe}
+          {TEXT.aboutMe}
         </Link>
       </li>
       <li>
         <Link
-          href={URLS.workExperience}
+          href={PAGES_URL.work.main}
           className="text-body-md cursor-pointer font-bold text-neutral-700 hover:text-violet-600"
           data-testid="desktop-work-experience-link"
         >
-          {TEXTS.workExperience}
+          {TEXT.workExperience}
         </Link>
       </li>
       <li>
         <Link
-          href={URLS.personalProjects}
+          href={PAGES_URL.personal.main}
           className="text-body-md cursor-pointer font-bold text-neutral-700 hover:text-violet-600"
           data-testid="desktop-personal-projects-link"
         >
-          {TEXTS.personalProjects}
+          {TEXT.personalProjects}
         </Link>
       </li>
     </ul>

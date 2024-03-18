@@ -26,11 +26,11 @@ import eshop2 from '@/public/images/projects-personal/eshop/eshop-2-light.png'
 import eshop3 from '@/public/images/projects-personal/eshop/eshop-3-light.png'
 import eshop4 from '@/public/images/projects-personal/eshop/eshop-4-light.png'
 import eshopThumb from '@/public/images/projects-personal/eshop/eshop-thumb-light-600.webp'
-import { projectIDs, projectPages } from '@/utils/constants'
+import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
 
 export const projectsPersonalNext: Project[] = [
   {
-    id: projectIDs.personal.krsiak,
+    id: PROJECT_ID.personal.krsiak,
     isFeatured: true,
     image: krsiakThumb.src,
     imageShowcase: [krsiak1.src, krsiak2.src, krsiak3.src, krsiak4.src, krsiak5.src],
@@ -50,13 +50,13 @@ export const projectsPersonalNext: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://krsiak.cz/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
-    linkProjectPage: projectPages.personal.krsiak,
+    linkProjectPage: PAGES_URL.personal.krsiak,
   },
 ]
 
 export const projectsPersonalReact: Project[] = [
   {
-    id: projectIDs.personal.cryptoMania,
+    id: PROJECT_ID.personal.cryptoMania,
     isFeatured: false,
     image: cryptomaniaThumb.src,
     imageShowcase: [
@@ -83,13 +83,13 @@ export const projectsPersonalReact: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://cryptomania-currency-prices.netlify.app/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
-    linkProjectPage: projectPages.personal.cryptoMania,
+    linkProjectPage: PAGES_URL.personal.cryptoMania,
   },
 ]
 
 export const projectsPersonalVue: Project[] = [
   {
-    id: projectIDs.personal.eshop,
+    id: PROJECT_ID.personal.eshop,
     isFeatured: false,
     image: eshopThumb.src,
     imageShowcase: [eshop1.src, eshop2.src, eshop3.src, eshop4.src],
@@ -108,6 +108,6 @@ export const projectsPersonalVue: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://ecommerce-vue-nuxt.onrender.com/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/ecommerce-website-vuejs-nuxtjs-vuetify',
-    linkProjectPage: projectPages.personal.eshop,
+    linkProjectPage: PAGES_URL.personal.eshop,
   },
 ]

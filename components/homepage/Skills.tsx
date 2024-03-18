@@ -1,6 +1,6 @@
 import DividerWithText from '@/components/shared/DividerWithText'
 import { iconsSkills1, iconsSkills2, iconsSkills3, iconsSkills4 } from '@/data/skills/skills-main'
-import { ID_SKILLS } from '@/utils/constants'
+import { ID } from '@/utils/constants'
 import Image from 'next/image'
 
 interface Icon {
@@ -23,7 +23,7 @@ const SkillsIconGroup = ({ icons, className = '' }: SkillsIconGroupProps) => (
 
 const Skills = () => {
   return (
-    <div id={ID_SKILLS} className="mt-20">
+    <div id={ID.skills} className="mt-20">
       <DividerWithText text="Skills" />
       <div className="mt-5 flex flex-col justify-center space-y-2 md:flex-row md:space-x-2 md:space-y-0">
         <SkillsIconGroup icons={iconsSkills1} />

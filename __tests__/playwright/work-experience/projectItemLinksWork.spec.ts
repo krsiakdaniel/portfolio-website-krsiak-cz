@@ -1,5 +1,5 @@
 import { testProjectLink } from '@/__tests__/playwright/utils/testProjectLink'
-import { projectIDs, projectPages } from '@/utils/constants'
+import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
 import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
 
 let browser: Browser
@@ -26,22 +26,22 @@ test.afterEach(async () => {
 
 test.describe('Projects Work - Page links', () => {
   test('Project - Smartsupp Dashboard', async () => {
-    await testProjectLink(page, projectPages.work.smartsupp.dashboard, projectIDs.work.smartsupp.dashboard)
+    await testProjectLink(page, PAGES_URL.work.smartsupp.dashboard, PROJECT_ID.work.smartsupp.dashboard)
   })
 
   test('Project - Komercni banka', async () => {
-    await testProjectLink(page, projectPages.work.komercniBanka, projectIDs.work.komercniBanka)
+    await testProjectLink(page, PAGES_URL.work.komercniBanka, PROJECT_ID.work.komercniBanka)
   })
 
   test('Project - Smartsupp Web', async () => {
-    await testProjectLink(page, projectPages.work.smartsupp.web, projectIDs.work.smartsupp.web)
+    await testProjectLink(page, PAGES_URL.work.smartsupp.web, PROJECT_ID.work.smartsupp.web)
   })
 
   test('Project - Smartsupp Help', async () => {
-    await testProjectLink(page, projectPages.work.smartsupp.help, projectIDs.work.smartsupp.help)
+    await testProjectLink(page, PAGES_URL.work.smartsupp.help, PROJECT_ID.work.smartsupp.help)
   })
 
   test('Project - Moravia', async () => {
-    await testProjectLink(page, projectPages.work.moravia, projectIDs.work.moravia)
+    await testProjectLink(page, PAGES_URL.work.moravia, PROJECT_ID.work.moravia)
   })
 })

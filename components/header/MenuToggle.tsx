@@ -1,6 +1,6 @@
 'use client'
 
-import { MENU_TOGGLE_ID } from '@/utils/constants'
+import { ID } from '@/utils/constants'
 
 type MenuToggleProps = {
   isOpen: boolean
@@ -11,8 +11,8 @@ const MenuToggle = ({ isOpen, handleMenuToggle }: MenuToggleProps) => {
   return (
     <button
       onClick={handleMenuToggle}
-      id={MENU_TOGGLE_ID}
-      data-testid={MENU_TOGGLE_ID}
+      id={ID.menu.toggle}
+      data-testid={ID.menu.toggle}
       aria-label="Toggle Menu"
       className="lg:hidden"
     >

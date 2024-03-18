@@ -2,7 +2,7 @@ import SkillsCard from '@/components/shared/SkillsCard'
 import js from '@/public/icons/svg/skills/js.svg'
 import react from '@/public/icons/svg/skills/react.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
-import { ID_SKILLS_MAIN } from '@/utils/constants'
+import { ID } from '@/utils/constants'
 import { getYearsExperience } from '@/utils/getYearsExperience'
 
 const SkillsSection1 = () => {
@@ -46,7 +46,7 @@ const SkillsSection2 = () => {
 
 const SkillsMain = () => {
   return (
-    <div id={ID_SKILLS_MAIN} className="mt-20">
+    <div id={ID.skillsMain} className="mt-20">
       <div className="mb-20 flex flex-col rounded-lg bg-green-100 px-10 py-10 lg:flex-row">
         <div className="mb-10 flex flex-col justify-center pt-10 text-center lg:mb-0 lg:w-1/2 lg:pl-5 lg:pr-10 lg:pt-0 lg:text-left">
           <h2 className="text-5xl font-bold uppercase">What I&nbsp;do</h2>

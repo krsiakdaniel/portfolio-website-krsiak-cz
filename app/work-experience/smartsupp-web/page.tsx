@@ -1,7 +1,7 @@
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { projectsWorkFrontEnd } from '@/data/projects/work/projectsOverview'
 import { sections } from '@/data/projects/work/smartsuppWeb'
-import { ID_SECTION_FRONT_END, projectPages } from '@/utils/constants'
+import { ID, PAGES_URL } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 
 const breadCrumbs: BreadCrumbsType = {
@@ -15,9 +15,9 @@ const ProjectWorkSmartsuppWeb = () => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={breadCrumbs}
-      pageID={projectPages.work.smartsupp.web}
+      pageID={PAGES_URL.work.smartsupp.web}
       goBackLink="work"
-      sectionID={ID_SECTION_FRONT_END}
+      sectionID={ID.section.frontEnd}
       projectData={projectsWorkFrontEnd[0]}
       sections={sections}
     />

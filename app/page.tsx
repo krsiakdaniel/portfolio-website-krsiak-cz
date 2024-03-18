@@ -3,11 +3,11 @@ import Hero from '@/components/homepage/Hero'
 import Skills from '@/components/homepage/Skills'
 import SkillsMain from '@/components/homepage/SkillsMain'
 import PageContainer from '@/components/layout/PageContainer'
-import { ID_HOMEPAGE } from '@/utils/constants'
+import { ID } from '@/utils/constants'
 
 const Page = () => {
   return (
-    <PageContainer id={ID_HOMEPAGE}>
+    <PageContainer id={ID.homepage}>
       <Hero />
       <Skills />
       <SkillsMain />

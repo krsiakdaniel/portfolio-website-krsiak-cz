@@ -1,11 +1,11 @@
 import PageContainer from '@/components/layout/PageContainer'
-import { ID_FOOTER } from '@/utils/constants'
+import { ID } from '@/utils/constants'
 import { getCurrentYear } from '@/utils/getCurrentYear'
 import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <PageContainer id={ID_FOOTER}>
+    <PageContainer id={ID.footer}>
       <footer className="border-t border-dashed bg-white">
         <div className="text-neutral-60 mx-auto flex w-full flex-col items-center py-4 md:flex-row md:gap-2">
           <span>😼 😺</span>

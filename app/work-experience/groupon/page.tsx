@@ -1,7 +1,7 @@
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { sections } from '@/data/projects/work/groupon'
 import { projectsWorkQA } from '@/data/projects/work/projectsOverview'
-import { ID_SECTION_QA, projectPages } from '@/utils/constants'
+import { ID, PAGES_URL } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 
 const breadCrumbs: BreadCrumbsType = {
@@ -15,9 +15,9 @@ const ProjectWorkGroupon = () => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={breadCrumbs}
-      pageID={projectPages.work.groupon}
+      pageID={PAGES_URL.work.groupon}
       goBackLink="work"
-      sectionID={ID_SECTION_QA}
+      sectionID={ID.section.qa}
       projectData={projectsWorkQA[0]}
       sections={sections}
     />

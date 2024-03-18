@@ -1,7 +1,7 @@
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { sections } from '@/data/projects/work/moravia'
 import { projectsWorkLocalization } from '@/data/projects/work/projectsOverview'
-import { ID_SECTION_LOCALIZATION, projectPages } from '@/utils/constants'
+import { ID, PAGES_URL } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 
 const breadCrumbs: BreadCrumbsType = {
@@ -15,9 +15,9 @@ const ProjectWorkMoravia = () => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={breadCrumbs}
-      pageID={projectPages.work.moravia}
+      pageID={PAGES_URL.work.moravia}
       goBackLink="work"
-      sectionID={ID_SECTION_LOCALIZATION}
+      sectionID={ID.section.localization}
       projectData={projectsWorkLocalization[0]}
       sections={sections}
     />

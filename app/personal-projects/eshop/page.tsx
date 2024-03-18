@@ -1,7 +1,7 @@
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
 import { sections } from '@/data/projects/personal/eshop'
 import { projectsPersonalVue } from '@/data/projects/personal/projectsOverview'
-import { ID_SECTION_VUE, projectPages } from '@/utils/constants'
+import { ID, PAGES_URL } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 
 const breadCrumbs: BreadCrumbsType = {
@@ -18,11 +18,11 @@ const ProjectPersonalEshop = () => {
     <>
       <ProjectPageLayout
         breadCrumbs={breadCrumbs}
-        pageID={projectPages.personal.eshop}
+        pageID={PAGES_URL.personal.eshop}
         title={title}
         role={role}
         goBackLink="personal"
-        sectionID={ID_SECTION_VUE}
+        sectionID={ID.section.vue}
         description={description}
         mySkills={mySkills}
         projectLinks={projectLinks}

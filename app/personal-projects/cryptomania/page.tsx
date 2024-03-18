@@ -1,7 +1,7 @@
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
 import { sections } from '@/data/projects/personal/cryptoMania'
 import { projectsPersonalReact } from '@/data/projects/personal/projectsOverview'
-import { ID_SECTION_REACT, projectPages } from '@/utils/constants'
+import { ID, PAGES_URL } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 
 const breadCrumbs: BreadCrumbsType = {
@@ -18,11 +18,11 @@ const ProjectPersonalCryptomania = () => {
     <>
       <ProjectPageLayout
         breadCrumbs={breadCrumbs}
-        pageID={projectPages.personal.cryptoMania}
+        pageID={PAGES_URL.personal.cryptoMania}
         title={title}
         role={role}
         goBackLink="personal"
-        sectionID={ID_SECTION_REACT}
+        sectionID={ID.section.react}
         description={description}
         mySkills={mySkills}
         projectLinks={projectLinks}
