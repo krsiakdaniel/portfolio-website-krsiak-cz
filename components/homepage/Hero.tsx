@@ -1,3 +1,5 @@
+'use client'
+
 import {
   EMAIL_HREF,
   EMAIL_TEXT,
@@ -8,6 +10,7 @@ import {
   PHONE_HREF,
   PHONE_TEXT,
 } from '@/utils/constants'
+import { TypeAnimation } from 'react-type-animation'
 
 const Hero = () => {
   return (
@@ -16,7 +19,18 @@ const Hero = () => {
         <h1 data-testid="hero-heading" className="text-center text-5xl font-bold sm:text-7xl">
           Daniel Krsiak
           <br />
-          <span className="text-violet-600">React Developer</span>
+          <TypeAnimation
+            sequence={['React Developer', 2000, 'Front End', 1500, 'QA Automation', 1000]}
+            wrapper="span"
+            preRenderFirstString={true}
+            cursor={true}
+            repeat={Infinity}
+            style={{
+              display: 'inline-block',
+              color: '#7c3aed',
+              marginTop: '8px',
+            }}
+          />
         </h1>
 
         <p data-testid="hero-paragraph-1" className="mb-3 mt-4 text-center text-lg font-semibold text-neutral-600">
