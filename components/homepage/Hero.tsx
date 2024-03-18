@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <div id={ID_HERO}>
       <div className="flex flex-col items-center justify-center">
-        <h1 data-testid="hero-heading" className="text-center text-5xl font-bold sm:text-7xl">
+        <h1 data-testid="hero-heading" className="text-center text-5xl font-bold sm:text-6xl lg:text-7xl">
           Daniel Krsiak
           <br />
           <TypeAnimation
@@ -25,11 +25,7 @@ const Hero = () => {
             preRenderFirstString={true}
             cursor={true}
             repeat={Infinity}
-            style={{
-              display: 'inline-block',
-              color: '#7c3aed',
-              marginTop: '8px',
-            }}
+            className="mt-2 inline-block min-h-[96px] text-violet-600 sm:min-h-[60px] lg:min-h-[72px]"
           />
         </h1>
 
@@ -44,7 +40,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="mt-8 flex flex-col items-center justify-center sm:flex-row">
+      <div className="mt-10 flex flex-col items-center justify-center sm:flex-row">
         <a
           data-testid="hero-link-linkedin"
           href={LINK_LINKEDIN}
