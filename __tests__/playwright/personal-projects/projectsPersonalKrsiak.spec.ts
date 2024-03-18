@@ -23,19 +23,23 @@ test.afterEach(async () => {
 })
 
 test.describe('Project - Krsiak', () => {
-  test('Links', async () => {
-    await page.goto('/personal-projects/krsiak')
+  test('Links', async ({ page }) => {
+    await test.step('Go to page', async () => {
+      await page.goto('/personal-projects/krsiak')
+    })
 
-    const link = page.getByRole('link', { name: 'Website →' })
-    const href = await link.getAttribute('href')
+    await test.step('Check Website link', async () => {
+      const link = page.getByRole('link', { name: 'Website →' })
+      const href = await link.getAttribute('href')
+      const expectedUrl = 'https://krsiak.cz/'
+      expect(href).toBe(expectedUrl)
+    })
 
-    const expectedUrl = 'https://krsiak.cz/'
-    expect(href).toBe(expectedUrl)
-
-    const linkGitHub = page.getByRole('link', { name: 'GitHub repository →' })
-    const hrefGitHub = await linkGitHub.getAttribute('href')
-
-    const expectedUrlGitHub = 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz'
-    expect(hrefGitHub).toBe(expectedUrlGitHub)
+    await test.step('Check GitHub link', async () => {
+      const linkGitHub = page.getByRole('link', { name: 'GitHub repository →' })
+      const hrefGitHub = await linkGitHub.getAttribute('href')
+      const expectedUrlGitHub = 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz'
+      expect(hrefGitHub).toBe(expectedUrlGitHub)
+    })
   })
 })

@@ -23,19 +23,23 @@ test.afterEach(async () => {
 })
 
 test.describe('Project - Cryptomania', () => {
-  test('Links', async () => {
-    await page.goto('/personal-projects/cryptomania')
+  test('Links', async ({ page }) => {
+    await test.step('Go to page', async () => {
+      await page.goto('/personal-projects/cryptomania')
+    })
 
-    const link = page.getByRole('link', { name: 'Website →' })
-    const href = await link.getAttribute('href')
+    await test.step('Check Website link', async () => {
+      const link = page.getByRole('link', { name: 'Website →' })
+      const href = await link.getAttribute('href')
+      const expectedUrl = 'https://cryptomania-currency-prices.netlify.app/'
+      expect(href).toBe(expectedUrl)
+    })
 
-    const expectedUrl = 'https://cryptomania-currency-prices.netlify.app/'
-    expect(href).toBe(expectedUrl)
-
-    const linkGitHub = page.getByRole('link', { name: 'GitHub repository →' })
-    const hrefGitHub = await linkGitHub.getAttribute('href')
-
-    const expectedUrlGitHub = 'https://github.com/krsiakdaniel/cryptocurrency-prices'
-    expect(hrefGitHub).toBe(expectedUrlGitHub)
+    await test.step('Check GitHub link', async () => {
+      const linkGitHub = page.getByRole('link', { name: 'GitHub repository →' })
+      const hrefGitHub = await linkGitHub.getAttribute('href')
+      const expectedUrlGitHub = 'https://github.com/krsiakdaniel/cryptocurrency-prices'
+      expect(hrefGitHub).toBe(expectedUrlGitHub)
+    })
   })
 })

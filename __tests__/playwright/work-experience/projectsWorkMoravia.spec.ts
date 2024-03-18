@@ -23,13 +23,16 @@ test.afterEach(async () => {
 })
 
 test.describe('Project - RWS (Moravia)', () => {
-  test('Link', async () => {
-    await page.goto('/work-experience/moravia')
+  test('Link', async ({ page }) => {
+    await test.step('Go to page', async () => {
+      await page.goto('/work-experience/moravia')
+    })
 
-    const link = page.getByRole('link', { name: 'Website →' })
-    const href = await link.getAttribute('href')
-
-    const expectedUrl = 'https://www.rws.com/'
-    expect(href).toBe(expectedUrl)
+    await test.step('Check Website link', async () => {
+      const link = page.getByRole('link', { name: 'Website →' })
+      const href = await link.getAttribute('href')
+      const expectedUrl = 'https://www.rws.com/'
+      expect(href).toBe(expectedUrl)
+    })
   })
 })

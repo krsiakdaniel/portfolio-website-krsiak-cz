@@ -8,28 +8,34 @@ const HOME_PAGE_PATH = '/'
 
 test.describe('Footer', () => {
   test('Copyright + link', async ({ page }) => {
-    // Go to home page
-    await page.goto(HOME_PAGE_PATH)
+    await test.step('Go to home page', async () => {
+      await page.goto(HOME_PAGE_PATH)
+    })
 
-    // Check if the footer is present on the page
-    const isFooterVisible = await page.isVisible(`#${ID.footer}`)
-    expect(isFooterVisible).toBe(true)
+    await test.step('Check if the footer is present on the page', async () => {
+      const isFooterVisible = await page.isVisible(`#${ID.footer}`)
+      expect(isFooterVisible).toBe(true)
+    })
 
-    // Check if the copyright year is correct
-    const currentYear = new Date().getFullYear().toString()
-    const copyright = await page.textContent(FOOTER_COPYRIGHT_SELECTOR)
-    expect(copyright).toContain(currentYear)
+    await test.step('Check if the copyright year is correct', async () => {
+      const currentYear = new Date().getFullYear().toString()
+      const copyright = await page.textContent(FOOTER_COPYRIGHT_SELECTOR)
+      expect(copyright).toContain(currentYear)
+    })
 
-    // Check if the link text is correct
-    const linkText = await page.textContent(FOOTER_LINK_SELECTOR)
-    expect(linkText).toBe('krsiak.cz')
+    await test.step('Check if the link text is correct', async () => {
+      const linkText = await page.textContent(FOOTER_LINK_SELECTOR)
+      expect(linkText).toBe('krsiak.cz')
+    })
 
-    // Check if link is correct
-    const linkUrl = await page.getAttribute(FOOTER_LINK_SELECTOR, 'href')
-    expect(linkUrl).toBe(HOME_PAGE_PATH)
+    await test.step('Check if link is correct', async () => {
+      const linkUrl = await page.getAttribute(FOOTER_LINK_SELECTOR, 'href')
+      expect(linkUrl).toBe(HOME_PAGE_PATH)
+    })
 
-    // Check if the link redirects to the home page when clicked
-    await page.click(FOOTER_LINK_SELECTOR)
-    expect(page.url()).toBe(HOME_PAGE_URL)
+    await test.step('Check if the link redirects to the home page when clicked', async () => {
+      await page.click(FOOTER_LINK_SELECTOR)
+      expect(page.url()).toBe(HOME_PAGE_URL)
+    })
   })
 })
