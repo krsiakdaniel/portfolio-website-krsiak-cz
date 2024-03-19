@@ -11,7 +11,11 @@ const Page = () => {
       <Hero />
       <Skills />
       <SkillsMain />
-      <NextPageNavigation pageLinkNext="/about-me" pageNameNext="About Me" />
+      <NextPageNavigation
+        pageLinkNext="/about-me"
+        pageNameNext="About Me"
+        dataTestIDNext="page-navigation-next-about-me"
+      />
     </PageContainer>
   )
 }

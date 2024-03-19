@@ -23,7 +23,11 @@ const ProjectsPersonal = () => {
         <ProjectSection sectionId={ID.section.vue} sectionText="Vue" projectData={projectsPersonalVue} />
       </ProjectsLayout>
       <div className="mt-20">
-        <NextPageNavigation pageLinkPrevious="/work-experience" pageNamePrevious="Work Experience" />
+        <NextPageNavigation
+          pageLinkPrevious="/work-experience"
+          pageNamePrevious="Work Experience"
+          dataTestIDPrevious="page-navigation-previous-work-experience"
+        />
       </div>
     </PageContainer>
   )

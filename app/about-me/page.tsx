@@ -22,6 +22,8 @@ const About = () => {
         pageNamePrevious="Home"
         pageLinkNext="/work-experience"
         pageNameNext="Work Experience"
+        dataTestIDPrevious="page-navigation-previous-homepage"
+        dataTestIDNext="page-navigation-next-work-experience"
       />
     </PageContainer>
   )

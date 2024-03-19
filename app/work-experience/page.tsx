@@ -78,6 +78,8 @@ const ProjectsWork = () => {
           pageNamePrevious="About Me"
           pageLinkNext="/personal-projects"
           pageNameNext="Personal Projects"
+          dataTestIDPrevious="page-navigation-previous-about-me"
+          dataTestIDNext="page-navigation-next-personal-projects"
         />
       </div>
     </PageContainer>

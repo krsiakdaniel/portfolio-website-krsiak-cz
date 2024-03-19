@@ -3,6 +3,8 @@ type Props = {
   pageNamePrevious?: string
   pageLinkNext?: string
   pageNameNext?: string
+  dataTestIDPrevious?: string
+  dataTestIDNext?: string
 }
 
 type IconArrowProps = {
@@ -26,8 +28,14 @@ const IconArrow = ({ type = 'right' }: IconArrowProps) => {
   )
 }
 
-// TODO: write E2E tests for NextPageNavigation
-const NextPageNavigation = ({ pageLinkPrevious, pageNamePrevious, pageLinkNext, pageNameNext }: Props) => {
+const NextPageNavigation = ({
+  pageLinkPrevious,
+  pageNamePrevious,
+  pageLinkNext,
+  pageNameNext,
+  dataTestIDPrevious,
+  dataTestIDNext,
+}: Props) => {
   const hasPrevious = pageLinkPrevious && pageNamePrevious
   const hasNext = pageLinkNext && pageNameNext
 
@@ -38,6 +46,7 @@ const NextPageNavigation = ({ pageLinkPrevious, pageNamePrevious, pageLinkNext, 
           <a
             href={pageLinkPrevious}
             className={`flex w-full items-center justify-start rounded-lg border-violet-300 bg-violet-50 p-4 font-bold text-violet-600 hover:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-300 group-hover:text-violet-800 ${hasPrevious && hasNext ? 'lg:w-1/2' : 'lg:w-full'}`}
+            data-testid={`${dataTestIDPrevious}`}
           >
             <IconArrow type="left" />
             {pageNamePrevious}
@@ -47,6 +56,7 @@ const NextPageNavigation = ({ pageLinkPrevious, pageNamePrevious, pageLinkNext, 
           <a
             href={pageLinkNext}
             className={`flex w-full items-center justify-end rounded-lg border-violet-300 bg-violet-50 p-4 font-bold text-violet-600 hover:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-300 group-hover:text-violet-800 ${hasPrevious && hasNext ? 'lg:w-1/2' : 'lg:w-full'}`}
+            data-testid={`${dataTestIDNext}`}
           >
             {pageNameNext}
             <IconArrow />
