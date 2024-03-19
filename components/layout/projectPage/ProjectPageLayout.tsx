@@ -5,7 +5,7 @@ import HeaderSection from '@/components/layout/projectPage/HeaderSection'
 import Section from '@/components/layout/projectPage/Section'
 import ProjectInformation from '@/components/projects/ProjectInformation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import { HeaderSectionProps, ProjectInformationProps, SectionItem, BreadCrumbsType } from '@/utils/types';
+import { BreadCrumbsType, HeaderSectionProps, ProjectInformationProps, SectionItem } from '@/utils/types'
 import Image from 'next/image'
 
 type Props = {
