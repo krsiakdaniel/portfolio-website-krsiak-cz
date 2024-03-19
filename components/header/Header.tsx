@@ -17,7 +17,13 @@ const Header = () => {
   const pageScrollProgress = () => {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
-    const scrolled = (winScroll / height) * 100
+    let scrolled = (winScroll / height) * 100
+
+    // Check if the document height is the same as the viewport height
+    if (document.documentElement.scrollHeight === document.documentElement.clientHeight) {
+      scrolled = 0
+    }
+
     setScroll(scrolled)
   }
 
@@ -25,6 +31,7 @@ const Header = () => {
     window.addEventListener('scroll', pageScrollProgress)
     return () => {
       window.removeEventListener('scroll', pageScrollProgress)
+      setScroll(0) // reset scroll progress
     }
   }, [])
 
