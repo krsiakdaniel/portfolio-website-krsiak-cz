@@ -1,11 +1,10 @@
 import { IconCaretRight, IconHome } from '@/components/icons'
 import { BreadCrumbsType } from '@/utils/types'
 
-// TODO: write tests for all pages breadcrumbs and links
 const BreadCrumbs = ({ linkLevel1, textLevel1, linkLevel2, textLevel2 }: BreadCrumbsType) => {
   return (
     <>
-      <nav className="mb-10 flex text-neutral-700" aria-label="Breadcrumb">
+      <nav className="mb-10 flex text-neutral-700" aria-label="Breadcrumbs" data-testid="breadcrumbs">
         <ol className="inline-flex flex-row flex-wrap items-start space-x-1 md:space-x-2">
           <li className="inline-flex items-center">
             <a href="/" className="inline-flex items-center text-sm font-medium text-neutral-700 hover:text-violet-600">
