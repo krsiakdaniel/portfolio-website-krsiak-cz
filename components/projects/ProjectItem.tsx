@@ -1,3 +1,4 @@
+import { IconArrow } from '@/components/icons'
 import { getFeaturedBorderColor } from '@/utils/getFeaturedBorderColor'
 import { Icon } from '@/utils/types'
 import Image from 'next/image'
@@ -85,13 +86,15 @@ const ProjectItem = ({
               <span className="font-bold">{customers}</span> customers.
             </p>
           )}
-          <a
-            data-testid={dataTestId}
-            href={linkProjectPage}
-            className="inline-flex items-center rounded-lg bg-purple-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-800 focus:ring-4 focus:ring-purple-300"
-          >
-            {linkText} →
-          </a>
+          <p>
+            <a
+              data-testid={dataTestId}
+              href={linkProjectPage}
+              className="flex w-[162px] items-center space-x-2 rounded-lg bg-purple-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-800 focus:ring-4 focus:ring-purple-300"
+            >
+              <span>{linkText}</span> <IconArrow type="right" />
+            </a>
+          </p>
         </div>
       </div>
     </div>
