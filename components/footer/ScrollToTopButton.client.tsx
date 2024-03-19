@@ -12,9 +12,17 @@ export const scrollToTop = () => {
 
 const ScrollToTopButton = () => {
   return (
-    <div className="mt-4 cursor-pointer hover:text-violet-600 md:mt-0" data-testid="scroll-to-top">
-      <div onClick={scrollToTop}>Scroll to Top ⬆️</div>
-    </div>
+    <>
+      <div className="flex space-x-2">
+        <div
+          className="mt-4 flex cursor-pointer text-violet-600 underline hover:text-violet-600 hover:no-underline md:mt-0"
+          data-testid="scroll-to-top"
+        >
+          <div onClick={scrollToTop}>Scroll to Top</div>
+        </div>
+        <span className="hidden md:inline">⬆️</span>
+      </div>
+    </>
   )
 }
 
