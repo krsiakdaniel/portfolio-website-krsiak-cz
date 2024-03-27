@@ -1,4 +1,4 @@
-'use client'
+'use client' // Error components must be Client Components
 
 import { ErrorPageLayout } from '@/components/layout/ErrorPageLayout'
 import { ID } from '@/utils/constants'

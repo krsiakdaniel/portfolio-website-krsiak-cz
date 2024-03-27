@@ -1,4 +1,4 @@
-'use client'
+'use client' // using onClick
 
 import { IconClose, IconHamburger } from '@/components/icons'
 import { ID } from '@/utils/constants'

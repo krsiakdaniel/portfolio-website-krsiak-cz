@@ -1,4 +1,4 @@
-import { scrollToTop } from '@/components/footer/ScrollToTopButton.client'
+import { scrollToTop } from '@/components/footer/ScrollToTopButton'
 
 describe('scrollToTop', () => {
   it('should call window.scrollTo with correct arguments', () => {

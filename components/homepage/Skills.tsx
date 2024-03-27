@@ -13,7 +13,7 @@ interface SkillsIconGroupProps {
   className?: string
 }
 
-// TODO: change layout similar, with photo on right and subheading and clean cards for all skills with descroption and years
+// TODO: change layout similar, with photo on right and subheading and clean cards for all skills with description and years
 const SkillsIconGroup = ({ icons, className = '' }: SkillsIconGroupProps) => (
   <div className={`flex justify-center space-x-2 ${className}`}>
     {icons.map((item) => (

@@ -1,4 +1,4 @@
-import ScrollToTopButton from '@/components/footer/ScrollToTopButton.client'
+import ScrollToTopButton from '@/components/footer/ScrollToTopButton'
 import PageContainer from '@/components/layout/PageContainer'
 import { ID } from '@/utils/constants'
 import { getCurrentYear } from '@/utils/getCurrentYear'
@@ -25,7 +25,11 @@ const FooterRight = () => {
   return (
     <div className="flex space-x-4">
       <div className="mt-4 flex space-x-2 md:mt-0">
-        <Link href="/status-page" className="text-violet-600 underline hover:no-underline" data-testid="footer-link-status-page">
+        <Link
+          href="/status-page"
+          className="text-violet-600 underline hover:no-underline"
+          data-testid="footer-link-status-page"
+        >
           Status page
         </Link>
         <span className="hidden md:inline">🟢</span>

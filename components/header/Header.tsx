@@ -1,4 +1,4 @@
-'use client'
+'use client' // using hooks
 
 import Logo from '@/components/header/Logo'
 import MenuDesktop from '@/components/header/MenuDesktop'

@@ -1,7 +1,4 @@
-// If you need to add an onClick event handler to a component, you should make sure that component is a Client Component.
-// You can convert a Server Component to a Client Component by renaming the file to have a .client.tsx extension instead of .tsx.
-
-'use client'
+'use client' // If you need to add an onClick event handler to a component, you should make sure that component is a Client Component.
 
 export const scrollToTop = () => {
   window.scrollTo({

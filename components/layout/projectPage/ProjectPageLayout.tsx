@@ -1,5 +1,3 @@
-'use client'
-
 import PageContainer from '@/components/layout/PageContainer'
 import HeaderSection from '@/components/layout/projectPage/HeaderSection'
 import Section from '@/components/layout/projectPage/Section'

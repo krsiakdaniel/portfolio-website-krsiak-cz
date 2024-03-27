@@ -1,8 +1,5 @@
-// TODO: refactor use client into smaller components so it can be more SERVER SIDE RENDERING
-'use client'
-
+import TypeAnimationText from '@/components/homepage/TypeAnimationText'
 import { CONTACT, EXTERNAL_URL, ID } from '@/utils/constants'
-import { TypeAnimation } from 'react-type-animation'
 
 const Hero = () => {
   return (
@@ -11,14 +8,7 @@ const Hero = () => {
         <h1 data-testid="hero-heading" className="text-center text-5xl font-bold sm:text-6xl lg:text-7xl">
           Daniel Krsiak
           <br />
-          <TypeAnimation
-            sequence={['React Developer', 2000, 'Front End', 1500, 'QA Automation', 1000]}
-            wrapper="span"
-            preRenderFirstString={true}
-            cursor={true}
-            repeat={Infinity}
-            className="mt-2 inline-block min-h-[96px] text-violet-600 sm:min-h-[60px] lg:min-h-[72px]"
-          />
+          <TypeAnimationText />
         </h1>
 
         <p data-testid="hero-paragraph-1" className="mb-3 mt-4 text-center text-lg font-semibold text-neutral-600">
