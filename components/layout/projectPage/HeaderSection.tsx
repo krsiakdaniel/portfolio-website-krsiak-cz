@@ -1,13 +1,13 @@
-import { IconArrow } from '@/components/icons';
-import Heading2 from '@/components/shared/Heading2';
-import { getGoBackLinkID } from '@/utils/getGoBackLink';
-import { HeaderSectionProps } from '@/utils/types';
-import Link from 'next/link';
+import { IconArrow } from '@/components/icons'
+import Heading2 from '@/components/shared/Heading2'
+import { getGoBackLinkID } from '@/utils/getGoBackLink'
+import { HeaderSectionProps } from '@/utils/types'
+import Link from 'next/link'
 
 const HeaderSection = ({ title, role, years, goBackLink, sectionID }: HeaderSectionProps) => {
   return (
     <div className="mb-16">
-      <h1 className="text-5xl font-bold mb-2 leading-none tracking-tight text-neutral-900 sm:text-7xl">{title}</h1>
+      <h1 className="mb-2 text-5xl font-bold leading-none tracking-tight text-neutral-900 sm:text-7xl">{title}</h1>
       <Heading2 textColor="text-violet-600">
         {role}
         {years && <small className="text-md text-neutral-500">{` · ${years}`}</small>}
