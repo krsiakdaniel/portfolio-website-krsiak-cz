@@ -1,4 +1,5 @@
 import { IconArrow } from '@/components/icons'
+import Heading2 from '@/components/shared/Heading2'
 import { getFeaturedBorderColor } from '@/utils/getFeaturedBorderColor'
 import { Icon } from '@/utils/types'
 import Image from 'next/image'
@@ -39,7 +40,7 @@ const ProjectItem = ({
           <div className="relative">
             {isFeatured && <p className="absolute -right-4 -top-5 z-10 text-4xl">⭐</p>}
 
-            {/* TODO: change to webp format */}
+            {/* TODO: change to webp or avif format */}
             <Image
               src={image}
               className={`
@@ -54,7 +55,7 @@ const ProjectItem = ({
         </div>
 
         <div className="mt-4 md:mt-0">
-          <h2 className="mb-2 text-4xl font-bold tracking-tight text-neutral-900">{title}</h2>
+          <Heading2 textColor="text-neutral-900">{title}</Heading2>
           <h3 className="mb-4 text-3xl font-bold">
             <span className="text-violet-600">{role}</span>
             <small className="text-neutral-500">
