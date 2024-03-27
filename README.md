@@ -45,19 +45,20 @@ Using the following technologies:
 
 The website contains these following sections and pages.
 
-**Sections:**
+**Pages:**
 
-- 👉 Introduction
+- 👉 Home - Introduction
+- 👉 About Me
+- 👉 Work Experience
+- 👉 Personal Projects
+
+**Work and Project pages:**
+
+- 👉 Information
 - 👉 Skills
-- 👉 About
-- 👉 Work projects
-- 👉 Personal projects
-
-**Project pages:**
-
-- 👉 Project information
-- 👉 Job description
-- 👉 Project screenshots
+- 👉 Description
+- 👉 Links
+- 👉 Screenshots
 
 ## 💻 Development
 

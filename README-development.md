@@ -12,16 +12,16 @@ Development environment for the project.
 
 ## 💻 Commands
 
-Install dependencies.
+Using [PNPM](https://pnpm.io/pnpm-cli) to istall dependencies.
 
 ```bash
-npm i
+pnpm i
 ```
 
 Runs the app in the development mode.
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -33,11 +33,11 @@ This project uses Prettier for code formatting.
 Check if the code is formatted correctly.
 
 ```bash
-npm run prettier:check
+pnpm run prettier:check
 ```
 
 Format the code via Prettier.
 
 ```bash
-npm run prettier:fix
+pnpm run prettier:fix
 ```

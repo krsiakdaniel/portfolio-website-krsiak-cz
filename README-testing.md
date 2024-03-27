@@ -23,7 +23,7 @@ Jest is JavaScript Testing Framework.
 Runs the unit tests.
 
 ```bash
-npm run test
+pnpm run test
 ```
 
 ### Test Coverage for Jest
@@ -34,7 +34,7 @@ Jest will generate a code coverage report.
 - It will also be saved to a `/coverage` directory in project root as HTML file.
 
 ```bash
-npm run test:coverage
+pnpm run test:coverage
 ```
 
 ## 🎭 Playwright
@@ -53,7 +53,7 @@ npx playwright test
 Runs the E2E tests using alias for `npx playwright test`
 
 ```bash
-npm run test:e2e
+pnpm run test:e2e
 ```
 
 ### Test Coverage for Playwright

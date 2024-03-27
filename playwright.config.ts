@@ -75,11 +75,11 @@ export default defineConfig({
   /**
    * RUN LOCAL SERVER
    * It runs server in the background so it can run the tests.
-   * This way tests will run even if you do not run server manually by "npm run dev".
+   * This way tests will run even if you do not run server manually by "pnpm run dev".
    */
   //
   webServer: {
-    command: 'npm run dev',
+    command: 'pnpm run dev',
     url: 'http://localhost:3000',
     reuseExistingServer: !process.env.CI,
   },
