@@ -1,3 +1,4 @@
+// TODO: refactor use client into smaller components so it can be more SERVER SIDE RENDERING
 'use client'
 
 import { CONTACT, EXTERNAL_URL, ID } from '@/utils/constants'

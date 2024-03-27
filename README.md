@@ -8,6 +8,7 @@ React Developer portfolio website 👨‍💻
   - [⚡ Project Website](#-project-website)
   - [🚦 Project Status](#-project-status)
   - [🛠️ Tech Stack](#️-tech-stack)
+    - [TODO](#todo)
   - [📝 Features](#-features)
   - [💻 Development](#-development)
   - [🐛 Testing](#-testing)
@@ -40,6 +41,14 @@ Using the following technologies:
 - [Playwright](https://playwright.dev/) - E2E testing
 - [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) - CI - Continuous Integration
 - [Netlify](https://www.netlify.com/) - CD - Continuous Deployment
+
+### TODO
+
+- [x] test Vercel for next.js
+- [x] move site to Vercel
+- [ ] transfer domain from Netlify -> [VERCEL domain](https://vercel.com/guides/transferring-domains-to-vercel)
+- [ ] use [vercel badge](https://github.com/datejer/vercel-badge) in readme
+- [ ] update badge on site
 
 ## 📝 Features
 
