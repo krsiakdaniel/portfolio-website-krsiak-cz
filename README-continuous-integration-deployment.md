@@ -79,8 +79,8 @@ The `run-tests-jest` job follows these steps:
 
 1. Checkout the repository using the `actions/checkout@v3` action.
 2. Setup Node.js environment using the `actions/setup-node@v3` action with Node.js version 18.
-3. It installs the dependencies of your project using `pnpm ci`. This command is similar to `pnpm install`, but it's designed to be used in automated environments such as this one.
-4. Run JEST tests using `pnpm test`.
+3. It installs the dependencies of your project using `npm ci`. This command is similar to `npm install`, but it's designed to be used in automated environments such as this one.
+4. Run JEST tests using `npm test`.
 5. Upload the test report as an artifact:
    - Using the `actions/upload-artifact@v3` action.
    - This step is always executed regardless of the success or failure of previous steps.
@@ -110,7 +110,7 @@ The `run-tests-playwright` job follows these steps:
 
 1. Checkout the repository using the `actions/checkout@v3` action.
 2. Setup Node.js environment using the `actions/setup-node@v3` action with Node.js version 18.
-3. It installs the dependencies of your project using `pnpm ci`. This command is similar to `pnpm install`, but it's designed to be used in automated environments such as this one.
+3. It installs the dependencies of your project using `npm ci`. This command is similar to `npm install`, but it's designed to be used in automated environments such as this one.
 4. Install Playwright browsers using `npx playwright install --with-deps`.
 5. Run Playwright tests using `npx playwright test`.
 6. Upload the test report as an artifact:

@@ -19,10 +19,10 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: pnpm ci
+        run: npm ci
 
       - name: Run JEST tests
-        run: pnpm test
+        run: npm test
 
       - name: Archive test results
         uses: actions/upload-artifact@v3
