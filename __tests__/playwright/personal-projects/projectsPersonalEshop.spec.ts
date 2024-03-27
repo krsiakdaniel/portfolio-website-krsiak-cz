@@ -31,7 +31,7 @@ test.describe('Project - Eshop', () => {
     await test.step('Check Website link', async () => {
       const link = page.getByRole('link', { name: 'Website →' })
       const href = await link.getAttribute('href')
-      const expectedUrl = 'https://ecommerce-vue-nuxt.onrender.com/'
+      const expectedUrl = 'https://ecommerce-website-vuejs-nuxtjs-vuetify.vercel.app/'
       expect(href).toBe(expectedUrl)
     })
 

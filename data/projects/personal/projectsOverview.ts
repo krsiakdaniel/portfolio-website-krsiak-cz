@@ -106,7 +106,7 @@ export const projectsPersonalVue: Project[] = [
       },
     ],
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website →', url: 'https://ecommerce-vue-nuxt.onrender.com/' }],
+    projectLinks: [{ urlText: 'Website →', url: 'https://ecommerce-website-vuejs-nuxtjs-vuetify.vercel.app/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/ecommerce-website-vuejs-nuxtjs-vuetify',
     linkProjectPage: PAGES_URL.personal.eshop,
   },
