@@ -31,7 +31,7 @@ test.describe('Project - Cryptomania', () => {
     await test.step('Check Website link', async () => {
       const link = page.getByRole('link', { name: 'Website →' })
       const href = await link.getAttribute('href')
-      const expectedUrl = 'https://cryptomania-currency-prices.netlify.app/'
+      const expectedUrl = 'https://cryptocurrency-prices-one.vercel.app/'
       expect(href).toBe(expectedUrl)
     })
 

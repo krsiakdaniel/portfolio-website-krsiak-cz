@@ -81,7 +81,7 @@ export const projectsPersonalReact: Project[] = [
       { description: 'Other', skills: ['Netlify'] },
     ],
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website →', url: 'https://cryptomania-currency-prices.netlify.app/' }],
+    projectLinks: [{ urlText: 'Website →', url: 'https://cryptocurrency-prices-one.vercel.app/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
     linkProjectPage: PAGES_URL.personal.cryptoMania,
   },
