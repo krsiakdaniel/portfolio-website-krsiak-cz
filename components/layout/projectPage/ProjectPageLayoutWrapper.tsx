@@ -8,6 +8,7 @@ type Props = {
   sectionID: string
   projectData: Project
   sections: SectionItem[]
+  nextPageNavigation: React.ReactNode
 }
 
 export const ProjectPageLayoutWrapper = ({
@@ -17,6 +18,7 @@ export const ProjectPageLayoutWrapper = ({
   sectionID,
   projectData,
   sections,
+  nextPageNavigation,
 }: Props) => {
   const { title, role, years, description, mySkills, customers, projectLinks, imageShowcase } = projectData
 
@@ -35,6 +37,7 @@ export const ProjectPageLayoutWrapper = ({
       projectLinks={projectLinks}
       sections={sections}
       imageShowcase={imageShowcase}
+      nextPageNavigation={nextPageNavigation}
     />
   )
 }

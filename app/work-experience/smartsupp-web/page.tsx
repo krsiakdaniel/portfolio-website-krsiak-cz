@@ -1,3 +1,4 @@
+import NextPageNavigation from '@/components/NextPageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { projectsWorkFrontEnd } from '@/data/projects/work/projectsOverview'
 import { sections } from '@/data/projects/work/smartsuppWeb'
@@ -38,6 +39,16 @@ const ProjectWorkSmartsuppWeb = () => {
       sectionID={ID.section.frontEnd}
       projectData={projectsWorkFrontEnd[0]}
       sections={sections}
+      nextPageNavigation={
+        <NextPageNavigation
+          pageLinkPrevious="/work-experience/komercni-banka"
+          pageNamePrevious="Komerční banka"
+          dataTestIDPrevious="page-navigation-previous-komercni-banka"
+          pageLinkNext="/work-experience/smartsupp-help"
+          pageNameNext="Smartsupp HELP"
+          dataTestIDNext="page-navigation-next-smartsupp-help"
+        />
+      }
     />
   )
 }

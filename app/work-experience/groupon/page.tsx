@@ -1,3 +1,4 @@
+import NextPageNavigation from '@/components/NextPageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { sections } from '@/data/projects/work/groupon'
 import { projectsWorkQA } from '@/data/projects/work/projectsOverview'
@@ -45,6 +46,16 @@ const ProjectWorkGroupon = () => {
       sectionID={ID.section.qa}
       projectData={projectsWorkQA[0]}
       sections={sections}
+      nextPageNavigation={
+        <NextPageNavigation
+          pageLinkPrevious="/work-experience/smartsupp-help"
+          pageNamePrevious="Smartsupp HELP"
+          dataTestIDPrevious="page-navigation-previous-smartsupp-help"
+          pageLinkNext="/work-experience/moravia"
+          pageNameNext="Moravia IT"
+          dataTestIDNext="page-navigation-next-moravia"
+        />
+      }
     />
   )
 }

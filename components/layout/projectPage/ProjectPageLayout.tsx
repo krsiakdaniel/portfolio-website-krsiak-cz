@@ -11,6 +11,7 @@ type Props = {
   pageID: string
   sections: SectionItem[]
   imageShowcase: string[]
+  nextPageNavigation: React.ReactNode
 } & HeaderSectionProps &
   ProjectInformationProps
 
@@ -29,6 +30,7 @@ const ProjectPageLayout = ({
   linkGitHub,
   sections,
   imageShowcase,
+  nextPageNavigation,
 }: Props) => {
   return (
     <PageContainer id={pageID}>
@@ -58,7 +60,7 @@ const ProjectPageLayout = ({
         <p className="mb-3 text-neutral-600">See project screenshots below.</p>
       </div>
 
-      <div data-testid="gallery">
+      <div data-testid="gallery" className="mb-20">
         {imageShowcase.map((image, index) => (
           <div data-testid={`gallery-image-${index}`} key={index}>
             <Image
@@ -73,6 +75,7 @@ const ProjectPageLayout = ({
           </div>
         ))}
       </div>
+      {nextPageNavigation}
     </PageContainer>
   )
 }

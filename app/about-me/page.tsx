@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   ],
 }
 
+// TODO: add E2E tests for inner pages navigation PREV / NEXT for all 'NextPageNavigation' components
 const About = () => {
   return (
     <PageContainer id={ID.about}>
@@ -45,9 +46,9 @@ const About = () => {
       <NextPageNavigation
         pageLinkPrevious="/"
         pageNamePrevious="Home"
+        dataTestIDPrevious="page-navigation-previous-homepage"
         pageLinkNext="/work-experience"
         pageNameNext="Work Experience"
-        dataTestIDPrevious="page-navigation-previous-homepage"
         dataTestIDNext="page-navigation-next-work-experience"
       />
     </PageContainer>

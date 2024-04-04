@@ -1,3 +1,4 @@
+import NextPageNavigation from '@/components/NextPageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { projectsWorkWordPress } from '@/data/projects/work/projectsOverview'
 import { sections } from '@/data/projects/work/smartsuppHelp'
@@ -35,6 +36,16 @@ const ProjectWorkSmartsuppHelp = () => {
       sectionID={ID.section.wordpress}
       projectData={projectsWorkWordPress[0]}
       sections={sections}
+      nextPageNavigation={
+        <NextPageNavigation
+          pageLinkPrevious="/work-experience/smartsupp-web"
+          pageNamePrevious="Smartsupp Web"
+          dataTestIDPrevious="page-navigation-previous-smartsupp-web"
+          pageLinkNext="/work-experience/groupon"
+          pageNameNext="Groupon"
+          dataTestIDNext="page-navigation-next-groupon"
+        />
+      }
     />
   )
 }
