@@ -1,5 +1,23 @@
 import PageContainer from '@/components/layout/PageContainer'
+import { Metadata } from 'next'
 import Image from 'next/image'
+
+export const metadata: Metadata = {
+  title: 'Status page | Daniel Krsiak - React Developer',
+  description:
+    'Explore status page showcasing project badges for Jest Tests, Playwright Tests, CodeQL, Code Quality, Dependabot, and Netlify.',
+  keywords: [
+    'Daniel Krsiak',
+    'Status page',
+    'Project badges',
+    'Jest Tests',
+    'Playwright Tests',
+    'CodeQL',
+    'Code Quality',
+    'Dependabot',
+    'Netlify',
+  ],
+}
 
 interface StatusBadgesItem {
   name: string

@@ -3,6 +3,14 @@ import { sections } from '@/data/projects/personal/eshop'
 import { projectsPersonalVue } from '@/data/projects/personal/projectsOverview'
 import { ID, PAGES_URL } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'E-Commerce Website | Daniel Krsiak - React Developer',
+  description:
+    'First time coding with Vue.js and Nuxt.js. Created a simple e-commerce website with Vuetify for styling. Explore products and shopping cart functionality.',
+  keywords: ['E-Commerce Website', 'Daniel Krsiak - React Developer', 'Vue.js', 'Nuxt.js', 'Vuetify', 'JavaScript'],
+}
 
 const breadCrumbs: BreadCrumbsType = {
   linkLevel1: '/personal-projects',

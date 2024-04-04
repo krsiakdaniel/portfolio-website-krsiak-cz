@@ -13,6 +13,32 @@ import {
   projectsWorkWordPress,
 } from '@/data/projects/work/projectsOverview'
 import { ID } from '@/utils/constants'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Work Experience | Daniel Krsiak - React Developer',
+  description:
+    'React Developer with experience development, redesign, localization, QA automation, testing. Proficient in team leadership and collaboration with UX designers.',
+  keywords: [
+    'Daniel Krsiak',
+    'Work Experience',
+    'React Developer',
+    'Front End Developer',
+    'QA Automation',
+    'Team Leader',
+    'Localization Manager',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Cypress',
+    'WordPress',
+    'SaaS Company',
+    'Smartsupp',
+    'Komerční banka',
+    'Groupon',
+    'RWS (Moravia - IT)',
+  ],
+}
 
 const ProjectsWork = () => {
   return (

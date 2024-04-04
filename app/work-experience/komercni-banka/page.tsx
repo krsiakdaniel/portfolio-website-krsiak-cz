@@ -3,6 +3,23 @@ import { sections } from '@/data/projects/work/komercniBanka'
 import { projectsWorkReact } from '@/data/projects/work/projectsOverview'
 import { ID, PAGES_URL } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Komerční banka | React Developer',
+  description:
+    'Worked as a React Developer at Komerční banka. Developed search page for branches & ATMs, exchange rates. Enhanced UX, improved responsive design across devices.',
+  keywords: [
+    'Komerční banka',
+    'Commerce Bank - Website',
+    'React Developer',
+    'Search Page',
+    'Exchange Rates Page',
+    'Geolocation API',
+    'Google Places Autocomplete API',
+    'Responsive Design',
+  ],
+}
 
 const breadCrumbs: BreadCrumbsType = {
   linkLevel1: '/work-experience',

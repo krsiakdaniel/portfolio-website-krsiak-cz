@@ -3,6 +3,23 @@ import { sections } from '@/data/projects/personal/cryptoMania'
 import { projectsPersonalReact } from '@/data/projects/personal/projectsOverview'
 import { ID, PAGES_URL } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Cryptomania | Daniel Krsiak - React Developer',
+  description:
+    'Crypto currency prices app with latest data from CoinGecko API. Built with React and Chakra UI. Explore and search for cryptocurrencies with ease.',
+  keywords: [
+    'Cryptomania',
+    'Daniel Krsiak - React Developer',
+    'React',
+    'Chakra UI',
+    'JavaScript',
+    'TypeScript',
+    'CoinGecko API',
+    'Netlify',
+  ],
+}
 
 const breadCrumbs: BreadCrumbsType = {
   linkLevel1: '/personal-projects',

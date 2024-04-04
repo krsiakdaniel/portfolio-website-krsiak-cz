@@ -9,6 +9,14 @@ import {
   projectsPersonalVue,
 } from '@/data/projects/personal/projectsOverview'
 import { ID } from '@/utils/constants'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Personal Projects | Daniel Krsiak - React Developer',
+  description:
+    'Explore my projects created with Next.js and React. My portfolio, crypto app, e-commerce site, all showcasing coding skills and trends in web development.',
+  keywords: ['Daniel Krsiak', 'Personal Projects', 'Next.js', 'React', 'Web Development', 'Portfolio', 'Crypto Apps'],
+}
 
 const ProjectsPersonal = () => {
   return (

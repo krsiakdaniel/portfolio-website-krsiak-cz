@@ -5,6 +5,31 @@ import Photo from '@/components/aboutMe/Photo'
 import PageContainer from '@/components/layout/PageContainer'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { ID } from '@/utils/constants'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About | Daniel Krsiak - React Developer',
+  description:
+    'Experienced React Developer proficient in JavaScript, React, TypeScript, Redux. Also skilled in QA Automation, leading teams, and managing localization projects.',
+  keywords: [
+    'Daniel Krsiak',
+    'React Developer',
+    'QA Automation',
+    'Team Leader',
+    'Localization Manager',
+    'JavaScript',
+    'React',
+    'TypeScript',
+    'Redux',
+    'Cypress',
+    'Playwright',
+    'Dashboard application',
+    'Banking website',
+    'SaaS company',
+    'Microsoft Windows',
+    'Localization',
+  ],
+}
 
 const About = () => {
   return (
