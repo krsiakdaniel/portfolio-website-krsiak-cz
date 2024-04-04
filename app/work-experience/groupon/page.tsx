@@ -6,7 +6,7 @@ import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Groupon | QA Automation - Team Leader',
+  title: 'Groupon | Daniel Krsiak - QA Automation Team Leader',
   description:
     'QA Automation SDET - Team Lead at Groupon. Responsible for new QA team, hiring, coordinating testing for online marketplace with 17 million customers.',
   keywords: [
