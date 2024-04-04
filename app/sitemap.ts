@@ -1,11 +1,11 @@
 import { MetadataRoute } from 'next'
 
 // URLs
-const BASE_URL = 'https://krsiak.cz!'
+const BASE_URL = 'https://krsiak.cz'
 const WORK_EXPERIENCE = '/work-experience'
 const PERSONAL_PROJECTS = '/personal-projects'
 
-const URLS = {
+export const URLS = {
   BASE: BASE_URL,
   ABOUT_ME: `${BASE_URL}/about-me`,
   WORK_EXPERIENCE: `${BASE_URL}${WORK_EXPERIENCE}`,
@@ -27,7 +27,7 @@ const URLS = {
 }
 
 // change frequency
-const CHANGE_FREQUENCY_MONTHLY = 'monthly'
+export const CHANGE_FREQUENCY_MONTHLY = 'monthly'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
