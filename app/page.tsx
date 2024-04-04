@@ -2,6 +2,7 @@ import NextPageNavigation from '@/components/NextPageNavigation'
 import Hero from '@/components/homepage/Hero'
 import Skills from '@/components/homepage/Skills'
 import SkillsMain from '@/components/homepage/SkillsMain'
+import WhatIDoMindset from '@/components/homepage/WhatIDoMindset'
 import PageContainer from '@/components/layout/PageContainer'
 import { ID } from '@/utils/constants'
 import { Metadata } from 'next'
@@ -36,6 +37,7 @@ const Page = () => {
       <Hero />
       <Skills />
       <SkillsMain />
+      <WhatIDoMindset />
       <NextPageNavigation
         pageLinkNext="/about-me"
         pageNameNext="About Me"

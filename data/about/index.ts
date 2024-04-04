@@ -17,9 +17,9 @@ export const jobs: Job[] = [
     title: 'Front End - React Developer',
     years: '4',
     description: `
-    I use JavaScript, React, TypeScript, and Redux.
-    I worked on Dashboard application for customer care.
-    And I also worked on Banking website for Komercni banka.
+    With  hands-on experience, I specialize in JavaScript, TypeScript, React, and Redux.
+    Noteworthy achievements include the development of a Dashboard application for customer care and\u00A0contributions to a Banking website for Komercni banka.
+    Showcasing my proficiency in crafting user-centric solutions.
     `,
   },
   {
@@ -27,8 +27,8 @@ export const jobs: Job[] = [
     title: 'Front End - JavaScript Developer',
     years: '1',
     description: `
-        I created new website using PHP and JavaScript for SaaS company.
-        Including new responsive design. I\u00A0was also working closely with UX designer.
+        I led the creation of a new website using PHP and JavaScript for a prominent SaaS company.
+        This involved implementing a responsive design strategy and collaborating closely with UX designers to\u00A0ensure an optimal user experience.
       `,
   },
   {
@@ -36,9 +36,8 @@ export const jobs: Job[] = [
     title: 'QA Automation - Team Leader',
     years: '1',
     description: `
-        I was asked to create and lead 2x QA automation teams.
-        Setup Cypress and Playwright for\u00A0E2E.
-        Writing tests in JavaScript and TypeScript.
+        In my role as a QA Automation Team Leader, I successfully led 2 QA teams in implementing testing tools like Cypress and Playwright for E2E testing.
+        My responsibilities also included writing tests in\u00A0JavaScript and TypeScript to ensure robust test coverage and maintain code quality.
       `,
   },
   {
@@ -46,8 +45,8 @@ export const jobs: Job[] = [
     title: 'Localization - Manager',
     years: '2',
     description: `
-      I worked on localization of Microsoft Windows 8, and Windows Phone.
-      I also managed localization of\u00A0SaaS company website into 9 languages.
+      I managed small team and oversaw the localization efforts for Microsoft Windows 8 and\u00A0Windows Phone, managing the translation of a SaaS company website into nine languages.
+      This role honed my project management skills and deepened my understanding of internationalization strategies.
       `,
   },
   {
@@ -55,7 +54,7 @@ export const jobs: Job[] = [
     title: 'Localization - Tester',
     years: '3',
     description: `
-      I worked on Microsoft projects testing layouts for Windows 7, and Windows Store.
+      I conducted thorough layout testing for Microsoft projects, including Windows 7 and Windows Store, ensuring seamless user experiences across different platforms.
       `,
   },
 ]
