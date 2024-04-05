@@ -14,12 +14,6 @@ const Hero = () => {
         <p data-testid="hero-paragraph-1" className="mb-3 mt-4 text-center text-lg font-semibold text-neutral-600">
           Hi 👋 I am React Developer based in Brno, Czech Republic 🇨🇿
         </p>
-
-        <p data-testid="hero-paragraph-2" className="text-center text-neutral-600">
-          I enjoy working with <span className="font-bold text-violet-600">JavaScript</span>,{' '}
-          <span className="font-bold text-violet-600">TypeScript</span>, and{' '}
-          <span className="font-bold text-violet-600">React</span>.
-        </p>
       </div>
 
       <div className="mt-10 flex flex-col items-center justify-center sm:flex-row">

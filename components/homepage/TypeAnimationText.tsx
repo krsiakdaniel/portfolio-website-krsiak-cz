@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation'
 const TypeAnimationText = () => {
   return (
     <TypeAnimation
-      sequence={['React Developer', 2000, 'Front End', 1500, 'QA Automation', 1000]}
+      sequence={['React Developer', 2000, 'QA Automation', 1500]}
       wrapper="span"
       preRenderFirstString={true}
       cursor={true}

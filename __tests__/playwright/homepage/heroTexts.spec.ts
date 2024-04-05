@@ -31,8 +31,6 @@ test.describe('Hero - Heading and texts', () => {
 
   test('should render the paragraphs correctly', async () => {
     const paragraph1Text = await page.textContent('[data-testid="hero-paragraph-1"]')
-    const paragraph2Text = await page.textContent('[data-testid="hero-paragraph-2"]')
     expect(paragraph1Text).toContain('Hi 👋 I am React Developer based in Brno, Czech Republic 🇨🇿')
-    expect(paragraph2Text).toContain('I enjoy working with JavaScript, TypeScript, and React.')
   })
 })
