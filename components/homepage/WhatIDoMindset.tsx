@@ -12,23 +12,19 @@ const skillsInfo: InfoItem[] = [
     id: 1,
     title: 'Passionate about JavaScript, TypeScript, and React',
     description:
-      'I bring to each project 5+ years of experience in crafting modern interactive web applications. I excel at using HTML, CSS, Sass, and Tailwind CSS, ensuring visually appealing and responsive designs.',
+      'I bring 5+ years of experience in crafting modern interactive web applications. I use Tailwind CSS, ensuring visually appealing and\u00A0responsive designs.',
   },
   {
     id: 2,
     title: 'Proficient in technologies',
     description:
-      'Using Next.js, Redux, GraphQL, Jest, Playwright, and Figma, I prioritize code reliability and scalability to deliver high-quality solutions.',
+      'Using Next.js, Redux, GraphQL, Jest, Playwright, and Figma, I\u00A0prioritize code reliability and scalability to deliver high-quality solutions and products.',
   },
   {
     id: 3,
     title: 'Focus on type safety',
-    description: 'With 4+ years of experience in TypeScript, I emphasize on code safety and creating robust codebases.',
-  },
-  {
-    id: 4,
-    title: 'Predictable and organized',
-    description: 'I have 2+ years of experience in Redux managing application state in a consistent manner.',
+    description:
+      'With 4+ years of experience in TypeScript, I\u00A0emphasize on code safety and creating robust codebases.',
   },
 ]
 
@@ -37,21 +33,16 @@ const mindsetInfo: InfoItem[] = [
     id: 1,
     title: 'Committed to continuous learning',
     description:
-      'Improving my technical skills and staying updated with trends. I actively participate in online communities and attend relevant workshops and learn to enhance my knowledge and expertise.',
+      'Improving my technical skills and staying updated with trends. I\u00A0actively participate in online communities and learn to enhance my\u00A0knowledge and expertise.',
   },
   {
     id: 2,
     title: 'Collaborative by nature',
     description:
-      'I like teams where I can contribute my ideas. My strong communication skills allow me explain concepts to stakeholders and team members.',
+      'I like teams where I can contribute my ideas. My strong communication skills allow me explain concepts to stakeholders and\u00A0team members.',
   },
   {
     id: 3,
-    title: 'Exploring new technologies',
-    description: 'Learning from other projects, reading weekly newsletters on JavaScript, TypeScript and React.',
-  },
-  {
-    id: 4,
     title: 'Delivering meaningful products to improve users lives',
     description: 'I am passionate about technologies solving real-world problems, helping customers and users.',
   },
@@ -59,7 +50,7 @@ const mindsetInfo: InfoItem[] = [
 
 const SkillsForCompany = () => {
   return (
-    <div className="w-full lg:w-1/2">
+    <div className="lg:w-1/2">
       <Heading2 textColor="text-violet-600">💰📈 My Skills For Your Company</Heading2>
       {skillsInfo.map((skill) => (
         <div className="mt-8" key={skill.id}>
@@ -77,7 +68,7 @@ const SkillsForCompany = () => {
 
 const MyMindset = () => {
   return (
-    <div className="w-full lg:w-1/2">
+    <div className="lg:w-1/2">
       <Heading2 textColor="text-violet-600">🥇🚀 I Have Committed Mindset</Heading2>
       {mindsetInfo.map((mindset) => (
         <div className="mt-8" key={mindset.id}>
