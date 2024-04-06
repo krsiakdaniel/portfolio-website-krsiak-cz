@@ -1,6 +1,7 @@
 import TypeAnimationText from '@/components/homepage/TypeAnimationText'
 import { CONTACT, EXTERNAL_URL, ID } from '@/utils/constants'
 
+// TODO: move the photo here and make it responsive
 const Hero = () => {
   return (
     <div id={ID.hero}>
