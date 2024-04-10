@@ -29,7 +29,7 @@ Website: <https://krsiak.cz>
 
 ![Tech Stack](/screenshots/technologies.png)
 
-Using the following technologies:
+Using these following technologies:
 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 - [TypeScript](https://www.typescriptlang.org/)
