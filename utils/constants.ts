@@ -62,7 +62,7 @@ export const ID = {
 export const EXTERNAL_URL = {
   linkedin: 'https://www.linkedin.com/in/krsiakdaniel/',
   github: 'https://github.com/krsiakdaniel/',
-  resume: 'https://drive.google.com/file/d/1x0LWu8I_3aqW34TJbxkciqNGX642bdvF/view?usp=sharing',
+  resume: 'https://drive.google.com/file/d/1b-PWUOauMnFecRuYX7K85xZnwFRMWFR5/view?usp=sharing',
 }
 
 // URLs for pages
