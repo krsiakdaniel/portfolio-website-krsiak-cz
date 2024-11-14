@@ -1,3 +1,15 @@
+export const YEARS = {
+  javascript: 6,
+  typescript: 5,
+  react: 5,
+  redux: 2,
+  webDeveloper: 1,
+  qaAutomation: 1,
+  localizationManager: 2,
+  localizationTester: 3,
+  webCoder: 1,
+}
+
 export const CONTACT = {
   phone: {
     href: 'tel:+420734496308',

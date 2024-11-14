@@ -1,4 +1,4 @@
-import krsiak from '@/public/images/krsiak.webp'
+import krsiak from '@/public/images/krsiak-daniel.webp'
 import Image from 'next/image'
 
 const Photo = () => {
@@ -10,7 +10,7 @@ const Photo = () => {
         alt="Daniel Krsiak"
         placeholder="blur"
         style={{
-          width: '300px',
+          width: '400px',
           height: 'auto',
         }}
       />

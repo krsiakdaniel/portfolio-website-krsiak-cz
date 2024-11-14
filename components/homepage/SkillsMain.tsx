@@ -4,8 +4,8 @@ import js from '@/public/icons/svg/skills/js.svg'
 import react from '@/public/icons/svg/skills/react.svg'
 import redux from '@/public/icons/svg/skills/redux.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
-import { getYearsExperience } from '@/utils/getYearsExperience'
 import { StaticImageData } from 'next/image'
+import { YEARS } from '@/utils/constants'
 
 interface SkillsCardProps {
   imgSrc: StaticImageData
@@ -20,28 +20,28 @@ const skills: SkillsCardProps[] = [
     imgSrc: js,
     imgAlt: 'JS',
     title: 'JavaScript',
-    titleYears: getYearsExperience(2019),
+    titleYears: YEARS.javascript,
     description: 'Essential for creating modern interactive web applications.',
   },
   {
     imgSrc: ts,
     imgAlt: 'TS',
     title: 'TypeScript',
-    titleYears: getYearsExperience(2020),
+    titleYears: YEARS.typescript,
     description: 'Ensuring type safety, code reliability and scalability.',
   },
   {
     imgSrc: react,
     imgAlt: 'React',
     title: 'React',
-    titleYears: getYearsExperience(2020),
+    titleYears: YEARS.react,
     description: 'Great for components that are reusable and easy to maintain.',
   },
   {
     imgSrc: redux,
     imgAlt: 'Redux',
     title: 'Redux',
-    titleYears: getYearsExperience(2022),
+    titleYears: YEARS.redux,
     description: 'Managing application state in a predictable and organized way.',
   },
 ]

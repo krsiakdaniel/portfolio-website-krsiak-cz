@@ -4,7 +4,7 @@ interface Props {
   path: string
   title: string
   description: string
-  years: string
+  years: number
 }
 
 const JobItem = ({ path, title, description, years }: Props) => {
@@ -17,7 +17,7 @@ const JobItem = ({ path, title, description, years }: Props) => {
         {title}
         <small className="text-md ml-0 inline text-neutral-500 lg:ml-1">
           <span className="hidden lg:inline">{years && ' · '}</span>
-          {years} {years === '1' ? 'year' : 'years'}
+          {years} {years === 1 ? 'year' : 'years'}
         </small>
       </h3>
       <p className="mb-4 ml-4 text-base font-normal text-neutral-500 last:mb-2">{description}</p>
