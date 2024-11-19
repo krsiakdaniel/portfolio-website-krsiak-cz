@@ -52,9 +52,7 @@ const ProjectPersonalCryptomania = () => {
             pageLinkPrevious="/personal-projects/krsiak"
             pageNamePrevious="Portfolio Website"
             dataTestIDPrevious="page-navigation-previous-krsiak"
-            pageLinkNext="/personal-projects/eshop"
             pageNameNext="E-Commerce Website"
-            dataTestIDNext="page-navigation-next-eshop"
           />
         }
       />

@@ -22,7 +22,6 @@ export const URLS = {
   PERSONAL_PROJECTS_DETAILS: {
     KRSIAK: `${BASE_URL}${PERSONAL_PROJECTS}/krsiak`,
     CRYPTOMANIA: `${BASE_URL}${PERSONAL_PROJECTS}/cryptomania`,
-    ESHOP: `${BASE_URL}${PERSONAL_PROJECTS}/eshop`,
   },
 }
 
@@ -99,12 +98,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: URLS.PERSONAL_PROJECTS_DETAILS.CRYPTOMANIA,
-      lastModified: new Date(),
-      changeFrequency: CHANGE_FREQUENCY_MONTHLY,
-      priority: 0.8,
-    },
-    {
-      url: URLS.PERSONAL_PROJECTS_DETAILS.ESHOP,
       lastModified: new Date(),
       changeFrequency: CHANGE_FREQUENCY_MONTHLY,
       priority: 0.8,

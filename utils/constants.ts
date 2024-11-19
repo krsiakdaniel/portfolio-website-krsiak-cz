@@ -34,7 +34,6 @@ export const PROJECT_ID = {
   },
   personal: {
     krsiak: 'link-project-personal-krsiak',
-    eshop: 'link-project-personal-eshop',
     cryptoMania: 'link-project-personal-cryptomania',
   },
 }
@@ -57,7 +56,6 @@ export const ID = {
     qa: 'qa-automation-testing',
     localization: 'localization',
     next: 'next',
-    vue: 'vue',
   },
   error: {
     err404: 'error-404',
@@ -98,7 +96,6 @@ export const PAGES_URL = {
   personal: {
     main: URL_PERSONAL_PROJECTS,
     krsiak: `${URL_PERSONAL_PROJECTS}/krsiak`,
-    eshop: `${URL_PERSONAL_PROJECTS}/eshop`,
     cryptoMania: `${URL_PERSONAL_PROJECTS}/cryptomania`,
   },
 }

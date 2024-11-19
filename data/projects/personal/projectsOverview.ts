@@ -1,6 +1,5 @@
 import {
   iconsSkillsProjectsPersonalCryptomania,
-  iconsSkillsProjectsPersonalEshop,
   iconsSkillsProjectsPersonalKrsiak,
 } from '@/data/skills/skills-projects-personal'
 import { Project } from '@/utils/types'
@@ -21,11 +20,6 @@ import cryptomania6 from '@/public/images/projects-personal/cryptomania/cryptoma
 import cryptomania3 from '@/public/images/projects-personal/cryptomania/cryptomania-3-light.png'
 import cryptomaniaThumb from '@/public/images/projects-personal/cryptomania/cryptomania-thumb-light-600.webp'
 
-import eshop1 from '@/public/images/projects-personal/eshop/eshop-1-light.png'
-import eshop2 from '@/public/images/projects-personal/eshop/eshop-2-light.png'
-import eshop3 from '@/public/images/projects-personal/eshop/eshop-3-light.png'
-import eshop4 from '@/public/images/projects-personal/eshop/eshop-4-light.png'
-import eshopThumb from '@/public/images/projects-personal/eshop/eshop-thumb-light-600.webp'
 import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
 
 export const projectsPersonalNext: Project[] = [
@@ -84,30 +78,5 @@ export const projectsPersonalReact: Project[] = [
     projectLinks: [{ urlText: 'Website →', url: 'https://cryptocurrency-prices-one.vercel.app/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
     linkProjectPage: PAGES_URL.personal.cryptoMania,
-  },
-]
-
-export const projectsPersonalVue: Project[] = [
-  {
-    id: PROJECT_ID.personal.eshop,
-    isFeatured: false,
-    image: eshopThumb.src,
-    imageShowcase: [eshop1.src, eshop2.src, eshop3.src, eshop4.src],
-    title: '🛒 E-Commerce Website',
-    company: 'Personal project',
-    role: 'Front End - Vue.js',
-    description:
-      'Simple E-Commerce website. First time coding with Vue and Nuxt. Used\u00A0Vuetify for styling. Exercise in creating Vue project.',
-    mySkillsIcons: iconsSkillsProjectsPersonalEshop,
-    mySkills: [
-      {
-        description: 'Frontend',
-        skills: ['JavaScript', 'Vue.js', 'Nuxt.js', 'Vuetify'],
-      },
-    ],
-    linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website →', url: 'https://ecommerce-website-vuejs-nuxtjs-vuetify.vercel.app/' }],
-    linkGitHub: 'https://github.com/krsiakdaniel/ecommerce-website-vuejs-nuxtjs-vuetify',
-    linkProjectPage: PAGES_URL.personal.eshop,
   },
 ]

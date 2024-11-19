@@ -21,8 +21,6 @@ describe('generateIconsSkills', () => {
     'storybook',
     'tailwind',
     'ts',
-    'vue',
-    'vuetify',
     'wordpress',
     'xd',
   ]
