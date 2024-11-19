@@ -32,8 +32,4 @@ test.describe('Projects Personal - Page links', () => {
   test('Project - Cryptomania', async () => {
     await testProjectLink(page, PAGES_URL.personal.cryptoMania, PROJECT_ID.personal.cryptoMania)
   })
-
-  test('Project - Eshop', async () => {
-    await testProjectLink(page, PAGES_URL.personal.eshop, PROJECT_ID.personal.eshop)
-  })
 })

@@ -13,5 +13,3 @@ export const iconsSkillsProjectsPersonalKrsiak = generateIconsSkills([
 ])
 
 export const iconsSkillsProjectsPersonalCryptomania = generateIconsSkills(['js', 'ts', 'react', 'chakra', 'netlify'])
-
-export const iconsSkillsProjectsPersonalEshop = generateIconsSkills(['js', 'vue', 'nuxt', 'vuetify'])

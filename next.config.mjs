@@ -5,6 +5,15 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     unoptimized: false,
   },
+  async redirects() {
+    return [
+      {
+        source: '/personal-projects/eshop', // The deleted page
+        destination: '/personal-projects/', // Redirect to projects
+        permanent: true, // Use 301 for permanent redirect
+      },
+    ]
+  },
 }
 
 export default nextConfig

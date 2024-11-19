@@ -18,8 +18,6 @@ import scss from '@/public/icons/svg/skills/scss.svg'
 import storybook from '@/public/icons/svg/skills/storybook.svg'
 import tailwind from '@/public/icons/svg/skills/tailwind.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
-import vue from '@/public/icons/svg/skills/vue.svg'
-import vuetify from '@/public/icons/svg/skills/vuetify.svg'
 import wordpress from '@/public/icons/svg/skills/wordpress.svg'
 import xd from '@/public/icons/svg/skills/xd.svg'
 
@@ -46,8 +44,6 @@ type SkillKeys =
   | 'storybook'
   | 'tailwind'
   | 'ts'
-  | 'vue'
-  | 'vuetify'
   | 'wordpress'
   | 'xd'
 
@@ -72,8 +68,6 @@ export const skillIcons: Record<SkillKeys, string> = {
   storybook,
   tailwind,
   ts,
-  vue,
-  vuetify,
   wordpress,
   xd,
 }
