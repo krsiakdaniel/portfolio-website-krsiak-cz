@@ -1,5 +1,5 @@
 export const getFeaturedBorderColor = (isFeatured: boolean | undefined) => {
-  if (undefined || !isFeatured) {
+  if (isFeatured === undefined || isFeatured === false) {
     return 'border-neutral-300'
   }
   if (isFeatured) {
