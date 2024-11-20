@@ -1,6 +1,6 @@
 # Portfolio Website - krsiak.cz
 
-React Developer portfolio website 👨‍💻
+React Developer portfolio website ⚛️ 👨‍💻
 
 **Table of Contents:**
 
