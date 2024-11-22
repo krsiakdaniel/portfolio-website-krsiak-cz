@@ -43,9 +43,9 @@ const ProjectWorkKomercniBanka = () => {
           pageLinkPrevious="/work-experience/smartsupp-dashboard"
           pageNamePrevious="Smartsupp Dashboard"
           dataTestIDPrevious="page-navigation-previous-smartsupp-dashboard"
-          pageLinkNext="/work-experience/smartsupp-web"
-          pageNameNext="Smartsupp Web"
-          dataTestIDNext="page-navigation-next-smartsupp-web"
+          pageLinkNext="/work-experience/kooperativa"
+          pageNameNext="Kooperativa"
+          dataTestIDNext="page-navigation-next-kooperativa"
         />
       }
     />

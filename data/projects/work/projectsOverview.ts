@@ -1,6 +1,7 @@
 import {
   iconsSkillsProjectsWorkGroupon,
   iconsSkillsProjectsWorkKomercniBanka,
+  iconsSkillsProjectsWorkKooperativa,
   iconsSkillsProjectsWorkMoravia,
   iconsSkillsProjectsWorkSmartsuppDashboard,
   iconsSkillsProjectsWorkSmartsuppHelp,
@@ -8,6 +9,30 @@ import {
 } from '@/data/skills/skills-projects-work'
 import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
 import { Project } from '@/utils/types'
+
+// moravia
+import moravia1 from '@/public/images/projects-work/moravia/moravia-1-light.png'
+import moravia2 from '@/public/images/projects-work/moravia/moravia-2-light.png'
+import moravia3 from '@/public/images/projects-work/moravia/moravia-3-light.png'
+import moraviaThumb from '@/public/images/projects-work/moravia/moravia-thumb-light-600.webp'
+
+// groupon
+import groupon1 from '@/public/images/projects-work/groupon/groupon-1-light.png'
+import groupon2 from '@/public/images/projects-work/groupon/groupon-2-light.png'
+import grouponThumb from '@/public/images/projects-work/groupon/groupon-thumb-light-600.webp'
+
+// komercni-banka
+import komercniBanka1 from '@/public/images/projects-work/komercni-banka/komercni-banka-1-light.png'
+import komercniBanka2 from '@/public/images/projects-work/komercni-banka/komercni-banka-2-light.png'
+import komercniBanka3 from '@/public/images/projects-work/komercni-banka/komercni-banka-3-light.png'
+import komercniBanka4 from '@/public/images/projects-work/komercni-banka/komercni-banka-4-light.png'
+import komercniBankaThumb from '@/public/images/projects-work/komercni-banka/komercni-banka-thumb-light-600.webp'
+
+// kooperativa
+import kooperativa1 from '@/public/images/projects-work/kooperativa/kooperativa-1-light.png'
+import kooperativa2 from '@/public/images/projects-work/kooperativa/kooperativa-2-light.png'
+import kooperativa3 from '@/public/images/projects-work/kooperativa/kooperativa-3-light.png'
+import kooperativaThumb from '@/public/images/projects-work/kooperativa/kooperativa-thumb-light-600.webp'
 
 // smartsupp-dashboard
 import smartsuppDashboard1 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-1-light.png'
@@ -24,29 +49,11 @@ import smartsuppWeb3 from '@/public/images/projects-work/smartsupp-web/smartsupp
 import smartsuppWeb4 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-4-light.png'
 import smartsuppWebThumb from '@/public/images/projects-work/smartsupp-web/smartsupp-web-thumb-light-600.webp'
 
-// groupon
-import groupon1 from '@/public/images/projects-work/groupon/groupon-1-light.png'
-import groupon2 from '@/public/images/projects-work/groupon/groupon-2-light.png'
-import grouponThumb from '@/public/images/projects-work/groupon/groupon-thumb-light-600.webp'
-
-// komercni-banka
-import komercniBanka1 from '@/public/images/projects-work/komercni-banka/komercni-banka-1-light.png'
-import komercniBanka2 from '@/public/images/projects-work/komercni-banka/komercni-banka-2-light.png'
-import komercniBanka3 from '@/public/images/projects-work/komercni-banka/komercni-banka-3-light.png'
-import komercniBanka4 from '@/public/images/projects-work/komercni-banka/komercni-banka-4-light.png'
-import komercniBankaThumb from '@/public/images/projects-work/komercni-banka/komercni-banka-thumb-light-600.webp'
-
 // smartsupp-help
 import smartsuppHelp1 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-1-light.png'
 import smartsuppHelp2 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-2-light.png'
 import smartsuppHelp3 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-3-light.png'
 import smartsuppHelpThumb from '@/public/images/projects-work/smartsupp-help/smartsupp-help-thumb-light-600.webp'
-
-// moravia
-import moravia1 from '@/public/images/projects-work/moravia/moravia-1-light.png'
-import moravia2 from '@/public/images/projects-work/moravia/moravia-2-light.png'
-import moravia3 from '@/public/images/projects-work/moravia/moravia-3-light.png'
-import moraviaThumb from '@/public/images/projects-work/moravia/moravia-thumb-light-600.webp'
 
 export const projectsWorkReact: Project[] = [
   {
@@ -121,6 +128,30 @@ export const projectsWorkReact: Project[] = [
     ],
     customers: '2 000 000+',
     linkProjectPage: PAGES_URL.work.komercniBanka,
+  },
+  {
+    id: PROJECT_ID.work.kooperativa,
+    isFeatured: false,
+    image: kooperativaThumb.src,
+    imageShowcase: [kooperativa1.src, kooperativa2.src, kooperativa3.src],
+    title: '☔ Insurance company app',
+    company: 'Kooperativa',
+    role: 'React Developer',
+    years: '8 months',
+    description: 'I worked on an application for managing insurance policies for citizens property and products.',
+    mySkillsIcons: iconsSkillsProjectsWorkKooperativa,
+    mySkills: [
+      {
+        description: 'Frontend',
+        skills: ['JavaScript', 'TypeScript', 'React', 'Redux', 'Tailwind CSS'],
+      },
+      { description: 'Design', skills: ['Figma', 'Storybook'] },
+      { description: 'Other', skills: ['Jira', 'Confluence'] },
+    ],
+    linkText: 'Project details',
+    projectLinks: [{ urlText: 'Website →', url: 'https://www.koop.cz/pojisteni/pojisteni-majetku' }],
+    customers: '2 480 000+',
+    linkProjectPage: PAGES_URL.work.kooperativa,
   },
 ]
 

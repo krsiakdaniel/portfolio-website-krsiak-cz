@@ -41,9 +41,9 @@ const ProjectWorkSmartsuppWeb = () => {
       sections={sections}
       nextPageNavigation={
         <NextPageNavigation
-          pageLinkPrevious="/work-experience/komercni-banka"
-          pageNamePrevious="Komerční banka"
-          dataTestIDPrevious="page-navigation-previous-komercni-banka"
+          pageLinkPrevious="/work-experience/kooperativa"
+          pageNamePrevious="Kooperativa"
+          dataTestIDPrevious="page-navigation-previous-kooperativa"
           pageLinkNext="/work-experience/smartsupp-help"
           pageNameNext="Smartsupp HELP"
           dataTestIDNext="page-navigation-next-smartsupp-help"

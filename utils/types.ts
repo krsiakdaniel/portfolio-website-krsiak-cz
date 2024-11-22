@@ -43,6 +43,7 @@ export type HeaderSectionProps = {
   sectionID: string
   role: string
   years?: string | undefined
+  company?: string
   goBackLink: GoBackLinkType
 }
 

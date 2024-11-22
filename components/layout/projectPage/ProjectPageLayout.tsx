@@ -21,6 +21,7 @@ const ProjectPageLayout = ({
   title,
   role,
   years,
+  company,
   goBackLink,
   sectionID,
   description,
@@ -40,7 +41,14 @@ const ProjectPageLayout = ({
         linkLevel2={breadCrumbs.linkLevel2}
         textLevel2={breadCrumbs.textLevel2}
       />
-      <HeaderSection title={title} role={role} years={years} goBackLink={goBackLink} sectionID={sectionID} />
+      <HeaderSection
+        title={title}
+        role={role}
+        years={years}
+        company={company}
+        goBackLink={goBackLink}
+        sectionID={sectionID}
+      />
       <ProjectInformation
         description={description}
         mySkills={mySkills}

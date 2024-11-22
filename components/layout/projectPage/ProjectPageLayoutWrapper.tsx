@@ -20,7 +20,7 @@ export const ProjectPageLayoutWrapper = ({
   sections,
   nextPageNavigation,
 }: Props) => {
-  const { title, role, years, description, mySkills, customers, projectLinks, imageShowcase } = projectData
+  const { title, role, years, company, description, mySkills, customers, projectLinks, imageShowcase } = projectData
 
   return (
     <ProjectPageLayout
@@ -29,6 +29,7 @@ export const ProjectPageLayoutWrapper = ({
       title={title}
       role={role}
       years={years}
+      company={company}
       goBackLink={goBackLink}
       sectionID={sectionID}
       description={description}

@@ -1,5 +1,15 @@
 import { generateIconsSkills } from '@/utils/generateIconsSkills'
 
+export const iconsSkillsProjectsWorkKooperativa = generateIconsSkills([
+  'js',
+  'ts',
+  'react',
+  'redux',
+  'tailwind',
+  'figma',
+  'storybook',
+])
+
 export const iconsSkillsProjectsWorkSmartsuppDashboard = generateIconsSkills([
   'js',
   'ts',
