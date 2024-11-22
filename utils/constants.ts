@@ -23,6 +23,7 @@ export const CONTACT = {
 
 export const PROJECT_ID = {
   work: {
+    kooperativa: 'link-project-work-kooperativa',
     smartsupp: {
       dashboard: 'link-project-work-smartsupp-dashboard',
       web: 'link-project-work-smartsupp-web',
@@ -79,19 +80,24 @@ export const EXTERNAL_URL = {
 const URL_WORK_EXPERIENCE = '/work-experience'
 const URL_PERSONAL_PROJECTS = '/personal-projects'
 
+const generateUrlWorkExperience = (company: string) => {
+  return `${URL_WORK_EXPERIENCE}/${company}`
+}
+
 export const PAGES_URL = {
   home: '/',
   aboutMe: '/about-me',
   work: {
     main: URL_WORK_EXPERIENCE,
+    kooperativa: generateUrlWorkExperience('kooperativa'),
     smartsupp: {
-      dashboard: `${URL_WORK_EXPERIENCE}/smartsupp-dashboard`,
-      web: `${URL_WORK_EXPERIENCE}/smartsupp-web`,
-      help: `${URL_WORK_EXPERIENCE}/smartsupp-help`,
+      dashboard: generateUrlWorkExperience('smartsupp-dashboard'),
+      web: generateUrlWorkExperience('smartsupp-web'),
+      help: generateUrlWorkExperience('smartsupp-help'),
     },
-    komercniBanka: `${URL_WORK_EXPERIENCE}/komercni-banka`,
-    groupon: `${URL_WORK_EXPERIENCE}/groupon`,
-    moravia: `${URL_WORK_EXPERIENCE}/moravia`,
+    komercniBanka: generateUrlWorkExperience('komercni-banka'),
+    groupon: generateUrlWorkExperience('groupon'),
+    moravia: generateUrlWorkExperience('moravia'),
   },
   personal: {
     main: URL_PERSONAL_PROJECTS,
