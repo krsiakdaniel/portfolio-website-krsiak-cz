@@ -13,9 +13,9 @@ export const sections: SectionItem[] = [
     title: 'Developed new features',
     titleHighlight: '',
     items: [
-      'I worked with TypeScript, React, and Redux. I used Figma designs to develop a user interface. I also worked with a backend developer to ensure  API integration.',
       'I was part of team to create comprehensive solution for arranging and managing insurance contracts.',
       'The application is designed to enhance the customer experience while providing employees with a modern system that simplifies their work.',
+      'I worked with TypeScript, React, and Redux. I used Figma designs to develop a user interface. I also worked with a backend developer to ensure  API integration.',
     ],
   },
 ]

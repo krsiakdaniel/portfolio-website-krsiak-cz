@@ -10,20 +10,11 @@ import {
 import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
 import { Project } from '@/utils/types'
 
-// smartsupp-dashboard
-import smartsuppDashboard1 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-1-light.png'
-import smartsuppDashboard2 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-2-light.png'
-import smartsuppDashboard3 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-3-light.png'
-import smartsuppDashboard4 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-4-light.png'
-import smartsuppDashboard5 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-5-light.png'
-import smartsuppDashboardThumb from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-thumb-light-600.webp'
-
-// smartsupp-web
-import smartsuppWeb1 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-1-light.png'
-import smartsuppWeb2 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-2-light.png'
-import smartsuppWeb3 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-3-light.png'
-import smartsuppWeb4 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-4-light.png'
-import smartsuppWebThumb from '@/public/images/projects-work/smartsupp-web/smartsupp-web-thumb-light-600.webp'
+// moravia
+import moravia1 from '@/public/images/projects-work/moravia/moravia-1-light.png'
+import moravia2 from '@/public/images/projects-work/moravia/moravia-2-light.png'
+import moravia3 from '@/public/images/projects-work/moravia/moravia-3-light.png'
+import moraviaThumb from '@/public/images/projects-work/moravia/moravia-thumb-light-600.webp'
 
 // groupon
 import groupon1 from '@/public/images/projects-work/groupon/groupon-1-light.png'
@@ -43,17 +34,26 @@ import kooperativa2 from '@/public/images/projects-work/kooperativa/kooperativa-
 import kooperativa3 from '@/public/images/projects-work/kooperativa/kooperativa-3-light.png'
 import kooperativaThumb from '@/public/images/projects-work/kooperativa/kooperativa-thumb-light-600.webp'
 
+// smartsupp-dashboard
+import smartsuppDashboard1 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-1-light.png'
+import smartsuppDashboard2 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-2-light.png'
+import smartsuppDashboard3 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-3-light.png'
+import smartsuppDashboard4 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-4-light.png'
+import smartsuppDashboard5 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-5-light.png'
+import smartsuppDashboardThumb from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-thumb-light-600.webp'
+
+// smartsupp-web
+import smartsuppWeb1 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-1-light.png'
+import smartsuppWeb2 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-2-light.png'
+import smartsuppWeb3 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-3-light.png'
+import smartsuppWeb4 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-4-light.png'
+import smartsuppWebThumb from '@/public/images/projects-work/smartsupp-web/smartsupp-web-thumb-light-600.webp'
+
 // smartsupp-help
 import smartsuppHelp1 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-1-light.png'
 import smartsuppHelp2 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-2-light.png'
 import smartsuppHelp3 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-3-light.png'
 import smartsuppHelpThumb from '@/public/images/projects-work/smartsupp-help/smartsupp-help-thumb-light-600.webp'
-
-// moravia
-import moravia1 from '@/public/images/projects-work/moravia/moravia-1-light.png'
-import moravia2 from '@/public/images/projects-work/moravia/moravia-2-light.png'
-import moravia3 from '@/public/images/projects-work/moravia/moravia-3-light.png'
-import moraviaThumb from '@/public/images/projects-work/moravia/moravia-thumb-light-600.webp'
 
 export const projectsWorkReact: Project[] = [
   {
