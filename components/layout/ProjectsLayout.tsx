@@ -1,12 +1,12 @@
 import PageHeading from '@/components/shared/PageHeading'
 
-type Props = {
+type ProjectsLayoutProps = {
   heading: string
   description: string
   children: React.ReactNode
 }
 
-const ProjectsLayout = ({ heading, description, children }: Props) => {
+const ProjectsLayout = ({ heading, description, children }: ProjectsLayoutProps) => {
   return (
     <>
       <div className="flex flex-col">

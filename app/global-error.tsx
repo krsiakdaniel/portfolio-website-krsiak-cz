@@ -2,7 +2,7 @@
 
 import { ErrorPageLayout } from '@/components/layout/ErrorPageLayout'
 import { ID } from '@/utils/constants'
-import { ErrorProps } from '@/utils/types'
+import { ErrorProps } from '@/utils/sharedComponentProps'
 
 export default function GlobalError({ error, reset }: ErrorProps) {
   return (

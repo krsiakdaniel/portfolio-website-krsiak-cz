@@ -1,12 +1,8 @@
 import DividerWithText from '@/components/shared/DividerWithText'
 import { iconsSkills1, iconsSkills2, iconsSkills3, iconsSkills4 } from '@/data/skills/skills-main'
 import { ID } from '@/utils/constants'
+import { Icon } from '@/utils/interfaces'
 import Image from 'next/image'
-
-interface Icon {
-  name: string
-  path: string
-}
 
 type SkillsIconGroupProps = {
   icons: Icon[]

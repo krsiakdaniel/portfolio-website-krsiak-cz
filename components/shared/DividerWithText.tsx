@@ -1,8 +1,8 @@
-type Props = {
+type DividerWithTextProps = {
   text: string
 }
 
-const DividerWithText = ({ text }: Props) => {
+const DividerWithText = ({ text }: DividerWithTextProps) => {
   return (
     <div className="mb-0 inline-flex w-full items-center justify-center">
       <hr className="my-8 h-px w-96 border-0 bg-gray-200" />

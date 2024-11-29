@@ -1,13 +1,14 @@
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
-import { BreadCrumbsType, GoBackLinkType, Project, SectionItem } from '@/utils/types'
+import { Project, Section } from '@/utils/interfaces'
+import { BreadCrumbsType, GoBackLinkType } from '@/utils/types'
 
-type Props = {
+type ProjectPageLayoutWrapperProps = {
   breadCrumbs: BreadCrumbsType
   pageID: string
   goBackLink: GoBackLinkType
   sectionID: string
   projectData: Project
-  sections: SectionItem[]
+  sections: Section[]
   nextPageNavigation: React.ReactNode
 }
 
@@ -19,7 +20,7 @@ export const ProjectPageLayoutWrapper = ({
   projectData,
   sections,
   nextPageNavigation,
-}: Props) => {
+}: ProjectPageLayoutWrapperProps) => {
   const { title, role, years, company, description, mySkills, customers, projectLinks, imageShowcase } = projectData
 
   return (

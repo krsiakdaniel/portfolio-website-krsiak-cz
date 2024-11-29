@@ -1,13 +1,13 @@
 import PartTimeLabel from '@/components/shared/PartTimeLabel'
 
-type Props = {
+type ExperienceCardProps = {
   company: string
   role: string
   isPartTime?: boolean
   description: string
 }
 
-const ExperienceCard = ({ company, role, isPartTime, description }: Props) => {
+const ExperienceCard = ({ company, role, isPartTime, description }: ExperienceCardProps) => {
   return (
     <div className="mb-8 w-full rounded-lg border border-gray-200 bg-white p-6 shadow-md md:max-w-[600px]">
       <div>

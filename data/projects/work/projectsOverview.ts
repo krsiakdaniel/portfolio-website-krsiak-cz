@@ -8,7 +8,7 @@ import {
   iconsSkillsProjectsWorkSmartsuppWeb,
 } from '@/data/skills/skills-projects-work'
 import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
-import { Project } from '@/utils/types'
+import { Project } from '@/utils/interfaces'
 
 // moravia
 import moravia1 from '@/public/images/projects-work/moravia/moravia-1-light.png'

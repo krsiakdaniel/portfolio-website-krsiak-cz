@@ -1,6 +1,6 @@
 import { IconArrow } from '@/components/icons'
 
-type Props = {
+type NextPageNavigationProps = {
   pageLinkPrevious?: string
   pageNamePrevious?: string
   pageLinkNext?: string
@@ -16,7 +16,7 @@ const NextPageNavigation = ({
   pageNameNext,
   dataTestIDPrevious,
   dataTestIDNext,
-}: Props) => {
+}: NextPageNavigationProps) => {
   const hasPrevious = pageLinkPrevious && pageNamePrevious
   const hasNext = pageLinkNext && pageNameNext
 

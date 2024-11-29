@@ -1,11 +1,15 @@
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 import { getSkillBadgeColor } from '@/utils/getSkillBadgeColor'
-import { ProjectInformationProps } from '@/utils/types'
+import { ProjectInformationProps } from '@/utils/sharedComponentProps'
 
-type Props = ProjectInformationProps
-
-const ProjectInformation = ({ description, mySkills, customers, projectLinks, linkGitHub }: Props) => {
+const ProjectInformation = ({
+  description,
+  mySkills,
+  customers,
+  projectLinks,
+  linkGitHub,
+}: ProjectInformationProps) => {
   const hasMoreLinks = projectLinks.length > 1
   const hasGithub = linkGitHub ? true : false
 

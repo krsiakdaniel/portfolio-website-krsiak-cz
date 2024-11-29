@@ -1,17 +1,24 @@
 import PageContainer from '@/components/layout/PageContainer'
 import imgError from '@/public/images/illustrations/error.webp'
-import { ErrorProps } from '@/utils/types'
+import { ErrorProps } from '@/utils/sharedComponentProps'
 import Image from 'next/image'
 import { useEffect } from 'react'
 
-type Props = {
+type ErrorPageLayoutProps = {
   pageContainerId: string
   imgAlt: string
   textMain: string
   textSmall: string
 } & ErrorProps
 
-export const ErrorPageLayout = ({ error, reset, pageContainerId, imgAlt, textMain, textSmall }: Props) => {
+export const ErrorPageLayout = ({
+  error,
+  reset,
+  pageContainerId,
+  imgAlt,
+  textMain,
+  textSmall,
+}: ErrorPageLayoutProps) => {
   useEffect(() => {
     // Log the error to an error reporting service
     console.error(error)

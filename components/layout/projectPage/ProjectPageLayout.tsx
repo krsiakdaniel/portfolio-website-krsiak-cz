@@ -3,13 +3,14 @@ import HeaderSection from '@/components/layout/projectPage/HeaderSection'
 import Section from '@/components/layout/projectPage/Section'
 import ProjectInformation from '@/components/projects/ProjectInformation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import { BreadCrumbsType, HeaderSectionProps, ProjectInformationProps, SectionItem } from '@/utils/types'
+import { HeaderSectionProps, ProjectInformationProps } from '@/utils/sharedComponentProps'
+import { BreadCrumbsType } from '@/utils/types'
 import Image from 'next/image'
 
-type Props = {
+type ProjectPageLayoutProps = {
   breadCrumbs: BreadCrumbsType
   pageID: string
-  sections: SectionItem[]
+  sections: Section[]
   imageShowcase: string[]
   nextPageNavigation: React.ReactNode
 } & HeaderSectionProps &
@@ -32,7 +33,7 @@ const ProjectPageLayout = ({
   sections,
   imageShowcase,
   nextPageNavigation,
-}: Props) => {
+}: ProjectPageLayoutProps) => {
   return (
     <PageContainer id={pageID}>
       <BreadCrumbs

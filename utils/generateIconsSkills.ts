@@ -21,7 +21,7 @@ import ts from '@/public/icons/svg/skills/ts.svg'
 import wordpress from '@/public/icons/svg/skills/wordpress.svg'
 import xd from '@/public/icons/svg/skills/xd.svg'
 
-import { Icon } from '@/utils/types'
+import { Icon } from '@/utils/interfaces'
 
 type SkillKeys =
   | 'chakra'
