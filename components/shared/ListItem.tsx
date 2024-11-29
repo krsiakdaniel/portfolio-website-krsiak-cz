@@ -1,10 +1,10 @@
 import { IconCheck } from '@/components/icons'
 
-type Props = {
+type ListItemProps = {
   children: React.ReactNode
 }
 
-const ListItem = ({ children }: Props) => {
+const ListItem = ({ children }: ListItemProps) => {
   return (
     <>
       <li className="flex-start flex">

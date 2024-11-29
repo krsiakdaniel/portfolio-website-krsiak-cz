@@ -1,6 +1,6 @@
-import type { SectionItem } from '@/utils/types'
+import { Section } from '@/utils/interfaces'
 
-export const sections: SectionItem[] = [
+export const sections: Section[] = [
   {
     title: 'My job',
     titleHighlight: '',

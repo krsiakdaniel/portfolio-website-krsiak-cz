@@ -1,6 +1,6 @@
-import { CategoryDescriptionType } from '@/utils/types'
+import { SkillCategoryType } from '@/utils/types'
 
-export const getSkillBadgeColor = (categoryDescription: CategoryDescriptionType): string => {
+export const getSkillBadgeColor = (categoryDescription: SkillCategoryType): string => {
   switch (categoryDescription) {
     case 'Frontend':
       return 'yellow'

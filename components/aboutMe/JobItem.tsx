@@ -1,13 +1,13 @@
 import Image from 'next/image'
 
-type Props = {
+type JobItemProps = {
   path: string
   title: string
   description: string
   years: number
 }
 
-const JobItem = ({ path, title, description, years }: Props) => {
+const JobItem = ({ path, title, description, years }: JobItemProps) => {
   return (
     <li className="mb-10 ms-6 last:mb-0">
       <span className="absolute -start-5 flex h-10 w-10 items-center justify-center rounded-full bg-violet-100 ring-1 ring-violet-600">

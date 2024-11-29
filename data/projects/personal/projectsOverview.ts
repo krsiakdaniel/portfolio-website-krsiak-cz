@@ -2,7 +2,7 @@ import {
   iconsSkillsProjectsPersonalCryptomania,
   iconsSkillsProjectsPersonalKrsiak,
 } from '@/data/skills/skills-projects-personal'
-import { Project } from '@/utils/types'
+import { Project } from '@/utils/interfaces'
 
 // project images
 import krsiak1 from '@/public/images/projects-personal/krsiak/krsiak-1-light.png'

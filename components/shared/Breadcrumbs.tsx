@@ -2,7 +2,9 @@ import { IconCaretRight, IconHome } from '@/components/icons'
 import { BreadCrumbsType } from '@/utils/types'
 import Link from 'next/link'
 
-const BreadCrumbs = ({ linkLevel1, textLevel1, linkLevel2, textLevel2 }: BreadCrumbsType) => {
+type BreadCrumbsProps = BreadCrumbsType
+
+const BreadCrumbs = ({ linkLevel1, textLevel1, linkLevel2, textLevel2 }: BreadCrumbsProps) => {
   return (
     <>
       <nav className="mb-10 flex text-neutral-700" aria-label="Breadcrumbs" data-testid="breadcrumbs">

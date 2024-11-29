@@ -1,7 +1,7 @@
 import { IconArrow } from '@/components/icons'
 import Heading2 from '@/components/shared/Heading2'
 import { getGoBackLinkID } from '@/utils/getGoBackLink'
-import { HeaderSectionProps } from '@/utils/types'
+import { HeaderSectionProps } from '@/utils/sharedComponentProps'
 import Link from 'next/link'
 
 const HeaderSection = ({ title, role, years, company, goBackLink, sectionID }: HeaderSectionProps) => {
