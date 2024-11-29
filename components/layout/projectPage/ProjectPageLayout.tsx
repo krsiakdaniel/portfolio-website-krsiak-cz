@@ -1,8 +1,9 @@
 import PageContainer from '@/components/layout/PageContainer'
 import HeaderSection from '@/components/layout/projectPage/HeaderSection'
-import Section from '@/components/layout/projectPage/Section'
+import PageSection from '@/components/layout/projectPage/PageSection'
 import ProjectInformation from '@/components/projects/ProjectInformation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import { Section } from '@/utils/interfaces'
 import { HeaderSectionProps, ProjectInformationProps } from '@/utils/sharedComponentProps'
 import { BreadCrumbsType } from '@/utils/types'
 import Image from 'next/image'
@@ -60,7 +61,12 @@ const ProjectPageLayout = ({
 
       <div>
         {sections.map((section, index) => (
-          <Section key={index} title={section.title} titleHighlight={section.titleHighlight} items={section.items} />
+          <PageSection
+            key={index}
+            title={section.title}
+            titleHighlight={section.titleHighlight}
+            items={section.items}
+          />
         ))}
       </div>
 

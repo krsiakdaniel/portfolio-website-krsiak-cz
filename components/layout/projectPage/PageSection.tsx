@@ -2,7 +2,9 @@ import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 import { Section } from '@/utils/interfaces'
 
-const Section = ({ title, titleHighlight, items }: Section) => (
+type PageSectionProps = Section
+
+const PageSection = ({ title, titleHighlight, items }: PageSectionProps) => (
   <div className="mt-8">
     <h3 className="mb-4 text-3xl font-bold">
       {title} {titleHighlight && <span className="text-violet-600">{titleHighlight}</span>}
@@ -15,4 +17,4 @@ const Section = ({ title, titleHighlight, items }: Section) => (
   </div>
 )
 
-export default Section
+export default PageSection
