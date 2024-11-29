@@ -8,7 +8,7 @@ interface Icon {
   path: string
 }
 
-interface SkillsIconGroupProps {
+type SkillsIconGroupProps = {
   icons: Icon[]
   className?: string
 }

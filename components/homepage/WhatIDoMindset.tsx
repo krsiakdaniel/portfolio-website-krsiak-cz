@@ -1,3 +1,4 @@
+import { YEARS } from '@/utils/constants'
 import DividerWithText from '../shared/DividerWithText'
 import Heading2 from '../shared/Heading2'
 
@@ -11,20 +12,18 @@ const skillsInfo: InfoItem[] = [
   {
     id: 1,
     title: 'Passionate about JavaScript, TypeScript, and React',
-    description:
-      'I bring 5+ years of experience in crafting modern interactive web applications. I use Tailwind CSS, ensuring visually appealing and\u00A0responsive designs.',
+    description: `I have ${YEARS.javascript} years of experience creating modern, interactive web applications, utilizing Tailwind CSS to deliver visually appealing and responsive designs.`,
   },
   {
     id: 2,
     title: 'Proficient in technologies',
     description:
-      'Using Next.js, Redux, GraphQL, Jest, Playwright, and Figma, I\u00A0prioritize code reliability and scalability to deliver high-quality solutions and products.',
+      'I leverage React, Next.js, Redux, GraphQL, Jest, Playwright, and Figma to ensure code reliability and scalability, delivering high-quality solutions and products.',
   },
   {
     id: 3,
     title: 'Focus on type safety',
-    description:
-      'With 4+ years of experience in TypeScript, I\u00A0emphasize on code safety and creating robust codebases.',
+    description: `With ${YEARS.typescript} years of experience in TypeScript, I focus on code safety, and creating robust and scalable codebases. Less errors save both time and money.`,
   },
 ]
 
@@ -33,18 +32,19 @@ const mindsetInfo: InfoItem[] = [
     id: 1,
     title: 'Committed to continuous learning',
     description:
-      'Improving my technical skills and staying updated with trends. I\u00A0actively participate in online communities and learn to enhance my\u00A0knowledge and expertise.',
+      'I continuously improve my technical skills and stay updated with trends by actively engaging in online communities and learning to enhance my knowledge and expertise.',
   },
   {
     id: 2,
     title: 'Collaborative by nature',
     description:
-      'I like teams where I can contribute my ideas. My strong communication skills allow me explain concepts to stakeholders and\u00A0team members.',
+      'I enjoy working in teams where I can contribute ideas. My strong communication skills enable me to explain concepts effectively to stakeholders and team members.',
   },
   {
     id: 3,
     title: 'Delivering meaningful products to improve users lives',
-    description: 'I am passionate about technologies solving real-world problems, helping customers and users.',
+    description:
+      'I am passionate about solving real-world problems to help users and customers. Products that streamline processes, and increase value of a business.',
   },
 ]
 

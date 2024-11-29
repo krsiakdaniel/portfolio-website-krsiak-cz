@@ -4,10 +4,10 @@ import js from '@/public/icons/svg/skills/js.svg'
 import react from '@/public/icons/svg/skills/react.svg'
 import redux from '@/public/icons/svg/skills/redux.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
-import { StaticImageData } from 'next/image'
 import { YEARS } from '@/utils/constants'
+import { StaticImageData } from 'next/image'
 
-interface SkillsCardProps {
+interface SkillsCard {
   imgSrc: StaticImageData
   imgAlt: string
   title: string
@@ -15,7 +15,7 @@ interface SkillsCardProps {
   description: string
 }
 
-const skills: SkillsCardProps[] = [
+const skills: SkillsCard[] = [
   {
     imgSrc: js,
     imgAlt: 'JS',
