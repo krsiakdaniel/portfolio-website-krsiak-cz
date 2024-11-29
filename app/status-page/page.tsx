@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
 }
 
-interface StatusBadgesItem {
+interface StatusBadge {
   name: string
   src: string
   alt: string
@@ -27,7 +27,7 @@ interface StatusBadgesItem {
   height: number
 }
 
-const statusBadges: StatusBadgesItem[] = [
+const statusBadges: StatusBadge[] = [
   {
     name: 'Jest Tests',
     src: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg',

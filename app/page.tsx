@@ -38,6 +38,7 @@ const Page = () => {
       <Skills />
       <SkillsMain />
       <WhatIDoMindset />
+      {/* TODO: refactor for all pages into constants, urls, text, test IDs */}
       <NextPageNavigation
         pageLinkNext="/about-me"
         pageNameNext="About Me"
