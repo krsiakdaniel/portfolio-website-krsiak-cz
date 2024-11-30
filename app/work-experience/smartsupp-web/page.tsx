@@ -7,7 +7,7 @@ import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Smartsupp Web | Daniel Krsiak - Front End Developer',
+  title: 'Smartsupp Web | Daniel Kršiak - Front End Developer',
   description:
     'Worked as a Front End Developer at Smartsupp for 1 year. Created company website Front End, collaborated with UX designer on brand theme and layout.',
   keywords: [

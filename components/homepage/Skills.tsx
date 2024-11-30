@@ -1,21 +1,7 @@
 import DividerWithText from '@/components/shared/DividerWithText'
 import { iconsSkills1, iconsSkills2, iconsSkills3, iconsSkills4 } from '@/data/skills/skills-main'
 import { ID } from '@/utils/constants'
-import { Icon } from '@/utils/interfaces'
-import Image from 'next/image'
-
-type SkillsIconGroupProps = {
-  icons: Icon[]
-  className?: string
-}
-
-const SkillsIconGroup = ({ icons, className = '' }: SkillsIconGroupProps) => (
-  <div className={`flex justify-center space-x-2 ${className}`}>
-    {icons.map((item) => (
-      <Image key={item.name} src={item.path} alt={item.name} width={44} height={44} />
-    ))}
-  </div>
-)
+import SkillsIconGroup from './SkillsIconGroup'
 
 const Skills = () => {
   return (

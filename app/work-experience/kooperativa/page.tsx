@@ -7,10 +7,10 @@ import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kooperativa | Daniel Krsiak - React Developer',
+  title: 'Kooperativa | Daniel Kršiak - React Developer',
   description: 'I worked on an application for managing insurance policies for citizens property and products.',
   keywords: [
-    'Daniel Krsiak',
+    'Daniel Kršiak',
     'Kooperativa',
     'Insurance company app',
     'React Developer',

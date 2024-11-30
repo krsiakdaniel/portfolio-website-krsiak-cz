@@ -7,12 +7,12 @@ import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Portfolio Website | Daniel Krsiak - React Developer',
+  title: 'Portfolio Website | Daniel Kršiak - React Developer',
   description:
     'Portfolio website showcasing my skills. Using Next.js, Tailwind CSS, JavaScript, TypeScript, React, JEST, Playwright, GitHub Actions, and Netlify.',
   keywords: [
     'Portfolio Website',
-    'Daniel Krsiak - React Developer',
+    'Daniel Kršiak - React Developer',
     'Next.js',
     'Tailwind CSS',
     'JavaScript',

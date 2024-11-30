@@ -1,4 +1,5 @@
 import NextPageNavigation from '@/components/NextPageNavigation'
+import ContactVcard from '@/components/homepage/ContactVcard'
 import Hero from '@/components/homepage/Hero'
 import Skills from '@/components/homepage/Skills'
 import SkillsMain from '@/components/homepage/SkillsMain'
@@ -8,11 +9,11 @@ import { ID } from '@/utils/constants'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Daniel Krsiak - React Developer',
+  title: 'Daniel Kršiak - React Developer',
   description:
     'Experienced React Developer from Brno Czech Republic. JavaScript, TypeScript, React, HTML, CSS, Sass, Tailwind CSS, Redux, GraphQL, Jest, Playwright, and Figma.',
   keywords: [
-    'Daniel Krsiak',
+    'Daniel Kršiak',
     'React Developer',
     'Brno',
     'Czech Republic',
@@ -38,6 +39,7 @@ const Page = () => {
       <Skills />
       <SkillsMain />
       <WhatIDoMindset />
+      <ContactVcard />
       {/* TODO: refactor for all pages into constants, urls, text, test IDs */}
       <NextPageNavigation
         pageLinkNext="/about-me"
