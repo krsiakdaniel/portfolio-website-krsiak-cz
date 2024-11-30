@@ -1,5 +1,6 @@
 import TypeAnimationText from '@/components/homepage/TypeAnimationText'
 import { CONTACT, EXTERNAL_URL, ID } from '@/utils/constants'
+import ContactVcard from './ContactVcard'
 
 type HeroLinkProps = {
   href: string
@@ -30,7 +31,6 @@ const Hero = () => {
           Hi 👋 I am React Developer based in Brno, Czech Republic 🇨🇿
         </p>
       </div>
-
       <div className="mt-10 flex flex-col items-center justify-center sm:flex-row">
         <HeroLink
           href={EXTERNAL_URL.linkedin}
@@ -51,7 +51,6 @@ const Hero = () => {
           testId="hero-link-resume"
         />
       </div>
-
       <div className="mt-4 flex flex-col items-center justify-center sm:flex-row">
         <HeroLink
           href={CONTACT.email.href}
@@ -66,6 +65,7 @@ const Hero = () => {
           testId="hero-link-phone"
         />
       </div>
+      <ContactVcard />
     </div>
   )
 }
