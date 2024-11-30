@@ -25,6 +25,10 @@ test.afterEach(async () => {
 })
 
 test.describe('Projects Work - Page links', () => {
+  test('Project - Kooperativa', async () => {
+    await testProjectLink(page, PAGES_URL.work.kooperativa, PROJECT_ID.work.kooperativa)
+  })
+
   test('Project - Smartsupp Dashboard', async () => {
     await testProjectLink(page, PAGES_URL.work.smartsupp.dashboard, PROJECT_ID.work.smartsupp.dashboard)
   })
@@ -39,6 +43,10 @@ test.describe('Projects Work - Page links', () => {
 
   test('Project - Smartsupp Help', async () => {
     await testProjectLink(page, PAGES_URL.work.smartsupp.help, PROJECT_ID.work.smartsupp.help)
+  })
+
+  test('Project - Groupon', async () => {
+    await testProjectLink(page, PAGES_URL.work.groupon, PROJECT_ID.work.groupon)
   })
 
   test('Project - Moravia', async () => {
