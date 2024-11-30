@@ -16,11 +16,11 @@ import { ID } from '@/utils/constants'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Work Experience | Daniel Krsiak - React Developer',
+  title: 'Work Experience | Daniel Kršiak - React Developer',
   description:
     'React Developer with experience development, redesign, localization, QA automation, testing. Proficient in team leadership and collaboration with UX designers.',
   keywords: [
-    'Daniel Krsiak',
+    'Daniel Kršiak',
     'Work Experience',
     'React Developer',
     'Front End Developer',

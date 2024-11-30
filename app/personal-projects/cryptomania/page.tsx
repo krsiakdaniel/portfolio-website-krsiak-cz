@@ -7,12 +7,12 @@ import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cryptomania | Daniel Krsiak - React Developer',
+  title: 'Cryptomania | Daniel Kršiak - React Developer',
   description:
     'Crypto currency prices app with latest data from CoinGecko API. Built with React and Chakra UI. Explore and search for cryptocurrencies with ease.',
   keywords: [
     'Cryptomania',
-    'Daniel Krsiak - React Developer',
+    'Daniel Kršiak - React Developer',
     'React',
     'Chakra UI',
     'JavaScript',

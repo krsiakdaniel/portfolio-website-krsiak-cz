@@ -10,11 +10,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 // default data for pages with missing metadata
 export const metadata: Metadata = {
-  title: 'Daniel Krsiak - React Developer',
+  title: 'Daniel Kršiak - React Developer',
   description:
     'Experienced React Developer from Brno Czech Republic. JavaScript, TypeScript, React, HTML, CSS, Sass, Tailwind CSS, Redux, GraphQL, Jest, Playwright, and Figma.',
   keywords: [
-    'Daniel Krsiak',
+    'Daniel Kršiak',
     'React Developer',
     'Brno',
     'Czech Republic',

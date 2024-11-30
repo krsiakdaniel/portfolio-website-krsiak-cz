@@ -8,11 +8,11 @@ import { ID } from '@/utils/constants'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About | Daniel Krsiak - React Developer',
+  title: 'About | Daniel Kršiak - React Developer',
   description:
     'Experienced React Developer proficient in JavaScript, React, TypeScript, Redux. Also skilled in QA Automation, leading teams, and managing localization projects.',
   keywords: [
-    'Daniel Krsiak',
+    'Daniel Kršiak',
     'React Developer',
     'QA Automation',
     'Team Leader',

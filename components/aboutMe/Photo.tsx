@@ -11,7 +11,7 @@ const Photo = ({ isMediumWidth = false }: PhotoProps) => {
       <Image
         src={krsiak}
         className="rounded-lg border border-neutral-300 bg-neutral-100 shadow-md md:mb-0 md:mt-0"
-        alt="Daniel Krsiak"
+        alt="Daniel Kršiak"
         placeholder="blur"
         style={{
           width: '400px',
