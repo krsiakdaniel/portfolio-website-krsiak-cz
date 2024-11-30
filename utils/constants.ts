@@ -3,6 +3,8 @@ export const YEARS = {
   typescript: 5,
   react: 5,
   redux: 2,
+  tailwind: 2,
+  next: 1,
   webDeveloper: 1,
   qaAutomation: 1,
   localizationManager: 2,

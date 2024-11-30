@@ -70,6 +70,6 @@ export interface SkillCard {
   imgSrc: StaticImageData
   imgAlt: string
   title: string
-  titleYears: number
+  years: number
   description: string
 }
