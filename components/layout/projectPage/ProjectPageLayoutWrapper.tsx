@@ -21,7 +21,8 @@ export const ProjectPageLayoutWrapper = ({
   sections,
   nextPageNavigation,
 }: ProjectPageLayoutWrapperProps) => {
-  const { title, role, years, company, description, mySkills, customers, projectLinks, imageShowcase } = projectData
+  const { title, role, years, company, description, skillsOverview, customers, projectLinks, imageShowcase } =
+    projectData
 
   return (
     <ProjectPageLayout
@@ -34,7 +35,7 @@ export const ProjectPageLayoutWrapper = ({
       goBackLink={goBackLink}
       sectionID={sectionID}
       description={description}
-      mySkills={mySkills}
+      skillsOverview={skillsOverview}
       customers={customers}
       projectLinks={projectLinks}
       sections={sections}

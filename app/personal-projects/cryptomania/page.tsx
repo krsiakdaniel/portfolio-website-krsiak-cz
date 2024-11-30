@@ -30,7 +30,7 @@ const breadCrumbs: BreadCrumbsType = {
 }
 
 const ProjectPersonalCryptomania = () => {
-  const { title, role, description, mySkills, projectLinks, linkGitHub, imageShowcase } = projectsPersonalReact[0]
+  const { title, role, description, skillsOverview, projectLinks, linkGitHub, imageShowcase } = projectsPersonalReact[0]
 
   return (
     <>
@@ -42,7 +42,7 @@ const ProjectPersonalCryptomania = () => {
         goBackLink="personal"
         sectionID={ID.section.react}
         description={description}
-        mySkills={mySkills}
+        skillsOverview={skillsOverview}
         projectLinks={projectLinks}
         linkGitHub={linkGitHub}
         sections={sections}

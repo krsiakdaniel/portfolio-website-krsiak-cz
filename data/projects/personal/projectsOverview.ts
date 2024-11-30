@@ -27,19 +27,30 @@ export const projectsPersonalNext: Project[] = [
     id: PROJECT_ID.personal.krsiak,
     isFeatured: true,
     image: krsiakThumb.src,
-    imageShowcase: [krsiak1.src, krsiak2.src, krsiak3.src, krsiak4.src, krsiak5.src],
+    imageShowcase: [
+      { id: 1, src: krsiak1.src },
+      { id: 2, src: krsiak2.src },
+      { id: 3, src: krsiak3.src },
+      { id: 4, src: krsiak4.src },
+      { id: 5, src: krsiak5.src },
+    ],
     title: '👨‍💻 Portfolio Website',
     company: 'Personal project',
     role: 'Front End - Next.js',
     description:
       'My personal portfolio website to showcase my work and skills. The\u00A0latest iteration of what I know and can code as React Developer.',
     mySkillsIcons: iconsSkillsProjectsPersonalKrsiak,
-    mySkills: [
+    skillsOverview: [
       {
+        id: 1,
         description: 'Frontend',
-        skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
+        skillsList: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
       },
-      { description: 'Other', skills: ['JEST', 'Playwright', 'GitHub Actions', 'Netlify'] },
+      {
+        id: 2,
+        description: 'Other',
+        skillsList: ['JEST', 'Playwright', 'GitHub Actions', 'Netlify'],
+      },
     ],
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://krsiak.cz/' }],
@@ -54,12 +65,12 @@ export const projectsPersonalReact: Project[] = [
     isFeatured: false,
     image: cryptomaniaThumb.src,
     imageShowcase: [
-      cryptomania1.src,
-      cryptomania2.src,
-      cryptomania3.src,
-      cryptomania4.src,
-      cryptomania5.src,
-      cryptomania6.src,
+      { id: 1, src: cryptomania1.src },
+      { id: 2, src: cryptomania2.src },
+      { id: 3, src: cryptomania3.src },
+      { id: 4, src: cryptomania4.src },
+      { id: 5, src: cryptomania5.src },
+      { id: 6, src: cryptomania6.src },
     ],
     title: '💰 CryptoMania',
     company: 'Personal project',
@@ -67,12 +78,17 @@ export const projectsPersonalReact: Project[] = [
     description:
       'Crypto currency prices app fetching latest data from CoinGecko API. This is fun little project created in Chakra UI with dark mode available.',
     mySkillsIcons: iconsSkillsProjectsPersonalCryptomania,
-    mySkills: [
+    skillsOverview: [
       {
+        id: 1,
         description: 'Frontend',
-        skills: ['JavaScript', 'TypeScript', 'React', 'React App', 'Chakra UI', 'CoinGecko API'],
+        skillsList: ['JavaScript', 'TypeScript', 'React', 'React App', 'Chakra UI', 'CoinGecko API'],
       },
-      { description: 'Other', skills: ['Netlify'] },
+      {
+        id: 2,
+        description: 'Other',
+        skillsList: ['Netlify'],
+      },
     ],
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://cryptocurrency-prices-one.vercel.app/' }],
