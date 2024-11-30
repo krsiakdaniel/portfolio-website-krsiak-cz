@@ -40,7 +40,7 @@ const About = () => {
         <HeadingInfo />
         <div className="mt-16 flex flex-col-reverse justify-between md:flex-row md:space-x-10">
           <JobsDescription />
-          <Photo />
+          <Photo isMediumWidth />
         </div>
       </div>
       <NextPageNavigation

@@ -1,4 +1,5 @@
 import NextPageNavigation from '@/components/NextPageNavigation'
+import ContactVcard from '@/components/homepage/ContactVcard'
 import Hero from '@/components/homepage/Hero'
 import Skills from '@/components/homepage/Skills'
 import SkillsMain from '@/components/homepage/SkillsMain'
@@ -38,6 +39,7 @@ const Page = () => {
       <Skills />
       <SkillsMain />
       <WhatIDoMindset />
+      <ContactVcard />
       {/* TODO: refactor for all pages into constants, urls, text, test IDs */}
       <NextPageNavigation
         pageLinkNext="/about-me"
