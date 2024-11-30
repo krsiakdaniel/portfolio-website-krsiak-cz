@@ -25,7 +25,7 @@ test.afterEach(async () => {
 test.describe('Hero - Heading and texts', () => {
   test('should render the h1 heading correctly', async () => {
     const h1Text = await page.textContent('[data-testid="hero-heading"]')
-    expect(h1Text).toContain('Daniel Krsiak')
+    expect(h1Text).toContain('Daniel Kršiak')
     expect(h1Text).toContain('React Developer')
   })
 
