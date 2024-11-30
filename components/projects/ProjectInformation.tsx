@@ -5,7 +5,7 @@ import { ProjectInformationProps } from '@/utils/sharedComponentProps'
 
 const ProjectInformation = ({
   description,
-  mySkills,
+  skillsOverview,
   customers,
   projectLinks,
   linkGitHub,
@@ -32,13 +32,14 @@ const ProjectInformation = ({
       <div className="mt-8">
         <h3 className="mb-4 text-3xl font-bold">Skills</h3>
         <List>
-          {mySkills.map((category, index) => (
-            <ListItem key={index}>
+          {skillsOverview.map((mySkill) => (
+            <ListItem key={mySkill.id}>
               <div className="flex flex-col md:flex-row">
-                {category.skills.map((skill, index) => (
+                {mySkill.skillsList.map((skill) => (
                   <span
-                    key={index}
-                    className={`bg-${getSkillBadgeColor(category.description)}-100 text-${getSkillBadgeColor(category.description)}-800 border border-${getSkillBadgeColor(category.description)}-400 mb-2 rounded px-2.5 py-0.5 text-center text-xs font-medium last:mr-0 md:mb-0 md:mr-2`}
+                    key={skill}
+                    // FIXME: getSkillBadgeColor does not work, there is no description in the [] it is the one above
+                    className={`bg-${getSkillBadgeColor(mySkill.description)}-100 text-${getSkillBadgeColor(mySkill.description)}-800 border border-${getSkillBadgeColor(mySkill.description)}-400 mb-2 rounded px-2.5 py-0.5 text-center text-xs font-medium last:mr-0 md:mb-0 md:mr-2`}
                   >
                     {skill}
                   </span>
@@ -53,8 +54,8 @@ const ProjectInformation = ({
         <h3 className="mb-4 text-3xl font-bold">{hasMoreLinks || hasGithub ? 'Links' : 'Link'}</h3>
         <List>
           {projectLinks &&
-            projectLinks.map((link, index) => (
-              <div key={index}>
+            projectLinks.map((link) => (
+              <div key={link.url}>
                 <ListItem>
                   <span className="leading-tight">
                     <a

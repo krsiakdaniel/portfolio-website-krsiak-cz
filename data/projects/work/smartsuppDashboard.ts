@@ -2,6 +2,7 @@ import { Section } from '@/utils/interfaces'
 
 export const sections: Section[] = [
   {
+    id: 1,
     title: 'My job',
     titleHighlight: '',
     items: [
@@ -10,6 +11,7 @@ export const sections: Section[] = [
     ],
   },
   {
+    id: 2,
     title: 'Developed new features',
     titleHighlight: '',
     items: [

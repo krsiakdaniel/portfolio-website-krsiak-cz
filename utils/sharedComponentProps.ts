@@ -12,7 +12,7 @@ export type HeaderSectionProps = {
 
 export type ProjectInformationProps = {
   description: string
-  mySkills: Skill[]
+  skillsOverview: Skill[]
   customers?: string | undefined
   projectLinks: Link[]
   linkGitHub?: string | undefined

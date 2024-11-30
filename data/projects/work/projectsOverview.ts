@@ -61,11 +61,11 @@ export const projectsWorkReact: Project[] = [
     isFeatured: true,
     image: smartsuppDashboardThumb.src,
     imageShowcase: [
-      smartsuppDashboard1.src,
-      smartsuppDashboard2.src,
-      smartsuppDashboard3.src,
-      smartsuppDashboard4.src,
-      smartsuppDashboard5.src,
+      { id: 1, src: smartsuppDashboard1.src },
+      { id: 2, src: smartsuppDashboard2.src },
+      { id: 3, src: smartsuppDashboard3.src },
+      { id: 4, src: smartsuppDashboard4.src },
+      { id: 5, src: smartsuppDashboard5.src },
     ],
     title: '💬 Customer Care - Chat Dashboard',
     company: 'Smartsupp',
@@ -74,13 +74,14 @@ export const projectsWorkReact: Project[] = [
     description:
       'I worked on chat dashboard features and new design, including redesign of settings. I was involved in UX team to learn.',
     mySkillsIcons: iconsSkillsProjectsWorkSmartsuppDashboard,
-    mySkills: [
+    skillsOverview: [
       {
+        id: 1,
         description: 'Frontend',
-        skills: ['JavaScript', 'TypeScript', 'React', 'Redux', 'Chakra UI', 'Cypress', 'Pair Programming'],
+        skillsList: ['JavaScript', 'TypeScript', 'React', 'Redux', 'Chakra UI', 'Cypress', 'Pair Programming'],
       },
-      { description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Design'] },
-      { description: 'Other', skills: ['Trello'] },
+      { id: 2, description: 'Design', skillsList: ['UX', 'Adobe XD', 'Responsive Design'] },
+      { id: 3, description: 'Other', skillsList: ['Trello'] },
     ],
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/' }],
@@ -91,7 +92,12 @@ export const projectsWorkReact: Project[] = [
     id: PROJECT_ID.work.komercniBanka,
     isFeatured: false,
     image: komercniBankaThumb.src,
-    imageShowcase: [komercniBanka1.src, komercniBanka2.src, komercniBanka3.src, komercniBanka4.src],
+    imageShowcase: [
+      { id: 1, src: komercniBanka1.src },
+      { id: 2, src: komercniBanka2.src },
+      { id: 3, src: komercniBanka3.src },
+      { id: 4, src: komercniBanka4.src },
+    ],
     title: '🏦 Commerce Bank - Website',
     company: 'Komerční banka',
     role: 'React Developer',
@@ -99,13 +105,14 @@ export const projectsWorkReact: Project[] = [
     description:
       'I created search page for ATM and branches, with their detail pages. And also Exchange rates page with details for each currency.',
     mySkillsIcons: iconsSkillsProjectsWorkKomercniBanka,
-    mySkills: [
+    skillsOverview: [
       {
+        id: 1,
         description: 'Frontend',
-        skills: ['JavaScript', 'TypeScript', 'React', 'Tailwind CSS', 'Pair Programming'],
+        skillsList: ['JavaScript', 'TypeScript', 'React', 'Tailwind CSS', 'Pair Programming'],
       },
-      { description: 'Design', skills: ['Figma', 'Responsive Design'] },
-      { description: 'Other', skills: ['Jira', 'Confluence', 'Tempo', 'Kentico'] },
+      { id: 2, description: 'Design', skillsList: ['Figma', 'Responsive Design'] },
+      { id: 3, description: 'Other', skillsList: ['Jira', 'Confluence', 'Tempo', 'Kentico'] },
     ],
     linkText: 'Project details',
     projectLinks: [
@@ -133,20 +140,25 @@ export const projectsWorkReact: Project[] = [
     id: PROJECT_ID.work.kooperativa,
     isFeatured: false,
     image: kooperativaThumb.src,
-    imageShowcase: [kooperativa1.src, kooperativa2.src, kooperativa3.src],
+    imageShowcase: [
+      { id: 1, src: kooperativa1.src },
+      { id: 2, src: kooperativa2.src },
+      { id: 3, src: kooperativa3.src },
+    ],
     title: '☔ Insurance company app',
     company: 'Kooperativa',
     role: 'React Developer',
     years: '8 months',
     description: 'I worked on an application for managing insurance policies for citizens property and products.',
     mySkillsIcons: iconsSkillsProjectsWorkKooperativa,
-    mySkills: [
+    skillsOverview: [
       {
+        id: 1,
         description: 'Frontend',
-        skills: ['JavaScript', 'TypeScript', 'React', 'Redux', 'Tailwind CSS'],
+        skillsList: ['JavaScript', 'TypeScript', 'React', 'Redux', 'Tailwind CSS'],
       },
-      { description: 'Design', skills: ['Figma', 'Storybook'] },
-      { description: 'Other', skills: ['Jira', 'Confluence'] },
+      { id: 2, description: 'Design', skillsList: ['Figma', 'Storybook'] },
+      { id: 3, description: 'Other', skillsList: ['Jira', 'Confluence'] },
     ],
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.koop.cz/pojisteni/pojisteni-majetku' }],
@@ -160,7 +172,12 @@ export const projectsWorkFrontEnd: Project[] = [
     id: PROJECT_ID.work.smartsupp.web,
     isFeatured: false,
     image: smartsuppWebThumb.src,
-    imageShowcase: [smartsuppWeb1.src, smartsuppWeb2.src, smartsuppWeb3.src, smartsuppWeb4.src],
+    imageShowcase: [
+      { id: 1, src: smartsuppWeb1.src },
+      { id: 2, src: smartsuppWeb2.src },
+      { id: 3, src: smartsuppWeb3.src },
+      { id: 4, src: smartsuppWeb4.src },
+    ],
     title: '🖥️ SaaS Company - Website',
     company: 'Smartsupp',
     role: 'Front End Developer',
@@ -168,10 +185,10 @@ export const projectsWorkFrontEnd: Project[] = [
     description:
       'I created the company website Front End. I worked closely with the\u00A0main UX designer on new brand color theme and layout decisions.',
     mySkillsIcons: iconsSkillsProjectsWorkSmartsuppWeb,
-    mySkills: [
-      { description: 'Frontend', skills: ['JavaScript', 'PHP', 'SASS', 'BEM', 'Cypress'] },
-      { description: 'Design', skills: ['UX', 'Adobe XD', 'Responsive Design'] },
-      { description: 'Other', skills: ['Trello'] },
+    skillsOverview: [
+      { id: 1, description: 'Frontend', skillsList: ['JavaScript', 'PHP', 'SASS', 'BEM', 'Cypress'] },
+      { id: 2, description: 'Design', skillsList: ['UX', 'Adobe XD', 'Responsive Design'] },
+      { id: 3, description: 'Other', skillsList: ['Trello'] },
     ],
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.smartsupp.com/' }],
@@ -185,7 +202,11 @@ export const projectsWorkWordPress: Project[] = [
     id: PROJECT_ID.work.smartsupp.help,
     isFeatured: false,
     image: smartsuppHelpThumb.src,
-    imageShowcase: [smartsuppHelp1.src, smartsuppHelp2.src, smartsuppHelp3.src],
+    imageShowcase: [
+      { id: 1, src: smartsuppHelp1.src },
+      { id: 2, src: smartsuppHelp2.src },
+      { id: 3, src: smartsuppHelp3.src },
+    ],
     title: '📚 SaaS Company - HELP Website',
     company: 'Smartsupp',
     role: 'Admin & Content Writer',
@@ -193,10 +214,11 @@ export const projectsWorkWordPress: Project[] = [
     description:
       'Responsible for the company HELP website running on WordPress and\u00A0writing tutorials. Localization into 9 languages.',
     mySkillsIcons: iconsSkillsProjectsWorkSmartsuppHelp,
-    mySkills: [
+    skillsOverview: [
       {
+        id: 1,
         description: 'Frontend',
-        skills: ['JavaScript', 'WordPress', 'PHP'],
+        skillsList: ['JavaScript', 'WordPress', 'PHP'],
       },
     ],
     linkText: 'Project details',
@@ -211,7 +233,10 @@ export const projectsWorkQA: Project[] = [
     id: PROJECT_ID.work.groupon,
     isFeatured: false,
     image: grouponThumb.src,
-    imageShowcase: [groupon1.src, groupon2.src],
+    imageShowcase: [
+      { id: 1, src: groupon1.src },
+      { id: 2, src: groupon2.src },
+    ],
     title: '🛒 E-Commerce - Marketplace',
     company: 'Groupon',
     role: 'QA Automation - Team Leader',
@@ -219,13 +244,14 @@ export const projectsWorkQA: Project[] = [
     description:
       'I was responsible setting up new QA team, related processes, hiring and managing people, making test plans, test cases, and scripts.',
     mySkillsIcons: iconsSkillsProjectsWorkGroupon,
-    mySkills: [
+    skillsOverview: [
       {
+        id: 1,
         description: 'Frontend',
-        skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Playwright'],
+        skillsList: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Playwright'],
       },
-      { description: 'Design', skills: ['Figma', 'Storybook'] },
-      { description: 'Other', skills: ['Jira', 'Confluence', 'Tempo', 'QA', 'Team Management'] },
+      { id: 2, description: 'Design', skillsList: ['Figma', 'Storybook'] },
+      { id: 3, description: 'Other', skillsList: ['Jira', 'Confluence', 'Tempo', 'QA', 'Team Management'] },
     ],
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.groupon.com/' }],
@@ -239,7 +265,11 @@ export const projectsWorkLocalization: Project[] = [
     id: PROJECT_ID.work.moravia,
     isFeatured: true,
     image: moraviaThumb.src,
-    imageShowcase: [moravia1.src, moravia2.src, moravia3.src],
+    imageShowcase: [
+      { id: 1, src: moravia1.src },
+      { id: 2, src: moravia2.src },
+      { id: 3, src: moravia3.src },
+    ],
     title: '🖥️ Windows',
     company: 'RWS (Moravia - IT)',
     role: 'QA Automation - Team Leader',
@@ -247,10 +277,11 @@ export const projectsWorkLocalization: Project[] = [
     description:
       'I had amazing chance to be team leader on Microsoft products, doing quality checks for Microsoft projects Windows 8 + Windows Phone.',
     mySkillsIcons: iconsSkillsProjectsWorkMoravia,
-    mySkills: [
+    skillsOverview: [
       {
+        id: 1,
         description: 'Frontend',
-        skills: ['HTML', 'CSS', 'JavaScript'],
+        skillsList: ['HTML', 'CSS', 'JavaScript'],
       },
     ],
     linkText: 'Project details',

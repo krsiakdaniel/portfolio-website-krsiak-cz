@@ -4,16 +4,11 @@ import globe from '@/public/icons/svg/about/globe.svg'
 import reactLogo from '@/public/icons/svg/about/react-logo.svg'
 import text from '@/public/icons/svg/about/text.svg'
 import { YEARS } from '@/utils/constants'
-
-interface Job {
-  path: string
-  title: string
-  years: number
-  description: string
-}
+import { Job } from '@/utils/interfaces'
 
 export const jobs: Job[] = [
   {
+    id: 1,
     path: reactLogo,
     title: 'Front End - React Developer',
     years: YEARS.react,
@@ -25,6 +20,7 @@ export const jobs: Job[] = [
     `,
   },
   {
+    id: 2,
     path: globe,
     title: 'Front End - Web Developer',
     years: YEARS.webDeveloper,
@@ -34,6 +30,7 @@ export const jobs: Job[] = [
       `,
   },
   {
+    id: 3,
     path: check,
     title: 'QA Automation - Team Leader',
     years: YEARS.qaAutomation,
@@ -43,6 +40,7 @@ export const jobs: Job[] = [
       `,
   },
   {
+    id: 4,
     path: text,
     title: 'Localization - Manager',
     years: YEARS.localizationManager,
@@ -52,6 +50,7 @@ export const jobs: Job[] = [
       `,
   },
   {
+    id: 5,
     path: bug,
     title: 'Localization - Tester',
     years: YEARS.localizationTester,
@@ -60,6 +59,7 @@ export const jobs: Job[] = [
       `,
   },
   {
+    id: 6,
     path: globe,
     title: 'Front End - Web Coder',
     years: YEARS.webCoder,

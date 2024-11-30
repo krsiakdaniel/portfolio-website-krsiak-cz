@@ -1,7 +1,7 @@
 import { generateIconsSkills, skillIcons } from '@/utils/generateIconsSkills'
 
 describe('generateIconsSkills', () => {
-  const expectedKeys = [
+  const expectedKeys: string[] = [
     'chakra',
     'css',
     'cypress',
@@ -33,11 +33,11 @@ describe('generateIconsSkills', () => {
 
   it('generateIconsSkills should return an array of icons with the correct name and path', () => {
     const skills = ['chakra', 'css', 'cypress']
-    const result = generateIconsSkills(skills)
+    const results = generateIconsSkills(skills)
 
-    result.forEach((icon, index) => {
-      expect(icon.name).toBe(skills[index])
-      expect(icon.path).toBe(skillIcons[skills[index]])
+    results.forEach((resultIcon, index) => {
+      expect(resultIcon.name).toBe(skills[index])
+      expect(resultIcon.path).toBe(skillIcons[skills[index]])
     })
   })
 })

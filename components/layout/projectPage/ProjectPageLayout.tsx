@@ -3,7 +3,7 @@ import HeaderSection from '@/components/layout/projectPage/HeaderSection'
 import PageSection from '@/components/layout/projectPage/PageSection'
 import ProjectInformation from '@/components/projects/ProjectInformation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import { Section } from '@/utils/interfaces'
+import { ImageShowcaseItem, Section } from '@/utils/interfaces'
 import { HeaderSectionProps, ProjectInformationProps } from '@/utils/sharedComponentProps'
 import { BreadCrumbsType } from '@/utils/types'
 import Image from 'next/image'
@@ -12,7 +12,7 @@ type ProjectPageLayoutProps = {
   breadCrumbs: BreadCrumbsType
   pageID: string
   sections: Section[]
-  imageShowcase: string[]
+  imageShowcase: ImageShowcaseItem[]
   nextPageNavigation: React.ReactNode
 } & HeaderSectionProps &
   ProjectInformationProps
@@ -27,7 +27,7 @@ const ProjectPageLayout = ({
   goBackLink,
   sectionID,
   description,
-  mySkills,
+  skillsOverview,
   customers,
   projectLinks,
   linkGitHub,
@@ -53,16 +53,16 @@ const ProjectPageLayout = ({
       />
       <ProjectInformation
         description={description}
-        mySkills={mySkills}
+        skillsOverview={skillsOverview}
         customers={customers}
         projectLinks={projectLinks}
         linkGitHub={linkGitHub}
       />
 
       <div>
-        {sections.map((section, index) => (
+        {sections.map((section) => (
           <PageSection
-            key={index}
+            key={section.id}
             title={section.title}
             titleHighlight={section.titleHighlight}
             items={section.items}
@@ -76,15 +76,15 @@ const ProjectPageLayout = ({
       </div>
 
       <div data-testid="gallery" className="mb-20">
-        {imageShowcase.map((image, index) => (
-          <div data-testid={`gallery-image-${index}`} key={index}>
+        {imageShowcase.map((image) => (
+          <div data-testid={`gallery-image-${image.id}`} key={image.id}>
             <Image
-              src={image}
-              alt="Project Image"
+              src={image.src}
+              alt={`project-image-${image.id}`}
               width={1240}
               height={1272}
               placeholder="blur"
-              blurDataURL={image}
+              blurDataURL={image.src}
               className="mt-8 rounded-lg border border-neutral-300 bg-neutral-100 shadow-md"
             />
           </div>

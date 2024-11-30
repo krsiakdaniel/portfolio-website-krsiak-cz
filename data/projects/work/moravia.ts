@@ -2,11 +2,13 @@ import { Section } from '@/utils/interfaces'
 
 export const sections: Section[] = [
   {
+    id: 1,
     title: 'My job',
     titleHighlight: '',
     items: ['I managed a team of 3 people in localization team.'],
   },
   {
+    id: 2,
     title: 'Responsibility',
     titleHighlight: '',
     items: [
@@ -14,6 +16,7 @@ export const sections: Section[] = [
     ],
   },
   {
+    id: 3,
     title: 'QA Automation',
     titleHighlight: '',
     items: [

@@ -1,14 +1,9 @@
 import { YEARS } from '@/utils/constants'
+import { SkillInfo } from '@/utils/interfaces'
 import DividerWithText from '../shared/DividerWithText'
 import Heading2 from '../shared/Heading2'
 
-export interface InfoItem {
-  id: number
-  title: string
-  description: string
-}
-
-const skillsInfo: InfoItem[] = [
+const skillsInfo: SkillInfo[] = [
   {
     id: 1,
     title: 'Passionate about JavaScript, TypeScript, and React',
@@ -27,7 +22,7 @@ const skillsInfo: InfoItem[] = [
   },
 ]
 
-const mindsetInfo: InfoItem[] = [
+const mindsetInfo: SkillInfo[] = [
   {
     id: 1,
     title: 'Committed to continuous learning',
