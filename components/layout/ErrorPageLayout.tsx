@@ -1,5 +1,5 @@
 import PageContainer from '@/components/layout/PageContainer'
-import imgError from '@/public/images/illustrations/error.webp'
+import imgError from '@/public/images/webp/error.webp'
 import { ErrorProps } from '@/utils/sharedComponentProps'
 import Image from 'next/image'
 import { useEffect } from 'react'

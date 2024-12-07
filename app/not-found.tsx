@@ -1,5 +1,5 @@
 import PageContainer from '@/components/layout/PageContainer'
-import img404 from '@/public/images/illustrations/404.webp'
+import img404 from '@/public/images/webp/404.webp'
 import { ID } from '@/utils/constants'
 import Image from 'next/image'
 import Link from 'next/link'

@@ -1,4 +1,4 @@
-import krsiak from '@/public/images/krsiak-daniel.webp'
+import krsiak from '@/public/images/webp/krsiak-daniel.webp'
 import Image from 'next/image'
 
 type PhotoProps = {
