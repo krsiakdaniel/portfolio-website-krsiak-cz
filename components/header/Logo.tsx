@@ -1,5 +1,5 @@
 import { TEXT } from '@/localization/texts_en'
-import logo from '@/public/logo.webp'
+import logo from '@/public/images/webp/logo.webp'
 import { PAGES_URL } from '@/utils/constants'
 import Image from 'next/image'
 import Link from 'next/link'
