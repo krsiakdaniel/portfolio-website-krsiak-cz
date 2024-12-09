@@ -47,9 +47,9 @@ const About = () => {
         pageLinkPrevious="/"
         pageNamePrevious="Home"
         dataTestIDPrevious="page-navigation-previous-homepage"
-        pageLinkNext="/work-experience"
-        pageNameNext="Work Experience"
-        dataTestIDNext="page-navigation-next-work-experience"
+        pageLinkNext="/resume"
+        pageNameNext="Resume"
+        dataTestIDNext="page-navigation-next-resume"
       />
     </PageContainer>
   )
