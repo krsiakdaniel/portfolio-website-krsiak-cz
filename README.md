@@ -60,6 +60,11 @@ The website contains these following sections and pages.
 - 👉 Links
 - 👉 Screenshots
 
+## 📈 Project Board and Issues
+
+- Project board: <https://github.com/users/krsiakdaniel/projects/6>
+- Issues: <https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/issues>
+
 ## 💻 Development
 
 [README-development.md](README-development.md)
