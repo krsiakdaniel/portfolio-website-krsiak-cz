@@ -21,8 +21,9 @@ const NextPageNavigation = ({
   const hasNext = pageLinkNext && pageNameNext
 
   return (
-    <div className="container mx-auto max-w-screen-xl">
+    <div className="container mx-auto mt-20 max-w-screen-xl">
       <div className={`group flex flex-col gap-4 md:flex-row ${hasPrevious ? 'justify-between' : 'justify-end'}`}>
+        {/* link to previous page */}
         {hasPrevious && (
           <a
             href={pageLinkPrevious}
@@ -33,6 +34,7 @@ const NextPageNavigation = ({
             {pageNamePrevious}
           </a>
         )}
+        {/* link to next page */}
         {hasNext && (
           <a
             href={pageLinkNext}

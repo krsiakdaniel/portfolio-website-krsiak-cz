@@ -75,7 +75,7 @@ const ProjectPageLayout = ({
         <p className="mb-3 text-neutral-600">See project screenshots below.</p>
       </div>
 
-      <div data-testid="gallery" className="mb-20">
+      <div data-testid="gallery">
         {imageShowcase.map((image) => (
           <div data-testid={`gallery-image-${image.id}`} key={image.id}>
             <Image

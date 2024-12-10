@@ -5,7 +5,7 @@ import SkillsIconGroup from './SkillsIconGroup'
 
 const Skills = () => {
   return (
-    <div id={ID.skills} className="mt-20">
+    <div id={ID.skills} className="mt-10">
       <DividerWithText text="Skills" />
       <div className="mt-5 flex flex-col justify-center space-y-2 md:flex-row md:space-x-2 md:space-y-0">
         <SkillsIconGroup icons={iconsSkills1} />

@@ -1,6 +1,5 @@
 import { IconArrow } from '@/components/icons'
 import Heading2 from '@/components/shared/Heading2'
-import { getFeaturedBorderColor } from '@/utils/getFeaturedBorderColor'
 import { Icon } from '@/utils/interfaces'
 import Image from 'next/image'
 
@@ -35,7 +34,7 @@ const ProjectItem = ({
 }: ProjectItemProps) => {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-10">
-      <div className="mx-auto items-start gap-8 py-8 md:grid md:grid-cols-2 lg:py-8">
+      <div className="mx-auto mt-8 items-start gap-8 md:grid md:grid-cols-2">
         <div className="mt-8 flex first:mt-0 lg:mt-0 lg:justify-start">
           <div className="relative">
             {isFeatured && <p className="absolute -right-4 -top-5 z-10 text-4xl">⭐</p>}
@@ -43,7 +42,7 @@ const ProjectItem = ({
             {/* TODO: change to webp or avif format */}
             <Image
               src={image}
-              className={`mb-4 rounded-lg border bg-neutral-100 shadow-md md:mb-0 ${getFeaturedBorderColor(isFeatured)} `}
+              className="mb-4 rounded-lg border bg-neutral-100 shadow-md md:mb-0"
               alt={title}
               width={600}
               height={617}
