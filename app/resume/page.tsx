@@ -56,7 +56,7 @@ const Resume = () => {
         </div>
         <div className="mt-16">
           <iframe
-            src="https://drive.google.com/file/d/1b-PWUOauMnFecRuYX7K85xZnwFRMWFR5/preview"
+            src="https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD/preview"
             width="100%"
             height="2000"
             allow="autoplay"
