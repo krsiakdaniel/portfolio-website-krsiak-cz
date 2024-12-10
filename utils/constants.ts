@@ -12,17 +12,6 @@ export const YEARS = {
   webCoder: 1,
 }
 
-export const CONTACT = {
-  phone: {
-    href: 'tel:+420734496308',
-    text: '(+420) 734 496 308',
-  },
-  email: {
-    href: 'mailto:krsiak.daniel@gmail.com',
-    text: 'krsiak.daniel@gmail.com',
-  },
-}
-
 export const PROJECT_ID = {
   work: {
     kooperativa: 'link-project-work-kooperativa',
@@ -44,6 +33,7 @@ export const PROJECT_ID = {
 export const ID = {
   homepage: 'homepage',
   hero: 'hero',
+  contactVcard: 'contact-vcard',
   skills: 'skills',
   skillsMain: 'skills-main',
   about: 'about',

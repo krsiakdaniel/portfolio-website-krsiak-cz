@@ -44,7 +44,7 @@ const Resume = () => {
   return (
     <PageContainer id={ID.about}>
       <BreadCrumbs linkLevel1="/about-me" textLevel1="About Me" />
-      <div className="mb-20">
+      <div>
         <ResumeInfo />
         <div className="mt-8">
           <HeroLink

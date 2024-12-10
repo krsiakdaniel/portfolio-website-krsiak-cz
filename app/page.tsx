@@ -1,7 +1,6 @@
 import NextPageNavigation from '@/components/NextPageNavigation'
 import ContactVcard from '@/components/homepage/ContactVcard'
 import Hero from '@/components/homepage/Hero'
-import MeInMovember from '@/components/homepage/MeInMovember'
 import Skills from '@/components/homepage/Skills'
 import SkillsMain from '@/components/homepage/SkillsMain'
 import WhatIDoMindset from '@/components/homepage/WhatIDoMindset'
@@ -37,11 +36,11 @@ const Page = () => {
   return (
     <PageContainer id={ID.homepage}>
       <Hero />
+      <ContactVcard />
       <Skills />
       <SkillsMain />
       <WhatIDoMindset />
-      <MeInMovember />
-      <ContactVcard />
+
       {/* TODO: refactor for all pages into constants, urls, text, test IDs */}
       <NextPageNavigation
         pageLinkNext="/about-me"

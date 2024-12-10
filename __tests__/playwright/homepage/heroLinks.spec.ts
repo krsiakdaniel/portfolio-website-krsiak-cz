@@ -1,5 +1,5 @@
 import { checkLink } from '@/__tests__/playwright/utils/checkLink'
-import { CONTACT, EXTERNAL_URL } from '@/utils/constants'
+import { EXTERNAL_URL } from '@/utils/constants'
 import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
 
 let browser: Browser
@@ -35,13 +35,5 @@ test.describe('Hero Links', () => {
 
   test('should have the correct Resume link', async () => {
     await checkLink(page, 'hero-link-resume', EXTERNAL_URL.resume)
-  })
-
-  test('should have the correct Email link', async () => {
-    await checkLink(page, 'hero-link-email', CONTACT.email.href)
-  })
-
-  test('should have the correct Phone link', async () => {
-    await checkLink(page, 'hero-link-phone', CONTACT.phone.href)
   })
 })

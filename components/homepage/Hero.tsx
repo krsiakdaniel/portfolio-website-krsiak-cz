@@ -1,5 +1,4 @@
 import { ID } from '@/utils/constants'
-import HeroContactLinks from './HeroContactLinks'
 import HeroHeading from './HeroHeading'
 import HeroMainLinks from './HeroMainLinks'
 import HeroParagraph from './HeroParagraph'
@@ -12,7 +11,6 @@ const Hero = () => {
         <HeroParagraph />
       </div>
       <HeroMainLinks />
-      <HeroContactLinks />
     </div>
   )
 }
