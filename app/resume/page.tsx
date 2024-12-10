@@ -3,6 +3,7 @@ import PageContainer from '@/components/layout/PageContainer'
 import NextPageNavigation from '@/components/NextPageNavigation'
 import ResumeInfo from '@/components/resume/ResumeInfo'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import { TEXT } from '@/localization/texts_en'
 import { EXTERNAL_URL, ID } from '@/utils/constants'
 import { Metadata } from 'next'
 
@@ -63,7 +64,7 @@ const Resume = () => {
         <div className="mt-8">
           <HeroLink
             href={EXTERNAL_URL.resume.resumeViewPDF}
-            text="Download - Resume in PDF"
+            text={`Download - ${TEXT.resumePDF}`}
             className="bg-red-700 text-white hover:bg-red-800 focus:ring-red-300 sm:mb-0"
             testId="hero-link-resume"
           />
