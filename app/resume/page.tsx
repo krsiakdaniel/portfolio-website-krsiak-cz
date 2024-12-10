@@ -40,6 +40,22 @@ export const metadata: Metadata = {
   ],
 }
 
+const LINK_RESUME_PDF = 'https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD/preview'
+
+const ResumePreview = () => {
+  return (
+    <div className="mt-16">
+      <iframe
+        src={LINK_RESUME_PDF}
+        width="100%"
+        height="1400"
+        allow="autoplay"
+        className="border bg-black p-2"
+      ></iframe>
+    </div>
+  )
+}
+
 const Resume = () => {
   return (
     <PageContainer id={ID.about}>
@@ -54,15 +70,7 @@ const Resume = () => {
             testId="hero-link-resume"
           />
         </div>
-        <div className="mt-16">
-          <iframe
-            src="https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD/preview"
-            width="100%"
-            height="2000"
-            allow="autoplay"
-            className="border bg-black p-2"
-          ></iframe>
-        </div>
+        <ResumePreview />
       </div>
       <NextPageNavigation
         pageLinkPrevious="/about-me"
