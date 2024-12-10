@@ -27,7 +27,7 @@ Website: <https://krsiak.cz>
 
 ## 🛠️ Tech Stack
 
-![Tech Stack](/screenshots/technologies.png)
+![Tech Stack](/readme-images/technologies.png)
 
 Using these following technologies:
 
@@ -80,6 +80,6 @@ The website contains these following sections and pages.
 
 Project screenshots.
 
-![screenshot-1](/screenshots/screenshot-1.png)
+![screenshot-1](/readme-images/screenshot-1.png)
 
-![screenshot-2](/screenshots/screenshot-2.png)
+![screenshot-2](/readme-images/screenshot-2.png)
