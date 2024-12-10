@@ -62,10 +62,15 @@ export const ID = {
   },
 }
 
+const RESUME_BASE_URL = 'https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD'
+
 export const EXTERNAL_URL = {
   linkedin: 'https://www.linkedin.com/in/krsiakdaniel/',
   github: 'https://github.com/krsiakdaniel/',
-  resume: 'https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD/view?usp=sharing',
+  resume: {
+    resumeViewPDF: `${RESUME_BASE_URL}/view`,
+    resumeEmbedPreviewPDF: `${RESUME_BASE_URL}/preview`,
+  },
 }
 
 // URLs for pages

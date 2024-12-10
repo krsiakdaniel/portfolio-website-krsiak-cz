@@ -55,6 +55,7 @@ import smartsuppHelp2 from '@/public/images/projects-work/smartsupp-help/smartsu
 import smartsuppHelp3 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-3-light.png'
 import smartsuppHelpThumb from '@/public/images/projects-work/smartsupp-help/smartsupp-help-thumb-light-600.webp'
 
+// TODO: split this into smaller files per technology domain
 export const projectsWorkReact: Project[] = [
   {
     id: PROJECT_ID.work.smartsupp.dashboard,
@@ -70,7 +71,7 @@ export const projectsWorkReact: Project[] = [
     title: '💬 Customer Care - Chat Dashboard',
     company: 'Smartsupp',
     role: 'React Developer',
-    years: '3 years 2 months',
+    years: '3\u00A0years 2\u00A0months',
     description:
       'I worked on chat dashboard features and new design, including redesign of settings. I was involved in UX team to learn.',
     mySkillsIcons: iconsSkillsProjectsWorkSmartsuppDashboard,
@@ -101,7 +102,7 @@ export const projectsWorkReact: Project[] = [
     title: '🏦 Commerce Bank - Website',
     company: 'Komerční banka',
     role: 'React Developer',
-    years: '10 months',
+    years: '10\u00A0months',
     description:
       'I created search page for ATM and branches, with their detail pages. And also Exchange rates page with details for each currency.',
     mySkillsIcons: iconsSkillsProjectsWorkKomercniBanka,
@@ -148,7 +149,7 @@ export const projectsWorkReact: Project[] = [
     title: '☔ Insurance company app',
     company: 'Kooperativa',
     role: 'React Developer',
-    years: '8 months',
+    years: '8\u00A0months',
     description: 'I worked on an application for managing insurance policies for citizens property and products.',
     mySkillsIcons: iconsSkillsProjectsWorkKooperativa,
     skillsOverview: [
@@ -181,7 +182,7 @@ export const projectsWorkFrontEnd: Project[] = [
     title: '🖥️ SaaS Company - Website',
     company: 'Smartsupp',
     role: 'Front End Developer',
-    years: '1 year',
+    years: '1\u00A0year',
     description:
       'I created the company website Front End. I worked closely with the\u00A0main UX designer on new brand color theme and layout decisions.',
     mySkillsIcons: iconsSkillsProjectsWorkSmartsuppWeb,
@@ -210,7 +211,7 @@ export const projectsWorkWordPress: Project[] = [
     title: '📚 SaaS Company - HELP Website',
     company: 'Smartsupp',
     role: 'Admin & Content Writer',
-    years: '6 months',
+    years: '6\u00A0months',
     description:
       'Responsible for the company HELP website running on WordPress and\u00A0writing tutorials. Localization into 9 languages.',
     mySkillsIcons: iconsSkillsProjectsWorkSmartsuppHelp,
@@ -240,7 +241,7 @@ export const projectsWorkQA: Project[] = [
     title: '🛒 E-Commerce - Marketplace',
     company: 'Groupon',
     role: 'QA Automation - Team Leader',
-    years: '4 months',
+    years: '4\u00A0months',
     description:
       'I was responsible setting up new QA team, related processes, hiring and managing people, making test plans, test cases, and scripts.',
     mySkillsIcons: iconsSkillsProjectsWorkGroupon,

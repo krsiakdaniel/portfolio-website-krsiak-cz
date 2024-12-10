@@ -34,6 +34,6 @@ test.describe('Hero Links', () => {
   })
 
   test('should have the correct Resume link', async () => {
-    await checkLink(page, 'hero-link-resume', EXTERNAL_URL.resume)
+    await checkLink(page, 'hero-link-resume', EXTERNAL_URL.resume.resumeViewPDF)
   })
 })

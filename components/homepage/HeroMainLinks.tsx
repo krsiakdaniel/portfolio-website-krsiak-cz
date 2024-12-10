@@ -17,7 +17,7 @@ const HeroMainLinks = () => {
         testId="hero-link-github"
       />
       <HeroLink
-        href={EXTERNAL_URL.resume}
+        href={EXTERNAL_URL.resume.resumeViewPDF}
         text="Resume in PDF"
         className="bg-red-700 text-white hover:bg-red-800 focus:ring-red-300 sm:mb-0"
         testId="hero-link-resume"
