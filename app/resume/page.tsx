@@ -62,7 +62,7 @@ const Resume = () => {
         <ResumeInfo />
         <div className="mt-8">
           <HeroLink
-            href={EXTERNAL_URL.resumeViewPDF}
+            href={EXTERNAL_URL.resume.resumeViewPDF}
             text="Download - Resume in PDF"
             className="bg-red-700 text-white hover:bg-red-800 focus:ring-red-300 sm:mb-0"
             testId="hero-link-resume"
