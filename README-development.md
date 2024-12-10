@@ -6,13 +6,17 @@ Development environment for the project.
 
 - [Development](#development)
   - [💻 Commands](#-commands)
+    - [Install dependencies](#install-dependencies)
+    - [Outdated dependencies](#outdated-dependencies)
   - [💅 Prettier](#-prettier)
 
 ---
 
 ## 💻 Commands
 
-Install dependencies.
+Misc commands for terminal.
+
+### Install dependencies
 
 ```bash
 npm i
@@ -24,7 +28,15 @@ Runs the app in the development mode.
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view project in browser.
+
+### Outdated dependencies
+
+Find what packages are outdaded and upgrade to latest version if possible.
+
+```bash
+npm outdated
+```
 
 ## 💅 Prettier
 
