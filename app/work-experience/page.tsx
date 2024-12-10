@@ -100,9 +100,9 @@ const ProjectsWork = () => {
       </ProjectsLayout>
       <div className="mt-20">
         <NextPageNavigation
-          pageLinkPrevious="/about-me"
-          pageNamePrevious="About Me"
-          dataTestIDPrevious="page-navigation-previous-about-me"
+          pageLinkPrevious="/resume"
+          pageNamePrevious="Resume"
+          dataTestIDPrevious="page-navigation-previous-resume"
           pageLinkNext="/personal-projects"
           pageNameNext="Personal Projects"
           dataTestIDNext="page-navigation-next-personal-projects"

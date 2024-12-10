@@ -1,8 +1,7 @@
 'use client' // using hooks
 
 import Logo from '@/components/header/Logo'
-import MenuDesktop from '@/components/header/MenuDesktop'
-import MenuMobile from '@/components/header/MenuMobile'
+import Menu from '@/components/header/Menu'
 import MenuToggle from '@/components/header/MenuToggle'
 import ScrollProgressBar from '@/components/header/ScrollProgressBar'
 import { useScrollProgress } from '@/hooks/useScrollProgress'
@@ -21,10 +20,11 @@ const Header = () => {
       <div className="container mx-auto max-w-screen-xl px-5">
         <div className="flex items-center justify-between py-3">
           <Logo />
-          <MenuDesktop />
+          {/* desktop menu */}
+          <Menu isMobile={false} />
           <MenuToggle isOpen={isOpen} handleMenuToggle={handleMenuToggle} />
         </div>
-        {isOpen && <MenuMobile />}
+        {isOpen && <Menu isMobile={true} />}
       </div>
 
       <ScrollProgressBar scroll={scroll} />

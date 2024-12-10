@@ -89,6 +89,7 @@ const generateUrlWorkExperience = (company: string) => {
 export const PAGES_URL = {
   home: '/',
   aboutMe: '/about-me',
+  resume: '/resume',
   work: {
     main: URL_WORK_EXPERIENCE,
     kooperativa: generateUrlWorkExperience('kooperativa'),
