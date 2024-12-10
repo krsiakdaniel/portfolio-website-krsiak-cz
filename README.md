@@ -6,9 +6,11 @@ React Developer portfolio website ⚛️ 👨‍💻
 
 - [Portfolio Website - krsiak.cz](#portfolio-website---krsiakcz)
   - [⚡ Project Website](#-project-website)
+  - [✏️ Project Description](#️-project-description)
   - [🚦 Project Status](#-project-status)
   - [🛠️ Tech Stack](#️-tech-stack)
   - [📝 Features](#-features)
+  - [📈 Project Board and Issues](#-project-board-and-issues)
   - [💻 Development](#-development)
   - [🐛 Testing](#-testing)
   - [🚀 CI/CD - Continuous Integration / Deployment](#-cicd---continuous-integration--deployment)
@@ -20,6 +22,10 @@ React Developer portfolio website ⚛️ 👨‍💻
 ## ⚡ Project Website
 
 Website: <https://krsiak.cz>
+
+## ✏️ Project Description
+
+A portfolio website showcasing the work and skills of me as React Developer building web applications using TypeScript, React and Next.js. Skilled in responsive UI design. Workflows automated and project deployed using CI/CD pipelines.
 
 ## 🚦 Project Status
 
