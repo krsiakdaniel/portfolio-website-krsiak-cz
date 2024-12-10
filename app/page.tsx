@@ -1,5 +1,4 @@
 import NextPageNavigation from '@/components/NextPageNavigation'
-import ContactVcard from '@/components/homepage/ContactVcard'
 import Hero from '@/components/homepage/Hero'
 import Skills from '@/components/homepage/Skills'
 import SkillsMain from '@/components/homepage/SkillsMain'
@@ -36,7 +35,6 @@ const Page = () => {
   return (
     <PageContainer id={ID.homepage}>
       <Hero />
-      <ContactVcard />
       <Skills />
       <SkillsMain />
       <WhatIDoMindset />

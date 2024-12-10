@@ -4,4 +4,5 @@ export const TEXT = {
   resume: '📝 Resume',
   workExperience: '🖥️ Work Experience',
   personalProjects: '🚀 Personal Projects',
+  resumePDF: 'Resume in PDF',
 }

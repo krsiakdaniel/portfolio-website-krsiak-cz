@@ -33,7 +33,6 @@ export const PROJECT_ID = {
 export const ID = {
   homepage: 'homepage',
   hero: 'hero',
-  contactVcard: 'contact-vcard',
   skills: 'skills',
   skillsMain: 'skills-main',
   about: 'about',

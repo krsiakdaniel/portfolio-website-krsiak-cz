@@ -1,3 +1,4 @@
+import { TEXT } from '@/localization/texts_en'
 import { EXTERNAL_URL } from '@/utils/constants'
 import HeroLink from './HeroLink'
 
@@ -18,7 +19,7 @@ const HeroMainLinks = () => {
       />
       <HeroLink
         href={EXTERNAL_URL.resume.resumeViewPDF}
-        text="Resume in PDF"
+        text={TEXT.resumePDF}
         className="bg-red-700 text-white hover:bg-red-800 focus:ring-red-300 sm:mb-0"
         testId="hero-link-resume"
       />
