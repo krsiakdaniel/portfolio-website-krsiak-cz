@@ -14,14 +14,14 @@ test.describe('Navigation - About Me', () => {
     expect(page.url()).toBe('http://localhost:3000/')
   })
 
-  test('navigates to next page - Work Experience', async ({ page }) => {
+  test('navigates to next page - Resume', async ({ page }) => {
     // Navigate to your app's page
     await page.goto(START_URL)
 
     // Click on the NextPageNavigation component to go to the next page
-    await page.click('[data-testid="page-navigation-next-work-experience"]')
+    await page.click('[data-testid="page-navigation-next-resume"]')
 
-    // Check that we've navigated to the /work-experience page
-    expect(page.url()).toBe('http://localhost:3000/work-experience')
+    // Check that we've navigated to the /resume page
+    expect(page.url()).toBe('http://localhost:3000/resume')
   })
 })
