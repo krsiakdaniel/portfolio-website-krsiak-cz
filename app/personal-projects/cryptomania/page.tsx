@@ -2,7 +2,7 @@ import NextPageNavigation from '@/components/NextPageNavigation'
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
 import { sections } from '@/data/projects/personal/cryptoMania'
 import { projectsPersonalReact } from '@/data/projects/personal/projectsOverview'
-import { ID, PAGES_URL } from '@/utils/constants'
+import { ID, PAGES_URL, URL_PERSONAL_PROJECTS } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
 }
 
 const breadCrumbs: BreadCrumbsType = {
-  linkLevel1: '/personal-projects',
+  linkLevel1: URL_PERSONAL_PROJECTS,
   textLevel1: 'Personal Projects',
-  linkLevel2: '/personal-projects/cryptomania',
+  linkLevel2: PAGES_URL.personal.cryptoMania,
   textLevel2: 'Cryptomania',
 }
 

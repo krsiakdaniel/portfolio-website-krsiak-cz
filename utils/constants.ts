@@ -1,3 +1,5 @@
+import { generateUrlPersonalProject, generateUrlWorkExperience } from './generateUrls'
+
 export const YEARS = {
   javascript: 6,
   typescript: 5,
@@ -61,31 +63,27 @@ export const ID = {
   },
 }
 
-const RESUME_BASE_URL = 'https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD'
+const RESUME_GOOGLE_DRIVE_URL = 'https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD'
 
 export const EXTERNAL_URL = {
   linkedin: 'https://www.linkedin.com/in/krsiakdaniel/',
   github: 'https://github.com/krsiakdaniel/',
   resume: {
-    resumeViewPDF: `${RESUME_BASE_URL}/view`,
-    resumeEmbedPreviewPDF: `${RESUME_BASE_URL}/preview`,
+    resumeViewPDF: `${RESUME_GOOGLE_DRIVE_URL}/view`,
+    resumeEmbedPreviewPDF: `${RESUME_GOOGLE_DRIVE_URL}/preview`,
   },
 }
 
 // URLs for pages
-const URL_WORK_EXPERIENCE = '/work-experience'
-const URL_PERSONAL_PROJECTS = '/personal-projects'
-
-const generateUrlWorkExperience = (company: string) => {
-  return `${URL_WORK_EXPERIENCE}/${company}`
-}
+export const URL_WORK_EXPERIENCE = '/work-experience'
+export const URL_PERSONAL_PROJECTS = '/personal-projects'
 
 export const PAGES_URL = {
   home: '/',
   aboutMe: '/about-me',
   resume: '/resume',
   work: {
-    main: URL_WORK_EXPERIENCE,
+    mainUrl: URL_WORK_EXPERIENCE,
     kooperativa: generateUrlWorkExperience('kooperativa'),
     smartsupp: {
       dashboard: generateUrlWorkExperience('smartsupp-dashboard'),
@@ -97,8 +95,8 @@ export const PAGES_URL = {
     moravia: generateUrlWorkExperience('moravia'),
   },
   personal: {
-    main: URL_PERSONAL_PROJECTS,
-    krsiak: `${URL_PERSONAL_PROJECTS}/krsiak`,
-    cryptoMania: `${URL_PERSONAL_PROJECTS}/cryptomania`,
+    mainUrl: URL_PERSONAL_PROJECTS,
+    krsiak: generateUrlPersonalProject('krsiak'),
+    cryptoMania: generateUrlPersonalProject('cryptomania'),
   },
 }

@@ -4,7 +4,7 @@ import ProjectsLayout from '@/components/layout/ProjectsLayout'
 import { ProjectSection } from '@/components/projects/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { projectsPersonalNext, projectsPersonalReact } from '@/data/projects/personal/projectsOverview'
-import { ID } from '@/utils/constants'
+import { ID, PAGES_URL } from '@/utils/constants'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const ProjectsPersonal = () => {
   return (
     <PageContainer id={ID.projects.personal}>
-      <BreadCrumbs linkLevel1="/personal-projects" textLevel1="Personal Projects" />
+      <BreadCrumbs linkLevel1={PAGES_URL.personal.mainUrl} textLevel1="Personal Projects" />
       <ProjectsLayout
         heading="🚀 Personal Projects"
         description="I like to learn new technologies and create personal projects where I can apply what I know and keep up on the latest trends."

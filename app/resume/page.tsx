@@ -4,7 +4,7 @@ import NextPageNavigation from '@/components/NextPageNavigation'
 import ResumeInfo from '@/components/resume/ResumeInfo'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { TEXT } from '@/localization/texts_en'
-import { EXTERNAL_URL, ID } from '@/utils/constants'
+import { EXTERNAL_URL, ID, PAGES_URL } from '@/utils/constants'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -58,7 +58,7 @@ const ResumePreviewEmbed = () => {
 const Resume = () => {
   return (
     <PageContainer id={ID.about}>
-      <BreadCrumbs linkLevel1="/about-me" textLevel1="About Me" />
+      <BreadCrumbs linkLevel1={PAGES_URL.aboutMe} textLevel1="About Me" />
       <div>
         <ResumeInfo />
         <div className="mt-8">

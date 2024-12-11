@@ -4,7 +4,7 @@ import JobsDescription from '@/components/aboutMe/JobsDescription'
 import Photo from '@/components/aboutMe/Photo'
 import PageContainer from '@/components/layout/PageContainer'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import { ID } from '@/utils/constants'
+import { ID, PAGES_URL } from '@/utils/constants'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 const About = () => {
   return (
     <PageContainer id={ID.about}>
-      <BreadCrumbs linkLevel1="/about-me" textLevel1="About Me" />
+      <BreadCrumbs linkLevel1={PAGES_URL.aboutMe} textLevel1="About Me" />
       <div>
         <HeadingInfo />
         <div className="mt-16 flex flex-col-reverse justify-between md:flex-row md:space-x-10">
