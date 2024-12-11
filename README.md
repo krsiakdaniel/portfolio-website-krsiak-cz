@@ -25,7 +25,8 @@ Website: <https://krsiak.cz>
 
 ## ✏️ Project Description
 
-A portfolio website showcasing the work and skills of me as React Developer building web applications using TypeScript, React and Next.js. Skilled in responsive UI design. Workflows automated and project deployed using CI/CD pipelines.
+- A portfolio website showcasing my work and skills as **React Developer** building web applications using **TypeScript**, **React** and **Next.js**.
+- Workflows are automated and the project is deployed using **CI/CD** pipelines.
 
 ## 🚦 Project Status
 
@@ -37,15 +38,31 @@ A portfolio website showcasing the work and skills of me as React Developer buil
 
 Using these following technologies:
 
+**Languages:**
+
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 - [TypeScript](https://www.typescriptlang.org/)
+
+**Libraries/Frameworks:**
+
 - [React](https://react.dev/) - JavaScript library
 - [Next.js](https://nextjs.org/) - React Framework
+
+**Design:**
+
 - [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
+
+**Testing:**
+
 - [JEST](https://jestjs.io/) - UNIT testing
 - [Playwright](https://playwright.dev/) - E2E testing
+  
+**CI/CD:**
+
 - [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) - CI - Continuous Integration
 - [Netlify](https://www.netlify.com/) - CD - Continuous Deployment
+
+
 
 ## 📝 Features
 
@@ -55,6 +72,8 @@ The website contains these following sections and pages.
 
 - 👉 Home - Introduction
 - 👉 About Me
+- 👉 Resume
+- 👉 Hire Me
 - 👉 Work Experience
 - 👉 Personal Projects
 
