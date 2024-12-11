@@ -2,7 +2,7 @@ import NextPageNavigation from '@/components/NextPageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { sections } from '@/data/projects/work/moravia'
 import { projectsWorkLocalization } from '@/data/projects/work/projectsOverview'
-import { ID, PAGES_URL } from '@/utils/constants'
+import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
 }
 
 const breadCrumbs: BreadCrumbsType = {
-  linkLevel1: '/work-experience',
+  linkLevel1: URL_WORK_EXPERIENCE,
   textLevel1: 'Work Experience',
-  linkLevel2: '/work-experience/moravia',
+  linkLevel2: PAGES_URL.work.moravia,
   textLevel2: 'Moravia',
 }
 

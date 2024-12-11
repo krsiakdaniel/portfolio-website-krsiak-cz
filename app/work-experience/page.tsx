@@ -12,7 +12,7 @@ import {
   projectsWorkReact,
   projectsWorkWordPress,
 } from '@/data/projects/work/projectsOverview'
-import { ID } from '@/utils/constants'
+import { ID, PAGES_URL } from '@/utils/constants'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 const ProjectsWork = () => {
   return (
     <PageContainer id={ID.projects.work}>
-      <BreadCrumbs linkLevel1="/work-experience" textLevel1="Work Experience" />
+      <BreadCrumbs linkLevel1={PAGES_URL.work.mainUrl} textLevel1="Work Experience" />
       <ProjectsLayout
         heading="🖥️ Work Experience"
         description="I worked on modern products, developed new features, redesigned websites, implemented responsive design, updated legacy codebase, was responsible for localization, QA automation and testing, including work as team leader."
