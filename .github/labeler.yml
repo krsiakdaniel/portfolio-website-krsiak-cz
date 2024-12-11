@@ -1,0 +1,51 @@
+# Add PR labels based on branch names
+ARIA:
+  - head-branch: ['^aria', 'aria', '.*aria.*']
+
+Build:
+  - head-branch: ['^build', 'build', '.*build.*']
+
+Chore:
+  - head-branch: ['^chore', 'chore', '.*chore.*']
+
+CICD:
+  - head-branch: ['^cicd', 'cicd', '.*cicd.*']
+
+Dependabot:
+  - head-branch: ['^dependabot', 'dependabot', '.*dependabot.*']
+
+Docs:
+  - head-branch: ['^docs', 'docs', '.*docs.*']
+
+Feature:
+  - head-branch: ['^feat', 'feat', '.*feat.*', '^feature', 'feature', '.*feature.*']
+
+Fix:
+  - head-branch: ['^fix', 'fix', '.*fix.*']
+
+Hotfix:
+  - head-branch: ['^hotfix', 'hotfix', '.*hotfix.*']
+
+ImgBot:
+  - head-branch: ['^imgbot', 'imgbot', '.*imgbot.*']
+
+Localization:
+  - head-branch: ['^loc', 'loc', '.*loc.*']
+
+Performance:
+  - head-branch: ['^perf', 'perf', '.*perf.*']
+
+Refactor:
+  - head-branch: ['^refactor', 'refactor', '.*refactor.*', '^ref', 'ref', '.*ref.*']
+
+Revert:
+  - head-branch: ['^revert', 'revert', '.*revert.*']
+
+Style:
+  - head-branch: ['^style', 'style', '.*style.*']
+
+Test - JEST:
+  - head-branch: ['.*jest.*']
+
+Test - Playwright:
+  - head-branch: ['.*playwright.*']
