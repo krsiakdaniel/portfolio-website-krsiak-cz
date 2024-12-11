@@ -1,3 +1,4 @@
+import HighlightedText from '@/components/shared/HighlightedText'
 import PageHeading from '@/components/shared/PageHeading'
 
 const HeadingInfo = () => {
@@ -5,9 +6,9 @@ const HeadingInfo = () => {
     <div>
       <PageHeading title="👨‍💻 About Me" />
       <p className="mt-4 text-lg text-neutral-600" data-testid="about-me-introduction">
-        I am <span className="font-bold text-violet-600">React Developer</span>, who knows{' '}
-        <span className="font-bold text-violet-600">QA Automation</span> and is capable of leading people as{' '}
-        <span className="font-bold text-violet-600">Team Leader</span>.
+        I am <HighlightedText>React Developer</HighlightedText>, who knows{' '}
+        <HighlightedText>QA Automation</HighlightedText> and is capable of leading people as{' '}
+        <HighlightedText>Team Leader</HighlightedText>.
       </p>
     </div>
   )
