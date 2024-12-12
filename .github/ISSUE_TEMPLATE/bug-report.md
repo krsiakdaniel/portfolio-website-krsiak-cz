@@ -4,7 +4,6 @@ about: Create a report for bug fix.
 title: ''
 labels: Fix
 assignees: krsiakdaniel
-
 ---
 
 ## Describe the bug
@@ -24,15 +23,15 @@ A clear and concise description of what you expected to happen.
 
 ## Desktop
 
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+- OS: [e.g. iOS]
+- Browser [e.g. chrome, safari]
+- Version [e.g. 22]
 
 ## Smartphone
 
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+- Device: [e.g. iPhone6]
+- OS: [e.g. iOS8.1]
+- Browser [e.g. stock browser, safari]
+- Version [e.g. 22]
 
 ## Screenshots

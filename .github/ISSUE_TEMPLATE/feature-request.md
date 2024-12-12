@@ -4,7 +4,6 @@ about: Template for new features.
 title: 'feature: ✨ '
 labels: Feature
 assignees: krsiakdaniel
-
 ---
 
 ## Info
