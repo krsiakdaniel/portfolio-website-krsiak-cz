@@ -272,7 +272,7 @@ export const projectsWorkLocalization: Project[] = [
       { id: 3, src: moravia3.src },
     ],
     title: '🖥️ Windows',
-    company: 'RWS (Moravia - IT)',
+    company: 'RWS - Moravia IT',
     role: 'QA Automation - Team Leader',
     years: '1 year',
     description:

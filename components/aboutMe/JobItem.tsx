@@ -11,7 +11,7 @@ const JobItem = ({ path, title, description, years }: JobItemProps) => {
   return (
     <li className="mb-10 ms-6 last:mb-0">
       <span className="absolute -start-5 flex h-10 w-10 items-center justify-center rounded-full bg-violet-100 ring-1 ring-violet-600">
-        <Image src={path} alt={title} width={28} height={28} />
+        <Image src={path} alt={title} width={28} height={28} loading="eager" />
       </span>
       <h3 className="mb-1 ml-4 flex flex-col items-start text-3xl font-bold text-neutral-900 lg:flex-row">
         {title}

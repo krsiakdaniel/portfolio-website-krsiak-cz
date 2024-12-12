@@ -2,15 +2,17 @@ import NextPageNavigation from '@/components/NextPageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { sections } from '@/data/projects/work/kooperativa'
 import { projectsWorkReact } from '@/data/projects/work/projectsOverview'
+import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kooperativa | Daniel Kršiak - React Developer',
+  title: `Kooperativa | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
   description: 'I worked on an application for managing insurance policies for citizens property and products.',
   keywords: [
-    'Daniel Kršiak',
+    `${TEXT.nameDanielKrsiak}`,
+    `${TEXT.reactDeveloper}`,
     'Kooperativa',
     'Insurance company app',
     'React Developer',

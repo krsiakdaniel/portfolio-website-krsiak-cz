@@ -12,17 +12,18 @@ import {
   projectsWorkReact,
   projectsWorkWordPress,
 } from '@/data/projects/work/projectsOverview'
+import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL } from '@/utils/constants'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Work Experience | Daniel Kršiak - React Developer',
+  title: `Work Experience | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
   description:
     'React Developer with experience development, redesign, localization, QA automation, testing. Proficient in team leadership and collaboration with UX designers.',
   keywords: [
-    'Daniel Kršiak',
+    `${TEXT.nameDanielKrsiak}`,
+    `${TEXT.reactDeveloper}`,
     'Work Experience',
-    'React Developer',
     'Front End Developer',
     'QA Automation',
     'Team Leader',
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     'Smartsupp',
     'Komerční banka',
     'Groupon',
-    'RWS (Moravia - IT)',
+    'RWS - Moravia IT',
   ],
 }
 
@@ -81,7 +82,7 @@ const ProjectsWork = () => {
           description="I set up Cypress E2E testing for the entire company application. I also wrote E2E tests in JavaScript and TypeScript. Mentoring juniors QA."
         />
         <ExperienceCard
-          company="RWS (Moravia IT)"
+          company="RWS - Moravia IT"
           role="Localization - Tester"
           description="Making sure translations fit UI layout on Windows 7 + Windows Store."
         />

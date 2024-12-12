@@ -2,15 +2,17 @@ import NextPageNavigation from '@/components/NextPageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { sections } from '@/data/projects/work/groupon'
 import { projectsWorkQA } from '@/data/projects/work/projectsOverview'
+import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Groupon | Daniel Kršiak - QA Automation Team Leader',
+  title: `Groupon | ${TEXT.nameDanielKrsiak} - QA Automation Team Leader`,
   description:
     'QA Automation SDET - Team Lead at Groupon. Responsible for new QA team, hiring, coordinating testing for online marketplace with 17 million customers.',
   keywords: [
+    `${TEXT.nameDanielKrsiak}`,
     'Groupon',
     'SDET',
     'E-Commerce - Marketplace',

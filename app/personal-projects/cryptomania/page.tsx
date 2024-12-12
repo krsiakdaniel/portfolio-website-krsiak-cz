@@ -2,17 +2,19 @@ import NextPageNavigation from '@/components/NextPageNavigation'
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
 import { sections } from '@/data/projects/personal/cryptoMania'
 import { projectsPersonalReact } from '@/data/projects/personal/projectsOverview'
+import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_PERSONAL_PROJECTS } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cryptomania | Daniel Kršiak - React Developer',
+  title: `Cryptomania | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
   description:
     'Crypto currency prices app with latest data from CoinGecko API. Built with React and Chakra UI. Explore and search for cryptocurrencies with ease.',
   keywords: [
     'Cryptomania',
-    'Daniel Kršiak - React Developer',
+    `${TEXT.nameDanielKrsiak}`,
+    `${TEXT.reactDeveloper}`,
     'React',
     'Chakra UI',
     'JavaScript',

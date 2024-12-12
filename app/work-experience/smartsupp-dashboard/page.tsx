@@ -2,16 +2,18 @@ import NextPageNavigation from '@/components/NextPageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { projectsWorkReact } from '@/data/projects/work/projectsOverview'
 import { sections } from '@/data/projects/work/smartsuppDashboard'
+import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Smartsupp Dashboard | Daniel Kršiak - React Developer',
+  title: `Smartsupp Dashboard | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
   description:
     'Worked as a React Developer on the Smartsupp Dashboard for 3 years. Contributed to chat dashboard features, UX improvements, and modernizing the codebase.',
   keywords: [
-    'Daniel Kršiak',
+    `${TEXT.nameDanielKrsiak}`,
+    `${TEXT.reactDeveloper}`,
     'Smartsupp Dashboard',
     'Customer Care - Chat Dashboard',
     'React Developer',

@@ -2,15 +2,17 @@ import NextPageNavigation from '@/components/NextPageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { projectsWorkFrontEnd } from '@/data/projects/work/projectsOverview'
 import { sections } from '@/data/projects/work/smartsuppWeb'
+import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Smartsupp Web | Daniel Kršiak - Front End Developer',
+  title: `Smartsupp Web | ${TEXT.nameDanielKrsiak} - Front End Developer`,
   description:
     'Worked as a Front End Developer at Smartsupp for 1 year. Created company website Front End, collaborated with UX designer on brand theme and layout.',
   keywords: [
+    `${TEXT.nameDanielKrsiak}`,
     'Smartsupp Web',
     'SaaS Company - Website',
     'Front End Developer',
