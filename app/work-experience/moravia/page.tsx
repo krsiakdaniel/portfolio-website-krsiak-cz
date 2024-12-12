@@ -2,16 +2,18 @@ import NextPageNavigation from '@/components/NextPageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { sections } from '@/data/projects/work/moravia'
 import { projectsWorkLocalization } from '@/data/projects/work/projectsOverview'
+import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'RWS Moravia IT | Daniel Kršiak - QA Automation Team Leader',
+  title: `RWS - Moravia IT | ${TEXT.nameDanielKrsiak} - QA Automation Team Leader`,
   description:
     'QA Automation - Team Leader at Moravia for 1 year. Microsoft projects Windows 8 + Windows Phone, managing translation delivery and ensuring quality.',
   keywords: [
-    'RWS (Moravia - IT)',
+    `${TEXT.nameDanielKrsiak}`,
+    'RWS - Moravia IT',
     'Windows',
     'QA Automation - Team Leader',
     'HTML',

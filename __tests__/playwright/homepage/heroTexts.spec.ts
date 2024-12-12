@@ -1,3 +1,4 @@
+import { TEXT } from '@/localization/texts_en'
 import { Browser, BrowserContext, Page, chromium, expect, test } from '@playwright/test'
 
 let browser: Browser
@@ -25,7 +26,7 @@ test.afterEach(async () => {
 test.describe('Hero - Heading and texts', () => {
   test('should render the h1 heading correctly', async () => {
     const h1Text = await page.textContent('[data-testid="hero-heading"]')
-    expect(h1Text).toContain('Daniel Kršiak')
+    expect(h1Text).toContain(TEXT.nameDanielKrsiak)
     expect(h1Text).toContain('React Developer')
   })
 

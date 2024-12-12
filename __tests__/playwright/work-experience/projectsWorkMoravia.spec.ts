@@ -22,7 +22,7 @@ test.afterEach(async () => {
   await context.close()
 })
 
-test.describe('Project - RWS (Moravia)', () => {
+test.describe('Project - RWS - Moravia IT', () => {
   test('Link', async ({ page }) => {
     await test.step('Go to page', async () => {
       await page.goto('/work-experience/moravia')

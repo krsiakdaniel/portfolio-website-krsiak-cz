@@ -1,3 +1,4 @@
+import { TEXT } from '@/localization/texts_en'
 import krsiak from '@/public/images/webp/krsiak-daniel-400.webp'
 import Image from 'next/image'
 
@@ -7,12 +8,12 @@ const Photo = () => {
       <Image
         src={krsiak}
         className="h-auto w-96 rounded-lg border border-neutral-300 bg-neutral-100 shadow-md lg:mb-0 lg:mt-0"
-        alt="Daniel Kršiak"
+        alt={TEXT.nameDanielKrsiak}
         placeholder="blur"
         loading="eager"
       />
       <div className="mt-2 flex flex-row justify-start">
-        <p className="text-sm text-gray-500">Daniel Kršiak</p>
+        <p className="text-sm text-gray-500">{TEXT.nameDanielKrsiak}</p>
       </div>
     </div>
   )

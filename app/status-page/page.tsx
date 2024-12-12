@@ -1,13 +1,15 @@
 import PageContainer from '@/components/layout/PageContainer'
+import { TEXT } from '@/localization/texts_en'
 import { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Status page | Daniel Kršiak - React Developer',
+  title: `Status page | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
   description:
     'Explore status page showcasing project badges for Jest Tests, Playwright Tests, CodeQL, Code Quality, Dependabot, and Netlify.',
   keywords: [
-    'Daniel Kršiak',
+    `${TEXT.nameDanielKrsiak}`,
+    `${TEXT.reactDeveloper}`,
     'Status page',
     'Project badges',
     'Jest Tests',

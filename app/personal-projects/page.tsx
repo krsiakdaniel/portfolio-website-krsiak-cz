@@ -4,14 +4,23 @@ import ProjectsLayout from '@/components/layout/ProjectsLayout'
 import { ProjectSection } from '@/components/projects/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { projectsPersonalNext, projectsPersonalReact } from '@/data/projects/personal/projectsOverview'
+import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL } from '@/utils/constants'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Personal Projects | Daniel Kršiak - React Developer',
+  title: `Personal Projects | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
   description:
     'Explore my projects created with Next.js and React. My portfolio, crypto app, e-commerce site, all showcasing coding skills and trends in web development.',
-  keywords: ['Daniel Kršiak', 'Personal Projects', 'Next.js', 'React', 'Web Development', 'Portfolio', 'Crypto Apps'],
+  keywords: [
+    `${TEXT.nameDanielKrsiak}`,
+    'Personal Projects',
+    'Next.js',
+    'React',
+    'Web Development',
+    'Portfolio',
+    'Crypto Apps',
+  ],
 }
 
 const ProjectsPersonal = () => {
