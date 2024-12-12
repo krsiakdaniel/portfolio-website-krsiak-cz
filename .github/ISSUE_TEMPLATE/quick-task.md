@@ -1,14 +1,12 @@
 ---
 name: Quick task template
 about: Template for quick small task.
-title:
-labels:
+title: ''
+labels: ''
 assignees: krsiakdaniel
 ---
 
-## Info
-
-### Description
+## Description
 
 ...
 
