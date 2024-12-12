@@ -9,15 +9,15 @@ assignees: krsiakdaniel
 
 ## Info
 
-### What: Descriotion
+### Description
 
 Describe the purpose of the feature.
 
-### Why: Benefits
+### Benefits
 
 Explain the benefits or impact this feature will have on the project.
 
-### How: Implementation
+### Implementation
 
 Include steps, tools, or components to be modified.
 
