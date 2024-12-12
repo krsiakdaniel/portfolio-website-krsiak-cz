@@ -6,24 +6,22 @@ labels: Feature
 assignees: krsiakdaniel
 ---
 
-## Info
-
-### Description
+## Description
 
 Describe the purpose of the feature.
 
-### Benefits
+## Benefits
 
 Explain the benefits or impact this feature will have on the project.
 
-### Implementation
+## Implementation
 
 Include steps, tools, or components to be modified.
 
 ## Tasks
 
-- [ ] Task 1
-- [ ] Task 2
+- [ ] ...
+- [ ] ...
 
 ## Acceptance Criteria
 
@@ -31,3 +29,5 @@ Include steps, tools, or components to be modified.
 - ...
 
 ## Screenshots
+
+Attach relevant screenshots or design mockups if applicable.
