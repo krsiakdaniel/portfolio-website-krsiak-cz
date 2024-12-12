@@ -1,22 +1,15 @@
-import krsiak from '@/public/images/webp/krsiak-daniel.webp'
+import krsiak from '@/public/images/webp/krsiak-daniel-400.webp'
 import Image from 'next/image'
 
-type PhotoProps = {
-  isMediumWidth?: boolean
-}
-
-const Photo = ({ isMediumWidth = false }: PhotoProps) => {
+const Photo = () => {
   return (
-    <div className={`flex w-full flex-col items-center justify-start ${isMediumWidth ? 'md:w-1/3' : ''}`}>
+    <div className="flex w-full flex-col items-center justify-start lg:w-1/3">
       <Image
         src={krsiak}
-        className="rounded-lg border border-neutral-300 bg-neutral-100 shadow-md md:mb-0 md:mt-0"
+        className="h-auto w-96 rounded-lg border border-neutral-300 bg-neutral-100 shadow-md lg:mb-0 lg:mt-0"
         alt="Daniel Kršiak"
         placeholder="blur"
-        style={{
-          width: '400px',
-          height: 'auto',
-        }}
+        loading="eager"
       />
       <div className="mt-2 flex flex-row justify-start">
         <p className="text-sm text-gray-500">Daniel Kršiak</p>

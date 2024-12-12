@@ -8,7 +8,7 @@ const NotFoundPage = () => {
   return (
     <PageContainer id={ID.error.err404}>
       <div className="flex flex-col items-center text-center">
-        <Image src={img404} alt="404" width={400} height={417} className="bt-5 mb-10" />
+        <Image src={img404} alt="404" width={400} height={417} loading="eager" className="bt-5 mb-10" />
         <h1 className="mb-4 text-7xl font-extrabold uppercase tracking-tight text-violet-600 lg:text-9xl">404</h1>
         <p className="mb-4 text-3xl font-bold tracking-tight text-neutral-900 md:text-4xl">
           Sorry, we can&apos;t find that page.

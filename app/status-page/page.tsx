@@ -87,6 +87,7 @@ const StatusPage = () => {
               alt={item.alt}
               width={item.width}
               height={item.height}
+              loading="eager"
               className="mb-2 last:mb-0"
             />
           ))}

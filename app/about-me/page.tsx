@@ -38,9 +38,9 @@ const About = () => {
       <BreadCrumbs linkLevel1={PAGES_URL.aboutMe} textLevel1="About Me" />
       <div>
         <HeadingInfo />
-        <div className="mt-16 flex flex-col-reverse justify-between md:flex-row md:space-x-10">
+        <div className="mt-16 flex flex-col-reverse justify-between lg:flex-row lg:space-x-10">
           <JobsDescription />
-          <Photo isMediumWidth />
+          <Photo />
         </div>
       </div>
       <NextPageNavigation

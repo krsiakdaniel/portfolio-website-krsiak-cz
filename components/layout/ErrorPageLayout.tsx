@@ -27,7 +27,7 @@ export const ErrorPageLayout = ({
   return (
     <PageContainer id={pageContainerId}>
       <div className="flex flex-col items-center text-center">
-        <Image src={imgError} alt={imgAlt} width={400} height={417} className="bt-5 mb-10" />
+        <Image src={imgError} alt={imgAlt} width={400} height={417} loading="eager" className="bt-5 mb-10" />
         <h1 className="mb-4 text-7xl font-extrabold tracking-tight text-violet-600 lg:text-9xl">Error</h1>
         <p className="mb-4 text-3xl font-bold tracking-tight text-neutral-900 md:text-4xl">{textMain}</p>
         <p className="mb-4 text-lg font-light text-neutral-600">{textSmall}</p>
