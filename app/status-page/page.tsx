@@ -1,4 +1,5 @@
 import PageContainer from '@/components/layout/PageContainer'
+import Heading1 from '@/components/shared/Heading1'
 import { TEXT } from '@/localization/texts_en'
 import { Metadata } from 'next'
 import Image from 'next/image'
@@ -78,8 +79,10 @@ const StatusPage = () => {
   return (
     <PageContainer id="status-page">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-3xl font-bold tracking-tight text-neutral-900 md:text-4xl">Status page</h1>
-        <p className="mt-4 text-lg text-neutral-600">Project badges</p>
+        <Heading1>Status page</Heading1>
+        <p className="mt-4 text-lg text-neutral-600">
+          Current statuses for key integrations, showcasing the health and performance of the project.
+        </p>
 
         <div className="mt-8 flex flex-col items-center">
           {statusBadges.map((item) => (
