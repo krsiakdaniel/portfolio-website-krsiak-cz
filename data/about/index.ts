@@ -13,10 +13,8 @@ export const jobs: Job[] = [
     title: 'Front End - React Developer',
     years: YEARS.react,
     description: `
-    I have hands-on experience with JavaScript, TypeScript, React, and Redux that includes
-    the development of a dashboard application for customer care,
-    contributions to a banking website for Komercni banka
-    and work on application for Kooperativa managing insurance policies for citizens' property and products.
+    Built a customer care dashboard, contributed to Komerční banka website,
+    and\u00A0developed Kooperativa insurance policy management app using JavaScript, TypeScript, React, and\u00A0Redux.
     `,
   },
   {
@@ -25,8 +23,8 @@ export const jobs: Job[] = [
     title: 'Front End - Web Developer',
     years: YEARS.webDeveloper,
     description: `
-        I led the creation of a new website using PHP and JavaScript for a prominent SaaS company.
-        This involved implementing a responsive design strategy and collaborating closely with UX designers to\u00A0ensure an optimal user experience.
+        Led the development of a responsive website for a SaaS company,
+        integrating PHP, JavaScript, and\u00A0UX design principles.
       `,
   },
   {
@@ -35,8 +33,8 @@ export const jobs: Job[] = [
     title: 'QA Automation - Team Leader',
     years: YEARS.qaAutomation,
     description: `
-        In my role as a QA Automation Team Leader, I successfully led 2 QA teams in implementing testing tools like Cypress and Playwright for E2E testing.
-        My responsibilities also included writing tests in\u00A0JavaScript and TypeScript to ensure robust test coverage and maintain code quality.
+        Led 2 QA teams to implement Cypress and Playwright for E2E testing, writing tests in JavaScript
+        and\u00A0TypeScript to\u00A0ensure high-quality code.
       `,
   },
   {
@@ -45,8 +43,8 @@ export const jobs: Job[] = [
     title: 'Localization - Manager',
     years: YEARS.localizationManager,
     description: `
-      I managed small team and oversaw the localization efforts for Microsoft Windows 8 and\u00A0Windows Phone, managing the translation of a SaaS company website into nine languages.
-      This role honed my project management skills and deepened my understanding of internationalization strategies.
+      Directed the localization of Microsoft Windows 8, Windows Phone,
+      and a SaaS company site into 9\u00A0languages, enhancing project management and\u00A0internationalization expertise.
       `,
   },
   {
@@ -55,7 +53,8 @@ export const jobs: Job[] = [
     title: 'Localization - Tester',
     years: YEARS.localizationTester,
     description: `
-      I conducted thorough layout testing for Microsoft projects, including Windows 7 and Windows Store, ensuring seamless user experiences across different platforms.
+      Performed layout testing for Microsoft projects, including Windows 7 and Windows Store,
+      ensuring cross-platform user experience quality.
       `,
   },
   {
@@ -64,7 +63,8 @@ export const jobs: Job[] = [
     title: 'Front End - Web Coder',
     years: YEARS.webCoder,
     description: `
-        Back in 2009 I had my first freelance job as a web coder. Developing websites for small businesses and individuals. That eventually led me to my full-time career in IT later on. 
+        Began IT career developing websites for small businesses,
+        laying the foundation that eventually led me to full-time career in IT. 
       `,
   },
 ]
