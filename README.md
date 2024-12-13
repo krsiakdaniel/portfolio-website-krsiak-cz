@@ -9,6 +9,7 @@ React Developer portfolio website ⚛️ 👨‍💻
   - [✏️ Project Description](#️-project-description)
   - [👨‍💼 Team Leadership and Task Management](#-team-leadership-and-task-management)
   - [📈 Project Board and Issues](#-project-board-and-issues)
+  - [🔄 Pull Requests](#-pull-requests)
   - [📊 Insights and Analytics](#-insights-and-analytics)
   - [🚦 Project Status](#-project-status)
   - [🛠️ Tech Stack](#️-tech-stack)
@@ -40,6 +41,12 @@ To keep track of the project's progress and manage tasks efficiently, I use a pr
 
 - [Project board](https://github.com/users/krsiakdaniel/projects/6)
 - [Issues](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/issues)
+
+## 🔄 Pull Requests
+
+I organize pull requests to ensure a clear and efficient workflow. See the details in closed pull requests.
+
+- [Closed 'Pull Requests'](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/pulls?q=is%3Apr+is%3Aclosed)
 
 ## 📊 Insights and Analytics
 
