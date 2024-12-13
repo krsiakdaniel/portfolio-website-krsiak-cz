@@ -1,4 +1,5 @@
 import { IconArrow } from '@/components/icons'
+import Heading1 from '@/components/shared/Heading1'
 import Heading2 from '@/components/shared/Heading2'
 import { getGoBackLinkID } from '@/utils/getGoBackLink'
 import { HeaderSectionProps } from '@/utils/sharedComponentProps'
@@ -7,11 +8,13 @@ import Link from 'next/link'
 const HeaderSection = ({ title, role, years, company, goBackLink, sectionID }: HeaderSectionProps) => {
   return (
     <div className="mb-16">
-      <h1 className="mb-2 text-5xl font-bold leading-none tracking-tight text-neutral-900 sm:text-7xl">{title}</h1>
-      <Heading2>
-        {role}
-        {years && <small className="text-md text-neutral-500">{` · ${years} · ${company}`}</small>}
-      </Heading2>
+      <Heading1 textColor="text-neutral-900">{title}</Heading1>
+      <div className="mt-2">
+        <Heading2>
+          {role}
+          {years && <small className="text-md text-neutral-500">{` · ${years} · ${company}`}</small>}
+        </Heading2>
+      </div>
       <p className="mb-3 mt-4">
         <Link
           href={getGoBackLinkID(goBackLink, sectionID)}

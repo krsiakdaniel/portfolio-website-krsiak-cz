@@ -20,7 +20,7 @@ const Heading1 = ({
   return (
     <h1
       {...(dataTestId && { 'data-testid': dataTestId })}
-      className={`font-bold ${textColor} text-${textSize} sm:text-${textSizeSM} lg:text-${textSizeLG} ${customCss}`}
+      className={`font-bold tracking-tight ${textColor} text-${textSize} sm:text-${textSizeSM} lg:text-${textSizeLG} ${customCss}`}
     >
       {children}
     </h1>
