@@ -33,7 +33,12 @@ Website: <https://krsiak.cz>
 
 ## 👨‍💼 Team Leadership and Task Management
 
-I have extensive experience in creating boards in **Trello**, **Jira**, **GitHub Projects**, and **GitLab**. I excel at organizing tasks for both individual and team projects, ensuring efficient workflows and timely project completion. I have managed projects in teams ranging from 3 people / 10 people / 40 people across 4 different teams and time zones.
+I have extensive experience in creating boards in **Trello**, **Jira**, **GitHub Projects**, and **GitLab**. I excel at organizing tasks for both individual and team projects, ensuring efficient workflows and timely project completion.
+
+**I managed projects of different sizes:**
+
+- Teams of 3, 10, and 40 members.
+- Collaboration across 4 teams and multiple time zones.
 
 ## 📈 Project Board and Issues
 
