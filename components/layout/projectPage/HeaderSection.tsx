@@ -8,7 +8,7 @@ const HeaderSection = ({ title, role, years, company, goBackLink, sectionID }: H
   return (
     <div className="mb-16">
       <h1 className="mb-2 text-5xl font-bold leading-none tracking-tight text-neutral-900 sm:text-7xl">{title}</h1>
-      <Heading2 textColor="text-violet-600">
+      <Heading2>
         {role}
         {years && <small className="text-md text-neutral-500">{` · ${years} · ${company}`}</small>}
       </Heading2>

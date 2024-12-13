@@ -4,7 +4,7 @@ import Heading2 from '../shared/Heading2'
 const MyMindset = () => {
   return (
     <div className="lg:w-1/2">
-      <Heading2 textColor="text-violet-600">🥇🚀 I Have Committed Mindset</Heading2>
+      <Heading2>🥇🚀 I Have Committed Mindset</Heading2>
       {mindsetInfo.map((mindset) => (
         <div className="mt-8" key={mindset.id}>
           <p className="mt-4 text-lg text-neutral-600">
