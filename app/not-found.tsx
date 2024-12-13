@@ -1,4 +1,5 @@
 import PageContainer from '@/components/layout/PageContainer'
+import Heading1 from '@/components/shared/Heading1'
 import img404 from '@/public/images/webp/404.webp'
 import { ID } from '@/utils/constants'
 import Image from 'next/image'
@@ -9,14 +10,16 @@ const NotFoundPage = () => {
     <PageContainer id={ID.error.err404}>
       <div className="flex flex-col items-center text-center">
         <Image src={img404} alt="404" width={400} height={417} loading="eager" className="bt-5 mb-10" />
-        <h1 className="mb-4 text-7xl font-extrabold uppercase tracking-tight text-violet-600 lg:text-9xl">404</h1>
-        <p className="mb-4 text-3xl font-bold tracking-tight text-neutral-900 md:text-4xl">
+        <Heading1 textSize="9xl" textSizeSM="9xl" textSizeLG="9xl">
+          404
+        </Heading1>
+        <p className="mt-4 text-3xl font-bold tracking-tight text-neutral-900 md:text-4xl">
           Sorry, we can&apos;t find that page.
         </p>
-        <p className="mb-4 text-lg font-light text-neutral-600">It looks like we are fresh out of yarn!</p>
+        <p className="mt-2 text-lg font-light text-neutral-600">It looks like we are fresh out of yarn!</p>
         <Link
           href="/"
-          className="my-4 inline-flex rounded-lg bg-purple-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300"
+          className="mt-8 inline-flex rounded-lg bg-purple-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300"
         >
           Back to Homepage
         </Link>
