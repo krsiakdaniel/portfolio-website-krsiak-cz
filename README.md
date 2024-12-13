@@ -7,10 +7,12 @@ React Developer portfolio website ⚛️ 👨‍💻
 - [Portfolio Website - krsiak.cz](#portfolio-website---krsiakcz)
   - [⚡ Project Website](#-project-website)
   - [✏️ Project Description](#️-project-description)
+  - [👨‍💼 Team Leadership and Task Management](#-team-leadership-and-task-management)
+  - [📈 Project Board and Issues](#-project-board-and-issues)
+  - [📊 Insights and Analytics](#-insights-and-analytics)
   - [🚦 Project Status](#-project-status)
   - [🛠️ Tech Stack](#️-tech-stack)
   - [📝 Features](#-features)
-  - [📈 Project Board and Issues](#-project-board-and-issues)
   - [💻 Development](#-development)
   - [🐛 Testing](#-testing)
   - [🚀 CI/CD - Continuous Integration / Deployment](#-cicd---continuous-integration--deployment)
@@ -28,15 +30,36 @@ Website: <https://krsiak.cz>
 - A portfolio website showcasing my work and skills as **React Developer** building web applications using **TypeScript**, **React** and **Next.js**.
 - Workflows are automated and the project is deployed using **CI/CD** pipelines.
 
+## 👨‍💼 Team Leadership and Task Management
+
+I have extensive experience in creating boards in **Trello**, **Jira**, **GitHub Projects**, and **GitLab**. I excel at organizing tasks for both individual and team projects, ensuring efficient workflows and timely project completion. I have managed projects in teams ranging from 3 people / 10 people / 40 people across 4 different teams and time zones.
+
+## 📈 Project Board and Issues
+
+To keep track of the project's progress and manage tasks efficiently, I use a project board with issues.
+
+- [Project board](https://github.com/users/krsiakdaniel/projects/6)
+- [Issues](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/issues)
+
+## 📊 Insights and Analytics
+
+To provide a clear overview of the project's progress I use charts.
+
+- [Labels Overview](https://github.com/users/krsiakdaniel/projects/6/insights/3)
+- [Priorities](https://github.com/users/krsiakdaniel/projects/6/insights/2)
+- [Trend of Tasks](https://github.com/users/krsiakdaniel/projects/6/insights/1)
+
 ## 🚦 Project Status
+
+The current status of the project is continuously monitored.
 
 [![Jest Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml) [![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml) [![CodeQL](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eaa72f9b0a7242ae9179b0dfdd58faf5)](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![Dependabot](https://img.shields.io/badge/Dependabot-Enabled-green)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/dependabot) [![Netlify Status](https://api.netlify.com/api/v1/badges/eb322254-0169-4941-9416-3806b0bd5be6/deploy-status)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
 
 ## 🛠️ Tech Stack
 
-![Tech Stack](/readme-images/technologies.png)
+Using these following technologies and tools.
 
-Using these following technologies:
+![Tech Stack](/readme-images/technologies.png)
 
 **Languages:**
 
@@ -56,13 +79,11 @@ Using these following technologies:
 
 - [JEST](https://jestjs.io/) - UNIT testing
 - [Playwright](https://playwright.dev/) - E2E testing
-  
+
 **CI/CD:**
 
 - [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) - CI - Continuous Integration
 - [Netlify](https://www.netlify.com/) - CD - Continuous Deployment
-
-
 
 ## 📝 Features
 
@@ -85,11 +106,6 @@ The website contains these following sections and pages.
 - 👉 Links
 - 👉 Screenshots
 
-## 📈 Project Board and Issues
-
-- Project board: <https://github.com/users/krsiakdaniel/projects/6>
-- Issues: <https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/issues>
-
 ## 💻 Development
 
 [README-development.md](README-development.md)
@@ -110,6 +126,8 @@ The website contains these following sections and pages.
 
 Project screenshots.
 
-![screenshot-1](/readme-images/screenshot-1.png)
+![krsiak-daniel](/readme-images/screenshot-1.png)
 
-![screenshot-2](/readme-images/screenshot-2.png)
+![about-me](/readme-images/screenshot-2.png)
+
+![work-experience](/readme-images/screenshot-3.png)
