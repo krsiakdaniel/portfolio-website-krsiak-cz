@@ -8,6 +8,25 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/**/*.{js,ts,jsx,tsx,mdx}', // https://nextjs.org/docs/app/building-your-application/configuring/src-directory
   ],
+  // If you need to make sure Tailwind generates certain class names that don’t exist in content files.
+  safelist: [
+    'text-sm',
+    'text-md',
+    'text-lg',
+    'text-xl',
+    'text-2xl',
+    'text-3xl',
+    'text-4xl',
+    'text-5xl',
+    'text-6xl',
+    'text-7xl',
+    'text-8xl',
+    'text-9xl',
+    'sm:text-6xl',
+    'lg:text-7xl',
+    'sm:text-9xl',
+    'lg:text-9xl',
+  ],
   screens: {
     xs: '320px',
     // => @media (min-width: 320px) { ... }
