@@ -4,7 +4,6 @@ about: Template for refactoring.
 title: ''
 labels: Refactor
 assignees: krsiakdaniel
-
 ---
 
 ## Description
@@ -13,13 +12,14 @@ Describe the purpose and scope of the refactoring.
 
 ## Benefits
 
-Explain how it will improve the project.
+- Enhance code readability.
+- Optimize performance.
+- Better UX and UI.
 
 ## Refactoring Plan
 
-- Analyze the current code. 
-- Modularize or break down complex functions.
 - Improve code readability with better naming conventions.
+- Modularize or break down complex functions.
 - Update images.
 
 ## Tasks
