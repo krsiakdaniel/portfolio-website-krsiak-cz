@@ -26,6 +26,10 @@ export const DATA_TEST_IDS = {
     linkGitHub: `${HERO_LINK}-${GITHUB}`,
   },
   page: {
+    home: {
+      next: `${PAGE_NAVIGATION}-${NEXT}-${ABOUT_ME}`,
+      prev: '',
+    },
     aboutMe: {
       previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${HOMEPAGE}`,
       next: `${PAGE_NAVIGATION}-${NEXT}-${RESUME}`,

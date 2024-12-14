@@ -6,6 +6,7 @@ import WhatIDoMindset from '@/components/homepage/WhatIDoMindset'
 import PageContainer from '@/components/layout/PageContainer'
 import { TEXT } from '@/localization/texts_en'
 import { ID } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -44,7 +45,7 @@ const Page = () => {
       <NextPageNavigation
         pageLinkNext="/about-me"
         pageNameNext="About Me"
-        dataTestIdNext="page-navigation-next-about-me"
+        dataTestIdNext={DATA_TEST_IDS.page.home.next}
       />
     </PageContainer>
   )
