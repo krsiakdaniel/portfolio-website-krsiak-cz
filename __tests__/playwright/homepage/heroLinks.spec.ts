@@ -1,6 +1,6 @@
 import { checkLink } from '@/__tests__/playwright/utils/checkLink'
 import { EXTERNAL_URL } from '@/utils/constants'
-import { DATA_TEST_IDS } from '@/utils/dataTestid'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
 
 let browser: Browser
@@ -27,14 +27,14 @@ test.afterEach(async () => {
 
 test.describe('Hero Links', () => {
   test('should have the correct LinkedIn link', async () => {
-    await checkLink(page, DATA_TEST_IDS.heroLinkLinkedIn, EXTERNAL_URL.linkedin)
+    await checkLink(page, DATA_TEST_IDS.hero.linkLinkedIn, EXTERNAL_URL.linkedin)
   })
 
   test('should have the correct GitHub link', async () => {
-    await checkLink(page, DATA_TEST_IDS.heroLinkGitHub, EXTERNAL_URL.github)
+    await checkLink(page, DATA_TEST_IDS.hero.linkGitHub, EXTERNAL_URL.github)
   })
 
   test('should have the correct Resume link', async () => {
-    await checkLink(page, DATA_TEST_IDS.heroLinkResume, EXTERNAL_URL.resume.resumeViewPDF)
+    await checkLink(page, DATA_TEST_IDS.hero.linkResume, EXTERNAL_URL.resume.resumeViewPDF)
   })
 })

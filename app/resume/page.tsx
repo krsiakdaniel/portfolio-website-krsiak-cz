@@ -5,7 +5,7 @@ import ResumeInfo from '@/components/resume/ResumeInfo'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { TEXT } from '@/localization/texts_en'
 import { EXTERNAL_URL, ID, PAGES_URL } from '@/utils/constants'
-import { DATA_TEST_IDS } from '@/utils/dataTestid'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -67,7 +67,7 @@ const Resume = () => {
             href={EXTERNAL_URL.resume.resumeViewPDF}
             text={`Download - ${TEXT.resumePDF}`}
             className="bg-red-700 text-white hover:bg-red-800 focus:ring-red-300 sm:mb-0"
-            testId={DATA_TEST_IDS.heroLinkResume}
+            dataTestId={DATA_TEST_IDS.hero.linkResume}
           />
         </div>
         <ResumePreviewEmbed />
