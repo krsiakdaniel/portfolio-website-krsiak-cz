@@ -1,5 +1,5 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
+import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import { sections } from '@/data/projects/work/kooperativa'
 import { projectsWorkReact } from '@/data/projects/work/projectsOverview/workReact'
 import { TEXT } from '@/localization/texts_en'
@@ -43,13 +43,13 @@ const ProjectWorkKooperativa = () => {
       sectionID={ID.section.react}
       projectData={projectsWorkReact[2]}
       sections={sections}
-      nextPageNavigation={
-        <NextPageNavigation
-          pageLinkPrevious="/work-experience/komercni-banka"
-          pageNamePrevious="Komerční banka"
+      PageNavigation={
+        <PageNavigation
+          linkPrevious="/work-experience/komercni-banka"
+          namePrevious="Komerční banka"
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.kooperativa.previous}
-          pageLinkNext="/work-experience/smartsupp-web"
-          pageNameNext="Smartsupp Web"
+          linkNext="/work-experience/smartsupp-web"
+          nameNext="Smartsupp Web"
           dataTestIdNext={DATA_TEST_IDS.projects.work.kooperativa.next}
         />
       }

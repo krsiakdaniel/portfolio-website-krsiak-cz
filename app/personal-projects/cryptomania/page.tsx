@@ -1,5 +1,5 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
+import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import { sections } from '@/data/projects/personal/cryptoMania'
 import { projectsPersonalReact } from '@/data/projects/personal/projectsOverview/personalReact'
 import { TEXT } from '@/localization/texts_en'
@@ -50,12 +50,12 @@ const ProjectPersonalCryptomania = () => {
         linkGitHub={linkGitHub}
         sections={sections}
         imageShowcase={imageShowcase}
-        nextPageNavigation={
-          <NextPageNavigation
-            pageLinkPrevious="/personal-projects/krsiak"
-            pageNamePrevious="Portfolio Website"
+        PageNavigation={
+          <PageNavigation
+            linkPrevious="/personal-projects/krsiak"
+            namePrevious="Portfolio Website"
             dataTestIdPrevious={DATA_TEST_IDS.projects.personal.cryptoMania.previous}
-            pageNameNext="E-Commerce Website"
+            nameNext="E-Commerce Website"
           />
         }
       />

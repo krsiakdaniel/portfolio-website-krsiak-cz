@@ -1,6 +1,6 @@
 import HeroLink from '@/components/homepage/HeroLink'
 import PageContainer from '@/components/layout/PageContainer'
-import NextPageNavigation from '@/components/NextPageNavigation'
+import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import ResumeInfo from '@/components/resume/ResumeInfo'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { TEXT } from '@/localization/texts_en'
@@ -72,12 +72,12 @@ const Resume = () => {
         </div>
         <ResumePreviewEmbed />
       </div>
-      <NextPageNavigation
-        pageLinkPrevious="/about-me"
-        pageNamePrevious="About Me"
+      <PageNavigation
+        linkPrevious="/about-me"
+        namePrevious="About Me"
         dataTestIdPrevious={DATA_TEST_IDS.page.resume.previous}
-        pageLinkNext="/work-experience"
-        pageNameNext="Work Experience"
+        linkNext="/work-experience"
+        nameNext="Work Experience"
         dataTestIdNext={DATA_TEST_IDS.page.resume.next}
       />
     </PageContainer>

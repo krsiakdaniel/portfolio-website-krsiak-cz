@@ -9,7 +9,7 @@ type ProjectPageLayoutWrapperProps = {
   sectionID: string
   projectData: Project
   sections: Section[]
-  nextPageNavigation: React.ReactNode
+  PageNavigation: React.ReactNode
 }
 
 export const ProjectPageLayoutWrapper = ({
@@ -19,7 +19,7 @@ export const ProjectPageLayoutWrapper = ({
   sectionID,
   projectData,
   sections,
-  nextPageNavigation,
+  PageNavigation,
 }: ProjectPageLayoutWrapperProps) => {
   const { title, role, years, company, description, skillsOverview, customers, projectLinks, imageShowcase } =
     projectData
@@ -40,7 +40,7 @@ export const ProjectPageLayoutWrapper = ({
       projectLinks={projectLinks}
       sections={sections}
       imageShowcase={imageShowcase}
-      nextPageNavigation={nextPageNavigation}
+      PageNavigation={PageNavigation}
     />
   )
 }

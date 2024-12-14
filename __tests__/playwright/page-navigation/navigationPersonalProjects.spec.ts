@@ -7,7 +7,7 @@ test.describe('Navigation - Personal Projects', () => {
     // Navigate to your app's page
     await page.goto('/personal-projects')
 
-    // Click on the NextPageNavigation component to go to the previous page
+    // Click on the PageNavigation component to go to the previous page
     await page.click(getDataTestId(DATA_TEST_IDS.projects.personal.overview.previous))
 
     // Check that we've navigated to the /work-experience page

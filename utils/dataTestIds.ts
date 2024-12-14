@@ -81,57 +81,61 @@ const PAGE = {
   },
 }
 
-const PROJECTS = {
-  personal: {
-    overview: {
-      previous: `${NAVIGATION.PREVIOUS}-${SECTIONS.WORK_EXPERIENCE}`,
-      next: '',
-    },
-    cryptoMania: {
-      previous: `${NAVIGATION.PREVIOUS}-${LINKS.KRSIAK}`,
-      next: '',
-    },
-    krsiak: {
-      previous: `${NAVIGATION.PREVIOUS}-${SECTIONS.PERSONAL_PROJECTS}`,
-      next: `${NAVIGATION.NEXT}-${LINKS.CRYPTOMANIA}`,
-    },
+const PERSONAL_PROJECTS = {
+  overview: {
+    previous: `${NAVIGATION.PREVIOUS}-${SECTIONS.WORK_EXPERIENCE}`,
+    next: '',
   },
-  work: {
-    overview: {
-      previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
-      next: `${NAVIGATION.NEXT}-${SECTIONS.PERSONAL_PROJECTS}`,
+  cryptoMania: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.KRSIAK}`,
+    next: '',
+  },
+  krsiak: {
+    previous: `${NAVIGATION.PREVIOUS}-${SECTIONS.PERSONAL_PROJECTS}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.CRYPTOMANIA}`,
+  },
+}
+
+const WORK_PROJECTS = {
+  overview: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
+    next: `${NAVIGATION.NEXT}-${SECTIONS.PERSONAL_PROJECTS}`,
+  },
+  kooperativa: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.KOMERCNI_BANKA}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.SMARTSUPP_WEB}`,
+  },
+  groupon: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.SMARTSUPP_HELP}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.MORAVIA}`,
+  },
+  smartsupp: {
+    web: {
+      previous: `${NAVIGATION.PREVIOUS}-${LINKS.KOOPERATIVA}`,
+      next: `${NAVIGATION.NEXT}-${LINKS.SMARTSUPP_HELP}`,
     },
-    kooperativa: {
-      previous: `${NAVIGATION.PREVIOUS}-${LINKS.KOMERCNI_BANKA}`,
-      next: `${NAVIGATION.NEXT}-${LINKS.SMARTSUPP_WEB}`,
+    dashboard: {
+      previous: `${NAVIGATION.PREVIOUS}-${SECTIONS.WORK_EXPERIENCE}`,
+      next: `${NAVIGATION.NEXT}-${LINKS.KOMERCNI_BANKA}`,
     },
-    groupon: {
-      previous: `${NAVIGATION.PREVIOUS}-${LINKS.SMARTSUPP_HELP}`,
-      next: `${NAVIGATION.NEXT}-${LINKS.MORAVIA}`,
-    },
-    smartsupp: {
-      web: {
-        previous: `${NAVIGATION.PREVIOUS}-${LINKS.KOOPERATIVA}`,
-        next: `${NAVIGATION.NEXT}-${LINKS.SMARTSUPP_HELP}`,
-      },
-      dashboard: {
-        previous: `${NAVIGATION.PREVIOUS}-${SECTIONS.WORK_EXPERIENCE}`,
-        next: `${NAVIGATION.NEXT}-${LINKS.KOMERCNI_BANKA}`,
-      },
-      help: {
-        previous: `${NAVIGATION.PREVIOUS}-${LINKS.SMARTSUPP_WEB}`,
-        next: `${NAVIGATION.NEXT}-${LINKS.GROUPON}`,
-      },
-    },
-    komercniBanka: {
-      previous: `${NAVIGATION.PREVIOUS}-${LINKS.GROUPON}`,
-      next: `${NAVIGATION.NEXT}-${LINKS.KOOPERATIVA}`,
-    },
-    moravia: {
-      previous: `${NAVIGATION.PREVIOUS}-${LINKS.SMARTSUPP_HELP}`,
+    help: {
+      previous: `${NAVIGATION.PREVIOUS}-${LINKS.SMARTSUPP_WEB}`,
       next: `${NAVIGATION.NEXT}-${LINKS.GROUPON}`,
     },
   },
+  komercniBanka: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.GROUPON}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.KOOPERATIVA}`,
+  },
+  moravia: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.SMARTSUPP_HELP}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.GROUPON}`,
+  },
+}
+
+const PROJECTS = {
+  personal: PERSONAL_PROJECTS,
+  work: WORK_PROJECTS,
 }
 
 export const DATA_TEST_IDS = {

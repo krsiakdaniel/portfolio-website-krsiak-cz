@@ -14,7 +14,7 @@ type ProjectPageLayoutProps = {
   pageID: string
   sections: Section[]
   imageShowcase: ImageShowcaseItem[]
-  nextPageNavigation: React.ReactNode
+  PageNavigation: React.ReactNode
 } & HeaderSectionProps &
   ProjectInformationProps
 
@@ -34,7 +34,7 @@ const ProjectPageLayout = ({
   linkGitHub,
   sections,
   imageShowcase,
-  nextPageNavigation,
+  PageNavigation,
 }: ProjectPageLayoutProps) => {
   return (
     <PageContainer id={pageID}>
@@ -91,7 +91,7 @@ const ProjectPageLayout = ({
           </div>
         ))}
       </div>
-      {nextPageNavigation}
+      {PageNavigation}
     </PageContainer>
   )
 }
