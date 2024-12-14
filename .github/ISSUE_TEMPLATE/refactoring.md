@@ -1,14 +1,14 @@
 ---
 name: Refactoring
 about: Template for refactoring.
-title: ''
+title: 'refactor: 👷 '
 labels: Refactor
 assignees: krsiakdaniel
 ---
 
 ## Description
 
-Describe the purpose and scope of the refactoring.
+Describe the purpose of the refactoring.
 
 ## Benefits
 
@@ -22,6 +22,14 @@ Describe the purpose and scope of the refactoring.
 - Modularize or break down complex functions.
 - Update images.
 
+## Code Example
+
+Provide a code example if applicable.
+
+```ts
+code_example
+```
+
 ## Tasks
 
 - [ ] ...
@@ -30,10 +38,10 @@ Describe the purpose and scope of the refactoring.
 
 ## Acceptance Criteria
 
-- [ ] Functionality remains unchanged and passes all tests.
-- [ ] All tests (unit, integration, E2E) pass successfully.
+- [ ] Functionality remains unchanged.
+- [ ] All tests pass successfully.
 - [ ] Code is reviewed and approved through PR.
 
 ## Screenshots
 
-Attach relevant screenshots or design mockups if applicable.
+Attach relevant screenshots if applicable.

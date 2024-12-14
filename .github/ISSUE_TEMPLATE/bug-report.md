@@ -1,40 +1,59 @@
 ---
 name: Bug report
 about: Create a report for bug fix.
-title: ''
+title: 'fix: 🐛 '
 labels: Fix
 assignees: krsiakdaniel
-
 ---
 
-## Describe the bug
+## Description
 
-A clear and concise description of what the bug is.
+Describe what the bug is.
 
 ## Steps to reproduce bug
 
 1. Go to '...'
 2. Click on '...'
 3. Scroll down to '...'
-4. See error.
+4. See the bug.
 
 ## Expected behavior
 
-A clear and concise description of what you expected to happen.
+Describe what you expect to happen.
+
+## Code Example
+
+Provide a code example if applicable.
+
+```ts
+code_example
+```
+
+## Tasks
+
+- [ ] ...
+- [ ] ...
+- [ ] ...
 
 ## Desktop
 
-- OS:
-- Browser:
-- Version:
+- OS: `name`
+- Browser: `name`
+- Version: `number`
 
 ## Smartphone
 
-- Device:
-- OS:
-- Browser:
-- Version:
+- Device: `name`
+- OS: `name`
+- Browser: `name`
+- Version: `number`
+
+## Acceptance Criteria
+
+- [ ] Functionality is fixed.
+- [ ] All tests pass successfully.
+- [ ] Code is reviewed and approved through PR.
 
 ## Screenshots
 
-Attach relevant screenshots or design mockups if applicable.
+Attach relevant screenshots if applicable.
