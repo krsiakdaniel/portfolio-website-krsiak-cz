@@ -6,6 +6,7 @@ import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { projectsPersonalNext, projectsPersonalReact } from '@/data/projects/personal/projectsOverview'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -38,7 +39,7 @@ const ProjectsPersonal = () => {
         <NextPageNavigation
           pageLinkPrevious="/work-experience"
           pageNamePrevious="Work Experience"
-          dataTestIDPrevious="page-navigation-previous-work-experience"
+          dataTestIdPrevious={DATA_TEST_IDS.projects.personal.overview.previous}
         />
       </div>
     </PageContainer>

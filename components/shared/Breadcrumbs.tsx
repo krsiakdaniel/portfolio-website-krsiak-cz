@@ -1,4 +1,5 @@
 import { IconCaretRight, IconHome } from '@/components/icons'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { BreadCrumbsType } from '@/utils/types'
 import Link from 'next/link'
 
@@ -7,7 +8,7 @@ type BreadCrumbsProps = BreadCrumbsType
 const BreadCrumbs = ({ linkLevel1, textLevel1, linkLevel2, textLevel2 }: BreadCrumbsProps) => {
   return (
     <>
-      <nav className="mb-10 flex text-neutral-700" aria-label="Breadcrumbs" data-testid="breadcrumbs">
+      <nav className="mb-10 flex text-neutral-700" aria-label="Breadcrumbs" data-testid={DATA_TEST_IDS.breadcrumbs}>
         <ol className="inline-flex flex-row flex-wrap items-start space-x-1 md:space-x-2">
           <li className="inline-flex items-center">
             <Link

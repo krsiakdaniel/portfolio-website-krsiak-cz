@@ -4,6 +4,7 @@ import { sections } from '@/data/projects/work/komercniBanka'
 import { projectsWorkReact } from '@/data/projects/work/projectsOverview/workReact'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
@@ -43,10 +44,10 @@ const ProjectWorkKomercniBanka = () => {
         <NextPageNavigation
           pageLinkPrevious="/work-experience/smartsupp-dashboard"
           pageNamePrevious="Smartsupp Dashboard"
-          dataTestIDPrevious="page-navigation-previous-smartsupp-dashboard"
+          dataTestIdPrevious={DATA_TEST_IDS.projects.work.komercniBanka.previous}
           pageLinkNext="/work-experience/kooperativa"
           pageNameNext="Kooperativa"
-          dataTestIDNext="page-navigation-next-kooperativa"
+          dataTestIdNext={DATA_TEST_IDS.projects.work.komercniBanka.next}
         />
       }
     />

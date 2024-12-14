@@ -4,6 +4,7 @@ import { sections } from '@/data/projects/work/groupon'
 import { projectsWorkQA } from '@/data/projects/work/projectsOverview/workQA'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
@@ -52,10 +53,10 @@ const ProjectWorkGroupon = () => {
         <NextPageNavigation
           pageLinkPrevious="/work-experience/smartsupp-help"
           pageNamePrevious="Smartsupp HELP"
-          dataTestIDPrevious="page-navigation-previous-smartsupp-help"
+          dataTestIdPrevious={DATA_TEST_IDS.projects.work.groupon.previous}
           pageLinkNext="/work-experience/moravia"
           pageNameNext="Moravia IT"
-          dataTestIDNext="page-navigation-next-moravia"
+          dataTestIdNext={DATA_TEST_IDS.projects.work.groupon.next}
         />
       }
     />
