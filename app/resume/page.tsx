@@ -5,7 +5,7 @@ import ResumeInfo from '@/components/resume/ResumeInfo'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { TEXT } from '@/localization/texts_en'
 import { EXTERNAL_URL, ID, PAGES_URL } from '@/utils/constants'
-import { DATA_TEST_IDS } from '@/utils/data-testid'
+import { DATA_TEST_IDS } from '@/utils/dataTestid'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
