@@ -20,6 +20,15 @@ const GROUPON = 'groupon'
 const KOOPERATIVA = 'kooperativa'
 
 export const DATA_TEST_IDS = {
+  breadcrumbs: 'breadcrumbs',
+  gallery: 'gallery',
+  header: 'header-logo',
+  footer: {
+    scrollToTopButton: 'scroll-to-top-button',
+    copyright: 'footer-copyright',
+    link: 'footer-link',
+    statusPage: 'footer-link-status-page',
+  },
   menu: {
     mobile: {
       component: 'menu-mobile',
@@ -47,6 +56,7 @@ export const DATA_TEST_IDS = {
     linkLinkedIn: `${HERO_LINK}-${LINKEDIN}`,
     linkResume: `${HERO_LINK}-${RESUME}`,
     linkGitHub: `${HERO_LINK}-${GITHUB}`,
+    paragraph: 'hero-paragraph',
   },
   page: {
     home: {
@@ -56,10 +66,12 @@ export const DATA_TEST_IDS = {
     aboutMe: {
       previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${HOMEPAGE}`,
       next: `${PAGE_NAVIGATION}-${NEXT}-${RESUME}`,
+      introduction: 'about-me-introduction',
     },
     resume: {
       previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${ABOUT_ME}`,
       next: `${PAGE_NAVIGATION}-${NEXT}-${WORK_EXPERIENCE}`,
+      introduction: 'resume-introduction',
     },
   },
   projects: {

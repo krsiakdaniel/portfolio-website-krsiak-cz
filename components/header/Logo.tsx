@@ -1,13 +1,14 @@
 import { TEXT } from '@/localization/texts_en'
 import logo from '@/public/images/webp/logo.webp'
 import { PAGES_URL } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const Logo = () => {
   return (
     <div>
-      <Link href={PAGES_URL.home} className="group flex flex-row items-center gap-3" data-testid="header-logo">
+      <Link href={PAGES_URL.home} className="group flex flex-row items-center gap-3" data-testid={DATA_TEST_IDS.header}>
         <div>
           <Image src={logo} alt="logo" width={32} height={32} loading="eager" />
         </div>

@@ -3,6 +3,7 @@ import HeaderSection from '@/components/layout/projectPage/HeaderSection'
 import PageSection from '@/components/layout/projectPage/PageSection'
 import ProjectInformation from '@/components/projects/ProjectInformation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { ImageShowcaseItem, Section } from '@/utils/interfaces'
 import { HeaderSectionProps, ProjectInformationProps } from '@/utils/sharedComponentProps'
 import { BreadCrumbsType } from '@/utils/types'
@@ -75,7 +76,7 @@ const ProjectPageLayout = ({
         <p className="mb-3 text-neutral-600">See project screenshots below.</p>
       </div>
 
-      <div data-testid="gallery">
+      <div data-testid={DATA_TEST_IDS.gallery}>
         {imageShowcase.map((image) => (
           <div data-testid={`gallery-image-${image.id}`} key={image.id}>
             <Image
