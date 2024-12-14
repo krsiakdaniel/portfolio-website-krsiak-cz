@@ -1,4 +1,4 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
+import PageNavigation from '@/components/PageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { sections } from '@/data/projects/work/moravia'
 import { projectsWorkLocalization } from '@/data/projects/work/projectsOverview/workLocalization'
@@ -44,8 +44,8 @@ const ProjectWorkMoravia = () => {
       sectionID={ID.section.localization}
       projectData={projectsWorkLocalization[0]}
       sections={sections}
-      nextPageNavigation={
-        <NextPageNavigation
+      PageNavigation={
+        <PageNavigation
           pageLinkPrevious="/work-experience/groupon"
           pageNamePrevious="Groupon"
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.moravia.previous}

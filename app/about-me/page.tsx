@@ -1,4 +1,4 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
+import PageNavigation from '@/components/PageNavigation'
 import HeadingInfo from '@/components/aboutMe/HeadingInfo'
 import JobsDescription from '@/components/aboutMe/JobsDescription'
 import Photo from '@/components/aboutMe/Photo'
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   ],
 }
 
-// TODO: add E2E tests for inner pages navigation PREV / NEXT for all 'NextPageNavigation' components
+// TODO: add E2E tests for inner pages navigation PREV / NEXT for all 'PageNavigation' components
 const About = () => {
   return (
     <PageContainer id={ID.about}>
@@ -45,7 +45,7 @@ const About = () => {
           <Photo />
         </div>
       </div>
-      <NextPageNavigation
+      <PageNavigation
         pageLinkPrevious="/"
         pageNamePrevious="Home"
         dataTestIdPrevious={DATA_TEST_IDS.page.aboutMe.previous}

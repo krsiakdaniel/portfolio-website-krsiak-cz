@@ -1,4 +1,4 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
+import PageNavigation from '@/components/PageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { projectsWorkReact } from '@/data/projects/work/projectsOverview/workReact'
 import { sections } from '@/data/projects/work/smartsuppDashboard'
@@ -44,8 +44,8 @@ const ProjectWorkSmartsuppDashboard = () => {
       sectionID={ID.section.react}
       projectData={projectsWorkReact[0]}
       sections={sections}
-      nextPageNavigation={
-        <NextPageNavigation
+      PageNavigation={
+        <PageNavigation
           pageLinkPrevious="/work-experience"
           pageNamePrevious="Work Experience"
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.smartsupp.dashboard.previous}

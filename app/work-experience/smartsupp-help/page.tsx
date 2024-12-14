@@ -1,4 +1,4 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
+import PageNavigation from '@/components/PageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { projectsWorkWordPress } from '@/data/projects/work/projectsOverview/workWordpress'
 import { sections } from '@/data/projects/work/smartsuppHelp'
@@ -39,8 +39,8 @@ const ProjectWorkSmartsuppHelp = () => {
       sectionID={ID.section.wordpress}
       projectData={projectsWorkWordPress[0]}
       sections={sections}
-      nextPageNavigation={
-        <NextPageNavigation
+      PageNavigation={
+        <PageNavigation
           pageLinkPrevious="/work-experience/smartsupp-web"
           pageNamePrevious="Smartsupp Web"
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.smartsupp.help.previous}

@@ -1,4 +1,4 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
+import PageNavigation from '@/components/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsLayout from '@/components/layout/ProjectsLayout'
 import { ProjectSection } from '@/components/projects/ProjectSection'
@@ -36,7 +36,7 @@ const ProjectsPersonal = () => {
         <ProjectSection sectionId={ID.section.react} sectionText="React" projectData={projectsPersonalReact} />
       </ProjectsLayout>
       <div className="mt-20">
-        <NextPageNavigation
+        <PageNavigation
           pageLinkPrevious="/work-experience"
           pageNamePrevious="Work Experience"
           dataTestIdPrevious={DATA_TEST_IDS.projects.personal.overview.previous}

@@ -1,4 +1,4 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
+import PageNavigation from '@/components/PageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { projectsWorkFrontEnd } from '@/data/projects/work/projectsOverview/workFrontEnd'
 import { sections } from '@/data/projects/work/smartsuppWeb'
@@ -42,8 +42,8 @@ const ProjectWorkSmartsuppWeb = () => {
       sectionID={ID.section.frontEnd}
       projectData={projectsWorkFrontEnd[0]}
       sections={sections}
-      nextPageNavigation={
-        <NextPageNavigation
+      PageNavigation={
+        <PageNavigation
           pageLinkPrevious="/work-experience/kooperativa"
           pageNamePrevious="Kooperativa"
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.smartsupp.web.previous}

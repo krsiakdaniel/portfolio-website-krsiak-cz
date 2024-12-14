@@ -7,7 +7,7 @@ test.describe('Navigation - Home', () => {
     // Step 1: Navigate to your app's page
     await page.goto('/')
 
-    // Step 2: Click on the NextPageNavigation component to go to the next page
+    // Step 2: Click on the PageNavigation component to go to the next page
     await page.click(getDataTestId(DATA_TEST_IDS.page.home.next))
 
     // Step 3: Check that we've navigated to the /about-me page

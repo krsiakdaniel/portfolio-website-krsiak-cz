@@ -1,4 +1,4 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
+import PageNavigation from '@/components/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsLayout from '@/components/layout/ProjectsLayout'
 import { ProjectSection } from '@/components/projects/ProjectSection'
@@ -101,7 +101,7 @@ const ProjectsWork = () => {
         />
       </ProjectsLayout>
       <div className="mt-20">
-        <NextPageNavigation
+        <PageNavigation
           pageLinkPrevious="/resume"
           pageNamePrevious="Resume"
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.overview.previous}

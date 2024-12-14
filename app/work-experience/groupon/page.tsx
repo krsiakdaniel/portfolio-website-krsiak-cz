@@ -1,4 +1,4 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
+import PageNavigation from '@/components/PageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { sections } from '@/data/projects/work/groupon'
 import { projectsWorkQA } from '@/data/projects/work/projectsOverview/workQA'
@@ -49,8 +49,8 @@ const ProjectWorkGroupon = () => {
       sectionID={ID.section.qa}
       projectData={projectsWorkQA[0]}
       sections={sections}
-      nextPageNavigation={
-        <NextPageNavigation
+      PageNavigation={
+        <PageNavigation
           pageLinkPrevious="/work-experience/smartsupp-help"
           pageNamePrevious="Smartsupp HELP"
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.groupon.previous}

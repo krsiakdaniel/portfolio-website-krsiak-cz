@@ -1,4 +1,4 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
+import PageNavigation from '@/components/PageNavigation'
 import Hero from '@/components/homepage/Hero'
 import Skills from '@/components/homepage/Skills'
 import SkillsMain from '@/components/homepage/SkillsMain'
@@ -42,11 +42,7 @@ const Page = () => {
       <WhatIDoMindset />
 
       {/* TODO: refactor for all pages into constants, urls, text, test IDs */}
-      <NextPageNavigation
-        pageLinkNext="/about-me"
-        pageNameNext="About Me"
-        dataTestIdNext={DATA_TEST_IDS.page.home.next}
-      />
+      <PageNavigation pageLinkNext="/about-me" pageNameNext="About Me" dataTestIdNext={DATA_TEST_IDS.page.home.next} />
     </PageContainer>
   )
 }

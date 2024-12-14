@@ -1,4 +1,4 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
+import PageNavigation from '@/components/PageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { sections } from '@/data/projects/work/kooperativa'
 import { projectsWorkReact } from '@/data/projects/work/projectsOverview/workReact'
@@ -43,8 +43,8 @@ const ProjectWorkKooperativa = () => {
       sectionID={ID.section.react}
       projectData={projectsWorkReact[2]}
       sections={sections}
-      nextPageNavigation={
-        <NextPageNavigation
+      PageNavigation={
+        <PageNavigation
           pageLinkPrevious="/work-experience/komercni-banka"
           pageNamePrevious="Komerční banka"
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.kooperativa.previous}

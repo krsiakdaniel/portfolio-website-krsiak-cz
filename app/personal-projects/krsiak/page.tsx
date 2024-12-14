@@ -1,4 +1,4 @@
-import NextPageNavigation from '@/components/NextPageNavigation'
+import PageNavigation from '@/components/PageNavigation'
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
 import { sections } from '@/data/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/data/projects/personal/projectsOverview/personalNext'
@@ -53,8 +53,8 @@ const ProjectPersonalKrsiak = () => {
         linkGitHub={linkGitHub}
         sections={sections}
         imageShowcase={imageShowcase}
-        nextPageNavigation={
-          <NextPageNavigation
+        PageNavigation={
+          <PageNavigation
             pageLinkPrevious="/personal-projects"
             pageNamePrevious="Personal Projects"
             dataTestIdPrevious={DATA_TEST_IDS.projects.personal.krsiak.previous}
