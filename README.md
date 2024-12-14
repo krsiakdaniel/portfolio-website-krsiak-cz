@@ -61,6 +61,19 @@ To provide a clear overview of the project's progress I use charts.
 - [Priorities](https://github.com/users/krsiakdaniel/projects/6/insights/2)
 - [Trend of Tasks](https://github.com/users/krsiakdaniel/projects/6/insights/1)
 
+## 🐛 Handling Unexpected Bugs: Debugging and Fixing Workflow
+
+I follow a structured approach to identify and resolve unexpected issues.
+
+1. **Problem Analysis**
+2. **Root Cause Identification**
+3. **Proposing Solutions**
+4. **Testing the Fix**
+5. **Documenting the Process**
+
+Explore the linked issue to see how I apply this in practice: [Fix(Heading1)!: 🐛 Incorrect Text Size on Production Compared to Localhost](https://github.com/users/krsiakdaniel/projects/6/views/1?pane=issue&itemId=90896673&issue=krsiakdaniel%7Cportfolio-website-krsiak-cz%7C163)
+
+
 ## 🚦 Project Status
 
 The current status of the project is continuously monitored.
