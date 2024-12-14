@@ -53,6 +53,7 @@ export const DATA_TEST_IDS = {
     },
   },
   hero: {
+    heading: 'hero-heading',
     linkLinkedIn: `${HERO_LINK}-${LINKEDIN}`,
     linkResume: `${HERO_LINK}-${RESUME}`,
     linkGitHub: `${HERO_LINK}-${GITHUB}`,
@@ -60,8 +61,8 @@ export const DATA_TEST_IDS = {
   },
   page: {
     home: {
+      previous: '',
       next: `${PAGE_NAVIGATION}-${NEXT}-${ABOUT_ME}`,
-      prev: '',
     },
     aboutMe: {
       previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${HOMEPAGE}`,

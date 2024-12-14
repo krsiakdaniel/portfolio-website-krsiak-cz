@@ -1,7 +1,8 @@
+import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
 import { ID } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { expect, test } from '@playwright/test'
 
-const FOOTER_COPYRIGHT_SELECTOR = '[data-testid="footer-copyright"]'
 const HOME_PAGE_PATH = '/'
 
 test.describe('Footer - Copy', () => {
@@ -17,7 +18,7 @@ test.describe('Footer - Copy', () => {
 
     await test.step('Check if the copyright year is correct', async () => {
       const currentYear = new Date().getFullYear().toString()
-      const copyright = await page.textContent(FOOTER_COPYRIGHT_SELECTOR)
+      const copyright = await page.textContent(getDataTestId(DATA_TEST_IDS.footer.copyright))
       expect(copyright).toContain(currentYear)
     })
   })

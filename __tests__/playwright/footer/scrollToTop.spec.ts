@@ -1,8 +1,10 @@
-import { test, expect } from '@playwright/test'
+import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
+import { expect, test } from '@playwright/test'
 
 test('should scroll to top when button is clicked', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000')
+  await page.goto('/')
 
   // Scroll down
   await page.evaluate(() => {
@@ -10,7 +12,7 @@ test('should scroll to top when button is clicked', async ({ page }) => {
   })
 
   // Click the "Scroll to Top" button
-  await page.click('[data-testid="scroll-to-top"]')
+  await page.click(getDataTestId(DATA_TEST_IDS.footer.scrollToTopButton))
 
   // Wait for scroll to finish
   await page.waitForFunction(() => window.scrollY === 0)

@@ -1,3 +1,5 @@
+import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { expect, test } from '@playwright/test'
 
 test.describe('Links', () => {
@@ -6,7 +8,7 @@ test.describe('Links', () => {
       await page.goto('http://localhost:3000/about-me')
     })
 
-    const breadcrumbs = page.locator('[data-testid="breadcrumbs"]')
+    const breadcrumbs = page.locator(getDataTestId(DATA_TEST_IDS.breadcrumbs))
 
     await test.step('Check the Home link', async () => {
       const homeLink = breadcrumbs.locator('a[href="/"]')

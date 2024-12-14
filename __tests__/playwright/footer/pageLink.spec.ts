@@ -1,7 +1,8 @@
+import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
 import { ID } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { expect, test } from '@playwright/test'
 
-const FOOTER_LINK_SELECTOR = '[data-testid="footer-link"]'
 const HOME_PAGE_URL = 'http://localhost:3000/'
 const HOME_PAGE_PATH = '/'
 
@@ -17,17 +18,17 @@ test.describe('Footer - Page Link', () => {
     })
 
     await test.step('Check if the link text is correct', async () => {
-      const linkText = await page.textContent(FOOTER_LINK_SELECTOR)
+      const linkText = await page.textContent(getDataTestId(DATA_TEST_IDS.footer.link))
       expect(linkText).toBe('krsiak.cz')
     })
 
     await test.step('Check if link is correct', async () => {
-      const linkUrl = await page.getAttribute(FOOTER_LINK_SELECTOR, 'href')
+      const linkUrl = await page.getAttribute(getDataTestId(DATA_TEST_IDS.footer.link), 'href')
       expect(linkUrl).toBe(HOME_PAGE_PATH)
     })
 
     await test.step('Check if the link redirects to the home page when clicked', async () => {
-      await page.click(FOOTER_LINK_SELECTOR)
+      await page.click(getDataTestId(DATA_TEST_IDS.footer.link))
       expect(page.url()).toBe(HOME_PAGE_URL)
     })
   })
