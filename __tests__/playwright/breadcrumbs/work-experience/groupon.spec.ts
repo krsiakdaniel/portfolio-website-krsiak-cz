@@ -5,7 +5,7 @@ import { expect, test } from '@playwright/test'
 test.describe('Links', () => {
   test('should navigate correctly', async ({ page }) => {
     await test.step('Go to Groupon subpage', async () => {
-      await page.goto('http://localhost:3000/work-experience/groupon')
+      await page.goto('/work-experience/groupon')
     })
 
     const breadcrumbs = page.locator(getDataTestId(DATA_TEST_IDS.breadcrumbs))

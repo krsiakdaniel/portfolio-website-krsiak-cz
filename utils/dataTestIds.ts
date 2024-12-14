@@ -1,3 +1,4 @@
+// TODO: refactor this file to be more readable
 const NEXT = 'next'
 const PREVIOUS = 'previous'
 const PAGE_NAVIGATION = 'page-navigation'

@@ -3,12 +3,10 @@ import { ID } from '@/utils/constants'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { expect, test } from '@playwright/test'
 
-const HOME_PAGE_PATH = '/'
-
 test.describe('Footer - Copy', () => {
   test('Copyright', async ({ page }) => {
     await test.step('Go to home page', async () => {
-      await page.goto(HOME_PAGE_PATH)
+      await page.goto('/')
     })
 
     await test.step('Check if the footer is present on the page', async () => {
