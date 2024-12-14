@@ -7,6 +7,14 @@ export interface Icon {
   path: string
 }
 
+// menu
+export interface MenuLink {
+  href: string
+  text: string
+  testId: string
+  id: string
+}
+
 // sections
 export interface Section {
   id?: number

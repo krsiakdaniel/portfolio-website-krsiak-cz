@@ -2,6 +2,7 @@
 
 import { IconClose, IconHamburger } from '@/components/icons'
 import { ID } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 
 type MenuToggleProps = {
   isOpen: boolean
@@ -13,7 +14,7 @@ const MenuToggle = ({ isOpen, handleMenuToggle }: MenuToggleProps) => {
     <button
       onClick={handleMenuToggle}
       id={ID.menu.toggle}
-      data-testid={ID.menu.toggle}
+      data-testid={DATA_TEST_IDS.menu.toggle}
       aria-label="Toggle Menu"
       className="lg:hidden"
     >

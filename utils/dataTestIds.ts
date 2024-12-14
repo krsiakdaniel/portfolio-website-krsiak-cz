@@ -20,6 +20,11 @@ const GROUPON = 'groupon'
 const KOOPERATIVA = 'kooperativa'
 
 export const DATA_TEST_IDS = {
+  menu: {
+    mobile: 'menu-mobile',
+    desktop: 'menu-desktop',
+    toggle: 'menu-toggle',
+  },
   hero: {
     linkLinkedIn: `${HERO_LINK}-${LINKEDIN}`,
     linkResume: `${HERO_LINK}-${RESUME}`,
