@@ -14,7 +14,7 @@ const MenuToggle = ({ isOpen, handleMenuToggle }: MenuToggleProps) => {
     <button
       onClick={handleMenuToggle}
       id={ID.menu.toggle}
-      data-testid={DATA_TEST_IDS.menu.toggle}
+      data-testid={DATA_TEST_IDS.menu.toggle.component}
       aria-label="Toggle Menu"
       className="lg:hidden"
     >

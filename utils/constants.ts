@@ -14,6 +14,7 @@ export const YEARS = {
   webCoder: 1,
 }
 
+// TODO: refactor into files folders if needed + update all in code + add new IDs here from JSX
 export const PROJECT_ID = {
   work: {
     kooperativa: 'link-project-work-kooperativa',

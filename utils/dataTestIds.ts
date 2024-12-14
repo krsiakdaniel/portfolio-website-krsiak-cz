@@ -21,9 +21,27 @@ const KOOPERATIVA = 'kooperativa'
 
 export const DATA_TEST_IDS = {
   menu: {
-    mobile: 'menu-mobile',
-    desktop: 'menu-desktop',
-    toggle: 'menu-toggle',
+    mobile: {
+      component: 'menu-mobile',
+      links: {
+        aboutMe: 'mobile-about-me-link',
+        resume: 'mobile-resume-link',
+        workExperience: 'mobile-work-experience-link',
+        personalProjects: 'mobile-personal-projects-link',
+      },
+    },
+    desktop: {
+      component: 'menu-desktop',
+      links: {
+        aboutMe: 'desktop-about-me-link',
+        resume: 'desktop-resume-link',
+        workExperience: 'desktop-work-experience-link',
+        personalProjects: 'desktop-personal-projects-link',
+      },
+    },
+    toggle: {
+      component: 'menu-toggle',
+    },
   },
   hero: {
     linkLinkedIn: `${HERO_LINK}-${LINKEDIN}`,

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const MenuDesktop = () => {
   return (
-    <ul className="hidden gap-8 lg:flex" id={ID.menu.desktop} data-testid={DATA_TEST_IDS.menu.desktop}>
+    <ul className="hidden gap-8 lg:flex" id={ID.menu.desktop} data-testid={DATA_TEST_IDS.menu.desktop.component}>
       {menuDesktopLinks.map((link) => (
         <li key={link.href}>
           <Link

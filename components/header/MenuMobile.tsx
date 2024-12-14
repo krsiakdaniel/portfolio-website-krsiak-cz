@@ -5,7 +5,11 @@ import Link from 'next/link'
 
 const MenuMobile = () => {
   return (
-    <ul className="mb-5 mt-2 flex flex-col lg:hidden" id={ID.menu.mobile} data-testid={DATA_TEST_IDS.menu.mobile}>
+    <ul
+      className="mb-5 mt-2 flex flex-col lg:hidden"
+      id={ID.menu.mobile}
+      data-testid={DATA_TEST_IDS.menu.mobile.component}
+    >
       {menuMobileLinks.map((link) => (
         <li key={link.href}>
           <Link
