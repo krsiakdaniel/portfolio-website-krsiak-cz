@@ -4,6 +4,7 @@ about: Create a report for bug fix.
 title: ''
 labels: Fix
 assignees: krsiakdaniel
+
 ---
 
 ## Describe the bug
