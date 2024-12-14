@@ -4,6 +4,7 @@ import { sections } from '@/data/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/data/projects/personal/projectsOverview/personalNext'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_PERSONAL_PROJECTS } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
@@ -56,10 +57,10 @@ const ProjectPersonalKrsiak = () => {
           <NextPageNavigation
             pageLinkPrevious="/personal-projects"
             pageNamePrevious="Personal Projects"
-            dataTestIdPrevious="page-navigation-previous-personal-projects"
+            dataTestIdPrevious={DATA_TEST_IDS.projects.personal.krsiak.previous}
             pageLinkNext="/personal-projects/cryptomania"
             pageNameNext="CryptoMania"
-            dataTestIdNext="page-navigation-next-cryptomania"
+            dataTestIdNext={DATA_TEST_IDS.projects.personal.krsiak.next}
           />
         }
       />

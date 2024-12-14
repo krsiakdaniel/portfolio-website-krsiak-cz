@@ -14,6 +14,7 @@ import {
 } from '@/data/projects/work/projectsOverview'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -103,10 +104,10 @@ const ProjectsWork = () => {
         <NextPageNavigation
           pageLinkPrevious="/resume"
           pageNamePrevious="Resume"
-          dataTestIdPrevious="page-navigation-previous-resume"
+          dataTestIdPrevious={DATA_TEST_IDS.projects.work.overview.previous}
           pageLinkNext="/personal-projects"
           pageNameNext="Personal Projects"
-          dataTestIdNext="page-navigation-next-personal-projects"
+          dataTestIdNext={DATA_TEST_IDS.projects.work.overview.next}
         />
       </div>
     </PageContainer>

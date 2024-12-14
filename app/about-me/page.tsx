@@ -6,6 +6,7 @@ import PageContainer from '@/components/layout/PageContainer'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -47,10 +48,10 @@ const About = () => {
       <NextPageNavigation
         pageLinkPrevious="/"
         pageNamePrevious="Home"
-        dataTestIdPrevious="page-navigation-previous-homepage"
+        dataTestIdPrevious={DATA_TEST_IDS.page.aboutMe.previous}
         pageLinkNext="/resume"
         pageNameNext="Resume"
-        dataTestIdNext="page-navigation-next-resume"
+        dataTestIdNext={DATA_TEST_IDS.page.aboutMe.next}
       />
     </PageContainer>
   )

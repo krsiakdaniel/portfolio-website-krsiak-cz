@@ -4,6 +4,7 @@ import { projectsWorkWordPress } from '@/data/projects/work/projectsOverview/wor
 import { sections } from '@/data/projects/work/smartsuppHelp'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
@@ -42,10 +43,10 @@ const ProjectWorkSmartsuppHelp = () => {
         <NextPageNavigation
           pageLinkPrevious="/work-experience/smartsupp-web"
           pageNamePrevious="Smartsupp Web"
-          dataTestIdPrevious="page-navigation-previous-smartsupp-web"
+          dataTestIdPrevious={DATA_TEST_IDS.projects.work.smartsupp.help.previous}
           pageLinkNext="/work-experience/groupon"
           pageNameNext="Groupon"
-          dataTestIdNext="page-navigation-next-groupon"
+          dataTestIdNext={DATA_TEST_IDS.projects.work.smartsupp.help.next}
         />
       }
     />

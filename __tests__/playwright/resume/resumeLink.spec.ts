@@ -27,6 +27,6 @@ test.afterEach(async () => {
 
 test.describe('Resume page', () => {
   test('should have the correct Resume link', async () => {
-    await checkLink(page, DATA_TEST_IDS.heroLinkResume, EXTERNAL_URL.resume.resumeViewPDF)
+    await checkLink(page, DATA_TEST_IDS.hero.linkResume, EXTERNAL_URL.resume.resumeViewPDF)
   })
 })

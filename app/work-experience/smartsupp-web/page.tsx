@@ -4,6 +4,7 @@ import { projectsWorkFrontEnd } from '@/data/projects/work/projectsOverview/work
 import { sections } from '@/data/projects/work/smartsuppWeb'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'
 
@@ -45,10 +46,10 @@ const ProjectWorkSmartsuppWeb = () => {
         <NextPageNavigation
           pageLinkPrevious="/work-experience/kooperativa"
           pageNamePrevious="Kooperativa"
-          dataTestIdPrevious="page-navigation-previous-kooperativa"
+          dataTestIdPrevious={DATA_TEST_IDS.projects.work.smartsupp.web.previous}
           pageLinkNext="/work-experience/smartsupp-help"
           pageNameNext="Smartsupp HELP"
-          dataTestIdNext="page-navigation-next-smartsupp-help"
+          dataTestIdNext={DATA_TEST_IDS.projects.work.smartsupp.web.next}
         />
       }
     />
