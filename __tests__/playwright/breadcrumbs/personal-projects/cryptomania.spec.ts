@@ -5,7 +5,7 @@ import { expect, test } from '@playwright/test'
 test.describe('Links', () => {
   test('should navigate correctly', async ({ page }) => {
     await test.step('Go to Cryptomania subpage', async () => {
-      await page.goto('http://localhost:3000/personal-projects/cryptomania')
+      await page.goto('/personal-projects/cryptomania')
     })
 
     const breadcrumbs = page.locator(getDataTestId(DATA_TEST_IDS.breadcrumbs))

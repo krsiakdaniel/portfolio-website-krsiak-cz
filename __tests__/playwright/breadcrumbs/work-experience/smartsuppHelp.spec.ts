@@ -5,7 +5,7 @@ import { expect, test } from '@playwright/test'
 test.describe('Links', () => {
   test('should navigate correctly', async ({ page }) => {
     await test.step('Go to Smartsupp HELP subpage', async () => {
-      await page.goto('http://localhost:3000/work-experience/smartsupp-help')
+      await page.goto('/work-experience/smartsupp-help')
     })
 
     const breadcrumbs = page.locator(getDataTestId(DATA_TEST_IDS.breadcrumbs))
