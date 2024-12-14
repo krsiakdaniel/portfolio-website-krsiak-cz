@@ -1,67 +1,89 @@
+const NEXT = 'next'
+const PREVIOUS = 'previous'
+const PAGE_NAVIGATION = 'page-navigation'
+const PERSONAL_PROJECTS = 'personal-projects'
+const WORK_EXPERIENCE = 'work-experience'
+const HERO_LINK = 'hero-link'
+
+const LINKEDIN = 'linkedin'
+const RESUME = 'resume'
+const GITHUB = 'github'
+const HOMEPAGE = 'homepage'
+const ABOUT_ME = 'about-me'
+const KRSIAK = 'krsiak'
+const CRYPTOMANIA = 'cryptomania'
+const KOMERCNI_BANKA = 'komercni-banka'
+const SMARTSUPP_WEB = 'smartsupp-web'
+const SMARTSUPP_HELP = 'smartsupp-help'
+const MORAVIA = 'moravia'
+const GROUPON = 'groupon'
+const KOOPERATIVA = 'kooperativa'
+
 export const DATA_TEST_IDS = {
   hero: {
-    linkLinkedIn: 'hero-link-linkedin',
-    linkResume: 'hero-link-resume',
-    linkGitHub: 'hero-link-github',
+    linkLinkedIn: `${HERO_LINK}-${LINKEDIN}`,
+    linkResume: `${HERO_LINK}-${RESUME}`,
+    linkGitHub: `${HERO_LINK}-${GITHUB}`,
   },
   page: {
     aboutMe: {
-      previous: 'page-navigation-previous-homepage',
-      next: 'page-navigation-next-resume',
+      previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${HOMEPAGE}`,
+      next: `${PAGE_NAVIGATION}-${NEXT}-${RESUME}`,
     },
     resume: {
-      previous: 'page-navigation-previous-about-me',
-      next: 'page-navigation-next-work-experience',
+      previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${ABOUT_ME}`,
+      next: `${PAGE_NAVIGATION}-${NEXT}-${WORK_EXPERIENCE}`,
     },
   },
   projects: {
     personal: {
       overview: {
-        previous: 'page-navigation-previous-work-experience',
+        previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${WORK_EXPERIENCE}`,
         next: '',
       },
       cryptoMania: {
-        previous: 'page-navigation-previous-krsiak',
+        previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${KRSIAK}`,
+        next: '',
       },
       krsiak: {
-        previous: 'page-navigation-previous-personal-projects',
-        next: 'page-navigation-next-cryptomania',
+        previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${PERSONAL_PROJECTS}`,
+        next: `${PAGE_NAVIGATION}-${NEXT}-${CRYPTOMANIA}`,
       },
     },
     work: {
       overview: {
-        previous: 'page-navigation-previous-resume',
-        next: 'page-navigation-next-personal-projects',
+        previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${RESUME}`,
+        next: `${PAGE_NAVIGATION}-${NEXT}-${PERSONAL_PROJECTS}`,
       },
       kooperativa: {
-        previous: 'page-navigation-previous-komercni-banka',
-        next: 'page-navigation-next-smartsupp-web',
+        previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${KOMERCNI_BANKA}`,
+        next: `${PAGE_NAVIGATION}-${NEXT}-${SMARTSUPP_WEB}`,
       },
       groupon: {
-        previous: 'page-navigation-previous-smartsupp-help',
-        next: 'page-navigation-next-moravia',
-      },
-      komercniBanka: {
-        previous: 'page-navigation-previous-smartsupp-dashboard',
-        next: 'page-navigation-next-kooperativa',
+        previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${SMARTSUPP_HELP}`,
+        next: `${PAGE_NAVIGATION}-${NEXT}-${MORAVIA}`,
       },
       smartsupp: {
         web: {
-          previous: 'page-navigation-previous-kooperativa',
-          next: 'page-navigation-next-smartsupp-help',
+          previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${KOOPERATIVA}`,
+          next: `${PAGE_NAVIGATION}-${NEXT}-${SMARTSUPP_HELP}`,
         },
         dashboard: {
-          previous: 'page-navigation-previous-work-experience',
-          next: 'page-navigation-next-komercni-banka',
+          previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${WORK_EXPERIENCE}`,
+          next: `${PAGE_NAVIGATION}-${NEXT}-${KOMERCNI_BANKA}`,
         },
         help: {
-          previous: 'page-navigation-previous-smartsupp-web',
-          next: 'page-navigation-next-groupon',
+          previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${SMARTSUPP_WEB}`,
+          next: `${PAGE_NAVIGATION}-${NEXT}-${GROUPON}`,
         },
       },
+      komercniBanka: {
+        previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${GROUPON}`,
+        next: `${PAGE_NAVIGATION}-${NEXT}-${KOOPERATIVA}`,
+      },
       moravia: {
-        previous: 'page-navigation-previous-groupon',
-        next: '',
+        previous: `${PAGE_NAVIGATION}-${PREVIOUS}-${SMARTSUPP_HELP}`,
+        next: `${PAGE_NAVIGATION}-${NEXT}-${GROUPON}`,
       },
     },
   },
