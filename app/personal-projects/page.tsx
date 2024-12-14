@@ -1,6 +1,6 @@
-import PageNavigation from '@/components/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsLayout from '@/components/layout/ProjectsLayout'
+import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import { ProjectSection } from '@/components/projects/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { projectsPersonalNext, projectsPersonalReact } from '@/data/projects/personal/projectsOverview'
@@ -37,8 +37,8 @@ const ProjectsPersonal = () => {
       </ProjectsLayout>
       <div className="mt-20">
         <PageNavigation
-          pageLinkPrevious="/work-experience"
-          pageNamePrevious="Work Experience"
+          linkPrevious="/work-experience"
+          namePrevious="Work Experience"
           dataTestIdPrevious={DATA_TEST_IDS.projects.personal.overview.previous}
         />
       </div>

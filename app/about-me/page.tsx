@@ -1,8 +1,8 @@
-import PageNavigation from '@/components/PageNavigation'
 import HeadingInfo from '@/components/aboutMe/HeadingInfo'
 import JobsDescription from '@/components/aboutMe/JobsDescription'
 import Photo from '@/components/aboutMe/Photo'
 import PageContainer from '@/components/layout/PageContainer'
+import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL } from '@/utils/constants'
@@ -46,11 +46,11 @@ const About = () => {
         </div>
       </div>
       <PageNavigation
-        pageLinkPrevious="/"
-        pageNamePrevious="Home"
+        linkPrevious="/"
+        namePrevious="Home"
         dataTestIdPrevious={DATA_TEST_IDS.page.aboutMe.previous}
-        pageLinkNext="/resume"
-        pageNameNext="Resume"
+        linkNext="/resume"
+        nameNext="Resume"
         dataTestIdNext={DATA_TEST_IDS.page.aboutMe.next}
       />
     </PageContainer>

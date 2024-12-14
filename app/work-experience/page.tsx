@@ -1,6 +1,6 @@
-import PageNavigation from '@/components/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsLayout from '@/components/layout/ProjectsLayout'
+import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import { ProjectSection } from '@/components/projects/ProjectSection'
 import ExperienceCard from '@/components/projects/experience/ExperienceCard'
 import ExperienceOtherTitle from '@/components/projects/experience/ExperienceOtherTitle'
@@ -102,11 +102,11 @@ const ProjectsWork = () => {
       </ProjectsLayout>
       <div className="mt-20">
         <PageNavigation
-          pageLinkPrevious="/resume"
-          pageNamePrevious="Resume"
+          linkPrevious="/resume"
+          namePrevious="Resume"
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.overview.previous}
-          pageLinkNext="/personal-projects"
-          pageNameNext="Personal Projects"
+          linkNext="/personal-projects"
+          nameNext="Personal Projects"
           dataTestIdNext={DATA_TEST_IDS.projects.work.overview.next}
         />
       </div>

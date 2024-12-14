@@ -1,5 +1,5 @@
-import PageNavigation from '@/components/PageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
+import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import { sections } from '@/data/projects/work/moravia'
 import { projectsWorkLocalization } from '@/data/projects/work/projectsOverview/workLocalization'
 import { TEXT } from '@/localization/texts_en'
@@ -46,8 +46,8 @@ const ProjectWorkMoravia = () => {
       sections={sections}
       PageNavigation={
         <PageNavigation
-          pageLinkPrevious="/work-experience/groupon"
-          pageNamePrevious="Groupon"
+          linkPrevious="/work-experience/groupon"
+          namePrevious="Groupon"
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.moravia.previous}
         />
       }

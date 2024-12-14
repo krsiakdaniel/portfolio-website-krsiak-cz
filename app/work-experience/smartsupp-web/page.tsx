@@ -1,5 +1,5 @@
-import PageNavigation from '@/components/PageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
+import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import { projectsWorkFrontEnd } from '@/data/projects/work/projectsOverview/workFrontEnd'
 import { sections } from '@/data/projects/work/smartsuppWeb'
 import { TEXT } from '@/localization/texts_en'
@@ -44,11 +44,11 @@ const ProjectWorkSmartsuppWeb = () => {
       sections={sections}
       PageNavigation={
         <PageNavigation
-          pageLinkPrevious="/work-experience/kooperativa"
-          pageNamePrevious="Kooperativa"
+          linkPrevious="/work-experience/kooperativa"
+          namePrevious="Kooperativa"
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.smartsupp.web.previous}
-          pageLinkNext="/work-experience/smartsupp-help"
-          pageNameNext="Smartsupp HELP"
+          linkNext="/work-experience/smartsupp-help"
+          nameNext="Smartsupp HELP"
           dataTestIdNext={DATA_TEST_IDS.projects.work.smartsupp.web.next}
         />
       }

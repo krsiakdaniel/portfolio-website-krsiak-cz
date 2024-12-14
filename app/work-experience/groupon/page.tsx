@@ -1,5 +1,5 @@
-import PageNavigation from '@/components/PageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
+import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import { sections } from '@/data/projects/work/groupon'
 import { projectsWorkQA } from '@/data/projects/work/projectsOverview/workQA'
 import { TEXT } from '@/localization/texts_en'
@@ -51,11 +51,11 @@ const ProjectWorkGroupon = () => {
       sections={sections}
       PageNavigation={
         <PageNavigation
-          pageLinkPrevious="/work-experience/smartsupp-help"
-          pageNamePrevious="Smartsupp HELP"
+          linkPrevious="/work-experience/smartsupp-help"
+          namePrevious="Smartsupp HELP"
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.groupon.previous}
-          pageLinkNext="/work-experience/moravia"
-          pageNameNext="Moravia IT"
+          linkNext="/work-experience/moravia"
+          nameNext="Moravia IT"
           dataTestIdNext={DATA_TEST_IDS.projects.work.groupon.next}
         />
       }

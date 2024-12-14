@@ -1,5 +1,5 @@
-import PageNavigation from '@/components/PageNavigation'
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
+import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import { sections } from '@/data/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/data/projects/personal/projectsOverview/personalNext'
 import { TEXT } from '@/localization/texts_en'
@@ -55,11 +55,11 @@ const ProjectPersonalKrsiak = () => {
         imageShowcase={imageShowcase}
         PageNavigation={
           <PageNavigation
-            pageLinkPrevious="/personal-projects"
-            pageNamePrevious="Personal Projects"
+            linkPrevious="/personal-projects"
+            namePrevious="Personal Projects"
             dataTestIdPrevious={DATA_TEST_IDS.projects.personal.krsiak.previous}
-            pageLinkNext="/personal-projects/cryptomania"
-            pageNameNext="CryptoMania"
+            linkNext="/personal-projects/cryptomania"
+            nameNext="CryptoMania"
             dataTestIdNext={DATA_TEST_IDS.projects.personal.krsiak.next}
           />
         }
