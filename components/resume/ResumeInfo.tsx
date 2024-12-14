@@ -1,6 +1,6 @@
+import Heading1 from '@/components/shared/Heading1'
 import HighlightedText from '@/components/shared/HighlightedText'
 import { TEXT } from '@/localization/texts_en'
-import Heading1 from '../shared/Heading1'
 
 const ResumeInfo = () => {
   return (

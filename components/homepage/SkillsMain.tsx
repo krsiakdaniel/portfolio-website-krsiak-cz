@@ -1,6 +1,6 @@
 import DividerWithText from '@/components/shared/DividerWithText'
 import SkillsCard from '@/components/shared/SkillsCard'
-import { skills } from '@/data/skills/skills-main'
+import { skills } from '@/data/skills/skillsMain'
 
 const SkillsMain = () => {
   return (

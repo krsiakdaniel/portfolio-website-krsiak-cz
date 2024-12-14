@@ -1,4 +1,4 @@
-import DividerWithText from '../shared/DividerWithText'
+import DividerWithText from '@/components/shared/DividerWithText'
 import MyMindset from './MyMindset'
 import SkillsForCompany from './SkillsForCompany'
 

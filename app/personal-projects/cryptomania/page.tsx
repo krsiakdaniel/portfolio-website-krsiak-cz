@@ -1,7 +1,7 @@
 import NextPageNavigation from '@/components/NextPageNavigation'
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
 import { sections } from '@/data/projects/personal/cryptoMania'
-import { projectsPersonalReact } from '@/data/projects/personal/projectsOverview'
+import { projectsPersonalReact } from '@/data/projects/personal/projectsOverview/personalReact'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_PERSONAL_PROJECTS } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'

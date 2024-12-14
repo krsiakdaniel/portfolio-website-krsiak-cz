@@ -1,5 +1,5 @@
-import { mindsetInfo } from '@/data/whatido'
-import Heading2 from '../shared/Heading2'
+import Heading2 from '@/components/shared/Heading2'
+import { mindsetInfo } from '@/data/whatido/mindsetInfo'
 
 const MyMindset = () => {
   return (
