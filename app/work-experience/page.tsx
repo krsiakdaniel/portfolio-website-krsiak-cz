@@ -103,10 +103,10 @@ const ProjectsWork = () => {
         <NextPageNavigation
           pageLinkPrevious="/resume"
           pageNamePrevious="Resume"
-          dataTestIDPrevious="page-navigation-previous-resume"
+          dataTestIdPrevious="page-navigation-previous-resume"
           pageLinkNext="/personal-projects"
           pageNameNext="Personal Projects"
-          dataTestIDNext="page-navigation-next-personal-projects"
+          dataTestIdNext="page-navigation-next-personal-projects"
         />
       </div>
     </PageContainer>

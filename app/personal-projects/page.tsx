@@ -38,7 +38,7 @@ const ProjectsPersonal = () => {
         <NextPageNavigation
           pageLinkPrevious="/work-experience"
           pageNamePrevious="Work Experience"
-          dataTestIDPrevious="page-navigation-previous-work-experience"
+          dataTestIdPrevious="page-navigation-previous-work-experience"
         />
       </div>
     </PageContainer>

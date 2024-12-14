@@ -43,10 +43,10 @@ const ProjectWorkKomercniBanka = () => {
         <NextPageNavigation
           pageLinkPrevious="/work-experience/smartsupp-dashboard"
           pageNamePrevious="Smartsupp Dashboard"
-          dataTestIDPrevious="page-navigation-previous-smartsupp-dashboard"
+          dataTestIdPrevious="page-navigation-previous-smartsupp-dashboard"
           pageLinkNext="/work-experience/kooperativa"
           pageNameNext="Kooperativa"
-          dataTestIDNext="page-navigation-next-kooperativa"
+          dataTestIdNext="page-navigation-next-kooperativa"
         />
       }
     />

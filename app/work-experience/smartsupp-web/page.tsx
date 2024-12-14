@@ -45,10 +45,10 @@ const ProjectWorkSmartsuppWeb = () => {
         <NextPageNavigation
           pageLinkPrevious="/work-experience/kooperativa"
           pageNamePrevious="Kooperativa"
-          dataTestIDPrevious="page-navigation-previous-kooperativa"
+          dataTestIdPrevious="page-navigation-previous-kooperativa"
           pageLinkNext="/work-experience/smartsupp-help"
           pageNameNext="Smartsupp HELP"
-          dataTestIDNext="page-navigation-next-smartsupp-help"
+          dataTestIdNext="page-navigation-next-smartsupp-help"
         />
       }
     />

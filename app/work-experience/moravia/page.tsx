@@ -47,7 +47,7 @@ const ProjectWorkMoravia = () => {
         <NextPageNavigation
           pageLinkPrevious="/work-experience/groupon"
           pageNamePrevious="Groupon"
-          dataTestIDPrevious="page-navigation-previous-groupon"
+          dataTestIdPrevious="page-navigation-previous-groupon"
         />
       }
     />

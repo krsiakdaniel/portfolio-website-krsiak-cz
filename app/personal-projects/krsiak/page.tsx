@@ -56,10 +56,10 @@ const ProjectPersonalKrsiak = () => {
           <NextPageNavigation
             pageLinkPrevious="/personal-projects"
             pageNamePrevious="Personal Projects"
-            dataTestIDPrevious="page-navigation-previous-personal-projects"
+            dataTestIdPrevious="page-navigation-previous-personal-projects"
             pageLinkNext="/personal-projects/cryptomania"
             pageNameNext="CryptoMania"
-            dataTestIDNext="page-navigation-next-cryptomania"
+            dataTestIdNext="page-navigation-next-cryptomania"
           />
         }
       />

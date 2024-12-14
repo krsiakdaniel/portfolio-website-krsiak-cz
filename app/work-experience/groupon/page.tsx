@@ -52,10 +52,10 @@ const ProjectWorkGroupon = () => {
         <NextPageNavigation
           pageLinkPrevious="/work-experience/smartsupp-help"
           pageNamePrevious="Smartsupp HELP"
-          dataTestIDPrevious="page-navigation-previous-smartsupp-help"
+          dataTestIdPrevious="page-navigation-previous-smartsupp-help"
           pageLinkNext="/work-experience/moravia"
           pageNameNext="Moravia IT"
-          dataTestIDNext="page-navigation-next-moravia"
+          dataTestIdNext="page-navigation-next-moravia"
         />
       }
     />

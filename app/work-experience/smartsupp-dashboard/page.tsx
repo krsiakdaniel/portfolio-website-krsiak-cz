@@ -47,10 +47,10 @@ const ProjectWorkSmartsuppDashboard = () => {
         <NextPageNavigation
           pageLinkPrevious="/work-experience"
           pageNamePrevious="Work Experience"
-          dataTestIDPrevious="page-navigation-previous-work-experience"
+          dataTestIdPrevious="page-navigation-previous-work-experience"
           pageLinkNext="/work-experience/komercni-banka"
           pageNameNext="Komerční banka"
-          dataTestIDNext="page-navigation-next-komercni-banka"
+          dataTestIdNext="page-navigation-next-komercni-banka"
         />
       }
     />

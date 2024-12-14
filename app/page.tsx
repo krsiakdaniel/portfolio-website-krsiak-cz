@@ -44,7 +44,7 @@ const Page = () => {
       <NextPageNavigation
         pageLinkNext="/about-me"
         pageNameNext="About Me"
-        dataTestIDNext="page-navigation-next-about-me"
+        dataTestIdNext="page-navigation-next-about-me"
       />
     </PageContainer>
   )

@@ -47,10 +47,10 @@ const About = () => {
       <NextPageNavigation
         pageLinkPrevious="/"
         pageNamePrevious="Home"
-        dataTestIDPrevious="page-navigation-previous-homepage"
+        dataTestIdPrevious="page-navigation-previous-homepage"
         pageLinkNext="/resume"
         pageNameNext="Resume"
-        dataTestIDNext="page-navigation-next-resume"
+        dataTestIdNext="page-navigation-next-resume"
       />
     </PageContainer>
   )

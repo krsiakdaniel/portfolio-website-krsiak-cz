@@ -75,10 +75,10 @@ const Resume = () => {
       <NextPageNavigation
         pageLinkPrevious="/about-me"
         pageNamePrevious="About Me"
-        dataTestIDPrevious="page-navigation-previous-about-me"
+        dataTestIdPrevious="page-navigation-previous-about-me"
         pageLinkNext="/work-experience"
         pageNameNext="Work Experience"
-        dataTestIDNext="page-navigation-next-work-experience"
+        dataTestIdNext="page-navigation-next-work-experience"
       />
     </PageContainer>
   )
