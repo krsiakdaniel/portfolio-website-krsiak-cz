@@ -1,5 +1,5 @@
-import { skillsInfo } from '@/data/whatido'
-import Heading2 from '../shared/Heading2'
+import Heading2 from '@/components/shared/Heading2'
+import { skillsInfo } from '@/data/whatido/skillsInfo'
 
 const SkillsForCompany = () => {
   return (

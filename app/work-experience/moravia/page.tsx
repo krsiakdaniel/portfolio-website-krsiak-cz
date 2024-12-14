@@ -1,7 +1,7 @@
 import NextPageNavigation from '@/components/NextPageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
 import { sections } from '@/data/projects/work/moravia'
-import { projectsWorkLocalization } from '@/data/projects/work/projectsOverview'
+import { projectsWorkLocalization } from '@/data/projects/work/projectsOverview/workLocalization'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'

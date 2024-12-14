@@ -1,7 +1,7 @@
 import NextPageNavigation from '@/components/NextPageNavigation'
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
 import { sections } from '@/data/projects/personal/krsiak'
-import { projectsPersonalNext } from '@/data/projects/personal/projectsOverview'
+import { projectsPersonalNext } from '@/data/projects/personal/projectsOverview/personalNext'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_PERSONAL_PROJECTS } from '@/utils/constants'
 import { BreadCrumbsType } from '@/utils/types'

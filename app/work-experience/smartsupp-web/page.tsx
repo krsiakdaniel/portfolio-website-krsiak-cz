@@ -1,6 +1,6 @@
 import NextPageNavigation from '@/components/NextPageNavigation'
 import { ProjectPageLayoutWrapper } from '@/components/layout/projectPage/ProjectPageLayoutWrapper'
-import { projectsWorkFrontEnd } from '@/data/projects/work/projectsOverview'
+import { projectsWorkFrontEnd } from '@/data/projects/work/projectsOverview/workFrontEnd'
 import { sections } from '@/data/projects/work/smartsuppWeb'
 import { TEXT } from '@/localization/texts_en'
 import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
