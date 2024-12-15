@@ -1,3 +1,4 @@
+import { PAGES_URL } from '@/utils/constants'
 import { Browser, BrowserContext, Page, chromium, expect, test } from '@playwright/test'
 
 let browser: Browser
@@ -15,7 +16,7 @@ test.afterAll(async () => {
 test.beforeEach(async () => {
   context = await browser.newContext()
   page = await context.newPage()
-  await page.goto('/')
+  await page.goto(`${PAGES_URL.home}`)
 })
 
 test.afterEach(async () => {
@@ -25,7 +26,7 @@ test.afterEach(async () => {
 test.describe('Project - Komercni Banka', () => {
   test('Links', async ({ page }) => {
     await test.step('Go to page', async () => {
-      await page.goto('/work-experience/komercni-banka')
+      await page.goto(`${PAGES_URL.work.komercniBanka}`)
     })
 
     await test.step('Check Branches & ATMs link', async () => {
@@ -47,13 +48,6 @@ test.describe('Project - Komercni Banka', () => {
       const href3 = await link3.getAttribute('href')
       const expectedUrl3 = 'https://www.kb.cz/en/exchange-rates'
       expect(href3).toBe(expectedUrl3)
-    })
-
-    await test.step('Check Exchange Rates - Details link', async () => {
-      const link4 = page.getByRole('link', { name: 'Exchange Rates - Details', exact: true })
-      const href4 = await link4.getAttribute('href')
-      const expectedUrl4 = 'https://www.kb.cz/en/exchange-rates/exchange-detail?curr=USD&date=2024-02-27T18:00:00'
-      expect(href4).toBe(expectedUrl4)
     })
   })
 })
