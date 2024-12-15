@@ -30,9 +30,9 @@ export const metadata: Metadata = {
 
 const breadCrumbs: BreadCrumbsType = {
   linkLevel1: URL_WORK_EXPERIENCE,
-  textLevel1: 'Work Experience',
+  textLevel1: TEXT.workExperience,
   linkLevel2: PAGES_URL.work.smartsupp.dashboard,
-  textLevel2: 'Smartsupp Dashboard',
+  textLevel2: TEXT.smartsuppDashboard,
 }
 
 const ProjectWorkSmartsuppDashboard = () => {
@@ -46,11 +46,11 @@ const ProjectWorkSmartsuppDashboard = () => {
       sections={sections}
       PageNavigation={
         <PageNavigation
-          linkPrevious="/work-experience"
-          namePrevious="Work Experience"
+          linkPrevious={PAGES_URL.work.mainUrl}
+          namePrevious={TEXT.workExperience}
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.smartsupp.dashboard.previous}
-          linkNext="/work-experience/komercni-banka"
-          nameNext="Komerční banka"
+          linkNext={PAGES_URL.work.komercniBanka}
+          nameNext={TEXT.komercniBanka}
           dataTestIdNext={DATA_TEST_IDS.projects.work.smartsupp.dashboard.next}
         />
       }

@@ -27,18 +27,18 @@ export const metadata: Metadata = {
 const ProjectsPersonal = () => {
   return (
     <PageContainer id={ID.projects.personal}>
-      <BreadCrumbs linkLevel1={PAGES_URL.personal.mainUrl} textLevel1="Personal Projects" />
+      <BreadCrumbs linkLevel1={PAGES_URL.personal.mainUrl} textLevel1={TEXT.personalProjects} />
       <ProjectsLayout
-        heading="🚀 Personal Projects"
+        heading={TEXT.personalProjects}
         description="I like to learn new technologies and create personal projects where I can apply what I know and keep up on the latest trends."
       >
-        <ProjectSection sectionId={ID.section.next} sectionText="Next" projectData={projectsPersonalNext} />
-        <ProjectSection sectionId={ID.section.react} sectionText="React" projectData={projectsPersonalReact} />
+        <ProjectSection sectionId={ID.section.next} sectionText={TEXT.next} projectData={projectsPersonalNext} />
+        <ProjectSection sectionId={ID.section.react} sectionText={TEXT.react} projectData={projectsPersonalReact} />
       </ProjectsLayout>
       <div className="mt-20">
         <PageNavigation
-          linkPrevious="/work-experience"
-          namePrevious="Work Experience"
+          linkPrevious={PAGES_URL.work.mainUrl}
+          namePrevious={TEXT.workExperience}
           dataTestIdPrevious={DATA_TEST_IDS.projects.personal.overview.previous}
         />
       </div>

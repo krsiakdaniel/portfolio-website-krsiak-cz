@@ -1,4 +1,4 @@
-import { IconCaretRight, IconHome } from '@/components/icons'
+import { IconCaretRight } from '@/components/icons'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { BreadCrumbsType } from '@/utils/types'
 import Link from 'next/link'
@@ -15,8 +15,7 @@ const BreadCrumbs = ({ linkLevel1, textLevel1, linkLevel2, textLevel2 }: BreadCr
               href="/"
               className="inline-flex items-center text-sm font-medium text-neutral-700 hover:text-violet-600"
             >
-              <IconHome />
-              Home
+              🏠 Home
             </Link>
           </li>
           {linkLevel1 && textLevel1 && (

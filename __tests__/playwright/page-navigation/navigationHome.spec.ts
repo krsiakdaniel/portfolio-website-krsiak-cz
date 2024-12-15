@@ -1,11 +1,12 @@
 import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
+import { PAGES_URL } from '@/utils/constants'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { expect, test } from '@playwright/test'
 
 test.describe('Navigation - Home', () => {
   test('navigates to next page - About Me', async ({ page }) => {
     // Step 1: Navigate to your app's page
-    await page.goto('/')
+    await page.goto(PAGES_URL.home)
 
     // Step 2: Click on the PageNavigation component to go to the next page
     await page.click(getDataTestId(DATA_TEST_IDS.page.home.next))

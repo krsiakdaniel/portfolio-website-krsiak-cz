@@ -29,7 +29,7 @@ test.describe('Hero - Heading and texts', () => {
   test('should render the h1 heading correctly', async () => {
     const h1Text = await page.textContent(getDataTestId(DATA_TEST_IDS.hero.heading))
     expect(h1Text).toContain(TEXT.nameDanielKrsiak)
-    expect(h1Text).toContain('React Developer')
+    expect(h1Text).toContain(TEXT.reactDeveloper)
   })
 
   test('should render the paragraphs correctly', async () => {

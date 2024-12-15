@@ -1,7 +1,7 @@
 'use client'
-import { DATA_TEST_IDS } from "@/utils/dataTestIds"
+import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 
- // If you need to add an onClick event handler to a component, you should make sure that component is a Client Component.
+// If you need to add an onClick event handler to a component, you should make sure that component is a Client Component.
 
 export const scrollToTop = () => {
   window.scrollTo({

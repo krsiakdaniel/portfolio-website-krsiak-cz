@@ -59,7 +59,7 @@ const ResumePreviewEmbed = () => {
 const Resume = () => {
   return (
     <PageContainer id={ID.about}>
-      <BreadCrumbs linkLevel1={PAGES_URL.aboutMe} textLevel1="About Me" />
+      <BreadCrumbs linkLevel1={PAGES_URL.aboutMe} textLevel1={TEXT.resume} />
       <div>
         <ResumeInfo />
         <div className="mt-8">
@@ -73,11 +73,11 @@ const Resume = () => {
         <ResumePreviewEmbed />
       </div>
       <PageNavigation
-        linkPrevious="/about-me"
-        namePrevious="About Me"
+        linkPrevious={PAGES_URL.aboutMe}
+        namePrevious={TEXT.aboutMe}
         dataTestIdPrevious={DATA_TEST_IDS.page.resume.previous}
-        linkNext="/work-experience"
-        nameNext="Work Experience"
+        linkNext={PAGES_URL.work.mainUrl}
+        nameNext={TEXT.workExperience}
         dataTestIdNext={DATA_TEST_IDS.page.resume.next}
       />
     </PageContainer>
