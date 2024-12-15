@@ -5,7 +5,7 @@ import WhatIDoMindset from '@/components/homepage/WhatIDoMindset'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import { TEXT } from '@/localization/texts_en'
-import { ID } from '@/utils/constants'
+import { ID, PAGES_URL } from '@/utils/constants'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { Metadata } from 'next'
 
@@ -41,8 +41,11 @@ const Page = () => {
       <SkillsMain />
       <WhatIDoMindset />
 
-      {/* TODO: refactor for all pages into constants, urls, text, test IDs */}
-      <PageNavigation linkNext="/about-me" nameNext="About Me" dataTestIdNext={DATA_TEST_IDS.page.home.next} />
+      <PageNavigation
+        linkNext={PAGES_URL.aboutMe}
+        nameNext={TEXT.aboutMe}
+        dataTestIdNext={DATA_TEST_IDS.page.home.next}
+      />
     </PageContainer>
   )
 }

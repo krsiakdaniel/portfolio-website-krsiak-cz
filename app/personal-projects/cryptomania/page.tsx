@@ -27,9 +27,9 @@ export const metadata: Metadata = {
 
 const breadCrumbs: BreadCrumbsType = {
   linkLevel1: URL_PERSONAL_PROJECTS,
-  textLevel1: 'Personal Projects',
+  textLevel1: TEXT.personalProjects,
   linkLevel2: PAGES_URL.personal.cryptoMania,
-  textLevel2: 'Cryptomania',
+  textLevel2: TEXT.cryptoMania,
 }
 
 const ProjectPersonalCryptomania = () => {
@@ -52,10 +52,9 @@ const ProjectPersonalCryptomania = () => {
         imageShowcase={imageShowcase}
         PageNavigation={
           <PageNavigation
-            linkPrevious="/personal-projects/krsiak"
-            namePrevious="Portfolio Website"
+            linkPrevious={PAGES_URL.personal.krsiak}
+            namePrevious={TEXT.portfolioWebsite}
             dataTestIdPrevious={DATA_TEST_IDS.projects.personal.cryptoMania.previous}
-            nameNext="E-Commerce Website"
           />
         }
       />

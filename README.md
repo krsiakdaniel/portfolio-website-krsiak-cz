@@ -73,7 +73,6 @@ I follow a structured approach to identify and resolve unexpected issues.
 
 Explore the linked issue to see how I apply this in practice: [Fix(Heading1)!: 🐛 Incorrect Text Size on Production Compared to Localhost](https://github.com/users/krsiakdaniel/projects/6/views/1?pane=issue&itemId=90896673&issue=krsiakdaniel%7Cportfolio-website-krsiak-cz%7C163)
 
-
 ## 🚦 Project Status
 
 The current status of the project is continuously monitored.
