@@ -29,7 +29,7 @@ const ProjectsPersonal = () => {
     <PageContainer id={ID.projects.personal}>
       <BreadCrumbs linkLevel1={PAGES_URL.personal.mainUrl} textLevel1={TEXT.personalProjects} />
       <ProjectsLayout
-        heading="🚀 Personal Projects"
+        heading={TEXT.personalProjects}
         description="I like to learn new technologies and create personal projects where I can apply what I know and keep up on the latest trends."
       >
         <ProjectSection sectionId={ID.section.next} sectionText={TEXT.next} projectData={projectsPersonalNext} />
