@@ -4,8 +4,8 @@ import PageSection from '@/components/layout/projectPage/PageSection'
 import ProjectInformation from '@/components/projects/ProjectInformation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
-import { ImageShowcaseItem, Section } from '@/utils/interfaces'
-import { HeaderSectionProps, ProjectInformationProps } from '@/utils/sharedComponentProps'
+import { ImageShowcaseItem, Project, Section } from '@/utils/interfaces'
+import { HeaderSectionProps } from '@/utils/sharedComponentProps'
 import { BreadCrumbsType } from '@/utils/types'
 import Image from 'next/image'
 
@@ -16,7 +16,7 @@ type ProjectPageLayoutProps = {
   imageShowcase: ImageShowcaseItem[]
   PageNavigation: React.ReactNode
 } & HeaderSectionProps &
-  ProjectInformationProps
+  Pick<Project, 'description' | 'skillsOverview' | 'customers' | 'projectLinks' | 'linkGitHub'>
 
 const ProjectPageLayout = ({
   breadCrumbs,

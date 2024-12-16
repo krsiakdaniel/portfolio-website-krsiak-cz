@@ -1,9 +1,14 @@
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
-import { ProjectInformationProps } from '@/utils/sharedComponentProps'
+import { Project } from '@/utils/interfaces'
 import CustomersCount from './CustomersCount'
 import ProjectLinksList from './ProjectLinksList'
 import SkillsList from './SkillsList'
+
+type ProjectInformationProps = Pick<
+  Project,
+  'description' | 'skillsOverview' | 'customers' | 'projectLinks' | 'linkGitHub'
+>
 
 const ProjectInformation = ({
   description,
