@@ -1,4 +1,3 @@
-import { Link, Skill } from './interfaces'
 import { GoBackLinkType } from './types'
 
 export type HeaderSectionProps = {
@@ -8,14 +7,6 @@ export type HeaderSectionProps = {
   years?: string | undefined
   company?: string
   goBackLink: GoBackLinkType
-}
-
-export type ProjectInformationProps = {
-  description: string
-  skillsOverview: Skill[]
-  customers?: string | undefined
-  projectLinks: Link[]
-  linkGitHub?: string | undefined
 }
 
 // error pages
