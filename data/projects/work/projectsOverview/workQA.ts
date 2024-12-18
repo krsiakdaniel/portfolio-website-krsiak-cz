@@ -1,11 +1,12 @@
 import { iconsSkillsProjectsWorkGroupon } from '@/data/skills/skillsProjectsWork'
-import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
-import { Project } from '@/utils/interfaces'
+import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
+import { Project } from '@/utils/interfaces/interfaces'
 
 // groupon
 import groupon1 from '@/public/images/projects-work/groupon/groupon-1-light.png'
 import groupon2 from '@/public/images/projects-work/groupon/groupon-2-light.png'
 import grouponThumb from '@/public/images/projects-work/groupon/groupon-thumb-light-600.webp'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 export const projectsWorkQA: Project[] = [
   {

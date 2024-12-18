@@ -1,4 +1,4 @@
-import { SkillCard } from '@/utils/interfaces'
+import { SkillCard } from '@/utils/interfaces/interfaces'
 import Image from 'next/image'
 
 type SkillsCardProps = SkillCard

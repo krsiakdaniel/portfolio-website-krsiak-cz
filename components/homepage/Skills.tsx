@@ -1,6 +1,6 @@
 import DividerWithText from '@/components/shared/DividerWithText'
 import { iconsSkills1, iconsSkills2, iconsSkills3, iconsSkills4 } from '@/data/skills/skillsMain'
-import { ID } from '@/utils/constants'
+import { ID } from '@/utils/constants/ids/elementIds'
 import SkillsIconGroup from './SkillsIconGroup'
 
 const Skills = () => {

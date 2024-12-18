@@ -1,7 +1,7 @@
 import PageContainer from '@/components/layout/PageContainer'
 import Heading1 from '@/components/shared/Heading1'
 import img404 from '@/public/images/webp/404.webp'
-import { ID } from '@/utils/constants'
+import { ID } from '@/utils/constants/ids/elementIds'
 import Image from 'next/image'
 import Link from 'next/link'
 

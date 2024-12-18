@@ -1,6 +1,6 @@
-import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
-import { PAGES_URL } from '@/utils/constants'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
+import { getDataTestId } from '@/__tests__/playwright/utils/helpers/getDataTestId'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 import test, { expect } from '@playwright/test'
 
 test.describe('Navigation - Work Experience', () => {

@@ -3,9 +3,10 @@ import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import { sections } from '@/data/projects/work/moravia'
 import { projectsWorkLocalization } from '@/data/projects/work/projectsOverview/workLocalization'
 import { TEXT } from '@/localization/texts_en'
-import { ID, PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
-import { BreadCrumbsType } from '@/utils/types'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
+import { ID } from '@/utils/constants/ids/elementIds'
+import { PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants/urls/pageUrls'
+import { BreadCrumbsType } from '@/utils/interfaces/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {

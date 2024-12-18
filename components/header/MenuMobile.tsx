@@ -1,6 +1,6 @@
 import { menuMobileLinks } from '@/data/menu/mobileLinks'
-import { ID } from '@/utils/constants'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
+import { ID } from '@/utils/constants/ids/elementIds'
 import Link from 'next/link'
 
 const MenuMobile = () => {

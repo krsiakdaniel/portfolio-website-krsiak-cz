@@ -1,4 +1,4 @@
-import { URL_PERSONAL_PROJECTS, URL_WORK_EXPERIENCE } from '@/utils/constants'
+import { URL_PERSONAL_PROJECTS, URL_WORK_EXPERIENCE } from '@/utils/constants/urls/pageUrls'
 
 export const generateUrlWorkExperience = (company: string) => {
   return `${URL_WORK_EXPERIENCE}/${company}`

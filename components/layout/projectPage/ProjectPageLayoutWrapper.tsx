@@ -1,6 +1,6 @@
 import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
-import { Project, Section } from '@/utils/interfaces'
-import { BreadCrumbsType, GoBackLinkType } from '@/utils/types'
+import { Project, Section } from '@/utils/interfaces/interfaces'
+import { BreadCrumbsType, GoBackLinkType } from '@/utils/interfaces/types'
 
 type ProjectPageLayoutWrapperProps = {
   breadCrumbs: BreadCrumbsType

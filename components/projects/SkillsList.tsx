@@ -1,7 +1,7 @@
 import List from '@/components/shared/List'
 
 import ListItem from '@/components/shared/ListItem'
-import { Project, Skill } from '@/utils/interfaces'
+import { Project, Skill } from '@/utils/interfaces/interfaces'
 
 const renderSkills = (skillCategoryObject: Skill) => {
   return skillCategoryObject.skillsList.map((skill: string) => (

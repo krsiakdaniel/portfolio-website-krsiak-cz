@@ -1,8 +1,8 @@
 import ScrollToTopButton from '@/components/footer/ScrollToTopButton'
 import PageContainer from '@/components/layout/PageContainer'
-import { ID } from '@/utils/constants'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
-import { getCurrentYear } from '@/utils/getCurrentYear'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
+import { ID } from '@/utils/constants/ids/elementIds'
+import { getCurrentYear } from '@/utils/helpers/getCurrentYear'
 import Link from 'next/link'
 
 const FooterLeft = () => {

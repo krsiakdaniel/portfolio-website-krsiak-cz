@@ -1,5 +1,5 @@
-import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
+import { getDataTestId } from '@/__tests__/playwright/utils/helpers/getDataTestId'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { expect, test } from '@playwright/test'
 
 test.describe('Header - Logo', () => {

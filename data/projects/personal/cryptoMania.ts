@@ -1,4 +1,4 @@
-import { Section } from '@/utils/interfaces'
+import { Section } from '@/utils/interfaces/interfaces'
 
 export const sections: Section[] = [
   {

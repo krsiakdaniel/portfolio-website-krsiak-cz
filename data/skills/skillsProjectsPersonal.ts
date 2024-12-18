@@ -1,4 +1,4 @@
-import { generateIconsSkills } from '@/utils/generateIconsSkills'
+import { generateIconsSkills } from '@/utils/helpers/generateIconsSkills'
 
 export const iconsSkillsProjectsPersonalKrsiak = generateIconsSkills([
   'js',

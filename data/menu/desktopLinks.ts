@@ -1,7 +1,7 @@
 import { TEXT } from '@/localization/texts_en'
-import { PAGES_URL } from '@/utils/constants'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
-import { MenuLink } from '@/utils/interfaces'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { MenuLink } from '@/utils/interfaces/interfaces'
 
 export const menuDesktopLinks: MenuLink[] = [
   { href: PAGES_URL.aboutMe, text: TEXT.aboutMe, testId: DATA_TEST_IDS.menu.desktop.links.aboutMe, id: 'about-me' },

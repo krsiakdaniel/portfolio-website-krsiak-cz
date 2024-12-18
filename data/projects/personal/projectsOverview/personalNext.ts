@@ -1,5 +1,5 @@
 import { iconsSkillsProjectsPersonalKrsiak } from '@/data/skills/skillsProjectsPersonal'
-import { Project } from '@/utils/interfaces'
+import { Project } from '@/utils/interfaces/interfaces'
 
 // project images
 import krsiak1 from '@/public/images/projects-personal/krsiak/krsiak-1-light.png'
@@ -9,7 +9,8 @@ import krsiak4 from '@/public/images/projects-personal/krsiak/krsiak-4-light.png
 import krsiak5 from '@/public/images/projects-personal/krsiak/krsiak-5-light.png'
 import krsiakThumb from '@/public/images/projects-personal/krsiak/krsiak-thumb-light-600.webp'
 
-import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
+import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 export const projectsPersonalNext: Project[] = [
   {

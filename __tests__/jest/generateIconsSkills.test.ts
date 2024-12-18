@@ -1,4 +1,4 @@
-import { generateIconsSkills, skillIcons } from '@/utils/generateIconsSkills'
+import { generateIconsSkills, skillIcons, SkillKeys } from '@/utils/helpers/generateIconsSkills'
 
 describe('generateIconsSkills', () => {
   const expectedKeys: string[] = [
@@ -32,7 +32,7 @@ describe('generateIconsSkills', () => {
   })
 
   it('generateIconsSkills should return an array of icons with the correct name and path', () => {
-    const skills = ['chakra', 'css', 'cypress']
+    const skills: SkillKeys[] = ['chakra', 'css', 'cypress']
     const results = generateIconsSkills(skills)
 
     results.forEach((resultIcon, index) => {

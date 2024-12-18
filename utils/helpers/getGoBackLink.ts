@@ -1,4 +1,4 @@
-import { GoBackLinkType } from '@/utils/types'
+import { GoBackLinkType } from '@/utils/interfaces/types'
 
 export const getGoBackLinkID = (goBackLink: GoBackLinkType, sectionID: string): string => {
   switch (goBackLink) {

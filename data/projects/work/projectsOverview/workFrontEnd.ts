@@ -1,6 +1,6 @@
 import { iconsSkillsProjectsWorkSmartsuppWeb } from '@/data/skills/skillsProjectsWork'
-import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
-import { Project } from '@/utils/interfaces'
+import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
+import { Project } from '@/utils/interfaces/interfaces'
 
 // smartsupp web
 import smartsuppWeb1 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-1-light.png'
@@ -8,6 +8,7 @@ import smartsuppWeb2 from '@/public/images/projects-work/smartsupp-web/smartsupp
 import smartsuppWeb3 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-3-light.png'
 import smartsuppWeb4 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-4-light.png'
 import smartsuppWebThumb from '@/public/images/projects-work/smartsupp-web/smartsupp-web-thumb-light-600.webp'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 export const projectsWorkFrontEnd: Project[] = [
   {
