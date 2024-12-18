@@ -1,5 +1,5 @@
 import { menuDesktopLinks } from '@/data/menu/desktopLinks'
-import { ID } from '@/utils/constants/ids/ids'
+import { ID } from '@/utils/constants/ids/elementIds'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import Link from 'next/link'
 

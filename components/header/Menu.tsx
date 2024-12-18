@@ -1,5 +1,5 @@
 import { TEXT } from '@/localization/texts_en'
-import { ID } from '@/utils/constants/ids/ids'
+import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/pageUrls'
 import Link from 'next/link'
 
