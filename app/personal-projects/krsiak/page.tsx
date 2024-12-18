@@ -6,7 +6,7 @@ import { TEXT } from '@/localization/texts_en'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL, URL_PERSONAL_PROJECTS } from '@/utils/constants/urls/pageUrls'
-import { BreadCrumbsType } from '@/utils/types'
+import { BreadCrumbsType } from '@/utils/interfaces/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {

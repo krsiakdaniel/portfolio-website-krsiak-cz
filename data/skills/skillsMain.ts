@@ -6,7 +6,7 @@ import tailwind from '@/public/icons/svg/skills/tailwind.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
 import { YEARS } from '@/utils/constants/years'
 import { generateIconsSkills } from '@/utils/helpers/generateIconsSkills'
-import { SkillCard } from '@/utils/interfaces'
+import { SkillCard } from '@/utils/interfaces/interfaces'
 
 export const iconsSkills1 = generateIconsSkills(['html', 'css', 'scss', 'tailwind'])
 export const iconsSkills2 = generateIconsSkills(['js', 'ts', 'react', 'next'])

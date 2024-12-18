@@ -1,6 +1,6 @@
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
-import { Project } from '@/utils/interfaces'
+import { Project } from '@/utils/interfaces/interfaces'
 import CustomersCount from './CustomersCount'
 import ProjectLinksList from './ProjectLinksList'
 import SkillsList from './SkillsList'

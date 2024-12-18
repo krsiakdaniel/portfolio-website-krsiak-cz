@@ -4,7 +4,7 @@ import {
   iconsSkillsProjectsWorkSmartsuppDashboard,
 } from '@/data/skills/skillsProjectsWork'
 import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
-import { Project } from '@/utils/interfaces'
+import { Project } from '@/utils/interfaces/interfaces'
 
 // komercni banka
 import komercniBanka1 from '@/public/images/projects-work/komercni-banka/komercni-banka-1-light.png'

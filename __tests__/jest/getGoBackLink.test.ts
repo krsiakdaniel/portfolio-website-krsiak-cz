@@ -1,5 +1,5 @@
 import { getGoBackLinkID } from '@/utils/helpers/getGoBackLink'
-import { GoBackLinkType } from '@/utils/types'
+import { GoBackLinkType } from '@/utils/interfaces/types'
 
 describe('getGoBackLinkID', () => {
   it('returns correct link for type "work"', () => {

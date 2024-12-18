@@ -1,6 +1,6 @@
 import { iconsSkillsProjectsWorkMoravia } from '@/data/skills/skillsProjectsWork'
 import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
-import { Project } from '@/utils/interfaces'
+import { Project } from '@/utils/interfaces/interfaces'
 
 // moravia
 import moravia1 from '@/public/images/projects-work/moravia/moravia-1-light.png'

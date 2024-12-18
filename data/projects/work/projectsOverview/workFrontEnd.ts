@@ -1,6 +1,6 @@
 import { iconsSkillsProjectsWorkSmartsuppWeb } from '@/data/skills/skillsProjectsWork'
 import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
-import { Project } from '@/utils/interfaces'
+import { Project } from '@/utils/interfaces/interfaces'
 
 // smartsupp web
 import smartsuppWeb1 from '@/public/images/projects-work/smartsupp-web/smartsupp-web-1-light.png'

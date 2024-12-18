@@ -4,7 +4,7 @@ import globe from '@/public/icons/svg/about/globe.svg'
 import reactLogo from '@/public/icons/svg/about/react-logo.svg'
 import text from '@/public/icons/svg/about/text.svg'
 import { YEARS } from '@/utils/constants/years'
-import { Job } from '@/utils/interfaces'
+import { Job } from '@/utils/interfaces/interfaces'
 
 export const jobs: Job[] = [
   {

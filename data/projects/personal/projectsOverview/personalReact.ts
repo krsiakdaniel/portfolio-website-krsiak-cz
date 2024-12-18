@@ -1,5 +1,5 @@
 import { iconsSkillsProjectsPersonalCryptomania } from '@/data/skills/skillsProjectsPersonal'
-import { Project } from '@/utils/interfaces'
+import { Project } from '@/utils/interfaces/interfaces'
 
 // project images
 import cryptomania4 from '@/public/images/projects-personal/cryptomania/cryptomania-1-dark.png'

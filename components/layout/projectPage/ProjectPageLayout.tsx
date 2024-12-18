@@ -4,9 +4,9 @@ import PageSection from '@/components/layout/projectPage/PageSection'
 import ProjectInformation from '@/components/projects/ProjectInformation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { ImageShowcaseItem, Project, Section } from '@/utils/interfaces'
+import { ImageShowcaseItem, Project, Section } from '@/utils/interfaces/interfaces'
+import { BreadCrumbsType } from '@/utils/interfaces/types'
 import { HeaderSectionProps } from '@/utils/shared/componentProps'
-import { BreadCrumbsType } from '@/utils/types'
 import Image from 'next/image'
 
 type ProjectPageLayoutProps = {

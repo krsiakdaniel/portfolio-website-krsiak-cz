@@ -1,5 +1,5 @@
 import { iconsSkillsProjectsPersonalKrsiak } from '@/data/skills/skillsProjectsPersonal'
-import { Project } from '@/utils/interfaces'
+import { Project } from '@/utils/interfaces/interfaces'
 
 // project images
 import krsiak1 from '@/public/images/projects-personal/krsiak/krsiak-1-light.png'

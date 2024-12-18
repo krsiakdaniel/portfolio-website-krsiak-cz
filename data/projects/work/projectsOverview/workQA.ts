@@ -1,6 +1,6 @@
 import { iconsSkillsProjectsWorkGroupon } from '@/data/skills/skillsProjectsWork'
 import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
-import { Project } from '@/utils/interfaces'
+import { Project } from '@/utils/interfaces/interfaces'
 
 // groupon
 import groupon1 from '@/public/images/projects-work/groupon/groupon-1-light.png'
