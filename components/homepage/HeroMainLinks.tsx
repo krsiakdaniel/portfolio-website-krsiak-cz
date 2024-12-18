@@ -1,6 +1,6 @@
 import { TEXT } from '@/localization/texts_en'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { EXTERNAL_URL } from '@/utils/constants/urls/externalUrls'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import HeroLink from './HeroLink'
 
 const HeroMainLinks = () => {

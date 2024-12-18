@@ -1,7 +1,7 @@
 import ScrollToTopButton from '@/components/footer/ScrollToTopButton'
 import PageContainer from '@/components/layout/PageContainer'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { getCurrentYear } from '@/utils/helpers/getCurrentYear'
 import Link from 'next/link'
 

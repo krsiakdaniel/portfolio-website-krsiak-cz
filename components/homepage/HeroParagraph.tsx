@@ -1,5 +1,5 @@
 import { TEXT } from '@/localization/texts_en'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 
 const HeroParagraph = () => {
   return (

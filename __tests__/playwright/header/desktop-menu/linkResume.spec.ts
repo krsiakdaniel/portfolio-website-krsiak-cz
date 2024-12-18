@@ -1,7 +1,7 @@
 import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
 import { TEXT } from '@/localization/texts_en'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { expect, test } from '@playwright/test'
 
 test.describe('Header - Desktop Menu - Resume Link', () => {

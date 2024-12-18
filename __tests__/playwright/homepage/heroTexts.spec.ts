@@ -1,6 +1,6 @@
 import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
 import { TEXT } from '@/localization/texts_en'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { Browser, BrowserContext, Page, chromium, expect, test } from '@playwright/test'
 
 let browser: Browser

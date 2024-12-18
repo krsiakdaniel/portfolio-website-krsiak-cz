@@ -1,6 +1,6 @@
 import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { expect, test } from '@playwright/test'
 
 test.describe('Navigation - About Me', () => {

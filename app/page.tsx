@@ -5,9 +5,9 @@ import WhatIDoMindset from '@/components/homepage/WhatIDoMindset'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import { TEXT } from '@/localization/texts_en'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
