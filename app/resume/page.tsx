@@ -1,4 +1,4 @@
-import HeroLink from '@/components/homepage/HeroLink'
+import HeroLink from '@/components/homepage/hero/HeroLink'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import ResumeInfo from '@/components/resume/ResumeInfo'
