@@ -1,5 +1,5 @@
-import ProjectItem from '@/components/projects/ProjectItem'
 import ExperienceSection from '@/components/projects/experience/ExperienceSection'
+import ProjectItem from '@/components/projects/overviewPage/ProjectItem'
 import { Project } from '@/utils/interfaces/interfaces'
 
 type ProjectSectionProps = {

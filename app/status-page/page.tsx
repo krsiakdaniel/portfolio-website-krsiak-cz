@@ -1,7 +1,7 @@
 import PageContainer from '@/components/layout/PageContainer'
 import Heading1 from '@/components/shared/Heading1'
 import { statusBadges } from '@/data/statusPage'
-import { TEXT } from '@/localization/texts_en'
+import { TEXT } from '@/localization/english'
 import { Metadata } from 'next'
 import Image from 'next/image'
 

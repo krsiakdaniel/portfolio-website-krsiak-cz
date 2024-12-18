@@ -1,5 +1,5 @@
 import { getDataTestId } from '@/__tests__/playwright/utils/helpers/getDataTestId'
-import { TEXT } from '@/localization/texts_en'
+import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { Browser, BrowserContext, Page, chromium, expect, test } from '@playwright/test'
 

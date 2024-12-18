@@ -1,8 +1,8 @@
 'use client' // using hooks
 
 import Logo from '@/components/header/Logo'
-import Menu from '@/components/header/Menu'
-import MenuToggle from '@/components/header/MenuToggle'
+import Menu from '@/components/header/menu/Menu'
+import MenuToggle from '@/components/header/menu/MenuToggle'
 import ScrollProgressBar from '@/components/header/ScrollProgressBar'
 import { useScrollProgress } from '@/hooks/useScrollProgress'
 import { useState } from 'react'

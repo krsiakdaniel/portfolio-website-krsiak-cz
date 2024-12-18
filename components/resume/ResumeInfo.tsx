@@ -1,6 +1,6 @@
 import Heading1 from '@/components/shared/Heading1'
 import HighlightedText from '@/components/shared/HighlightedText'
-import { TEXT } from '@/localization/texts_en'
+import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 
 const ResumeInfo = () => {

@@ -2,7 +2,7 @@ import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout
 import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import { sections } from '@/data/projects/personal/cryptoMania'
 import { projectsPersonalReact } from '@/data/projects/personal/projectsOverview/personalReact'
-import { TEXT } from '@/localization/texts_en'
+import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL, URL_PERSONAL_PROJECTS } from '@/utils/constants/urls/pageUrls'

@@ -1,4 +1,4 @@
-import { TEXT } from '@/localization/texts_en'
+import { TEXT } from '@/localization/english'
 import krsiak from '@/public/images/webp/krsiak-daniel-400.webp'
 import Image from 'next/image'
 

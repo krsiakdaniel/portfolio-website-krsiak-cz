@@ -1,9 +1,9 @@
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsLayout from '@/components/layout/ProjectsLayout'
 import PageNavigation from '@/components/pageNavigation/PageNavigation'
-import { ProjectSection } from '@/components/projects/ProjectSection'
 import ExperienceCard from '@/components/projects/experience/ExperienceCard'
 import ExperienceOtherTitle from '@/components/projects/experience/ExperienceOtherTitle'
+import { ProjectSection } from '@/components/projects/overviewPage/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import {
   projectsWorkFrontEnd,
@@ -12,7 +12,7 @@ import {
   projectsWorkReact,
   projectsWorkWordPress,
 } from '@/data/projects/work/projectsOverview'
-import { TEXT } from '@/localization/texts_en'
+import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'

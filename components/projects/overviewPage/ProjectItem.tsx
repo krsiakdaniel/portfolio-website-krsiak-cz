@@ -18,6 +18,7 @@ type ProjectItemProps = {
   dataTestId: string
 }
 
+// TODO: refactor into smaller components for better readability
 const ProjectItem = ({
   isFeatured,
   image,

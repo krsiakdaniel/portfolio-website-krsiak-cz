@@ -1,4 +1,4 @@
-import { TEXT } from '@/localization/texts_en'
+import { TEXT } from '@/localization/english'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 import Link from 'next/link'

@@ -1,6 +1,6 @@
-import Footer from '@/components/Footer'
+import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
-import { TEXT } from '@/localization/texts_en'
+import { TEXT } from '@/localization/english'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'

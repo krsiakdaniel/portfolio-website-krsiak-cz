@@ -1,3 +1,4 @@
+// Import SVG icons
 import chakra from '@/public/icons/svg/skills/chakra.svg'
 import css from '@/public/icons/svg/skills/css.svg'
 import cypress from '@/public/icons/svg/skills/cypress.svg'
@@ -21,8 +22,10 @@ import ts from '@/public/icons/svg/skills/ts.svg'
 import wordpress from '@/public/icons/svg/skills/wordpress.svg'
 import xd from '@/public/icons/svg/skills/xd.svg'
 
+// Import interfaces
 import { Icon } from '@/utils/interfaces/interfaces'
 
+// Define skill keys type
 export type SkillKeys =
   | 'chakra'
   | 'css'
@@ -47,6 +50,7 @@ export type SkillKeys =
   | 'wordpress'
   | 'xd'
 
+// Map skill keys to their respective icons
 export const skillIcons: Record<SkillKeys, string> = {
   chakra,
   css,
@@ -72,6 +76,7 @@ export const skillIcons: Record<SkillKeys, string> = {
   xd,
 }
 
+// Generate icons for given skills
 export function generateIconsSkills(skills: SkillKeys[]): Icon[] {
   return skills.map((skill) => ({
     name: skill,
