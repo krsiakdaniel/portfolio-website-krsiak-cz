@@ -1,4 +1,4 @@
-import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
+import { getDataTestId } from '@/__tests__/playwright/utils/helpers/getDataTestId'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { expect, test } from '@playwright/test'

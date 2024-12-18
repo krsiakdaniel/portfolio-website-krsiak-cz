@@ -1,4 +1,4 @@
-import { checkLink } from '@/__tests__/playwright/utils/checkLink'
+import { checkLink } from '@/__tests__/playwright/utils/helpers/checkLink'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { EXTERNAL_URL } from '@/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
