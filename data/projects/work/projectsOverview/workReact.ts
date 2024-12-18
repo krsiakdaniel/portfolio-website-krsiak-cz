@@ -3,7 +3,7 @@ import {
   iconsSkillsProjectsWorkKooperativa,
   iconsSkillsProjectsWorkSmartsuppDashboard,
 } from '@/data/skills/skillsProjectsWork'
-import { PROJECT_ID } from '@/utils/constants/projectIds'
+import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
 import { Project } from '@/utils/interfaces'
 
 // komercni banka
@@ -26,6 +26,7 @@ import smartsuppDashboard3 from '@/public/images/projects-work/smartsupp-dashboa
 import smartsuppDashboard4 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-4-light.png'
 import smartsuppDashboard5 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-5-light.png'
 import smartsuppDashboardThumb from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-thumb-light-600.webp'
+import { PAGES_URL } from '@/utils/constants/pageUrls'
 
 export const projectsWorkReact: Project[] = [
   {

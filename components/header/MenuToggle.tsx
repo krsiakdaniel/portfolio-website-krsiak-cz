@@ -1,7 +1,7 @@
 'use client' // using onClick
 
 import { IconClose, IconHamburger } from '@/components/icons'
-import { ID } from '@/utils/constants/ids'
+import { ID } from '@/utils/constants/ids/ids'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 
 type MenuToggleProps = {

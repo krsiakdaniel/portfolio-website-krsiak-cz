@@ -1,5 +1,5 @@
 import { iconsSkillsProjectsWorkMoravia } from '@/data/skills/skillsProjectsWork'
-import { PROJECT_ID } from '@/utils/constants/projectIds'
+import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
 import { Project } from '@/utils/interfaces'
 
 // moravia
@@ -7,6 +7,7 @@ import moravia1 from '@/public/images/projects-work/moravia/moravia-1-light.png'
 import moravia2 from '@/public/images/projects-work/moravia/moravia-2-light.png'
 import moravia3 from '@/public/images/projects-work/moravia/moravia-3-light.png'
 import moraviaThumb from '@/public/images/projects-work/moravia/moravia-thumb-light-600.webp'
+import { PAGES_URL } from '@/utils/constants/pageUrls'
 
 export const projectsWorkLocalization: Project[] = [
   {

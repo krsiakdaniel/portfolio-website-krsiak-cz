@@ -1,5 +1,5 @@
 import { iconsSkillsProjectsWorkSmartsuppHelp } from '@/data/skills/skillsProjectsWork'
-import { PROJECT_ID } from '@/utils/constants/projectIds'
+import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
 import { Project } from '@/utils/interfaces'
 
 // smartsupp help
@@ -7,6 +7,7 @@ import smartsuppHelp1 from '@/public/images/projects-work/smartsupp-help/smartsu
 import smartsuppHelp2 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-2-light.png'
 import smartsuppHelp3 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-3-light.png'
 import smartsuppHelpThumb from '@/public/images/projects-work/smartsupp-help/smartsupp-help-thumb-light-600.webp'
+import { PAGES_URL } from '@/utils/constants/pageUrls'
 
 export const projectsWorkWordPress: Project[] = [
   {

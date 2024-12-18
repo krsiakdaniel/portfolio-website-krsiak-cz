@@ -1,4 +1,4 @@
-import { ID } from '@/utils/constants/ids'
+import { ID } from '@/utils/constants/ids/ids'
 import HeroHeading from './HeroHeading'
 import HeroMainLinks from './HeroMainLinks'
 import HeroParagraph from './HeroParagraph'
