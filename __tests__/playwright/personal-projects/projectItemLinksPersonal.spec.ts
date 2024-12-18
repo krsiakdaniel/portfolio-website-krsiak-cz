@@ -1,6 +1,7 @@
-import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
+import { testProjectLink } from '@/__tests__/playwright/utils/testProjectLink'
+import { PAGES_URL } from '@/utils/constants/pageUrls'
+import { PROJECT_ID } from '@/utils/constants/projectIds'
 import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
-import { testProjectLink } from '../utils/testProjectLink'
 
 let browser: Browser
 let context: BrowserContext

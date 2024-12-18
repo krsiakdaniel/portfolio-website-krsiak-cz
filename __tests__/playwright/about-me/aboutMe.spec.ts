@@ -1,6 +1,6 @@
 import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
 import { TEXT } from '@/localization/texts_en'
-import { PAGES_URL } from '@/utils/constants'
+import { PAGES_URL } from '@/utils/constants/pageUrls'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { expect, test } from '@playwright/test'
 

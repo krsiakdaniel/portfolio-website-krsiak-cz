@@ -1,4 +1,4 @@
-import { PAGES_URL } from '@/utils/constants'
+import { PAGES_URL } from '@/utils/constants/pageUrls'
 import { expect, test } from '@playwright/test'
 
 test.describe('Projects Work - Smartsupp', () => {

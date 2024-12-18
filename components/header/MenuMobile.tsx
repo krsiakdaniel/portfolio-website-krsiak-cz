@@ -1,5 +1,5 @@
 import { menuMobileLinks } from '@/data/menu/mobileLinks'
-import { ID } from '@/utils/constants'
+import { ID } from '@/utils/constants/ids'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import Link from 'next/link'
 

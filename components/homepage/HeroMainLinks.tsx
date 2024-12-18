@@ -1,5 +1,5 @@
 import { TEXT } from '@/localization/texts_en'
-import { EXTERNAL_URL } from '@/utils/constants'
+import { EXTERNAL_URL } from '@/utils/constants/externalUrls'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import HeroLink from './HeroLink'
 

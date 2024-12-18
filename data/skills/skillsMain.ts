@@ -4,8 +4,8 @@ import react from '@/public/icons/svg/skills/react.svg'
 import redux from '@/public/icons/svg/skills/redux.svg'
 import tailwind from '@/public/icons/svg/skills/tailwind.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
-import { YEARS } from '@/utils/constants'
-import { generateIconsSkills } from '@/utils/generateIconsSkills'
+import { YEARS } from '@/utils/constants/years'
+import { generateIconsSkills } from '@/utils/helpers/generateIconsSkills'
 import { SkillCard } from '@/utils/interfaces'
 
 export const iconsSkills1 = generateIconsSkills(['html', 'css', 'scss', 'tailwind'])

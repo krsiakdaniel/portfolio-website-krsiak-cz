@@ -1,8 +1,8 @@
 'use client' // Error components must be Client Components
 
 import { ErrorPageLayout } from '@/components/layout/ErrorPageLayout'
-import { ID } from '@/utils/constants'
-import { ErrorProps } from '@/utils/sharedComponentProps'
+import { ID } from '@/utils/constants/ids'
+import { ErrorProps } from '@/utils/shared/componentProps'
 
 export default function Error({ error, reset }: ErrorProps) {
   return (

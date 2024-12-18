@@ -13,7 +13,8 @@ import {
   projectsWorkWordPress,
 } from '@/data/projects/work/projectsOverview'
 import { TEXT } from '@/localization/texts_en'
-import { ID, PAGES_URL } from '@/utils/constants'
+import { ID } from '@/utils/constants/ids'
+import { PAGES_URL } from '@/utils/constants/pageUrls'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { Metadata } from 'next'
 

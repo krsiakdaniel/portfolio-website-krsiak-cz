@@ -5,7 +5,7 @@ import { ProjectSection } from '@/components/projects/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { projectsPersonalNext, projectsPersonalReact } from '@/data/projects/personal/projectsOverview'
 import { TEXT } from '@/localization/texts_en'
-import { ID, PAGES_URL } from '@/utils/constants'
+import { ID } from '@/utils/constants/ids'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { Metadata } from 'next'
 

@@ -10,7 +10,7 @@ import cryptomania6 from '@/public/images/projects-personal/cryptomania/cryptoma
 import cryptomania3 from '@/public/images/projects-personal/cryptomania/cryptomania-3-light.png'
 import cryptomaniaThumb from '@/public/images/projects-personal/cryptomania/cryptomania-thumb-light-600.webp'
 
-import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
+import { PROJECT_ID } from '@/utils/constants/projectIds'
 
 export const projectsPersonalReact: Project[] = [
   {

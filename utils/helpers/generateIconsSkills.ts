@@ -23,7 +23,7 @@ import xd from '@/public/icons/svg/skills/xd.svg'
 
 import { Icon } from '@/utils/interfaces'
 
-type SkillKeys =
+export type SkillKeys =
   | 'chakra'
   | 'css'
   | 'cypress'

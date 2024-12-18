@@ -5,7 +5,7 @@ import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/pageNavigation/PageNavigation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { TEXT } from '@/localization/texts_en'
-import { ID, PAGES_URL } from '@/utils/constants'
+import { ID } from '@/utils/constants/ids'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { Metadata } from 'next'
 

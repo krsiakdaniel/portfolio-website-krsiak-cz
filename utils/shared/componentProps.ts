@@ -1,4 +1,4 @@
-import { GoBackLinkType } from './types'
+import { GoBackLinkType } from '@/utils/types'
 
 export type HeaderSectionProps = {
   title: string

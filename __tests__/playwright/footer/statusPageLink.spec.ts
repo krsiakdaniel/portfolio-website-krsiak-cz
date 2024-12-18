@@ -1,5 +1,5 @@
 import { getDataTestId } from '@/__tests__/playwright/utils/getDataTestId'
-import { ID } from '@/utils/constants'
+import { ID } from '@/utils/constants/ids'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { expect, test } from '@playwright/test'
 

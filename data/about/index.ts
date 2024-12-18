@@ -3,7 +3,7 @@ import check from '@/public/icons/svg/about/check.svg'
 import globe from '@/public/icons/svg/about/globe.svg'
 import reactLogo from '@/public/icons/svg/about/react-logo.svg'
 import text from '@/public/icons/svg/about/text.svg'
-import { YEARS } from '@/utils/constants'
+import { YEARS } from '@/utils/constants/years'
 import { Job } from '@/utils/interfaces'
 
 export const jobs: Job[] = [

@@ -3,7 +3,7 @@ import {
   iconsSkillsProjectsWorkKooperativa,
   iconsSkillsProjectsWorkSmartsuppDashboard,
 } from '@/data/skills/skillsProjectsWork'
-import { PAGES_URL, PROJECT_ID } from '@/utils/constants'
+import { PROJECT_ID } from '@/utils/constants/projectIds'
 import { Project } from '@/utils/interfaces'
 
 // komercni banka

@@ -5,7 +5,7 @@ import ProjectInformation from '@/components/projects/ProjectInformation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { ImageShowcaseItem, Project, Section } from '@/utils/interfaces'
-import { HeaderSectionProps } from '@/utils/sharedComponentProps'
+import { HeaderSectionProps } from '@/utils/shared/componentProps'
 import { BreadCrumbsType } from '@/utils/types'
 import Image from 'next/image'
 

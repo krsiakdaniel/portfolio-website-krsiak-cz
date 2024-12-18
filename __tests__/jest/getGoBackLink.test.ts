@@ -1,4 +1,4 @@
-import { getGoBackLinkID } from '@/utils/getGoBackLink'
+import { getGoBackLinkID } from '@/utils/helpers/getGoBackLink'
 import { GoBackLinkType } from '@/utils/types'
 
 describe('getGoBackLinkID', () => {
