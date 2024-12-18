@@ -1,8 +1,8 @@
+import SkillsForCompany from '@/components/homepage/skills/SkillsForCompany'
 import DividerWithText from '@/components/shared/DividerWithText'
 import MyMindset from './MyMindset'
-import SkillsForCompany from './SkillsForCompany'
 
-const WhatIDoMindset = () => {
+const MySKills = () => {
   return (
     <div className="mt-10">
       <DividerWithText text="What I Do" />
@@ -14,4 +14,4 @@ const WhatIDoMindset = () => {
   )
 }
 
-export default WhatIDoMindset
+export default MySKills

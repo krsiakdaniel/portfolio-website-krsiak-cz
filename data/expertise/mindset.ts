@@ -1,6 +1,6 @@
 import { SkillInfo } from '@/utils/interfaces/interfaces'
 
-export const mindsetInfo: SkillInfo[] = [
+export const mindset: SkillInfo[] = [
   {
     id: 1,
     title: 'Continuous learning',

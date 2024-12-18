@@ -3,7 +3,9 @@ import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 import { Project, Skill } from '@/utils/interfaces/interfaces'
 
-const renderSkills = (skillCategoryObject: Skill) => {
+type SkillsListProps = Pick<Project, 'skillsOverview'>
+
+const getSkillBadge = (skillCategoryObject: Skill) => {
   return skillCategoryObject.skillsList.map((skill: string) => (
     <span
       key={skill}
@@ -14,14 +16,12 @@ const renderSkills = (skillCategoryObject: Skill) => {
   ))
 }
 
-type SkillsListProps = Pick<Project, 'skillsOverview'>
-
 const SkillsList = ({ skillsOverview }: SkillsListProps) => {
   return (
     <List>
       {skillsOverview.map((skillCategoryObject) => (
         <ListItem key={skillCategoryObject.id}>
-          <div className="flex flex-col md:flex-row">{renderSkills(skillCategoryObject)}</div>
+          <div className="flex flex-col md:flex-row">{getSkillBadge(skillCategoryObject)}</div>
         </ListItem>
       ))}
     </List>

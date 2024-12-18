@@ -1,7 +1,7 @@
 import PageContainer from '@/components/layout/PageContainer'
 import Heading1 from '@/components/shared/Heading1'
 import imgError from '@/public/images/webp/error.webp'
-import { ErrorProps } from '@/utils/shared/componentProps'
+import { ErrorProps } from '@/utils/interfaces/componentProps'
 import Image from 'next/image'
 import { useEffect } from 'react'
 

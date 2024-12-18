@@ -1,11 +1,11 @@
 import Heading2 from '@/components/shared/Heading2'
-import { skillsInfo } from '@/data/whatido/skillsInfo'
+import { mindset } from '@/data/expertise/mindset'
 
-const SkillsForCompany = () => {
+const MyMindset = () => {
   return (
     <div className="lg:w-1/2">
-      <Heading2>💰📈 My Skills For Your Company</Heading2>
-      {skillsInfo.map((skill) => (
+      <Heading2>🥇🚀 I Have Committed Mindset</Heading2>
+      {mindset.map((skill) => (
         <div className="mt-8" key={skill.id}>
           <p className="mt-4 text-lg text-neutral-600">
             <span className="font-bold">
@@ -19,4 +19,4 @@ const SkillsForCompany = () => {
   )
 }
 
-export default SkillsForCompany
+export default MyMindset

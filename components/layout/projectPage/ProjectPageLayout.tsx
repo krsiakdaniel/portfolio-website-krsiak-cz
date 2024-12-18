@@ -1,22 +1,27 @@
 import PageContainer from '@/components/layout/PageContainer'
 import HeaderSection from '@/components/layout/projectPage/HeaderSection'
-import PageSection from '@/components/layout/projectPage/PageSection'
-import ProjectInformation from '@/components/projects/ProjectInformation'
+import ProjectInformation from '@/components/projects/projectDetailPage/ProjectInformation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
+import { HeaderSectionProps } from '@/utils/interfaces/componentProps'
 import { ImageShowcaseItem, Project, Section } from '@/utils/interfaces/interfaces'
 import { BreadCrumbsType } from '@/utils/interfaces/types'
-import { HeaderSectionProps } from '@/utils/shared/componentProps'
-import Image from 'next/image'
+import Gallery from './Gallery'
+import ProjectResponsibility from './ProjectResponsibility'
 
-type ProjectPageLayoutProps = {
+type BreadCrumbsProps = {
   breadCrumbs: BreadCrumbsType
+}
+
+type PageProps = {
   pageID: string
   sections: Section[]
   imageShowcase: ImageShowcaseItem[]
   PageNavigation: React.ReactNode
-} & HeaderSectionProps &
-  Pick<Project, 'description' | 'skillsOverview' | 'customers' | 'projectLinks' | 'linkGitHub'>
+}
+
+type ProjectProps = Pick<Project, 'description' | 'skillsOverview' | 'customers' | 'projectLinks' | 'linkGitHub'>
+
+type ProjectPageLayoutProps = BreadCrumbsProps & HeaderSectionProps & ProjectProps & PageProps
 
 const ProjectPageLayout = ({
   breadCrumbs,
@@ -60,37 +65,10 @@ const ProjectPageLayout = ({
         linkGitHub={linkGitHub}
       />
 
-      <div>
-        {sections.map((section) => (
-          <PageSection
-            key={section.id}
-            title={section.title}
-            titleHighlight={section.titleHighlight}
-            items={section.items}
-          />
-        ))}
-      </div>
+      <ProjectResponsibility sections={sections} />
 
-      <div className="mt-8">
-        <h3 className="mb-4 text-3xl font-bold">Gallery</h3>
-        <p className="mb-3 text-neutral-600">See project screenshots below.</p>
-      </div>
+      <Gallery imageShowcase={imageShowcase} />
 
-      <div data-testid={DATA_TEST_IDS.gallery}>
-        {imageShowcase.map((image) => (
-          <div data-testid={`gallery-image-${image.id}`} key={image.id}>
-            <Image
-              src={image.src}
-              alt={`project-image-${image.id}`}
-              width={1240}
-              height={1272}
-              placeholder="blur"
-              blurDataURL={image.src}
-              className="mt-8 rounded-lg border border-neutral-300 bg-neutral-100 shadow-md"
-            />
-          </div>
-        ))}
-      </div>
       {PageNavigation}
     </PageContainer>
   )
