@@ -7,7 +7,7 @@ import smartsuppHelp1 from '@/public/images/projects-work/smartsupp-help/smartsu
 import smartsuppHelp2 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-2-light.png'
 import smartsuppHelp3 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-3-light.png'
 import smartsuppHelpThumb from '@/public/images/projects-work/smartsupp-help/smartsupp-help-thumb-light-600.webp'
-import { PAGES_URL } from '@/utils/constants/pageUrls'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 export const projectsWorkWordPress: Project[] = [
   {

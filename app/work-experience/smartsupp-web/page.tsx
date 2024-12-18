@@ -4,7 +4,7 @@ import { projectsWorkFrontEnd } from '@/data/projects/work/projectsOverview/work
 import { sections } from '@/data/projects/work/smartsuppWeb'
 import { TEXT } from '@/localization/texts_en'
 import { ID } from '@/utils/constants/ids/elementIds'
-import { PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants/pageUrls'
+import { PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants/urls/pageUrls'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { BreadCrumbsType } from '@/utils/types'
 import { Metadata } from 'next'

@@ -26,7 +26,7 @@ import smartsuppDashboard3 from '@/public/images/projects-work/smartsupp-dashboa
 import smartsuppDashboard4 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-4-light.png'
 import smartsuppDashboard5 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-5-light.png'
 import smartsuppDashboardThumb from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-thumb-light-600.webp'
-import { PAGES_URL } from '@/utils/constants/pageUrls'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 export const projectsWorkReact: Project[] = [
   {

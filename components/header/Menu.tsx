@@ -1,6 +1,6 @@
 import { TEXT } from '@/localization/texts_en'
 import { ID } from '@/utils/constants/ids/elementIds'
-import { PAGES_URL } from '@/utils/constants/pageUrls'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 import Link from 'next/link'
 
 const links = [

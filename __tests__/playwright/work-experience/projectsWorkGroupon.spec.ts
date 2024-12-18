@@ -1,4 +1,4 @@
-import { PAGES_URL } from '@/utils/constants/pageUrls'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 import { Browser, BrowserContext, Page, chromium, expect, test } from '@playwright/test'
 
 let browser: Browser

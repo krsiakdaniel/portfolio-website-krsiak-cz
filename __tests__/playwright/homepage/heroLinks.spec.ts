@@ -1,5 +1,5 @@
 import { checkLink } from '@/__tests__/playwright/utils/checkLink'
-import { EXTERNAL_URL } from '@/utils/constants/externalUrls'
+import { EXTERNAL_URL } from '@/utils/constants/urls/externalUrls'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
 

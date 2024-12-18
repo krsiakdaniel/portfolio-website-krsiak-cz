@@ -1,6 +1,6 @@
 import { TEXT } from '@/localization/texts_en'
 import logo from '@/public/images/webp/logo.webp'
-import { PAGES_URL } from '@/utils/constants/pageUrls'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 import { DATA_TEST_IDS } from '@/utils/dataTestIds'
 import Image from 'next/image'
 import Link from 'next/link'
