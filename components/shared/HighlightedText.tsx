@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-interface HighlightedTextProps {
+type HighlightedTextProps = {
   children: ReactNode
 }
 

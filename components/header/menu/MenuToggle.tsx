@@ -1,6 +1,7 @@
 'use client' // using onClick
 
-import { IconClose, IconHamburger } from '@/components/icons'
+import { IconClose } from '@/components/icons/IconClose'
+import { IconHamburger } from '@/components/icons/IconHamburger'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 

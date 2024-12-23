@@ -5,13 +5,11 @@ import ExperienceCard from '@/components/projects/experience/ExperienceCard'
 import ExperienceOtherTitle from '@/components/projects/experience/ExperienceOtherTitle'
 import { ProjectSection } from '@/components/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import {
-  projectsWorkFrontEnd,
-  projectsWorkLocalization,
-  projectsWorkQA,
-  projectsWorkReact,
-  projectsWorkWordPress,
-} from '@/data/projects/work/projects-overview'
+import { projectsWorkFrontEnd } from '@/data/projects/work/projects-overview/workFrontEnd'
+import { projectsWorkLocalization } from '@/data/projects/work/projects-overview/workLocalization'
+import { projectsWorkQA } from '@/data/projects/work/projects-overview/workQA'
+import { projectsWorkReact } from '@/data/projects/work/projects-overview/workReact'
+import { projectsWorkWordPress } from '@/data/projects/work/projects-overview/workWordpress'
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'

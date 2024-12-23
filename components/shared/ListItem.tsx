@@ -1,4 +1,4 @@
-import { IconCheck } from '@/components/icons'
+import { IconCheck } from '@/components/icons/IconCheck'
 
 type ListItemProps = {
   children: React.ReactNode

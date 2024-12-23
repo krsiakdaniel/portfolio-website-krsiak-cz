@@ -1,4 +1,4 @@
-import { IconArrow } from '@/components/icons'
+import { IconArrow } from '@/components/icons/IconArrow'
 
 const LEFT = 'left'
 const RIGHT = 'right'

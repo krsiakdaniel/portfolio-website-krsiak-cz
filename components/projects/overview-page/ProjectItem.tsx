@@ -1,4 +1,4 @@
-import { IconArrow } from '@/components/icons'
+import { IconArrow } from '@/components/icons/IconArrow'
 import Heading2 from '@/components/shared/Heading2'
 import { Icon } from '@/utils/interfaces/interfaces'
 import Image from 'next/image'

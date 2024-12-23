@@ -1,4 +1,4 @@
-import { IconCaretRight } from '@/components/icons'
+import { IconCaretRight } from '@/components/icons/IconCaretRight'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { BreadCrumbsType } from '@/utils/interfaces/types'
 import Link from 'next/link'
