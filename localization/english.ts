@@ -34,10 +34,15 @@ const COMPANIES = {
   moravia: '🌎 Moravia IT',
 }
 
+const WORK = {
+  otherExperience: 'Other Experience',
+}
+
 export const TEXT = {
   ...ABOUT,
   ...RESUME,
   ...PROJECTS,
   ...HOME,
   ...COMPANIES,
+  ...WORK,
 }
