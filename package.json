@@ -27,7 +27,7 @@
     "ws": "^8.18.0"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^5.9.0",
+    "@netlify/plugin-nextjs": "^5.9.2",
     "@playwright/test": "^1.49.1",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
