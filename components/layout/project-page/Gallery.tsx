@@ -2,7 +2,7 @@ import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ImageShowcaseItem } from '@/utils/interfaces/interfaces'
 import Image from 'next/image'
 
-interface GalleryProps {
+type GalleryProps = {
   imageShowcase: ImageShowcaseItem[]
 }
 

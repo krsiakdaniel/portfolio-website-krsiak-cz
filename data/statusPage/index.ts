@@ -1,50 +1,54 @@
-interface StatusBadge {
-  name: string
-  src: string
-  alt: string
-  width: number
-  height: number
-}
+import { StatusBadge } from '@/utils/interfaces/interfaces'
+
+const IMAGE_JEST_TESTS =
+  'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg'
+const IMAGE_PLAYWRIGHT_TESTS =
+  'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg'
+const IMAGE_CODEQL =
+  'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql/badge.svg'
+const IMAGE_CODE_QUALITY = 'https://app.codacy.com/project/badge/Grade/eaa72f9b0a7242ae9179b0dfdd58faf5'
+const IMAGE_DEPENDABOT = 'https://img.shields.io/badge/Dependabot-Enabled-green'
+const IMAGE_NETLIFY = 'https://api.netlify.com/api/v1/badges/eb322254-0169-4941-9416-3806b0bd5be6/deploy-status'
 
 export const statusBadges: StatusBadge[] = [
   {
     name: 'Jest Tests',
-    src: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg',
+    src: IMAGE_JEST_TESTS,
     alt: 'Jest Tests',
     width: 132,
     height: 20,
   },
   {
     name: 'Playwright Tests',
-    src: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg',
+    src: IMAGE_PLAYWRIGHT_TESTS,
     alt: 'Playwright Tests',
     width: 167,
     height: 20,
   },
   {
     name: 'CodeQL',
-    src: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql/badge.svg',
+    src: IMAGE_CODEQL,
     alt: 'CodeQL',
     width: 120,
     height: 40,
   },
   {
     name: 'Code Quality',
-    src: 'https://app.codacy.com/project/badge/Grade/eaa72f9b0a7242ae9179b0dfdd58faf5',
+    src: IMAGE_CODE_QUALITY,
     alt: 'Code Quality',
     width: 120,
     height: 20,
   },
   {
     name: 'Dependabot',
-    src: 'https://img.shields.io/badge/Dependabot-Enabled-green',
+    src: IMAGE_DEPENDABOT,
     alt: 'Dependabot',
     width: 130,
     height: 20,
   },
   {
     name: 'Netlify',
-    src: 'https://api.netlify.com/api/v1/badges/eb322254-0169-4941-9416-3806b0bd5be6/deploy-status',
+    src: IMAGE_NETLIFY,
     alt: 'Netlify',
     width: 118,
     height: 20,

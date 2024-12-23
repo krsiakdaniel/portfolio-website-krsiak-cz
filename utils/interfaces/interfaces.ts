@@ -81,3 +81,12 @@ export interface SkillCard {
   years: number
   description: string
 }
+
+// status page
+export interface StatusBadge {
+  name: string
+  src: string
+  alt: string
+  width: number
+  height: number
+}

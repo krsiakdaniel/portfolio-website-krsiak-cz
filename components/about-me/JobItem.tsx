@@ -8,7 +8,7 @@ type JobItemProps = {
   years: number
 }
 
-interface JobIconProps {
+type JobIconProps = {
   path: string
   title: string
 }
