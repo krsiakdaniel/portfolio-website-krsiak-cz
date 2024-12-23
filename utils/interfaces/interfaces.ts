@@ -16,11 +16,15 @@ export interface MenuLink {
 }
 
 // sections
+export interface SectionItem {
+  id: string
+  text: string
+}
 export interface Section {
   id?: number
   title: string
   titleHighlight?: string | undefined
-  items: string[]
+  items: SectionItem[]
 }
 
 // project item
