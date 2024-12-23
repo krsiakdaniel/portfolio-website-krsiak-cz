@@ -1,8 +1,8 @@
-import bug from '@/public/icons/svg/about/bug.svg'
-import check from '@/public/icons/svg/about/check.svg'
-import globe from '@/public/icons/svg/about/globe.svg'
-import reactLogo from '@/public/icons/svg/about/react-logo.svg'
-import text from '@/public/icons/svg/about/text.svg'
+import bug from '@/public/icons/svg/about-me/bug.svg'
+import check from '@/public/icons/svg/about-me/check.svg'
+import globe from '@/public/icons/svg/about-me/globe.svg'
+import reactLogo from '@/public/icons/svg/about-me/react-logo.svg'
+import text from '@/public/icons/svg/about-me/text.svg'
 import { YEARS } from '@/utils/constants/years'
 import { Job } from '@/utils/interfaces/interfaces'
 

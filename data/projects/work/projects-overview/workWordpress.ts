@@ -3,10 +3,10 @@ import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
 import { Project } from '@/utils/interfaces/interfaces'
 
 // smartsupp help
-import smartsuppHelp1 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-1-light.png'
-import smartsuppHelp2 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-2-light.png'
-import smartsuppHelp3 from '@/public/images/projects-work/smartsupp-help/smartsupp-help-3-light.png'
-import smartsuppHelpThumb from '@/public/images/projects-work/smartsupp-help/smartsupp-help-thumb-light-600.webp'
+import smartsuppHelp1 from '@/public/images/projects/work/smartsupp-help/smartsupp-help-1-light.png'
+import smartsuppHelp2 from '@/public/images/projects/work/smartsupp-help/smartsupp-help-2-light.png'
+import smartsuppHelp3 from '@/public/images/projects/work/smartsupp-help/smartsupp-help-3-light.png'
+import smartsuppHelpThumb from '@/public/images/projects/work/smartsupp-help/smartsupp-help-thumb-light-600.webp'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 export const projectsWorkWordPress: Project[] = [

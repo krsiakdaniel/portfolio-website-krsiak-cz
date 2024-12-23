@@ -1,4 +1,4 @@
-import ProjectPageLayout from '@/components/layout/projectPage/ProjectPageLayout'
+import ProjectPageLayout from '@/components/layout/project-page/ProjectPageLayout'
 import { Project, Section } from '@/utils/interfaces/interfaces'
 import { BreadCrumbsType, GoBackLinkType } from '@/utils/interfaces/types'
 

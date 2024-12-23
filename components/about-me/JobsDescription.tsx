@@ -1,5 +1,5 @@
-import JobItem from '@/components/aboutMe/JobItem'
-import { jobs } from '@/data/about'
+import JobItem from '@/components/about-me/JobItem'
+import { jobs } from '@/data/about-me'
 
 const JobsDescription = () => {
   return (
