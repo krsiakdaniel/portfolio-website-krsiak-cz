@@ -48,4 +48,4 @@ Test - JEST:
   - head-branch: ['.*jest.*']
 
 Test - Playwright:
-  - head-branch: ['.*playwright.*']
+  - head-branch: ['.*playwright.*', '.*e2e.*']
