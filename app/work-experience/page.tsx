@@ -2,9 +2,9 @@ import PageContainer from '@/components/layout/PageContainer'
 import ProjectsLayout from '@/components/layout/ProjectsLayout'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 import ExperienceCard from '@/components/projects/experience/ExperienceCard'
-import ExperienceOtherTitle from '@/components/projects/experience/ExperienceOtherTitle'
 import { ProjectSection } from '@/components/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import Heading4 from '@/components/shared/Heading4'
 import { projectsWorkFrontEnd } from '@/data/projects/work/projects-overview/workFrontEnd'
 import { projectsWorkLocalization } from '@/data/projects/work/projects-overview/workLocalization'
 import { projectsWorkQA } from '@/data/projects/work/projects-overview/workQA'
@@ -52,7 +52,7 @@ const ProjectsWork = () => {
         <ProjectSection sectionId={ID.section.react} sectionText="React" projectData={projectsWorkReact} />
 
         <ProjectSection sectionId={ID.section.frontEnd} sectionText="Front End" projectData={projectsWorkFrontEnd} />
-        <ExperienceOtherTitle />
+        <Heading4>{TEXT.otherExperience}</Heading4>
         <ExperienceCard
           company="Freelance"
           role="Web Developer / Consultant"
@@ -66,7 +66,7 @@ const ProjectsWork = () => {
         />
 
         <ProjectSection sectionId={ID.section.wordpress} sectionText="WordPress" projectData={projectsWorkWordPress} />
-        <ExperienceOtherTitle />
+        <Heading4>{TEXT.otherExperience}</Heading4>
         <ExperienceCard
           company="Freelance"
           role="WordPress Consultant"
@@ -75,7 +75,7 @@ const ProjectsWork = () => {
         />
 
         <ProjectSection sectionId={ID.section.qa} sectionText="QA Automation & Testing" projectData={projectsWorkQA} />
-        <ExperienceOtherTitle />
+        <Heading4>{TEXT.otherExperience}</Heading4>
         <ExperienceCard
           company="Smartsupp"
           role="QA Automation - Team Leader"
@@ -92,7 +92,7 @@ const ProjectsWork = () => {
           sectionText="Localization"
           projectData={projectsWorkLocalization}
         />
-        <ExperienceOtherTitle />
+        <Heading4>{TEXT.otherExperience}</Heading4>
         <ExperienceCard
           company="Smartsupp"
           role="Localization - Manager"
