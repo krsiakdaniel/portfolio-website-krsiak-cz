@@ -1,6 +1,6 @@
 import HeroLink from '@/components/homepage/hero/HeroLink'
 import PageContainer from '@/components/layout/PageContainer'
-import PageNavigation from '@/components/pageNavigation/PageNavigation'
+import PageNavigation from '@/components/page-navigation/PageNavigation'
 import ResumeInfo from '@/components/resume/ResumeInfo'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { TEXT } from '@/localization/english'

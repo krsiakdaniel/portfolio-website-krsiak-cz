@@ -7,25 +7,25 @@ import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
 import { Project } from '@/utils/interfaces/interfaces'
 
 // komercni banka
-import komercniBanka1 from '@/public/images/projects-work/komercni-banka/komercni-banka-1-light.png'
-import komercniBanka2 from '@/public/images/projects-work/komercni-banka/komercni-banka-2-light.png'
-import komercniBanka3 from '@/public/images/projects-work/komercni-banka/komercni-banka-3-light.png'
-import komercniBanka4 from '@/public/images/projects-work/komercni-banka/komercni-banka-4-light.png'
-import komercniBankaThumb from '@/public/images/projects-work/komercni-banka/komercni-banka-thumb-light-600.webp'
+import komercniBanka1 from '@/public/images/projects/work/komercni-banka/komercni-banka-1-light.png'
+import komercniBanka2 from '@/public/images/projects/work/komercni-banka/komercni-banka-2-light.png'
+import komercniBanka3 from '@/public/images/projects/work/komercni-banka/komercni-banka-3-light.png'
+import komercniBanka4 from '@/public/images/projects/work/komercni-banka/komercni-banka-4-light.png'
+import komercniBankaThumb from '@/public/images/projects/work/komercni-banka/komercni-banka-thumb-light-600.webp'
 
 // kooperativa
-import kooperativa1 from '@/public/images/projects-work/kooperativa/kooperativa-1-light.png'
-import kooperativa2 from '@/public/images/projects-work/kooperativa/kooperativa-2-light.png'
-import kooperativa3 from '@/public/images/projects-work/kooperativa/kooperativa-3-light.png'
-import kooperativaThumb from '@/public/images/projects-work/kooperativa/kooperativa-thumb-light-600.webp'
+import kooperativa1 from '@/public/images/projects/work/kooperativa/kooperativa-1-light.png'
+import kooperativa2 from '@/public/images/projects/work/kooperativa/kooperativa-2-light.png'
+import kooperativa3 from '@/public/images/projects/work/kooperativa/kooperativa-3-light.png'
+import kooperativaThumb from '@/public/images/projects/work/kooperativa/kooperativa-thumb-light-600.webp'
 
 // smartsupp dashboard
-import smartsuppDashboard1 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-1-light.png'
-import smartsuppDashboard2 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-2-light.png'
-import smartsuppDashboard3 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-3-light.png'
-import smartsuppDashboard4 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-4-light.png'
-import smartsuppDashboard5 from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-5-light.png'
-import smartsuppDashboardThumb from '@/public/images/projects-work/smartsupp-dashboard/smartsupp-dashboard-thumb-light-600.webp'
+import smartsuppDashboard1 from '@/public/images/projects/work/smartsupp-dashboard/smartsupp-dashboard-1-light.png'
+import smartsuppDashboard2 from '@/public/images/projects/work/smartsupp-dashboard/smartsupp-dashboard-2-light.png'
+import smartsuppDashboard3 from '@/public/images/projects/work/smartsupp-dashboard/smartsupp-dashboard-3-light.png'
+import smartsuppDashboard4 from '@/public/images/projects/work/smartsupp-dashboard/smartsupp-dashboard-4-light.png'
+import smartsuppDashboard5 from '@/public/images/projects/work/smartsupp-dashboard/smartsupp-dashboard-5-light.png'
+import smartsuppDashboardThumb from '@/public/images/projects/work/smartsupp-dashboard/smartsupp-dashboard-thumb-light-600.webp'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 export const projectsWorkReact: Project[] = [

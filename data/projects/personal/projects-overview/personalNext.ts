@@ -2,12 +2,12 @@ import { iconsSkillsProjectsPersonalKrsiak } from '@/data/skills/skillsProjectsP
 import { Project } from '@/utils/interfaces/interfaces'
 
 // project images
-import krsiak1 from '@/public/images/projects-personal/krsiak/krsiak-1-light.png'
-import krsiak2 from '@/public/images/projects-personal/krsiak/krsiak-2-light.png'
-import krsiak3 from '@/public/images/projects-personal/krsiak/krsiak-3-light.png'
-import krsiak4 from '@/public/images/projects-personal/krsiak/krsiak-4-light.png'
-import krsiak5 from '@/public/images/projects-personal/krsiak/krsiak-5-light.png'
-import krsiakThumb from '@/public/images/projects-personal/krsiak/krsiak-thumb-light-600.webp'
+import krsiak1 from '@/public/images/projects/personal/krsiak/krsiak-1-light.png'
+import krsiak2 from '@/public/images/projects/personal/krsiak/krsiak-2-light.png'
+import krsiak3 from '@/public/images/projects/personal/krsiak/krsiak-3-light.png'
+import krsiak4 from '@/public/images/projects/personal/krsiak/krsiak-4-light.png'
+import krsiak5 from '@/public/images/projects/personal/krsiak/krsiak-5-light.png'
+import krsiakThumb from '@/public/images/projects/personal/krsiak/krsiak-thumb-light-600.webp'
 
 import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'

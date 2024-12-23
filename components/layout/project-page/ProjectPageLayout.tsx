@@ -1,6 +1,6 @@
 import PageContainer from '@/components/layout/PageContainer'
-import HeaderSection from '@/components/layout/projectPage/HeaderSection'
-import ProjectInformation from '@/components/projects/projectDetailPage/ProjectInformation'
+import HeaderSection from '@/components/layout/project-page/HeaderSection'
+import ProjectInformation from '@/components/projects/project-detail-page/ProjectInformation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { HeaderSectionProps } from '@/utils/interfaces/componentProps'
 import { ImageShowcaseItem, Project, Section } from '@/utils/interfaces/interfaces'
