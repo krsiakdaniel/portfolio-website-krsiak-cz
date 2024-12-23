@@ -1,13 +1,20 @@
+import { TEXT } from '@/localization/english'
 import { Section } from '@/utils/interfaces/interfaces'
 
 export const sections: Section[] = [
   {
     id: 1,
-    title: 'My job',
+    title: TEXT.myJob,
     titleHighlight: '',
     items: [
-      'I worked on automation, testing scripts and team coordination.',
-      'Groupon is an online marketplace, offering discounts on products and services, with 17 million customers.',
+      {
+        id: '1-0',
+        text: 'I worked on automation, testing scripts and team coordination.',
+      },
+      {
+        id: '1-1',
+        text: 'Groupon is an online marketplace, offering discounts on products and services, with 17 million customers.',
+      },
     ],
   },
   {
@@ -15,8 +22,14 @@ export const sections: Section[] = [
     title: 'My role',
     titleHighlight: '',
     items: [
-      'SDET = Software Development Engineer in Testing.',
-      'In testing, it is an IT professional who can work equally in both development and testing.',
+      {
+        id: '2-0',
+        text: 'SDET = Software Development Engineer in Testing.',
+      },
+      {
+        id: '2-1',
+        text: 'In testing, it is an IT professional who can work equally in both development and testing.',
+      },
     ],
   },
   {
@@ -24,11 +37,26 @@ export const sections: Section[] = [
     title: 'Responsibility #1:',
     titleHighlight: 'QA Automation and Testing Scripts',
     items: [
-      'Setting up automation, including Playwright for E2E.',
-      'Writing E2E tests in JavaScript and TypeScript.',
-      'Coordinating efforts related to unit tests and integration tests.',
-      'Writing documentation for developers.',
-      'CI/CD pipeline in GitHub using Jenkins, for unit, integration, and E2E tests.',
+      {
+        id: '3-0',
+        text: 'Setting up automation, including Playwright for E2E.',
+      },
+      {
+        id: '3-1',
+        text: 'Writing E2E tests in JavaScript and TypeScript.',
+      },
+      {
+        id: '3-2',
+        text: 'Coordinating efforts related to unit tests and integration tests.',
+      },
+      {
+        id: '3-3',
+        text: 'Writing documentation for developers.',
+      },
+      {
+        id: '3-4',
+        text: 'CI/CD pipeline in GitHub using Jenkins, for unit, integration, and E2E tests.',
+      },
     ],
   },
   {
@@ -36,12 +64,30 @@ export const sections: Section[] = [
     title: 'Responsibility #2:',
     titleHighlight: 'Team Coordination',
     items: [
-      'Involved in hiring new SDET members for QA team.',
-      'Work across 4 teams.',
-      '3 DEV teams (15 developers). Setting priorities for writing unit and integration tests.',
-      '1 QA team (6 manual testers). Coordinating regression testing for the website.',
-      'Drive the discussion and decisions on technical topics related to the teams.',
-      'Keeping up-to-date JIRA tasks for testing.',
+      {
+        id: '4-0',
+        text: 'Involved in hiring new SDET members for QA team.',
+      },
+      {
+        id: '4-1',
+        text: 'Work across 4 teams.',
+      },
+      {
+        id: '4-2',
+        text: '3 DEV teams (15 developers). Setting priorities for writing unit and integration tests.',
+      },
+      {
+        id: '4-3',
+        text: '1 QA team (6 manual testers). Coordinating regression testing for the website.',
+      },
+      {
+        id: '4-4',
+        text: 'Drive the discussion and decisions on technical topics related to the teams.',
+      },
+      {
+        id: '4-5',
+        text: 'Keeping up-to-date JIRA tasks for testing.',
+      },
     ],
   },
 ]

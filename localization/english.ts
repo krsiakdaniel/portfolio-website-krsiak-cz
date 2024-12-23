@@ -36,6 +36,11 @@ const COMPANIES = {
 
 const WORK = {
   otherExperience: 'Other Experience',
+  myJob: 'My job',
+}
+
+const MISC = {
+  description: 'Description',
 }
 
 export const TEXT = {
@@ -45,4 +50,5 @@ export const TEXT = {
   ...HOME,
   ...COMPANIES,
   ...WORK,
+  ...MISC,
 }
