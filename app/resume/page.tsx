@@ -61,7 +61,7 @@ const ResumePreviewEmbed = () => {
 const Resume = () => {
   return (
     <PageContainer id={ID.about}>
-      <BreadCrumbs linkLevel1={PAGES_URL.aboutMe} textLevel1={TEXT.resume} />
+      <BreadCrumbs linkLevel1={PAGES_URL.resume} textLevel1={TEXT.resume} />
       <div>
         <ResumeInfo />
         <div className="mt-8">
