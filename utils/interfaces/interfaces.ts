@@ -65,6 +65,7 @@ export interface Project {
 
 export interface SkillInfo {
   id: number
+  order: number
   title: string
   description: string
 }
