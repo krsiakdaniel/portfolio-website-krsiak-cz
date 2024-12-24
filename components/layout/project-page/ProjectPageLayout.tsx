@@ -5,6 +5,7 @@ import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { HeaderSectionProps } from '@/utils/interfaces/componentProps'
 import { ImageShowcaseItem, Project, Section } from '@/utils/interfaces/interfaces'
 import { BreadCrumbsType } from '@/utils/interfaces/types'
+import { ReactNode } from 'react'
 import Gallery from './Gallery'
 import ProjectResponsibility from './ProjectResponsibility'
 
@@ -16,7 +17,7 @@ type PageProps = {
   pageID: string
   sections: Section[]
   imageShowcase: ImageShowcaseItem[]
-  PageNavigation: React.ReactNode
+  PageNavigation: ReactNode
 }
 
 type ProjectProps = Pick<Project, 'description' | 'skillsOverview' | 'customers' | 'projectLinks' | 'linkGitHub'>
@@ -44,10 +45,10 @@ const ProjectPageLayout = ({
   return (
     <PageContainer id={pageID}>
       <BreadCrumbs
-        linkLevel1={breadCrumbs.linkLevel1}
-        textLevel1={breadCrumbs.textLevel1}
-        linkLevel2={breadCrumbs.linkLevel2}
-        textLevel2={breadCrumbs.textLevel2}
+        level1Url={breadCrumbs.level1Url}
+        level1Text={breadCrumbs.level1Text}
+        level2Url={breadCrumbs.level2Url}
+        level2Text={breadCrumbs.level2Text}
       />
       <HeaderSection
         title={title}

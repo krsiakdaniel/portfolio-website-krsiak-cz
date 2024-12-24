@@ -1,6 +1,6 @@
-import { generateIconsSkills } from '@/utils/helpers/generateIconsSkills'
+import { getSkillsIcons } from '@/utils/helpers/getSkillsIcons'
 
-export const iconsSkillsProjectsPersonalKrsiak = generateIconsSkills([
+export const iconsSkillsProjectsPersonalKrsiak = getSkillsIcons([
   'js',
   'ts',
   'react',
@@ -12,4 +12,4 @@ export const iconsSkillsProjectsPersonalKrsiak = generateIconsSkills([
   'netlify',
 ])
 
-export const iconsSkillsProjectsPersonalCryptomania = generateIconsSkills(['js', 'ts', 'react', 'chakra', 'netlify'])
+export const iconsSkillsProjectsPersonalCryptomania = getSkillsIcons(['js', 'ts', 'react', 'chakra', 'netlify'])

@@ -11,7 +11,7 @@ const MenuMobile = () => {
       data-testid={DATA_TEST_IDS.menu.mobile.component}
     >
       {menuMobileLinks.map((link) => (
-        <li key={link.href}>
+        <li key={link.id}>
           <Link
             href={link.href}
             className="block border-b border-neutral-100 py-2 pl-3 pr-4 font-bold text-neutral-700 hover:bg-neutral-50 hover:text-violet-700"

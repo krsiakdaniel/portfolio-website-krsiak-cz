@@ -8,7 +8,7 @@ import { Job } from '@/utils/interfaces/interfaces'
 
 export const jobs: Job[] = [
   {
-    id: 1,
+    id: 0,
     path: reactLogo,
     title: 'Front End - React Developer',
     years: YEARS.react,
@@ -18,7 +18,7 @@ export const jobs: Job[] = [
     `,
   },
   {
-    id: 2,
+    id: 1,
     path: globe,
     title: 'Front End - Web Developer',
     years: YEARS.webDeveloper,
@@ -28,7 +28,7 @@ export const jobs: Job[] = [
       `,
   },
   {
-    id: 3,
+    id: 2,
     path: check,
     title: 'QA Automation - Team Leader',
     years: YEARS.qaAutomation,
@@ -38,7 +38,7 @@ export const jobs: Job[] = [
       `,
   },
   {
-    id: 4,
+    id: 3,
     path: text,
     title: 'Localization - Manager',
     years: YEARS.localizationManager,
@@ -48,7 +48,7 @@ export const jobs: Job[] = [
       `,
   },
   {
-    id: 5,
+    id: 4,
     path: bug,
     title: 'Localization - Tester',
     years: YEARS.localizationTester,
@@ -58,7 +58,7 @@ export const jobs: Job[] = [
       `,
   },
   {
-    id: 6,
+    id: 5,
     path: globe,
     title: 'Front End - Web Coder',
     years: YEARS.webCoder,

@@ -1,9 +1,13 @@
-import PageContainer from '@/components/layout/PageContainer'
-import Heading1 from '@/components/shared/Heading1'
-import img404 from '@/public/images/webp/404.webp'
-import { ID } from '@/utils/constants/ids/elementIds'
 import Image from 'next/image'
 import Link from 'next/link'
+
+import { ID } from '@/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+
+import PageContainer from '@/components/layout/PageContainer'
+import Heading1 from '@/components/shared/Heading1'
+
+import img404 from '@/public/images/webp/404.webp'
 
 const NotFoundPage = () => {
   return (
@@ -18,7 +22,7 @@ const NotFoundPage = () => {
         </p>
         <p className="mt-2 text-lg font-light text-neutral-600">It looks like we are fresh out of yarn!</p>
         <Link
-          href="/"
+          href={PAGES_URL.home}
           className="mt-8 inline-flex rounded-lg bg-purple-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300"
         >
           Back to Homepage

@@ -5,8 +5,9 @@ import { projectsPersonalReact } from '@/data/projects/personal/projects-overvie
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
-import { PAGES_URL, URL_PERSONAL_PROJECTS } from '@/utils/constants/urls/pageUrls'
-import { BreadCrumbsType } from '@/utils/interfaces/types'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { getBreadcrumbsPersonal } from '@/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
+import { GoBackLinkEnum } from '@/utils/interfaces/enums'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -26,24 +27,17 @@ export const metadata: Metadata = {
   ],
 }
 
-const breadCrumbs: BreadCrumbsType = {
-  linkLevel1: URL_PERSONAL_PROJECTS,
-  textLevel1: TEXT.personalProjects,
-  linkLevel2: PAGES_URL.personal.cryptoMania,
-  textLevel2: TEXT.cryptoMania,
-}
-
 const ProjectPersonalCryptomania = () => {
   const { title, role, description, skillsOverview, projectLinks, linkGitHub, imageShowcase } = projectsPersonalReact[0]
 
   return (
     <>
       <ProjectPageLayout
-        breadCrumbs={breadCrumbs}
+        breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.cryptoMania, TEXT.cryptoMania)}
         pageID={PAGES_URL.personal.cryptoMania}
         title={title}
         role={role}
-        goBackLink="personal"
+        goBackLink={GoBackLinkEnum.Personal}
         sectionID={ID.section.react}
         description={description}
         skillsOverview={skillsOverview}

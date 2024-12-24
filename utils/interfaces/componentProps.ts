@@ -1,4 +1,4 @@
-import { GoBackLinkType } from '@/utils/interfaces/types'
+import { GoBackLinkEnum } from '@/utils/interfaces/enums'
 
 export type HeaderSectionProps = {
   title: string
@@ -6,7 +6,7 @@ export type HeaderSectionProps = {
   role: string
   years?: string | undefined
   company?: string
-  goBackLink: GoBackLinkType
+  goBackLink: GoBackLinkEnum
 }
 
 // error pages

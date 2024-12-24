@@ -1,20 +1,20 @@
 import { URL_PERSONAL_PROJECTS, URL_WORK_EXPERIENCE } from '@/utils/constants/urls/pageUrls'
-import { generateUrlPersonalProject, generateUrlWorkExperience } from '@/utils/helpers/generateUrls'
+import { getUrlPersonalProject, getUrlWorkExperience } from '@/utils/helpers/getPageUrls'
 
-describe('generateUrlWorkExperience', () => {
+describe('getUrlWorkExperience', () => {
   it('should return the correct URL for a given company', () => {
     const company = 'exampleCompany'
     const expectedUrl = `${URL_WORK_EXPERIENCE}/${company}`
-    const result = generateUrlWorkExperience(company)
+    const result = getUrlWorkExperience(company)
     expect(result).toBe(expectedUrl)
   })
 })
 
-describe('generateUrlPersonalProject', () => {
+describe('getUrlPersonalProject', () => {
   it('should return the correct URL for a given project', () => {
     const project = 'exampleProject'
     const expectedUrl = `${URL_PERSONAL_PROJECTS}/${project}`
-    const result = generateUrlPersonalProject(project)
+    const result = getUrlPersonalProject(project)
     expect(result).toBe(expectedUrl)
   })
 })

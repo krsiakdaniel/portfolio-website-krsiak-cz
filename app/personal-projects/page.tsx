@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const ProjectsPersonal = () => {
   return (
     <PageContainer id={ID.projects.personal}>
-      <BreadCrumbs linkLevel1={PAGES_URL.personal.mainUrl} textLevel1={TEXT.personalProjects} />
+      <BreadCrumbs level1Url={PAGES_URL.personal.mainUrl} level1Text={TEXT.personalProjects} />
       <ProjectsLayout
         heading={TEXT.personalProjects}
         description="I like to learn new technologies and create personal projects where I can apply what I know and keep up on the latest trends."

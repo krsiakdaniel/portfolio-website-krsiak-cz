@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 const About = () => {
   return (
     <PageContainer id={ID.about}>
-      <BreadCrumbs linkLevel1={PAGES_URL.aboutMe} textLevel1={TEXT.aboutMe} />
+      <BreadCrumbs level1Url={PAGES_URL.aboutMe} level1Text={TEXT.aboutMe} />
       <div>
         <HeadingInfo />
         <div className="mt-16 flex flex-col-reverse justify-between lg:flex-row lg:space-x-10">

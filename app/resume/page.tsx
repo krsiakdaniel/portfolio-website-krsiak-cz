@@ -2,6 +2,7 @@ import HeroLink from '@/components/homepage/hero/HeroLink'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 import ResumeInfo from '@/components/resume/ResumeInfo'
+import ResumePreviewEmbed from '@/components/resume/ResumePreviewEmbed'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
@@ -44,24 +45,10 @@ export const metadata: Metadata = {
   ],
 }
 
-const ResumePreviewEmbed = () => {
-  return (
-    <div className="mt-16">
-      <iframe
-        src={EXTERNAL_URL.resume.resumeEmbedPreviewPDF}
-        width="100%"
-        height="1400"
-        allow="autoplay"
-        className="border bg-black p-2"
-      ></iframe>
-    </div>
-  )
-}
-
 const Resume = () => {
   return (
     <PageContainer id={ID.about}>
-      <BreadCrumbs linkLevel1={PAGES_URL.resume} textLevel1={TEXT.resume} />
+      <BreadCrumbs level1Url={PAGES_URL.resume} level1Text={TEXT.resume} />
       <div>
         <ResumeInfo />
         <div className="mt-8">

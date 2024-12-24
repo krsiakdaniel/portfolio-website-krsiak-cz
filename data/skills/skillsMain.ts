@@ -5,17 +5,17 @@ import redux from '@/public/icons/svg/skills/redux.svg'
 import tailwind from '@/public/icons/svg/skills/tailwind.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
 import { YEARS } from '@/utils/constants/years'
-import { generateIconsSkills } from '@/utils/helpers/generateIconsSkills'
+import { getSkillsIcons } from '@/utils/helpers/getSkillsIcons'
 import { SkillCard } from '@/utils/interfaces/interfaces'
 
-export const iconsSkills1 = generateIconsSkills(['html', 'css', 'scss', 'tailwind'])
-export const iconsSkills2 = generateIconsSkills(['js', 'ts', 'react', 'next'])
-export const iconsSkills3 = generateIconsSkills(['redux', 'graphql', 'jest', 'playwright'])
-export const iconsSkills4 = generateIconsSkills(['figma'])
+export const iconsSkills1 = getSkillsIcons(['html', 'css', 'scss', 'tailwind'])
+export const iconsSkills2 = getSkillsIcons(['js', 'ts', 'react', 'next'])
+export const iconsSkills3 = getSkillsIcons(['redux', 'graphql', 'jest', 'playwright'])
+export const iconsSkills4 = getSkillsIcons(['figma'])
 
 export const skills: SkillCard[] = [
   {
-    id: 1,
+    id: 0,
     imgSrc: js,
     imgAlt: 'JS',
     title: 'JavaScript',
@@ -23,7 +23,7 @@ export const skills: SkillCard[] = [
     description: 'Essential for creating modern interactive web applications.',
   },
   {
-    id: 2,
+    id: 1,
     imgSrc: ts,
     imgAlt: 'TS',
     title: 'TypeScript',
@@ -31,7 +31,7 @@ export const skills: SkillCard[] = [
     description: 'Ensuring type safety, code reliability and\u00A0scalability.',
   },
   {
-    id: 3,
+    id: 2,
     imgSrc: react,
     imgAlt: 'React',
     title: 'React',
@@ -39,7 +39,7 @@ export const skills: SkillCard[] = [
     description: 'Great for components that are reusable and\u00A0easy to maintain.',
   },
   {
-    id: 4,
+    id: 3,
     imgSrc: redux,
     imgAlt: 'Redux',
     title: 'Redux',
@@ -47,7 +47,7 @@ export const skills: SkillCard[] = [
     description: 'Managing application state in a predictable and\u00A0organized way.',
   },
   {
-    id: 5,
+    id: 4,
     imgSrc: next,
     imgAlt: 'Next.js',
     title: 'Next.js',
@@ -55,7 +55,7 @@ export const skills: SkillCard[] = [
     description: 'The React Framework for creating fast and\u00A0scalable web applications.',
   },
   {
-    id: 6,
+    id: 5,
     imgSrc: tailwind,
     imgAlt: 'Tailwind CSS',
     title: 'Tailwind CSS',

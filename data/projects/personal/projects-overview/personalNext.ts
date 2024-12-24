@@ -18,11 +18,11 @@ export const projectsPersonalNext: Project[] = [
     isFeatured: true,
     image: krsiakThumb.src,
     imageShowcase: [
-      { id: 1, src: krsiak1.src },
-      { id: 2, src: krsiak2.src },
-      { id: 3, src: krsiak3.src },
-      { id: 4, src: krsiak4.src },
-      { id: 5, src: krsiak5.src },
+      { id: 0, src: krsiak1.src },
+      { id: 1, src: krsiak2.src },
+      { id: 2, src: krsiak3.src },
+      { id: 3, src: krsiak4.src },
+      { id: 4, src: krsiak5.src },
     ],
     title: '👨‍💻 Portfolio Website',
     company: 'Personal project',
@@ -32,12 +32,12 @@ export const projectsPersonalNext: Project[] = [
     mySkillsIcons: iconsSkillsProjectsPersonalKrsiak,
     skillsOverview: [
       {
-        id: 1,
+        id: 0,
         description: 'Frontend',
         skillsList: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
       },
       {
-        id: 2,
+        id: 1,
         description: 'Other',
         skillsList: ['JEST', 'Playwright', 'GitHub Actions', 'Netlify'],
       },

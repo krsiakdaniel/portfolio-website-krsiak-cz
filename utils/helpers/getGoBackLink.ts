@@ -1,12 +1,13 @@
-import { GoBackLinkType } from '@/utils/interfaces/types'
+import { PAGES_URL, URL_PERSONAL_PROJECTS, URL_WORK_EXPERIENCE } from '@/utils/constants/urls/pageUrls'
+import { GoBackLinkEnum } from '@/utils/interfaces/enums'
 
-export const getGoBackLinkID = (goBackLink: GoBackLinkType, sectionID: string): string => {
+export const getGoBackLinkID = (goBackLink: GoBackLinkEnum, sectionID: string): string => {
   switch (goBackLink) {
     case 'work':
-      return `/work-experience/#${sectionID}`
+      return `${URL_WORK_EXPERIENCE}/#${sectionID}`
     case 'personal':
-      return `/personal-projects/#${sectionID}`
+      return `${URL_PERSONAL_PROJECTS}/#${sectionID}`
     default:
-      return '/'
+      return PAGES_URL.home
   }
 }

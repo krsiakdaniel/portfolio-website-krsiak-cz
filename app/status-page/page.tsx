@@ -1,7 +1,10 @@
 import PageContainer from '@/components/layout/PageContainer'
+import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading1 from '@/components/shared/Heading1'
 import { statusBadges } from '@/data/statusPage'
 import { TEXT } from '@/localization/english'
+import { ID } from '@/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 import { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -25,17 +28,18 @@ export const metadata: Metadata = {
 
 const StatusPage = () => {
   return (
-    <PageContainer id="status-page">
-      <div className="flex flex-col items-center justify-center">
-        <Heading1>Status page</Heading1>
+    <PageContainer id={ID.statusPage}>
+      <BreadCrumbs level1Url={PAGES_URL.statusPage} level1Text={TEXT.statusPage} />
+      <div>
+        <Heading1>{TEXT.statusPage}</Heading1>
         <p className="mt-4 text-lg text-neutral-600">
           Current statuses for key integrations, showcasing the health and performance of the project.
         </p>
 
-        <div className="mt-8 flex flex-col items-center">
+        <div className="mt-8">
           {statusBadges.map((item) => (
             <Image
-              key={item.name}
+              key={item.id}
               src={item.src}
               alt={item.alt}
               width={item.width}

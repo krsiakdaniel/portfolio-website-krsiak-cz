@@ -1,4 +1,4 @@
-import { generateUrlPersonalProject, generateUrlWorkExperience } from '@/utils/helpers/generateUrls'
+import { getUrlPersonalProject, getUrlWorkExperience } from '@/utils/helpers/getPageUrls'
 
 export const URL_WORK_EXPERIENCE = '/work-experience'
 export const URL_PERSONAL_PROJECTS = '/personal-projects'
@@ -10,19 +10,20 @@ export const PAGES_URL = {
   resume: '/resume',
   work: {
     mainUrl: URL_WORK_EXPERIENCE,
-    kooperativa: generateUrlWorkExperience('kooperativa'),
+    kooperativa: getUrlWorkExperience('kooperativa'),
     smartsupp: {
-      dashboard: generateUrlWorkExperience('smartsupp-dashboard'),
-      web: generateUrlWorkExperience('smartsupp-web'),
-      help: generateUrlWorkExperience('smartsupp-help'),
+      dashboard: getUrlWorkExperience('smartsupp-dashboard'),
+      web: getUrlWorkExperience('smartsupp-web'),
+      help: getUrlWorkExperience('smartsupp-help'),
     },
-    komercniBanka: generateUrlWorkExperience('komercni-banka'),
-    groupon: generateUrlWorkExperience('groupon'),
-    moravia: generateUrlWorkExperience('moravia'),
+    komercniBanka: getUrlWorkExperience('komercni-banka'),
+    groupon: getUrlWorkExperience('groupon'),
+    moravia: getUrlWorkExperience('moravia'),
   },
   personal: {
     mainUrl: URL_PERSONAL_PROJECTS,
-    krsiak: generateUrlPersonalProject('krsiak'),
-    cryptoMania: generateUrlPersonalProject('cryptomania'),
+    krsiak: getUrlPersonalProject('krsiak'),
+    cryptoMania: getUrlPersonalProject('cryptomania'),
   },
+  statusPage: '/status-page',
 }
