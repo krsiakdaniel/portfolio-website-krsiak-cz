@@ -1,6 +1,7 @@
 import SkillsIconGroup from '@/components/homepage/skills/SkillsIconGroup'
 import DividerWithText from '@/components/shared/DividerWithText'
 import { iconsSkills1, iconsSkills2, iconsSkills3, iconsSkills4 } from '@/data/skills/skillsMain'
+import { TEXT } from '@/localization/english'
 import { ID } from '@/utils/constants/ids/elementIds'
 
 const Skills = () => {
@@ -14,9 +15,7 @@ const Skills = () => {
         <SkillsIconGroup icons={iconsSkills4} />
       </div>
       <div>
-        <p className="text-body-sm mt-4 text-center italic text-neutral-500">
-          HTML, CSS, Sass, Tailwind CSS, JavaScript, TypeScript, React, Next.js, Redux, GraphQL, Jest, Playwright, Figma
-        </p>
+        <p className="text-body-sm mt-4 text-center italic text-neutral-500">{TEXT.skillsIconsNames}</p>
       </div>
     </div>
   )

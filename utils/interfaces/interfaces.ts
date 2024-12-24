@@ -88,9 +88,18 @@ export interface SkillCard {
 
 // status page
 export interface StatusBadge {
+  id: number
   name: string
   src: string
   alt: string
   width: number
   height: number
+}
+
+// website links
+export interface WebsiteLinkItem {
+  href: string
+  text: string
+  testId: string
+  id: string
 }

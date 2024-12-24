@@ -22,7 +22,7 @@ import ts from '@/public/icons/svg/skills/ts.svg'
 import wordpress from '@/public/icons/svg/skills/wordpress.svg'
 import xd from '@/public/icons/svg/skills/xd.svg'
 
-// Import interfaces
+// Import interface
 import { Icon } from '@/utils/interfaces/interfaces'
 
 // Define skill keys type
@@ -76,8 +76,8 @@ export const skillIcons: Record<SkillKeys, string> = {
   xd,
 }
 
-// Generate icons for given skills
-export function generateIconsSkills(skills: SkillKeys[]): Icon[] {
+// Get relevant icons
+export function getSkillsIcons(skills: SkillKeys[]): Icon[] {
   return skills.map((skill) => ({
     name: skill,
     path: skillIcons[skill],

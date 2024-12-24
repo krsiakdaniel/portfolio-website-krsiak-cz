@@ -1,3 +1,4 @@
+import { NavigationDirectionEnum } from '@/utils/interfaces/enums'
 import PageNavigationLink from './PageNavigationLink'
 
 type PageNavigationProps = {
@@ -27,7 +28,7 @@ const PageNavigation = ({
           <PageNavigationLink
             href={linkPrevious}
             text={namePrevious}
-            type="left"
+            type={NavigationDirectionEnum.Left}
             dataTestId={dataTestIdPrevious}
             justify="start"
             widthClass={hasPreviousLink && hasNextLink ? 'lg:w-1/2' : 'lg:w-full'}
@@ -37,7 +38,7 @@ const PageNavigation = ({
           <PageNavigationLink
             href={linkNext}
             text={nameNext}
-            type="right"
+            type={NavigationDirectionEnum.Right}
             dataTestId={dataTestIdNext}
             justify="end"
             widthClass={hasPreviousLink && hasNextLink ? 'lg:w-1/2' : 'lg:w-full'}

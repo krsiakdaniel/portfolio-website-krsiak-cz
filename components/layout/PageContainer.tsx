@@ -1,8 +1,8 @@
-import React from 'react'
+import { ReactNode } from 'react'
 
 type PageContainerProps = {
   id?: string
-  children: React.ReactNode
+  children: ReactNode
 }
 
 function PageContainer({ id, children }: PageContainerProps) {

@@ -14,8 +14,8 @@ export const projectsWorkQA: Project[] = [
     isFeatured: false,
     image: grouponThumb.src,
     imageShowcase: [
-      { id: 1, src: groupon1.src },
-      { id: 2, src: groupon2.src },
+      { id: 0, src: groupon1.src },
+      { id: 1, src: groupon2.src },
     ],
     title: '🛒 E-Commerce - Marketplace',
     company: 'Groupon',
@@ -26,12 +26,12 @@ export const projectsWorkQA: Project[] = [
     mySkillsIcons: iconsSkillsProjectsWorkGroupon,
     skillsOverview: [
       {
-        id: 1,
+        id: 0,
         description: 'Frontend',
         skillsList: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Playwright'],
       },
-      { id: 2, description: 'Design', skillsList: ['Figma', 'Storybook'] },
-      { id: 3, description: 'Other', skillsList: ['Jira', 'Confluence', 'Tempo', 'QA', 'Team Management'] },
+      { id: 1, description: 'Design', skillsList: ['Figma', 'Storybook'] },
+      { id: 2, description: 'Other', skillsList: ['Jira', 'Confluence', 'Tempo', 'QA', 'Team Management'] },
     ],
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://www.groupon.com/' }],

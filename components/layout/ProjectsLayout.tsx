@@ -1,9 +1,11 @@
+import { ReactNode } from 'react'
+
 import Heading1 from '@/components/shared/Heading1'
 
 type ProjectsLayoutProps = {
   heading: string
   description: string
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const ProjectsLayout = ({ heading, description, children }: ProjectsLayoutProps) => {

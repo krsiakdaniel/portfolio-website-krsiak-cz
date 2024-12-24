@@ -15,9 +15,9 @@ export const projectsWorkWordPress: Project[] = [
     isFeatured: false,
     image: smartsuppHelpThumb.src,
     imageShowcase: [
-      { id: 1, src: smartsuppHelp1.src },
-      { id: 2, src: smartsuppHelp2.src },
-      { id: 3, src: smartsuppHelp3.src },
+      { id: 0, src: smartsuppHelp1.src },
+      { id: 1, src: smartsuppHelp2.src },
+      { id: 2, src: smartsuppHelp3.src },
     ],
     title: '📚 SaaS Company - HELP Website',
     company: 'Smartsupp',
@@ -28,7 +28,7 @@ export const projectsWorkWordPress: Project[] = [
     mySkillsIcons: iconsSkillsProjectsWorkSmartsuppHelp,
     skillsOverview: [
       {
-        id: 1,
+        id: 0,
         description: 'Frontend',
         skillsList: ['JavaScript', 'WordPress', 'PHP'],
       },

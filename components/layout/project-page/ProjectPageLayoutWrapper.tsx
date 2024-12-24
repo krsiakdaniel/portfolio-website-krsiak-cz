@@ -1,15 +1,17 @@
 import ProjectPageLayout from '@/components/layout/project-page/ProjectPageLayout'
+import { GoBackLinkEnum } from '@/utils/interfaces/enums'
 import { Project, Section } from '@/utils/interfaces/interfaces'
-import { BreadCrumbsType, GoBackLinkType } from '@/utils/interfaces/types'
+import { BreadCrumbsType } from '@/utils/interfaces/types'
+import { ReactNode } from 'react'
 
 type ProjectPageLayoutWrapperProps = {
   breadCrumbs: BreadCrumbsType
   pageID: string
-  goBackLink: GoBackLinkType
+  goBackLink: GoBackLinkEnum
   sectionID: string
   projectData: Project
   sections: Section[]
-  PageNavigation: React.ReactNode
+  PageNavigation: ReactNode
 }
 
 export const ProjectPageLayoutWrapper = ({

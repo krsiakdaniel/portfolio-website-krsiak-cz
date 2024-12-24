@@ -5,8 +5,9 @@ import { projectsWorkReact } from '@/data/projects/work/projects-overview/workRe
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
-import { PAGES_URL, URL_WORK_EXPERIENCE } from '@/utils/constants/urls/pageUrls'
-import { BreadCrumbsType } from '@/utils/interfaces/types'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { getBreadcrumbsWork } from '@/utils/helpers/breadcrumbs/getBreadcrumbsWork'
+import { GoBackLinkEnum } from '@/utils/interfaces/enums'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -28,19 +29,12 @@ export const metadata: Metadata = {
   ],
 }
 
-const breadCrumbs: BreadCrumbsType = {
-  linkLevel1: URL_WORK_EXPERIENCE,
-  textLevel1: TEXT.workExperience,
-  linkLevel2: PAGES_URL.work.kooperativa,
-  textLevel2: TEXT.kooperativa,
-}
-
 const ProjectWorkKooperativa = () => {
   return (
     <ProjectPageLayoutWrapper
-      breadCrumbs={breadCrumbs}
+      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.kooperativa, TEXT.kooperativa)}
       pageID={PAGES_URL.work.kooperativa}
-      goBackLink="work"
+      goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.react}
       projectData={projectsWorkReact[2]}
       sections={sections}

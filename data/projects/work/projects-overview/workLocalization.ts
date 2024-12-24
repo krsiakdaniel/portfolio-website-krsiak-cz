@@ -15,9 +15,9 @@ export const projectsWorkLocalization: Project[] = [
     isFeatured: true,
     image: moraviaThumb.src,
     imageShowcase: [
-      { id: 1, src: moravia1.src },
-      { id: 2, src: moravia2.src },
-      { id: 3, src: moravia3.src },
+      { id: 0, src: moravia1.src },
+      { id: 1, src: moravia2.src },
+      { id: 2, src: moravia3.src },
     ],
     title: '🌎 Windows',
     company: 'RWS - Moravia IT',
@@ -28,7 +28,7 @@ export const projectsWorkLocalization: Project[] = [
     mySkillsIcons: iconsSkillsProjectsWorkMoravia,
     skillsOverview: [
       {
-        id: 1,
+        id: 0,
         description: 'Frontend',
         skillsList: ['HTML', 'CSS', 'JavaScript'],
       },

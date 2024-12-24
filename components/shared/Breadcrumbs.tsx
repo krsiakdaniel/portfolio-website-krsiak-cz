@@ -1,52 +1,33 @@
-import { IconCaretRight } from '@/components/icons/IconCaretRight'
+import BreadcrumbsItem from '@/components/shared/BreadcrumbsItem'
+import { TEXT } from '@/localization/english'
+import { ARIA_LABELS } from '@/utils/constants/ariaLabels'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 import { BreadCrumbsType } from '@/utils/interfaces/types'
 import Link from 'next/link'
 
 type BreadCrumbsProps = BreadCrumbsType
 
-const BreadCrumbs = ({ linkLevel1, textLevel1, linkLevel2, textLevel2 }: BreadCrumbsProps) => {
+const BreadCrumbs = ({ level1Url, level1Text, level2Url, level2Text }: BreadCrumbsProps) => {
   return (
-    <>
-      <nav className="mb-10 flex text-neutral-700" aria-label="Breadcrumbs" data-testid={DATA_TEST_IDS.breadcrumbs}>
-        <ol className="inline-flex flex-row flex-wrap items-start space-x-1 md:space-x-2">
-          <li className="inline-flex items-center">
-            <Link
-              href="/"
-              className="inline-flex items-center text-sm font-medium text-neutral-700 hover:text-violet-600"
-            >
-              🏠 Home
-            </Link>
-          </li>
-          {linkLevel1 && textLevel1 && (
-            <li>
-              <div className="flex items-center">
-                <IconCaretRight />
-                <Link
-                  href={linkLevel1}
-                  className="ms-1 text-sm font-medium text-neutral-700 hover:text-violet-600 md:ms-2"
-                >
-                  {textLevel1}
-                </Link>
-              </div>
-            </li>
-          )}
-          {linkLevel2 && textLevel2 && (
-            <li>
-              <div className="flex items-center">
-                <IconCaretRight />
-                <Link
-                  href={linkLevel2}
-                  className="ms-1 text-sm font-medium text-neutral-700 hover:text-violet-600 md:ms-2"
-                >
-                  {textLevel2}
-                </Link>
-              </div>
-            </li>
-          )}
-        </ol>
-      </nav>
-    </>
+    <nav
+      className="mb-10 flex text-neutral-700"
+      aria-label={ARIA_LABELS.breadcrumbs}
+      data-testid={DATA_TEST_IDS.breadcrumbs}
+    >
+      <ol className="inline-flex flex-row flex-wrap items-start space-x-1 md:space-x-2">
+        <li className="inline-flex items-center">
+          <Link
+            href={PAGES_URL.home}
+            className="inline-flex items-center text-sm font-medium text-neutral-700 hover:text-violet-600"
+          >
+            {TEXT.home}
+          </Link>
+        </li>
+        {level1Url && level1Text && <BreadcrumbsItem url={level1Url} text={level1Text} />}
+        {level2Url && level2Text && <BreadcrumbsItem url={level2Url} text={level2Text} />}
+      </ol>
+    </nav>
   )
 }
 

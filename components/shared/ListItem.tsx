@@ -1,7 +1,9 @@
+import { ReactNode } from 'react'
+
 import { IconCheck } from '@/components/icons/IconCheck'
 
 type ListItemProps = {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const ListItem = ({ children }: ListItemProps) => {

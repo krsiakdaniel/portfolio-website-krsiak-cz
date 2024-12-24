@@ -1,5 +1,7 @@
+import { ReactNode } from 'react'
+
 type ListProps = {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const List = ({ children }: ListProps) => {

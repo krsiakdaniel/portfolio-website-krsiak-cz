@@ -19,12 +19,12 @@ export const projectsPersonalReact: Project[] = [
     isFeatured: false,
     image: cryptomaniaThumb.src,
     imageShowcase: [
-      { id: 1, src: cryptomania1.src },
-      { id: 2, src: cryptomania2.src },
-      { id: 3, src: cryptomania3.src },
-      { id: 4, src: cryptomania4.src },
-      { id: 5, src: cryptomania5.src },
-      { id: 6, src: cryptomania6.src },
+      { id: 0, src: cryptomania1.src },
+      { id: 1, src: cryptomania2.src },
+      { id: 2, src: cryptomania3.src },
+      { id: 3, src: cryptomania4.src },
+      { id: 4, src: cryptomania5.src },
+      { id: 5, src: cryptomania6.src },
     ],
     title: '💰 CryptoMania',
     company: 'Personal project',
@@ -34,12 +34,12 @@ export const projectsPersonalReact: Project[] = [
     mySkillsIcons: iconsSkillsProjectsPersonalCryptomania,
     skillsOverview: [
       {
-        id: 1,
+        id: 0,
         description: 'Frontend',
         skillsList: ['JavaScript', 'TypeScript', 'React', 'React App', 'Chakra UI', 'CoinGecko API'],
       },
       {
-        id: 2,
+        id: 1,
         description: 'Other',
         skillsList: ['Netlify'],
       },

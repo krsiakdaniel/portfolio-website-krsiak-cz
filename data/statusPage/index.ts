@@ -12,6 +12,7 @@ const IMAGE_NETLIFY = 'https://api.netlify.com/api/v1/badges/eb322254-0169-4941-
 
 export const statusBadges: StatusBadge[] = [
   {
+    id: 0,
     name: 'Jest Tests',
     src: IMAGE_JEST_TESTS,
     alt: 'Jest Tests',
@@ -19,6 +20,7 @@ export const statusBadges: StatusBadge[] = [
     height: 20,
   },
   {
+    id: 1,
     name: 'Playwright Tests',
     src: IMAGE_PLAYWRIGHT_TESTS,
     alt: 'Playwright Tests',
@@ -26,6 +28,7 @@ export const statusBadges: StatusBadge[] = [
     height: 20,
   },
   {
+    id: 2,
     name: 'CodeQL',
     src: IMAGE_CODEQL,
     alt: 'CodeQL',
@@ -33,6 +36,7 @@ export const statusBadges: StatusBadge[] = [
     height: 40,
   },
   {
+    id: 3,
     name: 'Code Quality',
     src: IMAGE_CODE_QUALITY,
     alt: 'Code Quality',
@@ -40,6 +44,7 @@ export const statusBadges: StatusBadge[] = [
     height: 20,
   },
   {
+    id: 4,
     name: 'Dependabot',
     src: IMAGE_DEPENDABOT,
     alt: 'Dependabot',
@@ -47,6 +52,7 @@ export const statusBadges: StatusBadge[] = [
     height: 20,
   },
   {
+    id: 5,
     name: 'Netlify',
     src: IMAGE_NETLIFY,
     alt: 'Netlify',

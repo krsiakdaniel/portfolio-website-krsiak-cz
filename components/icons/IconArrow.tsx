@@ -1,11 +1,12 @@
+import { NavigationDirectionEnum } from '@/utils/interfaces/enums'
 type IconArrowProps = {
-  type?: 'left' | 'right'
+  type: NavigationDirectionEnum
 }
 
-export const IconArrow = ({ type = 'right' }: IconArrowProps) => {
+export const IconArrow = ({ type = NavigationDirectionEnum.Left }: IconArrowProps) => {
   return (
     <svg
-      className={`mx-1 block h-4 w-4 ${type === 'left' ? 'rotate-180' : ''}`}
+      className={`mx-1 block h-4 w-4 ${type === NavigationDirectionEnum.Left ? 'rotate-180' : ''}`}
       fill="currentColor"
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"

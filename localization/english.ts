@@ -24,6 +24,10 @@ const HOME = {
   logo: 'krsiak.cz',
 }
 
+const STATUS_PAGE = {
+  statusPage: '🚦 Status Page',
+}
+
 const COMPANIES = {
   smartsuppDashboard: '💬 Smartsupp Dashboard',
   komercniBanka: '🏦 Komerční banka',
@@ -40,7 +44,12 @@ const WORK = {
 }
 
 const MISC = {
+  partTimeJob: '(part-time job)',
   description: 'Description',
+  goBack: 'Go back',
+  skillsIconsNames: `HTML, CSS, Sass, Tailwind CSS, 
+    JavaScript, TypeScript, React, Next.js, Redux, GraphQL,
+    Jest, Playwright, Figma`,
 }
 
 export const TEXT = {
@@ -51,4 +60,5 @@ export const TEXT = {
   ...COMPANIES,
   ...WORK,
   ...MISC,
+  ...STATUS_PAGE,
 }

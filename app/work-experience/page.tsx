@@ -44,7 +44,8 @@ export const metadata: Metadata = {
 const ProjectsWork = () => {
   return (
     <PageContainer id={ID.projects.work}>
-      <BreadCrumbs linkLevel1={PAGES_URL.work.mainUrl} textLevel1={TEXT.workExperience} />
+      <BreadCrumbs level1Url={PAGES_URL.work.mainUrl} level1Text={TEXT.workExperience} />
+
       <ProjectsLayout
         heading={TEXT.workExperience}
         description="I worked on modern products, developed new features, redesigned websites, implemented responsive design, updated legacy codebase, was responsible for localization, QA automation and testing, including work as team leader."
@@ -99,6 +100,7 @@ const ProjectsWork = () => {
           description="Responsible for translation of the company website and application into 9 languages. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱"
         />
       </ProjectsLayout>
+
       <div className="mt-20">
         <PageNavigation
           linkPrevious={PAGES_URL.resume}

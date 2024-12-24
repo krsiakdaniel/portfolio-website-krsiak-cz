@@ -5,8 +5,9 @@ import { projectsPersonalNext } from '@/data/projects/personal/projects-overview
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
-import { PAGES_URL, URL_PERSONAL_PROJECTS } from '@/utils/constants/urls/pageUrls'
-import { BreadCrumbsType } from '@/utils/interfaces/types'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { getBreadcrumbsPersonal } from '@/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
+import { GoBackLinkEnum } from '@/utils/interfaces/enums'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -29,24 +30,17 @@ export const metadata: Metadata = {
   ],
 }
 
-const breadCrumbs: BreadCrumbsType = {
-  linkLevel1: URL_PERSONAL_PROJECTS,
-  textLevel1: TEXT.personalProjects,
-  linkLevel2: PAGES_URL.personal.krsiak,
-  textLevel2: TEXT.portfolioWebsite,
-}
-
 const ProjectPersonalKrsiak = () => {
   const { title, role, description, skillsOverview, projectLinks, linkGitHub, imageShowcase } = projectsPersonalNext[0]
 
   return (
     <>
       <ProjectPageLayout
-        breadCrumbs={breadCrumbs}
+        breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.krsiak, TEXT.portfolioWebsite)}
         pageID={PAGES_URL.personal.krsiak}
         title={title}
         role={role}
-        goBackLink="personal"
+        goBackLink={GoBackLinkEnum.Personal}
         sectionID={ID.section.next}
         description={description}
         skillsOverview={skillsOverview}

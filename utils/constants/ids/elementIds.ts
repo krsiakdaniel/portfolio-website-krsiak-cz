@@ -27,4 +27,5 @@ export const ID = {
     desktop: 'menu-desktop',
     toggle: 'menu-toggle',
   },
+  statusPage: 'status-page',
 }
