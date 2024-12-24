@@ -9,7 +9,7 @@ const SkillsForCompany = () => {
         <div className="mt-8" key={skill.id}>
           <p className="mt-4 text-lg text-neutral-600">
             <span className="font-bold">
-              <span className="text-violet-600">{skill.id}.</span> {skill.title}
+              <span className="text-violet-600">{skill.order}.</span> {skill.title}
             </span>
           </p>
           <p className="mt-2 text-lg text-neutral-600">{skill.description}</p>
