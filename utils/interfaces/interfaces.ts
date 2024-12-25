@@ -1,5 +1,6 @@
 import { StaticImageData } from 'next/image'
-import { SkillCategoryType } from './types'
+
+import { SkillCategoryType } from '@/utils/interfaces/types'
 
 // icons
 export interface Icon {

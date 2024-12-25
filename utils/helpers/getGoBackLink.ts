@@ -1,4 +1,5 @@
 import { PAGES_URL, URL_PERSONAL_PROJECTS, URL_WORK_EXPERIENCE } from '@/utils/constants/urls/pageUrls'
+
 import { GoBackLinkEnum } from '@/utils/interfaces/enums'
 
 export const getGoBackLinkID = (goBackLink: GoBackLinkEnum, sectionID: string): string => {
