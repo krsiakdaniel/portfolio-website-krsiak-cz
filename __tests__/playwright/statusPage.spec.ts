@@ -1,5 +1,6 @@
-import { TEXT } from '@/localization/english'
 import { expect, test } from '@playwright/test'
+
+import { TEXT } from '@/localization/english'
 
 const STATUS_BADGE_SELECTOR = 'img'
 

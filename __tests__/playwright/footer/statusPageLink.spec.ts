@@ -1,7 +1,8 @@
+import { expect, test } from '@playwright/test'
+
 import { getDataTestId } from '@/__tests__/playwright/utils/helpers/getDataTestId'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
-import { expect, test } from '@playwright/test'
 
 const STATUS_PAGE_URL = 'http://localhost:3000/status-page'
 

@@ -1,7 +1,6 @@
-// FILEPATH: /Users/krsiak/github/personal/portfolio-website-krsiak-cz/__tests__/jest/sitemap.test.ts
+import { MetadataRoute } from 'next'
 
 import sitemap, { CHANGE_FREQUENCY_MONTHLY, URLS } from '@/app/sitemap'
-import { MetadataRoute } from 'next'
 
 describe('sitemap', () => {
   let results: MetadataRoute.Sitemap
