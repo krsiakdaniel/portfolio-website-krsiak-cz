@@ -41,7 +41,8 @@ const About = () => {
       <BreadCrumbs level1Url={PAGES_URL.aboutMe} level1Text={TEXT.aboutMe} />
       <div>
         <HeadingInfo />
-        <div className="mt-16 flex flex-col-reverse justify-between lg:flex-row lg:space-x-10">
+        <div className="mb-2 mt-16 border-b pb-2 text-2xl font-bold uppercase">My Career Path</div>
+        <div className="mt-16 flex flex-col-reverse justify-between lg:mt-8 lg:flex-row lg:space-x-10">
           <JobsDescription />
           <Photo />
         </div>

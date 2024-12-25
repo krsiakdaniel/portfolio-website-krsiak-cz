@@ -51,15 +51,30 @@ const Resume = () => {
       <BreadCrumbs level1Url={PAGES_URL.resume} level1Text={TEXT.resume} />
       <div>
         <ResumeInfo />
-        <div className="mt-8">
-          <HeroLink
-            href={EXTERNAL_URL.resume.resumeViewPDF}
-            text={`Download - ${TEXT.resumePDF}`}
-            className="bg-red-700 text-white hover:bg-red-800 focus:ring-red-300 sm:mb-0"
-            dataTestId={DATA_TEST_IDS.hero.linkResume}
-          />
+
+        <div>
+          <div className="mb-4 mt-16 border-b pb-2 text-2xl font-bold uppercase">Download resume</div>
+          <p className="mb-4 text-base font-normal text-neutral-500">
+            Click the link below to download my resume. It includes detailed information about my professional
+            experience.
+          </p>
+          <div className="mt-8">
+            <HeroLink
+              href={EXTERNAL_URL.resume.resumeViewPDF}
+              text={`Download - ${TEXT.resumePDF}`}
+              className="bg-red-700 text-white hover:bg-red-800 focus:ring-red-300 sm:mb-0"
+              dataTestId={DATA_TEST_IDS.hero.linkResume}
+            />
+          </div>
         </div>
-        <ResumePreviewEmbed />
+
+        <div>
+          <div className="mb-4 mt-16 border-b pb-2 text-2xl font-bold uppercase">My resume</div>
+          <p className="mb-4 text-base font-normal text-neutral-500">
+            Below is an embedded preview of my resume. Read it to learn more about me.
+          </p>
+          <ResumePreviewEmbed />
+        </div>
       </div>
       <PageNavigation
         linkPrevious={PAGES_URL.aboutMe}
