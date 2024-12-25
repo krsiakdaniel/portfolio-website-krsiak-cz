@@ -1,6 +1,6 @@
+import MyMindset from '@/components/homepage/expertise/MyMindset'
 import SkillsForCompany from '@/components/homepage/skills/SkillsForCompany'
 import DividerWithText from '@/components/shared/DividerWithText'
-import MyMindset from './MyMindset'
 
 const MySKills = () => {
   return (

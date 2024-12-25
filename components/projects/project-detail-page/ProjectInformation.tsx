@@ -1,9 +1,10 @@
+import CustomersCount from '@/components/projects/CustomersCount'
+import ProjectLinksList from '@/components/projects/project-detail-page/ProjectLinksList'
+import SkillsList from '@/components/projects/project-detail-page/SkillsList'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
+
 import { Project } from '@/utils/interfaces/interfaces'
-import CustomersCount from '../CustomersCount'
-import ProjectLinksList from './ProjectLinksList'
-import SkillsList from './SkillsList'
 
 type ProjectInformationProps = Pick<
   Project,

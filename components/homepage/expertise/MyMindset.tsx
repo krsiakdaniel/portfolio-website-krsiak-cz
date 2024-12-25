@@ -1,4 +1,5 @@
 import Heading2 from '@/components/shared/Heading2'
+
 import { mindset } from '@/data/expertise/mindset'
 
 const MyMindset = () => {

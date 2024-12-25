@@ -1,4 +1,5 @@
 'use client'
+
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 
 // If you need to add an onClick event handler to a component, you should make sure that component is a Client Component.

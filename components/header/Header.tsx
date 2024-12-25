@@ -1,11 +1,13 @@
 'use client' // using hooks
 
+import { useState } from 'react'
+
+import { useScrollProgress } from '@/hooks/useScrollProgress'
+
 import Logo from '@/components/header/Logo'
 import Menu from '@/components/header/menu/Menu'
 import MenuToggle from '@/components/header/menu/MenuToggle'
 import ScrollProgressBar from '@/components/header/ScrollProgressBar'
-import { useScrollProgress } from '@/hooks/useScrollProgress'
-import { useState } from 'react'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)

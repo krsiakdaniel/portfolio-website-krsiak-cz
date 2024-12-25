@@ -1,7 +1,8 @@
+import HeroHeading from '@/components/homepage/hero/HeroHeading'
+import HeroMainLinks from '@/components/homepage/hero/HeroMainLinks'
+import HeroParagraph from '@/components/homepage/hero/HeroParagraph'
+
 import { ID } from '@/utils/constants/ids/elementIds'
-import HeroHeading from './HeroHeading'
-import HeroMainLinks from './HeroMainLinks'
-import HeroParagraph from './HeroParagraph'
 
 const Hero = () => {
   return (

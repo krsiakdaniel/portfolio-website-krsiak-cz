@@ -1,7 +1,9 @@
+import Link from 'next/link'
+
 import ScrollToTopButton from '@/components/footer/ScrollToTopButton'
+
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import Link from 'next/link'
 
 const FooterRight = () => {
   return (

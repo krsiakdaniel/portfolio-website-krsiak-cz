@@ -1,5 +1,6 @@
-import { IconCaretRight } from '@/components/icons/IconCaretRight'
 import Link from 'next/link'
+
+import { IconCaretRight } from '@/components/icons/IconCaretRight'
 
 type BreadcrumbsItemProps = {
   url: string

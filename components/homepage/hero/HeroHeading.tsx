@@ -1,4 +1,5 @@
 import Heading1 from '@/components/shared/Heading1'
+
 import { TEXT } from '@/localization/english'
 
 const HeroHeading = () => {
