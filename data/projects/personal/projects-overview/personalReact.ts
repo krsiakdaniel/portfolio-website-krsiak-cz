@@ -1,4 +1,8 @@
 import { iconsSkillsProjectsPersonalCryptomania } from '@/data/skills/skillsProjectsPersonal'
+
+import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+
 import { Project } from '@/utils/interfaces/interfaces'
 
 // project images
@@ -9,9 +13,6 @@ import cryptomania2 from '@/public/images/projects/personal/cryptomania/cryptoma
 import cryptomania6 from '@/public/images/projects/personal/cryptomania/cryptomania-3-dark.png'
 import cryptomania3 from '@/public/images/projects/personal/cryptomania/cryptomania-3-light.png'
 import cryptomaniaThumb from '@/public/images/projects/personal/cryptomania/cryptomania-thumb-light-600.webp'
-
-import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 export const projectsPersonalReact: Project[] = [
   {
