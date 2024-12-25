@@ -7,10 +7,12 @@ Development environment for the project.
 - [Development](#development)
   - [💻 Commands](#-commands)
     - [Install dependencies](#install-dependencies)
-    - [Update outdated dependencies](#update-outdated-dependencies)
-      - [Manually](#manually)
-      - [Using `npm-check-updates` tool](#using-npm-check-updates-tool)
+  - [Update outdated dependencies](#update-outdated-dependencies)
+    - [Manually](#manually)
+    - [Using tool `npm-check-updates`](#using-tool-npm-check-updates)
   - [💅 Prettier](#-prettier)
+  - [Imports Sorting Order](#imports-sorting-order)
+  - [Import Example](#import-example)
 
 ---
 
@@ -34,11 +36,11 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to view project in browser.
 
-### Update outdated dependencies
+## Update outdated dependencies
 
 There are 2 ways to do this.
 
-#### Manually
+### Manually
 
 Find what packages are outdated and upgrade to latest version if possible.
 
@@ -46,9 +48,9 @@ Find what packages are outdated and upgrade to latest version if possible.
 npm outdated
 ```
 
-#### Using `npm-check-updates` tool
+### Using tool `npm-check-updates`
 
-To update the outdated packages in package.json, you can use the [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) (ncu) tool.
+To update the outdated packages in package.json, you can use the NCU tool: [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
 
 Install `npm-check-updates` globally.
 
@@ -92,4 +94,69 @@ Format the code via Prettier.
 
 ```bash
 npm run prettier:fix
+```
+
+## Imports Sorting Order
+
+Sorting order for imports in files:
+
+1. Third-Party Library Imports
+2. Custom Hooks
+3. Components
+4. Data
+5. Utils
+6. Interfaces and Helpers
+7. Images
+8. CSS
+
+## Import Example
+
+```ts
+// Third-Party Library Imports
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import { ReactNode } from 'react'
+```
+
+```ts
+// Custom Hooks
+import { useScrollProgress } from '@/hooks/useScrollProgress'
+```
+
+```ts
+// Components
+import PageContainer from '@/components/layout/PageContainer'
+import PageNavigation from '@/components/page-navigation/PageNavigation'
+import Header from '@/components/header/Header'
+import Footer from '@/components/footer/Footer'
+```
+
+```ts
+// Data
+import { mindset } from '@/data/expertise/mindset'
+import { iconsSkills1 } from '@/data/skills/skillsMain'
+```
+
+```ts
+// Utils
+import { TEXT } from '@/localization/english'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+```
+
+```ts
+// Interfaces and Helpers
+import { getGoBackLinkID } from '@/utils/helpers/getGoBackLink'
+import { HeaderSectionProps } from '@/utils/interfaces/componentProps'
+import { NavigationDirectionEnum } from '@/utils/interfaces/enums'
+```
+
+```ts
+// Images
+import logo from '@/public/images/webp/logo.webp'
+```
+
+```ts
+// CSS
+import '@/app/custom.css'
 ```
