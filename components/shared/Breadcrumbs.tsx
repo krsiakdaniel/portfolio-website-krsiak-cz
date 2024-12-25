@@ -1,10 +1,12 @@
+import Link from 'next/link'
+
 import BreadcrumbsItem from '@/components/shared/BreadcrumbsItem'
+
 import { TEXT } from '@/localization/english'
 import { ARIA_LABELS } from '@/utils/constants/ariaLabels'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 import { BreadCrumbsType } from '@/utils/interfaces/types'
-import Link from 'next/link'
 
 type BreadCrumbsProps = BreadCrumbsType
 

@@ -1,5 +1,6 @@
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
+
 import { Section } from '@/utils/interfaces/interfaces'
 
 type PageSectionProps = Section

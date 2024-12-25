@@ -1,14 +1,16 @@
+import { Metadata } from 'next'
+
 import WhatIDoMindset from '@/components/homepage/expertise/MySKills'
 import Hero from '@/components/homepage/hero/Hero'
 import Skills from '@/components/homepage/skills/Skills'
 import SkillsMain from '@/components/homepage/skills/SkillsMain'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
+
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: `${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,

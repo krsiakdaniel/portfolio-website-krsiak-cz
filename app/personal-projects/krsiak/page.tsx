@@ -1,14 +1,18 @@
+import { Metadata } from 'next'
+
 import ProjectPageLayout from '@/components/layout/project-page/ProjectPageLayout'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
+
 import { sections } from '@/data/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/data/projects/personal/projects-overview/personalNext'
+
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+
 import { getBreadcrumbsPersonal } from '@/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
 import { GoBackLinkEnum } from '@/utils/interfaces/enums'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: `Portfolio Website | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,

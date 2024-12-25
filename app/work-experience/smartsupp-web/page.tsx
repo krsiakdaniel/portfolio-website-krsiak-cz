@@ -1,14 +1,18 @@
+import { Metadata } from 'next'
+
 import { ProjectPageLayoutWrapper } from '@/components/layout/project-page/ProjectPageLayoutWrapper'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
+
 import { projectsWorkFrontEnd } from '@/data/projects/work/projects-overview/workFrontEnd'
 import { sections } from '@/data/projects/work/smartsuppWeb'
+
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+
 import { getBreadcrumbsWork } from '@/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/utils/interfaces/enums'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: `Smartsupp Web | ${TEXT.nameDanielKrsiak} - Front End Developer`,

@@ -1,5 +1,6 @@
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 import { expect, test } from '@playwright/test'
+
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 test.describe('Projects Work - Smartsupp', () => {
   test('Dashboard - Link', async ({ page }) => {

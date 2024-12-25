@@ -1,3 +1,6 @@
+// Import interface
+import { Icon } from '@/utils/interfaces/interfaces'
+
 // Import SVG icons
 import chakra from '@/public/icons/svg/skills/chakra.svg'
 import css from '@/public/icons/svg/skills/css.svg'
@@ -21,9 +24,6 @@ import tailwind from '@/public/icons/svg/skills/tailwind.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
 import wordpress from '@/public/icons/svg/skills/wordpress.svg'
 import xd from '@/public/icons/svg/skills/xd.svg'
-
-// Import interface
-import { Icon } from '@/utils/interfaces/interfaces'
 
 // Define skill keys type
 export type SkillKeys =

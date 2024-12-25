@@ -1,5 +1,6 @@
-import { Icon } from '@/utils/interfaces/interfaces'
 import Image from 'next/image'
+
+import { Icon } from '@/utils/interfaces/interfaces'
 
 type ProjectSkillsProps = {
   mySkillsIcons: Icon[]

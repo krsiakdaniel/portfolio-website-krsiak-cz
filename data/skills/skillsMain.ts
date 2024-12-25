@@ -1,12 +1,14 @@
+import { YEARS } from '@/utils/constants/years'
+
+import { getSkillsIcons } from '@/utils/helpers/getSkillsIcons'
+import { SkillCard } from '@/utils/interfaces/interfaces'
+
 import js from '@/public/icons/svg/skills/js.svg'
 import next from '@/public/icons/svg/skills/next.svg'
 import react from '@/public/icons/svg/skills/react.svg'
 import redux from '@/public/icons/svg/skills/redux.svg'
 import tailwind from '@/public/icons/svg/skills/tailwind.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
-import { YEARS } from '@/utils/constants/years'
-import { getSkillsIcons } from '@/utils/helpers/getSkillsIcons'
-import { SkillCard } from '@/utils/interfaces/interfaces'
 
 export const iconsSkills1 = getSkillsIcons(['html', 'css', 'scss', 'tailwind'])
 export const iconsSkills2 = getSkillsIcons(['js', 'ts', 'react', 'next'])

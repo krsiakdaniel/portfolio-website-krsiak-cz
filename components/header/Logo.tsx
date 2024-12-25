@@ -1,9 +1,11 @@
-import { TEXT } from '@/localization/english'
-import logo from '@/public/images/webp/logo.webp'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 import Image from 'next/image'
 import Link from 'next/link'
+
+import { TEXT } from '@/localization/english'
+import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
+import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+
+import logo from '@/public/images/webp/logo.webp'
 
 const Logo = () => {
   return (

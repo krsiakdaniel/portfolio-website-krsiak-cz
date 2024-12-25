@@ -1,4 +1,5 @@
 import { IconArrow } from '@/components/icons/IconArrow'
+
 import { NavigationDirectionEnum } from '@/utils/interfaces/enums'
 
 type ProjectLinkProps = {

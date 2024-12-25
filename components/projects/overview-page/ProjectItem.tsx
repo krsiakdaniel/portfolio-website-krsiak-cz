@@ -1,9 +1,9 @@
-import { Icon } from '@/utils/interfaces/interfaces'
-
 import ProjectDetails from '@/components/projects/overview-page/ProjectDetails'
 import ProjectImage from '@/components/projects/overview-page/ProjectImage'
 import ProjectLink from '@/components/projects/overview-page/ProjectLink'
 import ProjectSkills from '@/components/projects/overview-page/ProjectSkills'
+
+import { Icon } from '@/utils/interfaces/interfaces'
 
 type ProjectItemProps = {
   isFeatured?: boolean | undefined

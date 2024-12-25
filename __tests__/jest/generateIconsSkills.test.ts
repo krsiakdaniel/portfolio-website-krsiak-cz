@@ -1,7 +1,7 @@
 import { getSkillsIcons, skillIcons, SkillKeys } from '@/utils/helpers/getSkillsIcons'
 
 describe('getSkillsIcons', () => {
-  const expectedKeys: string[] = [
+  const expectedKeys: SkillKeys[] = [
     'chakra',
     'css',
     'cypress',
@@ -36,8 +36,10 @@ describe('getSkillsIcons', () => {
     const results = getSkillsIcons(skills)
 
     results.forEach((resultIcon, index) => {
-      expect(resultIcon.name).toBe(skills[index])
-      expect(resultIcon.path).toBe(skillIcons[skills[index]])
+      const skill = skills[index]
+
+      expect(resultIcon.name).toBe(skill)
+      expect(resultIcon.path).toBe(skillIcons[skill])
     })
   })
 })

@@ -1,14 +1,16 @@
+import { Metadata } from 'next'
+
 import HeadingInfo from '@/components/about-me/HeadingInfo'
 import JobsDescription from '@/components/about-me/JobsDescription'
 import Photo from '@/components/about-me/Photo'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: `About | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,

@@ -1,12 +1,15 @@
+import { Metadata } from 'next'
+import Image from 'next/image'
+
 import PageContainer from '@/components/layout/PageContainer'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading1 from '@/components/shared/Heading1'
+
 import { statusBadges } from '@/data/statusPage'
+
 import { TEXT } from '@/localization/english'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { Metadata } from 'next'
-import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: `Status page | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,

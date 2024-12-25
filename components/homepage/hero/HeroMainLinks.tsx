@@ -1,7 +1,8 @@
+import HeroLink from '@/components/homepage/hero/HeroLink'
+
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { EXTERNAL_URL } from '@/utils/constants/urls/externalUrls'
-import HeroLink from './HeroLink'
 
 const HeroMainLinks = () => {
   return (

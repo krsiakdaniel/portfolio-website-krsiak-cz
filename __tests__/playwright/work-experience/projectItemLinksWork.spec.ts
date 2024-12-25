@@ -1,7 +1,8 @@
+import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
+
 import { testProjectLink } from '@/__tests__/playwright/utils/helpers/testProjectLink'
 import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
 
 let browser: Browser
 let context: BrowserContext

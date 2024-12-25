@@ -1,11 +1,14 @@
+import Link from 'next/link'
+
 import { IconArrow } from '@/components/icons/IconArrow'
 import Heading1 from '@/components/shared/Heading1'
 import Heading2 from '@/components/shared/Heading2'
+
 import { TEXT } from '@/localization/english'
+
 import { getGoBackLinkID } from '@/utils/helpers/getGoBackLink'
 import { HeaderSectionProps } from '@/utils/interfaces/componentProps'
 import { NavigationDirectionEnum } from '@/utils/interfaces/enums'
-import Link from 'next/link'
 
 const HeaderSection = ({ title, role, years, company, goBackLink, sectionID }: HeaderSectionProps) => {
   return (

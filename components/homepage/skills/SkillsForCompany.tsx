@@ -1,4 +1,5 @@
 import Heading2 from '@/components/shared/Heading2'
+
 import { skillsInfo } from '@/data/expertise/skillsInfo'
 
 const SkillsForCompany = () => {

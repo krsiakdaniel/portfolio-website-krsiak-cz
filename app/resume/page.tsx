@@ -1,15 +1,17 @@
+import { Metadata } from 'next'
+
 import HeroLink from '@/components/homepage/hero/HeroLink'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 import ResumeInfo from '@/components/resume/ResumeInfo'
 import ResumePreviewEmbed from '@/components/resume/ResumePreviewEmbed'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { EXTERNAL_URL } from '@/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: `Resume | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,

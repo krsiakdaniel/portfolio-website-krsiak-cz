@@ -1,5 +1,6 @@
+import PageSection from '@/components/layout/project-page/PageSection'
+
 import { Section } from '@/utils/interfaces/interfaces'
-import PageSection from './PageSection'
 
 type ProjectResponsibilityProps = {
   sections: Section[]

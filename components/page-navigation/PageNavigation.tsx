@@ -1,5 +1,6 @@
+import PageNavigationLink from '@/components/page-navigation/PageNavigationLink'
+
 import { NavigationDirectionEnum } from '@/utils/interfaces/enums'
-import PageNavigationLink from './PageNavigationLink'
 
 type PageNavigationProps = {
   linkPrevious?: string

@@ -1,5 +1,6 @@
 import Heading1 from '@/components/shared/Heading1'
 import Highlight from '@/components/shared/Highlight'
+
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 
