@@ -1,3 +1,5 @@
+import { Metadata } from 'next'
+
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsLayout from '@/components/layout/ProjectsLayout'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
@@ -6,16 +8,17 @@ import { ProjectSection } from '@/components/projects/overview-page/ProjectSecti
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading4 from '@/components/shared/Heading4'
 import Highlight from '@/components/shared/Highlight'
+
 import { projectsWorkFrontEnd } from '@/data/projects/work/projects-overview/workFrontEnd'
 import { projectsWorkLocalization } from '@/data/projects/work/projects-overview/workLocalization'
 import { projectsWorkQA } from '@/data/projects/work/projects-overview/workQA'
 import { projectsWorkReact } from '@/data/projects/work/projects-overview/workReact'
 import { projectsWorkWordPress } from '@/data/projects/work/projects-overview/workWordpress'
+
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: `Work Experience | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,

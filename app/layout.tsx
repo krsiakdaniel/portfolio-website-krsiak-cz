@@ -1,9 +1,12 @@
-import Footer from '@/components/footer/Footer'
-import Header from '@/components/header/Header'
-import { TEXT } from '@/localization/english'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
+
+import Footer from '@/components/footer/Footer'
+import Header from '@/components/header/Header'
+
+import { TEXT } from '@/localization/english'
+
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })

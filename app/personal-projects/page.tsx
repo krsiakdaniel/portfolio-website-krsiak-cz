@@ -1,16 +1,19 @@
+import { Metadata } from 'next'
+
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsLayout from '@/components/layout/ProjectsLayout'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 import { ProjectSection } from '@/components/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Highlight from '@/components/shared/Highlight'
+
 import { projectsPersonalNext } from '@/data/projects/personal/projects-overview/personalNext'
 import { projectsPersonalReact } from '@/data/projects/personal/projects-overview/personalReact'
+
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: `Personal Projects | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
