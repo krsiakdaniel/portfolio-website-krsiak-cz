@@ -8,8 +8,8 @@ const ResumeInfo = () => {
     <div>
       <Heading1>{TEXT.resume}</Heading1>
       <p className="mt-4 text-lg text-neutral-600" data-testid={DATA_TEST_IDS.page.resume.introduction}>
-        Experienced <Highlight text="React Developer" /> building web applications using <Highlight text="JavaScript" />
-        , <Highlight text="TypeScript" />, and <Highlight text="React" />.
+        I am experienced <Highlight text="React Developer" /> building web applications using{' '}
+        <Highlight text="JavaScript" />, <Highlight text="TypeScript" />, and <Highlight text="React" />.
       </p>
     </div>
   )

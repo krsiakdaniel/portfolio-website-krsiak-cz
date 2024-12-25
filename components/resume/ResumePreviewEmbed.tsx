@@ -2,7 +2,7 @@ import { EXTERNAL_URL } from '@/utils/constants/urls/externalUrls'
 
 const ResumePreviewEmbed = () => {
   return (
-    <div className="mt-16">
+    <div className="mt-8">
       <iframe
         src={EXTERNAL_URL.resume.resumeEmbedPreviewPDF}
         width="100%"

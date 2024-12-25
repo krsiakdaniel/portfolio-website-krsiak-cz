@@ -4,7 +4,7 @@ import Heading1 from '@/components/shared/Heading1'
 
 type ProjectsLayoutProps = {
   heading: string
-  description: string
+  description: ReactNode
   children: ReactNode
 }
 
@@ -13,7 +13,7 @@ const ProjectsLayout = ({ heading, description, children }: ProjectsLayoutProps)
     <>
       <div className="flex flex-col">
         <Heading1>{heading}</Heading1>
-        <p className="mt-4 text-lg text-neutral-600">{description}</p>
+        <div>{description}</div>
       </div>
       {/* This is ProjectItem */}
       <div>{children}</div>

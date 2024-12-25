@@ -5,6 +5,7 @@ import ExperienceCard from '@/components/projects/experience/ExperienceCard'
 import { ProjectSection } from '@/components/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading4 from '@/components/shared/Heading4'
+import Highlight from '@/components/shared/Highlight'
 import { projectsWorkFrontEnd } from '@/data/projects/work/projects-overview/workFrontEnd'
 import { projectsWorkLocalization } from '@/data/projects/work/projects-overview/workLocalization'
 import { projectsWorkQA } from '@/data/projects/work/projects-overview/workQA'
@@ -48,7 +49,13 @@ const ProjectsWork = () => {
 
       <ProjectsLayout
         heading={TEXT.workExperience}
-        description="I worked on modern products, developed new features, redesigned websites, implemented responsive design, updated legacy codebase, was responsible for localization, QA automation and testing, including work as team leader."
+        description={
+          <p className="mt-4 text-lg text-neutral-600">
+            I developed <Highlight text="new features" />, led entire website redesigns, implemented{' '}
+            <Highlight text="responsive designs" />, modernized legacy codebase, and managed localization,{' '}
+            <Highlight text="QA automation" />, and testing, including serving as a <Highlight text="team leader" />.
+          </p>
+        }
       >
         <ProjectSection sectionId={ID.section.react} sectionText="React" projectData={projectsWorkReact} />
 
