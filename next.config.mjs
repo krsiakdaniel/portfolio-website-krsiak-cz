@@ -1,7 +1,36 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['app.codacy.com', 'github.com', 'img.shields.io', 'api.netlify.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'app.codacy.com',
+        port: '',
+        pathname: '/**',
+        search: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+        port: '',
+        pathname: '/**',
+        search: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.shields.io',
+        port: '',
+        pathname: '/**',
+        search: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'api.netlify.com',
+        port: '',
+        pathname: '/**',
+        search: '',
+      },
+    ],
     dangerouslyAllowSVG: true,
     unoptimized: false,
   },
