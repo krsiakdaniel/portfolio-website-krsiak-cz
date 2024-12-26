@@ -1,4 +1,4 @@
-import { GoBackLinkEnum } from '@/utils/interfaces/enums'
+import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
 
 export type HeaderSectionProps = {
   title: string

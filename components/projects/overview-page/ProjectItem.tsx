@@ -3,7 +3,7 @@ import ProjectImage from '@/components/projects/overview-page/ProjectImage'
 import ProjectLink from '@/components/projects/overview-page/ProjectLink'
 import ProjectSkills from '@/components/projects/overview-page/ProjectSkills'
 
-import { Icon } from '@/utils/interfaces/interfaces'
+import { Icon } from '@/lib/utils/interfaces/interfaces'
 
 type ProjectItemProps = {
   isFeatured?: boolean | undefined

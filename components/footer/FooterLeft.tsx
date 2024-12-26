@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { getCurrentYear } from '@/utils/helpers/getCurrentYear'
+import { getCurrentYear } from '@/lib/utils/helpers/getCurrentYear'
 
 export const FooterLeft = () => {
   return (

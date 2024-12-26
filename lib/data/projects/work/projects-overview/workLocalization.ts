@@ -1,13 +1,13 @@
 import { iconsSkillsProjectsWorkMoravia } from '@/lib/data/skills/skillsProjectsWork'
-import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
-import { Project } from '@/utils/interfaces/interfaces'
+import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
+import { Project } from '@/lib/utils/interfaces/interfaces'
 
 // moravia
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import moravia1 from '@/public/images/projects/work/moravia/moravia-1-light.png'
 import moravia2 from '@/public/images/projects/work/moravia/moravia-2-light.png'
 import moravia3 from '@/public/images/projects/work/moravia/moravia-3-light.png'
 import moraviaThumb from '@/public/images/projects/work/moravia/moravia-thumb-light-600.webp'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 export const projectsWorkLocalization: Project[] = [
   {

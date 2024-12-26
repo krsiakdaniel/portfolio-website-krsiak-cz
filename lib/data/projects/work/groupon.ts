@@ -1,6 +1,6 @@
 import { TEXT } from '@/localization/english'
 
-import { Section } from '@/utils/interfaces/interfaces'
+import { Section } from '@/lib/utils/interfaces/interfaces'
 
 export const sections: Section[] = [
   {

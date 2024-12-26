@@ -10,11 +10,11 @@ import Highlight from '@/components/shared/Highlight'
 import { projectsPersonalNext } from '@/lib/data/projects/personal/projects-overview/personalNext'
 import { projectsPersonalReact } from '@/lib/data/projects/personal/projects-overview/personalReact'
 
+import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { metaDataProjectsOverviewPersonal } from '@/lib/utils/metadata/pages/metaDataProjectsOverviewPersonal'
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { ID } from '@/utils/constants/ids/elementIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { metaDataProjectsOverviewPersonal } from '@/utils/metadata/pages/metaDataProjectsOverviewPersonal'
 
 export const metadata: Metadata = {
   ...metaDataProjectsOverviewPersonal,

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { SkillCard } from '@/utils/interfaces/interfaces'
+import { SkillCard } from '@/lib/utils/interfaces/interfaces'
 
 type SkillsCardProps = SkillCard
 

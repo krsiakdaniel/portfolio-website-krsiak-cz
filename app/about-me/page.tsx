@@ -7,11 +7,11 @@ import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 
+import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { metaDataAboutMe } from '@/lib/utils/metadata/pages/metaDataAboutMe'
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { ID } from '@/utils/constants/ids/elementIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { metaDataAboutMe } from '@/utils/metadata/pages/metaDataAboutMe'
 
 export const metadata: Metadata = {
   ...metaDataAboutMe,

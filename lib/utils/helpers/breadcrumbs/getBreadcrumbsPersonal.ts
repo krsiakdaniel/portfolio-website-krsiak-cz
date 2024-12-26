@@ -1,7 +1,7 @@
+import { URL_PERSONAL_PROJECTS } from '@/lib/utils/constants/urls/pageUrls'
 import { TEXT } from '@/localization/english'
-import { URL_PERSONAL_PROJECTS } from '@/utils/constants/urls/pageUrls'
 
-import { BreadCrumbsType } from '@/utils/interfaces/types'
+import { BreadCrumbsType } from '@/lib/utils/interfaces/types'
 
 export const getBreadcrumbsPersonal = (level2Url: string, level2Text: string): BreadCrumbsType => {
   return {

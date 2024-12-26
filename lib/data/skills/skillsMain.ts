@@ -1,7 +1,7 @@
-import { YEARS } from '@/utils/constants/years'
+import { YEARS } from '@/lib/utils/constants/years'
 
-import { getSkillsIcons } from '@/utils/helpers/getSkillsIcons'
-import { SkillCard } from '@/utils/interfaces/interfaces'
+import { getSkillsIcons } from '@/lib/utils/helpers/getSkillsIcons'
+import { SkillCard } from '@/lib/utils/interfaces/interfaces'
 
 import js from '@/public/icons/svg/skills/js.svg'
 import next from '@/public/icons/svg/skills/next.svg'

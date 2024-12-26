@@ -1,4 +1,4 @@
-import { SkillInfo } from '@/utils/interfaces/interfaces'
+import { SkillInfo } from '@/lib/utils/interfaces/interfaces'
 
 export const mindset: SkillInfo[] = [
   {

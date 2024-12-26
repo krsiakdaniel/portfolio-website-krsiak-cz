@@ -1,5 +1,5 @@
-import { getGoBackLinkID } from '@/utils/helpers/getGoBackLink'
-import { GoBackLinkEnum } from '@/utils/interfaces/enums'
+import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
+import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
 
 describe('getGoBackLinkID', () => {
   it('returns correct link for type "work"', () => {

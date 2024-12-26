@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test'
 
 import { getDataTestId } from '@/__tests__/playwright/utils/helpers/getDataTestId'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
+import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
 
 test.describe('Navigation - About Me', () => {
   test('navigates to previous page - Home', async ({ page }) => {

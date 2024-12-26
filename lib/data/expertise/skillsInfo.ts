@@ -1,5 +1,5 @@
-import { YEARS } from '@/utils/constants/years'
-import { SkillInfo } from '@/utils/interfaces/interfaces'
+import { YEARS } from '@/lib/utils/constants/years'
+import { SkillInfo } from '@/lib/utils/interfaces/interfaces'
 
 export const skillsInfo: SkillInfo[] = [
   {

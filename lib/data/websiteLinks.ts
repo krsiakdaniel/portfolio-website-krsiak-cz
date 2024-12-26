@@ -1,7 +1,7 @@
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { TEXT } from '@/localization/english'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
-import { WebsiteLinkItem } from '@/utils/interfaces/interfaces'
+import { WebsiteLinkItem } from '@/lib/utils/interfaces/interfaces'
 
 // TODO: refactor testId and id to utils/constants/ files
 export const websiteLinks: WebsiteLinkItem[] = [

@@ -7,9 +7,9 @@ import ProjectResponsibility from '@/components/layout/project-page/ProjectRespo
 import ProjectInformation from '@/components/projects/project-detail-page/ProjectInformation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 
-import { HeaderSectionProps } from '@/utils/interfaces/componentProps'
-import { ImageShowcaseItem, Project, Section } from '@/utils/interfaces/interfaces'
-import { BreadCrumbsType } from '@/utils/interfaces/types'
+import { HeaderSectionProps } from '@/lib/utils/interfaces/componentProps'
+import { ImageShowcaseItem, Project, Section } from '@/lib/utils/interfaces/interfaces'
+import { BreadCrumbsType } from '@/lib/utils/interfaces/types'
 
 type BreadCrumbsProps = {
   breadCrumbs: BreadCrumbsType

@@ -1,8 +1,8 @@
 import Heading1 from '@/components/shared/Heading1'
 import Highlight from '@/components/shared/Highlight'
 
+import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 
 const HeadingInfo = () => {
   return (

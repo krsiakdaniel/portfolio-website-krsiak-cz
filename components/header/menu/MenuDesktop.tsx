@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 import { menuDesktopLinks } from '@/lib/data/menu/desktopLinks'
 
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { ID } from '@/utils/constants/ids/elementIds'
+import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 const MenuDesktop = () => {
   return (

@@ -1,4 +1,4 @@
-import { EXTERNAL_URL } from '@/utils/constants/urls/externalUrls'
+import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
 const ResumePreviewEmbed = () => {
   return (

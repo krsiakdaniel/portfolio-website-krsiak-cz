@@ -1,9 +1,9 @@
 import { iconsSkillsProjectsPersonalCryptomania } from '@/lib/data/skills/skillsProjectsPersonal'
 
-import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { Project } from '@/utils/interfaces/interfaces'
+import { Project } from '@/lib/utils/interfaces/interfaces'
 
 // project images
 import cryptomania4 from '@/public/images/projects/personal/cryptomania/cryptomania-1-dark.png'

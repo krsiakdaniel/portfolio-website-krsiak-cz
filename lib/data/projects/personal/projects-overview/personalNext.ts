@@ -1,9 +1,9 @@
 import { iconsSkillsProjectsPersonalKrsiak } from '@/lib/data/skills/skillsProjectsPersonal'
 
-import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { Project } from '@/utils/interfaces/interfaces'
+import { Project } from '@/lib/utils/interfaces/interfaces'
 
 // project images
 import krsiak1 from '@/public/images/projects/personal/krsiak/krsiak-1-light.png'

@@ -3,8 +3,8 @@ import DividerWithText from '@/components/shared/DividerWithText'
 
 import { iconsSkills1, iconsSkills2, iconsSkills3, iconsSkills4 } from '@/lib/data/skills/skillsMain'
 
+import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { TEXT } from '@/localization/english'
-import { ID } from '@/utils/constants/ids/elementIds'
 
 const Skills = () => {
   return (

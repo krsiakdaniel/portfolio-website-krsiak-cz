@@ -6,14 +6,14 @@ import PageNavigation from '@/components/page-navigation/PageNavigation'
 import { projectsWorkWordPress } from '@/lib/data/projects/work/projects-overview/workWordpress'
 import { sections } from '@/lib/data/projects/work/smartsuppHelp'
 
+import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { ID } from '@/utils/constants/ids/elementIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
-import { getBreadcrumbsWork } from '@/utils/helpers/breadcrumbs/getBreadcrumbsWork'
-import { GoBackLinkEnum } from '@/utils/interfaces/enums'
-import { metaDataSmartsuppHelp } from '@/utils/metadata/projects/work/metaDataSmartsuppHelp'
+import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
+import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
+import { metaDataSmartsuppHelp } from '@/lib/utils/metadata/projects/work/metaDataSmartsuppHelp'
 
 export const metadata: Metadata = {
   ...metaDataSmartsuppHelp,

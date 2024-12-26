@@ -1,4 +1,4 @@
-import { StatusBadge } from '@/utils/interfaces/interfaces'
+import { StatusBadge } from '@/lib/utils/interfaces/interfaces'
 
 const IMAGE_JEST_TESTS =
   'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg'

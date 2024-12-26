@@ -6,14 +6,14 @@ import PageNavigation from '@/components/page-navigation/PageNavigation'
 import { sections } from '@/lib/data/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/lib/data/projects/personal/projects-overview/personalNext'
 
+import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { ID } from '@/utils/constants/ids/elementIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
-import { getBreadcrumbsPersonal } from '@/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
-import { GoBackLinkEnum } from '@/utils/interfaces/enums'
-import { metaDataKrsiak } from '@/utils/metadata/projects/personal/metaDataKrsiak'
+import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
+import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
+import { metaDataKrsiak } from '@/lib/utils/metadata/projects/personal/metaDataKrsiak'
 
 export const metadata: Metadata = {
   ...metaDataKrsiak,

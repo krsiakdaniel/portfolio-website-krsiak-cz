@@ -3,8 +3,8 @@ import {
   iconsSkillsProjectsWorkKooperativa,
   iconsSkillsProjectsWorkSmartsuppDashboard,
 } from '@/lib/data/skills/skillsProjectsWork'
-import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
-import { Project } from '@/utils/interfaces/interfaces'
+import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
+import { Project } from '@/lib/utils/interfaces/interfaces'
 
 // komercni banka
 import komercniBanka1 from '@/public/images/projects/work/komercni-banka/komercni-banka-1-light.png'
@@ -20,13 +20,13 @@ import kooperativa3 from '@/public/images/projects/work/kooperativa/kooperativa-
 import kooperativaThumb from '@/public/images/projects/work/kooperativa/kooperativa-thumb-light-600.webp'
 
 // smartsupp dashboard
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import smartsuppDashboard1 from '@/public/images/projects/work/smartsupp-dashboard/smartsupp-dashboard-1-light.png'
 import smartsuppDashboard2 from '@/public/images/projects/work/smartsupp-dashboard/smartsupp-dashboard-2-light.png'
 import smartsuppDashboard3 from '@/public/images/projects/work/smartsupp-dashboard/smartsupp-dashboard-3-light.png'
 import smartsuppDashboard4 from '@/public/images/projects/work/smartsupp-dashboard/smartsupp-dashboard-4-light.png'
 import smartsuppDashboard5 from '@/public/images/projects/work/smartsupp-dashboard/smartsupp-dashboard-5-light.png'
 import smartsuppDashboardThumb from '@/public/images/projects/work/smartsupp-dashboard/smartsupp-dashboard-thumb-light-600.webp'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 export const projectsWorkReact: Project[] = [
   {

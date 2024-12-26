@@ -1,6 +1,6 @@
 import { IconArrow } from '@/components/icons/IconArrow'
 
-import { NavigationDirectionEnum } from '@/utils/interfaces/enums'
+import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 
 type ProjectLinkProps = {
   linkText: string

@@ -1,4 +1,4 @@
-import { getUrlPersonalProject, getUrlWorkExperience } from '@/utils/helpers/getPageUrls'
+import { getUrlPersonalProject, getUrlWorkExperience } from '@/lib/utils/helpers/getPageUrls'
 
 export const URL_WORK_EXPERIENCE = '/work-experience'
 export const URL_PERSONAL_PROJECTS = '/personal-projects'

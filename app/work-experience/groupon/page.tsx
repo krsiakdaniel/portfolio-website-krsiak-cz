@@ -6,14 +6,14 @@ import PageNavigation from '@/components/page-navigation/PageNavigation'
 import { sections } from '@/lib/data/projects/work/groupon'
 import { projectsWorkQA } from '@/lib/data/projects/work/projects-overview/workQA'
 
+import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { ID } from '@/utils/constants/ids/elementIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
-import { getBreadcrumbsWork } from '@/utils/helpers/breadcrumbs/getBreadcrumbsWork'
-import { GoBackLinkEnum } from '@/utils/interfaces/enums'
-import { metaDataGroupon } from '@/utils/metadata/projects/work/metaDataGroupon'
+import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
+import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
+import { metaDataGroupon } from '@/lib/utils/metadata/projects/work/metaDataGroupon'
 
 export const metadata: Metadata = {
   ...metaDataGroupon,

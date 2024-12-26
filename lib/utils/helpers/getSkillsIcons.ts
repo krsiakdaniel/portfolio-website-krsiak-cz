@@ -1,5 +1,5 @@
 // Import interface
-import { Icon } from '@/utils/interfaces/interfaces'
+import { Icon } from '@/lib/utils/interfaces/interfaces'
 
 // Import SVG icons
 import chakra from '@/public/icons/svg/skills/chakra.svg'

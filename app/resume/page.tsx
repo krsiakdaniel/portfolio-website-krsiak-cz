@@ -7,12 +7,12 @@ import ResumeInfo from '@/components/resume/ResumeInfo'
 import ResumePreviewEmbed from '@/components/resume/ResumePreviewEmbed'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 
+import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { metaDataResume } from '@/lib/utils/metadata/pages/metaDataResume'
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { ID } from '@/utils/constants/ids/elementIds'
-import { EXTERNAL_URL } from '@/utils/constants/urls/externalUrls'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { metaDataResume } from '@/utils/metadata/pages/metaDataResume'
 
 export const metadata: Metadata = {
   ...metaDataResume,

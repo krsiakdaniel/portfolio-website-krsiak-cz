@@ -1,7 +1,7 @@
+import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { MenuLink } from '@/lib/utils/interfaces/interfaces'
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-import { MenuLink } from '@/utils/interfaces/interfaces'
 
 export const menuMobileLinks: MenuLink[] = [
   { href: PAGES_URL.aboutMe, text: TEXT.aboutMe, testId: DATA_TEST_IDS.menu.mobile.links.aboutMe, id: 'about-me' },
