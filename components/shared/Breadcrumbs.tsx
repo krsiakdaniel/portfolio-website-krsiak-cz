@@ -12,11 +12,7 @@ type BreadCrumbsProps = BreadCrumbsType
 
 const BreadCrumbs = ({ level1Url, level1Text, level2Url, level2Text }: BreadCrumbsProps) => {
   return (
-    <nav
-      className="mb-10 flex text-neutral-700"
-      aria-label={ARIA_LABELS.breadcrumbs}
-      data-testid={DATA_TEST_IDS.breadcrumbs}
-    >
+    <nav className="flex text-neutral-700" aria-label={ARIA_LABELS.breadcrumbs} data-testid={DATA_TEST_IDS.breadcrumbs}>
       <ol className="inline-flex flex-row flex-wrap items-start space-x-1 md:space-x-2">
         <li className="inline-flex items-center">
           <Link

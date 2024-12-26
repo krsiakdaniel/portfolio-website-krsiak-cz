@@ -6,10 +6,10 @@ import krsiak from '@/public/images/webp/krsiak-daniel-400.webp'
 
 const Photo = () => {
   return (
-    <div className="flex w-full flex-col items-center justify-start lg:w-1/3">
+    <div className="justify-star mt-16 flex w-full flex-col items-center lg:mt-0 lg:w-1/3">
       <Image
         src={krsiak}
-        className="h-auto w-96 rounded-lg border border-neutral-300 bg-neutral-100 shadow-md lg:mb-0 lg:mt-0"
+        className="h-auto w-96 rounded-lg border border-neutral-300 bg-neutral-100 shadow-md lg:mt-0"
         alt={TEXT.nameDanielKrsiak}
         placeholder="blur"
         loading="eager"

@@ -9,7 +9,7 @@ type ExperienceCardProps = {
 
 const ExperienceCard = ({ company, role, isPartTime, description }: ExperienceCardProps) => {
   return (
-    <div className="mb-8 w-full rounded-lg border border-gray-200 bg-white p-6 shadow-md md:max-w-[600px]">
+    <div className="mt-4 w-full rounded-lg border border-gray-200 bg-white p-6 shadow-md first:mt-0 md:max-w-[600px]">
       <div>
         <h5 className="mr-3 font-semibold">
           {company}

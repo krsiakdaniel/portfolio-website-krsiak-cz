@@ -11,7 +11,7 @@ const Heading2 = ({ children, dataTestId = '', textColor = 'text-violet-600', cu
   return (
     <h2
       {...(dataTestId && { 'data-testid': dataTestId })}
-      className={`mb-2 text-4xl font-bold tracking-tight ${textColor} ${customCss}`}
+      className={`text-4xl font-bold tracking-tight ${textColor} ${customCss}`}
     >
       {children}
     </h2>

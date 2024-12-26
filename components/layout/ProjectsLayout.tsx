@@ -11,7 +11,7 @@ type ProjectsLayoutProps = {
 const ProjectsLayout = ({ heading, description, children }: ProjectsLayoutProps) => {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="mt-10 flex flex-col">
         <Heading1>{heading}</Heading1>
         <div>{description}</div>
       </div>

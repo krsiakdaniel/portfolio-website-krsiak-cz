@@ -44,39 +44,45 @@ const ProjectsWork = () => {
 
         <ProjectSection sectionId={ID.section.frontEnd} sectionText="Front End" projectData={projectsWorkFrontEnd} />
         <Heading4>{TEXT.otherExperience}</Heading4>
-        <ExperienceCard
-          company="Freelance"
-          role="Web Developer / Consultant"
-          description="In the past I was creating  websites for clients."
-          isPartTime
-        />
-        <ExperienceCard
-          company="Freelance"
-          role="Web Developer"
-          description="First time web company job was 1 year coding website layouts."
-        />
+        <div className="mt-4">
+          <ExperienceCard
+            company="Freelance"
+            role="Web Developer / Consultant"
+            description="In the past I was creating  websites for clients."
+            isPartTime
+          />
+          <ExperienceCard
+            company="Freelance"
+            role="Web Developer"
+            description="First time web company job was 1 year coding website layouts."
+          />
+        </div>
 
         <ProjectSection sectionId={ID.section.wordpress} sectionText="WordPress" projectData={projectsWorkWordPress} />
         <Heading4>{TEXT.otherExperience}</Heading4>
-        <ExperienceCard
-          company="Freelance"
-          role="WordPress Consultant"
-          description="For 5 years I used to create websites for clients and small companies."
-          isPartTime
-        />
+        <div className="mt-4">
+          <ExperienceCard
+            company="Freelance"
+            role="WordPress Consultant"
+            description="For 5 years I used to create websites for clients and small companies."
+            isPartTime
+          />
+        </div>
 
         <ProjectSection sectionId={ID.section.qa} sectionText="QA Automation & Testing" projectData={projectsWorkQA} />
         <Heading4>{TEXT.otherExperience}</Heading4>
-        <ExperienceCard
-          company="Smartsupp"
-          role="QA Automation - Team Leader"
-          description="I set up Cypress E2E testing for the entire company application. I also wrote E2E tests in JavaScript and TypeScript. Mentoring juniors QA."
-        />
-        <ExperienceCard
-          company="RWS - Moravia IT"
-          role="Localization - Tester"
-          description="Making sure translations fit UI layout on Windows 7 + Windows Store."
-        />
+        <div className="mt-4">
+          <ExperienceCard
+            company="Smartsupp"
+            role="QA Automation - Team Leader"
+            description="I set up Cypress E2E testing for the entire company application. I also wrote E2E tests in JavaScript and TypeScript. Mentoring juniors QA."
+          />
+          <ExperienceCard
+            company="RWS - Moravia IT"
+            role="Localization - Tester"
+            description="Making sure translations fit UI layout on Windows 7 + Windows Store."
+          />
+        </div>
 
         <ProjectSection
           sectionId={ID.section.localization}
@@ -84,11 +90,13 @@ const ProjectsWork = () => {
           projectData={projectsWorkLocalization}
         />
         <Heading4>{TEXT.otherExperience}</Heading4>
-        <ExperienceCard
-          company="Smartsupp"
-          role="Localization - Manager"
-          description="Responsible for translation of the company website and application into 9 languages. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱"
-        />
+        <div className="mt-4">
+          <ExperienceCard
+            company="Smartsupp"
+            role="Localization - Manager"
+            description="Responsible for translation of the company website and application into 9 languages. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱"
+          />
+        </div>
       </ProjectsLayout>
 
       <div className="mt-20">

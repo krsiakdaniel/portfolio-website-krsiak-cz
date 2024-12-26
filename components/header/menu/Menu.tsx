@@ -16,7 +16,7 @@ const cssDesktop = 'text-body-md cursor-pointer font-bold text-neutral-700 hover
 const Menu = ({ isMobile }: MenuProps) => {
   return (
     <ul
-      className={isMobile ? 'mb-5 mt-2 flex flex-col lg:hidden' : 'hidden gap-8 lg:flex'}
+      className={isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-8 lg:flex'}
       id={isMobile ? ID.menu.mobile : ID.menu.desktop}
       data-testid={isMobile ? ID.menu.mobile : ID.menu.desktop}
     >

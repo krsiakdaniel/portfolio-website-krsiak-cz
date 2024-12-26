@@ -20,7 +20,8 @@ const StatusPage = () => {
   return (
     <PageContainer id={ID.statusPage}>
       <BreadCrumbs level1Url={PAGES_URL.statusPage} level1Text={TEXT.statusPage} />
-      <div>
+
+      <div className="mt-10">
         <Heading1>{TEXT.statusPage}</Heading1>
         <p className="mt-4 text-lg text-neutral-600">
           Current statuses for key integrations, showcasing the health and performance of the project.
@@ -35,7 +36,7 @@ const StatusPage = () => {
               width={item.width}
               height={item.height}
               loading="eager"
-              className="mb-2 last:mb-0"
+              className="mt-2 first:mt-0"
             />
           ))}
         </div>

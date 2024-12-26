@@ -13,10 +13,12 @@ const NotFoundPage = () => {
   return (
     <PageContainer id={ID.error.err404}>
       <div className="flex flex-col items-center text-center">
-        <Image src={img404} alt="404" width={400} height={417} loading="eager" className="bt-5 mb-10" />
-        <Heading1 textSize="9xl" textSizeSM="9xl" textSizeLG="9xl">
-          404
-        </Heading1>
+        <Image src={img404} alt="404" width={400} height={417} loading="eager" className="bt-5" />
+        <div className="mt-10">
+          <Heading1 textSize="9xl" textSizeSM="9xl" textSizeLG="9xl">
+            404
+          </Heading1>
+        </div>
         <p className="mt-4 text-3xl font-bold tracking-tight text-neutral-900 md:text-4xl">
           Sorry, we can&apos;t find that page.
         </p>

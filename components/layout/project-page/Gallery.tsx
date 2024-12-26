@@ -11,8 +11,8 @@ type GalleryProps = {
 const Gallery = ({ imageShowcase }: GalleryProps) => {
   return (
     <div className="mt-8">
-      <h3 className="mb-4 text-3xl font-bold">Gallery</h3>
-      <p className="mb-3 text-neutral-600">See project screenshots below.</p>
+      <h3 className="text-3xl font-bold">Gallery</h3>
+      <p className="mt-4 text-neutral-600">See project screenshots below.</p>
       <div data-testid={DATA_TEST_IDS.gallery}>
         {imageShowcase.map((image) => (
           <div data-testid={`gallery-image-${image.id}`} key={image.id}>

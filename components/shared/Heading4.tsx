@@ -11,7 +11,7 @@ const Heading4 = ({ children, dataTestId = '', textColor = '', customCss = '' }:
   return (
     <h4
       {...(dataTestId && { 'data-testid': dataTestId })}
-      className={`mb-4 mt-8 text-xl font-bold ${textColor} ${customCss}`}
+      className={`mt-8 text-xl font-bold ${textColor} ${customCss}`}
     >
       {children}
     </h4>

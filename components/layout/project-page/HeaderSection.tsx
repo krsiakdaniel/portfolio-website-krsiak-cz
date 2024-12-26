@@ -12,7 +12,7 @@ import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 
 const HeaderSection = ({ title, role, years, company, goBackLink, sectionID }: HeaderSectionProps) => {
   return (
-    <div className="mb-16">
+    <div className="mt-10">
       <Heading1 textColor="text-neutral-900">{title}</Heading1>
       <div className="mt-2">
         <Heading2>
@@ -20,7 +20,7 @@ const HeaderSection = ({ title, role, years, company, goBackLink, sectionID }: H
           {years && <small className="text-md text-neutral-500">{` · ${years} · ${company}`}</small>}
         </Heading2>
       </div>
-      <p className="mb-3 mt-4">
+      <p className="mt-4">
         <Link
           href={getGoBackLinkID(goBackLink, sectionID)}
           className="inline-flex items-center text-neutral-500 hover:text-neutral-700"
