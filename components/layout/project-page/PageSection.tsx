@@ -1,6 +1,7 @@
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
+import Heading3 from '@/components/shared/Heading3'
 import { Section } from '@/lib/utils/interfaces/interfaces'
 
 type PageSectionProps = Section
@@ -8,9 +9,9 @@ type PageSectionProps = Section
 const PageSection = ({ title, titleHighlight, items }: PageSectionProps) => {
   return (
     <div className="mt-8">
-      <h3 className="text-3xl font-bold">
+      <Heading3>
         {title} {titleHighlight && <span className="text-violet-600">{titleHighlight}</span>}
-      </h3>
+      </Heading3>
       <div className="mt-4">
         <List>
           {items.map((item) => (
