@@ -3,8 +3,8 @@ import { Metadata } from 'next'
 import ProjectPageLayout from '@/components/layout/project-page/ProjectPageLayout'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
-import { sections } from '@/data/projects/personal/cryptoMania'
-import { projectsPersonalReact } from '@/data/projects/personal/projects-overview/personalReact'
+import { sections } from '@/lib/data/projects/personal/cryptoMania'
+import { projectsPersonalReact } from '@/lib/data/projects/personal/projects-overview/personalReact'
 
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'

@@ -1,4 +1,4 @@
-import { iconsSkillsProjectsWorkSmartsuppWeb } from '@/data/skills/skillsProjectsWork'
+import { iconsSkillsProjectsWorkSmartsuppWeb } from '@/lib/data/skills/skillsProjectsWork'
 import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
 import { Project } from '@/utils/interfaces/interfaces'
 

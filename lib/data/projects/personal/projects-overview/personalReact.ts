@@ -1,4 +1,4 @@
-import { iconsSkillsProjectsPersonalCryptomania } from '@/data/skills/skillsProjectsPersonal'
+import { iconsSkillsProjectsPersonalCryptomania } from '@/lib/data/skills/skillsProjectsPersonal'
 
 import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'

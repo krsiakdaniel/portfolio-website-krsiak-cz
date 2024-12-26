@@ -5,7 +5,7 @@ import PageContainer from '@/components/layout/PageContainer'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading1 from '@/components/shared/Heading1'
 
-import { statusBadges } from '@/data/statusPage'
+import { statusBadges } from '@/lib/data/statusPage'
 
 import { TEXT } from '@/localization/english'
 import { ID } from '@/utils/constants/ids/elementIds'

@@ -1,8 +1,8 @@
 import { ProjectPageLayoutWrapper } from '@/components/layout/project-page/ProjectPageLayoutWrapper'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
-import { projectsWorkFrontEnd } from '@/data/projects/work/projects-overview/workFrontEnd'
-import { sections } from '@/data/projects/work/smartsuppWeb'
+import { projectsWorkFrontEnd } from '@/lib/data/projects/work/projects-overview/workFrontEnd'
+import { sections } from '@/lib/data/projects/work/smartsuppWeb'
 
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'

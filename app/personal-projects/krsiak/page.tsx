@@ -3,8 +3,8 @@ import { Metadata } from 'next'
 import ProjectPageLayout from '@/components/layout/project-page/ProjectPageLayout'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
-import { sections } from '@/data/projects/personal/krsiak'
-import { projectsPersonalNext } from '@/data/projects/personal/projects-overview/personalNext'
+import { sections } from '@/lib/data/projects/personal/krsiak'
+import { projectsPersonalNext } from '@/lib/data/projects/personal/projects-overview/personalNext'
 
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'

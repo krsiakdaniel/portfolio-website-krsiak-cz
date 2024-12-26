@@ -3,8 +3,8 @@ import { Metadata } from 'next'
 import { ProjectPageLayoutWrapper } from '@/components/layout/project-page/ProjectPageLayoutWrapper'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
-import { projectsWorkWordPress } from '@/data/projects/work/projects-overview/workWordpress'
-import { sections } from '@/data/projects/work/smartsuppHelp'
+import { projectsWorkWordPress } from '@/lib/data/projects/work/projects-overview/workWordpress'
+import { sections } from '@/lib/data/projects/work/smartsuppHelp'
 
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'

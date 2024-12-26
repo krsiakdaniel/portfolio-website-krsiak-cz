@@ -7,8 +7,8 @@ import { ProjectSection } from '@/components/projects/overview-page/ProjectSecti
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Highlight from '@/components/shared/Highlight'
 
-import { projectsPersonalNext } from '@/data/projects/personal/projects-overview/personalNext'
-import { projectsPersonalReact } from '@/data/projects/personal/projects-overview/personalReact'
+import { projectsPersonalNext } from '@/lib/data/projects/personal/projects-overview/personalNext'
+import { projectsPersonalReact } from '@/lib/data/projects/personal/projects-overview/personalReact'
 
 import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'

@@ -133,8 +133,8 @@ import Footer from '@/components/footer/Footer'
 
 ```ts
 // Data
-import { mindset } from '@/data/expertise/mindset'
-import { iconsSkills1 } from '@/data/skills/skillsMain'
+import { mindset } from '@/lib/data/expertise/mindset'
+import { iconsSkills1 } from '@/lib/data/skills/skillsMain'
 ```
 
 ```ts

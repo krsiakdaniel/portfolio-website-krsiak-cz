@@ -1,4 +1,4 @@
-import { iconsSkillsProjectsWorkGroupon } from '@/data/skills/skillsProjectsWork'
+import { iconsSkillsProjectsWorkGroupon } from '@/lib/data/skills/skillsProjectsWork'
 import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
 import { Project } from '@/utils/interfaces/interfaces'
 

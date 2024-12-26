@@ -2,7 +2,7 @@ import {
   iconsSkillsProjectsWorkKomercniBanka,
   iconsSkillsProjectsWorkKooperativa,
   iconsSkillsProjectsWorkSmartsuppDashboard,
-} from '@/data/skills/skillsProjectsWork'
+} from '@/lib/data/skills/skillsProjectsWork'
 import { PROJECT_ID } from '@/utils/constants/ids/projectIds'
 import { Project } from '@/utils/interfaces/interfaces'
 
