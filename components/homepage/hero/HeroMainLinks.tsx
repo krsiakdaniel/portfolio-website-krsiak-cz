@@ -1,6 +1,6 @@
 import HeroLink from '@/components/homepage/hero/HeroLink'
 
-import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { TEXT } from '@/localization/english'
 

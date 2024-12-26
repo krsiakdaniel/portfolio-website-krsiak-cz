@@ -120,7 +120,7 @@ import { ReactNode } from 'react'
 
 ```ts
 // Custom Hooks
-import { useScrollProgress } from '@/hooks/useScrollProgress'
+import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 ```
 
 ```ts
@@ -140,7 +140,7 @@ import { iconsSkills1 } from '@/lib/data/skills/skillsMain'
 ```ts
 // Utils
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 ```
 

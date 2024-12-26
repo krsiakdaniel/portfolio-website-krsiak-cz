@@ -7,7 +7,7 @@ import SkillsMain from '@/components/homepage/skills/SkillsMain'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
-import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { metaDataShared } from '@/lib/utils/metadata/metaDataShared'

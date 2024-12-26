@@ -15,7 +15,7 @@ import { projectsWorkQA } from '@/lib/data/projects/work/projects-overview/workQ
 import { projectsWorkReact } from '@/lib/data/projects/work/projects-overview/workReact'
 import { projectsWorkWordPress } from '@/lib/data/projects/work/projects-overview/workWordpress'
 
-import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { metaDataProjectsOverviewWork } from '@/lib/utils/metadata/pages/metaDataProjectsOverviewWork'

@@ -1,6 +1,6 @@
 'use client'
 
-import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 // If you need to add an onClick event handler to a component, you should make sure that component is a Client Component.
 

@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 import BreadcrumbsItem from '@/components/shared/BreadcrumbsItem'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
-import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { BreadCrumbsType } from '@/lib/utils/interfaces/types'
 import { TEXT } from '@/localization/english'

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { ImageShowcaseItem } from '@/lib/utils/interfaces/interfaces'
 

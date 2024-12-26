@@ -6,7 +6,7 @@ import PageNavigation from '@/components/page-navigation/PageNavigation'
 import { sections } from '@/lib/data/projects/work/moravia'
 import { projectsWorkLocalization } from '@/lib/data/projects/work/projects-overview/workLocalization'
 
-import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { TEXT } from '@/localization/english'

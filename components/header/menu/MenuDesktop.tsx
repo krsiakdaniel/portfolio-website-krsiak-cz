@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import { menuDesktopLinks } from '@/lib/data/menu/desktopLinks'
 
-import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 const MenuDesktop = () => {
