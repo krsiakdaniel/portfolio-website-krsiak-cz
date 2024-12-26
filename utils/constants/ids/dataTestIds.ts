@@ -141,7 +141,7 @@ const PROJECTS = {
 export const DATA_TEST_IDS = {
   breadcrumbs: 'breadcrumbs',
   gallery: 'gallery',
-  header: 'header-logo',
+  headerLogo: 'header-logo',
   footer: FOOTER,
   menu: MENU,
   hero: HERO,

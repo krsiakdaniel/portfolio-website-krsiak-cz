@@ -10,22 +10,22 @@ test.describe('Header - Logo', () => {
     })
 
     await test.step('Check if the link is visible', async () => {
-      const isLinkVisible = await page.isVisible(getDataTestId(DATA_TEST_IDS.header))
+      const isLinkVisible = await page.isVisible(getDataTestId(DATA_TEST_IDS.headerLogo))
       expect(isLinkVisible).toBe(true)
     })
 
     await test.step('Check if the link text is correct', async () => {
-      const linkText = await page.textContent(getDataTestId(DATA_TEST_IDS.header))
+      const linkText = await page.textContent(getDataTestId(DATA_TEST_IDS.headerLogo))
       expect(linkText).toBe('krsiak.cz')
     })
 
     await test.step('Check if link is correct', async () => {
-      const linkUrl = await page.getAttribute(getDataTestId(DATA_TEST_IDS.header), 'href')
+      const linkUrl = await page.getAttribute(getDataTestId(DATA_TEST_IDS.headerLogo), 'href')
       expect(linkUrl).toBe('/')
     })
 
     await test.step('Check if the link redirects to the home page when clicked', async () => {
-      await page.click(getDataTestId(DATA_TEST_IDS.header))
+      await page.click(getDataTestId(DATA_TEST_IDS.headerLogo))
       await page.waitForLoadState('networkidle')
       expect(page.url()).toBe('http://localhost:3000/')
     })

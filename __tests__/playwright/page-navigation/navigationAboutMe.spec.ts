@@ -2,12 +2,11 @@ import { expect, test } from '@playwright/test'
 
 import { getDataTestId } from '@/__tests__/playwright/utils/helpers/getDataTestId'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 test.describe('Navigation - About Me', () => {
   test('navigates to previous page - Home', async ({ page }) => {
     // Navigate to your app's page
-    await page.goto(PAGES_URL.aboutMe)
+    await page.goto('/about-me')
 
     // Click on the PageNavigation component to go to the previous page
     await page.click(getDataTestId(DATA_TEST_IDS.page.aboutMe.previous))
@@ -18,7 +17,7 @@ test.describe('Navigation - About Me', () => {
 
   test('navigates to next page - Resume', async ({ page }) => {
     // Navigate to your app's page
-    await page.goto(PAGES_URL.aboutMe)
+    await page.goto('/about-me')
 
     // Click on the PageNavigation component to go to the next page
     await page.click(getDataTestId(DATA_TEST_IDS.page.aboutMe.next))

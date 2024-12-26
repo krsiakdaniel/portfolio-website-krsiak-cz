@@ -1,7 +1,5 @@
 import { Browser, BrowserContext, Page, chromium, expect, test } from '@playwright/test'
 
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-
 let browser: Browser
 let context: BrowserContext
 let page: Page
@@ -17,7 +15,7 @@ test.afterAll(async () => {
 test.beforeEach(async () => {
   context = await browser.newContext()
   page = await context.newPage()
-  await page.goto(PAGES_URL.home)
+  await page.goto('/')
 })
 
 test.afterEach(async () => {
@@ -27,7 +25,7 @@ test.afterEach(async () => {
 test.describe('Project - Krsiak', () => {
   test('Links', async ({ page }) => {
     await test.step('Go to page', async () => {
-      await page.goto(`${PAGES_URL.personal.krsiak}`)
+      await page.goto('/personal-projects/krsiak')
     })
 
     await test.step('Check Website link', async () => {

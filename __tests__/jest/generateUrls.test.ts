@@ -1,10 +1,10 @@
-import { URL_PERSONAL_PROJECTS, URL_WORK_EXPERIENCE } from '@/utils/constants/urls/pageUrls'
+import { URL_PERSONAL_PROJECTS } from '@/utils/constants/urls/pageUrls'
 import { getUrlPersonalProject, getUrlWorkExperience } from '@/utils/helpers/getPageUrls'
 
 describe('getUrlWorkExperience', () => {
   it('should return the correct URL for a given company', () => {
     const company = 'exampleCompany'
-    const expectedUrl = `${URL_WORK_EXPERIENCE}/${company}`
+    const expectedUrl = `/work-experience/${company}`
     const result = getUrlWorkExperience(company)
     expect(result).toBe(expectedUrl)
   })

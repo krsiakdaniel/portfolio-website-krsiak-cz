@@ -1,14 +1,12 @@
 import { expect, test } from '@playwright/test'
 
 import { getDataTestId } from '@/__tests__/playwright/utils/helpers/getDataTestId'
-import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 test.describe('Header - Desktop Menu - Work Experience Link', () => {
   test('should navigate to Work Experience page correctly', async ({ page }) => {
     await test.step('Go to home page', async () => {
-      await page.goto(PAGES_URL.home)
+      await page.goto('/')
     })
 
     const isLinkVisible = await page.isVisible(getDataTestId(DATA_TEST_IDS.menu.desktop.links.workExperience))
@@ -22,7 +20,7 @@ test.describe('Header - Desktop Menu - Work Experience Link', () => {
 
     await test.step('Check if the H1 heading on the final page has the text "Work Experience"', async () => {
       const heading = await page.textContent('h1')
-      expect(heading).toBe(TEXT.workExperience)
+      expect(heading).toBe('🖥️ Work Experience')
     })
   })
 })

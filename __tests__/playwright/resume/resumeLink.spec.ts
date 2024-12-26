@@ -2,8 +2,6 @@ import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
 
 import { checkLink } from '@/__tests__/playwright/utils/helpers/checkLink'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { EXTERNAL_URL } from '@/utils/constants/urls/externalUrls'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 let browser: Browser
 let context: BrowserContext
@@ -20,7 +18,7 @@ test.afterAll(async () => {
 test.beforeEach(async () => {
   context = await browser.newContext()
   page = await context.newPage()
-  await page.goto(PAGES_URL.resume)
+  await page.goto('/resume')
 })
 
 test.afterEach(async () => {
@@ -29,6 +27,10 @@ test.afterEach(async () => {
 
 test.describe('Resume page', () => {
   test('should have the correct Resume link', async () => {
-    await checkLink(page, DATA_TEST_IDS.hero.linkResume, EXTERNAL_URL.resume.resumeViewPDF)
+    await checkLink(
+      page,
+      DATA_TEST_IDS.hero.linkResume,
+      'https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD/view',
+    )
   })
 })

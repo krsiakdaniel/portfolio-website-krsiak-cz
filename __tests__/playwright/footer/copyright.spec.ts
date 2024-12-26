@@ -2,7 +2,6 @@ import { expect, test } from '@playwright/test'
 
 import { getDataTestId } from '@/__tests__/playwright/utils/helpers/getDataTestId'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { ID } from '@/utils/constants/ids/elementIds'
 
 test.describe('Footer - Copy', () => {
   test('Copyright', async ({ page }) => {
@@ -11,7 +10,7 @@ test.describe('Footer - Copy', () => {
     })
 
     await test.step('Check if the footer is present on the page', async () => {
-      const isFooterVisible = await page.isVisible(`#${ID.footer}`)
+      const isFooterVisible = await page.isVisible('#footer')
       expect(isFooterVisible).toBe(true)
     })
 
