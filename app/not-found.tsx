@@ -4,8 +4,8 @@ import Link from 'next/link'
 import PageContainer from '@/components/layout/PageContainer'
 import Heading1 from '@/components/shared/Heading1'
 
-import { ID } from '@/utils/constants/ids/elementIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import img404 from '@/public/images/webp/404.webp'
 

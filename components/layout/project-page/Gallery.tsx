@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { ImageShowcaseItem } from '@/utils/interfaces/interfaces'
+import { ImageShowcaseItem } from '@/lib/utils/interfaces/interfaces'
 
 type GalleryProps = {
   imageShowcase: ImageShowcaseItem[]

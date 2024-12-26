@@ -1,7 +1,7 @@
 import ExperienceSection from '@/components/projects/experience/ExperienceSection'
 import ProjectItem from '@/components/projects/overview-page/ProjectItem'
 
-import { Project } from '@/utils/interfaces/interfaces'
+import { Project } from '@/lib/utils/interfaces/interfaces'
 
 type ProjectSectionProps = {
   projectData: Project[]

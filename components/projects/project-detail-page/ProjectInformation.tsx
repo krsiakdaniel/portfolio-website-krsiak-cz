@@ -4,7 +4,7 @@ import SkillsList from '@/components/projects/project-detail-page/SkillsList'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
-import { Project } from '@/utils/interfaces/interfaces'
+import { Project } from '@/lib/utils/interfaces/interfaces'
 
 type ProjectInformationProps = Pick<
   Project,

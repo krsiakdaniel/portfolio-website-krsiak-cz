@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-import { websiteLinks } from '@/data/websiteLinks'
+import { websiteLinks } from '@/lib/data/websiteLinks'
 
-import { ID } from '@/utils/constants/ids/elementIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 type MenuProps = {
   isMobile: boolean

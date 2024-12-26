@@ -1,7 +1,7 @@
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
-import { Project, Skill } from '@/utils/interfaces/interfaces'
+import { Project, Skill } from '@/lib/utils/interfaces/interfaces'
 
 type SkillsListProps = Pick<Project, 'skillsOverview'>
 

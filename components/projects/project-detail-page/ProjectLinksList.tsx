@@ -2,7 +2,7 @@ import GitHubRepositoryLink from '@/components/projects/project-detail-page/GitH
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
-import { Link } from '@/utils/interfaces/interfaces'
+import { Link } from '@/lib/utils/interfaces/interfaces'
 
 type ProjectLinksListProps = {
   projectLinks: Link[]

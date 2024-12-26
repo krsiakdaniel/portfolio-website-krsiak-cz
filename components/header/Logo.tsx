@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 import logo from '@/public/images/webp/logo.webp'
 

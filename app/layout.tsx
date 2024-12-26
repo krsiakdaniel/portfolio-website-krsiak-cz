@@ -5,8 +5,8 @@ import { ReactNode } from 'react'
 import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
 
+import { metaDataShared } from '@/lib/utils/metadata/metaDataShared'
 import { TEXT } from '@/localization/english'
-import { metaDataShared } from '@/utils/metadata/metaDataShared'
 
 import './globals.css'
 

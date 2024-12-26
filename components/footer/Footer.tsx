@@ -2,7 +2,7 @@ import FooterLeft from '@/components/footer/FooterLeft'
 import FooterRight from '@/components/footer/FooterRight'
 import PageContainer from '@/components/layout/PageContainer'
 
-import { ID } from '@/utils/constants/ids/elementIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 const Footer = () => {
   return (

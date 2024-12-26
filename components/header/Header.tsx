@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import { useScrollProgress } from '@/hooks/useScrollProgress'
+import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 
 import Logo from '@/components/header/Logo'
 import Menu from '@/components/header/menu/Menu'

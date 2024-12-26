@@ -120,7 +120,7 @@ import { ReactNode } from 'react'
 
 ```ts
 // Custom Hooks
-import { useScrollProgress } from '@/hooks/useScrollProgress'
+import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 ```
 
 ```ts
@@ -133,22 +133,22 @@ import Footer from '@/components/footer/Footer'
 
 ```ts
 // Data
-import { mindset } from '@/data/expertise/mindset'
-import { iconsSkills1 } from '@/data/skills/skillsMain'
+import { mindset } from '@/lib/data/expertise/mindset'
+import { iconsSkills1 } from '@/lib/data/skills/skillsMain'
 ```
 
 ```ts
 // Utils
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 ```
 
 ```ts
 // Interfaces and Helpers
-import { getGoBackLinkID } from '@/utils/helpers/getGoBackLink'
-import { HeaderSectionProps } from '@/utils/interfaces/componentProps'
-import { NavigationDirectionEnum } from '@/utils/interfaces/enums'
+import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
+import { HeaderSectionProps } from '@/lib/utils/interfaces/componentProps'
+import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 ```
 
 ```ts

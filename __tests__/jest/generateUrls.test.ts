@@ -1,5 +1,5 @@
-import { URL_PERSONAL_PROJECTS } from '@/utils/constants/urls/pageUrls'
-import { getUrlPersonalProject, getUrlWorkExperience } from '@/utils/helpers/getPageUrls'
+import { URL_PERSONAL_PROJECTS } from '@/lib/utils/constants/urls/pageUrls'
+import { getUrlPersonalProject, getUrlWorkExperience } from '@/lib/utils/helpers/getPageUrls'
 
 describe('getUrlWorkExperience', () => {
   it('should return the correct URL for a given company', () => {

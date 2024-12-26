@@ -2,9 +2,9 @@ import { ReactNode } from 'react'
 
 import ProjectPageLayout from '@/components/layout/project-page/ProjectPageLayout'
 
-import { GoBackLinkEnum } from '@/utils/interfaces/enums'
-import { Project, Section } from '@/utils/interfaces/interfaces'
-import { BreadCrumbsType } from '@/utils/interfaces/types'
+import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
+import { Project, Section } from '@/lib/utils/interfaces/interfaces'
+import { BreadCrumbsType } from '@/lib/utils/interfaces/types'
 
 type ProjectPageLayoutWrapperProps = {
   breadCrumbs: BreadCrumbsType

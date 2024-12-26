@@ -1,4 +1,4 @@
-import { getCurrentYear } from '@/utils/helpers/getCurrentYear'
+import { getCurrentYear } from '@/lib/utils/helpers/getCurrentYear'
 
 describe('getCurrentYear', () => {
   it('should return the current year', () => {

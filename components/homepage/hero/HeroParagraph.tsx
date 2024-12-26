@@ -1,5 +1,5 @@
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 
 const HeroParagraph = () => {
   return (

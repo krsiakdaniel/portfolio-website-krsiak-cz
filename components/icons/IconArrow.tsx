@@ -1,4 +1,4 @@
-import { NavigationDirectionEnum } from '@/utils/interfaces/enums'
+import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 
 type IconArrowProps = {
   type: NavigationDirectionEnum
