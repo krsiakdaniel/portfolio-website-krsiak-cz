@@ -1,11 +1,7 @@
 import { expect, test } from '@playwright/test'
 
-import { TEXT } from '@/localization/english'
-
 const STATUS_BADGE_SELECTOR = 'img'
 
-// TODO: rethink this, does not make sense to use constants in tests for TEXT, check all tests in separate PR
-// FIXME: if user makes mistake in localization, that is also in test and shows true but is error in reality
 test.describe('Status Page', () => {
   test('Page title and status badges', async ({ page }) => {
     await test.step('Go to status page', async () => {
@@ -14,7 +10,7 @@ test.describe('Status Page', () => {
 
     await test.step('Check if the page title is correct', async () => {
       const title = await page.textContent('h1')
-      expect(title).toBe(TEXT.statusPage)
+      expect(title).toBe('🚦 Status Page')
     })
 
     await test.step('Check if all status badges are present', async () => {

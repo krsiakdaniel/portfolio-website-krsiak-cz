@@ -1,14 +1,12 @@
 import { expect, test } from '@playwright/test'
 
 import { getDataTestId } from '@/__tests__/playwright/utils/helpers/getDataTestId'
-import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 test.describe('Header - Desktop Menu - Personal Projects Link', () => {
   test('should navigate to Personal Projects page correctly', async ({ page }) => {
     await test.step('Go to home page', async () => {
-      await page.goto(PAGES_URL.home)
+      await page.goto('/')
     })
 
     await test.step('Check if the link is visible', async () => {
@@ -24,7 +22,7 @@ test.describe('Header - Desktop Menu - Personal Projects Link', () => {
 
     await test.step('Check if the H1 heading on the final page has the text "Personal Projects"', async () => {
       const heading = await page.textContent('h1')
-      expect(heading).toBe(TEXT.personalProjects)
+      expect(heading).toBe('🚀 Personal Projects')
     })
   })
 })

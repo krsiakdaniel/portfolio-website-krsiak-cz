@@ -1,7 +1,6 @@
 import { Browser, BrowserContext, Page, chromium, expect, test } from '@playwright/test'
 
 import { getDataTestId } from '@/__tests__/playwright/utils/helpers/getDataTestId'
-import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 
 let browser: Browser
@@ -29,12 +28,12 @@ test.afterEach(async () => {
 test.describe('Hero - Heading and texts', () => {
   test('should render the h1 heading correctly', async () => {
     const h1Text = await page.textContent(getDataTestId(DATA_TEST_IDS.hero.heading))
-    expect(h1Text).toContain(TEXT.nameDanielKrsiak)
-    expect(h1Text).toContain(TEXT.reactDeveloper)
+    expect(h1Text).toContain('Daniel Kršiak')
+    expect(h1Text).toContain('React Developer')
   })
 
   test('should render the paragraphs correctly', async () => {
     const paragraph1Text = await page.textContent(getDataTestId(DATA_TEST_IDS.hero.paragraph))
-    expect(paragraph1Text).toContain(TEXT.heroText)
+    expect(paragraph1Text).toContain('Hi 👋 I am React Developer based in Brno, Czech\u00A0Republic 🇨🇿')
   })
 })

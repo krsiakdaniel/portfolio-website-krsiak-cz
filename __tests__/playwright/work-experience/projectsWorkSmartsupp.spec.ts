@@ -1,11 +1,9 @@
 import { expect, test } from '@playwright/test'
 
-import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
-
 test.describe('Projects Work - Smartsupp', () => {
   test('Dashboard - Link', async ({ page }) => {
     await test.step('Go to Dashboard page', async () => {
-      await page.goto(`${PAGES_URL.work.smartsupp.dashboard}`)
+      await page.goto('/work-experience/smartsupp-dashboard')
     })
 
     await test.step('Check Dashboard Website link', async () => {
@@ -18,7 +16,7 @@ test.describe('Projects Work - Smartsupp', () => {
 
   test('Web - Link', async ({ page }) => {
     await test.step('Go to Web page', async () => {
-      await page.goto(`${PAGES_URL.work.smartsupp.web}`)
+      await page.goto('/work-experience/smartsupp-web')
     })
 
     await test.step('Check Web Website link', async () => {
@@ -31,7 +29,7 @@ test.describe('Projects Work - Smartsupp', () => {
 
   test('HELP - Link', async ({ page }) => {
     await test.step('Go to HELP page', async () => {
-      await page.goto(`${PAGES_URL.work.smartsupp.help}`)
+      await page.goto('/work-experience/smartsupp-help')
     })
 
     await test.step('Check HELP Website link', async () => {

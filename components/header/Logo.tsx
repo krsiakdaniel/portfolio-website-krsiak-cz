@@ -10,7 +10,11 @@ import logo from '@/public/images/webp/logo.webp'
 const Logo = () => {
   return (
     <div>
-      <Link href={PAGES_URL.home} className="group flex flex-row items-center gap-3" data-testid={DATA_TEST_IDS.header}>
+      <Link
+        href={PAGES_URL.home}
+        className="group flex flex-row items-center gap-3"
+        data-testid={DATA_TEST_IDS.headerLogo}
+      >
         <div>
           <Image src={logo} alt="logo" width={32} height={32} loading="eager" />
         </div>
