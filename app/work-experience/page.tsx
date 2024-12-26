@@ -19,30 +19,10 @@ import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { metaDataProjectsOverviewWork } from '@/utils/metadata/pages/metaDataProjectsOverviewWork'
 
 export const metadata: Metadata = {
-  title: `Work Experience | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
-  description:
-    'React Developer with experience development, redesign, localization, QA automation, testing. Proficient in team leadership and collaboration with UX designers.',
-  keywords: [
-    `${TEXT.nameDanielKrsiak}`,
-    `${TEXT.reactDeveloper}`,
-    'Work Experience',
-    'Front End Developer',
-    'QA Automation',
-    'Team Leader',
-    'Localization Manager',
-    'JavaScript',
-    'React',
-    'Redux',
-    'Cypress',
-    'WordPress',
-    'SaaS Company',
-    'Smartsupp',
-    'Komerční banka',
-    'Groupon',
-    'RWS - Moravia IT',
-  ],
+  ...metaDataProjectsOverviewWork,
 }
 
 const ProjectsWork = () => {

@@ -13,30 +13,10 @@ import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsWork } from '@/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/utils/interfaces/enums'
+import { metaDataGroupon } from '@/utils/metadata/projects/work/metaDataGroupon'
 
 export const metadata: Metadata = {
-  title: `Groupon | ${TEXT.nameDanielKrsiak} - QA Automation Team Leader`,
-  description:
-    'QA Automation SDET - Team Lead at Groupon. Responsible for new QA team, hiring, coordinating testing for online marketplace with 17 million customers.',
-  keywords: [
-    `${TEXT.nameDanielKrsiak}`,
-    'Groupon',
-    'SDET',
-    'E-Commerce - Marketplace',
-    'QA Automation - Team Leader',
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'Next.js',
-    'Playwright',
-    'Figma',
-    'Storybook',
-    'Jira',
-    'Confluence',
-    'Tempo',
-    'QA',
-    'Team Management',
-  ],
+  ...metaDataGroupon,
 }
 
 const ProjectWorkGroupon = () => {

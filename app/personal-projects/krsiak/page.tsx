@@ -13,25 +13,10 @@ import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsPersonal } from '@/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
 import { GoBackLinkEnum } from '@/utils/interfaces/enums'
+import { metaDataKrsiak } from '@/utils/metadata/projects/personal/metaDataKrsiak'
 
 export const metadata: Metadata = {
-  title: `Portfolio Website | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
-  description:
-    'Portfolio website showcasing my skills. Using Next.js, Tailwind CSS, JavaScript, TypeScript, React, JEST, Playwright, GitHub Actions, and Netlify.',
-  keywords: [
-    'Portfolio Website',
-    `${TEXT.nameDanielKrsiak}`,
-    `${TEXT.reactDeveloper}`,
-    'Next.js',
-    'Tailwind CSS',
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'JEST',
-    'Playwright',
-    'GitHub Actions',
-    'Netlify',
-  ],
+  ...metaDataKrsiak,
 }
 
 const ProjectPersonalKrsiak = () => {

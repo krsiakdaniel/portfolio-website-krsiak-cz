@@ -1,5 +1,3 @@
-import { Metadata } from 'next'
-
 import { ProjectPageLayoutWrapper } from '@/components/layout/project-page/ProjectPageLayoutWrapper'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
@@ -13,23 +11,11 @@ import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsWork } from '@/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/utils/interfaces/enums'
+import { metaDataSmartsuppWeb } from '@/utils/metadata/projects/work/metaDataSmartsuppWeb'
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: `Smartsupp Web | ${TEXT.nameDanielKrsiak} - Front End Developer`,
-  description:
-    'Worked as a Front End Developer at Smartsupp for 1 year. Created company website Front End, collaborated with UX designer on brand theme and layout.',
-  keywords: [
-    `${TEXT.nameDanielKrsiak}`,
-    'Smartsupp Web',
-    'SaaS Company - Website',
-    'Front End Developer',
-    'Company Website Front End',
-    'Documentation Site',
-    'Jekyll',
-    'Markdown',
-    'Shopify Liquid',
-    'VuePress',
-  ],
+  ...metaDataSmartsuppWeb,
 }
 
 const ProjectWorkSmartsuppWeb = () => {

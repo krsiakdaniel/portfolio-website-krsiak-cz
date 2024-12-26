@@ -10,23 +10,10 @@ import { statusBadges } from '@/data/statusPage'
 import { TEXT } from '@/localization/english'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { metaDataStatusPage } from '@/utils/metadata/pages/metaDataStatusPage'
 
 export const metadata: Metadata = {
-  title: `Status page | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
-  description:
-    'Explore status page showcasing project badges for Jest Tests, Playwright Tests, CodeQL, Code Quality, Dependabot, and Netlify.',
-  keywords: [
-    `${TEXT.nameDanielKrsiak}`,
-    `${TEXT.reactDeveloper}`,
-    'Status page',
-    'Project badges',
-    'Jest Tests',
-    'Playwright Tests',
-    'CodeQL',
-    'Code Quality',
-    'Dependabot',
-    'Netlify',
-  ],
+  ...metaDataStatusPage,
 }
 
 const StatusPage = () => {

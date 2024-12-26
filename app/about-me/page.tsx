@@ -11,29 +11,10 @@ import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { metaDataAboutMe } from '@/utils/metadata/pages/metaDataAboutMe'
 
 export const metadata: Metadata = {
-  title: `About | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
-  description:
-    'Experienced React Developer proficient in JavaScript, React, TypeScript, Redux. Also skilled in QA Automation, leading teams, and managing localization projects.',
-  keywords: [
-    `${TEXT.nameDanielKrsiak}`,
-    `${TEXT.reactDeveloper}`,
-    'QA Automation',
-    'Team Leader',
-    'Localization Manager',
-    'JavaScript',
-    'React',
-    'TypeScript',
-    'Redux',
-    'Cypress',
-    'Playwright',
-    'Dashboard application',
-    'Banking website',
-    'SaaS company',
-    'Microsoft Windows',
-    'Localization',
-  ],
+  ...metaDataAboutMe,
 }
 
 // TODO: add E2E tests for inner pages navigation PREV / NEXT for all 'PageNavigation' components

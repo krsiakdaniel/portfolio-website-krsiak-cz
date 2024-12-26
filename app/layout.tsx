@@ -6,34 +6,15 @@ import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
 
 import { TEXT } from '@/localization/english'
+import { metaDataShared } from '@/utils/metadata/metaDataShared'
 
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-// default data for pages with missing metadata
+// default metadata for pages
 export const metadata: Metadata = {
-  title: `${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
-  description:
-    'Experienced React Developer from Brno Czech Republic. JavaScript, TypeScript, React, HTML, CSS, Sass, Tailwind CSS, Redux, GraphQL, Jest, Playwright, and Figma.',
-  keywords: [
-    `${TEXT.nameDanielKrsiak}`,
-    `${TEXT.reactDeveloper}`,
-    'Brno',
-    'Czech Republic',
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'HTML',
-    'CSS',
-    'Sass',
-    'Tailwind CSS',
-    'Redux',
-    'GraphQL',
-    'Jest',
-    'Playwright',
-    'Figma',
-  ],
+  ...metaDataShared,
   creator: `${TEXT.nameDanielKrsiak}`,
   generator: 'Next.js',
   applicationName: 'React - Portfolio website',

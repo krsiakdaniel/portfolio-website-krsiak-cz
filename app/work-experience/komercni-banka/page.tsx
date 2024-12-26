@@ -13,21 +13,10 @@ import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsWork } from '@/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/utils/interfaces/enums'
+import { metaDataKomercniBanka } from '@/utils/metadata/projects/work/metaDataKomercniBanka'
 
 export const metadata: Metadata = {
-  title: `Komerční banka | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
-  description:
-    'Worked as a React Developer at Komerční banka. Developed search page for branches & ATMs, exchange rates. Enhanced UX, improved responsive design across devices.',
-  keywords: [
-    'Komerční banka',
-    'Commerce Bank - Website',
-    'React Developer',
-    'Search Page',
-    'Exchange Rates Page',
-    'Geolocation API',
-    'Google Places Autocomplete API',
-    'Responsive Design',
-  ],
+  ...metaDataKomercniBanka,
 }
 
 const ProjectWorkKomercniBanka = () => {
