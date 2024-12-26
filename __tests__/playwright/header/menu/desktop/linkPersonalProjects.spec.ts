@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test'
 
-import { getDataTestId } from '@/__tests__/playwright/utils/helpers/getDataTestId'
+import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
 import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
 
 test.describe('Header - Desktop Menu - Personal Projects Link', () => {

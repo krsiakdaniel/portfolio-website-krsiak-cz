@@ -1,6 +1,6 @@
 import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
 
-import { testProjectLink } from '@/__tests__/playwright/utils/helpers/testProjectLink'
+import { testProjectLink } from '@/__tests__/playwright/lib/utils/helpers/testProjectLink'
 
 let browser: Browser
 let context: BrowserContext

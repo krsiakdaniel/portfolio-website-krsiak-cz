@@ -1,4 +1,4 @@
-import { ProjectLink } from '@/__tests__/playwright/utils/interfaces/interfaces'
+import { ProjectLink } from '@/__tests__/playwright/lib/utils/interfaces/interfaces'
 
 export const projectLinks: ProjectLink[] = [
   { name: 'Kooperativa', url: '/work-experience/kooperativa', id: 'link-project-work-kooperativa' },

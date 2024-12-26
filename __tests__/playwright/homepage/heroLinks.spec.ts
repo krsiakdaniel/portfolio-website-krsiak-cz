@@ -1,6 +1,6 @@
 import { Browser, BrowserContext, Page, chromium, test } from '@playwright/test'
 
-import { checkLink } from '@/__tests__/playwright/utils/helpers/checkLink'
+import { checkLink } from '@/__tests__/playwright/lib/utils/helpers/checkLink'
 import { DATA_TEST_IDS } from '@/lib/utils/constants/ids/dataTestIds'
 
 let browser: Browser
