@@ -1,4 +1,4 @@
-import { YEARS } from '@/lib/utils/constants/years'
+import { YEARS } from '@/lib/utils/constants/yearsExperience'
 
 import { getSkillsIcons } from '@/lib/utils/helpers/getSkillsIcons'
 import { SkillCard } from '@/lib/utils/interfaces/interfaces'

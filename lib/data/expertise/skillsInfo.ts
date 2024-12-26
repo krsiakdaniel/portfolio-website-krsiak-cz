@@ -1,4 +1,5 @@
-import { YEARS } from '@/lib/utils/constants/years'
+import { YEARS } from '@/lib/utils/constants/yearsExperience'
+
 import { SkillInfo } from '@/lib/utils/interfaces/interfaces'
 
 export const skillsInfo: SkillInfo[] = [

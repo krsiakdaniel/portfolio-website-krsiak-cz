@@ -1,5 +1,7 @@
-import { YEARS } from '@/lib/utils/constants/years'
+import { YEARS } from '@/lib/utils/constants/yearsExperience'
+
 import { Job } from '@/lib/utils/interfaces/interfaces'
+
 import bug from '@/public/icons/svg/about-me/bug.svg'
 import check from '@/public/icons/svg/about-me/check.svg'
 import globe from '@/public/icons/svg/about-me/globe.svg'
