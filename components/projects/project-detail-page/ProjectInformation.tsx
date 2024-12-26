@@ -4,6 +4,7 @@ import SkillsList from '@/components/projects/project-detail-page/SkillsList'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
+import Heading3 from '@/components/shared/Heading3'
 import { Project } from '@/lib/utils/interfaces/interfaces'
 
 type ProjectInformationProps = Pick<
@@ -24,7 +25,7 @@ const ProjectInformation = ({
   return (
     <>
       <div className="mt-16">
-        <h3 className="text-3xl font-bold">Information</h3>
+        <Heading3>Information</Heading3>
         <div className="mt-4">
           {customers && <CustomersCount count={customers} />}
           <List>

@@ -1,4 +1,5 @@
 import Heading2 from '@/components/shared/Heading2'
+import Heading3 from '@/components/shared/Heading3'
 
 type ProjectDetailsProps = {
   title: string
@@ -12,13 +13,13 @@ type ProjectDetailsProps = {
 const ProjectDetails = ({ title, company, role, years, description, customers }: ProjectDetailsProps) => (
   <div>
     <Heading2 textColor="text-neutral-900 mt-8 md:mt-0">{title}</Heading2>
-    <h3 className="text-3xl font-bold">
+    <Heading3>
       <span className="text-violet-600">{role}</span>
       <small className="text-neutral-500">
         {years && ' · '}
         {years}
       </small>
-    </h3>
+    </Heading3>
     <div className="mt-0 text-xl font-semibold text-neutral-500">{company}</div>
     <p className="mt-4 font-light text-neutral-600 md:text-lg">{description}</p>
     {customers && (
