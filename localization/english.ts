@@ -50,6 +50,20 @@ const MISC = {
   skillsIconsNames: `HTML, CSS, Sass, Tailwind CSS, 
     JavaScript, TypeScript, React, Next.js, Redux, GraphQL,
     Jest, Playwright, Figma`,
+  brno: 'Brno',
+  czechRepublic: 'Czech Republic',
+  javaScript: 'JavaScript',
+  typeScript: 'TypeScript',
+  react: 'React',
+  html: 'HTML',
+  css: 'CSS',
+  sass: 'Sass',
+  tailwindCss: 'Tailwind CSS',
+  redux: 'Redux',
+  graphQl: 'GraphQL',
+  jest: 'Jest',
+  playwright: 'Playwright',
+  figma: 'Figma',
 }
 
 export const TEXT = {

@@ -11,29 +11,10 @@ import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { metaDataShared } from '@/utils/metadata/metaDataShared'
 
 export const metadata: Metadata = {
-  title: `${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
-  description:
-    'Experienced React Developer from Brno Czech Republic. JavaScript, TypeScript, React, HTML, CSS, Sass, Tailwind CSS, Redux, GraphQL, Jest, Playwright, and Figma.',
-  keywords: [
-    `${TEXT.nameDanielKrsiak}`,
-    `${TEXT.reactDeveloper}`,
-    'Brno',
-    'Czech Republic',
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'HTML',
-    'CSS',
-    'Sass',
-    'Tailwind CSS',
-    'Redux',
-    'GraphQL',
-    'Jest',
-    'Playwright',
-    'Figma',
-  ],
+  ...metaDataShared,
 }
 
 const Page = () => {

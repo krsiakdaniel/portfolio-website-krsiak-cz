@@ -14,20 +14,10 @@ import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { metaDataProjectsOverviewPersonal } from '@/utils/metadata/pages/metaDataProjectsOverviewPersonal'
 
 export const metadata: Metadata = {
-  title: `Personal Projects | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
-  description:
-    'Explore my projects created with Next.js and React. My portfolio, crypto app, e-commerce site, all showcasing coding skills and trends in web development.',
-  keywords: [
-    `${TEXT.nameDanielKrsiak}`,
-    'Personal Projects',
-    'Next.js',
-    'React',
-    'Web Development',
-    'Portfolio',
-    'Crypto Apps',
-  ],
+  ...metaDataProjectsOverviewPersonal,
 }
 
 const ProjectsPersonal = () => {

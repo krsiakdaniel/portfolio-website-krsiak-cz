@@ -12,39 +12,10 @@ import { DATA_TEST_IDS } from '@/utils/constants/ids/dataTestIds'
 import { ID } from '@/utils/constants/ids/elementIds'
 import { EXTERNAL_URL } from '@/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
+import { metaDataResume } from '@/utils/metadata/pages/metaDataResume'
 
 export const metadata: Metadata = {
-  title: `Resume | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
-  description:
-    'Experienced React Developer proficient in JavaScript, React, TypeScript, Redux. Also skilled in QA Automation, leading teams, and managing localization projects.',
-  keywords: [
-    'Resume',
-    `${TEXT.nameDanielKrsiak}`,
-    `${TEXT.reactDeveloper}`,
-    'QA Automation Specialist',
-    'Team Leader',
-    'Localization Manager',
-    'JavaScript',
-    'React',
-    'TypeScript',
-    'Redux',
-    'Cypress',
-    'Playwright',
-    'Dashboard Application Development',
-    'Banking Website Development',
-    'SaaS Company',
-    'Microsoft Windows',
-    'Localization Expert',
-    'Front-End Development',
-    'Software Testing & Automation',
-    'Agile Methodologies',
-    'UI/UX Development',
-    'Cross-functional Collaboration',
-    'Continuous Integration / Continuous Delivery (CI/CD)',
-    'Version Control (Git)',
-    'Test-Driven Development (TDD)',
-    'Unit & Integration Testing',
-  ],
+  ...metaDataResume,
 }
 
 const Resume = () => {

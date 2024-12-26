@@ -13,25 +13,10 @@ import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsWork } from '@/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/utils/interfaces/enums'
+import { metaDataMoravia } from '@/utils/metadata/projects/work/metaDataMoravia'
 
 export const metadata: Metadata = {
-  title: `RWS - Moravia IT | ${TEXT.nameDanielKrsiak} - QA Automation Team Leader`,
-  description:
-    'QA Automation - Team Leader at Moravia for 1 year. Microsoft projects Windows 8 + Windows Phone, managing translation delivery and ensuring quality.',
-  keywords: [
-    `${TEXT.nameDanielKrsiak}`,
-    'RWS - Moravia IT',
-    'Windows',
-    'QA Automation - Team Leader',
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'Localization',
-    'Quality Checks',
-    'Microsoft Projects',
-    'Windows 8',
-    'Windows Phone',
-  ],
+  ...metaDataMoravia,
 }
 
 const ProjectWorkMoravia = () => {

@@ -1,0 +1,35 @@
+import { TEXT } from '@/localization/english'
+
+export const metaDataResume = {
+  title: `Resume | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
+  description:
+    'Experienced React Developer proficient in JavaScript, React, TypeScript, Redux. Also skilled in QA Automation, leading teams, and managing localization projects.',
+  keywords: [
+    'Resume',
+    `${TEXT.nameDanielKrsiak}`,
+    `${TEXT.reactDeveloper}`,
+    'QA Automation Specialist',
+    'Team Leader',
+    'Localization Manager',
+    'JavaScript',
+    'React',
+    'TypeScript',
+    'Redux',
+    'Cypress',
+    'Playwright',
+    'Dashboard Application Development',
+    'Banking Website Development',
+    'SaaS Company',
+    'Microsoft Windows',
+    'Localization Expert',
+    'Front-End Development',
+    'Software Testing & Automation',
+    'Agile Methodologies',
+    'UI/UX Development',
+    'Cross-functional Collaboration',
+    'Continuous Integration / Continuous Delivery (CI/CD)',
+    'Version Control (Git)',
+    'Test-Driven Development (TDD)',
+    'Unit & Integration Testing',
+  ],
+}

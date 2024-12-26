@@ -13,24 +13,10 @@ import { PAGES_URL } from '@/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsWork } from '@/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/utils/interfaces/enums'
+import { metaDataKooperativa } from '@/utils/metadata/projects/work/metaDataKooperativa'
 
 export const metadata: Metadata = {
-  title: `Kooperativa | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
-  description: 'I worked on an application for managing insurance policies for citizens property and products.',
-  keywords: [
-    `${TEXT.nameDanielKrsiak}`,
-    `${TEXT.reactDeveloper}`,
-    'Kooperativa',
-    'Insurance company app',
-    'React Developer',
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'Redux',
-    'Tailwind CSS',
-    'Figma',
-    'Storybook',
-  ],
+  ...metaDataKooperativa,
 }
 
 const ProjectWorkKooperativa = () => {
