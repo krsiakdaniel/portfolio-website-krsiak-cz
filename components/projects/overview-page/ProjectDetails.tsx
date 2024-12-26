@@ -12,7 +12,10 @@ type ProjectDetailsProps = {
 
 const ProjectDetails = ({ title, company, role, years, description, customers }: ProjectDetailsProps) => (
   <div>
-    <Heading2 textColor="text-neutral-900 mt-8 md:mt-0">{title}</Heading2>
+    <Heading2 textColor="text-neutral-900" customCss="mt-8 md:mt-0">
+      {title}
+    </Heading2>
+
     <Heading3>
       <span className="text-violet-600">{role}</span>
       <small className="text-neutral-500">
@@ -20,7 +23,9 @@ const ProjectDetails = ({ title, company, role, years, description, customers }:
         {years}
       </small>
     </Heading3>
+
     <div className="mt-0 text-xl font-semibold text-neutral-500">{company}</div>
+
     <p className="mt-4 font-light text-neutral-600 md:text-lg">{description}</p>
     {customers && (
       <p className="mt-4 font-light text-neutral-600 md:text-lg">
