@@ -67,11 +67,8 @@ const ProjectPageLayout = ({
         projectLinks={projectLinks}
         linkGitHub={linkGitHub}
       />
-
       <ProjectResponsibility sections={sections} />
-
       <Gallery imageShowcase={imageShowcase} />
-
       {PageNavigation}
     </PageContainer>
   )

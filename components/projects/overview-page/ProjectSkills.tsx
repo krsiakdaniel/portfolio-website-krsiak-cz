@@ -7,9 +7,9 @@ type ProjectSkillsProps = {
 }
 
 const ProjectSkills = ({ mySkillsIcons }: ProjectSkillsProps) => (
-  <div className="mb-6 flex flex-wrap">
+  <div className="mt-2 flex flex-wrap lg:mt-4">
     {mySkillsIcons.map((item) => (
-      <Image key={item.name} src={item.path} alt={item.name} className="mb-2 mr-2 lg:mb-0" width={32} height={32} />
+      <Image key={item.name} src={item.path} alt={item.name} className="mr-2 mt-2 lg:mt-0" width={32} height={32} />
     ))}
   </div>
 )

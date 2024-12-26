@@ -23,22 +23,28 @@ const ProjectInformation = ({
 
   return (
     <>
-      <div className="mt-8">
-        <h3 className="mb-4 text-3xl font-bold">Information</h3>
-        {customers && <CustomersCount count={customers} />}
-        <List>
-          <ListItem>{description}</ListItem>
-        </List>
+      <div className="mt-16">
+        <h3 className="text-3xl font-bold">Information</h3>
+        <div className="mt-4">
+          {customers && <CustomersCount count={customers} />}
+          <List>
+            <ListItem>{description}</ListItem>
+          </List>
+        </div>
       </div>
 
       <div className="mt-8">
-        <h3 className="mb-4 text-3xl font-bold">Skills</h3>
-        <SkillsList skillsOverview={skillsOverview} />
+        <h3 className="text-3xl font-bold">Skills</h3>
+        <div className="mt-4">
+          <SkillsList skillsOverview={skillsOverview} />
+        </div>
       </div>
 
       <div className="mt-8">
-        <h3 className="mb-4 text-3xl font-bold">{hasMoreLinks || hasGithub ? 'Links' : 'Link'}</h3>
-        <ProjectLinksList projectLinks={projectLinks} linkGitHub={linkGitHub} />
+        <h3 className="text-3xl font-bold">{hasMoreLinks || hasGithub ? 'Links' : 'Link'}</h3>
+        <div className="mt-4">
+          <ProjectLinksList projectLinks={projectLinks} linkGitHub={linkGitHub} />
+        </div>
       </div>
     </>
   )

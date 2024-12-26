@@ -10,12 +10,12 @@ type JobItemProps = {
 
 const JobItem = ({ path, title, description, years }: JobItemProps) => {
   return (
-    <li className="mb-10 ms-6 last:mb-0">
+    <li className="ms-6 mt-10 first:mt-0">
       <JobIcon path={path} title={title} />
 
       <Heading2
         textColor="text-neutral-900"
-        customCss="mb-1 ml-4 flex flex-col items-start text-3xl font-bold text-neutral-900 lg:flex-row"
+        customCss="ml-4 flex flex-col items-start text-3xl font-bold text-neutral-900 lg:flex-row"
       >
         {title}
         <small className="text-md ml-0 inline text-neutral-500 lg:ml-1">
@@ -24,7 +24,7 @@ const JobItem = ({ path, title, description, years }: JobItemProps) => {
         </small>
       </Heading2>
 
-      <p className="mb-4 ml-4 text-base font-normal text-neutral-500 last:mb-2">{description}</p>
+      <p className="ml-4 mt-4 text-base font-normal text-neutral-500">{description}</p>
     </li>
   )
 }
