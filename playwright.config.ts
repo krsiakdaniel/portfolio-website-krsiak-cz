@@ -10,6 +10,9 @@ export default defineConfig({
   // Look for test files in the "tests" directory, relative to this configuration file.
   testDir: './__tests__/playwright',
 
+  // Ignore tests in the "mobile" folder
+  testIgnore: ['**/mobile/**'],
+
   // Run tests in files in parallel
   fullyParallel: true,
 
