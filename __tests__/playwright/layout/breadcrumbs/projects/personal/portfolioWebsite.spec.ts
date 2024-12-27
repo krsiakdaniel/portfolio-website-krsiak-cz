@@ -1,7 +1,6 @@
 import { expect, test } from '@playwright/test'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
+import { getBreadcrumbsLocator } from '@/__tests__/playwright/lib/utils/helpers/breadcrumbsHelper'
 
 test.describe('Links', () => {
   test('should navigate correctly', async ({ page }) => {
@@ -9,7 +8,7 @@ test.describe('Links', () => {
       await page.goto('personal-projects/krsiak')
     })
 
-    const breadcrumbs = page.locator(getDataTestId(DATA_TEST_IDS.breadcrumbs))
+    const breadcrumbs = getBreadcrumbsLocator(page)
 
     await test.step('Check the Home link', async () => {
       const homeLink = breadcrumbs.locator('a[href="/"]')

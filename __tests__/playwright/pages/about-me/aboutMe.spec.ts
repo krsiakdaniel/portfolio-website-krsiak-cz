@@ -4,7 +4,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
 
 test.describe('About Me Page - Tests', () => {
-  test('Heading + text', async ({ page }) => {
+  test('Heading + paragraph text', async ({ page }) => {
     await test.step('Go to page About me', async () => {
       await page.goto('/about-me')
     })
