@@ -34,7 +34,7 @@ const FOOTER = {
 
 const MENU = {
   mobile: {
-    component: 'menu-mobile',
+    componentMenu: 'menu-mobile',
     links: {
       aboutMe: 'mobile-about-me-link',
       resume: 'mobile-resume-link',
@@ -43,7 +43,7 @@ const MENU = {
     },
   },
   desktop: {
-    component: 'menu-desktop',
+    componentMenu: 'menu-desktop',
     links: {
       aboutMe: 'desktop-about-me-link',
       resume: 'desktop-resume-link',

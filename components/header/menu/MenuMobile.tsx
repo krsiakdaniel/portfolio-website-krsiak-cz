@@ -7,7 +7,11 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 const MenuMobile = () => {
   return (
-    <ul className="mt-2 flex flex-col lg:hidden" id={ID.menu.mobile} data-testid={DATA_TEST_IDS.menu.mobile.component}>
+    <ul
+      className="mt-2 flex flex-col lg:hidden"
+      id={ID.menu.mobile}
+      data-testid={DATA_TEST_IDS.menu.mobile.componentMenu}
+    >
       {menuMobileLinks.map((link) => (
         <li key={link.id}>
           <Link
