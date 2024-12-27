@@ -30,13 +30,13 @@ ImgBot:
   - head-branch: ['^imgbot', 'imgbot', '.*imgbot.*']
 
 Localization:
-  - head-branch: ['^loc', 'loc', '.*loc.*']
+  - head-branch: ['^loc', 'loc', '.*loc.*', '^localization', 'localization', '.*localization.*']
 
 Performance:
   - head-branch: ['^perf', 'perf', '.*perf.*']
 
 Refactor:
-  - head-branch: ['^refactor', 'refactor', '.*refactor.*', '^ref', 'ref', '.*ref.*']
+  - head-branch: ['^ref', 'ref', '.*ref.*', ^refactor', 'refactor', '.*refactor.*']
 
 Revert:
   - head-branch: ['^revert', 'revert', '.*revert.*']
@@ -45,7 +45,7 @@ Style:
   - head-branch: ['^style', 'style', '.*style.*']
 
 Test - JEST:
-  - head-branch: ['.*jest.*']
+  - head-branch: ['^jest', 'jest', '.*jest.*', '^unit', 'unit', '.*unit.*']
 
 Test - Playwright:
-  - head-branch: ['.*playwright.*', '.*e2e.*']
+  - head-branch: ['^playwright', 'playwright', '.*playwright.*', '^e2e', 'e2e', '.*e2e.*']
