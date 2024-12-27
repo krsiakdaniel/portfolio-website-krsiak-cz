@@ -1,20 +1,24 @@
 'use client' // Error components must be Client Components
 
-import { ErrorPageLayout } from '@/components/layout/ErrorPageLayout'
+import ErrorPageLayout from '@/components/layout/errors/ErrorPageLayout'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { TEXT } from '@/localization/english'
 
-import { ErrorProps } from '@/lib/utils/interfaces/componentProps'
+import { Errors } from '@/lib/utils/interfaces/interfaces'
 
-export default function Error({ error, reset }: ErrorProps) {
+type ErrorProps = Errors
+
+const Error = ({ error }: ErrorProps) => {
   return (
     <ErrorPageLayout
       error={error}
-      reset={reset}
       pageContainerId={ID.error.errGeneral}
-      imgAlt="error"
-      textMain="Sorry, something got tangled up."
-      textSmall="Too many yarns, not enough time!"
+      imgAlt={TEXT.error}
+      description={TEXT.errorDescription}
+      note={TEXT.errorNote}
     />
   )
 }
+
+export default Error

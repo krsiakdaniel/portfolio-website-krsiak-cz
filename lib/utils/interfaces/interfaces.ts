@@ -105,3 +105,8 @@ export interface WebsiteLinkItem {
   testId: string
   id: string
 }
+
+// error pages
+export interface Errors {
+  error: Error
+}
