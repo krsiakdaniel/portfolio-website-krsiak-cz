@@ -1,20 +1,24 @@
 'use client' // Error components must be Client Components
 
-import { ErrorPageLayout } from '@/components/layout/ErrorPageLayout'
+import ErrorPageLayout from '@/components/layout/errors/ErrorPageLayout'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { TEXT } from '@/localization/english'
 
-import { ErrorProps } from '@/lib/utils/interfaces/componentProps'
+import { Errors } from '@/lib/utils/interfaces/interfaces'
 
-export default function GlobalError({ error, reset }: ErrorProps) {
+type ErrorProps = Errors
+
+const GlobalError = ({ error }: ErrorProps) => {
   return (
     <ErrorPageLayout
       error={error}
-      reset={reset}
       pageContainerId={ID.error.errGlobal}
-      imgAlt="error-global"
-      textMain="The page you requested could not be found."
-      textSmall="It looks like we are fresh out of yarn!"
+      imgAlt={TEXT.errorGlobalAlt}
+      description={TEXT.errorGlobalDescription}
+      note={TEXT.errorGlobalNote}
     />
   )
 }
+
+export default GlobalError

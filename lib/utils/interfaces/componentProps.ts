@@ -8,9 +8,3 @@ export type HeaderSectionProps = {
   company?: string
   goBackLink: GoBackLinkEnum
 }
-
-// error pages
-export type ErrorProps = {
-  error: Error & { digest?: string }
-  reset: () => void
-}

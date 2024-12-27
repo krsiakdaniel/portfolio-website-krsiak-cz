@@ -66,6 +66,22 @@ const MISC = {
   figma: 'Figma',
 }
 
+const ERROR = {
+  error404: '404',
+  error404Description: "Sorry, we can't find that page.",
+  error404Note: 'It looks like we are fresh out of yarn!',
+  errorGlobalDescription: '',
+  errorGlobalNote: 'It looks like we are fresh out of yarn!',
+  errorGlobalAlt: 'error-global',
+  errorDescription: 'The page you requested could not be found.',
+  errorNote: 'Too many yarns, not enough time!',
+  error: 'Error',
+  tryAgain: 'Try again',
+  mainText: "Sorry, we can't find that page.",
+  smallText: 'It looks like we are fresh out of yarn!',
+  backToHome: 'Back to Homepage',
+}
+
 export const TEXT = {
   ...ABOUT,
   ...RESUME,
@@ -75,4 +91,5 @@ export const TEXT = {
   ...WORK,
   ...MISC,
   ...STATUS_PAGE,
+  ...ERROR,
 }
