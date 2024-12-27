@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
 
-test.describe('Footer - Copy', () => {
+test.describe('Footer - Copyright', () => {
   test('Copyright', async ({ page }) => {
     await test.step('Go to home page', async () => {
       await page.goto('/')
