@@ -48,5 +48,12 @@ test.describe('Project - Komercni Banka', () => {
       const expectedUrl3 = 'https://www.kb.cz/en/exchange-rates'
       expect(href3).toBe(expectedUrl3)
     })
+
+    await test.step('Check Exchange Rates - Details', async () => {
+      const link4 = page.getByRole('link', { name: 'Exchange Rates - Details', exact: true })
+      const href4 = await link4.getAttribute('href')
+      const expectedUrl4 = 'https://www.kb.cz/en/exchange-rates/exchange-detail?curr=CHF&date=2024-12-27T07:00:00'
+      expect(href4).toBe(expectedUrl4)
+    })
   })
 })

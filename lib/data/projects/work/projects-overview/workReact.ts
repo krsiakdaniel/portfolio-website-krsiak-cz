@@ -104,7 +104,7 @@ export const projectsWorkReact: Project[] = [
       },
       {
         urlText: 'Exchange Rates - Details',
-        url: 'https://www.kb.cz/en/exchange-rates/exchange-detail?curr=USD&date=2024-02-27T18:00:00',
+        url: 'https://www.kb.cz/en/exchange-rates/exchange-detail?curr=CHF&date=2024-12-27T07:00:00',
       },
     ],
     customers: '2 000 000+',
