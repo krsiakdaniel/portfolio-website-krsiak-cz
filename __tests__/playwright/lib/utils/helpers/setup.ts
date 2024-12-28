@@ -1,10 +1,6 @@
-import { Browser, BrowserContext, chromium, Page } from '@playwright/test'
+import { BrowserContext, chromium, Page } from '@playwright/test'
 
-interface BrowserSetup {
-  browser: Browser
-  context: BrowserContext
-  page: Page
-}
+import { BrowserSetup } from '@/__tests__/playwright/lib/utils/interfaces/interfaces'
 
 /**
  * Function to setup the browser, context, and page.
