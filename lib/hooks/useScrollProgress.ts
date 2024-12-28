@@ -1,6 +1,12 @@
 import { useEffect, useState } from 'react'
 
-export const useScrollProgress = () => {
+/**
+ * Custom hook to track the scroll progress of the page.
+ *
+ * @returns {number} - The scroll progress as a percentage.
+ */
+
+export const useScrollProgress = (): number => {
   const [scroll, setScroll] = useState(0)
 
   const pageScrollProgress = () => {
