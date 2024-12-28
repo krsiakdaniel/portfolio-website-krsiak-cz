@@ -26,3 +26,13 @@ export const setupPage = async (context: BrowserContext, url: string): Promise<P
   await page.goto(url)
   return page
 }
+
+/**
+ * Function to teardown the browser context.
+ * @param {BrowserContext} context - The browser context to close.
+ * @returns {Promise<void>} - A promise that resolves when the context is closed.
+ */
+
+export const teardownContext = async (context: BrowserContext): Promise<void> => {
+  await context.close()
+}
