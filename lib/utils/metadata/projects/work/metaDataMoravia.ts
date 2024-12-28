@@ -1,21 +1,7 @@
-import { TEXT } from '@/localization/english'
+import { META_MORAVIA } from '@/localization/english'
 
 export const metaDataMoravia = {
-  title: `RWS - Moravia IT | ${TEXT.nameDanielKrsiak} - QA Automation Team Leader`,
-  description:
-    'QA Automation - Team Leader at Moravia for 1 year. Microsoft projects Windows 8 + Windows Phone, managing translation delivery and ensuring quality.',
-  keywords: [
-    `${TEXT.nameDanielKrsiak}`,
-    'RWS - Moravia IT',
-    'Windows',
-    'QA Automation - Team Leader',
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'Localization',
-    'Quality Checks',
-    'Microsoft Projects',
-    'Windows 8',
-    'Windows Phone',
-  ],
+  title: META_MORAVIA.title,
+  description: META_MORAVIA.description,
+  keywords: Object.values(META_MORAVIA.keywords),
 }

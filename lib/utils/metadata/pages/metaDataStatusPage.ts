@@ -1,19 +1,7 @@
-import { TEXT } from '@/localization/english'
+import { META_STATUS_PAGE } from '@/localization/english'
 
 export const metaDataStatusPage = {
-  title: `Status page | ${TEXT.nameDanielKrsiak} - ${TEXT.reactDeveloper}`,
-  description:
-    'Explore status page showcasing project badges for Jest Tests, Playwright Tests, CodeQL, Code Quality, Dependabot, and Netlify.',
-  keywords: [
-    `${TEXT.nameDanielKrsiak}`,
-    `${TEXT.reactDeveloper}`,
-    'Status page',
-    'Project badges',
-    'Jest Tests',
-    'Playwright Tests',
-    'CodeQL',
-    'Code Quality',
-    'Dependabot',
-    'Netlify',
-  ],
+  title: META_STATUS_PAGE.title,
+  description: META_STATUS_PAGE.description,
+  keywords: Object.values(META_STATUS_PAGE.keywords),
 }
