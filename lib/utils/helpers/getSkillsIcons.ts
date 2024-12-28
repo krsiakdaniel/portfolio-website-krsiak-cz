@@ -1,4 +1,3 @@
-// Import interface
 import { Icon } from '@/lib/utils/interfaces/interfaces'
 
 // Import SVG icons
@@ -50,7 +49,12 @@ export type SkillKeys =
   | 'wordpress'
   | 'xd'
 
-// Map skill keys to their respective icons
+/**
+ * Map skill keys to their respective icons.
+ *
+ * @type {Record<SkillKeys, string>}
+ */
+
 export const skillIcons: Record<SkillKeys, string> = {
   chakra,
   css,
@@ -76,7 +80,13 @@ export const skillIcons: Record<SkillKeys, string> = {
   xd,
 }
 
-// Get relevant icons
+/**
+ * Get relevant icons for the given skills.
+ *
+ * @param {SkillKeys[]} skills - The array of skill keys.
+ * @returns {Icon[]} - The array of icons corresponding to the skill keys.
+ */
+
 export function getSkillsIcons(skills: SkillKeys[]): Icon[] {
   return skills.map((skill) => ({
     name: skill,

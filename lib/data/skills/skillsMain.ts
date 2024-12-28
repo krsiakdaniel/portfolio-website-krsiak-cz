@@ -1,7 +1,7 @@
 import { YEARS } from '@/lib/utils/constants/yearsExperience'
 
 import { getSkillsIcons } from '@/lib/utils/helpers/getSkillsIcons'
-import { SkillCard } from '@/lib/utils/interfaces/interfaces'
+import { Icon, SkillCard } from '@/lib/utils/interfaces/interfaces'
 
 import js from '@/public/icons/svg/skills/js.svg'
 import next from '@/public/icons/svg/skills/next.svg'
@@ -10,10 +10,10 @@ import redux from '@/public/icons/svg/skills/redux.svg'
 import tailwind from '@/public/icons/svg/skills/tailwind.svg'
 import ts from '@/public/icons/svg/skills/ts.svg'
 
-export const iconsSkills1 = getSkillsIcons(['html', 'css', 'scss', 'tailwind'])
-export const iconsSkills2 = getSkillsIcons(['js', 'ts', 'react', 'next'])
-export const iconsSkills3 = getSkillsIcons(['redux', 'graphql', 'jest', 'playwright'])
-export const iconsSkills4 = getSkillsIcons(['figma'])
+export const iconsSkills1: Icon[] = getSkillsIcons(['html', 'css', 'scss', 'tailwind'])
+export const iconsSkills2: Icon[] = getSkillsIcons(['js', 'ts', 'react', 'next'])
+export const iconsSkills3: Icon[] = getSkillsIcons(['redux', 'graphql', 'jest', 'playwright'])
+export const iconsSkills4: Icon[] = getSkillsIcons(['figma'])
 
 export const skills: SkillCard[] = [
   {

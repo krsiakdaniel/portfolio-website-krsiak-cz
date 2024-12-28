@@ -1,15 +1,12 @@
-import { Browser, BrowserContext, chromium, Page } from '@playwright/test'
+import { BrowserContext, chromium, Page } from '@playwright/test'
 
-interface BrowserSetup {
-  browser: Browser
-  context: BrowserContext
-  page: Page
-}
+import { BrowserSetup } from '@/__tests__/playwright/lib/utils/interfaces/interfaces'
 
 /**
  * Function to setup the browser, context, and page.
  * @returns {Promise<BrowserSetup>} - The browser, context, and page setup.
  */
+
 export const setupBrowser = async (): Promise<BrowserSetup> => {
   const browser = await chromium.launch()
   const context = await browser.newContext()
@@ -23,6 +20,7 @@ export const setupBrowser = async (): Promise<BrowserSetup> => {
  * @param {string} url - The URL to navigate to.
  * @returns {Promise<Page>} - The setup page.
  */
+
 export const setupPage = async (context: BrowserContext, url: string): Promise<Page> => {
   const page = await context.newPage()
   await page.goto(url)
@@ -34,6 +32,7 @@ export const setupPage = async (context: BrowserContext, url: string): Promise<P
  * @param {BrowserContext} context - The browser context to close.
  * @returns {Promise<void>} - A promise that resolves when the context is closed.
  */
+
 export const teardownContext = async (context: BrowserContext): Promise<void> => {
   await context.close()
 }
