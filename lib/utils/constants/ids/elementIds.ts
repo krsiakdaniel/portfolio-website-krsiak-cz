@@ -28,4 +28,10 @@ export const ID = {
     toggle: 'menu-toggle',
   },
   statusPage: 'status-page',
+  websiteLink: {
+    aboutMe: 'about-me',
+    resume: 'resume',
+    workExperience: 'work-experience',
+    personalProjects: 'personal-projects',
+  }
 }
