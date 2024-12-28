@@ -6,12 +6,12 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { Project } from '@/lib/utils/interfaces/interfaces'
 
 // project images
-import cryptomania4 from '@/public/images/projects/personal/cryptomania/cryptomania-1-dark.png'
-import cryptomania1 from '@/public/images/projects/personal/cryptomania/cryptomania-1-light.png'
-import cryptomania5 from '@/public/images/projects/personal/cryptomania/cryptomania-2-dark.png'
-import cryptomania2 from '@/public/images/projects/personal/cryptomania/cryptomania-2-light.png'
-import cryptomania6 from '@/public/images/projects/personal/cryptomania/cryptomania-3-dark.png'
-import cryptomania3 from '@/public/images/projects/personal/cryptomania/cryptomania-3-light.png'
+import cryptomania4 from '@/public/images/projects/personal/cryptomania/cryptomania-1-dark.webp'
+import cryptomania1 from '@/public/images/projects/personal/cryptomania/cryptomania-1-light.webp'
+import cryptomania5 from '@/public/images/projects/personal/cryptomania/cryptomania-2-dark.webp'
+import cryptomania2 from '@/public/images/projects/personal/cryptomania/cryptomania-2-light.webp'
+import cryptomania6 from '@/public/images/projects/personal/cryptomania/cryptomania-3-dark.webp'
+import cryptomania3 from '@/public/images/projects/personal/cryptomania/cryptomania-3-light.webp'
 import cryptomaniaThumb from '@/public/images/projects/personal/cryptomania/cryptomania-thumb-light-600.webp'
 
 export const projectsPersonalReact: Project[] = [
