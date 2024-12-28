@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   ...metaDataAboutMe,
 }
 
-// TODO: add E2E tests for inner pages navigation PREV / NEXT for all 'PageNavigation' components
 const About = () => {
   return (
     <PageContainer id={ID.about}>

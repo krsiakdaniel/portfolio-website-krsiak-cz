@@ -138,6 +138,15 @@ const PROJECTS = {
   work: WORK_PROJECTS,
 }
 
+const WEBSITE_LINKS = {
+  aboutMe: 'about-me-link',
+  resume: 'resume-link',
+  workExperience: 'work-experience-link',
+  personalProjects: 'personal-projects-link',
+}
+
+const MISC = {}
+
 export const DATA_TEST_IDS = {
   breadcrumbs: 'breadcrumbs',
   gallery: 'gallery',
@@ -147,4 +156,5 @@ export const DATA_TEST_IDS = {
   hero: HERO,
   page: PAGE,
   projects: PROJECTS,
+  websiteLinks: WEBSITE_LINKS,
 }
