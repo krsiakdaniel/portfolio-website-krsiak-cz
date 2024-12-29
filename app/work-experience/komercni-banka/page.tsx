@@ -26,7 +26,7 @@ const ProjectWorkKomercniBanka = () => {
       pageID={PAGES_URL.work.komercniBanka}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.react}
-      projectData={projectsWorkReact[1]}
+      projectData={projectsWorkReact[2]}
       sections={sections}
       PageNavigation={
         <PageNavigation

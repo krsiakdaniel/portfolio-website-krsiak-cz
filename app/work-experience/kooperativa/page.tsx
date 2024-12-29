@@ -26,7 +26,7 @@ const ProjectWorkKooperativa = () => {
       pageID={PAGES_URL.work.kooperativa}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.react}
-      projectData={projectsWorkReact[2]}
+      projectData={projectsWorkReact[1]}
       sections={sections}
       PageNavigation={
         <PageNavigation
