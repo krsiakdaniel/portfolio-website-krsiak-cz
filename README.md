@@ -19,6 +19,9 @@ React Developer portfolio website ⚛️ 👨‍💻
   - [🐛 Testing](#-testing)
   - [🚀 CI/CD - Continuous Integration / Deployment](#-cicd---continuous-integration--deployment)
   - [🔒 Security](#-security)
+  - [📱 WPA - Web Progressive App](#-wpa---web-progressive-app)
+    - [Installation](#installation)
+    - [WPA on Mac Desktop](#wpa-on-mac-desktop)
   - [🖼️ Screenshots](#️-screenshots)
 
 ---
@@ -147,6 +150,22 @@ The website contains these following sections and pages.
 ## 🔒 Security
 
 [README-security.md](README-security.md)
+
+## 📱 WPA - Web Progressive App
+
+The portfolio website is also available as a Web Progressive App (WPA). This allows users to install the website on their devices and access it like a native app.
+
+### Installation
+
+You can install the WPA from the browser (example from Edge).
+
+![WPA Installation in Edge](/readme-images/wpa-installation-in-edge.png)
+
+### WPA on Mac Desktop
+
+Once installed, the WPA can be accessed from desktop (example from Mac).
+
+![WPA on Mac Desktop](/readme-images/wpa-640x480.png)
 
 ## 🖼️ Screenshots
 
