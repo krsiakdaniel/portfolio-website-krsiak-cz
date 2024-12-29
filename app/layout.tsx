@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Head from 'next/head'
 import { ReactNode } from 'react'
 
 import Footer from '@/components/footer/Footer'
@@ -35,8 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <head>
         <meta name="theme-color" content="#ECF0F1" />
         <link rel="apple-touch-icon" sizes="57x57" href="/icons/png/icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/icons/png/icon-60x60.png" />
@@ -48,7 +46,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="152x152" href="/icons/png/icon-152x152.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/png/icon-180x180.png" />
         <link rel="apple-touch-icon" sizes="192x192" href="/icons/png/icon-192x192.png" />
-      </Head>
+      </head>
       <body className={inter.className}>
         <Header />
         <div>
