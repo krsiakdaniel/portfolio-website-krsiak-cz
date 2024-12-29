@@ -1,13 +1,19 @@
-import withPWA from 'next-pwa'
+import withPWAInit from '@ducanh2912/next-pwa'
 
-const nextConfig = withPWA({
-  dest: 'public', // Output directory for service worker and precache files
-  disable: process.env.NODE_ENV === 'development', // Disable PWA in development mode
+// Config for PWA
+const withPWA = withPWAInit({
+  dest: 'public', // Output directory for service worker and precache files (relative to Next.js root directory).
+  disable: false, // Disable PWA in certain environments if needed (development, staging, ...).
+  cacheOnFrontendNav: true, // Enable additional route caching when users navigate through pages with next/link.
+  aggressiveFrontEndNavCaching: true, // Cache every <link rel="stylesheet" /> and <script /> on frontend navigation.
+  reloadOnOnline: true, // Reload the app when it has gone back online.
+  workboxOptions: {
+    disableDevLogs: true, // Disable logging during development.
+  },
 })
 
-/** @type {import('next').NextConfig} */
-export default {
-  ...nextConfig,
+// Config for Next.js
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -39,16 +45,12 @@ export default {
         search: '',
       },
     ],
-    dangerouslyAllowSVG: true,
-    unoptimized: false,
-  },
-  async redirects() {
-    return [
-      {
-        source: '/personal-projects/eshop', // Deleted page
-        destination: '/personal-projects/', // Redirect to page
-        permanent: true, // Use 301 for permanent redirect
-      },
-    ]
+    dangerouslyAllowSVG: true, // Allows SVG images to be used
+    unoptimized: false, // Setting 'unoptimized' to value 'false' means that images will be optimized by 'Next.js Image Optimization API'.
   },
 }
+
+// Merge the two configurations
+export default withPWA({
+  ...nextConfig,
+})
