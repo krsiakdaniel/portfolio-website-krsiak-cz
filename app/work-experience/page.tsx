@@ -9,10 +9,10 @@ import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading4 from '@/components/shared/Heading4'
 import Highlight from '@/components/shared/Highlight'
 
+import { projectsWorkReact } from '@/lib/data/projects/work/projects-overview/react/workReact'
 import { projectsWorkFrontEnd } from '@/lib/data/projects/work/projects-overview/workFrontEnd'
 import { projectsWorkLocalization } from '@/lib/data/projects/work/projects-overview/workLocalization'
 import { projectsWorkQA } from '@/lib/data/projects/work/projects-overview/workQA'
-import { projectsWorkReact } from '@/lib/data/projects/work/projects-overview/workReact'
 import { projectsWorkWordPress } from '@/lib/data/projects/work/projects-overview/workWordpress'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
