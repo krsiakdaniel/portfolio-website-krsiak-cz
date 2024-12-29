@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 
-const registerServiceWorker = () => {
+const RegisterServiceWorker = () => {
   useEffect(() => {
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -20,4 +20,4 @@ const registerServiceWorker = () => {
   return null
 }
 
-export default registerServiceWorker
+export default RegisterServiceWorker

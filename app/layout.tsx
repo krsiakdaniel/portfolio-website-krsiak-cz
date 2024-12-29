@@ -4,7 +4,7 @@ import { ReactNode } from 'react'
 
 import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
-import registerServiceWorker from '@/components/registerServiceWorker'
+import RegisterServiceWorker from '@/components/RegisterServiceWorker'
 
 import { metaDataShared } from '@/lib/utils/metadata/metaDataShared'
 import { TEXT } from '@/localization/english'
@@ -33,7 +33,7 @@ export default function RootLayout({
 }: Readonly<{
   children: ReactNode
 }>) {
-  registerServiceWorker()
+  RegisterServiceWorker()
 
   return (
     <html lang="en">
