@@ -1,5 +1,13 @@
+import withPWA from 'next-pwa'
+
+const nextConfig = withPWA({
+  dest: 'public', // Output directory for service worker and precache files
+  disable: process.env.NODE_ENV === 'development', // Disable PWA in development mode
+})
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+export default {
+  ...nextConfig,
   images: {
     remotePatterns: [
       {
@@ -37,12 +45,10 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/personal-projects/eshop', // The deleted page
-        destination: '/personal-projects/', // Redirect to projects
+        source: '/personal-projects/eshop', // Deleted page
+        destination: '/personal-projects/', // Redirect to page
         permanent: true, // Use 301 for permanent redirect
       },
     ]
   },
 }
-
-export default nextConfig

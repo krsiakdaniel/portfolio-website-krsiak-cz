@@ -4,6 +4,7 @@ import { ReactNode } from 'react'
 
 import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
+import registerServiceWorker from '@/components/registerServiceWorker'
 
 import { metaDataShared } from '@/lib/utils/metadata/metaDataShared'
 import { TEXT } from '@/localization/english'
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
   generator: 'Next.js',
   applicationName: 'React - Portfolio website',
   referrer: 'origin-when-cross-origin',
+  themeColor: '#7C3AED',
   formatDetection: {
     email: false,
     address: false,
@@ -31,8 +33,14 @@ export default function RootLayout({
 }: Readonly<{
   children: ReactNode
 }>) {
+  registerServiceWorker()
+
   return (
     <html lang="en">
+      <head>
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body className={inter.className}>
         <Header />
         <div>
