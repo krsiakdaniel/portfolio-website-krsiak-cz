@@ -5,4 +5,3 @@ import { workReactSmartsuppDashboard } from '@/lib/data/projects/work/projects-o
 import { Project } from '@/lib/utils/interfaces/interfaces'
 
 export const projectsWorkReact: Project[] = [workReactSmartsuppDashboard, workReactKooperativa, workReactKomercniBanka]
-
