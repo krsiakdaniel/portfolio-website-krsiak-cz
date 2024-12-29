@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import { ProjectPageLayoutWrapper } from '@/components/layout/project-page/ProjectPageLayoutWrapper'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
-import { projectsWorkReact } from '@/lib/data/projects/work/projects-overview/workReact'
+import { projectsWorkReact } from '@/lib/data/projects/work/projects-overview/react/workReact'
 import { sections } from '@/lib/data/projects/work/smartsuppDashboard'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'

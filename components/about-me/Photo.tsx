@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { TEXT } from '@/localization/english'
 
-import krsiak from '@/public/images/webp/krsiak-daniel-400.webp'
+import krsiak from '@/public/images/webp/photo/krsiak-daniel-400.webp'
 
 const Photo = () => {
   return (

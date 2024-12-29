@@ -5,11 +5,11 @@ import { Project } from '@/lib/utils/interfaces/interfaces'
 
 // smartsupp web
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import smartsuppWeb1 from '@/public/images/projects/work/smartsupp-web/smartsupp-web-1-light.png'
-import smartsuppWeb2 from '@/public/images/projects/work/smartsupp-web/smartsupp-web-2-light.png'
-import smartsuppWeb3 from '@/public/images/projects/work/smartsupp-web/smartsupp-web-3-light.png'
-import smartsuppWeb4 from '@/public/images/projects/work/smartsupp-web/smartsupp-web-4-light.png'
-import smartsuppWebThumb from '@/public/images/projects/work/smartsupp-web/smartsupp-web-thumb-light-600.webp'
+import smartsuppWeb1 from '@/public/images/webp/projects/work/smartsupp-web/smartsupp-web-1-light.webp'
+import smartsuppWeb2 from '@/public/images/webp/projects/work/smartsupp-web/smartsupp-web-2-light.webp'
+import smartsuppWeb3 from '@/public/images/webp/projects/work/smartsupp-web/smartsupp-web-3-light.webp'
+import smartsuppWeb4 from '@/public/images/webp/projects/work/smartsupp-web/smartsupp-web-4-light.webp'
+import smartsuppWebThumb from '@/public/images/webp/projects/work/smartsupp-web/smartsupp-web-thumb-light-600.webp'
 
 export const projectsWorkFrontEnd: Project[] = [
   {

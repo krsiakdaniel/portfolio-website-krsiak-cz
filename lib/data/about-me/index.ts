@@ -2,11 +2,11 @@ import { YEARS } from '@/lib/utils/constants/yearsExperience'
 
 import { Job } from '@/lib/utils/interfaces/interfaces'
 
-import bug from '@/public/icons/svg/about-me/bug.svg'
-import check from '@/public/icons/svg/about-me/check.svg'
-import globe from '@/public/icons/svg/about-me/globe.svg'
-import reactLogo from '@/public/icons/svg/about-me/react-logo.svg'
-import text from '@/public/icons/svg/about-me/text.svg'
+import bug from '@/public/icons/svg/bug.svg'
+import check from '@/public/icons/svg/check.svg'
+import globe from '@/public/icons/svg/globe.svg'
+import reactLogo from '@/public/icons/svg/react.svg'
+import text from '@/public/icons/svg/text.svg'
 
 export const jobs: Job[] = [
   {

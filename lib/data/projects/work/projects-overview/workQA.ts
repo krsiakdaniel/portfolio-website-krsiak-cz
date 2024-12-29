@@ -5,9 +5,9 @@ import { Project } from '@/lib/utils/interfaces/interfaces'
 
 // groupon
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import groupon1 from '@/public/images/projects/work/groupon/groupon-1-light.png'
-import groupon2 from '@/public/images/projects/work/groupon/groupon-2-light.png'
-import grouponThumb from '@/public/images/projects/work/groupon/groupon-thumb-light-600.webp'
+import groupon1 from '@/public/images/webp/projects/work/groupon/groupon-1-light.webp'
+import groupon2 from '@/public/images/webp/projects/work/groupon/groupon-2-light.webp'
+import grouponThumb from '@/public/images/webp/projects/work/groupon/groupon-thumb-light-600.webp'
 
 export const projectsWorkQA: Project[] = [
   {

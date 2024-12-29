@@ -4,7 +4,7 @@ import { ProjectPageLayoutWrapper } from '@/components/layout/project-page/Proje
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
 import { sections } from '@/lib/data/projects/work/kooperativa'
-import { projectsWorkReact } from '@/lib/data/projects/work/projects-overview/workReact'
+import { projectsWorkReact } from '@/lib/data/projects/work/projects-overview/react/workReact'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -26,7 +26,7 @@ const ProjectWorkKooperativa = () => {
       pageID={PAGES_URL.work.kooperativa}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.react}
-      projectData={projectsWorkReact[2]}
+      projectData={projectsWorkReact[1]}
       sections={sections}
       PageNavigation={
         <PageNavigation

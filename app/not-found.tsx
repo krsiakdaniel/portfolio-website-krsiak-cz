@@ -5,7 +5,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { TEXT } from '@/localization/english'
 
-import img404 from '@/public/images/webp/404.webp'
+import img404 from '@/public/images/webp/errors/404.webp'
 
 const NotFoundPage = () => {
   return (

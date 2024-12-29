@@ -5,10 +5,10 @@ import { Project } from '@/lib/utils/interfaces/interfaces'
 
 // smartsupp help
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import smartsuppHelp1 from '@/public/images/projects/work/smartsupp-help/smartsupp-help-1-light.png'
-import smartsuppHelp2 from '@/public/images/projects/work/smartsupp-help/smartsupp-help-2-light.png'
-import smartsuppHelp3 from '@/public/images/projects/work/smartsupp-help/smartsupp-help-3-light.png'
-import smartsuppHelpThumb from '@/public/images/projects/work/smartsupp-help/smartsupp-help-thumb-light-600.webp'
+import smartsuppHelp1 from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-1-light.webp'
+import smartsuppHelp2 from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-2-light.webp'
+import smartsuppHelp3 from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-3-light.webp'
+import smartsuppHelpThumb from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-thumb-light-600.webp'
 
 export const projectsWorkWordPress: Project[] = [
   {
