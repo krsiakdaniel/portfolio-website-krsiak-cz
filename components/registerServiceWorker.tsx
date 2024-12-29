@@ -1,3 +1,5 @@
+'use client' // using hooks
+
 import { useEffect } from 'react'
 
 const registerServiceWorker = () => {
