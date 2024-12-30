@@ -40,7 +40,7 @@ const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element =>
       <head>
         <meta name="theme-color" content="#ECF0F1" />
         {appleTouchIconSizes.map((size) => {
-          return <link rel="apple-touch-icon" sizes={size} href={`/icons/png/icon-${size}.png`} />
+          return <link key={size} rel="apple-touch-icon" sizes={size} href={`/icons/png/icon-${size}.png`} />
         })}
       </head>
       <body className={inter.className}>
