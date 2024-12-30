@@ -1,4 +1,5 @@
-import Smartlook from '@/components/layout/tracking-scripts/Smartlook'
+import Smartlook from '@/components/layout/scripts/Smartlook'
+import TawkToChat from '@/components/layout/scripts/TawkToChat'
 
 import { appleTouchIconSizes } from '@/lib/data/appleTouchIconSizes'
 
@@ -18,6 +19,7 @@ const PageHeadContent = () => {
     <head>
       <MetaTags />
       <Smartlook />
+      <TawkToChat />
     </head>
   )
 }
