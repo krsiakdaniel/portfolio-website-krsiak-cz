@@ -15,7 +15,8 @@ const ProjectsLayout: FC<ProjectsLayoutProps> = ({ heading, description, childre
         <Heading1>{heading}</Heading1>
         <div>{description}</div>
       </div>
-      {/* This is ProjectItem */}
+
+      {/* Content for 'ProjectItem' */}
       <div>{children}</div>
     </>
   )

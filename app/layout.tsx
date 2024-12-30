@@ -4,8 +4,7 @@ import { FC, ReactNode } from 'react'
 
 import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
-
-import { appleTouchIconSizes } from '@/lib/data/appleTouchIconSizes'
+import PageHeadContent from '@/components/layout/PageHeadContent'
 
 import { metaDataShared } from '@/lib/utils/metadata/metaDataShared'
 import { TEXT } from '@/localization/english'
@@ -37,12 +36,7 @@ type RootLayoutProps = {
 const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element => {
   return (
     <html lang="en">
-      <head>
-        <meta name="theme-color" content="#ECF0F1" />
-        {appleTouchIconSizes.map((size) => {
-          return <link key={size} rel="apple-touch-icon" sizes={size} href={`/icons/png/icon-${size}.png`} />
-        })}
-      </head>
+      <PageHeadContent />
       <body className={inter.className}>
         <Header />
         <div>
