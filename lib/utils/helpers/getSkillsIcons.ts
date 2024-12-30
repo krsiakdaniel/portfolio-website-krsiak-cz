@@ -87,7 +87,7 @@ export const skillIcons: Record<SkillKeys, string> = {
  * @returns {Icon[]} - The array of icons corresponding to the skill keys.
  */
 
-export function getSkillsIcons(skills: SkillKeys[]): Icon[] {
+export const getSkillsIcons = (skills: SkillKeys[]): Icon[] => {
   return skills.map((skill) => ({
     name: skill,
     path: skillIcons[skill],

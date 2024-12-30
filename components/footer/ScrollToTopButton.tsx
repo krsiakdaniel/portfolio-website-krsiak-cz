@@ -1,15 +1,7 @@
-'use client'
+'use client' // Ensure the component is a Client Component if it has an onClick handler.
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
-// If you need to add an onClick event handler to a component, you should make sure that component is a Client Component.
-
-export const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  })
-}
+import { scrollToTop } from '@/lib/utils/helpers/scrollToTop'
 
 const ScrollToTopButton = (): JSX.Element => {
   return (

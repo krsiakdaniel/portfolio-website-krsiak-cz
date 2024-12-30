@@ -25,7 +25,7 @@ const HeaderSection = ({ title, role, years, company, goBackLink, sectionID }: H
           href={getGoBackLinkID(goBackLink, sectionID)}
           className="inline-flex items-center text-neutral-500 hover:text-neutral-700"
         >
-          <IconArrow type={NavigationDirectionEnum.Left} /> {TEXT.goBack}
+          <IconArrow direction={NavigationDirectionEnum.Left} /> {TEXT.goBack}
         </Link>
       </p>
     </div>

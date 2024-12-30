@@ -49,7 +49,6 @@ const ProjectsWork = (): JSX.Element => {
             company="Freelance"
             role="Web Developer / Consultant"
             description="In the past I was creating  websites for clients."
-            isPartTime
           />
           <ExperienceCard
             company="Freelance"
@@ -65,7 +64,6 @@ const ProjectsWork = (): JSX.Element => {
             company="Freelance"
             role="WordPress Consultant"
             description="For 5 years I used to create websites for clients and small companies."
-            isPartTime
           />
         </div>
 

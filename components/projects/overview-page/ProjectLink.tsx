@@ -15,7 +15,7 @@ const ProjectLink = ({ linkText, linkProjectPage, dataTestId }: ProjectLinkProps
       href={linkProjectPage}
       className="mt-8 flex w-[162px] items-center space-x-2 rounded-lg bg-purple-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-800 focus:ring-4 focus:ring-purple-300"
     >
-      <span>{linkText}</span> <IconArrow type={NavigationDirectionEnum.Right} />
+      <span>{linkText}</span> <IconArrow direction={NavigationDirectionEnum.Right} />
     </a>
   </p>
 )

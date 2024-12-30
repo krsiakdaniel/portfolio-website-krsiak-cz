@@ -66,7 +66,6 @@ export const WORK = {
 }
 
 export const MISC = {
-  partTimeJob: '(part-time job)',
   description: 'Description',
   goBack: 'Go back',
   skillsIconsNames: `${COMMON_VALUES.html}, ${COMMON_VALUES.css}, ${COMMON_VALUES.sass}, ${COMMON_VALUES.tailwindCss}, 
