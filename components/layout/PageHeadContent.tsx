@@ -1,3 +1,4 @@
+import GoogleAnalytics from '@/components/layout/scripts/GoogleAnalytics'
 import Smartlook from '@/components/layout/scripts/Smartlook'
 import TawkToChat from '@/components/layout/scripts/TawkToChat'
 
@@ -17,8 +18,9 @@ const MetaTags = () => {
 const PageHeadContent = () => {
   return (
     <head>
-      <MetaTags />
+      <GoogleAnalytics />
       <Smartlook />
+      <MetaTags />
       <TawkToChat />
     </head>
   )
