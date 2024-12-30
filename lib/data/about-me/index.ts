@@ -15,8 +15,9 @@ export const jobs: Job[] = [
     title: 'Front End - React Developer',
     years: YEARS.react,
     description: `
-    Built a customer care dashboard, contributed to Komerční banka website,
-    and\u00A0developed Kooperativa insurance policy management app using JavaScript, TypeScript, React, and\u00A0Redux.
+      I built a customer care dashboard,
+      contributed to the\u00A0Komerční banka website,
+      and\u00A0developed the\u00A0Kooperativa insurance policy management app using JavaScript, TypeScript, React, and\u00A0Redux.
     `,
   },
   {
@@ -25,8 +26,8 @@ export const jobs: Job[] = [
     title: 'Front End - Web Developer',
     years: YEARS.webDeveloper,
     description: `
-        Led the development of a responsive website for a SaaS company,
-        integrating PHP, JavaScript, and\u00A0UX design principles.
+        I led the development of a\u00A0responsive website for\u00A0a\u00A0SaaS company, integrating PHP, JavaScript,
+        and\u00A0UX\u00A0design principles to create a\u00A0seamless user experience.
       `,
   },
   {
@@ -35,8 +36,9 @@ export const jobs: Job[] = [
     title: 'QA Automation - Team Leader',
     years: YEARS.qaAutomation,
     description: `
-        Led 2 QA teams to implement Cypress and Playwright for E2E testing, writing tests in JavaScript
-        and\u00A0TypeScript to\u00A0ensure high-quality code.
+        I led 2 QA teams to implement Cypress and\u00A0Playwright for E2E testing,
+        writing tests in JavaScript and\u00A0TypeScript to ensure high-quality code.
+        This role sharpened my leadership skills and attention to detail.
       `,
   },
   {
@@ -45,8 +47,9 @@ export const jobs: Job[] = [
     title: 'Localization - Manager',
     years: YEARS.localizationManager,
     description: `
-      Directed the localization of Microsoft Windows 8, Windows Phone,
-      and a SaaS company site into 9\u00A0languages, enhancing project management and\u00A0internationalization expertise.
+        I worked on the localization of Microsoft Windows\u00A08, and\u00A0Windows\u00A0Phone.
+        This role honed my\u00A0project management and\u00A0internationalization expertise.
+        I also led the localization of\u00A0a\u00A0SaaS company site translated into 9\u00A0languages: 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱
       `,
   },
   {
@@ -55,8 +58,9 @@ export const jobs: Job[] = [
     title: 'Localization - Tester',
     years: YEARS.localizationTester,
     description: `
-      Performed layout testing for Microsoft projects, including Windows 7 and Windows Store,
-      ensuring cross-platform user experience quality.
+        I performed layout testing for Microsoft projects,
+        including Windows\u00A07 and\u00A0Windows\u00A0Store, ensuring cross-platform user experience quality.
+        This role gave me understanding of\u00A0user-centric design.
       `,
   },
   {
@@ -65,8 +69,8 @@ export const jobs: Job[] = [
     title: 'Front End - Web Coder',
     years: YEARS.webCoder,
     description: `
-        Began IT career developing websites for small businesses,
-        laying the foundation that eventually led me to full-time career in IT. 
+        My IT career began with developing websites for\u00A0small businesses, laying the\u00A0foundation for\u00A0my\u00A0career in\u00A0IT.
+        This experience taught me the importance of\u00A0continuous learning.
       `,
   },
 ]

@@ -168,7 +168,7 @@ export const META_PROJECTS_OVERVIEW_WORK = {
 
 export const META_SHARED = {
   title: `${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
-  description: `Experienced ${COMMON_VALUES.reactDeveloper} from ${COMMON_VALUES.brno} ${COMMON_VALUES.czechRepublic}. ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, ${COMMON_VALUES.html}, ${COMMON_VALUES.css}, ${COMMON_VALUES.sass}, ${COMMON_VALUES.tailwindCss}, ${COMMON_VALUES.redux}, GraphQL, Jest, ${COMMON_VALUES.playwright}, and ${COMMON_VALUES.figma}.`,
+  description: `Experienced ${COMMON_VALUES.reactDeveloper} from ${COMMON_VALUES.brno}, Czech Republic. ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, ${COMMON_VALUES.html}, ${COMMON_VALUES.css}, ${COMMON_VALUES.sass}, ${COMMON_VALUES.tailwindCss}, ${COMMON_VALUES.redux}, GraphQL, Jest, ${COMMON_VALUES.playwright}, and ${COMMON_VALUES.figma}.`,
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
