@@ -17,7 +17,7 @@ test.describe('About Me Page - Tests', () => {
     await test.step('Check that the paragraph text is correct', async () => {
       const paragraph = await page.textContent(getDataTestId(DATA_TEST_IDS.page.aboutMe.introduction))
       expect(paragraph).toContain(
-        'I am a React Developer with expertise in QA Automation and experience in leading teams as a Team Leader',
+        'I am a dedicated React Developer with expertise in QA Automation and a proven track record in leading teams as a Team Leader.',
       )
     })
   })
