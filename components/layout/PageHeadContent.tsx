@@ -1,4 +1,6 @@
-import Smartlook from '@/components/layout/tracking-scripts/Smartlook'
+import GoogleAnalytics from '@/components/layout/scripts/GoogleAnalytics'
+import Smartlook from '@/components/layout/scripts/Smartlook'
+import TawkToChat from '@/components/layout/scripts/TawkToChat'
 
 import { appleTouchIconSizes } from '@/lib/data/appleTouchIconSizes'
 
@@ -16,8 +18,10 @@ const MetaTags = () => {
 const PageHeadContent = () => {
   return (
     <head>
-      <MetaTags />
+      <GoogleAnalytics />
       <Smartlook />
+      <MetaTags />
+      <TawkToChat />
     </head>
   )
 }
