@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
@@ -5,7 +7,7 @@ import { Project, Skill } from '@/lib/utils/interfaces/interfaces'
 
 type SkillsListProps = Pick<Project, 'skillsOverview'>
 
-const getSkillBadge = (skillCategoryObject: Skill) => {
+const getSkillBadge = (skillCategoryObject: Skill): JSX.Element[] => {
   return skillCategoryObject.skillsList.map((skill: string) => (
     <span
       key={skill}
@@ -16,7 +18,7 @@ const getSkillBadge = (skillCategoryObject: Skill) => {
   ))
 }
 
-const SkillsList = ({ skillsOverview }: SkillsListProps): JSX.Element => {
+const SkillsList: FC<SkillsListProps> = ({ skillsOverview }): JSX.Element => {
   return (
     <List>
       {skillsOverview.map((skillCategoryObject) => (

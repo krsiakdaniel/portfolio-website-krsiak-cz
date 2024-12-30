@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
+import { FC } from 'react'
 
 import Heading1 from '@/components/shared/Heading1'
 
@@ -14,7 +15,7 @@ type ErrorPageContentProps = {
   onButtonClick?: () => void
 }
 
-const ErrorPageContent = ({
+const ErrorPageContent: FC<ErrorPageContentProps> = ({
   imgSrc,
   imgAlt,
   heading,
@@ -23,7 +24,7 @@ const ErrorPageContent = ({
   buttonText,
   buttonLink,
   onButtonClick,
-}: ErrorPageContentProps): JSX.Element => {
+}): JSX.Element => {
   return (
     <div className="flex flex-col items-center text-center">
       <Image src={imgSrc} alt={imgAlt} width={400} height={417} loading="eager" className="bt-5" />

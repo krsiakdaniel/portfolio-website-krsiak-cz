@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 
 import ProjectPageLayout from '@/components/layout/project-page/ProjectPageLayout'
 
@@ -16,7 +16,7 @@ type ProjectPageLayoutWrapperProps = {
   PageNavigation: ReactNode
 }
 
-export const ProjectPageLayoutWrapper = ({
+export const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
   breadCrumbs,
   pageID,
   goBackLink,
@@ -24,7 +24,7 @@ export const ProjectPageLayoutWrapper = ({
   projectData,
   sections,
   PageNavigation,
-}: ProjectPageLayoutWrapperProps): JSX.Element => {
+}): JSX.Element => {
   const { title, role, years, company, description, skillsOverview, customers, projectLinks, imageShowcase } =
     projectData
 

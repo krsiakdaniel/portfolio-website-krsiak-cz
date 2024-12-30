@@ -1,5 +1,7 @@
 'use client' // Error components must be Client Components
 
+import { FC } from 'react'
+
 import ErrorPageLayout from '@/components/layout/errors/ErrorPageLayout'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -9,7 +11,7 @@ import { Errors } from '@/lib/utils/interfaces/interfaces'
 
 type ErrorProps = Errors
 
-const GlobalError = ({ error }: ErrorProps): JSX.Element => {
+const GlobalError: FC<ErrorProps> = ({ error }): JSX.Element => {
   return (
     <ErrorPageLayout
       error={error}

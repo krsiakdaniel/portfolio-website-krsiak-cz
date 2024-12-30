@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 type HeroLinkProps = {
   href: string
   text: string
@@ -5,7 +7,7 @@ type HeroLinkProps = {
   dataTestId: string
 }
 
-const HeroLink = ({ href, text, className = '', dataTestId }: HeroLinkProps): JSX.Element => (
+const HeroLink: FC<HeroLinkProps> = ({ href, text, className = '', dataTestId }): JSX.Element => (
   <a
     data-testid={dataTestId}
     href={href}

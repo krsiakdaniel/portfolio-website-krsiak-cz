@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { FC } from 'react'
 
 import { websiteLinks } from '@/lib/data/websiteLinks'
 
@@ -8,13 +9,13 @@ type MenuProps = {
   isMobile: boolean
 }
 
-const getMenuLinkCss = (isMobile: boolean) => {
+const getMenuLinkCss = (isMobile: boolean): string => {
   return isMobile
     ? 'block border-b border-neutral-100 py-2 pl-3 pr-4 hover:bg-neutral-50'
     : 'text-body-md cursor-pointer'
 }
 
-const Menu = ({ isMobile }: MenuProps): JSX.Element => {
+const Menu: FC<MenuProps> = ({ isMobile }): JSX.Element => {
   return (
     <ul
       className={isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-8 lg:flex'}

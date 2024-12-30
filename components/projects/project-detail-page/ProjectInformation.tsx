@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import CustomersCount from '@/components/projects/CustomersCount'
 import ProjectLinksList from '@/components/projects/project-detail-page/ProjectLinksList'
 import SkillsList from '@/components/projects/project-detail-page/SkillsList'
@@ -12,13 +14,13 @@ type ProjectInformationProps = Pick<
   'description' | 'skillsOverview' | 'customers' | 'projectLinks' | 'linkGitHub'
 >
 
-const ProjectInformation = ({
+const ProjectInformation: FC<ProjectInformationProps> = ({
   description,
   skillsOverview,
   customers,
   projectLinks,
   linkGitHub,
-}: ProjectInformationProps): JSX.Element => {
+}): JSX.Element => {
   const hasMoreLinks = projectLinks.length > 1
   const hasGithub = linkGitHub ? true : false
 

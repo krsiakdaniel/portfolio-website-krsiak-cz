@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 
 import { IconCheck } from '@/components/icons/IconCheck'
 
@@ -6,7 +6,7 @@ type ListItemProps = {
   children: ReactNode
 }
 
-const ListItem = ({ children }: ListItemProps): JSX.Element => {
+const ListItem: FC<ListItemProps> = ({ children }): JSX.Element => {
   return (
     <>
       <li className="flex-start flex">

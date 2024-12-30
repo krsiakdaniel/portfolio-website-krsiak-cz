@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import GitHubRepositoryLink from '@/components/projects/project-detail-page/GitHubRepositoryLink'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
@@ -9,7 +11,7 @@ type ProjectLinksListProps = {
   linkGitHub?: string
 }
 
-const ProjectLinksList = ({ projectLinks, linkGitHub }: ProjectLinksListProps): JSX.Element => {
+const ProjectLinksList: FC<ProjectLinksListProps> = ({ projectLinks, linkGitHub }): JSX.Element => {
   return (
     <List>
       {projectLinks &&

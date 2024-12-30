@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import Heading2 from '@/components/shared/Heading2'
 import Heading3 from '@/components/shared/Heading3'
 
@@ -10,7 +12,14 @@ type ProjectDetailsProps = {
   customers?: string
 }
 
-const ProjectDetails = ({ title, company, role, years, description, customers }: ProjectDetailsProps): JSX.Element => (
+const ProjectDetails: FC<ProjectDetailsProps> = ({
+  title,
+  company,
+  role,
+  years,
+  description,
+  customers,
+}): JSX.Element => (
   <div>
     <Heading2 textColor="text-neutral-900" customCss="mt-8 md:mt-0">
       {title}

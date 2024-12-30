@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 
 type Heading1Props = {
   children: ReactNode
@@ -10,7 +10,7 @@ type Heading1Props = {
   customCss?: string | null
 }
 
-const Heading1 = ({
+const Heading1: FC<Heading1Props> = ({
   children,
   dataTestId = '',
   textColor = 'text-violet-600',
@@ -18,7 +18,7 @@ const Heading1 = ({
   textSizeSM = '6xl',
   textSizeLG = '7xl',
   customCss = '',
-}: Heading1Props): JSX.Element => {
+}): JSX.Element => {
   return (
     <h1
       {...(dataTestId && { 'data-testid': dataTestId })}

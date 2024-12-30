@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import JobIcon from '@/components/about-me/JobIcon'
 import Heading2 from '@/components/shared/Heading2'
 
@@ -8,7 +10,7 @@ type JobItemProps = {
   years: number
 }
 
-const JobItem = ({ path, title, description, years }: JobItemProps): JSX.Element => {
+const JobItem: FC<JobItemProps> = ({ path, title, description, years }): JSX.Element => {
   return (
     <li className="ms-6 mt-10 first:mt-0">
       <JobIcon path={path} title={title} />

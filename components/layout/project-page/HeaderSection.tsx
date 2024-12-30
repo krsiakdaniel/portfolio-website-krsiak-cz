@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { FC } from 'react'
 
 import { IconArrow } from '@/components/icons/IconArrow'
 import Heading1 from '@/components/shared/Heading1'
@@ -10,7 +11,7 @@ import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
 import { HeaderSectionProps } from '@/lib/utils/interfaces/componentProps'
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 
-const HeaderSection = ({ title, role, years, company, goBackLink, sectionID }: HeaderSectionProps): JSX.Element => {
+const HeaderSection: FC<HeaderSectionProps> = ({ title, role, years, company, goBackLink, sectionID }): JSX.Element => {
   return (
     <div className="mt-10">
       <Heading1 textColor="text-neutral-900">{title}</Heading1>
