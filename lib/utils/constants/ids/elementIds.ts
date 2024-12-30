@@ -33,5 +33,5 @@ export const ID = {
     resume: 'resume',
     workExperience: 'work-experience',
     personalProjects: 'personal-projects',
-  }
+  },
 }

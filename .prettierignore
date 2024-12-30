@@ -22,3 +22,8 @@ _site/
 
 # Ignore all HTML files:
 *.html
+
+# PWA
+
+public/sw.js
+public/workbox-7144475a.js
