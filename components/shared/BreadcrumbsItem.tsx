@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { FC } from 'react'
 
 import { IconCaretRight } from '@/components/icons/IconCaretRight'
 
@@ -7,7 +8,7 @@ type BreadcrumbsItemProps = {
   text: string
 }
 
-const BreadcrumbsItem = ({ url, text }: BreadcrumbsItemProps): JSX.Element => (
+const BreadcrumbsItem: FC<BreadcrumbsItemProps> = ({ url, text }): JSX.Element => (
   <li>
     <div className="flex items-center">
       <IconCaretRight />

@@ -1,5 +1,7 @@
 'use client' // using onClick
 
+import { FC } from 'react'
+
 import { IconClose } from '@/components/icons/IconClose'
 import { IconHamburger } from '@/components/icons/IconHamburger'
 
@@ -12,7 +14,7 @@ type MenuToggleProps = {
   handleMenuToggle: () => void
 }
 
-const MenuToggle = ({ isOpen, handleMenuToggle }: MenuToggleProps): JSX.Element => {
+const MenuToggle: FC<MenuToggleProps> = ({ isOpen, handleMenuToggle }): JSX.Element => {
   return (
     <button
       onClick={handleMenuToggle}

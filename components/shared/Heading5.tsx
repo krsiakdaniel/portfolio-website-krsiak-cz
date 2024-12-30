@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 
 type Heading5Props = {
   children: ReactNode
@@ -7,7 +7,7 @@ type Heading5Props = {
   customCss?: string
 }
 
-const Heading5 = ({ children, dataTestId = '', textColor = '', customCss = '' }: Heading5Props): JSX.Element => {
+const Heading5: FC<Heading5Props> = ({ children, dataTestId = '', textColor = '', customCss = '' }): JSX.Element => {
   return (
     <h5 {...(dataTestId && { 'data-testid': dataTestId })} className={`font-bold ${textColor} ${customCss}`}>
       {children}

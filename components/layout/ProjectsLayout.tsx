@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 
 import Heading1 from '@/components/shared/Heading1'
 
@@ -8,7 +8,7 @@ type ProjectsLayoutProps = {
   children: ReactNode
 }
 
-const ProjectsLayout = ({ heading, description, children }: ProjectsLayoutProps): JSX.Element => {
+const ProjectsLayout: FC<ProjectsLayoutProps> = ({ heading, description, children }): JSX.Element => {
   return (
     <>
       <div className="mt-10 flex flex-col">

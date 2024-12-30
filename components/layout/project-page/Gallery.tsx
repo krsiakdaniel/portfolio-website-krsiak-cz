@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { FC } from 'react'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
@@ -9,7 +10,7 @@ type GalleryProps = {
   imageShowcase: ImageShowcaseItem[]
 }
 
-const Gallery = ({ imageShowcase }: GalleryProps): JSX.Element => {
+const Gallery: FC<GalleryProps> = ({ imageShowcase }): JSX.Element => {
   return (
     <div className="mt-8">
       <Heading3>Gallery</Heading3>

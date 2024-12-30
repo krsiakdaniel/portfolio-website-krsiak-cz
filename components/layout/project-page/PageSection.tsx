@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
@@ -6,7 +8,7 @@ import { Section } from '@/lib/utils/interfaces/interfaces'
 
 type PageSectionProps = Section
 
-const PageSection = ({ title, titleHighlight, items }: PageSectionProps): JSX.Element => {
+const PageSection: FC<PageSectionProps> = ({ title, titleHighlight, items }): JSX.Element => {
   return (
     <div className="mt-8">
       <Heading3>

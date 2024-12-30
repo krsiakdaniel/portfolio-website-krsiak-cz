@@ -1,10 +1,11 @@
 import Image from 'next/image'
+import { FC } from 'react'
 
 import { SkillCard } from '@/lib/utils/interfaces/interfaces'
 
 type SkillsCardProps = SkillCard
 
-const SkillsCard = ({ imgSrc, imgAlt, title, years, description }: SkillsCardProps): JSX.Element => (
+const SkillsCard: FC<SkillsCardProps> = ({ imgSrc, imgAlt, title, years, description }): JSX.Element => (
   <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-md">
     <Image src={imgSrc} alt={imgAlt} width={88} height={88} />
 

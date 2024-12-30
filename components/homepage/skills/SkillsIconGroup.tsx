@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { FC } from 'react'
 
 import { Icon } from '@/lib/utils/interfaces/interfaces'
 
@@ -7,7 +8,7 @@ type SkillsIconGroupProps = {
   className?: string
 }
 
-const SkillsIconGroup = ({ icons, className = '' }: SkillsIconGroupProps): JSX.Element => (
+const SkillsIconGroup: FC<SkillsIconGroupProps> = ({ icons, className = '' }): JSX.Element => (
   <div className={`flex justify-center space-x-2 ${className}`}>
     {icons.map((item) => (
       <Image key={item.name} src={item.path} alt={item.name} width={44} height={44} loading="eager" />

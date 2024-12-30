@@ -1,10 +1,12 @@
+import { FC } from 'react'
+
 import ListItem from '@/components/shared/ListItem'
 
 type GitHubRepositoryLinkProps = {
   link: string
 }
 
-const GitHubRepositoryLink = ({ link }: GitHubRepositoryLinkProps): JSX.Element => {
+const GitHubRepositoryLink: FC<GitHubRepositoryLinkProps> = ({ link }): JSX.Element => {
   return (
     <ListItem>
       <span className="leading-tight">

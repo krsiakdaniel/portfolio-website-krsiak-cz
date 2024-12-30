@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import PageSection from '@/components/layout/project-page/PageSection'
 
 import { Section } from '@/lib/utils/interfaces/interfaces'
@@ -6,7 +8,7 @@ type ProjectResponsibilityProps = {
   sections: Section[]
 }
 
-const ProjectResponsibility = ({ sections }: ProjectResponsibilityProps): JSX.Element => {
+const ProjectResponsibility: FC<ProjectResponsibilityProps> = ({ sections }): JSX.Element => {
   return (
     <div>
       {sections.map((section) => (

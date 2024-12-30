@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 
 import PageContainer from '@/components/layout/PageContainer'
 import Gallery from '@/components/layout/project-page/Gallery'
@@ -26,7 +26,7 @@ type ProjectProps = Pick<Project, 'description' | 'skillsOverview' | 'customers'
 
 type ProjectPageLayoutProps = BreadCrumbsProps & HeaderSectionProps & ProjectProps & PageProps
 
-const ProjectPageLayout = ({
+const ProjectPageLayout: FC<ProjectPageLayoutProps> = ({
   breadCrumbs,
   pageID,
   title,
@@ -43,7 +43,7 @@ const ProjectPageLayout = ({
   sections,
   imageShowcase,
   PageNavigation,
-}: ProjectPageLayoutProps): JSX.Element => {
+}): JSX.Element => {
   return (
     <PageContainer id={pageID}>
       <BreadCrumbs

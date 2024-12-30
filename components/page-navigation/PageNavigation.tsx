@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import PageNavigationLink from '@/components/page-navigation/PageNavigationLink'
 
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
@@ -11,14 +13,14 @@ type PageNavigationProps = {
   dataTestIdNext?: string
 }
 
-const PageNavigation = ({
+const PageNavigation: FC<PageNavigationProps> = ({
   linkPrevious,
   namePrevious,
   linkNext,
   nameNext,
   dataTestIdPrevious,
   dataTestIdNext,
-}: PageNavigationProps): JSX.Element => {
+}): JSX.Element => {
   const hasPreviousLink = linkPrevious && namePrevious
   const hasNextLink = linkNext && nameNext
 

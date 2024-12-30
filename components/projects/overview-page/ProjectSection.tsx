@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import ExperienceSection from '@/components/projects/experience/ExperienceSection'
 import ProjectItem from '@/components/projects/overview-page/ProjectItem'
 
@@ -9,7 +11,7 @@ type ProjectSectionProps = {
   sectionText: string
 }
 
-export const ProjectSection = ({ projectData, sectionId, sectionText }: ProjectSectionProps): JSX.Element => {
+export const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, sectionText }): JSX.Element => {
   return (
     <>
       <ExperienceSection id={sectionId} text={sectionText} />

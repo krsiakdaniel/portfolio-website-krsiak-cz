@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
@@ -5,7 +7,7 @@ type CustomersCountProps = {
   count: string
 }
 
-const CustomersCount = ({ count }: CustomersCountProps): JSX.Element => {
+const CustomersCount: FC<CustomersCountProps> = ({ count }): JSX.Element => {
   return (
     <List>
       <ListItem>

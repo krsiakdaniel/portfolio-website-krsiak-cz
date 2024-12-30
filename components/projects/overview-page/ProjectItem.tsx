@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import ProjectDetails from '@/components/projects/overview-page/ProjectDetails'
 import ProjectImage from '@/components/projects/overview-page/ProjectImage'
 import ProjectLink from '@/components/projects/overview-page/ProjectLink'
@@ -20,7 +22,7 @@ type ProjectItemProps = {
   dataTestId: string
 }
 
-const ProjectItem = ({
+const ProjectItem: FC<ProjectItemProps> = ({
   isFeatured,
   image,
   title,
@@ -33,7 +35,7 @@ const ProjectItem = ({
   linkText,
   linkProjectPage,
   dataTestId,
-}: ProjectItemProps): JSX.Element => {
+}): JSX.Element => {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-10">
       <div className="mx-auto mt-8 items-start gap-8 md:grid md:grid-cols-2">
