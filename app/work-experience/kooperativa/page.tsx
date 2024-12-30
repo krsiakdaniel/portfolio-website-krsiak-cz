@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ...metaDataKooperativa,
 }
 
-const ProjectWorkKooperativa = () => {
+const ProjectWorkKooperativa = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.kooperativa, TEXT.kooperativa)}

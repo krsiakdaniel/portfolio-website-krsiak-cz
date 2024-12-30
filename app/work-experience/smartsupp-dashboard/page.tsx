@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ...metaDataSmartsuppDashboard,
 }
 
-const ProjectWorkSmartsuppDashboard = () => {
+const ProjectWorkSmartsuppDashboard = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.smartsupp.dashboard, TEXT.smartsuppDashboard)}

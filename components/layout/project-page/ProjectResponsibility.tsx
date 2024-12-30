@@ -6,7 +6,7 @@ type ProjectResponsibilityProps = {
   sections: Section[]
 }
 
-const ProjectResponsibility = ({ sections }: ProjectResponsibilityProps) => {
+const ProjectResponsibility = ({ sections }: ProjectResponsibilityProps): JSX.Element => {
   return (
     <div>
       {sections.map((section) => (

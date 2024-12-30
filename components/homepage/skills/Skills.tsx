@@ -6,7 +6,7 @@ import { iconsSkills1, iconsSkills2, iconsSkills3, iconsSkills4 } from '@/lib/da
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { TEXT } from '@/localization/english'
 
-const Skills = () => {
+const Skills = (): JSX.Element => {
   return (
     <div id={ID.skills} className="mt-10">
       <DividerWithText text="Skills" />

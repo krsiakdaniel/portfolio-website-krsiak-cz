@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   ...metaDataShared,
 }
 
-const Page = () => {
+const Page = (): JSX.Element => {
   return (
     <PageContainer id={ID.homepage}>
       <Hero />

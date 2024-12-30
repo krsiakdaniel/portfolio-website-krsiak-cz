@@ -5,7 +5,7 @@ import ScrollToTopButton from '@/components/footer/ScrollToTopButton'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-const FooterRight = () => {
+const FooterRight = (): JSX.Element => {
   return (
     <div className="flex space-x-4">
       <div className="mt-4 flex space-x-2 md:mt-0">

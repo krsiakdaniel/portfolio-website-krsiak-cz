@@ -7,7 +7,7 @@ import { TEXT } from '@/localization/english'
 
 import logo from '@/public/images/webp/logo.webp'
 
-const Logo = () => {
+const Logo = (): JSX.Element => {
   return (
     <div>
       <Link

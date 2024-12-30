@@ -4,7 +4,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { TEXT } from '@/localization/english'
 
-const HeroMainLinks = () => {
+const HeroMainLinks = (): JSX.Element => {
   return (
     <div className="mt-10 flex flex-col items-center justify-center sm:flex-row">
       <HeroLink

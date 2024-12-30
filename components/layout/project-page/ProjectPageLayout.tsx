@@ -43,7 +43,7 @@ const ProjectPageLayout = ({
   sections,
   imageShowcase,
   PageNavigation,
-}: ProjectPageLayoutProps) => {
+}: ProjectPageLayoutProps): JSX.Element => {
   return (
     <PageContainer id={pageID}>
       <BreadCrumbs

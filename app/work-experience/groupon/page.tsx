@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ...metaDataGroupon,
 }
 
-const ProjectWorkGroupon = () => {
+const ProjectWorkGroupon = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.groupon, TEXT.groupon)}

@@ -5,7 +5,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getCurrentYear } from '@/lib/utils/helpers/getCurrentYear'
 
-export const FooterLeft = () => {
+export const FooterLeft = (): JSX.Element => {
   return (
     <div>
       <span>😼 😺</span>

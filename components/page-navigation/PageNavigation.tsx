@@ -18,7 +18,7 @@ const PageNavigation = ({
   nameNext,
   dataTestIdPrevious,
   dataTestIdNext,
-}: PageNavigationProps) => {
+}: PageNavigationProps): JSX.Element => {
   const hasPreviousLink = linkPrevious && namePrevious
   const hasNextLink = linkNext && nameNext
 

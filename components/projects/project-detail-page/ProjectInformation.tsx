@@ -18,7 +18,7 @@ const ProjectInformation = ({
   customers,
   projectLinks,
   linkGitHub,
-}: ProjectInformationProps) => {
+}: ProjectInformationProps): JSX.Element => {
   const hasMoreLinks = projectLinks.length > 1
   const hasGithub = linkGitHub ? true : false
 

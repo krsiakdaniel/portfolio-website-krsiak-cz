@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ...metaDataStatusPage,
 }
 
-const StatusPage = () => {
+const StatusPage = (): JSX.Element => {
   return (
     <PageContainer id={ID.statusPage}>
       <BreadCrumbs level1Url={PAGES_URL.statusPage} level1Text={TEXT.statusPage} />

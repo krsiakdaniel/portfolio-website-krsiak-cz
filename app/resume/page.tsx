@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ...metaDataResume,
 }
 
-const Resume = () => {
+const Resume = (): JSX.Element => {
   return (
     <PageContainer id={ID.about}>
       <BreadCrumbs level1Url={PAGES_URL.resume} level1Text={TEXT.resume} />

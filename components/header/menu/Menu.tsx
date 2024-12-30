@@ -13,7 +13,7 @@ const cssMobile =
 
 const cssDesktop = 'text-body-md cursor-pointer font-bold text-neutral-700 hover:text-violet-600'
 
-const Menu = ({ isMobile }: MenuProps) => {
+const Menu = ({ isMobile }: MenuProps): JSX.Element => {
   return (
     <ul
       className={isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-8 lg:flex'}

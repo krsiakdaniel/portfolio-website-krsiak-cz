@@ -11,7 +11,14 @@ type PageNavigationLinkProps = {
   widthClass: string
 }
 
-const PageNavigationLink = ({ href, text, type, dataTestId, justify, widthClass }: PageNavigationLinkProps) => {
+const PageNavigationLink = ({
+  href,
+  text,
+  type,
+  dataTestId,
+  justify,
+  widthClass,
+}: PageNavigationLinkProps): JSX.Element => {
   const showArrowLeft = type === NavigationDirectionEnum.Left
   const showArrowRight = type === NavigationDirectionEnum.Right
 

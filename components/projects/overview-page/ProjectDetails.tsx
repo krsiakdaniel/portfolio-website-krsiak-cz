@@ -10,7 +10,7 @@ type ProjectDetailsProps = {
   customers?: string
 }
 
-const ProjectDetails = ({ title, company, role, years, description, customers }: ProjectDetailsProps) => (
+const ProjectDetails = ({ title, company, role, years, description, customers }: ProjectDetailsProps): JSX.Element => (
   <div>
     <Heading2 textColor="text-neutral-900" customCss="mt-8 md:mt-0">
       {title}

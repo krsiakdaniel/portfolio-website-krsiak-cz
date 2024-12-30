@@ -11,7 +11,7 @@ export const scrollToTop = () => {
   })
 }
 
-const ScrollToTopButton = () => {
+const ScrollToTopButton = (): JSX.Element => {
   return (
     <>
       <div className="flex space-x-2">

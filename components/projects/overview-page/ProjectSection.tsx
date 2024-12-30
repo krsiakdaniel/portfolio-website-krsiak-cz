@@ -9,7 +9,7 @@ type ProjectSectionProps = {
   sectionText: string
 }
 
-export const ProjectSection = ({ projectData, sectionId, sectionText }: ProjectSectionProps) => {
+export const ProjectSection = ({ projectData, sectionId, sectionText }: ProjectSectionProps): JSX.Element => {
   return (
     <>
       <ExperienceSection id={sectionId} text={sectionText} />

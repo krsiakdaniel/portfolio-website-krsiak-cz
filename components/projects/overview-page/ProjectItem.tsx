@@ -33,7 +33,7 @@ const ProjectItem = ({
   linkText,
   linkProjectPage,
   dataTestId,
-}: ProjectItemProps) => {
+}: ProjectItemProps): JSX.Element => {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-10">
       <div className="mx-auto mt-8 items-start gap-8 md:grid md:grid-cols-2">

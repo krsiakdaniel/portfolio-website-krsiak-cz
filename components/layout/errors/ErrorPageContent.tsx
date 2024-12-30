@@ -23,7 +23,7 @@ const ErrorPageContent = ({
   buttonText,
   buttonLink,
   onButtonClick,
-}: ErrorPageContentProps) => {
+}: ErrorPageContentProps): JSX.Element => {
   return (
     <div className="flex flex-col items-center text-center">
       <Image src={imgSrc} alt={imgAlt} width={400} height={417} loading="eager" className="bt-5" />

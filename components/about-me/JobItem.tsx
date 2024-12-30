@@ -8,7 +8,7 @@ type JobItemProps = {
   years: number
 }
 
-const JobItem = ({ path, title, description, years }: JobItemProps) => {
+const JobItem = ({ path, title, description, years }: JobItemProps): JSX.Element => {
   return (
     <li className="ms-6 mt-10 first:mt-0">
       <JobIcon path={path} title={title} />

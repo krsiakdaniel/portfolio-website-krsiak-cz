@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ...metaDataProjectsOverviewWork,
 }
 
-const ProjectsWork = () => {
+const ProjectsWork = (): JSX.Element => {
   return (
     <PageContainer id={ID.projects.work}>
       <BreadCrumbs level1Url={PAGES_URL.work.mainUrl} level1Text={TEXT.workExperience} />

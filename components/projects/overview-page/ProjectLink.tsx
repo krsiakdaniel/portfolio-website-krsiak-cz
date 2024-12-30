@@ -8,7 +8,7 @@ type ProjectLinkProps = {
   dataTestId: string
 }
 
-const ProjectLink = ({ linkText, linkProjectPage, dataTestId }: ProjectLinkProps) => (
+const ProjectLink = ({ linkText, linkProjectPage, dataTestId }: ProjectLinkProps): JSX.Element => (
   <p>
     <a
       data-testid={dataTestId}

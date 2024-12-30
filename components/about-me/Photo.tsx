@@ -4,7 +4,7 @@ import { TEXT } from '@/localization/english'
 
 import krsiak from '@/public/images/webp/photo/krsiak-daniel-400.webp'
 
-const Photo = () => {
+const Photo = (): JSX.Element => {
   return (
     <div className="justify-star mt-16 flex w-full flex-col items-center lg:mt-0 lg:w-1/3">
       <Image

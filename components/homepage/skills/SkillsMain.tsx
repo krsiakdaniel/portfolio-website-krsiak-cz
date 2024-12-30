@@ -3,7 +3,7 @@ import SkillsCard from '@/components/shared/SkillsCard'
 
 import { skills } from '@/lib/data/skills/skillsMain'
 
-const SkillsMain = () => {
+const SkillsMain = (): JSX.Element => {
   return (
     <div className="mt-10">
       <DividerWithText text="My Main Skills" />

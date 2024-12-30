@@ -4,7 +4,7 @@ import HeroParagraph from '@/components/homepage/hero/HeroParagraph'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-const Hero = () => {
+const Hero = (): JSX.Element => {
   return (
     <div id={ID.hero}>
       <div className="flex flex-col items-center justify-center">

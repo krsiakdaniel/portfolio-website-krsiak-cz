@@ -1,6 +1,6 @@
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
-const ResumePreviewEmbed = () => {
+const ResumePreviewEmbed = (): JSX.Element => {
   return (
     <div className="mt-8">
       <iframe

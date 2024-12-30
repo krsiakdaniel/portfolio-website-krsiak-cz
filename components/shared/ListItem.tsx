@@ -6,7 +6,7 @@ type ListItemProps = {
   children: ReactNode
 }
 
-const ListItem = ({ children }: ListItemProps) => {
+const ListItem = ({ children }: ListItemProps): JSX.Element => {
   return (
     <>
       <li className="flex-start flex">

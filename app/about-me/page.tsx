@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   ...metaDataAboutMe,
 }
 
-const About = () => {
+const About = (): JSX.Element => {
   return (
     <PageContainer id={ID.about}>
       <BreadCrumbs level1Url={PAGES_URL.aboutMe} level1Text={TEXT.aboutMe} />

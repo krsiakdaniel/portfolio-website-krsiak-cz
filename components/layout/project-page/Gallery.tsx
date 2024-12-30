@@ -9,7 +9,7 @@ type GalleryProps = {
   imageShowcase: ImageShowcaseItem[]
 }
 
-const Gallery = ({ imageShowcase }: GalleryProps) => {
+const Gallery = ({ imageShowcase }: GalleryProps): JSX.Element => {
   return (
     <div className="mt-8">
       <Heading3>Gallery</Heading3>

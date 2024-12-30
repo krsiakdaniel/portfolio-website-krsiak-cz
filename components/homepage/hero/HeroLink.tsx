@@ -5,7 +5,7 @@ type HeroLinkProps = {
   dataTestId: string
 }
 
-const HeroLink = ({ href, text, className = '', dataTestId }: HeroLinkProps) => (
+const HeroLink = ({ href, text, className = '', dataTestId }: HeroLinkProps): JSX.Element => (
   <a
     data-testid={dataTestId}
     href={href}
