@@ -5,15 +5,22 @@ import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 type PageNavigationLinkProps = {
   href: string
   text: string
-  type?: NavigationDirectionEnum
+  direction?: NavigationDirectionEnum
   dataTestId: string | undefined
   justify: 'start' | 'end'
   widthClass: string
 }
 
-const PageNavigationLink = ({ href, text, type, dataTestId, justify, widthClass }: PageNavigationLinkProps) => {
-  const showArrowLeft = type === NavigationDirectionEnum.Left
-  const showArrowRight = type === NavigationDirectionEnum.Right
+const PageNavigationLink = ({
+  href,
+  text,
+  direction,
+  dataTestId,
+  justify,
+  widthClass,
+}: PageNavigationLinkProps): JSX.Element => {
+  const showArrowLeft = direction === NavigationDirectionEnum.Left
+  const showArrowRight = direction === NavigationDirectionEnum.Right
 
   return (
     <a
@@ -21,9 +28,9 @@ const PageNavigationLink = ({ href, text, type, dataTestId, justify, widthClass 
       className={`flex w-full items-center justify-${justify} rounded-lg border-violet-300 bg-violet-50 p-4 font-bold text-violet-600 hover:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-300 group-hover:text-violet-800 ${widthClass}`}
       data-testid={dataTestId}
     >
-      {showArrowLeft && <IconArrow type={NavigationDirectionEnum.Left} />}
+      {showArrowLeft && <IconArrow direction={NavigationDirectionEnum.Left} />}
       {text}
-      {showArrowRight && <IconArrow type={NavigationDirectionEnum.Right} />}
+      {showArrowRight && <IconArrow direction={NavigationDirectionEnum.Right} />}
     </a>
   )
 }

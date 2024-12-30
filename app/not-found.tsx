@@ -7,7 +7,7 @@ import { TEXT } from '@/localization/english'
 
 import img404 from '@/public/images/webp/errors/404.webp'
 
-const NotFoundPage = () => {
+const NotFoundPage = (): JSX.Element => {
   return (
     <PageContainer id={ID.error.err404}>
       <ErrorPageContent

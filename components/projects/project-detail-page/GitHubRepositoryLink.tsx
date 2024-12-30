@@ -4,7 +4,7 @@ type GitHubRepositoryLinkProps = {
   link: string
 }
 
-const GitHubRepositoryLink = ({ link }: GitHubRepositoryLinkProps) => {
+const GitHubRepositoryLink = ({ link }: GitHubRepositoryLinkProps): JSX.Element => {
   return (
     <ListItem>
       <span className="leading-tight">

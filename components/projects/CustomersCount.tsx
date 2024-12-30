@@ -5,7 +5,7 @@ type CustomersCountProps = {
   count: string
 }
 
-const CustomersCount = ({ count }: CustomersCountProps) => {
+const CustomersCount = ({ count }: CustomersCountProps): JSX.Element => {
   return (
     <List>
       <ListItem>

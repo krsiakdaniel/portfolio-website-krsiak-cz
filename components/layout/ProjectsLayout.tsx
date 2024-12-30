@@ -8,7 +8,7 @@ type ProjectsLayoutProps = {
   children: ReactNode
 }
 
-const ProjectsLayout = ({ heading, description, children }: ProjectsLayoutProps) => {
+const ProjectsLayout = ({ heading, description, children }: ProjectsLayoutProps): JSX.Element => {
   return (
     <>
       <div className="mt-10 flex flex-col">

@@ -7,7 +7,7 @@ type Heading4Props = {
   customCss?: string
 }
 
-const Heading4 = ({ children, dataTestId = '', textColor = '', customCss = '' }: Heading4Props) => {
+const Heading4 = ({ children, dataTestId = '', textColor = '', customCss = '' }: Heading4Props): JSX.Element => {
   return (
     <h4
       {...(dataTestId && { 'data-testid': dataTestId })}

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ...metaDataMoravia,
 }
 
-const ProjectWorkMoravia = () => {
+const ProjectWorkMoravia = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.moravia, TEXT.moravia)}

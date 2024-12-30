@@ -24,7 +24,7 @@ export const ProjectPageLayoutWrapper = ({
   projectData,
   sections,
   PageNavigation,
-}: ProjectPageLayoutWrapperProps) => {
+}: ProjectPageLayoutWrapperProps): JSX.Element => {
   const { title, role, years, company, description, skillsOverview, customers, projectLinks, imageShowcase } =
     projectData
 

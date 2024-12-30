@@ -6,7 +6,7 @@ import { Section } from '@/lib/utils/interfaces/interfaces'
 
 type PageSectionProps = Section
 
-const PageSection = ({ title, titleHighlight, items }: PageSectionProps) => {
+const PageSection = ({ title, titleHighlight, items }: PageSectionProps): JSX.Element => {
   return (
     <div className="mt-8">
       <Heading3>

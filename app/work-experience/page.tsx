@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ...metaDataProjectsOverviewWork,
 }
 
-const ProjectsWork = () => {
+const ProjectsWork = (): JSX.Element => {
   return (
     <PageContainer id={ID.projects.work}>
       <BreadCrumbs level1Url={PAGES_URL.work.mainUrl} level1Text={TEXT.workExperience} />
@@ -49,7 +49,6 @@ const ProjectsWork = () => {
             company="Freelance"
             role="Web Developer / Consultant"
             description="In the past I was creating  websites for clients."
-            isPartTime
           />
           <ExperienceCard
             company="Freelance"
@@ -65,7 +64,6 @@ const ProjectsWork = () => {
             company="Freelance"
             role="WordPress Consultant"
             description="For 5 years I used to create websites for clients and small companies."
-            isPartTime
           />
         </div>
 

@@ -16,7 +16,7 @@ const getSkillBadge = (skillCategoryObject: Skill) => {
   ))
 }
 
-const SkillsList = ({ skillsOverview }: SkillsListProps) => {
+const SkillsList = ({ skillsOverview }: SkillsListProps): JSX.Element => {
   return (
     <List>
       {skillsOverview.map((skillCategoryObject) => (

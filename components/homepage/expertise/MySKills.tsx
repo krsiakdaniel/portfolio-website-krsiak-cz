@@ -2,7 +2,7 @@ import MyMindset from '@/components/homepage/expertise/MyMindset'
 import SkillsForCompany from '@/components/homepage/skills/SkillsForCompany'
 import DividerWithText from '@/components/shared/DividerWithText'
 
-const MySKills = () => {
+const MySKills = (): JSX.Element => {
   return (
     <div className="mt-10">
       <DividerWithText text="What I Do" />

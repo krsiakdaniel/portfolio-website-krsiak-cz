@@ -2,7 +2,7 @@ type DividerWithTextProps = {
   text: string
 }
 
-const DividerWithText = ({ text }: DividerWithTextProps) => {
+const DividerWithText = ({ text }: DividerWithTextProps): JSX.Element => {
   return (
     <div className="inline-flex w-full items-center justify-center">
       <hr className="my-8 h-px w-96 border-0 bg-gray-200" />

@@ -1,23 +1,21 @@
-import PartTimeLabel from '@/components/shared/PartTimeLabel'
+import Heading5 from '@/components/shared/Heading5'
+import Highlight from '@/components/shared/Highlight'
 
 type ExperienceCardProps = {
   company: string
   role: string
-  isPartTime?: boolean
   description: string
 }
 
-const ExperienceCard = ({ company, role, isPartTime, description }: ExperienceCardProps) => {
+const ExperienceCard = ({ company, role, description }: ExperienceCardProps): JSX.Element => {
   return (
     <div className="mt-4 w-full rounded-lg border border-gray-200 bg-white p-6 shadow-md first:mt-0 md:max-w-[600px]">
-      <div>
-        <h5 className="mr-3 font-semibold">
-          {company}
-          {' · '}
-          <span className="text-violet-600">{role}</span> {isPartTime && <PartTimeLabel />}
-        </h5>
-        <p className="text-neutral-500">{description}</p>
-      </div>
+      <Heading5>
+        {company}
+        {' · '}
+        <Highlight text={role} />
+      </Heading5>
+      <p className="text-neutral-500">{description}</p>
     </div>
   )
 }

@@ -18,7 +18,7 @@ const Heading1 = ({
   textSizeSM = '6xl',
   textSizeLG = '7xl',
   customCss = '',
-}: Heading1Props) => {
+}: Heading1Props): JSX.Element => {
   return (
     <h1
       {...(dataTestId && { 'data-testid': dataTestId })}

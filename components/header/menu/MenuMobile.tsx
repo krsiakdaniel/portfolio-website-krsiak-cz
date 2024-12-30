@@ -5,7 +5,7 @@ import { menuMobileLinks } from '@/lib/data/menu/mobileLinks'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-const MenuMobile = () => {
+const MenuMobile = (): JSX.Element => {
   return (
     <ul
       className="mt-2 flex flex-col lg:hidden"

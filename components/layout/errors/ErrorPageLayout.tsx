@@ -19,7 +19,7 @@ const reset = () => {
   window.location.reload()
 }
 
-const ErrorPageLayout = ({ error, pageContainerId, imgAlt, description, note }: ErrorPageLayoutProps) => {
+const ErrorPageLayout = ({ error, pageContainerId, imgAlt, description, note }: ErrorPageLayoutProps): JSX.Element => {
   useEffect(() => {
     // Log the error to an error reporting service
     console.error('ERROR:', error.name, error.message, error.stack)

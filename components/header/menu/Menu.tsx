@@ -8,12 +8,13 @@ type MenuProps = {
   isMobile: boolean
 }
 
-const cssMobile =
-  'block border-b border-neutral-100 py-2 pl-3 pr-4 font-bold text-neutral-700 hover:bg-neutral-50 hover:text-violet-700'
+const getMenuLinkCss = (isMobile: boolean) => {
+  return isMobile
+    ? 'block border-b border-neutral-100 py-2 pl-3 pr-4 hover:bg-neutral-50'
+    : 'text-body-md cursor-pointer'
+}
 
-const cssDesktop = 'text-body-md cursor-pointer font-bold text-neutral-700 hover:text-violet-600'
-
-const Menu = ({ isMobile }: MenuProps) => {
+const Menu = ({ isMobile }: MenuProps): JSX.Element => {
   return (
     <ul
       className={isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-8 lg:flex'}
@@ -24,7 +25,7 @@ const Menu = ({ isMobile }: MenuProps) => {
         <li key={link.id}>
           <Link
             href={link.href}
-            className={isMobile ? cssMobile : cssDesktop}
+            className={`font-bold text-neutral-700 hover:text-violet-600 ${getMenuLinkCss(isMobile)}`}
             data-testid={isMobile ? `mobile-${link.testId}` : `desktop-${link.testId}`}
             id={link.id}
           >

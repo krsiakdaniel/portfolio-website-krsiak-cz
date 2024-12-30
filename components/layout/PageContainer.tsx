@@ -5,7 +5,7 @@ type PageContainerProps = {
   children: ReactNode
 }
 
-function PageContainer({ id, children }: PageContainerProps) {
+const PageContainer = ({ id, children }: PageContainerProps): JSX.Element => {
   return (
     <div id={id} className="mt-20 px-5">
       <div className="container mx-auto max-w-screen-xl px-5">{children}</div>

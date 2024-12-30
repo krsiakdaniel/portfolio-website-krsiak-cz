@@ -10,7 +10,7 @@ import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
 import { HeaderSectionProps } from '@/lib/utils/interfaces/componentProps'
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 
-const HeaderSection = ({ title, role, years, company, goBackLink, sectionID }: HeaderSectionProps) => {
+const HeaderSection = ({ title, role, years, company, goBackLink, sectionID }: HeaderSectionProps): JSX.Element => {
   return (
     <div className="mt-10">
       <Heading1 textColor="text-neutral-900">{title}</Heading1>
@@ -25,7 +25,7 @@ const HeaderSection = ({ title, role, years, company, goBackLink, sectionID }: H
           href={getGoBackLinkID(goBackLink, sectionID)}
           className="inline-flex items-center text-neutral-500 hover:text-neutral-700"
         >
-          <IconArrow type={NavigationDirectionEnum.Left} /> {TEXT.goBack}
+          <IconArrow direction={NavigationDirectionEnum.Left} /> {TEXT.goBack}
         </Link>
       </p>
     </div>

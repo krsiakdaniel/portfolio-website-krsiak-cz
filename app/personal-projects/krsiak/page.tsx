@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ...metaDataKrsiak,
 }
 
-const ProjectPersonalKrsiak = () => {
+const ProjectPersonalKrsiak = (): JSX.Element => {
   const { title, role, description, skillsOverview, projectLinks, linkGitHub, imageShowcase } = projectsPersonalNext[0]
 
   return (

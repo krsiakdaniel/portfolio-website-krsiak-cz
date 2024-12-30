@@ -4,7 +4,7 @@ import PageContainer from '@/components/layout/PageContainer'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   return (
     <PageContainer id={ID.footer}>
       <footer className="border-t border-dashed bg-white">

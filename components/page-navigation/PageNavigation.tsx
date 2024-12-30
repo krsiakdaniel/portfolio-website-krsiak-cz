@@ -18,7 +18,7 @@ const PageNavigation = ({
   nameNext,
   dataTestIdPrevious,
   dataTestIdNext,
-}: PageNavigationProps) => {
+}: PageNavigationProps): JSX.Element => {
   const hasPreviousLink = linkPrevious && namePrevious
   const hasNextLink = linkNext && nameNext
 
@@ -29,7 +29,7 @@ const PageNavigation = ({
           <PageNavigationLink
             href={linkPrevious}
             text={namePrevious}
-            type={NavigationDirectionEnum.Left}
+            direction={NavigationDirectionEnum.Left}
             dataTestId={dataTestIdPrevious}
             justify="start"
             widthClass={hasPreviousLink && hasNextLink ? 'lg:w-1/2' : 'lg:w-full'}
@@ -39,7 +39,7 @@ const PageNavigation = ({
           <PageNavigationLink
             href={linkNext}
             text={nameNext}
-            type={NavigationDirectionEnum.Right}
+            direction={NavigationDirectionEnum.Right}
             dataTestId={dataTestIdNext}
             justify="end"
             widthClass={hasPreviousLink && hasNextLink ? 'lg:w-1/2' : 'lg:w-full'}

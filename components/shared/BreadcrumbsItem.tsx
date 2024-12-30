@@ -7,7 +7,7 @@ type BreadcrumbsItemProps = {
   text: string
 }
 
-const BreadcrumbsItem = ({ url, text }: BreadcrumbsItemProps) => (
+const BreadcrumbsItem = ({ url, text }: BreadcrumbsItemProps): JSX.Element => (
   <li>
     <div className="flex items-center">
       <IconCaretRight />

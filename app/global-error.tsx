@@ -9,7 +9,7 @@ import { Errors } from '@/lib/utils/interfaces/interfaces'
 
 type ErrorProps = Errors
 
-const GlobalError = ({ error }: ErrorProps) => {
+const GlobalError = ({ error }: ErrorProps): JSX.Element => {
   return (
     <ErrorPageLayout
       error={error}

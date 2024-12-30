@@ -2,7 +2,7 @@ import Heading2 from '@/components/shared/Heading2'
 
 import { skillsInfo } from '@/lib/data/expertise/skillsInfo'
 
-const SkillsForCompany = () => {
+const SkillsForCompany = (): JSX.Element => {
   return (
     <div className="lg:w-1/2">
       <Heading2>💰📈 My Skills For Your Company</Heading2>

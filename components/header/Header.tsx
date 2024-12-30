@@ -9,7 +9,7 @@ import Menu from '@/components/header/menu/Menu'
 import MenuToggle from '@/components/header/menu/MenuToggle'
 import ScrollProgressBar from '@/components/header/ScrollProgressBar'
 
-const Header = () => {
+const Header = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false)
   const scroll = useScrollProgress()
 

@@ -9,7 +9,7 @@ type ProjectLinksListProps = {
   linkGitHub?: string
 }
 
-const ProjectLinksList = ({ projectLinks, linkGitHub }: ProjectLinksListProps) => {
+const ProjectLinksList = ({ projectLinks, linkGitHub }: ProjectLinksListProps): JSX.Element => {
   return (
     <List>
       {projectLinks &&

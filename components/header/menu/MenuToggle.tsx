@@ -12,7 +12,7 @@ type MenuToggleProps = {
   handleMenuToggle: () => void
 }
 
-const MenuToggle = ({ isOpen, handleMenuToggle }: MenuToggleProps) => {
+const MenuToggle = ({ isOpen, handleMenuToggle }: MenuToggleProps): JSX.Element => {
   return (
     <button
       onClick={handleMenuToggle}

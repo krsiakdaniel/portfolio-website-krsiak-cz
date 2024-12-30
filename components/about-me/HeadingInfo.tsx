@@ -4,7 +4,7 @@ import Highlight from '@/components/shared/Highlight'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { TEXT } from '@/localization/english'
 
-const HeadingInfo = () => {
+const HeadingInfo = (): JSX.Element => {
   return (
     <div>
       <Heading1>{TEXT.aboutMe}</Heading1>

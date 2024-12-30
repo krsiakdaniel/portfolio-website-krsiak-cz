@@ -5,7 +5,7 @@ import { menuDesktopLinks } from '@/lib/data/menu/desktopLinks'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-const MenuDesktop = () => {
+const MenuDesktop = (): JSX.Element => {
   return (
     <ul className="hidden gap-8 lg:flex" id={ID.menu.desktop} data-testid={DATA_TEST_IDS.menu.desktop.componentMenu}>
       {menuDesktopLinks.map((link) => (

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ...metaDataKomercniBanka,
 }
 
-const ProjectWorkKomercniBanka = () => {
+const ProjectWorkKomercniBanka = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.komercniBanka, TEXT.komercniBanka)}

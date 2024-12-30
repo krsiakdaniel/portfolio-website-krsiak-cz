@@ -2,7 +2,7 @@ import JobItem from '@/components/about-me/JobItem'
 
 import { jobs } from '@/lib/data/about-me'
 
-const JobsDescription = () => {
+const JobsDescription = (): JSX.Element => {
   return (
     <div className="mt-16 flex w-full flex-col lg:mt-0 lg:w-2/3">
       <ol className="relative border-s border-neutral-200">

@@ -1,4 +1,4 @@
-export const IconHome = () => {
+export const IconHome = (): JSX.Element => {
   return (
     <svg
       className="me-2.5 h-3 w-3"
