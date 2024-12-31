@@ -5,10 +5,10 @@ import ScrollToTopButton from '@/components/footer/ScrollToTopButton'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-const FooterRight = (): JSX.Element => {
+const FooterStatusAndScroll = (): JSX.Element => {
   return (
-    <div className="flex space-x-4">
-      <div className="mt-4 flex space-x-2 md:mt-0">
+    <div className="mt-8 flex space-x-4">
+      <div className="flex space-x-2">
         <Link
           href={PAGES_URL.statusPage}
           className="text-violet-600 underline hover:no-underline"
@@ -16,11 +16,10 @@ const FooterRight = (): JSX.Element => {
         >
           Status page
         </Link>
-        <span className="hidden md:inline">🟢</span>
       </div>
       <ScrollToTopButton />
     </div>
   )
 }
 
-export default FooterRight
+export default FooterStatusAndScroll
