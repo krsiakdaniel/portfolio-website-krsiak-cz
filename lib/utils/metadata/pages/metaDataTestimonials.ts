@@ -1,7 +1,7 @@
-import { META_ABOUT_ME } from '@/localization/english'
+import { META_TESTIMONIALS } from '@/localization/english'
 
 export const metaDataTestimonials = {
-  title: META_ABOUT_ME.title,
-  description: META_ABOUT_ME.description,
-  keywords: Object.values(META_ABOUT_ME.keywords),
+  title: META_TESTIMONIALS.title,
+  description: META_TESTIMONIALS.description,
+  keywords: Object.values(META_TESTIMONIALS.keywords),
 }
