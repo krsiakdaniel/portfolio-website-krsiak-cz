@@ -7,6 +7,7 @@ const SECTIONS = {
   PERSONAL_PROJECTS: 'personal-projects',
   WORK_EXPERIENCE: 'work-experience',
   HERO_LINK: 'hero-link',
+  FOOTER_LINK: 'footer-link',
 }
 
 const LINKS = {
@@ -28,8 +29,11 @@ const LINKS = {
 const FOOTER = {
   scrollToTopButton: 'scroll-to-top-button',
   copyright: 'footer-copyright',
-  link: 'footer-link',
+  linkFooterHome: `${SECTIONS.FOOTER_LINK}-home`,
   statusPage: 'footer-link-status-page',
+  linkFooterLinkedIn: `${SECTIONS.FOOTER_LINK}-${LINKS.LINKEDIN}`,
+  linkFooterResume: `${SECTIONS.FOOTER_LINK}-${LINKS.RESUME}`,
+  linkFooterGitHub: `${SECTIONS.FOOTER_LINK}-${LINKS.GITHUB}`,
 }
 
 const MENU = {
@@ -141,6 +145,7 @@ const PROJECTS = {
 const WEBSITE_LINKS = {
   aboutMe: 'about-me-link',
   resume: 'resume-link',
+  testimonials: 'testimonials-link',
   workExperience: 'work-experience-link',
   personalProjects: 'personal-projects-link',
 }

@@ -10,23 +10,23 @@ const FooterMainLinks = (): JSX.Element => {
     <div className="flex flex-col sm:flex-row">
       <HeroLink
         href={EXTERNAL_URL.linkedin}
-        text="My LinkedIn"
+        text={TEXT.linkedIn}
         className="bg-blue-700 text-white hover:bg-blue-800 focus:ring-blue-300 sm:mr-2"
-        dataTestId={DATA_TEST_IDS.hero.linkLinkedIn}
+        dataTestId={DATA_TEST_IDS.footer.linkFooterLinkedIn}
         isSmall
       />
       <HeroLink
         href={EXTERNAL_URL.resume.resumeViewPDF}
         text={TEXT.resumePDF}
         className="mt-2 bg-red-700 text-white hover:bg-red-800 focus:ring-red-300 sm:mr-2 sm:mt-0"
-        dataTestId={DATA_TEST_IDS.hero.linkResume}
+        dataTestId={DATA_TEST_IDS.footer.linkFooterResume}
         isSmall
       />
       <HeroLink
         href={EXTERNAL_URL.github}
-        text="GitHub Code"
+        text={TEXT.gitHub}
         className="mt-2 bg-gray-700 text-white hover:bg-gray-800 focus:ring-gray-300 sm:mt-0"
-        dataTestId={DATA_TEST_IDS.hero.linkGitHub}
+        dataTestId={DATA_TEST_IDS.footer.linkFooterGitHub}
         isSmall
       />
     </div>

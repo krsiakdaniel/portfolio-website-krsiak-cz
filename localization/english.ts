@@ -41,6 +41,10 @@ export const PROJECTS = {
   workExperience: '🖥️ Work Experience',
 }
 
+export const TESTIMONIALS = {
+  testimonials: '💬 Testimonials',
+}
+
 export const HOME = {
   home: '🏠 Home',
   logo: 'krsiak.cz',
@@ -63,6 +67,11 @@ export const COMPANIES = {
 export const WORK = {
   otherExperience: 'Other Experience',
   myJob: 'My job',
+}
+
+export const FOOTER = {
+  linkedIn: 'My LinkedIn',
+  gitHub: 'GitHub Code',
 }
 
 export const MISC = {
@@ -415,4 +424,6 @@ export const TEXT = {
   ...MISC,
   ...STATUS_PAGE,
   ...ERROR,
+  ...FOOTER,
+  ...TESTIMONIALS,
 }

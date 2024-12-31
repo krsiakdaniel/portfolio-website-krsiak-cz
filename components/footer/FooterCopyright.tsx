@@ -10,7 +10,11 @@ export const FooterCopyright = (): JSX.Element => {
       <span className="ml-2" data-testid={DATA_TEST_IDS.footer.copyright}>
         😼 😺 Copyright ©&nbsp;{getCurrentYear()}
         {' | '}
-        <Link href={PAGES_URL.home} className="underline hover:no-underline" data-testid={DATA_TEST_IDS.footer.link}>
+        <Link
+          href={PAGES_URL.home}
+          className="underline hover:no-underline"
+          data-testid={DATA_TEST_IDS.footer.linkFooterHome}
+        >
           krsiak.cz
         </Link>
       </span>

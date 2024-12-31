@@ -15,17 +15,17 @@ test.describe('Footer - Home page Link', () => {
     })
 
     await test.step('Check if the link text is correct', async () => {
-      const linkText = await page.textContent(getDataTestId(DATA_TEST_IDS.footer.link))
+      const linkText = await page.textContent(getDataTestId(DATA_TEST_IDS.footer.linkFooterHome))
       expect(linkText).toBe('krsiak.cz')
     })
 
     await test.step('Check if link is correct', async () => {
-      const linkUrl = await page.getAttribute(getDataTestId(DATA_TEST_IDS.footer.link), 'href')
+      const linkUrl = await page.getAttribute(getDataTestId(DATA_TEST_IDS.footer.linkFooterHome), 'href')
       expect(linkUrl).toBe('/')
     })
 
     await test.step('Check if the link redirects to the home page when clicked', async () => {
-      await page.click(getDataTestId(DATA_TEST_IDS.footer.link))
+      await page.click(getDataTestId(DATA_TEST_IDS.footer.linkFooterHome))
       expect(page.url()).toBe('http://localhost:3000/')
     })
   })
