@@ -6,18 +6,17 @@ import Link from 'next/link'
 
 export const FooterCopyright = (): JSX.Element => {
   return (
-    <div className="mt-8">
+    <div className="mt-8 flex flex-col">
       <span className="ml-2" data-testid={DATA_TEST_IDS.footer.copyright}>
         😼 😺 Copyright ©&nbsp;{getCurrentYear()}
-        {' | '}
-        <Link
-          href={PAGES_URL.home}
-          className="underline hover:no-underline"
-          data-testid={DATA_TEST_IDS.footer.linkFooterHome}
-        >
-          krsiak.cz
-        </Link>
       </span>
+      <Link
+        href={PAGES_URL.home}
+        className="underline hover:no-underline"
+        data-testid={DATA_TEST_IDS.footer.linkFooterHome}
+      >
+        krsiak.cz
+      </Link>
     </div>
   )
 }
