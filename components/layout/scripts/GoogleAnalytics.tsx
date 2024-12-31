@@ -1,4 +1,4 @@
-const GoogleAnalytics = () => {
+const GoogleAnalytics = (): JSX.Element => {
   return (
     <>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-NC44T6F2TL"></script>

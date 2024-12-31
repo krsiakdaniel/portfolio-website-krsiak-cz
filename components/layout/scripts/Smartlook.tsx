@@ -1,4 +1,4 @@
-const Smartlook = () => {
+const Smartlook = (): JSX.Element => {
   return (
     <script
       type="text/javascript"
