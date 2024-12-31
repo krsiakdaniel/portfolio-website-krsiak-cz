@@ -8,7 +8,7 @@ import { TEXT } from '@/localization/english'
 
 const Skills = (): JSX.Element => {
   return (
-    <div id={ID.skills} className="mt-10">
+    <div id={ID.skills} className="mt-16">
       <DividerWithText text="Skills" />
       <div className="mt-5 flex flex-col justify-center space-y-2 md:flex-row md:space-x-2 md:space-y-0">
         <SkillsIconGroup icons={iconsSkills1} />
