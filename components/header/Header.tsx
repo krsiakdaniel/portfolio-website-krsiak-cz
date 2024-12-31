@@ -10,10 +10,10 @@ import MenuToggle from '@/components/header/menu/MenuToggle'
 import ScrollProgressBar from '@/components/header/ScrollProgressBar'
 
 const Header = (): JSX.Element => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState<boolean>(false)
   const scroll = useScrollProgress()
 
-  const handleMenuToggle = () => {
+  const handleMenuToggle = (): void => {
     setIsOpen(!isOpen)
   }
 

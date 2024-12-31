@@ -1,4 +1,4 @@
-const TawkToChat = () => {
+const TawkToChat = (): JSX.Element => {
   return (
     <script
       type="text/javascript"

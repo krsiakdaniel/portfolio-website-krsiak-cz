@@ -7,9 +7,9 @@ import { useEffect, useState } from 'react'
  */
 
 export const useScrollProgress = (): number => {
-  const [scroll, setScroll] = useState(0)
+  const [scroll, setScroll] = useState<number>(0)
 
-  const pageScrollProgress = () => {
+  const pageScrollProgress = (): void => {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
     let scrolled = (winScroll / height) * 100
