@@ -13,6 +13,7 @@ const SECTIONS = {
 const LINKS = {
   LINKEDIN: 'linkedin',
   RESUME: 'resume',
+  TESTIMONIALS: 'testimonials',
   GITHUB: 'github',
   HOMEPAGE: 'homepage',
   ABOUT_ME: 'about-me',
@@ -42,6 +43,7 @@ const MENU = {
     links: {
       aboutMe: 'mobile-about-me-link',
       resume: 'mobile-resume-link',
+      testimonials: 'mobile-testimonials-link',
       workExperience: 'mobile-work-experience-link',
       personalProjects: 'mobile-personal-projects-link',
     },
@@ -51,6 +53,7 @@ const MENU = {
     links: {
       aboutMe: 'desktop-about-me-link',
       resume: 'desktop-resume-link',
+      testimonials: 'desktop-testimonials-link',
       workExperience: 'desktop-work-experience-link',
       personalProjects: 'desktop-personal-projects-link',
     },
@@ -82,6 +85,11 @@ const PAGE = {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.ABOUT_ME}`,
     next: `${NAVIGATION.NEXT}-${SECTIONS.WORK_EXPERIENCE}`,
     introduction: 'resume-introduction',
+  },
+  testimonials: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
+    next: `${NAVIGATION.NEXT}-${SECTIONS.WORK_EXPERIENCE}`,
+    introduction: 'testimonials-introduction',
   },
 }
 

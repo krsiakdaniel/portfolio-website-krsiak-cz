@@ -15,14 +15,14 @@ test.describe('Navigation - Resume', () => {
     expect(page.url()).toBe('http://localhost:3000/about-me')
   })
 
-  test('navigates to next page - Work Experience', async ({ page }) => {
+  test('navigates to next page - Testimonials', async ({ page }) => {
     // Navigate to page resume
     await page.goto('/resume')
 
     // Click on the PageNavigation component to go to the next page
     await page.click(getDataTestId(DATA_TEST_IDS.page.resume.next))
 
-    // Check that we've navigated to the page 'Work Experience'
-    expect(page.url()).toBe('http://localhost:3000/work-experience')
+    // Check that we've navigated to the page 'Testimonials'
+    expect(page.url()).toBe('http://localhost:3000/testimonials')
   })
 })
