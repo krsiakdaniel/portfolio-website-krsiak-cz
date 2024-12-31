@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 
+import Companies from '@/components/homepage/Companies'
 import WhatIDoMindset from '@/components/homepage/expertise/MySKills'
 import Hero from '@/components/homepage/hero/Hero'
 import Skills from '@/components/homepage/skills/Skills'
@@ -24,6 +25,7 @@ const Page = (): JSX.Element => {
       <Skills />
       <SkillsMain />
       <WhatIDoMindset />
+      <Companies />
 
       <PageNavigation
         linkNext={PAGES_URL.aboutMe}
