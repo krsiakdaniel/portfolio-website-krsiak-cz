@@ -45,15 +45,17 @@ const About = (): JSX.Element => {
                 <strong>💼 Position:</strong> QA Tester and Content Manager <strong>~ Smartlook</strong>
               </li>
               <li>
-                <strong>🤝 Work Relationship:</strong> Daniel was senior to Alexandre but didn&apos;t manage him directly.
+                <strong>🤝 Work Relationship:</strong> Daniel was senior to Alexandre but didn&apos;t manage him
+                directly.
               </li>
               <li>
                 <strong>💬 Testimonial:</strong>
-                &quot;His vast work experience in diverse environments and positions has endowed him with a unique set of
-                both soft and hard skills, making him a team member that brings added value to every organization. On a
-                personal note, Daniel helped me a great deal when I first started at Smartsupp. Thanks to him, I have
+                &quot;His vast work experience in diverse environments and positions has endowed him with a unique set
+                of both soft and hard skills, making him a team member that brings added value to every organization. On
+                a personal note, Daniel helped me a great deal when I first started at Smartsupp. Thanks to him, I have
                 managed to gain proficiency in a wide set of tools and working techniques. To this day, I still rely on
-                Daniel as a go-to person for advice on specific topics related to my work and personal side projects.&quot;
+                Daniel as a go-to person for advice on specific topics related to my work and personal side
+                projects.&quot;
               </li>
             </ul>
           </p>
@@ -69,8 +71,8 @@ const About = (): JSX.Element => {
               </li>
               <li>
                 <strong>💬 Testimonial:</strong>
-                &quot;I can recommend his knowledge and perspective about the IT globally and his behavior as a person are
-                excellent for team work.&quot;
+                &quot;I can recommend his knowledge and perspective about the IT globally and his behavior as a person
+                are excellent for team work.&quot;
               </li>
             </ul>
           </p>
@@ -86,9 +88,9 @@ const About = (): JSX.Element => {
               </li>
               <li>
                 <strong>💬 Testimonial:</strong>
-                &quot;Daniel has helped the team with his engineering skills focusing on automating the routine manual bug
-                management tasks, working in the challenging role of bugfixing engineer bridging the linguistic managers
-                and the production teams.&quot;
+                &quot;Daniel has helped the team with his engineering skills focusing on automating the routine manual
+                bug management tasks, working in the challenging role of bugfixing engineer bridging the linguistic
+                managers and the production teams.&quot;
               </li>
             </ul>
           </p>
@@ -104,8 +106,9 @@ const About = (): JSX.Element => {
                 <strong>🤝 Work Relationship:</strong> Inka worked with Daniel but on different teams.
               </li>
               <li>
-                <strong>💬 Testimonial:</strong> &quot;Daniel is strong in creating all kinds of automation utilities (term
-                processing, all kinds of tracking, etc.). He has gained a lot of experience in bug processing.&quot;
+                <strong>💬 Testimonial:</strong> &quot;Daniel is strong in creating all kinds of automation utilities
+                (term processing, all kinds of tracking, etc.). He has gained a lot of experience in bug
+                processing.&quot;
               </li>
             </ul>
           </p>
@@ -135,10 +138,10 @@ const About = (): JSX.Element => {
       <PageNavigation
         linkPrevious={PAGES_URL.resume}
         namePrevious={TEXT.resume}
-        dataTestIdPrevious={DATA_TEST_IDS.page.aboutMe.previous}
+        dataTestIdPrevious={DATA_TEST_IDS.page.testimonials.previous}
         linkNext={PAGES_URL.work.mainUrl}
         nameNext={TEXT.workExperience}
-        dataTestIdNext={DATA_TEST_IDS.page.aboutMe.next}
+        dataTestIdNext={DATA_TEST_IDS.page.testimonials.next}
       />
     </PageContainer>
   )
