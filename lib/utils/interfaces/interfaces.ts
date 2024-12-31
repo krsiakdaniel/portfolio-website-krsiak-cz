@@ -110,3 +110,12 @@ export interface WebsiteLinkItem {
 export interface Errors {
   error: Error
 }
+
+// testimonials
+export interface Testimonial {
+  id: number
+  personPhoto: StaticImageData
+  personName: string
+  personJob: string
+  testimonialText: string
+}
