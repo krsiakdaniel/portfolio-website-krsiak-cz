@@ -7,11 +7,13 @@ const SECTIONS = {
   PERSONAL_PROJECTS: 'personal-projects',
   WORK_EXPERIENCE: 'work-experience',
   HERO_LINK: 'hero-link',
+  FOOTER_LINK: 'footer-link',
 }
 
 const LINKS = {
   LINKEDIN: 'linkedin',
   RESUME: 'resume',
+  TESTIMONIALS: 'testimonials',
   GITHUB: 'github',
   HOMEPAGE: 'homepage',
   ABOUT_ME: 'about-me',
@@ -28,8 +30,11 @@ const LINKS = {
 const FOOTER = {
   scrollToTopButton: 'scroll-to-top-button',
   copyright: 'footer-copyright',
-  link: 'footer-link',
+  linkFooterHome: `${SECTIONS.FOOTER_LINK}-home`,
   statusPage: 'footer-link-status-page',
+  linkFooterLinkedIn: `${SECTIONS.FOOTER_LINK}-${LINKS.LINKEDIN}`,
+  linkFooterResume: `${SECTIONS.FOOTER_LINK}-${LINKS.RESUME}`,
+  linkFooterGitHub: `${SECTIONS.FOOTER_LINK}-${LINKS.GITHUB}`,
 }
 
 const MENU = {
@@ -38,6 +43,7 @@ const MENU = {
     links: {
       aboutMe: 'mobile-about-me-link',
       resume: 'mobile-resume-link',
+      testimonials: 'mobile-testimonials-link',
       workExperience: 'mobile-work-experience-link',
       personalProjects: 'mobile-personal-projects-link',
     },
@@ -47,6 +53,7 @@ const MENU = {
     links: {
       aboutMe: 'desktop-about-me-link',
       resume: 'desktop-resume-link',
+      testimonials: 'desktop-testimonials-link',
       workExperience: 'desktop-work-experience-link',
       personalProjects: 'desktop-personal-projects-link',
     },
@@ -78,6 +85,11 @@ const PAGE = {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.ABOUT_ME}`,
     next: `${NAVIGATION.NEXT}-${SECTIONS.WORK_EXPERIENCE}`,
     introduction: 'resume-introduction',
+  },
+  testimonials: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
+    next: `${NAVIGATION.NEXT}-${SECTIONS.WORK_EXPERIENCE}`,
+    introduction: 'testimonials-introduction',
   },
 }
 
@@ -141,6 +153,7 @@ const PROJECTS = {
 const WEBSITE_LINKS = {
   aboutMe: 'about-me-link',
   resume: 'resume-link',
+  testimonials: 'testimonials-link',
   workExperience: 'work-experience-link',
   personalProjects: 'personal-projects-link',
 }

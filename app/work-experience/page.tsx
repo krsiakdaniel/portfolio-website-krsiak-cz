@@ -99,8 +99,8 @@ const ProjectsWork = (): JSX.Element => {
 
       <div className="mt-20">
         <PageNavigation
-          linkPrevious={PAGES_URL.resume}
-          namePrevious={TEXT.resume}
+          linkPrevious={PAGES_URL.testimonials}
+          namePrevious={TEXT.testimonials}
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.overview.previous}
           linkNext={PAGES_URL.personal.mainUrl}
           nameNext={TEXT.personalProjects}

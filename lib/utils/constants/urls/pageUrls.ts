@@ -8,6 +8,7 @@ export const PAGES_URL = {
   home: '/',
   aboutMe: '/about-me',
   resume: '/resume',
+  testimonials: '/testimonials',
   work: {
     mainUrl: URL_WORK_EXPERIENCE,
     kooperativa: getUrlWorkExperience('kooperativa'),

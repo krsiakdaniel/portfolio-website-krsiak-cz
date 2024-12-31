@@ -31,6 +31,7 @@ export const ID = {
   websiteLink: {
     aboutMe: 'about-me',
     resume: 'resume',
+    testimonials: 'testimonials',
     workExperience: 'work-experience',
     personalProjects: 'personal-projects',
   },

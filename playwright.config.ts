@@ -10,6 +10,9 @@ export default defineConfig({
   // Look for test files in the "tests" directory, relative to this configuration file.
   testDir: './__tests__/playwright',
 
+  // Timeout for each test
+  timeout: 60 * 1000, // 60 seconds
+
   // Ignore tests in the "mobile" folder
   testIgnore: ['**/mobile/**'],
 

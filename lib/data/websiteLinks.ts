@@ -14,6 +14,12 @@ export const websiteLinks: WebsiteLinkItem[] = [
   },
   { href: PAGES_URL.resume, text: TEXT.resume, testId: DATA_TEST_IDS.websiteLinks.resume, id: ID.websiteLink.resume },
   {
+    href: PAGES_URL.testimonials,
+    text: TEXT.testimonials,
+    testId: DATA_TEST_IDS.websiteLinks.testimonials,
+    id: ID.websiteLink.testimonials,
+  },
+  {
     href: PAGES_URL.work.mainUrl,
     text: TEXT.workExperience,
     testId: DATA_TEST_IDS.websiteLinks.workExperience,

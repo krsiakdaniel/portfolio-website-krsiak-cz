@@ -54,8 +54,8 @@ const Resume = (): JSX.Element => {
         linkPrevious={PAGES_URL.aboutMe}
         namePrevious={TEXT.aboutMe}
         dataTestIdPrevious={DATA_TEST_IDS.page.resume.previous}
-        linkNext={PAGES_URL.work.mainUrl}
-        nameNext={TEXT.workExperience}
+        linkNext={PAGES_URL.testimonials}
+        nameNext={TEXT.testimonials}
         dataTestIdNext={DATA_TEST_IDS.page.resume.next}
       />
     </PageContainer>
