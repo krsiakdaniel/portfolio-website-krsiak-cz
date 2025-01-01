@@ -1,11 +1,11 @@
 import MyMindset from '@/components/pages/home/expertise/MyMindset'
-import SkillsForCompany from '@/components/pages/home/skills/SkillsForCompany'
+import SkillsForCompany from '@/components/pages/home/expertise/SkillsForCompany'
 import DividerWithText from '@/components/shared/DividerWithText'
 
-const MySKills = (): JSX.Element => {
+const SkillsForCompanyAndMyMindset = (): JSX.Element => {
   return (
     <div className="mt-16">
-      <DividerWithText text="What I Do" />
+      <DividerWithText text="What I Bring To Project" />
       <div className="mt-5 flex flex-col space-y-20 lg:flex-row lg:space-x-20 lg:space-y-0">
         <SkillsForCompany />
         <MyMindset />
@@ -14,4 +14,4 @@ const MySKills = (): JSX.Element => {
   )
 }
 
-export default MySKills
+export default SkillsForCompanyAndMyMindset

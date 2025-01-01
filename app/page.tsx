@@ -3,8 +3,9 @@ import { Metadata } from 'next'
 import PageNavigation from '@/components/layout/pages/navigation-previous-next/PageNavigation'
 import PageContainer from '@/components/layout/pages/PageContainer'
 import Companies from '@/components/pages/home/Companies'
-import WhatIDoMindset from '@/components/pages/home/expertise/MySKills'
+import SkillsForCompanyAndMyMindset from '@/components/pages/home/expertise/SkillsForCompanyAndMyMindset'
 import Hero from '@/components/pages/home/hero/Hero'
+import ScanMyContactQR from '@/components/pages/home/ScanMyContactQR'
 import Skills from '@/components/pages/home/skills/Skills'
 import SkillsMain from '@/components/pages/home/skills/SkillsMain'
 
@@ -27,7 +28,8 @@ const Page = (): JSX.Element => {
       <Skills />
       <SkillsMain />
       <Companies />
-      <WhatIDoMindset />
+      <SkillsForCompanyAndMyMindset />
+      <ScanMyContactQR />
 
       <PageNavigation
         linkNext={PAGES_URL.aboutMe}

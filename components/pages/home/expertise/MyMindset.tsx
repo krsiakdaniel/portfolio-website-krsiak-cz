@@ -8,14 +8,14 @@ const MyMindset = (): JSX.Element => {
   return (
     <div className="lg:w-1/2">
       <Heading2>{TEXT.mindset}</Heading2>
-      {mindset.map((skill) => (
-        <div className="mt-8" key={skill.id}>
+      {mindset.map((mind) => (
+        <div className="mt-8" key={mind.id}>
           <p className="mt-4 text-lg text-neutral-600">
             <span className="font-bold">
-              <span className="text-violet-600">{skill.order}.</span> {skill.title}
+              <span className="text-violet-600">{mind.order}.</span> {mind.title}
             </span>
           </p>
-          <p className="mt-2 text-lg text-neutral-600">{skill.description}</p>
+          <p className="mt-2 text-lg text-neutral-600">{mind.description}</p>
         </div>
       ))}
     </div>
