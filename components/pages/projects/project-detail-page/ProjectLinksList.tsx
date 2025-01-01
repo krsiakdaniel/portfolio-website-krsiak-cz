@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import GitHubRepositoryLink from '@/components/projects/project-detail-page/GitHubRepositoryLink'
+import GitHubRepositoryLink from '@/components/pages/projects/project-detail-page/GitHubRepositoryLink'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 

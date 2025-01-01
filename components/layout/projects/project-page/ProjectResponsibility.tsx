@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import PageSection from '@/components/layout/project-page/PageSection'
+import PageSection from '@/components/layout/projects/project-page/PageSection'
 
 import { Section } from '@/lib/utils/interfaces/interfaces'
 

@@ -1,8 +1,8 @@
 import { FC } from 'react'
 
-import CustomersCount from '@/components/projects/CustomersCount'
-import ProjectLinksList from '@/components/projects/project-detail-page/ProjectLinksList'
-import SkillsList from '@/components/projects/project-detail-page/SkillsList'
+import CustomersCount from '@/components/pages/projects/CustomersCount'
+import ProjectLinksList from '@/components/pages/projects/project-detail-page/ProjectLinksList'
+import SkillsList from '@/components/pages/projects/project-detail-page/SkillsList'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
