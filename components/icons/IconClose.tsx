@@ -1,4 +1,4 @@
-export const IconClose = (): JSX.Element => {
+const IconClose = (): JSX.Element => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,3 +11,5 @@ export const IconClose = (): JSX.Element => {
     </svg>
   )
 }
+
+export default IconClose

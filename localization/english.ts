@@ -48,6 +48,8 @@ export const TESTIMONIALS = {
 export const HOME = {
   home: '🏠 Home',
   logo: 'krsiak.cz',
+  mindset: '💡 My Committed Mindset',
+  skillsForCompany: '🥇 Skills For Company',
 }
 
 export const STATUS_PAGE = {
@@ -109,7 +111,7 @@ export const ERROR = {
   tryAgain: 'Try again',
   mainText: "Sorry, we can't find that page.",
   smallText: 'It looks like we are fresh out of yarn!',
-  backToHome: 'Back to Homepage',
+  backToHome: 'Back to Home',
 }
 
 export const META_ABOUT_ME = {

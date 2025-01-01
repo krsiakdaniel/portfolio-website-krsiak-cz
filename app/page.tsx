@@ -1,18 +1,21 @@
 import { Metadata } from 'next'
 
-import Companies from '@/components/homepage/Companies'
-import WhatIDoMindset from '@/components/homepage/expertise/MySKills'
-import Hero from '@/components/homepage/hero/Hero'
-import Skills from '@/components/homepage/skills/Skills'
-import SkillsMain from '@/components/homepage/skills/SkillsMain'
-import PageContainer from '@/components/layout/PageContainer'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
+import PageNavigation from '@/components/layout/pages/navigation-previous-next/PageNavigation'
+import PageContainer from '@/components/layout/pages/PageContainer'
+import Companies from '@/components/pages/home/Companies'
+import SkillsForCompanyAndMyMindset from '@/components/pages/home/expertise/SkillsForCompanyAndMyMindset'
+import Hero from '@/components/pages/home/hero/Hero'
+import ScanMyContactQR from '@/components/pages/home/ScanMyContactQR'
+import Skills from '@/components/pages/home/skills/Skills'
+import SkillsMain from '@/components/pages/home/skills/SkillsMain'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { metaDataShared } from '@/lib/data/metadata/metaDataShared'
+
+import { TEXT } from '@/localization/english'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { metaDataShared } from '@/lib/utils/metadata/metaDataShared'
-import { TEXT } from '@/localization/english'
 
 export const metadata: Metadata = {
   ...metaDataShared,
@@ -20,12 +23,13 @@ export const metadata: Metadata = {
 
 const Page = (): JSX.Element => {
   return (
-    <PageContainer id={ID.homepage}>
+    <PageContainer id={ID.home}>
       <Hero />
       <Skills />
       <SkillsMain />
-      <WhatIDoMindset />
       <Companies />
+      <SkillsForCompanyAndMyMindset />
+      <ScanMyContactQR />
 
       <PageNavigation
         linkNext={PAGES_URL.aboutMe}

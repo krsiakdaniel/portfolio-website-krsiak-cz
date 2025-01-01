@@ -2,11 +2,12 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { FC, ReactNode } from 'react'
 
-import Footer from '@/components/footer/Footer'
-import Header from '@/components/header/Header'
-import PageHeadContent from '@/components/layout/PageHeadContent'
+import Footer from '@/components/layout/footer/Footer'
+import Header from '@/components/layout/header/Header'
+import PageHeadContent from '@/components/layout/pages/PageHeadContent'
 
-import { metaDataShared } from '@/lib/utils/metadata/metaDataShared'
+import { metaDataShared } from '@/lib/data/metadata/metaDataShared'
+
 import { TEXT } from '@/localization/english'
 
 import './globals.css'

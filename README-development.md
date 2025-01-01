@@ -125,29 +125,33 @@ import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 
 ```ts
 // Components
-import PageContainer from '@/components/layout/PageContainer'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
-import Header from '@/components/header/Header'
-import Footer from '@/components/footer/Footer'
+import PageContainer from '@/components/layout/pages/PageContainer'
+import PageNavigation from '@/components/layout/pages/navigation-previous-next/PageNavigation'
+import Header from '@/components/layout/header/Header'
+import Footer from '@/components/layout/footer/Footer'
 ```
 
 ```ts
 // Data
-import { mindset } from '@/lib/data/expertise/mindset'
+import { appleTouchIconSizes } from '@/lib/data/metadata/appleTouchIconSizes'
+import { mindset } from '@/lib/data/pages/home/mindset'
 import { iconsSkills1 } from '@/lib/data/skills/skillsMain'
 ```
 
 ```ts
-// Utils
+// Localization
 import { TEXT } from '@/localization/english'
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 ```
 
 ```ts
-// Interfaces and Helpers
+// Utils - Constants
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/dataTestIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+// Utils - Helpers
 import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
-import { HeaderSectionProps } from '@/lib/utils/interfaces/componentProps'
+import { getSkillsIcons } from '@/lib/utils/helpers/getSkillsIcons'
+// Utils - Interfaces
+import { HeaderSectionProps } from '@/lib/utils/interfaces/sharedComponentProps'
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 ```
 

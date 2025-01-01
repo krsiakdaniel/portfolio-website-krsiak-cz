@@ -2,18 +2,18 @@
 
 import { FC } from 'react'
 
-import ErrorPageLayout from '@/components/layout/errors/ErrorPageLayout'
+import ErrorPageContainer from '@/components/pages/errors/ErrorPageContainer'
 
-import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { TEXT } from '@/localization/english'
 
+import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { Errors } from '@/lib/utils/interfaces/interfaces'
 
 type ErrorProps = Errors
 
 const GlobalError: FC<ErrorProps> = ({ error }): JSX.Element => {
   return (
-    <ErrorPageLayout
+    <ErrorPageContainer
       error={error}
       pageContainerId={ID.error.errGlobal}
       imgAlt={TEXT.errorGlobalAlt}

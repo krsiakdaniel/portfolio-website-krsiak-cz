@@ -23,9 +23,9 @@ test.describe('Links', () => {
     })
 
     await test.step('Check the Portfolio Website link', async () => {
-      const portfolioWebsiteLink = breadcrumbs.locator('a[href="/personal-projects/krsiak"]')
-      expect(await portfolioWebsiteLink.count()).toBe(1)
-      expect(await portfolioWebsiteLink.getAttribute('href')).toBe('/personal-projects/krsiak')
+      const portfolioPageLink = breadcrumbs.locator('a[href="/personal-projects/krsiak"]')
+      expect(await portfolioPageLink.count()).toBe(1)
+      expect(await portfolioPageLink.getAttribute('href')).toBe('/personal-projects/krsiak')
     })
   })
 })

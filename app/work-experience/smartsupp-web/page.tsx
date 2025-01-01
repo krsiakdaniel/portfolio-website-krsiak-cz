@@ -1,18 +1,19 @@
-import { ProjectPageLayoutWrapper } from '@/components/layout/project-page/ProjectPageLayoutWrapper'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
+import { Metadata } from 'next'
 
-import { projectsWorkFrontEnd } from '@/lib/data/projects/work/projects-overview/workFrontEnd'
-import { sections } from '@/lib/data/projects/work/smartsuppWeb'
+import PageNavigation from '@/components/layout/pages/navigation-previous-next/PageNavigation'
+import ProjectPageLayoutWrapper from '@/components/layout/projects/project-page/ProjectPageLayoutWrapper'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { metaDataSmartsuppWeb } from '@/lib/data/metadata/pages/projects/work/metaDataSmartsuppWeb'
+import { projectsWorkFrontEnd } from '@/lib/data/pages/projects/work/projects-overview/workFrontEnd'
+import { sections } from '@/lib/data/pages/projects/work/smartsuppWeb'
+
 import { TEXT } from '@/localization/english'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/dataTestIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
-import { metaDataSmartsuppWeb } from '@/lib/utils/metadata/projects/work/metaDataSmartsuppWeb'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...metaDataSmartsuppWeb,
