@@ -1,10 +1,10 @@
 import { Testimonial } from '@/lib/utils/interfaces/interfaces'
 
-import personCastro from '@/public/images/svg/testimonials/alexandre-castro.webp'
-import personPopa from '@/public/images/svg/testimonials/daniel-popa.webp'
-import personLosseff from '@/public/images/svg/testimonials/inka-losseff.webp'
-import personKvapil from '@/public/images/svg/testimonials/roman-kvapil.webp'
-import personPridalek from '@/public/images/svg/testimonials/vojtech-pridalek.webp'
+import personCastro from '@/public/images/webp/testimonials/alexandre-castro.webp'
+import personPopa from '@/public/images/webp/testimonials/daniel-popa.webp'
+import personLosseff from '@/public/images/webp/testimonials/inka-losseff.webp'
+import personKvapil from '@/public/images/webp/testimonials/roman-kvapil.webp'
+import personPridalek from '@/public/images/webp/testimonials/vojtech-pridalek.webp'
 
 const nameCastro = 'Alexandre Castro'
 const nameKvapil = 'Roman Kvapil'

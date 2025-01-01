@@ -3,7 +3,7 @@ import Image from 'next/image'
 import DividerWithText from '@/components/shared/DividerWithText'
 import Heading2 from '@/components/shared/Heading2'
 
-import contactQR from '@/public/images/svg/qr-code-vcard.svg'
+import contactQR from '@/public/images/svg/vcard-contact/qr-code-vcard.svg'
 
 const ScanMyContactQR = (): JSX.Element => {
   return (

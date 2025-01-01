@@ -10,7 +10,8 @@ const COMMON_VALUES = {
   cypress: 'Cypress',
   playwright: 'Playwright',
   brno: 'Brno',
-  czechRepublic: 'Czech\u00A0Republic',
+  czechRepublic: 'Czech Republic',
+  czechRepublicNBSP: 'Czech\u00A0Republic',
   html: 'HTML',
   css: 'CSS',
   sass: 'Sass',
@@ -19,17 +20,28 @@ const COMMON_VALUES = {
   graphql: 'GraphQL',
 }
 
+export const HOME = {
+  home: '🏠 Home',
+  logo: 'krsiak.cz',
+  nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
+  reactDeveloper: COMMON_VALUES.reactDeveloper,
+  heroText: `Hi 👋 I am ${COMMON_VALUES.reactDeveloper} based in ${COMMON_VALUES.brno}, ${COMMON_VALUES.czechRepublicNBSP} 🇨🇿`,
+  mindset: '💡 My Committed Mindset',
+  skillsForCompany: '🥇 Skills For Company',
+}
+
 export const ABOUT = {
   pageTitle: 'About Me',
   aboutMe: '👨‍💻 About Me',
-  nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
-  reactDeveloper: COMMON_VALUES.reactDeveloper,
-  heroText: `Hi 👋 I am ${COMMON_VALUES.reactDeveloper} based in ${COMMON_VALUES.brno}, ${COMMON_VALUES.czechRepublic} 🇨🇿`,
 }
 
 export const RESUME = {
   resume: '📝 Resume',
   resumePDF: 'Resume in PDF',
+}
+
+export const TESTIMONIALS = {
+  testimonials: '💬 Testimonials',
 }
 
 export const PROJECTS = {
@@ -39,17 +51,6 @@ export const PROJECTS = {
   next: COMMON_VALUES.next,
   react: COMMON_VALUES.react,
   workExperience: '🖥️ Work Experience',
-}
-
-export const TESTIMONIALS = {
-  testimonials: '💬 Testimonials',
-}
-
-export const HOME = {
-  home: '🏠 Home',
-  logo: 'krsiak.cz',
-  mindset: '💡 My Committed Mindset',
-  skillsForCompany: '🥇 Skills For Company',
 }
 
 export const STATUS_PAGE = {
