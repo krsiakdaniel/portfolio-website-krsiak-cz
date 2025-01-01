@@ -1,19 +1,19 @@
 import { Metadata } from 'next'
 
-import { ProjectPageLayoutWrapper } from '@/components/layout/project-page/ProjectPageLayoutWrapper'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
+import PageNavigation from '@/components/layout/pages/navigation-previous-next/PageNavigation'
+import ProjectPageLayoutWrapper from '@/components/layout/projects/project-page/ProjectPageLayoutWrapper'
 
-import { sections } from '@/lib/data/projects/work/groupon'
-import { projectsWorkQA } from '@/lib/data/projects/work/projects-overview/workQA'
+import { metaDataGroupon } from '@/lib/data/metadata/pages/projects/work/metaDataGroupon'
+import { sections } from '@/lib/data/pages/projects/work/groupon'
+import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview/workQA'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { TEXT } from '@/localization/english'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/dataTestIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
-import { metaDataGroupon } from '@/lib/utils/metadata/projects/work/metaDataGroupon'
 
 export const metadata: Metadata = {
   ...metaDataGroupon,

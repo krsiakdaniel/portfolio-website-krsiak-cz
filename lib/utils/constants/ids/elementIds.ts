@@ -1,5 +1,5 @@
 export const ID = {
-  homepage: 'homepage',
+  home: 'home',
   hero: 'hero',
   skills: 'skills',
   skillsMain: 'skills-main',

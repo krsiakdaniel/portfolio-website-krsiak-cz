@@ -1,25 +1,26 @@
 import { Metadata } from 'next'
 
-import PageContainer from '@/components/layout/PageContainer'
-import ProjectsLayout from '@/components/layout/ProjectsLayout'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
-import ExperienceCard from '@/components/projects/experience/ExperienceCard'
-import { ProjectSection } from '@/components/projects/overview-page/ProjectSection'
+import PageNavigation from '@/components/layout/pages/navigation-previous-next/PageNavigation'
+import PageContainer from '@/components/layout/pages/PageContainer'
+import ProjectsLayout from '@/components/layout/projects/ProjectsLayout'
+import ExperienceCard from '@/components/pages/projects/experience/ExperienceCard'
+import { ProjectSection } from '@/components/pages/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading4 from '@/components/shared/Heading4'
 import Highlight from '@/components/shared/Highlight'
 
-import { projectsWorkReact } from '@/lib/data/projects/work/projects-overview/react/workReact'
-import { projectsWorkFrontEnd } from '@/lib/data/projects/work/projects-overview/workFrontEnd'
-import { projectsWorkLocalization } from '@/lib/data/projects/work/projects-overview/workLocalization'
-import { projectsWorkQA } from '@/lib/data/projects/work/projects-overview/workQA'
-import { projectsWorkWordPress } from '@/lib/data/projects/work/projects-overview/workWordpress'
+import { metaDataProjectsOverviewWork } from '@/lib/data/metadata/pages/metaDataProjectsOverviewWork'
+import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
+import { projectsWorkFrontEnd } from '@/lib/data/pages/projects/work/projects-overview/workFrontEnd'
+import { projectsWorkLocalization } from '@/lib/data/pages/projects/work/projects-overview/workLocalization'
+import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview/workQA'
+import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/workWordpress'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { TEXT } from '@/localization/english'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { metaDataProjectsOverviewWork } from '@/lib/utils/metadata/pages/metaDataProjectsOverviewWork'
-import { TEXT } from '@/localization/english'
 
 export const metadata: Metadata = {
   ...metaDataProjectsOverviewWork,

@@ -1,18 +1,20 @@
 import { Metadata } from 'next'
 
-import HeroLink from '@/components/homepage/hero/HeroLink'
-import PageContainer from '@/components/layout/PageContainer'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
-import ResumeInfo from '@/components/resume/ResumeInfo'
-import ResumePreviewEmbed from '@/components/resume/ResumePreviewEmbed'
+import PageNavigation from '@/components/layout/pages/navigation-previous-next/PageNavigation'
+import PageContainer from '@/components/layout/pages/PageContainer'
+import HeroLink from '@/components/pages/home/hero/HeroLink'
+import ResumeInfo from '@/components/pages/resume/ResumeInfo'
+import ResumePreviewEmbed from '@/components/pages/resume/ResumePreviewEmbed'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { metaDataResume } from '@/lib/data/metadata/pages/metaDataResume'
+
+import { TEXT } from '@/localization/english'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { metaDataResume } from '@/lib/utils/metadata/pages/metaDataResume'
-import { TEXT } from '@/localization/english'
 
 export const metadata: Metadata = {
   ...metaDataResume,
@@ -50,6 +52,7 @@ const Resume = (): JSX.Element => {
           <ResumePreviewEmbed />
         </div>
       </div>
+
       <PageNavigation
         linkPrevious={PAGES_URL.aboutMe}
         namePrevious={TEXT.aboutMe}

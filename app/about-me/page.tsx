@@ -1,17 +1,19 @@
 import { Metadata } from 'next'
 
-import HeadingInfo from '@/components/about-me/HeadingInfo'
-import JobsDescription from '@/components/about-me/JobsDescription'
-import Photo from '@/components/about-me/Photo'
-import PageContainer from '@/components/layout/PageContainer'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
+import PageNavigation from '@/components/layout/pages/navigation-previous-next/PageNavigation'
+import PageContainer from '@/components/layout/pages/PageContainer'
+import HeadingInfo from '@/components/pages/about-me/HeadingInfo'
+import JobsDescription from '@/components/pages/about-me/JobsDescription'
+import Photo from '@/components/pages/about-me/Photo'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { metaDataAboutMe } from '@/lib/data/metadata/pages/metaDataAboutMe'
+
+import { TEXT } from '@/localization/english'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { metaDataAboutMe } from '@/lib/utils/metadata/pages/metaDataAboutMe'
-import { TEXT } from '@/localization/english'
 
 export const metadata: Metadata = {
   ...metaDataAboutMe,
@@ -30,6 +32,7 @@ const About = (): JSX.Element => {
           <Photo />
         </div>
       </div>
+
       <PageNavigation
         linkPrevious={PAGES_URL.home}
         namePrevious={TEXT.home}

@@ -1,19 +1,20 @@
 import { Metadata } from 'next'
 
-import { ProjectPageLayoutWrapper } from '@/components/layout/project-page/ProjectPageLayoutWrapper'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
+import PageNavigation from '@/components/layout/pages/navigation-previous-next/PageNavigation'
+import ProjectPageLayoutWrapper from '@/components/layout/projects/project-page/ProjectPageLayoutWrapper'
 
-import { sections } from '@/lib/data/projects/work/moravia'
-import { projectsWorkLocalization } from '@/lib/data/projects/work/projects-overview/workLocalization'
+import { sections } from '@/lib/data/pages/projects/work/moravia'
+import { projectsWorkLocalization } from '@/lib/data/pages/projects/work/projects-overview/workLocalization'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { metaDataMoravia } from '@/lib/data/metadata/pages/projects/work/metaDataMoravia'
+
 import { TEXT } from '@/localization/english'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/dataTestIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
-import { metaDataMoravia } from '@/lib/utils/metadata/projects/work/metaDataMoravia'
 
 export const metadata: Metadata = {
   ...metaDataMoravia,

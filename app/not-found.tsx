@@ -1,9 +1,10 @@
-import ErrorPageContent from '@/components/layout/errors/ErrorPageContent'
-import PageContainer from '@/components/layout/PageContainer'
+import PageContainer from '@/components/layout/pages/PageContainer'
+import ErrorPageContent from '@/components/pages/errors/ErrorPageContent'
+
+import { TEXT } from '@/localization/english'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { TEXT } from '@/localization/english'
 
 import img404 from '@/public/images/webp/errors/404.webp'
 

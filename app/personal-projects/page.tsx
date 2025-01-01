@@ -1,20 +1,21 @@
 import { Metadata } from 'next'
 
-import PageContainer from '@/components/layout/PageContainer'
-import ProjectsLayout from '@/components/layout/ProjectsLayout'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
-import { ProjectSection } from '@/components/projects/overview-page/ProjectSection'
+import PageNavigation from '@/components/layout/pages/navigation-previous-next/PageNavigation'
+import PageContainer from '@/components/layout/pages/PageContainer'
+import ProjectsLayout from '@/components/layout/projects/ProjectsLayout'
+import { ProjectSection } from '@/components/pages/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Highlight from '@/components/shared/Highlight'
 
-import { projectsPersonalNext } from '@/lib/data/projects/personal/projects-overview/personalNext'
-import { projectsPersonalReact } from '@/lib/data/projects/personal/projects-overview/personalReact'
+import { metaDataProjectsOverviewPersonal } from '@/lib/data/metadata/pages/metaDataProjectsOverviewPersonal'
+import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/personalNext'
+import { projectsPersonalReact } from '@/lib/data/pages/projects/personal/projects-overview/personalReact'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { TEXT } from '@/localization/english'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { metaDataProjectsOverviewPersonal } from '@/lib/utils/metadata/pages/metaDataProjectsOverviewPersonal'
-import { TEXT } from '@/localization/english'
 
 export const metadata: Metadata = {
   ...metaDataProjectsOverviewPersonal,

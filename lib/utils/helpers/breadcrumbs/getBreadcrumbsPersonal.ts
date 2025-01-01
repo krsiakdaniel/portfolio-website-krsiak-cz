@@ -1,6 +1,6 @@
-import { URL_PERSONAL_PROJECTS } from '@/lib/utils/constants/urls/pageUrls'
 import { TEXT } from '@/localization/english'
 
+import { URL_PERSONAL_PROJECTS } from '@/lib/utils/constants/urls/pageUrls'
 import { BreadCrumbsType } from '@/lib/utils/interfaces/types'
 
 /**

@@ -1,6 +1,6 @@
 import { Browser, BrowserContext, Page, test } from '@playwright/test'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/dataTestIds'
 import { checkLink } from '@/__tests__/playwright/lib/utils/helpers/checkLink'
 import { setupBrowser, setupPage, teardownContext } from '@/__tests__/playwright/lib/utils/helpers/setup'
 

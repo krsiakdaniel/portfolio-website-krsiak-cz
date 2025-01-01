@@ -1,19 +1,20 @@
 import { Metadata } from 'next'
 
-import ProjectPageLayout from '@/components/layout/project-page/ProjectPageLayout'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
+import PageNavigation from '@/components/layout/pages/navigation-previous-next/PageNavigation'
+import ProjectPageLayout from '@/components/layout/projects/project-page/ProjectPageLayout'
 
-import { sections } from '@/lib/data/projects/personal/krsiak'
-import { projectsPersonalNext } from '@/lib/data/projects/personal/projects-overview/personalNext'
+import { sections } from '@/lib/data/pages/projects/personal/krsiak'
+import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/personalNext'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { metaDataKrsiak } from '@/lib/data/metadata/pages/projects/personal/metaDataKrsiak'
+
 import { TEXT } from '@/localization/english'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/dataTestIds'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
 import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
-import { metaDataKrsiak } from '@/lib/utils/metadata/projects/personal/metaDataKrsiak'
 
 export const metadata: Metadata = {
   ...metaDataKrsiak,
