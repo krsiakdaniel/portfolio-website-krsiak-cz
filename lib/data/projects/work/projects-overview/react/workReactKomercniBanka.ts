@@ -2,6 +2,7 @@ import { iconsSkillsProjectsWorkKomercniBanka } from '@/lib/data/skills/skillsPr
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
 import { Project } from '@/lib/utils/interfaces/interfaces'
 
 // komercni banka

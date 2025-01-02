@@ -2,6 +2,7 @@ import { iconsSkillsProjectsWorkSmartsuppDashboard } from '@/lib/data/skills/ski
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
 import { Project } from '@/lib/utils/interfaces/interfaces'
 
 // smartsupp dashboard

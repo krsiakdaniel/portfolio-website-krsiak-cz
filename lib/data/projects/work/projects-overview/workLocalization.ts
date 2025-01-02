@@ -1,10 +1,11 @@
 import { iconsSkillsProjectsWorkMoravia } from '@/lib/data/skills/skillsProjectsWork'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
 import { Project } from '@/lib/utils/interfaces/interfaces'
 
 // moravia
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import moravia1 from '@/public/images/webp/projects/work/moravia/moravia-1-light.webp'
 import moravia2 from '@/public/images/webp/projects/work/moravia/moravia-2-light.webp'
 import moravia3 from '@/public/images/webp/projects/work/moravia/moravia-3-light.webp'
