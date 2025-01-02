@@ -1,4 +1,5 @@
 import { PAGES_URL, URL_PERSONAL_PROJECTS, URL_WORK_EXPERIENCE } from '@/lib/utils/constants/urls/pageUrls'
+
 import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
 
 /**

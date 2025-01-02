@@ -5,12 +5,13 @@ import PageContainer from '@/components/layout/PageContainer'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading1 from '@/components/shared/Heading1'
 
-import { statusBadges } from '@/lib/data/statusPage'
+import { statusBadges } from '@/lib/data/status-page'
+
+import { TEXT } from '@/localization/english'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { metaDataStatusPage } from '@/lib/utils/metadata/pages/metaDataStatusPage'
-import { TEXT } from '@/localization/english'
 
 export const metadata: Metadata = {
   ...metaDataStatusPage,
