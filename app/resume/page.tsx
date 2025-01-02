@@ -38,7 +38,7 @@ const Resume = (): JSX.Element => {
             <SocialLink
               href={EXTERNAL_URL.resume.resumeViewPDF}
               text={`Download - ${TEXT.resumePDF}`}
-              className="bg-red-700 text-white hover:bg-red-800 focus:ring-red-300"
+              linkColor="red"
               dataTestId={DATA_TEST_IDS.hero.linkResume}
             />
           </div>
