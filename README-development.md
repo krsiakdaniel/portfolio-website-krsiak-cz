@@ -11,8 +11,8 @@ Development environment for the project.
     - [Manually](#manually)
     - [Using tool `npm-check-updates`](#using-tool-npm-check-updates)
   - [💅 Prettier](#-prettier)
-  - [Imports Sorting Order](#imports-sorting-order)
-  - [Import Example](#import-example)
+  - [🔗 Imports Order](#-imports-order)
+    - [Example](#example)
 
 ---
 
@@ -96,20 +96,22 @@ Format the code via Prettier.
 npm run prettier:fix
 ```
 
-## Imports Sorting Order
+## 🔗 Imports Order
 
-Sorting order for imports in files:
+Order for imports in files:
 
 1. Third-Party Library Imports
 2. Custom Hooks
 3. Components
 4. Data
 5. Utils
-6. Interfaces and Helpers
-7. Images
-8. CSS
+6. Localization
+7. Utils - Constants
+8. Utils - Helpers and Interfaces
+9. Images
+10. CSS
 
-## Import Example
+### Example
 
 ```ts
 // Third-Party Library Imports
@@ -133,19 +135,23 @@ import Footer from '@/components/footer/Footer'
 
 ```ts
 // Data
+import { metaDataShared } from '@/lib/utils/metadata/metaDataShared'
 import { mindset } from '@/lib/data/expertise/mindset'
-import { iconsSkills1 } from '@/lib/data/skills/skillsMain'
 ```
 
 ```ts
-// Utils
+// Localization
 import { TEXT } from '@/localization/english'
+```
+
+```ts
+// Utils - Constants
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 ```
 
 ```ts
-// Interfaces and Helpers
+// Utils - Helpers and Interfaces
 import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
 import { HeaderSectionProps } from '@/lib/utils/interfaces/componentProps'
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
