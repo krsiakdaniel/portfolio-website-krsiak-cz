@@ -14,12 +14,13 @@ import { projectsWorkFrontEnd } from '@/lib/data/projects/work/projects-overview
 import { projectsWorkLocalization } from '@/lib/data/projects/work/projects-overview/workLocalization'
 import { projectsWorkQA } from '@/lib/data/projects/work/projects-overview/workQA'
 import { projectsWorkWordPress } from '@/lib/data/projects/work/projects-overview/workWordpress'
+import { metaDataProjectsOverviewWork } from '@/lib/utils/metadata/pages/metaDataProjectsOverviewWork'
+
+import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { metaDataProjectsOverviewWork } from '@/lib/utils/metadata/pages/metaDataProjectsOverviewWork'
-import { TEXT } from '@/localization/english'
 
 export const metadata: Metadata = {
   ...metaDataProjectsOverviewWork,
