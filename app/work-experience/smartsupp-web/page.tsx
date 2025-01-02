@@ -1,18 +1,20 @@
+import { Metadata } from 'next'
+
 import { ProjectPageLayoutWrapper } from '@/components/layout/project-page/ProjectPageLayoutWrapper'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
 import { projectsWorkFrontEnd } from '@/lib/data/projects/work/projects-overview/workFrontEnd'
 import { sections } from '@/lib/data/projects/work/smartsuppWeb'
+import { metaDataSmartsuppWeb } from '@/lib/utils/metadata/projects/work/metaDataSmartsuppWeb'
+
+import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { TEXT } from '@/localization/english'
 
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
-import { metaDataSmartsuppWeb } from '@/lib/utils/metadata/projects/work/metaDataSmartsuppWeb'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...metaDataSmartsuppWeb,

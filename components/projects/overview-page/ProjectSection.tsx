@@ -11,6 +11,7 @@ type ProjectSectionProps = {
   sectionText: string
 }
 
+// FIXME: export default + update imports
 export const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, sectionText }): JSX.Element => {
   return (
     <>

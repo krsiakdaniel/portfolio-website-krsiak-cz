@@ -4,8 +4,9 @@ import { FC } from 'react'
 
 import ErrorPageLayout from '@/components/layout/errors/ErrorPageLayout'
 
-import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { TEXT } from '@/localization/english'
+
+import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { Errors } from '@/lib/utils/interfaces/interfaces'
 

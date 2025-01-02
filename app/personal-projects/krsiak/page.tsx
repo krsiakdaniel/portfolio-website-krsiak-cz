@@ -5,15 +5,16 @@ import PageNavigation from '@/components/page-navigation/PageNavigation'
 
 import { sections } from '@/lib/data/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/lib/data/projects/personal/projects-overview/personalNext'
+import { metaDataKrsiak } from '@/lib/utils/metadata/projects/personal/metaDataKrsiak'
+
+import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { TEXT } from '@/localization/english'
 
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
 import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
-import { metaDataKrsiak } from '@/lib/utils/metadata/projects/personal/metaDataKrsiak'
 
 export const metadata: Metadata = {
   ...metaDataKrsiak,

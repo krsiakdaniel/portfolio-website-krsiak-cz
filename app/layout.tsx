@@ -7,6 +7,7 @@ import Header from '@/components/header/Header'
 import PageHeadContent from '@/components/layout/PageHeadContent'
 
 import { metaDataShared } from '@/lib/utils/metadata/metaDataShared'
+
 import { TEXT } from '@/localization/english'
 
 import './globals.css'

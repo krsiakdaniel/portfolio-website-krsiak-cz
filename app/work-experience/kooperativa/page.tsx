@@ -5,15 +5,16 @@ import PageNavigation from '@/components/page-navigation/PageNavigation'
 
 import { sections } from '@/lib/data/projects/work/kooperativa'
 import { projectsWorkReact } from '@/lib/data/projects/work/projects-overview/react/workReact'
+import { metaDataKooperativa } from '@/lib/utils/metadata/projects/work/metaDataKooperativa'
+
+import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { TEXT } from '@/localization/english'
 
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
-import { metaDataKooperativa } from '@/lib/utils/metadata/projects/work/metaDataKooperativa'
 
 export const metadata: Metadata = {
   ...metaDataKooperativa,
