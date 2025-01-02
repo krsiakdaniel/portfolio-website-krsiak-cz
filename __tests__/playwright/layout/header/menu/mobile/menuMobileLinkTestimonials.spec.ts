@@ -1,9 +1,9 @@
 import { Browser, BrowserContext, chromium, expect, Page, test } from '@playwright/test'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+
+import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
 
 let browser: Browser
 let context: BrowserContext

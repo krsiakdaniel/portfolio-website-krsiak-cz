@@ -1,6 +1,7 @@
 import { Browser, BrowserContext, Page, test } from '@playwright/test'
 
 import { projectLinks } from '@/__tests__/playwright/lib/data/projectLinksData'
+
 import { setupBrowser, setupPage, teardownContext } from '@/__tests__/playwright/lib/utils/helpers/setup'
 import { testProjectLink } from '@/__tests__/playwright/lib/utils/helpers/testProjectLink'
 
