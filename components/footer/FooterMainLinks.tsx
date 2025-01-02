@@ -1,4 +1,4 @@
-import HeroLink from '@/components/homepage/hero/HeroLink'
+import HeroLink from '@/components/pages/home/hero/HeroLink'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

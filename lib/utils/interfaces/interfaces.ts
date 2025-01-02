@@ -98,8 +98,8 @@ export interface StatusBadge {
   height: number
 }
 
-// website links
-export interface WebsiteLinkItem {
+// pages links
+export interface PageLinkItem {
   href: string
   text: string
   testId: string

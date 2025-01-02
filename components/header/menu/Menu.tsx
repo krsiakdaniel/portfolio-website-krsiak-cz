@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FC } from 'react'
 
-import { websiteLinks } from '@/lib/data/websiteLinks'
+import { pagesLinks } from '@/lib/data/pagesLinks'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
@@ -22,7 +22,7 @@ const Menu: FC<MenuProps> = ({ isMobile }): JSX.Element => {
       id={isMobile ? ID.menu.mobile : ID.menu.desktop}
       data-testid={isMobile ? ID.menu.mobile : ID.menu.desktop}
     >
-      {websiteLinks.map((link) => (
+      {pagesLinks.map((link) => (
         <li key={link.id}>
           <Link
             href={link.href}

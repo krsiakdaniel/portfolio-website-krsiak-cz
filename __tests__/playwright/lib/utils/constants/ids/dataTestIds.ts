@@ -15,7 +15,7 @@ const LINKS = {
   RESUME: 'resume',
   TESTIMONIALS: 'testimonials',
   GITHUB: 'github',
-  HOMEPAGE: 'homepage',
+  HOME: 'home',
   ABOUT_ME: 'about-me',
   KRSIAK: 'krsiak',
   CRYPTOMANIA: 'cryptomania',
@@ -77,7 +77,7 @@ const PAGE = {
     next: `${NAVIGATION.NEXT}-${LINKS.ABOUT_ME}`,
   },
   aboutMe: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.HOMEPAGE}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.HOME}`,
     next: `${NAVIGATION.NEXT}-${LINKS.RESUME}`,
     introduction: 'about-me-introduction',
   },
@@ -150,15 +150,13 @@ const PROJECTS = {
   work: WORK_PROJECTS,
 }
 
-const WEBSITE_LINKS = {
+const PAGES_LINKS = {
   aboutMe: 'about-me-link',
   resume: 'resume-link',
   testimonials: 'testimonials-link',
   workExperience: 'work-experience-link',
   personalProjects: 'personal-projects-link',
 }
-
-const MISC = {}
 
 export const DATA_TEST_IDS = {
   breadcrumbs: 'breadcrumbs',
@@ -169,5 +167,5 @@ export const DATA_TEST_IDS = {
   hero: HERO,
   page: PAGE,
   projects: PROJECTS,
-  websiteLinks: WEBSITE_LINKS,
+  pagesLinks: PAGES_LINKS,
 }

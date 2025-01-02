@@ -3,32 +3,32 @@ import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { WebsiteLinkItem } from '@/lib/utils/interfaces/interfaces'
+import { PageLinkItem } from '@/lib/utils/interfaces/interfaces'
 
-export const websiteLinks: WebsiteLinkItem[] = [
+export const pagesLinks: PageLinkItem[] = [
   {
     href: PAGES_URL.aboutMe,
     text: TEXT.aboutMe,
-    testId: DATA_TEST_IDS.websiteLinks.aboutMe,
+    testId: DATA_TEST_IDS.pagesLinks.aboutMe,
     id: ID.websiteLink.aboutMe,
   },
-  { href: PAGES_URL.resume, text: TEXT.resume, testId: DATA_TEST_IDS.websiteLinks.resume, id: ID.websiteLink.resume },
+  { href: PAGES_URL.resume, text: TEXT.resume, testId: DATA_TEST_IDS.pagesLinks.resume, id: ID.websiteLink.resume },
   {
     href: PAGES_URL.testimonials,
     text: TEXT.testimonials,
-    testId: DATA_TEST_IDS.websiteLinks.testimonials,
+    testId: DATA_TEST_IDS.pagesLinks.testimonials,
     id: ID.websiteLink.testimonials,
   },
   {
     href: PAGES_URL.work.mainUrl,
     text: TEXT.workExperience,
-    testId: DATA_TEST_IDS.websiteLinks.workExperience,
+    testId: DATA_TEST_IDS.pagesLinks.workExperience,
     id: ID.websiteLink.workExperience,
   },
   {
     href: PAGES_URL.personal.mainUrl,
     text: TEXT.personalProjects,
-    testId: DATA_TEST_IDS.websiteLinks.personalProjects,
+    testId: DATA_TEST_IDS.pagesLinks.personalProjects,
     id: ID.websiteLink.personalProjects,
   },
 ]

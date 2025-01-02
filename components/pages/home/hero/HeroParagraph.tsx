@@ -1,4 +1,5 @@
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
 import { TEXT } from '@/localization/english'
 
 const HeroParagraph = (): JSX.Element => {

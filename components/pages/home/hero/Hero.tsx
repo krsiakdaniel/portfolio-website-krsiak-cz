@@ -1,6 +1,6 @@
-import HeroHeading from '@/components/homepage/hero/HeroHeading'
-import HeroMainLinks from '@/components/homepage/hero/HeroMainLinks'
-import HeroParagraph from '@/components/homepage/hero/HeroParagraph'
+import HeroHeading from '@/components/pages/home/hero/HeroHeading'
+import HeroMainLinks from '@/components/pages/home/hero/HeroMainLinks'
+import HeroParagraph from '@/components/pages/home/hero/HeroParagraph'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
