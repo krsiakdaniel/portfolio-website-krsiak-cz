@@ -113,7 +113,7 @@ export interface Errors {
 
 // testimonials
 export interface Testimonial {
-  id: number
+  id: string
   personPhoto: StaticImageData
   personName: string
   personJob: string
