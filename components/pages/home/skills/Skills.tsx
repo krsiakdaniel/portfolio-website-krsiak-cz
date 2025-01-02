@@ -1,4 +1,4 @@
-import SkillsIconGroup from '@/components/homepage/skills/SkillsIconGroup'
+import SkillsIconGroup from '@/components/pages/home/skills/SkillsIconGroup'
 import DividerWithText from '@/components/shared/DividerWithText'
 
 import { iconsSkills1, iconsSkills2, iconsSkills3, iconsSkills4 } from '@/lib/data/skills/skillsMain'

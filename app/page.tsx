@@ -1,13 +1,13 @@
 import { Metadata } from 'next'
 
-import Companies from '@/components/homepage/Companies'
-import WhatIDoMindset from '@/components/homepage/expertise/MySKills'
-import Hero from '@/components/homepage/hero/Hero'
-import Skills from '@/components/homepage/skills/Skills'
-import SkillsMain from '@/components/homepage/skills/SkillsMain'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
+import Companies from '@/components/pages/home/Companies'
+import WhatIDoMindset from '@/components/pages/home/expertise/MySKills'
+import Hero from '@/components/pages/home/hero/Hero'
 import ScanMyContactQR from '@/components/pages/home/ScanMyContactQR'
+import Skills from '@/components/pages/home/skills/Skills'
+import SkillsMain from '@/components/pages/home/skills/SkillsMain'
 
 import { metaDataShared } from '@/lib/utils/metadata/metaDataShared'
 
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 const Page = (): JSX.Element => {
   return (
-    <PageContainer id={ID.homepage}>
+    <PageContainer id={ID.home}>
       <Hero />
       <Skills />
       <SkillsMain />

@@ -1,5 +1,5 @@
-import MyMindset from '@/components/homepage/expertise/MyMindset'
-import SkillsForCompany from '@/components/homepage/skills/SkillsForCompany'
+import MyMindset from '@/components/pages/home/expertise/MyMindset'
+import SkillsForCompany from '@/components/pages/home/skills/SkillsForCompany'
 import DividerWithText from '@/components/shared/DividerWithText'
 
 const MySKills = (): JSX.Element => {
