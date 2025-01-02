@@ -1,6 +1,7 @@
 'use client' // Ensure the component is a Client Component if it has an onClick handler.
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
 import { scrollToTop } from '@/lib/utils/helpers/scrollToTop'
 
 const ScrollToTopButton = (): JSX.Element => {
