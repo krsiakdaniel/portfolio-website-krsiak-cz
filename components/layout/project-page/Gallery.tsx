@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
+import Heading3 from '@/components/shared/Heading3'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import Heading3 from '@/components/shared/Heading3'
 import { ImageShowcaseItem } from '@/lib/utils/interfaces/interfaces'
 
 type GalleryProps = {

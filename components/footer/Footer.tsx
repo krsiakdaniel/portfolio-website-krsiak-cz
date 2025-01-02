@@ -1,8 +1,8 @@
 import FooterCopyright from '@/components/footer/FooterCopyright'
+import FooterMainLinks from '@/components/footer/FooterMainLinks'
 import FooterStatusAndScroll from '@/components/footer/FooterStatusAndScroll'
 import PageContainer from '@/components/layout/PageContainer'
 
-import FooterMainLinks from '@/components/footer/FooterMainLinks'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 const Footer = (): JSX.Element => {

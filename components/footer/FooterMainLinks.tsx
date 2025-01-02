@@ -1,9 +1,9 @@
 import HeroLink from '@/components/pages/home/hero/HeroLink'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
-import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { TEXT } from '@/localization/english'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
 const FooterMainLinks = (): JSX.Element => {
   return (

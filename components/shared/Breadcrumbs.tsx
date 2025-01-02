@@ -3,11 +3,13 @@ import { FC } from 'react'
 
 import BreadcrumbsItem from '@/components/shared/BreadcrumbsItem'
 
+import { TEXT } from '@/localization/english'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
 import { BreadCrumbsType } from '@/lib/utils/interfaces/types'
-import { TEXT } from '@/localization/english'
 
 type BreadCrumbsProps = BreadCrumbsType
 

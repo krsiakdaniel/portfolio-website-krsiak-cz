@@ -3,10 +3,10 @@ import { FC } from 'react'
 import CustomersCount from '@/components/projects/CustomersCount'
 import ProjectLinksList from '@/components/projects/project-detail-page/ProjectLinksList'
 import SkillsList from '@/components/projects/project-detail-page/SkillsList'
+import Heading3 from '@/components/shared/Heading3'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
-import Heading3 from '@/components/shared/Heading3'
 import { Project } from '@/lib/utils/interfaces/interfaces'
 
 type ProjectInformationProps = Pick<

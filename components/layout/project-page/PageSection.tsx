@@ -1,9 +1,9 @@
 import { FC } from 'react'
 
+import Heading3 from '@/components/shared/Heading3'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
-import Heading3 from '@/components/shared/Heading3'
 import { Section } from '@/lib/utils/interfaces/interfaces'
 
 type PageSectionProps = Section
