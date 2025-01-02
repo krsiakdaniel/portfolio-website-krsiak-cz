@@ -1,4 +1,5 @@
 import { URL_PERSONAL_PROJECTS } from '@/lib/utils/constants/urls/pageUrls'
+
 import { getUrlPersonalProject, getUrlWorkExperience } from '@/lib/utils/helpers/getPageUrls'
 
 describe('getUrlWorkExperience', () => {
