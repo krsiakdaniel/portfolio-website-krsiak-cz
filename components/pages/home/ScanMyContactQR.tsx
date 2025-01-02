@@ -13,7 +13,13 @@ const ScanMyContactQR = (): JSX.Element => {
         <Heading2>Scan To Add Contact</Heading2>
       </div>
       <div className="mt-8 flex justify-center">
-        <Image src={contactQR} alt="QR code" width={256} />
+        <Image
+          src={contactQR}
+          width={256}
+          height={256}
+          alt="Contact Me - QR code"
+          className="rounded-lg bg-violet-100 p-1 ring-1 ring-violet-300"
+        />
       </div>
     </section>
   )

@@ -27,7 +27,7 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
 }): JSX.Element => {
   return (
     <div className="flex flex-col items-center text-center">
-      <Image src={imgSrc} alt={imgAlt} width={400} height={417} loading="eager" className="bt-5" />
+      <Image src={imgSrc} width={400} height={417} alt={imgAlt} loading="eager" />
       <div className="mt-10">
         <Heading1 textSize="8xl" textSizeSM="8xl" textSizeLG="8xl">
           {heading}

@@ -9,8 +9,8 @@ const Photo = (): JSX.Element => {
     <div className="justify-star mt-16 flex w-full flex-col items-center lg:mt-0 lg:w-1/3">
       <Image
         src={krsiak}
-        className="h-auto w-96 rounded-lg border border-neutral-300 bg-neutral-100 shadow-md lg:mt-0"
         alt={TEXT.nameDanielKrsiak}
+        className="h-auto w-96 rounded-lg bg-violet-100 p-1 ring-1 ring-violet-300 lg:mt-0"
         placeholder="blur"
         loading="eager"
       />

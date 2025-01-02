@@ -444,6 +444,15 @@ export const META_STATUS_PAGE = {
   },
 }
 
+export const IMAGE_ALT = {
+  microsoft: 'Microsoft',
+  smartsupp: 'Smartsupp',
+  kooperativa: 'Kooperativa',
+  ibm: 'IBM',
+  rwsMoravia: 'RWS - Moravia',
+  komercniBanka: 'Komerční Banka',
+}
+
 export const TEXT = {
   ...SOCIAL_LINKS,
   ...HOME,
