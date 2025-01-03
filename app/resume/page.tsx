@@ -16,6 +16,8 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { LinkColors } from '@/lib/utils/interfaces/enums'
+
 export const metadata: Metadata = {
   ...metaDataResume,
 }
@@ -38,7 +40,7 @@ const Resume = (): JSX.Element => {
             <SocialLink
               href={EXTERNAL_URL.resume.resumeViewPDF}
               text={`Download - ${TEXT.resumePDF}`}
-              linkColor="red"
+              linkColor={LinkColors.Red}
               dataTestId={DATA_TEST_IDS.hero.linkResume}
             />
           </div>
