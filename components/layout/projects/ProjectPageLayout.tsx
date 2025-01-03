@@ -1,10 +1,10 @@
 import { FC, ReactNode } from 'react'
 
 import PageContainer from '@/components/layout/PageContainer'
-import Gallery from '@/components/layout/projects/project-page/Gallery'
-import HeaderSection from '@/components/layout/projects/project-page/HeaderSection'
-import ProjectResponsibility from '@/components/layout/projects/project-page/ProjectResponsibility'
-import ProjectInformation from '@/components/projects/project-detail-page/ProjectInformation'
+import Gallery from '@/components/layout/projects/project-page-detail/Gallery'
+import HeaderSection from '@/components/layout/projects/project-page-detail/HeaderSection'
+import ProjectInformation from '@/components/layout/projects/project-page-detail/ProjectInformation'
+import ProjectResponsibility from '@/components/layout/projects/project-page-detail/ProjectResponsibility'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 
 import { HeaderSectionProps } from '@/lib/utils/interfaces/componentProps'

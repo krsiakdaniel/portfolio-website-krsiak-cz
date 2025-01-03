@@ -2,9 +2,9 @@ import { Metadata } from 'next'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
-import ProjectsLayout from '@/components/layout/projects/ProjectsLayout'
-import ExperienceCard from '@/components/projects/experience/ExperienceCard'
-import ProjectSection from '@/components/projects/overview-page/ProjectSection'
+import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
+import ExperienceCard from '@/components/pages/projects/other-experience/ExperienceCard'
+import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading4 from '@/components/shared/Heading4'
 import Highlight from '@/components/shared/Highlight'
@@ -31,7 +31,7 @@ const ProjectsWork = (): JSX.Element => {
     <PageContainer id={ID.projects.work}>
       <BreadCrumbs level1Url={PAGES_URL.work.mainUrl} level1Text={TEXT.workExperience} />
 
-      <ProjectsLayout
+      <ProjectsOverviewLayout
         heading={TEXT.workExperience}
         description={
           <p className="mt-4 text-lg text-neutral-600">
@@ -96,7 +96,7 @@ const ProjectsWork = (): JSX.Element => {
             description="Responsible for translation of the company website and application into 9 languages. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱"
           />
         </div>
-      </ProjectsLayout>
+      </ProjectsOverviewLayout>
 
       <div className="mt-20">
         <PageNavigation
