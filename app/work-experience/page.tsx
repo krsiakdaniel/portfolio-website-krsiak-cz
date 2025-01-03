@@ -9,12 +9,12 @@ import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading4 from '@/components/shared/Heading4'
 import Highlight from '@/components/shared/Highlight'
 
-import { metaDataProjectsOverviewWork } from '@/lib/data/metadata/pages/metaDataProjectsOverviewWork'
-import { projectsWorkReact } from '@/lib/data/projects/work/projects-overview/react/workReact'
-import { projectsWorkFrontEnd } from '@/lib/data/projects/work/projects-overview/workFrontEnd'
-import { projectsWorkLocalization } from '@/lib/data/projects/work/projects-overview/workLocalization'
-import { projectsWorkQA } from '@/lib/data/projects/work/projects-overview/workQA'
-import { projectsWorkWordPress } from '@/lib/data/projects/work/projects-overview/workWordpress'
+import { metaDataProjectsOverviewWork } from '@/lib/data/metadata/pages/projects/work/metaDataProjectsOverviewWork'
+import { projectsWorkFrontEnd } from '@/lib/data/pages/projects/work/projects-overview/front-end/workFrontEnd'
+import { projectsWorkLocalization } from '@/lib/data/pages/projects/work/projects-overview/localization/workLocalization'
+import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview/quality-assurance/workQA'
+import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
+import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
 
 import { TEXT } from '@/localization/english'
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FC } from 'react'
 
-import { pagesLinks } from '@/lib/data/pagesLinks'
+import { pagesLinks } from '@/lib/data/layout/pagesLinks'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 

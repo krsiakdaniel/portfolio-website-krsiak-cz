@@ -1,7 +1,7 @@
 import DividerWithText from '@/components/shared/DividerWithText'
 import SkillsCard from '@/components/shared/SkillsCard'
 
-import { skills } from '@/lib/data/skills/skillsMain'
+import { skills } from '@/lib/data/pages/home/skillsMain'
 
 const SkillsMain = (): JSX.Element => {
   return (

@@ -1,4 +1,4 @@
-import { iconsSkillsProjectsWorkMoravia } from '@/lib/data/skills/skillsProjectsWork'
+import { iconsSkillsProjectsWorkMoravia } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'

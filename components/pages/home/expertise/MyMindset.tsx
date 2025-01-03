@@ -1,6 +1,6 @@
 import Heading2 from '@/components/shared/Heading2'
 
-import { mindset } from '@/lib/data/expertise/mindset'
+import { mindset } from '@/lib/data/pages/home/expertise/mindset'
 
 const MyMindset = (): JSX.Element => {
   return (

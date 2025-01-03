@@ -1,4 +1,4 @@
-import { appleTouchIconSizes } from '@/lib/data/appleTouchIconSizes'
+import { appleTouchIconSizes } from '@/lib/data/metadata/appleTouchIconSizes'
 
 const THEME_COLOR = '#ECF0F1'
 

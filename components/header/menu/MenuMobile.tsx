@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { menuMobileLinks } from '@/lib/data/menu/mobileLinks'
+import { menuMobileLinks } from '@/lib/data/layout/menu/menuMobileLinks'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
