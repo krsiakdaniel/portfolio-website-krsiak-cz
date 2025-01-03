@@ -18,6 +18,12 @@ Explain the benefits this feature will have on the project.
 
 Include steps, tools, or components to be modified.
 
+## Links
+
+- [ ] ...
+- [ ] ...
+- [ ] ...
+
 ## Code Example
 
 Provide a code example if applicable.
@@ -41,3 +47,11 @@ code_example
 ## Screenshots
 
 Attach relevant screenshots if applicable.
+
+### Before
+
+...
+
+### After
+
+...

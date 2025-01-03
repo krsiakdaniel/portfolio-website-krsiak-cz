@@ -22,6 +22,12 @@ Describe the purpose of the refactoring.
 - Modularize or break down complex functions.
 - Update images.
 
+## Links
+
+- [ ] ...
+- [ ] ...
+- [ ] ...
+
 ## Code Example
 
 Provide a code example if applicable.

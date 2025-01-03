@@ -21,6 +21,12 @@ Describe what the bug is.
 
 Describe what you expect to happen.
 
+## Links
+
+- [ ] ...
+- [ ] ...
+- [ ] ...
+
 ## Code Example
 
 Provide a code example if applicable.
@@ -57,3 +63,11 @@ code_example
 ## Screenshots
 
 Attach relevant screenshots if applicable.
+
+### Before
+
+...
+
+### After
+
+...
