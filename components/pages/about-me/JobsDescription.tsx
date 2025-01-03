@@ -1,4 +1,4 @@
-import JobItem from '@/components/about-me/JobItem'
+import JobItem from '@/components/pages/about-me/JobItem'
 
 import { jobs } from '@/lib/data/pages/about-me'
 
