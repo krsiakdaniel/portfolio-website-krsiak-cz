@@ -9,3 +9,9 @@ export enum NavigationDirectionEnum {
   Left = 'left',
   Right = 'right',
 }
+
+export enum LinkColors {
+  Red = 'red',
+  Blue = 'blue',
+  Gray = 'gray',
+}
