@@ -12,11 +12,17 @@ Describe the purpose of the new test and what it aims to verify.
 
 ## Benefits
 
-Explain the benefits this feature will have on the project.
+Explain the benefits this test will have on the project.
 
 ## Implementation
 
 Include steps and what is to be tested.
+
+## Links
+
+- [ ] ...
+- [ ] ...
+- [ ] ...
 
 ## Code Example
 
@@ -41,3 +47,11 @@ code_example
 ## Screenshots
 
 Attach relevant screenshots if applicable.
+
+### Before
+
+...
+
+### After
+
+...
