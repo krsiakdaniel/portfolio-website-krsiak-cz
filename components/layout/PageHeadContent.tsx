@@ -1,7 +1,6 @@
 import PageHeadMetaTags from '@/components/layout/PageHeadMetaTags'
 import GoogleAnalytics from '@/components/layout/scripts/GoogleAnalytics'
 import Smartlook from '@/components/layout/scripts/Smartlook'
-import TawkToChat from '@/components/layout/scripts/TawkToChat'
 
 const PageHeadContent = (): JSX.Element => {
   return (
@@ -9,7 +8,6 @@ const PageHeadContent = (): JSX.Element => {
       <GoogleAnalytics />
       <Smartlook />
       <PageHeadMetaTags />
-      <TawkToChat />
     </head>
   )
 }
