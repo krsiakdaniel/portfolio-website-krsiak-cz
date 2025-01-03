@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import { ProjectPageLayoutWrapper } from '@/components/layout/project-page/ProjectPageLayoutWrapper'
+import ProjectPageLayoutWrapper from '@/components/layout/project-page/ProjectPageLayoutWrapper'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
 import { projectsWorkWordPress } from '@/lib/data/projects/work/projects-overview/workWordpress'

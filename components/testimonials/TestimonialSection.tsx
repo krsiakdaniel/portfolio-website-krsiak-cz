@@ -25,7 +25,7 @@ const TestimonialSection: FC<TestimonialSectionProps> = ({
           <p className="text-2xl font-medium text-gray-900 dark:text-white">{testimonialText}</p>
         </blockquote>
 
-        <figcaption className="mt-6 flex flex-col items-center justify-center space-x-3 lg:flex-row">
+        <figcaption className="mt-6 flex flex-col items-center justify-center space-y-4 lg:flex-col">
           <Image
             src={personPhoto}
             width={48}
@@ -33,9 +33,9 @@ const TestimonialSection: FC<TestimonialSectionProps> = ({
             alt={personName}
             className="rounded-full bg-violet-100 p-1 ring-1 ring-violet-300"
           />
-          <div className="flex flex-col items-center lg:flex-row lg:divide-x-2 lg:divide-gray-500 lg:dark:divide-gray-700">
-            <div className="pr-3 font-medium text-gray-900 dark:text-white">{personName}</div>
-            <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">{personJob}</div>
+          <div className="flex flex-col items-center">
+            <div className="font-medium text-gray-900 dark:text-white">{personName}</div>
+            <div className="text-sm font-light text-gray-500 dark:text-gray-400">{personJob}</div>
           </div>
         </figcaption>
       </figure>

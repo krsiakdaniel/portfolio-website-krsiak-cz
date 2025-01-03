@@ -16,8 +16,7 @@ type ProjectPageLayoutWrapperProps = {
   PageNavigation: ReactNode
 }
 
-// FIXME: export default + update imports
-export const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
+const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
   breadCrumbs,
   pageID,
   goBackLink,
@@ -49,3 +48,5 @@ export const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
     />
   )
 }
+
+export default ProjectPageLayoutWrapper

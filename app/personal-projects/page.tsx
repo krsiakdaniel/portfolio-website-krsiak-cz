@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsLayout from '@/components/layout/ProjectsLayout'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
-import { ProjectSection } from '@/components/projects/overview-page/ProjectSection'
+import ProjectSection from '@/components/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Highlight from '@/components/shared/Highlight'
 
