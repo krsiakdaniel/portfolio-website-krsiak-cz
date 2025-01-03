@@ -1,6 +1,6 @@
 import Heading2 from '@/components/shared/Heading2'
 
-import { skillsInfo } from '@/lib/data/expertise/skillsInfo'
+import { skillsInfo } from '@/lib/data/pages/home/expertise/skillsInfo'
 
 const SkillsForCompany = (): JSX.Element => {
   return (

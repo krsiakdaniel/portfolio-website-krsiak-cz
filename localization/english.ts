@@ -47,6 +47,11 @@ export const RESUME = {
 
 export const TESTIMONIALS = {
   testimonials: '💬 Testimonials',
+  nameCastro: 'Alexandre Castro',
+  nameKvapil: 'Roman Kvapil',
+  nameLosseff: 'Inka Losseff',
+  namePopa: 'Daniel Popa',
+  namePridalek: 'Vojtech Pridalek',
 }
 
 export const PROJECTS = {

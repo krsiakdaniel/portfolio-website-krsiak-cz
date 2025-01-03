@@ -136,7 +136,7 @@ import Footer from '@/components/footer/Footer'
 ```ts
 // Data
 import { metaDataShared } from '@/lib/data/metadata/metaDataShared'
-import { mindset } from '@/lib/data/expertise/mindset'
+import { mindset } from '@/lib/data/pages/home/expertise/mindset'
 ```
 
 ```ts

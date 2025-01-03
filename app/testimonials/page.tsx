@@ -8,7 +8,7 @@ import Highlight from '@/components/shared/Highlight'
 import TestimonialSection from '@/components/testimonials/TestimonialSection'
 
 import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimonials'
-import { testimonialsData } from '@/lib/data/testimonials'
+import { testimonialsData } from '@/lib/data/pages/testimonials'
 
 import { TEXT } from '@/localization/english'
 

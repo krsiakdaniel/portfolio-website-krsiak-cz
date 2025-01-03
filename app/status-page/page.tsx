@@ -6,7 +6,7 @@ import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading1 from '@/components/shared/Heading1'
 
 import { metaDataStatusPage } from '@/lib/data/metadata/pages/metaDataStatusPage'
-import { statusBadges } from '@/lib/data/status-page'
+import { statusBadges } from '@/lib/data/pages/status-page'
 
 import { TEXT } from '@/localization/english'
 

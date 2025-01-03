@@ -1,6 +1,6 @@
 import JobItem from '@/components/about-me/JobItem'
 
-import { jobs } from '@/lib/data/about-me'
+import { jobs } from '@/lib/data/pages/about-me'
 
 const JobsDescription = (): JSX.Element => {
   return (

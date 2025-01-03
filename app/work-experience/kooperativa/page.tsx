@@ -3,9 +3,9 @@ import { Metadata } from 'next'
 import ProjectPageLayoutWrapper from '@/components/layout/project-page/ProjectPageLayoutWrapper'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
-import { metaDataKooperativa } from '@/lib/data/metadata/projects/work/metaDataKooperativa'
-import { sections } from '@/lib/data/projects/work/kooperativa'
-import { projectsWorkReact } from '@/lib/data/projects/work/projects-overview/react/workReact'
+import { metaDataKooperativa } from '@/lib/data/metadata/pages/projects/work/metaDataKooperativa'
+import { sections } from '@/lib/data/pages/projects/work/kooperativa'
+import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
 
 import { TEXT } from '@/localization/english'
 

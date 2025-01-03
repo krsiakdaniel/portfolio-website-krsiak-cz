@@ -1,4 +1,5 @@
 import { Testimonial } from '@/lib/utils/interfaces/interfaces'
+import { TEXT } from '@/localization/english'
 
 import personCastro from '@/public/images/webp/testimonials/alexandre-castro.webp'
 import personPopa from '@/public/images/webp/testimonials/daniel-popa.webp'
@@ -6,17 +7,11 @@ import personLosseff from '@/public/images/webp/testimonials/inka-losseff.webp'
 import personKvapil from '@/public/images/webp/testimonials/roman-kvapil.webp'
 import personPridalek from '@/public/images/webp/testimonials/vojtech-pridalek.webp'
 
-const nameCastro = 'Alexandre Castro'
-const nameKvapil = 'Roman Kvapil'
-const nameLosseff = 'Inka Losseff'
-const namePopa = 'Daniel Popa'
-const namePridalek = 'Vojtech Pridalek'
-
 export const testimonialsData: Testimonial[] = [
   {
-    id: nameKvapil,
+    id: TEXT.nameKvapil,
     personPhoto: personKvapil,
-    personName: nameKvapil,
+    personName: TEXT.nameKvapil,
     personJob: 'Partner Account Manager ~\u00A0Microsoft',
     testimonialText: `
       I can recommend his knowledge and perspective about the IT globally,
@@ -24,9 +19,9 @@ export const testimonialsData: Testimonial[] = [
     `,
   },
   {
-    id: nameLosseff,
+    id: TEXT.nameLosseff,
     personPhoto: personLosseff,
-    personName: nameLosseff,
+    personName: TEXT.nameLosseff,
     personJob: 'Linguistic Services and Quality Management ~\u00A0Moravia IT',
     testimonialText: `
       Daniel is strong in creating automation utilities, term processing, all kinds of\u00A0tracking.
@@ -34,9 +29,9 @@ export const testimonialsData: Testimonial[] = [
     `,
   },
   {
-    id: namePopa,
+    id: TEXT.namePopa,
     personPhoto: personPopa,
-    personName: namePopa,
+    personName: TEXT.namePopa,
     personJob: 'Service Management Lead ~\u00A0IBM',
     testimonialText: `
       I met Daniel Krsiak working on different team, he\u00A0was my desk-mate.
@@ -44,9 +39,9 @@ export const testimonialsData: Testimonial[] = [
     `,
   },
   {
-    id: namePridalek,
+    id: TEXT.namePridalek,
     personPhoto: personPridalek,
-    personName: namePridalek,
+    personName: TEXT.namePridalek,
     personJob: 'Senior Localization Group Manager ~\u00A0Moravia IT',
     testimonialText: `
       Daniel helped team with engineering skills, automating bug management tasks.
@@ -54,9 +49,9 @@ export const testimonialsData: Testimonial[] = [
     `,
   },
   {
-    id: nameCastro,
+    id: TEXT.nameCastro,
     personPhoto: personCastro,
-    personName: nameCastro,
+    personName: TEXT.nameCastro,
     personJob: 'QA Tester and Content Manager ~\u00A0Smartlook',
     testimonialText: `
       His vast work experience in diverse environments\u00A0—\u00A0corporate, freelancing, and now as a member of a small team,

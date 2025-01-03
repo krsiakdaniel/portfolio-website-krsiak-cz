@@ -3,9 +3,9 @@ import { Metadata } from 'next'
 import ProjectPageLayoutWrapper from '@/components/layout/project-page/ProjectPageLayoutWrapper'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
-import { metaDataSmartsuppWeb } from '@/lib/data/metadata/projects/work/metaDataSmartsuppWeb'
-import { projectsWorkFrontEnd } from '@/lib/data/projects/work/projects-overview/workFrontEnd'
-import { sections } from '@/lib/data/projects/work/smartsuppWeb'
+import { metaDataSmartsuppWeb } from '@/lib/data/metadata/pages/projects/work/metaDataSmartsuppWeb'
+import { projectsWorkFrontEnd } from '@/lib/data/pages/projects/work/projects-overview/front-end/workFrontEnd'
+import { sections } from '@/lib/data/pages/projects/work/smartsuppWeb'
 
 import { TEXT } from '@/localization/english'
 
