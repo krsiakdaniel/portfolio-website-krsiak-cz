@@ -11,8 +11,7 @@ type ProjectSectionProps = {
   sectionText: string
 }
 
-// FIXME: export default + update imports
-export const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, sectionText }): JSX.Element => {
+const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, sectionText }): JSX.Element => {
   return (
     <>
       <ExperienceSection id={sectionId} text={sectionText} />
@@ -36,3 +35,5 @@ export const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId
     </>
   )
 }
+
+export default ProjectSection

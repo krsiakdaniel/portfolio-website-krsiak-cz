@@ -39,8 +39,8 @@ const Testimonials = (): JSX.Element => {
           Below, you&apos;ll find insightful feedback from colleagues who have experienced my contributions firsthand.
         </p>
 
-        <div className="flex flex-col">
-          {testimonialsData.map((testimonial) => (
+        <div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
+          {testimonialsData.slice(0, 4).map((testimonial) => (
             <TestimonialSection
               key={testimonial.id}
               personPhoto={testimonial.personPhoto}
@@ -49,11 +49,22 @@ const Testimonials = (): JSX.Element => {
               testimonialText={testimonial.testimonialText}
             />
           ))}
-
-          {/* TODO: Add the following sections */}
-          {/* <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Fitness Moderator 🏋️‍♂️</div> */}
-          {/* <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Personality ✝️</div> */}
         </div>
+        <div className="mt-4">
+          {testimonialsData.slice(4).map((testimonial) => (
+            <TestimonialSection
+              key={testimonial.id}
+              personPhoto={testimonial.personPhoto}
+              personName={testimonial.personName}
+              personJob={testimonial.personJob}
+              testimonialText={testimonial.testimonialText}
+            />
+          ))}
+        </div>
+
+        {/* TODO: Add the following sections */}
+        {/* <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Fitness Moderator 🏋️‍♂️</div> */}
+        {/* <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Personality ✝️</div> */}
       </div>
       <PageNavigation
         linkPrevious={PAGES_URL.resume}
