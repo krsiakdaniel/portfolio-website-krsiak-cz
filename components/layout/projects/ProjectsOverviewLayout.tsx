@@ -2,13 +2,13 @@ import { FC, ReactNode } from 'react'
 
 import Heading1 from '@/components/shared/Heading1'
 
-type ProjectsLayoutProps = {
+type ProjectsOverviewLayoutProps = {
   heading: string
   description: ReactNode
   children: ReactNode
 }
 
-const ProjectsLayout: FC<ProjectsLayoutProps> = ({ heading, description, children }): JSX.Element => {
+const ProjectsOverviewLayout: FC<ProjectsOverviewLayoutProps> = ({ heading, description, children }): JSX.Element => {
   return (
     <>
       <div className="mt-10 flex flex-col">
@@ -16,10 +16,10 @@ const ProjectsLayout: FC<ProjectsLayoutProps> = ({ heading, description, childre
         <div>{description}</div>
       </div>
 
-      {/* Content for 'ProjectItem' */}
+      {/* Content for 'ProjectSummaryItem.tsx' */}
       <div>{children}</div>
     </>
   )
 }
 
-export default ProjectsLayout
+export default ProjectsOverviewLayout

@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
-import ProjectsLayout from '@/components/layout/projects/ProjectsLayout'
-import ProjectSection from '@/components/projects/overview-page/ProjectSection'
+import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
+import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Highlight from '@/components/shared/Highlight'
 
@@ -26,7 +26,7 @@ const ProjectsPersonal = (): JSX.Element => {
     <PageContainer id={ID.projects.personal}>
       <BreadCrumbs level1Url={PAGES_URL.personal.mainUrl} level1Text={TEXT.personalProjects} />
 
-      <ProjectsLayout
+      <ProjectsOverviewLayout
         heading={TEXT.personalProjects}
         description={
           <p className="mt-4 text-lg text-neutral-600">
@@ -38,7 +38,7 @@ const ProjectsPersonal = (): JSX.Element => {
         <ProjectSection sectionId={ID.section.next} sectionText={TEXT.next} projectData={projectsPersonalNext} />
 
         <ProjectSection sectionId={ID.section.react} sectionText={TEXT.react} projectData={projectsPersonalReact} />
-      </ProjectsLayout>
+      </ProjectsOverviewLayout>
 
       <div className="mt-20">
         <PageNavigation

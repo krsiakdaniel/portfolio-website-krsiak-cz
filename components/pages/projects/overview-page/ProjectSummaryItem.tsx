@@ -1,13 +1,13 @@
 import { FC } from 'react'
 
-import ProjectDetails from '@/components/projects/overview-page/ProjectDetails'
-import ProjectImage from '@/components/projects/overview-page/ProjectImage'
-import ProjectLink from '@/components/projects/overview-page/ProjectLink'
-import ProjectSkills from '@/components/projects/overview-page/ProjectSkills'
+import ProjectDetails from '@/components/pages/projects/overview-page/ProjectDetails'
+import ProjectImage from '@/components/pages/projects/overview-page/ProjectImage'
+import ProjectLink from '@/components/pages/projects/overview-page/ProjectLink'
+import ProjectSkills from '@/components/pages/projects/overview-page/ProjectSkills'
 
 import { Icon } from '@/lib/utils/interfaces/interfaces'
 
-type ProjectItemProps = {
+type ProjectSummaryItemProps = {
   isFeatured?: boolean | undefined
   image: string
   title: string
@@ -22,7 +22,7 @@ type ProjectItemProps = {
   dataTestId: string
 }
 
-const ProjectItem: FC<ProjectItemProps> = ({
+const ProjectSummaryItem: FC<ProjectSummaryItemProps> = ({
   isFeatured,
   image,
   title,
@@ -57,4 +57,4 @@ const ProjectItem: FC<ProjectItemProps> = ({
   )
 }
 
-export default ProjectItem
+export default ProjectSummaryItem
