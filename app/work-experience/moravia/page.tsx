@@ -3,9 +3,9 @@ import { Metadata } from 'next'
 import ProjectPageLayoutWrapper from '@/components/layout/project-page/ProjectPageLayoutWrapper'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
+import { metaDataMoravia } from '@/lib/data/metadata/projects/work/metaDataMoravia'
 import { sections } from '@/lib/data/projects/work/moravia'
 import { projectsWorkLocalization } from '@/lib/data/projects/work/projects-overview/workLocalization'
-import { metaDataMoravia } from '@/lib/utils/metadata/projects/work/metaDataMoravia'
 
 import { TEXT } from '@/localization/english'
 

@@ -7,7 +7,7 @@ import ResumePreviewEmbed from '@/components/pages/resume/ResumePreviewEmbed'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import SocialLink from '@/components/shared/SocialLink'
 
-import { metaDataResume } from '@/lib/utils/metadata/pages/metaDataResume'
+import { metaDataResume } from '@/lib/data/metadata/pages/metaDataResume'
 
 import { TEXT } from '@/localization/english'
 

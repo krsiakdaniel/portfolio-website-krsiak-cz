@@ -7,7 +7,7 @@ import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 
-import { metaDataAboutMe } from '@/lib/utils/metadata/pages/metaDataAboutMe'
+import { metaDataAboutMe } from '@/lib/data/metadata/pages/metaDataAboutMe'
 
 import { TEXT } from '@/localization/english'
 

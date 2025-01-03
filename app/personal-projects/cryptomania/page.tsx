@@ -3,9 +3,9 @@ import { Metadata } from 'next'
 import ProjectPageLayout from '@/components/layout/project-page/ProjectPageLayout'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
+import { metaDataCryptomania } from '@/lib/data/metadata/projects/personal/metaDataCryptomania'
 import { sections } from '@/lib/data/projects/personal/cryptoMania'
 import { projectsPersonalReact } from '@/lib/data/projects/personal/projects-overview/personalReact'
-import { metaDataCryptomania } from '@/lib/utils/metadata/projects/personal/metaDataCryptomania'
 
 import { TEXT } from '@/localization/english'
 

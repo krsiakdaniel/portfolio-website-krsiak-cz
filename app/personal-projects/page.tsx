@@ -7,9 +7,9 @@ import ProjectSection from '@/components/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Highlight from '@/components/shared/Highlight'
 
+import { metaDataProjectsOverviewPersonal } from '@/lib/data/metadata/pages/metaDataProjectsOverviewPersonal'
 import { projectsPersonalNext } from '@/lib/data/projects/personal/projects-overview/personalNext'
 import { projectsPersonalReact } from '@/lib/data/projects/personal/projects-overview/personalReact'
-import { metaDataProjectsOverviewPersonal } from '@/lib/utils/metadata/pages/metaDataProjectsOverviewPersonal'
 
 import { TEXT } from '@/localization/english'
 

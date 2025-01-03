@@ -3,9 +3,9 @@ import { Metadata } from 'next'
 import ProjectPageLayoutWrapper from '@/components/layout/project-page/ProjectPageLayoutWrapper'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
+import { metaDataGroupon } from '@/lib/data/metadata/projects/work/metaDataGroupon'
 import { sections } from '@/lib/data/projects/work/groupon'
 import { projectsWorkQA } from '@/lib/data/projects/work/projects-overview/workQA'
-import { metaDataGroupon } from '@/lib/utils/metadata/projects/work/metaDataGroupon'
 
 import { TEXT } from '@/localization/english'
 

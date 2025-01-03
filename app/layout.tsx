@@ -6,7 +6,7 @@ import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
 import PageHeadContent from '@/components/layout/PageHeadContent'
 
-import { metaDataShared } from '@/lib/utils/metadata/metaDataShared'
+import { metaDataShared } from '@/lib/data/metadata/metaDataShared'
 
 import { TEXT } from '@/localization/english'
 

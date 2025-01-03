@@ -5,8 +5,8 @@ import PageContainer from '@/components/layout/PageContainer'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading1 from '@/components/shared/Heading1'
 
+import { metaDataStatusPage } from '@/lib/data/metadata/pages/metaDataStatusPage'
 import { statusBadges } from '@/lib/data/status-page'
-import { metaDataStatusPage } from '@/lib/utils/metadata/pages/metaDataStatusPage'
 
 import { TEXT } from '@/localization/english'
 

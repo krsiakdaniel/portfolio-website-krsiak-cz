@@ -9,7 +9,7 @@ import ScanMyContactQR from '@/components/pages/home/ScanMyContactQR'
 import Skills from '@/components/pages/home/skills/Skills'
 import SkillsMain from '@/components/pages/home/skills/SkillsMain'
 
-import { metaDataShared } from '@/lib/utils/metadata/metaDataShared'
+import { metaDataShared } from '@/lib/data/metadata/metaDataShared'
 
 import { TEXT } from '@/localization/english'
 
