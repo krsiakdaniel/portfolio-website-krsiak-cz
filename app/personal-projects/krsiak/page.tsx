@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
-import ProjectPageLayout from '@/components/layout/project-page/ProjectPageLayout'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
+import ProjectPageLayout from '@/components/layout/projects/project-page/ProjectPageLayout'
 
 import { metaDataKrsiak } from '@/lib/data/metadata/pages/projects/personal/metaDataKrsiak'
 import { sections } from '@/lib/data/pages/projects/personal/krsiak'

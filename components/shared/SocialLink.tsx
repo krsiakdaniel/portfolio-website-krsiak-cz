@@ -10,8 +10,6 @@ type SocialLinkProps = {
   dataTestId: string
 }
 
-const LINK_WIDTH = 248
-
 const SocialLink: FC<SocialLinkProps> = ({
   href,
   text,
@@ -45,7 +43,7 @@ const SocialLink: FC<SocialLinkProps> = ({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`text-md w-[${LINK_WIDTH}] rounded-lg ${bgColor} px-5 py-2.5 text-center font-medium text-white ${hoverColor} focus:outline-none focus:ring-4 ${focusRingColor} ${className}`}
+      className={`text-md w-[248px] rounded-lg ${bgColor} px-5 py-2.5 text-center font-medium text-white ${hoverColor} focus:outline-none focus:ring-4 ${focusRingColor} ${className}`}
       data-testid={dataTestId}
     >
       {text}

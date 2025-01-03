@@ -1,6 +1,6 @@
-import FooterCopyright from '@/components/footer/FooterCopyright'
-import FooterSocialLinks from '@/components/footer/FooterSocialLinks'
-import FooterStatusAndScroll from '@/components/footer/FooterStatusAndScroll'
+import FooterCopyright from '@/components/layout/footer/FooterCopyright'
+import FooterSocialLinks from '@/components/layout/footer/FooterSocialLinks'
+import FooterStatusAndScroll from '@/components/layout/footer/FooterStatusAndScroll'
 import PageContainer from '@/components/layout/PageContainer'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'

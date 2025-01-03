@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react'
 
-import ProjectPageLayout from '@/components/layout/project-page/ProjectPageLayout'
+import ProjectPageLayout from '@/components/layout/projects/project-page/ProjectPageLayout'
 
 import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
 import { Project, Section } from '@/lib/utils/interfaces/interfaces'

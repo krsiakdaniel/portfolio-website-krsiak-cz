@@ -128,14 +128,14 @@ import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 ```ts
 // Components
 import PageContainer from '@/components/layout/PageContainer'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
-import Header from '@/components/header/Header'
-import Footer from '@/components/footer/Footer'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
+import Header from '@/components/layout/header/Header'
+import Footer from '@/components/layout/footer/Footer'
 ```
 
 ```ts
 // Data
-import { metaDataShared } from '@/lib/data/metadata/metaDataShared'
+import { metaDataShared } from '@/lib/data/metadata/shared/metaDataShared'
 import { mindset } from '@/lib/data/pages/home/expertise/mindset'
 ```
 

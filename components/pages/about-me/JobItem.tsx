@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import JobIcon from '@/components/about-me/JobIcon'
+import JobIcon from '@/components/pages/about-me/JobIcon'
 import Heading2 from '@/components/shared/Heading2'
 
 type JobItemProps = {
