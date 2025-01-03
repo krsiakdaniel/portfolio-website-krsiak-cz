@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 
-import HeadingInfo from '@/components/about-me/HeadingInfo'
-import JobsDescription from '@/components/about-me/JobsDescription'
-import Photo from '@/components/about-me/Photo'
 import PageContainer from '@/components/layout/PageContainer'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
+import HeadingInfo from '@/components/pages/about-me/HeadingInfo'
+import JobsDescription from '@/components/pages/about-me/JobsDescription'
+import Photo from '@/components/pages/about-me/Photo'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 
 import { metaDataAboutMe } from '@/lib/data/metadata/pages/metaDataAboutMe'

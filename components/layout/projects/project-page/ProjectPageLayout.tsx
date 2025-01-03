@@ -1,9 +1,9 @@
 import { FC, ReactNode } from 'react'
 
 import PageContainer from '@/components/layout/PageContainer'
-import Gallery from '@/components/layout/project-page/Gallery'
-import HeaderSection from '@/components/layout/project-page/HeaderSection'
-import ProjectResponsibility from '@/components/layout/project-page/ProjectResponsibility'
+import Gallery from '@/components/layout/projects/project-page/Gallery'
+import HeaderSection from '@/components/layout/projects/project-page/HeaderSection'
+import ProjectResponsibility from '@/components/layout/projects/project-page/ProjectResponsibility'
 import ProjectInformation from '@/components/projects/project-detail-page/ProjectInformation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 

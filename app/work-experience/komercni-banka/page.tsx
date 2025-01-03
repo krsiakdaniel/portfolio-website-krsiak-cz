@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
-import ProjectPageLayoutWrapper from '@/components/layout/project-page/ProjectPageLayoutWrapper'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
+import ProjectPageLayoutWrapper from '@/components/layout/projects/project-page/ProjectPageLayoutWrapper'
 
 import { metaDataKomercniBanka } from '@/lib/data/metadata/pages/projects/work/metaDataKomercniBanka'
 import { sections } from '@/lib/data/pages/projects/work/komercniBanka'

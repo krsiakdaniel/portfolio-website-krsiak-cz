@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import PageNavigationLink from '@/components/page-navigation/PageNavigationLink'
+import PageNavigationLink from '@/components/layout/page-navigation/PageNavigationLink'
 
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 

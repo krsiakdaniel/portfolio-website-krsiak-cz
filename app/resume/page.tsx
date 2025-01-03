@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 import PageContainer from '@/components/layout/PageContainer'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ResumeInfo from '@/components/pages/resume/ResumeInfo'
 import ResumePreviewEmbed from '@/components/pages/resume/ResumePreviewEmbed'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'

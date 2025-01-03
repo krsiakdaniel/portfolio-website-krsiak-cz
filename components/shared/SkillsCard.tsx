@@ -7,7 +7,7 @@ type SkillsCardProps = SkillCard
 
 const SkillsCard: FC<SkillsCardProps> = ({ imgSrc, imgAlt, title, years, description }): JSX.Element => (
   <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-md">
-    <Image src={imgSrc} width={88} height={88} alt={imgAlt} />
+    <Image src={imgSrc} alt={imgAlt} className="h-14 w-14 lg:h-20 lg:w-20" />
 
     <div className="mt-3 text-2xl font-semibold tracking-tight text-neutral-900">
       {title}{' '}

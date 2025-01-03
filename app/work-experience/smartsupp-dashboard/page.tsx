@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
-import ProjectPageLayoutWrapper from '@/components/layout/project-page/ProjectPageLayoutWrapper'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
+import ProjectPageLayoutWrapper from '@/components/layout/projects/project-page/ProjectPageLayoutWrapper'
 
 import { metaDataSmartsuppDashboard } from '@/lib/data/metadata/pages/projects/work/metaDataSmartsuppDashboard'
 import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'

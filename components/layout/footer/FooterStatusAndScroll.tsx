@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import ScrollToTopButton from '@/components/footer/ScrollToTopButton'
+import ScrollToTopButton from '@/components/layout/footer/ScrollToTopButton'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'

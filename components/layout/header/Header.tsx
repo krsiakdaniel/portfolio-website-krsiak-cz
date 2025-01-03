@@ -4,10 +4,10 @@ import { useState } from 'react'
 
 import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 
-import Logo from '@/components/header/Logo'
-import Menu from '@/components/header/menu/Menu'
-import MenuToggle from '@/components/header/menu/MenuToggle'
-import ScrollProgressBar from '@/components/header/ScrollProgressBar'
+import Logo from '@/components/layout/header/Logo'
+import Menu from '@/components/layout/header/menu/Menu'
+import MenuToggle from '@/components/layout/header/menu/MenuToggle'
+import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
 
 const Header = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false)

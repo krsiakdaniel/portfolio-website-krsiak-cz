@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
-import ProjectsLayout from '@/components/layout/ProjectsLayout'
-import PageNavigation from '@/components/page-navigation/PageNavigation'
+import ProjectsLayout from '@/components/layout/projects/ProjectsLayout'
 import ProjectSection from '@/components/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Highlight from '@/components/shared/Highlight'
