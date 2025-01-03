@@ -3,9 +3,9 @@ import { Metadata } from 'next'
 import ProjectPageLayout from '@/components/layout/project-page/ProjectPageLayout'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
 
+import { metaDataKrsiak } from '@/lib/data/metadata/projects/personal/metaDataKrsiak'
 import { sections } from '@/lib/data/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/lib/data/projects/personal/projects-overview/personalNext'
-import { metaDataKrsiak } from '@/lib/utils/metadata/projects/personal/metaDataKrsiak'
 
 import { TEXT } from '@/localization/english'
 

@@ -7,8 +7,8 @@ import Heading1 from '@/components/shared/Heading1'
 import Highlight from '@/components/shared/Highlight'
 import TestimonialSection from '@/components/testimonials/TestimonialSection'
 
+import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimonials'
 import { testimonialsData } from '@/lib/data/testimonials'
-import { metaDataTestimonials } from '@/lib/utils/metadata/pages/metaDataTestimonials'
 
 import { TEXT } from '@/localization/english'
 
