@@ -33,11 +33,11 @@ const StatusPage = (): JSX.Element => {
             <Image
               key={item.id}
               src={item.src}
-              alt={item.alt}
               width={item.width}
               height={item.height}
-              loading="eager"
+              alt={item.alt}
               className="mt-2 first:mt-0"
+              loading="eager"
             />
           ))}
         </div>

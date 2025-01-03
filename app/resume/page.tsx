@@ -2,10 +2,10 @@ import { Metadata } from 'next'
 
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/page-navigation/PageNavigation'
-import HeroLink from '@/components/pages/home/hero/HeroLink'
 import ResumeInfo from '@/components/pages/resume/ResumeInfo'
 import ResumePreviewEmbed from '@/components/pages/resume/ResumePreviewEmbed'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import SocialLink from '@/components/shared/SocialLink'
 
 import { metaDataResume } from '@/lib/utils/metadata/pages/metaDataResume'
 
@@ -35,10 +35,10 @@ const Resume = (): JSX.Element => {
             experience.
           </p>
           <div className="mt-8">
-            <HeroLink
+            <SocialLink
               href={EXTERNAL_URL.resume.resumeViewPDF}
               text={`Download - ${TEXT.resumePDF}`}
-              className="bg-red-700 text-white hover:bg-red-800 focus:ring-red-300"
+              linkColor="red"
               dataTestId={DATA_TEST_IDS.hero.linkResume}
             />
           </div>

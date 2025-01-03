@@ -21,12 +21,12 @@ const Gallery: FC<GalleryProps> = ({ imageShowcase }): JSX.Element => {
           <div data-testid={`gallery-image-${image.id}`} key={image.id}>
             <Image
               src={image.src}
-              alt={`project-image-${image.id}`}
               width={1240}
               height={1272}
+              className="mt-8 rounded-lg bg-violet-100 p-1 ring-1 ring-violet-300"
+              alt={`project-image-${image.id}`}
               placeholder="blur"
               blurDataURL={image.src}
-              className="mt-8 rounded-lg border border-neutral-300 bg-neutral-100 shadow-md"
             />
           </div>
         ))}

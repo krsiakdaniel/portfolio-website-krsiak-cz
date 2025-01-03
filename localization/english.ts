@@ -20,6 +20,12 @@ const COMMON_VALUES = {
   graphql: 'GraphQL',
 }
 
+export const SOCIAL_LINKS = {
+  linkedIn: 'My LinkedIn',
+  resumePDF: 'Resume PDF',
+  gitHub: 'GitHub Code',
+}
+
 export const HOME = {
   home: '🏠 Home',
   logo: 'krsiak.cz',
@@ -37,7 +43,6 @@ export const ABOUT = {
 
 export const RESUME = {
   resume: '📝 Resume',
-  resumePDF: 'Resume in PDF',
 }
 
 export const TESTIMONIALS = {
@@ -70,11 +75,6 @@ export const COMPANIES = {
 export const WORK = {
   otherExperience: 'Other Experience',
   myJob: 'My job',
-}
-
-export const FOOTER = {
-  linkedIn: 'My LinkedIn',
-  gitHub: 'GitHub Code',
 }
 
 export const MISC = {
@@ -444,16 +444,25 @@ export const META_STATUS_PAGE = {
   },
 }
 
+export const IMAGE_ALT = {
+  microsoft: 'Microsoft',
+  smartsupp: 'Smartsupp',
+  kooperativa: 'Kooperativa',
+  ibm: 'IBM',
+  rwsMoravia: 'RWS - Moravia',
+  komercniBanka: 'Komerční Banka',
+}
+
 export const TEXT = {
-  ...ABOUT,
-  ...RESUME,
-  ...PROJECTS,
+  ...SOCIAL_LINKS,
   ...HOME,
   ...COMPANIES,
-  ...WORK,
-  ...MISC,
-  ...STATUS_PAGE,
-  ...ERROR,
-  ...FOOTER,
+  ...ABOUT,
+  ...RESUME,
   ...TESTIMONIALS,
+  ...WORK,
+  ...PROJECTS,
+  ...STATUS_PAGE,
+  ...MISC,
+  ...ERROR,
 }
