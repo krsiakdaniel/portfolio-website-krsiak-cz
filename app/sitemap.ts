@@ -7,9 +7,7 @@ const PERSONAL_PROJECTS = `${BASE_URL}/personal-projects`
 
 export const URLS = {
   HOME: BASE_URL,
-  ABOUT_ME: `${BASE_URL}/about-me`,
   RESUME: `${BASE_URL}/resume`,
-  TESTIMONIALS: `${BASE_URL}/testimonials`,
   WORK_EXPERIENCE: {
     OVERVIEW_PAGE: `${WORK_EXPERIENCE}`,
     SMARTSUPP_DASHBOARD: `${WORK_EXPERIENCE}/smartsupp-dashboard`,
@@ -25,6 +23,7 @@ export const URLS = {
     KRSIAK: `${PERSONAL_PROJECTS}/krsiak`,
     CRYPTOMANIA: `${PERSONAL_PROJECTS}/cryptomania`,
   },
+  TESTIMONIALS: `${BASE_URL}/testimonials`,
   STATUS_PAGE: `${BASE_URL}/status-page`,
 }
 
@@ -33,9 +32,7 @@ export const CHANGE_FREQUENCY_MONTHLY = 'monthly'
 
 const sitemapEntries = [
   { url: URLS.HOME, priority: 1 },
-  { url: URLS.ABOUT_ME, priority: 0.8 },
   { url: URLS.RESUME, priority: 0.8 },
-  { url: URLS.TESTIMONIALS, priority: 0.8 },
   { url: URLS.WORK_EXPERIENCE.OVERVIEW_PAGE, priority: 0.8 },
   { url: URLS.WORK_EXPERIENCE.SMARTSUPP_DASHBOARD, priority: 0.8 },
   { url: URLS.WORK_EXPERIENCE.KOOPERATIVA, priority: 0.8 },
@@ -47,7 +44,8 @@ const sitemapEntries = [
   { url: URLS.PERSONAL_PROJECTS.OVERVIEW_PAGE, priority: 0.8 },
   { url: URLS.PERSONAL_PROJECTS.KRSIAK, priority: 0.8 },
   { url: URLS.PERSONAL_PROJECTS.CRYPTOMANIA, priority: 0.8 },
-  { url: URLS.STATUS_PAGE, priority: 0.5 },
+  { url: URLS.TESTIMONIALS, priority: 0.4 },
+  { url: URLS.STATUS_PAGE, priority: 0.2 },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

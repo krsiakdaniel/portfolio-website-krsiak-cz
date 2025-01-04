@@ -1,7 +1,5 @@
 import { Browser, BrowserContext, Page, test } from '@playwright/test'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { checkLink } from '@/__tests__/playwright/lib/utils/helpers/checkLink'
 import { setupBrowser, setupPage, teardownContext } from '@/__tests__/playwright/lib/utils/helpers/setup'
 
@@ -36,10 +34,6 @@ test.afterEach(async () => {
 test.describe('Resume page', () => {
   // Test to check if the Resume link is correct
   test('should have the correct Resume link', async () => {
-    await checkLink(
-      page,
-      DATA_TEST_IDS.hero.linkResume,
-      'https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD/view',
-    )
+    await checkLink(page, 'download-resume', 'https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD/view')
   })
 })

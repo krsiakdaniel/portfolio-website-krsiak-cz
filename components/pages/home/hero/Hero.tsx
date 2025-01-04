@@ -1,6 +1,5 @@
 import HeroHeading from '@/components/pages/home/hero/HeroHeading'
 import HeroParagraph from '@/components/pages/home/hero/HeroParagraph'
-import HeroSocialLinks from '@/components/pages/home/hero/HeroSocialLinks'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
@@ -11,7 +10,6 @@ const Hero = (): JSX.Element => {
         <HeroHeading />
         <HeroParagraph />
       </div>
-      <HeroSocialLinks />
     </div>
   )
 }

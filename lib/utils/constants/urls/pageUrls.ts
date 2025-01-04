@@ -6,9 +6,7 @@ export const URL_PERSONAL_PROJECTS = '/personal-projects'
 export const PAGES_URL = {
   localhost: 'http://localhost:3000',
   home: '/',
-  aboutMe: '/about-me',
   resume: '/resume',
-  testimonials: '/testimonials',
   work: {
     mainUrl: URL_WORK_EXPERIENCE,
     kooperativa: getUrlWorkExperience('kooperativa'),
@@ -26,5 +24,6 @@ export const PAGES_URL = {
     krsiak: getUrlPersonalProject('krsiak'),
     cryptoMania: getUrlPersonalProject('cryptomania'),
   },
+  testimonials: '/testimonials',
   statusPage: '/status-page',
 }

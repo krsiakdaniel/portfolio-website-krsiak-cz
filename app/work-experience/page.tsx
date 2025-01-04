@@ -35,9 +35,8 @@ const ProjectsWork = (): JSX.Element => {
         heading={TEXT.workExperience}
         description={
           <p className="mt-4 text-lg text-neutral-600">
-            I developed <Highlight text="new features" />, led entire website redesigns, implemented{' '}
-            <Highlight text="responsive designs" />, modernized legacy codebase, and managed localization,{' '}
-            <Highlight text="QA automation" />, and testing, including serving as a <Highlight text="team leader" />.
+            I am experienced <Highlight text="React Developer" /> who knows <Highlight text="QA Automation" /> and can
+            lead teams as a <Highlight text="Team Leader" />.
           </p>
         }
       >
@@ -100,12 +99,12 @@ const ProjectsWork = (): JSX.Element => {
 
       <div className="mt-20">
         <PageNavigation
-          linkPrevious={PAGES_URL.testimonials}
-          namePrevious={TEXT.testimonials}
-          dataTestIdPrevious={DATA_TEST_IDS.projects.work.overview.previous}
+          linkPrevious={PAGES_URL.resume}
+          namePrevious={TEXT.resume}
+          dataTestIdPrevious={DATA_TEST_IDS.page.workExperience.previous}
           linkNext={PAGES_URL.personal.mainUrl}
           nameNext={TEXT.personalProjects}
-          dataTestIdNext={DATA_TEST_IDS.projects.work.overview.next}
+          dataTestIdNext={DATA_TEST_IDS.page.workExperience.next}
         />
       </div>
     </PageContainer>

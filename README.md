@@ -120,12 +120,12 @@ The website contains these following sections and pages.
 
 **Pages:**
 
-- 👉 Home - Introduction
-- 👉 About Me
+- 👉 Home
 - 👉 Resume
-- 👉 Hire Me
 - 👉 Work Experience
+- 👉 Hire Me
 - 👉 Personal Projects
+- 👉 Testimonials
 
 **Work and Project pages:**
 
@@ -173,6 +173,4 @@ Project screenshots.
 
 ![krsiak.cz | Krsiak Daniel](/readme-images/krsiak-website-screenshot-1.png)
 
-![krsiak.cz | About Me](/readme-images/krsiak-website-screenshot-2.png)
-
-![krsiak.cz | Work Experience](/readme-images/krsiak-website-screenshot-3.png)
+![krsiak.cz | Work Experience](/readme-images/krsiak-website-screenshot-2.png)

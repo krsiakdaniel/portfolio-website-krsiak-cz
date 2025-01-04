@@ -51,8 +51,13 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/about-me', // The deleted page
+        destination: '/resume', // Redirect to projects
+        permanent: true, // Use 301 for permanent redirect
+      },
+      {
         source: '/personal-projects/eshop', // The deleted page
-        destination: '/personal-projects/', // Redirect to projects
+        destination: '/personal-projects', // Redirect to projects
         permanent: true, // Use 301 for permanent redirect
       },
     ]

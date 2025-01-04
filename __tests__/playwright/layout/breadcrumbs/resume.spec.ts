@@ -17,9 +17,9 @@ test.describe('Links', () => {
     })
 
     await test.step('Check the Resume link', async () => {
-      const aboutLink = breadcrumbs.locator('a[href="/resume"]')
-      expect(await aboutLink.count()).toBe(1)
-      expect(await aboutLink.getAttribute('href')).toBe('/resume')
+      const resumeLink = breadcrumbs.locator('a[href="/resume"]')
+      expect(await resumeLink.count()).toBe(1)
+      expect(await resumeLink.getAttribute('href')).toBe('/resume')
     })
   })
 })

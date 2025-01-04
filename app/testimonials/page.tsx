@@ -29,8 +29,8 @@ const Testimonials = (): JSX.Element => {
         <div>
           <Heading1>{TEXT.testimonials}</Heading1>
           <p className="mt-4 text-lg text-neutral-600" data-testid={DATA_TEST_IDS.page.testimonials.introduction}>
-            I am a dedicated <Highlight text="React Developer" /> with expertise in <Highlight text="QA Automation" />{' '}
-            and have a proven track record in leading teams as a <Highlight text="Team Leader" />.
+            I follow the Japanese 🇯🇵 philosophy of <Highlight text="Kaizen 改善" /> my whole life, continuously seeking
+            improvement in my work and personal growth.
           </p>
         </div>
 
@@ -67,12 +67,9 @@ const Testimonials = (): JSX.Element => {
         {/* <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Personality ✝️</div> */}
       </div>
       <PageNavigation
-        linkPrevious={PAGES_URL.resume}
-        namePrevious={TEXT.resume}
+        linkPrevious={PAGES_URL.personal.mainUrl}
+        namePrevious={TEXT.personalProjects}
         dataTestIdPrevious={DATA_TEST_IDS.page.testimonials.previous}
-        linkNext={PAGES_URL.work.mainUrl}
-        nameNext={TEXT.workExperience}
-        dataTestIdNext={DATA_TEST_IDS.page.testimonials.next}
       />
     </PageContainer>
   )
