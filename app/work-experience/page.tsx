@@ -6,6 +6,7 @@ import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOvervie
 import ExperienceCard from '@/components/pages/projects/other-experience/ExperienceCard'
 import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import CallToActionResume from '@/components/shared/call-to-action/CallToActionResume'
 import Heading4 from '@/components/shared/Heading4'
 import Highlight from '@/components/shared/Highlight'
 
@@ -40,8 +41,12 @@ const ProjectsWork = (): JSX.Element => {
           </p>
         }
       >
+        {/* REACT */}
         <ProjectSection sectionId={ID.section.react} sectionText="React" projectData={projectsWorkReact} />
 
+        <CallToActionResume />
+
+        {/* FRONT END */}
         <ProjectSection sectionId={ID.section.frontEnd} sectionText="Front End" projectData={projectsWorkFrontEnd} />
         <Heading4>{TEXT.otherExperience}</Heading4>
         <div className="mt-4">
@@ -57,6 +62,7 @@ const ProjectsWork = (): JSX.Element => {
           />
         </div>
 
+        {/* WORDPRESS */}
         <ProjectSection sectionId={ID.section.wordpress} sectionText="WordPress" projectData={projectsWorkWordPress} />
         <Heading4>{TEXT.otherExperience}</Heading4>
         <div className="mt-4">
@@ -67,6 +73,7 @@ const ProjectsWork = (): JSX.Element => {
           />
         </div>
 
+        {/* QA */}
         <ProjectSection sectionId={ID.section.qa} sectionText="QA Automation & Testing" projectData={projectsWorkQA} />
         <Heading4>{TEXT.otherExperience}</Heading4>
         <div className="mt-4">
@@ -82,6 +89,7 @@ const ProjectsWork = (): JSX.Element => {
           />
         </div>
 
+        {/* LOCALIZATION */}
         <ProjectSection
           sectionId={ID.section.localization}
           sectionText="Localization"

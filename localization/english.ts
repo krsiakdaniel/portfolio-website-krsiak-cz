@@ -5,7 +5,7 @@ const COMMON_VALUES = {
   typeScript: 'TypeScript',
   react: 'React',
   redux: 'Redux',
-  next: 'Next',
+  next: 'Next.js',
   jest: 'JEST',
   cypress: 'Cypress',
   playwright: 'Playwright',

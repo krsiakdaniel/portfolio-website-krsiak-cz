@@ -85,7 +85,6 @@ export interface SkillCard {
   imgAlt: string
   title: string
   years: number
-  description: string
 }
 
 // status page

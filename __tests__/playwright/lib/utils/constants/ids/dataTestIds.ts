@@ -162,6 +162,7 @@ const PAGES_LINKS = {
 
 const CALL_TO_ACTION = {
   linkResume: 'call-to-action-link-resume',
+  linkWorkExperience: 'call-to-action-link-work-experience',
 }
 
 export const DATA_TEST_IDS = {
