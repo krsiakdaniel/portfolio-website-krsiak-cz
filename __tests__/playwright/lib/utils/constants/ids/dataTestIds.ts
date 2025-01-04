@@ -70,22 +70,22 @@ const HERO = {
 const PAGE = {
   home: {
     previous: '',
-    next: `${NAVIGATION.NEXT}-${LINKS.RESUME}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.WORK_EXPERIENCE_OVERVIEW}`,
     introduction: 'home-introduction',
   },
-  resume: {
+  workExperience: {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.HOME}`,
-    next: `${NAVIGATION.NEXT}-${LINKS.WORK_EXPERIENCE_OVERVIEW}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.RESUME}`,
+    introduction: 'work-experience-introduction',
+  },
+  resume: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.WORK_EXPERIENCE_OVERVIEW}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.PERSONAL_PROJECTS_OVERVIEW}`,
     introduction: 'resume-introduction',
     downloadResume: 'download-resume',
   },
-  workExperience: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
-    next: `${NAVIGATION.NEXT}-${LINKS.PERSONAL_PROJECTS_OVERVIEW}`,
-    introduction: 'work-experience-introduction',
-  },
   personalProjects: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.WORK_EXPERIENCE_OVERVIEW}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
     next: `${NAVIGATION.NEXT}-${LINKS.TESTIMONIALS}`,
     introduction: 'personal-projects-introduction',
   },
@@ -98,7 +98,7 @@ const PAGE = {
 
 const PERSONAL_PROJECTS = {
   overview: {
-    previous: `${NAVIGATION.PREVIOUS}-${SECTIONS.WORK_EXPERIENCE}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
     next: `${NAVIGATION.NEXT}-${LINKS.TESTIMONIALS}`,
   },
   cryptoMania: {
@@ -113,8 +113,8 @@ const PERSONAL_PROJECTS = {
 
 const WORK_PROJECTS = {
   overview: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
-    next: `${NAVIGATION.NEXT}-${SECTIONS.PERSONAL_PROJECTS}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.HOME}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.RESUME}`,
   },
   kooperativa: {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.KOMERCNI_BANKA}`,

@@ -74,11 +74,11 @@ const Resume = (): JSX.Element => {
         </div>
       </div>
       <PageNavigation
-        linkPrevious={PAGES_URL.home}
-        namePrevious={TEXT.home}
+        linkPrevious={PAGES_URL.work.mainUrl}
+        namePrevious={TEXT.workExperience}
         dataTestIdPrevious={DATA_TEST_IDS.page.resume.previous}
-        linkNext={PAGES_URL.work.mainUrl}
-        nameNext={TEXT.workExperience}
+        linkNext={PAGES_URL.personal.mainUrl}
+        nameNext={TEXT.personalProjects}
         dataTestIdNext={DATA_TEST_IDS.page.resume.next}
       />
     </PageContainer>
