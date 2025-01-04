@@ -1,8 +1,8 @@
 export const YEARS = {
-  javascript: 6,
-  typescript: 5,
+  javaScript: 6,
+  typeScript: 5,
   react: 5,
-  redux: 2,
+  redux: 3,
   tailwind: 2,
   next: 1,
   webDeveloper: 1,

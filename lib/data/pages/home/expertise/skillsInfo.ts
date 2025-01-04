@@ -7,7 +7,7 @@ export const skillsInfo: SkillInfo[] = [
     id: 0,
     order: 1,
     title: 'JavaScript, TypeScript, and React',
-    description: `I have ${YEARS.javascript} years of experience creating modern, interactive web applications, using Tailwind CSS to deliver responsive designs.`,
+    description: `I have ${YEARS.javaScript} years of experience creating modern, interactive web applications, using Tailwind CSS to deliver responsive designs.`,
   },
   {
     id: 1,
@@ -20,6 +20,6 @@ export const skillsInfo: SkillInfo[] = [
     id: 2,
     order: 3,
     title: 'Focus on type safety',
-    description: `With ${YEARS.typescript} years of experience in TypeScript, I focus on code safety, and creating scalable codebase. Less errors save money.`,
+    description: `With ${YEARS.typeScript} years of experience in TypeScript, I focus on code safety, and creating scalable codebase. Less errors save money.`,
   },
 ]

@@ -2,6 +2,7 @@ import { YEARS } from '@/lib/utils/constants/yearsExperience'
 
 import { getSkillsIcons } from '@/lib/utils/helpers/getSkillsIcons'
 import { Icon, SkillCard } from '@/lib/utils/interfaces/interfaces'
+import { TEXT } from '@/localization/english'
 
 import js from '@/public/icons/svg/skills/js.svg'
 import next from '@/public/icons/svg/skills/next.svg'
@@ -19,49 +20,43 @@ export const skills: SkillCard[] = [
   {
     id: 0,
     imgSrc: js,
-    imgAlt: 'JS',
-    title: 'JavaScript',
-    years: YEARS.javascript,
-    description: 'Essential for creating modern interactive web applications.',
+    imgAlt: TEXT.javaScript,
+    title: TEXT.javaScript,
+    years: YEARS.javaScript,
   },
   {
     id: 1,
     imgSrc: ts,
-    imgAlt: 'TS',
-    title: 'TypeScript',
-    years: YEARS.typescript,
-    description: 'Ensuring type safety, code reliability and\u00A0scalability.',
+    imgAlt: TEXT.typeScript,
+    title: TEXT.typeScript,
+    years: YEARS.typeScript,
   },
   {
     id: 2,
     imgSrc: react,
-    imgAlt: 'React',
-    title: 'React',
+    imgAlt: TEXT.react,
+    title: TEXT.react,
     years: YEARS.react,
-    description: 'Great for components that are reusable and\u00A0easy to maintain.',
   },
   {
     id: 3,
     imgSrc: redux,
-    imgAlt: 'Redux',
-    title: 'Redux',
+    imgAlt: TEXT.redux,
+    title: TEXT.redux,
     years: YEARS.redux,
-    description: 'Managing application state in a predictable and\u00A0organized way.',
   },
   {
     id: 4,
     imgSrc: next,
-    imgAlt: 'Next.js',
-    title: 'Next.js',
+    imgAlt: TEXT.next,
+    title: TEXT.next,
     years: YEARS.next,
-    description: 'The React Framework for creating fast and\u00A0scalable web applications.',
   },
   {
     id: 5,
     imgSrc: tailwind,
-    imgAlt: 'Tailwind CSS',
-    title: 'Tailwind CSS',
+    imgAlt: TEXT.tailwindCss,
+    title: TEXT.tailwindCss,
     years: YEARS.tailwind,
-    description: 'Amazing utility-first CSS framework for\u00A0quickly building custom designs.',
   },
 ]
