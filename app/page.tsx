@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
+import CallToActionResume from '@/components/pages/home/call-to-action-resume/CallToActionResume'
 import Companies from '@/components/pages/home/Companies'
 import WhatIDoMindset from '@/components/pages/home/expertise/MySKills'
 import Hero from '@/components/pages/home/hero/Hero'
@@ -26,6 +27,7 @@ const Page = (): JSX.Element => {
     <PageContainer id={ID.home}>
       <Hero />
       <Skills />
+      <CallToActionResume />
       <SkillsMain />
       <WhatIDoMindset />
       <Companies />

@@ -39,7 +39,7 @@ const Resume = (): JSX.Element => {
           <div className="mt-8">
             <SocialLink
               href={EXTERNAL_URL.resume.resumeViewPDF}
-              text={`Download - ${TEXT.resumePDF}`}
+              text={TEXT.resumePDF}
               linkColor={LinkColors.Red}
               dataTestId={DATA_TEST_IDS.hero.linkResume}
             />

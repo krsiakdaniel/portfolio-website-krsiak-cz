@@ -31,7 +31,7 @@ export const HOME = {
   logo: 'krsiak.cz',
   nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
   reactDeveloper: COMMON_VALUES.reactDeveloper,
-  heroText: `Hi 👋 I am ${COMMON_VALUES.reactDeveloper} based in ${COMMON_VALUES.brno}, ${COMMON_VALUES.czechRepublicNBSP} 🇨🇿`,
+  heroText: `Hi 👋 I am based in ${COMMON_VALUES.brno}, ${COMMON_VALUES.czechRepublicNBSP} 🇨🇿`,
   mindset: '💡 My Committed Mindset',
   skillsForCompany: '🥇 Skills For Company',
 }
