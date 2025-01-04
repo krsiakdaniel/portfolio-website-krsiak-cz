@@ -1,7 +1,6 @@
 import { FC } from 'react'
 
 import IconExternalLink from '@/components/icons/IconExternalLink'
-
 import { LinkColors } from '@/lib/utils/interfaces/enums'
 
 type SocialLinkProps = {

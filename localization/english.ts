@@ -36,11 +36,6 @@ export const HOME = {
   skillsForCompany: '🥇 Skills For Company',
 }
 
-export const ABOUT = {
-  pageTitle: 'About Me',
-  aboutMe: '👨‍💻 About Me',
-}
-
 export const RESUME = {
   resume: '📝 Resume',
 }
@@ -120,32 +115,9 @@ export const ERROR = {
   backToHome: 'Back to Home',
 }
 
-export const META_ABOUT_ME = {
-  title: `About | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
-  description: `Experienced ${COMMON_VALUES.reactDeveloper} proficient in ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.react}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.redux}. Also skilled in QA Automation, leading teams, and managing localization projects.`,
-  keywords: {
-    nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
-    reactDeveloper: COMMON_VALUES.reactDeveloper,
-    qaAutomation: 'QA Automation',
-    teamLeader: 'Team Leader',
-    localizationManager: 'Localization Manager',
-    javaScript: COMMON_VALUES.javaScript,
-    react: COMMON_VALUES.react,
-    typeScript: COMMON_VALUES.typeScript,
-    redux: COMMON_VALUES.redux,
-    cypress: COMMON_VALUES.cypress,
-    playwright: COMMON_VALUES.playwright,
-    dashboardApplication: 'Dashboard application',
-    bankingWebsite: 'Banking website',
-    saasCompany: 'SaaS company',
-    microsoftWindows: 'Microsoft Windows',
-    localization: 'Localization',
-  },
-}
-
 export const META_TESTIMONIALS = {
   title: `Testimonials | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
-  description: `Read testimonials from colleagues and partners about ${COMMON_VALUES.nameDanielKrsiak}'s work and skills.`,
+  description: `Read testimonials from colleagues and partners regarding ${COMMON_VALUES.nameDanielKrsiak}'s work and skills.`,
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
@@ -462,7 +434,6 @@ export const TEXT = {
   ...SOCIAL_LINKS,
   ...HOME,
   ...COMPANIES,
-  ...ABOUT,
   ...RESUME,
   ...TESTIMONIALS,
   ...WORK,

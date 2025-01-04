@@ -54,18 +54,6 @@
       ]
     },
     {
-      "name": "About Me",
-      "short_name": "About",
-      "url": "/about-me",
-      "icons": [
-        {
-          "src": "icons/png/icon-96x96.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
-    },
-    {
       "name": "Work Experience",
       "short_name": "Work",
       "url": "/work-experience",
@@ -81,6 +69,18 @@
       "name": "Personal Projects",
       "short_name": "Projects",
       "url": "/personal-projects",
+      "icons": [
+        {
+          "src": "icons/png/icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Testimonials",
+      "short_name": "Testimonials",
+      "url": "/testimonials",
       "icons": [
         {
           "src": "icons/png/icon-96x96.png",

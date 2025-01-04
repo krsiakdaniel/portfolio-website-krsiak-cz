@@ -31,7 +31,7 @@ const ProjectsPersonal = (): JSX.Element => {
         description={
           <p className="mt-4 text-lg text-neutral-600">
             I enjoy learning <Highlight text="new technologies" /> and creating <Highlight text="personal projects" />{' '}
-            where I can apply my knowledge and stay updated with the <Highlight text="latest trends" />.
+            where I can apply my knowledge.
           </p>
         }
       >
@@ -42,9 +42,12 @@ const ProjectsPersonal = (): JSX.Element => {
 
       <div className="mt-20">
         <PageNavigation
-          linkPrevious={PAGES_URL.work.mainUrl}
-          namePrevious={TEXT.workExperience}
-          dataTestIdPrevious={DATA_TEST_IDS.projects.personal.overview.previous}
+          linkPrevious={PAGES_URL.resume}
+          namePrevious={TEXT.resume}
+          dataTestIdPrevious={DATA_TEST_IDS.page.personalProjects.previous}
+          linkNext={PAGES_URL.testimonials}
+          nameNext={TEXT.testimonials}
+          dataTestIdNext={DATA_TEST_IDS.page.personalProjects.next}
         />
       </div>
     </PageContainer>

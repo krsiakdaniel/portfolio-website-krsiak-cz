@@ -35,6 +35,6 @@ describe('sitemap', () => {
 
   it('should return correct priority values', () => {
     const priorities = results.map((resultPriority) => resultPriority.priority)
-    expect(priorities).toEqual(expect.arrayContaining([1, 0.8, 0.5]))
+    expect(priorities).toEqual(expect.arrayContaining([1, 0.8, 0.4, 0.2]))
   })
 })

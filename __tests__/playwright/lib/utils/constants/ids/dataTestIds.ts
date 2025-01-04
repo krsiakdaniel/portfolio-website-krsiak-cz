@@ -11,12 +11,13 @@ const SECTIONS = {
 }
 
 const LINKS = {
+  PERSONAL_PROJECTS_OVERVIEW: 'personal-projects',
+  WORK_EXPERIENCE_OVERVIEW: 'work-experience',
   LINKEDIN: 'linkedin',
   RESUME: 'resume',
   TESTIMONIALS: 'testimonials',
   GITHUB: 'github',
   HOME: 'home',
-  ABOUT_ME: 'about-me',
   KRSIAK: 'krsiak',
   CRYPTOMANIA: 'cryptomania',
   KOMERCNI_BANKA: 'komercni-banka',
@@ -41,7 +42,6 @@ const MENU = {
   mobile: {
     componentMenu: 'menu-mobile',
     links: {
-      aboutMe: 'mobile-about-me-link',
       resume: 'mobile-resume-link',
       testimonials: 'mobile-testimonials-link',
       workExperience: 'mobile-work-experience-link',
@@ -51,7 +51,6 @@ const MENU = {
   desktop: {
     componentMenu: 'menu-desktop',
     links: {
-      aboutMe: 'desktop-about-me-link',
       resume: 'desktop-resume-link',
       testimonials: 'desktop-testimonials-link',
       workExperience: 'desktop-work-experience-link',
@@ -65,38 +64,42 @@ const MENU = {
 
 const HERO = {
   heading: 'hero-heading',
-  linkLinkedIn: `${SECTIONS.HERO_LINK}-${LINKS.LINKEDIN}`,
-  linkResume: `${SECTIONS.HERO_LINK}-${LINKS.RESUME}`,
-  linkGitHub: `${SECTIONS.HERO_LINK}-${LINKS.GITHUB}`,
   paragraph: 'hero-paragraph',
 }
 
 const PAGE = {
   home: {
     previous: '',
-    next: `${NAVIGATION.NEXT}-${LINKS.ABOUT_ME}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.WORK_EXPERIENCE_OVERVIEW}`,
+    introduction: 'home-introduction',
   },
-  aboutMe: {
+  workExperience: {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.HOME}`,
     next: `${NAVIGATION.NEXT}-${LINKS.RESUME}`,
-    introduction: 'about-me-introduction',
+    introduction: 'work-experience-introduction',
   },
   resume: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.ABOUT_ME}`,
-    next: `${NAVIGATION.NEXT}-${SECTIONS.WORK_EXPERIENCE}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.WORK_EXPERIENCE_OVERVIEW}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.PERSONAL_PROJECTS_OVERVIEW}`,
     introduction: 'resume-introduction',
+    downloadResume: 'download-resume',
+  },
+  personalProjects: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.TESTIMONIALS}`,
+    introduction: 'personal-projects-introduction',
   },
   testimonials: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
-    next: `${NAVIGATION.NEXT}-${SECTIONS.WORK_EXPERIENCE}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.PERSONAL_PROJECTS_OVERVIEW}`,
+    next: '',
     introduction: 'testimonials-introduction',
   },
 }
 
 const PERSONAL_PROJECTS = {
   overview: {
-    previous: `${NAVIGATION.PREVIOUS}-${SECTIONS.WORK_EXPERIENCE}`,
-    next: '',
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.TESTIMONIALS}`,
   },
   cryptoMania: {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.KRSIAK}`,
@@ -110,8 +113,8 @@ const PERSONAL_PROJECTS = {
 
 const WORK_PROJECTS = {
   overview: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
-    next: `${NAVIGATION.NEXT}-${SECTIONS.PERSONAL_PROJECTS}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.HOME}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.RESUME}`,
   },
   kooperativa: {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.KOMERCNI_BANKA}`,
@@ -151,7 +154,6 @@ const PROJECTS = {
 }
 
 const PAGES_LINKS = {
-  aboutMe: 'about-me-link',
   resume: 'resume-link',
   testimonials: 'testimonials-link',
   workExperience: 'work-experience-link',

@@ -3,7 +3,7 @@ export const ID = {
   hero: 'hero',
   skills: 'skills',
   skillsMain: 'skills-main',
-  about: 'about',
+  resume: 'resume',
   projects: {
     work: 'work',
     personal: 'personal',
@@ -29,7 +29,6 @@ export const ID = {
   },
   statusPage: 'status-page',
   websiteLink: {
-    aboutMe: 'about-me',
     resume: 'resume',
     testimonials: 'testimonials',
     workExperience: 'work-experience',

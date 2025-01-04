@@ -8,28 +8,22 @@ import { PageLinkItem } from '@/lib/utils/interfaces/interfaces'
 
 export const pagesLinks: PageLinkItem[] = [
   {
-    href: PAGES_URL.aboutMe,
-    text: TEXT.aboutMe,
-    testId: DATA_TEST_IDS.pagesLinks.aboutMe,
-    id: ID.websiteLink.aboutMe,
-  },
-  { href: PAGES_URL.resume, text: TEXT.resume, testId: DATA_TEST_IDS.pagesLinks.resume, id: ID.websiteLink.resume },
-  {
-    href: PAGES_URL.testimonials,
-    text: TEXT.testimonials,
-    testId: DATA_TEST_IDS.pagesLinks.testimonials,
-    id: ID.websiteLink.testimonials,
-  },
-  {
+    id: ID.websiteLink.workExperience,
     href: PAGES_URL.work.mainUrl,
     text: TEXT.workExperience,
     testId: DATA_TEST_IDS.pagesLinks.workExperience,
-    id: ID.websiteLink.workExperience,
   },
+  { id: ID.websiteLink.resume, href: PAGES_URL.resume, text: TEXT.resume, testId: DATA_TEST_IDS.pagesLinks.resume },
   {
+    id: ID.websiteLink.personalProjects,
     href: PAGES_URL.personal.mainUrl,
     text: TEXT.personalProjects,
     testId: DATA_TEST_IDS.pagesLinks.personalProjects,
-    id: ID.websiteLink.personalProjects,
+  },
+  {
+    id: ID.websiteLink.testimonials,
+    href: PAGES_URL.testimonials,
+    text: TEXT.testimonials,
+    testId: DATA_TEST_IDS.pagesLinks.testimonials,
   },
 ]

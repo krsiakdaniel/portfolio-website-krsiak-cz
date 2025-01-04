@@ -34,8 +34,8 @@ const Page = (): JSX.Element => {
       <ScanMyContactQR />
 
       <PageNavigation
-        linkNext={PAGES_URL.aboutMe}
-        nameNext={TEXT.aboutMe}
+        linkNext={PAGES_URL.work.mainUrl}
+        nameNext={TEXT.workExperience}
         dataTestIdNext={DATA_TEST_IDS.page.home.next}
       />
     </PageContainer>
