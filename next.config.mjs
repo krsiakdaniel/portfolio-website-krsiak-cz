@@ -48,6 +48,15 @@ const nextConfig = {
     dangerouslyAllowSVG: true, // Allows SVG images to be used
     unoptimized: false, // Setting 'unoptimized' to value 'false' means that images will be optimized by 'Next.js Image Optimization API'.
   },
+  async redirects() {
+    return [
+      {
+        source: '/personal-projects/eshop', // The deleted page
+        destination: '/personal-projects/', // Redirect to projects
+        permanent: true, // Use 301 for permanent redirect
+      },
+    ]
+  },
 }
 
 // Merge the two configurations

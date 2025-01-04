@@ -5,7 +5,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getCurrentYear } from '@/lib/utils/helpers/getCurrentYear'
 
-export const FooterCopyright = (): JSX.Element => {
+const FooterCopyright = (): JSX.Element => {
   return (
     <div className="mt-8 flex flex-col">
       <span className="ml-2" data-testid={DATA_TEST_IDS.footer.copyright}>

@@ -11,7 +11,8 @@ Development environment for the project.
     - [Manually](#manually)
     - [Using tool `npm-check-updates`](#using-tool-npm-check-updates)
   - [💅 Prettier](#-prettier)
-  - [🔗 Imports Order](#-imports-order)
+  - [🔀 Pull Requests](#-pull-requests)
+  - [🔗 Imports Order in Files](#-imports-order-in-files)
     - [Example](#example)
 
 ---
@@ -64,7 +65,7 @@ Check for outdated packages.
 ncu
 ```
 
-![ncu](/readme-images/npm-check-updates-checking.jpg)
+![ncu](/readme-images/npm-check-updates-checking.png)
 
 Run cmd to update the package.json with the latest versions.
 
@@ -72,7 +73,7 @@ Run cmd to update the package.json with the latest versions.
 ncu -u
 ```
 
-![ncu](/readme-images/npm-check-updates-upgrading.jpg)
+![ncu](/readme-images/npm-check-updates-upgrading.png)
 
 Install the updated packages.
 
@@ -96,7 +97,23 @@ Format the code via Prettier.
 npm run prettier:fix
 ```
 
-## 🔗 Imports Order
+## 🔀 Pull Requests
+
+When creating a pull request, make sure there is a related Issue. The board Issue is linked to the PR in 90% of the cases.
+
+**If there is no related Issue:**
+
+- Make sure to generate summary of the changes in the PR.
+- There is GitHub Copilot feature directly in the comment box of the PR.
+
+![PR](/readme-images/pull-request-changes-copilot-summary.png)
+
+**Paste that summary in the PR description:**
+
+- Issue: `n/a`
+- Generated summary.
+
+## 🔗 Imports Order in Files
 
 Order for imports in files:
 

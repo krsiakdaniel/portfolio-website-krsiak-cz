@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FC } from 'react'
 
-import { IconArrow } from '@/components/icons/IconArrow'
+import IconArrow from '@/components/icons/IconArrow'
 import Heading1 from '@/components/shared/Heading1'
 import Heading2 from '@/components/shared/Heading2'
 

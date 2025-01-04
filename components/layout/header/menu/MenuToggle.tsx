@@ -2,8 +2,8 @@
 
 import { FC } from 'react'
 
-import { IconClose } from '@/components/icons/IconClose'
-import { IconHamburger } from '@/components/icons/IconHamburger'
+import IconClose from '@/components/icons/IconClose'
+import IconHamburger from '@/components/icons/IconHamburger'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'

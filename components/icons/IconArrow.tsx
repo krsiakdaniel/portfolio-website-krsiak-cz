@@ -4,7 +4,7 @@ type IconArrowProps = {
   direction: NavigationDirectionEnum
 }
 
-export const IconArrow = ({ direction = NavigationDirectionEnum.Left }: IconArrowProps): JSX.Element => {
+const IconArrow = ({ direction = NavigationDirectionEnum.Left }: IconArrowProps): JSX.Element => {
   return (
     <svg
       className={`mx-1 block h-4 w-4 ${direction === NavigationDirectionEnum.Left ? 'rotate-180' : ''}`}
@@ -20,3 +20,5 @@ export const IconArrow = ({ direction = NavigationDirectionEnum.Left }: IconArro
     </svg>
   )
 }
+
+export default IconArrow
