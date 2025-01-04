@@ -10,7 +10,6 @@ type PageNavigationLinkProps = {
   direction?: NavigationDirectionEnum
   dataTestId: string | undefined
   justify: 'start' | 'end'
-  widthClass: string
 }
 
 const PageNavigationLink: FC<PageNavigationLinkProps> = ({
@@ -19,7 +18,6 @@ const PageNavigationLink: FC<PageNavigationLinkProps> = ({
   direction,
   dataTestId,
   justify,
-  widthClass,
 }): JSX.Element => {
   const showArrowLeft = direction === NavigationDirectionEnum.Left
   const showArrowRight = direction === NavigationDirectionEnum.Right
@@ -27,7 +25,7 @@ const PageNavigationLink: FC<PageNavigationLinkProps> = ({
   return (
     <a
       href={href}
-      className={`flex w-full items-center justify-${justify} rounded-lg border-violet-300 bg-violet-50 p-4 font-bold text-violet-600 hover:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-300 group-hover:text-violet-800 ${widthClass}`}
+      className={`flex w-full items-center justify-${justify} rounded-lg border-violet-300 bg-violet-50 p-4 font-bold text-violet-600 hover:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-300 group-hover:text-violet-800 lg:w-1/2`}
       data-testid={dataTestId}
     >
       {showArrowLeft && <IconArrow direction={NavigationDirectionEnum.Left} />}
