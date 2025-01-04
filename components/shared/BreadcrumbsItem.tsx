@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FC } from 'react'
 
-import { IconCaretRight } from '@/components/icons/IconCaretRight'
+import IconCaretRight from '@/components/icons/IconCaretRight'
 
 type BreadcrumbsItemProps = {
   url: string

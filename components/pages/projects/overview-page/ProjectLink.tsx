@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { IconArrow } from '@/components/icons/IconArrow'
+import IconArrow from '@/components/icons/IconArrow'
 
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 

@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react'
 
-import { IconCheck } from '@/components/icons/IconCheck'
+import IconCheck from '@/components/icons/IconCheck'
 
 type ListItemProps = {
   children: ReactNode

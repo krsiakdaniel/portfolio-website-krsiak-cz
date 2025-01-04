@@ -1,4 +1,4 @@
-import { IconArrow } from '@/components/icons/IconArrow'
+import IconArrow from '@/components/icons/IconArrow'
 import Heading2 from '@/components/shared/Heading2'
 import Highlight from '@/components/shared/Highlight'
 
