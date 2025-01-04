@@ -43,13 +43,4 @@ test.describe('Hero Links', () => {
   test('should have the correct GitHub link', async () => {
     await checkLink(page, DATA_TEST_IDS.hero.linkGitHub, 'https://github.com/krsiakdaniel/')
   })
-
-  // Test to check if the Resume link is correct
-  test('should have the correct Resume link', async () => {
-    await checkLink(
-      page,
-      DATA_TEST_IDS.hero.linkResume,
-      'https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD/view',
-    )
-  })
 })
