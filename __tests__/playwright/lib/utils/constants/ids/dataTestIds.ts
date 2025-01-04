@@ -158,6 +158,10 @@ const PAGES_LINKS = {
   personalProjects: 'personal-projects-link',
 }
 
+const CALL_TO_ACTION = {
+  linkResume: 'call-to-action-link-resume',
+}
+
 export const DATA_TEST_IDS = {
   breadcrumbs: 'breadcrumbs',
   gallery: 'gallery',
@@ -168,4 +172,5 @@ export const DATA_TEST_IDS = {
   page: PAGE,
   projects: PROJECTS,
   pagesLinks: PAGES_LINKS,
+  callToAction: CALL_TO_ACTION,
 }

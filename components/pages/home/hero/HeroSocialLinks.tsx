@@ -18,13 +18,6 @@ const HeroSocialLinks = (): JSX.Element => {
         dataTestId={DATA_TEST_IDS.hero.linkLinkedIn}
       />
       <SocialLink
-        href={EXTERNAL_URL.resume.resumeViewPDF}
-        text={TEXT.resumePDF}
-        linkColor={LinkColors.Red}
-        className="mt-4 sm:mr-4 sm:mt-0"
-        dataTestId={DATA_TEST_IDS.hero.linkResume}
-      />
-      <SocialLink
         href={EXTERNAL_URL.github}
         text={TEXT.gitHub}
         linkColor={LinkColors.Gray}
