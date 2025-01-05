@@ -165,7 +165,7 @@ You can install the WPA from the browser (example from Edge).
 
 Once installed, the WPA can be accessed from desktop (example from Mac).
 
-![WPA on Mac Desktop](/readme-images/wpa-640x480.png)
+![WPA on Mac Desktop](/readme-images/wpa-320x640.png)
 
 ## 🖼️ Screenshots
 
