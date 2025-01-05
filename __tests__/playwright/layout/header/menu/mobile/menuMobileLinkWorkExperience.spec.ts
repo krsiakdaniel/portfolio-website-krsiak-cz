@@ -65,6 +65,6 @@ test.describe('Menu Mobile - Link "Work Experience"', () => {
 
     // Check the heading text
     const heading = await page.textContent('h1')
-    expect(heading).toBe('🖥️ Work Experience')
+    expect(heading).toBe('👨🏻‍💻 Work Experience')
   })
 })

@@ -22,6 +22,7 @@ import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { MONTHS, YEARS } from '@/lib/utils/constants/yearsExperience'
 
 export const metadata: Metadata = {
   ...metaDataProjectsOverviewWork,
@@ -53,12 +54,12 @@ const ProjectsWork = (): JSX.Element => {
           <ExperienceCard
             company="Freelance"
             role="Web Developer / Consultant"
-            description="In the past I was creating  websites for clients."
+            description={`${YEARS.consultantWebsites} years · part-time — I used to create websites for small companies.`}
           />
           <ExperienceCard
             company="Freelance"
             role="Web Developer"
-            description="First time web company job was 1 year coding website layouts."
+            description={`${YEARS.webCoder} year · full-time — First web company job coding website layouts.`}
           />
         </div>
 
@@ -68,8 +69,8 @@ const ProjectsWork = (): JSX.Element => {
         <div className="mt-4">
           <ExperienceCard
             company="Freelance"
-            role="WordPress Consultant"
-            description="For 5 years I used to create websites for clients and small companies."
+            role="WordPress Developer / Consultant"
+            description={`${YEARS.consultantWordPress} years · part-time — I used to create websites for small companies.`}
           />
         </div>
 
@@ -80,12 +81,12 @@ const ProjectsWork = (): JSX.Element => {
           <ExperienceCard
             company="Smartsupp"
             role="QA Automation - Team Leader"
-            description="I set up Cypress E2E testing for the entire company application. I also wrote E2E tests in JavaScript and TypeScript. Mentoring juniors QA."
+            description={`${MONTHS.qaTeamLeaderAtSmartsupp} months · full-time — Set up Cypress E2E testing for SaaS company.`}
           />
           <ExperienceCard
             company="RWS - Moravia IT"
             role="Localization - Tester"
-            description="Making sure translations fit UI layout on Windows 7 + Windows Store."
+            description={`${YEARS.localizationTester} years · full-time — Testing Windows 7 + Windows Store layouts.`}
           />
         </div>
 
@@ -100,7 +101,7 @@ const ProjectsWork = (): JSX.Element => {
           <ExperienceCard
             company="Smartsupp"
             role="Localization - Manager"
-            description="Responsible for translation of the company website and application into 9 languages. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱"
+            description={`${YEARS.localizationManager} years · full-time — Website localization. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱`}
           />
         </div>
       </ProjectsOverviewLayout>

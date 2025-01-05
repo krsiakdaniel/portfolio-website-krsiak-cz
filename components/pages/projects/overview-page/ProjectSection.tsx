@@ -15,7 +15,8 @@ const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, secti
   return (
     <>
       <ExperienceSection id={sectionId} text={sectionText} />
-      {projectData.map((item) => (
+
+      {projectData.map((item, index) => (
         <ProjectSummaryItem
           key={item.id}
           isFeatured={item.isFeatured}
@@ -23,13 +24,14 @@ const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, secti
           title={item.title}
           company={item.company}
           role={item.role}
-          years={item.years}
           description={item.description}
           mySkillsIcons={item.mySkillsIcons}
           customers={item.customers}
+          personalProjectNote={item.personalProjectNote}
           linkText={item.linkText}
           linkProjectPage={item.linkProjectPage}
           dataTestId={item.id}
+          className={index === 0 ? 'mt-8' : 'mt-16'}
         />
       ))}
     </>

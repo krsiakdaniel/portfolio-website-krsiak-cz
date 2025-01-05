@@ -1,5 +1,6 @@
 import { StaticImageData } from 'next/image'
 
+import { DurationUnit } from '@/lib/utils/interfaces/enums'
 import { SkillCategoryType } from '@/lib/utils/interfaces/types'
 
 // icons
@@ -61,6 +62,7 @@ export interface Project {
   projectLinks: Link[]
   linkGitHub?: string
   customers?: string
+  personalProjectNote?: string
   linkProjectPage: string
 }
 
@@ -75,7 +77,8 @@ export interface Job {
   id: number
   path: string
   title: string
-  years: number
+  duration: number
+  unit: DurationUnit.Year | DurationUnit.Month
   description: string
 }
 

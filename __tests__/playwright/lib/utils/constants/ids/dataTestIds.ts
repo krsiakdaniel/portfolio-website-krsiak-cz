@@ -162,6 +162,7 @@ const PAGES_LINKS = {
 
 const CALL_TO_ACTION = {
   linkResume: 'call-to-action-link-resume',
+  linkResumeDownload: 'call-to-action-link-resume-download',
   linkWorkExperience: 'call-to-action-link-work-experience',
 }
 

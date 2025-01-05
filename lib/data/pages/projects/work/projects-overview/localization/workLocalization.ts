@@ -9,7 +9,7 @@ import { Project } from '@/lib/utils/interfaces/interfaces'
 import moravia1 from '@/public/images/webp/projects/work/moravia/moravia-1-light.webp'
 import moravia2 from '@/public/images/webp/projects/work/moravia/moravia-2-light.webp'
 import moravia3 from '@/public/images/webp/projects/work/moravia/moravia-3-light.webp'
-import moraviaThumb from '@/public/images/webp/projects/work/moravia/moravia-thumb-light-600.webp'
+import moraviaThumb from '@/public/images/webp/projects/work/moravia/moravia-thumb.webp'
 
 export const projectsWorkLocalization: Project[] = [
   {
@@ -32,7 +32,7 @@ export const projectsWorkLocalization: Project[] = [
       {
         id: 0,
         description: 'Frontend',
-        skillsList: ['HTML', 'CSS', 'JavaScript'],
+        skillsList: ['HTML', 'CSS', 'JavaScript', 'AutoHotkey Scripting Language'],
       },
     ],
     linkText: 'Project details',

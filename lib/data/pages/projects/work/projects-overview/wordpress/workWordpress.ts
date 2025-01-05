@@ -9,7 +9,7 @@ import { Project } from '@/lib/utils/interfaces/interfaces'
 import smartsuppHelp1 from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-1-light.webp'
 import smartsuppHelp2 from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-2-light.webp'
 import smartsuppHelp3 from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-3-light.webp'
-import smartsuppHelpThumb from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-thumb-light-600.webp'
+import smartsuppHelpThumb from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-thumb.webp'
 
 export const projectsWorkWordPress: Project[] = [
   {

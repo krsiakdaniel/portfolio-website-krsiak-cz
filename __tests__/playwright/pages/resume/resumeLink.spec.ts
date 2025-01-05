@@ -34,6 +34,10 @@ test.afterEach(async () => {
 test.describe('Resume page', () => {
   // Test to check if the Resume link is correct
   test('should have the correct Resume link', async () => {
-    await checkLink(page, 'download-resume', 'https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD/view')
+    await checkLink(
+      page,
+      'call-to-action-link-resume-download',
+      'https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD/view',
+    )
   })
 })
