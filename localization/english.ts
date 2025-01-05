@@ -52,10 +52,10 @@ export const TESTIMONIALS = {
 export const PROJECTS = {
   cryptoMania: '💰 CryptoMania',
   personalProjects: '🚀 Personal Projects',
-  portfolioWebsite: '👨‍💻 Portfolio Website',
+  portfolioWebsite: '👨🏻‍💻 Portfolio Website',
   next: COMMON_VALUES.next,
   react: COMMON_VALUES.react,
-  workExperience: '🖥️ Work Experience',
+  workExperience: '👨🏻‍💻 Work Experience',
 }
 
 export const STATUS_PAGE = {

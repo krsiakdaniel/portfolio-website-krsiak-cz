@@ -14,7 +14,7 @@ const CallToActionWorkExperience = (): JSX.Element => {
       link={PAGES_URL.work.mainUrl}
       linkText={TEXT.workExperience}
       dataTestId={DATA_TEST_IDS.callToAction.linkWorkExperience}
-      icon="🖥️"
+      icon="👨🏻‍💻"
     />
   )
 }

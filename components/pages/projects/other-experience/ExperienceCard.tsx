@@ -11,7 +11,7 @@ type ExperienceCardProps = {
 
 const ExperienceCard: FC<ExperienceCardProps> = ({ company, role, description }): JSX.Element => {
   return (
-    <div className="mt-4 w-full rounded-lg border border-gray-200 bg-white p-6 shadow-md first:mt-0 md:max-w-[600px]">
+    <div className="mt-4 w-full rounded-lg border border-gray-200 bg-white p-6 shadow-md first:mt-0 sm:max-w-[600px]">
       <Heading5>
         {company}
         {' · '}

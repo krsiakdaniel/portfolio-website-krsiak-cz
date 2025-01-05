@@ -11,7 +11,7 @@ const CustomersCount: FC<CustomersCountProps> = ({ count }): JSX.Element => {
   return (
     <List>
       <ListItem>
-        <span className="mr-1 font-bold text-neutral-500">{count}</span> customers.
+        <span className="font-semibold text-neutral-500">{count} customers.</span>
       </ListItem>
     </List>
   )

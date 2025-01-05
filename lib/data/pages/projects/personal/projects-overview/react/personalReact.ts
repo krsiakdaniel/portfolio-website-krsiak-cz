@@ -12,7 +12,7 @@ import cryptomania5 from '@/public/images/webp/projects/personal/cryptomania/cry
 import cryptomania2 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-2-light.webp'
 import cryptomania6 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-3-dark.webp'
 import cryptomania3 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-3-light.webp'
-import cryptomaniaThumb from '@/public/images/webp/projects/personal/cryptomania/cryptomania-thumb-light-600.webp'
+import cryptomaniaThumb from '@/public/images/webp/projects/personal/cryptomania/cryptomania-thumb.webp'
 
 export const projectsPersonalReact: Project[] = [
   {
@@ -48,6 +48,7 @@ export const projectsPersonalReact: Project[] = [
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website →', url: 'https://cryptocurrency-prices-one.vercel.app/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
+    personalProjectNote: 'Project to exercise coding.',
     linkProjectPage: PAGES_URL.personal.cryptoMania,
   },
 ]

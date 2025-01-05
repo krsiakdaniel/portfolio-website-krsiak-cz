@@ -15,3 +15,8 @@ export enum LinkColors {
   Blue = 'blue',
   Gray = 'gray',
 }
+
+export enum DurationUnit {
+  Year = 'year',
+  Month = 'month',
+}

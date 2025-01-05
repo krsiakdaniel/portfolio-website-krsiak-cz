@@ -1,6 +1,6 @@
 # Portfolio Website - krsiak.cz
 
-React Developer portfolio website ⚛️ 👨‍💻
+React Developer portfolio website ⚛️ 👨🏻‍💻
 
 **Table of Contents:**
 
@@ -14,7 +14,7 @@ React Developer portfolio website ⚛️ 👨‍💻
   - [🐛 Handling Unexpected Bugs](#-handling-unexpected-bugs)
   - [🚦 Project Status](#-project-status)
   - [🛠️ Tech Stack](#️-tech-stack)
-  - [📝 Features](#-features)
+  - [📋 Features](#-features)
   - [💻 Development](#-development)
   - [🐛 Testing](#-testing)
   - [🚀 CI/CD - Continuous Integration / Deployment](#-cicd---continuous-integration--deployment)
@@ -114,18 +114,18 @@ Using these following technologies and tools.
 - [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) - CI - Continuous Integration
 - [Netlify](https://www.netlify.com/) - CD - Continuous Deployment
 
-## 📝 Features
+## 📋 Features
 
 The website contains these following sections and pages.
 
 **Pages:**
 
-- 👉 Home
-- 👉 Resume
-- 👉 Work Experience
-- 👉 Hire Me
-- 👉 Personal Projects
-- 👉 Testimonials
+- 🏠 Home
+- 📝 Resume
+- 👨🏻‍💻 Work Experience
+- 🤝 Hire Me
+- 🚀 Personal Projects
+- 💬 Testimonials
 
 **Work and Project pages:**
 

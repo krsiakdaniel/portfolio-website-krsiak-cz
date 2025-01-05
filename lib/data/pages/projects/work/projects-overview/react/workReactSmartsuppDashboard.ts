@@ -10,8 +10,7 @@ import smartsuppDashboard1 from '@/public/images/webp/projects/work/smartsupp-da
 import smartsuppDashboard2 from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-2-light.webp'
 import smartsuppDashboard3 from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-3-light.webp'
 import smartsuppDashboard4 from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-4-light.webp'
-import smartsuppDashboard5 from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-5-light.webp'
-import smartsuppDashboardThumb from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-thumb-light-600.webp'
+import smartsuppDashboardThumb from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-thumb.webp'
 
 export const workReactSmartsuppDashboard: Project = {
   id: PROJECT_ID.work.smartsupp.dashboard,
@@ -21,8 +20,7 @@ export const workReactSmartsuppDashboard: Project = {
     { id: 0, src: smartsuppDashboard1.src },
     { id: 1, src: smartsuppDashboard2.src },
     { id: 2, src: smartsuppDashboard3.src },
-    { id: 3, src: smartsuppDashboard4.src },
-    { id: 4, src: smartsuppDashboard5.src },
+    { id: 4, src: smartsuppDashboard4.src },
   ],
   title: '💬 Customer Care - Chat Dashboard',
   company: 'Smartsupp',

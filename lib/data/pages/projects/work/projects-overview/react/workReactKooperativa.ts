@@ -9,7 +9,7 @@ import { Project } from '@/lib/utils/interfaces/interfaces'
 import kooperativa1 from '@/public/images/webp/projects/work/kooperativa/kooperativa-1-light.webp'
 import kooperativa2 from '@/public/images/webp/projects/work/kooperativa/kooperativa-2-light.webp'
 import kooperativa3 from '@/public/images/webp/projects/work/kooperativa/kooperativa-3-light.webp'
-import kooperativaThumb from '@/public/images/webp/projects/work/kooperativa/kooperativa-thumb-light-600.webp'
+import kooperativaThumb from '@/public/images/webp/projects/work/kooperativa/kooperativa-thumb.webp'
 
 export const workReactKooperativa: Project = {
   id: PROJECT_ID.work.kooperativa,

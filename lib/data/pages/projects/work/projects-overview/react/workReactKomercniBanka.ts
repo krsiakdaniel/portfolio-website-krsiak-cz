@@ -10,7 +10,7 @@ import komercniBanka1 from '@/public/images/webp/projects/work/komercni-banka/ko
 import komercniBanka2 from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-2-light.webp'
 import komercniBanka3 from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-3-light.webp'
 import komercniBanka4 from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-4-light.webp'
-import komercniBankaThumb from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-thumb-light-600.webp'
+import komercniBankaThumb from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-thumb.webp'
 
 export const workReactKomercniBanka: Project = {
   id: PROJECT_ID.work.komercniBanka,
