@@ -9,6 +9,7 @@ import { Project } from '@/lib/utils/interfaces/interfaces'
 import krsiak1 from '@/public/images/webp/projects/personal/krsiak/krsiak-1-light.webp'
 import krsiak2 from '@/public/images/webp/projects/personal/krsiak/krsiak-2-light.webp'
 import krsiak3 from '@/public/images/webp/projects/personal/krsiak/krsiak-3-light.webp'
+import krsiak4 from '@/public/images/webp/projects/personal/krsiak/krsiak-4-light.webp'
 import krsiakThumb from '@/public/images/webp/projects/personal/krsiak/krsiak-thumb.webp'
 
 export const projectsPersonalNext: Project[] = [
@@ -20,6 +21,7 @@ export const projectsPersonalNext: Project[] = [
       { id: 0, src: krsiak1.src },
       { id: 1, src: krsiak2.src },
       { id: 2, src: krsiak3.src },
+      { id: 3, src: krsiak4.src },
     ],
     title: '👨🏻‍💻 Portfolio Website',
     company: 'Personal project',
