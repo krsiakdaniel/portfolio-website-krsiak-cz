@@ -6,7 +6,7 @@ import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { YEARS } from '@/lib/utils/constants/yearsExperience'
 
-const ResumeInfo = (): JSX.Element => {
+const ResumeIntroduction = (): JSX.Element => {
   return (
     <div>
       <Heading1>{TEXT.resume}</Heading1>
@@ -18,4 +18,4 @@ const ResumeInfo = (): JSX.Element => {
   )
 }
 
-export default ResumeInfo
+export default ResumeIntroduction
