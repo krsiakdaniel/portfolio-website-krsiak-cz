@@ -14,7 +14,6 @@ const CallToActionResumeDownload = (): JSX.Element => {
       dataTestId={DATA_TEST_IDS.callToAction.linkResumeDownload}
       icon="💾"
       isLinkExternal
-      hasLinkLongText
     />
   )
 }

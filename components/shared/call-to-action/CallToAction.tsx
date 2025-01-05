@@ -13,7 +13,6 @@ interface CallToActionProps {
   description: string
   link: string
   isLinkExternal?: boolean
-  hasLinkLongText?: boolean
   linkText: string
   dataTestId: string
   icon: string
@@ -25,7 +24,6 @@ const CallToAction: FC<CallToActionProps> = ({
   description,
   link,
   isLinkExternal,
-  hasLinkLongText,
   linkText,
   dataTestId,
   icon,
@@ -39,13 +37,13 @@ const CallToAction: FC<CallToActionProps> = ({
           </div>
           <Heading2 textColor="text-neutral-900">{heading}</Heading2>
           <p className="mt-3 text-xl tracking-tight text-neutral-900">{description}</p>
-          <div className="mt-8 w-full">
+          <div className="mt-8">
             <a
               href={link}
               target={isLinkExternal ? '_blank' : '_self'}
               rel="noopener noreferrer"
               title="Opens in a new tab"
-              className={`text-md flex w-full items-center justify-center rounded-lg bg-violet-700 px-5 py-2.5 text-center font-medium text-white hover:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-300 sm:w-[${hasLinkLongText ? '300px' : '248px'}]`}
+              className="text-md flex max-w-[300px] items-center justify-center rounded-lg bg-violet-700 px-5 py-2.5 text-center font-medium text-white hover:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-300"
               data-testid={dataTestId}
             >
               {linkText}
