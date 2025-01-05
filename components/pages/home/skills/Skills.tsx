@@ -1,7 +1,12 @@
 import SkillsIconGroup from '@/components/pages/home/skills/SkillsIconGroup'
 import DividerWithText from '@/components/shared/DividerWithText'
 
-import { iconsSkills1, iconsSkills2, iconsSkills3, iconsSkills4 } from '@/lib/data/pages/home/skillsMain'
+import {
+  iconsDesignTools,
+  iconsWebDesign,
+  iconsWebDevelopment,
+  iconsWebDevelopmentWithQA,
+} from '@/lib/data/pages/home/skills/skillsGrouped'
 
 import { TEXT } from '@/localization/english'
 
@@ -11,14 +16,20 @@ const Skills = (): JSX.Element => {
   return (
     <div id={ID.skills} className="mt-16">
       <DividerWithText text="Skills" />
-      <div className="mt-5 flex flex-col justify-center space-y-2 md:flex-row md:space-x-2 md:space-y-0">
-        <SkillsIconGroup icons={iconsSkills1} />
-        <SkillsIconGroup icons={iconsSkills2} />
-        <SkillsIconGroup icons={iconsSkills3} />
-        <SkillsIconGroup icons={iconsSkills4} />
+      <div className="mt-5 flex flex-col justify-center space-y-2 lg:flex-row lg:space-x-2 lg:space-y-0">
+        <div className="flex flex-col justify-center space-y-2 md:flex-row md:space-x-2 md:space-y-0">
+          <SkillsIconGroup icons={iconsWebDevelopment} />
+          <SkillsIconGroup icons={iconsWebDevelopmentWithQA} />
+        </div>
+        <div className="flex flex-col justify-center space-y-2 md:flex-row md:space-x-2 md:space-y-0">
+          <SkillsIconGroup icons={iconsWebDesign} />
+          <SkillsIconGroup icons={iconsDesignTools} />
+        </div>
       </div>
-      <div>
-        <p className="text-body-sm mt-4 text-center italic text-neutral-500">{TEXT.skillsIconsNames}</p>
+      <div className="mt-4 flex flex-col items-center">
+        <p className="text-body-sm w-[300px] text-center italic text-neutral-500 md:w-[600px] lg:w-full">
+          {TEXT.skillsIconsNames}
+        </p>
       </div>
     </div>
   )

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs></defs>
+  <g transform="translate(0, 0)">
+    <path style="stroke: rgb(0,0,0); stroke-width: 0; fill: rgb(36,41,56);" d="M 196 0 L 60 0 C 26.9 0 0 26.9 0 60 L 0 196 C 0 229.1 26.9 256 60 256 L 196 256 C 229.1 256 256 229.1 256 196 L 256 60 C 256 26.9 229.1 0 196 0 z" />
+  </g>
+  <g transform="translate(128, 128) scale(0.45)">
+    <g>
+      <polygon style="fill: rgb(253,179,0);" points="-110.81,-166.2 0,-177.91 110.81,-166.2 196.6,-51.03 0,177.91 -196.6,-51.03" />
+      <polygon style="fill: rgb(234,108,0);" transform="translate(-98.3, 63.44)" points="-18.67,-114.47 98.3,114.47 -98.3,-114.47" />
+      <polygon style="fill: rgb(234,108,0);" transform="translate(98.3, 63.44) scale(-1,1)" points="-18.67,-114.47 98.3,114.47 -98.3,-114.47" />
+      <polygon style="fill: rgb(253,173,0);" transform="translate(0, 63.44)" points="-116.97,-114.47 116.97,-114.47 0,114.47" />
+      <polygon style="fill: rgb(253,210,49);" transform="translate(-58.48, -114.47)" points="58.48,-63.44 -52.33,-51.73 -58.48,63.44" />
+      <polygon style="fill: rgb(253,210,49);" transform="translate(58.48, -114.47) scale(-1,1)" points="58.48,-63.44 -52.33,-51.73 -58.48,63.44" />
+      <polygon style="fill: rgb(253,173,0);" transform="translate(153.71, -108.61) scale(-1,1)" points="-42.9,57.58 42.9,-57.58 36.74,57.58" />
+      <polygon style="fill: rgb(253,173,0);" transform="translate(-153.71, -108.61)" points="-42.9,57.58 42.9,-57.58 36.74,57.58" />
+      <polygon style="fill: rgb(254,238,183);" transform="translate(0, -114.47)" points="0,-63.44 -116.97,63.44 116.97,63.44" />
+    </g>
+  </g>
+</svg>

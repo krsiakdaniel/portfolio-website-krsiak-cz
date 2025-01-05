@@ -8,19 +8,19 @@ import figma from '@/public/icons/svg/skills/figma.svg'
 import githubActions from '@/public/icons/svg/skills/github-actions.svg'
 import graphql from '@/public/icons/svg/skills/graphql.svg'
 import html from '@/public/icons/svg/skills/html.svg'
+import javascript from '@/public/icons/svg/skills/javascript.svg'
 import jest from '@/public/icons/svg/skills/jest.svg'
-import js from '@/public/icons/svg/skills/js.svg'
 import netlify from '@/public/icons/svg/skills/netlify.svg'
 import next from '@/public/icons/svg/skills/next.svg'
-import nuxt from '@/public/icons/svg/skills/nuxt.svg'
 import php from '@/public/icons/svg/skills/php.svg'
 import playwright from '@/public/icons/svg/skills/playwright.svg'
 import react from '@/public/icons/svg/skills/react.svg'
 import redux from '@/public/icons/svg/skills/redux.svg'
 import scss from '@/public/icons/svg/skills/scss.svg'
+import sketch from '@/public/icons/svg/skills/sketch.svg'
 import storybook from '@/public/icons/svg/skills/storybook.svg'
 import tailwind from '@/public/icons/svg/skills/tailwind.svg'
-import ts from '@/public/icons/svg/skills/ts.svg'
+import typescript from '@/public/icons/svg/skills/typescript.svg'
 import wordpress from '@/public/icons/svg/skills/wordpress.svg'
 import xd from '@/public/icons/svg/skills/xd.svg'
 
@@ -33,19 +33,19 @@ export type SkillKeys =
   | 'githubActions'
   | 'graphql'
   | 'html'
+  | 'javascript'
   | 'jest'
-  | 'js'
   | 'netlify'
   | 'next'
-  | 'nuxt'
   | 'php'
   | 'playwright'
   | 'react'
   | 'redux'
   | 'scss'
   | 'storybook'
+  | 'sketch'
   | 'tailwind'
-  | 'ts'
+  | 'typescript'
   | 'wordpress'
   | 'xd'
 
@@ -64,18 +64,18 @@ export const skillIcons: Record<SkillKeys, string> = {
   graphql,
   html,
   jest,
-  js,
+  javascript,
   netlify,
   next,
-  nuxt,
   php,
   playwright,
   react,
   redux,
   scss,
   storybook,
+  sketch,
   tailwind,
-  ts,
+  typescript,
   wordpress,
   xd,
 }

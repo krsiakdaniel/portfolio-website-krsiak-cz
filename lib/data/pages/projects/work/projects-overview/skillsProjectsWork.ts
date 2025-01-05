@@ -1,8 +1,8 @@
 import { getSkillsIcons } from '@/lib/utils/helpers/getSkillsIcons'
 
 export const iconsSkillsProjectsWorkSmartsuppDashboard = getSkillsIcons([
-  'js',
-  'ts',
+  'javascript',
+  'typescript',
   'react',
   'redux',
   'chakra',
@@ -11,8 +11,8 @@ export const iconsSkillsProjectsWorkSmartsuppDashboard = getSkillsIcons([
 ])
 
 export const iconsSkillsProjectsWorkKooperativa = getSkillsIcons([
-  'js',
-  'ts',
+  'javascript',
+  'typescript',
   'react',
   'redux',
   'tailwind',
@@ -20,15 +20,21 @@ export const iconsSkillsProjectsWorkKooperativa = getSkillsIcons([
   'storybook',
 ])
 
-export const iconsSkillsProjectsWorkKomercniBanka = getSkillsIcons(['js', 'ts', 'react', 'tailwind', 'figma'])
+export const iconsSkillsProjectsWorkKomercniBanka = getSkillsIcons([
+  'javascript',
+  'typescript',
+  'react',
+  'tailwind',
+  'figma',
+])
 
-export const iconsSkillsProjectsWorkSmartsuppWeb = getSkillsIcons(['js', 'php', 'scss', 'cypress', 'xd'])
+export const iconsSkillsProjectsWorkSmartsuppWeb = getSkillsIcons(['javascript', 'php', 'scss', 'cypress', 'xd'])
 
-export const iconsSkillsProjectsWorkSmartsuppHelp = getSkillsIcons(['js', 'php', 'wordpress'])
+export const iconsSkillsProjectsWorkSmartsuppHelp = getSkillsIcons(['javascript', 'php', 'wordpress'])
 
 export const iconsSkillsProjectsWorkGroupon = getSkillsIcons([
-  'js',
-  'ts',
+  'javascript',
+  'typescript',
   'react',
   'next',
   'playwright',
@@ -36,4 +42,4 @@ export const iconsSkillsProjectsWorkGroupon = getSkillsIcons([
   'storybook',
 ])
 
-export const iconsSkillsProjectsWorkMoravia = getSkillsIcons(['html', 'css', 'js'])
+export const iconsSkillsProjectsWorkMoravia = getSkillsIcons(['html', 'css', 'javascript'])
