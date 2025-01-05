@@ -1,7 +1,7 @@
 import DividerWithText from '@/components/shared/DividerWithText'
-import SkillsCard from '@/components/shared/SkillsCard'
+import SkillCard from '@/components/shared/SkillCard'
 
-import { skills } from '@/lib/data/pages/home/skillsMain'
+import { skills } from '@/lib/data/pages/home/skills/skillsMain'
 
 const SkillsMain = (): JSX.Element => {
   return (
@@ -10,7 +10,7 @@ const SkillsMain = (): JSX.Element => {
 
       <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {skills.map((skill) => (
-          <SkillsCard
+          <SkillCard
             id={skill.id}
             key={skill.id}
             imgSrc={skill.imgSrc}

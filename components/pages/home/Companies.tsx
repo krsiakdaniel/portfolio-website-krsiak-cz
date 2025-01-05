@@ -13,6 +13,9 @@ import rwsMoravia from '@/public/images/svg/logo/rws-moravia.svg'
 import smartsupp from '@/public/images/svg/logo/smartsupp.svg'
 
 const Companies = (): JSX.Element => {
+  const logosWrapperCss = 'flex flex-col items-center justify-center lg:mt-16 lg:flex-row lg:gap-16'
+  const imageCss = 'mt-16 lg:mt-0'
+
   return (
     <section>
       <div className="mt-16">
@@ -21,17 +24,17 @@ const Companies = (): JSX.Element => {
           <Heading2>Worked For Companies</Heading2>
         </div>
 
-        <div className="mt-16 flex flex-col items-center justify-center lg:flex-row lg:gap-16">
-          <Image src={microsoft} width={256} alt={IMAGE_ALT.microsoft} />
-          <Image src={smartsupp} width={256} alt={IMAGE_ALT.smartsupp} className="mt-8 lg:mt-0" />
-          <Image src={kooperativa} width={256} alt={IMAGE_ALT.kooperativa} className="mt-8 lg:mt-0" />
+        <div className={logosWrapperCss}>
+          <Image src={microsoft} width={256} alt={IMAGE_ALT.microsoft} className={imageCss} />
+          <Image src={smartsupp} width={256} alt={IMAGE_ALT.smartsupp} className={imageCss} />
+          <Image src={kooperativa} width={256} alt={IMAGE_ALT.kooperativa} className={imageCss} />
         </div>
-        <div className="mt-8 flex flex-col items-center justify-center lg:mt-16 lg:flex-row lg:gap-16">
-          <Image src={ibm} width={130} alt={IMAGE_ALT.ibm} />
-          <Image src={rwsMoravia} width={200} alt={IMAGE_ALT.rwsMoravia} className="mt-8 lg:mt-0" />
+        <div className={logosWrapperCss}>
+          <Image src={ibm} width={130} alt={IMAGE_ALT.ibm} className={imageCss} />
+          <Image src={rwsMoravia} width={200} alt={IMAGE_ALT.rwsMoravia} className={imageCss} />
         </div>
-        <div className="mt-8 flex flex-col items-center justify-center lg:mt-16 lg:flex-row lg:gap-16">
-          <Image src={komercniBanka} width={130} alt={IMAGE_ALT.komercniBanka} />
+        <div className={logosWrapperCss}>
+          <Image src={komercniBanka} width={130} alt={IMAGE_ALT.komercniBanka} className={imageCss} />
         </div>
       </div>
     </section>

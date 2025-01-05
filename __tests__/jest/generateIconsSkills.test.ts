@@ -7,20 +7,21 @@ describe('getSkillsIcons', () => {
     'cypress',
     'figma',
     'githubActions',
+    'graphql',
     'html',
     'jest',
-    'js',
+    'javascript',
     'netlify',
     'next',
-    'nuxt',
     'php',
     'playwright',
     'react',
     'redux',
     'scss',
     'storybook',
+    'sketch',
     'tailwind',
-    'ts',
+    'typescript',
     'wordpress',
     'xd',
   ]
@@ -32,7 +33,7 @@ describe('getSkillsIcons', () => {
   })
 
   it('getSkillsIcons should return an array of icons with the correct name and path', () => {
-    const skills: SkillKeys[] = ['chakra', 'css', 'cypress']
+    const skills: SkillKeys[] = ['javascript', 'typescript', 'react', 'next', 'redux', 'tailwind']
     const results = getSkillsIcons(skills)
 
     results.forEach((resultIcon, index) => {

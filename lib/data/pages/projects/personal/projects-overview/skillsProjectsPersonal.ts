@@ -1,8 +1,8 @@
 import { getSkillsIcons } from '@/lib/utils/helpers/getSkillsIcons'
 
 export const iconsSkillsProjectsPersonalKrsiak = getSkillsIcons([
-  'js',
-  'ts',
+  'javascript',
+  'typescript',
   'react',
   'next',
   'tailwind',
@@ -12,4 +12,10 @@ export const iconsSkillsProjectsPersonalKrsiak = getSkillsIcons([
   'netlify',
 ])
 
-export const iconsSkillsProjectsPersonalCryptomania = getSkillsIcons(['js', 'ts', 'react', 'chakra', 'netlify'])
+export const iconsSkillsProjectsPersonalCryptomania = getSkillsIcons([
+  'javascript',
+  'typescript',
+  'react',
+  'chakra',
+  'netlify',
+])

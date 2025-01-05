@@ -82,8 +82,8 @@ export interface Job {
   description: string
 }
 
-export interface SkillCard {
-  id: number
+export interface SkillCardItem {
+  id: string
   imgSrc: StaticImageData
   imgAlt: string
   title: string
