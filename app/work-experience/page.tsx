@@ -59,7 +59,7 @@ const ProjectsWork = (): JSX.Element => {
           <ExperienceCard
             company="Freelance"
             role="Web Developer"
-            description={`${YEARS.webCoder} year · full-time — First web company job coding website layouts.`}
+            description={`${YEARS.webCoder} year — First web company job coding website layouts.`}
           />
         </div>
 
@@ -81,12 +81,12 @@ const ProjectsWork = (): JSX.Element => {
           <ExperienceCard
             company="Smartsupp"
             role="QA Automation - Team Leader"
-            description={`${MONTHS.qaTeamLeaderAtSmartsupp} months · full-time — Set up Cypress E2E testing for SaaS company.`}
+            description={`${MONTHS.qaTeamLeaderAtSmartsupp} months — Set up Cypress E2E testing for SaaS company.`}
           />
           <ExperienceCard
             company="RWS - Moravia IT"
             role="Localization - Tester"
-            description={`${YEARS.localizationTester} years · full-time — Testing Windows 7 + Windows Store layouts.`}
+            description={`${YEARS.localizationTester} years — Testing Windows 7 + Windows Store layouts.`}
           />
         </div>
 
@@ -101,9 +101,11 @@ const ProjectsWork = (): JSX.Element => {
           <ExperienceCard
             company="Smartsupp"
             role="Localization - Manager"
-            description={`${YEARS.localizationManager} years · full-time — Website localization. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱`}
+            description={`${YEARS.localizationManager} years — SaaS company website localization. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱`}
           />
         </div>
+
+        <CallToActionResume />
       </ProjectsOverviewLayout>
 
       <div className="mt-20">

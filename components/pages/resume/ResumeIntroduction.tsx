@@ -11,8 +11,8 @@ const ResumeIntroduction = (): JSX.Element => {
     <div>
       <Heading1>{TEXT.resume}</Heading1>
       <p className="mt-4 text-lg text-neutral-600" data-testid={DATA_TEST_IDS.page.resume.introduction}>
-        Skilled <Highlight text="React Developer" /> with {YEARS.react} years of experience in building high-performance
-        web applications using <Highlight text="TypeScript" />, and <Highlight text="React" />.
+        Skilled <Highlight text="React Developer" /> with {YEARS.react} years of experience using{' '}
+        <Highlight text="TypeScript" /> to building high-performance web applications.
       </p>
     </div>
   )

@@ -5,6 +5,7 @@ import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading1 from '@/components/shared/Heading1'
 import Highlight from '@/components/shared/Highlight'
+import CallToActionLinkedIn from '@/components/shared/call-to-action/CallToActionLinkedIn'
 import TestimonialSection from '@/components/testimonials/TestimonialSection'
 
 import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimonials'
@@ -61,6 +62,8 @@ const Testimonials = (): JSX.Element => {
             />
           ))}
         </div>
+
+        <CallToActionLinkedIn />
 
         {/* TODO: Add the following sections */}
         {/* <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Fitness Moderator 🏋️‍♂️</div> */}

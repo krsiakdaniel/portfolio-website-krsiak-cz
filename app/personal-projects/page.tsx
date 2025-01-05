@@ -5,6 +5,7 @@ import PageContainer from '@/components/layout/PageContainer'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
 import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import CallToActionGitHub from '@/components/shared/call-to-action/CallToActionGitHub'
 import Highlight from '@/components/shared/Highlight'
 
 import { metaDataProjectsOverviewPersonal } from '@/lib/data/metadata/pages/projects/personal/metaDataProjectsOverviewPersonal'
@@ -35,9 +36,13 @@ const ProjectsPersonal = (): JSX.Element => {
           </p>
         }
       >
+        {/* NEXT */}
         <ProjectSection sectionId={ID.section.next} sectionText={TEXT.next} projectData={projectsPersonalNext} />
 
+        {/* REACT */}
         <ProjectSection sectionId={ID.section.react} sectionText={TEXT.react} projectData={projectsPersonalReact} />
+
+        <CallToActionGitHub />
       </ProjectsOverviewLayout>
 
       <div className="mt-20">

@@ -10,7 +10,7 @@ const CallToActionResume = (): JSX.Element => {
     <CallToAction
       highlight="React Developer"
       heading="Explore My Resume"
-      description="Learn more about my skills, experience, and accomplishments in Front End development to get better overview of my career."
+      description="Learn more about my skills and experience, to understand my Front End career."
       link={PAGES_URL.resume}
       linkText={TEXT.resume}
       dataTestId={DATA_TEST_IDS.callToAction.linkResume}
