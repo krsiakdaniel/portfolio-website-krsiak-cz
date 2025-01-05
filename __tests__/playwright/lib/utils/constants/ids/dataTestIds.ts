@@ -164,6 +164,8 @@ const CALL_TO_ACTION = {
   linkResume: 'call-to-action-link-resume',
   linkResumeDownload: 'call-to-action-link-resume-download',
   linkWorkExperience: 'call-to-action-link-work-experience',
+  linkGitHub: 'call-to-action-link-github',
+  linkLinkedIn: 'call-to-action-link-linkedin',
 }
 
 export const DATA_TEST_IDS = {
