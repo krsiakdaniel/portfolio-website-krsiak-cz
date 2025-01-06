@@ -2,11 +2,11 @@ import { Metadata } from 'next'
 
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
+import TestimonialSection from '@/components/pages/testimonials/TestimonialSection'
+import TestimonialsIntroduction from '@/components/pages/testimonials/TestimonialsIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading1 from '@/components/shared/Heading1'
-import Highlight from '@/components/shared/Highlight'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/CallToActionLinkedIn'
-import TestimonialSection from '@/components/testimonials/TestimonialSection'
 
 import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimonials'
 import { testimonialsData } from '@/lib/data/pages/testimonials'
@@ -29,11 +29,10 @@ const Testimonials = (): JSX.Element => {
       <div className="mt-10">
         <div>
           <Heading1>{TEXT.testimonials}</Heading1>
-          <p className="mt-4 text-lg text-neutral-600" data-testid={DATA_TEST_IDS.page.testimonials.introduction}>
-            I follow the Japanese 🇯🇵 philosophy of <Highlight text="Kaizen 改善" /> my whole life, continuously seeking
-            improvement in my work and personal growth.
-          </p>
+          <TestimonialsIntroduction />
         </div>
+
+        <CallToActionLinkedIn />
 
         <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Professional Experience</div>
         <p className="mt-4 text-lg text-neutral-600">
@@ -62,8 +61,6 @@ const Testimonials = (): JSX.Element => {
             />
           ))}
         </div>
-
-        <CallToActionLinkedIn />
 
         {/* TODO: Add the following sections */}
         {/* <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Fitness Moderator 🏋️‍♂️</div> */}

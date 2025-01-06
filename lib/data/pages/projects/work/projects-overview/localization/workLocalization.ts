@@ -32,7 +32,7 @@ export const projectsWorkLocalization: Project[] = [
       {
         id: 0,
         description: 'Frontend',
-        skillsList: ['HTML', 'CSS', 'JavaScript', 'AutoHotkey Scripting Language'],
+        skillsList: ['HTML', 'CSS', 'JavaScript', 'AutoHotkey'],
       },
     ],
     linkText: 'Project details',

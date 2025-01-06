@@ -5,10 +5,10 @@ import PageContainer from '@/components/layout/PageContainer'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
 import ExperienceCard from '@/components/pages/projects/other-experience/ExperienceCard'
 import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
+import WorkExperienceIntroduction from '@/components/pages/work-experience/WorkExperienceIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionResume from '@/components/shared/call-to-action/CallToActionResume'
 import Heading4 from '@/components/shared/Heading4'
-import Highlight from '@/components/shared/Highlight'
 
 import { metaDataProjectsOverviewWork } from '@/lib/data/metadata/pages/projects/work/metaDataProjectsOverviewWork'
 import { projectsWorkFrontEnd } from '@/lib/data/pages/projects/work/projects-overview/front-end/workFrontEnd'
@@ -33,15 +33,7 @@ const ProjectsWork = (): JSX.Element => {
     <PageContainer id={ID.projects.work}>
       <BreadCrumbs level1Url={PAGES_URL.work.mainUrl} level1Text={TEXT.workExperience} />
 
-      <ProjectsOverviewLayout
-        heading={TEXT.workExperience}
-        description={
-          <p className="mt-4 text-lg text-neutral-600">
-            I am experienced <Highlight text="React Developer" /> who knows <Highlight text="QA Automation" /> and can
-            lead teams as a <Highlight text="Team Leader" />.
-          </p>
-        }
-      >
+      <ProjectsOverviewLayout heading={TEXT.workExperience} description={<WorkExperienceIntroduction />}>
         {/* REACT */}
         <ProjectSection sectionId={ID.section.react} sectionText="React" projectData={projectsWorkReact} />
 

@@ -41,6 +41,10 @@ test.describe('Footer - Main Links', () => {
 
   // Test to check if the GitHub link in footer is correct
   test('should have the correct GitHub link', async () => {
-    await checkLink(page, DATA_TEST_IDS.footer.linkFooterGitHub, 'https://github.com/krsiakdaniel/')
+    await checkLink(
+      page,
+      DATA_TEST_IDS.footer.linkFooterGitHub,
+      'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
+    )
   })
 })
