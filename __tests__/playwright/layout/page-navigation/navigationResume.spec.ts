@@ -6,13 +6,13 @@ import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataT
 
 test.describe('Navigation - Resume', () => {
   test('navigates to previous page - Work Experience', async ({ page }) => {
-    // Navigate to page resume
+    // Navigate to page
     await page.goto('/resume')
 
-    // Click on the PageNavigation component to go to the previous page
+    // Click on the PageNavigation component 'previous page'
     await page.click(getDataTestId(DATA_TEST_IDS.page.resume.previous))
 
-    // Check that we've navigated to the page
+    // Check that it navigated to the page
     expect(page.url()).toBe('http://localhost:3000/work-experience')
   })
 
@@ -20,10 +20,10 @@ test.describe('Navigation - Resume', () => {
     // Navigate to page
     await page.goto('/resume')
 
-    // Click on the PageNavigation component to go to the next page
+    // Click on the PageNavigation component 'next page'
     await page.click(getDataTestId(DATA_TEST_IDS.page.resume.next))
 
-    // Check that we've navigated to the page
+    // Check that it navigated to the page
     expect(page.url()).toBe('http://localhost:3000/personal-projects')
   })
 })

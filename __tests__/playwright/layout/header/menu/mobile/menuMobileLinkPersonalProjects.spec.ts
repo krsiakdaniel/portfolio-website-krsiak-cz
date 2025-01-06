@@ -19,7 +19,7 @@ test.beforeEach(async () => {
   // Set the viewport size to a smaller size to simulate a mobile device
   await page.setViewportSize({ width: 375, height: 812 })
 
-  // Go to the home page
+  // Go to home page
   await test.step('Go to home page', async () => {
     await page.goto('/')
   })
@@ -50,11 +50,11 @@ test.describe('Menu Mobile - Link "Personal Projects"', () => {
     // Click on the menu toggle to open the mobile menu
     await page.click(getDataTestId(DATA_TEST_IDS.menu.toggle.component))
 
-    // Check if the Personal Projects link is visible
+    // Check if the link is visible
     const isLinkVisible = await page.isVisible(getDataTestId(DATA_TEST_IDS.menu.mobile.links.personalProjects))
     expect(isLinkVisible).toBe(true)
 
-    // Click on the Personal Projects link
+    // Click on the link
     await page.click(getDataTestId(DATA_TEST_IDS.menu.mobile.links.personalProjects))
 
     // Wait for the page to load

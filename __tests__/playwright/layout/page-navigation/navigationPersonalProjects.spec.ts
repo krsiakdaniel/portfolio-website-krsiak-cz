@@ -4,16 +4,15 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
 
-// TODO: in all tests unify and simplify the comments, make them more universal and less specific
 test.describe('Navigation - Personal Projects', () => {
   test('navigates to previous page - Resume', async ({ page }) => {
     // Navigate to page
     await page.goto('/personal-projects')
 
-    // Click on the PageNavigation component to go to the previous page
+    // Click on the PageNavigation component 'previous page'
     await page.click(getDataTestId(DATA_TEST_IDS.projects.personal.overview.previous))
 
-    // Check that we've navigated to the page
+    // Check that it navigated to the page
     expect(page.url()).toBe('http://localhost:3000/resume')
   })
 
@@ -21,10 +20,10 @@ test.describe('Navigation - Personal Projects', () => {
     // Navigate to page
     await page.goto('/personal-projects')
 
-    // Click on the PageNavigation component to go to the next page
+    // Click on the PageNavigation component 'next page'
     await page.click(getDataTestId(DATA_TEST_IDS.projects.personal.overview.next))
 
-    // Check that we've navigated to the page
+    // Check that it navigated to the page
     expect(page.url()).toBe('http://localhost:3000/testimonials')
   })
 })
