@@ -36,27 +36,29 @@ const config: Config = {
     'hover:bg-gray-800',
     'focus:ring-gray-300',
   ],
+  // Define custom screen sizes
   screens: {
     xs: '320px',
-    // => @media (min-width: 320px) { ... }
-
     sm: '640px',
-    // => @media (min-width: 640px) { ... }
-
     md: '768px',
-    // => @media (min-width: 768px) { ... }
-
     lg: '1024px',
-    // => @media (min-width: 1024px) { ... }
-
     xl: '1280px',
-    // => @media (min-width: 1280px) { ... }
-
     '2xl': '1536px',
-    // => @media (min-width: 1536px) { ... }
   },
-  colors: {},
-  theme: {},
+  theme: {
+    extend: {
+      keyframes: {
+        walk: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(5px)' },
+        },
+      },
+      animation: {
+        walk: 'walk 2s  ease-in-out infinite',
+      },
+    },
+  },
   plugins: [require('flowbite/plugin')],
 }
+
 export default config
