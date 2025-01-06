@@ -1,11 +1,7 @@
 export const resumePlainTextPage1 = `# Daniel Krsiak · React Developer
 
-krsiak.daniel@gmail.com · (+420) 734 496 308
-
-- https://krsiak.cz
-- https://github.com/krsiakdaniel/portfolio-website-krsiak-cz
-- https://www.linkedin.com/in/krsiakdaniel
-
+- krsiak.daniel@gmail.com
+- (+420) 734 496 308
 
 ## Skills
 
