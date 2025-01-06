@@ -5,7 +5,7 @@ import TheSun from '@/components/layout/footer/divider/TheSun'
 const sharedCSS = 'mx-2 h-1 w-full flex-1'
 
 const sunRiseToNoon = <div className={`bg-gradient-to-r from-yellow-400 via-sky-300 to-green-500 ${sharedCSS}`} />
-const noonToSunSet = <div className={`to-gray-800" bg-gradient-to-r from-green-500 via-blue-700 ${sharedCSS}`} />
+const noonToSunSet = <div className={`bg-gradient-to-r from-green-500 via-blue-700 to-gray-800 ${sharedCSS}`} />
 
 /**
  * @description
