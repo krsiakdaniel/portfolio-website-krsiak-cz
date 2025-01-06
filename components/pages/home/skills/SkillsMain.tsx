@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import DividerWithText from '@/components/shared/DividerWithText'
 import SkillCard from '@/components/shared/SkillCard'
 
