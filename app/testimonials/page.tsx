@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { FC } from 'react'
 
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
   ...metaDataTestimonials,
 }
 
-const Testimonials = (): JSX.Element => {
+const Testimonials: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.websiteLink.testimonials}>
       <BreadCrumbs level1Url={PAGES_URL.testimonials} level1Text={TEXT.testimonials} />

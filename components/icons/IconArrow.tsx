@@ -1,10 +1,12 @@
+import { FC } from 'react'
+
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 
 type IconArrowProps = {
   direction: NavigationDirectionEnum
 }
 
-const IconArrow = ({ direction = NavigationDirectionEnum.Left }: IconArrowProps): JSX.Element => {
+const IconArrow: FC<IconArrowProps> = ({ direction = NavigationDirectionEnum.Left }): JSX.Element => {
   return (
     <svg
       className={`mx-1 block h-4 w-4 ${direction === NavigationDirectionEnum.Left ? 'rotate-180' : ''}`}

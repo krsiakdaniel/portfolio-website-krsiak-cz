@@ -1,11 +1,12 @@
 import Link from 'next/link'
+import { FC } from 'react'
 
 import ScrollToTopButton from '@/components/layout/footer/ScrollToTopButton'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-const FooterStatusAndScroll = (): JSX.Element => {
+const FooterStatusAndScroll: FC = (): JSX.Element => {
   return (
     <div className="mt-8 flex space-x-4">
       <div className="flex space-x-2">

@@ -1,8 +1,10 @@
+import { FC } from 'react'
+
 import MyMindset from '@/components/pages/home/expertise/MyMindset'
 import SkillsForCompany from '@/components/pages/home/skills/SkillsForCompany'
 import DividerWithText from '@/components/shared/DividerWithText'
 
-const MySKills = (): JSX.Element => {
+const MySKills: FC = (): JSX.Element => {
   return (
     <div className="mt-16">
       <DividerWithText text="What I Do" />

@@ -1,12 +1,14 @@
+import { FC } from 'react'
+
+import DividerInFooter from '@/components/layout/footer/divider/DividerInFooter'
 import FooterCopyright from '@/components/layout/footer/FooterCopyright'
 import FooterSocialLinks from '@/components/layout/footer/FooterSocialLinks'
 import FooterStatusAndScroll from '@/components/layout/footer/FooterStatusAndScroll'
 import PageContainer from '@/components/layout/PageContainer'
-import DividerInFooter from '@/components/layout/footer/divider/DividerInFooter'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-const Footer = (): JSX.Element => {
+const Footer: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.footer}>
       <footer>

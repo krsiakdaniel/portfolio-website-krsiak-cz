@@ -1,4 +1,6 @@
-const GoogleAnalytics = (): JSX.Element => {
+import { FC } from 'react'
+
+const GoogleAnalytics: FC = (): JSX.Element => {
   return (
     <>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-NC44T6F2TL"></script>

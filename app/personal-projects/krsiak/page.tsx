@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { FC } from 'react'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectPageLayout from '@/components/layout/projects/ProjectPageLayout'
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   ...metaDataKrsiak,
 }
 
-const ProjectPersonalKrsiak = (): JSX.Element => {
+const ProjectPersonalKrsiak: FC = (): JSX.Element => {
   const { title, role, description, skillsOverview, projectLinks, linkGitHub, imageShowcase } = projectsPersonalNext[0]
 
   return (

@@ -1,9 +1,11 @@
+import { FC } from 'react'
+
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
-const CallToActionResumeDownload = (): JSX.Element => {
+const CallToActionResumeDownload: FC = (): JSX.Element => {
   return (
     <CallToAction
       highlight="Resume in PDF"

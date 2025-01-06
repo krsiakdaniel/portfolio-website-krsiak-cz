@@ -1,6 +1,6 @@
 'use client' // using hooks
 
-import { useState } from 'react'
+import { FC, useState } from 'react'
 
 import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 
@@ -9,7 +9,7 @@ import Menu from '@/components/layout/header/menu/Menu'
 import MenuToggle from '@/components/layout/header/menu/MenuToggle'
 import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
 
-const Header = (): JSX.Element => {
+const Header: FC = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const scroll = useScrollProgress()
 

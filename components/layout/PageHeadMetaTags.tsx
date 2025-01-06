@@ -1,8 +1,10 @@
+import { FC } from 'react'
+
 import { appleTouchIconSizes } from '@/lib/data/metadata/shared/appleTouchIconSizes'
 
 const THEME_COLOR = '#ECF0F1'
 
-const MetaTags = (): JSX.Element => {
+const MetaTags: FC = (): JSX.Element => {
   return (
     <>
       <meta name="theme-color" content={THEME_COLOR} />

@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
+import { FC } from 'react'
 
 import PageContainer from '@/components/layout/PageContainer'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   ...metaDataStatusPage,
 }
 
-const StatusPage = (): JSX.Element => {
+const StatusPage: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.statusPage}>
       <BreadCrumbs level1Url={PAGES_URL.statusPage} level1Text={TEXT.statusPage} />
