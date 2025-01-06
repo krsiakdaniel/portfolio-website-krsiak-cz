@@ -1,12 +1,14 @@
 import { Metadata } from 'next'
 
-import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
+import PageContainer from '@/components/layout/PageContainer'
 import CareerPathList from '@/components/pages/resume/CareerPathList'
 import ResumeIntroduction from '@/components/pages/resume/ResumeIntroduction'
 import ResumePlainText from '@/components/pages/resume/ResumePlainText'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionResumeDownload from '@/components/shared/call-to-action/CallToActionResumeDownload'
+import Heading1 from '@/components/shared/Heading1'
+
 import { metaDataResume } from '@/lib/data/metadata/pages/metaDataResume'
 
 import { TEXT } from '@/localization/english'
@@ -25,6 +27,7 @@ const Resume = (): JSX.Element => {
       <BreadCrumbs level1Url={PAGES_URL.resume} level1Text={TEXT.resume} />
 
       <div className="mt-10">
+        <Heading1>{TEXT.resume}</Heading1>
         <ResumeIntroduction />
         <CallToActionResumeDownload />
         <CareerPathList />

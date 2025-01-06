@@ -3,10 +3,10 @@ import { Metadata } from 'next'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
+import PersonalProjectsIntroduction from '@/components/pages/personal-projects/PersonalProjectsIntroduction'
 import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionGitHub from '@/components/shared/call-to-action/CallToActionGitHub'
-import Highlight from '@/components/shared/Highlight'
 
 import { metaDataProjectsOverviewPersonal } from '@/lib/data/metadata/pages/projects/personal/metaDataProjectsOverviewPersonal'
 import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
@@ -27,22 +27,14 @@ const ProjectsPersonal = (): JSX.Element => {
     <PageContainer id={ID.projects.personal}>
       <BreadCrumbs level1Url={PAGES_URL.personal.mainUrl} level1Text={TEXT.personalProjects} />
 
-      <ProjectsOverviewLayout
-        heading={TEXT.personalProjects}
-        description={
-          <p className="mt-4 text-lg text-neutral-600">
-            I enjoy learning <Highlight text="new technologies" /> and creating <Highlight text="personal projects" />{' '}
-            where I can apply my knowledge.
-          </p>
-        }
-      >
+      <ProjectsOverviewLayout heading={TEXT.personalProjects} description={<PersonalProjectsIntroduction />}>
+        <CallToActionGitHub />
+
         {/* NEXT */}
         <ProjectSection sectionId={ID.section.next} sectionText={TEXT.next} projectData={projectsPersonalNext} />
 
         {/* REACT */}
         <ProjectSection sectionId={ID.section.react} sectionText={TEXT.react} projectData={projectsPersonalReact} />
-
-        <CallToActionGitHub />
       </ProjectsOverviewLayout>
 
       <div className="mt-20">
