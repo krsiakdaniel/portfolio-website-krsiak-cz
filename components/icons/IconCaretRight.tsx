@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 const IconCaretRight: FC = (): JSX.Element => {
   return (
     <svg
