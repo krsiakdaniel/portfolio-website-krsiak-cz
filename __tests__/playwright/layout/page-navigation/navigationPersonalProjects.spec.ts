@@ -4,6 +4,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
 
+// TODO: in all tests unify and simplify the comments, make them more universal and less specific
 test.describe('Navigation - Personal Projects', () => {
   test('navigates to previous page - Resume', async ({ page }) => {
     // Navigate to page
