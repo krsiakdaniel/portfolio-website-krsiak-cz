@@ -16,7 +16,7 @@ const ResumePlainTextPage: FC<ResumePlainTextPageProps> = ({ content }): JSX.Ele
   </div>
 )
 
-const ResumePlainText = () => (
+const ResumePlainText: FC = (): JSX.Element => (
   <>
     <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Resume In Plain Text</div>
     <div>

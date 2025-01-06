@@ -1,8 +1,9 @@
 import { Metadata } from 'next'
+import { FC } from 'react'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
-import CareerPathList from '@/components/pages/resume/CareerPathList'
+import CareerPath from '@/components/pages/resume/CareerPath'
 import ResumeIntroduction from '@/components/pages/resume/ResumeIntroduction'
 import ResumePlainText from '@/components/pages/resume/ResumePlainText'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
   ...metaDataResume,
 }
 
-const Resume = (): JSX.Element => {
+const Resume: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.resume}>
       <BreadCrumbs level1Url={PAGES_URL.resume} level1Text={TEXT.resume} />
@@ -30,7 +31,7 @@ const Resume = (): JSX.Element => {
         <Heading1>{TEXT.resume}</Heading1>
         <ResumeIntroduction />
         <CallToActionResumeDownload />
-        <CareerPathList />
+        <CareerPath />
         <ResumePlainText />
       </div>
 
