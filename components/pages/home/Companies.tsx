@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { FC } from 'react'
 
 import DividerWithText from '@/components/shared/DividerWithText'
 import Heading2 from '@/components/shared/Heading2'
@@ -12,7 +13,7 @@ import microsoft from '@/public/images/svg/logo/microsoft.svg'
 import rwsMoravia from '@/public/images/svg/logo/rws-moravia.svg'
 import smartsupp from '@/public/images/svg/logo/smartsupp.svg'
 
-const Companies = (): JSX.Element => {
+const Companies: FC = (): JSX.Element => {
   const logosWrapperCss = 'flex flex-col items-center justify-center lg:mt-16 lg:flex-row lg:gap-16'
   const imageCss = 'mt-16 lg:mt-0'
 

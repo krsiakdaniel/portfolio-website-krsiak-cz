@@ -1,8 +1,10 @@
+import { FC } from 'react'
+
 import Heading2 from '@/components/shared/Heading2'
 
 import { mindset } from '@/lib/data/pages/home/expertise/mindset'
 
-const MyMindset = (): JSX.Element => {
+const MyMindset: FC = (): JSX.Element => {
   return (
     <div className="lg:w-1/2">
       <Heading2>🥇🚀 I Have Committed Mindset</Heading2>

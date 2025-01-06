@@ -1,4 +1,4 @@
-const IconCaretRight = (): JSX.Element => {
+const IconCaretRight: FC = (): JSX.Element => {
   return (
     <svg
       className="mx-1 block h-3 w-3 text-neutral-400"

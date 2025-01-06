@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import SkillsIconGroup from '@/components/pages/home/skills/SkillsIconGroup'
 import DividerWithText from '@/components/shared/DividerWithText'
 
@@ -12,7 +14,7 @@ import { TEXT } from '@/localization/english'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-const Skills = (): JSX.Element => {
+const Skills: FC = (): JSX.Element => {
   return (
     <div id={ID.skills} className="mt-16">
       <DividerWithText text="Skills" />

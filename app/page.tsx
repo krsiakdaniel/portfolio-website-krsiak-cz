@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { FC } from 'react'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   ...metaDataShared,
 }
 
-const Page = (): JSX.Element => {
+const Page: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.home}>
       <Hero />

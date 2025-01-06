@@ -1,11 +1,12 @@
 import Image from 'next/image'
+import { FC } from 'react'
 
 import DividerWithText from '@/components/shared/DividerWithText'
 import Heading2 from '@/components/shared/Heading2'
 
 import contactQR from '@/public/images/svg/vcard-contact/qr-code-vcard.svg'
 
-const ScanMyContactQR = (): JSX.Element => {
+const ScanMyContactQR: FC = (): JSX.Element => {
   return (
     <section className="mt-16">
       <DividerWithText text="Contact Me" />

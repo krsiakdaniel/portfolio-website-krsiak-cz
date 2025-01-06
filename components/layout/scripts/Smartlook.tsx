@@ -1,4 +1,6 @@
-const Smartlook = (): JSX.Element => {
+import { FC } from 'react'
+
+const Smartlook: FC = (): JSX.Element => {
   return (
     <script
       type="text/javascript"

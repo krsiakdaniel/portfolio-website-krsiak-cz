@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 

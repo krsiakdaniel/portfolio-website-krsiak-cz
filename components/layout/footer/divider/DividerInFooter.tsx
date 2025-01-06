@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import ManWalkingInForest from '@/components/layout/footer/divider/ManWalkingInForest'
 import TheMoon from '@/components/layout/footer/divider/TheMoon'
 import TheSun from '@/components/layout/footer/divider/TheSun'
@@ -25,7 +27,7 @@ const noonToSunSet = <div className={`bg-gradient-to-r from-green-500 via-blue-7
  *
  */
 
-const DividerWithGradient = () => {
+const DividerWithGradient: FC = () => {
   return (
     <div className="my-4 flex w-full items-center justify-between">
       <TheSun />

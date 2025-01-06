@@ -1,6 +1,8 @@
+import { FC } from 'react'
+
 import Highlight from '@/components/shared/Highlight'
 
-const PersonalProjectsIntroduction = (): JSX.Element => {
+const PersonalProjectsIntroduction: FC = (): JSX.Element => {
   return (
     <div>
       <p className="mt-4 text-lg text-neutral-600">

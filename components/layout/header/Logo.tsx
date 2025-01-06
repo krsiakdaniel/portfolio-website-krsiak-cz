@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { FC } from 'react'
 
 import { TEXT } from '@/localization/english'
 
@@ -8,7 +9,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import logo from '@/public/images/webp/logo.webp'
 
-const Logo = (): JSX.Element => {
+const Logo: FC = (): JSX.Element => {
   return (
     <div>
       <Link

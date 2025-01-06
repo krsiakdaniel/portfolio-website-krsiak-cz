@@ -3,7 +3,7 @@ import SkillCard from '@/components/shared/SkillCard'
 
 import { skills } from '@/lib/data/pages/home/skills/skillsMain'
 
-const SkillsMain = (): JSX.Element => {
+const SkillsMain: FC = (): JSX.Element => {
   return (
     <div className="mt-16">
       <DividerWithText text="My Main Skills" />

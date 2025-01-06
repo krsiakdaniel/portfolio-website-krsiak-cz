@@ -1,4 +1,6 @@
-const IconCheck = (): JSX.Element => {
+import { FC } from 'react'
+
+const IconCheck: FC = (): JSX.Element => {
   return (
     <svg
       className="mr-2 mt-1 h-3.5 w-3.5 text-violet-600"
