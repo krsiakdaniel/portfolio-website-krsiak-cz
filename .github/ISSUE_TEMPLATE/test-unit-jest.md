@@ -50,8 +50,8 @@ Attach relevant screenshots if applicable.
 
 ### Before
 
-...
+![Before](https://placehold.co/400x200?text=Before+Screenshot)
 
 ### After
 
-...
+![Before](https://placehold.co/400x200?text=Before+Screenshot)
