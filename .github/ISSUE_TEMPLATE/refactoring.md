@@ -51,3 +51,11 @@ code_example
 ## Screenshots
 
 Attach relevant screenshots if applicable.
+
+### Before
+
+![Before](https://placehold.co/400x200?text=Before+Screenshot)
+
+### After
+
+![After](https://placehold.co/400x200?text=After+Screenshot)

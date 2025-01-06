@@ -12,11 +12,15 @@ const CareerPathList: FC = (): JSX.Element => {
     <List>
       {jobs.map((job) => (
         <ListItem key={job.id}>
-          <span className="mr-1 font-bold">{job.title}</span>
-          {' · '}
-          <span className="ml-1">
-            {job.duration} {formatExperienceMonthsYears({ duration: job.duration, unit: job.unit })}
-          </span>
+          <div>
+            <p>
+              <span className="font-bold">{job.title}</span>
+              <span className="hidden sm:inline">
+                {' · '}
+                {job.duration} {formatExperienceMonthsYears({ duration: job.duration, unit: job.unit })}
+              </span>
+            </p>
+          </div>
         </ListItem>
       ))}
     </List>
