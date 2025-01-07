@@ -1,16 +1,17 @@
 import { Metadata } from 'next'
 import { FC } from 'react'
 
-import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
-import TestimonialSection from '@/components/pages/testimonials/TestimonialSection'
+import PageContainer from '@/components/layout/PageContainer'
 import TestimonialsIntroduction from '@/components/pages/testimonials/TestimonialsIntroduction'
+import TestimonialsSection from '@/components/pages/testimonials/TestimonialsSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import Heading1 from '@/components/shared/Heading1'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/CallToActionLinkedIn'
+import Heading1 from '@/components/shared/Heading1'
 
 import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimonials'
-import { testimonialsData } from '@/lib/data/pages/testimonials'
+import { personalTestimonials } from '@/lib/data/pages/testimonials/personalTestimonials'
+import { workTestimonials } from '@/lib/data/pages/testimonials/workTestimonials'
 
 import { TEXT } from '@/localization/english'
 
@@ -33,40 +34,23 @@ const Testimonials: FC = (): JSX.Element => {
           <TestimonialsIntroduction />
         </div>
 
-        <CallToActionLinkedIn />
+        <TestimonialsSection
+          title="Character References"
+          description="In this section, you'll find personal testimonials that highlight my integrity and reliability."
+          testimonials={personalTestimonials}
+        />
 
-        <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Professional Experience</div>
-        <p className="mt-4 text-lg text-neutral-600">
-          Below, you&apos;ll find insightful feedback from colleagues who have experienced my contributions firsthand.
-        </p>
-
-        <div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
-          {testimonialsData.slice(0, 4).map((testimonial) => (
-            <TestimonialSection
-              key={testimonial.id}
-              personPhoto={testimonial.personPhoto}
-              personName={testimonial.personName}
-              personJob={testimonial.personJob}
-              testimonialText={testimonial.testimonialText}
-            />
-          ))}
-        </div>
-        <div className="mt-4">
-          {testimonialsData.slice(4).map((testimonial) => (
-            <TestimonialSection
-              key={testimonial.id}
-              personPhoto={testimonial.personPhoto}
-              personName={testimonial.personName}
-              personJob={testimonial.personJob}
-              testimonialText={testimonial.testimonialText}
-            />
-          ))}
-        </div>
-
-        {/* TODO: Add the following sections */}
-        {/* <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Fitness Moderator 🏋️‍♂️</div> */}
-        {/* <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Personality ✝️</div> */}
+        <TestimonialsSection
+          title="Professional References"
+          description="Below, you'll find insightful feedback from colleagues who have experienced my contributions firsthand."
+          testimonials={workTestimonials}
+        />
       </div>
+
+      {/* TODO: Add section: 'Fitness Moderator' 🏋️‍♂️ */}
+
+      <CallToActionLinkedIn />
+
       <PageNavigation
         linkPrevious={PAGES_URL.personal.mainUrl}
         namePrevious={TEXT.personalProjects}

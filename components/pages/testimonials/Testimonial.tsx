@@ -3,19 +3,14 @@ import { FC } from 'react'
 
 import quote from '@/public/icons/svg/quote.svg'
 
-type TestimonialSectionProps = {
+type TestimonialProps = {
   personPhoto: StaticImageData
   personName: string
   personJob: string
   testimonialText: string
 }
 
-const TestimonialSection: FC<TestimonialSectionProps> = ({
-  personName,
-  personJob,
-  personPhoto,
-  testimonialText,
-}): JSX.Element => {
+const Testimonial: FC<TestimonialProps> = ({ personName, personJob, personPhoto, testimonialText }): JSX.Element => {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
@@ -45,4 +40,4 @@ const TestimonialSection: FC<TestimonialSectionProps> = ({
   )
 }
 
-export default TestimonialSection
+export default Testimonial

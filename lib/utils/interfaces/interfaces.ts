@@ -114,7 +114,7 @@ export interface Errors {
 }
 
 // testimonials
-export interface Testimonial {
+export interface TestimonialItem {
   id: string
   personPhoto: StaticImageData
   personName: string
