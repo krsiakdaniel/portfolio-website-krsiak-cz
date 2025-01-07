@@ -1,10 +1,12 @@
 import { Metadata } from 'next'
 import { FC } from 'react'
 
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import TestimonialsIntroduction from '@/components/pages/testimonials/TestimonialsIntroduction'
 import TestimonialsSection from '@/components/pages/testimonials/TestimonialsSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import CallToActionLinkedIn from '@/components/shared/call-to-action/CallToActionLinkedIn'
 import Heading1 from '@/components/shared/Heading1'
 
 import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimonials'
@@ -13,6 +15,7 @@ import { workTestimonials } from '@/lib/data/pages/testimonials/workTestimonials
 
 import { TEXT } from '@/localization/english'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
@@ -43,6 +46,16 @@ const Testimonials: FC = (): JSX.Element => {
           testimonials={workTestimonials}
         />
       </div>
+
+      {/* TODO: Add section: 'Fitness Moderator' 🏋️‍♂️ */}
+
+      <CallToActionLinkedIn />
+
+      <PageNavigation
+        linkPrevious={PAGES_URL.personal.mainUrl}
+        namePrevious={TEXT.personalProjects}
+        dataTestIdPrevious={DATA_TEST_IDS.page.testimonials.previous}
+      />
     </PageContainer>
   )
 }
