@@ -36,6 +36,7 @@ const FOOTER = {
   linkFooterLinkedIn: `${SECTIONS.FOOTER_LINK}-${LINKS.LINKEDIN}`,
   linkFooterResume: `${SECTIONS.FOOTER_LINK}-${LINKS.RESUME}`,
   linkFooterGitHub: `${SECTIONS.FOOTER_LINK}-${LINKS.GITHUB}`,
+  statusBadges: 'status-badges',
 }
 
 const MENU = {

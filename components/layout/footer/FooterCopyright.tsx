@@ -8,7 +8,7 @@ import { getCurrentYear } from '@/lib/utils/helpers/getCurrentYear'
 
 const FooterCopyright: FC = (): JSX.Element => {
   return (
-    <div className="mt-8 flex flex-col">
+    <div className="mt-4 flex flex-col text-center text-neutral-600">
       <span className="ml-2" data-testid={DATA_TEST_IDS.footer.copyright}>
         😼 😺 Copyright ©&nbsp;{getCurrentYear()}
       </span>
