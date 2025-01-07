@@ -89,7 +89,7 @@ The current status of the project is continuously monitored.
 
 Using these following technologies and tools.
 
-![Tech Stack](/readme-images/technologies-and-tools.png)
+![Tech Stack](/readme-images/main-readme/technologies-and-tools.png)
 
 **Languages:**
 
@@ -159,18 +159,18 @@ The portfolio website is also available as a Web Progressive App (WPA). This all
 
 You can install the WPA from the browser (example from Edge).
 
-![WPA Installation in Edge](/readme-images/wpa-installation-in-edge.png)
+![WPA Installation in Edge](/readme-images/main-readme/wpa-installation-in-edge.png)
 
 ### WPA on Mac Desktop
 
 Once installed, the WPA can be accessed from desktop (example from Mac).
 
-![WPA on Mac Desktop](/readme-images/wpa-320x640.png)
+![WPA on Mac Desktop](/readme-images/main-readme/wpa-320x640.png)
 
 ## 🖼️ Screenshots
 
 Project screenshots.
 
-![krsiak.cz | Krsiak Daniel](/readme-images/krsiak-website-screenshot-1.png)
+![krsiak.cz | Krsiak Daniel](/readme-images/main-readme/krsiak-website-screenshot-1.png)
 
-![krsiak.cz | Work Experience](/readme-images/krsiak-website-screenshot-2.png)
+![krsiak.cz | Work Experience](/readme-images/main-readme/krsiak-website-screenshot-2.png)
