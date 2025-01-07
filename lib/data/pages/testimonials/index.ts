@@ -4,6 +4,7 @@ import { TEXT } from '@/localization/english'
 import personCastro from '@/public/images/webp/testimonials/alexandre-castro.webp'
 import personPopa from '@/public/images/webp/testimonials/daniel-popa.webp'
 import personLosseff from '@/public/images/webp/testimonials/inka-losseff.webp'
+import personMoorhead from '@/public/images/webp/testimonials/jonathan-moorhead.webp'
 import personKvapil from '@/public/images/webp/testimonials/roman-kvapil.webp'
 import personPridalek from '@/public/images/webp/testimonials/vojtech-pridalek.webp'
 
@@ -49,14 +50,24 @@ export const testimonialsData: Testimonial[] = [
     `,
   },
   {
+    id: TEXT.nameMoorhead,
+    personPhoto: personMoorhead,
+    personName: `✝️ ${TEXT.nameMoorhead}`,
+    personJob: 'Baptist Pastor',
+    testimonialText: `
+      I have known Daniel for almost a decade and he has always proven himself faithful.
+      He has always been very dedicated to his employment, and has always been very respectful in his words and opinions.
+      I am very thankful for our friendship.
+    `,
+  },
+  {
     id: TEXT.nameCastro,
     personPhoto: personCastro,
     personName: TEXT.nameCastro,
     personJob: 'QA Tester and Content Manager ~\u00A0Smartlook',
     testimonialText: `
-      His vast work experience in diverse environments\u00A0—\u00A0corporate, freelancing, and now as a member of a small team,
-      and in positions\u00A0—\u00A0leading people, managing projects, liaising with partners and clients,
-      has endowed him with a unique set of both soft and hard skills, which make him a team member that brings added value to every organization.
+      On a personal note, Daniel helped me a great deal, back when I first started at Smartsupp. With him, I managed to learn so much stuff on many different topics. 
+      To this day, I still rely on Daniel as a go-to person when I need advice on specific topics.
     `,
   },
 ]

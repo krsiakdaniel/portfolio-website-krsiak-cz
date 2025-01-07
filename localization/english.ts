@@ -55,6 +55,7 @@ export const TESTIMONIALS = {
   nameLosseff: 'Inka Losseff',
   namePopa: 'Daniel Popa',
   namePridalek: 'Vojtech Pridalek',
+  nameMoorhead: 'Jonathan Moorhead',
 }
 
 export const PROJECTS = {
