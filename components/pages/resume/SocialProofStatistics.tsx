@@ -8,11 +8,15 @@ const SocialProofStatistics: FC = (): JSX.Element => {
     <section className="mt-16 w-full bg-white text-left dark:bg-gray-900">
       <Heading2 textColor="text-neutral-900">Transforming Companies with Automation</Heading2>
 
-      <div className="w-full py-0 text-center lg:mt-4">
-        <dl className="grid w-full gap-4 text-gray-900 dark:text-white lg:grid-cols-3">
-          <SocialProofStatisticsCard title="Companies 4+" description="From startup to corporate" />
-          <SocialProofStatisticsCard title="Features 500+" description="Implemented successfully" />
-          <SocialProofStatisticsCard title="Automation ∞" description="Streamlined testing and CI/CD" />
+      <div className="mt-4 w-full py-0 text-center">
+        <dl className="flex w-full flex-col gap-4 text-gray-900 lg:flex-row">
+          <div className="flex w-full flex-col gap-4 md:flex-row">
+            <SocialProofStatisticsCard title="Companies 4+" description="From startup to corporate" />
+            <SocialProofStatisticsCard title="Features 500+" description="Implemented successfully" />
+          </div>
+          <div className="flex">
+            <SocialProofStatisticsCard title="Automation ∞" description="Streamlined testing and CI/CD" />
+          </div>
         </dl>
       </div>
     </section>
