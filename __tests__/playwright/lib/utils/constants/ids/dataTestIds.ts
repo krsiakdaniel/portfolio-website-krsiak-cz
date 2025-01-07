@@ -168,6 +168,10 @@ const CALL_TO_ACTION = {
   linkLinkedIn: 'call-to-action-link-linkedin',
 }
 
+const RESUME = {
+  downloadLinkPlainText: 'resume-plain-text-view-pdf',
+}
+
 export const DATA_TEST_IDS = {
   breadcrumbs: 'breadcrumbs',
   gallery: 'gallery',
@@ -179,4 +183,5 @@ export const DATA_TEST_IDS = {
   projects: PROJECTS,
   pagesLinks: PAGES_LINKS,
   callToAction: CALL_TO_ACTION,
+  resume: RESUME,
 }
