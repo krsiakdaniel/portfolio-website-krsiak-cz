@@ -6,6 +6,7 @@ import HeaderSection from '@/components/layout/projects/project-page-detail/Head
 import ProjectInformation from '@/components/layout/projects/project-page-detail/ProjectInformation'
 import ProjectResponsibility from '@/components/layout/projects/project-page-detail/ProjectResponsibility'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import CallToActionResume from '@/components/shared/call-to-action/CallToActionResume'
 
 import { HeaderSectionProps } from '@/lib/utils/interfaces/componentProps'
 import { ImageShowcaseItem, Project, Section } from '@/lib/utils/interfaces/interfaces'
@@ -69,6 +70,9 @@ const ProjectPageLayout: FC<ProjectPageLayoutProps> = ({
       />
       <ProjectResponsibility sections={sections} />
       <Gallery imageShowcase={imageShowcase} />
+
+      <CallToActionResume />
+
       {PageNavigation}
     </PageContainer>
   )
