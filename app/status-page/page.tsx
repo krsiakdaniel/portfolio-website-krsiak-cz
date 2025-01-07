@@ -11,6 +11,7 @@ import { statusBadges } from '@/lib/data/pages/status-page'
 
 import { TEXT } from '@/localization/english'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
@@ -29,7 +30,7 @@ const StatusPage: FC = (): JSX.Element => {
           Current statuses for key integrations, showcasing the health and performance of the project.
         </p>
 
-        <div className="mt-8">
+        <div className="mt-8" data-testid={DATA_TEST_IDS.footer.statusBadges}>
           {statusBadges.map((item) => (
             <Image
               key={item.id}
