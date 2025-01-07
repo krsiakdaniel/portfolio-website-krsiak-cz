@@ -9,7 +9,7 @@ const TestimonialsIntroduction: FC = (): JSX.Element => {
     <div>
       <p className="mt-4 text-lg text-neutral-600" data-testid={DATA_TEST_IDS.page.testimonials.introduction}>
         I follow the Japanese 🇯🇵 philosophy of <Highlight text="Kaizen 改善" /> my whole life, continuously seeking
-        improvement in my work and personal growth.
+        personal growth and improvement in my work.
       </p>
     </div>
   )

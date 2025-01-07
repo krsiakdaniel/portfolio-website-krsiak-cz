@@ -10,7 +10,7 @@ import Heading1 from '@/components/shared/Heading1'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/CallToActionLinkedIn'
 
 import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimonials'
-import { testimonialsData } from '@/lib/data/pages/testimonials'
+import { personalTestimonials, workTestimonials } from '@/lib/data/pages/testimonials'
 
 import { TEXT } from '@/localization/english'
 
@@ -39,7 +39,7 @@ const Testimonials: FC = (): JSX.Element => {
         </p>
 
         <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
-          {testimonialsData.slice(4, 6).map((testimonial) => (
+          {personalTestimonials.map((testimonial) => (
             <TestimonialSection
               key={testimonial.id}
               personPhoto={testimonial.personPhoto}
@@ -50,13 +50,13 @@ const Testimonials: FC = (): JSX.Element => {
           ))}
         </div>
 
-        <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Professional Endorsements</div>
+        <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Professional References</div>
         <p className="mt-4 text-lg text-neutral-600">
-          Below, you&apos;ll find feedback from colleagues who have experienced my contributions at work.
+          Below, you&apos;ll find insightful feedback from colleagues who have experienced my contributions firsthand.
         </p>
 
-        <div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
-          {testimonialsData.slice(0, 4).map((testimonial) => (
+        <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
+          {workTestimonials.map((testimonial) => (
             <TestimonialSection
               key={testimonial.id}
               personPhoto={testimonial.personPhoto}
@@ -66,12 +66,12 @@ const Testimonials: FC = (): JSX.Element => {
             />
           ))}
         </div>
-
-        <CallToActionLinkedIn />
-
-        {/* TODO: Add Fitness Moderator section */}
-        {/* <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Fitness Moderator 🏋️‍♂️</div> */}
       </div>
+
+      {/* TODO: Add Fitness Moderator 🏋️‍♂️ section */}
+
+      <CallToActionLinkedIn />
+
       <PageNavigation
         linkPrevious={PAGES_URL.personal.mainUrl}
         namePrevious={TEXT.personalProjects}
