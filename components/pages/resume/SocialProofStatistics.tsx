@@ -10,7 +10,7 @@ const SocialProofStatistics: FC = (): JSX.Element => {
       <div className="mt-4 w-full py-0 text-center">
         <dl className="flex w-full flex-col gap-4 text-gray-900 lg:flex-row">
           <div className="flex w-full flex-col gap-4 md:flex-row lg:w-2/3">
-            <SocialProofStatisticsCard title="Companies 4+" description="From startup to corporate" />
+            <SocialProofStatisticsCard title="Companies 5+" description="From startup to corporate" />
             <SocialProofStatisticsCard title="Features 500+" description="Implemented successfully" />
           </div>
           <div className="flex w-full lg:w-1/3">
