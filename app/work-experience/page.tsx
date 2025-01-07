@@ -94,7 +94,7 @@ const ProjectsWork: FC = (): JSX.Element => {
           <ExperienceCard
             company="Smartsupp"
             role="Localization - Manager"
-            description={`${YEARS.localizationManager} years — SaaS company website localization. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱`}
+            description={`${YEARS.localizationManager} years — Company website localization. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱`}
           />
         </div>
 
