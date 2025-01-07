@@ -38,6 +38,7 @@ const ProjectsWork: FC = (): JSX.Element => {
         {/* REACT */}
         <ProjectSection sectionId={ID.section.react} sectionText="React" projectData={projectsWorkReact} />
 
+        {/* CTA */}
         <CallToActionResume />
 
         {/* FRONT END */}
@@ -98,6 +99,7 @@ const ProjectsWork: FC = (): JSX.Element => {
           />
         </div>
 
+        {/* CTA */}
         <CallToActionResume />
       </ProjectsOverviewLayout>
 
