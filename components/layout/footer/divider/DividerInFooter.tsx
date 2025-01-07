@@ -29,7 +29,7 @@ const noonToSunSet = <div className={`bg-gradient-to-r from-green-500 via-blue-7
 
 const DividerWithGradient: FC = () => {
   return (
-    <div className="my-4 flex w-full items-center justify-between">
+    <div className="flex w-full items-center justify-between">
       <TheSun />
       {sunRiseToNoon}
       <ManWalkingInForest />
