@@ -1,7 +1,11 @@
+import { Metadata } from 'next'
+
 import { META_CRYPTOMANIA } from '@/localization/english'
 
-export const metaDataCryptomania = {
+import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+
+export const metaDataCryptomania: Metadata = {
   title: META_CRYPTOMANIA.title,
   description: META_CRYPTOMANIA.description,
-  keywords: Object.values(META_CRYPTOMANIA.keywords),
+  keywords: getKeywordsString(META_CRYPTOMANIA.keywords),
 }

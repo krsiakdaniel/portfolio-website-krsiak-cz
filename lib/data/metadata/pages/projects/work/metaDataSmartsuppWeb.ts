@@ -1,7 +1,11 @@
+import { Metadata } from 'next'
+
 import { META_SMARTSUPP_WEB } from '@/localization/english'
 
-export const metaDataSmartsuppWeb = {
+import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+
+export const metaDataSmartsuppWeb: Metadata = {
   title: META_SMARTSUPP_WEB.title,
   description: META_SMARTSUPP_WEB.description,
-  keywords: Object.values(META_SMARTSUPP_WEB.keywords),
+  keywords: getKeywordsString(META_SMARTSUPP_WEB.keywords),
 }

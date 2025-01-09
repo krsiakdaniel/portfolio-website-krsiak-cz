@@ -1,7 +1,11 @@
+import { Metadata } from 'next'
+
 import { META_RESUME } from '@/localization/english'
 
-export const metaDataResume = {
+import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+
+export const metaDataResume: Metadata = {
   title: META_RESUME.title,
   description: META_RESUME.description,
-  keywords: Object.values(META_RESUME.keywords),
+  keywords: getKeywordsString(META_RESUME.keywords),
 }
