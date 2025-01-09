@@ -7,27 +7,10 @@ on:
       - completed
 
 jobs:
-  fix-prettier:
+  run-prettier-fix-formatting:
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout the repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run Prettier 'fix' to fix the formatting and push the changes
-        run: |
-          npm run prettier:fix
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Action"
-          git add .
-          git commit -m "chore: format code with Prettier"
-          git push
+      - name: Log Message
+        run: echo "Prettier Fix workflow has been triggered due to formatting issues."
