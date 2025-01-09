@@ -121,3 +121,8 @@ export interface TestimonialItem {
   personJob: string
   testimonialText: string
 }
+
+// meta data
+export interface MetaDataKeywords {
+  [key: string]: string
+}

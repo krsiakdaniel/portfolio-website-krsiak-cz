@@ -1,15 +1,15 @@
 import { FC } from 'react'
 
-import PageHeadMetaTags from '@/components/layout/PageHeadMetaTags'
+import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
 import GoogleAnalytics from '@/components/layout/scripts/GoogleAnalytics'
 import Smartlook from '@/components/layout/scripts/Smartlook'
 
 const PageHeadContent: FC = (): JSX.Element => {
   return (
     <head>
+      <AppleTouchIcons />
       <GoogleAnalytics />
       <Smartlook />
-      <PageHeadMetaTags />
     </head>
   )
 }

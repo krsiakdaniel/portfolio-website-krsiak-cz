@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import { FC } from 'react'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
@@ -17,7 +16,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
 
-export const metadata: Metadata = {
+export const metadata = {
   ...metaDataSmartsuppHelp,
 }
 

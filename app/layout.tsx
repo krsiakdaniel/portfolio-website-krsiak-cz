@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { FC, ReactNode } from 'react'
 
@@ -6,27 +5,15 @@ import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
 import PageHeadContent from '@/components/layout/PageHeadContent'
 
-import { metaDataShared } from '@/lib/data/metadata/shared/metaDataShared'
-
-import { TEXT } from '@/localization/english'
+import { defaultMetaData } from '@/lib/data/metadata/shared/defaultMetaData'
 
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-// default metadata for pages
-export const metadata: Metadata = {
-  ...metaDataShared,
-  manifest: '/manifest.webmanifest',
-  creator: `${TEXT.nameDanielKrsiak}`,
-  generator: 'Next.js',
-  applicationName: 'React - Portfolio website',
-  referrer: 'origin-when-cross-origin',
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
+// Default metadata used by all pages if they don't have their own metadata
+export const metadata = {
+  ...defaultMetaData,
 }
 
 type RootLayoutProps = {

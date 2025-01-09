@@ -1,7 +1,11 @@
+import { Metadata } from 'next'
+
 import { META_KOOPERATIVA } from '@/localization/english'
 
-export const metaDataKooperativa = {
+import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+
+export const metaDataKooperativa: Metadata = {
   title: META_KOOPERATIVA.title,
   description: META_KOOPERATIVA.description,
-  keywords: Object.values(META_KOOPERATIVA.keywords),
+  keywords: getKeywordsString(META_KOOPERATIVA.keywords),
 }

@@ -1,0 +1,11 @@
+import { MetaDataKeywords } from '@/lib/utils/interfaces/interfaces'
+
+/**
+ * Converts the keywords object into a comma-separated string.
+ *
+ * @param metadataKeywords - The metadata object containing keywords.
+ * @returns A string of keywords separated by commas.
+ */
+export const getKeywordsString = (metadataKeywords: MetaDataKeywords): string => {
+  return Object.values(metadataKeywords).join(', ')
+}

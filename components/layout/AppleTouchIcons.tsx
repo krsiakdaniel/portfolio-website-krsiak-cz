@@ -2,12 +2,9 @@ import { FC } from 'react'
 
 import { appleTouchIconSizes } from '@/lib/data/metadata/shared/appleTouchIconSizes'
 
-const THEME_COLOR = '#ECF0F1'
-
-const MetaTags: FC = (): JSX.Element => {
+const AppleTouchIcons: FC = (): JSX.Element => {
   return (
     <>
-      <meta name="theme-color" content={THEME_COLOR} />
       {appleTouchIconSizes.map((size) => {
         return <link key={size} rel="apple-touch-icon" sizes={size} href={`/icons/png/icon-${size}.png`} />
       })}
@@ -15,4 +12,4 @@ const MetaTags: FC = (): JSX.Element => {
   )
 }
 
-export default MetaTags
+export default AppleTouchIcons

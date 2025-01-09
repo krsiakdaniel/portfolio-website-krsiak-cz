@@ -1,7 +1,11 @@
+import { Metadata } from 'next'
+
 import { META_KRSIAK } from '@/localization/english'
 
-export const metaDataKrsiak = {
+import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+
+export const metaDataKrsiak: Metadata = {
   title: META_KRSIAK.title,
   description: META_KRSIAK.description,
-  keywords: Object.values(META_KRSIAK.keywords),
+  keywords: getKeywordsString(META_KRSIAK.keywords),
 }

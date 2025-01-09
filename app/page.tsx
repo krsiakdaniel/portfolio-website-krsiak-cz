@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import { FC } from 'react'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
@@ -11,17 +10,13 @@ import Skills from '@/components/pages/home/skills/Skills'
 import SkillsMain from '@/components/pages/home/skills/SkillsMain'
 import CallToActionWorkExperience from '@/components/shared/call-to-action/CallToActionWorkExperience'
 
-import { metaDataShared } from '@/lib/data/metadata/shared/metaDataShared'
-
 import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-export const metadata: Metadata = {
-  ...metaDataShared,
-}
+// Metadata are taken from default metadata in layout.tsx
 
 const Page: FC = (): JSX.Element => {
   return (

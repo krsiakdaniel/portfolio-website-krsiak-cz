@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import { FC } from 'react'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
@@ -9,7 +8,7 @@ import ProjectSection from '@/components/pages/projects/overview-page/ProjectSec
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionGitHub from '@/components/shared/call-to-action/CallToActionGitHub'
 
-import { metaDataProjectsOverviewPersonal } from '@/lib/data/metadata/pages/projects/personal/metaDataProjectsOverviewPersonal'
+import { metaDataProjectsOverviewPersonal } from '@/lib/data/metadata/pages/projects/metaDataProjectsOverviewPersonal'
 import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
 import { projectsPersonalReact } from '@/lib/data/pages/projects/personal/projects-overview/react/personalReact'
 
@@ -19,7 +18,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-export const metadata: Metadata = {
+export const metadata = {
   ...metaDataProjectsOverviewPersonal,
 }
 

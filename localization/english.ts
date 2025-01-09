@@ -1,4 +1,4 @@
-const COMMON_VALUES = {
+export const COMMON_VALUES = {
   nameDanielKrsiak: 'Daniel Kršiak',
   reactDeveloper: 'React Developer',
   javaScript: 'JavaScript',
@@ -174,7 +174,7 @@ export const META_PROJECTS_OVERVIEW_PERSONAL = {
 export const META_PROJECTS_OVERVIEW_WORK = {
   title: `Work Experience | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
   description:
-    'React Developer with experience development, redesign, localization, QA automation, testing. Proficient in team leadership and collaboration with UX designers.',
+    'Experienced React Developer skilled in development, redesign, localization, QA automation, testing, team leadership, and UX collaboration.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
@@ -196,9 +196,9 @@ export const META_PROJECTS_OVERVIEW_WORK = {
   },
 }
 
-export const META_SHARED = {
+export const META_DEFAULT = {
   title: `${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
-  description: `Experienced ${COMMON_VALUES.reactDeveloper} from ${COMMON_VALUES.brno}, Czech Republic. ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, ${COMMON_VALUES.html}, ${COMMON_VALUES.css}, ${COMMON_VALUES.sass}, ${COMMON_VALUES.tailwind}, ${COMMON_VALUES.redux}, GraphQL, Jest, ${COMMON_VALUES.playwright}, and ${COMMON_VALUES.figma}.`,
+  description: `${COMMON_VALUES.nameDanielKrsiak}, ${COMMON_VALUES.reactDeveloper} from ${COMMON_VALUES.brno}, ${COMMON_VALUES.czechRepublic}. Specializing in ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}. 6 years of experience creating modern web applications.`,
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
@@ -217,6 +217,8 @@ export const META_SHARED = {
     playwright: COMMON_VALUES.playwright,
     figma: COMMON_VALUES.figma,
   },
+  generator: 'Next.js',
+  applicationName: 'React - Portfolio website',
 }
 
 export const META_SMARTSUPP_WEB = {

@@ -1,5 +1,7 @@
 import { getUrlPersonalProject, getUrlWorkExperience } from '@/lib/utils/helpers/getPageUrls'
 
+export const FULL_WEBSITE_URL = 'https://krsiak.cz'
+
 export const URL_WORK_EXPERIENCE = '/work-experience'
 export const URL_PERSONAL_PROJECTS = '/personal-projects'
 
