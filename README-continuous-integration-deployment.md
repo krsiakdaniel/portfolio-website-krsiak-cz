@@ -11,6 +11,7 @@ This project uses GitHub Actions for CI and Netlify for CD.
     - [GitHub Actions](#github-actions)
       - [Workflow for Jest 🃏](#workflow-for-jest-)
       - [Workflow for Playwright 🎭](#workflow-for-playwright-)
+      - [Workflow for Prettier ✨](#workflow-for-prettier-)
   - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
     - [Status of CD](#status-of-cd)
     - [Netlify](#netlify)
@@ -119,6 +120,31 @@ The `run-tests-playwright` job follows these steps:
    - The artifact is named `playwright-report`
    - It is located at path `playwright-report/`
    - It is retained for 7 days.
+
+</details>
+
+#### Workflow for Prettier ✨
+
+- Workflow file: [prettier-check-formatting.yml](.github/workflows/prettier-check-formatting.yml)
+- View the results on GitHub: [actions/workflows/prettier-check-formatting.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/prettier-check-formatting.yml)
+
+<details>
+<summary>Click to read workflow description 👀</summary>
+
+---
+
+This workflow is triggered:
+
+- When a pull request is opened against the `master` branch.
+- The workflow consists of a single job named `run-prettier`.
+- The job is executed on the latest version of Ubuntu.
+
+The `run-prettier` job follows these steps:
+
+1. Checkout the repository using the `actions/checkout@v4` action.
+2. Setup Node.js environment using the `actions/setup-node@v4` action with Node.js version 20.
+3. It installs the dependencies of your project using `npm ci`. This command is similar to `npm install`, but it's designed to be used in automated environments such as this one.
+4. Run Prettier check using `npm run prettier:check`.
 
 </details>
 
