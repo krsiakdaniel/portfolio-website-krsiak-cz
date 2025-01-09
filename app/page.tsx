@@ -10,13 +10,17 @@ import Skills from '@/components/pages/home/skills/Skills'
 import SkillsMain from '@/components/pages/home/skills/SkillsMain'
 import CallToActionWorkExperience from '@/components/shared/call-to-action/CallToActionWorkExperience'
 
+import { metaDataHome } from '@/lib/data/metadata/pages/metaDataHome'
+
 import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-// Metadata are taken from default metadata in layout.tsx
+export const metadata = {
+  ...metaDataHome,
+}
 
 const Page: FC = (): JSX.Element => {
   return (
