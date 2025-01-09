@@ -1,3 +1,4 @@
+import type { Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import { FC, ReactNode } from 'react'
 
@@ -14,6 +15,14 @@ const inter = Inter({ subsets: ['latin'] })
 // Default metadata used by all pages if they don't have their own metadata
 export const metadata = {
   ...defaultMetaData,
+}
+
+export const viewport: Viewport = {
+  themeColor: '#ECF0F1',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 }
 
 type RootLayoutProps = {
