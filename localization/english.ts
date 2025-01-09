@@ -221,6 +221,33 @@ export const META_DEFAULT = {
   applicationName: 'React - Portfolio website',
 }
 
+export const META_HOME = {
+  title: `${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+  description: `Hi 👋 I am ${COMMON_VALUES.nameDanielKrsiak}, a ${COMMON_VALUES.reactDeveloper} based in ${COMMON_VALUES.brno}, ${COMMON_VALUES.czechRepublic}. I specialize in ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, and ${COMMON_VALUES.next}. With 6 years of experience creating modern web applications, I focus on delivering high-quality, scalable, and reliable code.`,
+  keywords: {
+    nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
+    reactDeveloper: COMMON_VALUES.reactDeveloper,
+    brno: COMMON_VALUES.brno,
+    czechRepublic: COMMON_VALUES.czechRepublic,
+    javaScript: COMMON_VALUES.javaScript,
+    typeScript: COMMON_VALUES.typeScript,
+    react: COMMON_VALUES.react,
+    next: COMMON_VALUES.next,
+    redux: COMMON_VALUES.redux,
+    graphQl: MISC.graphQl,
+    jest: MISC.jest,
+    playwright: COMMON_VALUES.playwright,
+    html: COMMON_VALUES.html,
+    css: COMMON_VALUES.css,
+    sass: COMMON_VALUES.sass,
+    tailwind: COMMON_VALUES.tailwind,
+    storybook: COMMON_VALUES.storybook,
+    figma: COMMON_VALUES.figma,
+    xd: COMMON_VALUES.xd,
+    sketch: COMMON_VALUES.sketch,
+  },
+}
+
 export const META_SMARTSUPP_WEB = {
   title: `Smartsupp Web | ${COMMON_VALUES.nameDanielKrsiak} - Front End Developer`,
   description:
