@@ -12,6 +12,7 @@ This project uses GitHub Actions for CI and Netlify for CD.
       - [Workflow for Jest 🃏](#workflow-for-jest-)
       - [Workflow for Playwright 🎭](#workflow-for-playwright-)
       - [Workflow for Prettier 🎨](#workflow-for-prettier-)
+      - [Workflow for Pull Request Labeler 🏷️](#workflow-for-pull-request-labeler-️)
   - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
     - [Status of CD](#status-of-cd)
     - [Netlify](#netlify)
@@ -145,6 +146,27 @@ The `run-prettier` job follows these steps:
 2. Setup Node.js environment using the `actions/setup-node@v4` action with Node.js version 20.
 3. It installs the dependencies of your project using `npm ci`. This command is similar to `npm install`, but it's designed to be used in automated environments such as this one.
 4. Run Prettier check using `npm run prettier:check`.
+
+</details>
+
+#### Workflow for Pull Request Labeler 🏷️
+
+- Workflow file: [labeler.yml](.github/workflows/labeler.yml)
+- View the results on GitHub: [actions/workflows/labeler.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/labeler.yml)
+
+<details>
+<summary>Click to read workflow description 👀</summary>
+
+---
+
+This workflow is triggered:
+
+- When a pull request is opened against the `master` branch.
+
+The `labeler` job follows these steps:
+
+1. Checkout the repository using the `actions/checkout@v4` action.
+2. Apply labels to the pull request using the `actions/labeler@v5` action with the configuration specified in `.github/labeler.yml`.
 
 </details>
 
