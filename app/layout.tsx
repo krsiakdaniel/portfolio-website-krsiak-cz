@@ -2,9 +2,11 @@ import type { Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import { FC, ReactNode } from 'react'
 
+import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
 import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
-import PageHeadContent from '@/components/layout/PageHeadContent'
+import GoogleAnalytics from '@/components/layout/scripts/GoogleAnalytics'
+import Smartlook from '@/components/layout/scripts/Smartlook'
 
 import { defaultMetaData } from '@/lib/data/metadata/shared/defaultMetaData'
 
@@ -22,7 +24,7 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false,
+  userScalable: true,
 }
 
 type RootLayoutProps = {
@@ -33,13 +35,19 @@ type RootLayoutProps = {
 const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element => {
   return (
     <html lang="en">
-      <PageHeadContent />
+      <head>
+        <AppleTouchIcons />
+      </head>
       <body className={inter.className}>
         <Header />
         <div>
           <main>{children}</main>
         </div>
         <Footer />
+
+        {/* Scripts */}
+        <GoogleAnalytics />
+        <Smartlook />
       </body>
     </html>
   )
