@@ -29,22 +29,22 @@ This app uses GitHub Actions for CI.
 
 The badges show the status of the workflows.
 
-[![Jest Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml) [![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
+[![Jest Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
+[![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
 
 ### GitHub Actions
 
-Workflows are defined in `.github/workflows` directory.
+Workflows are defined in the `.github/workflows` directory.
 
 #### Workflow for Jest 🃏
 
-- Workflow file: [jest.yml](.github/workflows/jest.yml)
-- View the results on GitHub: [actions/workflows/jest.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
+- **Workflow file:** [jest.yml](.github/workflows/jest.yml)
+- **View the results on GitHub:** [actions/workflows/jest.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
 
 This workflow is triggered when a pull request is opened against the `master` branch.
 
-**Job: run-tests-jest**
-
-- **Runs on**: Latest version of Ubuntu
+- **Job:** `run-tests-jest`
+- **Runs on:** Latest version of Ubuntu
 
 **Steps:**
 
@@ -65,14 +65,13 @@ This workflow is triggered when a pull request is opened against the `master` br
 
 #### Workflow for Playwright 🎭
 
-- Workflow file: [playwright.yml](.github/workflows/playwright.yml)
-- View the results on GitHub: [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
+- **Workflow file:** [playwright.yml](.github/workflows/playwright.yml)
+- **View the results on GitHub:** [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
 
 This workflow is triggered when a pull request is opened against the `master` branch.
 
-**Job: run-tests-playwright**
-
-- **Runs on**: Latest version of Ubuntu
+- **Job:** `run-tests-playwright`
+- **Runs on:** Latest version of Ubuntu
 
 **Steps:**
 
@@ -95,14 +94,13 @@ This workflow is triggered when a pull request is opened against the `master` br
 
 #### Workflow for Prettier 🎨
 
-- Workflow file: [prettier-check-formatting.yml](.github/workflows/prettier-check-formatting.yml)
-- View the results on GitHub: [actions/workflows/prettier-check-formatting.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/prettier-check-formatting.yml)
+- **Workflow file:** [prettier-check-formatting.yml](.github/workflows/prettier-check-formatting.yml)
+- **View the results on GitHub:** [actions/workflows/prettier-check-formatting.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/prettier-check-formatting.yml)
 
 This workflow is triggered when a pull request is opened against the `master` branch.
 
-**Job: run-prettier**
-
-- **Runs on**: Latest version of Ubuntu
+- **Job:** `run-prettier`
+- **Runs on:** Latest version of Ubuntu
 
 **Steps:**
 
@@ -118,12 +116,13 @@ This workflow is triggered when a pull request is opened against the `master` br
 
 #### Workflow for Pull Request Labeler 🏷️
 
-- Workflow file: [labeler.yml](.github/workflows/labeler.yml)
-- View the results on GitHub: [actions/workflows/labeler.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/labeler.yml)
+- **Workflow file:** [labeler.yml](.github/workflows/labeler.yml)
+- **View the results on GitHub:** [actions/workflows/labeler.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/labeler.yml)
 
 This workflow is triggered when a pull request is opened against the `master` branch.
 
-**Job: labeler**
+- **Job:** `labeler`
+- **Runs on:** Latest version of Ubuntu
 
 **Steps:**
 
@@ -135,12 +134,13 @@ This workflow is triggered when a pull request is opened against the `master` br
 
 #### Workflow for Auto Author Assign ✍️
 
-- Workflow file: [auto-author-assign.yml](.github/workflows/auto-author-assign.yml)
-- View the results on GitHub: [actions/workflows/auto-author-assign.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/auto-author-assign.yml)
+- **Workflow file:** [auto-author-assign.yml](.github/workflows/auto-author-assign.yml)
+- **View the results on GitHub:** [actions/workflows/auto-author-assign.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/auto-author-assign.yml)
 
 This workflow is triggered when an issue is opened or reopened, or when a pull request is opened or reopened against the `master` branch.
 
-**Job: assign-author**
+- **Job:** `assign-author`
+- **Runs on:** Latest version of Ubuntu
 
 **Steps:**
 

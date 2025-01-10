@@ -9,8 +9,8 @@ This project uses CD = Netlify.
   - [✅ CD - Continuous Deployment - ℹ️ Info](#-cd---continuous-deployment---ℹ️-info)
     - [Status of CD](#status-of-cd)
     - [Netlify](#netlify)
-      - [Branches and deploy contexts](#branches-and-deploy-contexts)
-      - [Build plugins](#build-plugins)
+      - [Branches and Deploy Contexts](#branches-and-deploy-contexts)
+      - [Build Plugins](#build-plugins)
       - [Deploys](#deploys)
 
 ---
@@ -33,15 +33,15 @@ The badge shows the status of the last deploy.
 
 The website is built and deployed on Netlify.
 
-#### Branches and deploy contexts
+#### Branches and Deploy Contexts
 
 Deploy contexts are branch-based environments that enable you to configure builds depending on the context. This includes production and preview environments.
 
-- **Production branch**: `master`
-- **Branch deploys**: Deploy only the production branch
+- **Production Branch**: `master`
+- **Branch Deploys**: Deploy only the production branch
 - **Deploy Previews**: Any pull request against your production branch / branch deploy branches
 
-#### Build plugins
+#### Build Plugins
 
 The website can use different build plugins.
 
