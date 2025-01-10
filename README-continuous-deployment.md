@@ -31,24 +31,24 @@ The badge shows the status of the last deploy.
 
 ### Netlify
 
-The website is build and deployed on Netlify.
+The website is built and deployed on Netlify.
 
 #### Branches and deploy contexts
 
 Deploy contexts are branch-based environments that enable you to configure builds depending on the context. This includes production and preview environments.
 
-- Production branch: **master**
-- Branch deploys: **Deploy only the production branch**
-- Deploy Previews: **Any pull request against your production branch / branch deploy branches**
+- **Production branch**: `master`
+- **Branch deploys**: Deploy only the production branch
+- **Deploy Previews**: Any pull request against your production branch / branch deploy branches
 
 #### Build plugins
 
-The website can uses different build plugins.
+The website can use different build plugins.
 
-- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) - automatically runs audit on website after every build.
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) - automatically runs audit on the website after every build.
 
 #### Deploys
 
-You can see partially the list of the last deploys and its details.
+You can see the list of the last deploys and their details.
 
-- [netlify.com/sites/portfolio-website-krsiak-cz/deploys](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
+- [Netlify Deploys](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
