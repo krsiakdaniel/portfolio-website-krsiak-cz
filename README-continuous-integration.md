@@ -1,12 +1,12 @@
-# 🚀 CI/CD - Continuous Integration / Deployment
+# 🛠️ CI - Continuous Integration
 
-This project uses GitHub Actions for CI and Netlify for CD.
+This project uses CI = GitHub Actions.
 
 **Table of Contents:**
 
-- [🚀 CI/CD - Continuous Integration / Deployment](#-cicd---continuous-integration--deployment)
-  - [ℹ️ CI/CD Process](#ℹ️-cicd-process)
-  - [🛠️ CI - Continuous Integration](#️-ci---continuous-integration)
+- [🛠️ CI - Continuous Integration](#️-ci---continuous-integration)
+  - [🚀 CI and CD - Process](#-ci-and-cd---process)
+  - [🛠️ CI - Continuous Integration - ℹ️ Info](#️-ci---continuous-integration---ℹ️-info)
     - [Status of CI](#status-of-ci)
     - [GitHub Actions](#github-actions)
       - [Workflow for Jest 🃏](#workflow-for-jest-)
@@ -14,41 +14,14 @@ This project uses GitHub Actions for CI and Netlify for CD.
       - [Workflow for Prettier 🎨](#workflow-for-prettier-)
       - [Workflow for Pull Request Labeler 🏷️](#workflow-for-pull-request-labeler-️)
       - [Workflow for Auto Author Assign ✍️](#workflow-for-auto-author-assign-️)
-  - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
-    - [Status of CD](#status-of-cd)
-    - [Netlify](#netlify)
-      - [Branches and deploy contexts](#branches-and-deploy-contexts)
-      - [Build plugins](#build-plugins)
-      - [Deploys](#deploys)
 
 ---
 
-## ℹ️ CI/CD Process
+## 🚀 CI and CD - Process
 
-The entire process and information is visible on GitHub when pull request is made.
+- [README-ci-cd-process.md](README-ci-cd-process.md)
 
-1. The process starts on **pull request** made from `master` branch.
-2. **CI** - GitHub Actions run **Unit** tests and **E2E** tests.
-3. **Test artifacts** are created:
-   1. After the workflow completes, go to the Actions tab in GitHub repository.
-   2. Find the last workflow run that was triggered.
-   3. In the “Artifacts” section, you’ll see your uploaded artifact.
-   4. You can download it directly from there in ZIP.
-4. **CD** - Netlify creates a **Deploy Preview** of the website.
-5. CI and CD should pass with no errors ✅
-   1. If there are any issues, fix must be made.
-   2. Process starts again.
-6. **Review and test the changes** on the **Deploy Preview** link ✅
-   1. If there are any issues, fix must be made.
-   2. Process starts again.
-7. All should be reviewed and approved ✅
-8. Use **Squash and merge** to keep the history clean.
-9. Merge **pull request** to `master` branch.
-10. Branch is automatically deleted.
-11. The **Production Build** starts on **merge** to `master` branch.
-12. Once finished the **website automatically deploys** to production.
-
-## 🛠️ CI - Continuous Integration
+## 🛠️ CI - Continuous Integration - ℹ️ Info
 
 This app uses GitHub Actions for CI.
 
@@ -191,37 +164,3 @@ The `assign-author` job follows these steps:
 1. Assign the author to the issue or pull request using the `toshimaru/auto-author-assign@v2.1.1` action.
 
 </details>
-
-## ✅ CD - Continuous Deployment
-
-The website is deployed on Netlify.
-
-### Status of CD
-
-The badge shows the status of the last deploy.
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/eb322254-0169-4941-9416-3806b0bd5be6/deploy-status)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)
-
-### Netlify
-
-The website is build and deployed on Netlify.
-
-#### Branches and deploy contexts
-
-Deploy contexts are branch-based environments that enable you to configure builds depending on the context. This includes production and preview environments.
-
-- Production branch: **master**
-- Branch deploys: **Deploy only the production branch**
-- Deploy Previews: **Any pull request against your production branch / branch deploy branches**
-
-#### Build plugins
-
-The website can uses different build plugins.
-
-- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) - automatically runs audit on website after every build.
-
-#### Deploys
-
-You can click on the last 2 deploys to see the details.
-
-- [netlify.com/sites/portfolio-website-krsiak-cz/deploys](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys)

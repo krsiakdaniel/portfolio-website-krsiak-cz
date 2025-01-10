@@ -17,7 +17,9 @@ React Developer portfolio website ⚛️ 👨🏻‍💻
   - [📋 Features](#-features)
   - [💻 Development](#-development)
   - [🐛 Testing](#-testing)
-  - [🚀 CI/CD - Continuous Integration / Deployment](#-cicd---continuous-integration--deployment)
+  - [🚀 CI and CD - Process](#-ci-and-cd---process)
+    - [🛠️ CI - Continuous Integration](#️-ci---continuous-integration)
+    - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
   - [🔒 Security](#-security)
   - [📱 WPA - Web Progressive App](#-wpa---web-progressive-app)
     - [Installation](#installation)
@@ -137,19 +139,27 @@ The website contains these following sections and pages.
 
 ## 💻 Development
 
-[README-development.md](README-development.md)
+- [README-development.md](README-development.md)
 
 ## 🐛 Testing
 
-[README-testing.md](README-testing.md)
+- [README-testing.md](README-testing.md)
 
-## 🚀 CI/CD - Continuous Integration / Deployment
+## 🚀 CI and CD - Process
 
-[README-continuous-integration-deployment.md](README-continuous-integration-deployment.md)
+- [README-ci-cd-process.md](README-ci-cd-process.md)
+
+### 🛠️ CI - Continuous Integration
+
+- [README-continuous-integration.md](README-continuous-integration.md)
+
+### ✅ CD - Continuous Deployment
+
+- [README-continuous-deployment.md](README-continuous-deployment.md)
 
 ## 🔒 Security
 
-[README-security.md](README-security.md)
+- [README-security.md](README-security.md)
 
 ## 📱 WPA - Web Progressive App
 
