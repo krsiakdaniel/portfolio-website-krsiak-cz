@@ -7,6 +7,7 @@ import { FULL_WEBSITE_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
 
 export const defaultMetaData: Metadata = {
+  metadataBase: new URL(FULL_WEBSITE_URL),
   title: META_DEFAULT.title,
   description: META_DEFAULT.description,
   keywords: getKeywordsString(META_DEFAULT.keywords),
