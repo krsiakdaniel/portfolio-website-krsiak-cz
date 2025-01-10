@@ -13,6 +13,7 @@ This project uses GitHub Actions for CI and Netlify for CD.
       - [Workflow for Playwright 🎭](#workflow-for-playwright-)
       - [Workflow for Prettier 🎨](#workflow-for-prettier-)
       - [Workflow for Pull Request Labeler 🏷️](#workflow-for-pull-request-labeler-️)
+      - [Workflow for Auto Author Assign ✍️](#workflow-for-auto-author-assign-️)
   - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
     - [Status of CD](#status-of-cd)
     - [Netlify](#netlify)
@@ -167,6 +168,27 @@ The `labeler` job follows these steps:
 
 1. Checkout the repository using the `actions/checkout@v4` action.
 2. Apply labels to the pull request using the `actions/labeler@v5` action with the configuration specified in `.github/labeler.yml`.
+
+</details>
+
+#### Workflow for Auto Author Assign ✍️
+
+- Workflow file: [auto-author-assign.yml](.github/workflows/auto-author-assign.yml)
+- View the results on GitHub: [actions/workflows/auto-author-assign.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/auto-author-assign.yml)
+
+<details>
+<summary>Click to read workflow description 👀</summary>
+
+---
+
+This workflow is triggered:
+
+- When an issue is opened or reopened.
+- When a pull request is opened or reopened against the `master` branch.
+
+The `assign-author` job follows these steps:
+
+1. Assign the author to the issue or pull request using the `toshimaru/auto-author-assign@v2.1.1` action.
 
 </details>
 
