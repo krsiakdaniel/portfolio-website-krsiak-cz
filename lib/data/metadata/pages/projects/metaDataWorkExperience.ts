@@ -6,8 +6,8 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
 
-import workExperienceOG from '@/public/images/png/open-graph/pages/work-experience/work-experience-og.png'
-import workExperienceTwitter from '@/public/images/png/open-graph/pages/work-experience/work-experience-twitter.png'
+import workExperienceOG from '@/public/images/png/open-graph/pages/work-experience/overview-page/work-experience-og.png'
+import workExperienceTwitter from '@/public/images/png/open-graph/pages/work-experience/overview-page/work-experience-twitter.png'
 
 export const metaDataWorkExperience: Metadata = {
   title: META_PROJECTS_OVERVIEW_WORK.title,
