@@ -21,7 +21,7 @@ export const metaDataHome: Metadata = {
         url: homeOG.src,
       },
     ],
-    url: PAGES_URL.fullWebsiteUrl,
+    url: PAGES_URL.websiteProduction,
   },
   twitter: {
     card: 'summary_large_image',

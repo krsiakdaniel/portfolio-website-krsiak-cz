@@ -1,12 +1,13 @@
 import { getUrlPersonalProject, getUrlWorkExperience } from '@/lib/utils/helpers/getPageUrls'
 
-export const FULL_WEBSITE_URL = 'https://krsiak.cz'
+const URL_WEBSITE_PRODUCTION = 'https://krsiak.cz'
 
+// TODO: refactor, remove export, update all usages in files
 export const URL_WORK_EXPERIENCE = '/work-experience'
 export const URL_PERSONAL_PROJECTS = '/personal-projects'
 
 export const PAGES_URL = {
-  fullWebsiteUrl: FULL_WEBSITE_URL,
+  websiteProduction: URL_WEBSITE_PRODUCTION,
   localhost: 'http://localhost:3000',
   home: '/',
   resume: '/resume',

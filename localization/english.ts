@@ -289,7 +289,7 @@ export const META_SMARTSUPP_DASHBOARD = {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
     smartsuppDashboard: 'Smartsupp Dashboard',
-    customerCareChatDashboard: 'Customer Care - Chat Dashboard',
+    customerCareChatDashboard: 'Chat Dashboard',
     javaScript: COMMON_VALUES.javaScript,
     typeScript: COMMON_VALUES.typeScript,
     react: COMMON_VALUES.react,

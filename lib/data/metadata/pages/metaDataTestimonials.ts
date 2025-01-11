@@ -21,7 +21,7 @@ export const metaDataTestimonials: Metadata = {
         url: testimonialsOG.src,
       },
     ],
-    url: PAGES_URL.fullWebsiteUrl + PAGES_URL.testimonials,
+    url: PAGES_URL.websiteProduction + PAGES_URL.testimonials,
   },
   twitter: {
     card: 'summary_large_image',

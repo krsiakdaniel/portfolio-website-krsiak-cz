@@ -21,7 +21,7 @@ export const metaDataStatusPage: Metadata = {
         url: statusPageOG.src,
       },
     ],
-    url: PAGES_URL.fullWebsiteUrl + PAGES_URL.statusPage,
+    url: PAGES_URL.websiteProduction + PAGES_URL.statusPage,
   },
   twitter: {
     card: 'summary_large_image',

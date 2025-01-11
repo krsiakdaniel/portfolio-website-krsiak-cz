@@ -21,7 +21,7 @@ export const metaDataResume: Metadata = {
         url: resumeOG.src,
       },
     ],
-    url: PAGES_URL.fullWebsiteUrl + PAGES_URL.resume,
+    url: PAGES_URL.websiteProduction + PAGES_URL.resume,
   },
   twitter: {
     card: 'summary_large_image',
