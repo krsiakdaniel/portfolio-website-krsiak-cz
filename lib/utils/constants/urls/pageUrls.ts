@@ -1,18 +1,12 @@
 import { getUrlPersonalProject, getUrlWorkExperience } from '@/lib/utils/helpers/getPageUrls'
 
-const URL_WEBSITE_PRODUCTION = 'https://krsiak.cz'
-
-// TODO: refactor, remove export, update all usages in files
-export const URL_WORK_EXPERIENCE = '/work-experience'
-export const URL_PERSONAL_PROJECTS = '/personal-projects'
-
 export const PAGES_URL = {
-  websiteProduction: URL_WEBSITE_PRODUCTION,
+  websiteProduction: 'https://krsiak.cz',
   localhost: 'http://localhost:3000',
   home: '/',
   resume: '/resume',
   work: {
-    mainUrl: URL_WORK_EXPERIENCE,
+    mainUrl: '/work-experience',
     kooperativa: getUrlWorkExperience('kooperativa'),
     smartsupp: {
       dashboard: getUrlWorkExperience('smartsupp-dashboard'),
@@ -24,7 +18,7 @@ export const PAGES_URL = {
     moravia: getUrlWorkExperience('moravia'),
   },
   personal: {
-    mainUrl: URL_PERSONAL_PROJECTS,
+    mainUrl: '/personal-projects',
     krsiak: getUrlPersonalProject('krsiak'),
     cryptoMania: getUrlPersonalProject('cryptomania'),
   },

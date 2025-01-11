@@ -1,5 +1,3 @@
-import { URL_PERSONAL_PROJECTS } from '@/lib/utils/constants/urls/pageUrls'
-
 import { getUrlPersonalProject, getUrlWorkExperience } from '@/lib/utils/helpers/getPageUrls'
 
 describe('getUrlWorkExperience', () => {
@@ -9,12 +7,26 @@ describe('getUrlWorkExperience', () => {
     const result = getUrlWorkExperience(company)
     expect(result).toBe(expectedUrl)
   })
+
+  it('should handle empty company name', () => {
+    const company = ''
+    const expectedUrl = `/work-experience/`
+    const result = getUrlWorkExperience(company)
+    expect(result).toBe(expectedUrl)
+  })
 })
 
 describe('getUrlPersonalProject', () => {
   it('should return the correct URL for a given project', () => {
     const project = 'exampleProject'
-    const expectedUrl = `${URL_PERSONAL_PROJECTS}/${project}`
+    const expectedUrl = `/personal-projects/${project}`
+    const result = getUrlPersonalProject(project)
+    expect(result).toBe(expectedUrl)
+  })
+
+  it('should handle empty project name', () => {
+    const project = ''
+    const expectedUrl = `/personal-projects/`
     const result = getUrlPersonalProject(project)
     expect(result).toBe(expectedUrl)
   })
