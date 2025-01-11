@@ -1,5 +1,3 @@
-import { URL_PERSONAL_PROJECTS, URL_WORK_EXPERIENCE } from '@/lib/utils/constants/urls/pageUrls'
-
 /**
  * Generates the URL for a specific work experience.
  *
@@ -8,7 +6,7 @@ import { URL_PERSONAL_PROJECTS, URL_WORK_EXPERIENCE } from '@/lib/utils/constant
  */
 
 export const getUrlWorkExperience = (company: string): string => {
-  return `${URL_WORK_EXPERIENCE}/${company}`
+  return `/work-experience/${company}`
 }
 
 /**
@@ -19,5 +17,5 @@ export const getUrlWorkExperience = (company: string): string => {
  */
 
 export const getUrlPersonalProject = (project: string): string => {
-  return `${URL_PERSONAL_PROJECTS}/${project}`
+  return `/personal-projects/${project}`
 }
