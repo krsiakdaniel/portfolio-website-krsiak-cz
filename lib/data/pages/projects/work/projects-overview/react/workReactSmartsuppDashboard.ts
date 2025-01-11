@@ -22,7 +22,7 @@ export const workReactSmartsuppDashboard: Project = {
     { id: 2, src: smartsuppDashboard3.src },
     { id: 4, src: smartsuppDashboard4.src },
   ],
-  title: '💬 Customer Care - Chat Dashboard',
+  title: '💬 Chat Dashboard',
   company: 'Smartsupp',
   role: 'React Developer',
   years: '3\u00A0years 2\u00A0months',

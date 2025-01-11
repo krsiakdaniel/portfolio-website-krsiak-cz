@@ -21,7 +21,7 @@ export const metaDataKrsiak: Metadata = {
         url: krsiakOG.src,
       },
     ],
-    url: PAGES_URL.fullWebsiteUrl + PAGES_URL.personal.krsiak,
+    url: PAGES_URL.websiteProduction + PAGES_URL.personal.krsiak,
   },
   twitter: {
     card: 'summary_large_image',
