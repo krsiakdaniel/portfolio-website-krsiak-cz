@@ -10,7 +10,7 @@ import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionResume from '@/components/shared/call-to-action/CallToActionResume'
 import Heading4 from '@/components/shared/Heading4'
 
-import { metaDataProjectsOverviewWork } from '@/lib/data/metadata/pages/projects/metaDataProjectsOverviewWork'
+import { metaDataWorkExperience } from '@/lib/data/metadata/pages/projects/metaDataWorkExperience'
 import { projectsWorkFrontEnd } from '@/lib/data/pages/projects/work/projects-overview/front-end/workFrontEnd'
 import { projectsWorkLocalization } from '@/lib/data/pages/projects/work/projects-overview/localization/workLocalization'
 import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview/quality-assurance/workQA'
@@ -25,7 +25,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { MONTHS, YEARS } from '@/lib/utils/constants/yearsExperience'
 
 export const metadata = {
-  ...metaDataProjectsOverviewWork,
+  ...metaDataWorkExperience,
 }
 
 const ProjectsWork: FC = (): JSX.Element => {

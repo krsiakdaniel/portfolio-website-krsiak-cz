@@ -1,8 +1,13 @@
 import { Metadata } from 'next'
 
-import { COMMON_VALUES, META_HOME } from '@/localization/english'
+import { COMMON_VALUES, META_HOME, TEXT } from '@/localization/english'
+
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+
+import homeOG from '@/public/images/png/open-graph/pages/home/home-og.png'
+import homeTwitter from '@/public/images/png/open-graph/pages/home/home-twitter.png'
 
 export const metaDataHome: Metadata = {
   title: META_HOME.title,
@@ -13,10 +18,10 @@ export const metaDataHome: Metadata = {
     description: `I am ${COMMON_VALUES.reactDeveloper} based in ${COMMON_VALUES.czechRepublic}. I specialize in ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, and ${COMMON_VALUES.next}. With 6 years of experience creating modern web applications, I focus on delivering high-quality, scalable, and reliable code.`,
     images: [
       {
-        url: '/public/images/png/open-graph/pages/home/home-og.png',
+        url: homeOG.src,
       },
     ],
-    url: 'https://krsiak.cz',
+    url: PAGES_URL.fullWebsiteUrl,
   },
   twitter: {
     card: 'summary_large_image',
@@ -24,9 +29,9 @@ export const metaDataHome: Metadata = {
     description: `I am ${COMMON_VALUES.reactDeveloper} based in ${COMMON_VALUES.czechRepublic}. I specialize in ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, and ${COMMON_VALUES.next}. With 6 years of experience creating modern web applications, I focus on delivering high-quality, scalable, and reliable code.`,
     images: [
       {
-        url: '/public/images/png/open-graph/pages/home/home-twitter.png',
+        url: homeTwitter.src,
       },
     ],
-    site: '@krsiak_daniel',
+    site: TEXT.twitter,
   },
 }

@@ -31,6 +31,7 @@ export const SOCIAL_LINKS = {
   linkedIn: 'My LinkedIn',
   resumePDF: 'Resume PDF',
   gitHub: 'GitHub Code',
+  twitter: '@krsiak_daniel',
 }
 
 export const HOME = {
