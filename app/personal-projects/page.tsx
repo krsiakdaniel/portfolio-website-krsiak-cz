@@ -8,7 +8,7 @@ import ProjectSection from '@/components/pages/projects/overview-page/ProjectSec
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionGitHub from '@/components/shared/call-to-action/CallToActionGitHub'
 
-import { metaDataProjectsOverviewPersonal } from '@/lib/data/metadata/pages/projects/metaDataProjectsOverviewPersonal'
+import { metaDataPersonalProjects } from '@/lib/data/metadata/pages/projects/metaDataPersonalProjects'
 import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
 import { projectsPersonalReact } from '@/lib/data/pages/projects/personal/projects-overview/react/personalReact'
 
@@ -19,7 +19,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 export const metadata = {
-  ...metaDataProjectsOverviewPersonal,
+  ...metaDataPersonalProjects,
 }
 
 const ProjectsPersonal: FC = (): JSX.Element => {

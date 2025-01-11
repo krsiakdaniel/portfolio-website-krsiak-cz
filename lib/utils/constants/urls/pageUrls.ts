@@ -6,6 +6,7 @@ export const URL_WORK_EXPERIENCE = '/work-experience'
 export const URL_PERSONAL_PROJECTS = '/personal-projects'
 
 export const PAGES_URL = {
+  fullWebsiteUrl: FULL_WEBSITE_URL,
   localhost: 'http://localhost:3000',
   home: '/',
   resume: '/resume',

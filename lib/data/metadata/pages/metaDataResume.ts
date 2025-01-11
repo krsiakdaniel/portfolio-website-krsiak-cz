@@ -1,8 +1,13 @@
 import { Metadata } from 'next'
 
-import { META_RESUME } from '@/localization/english'
+import { META_RESUME, TEXT } from '@/localization/english'
+
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+
+import resumeOG from '@/public/images/png/open-graph/pages/resume/resume-og.png'
+import resumeTwitter from '@/public/images/png/open-graph/pages/resume/resume-twitter.png'
 
 export const metaDataResume: Metadata = {
   title: META_RESUME.title,
@@ -13,10 +18,10 @@ export const metaDataResume: Metadata = {
     description: META_RESUME.description,
     images: [
       {
-        url: '/public/images/png/open-graph/pages/resume/resume-og.png',
+        url: resumeOG.src,
       },
     ],
-    url: 'https://krsiak.cz/resume',
+    url: PAGES_URL.fullWebsiteUrl + PAGES_URL.resume,
   },
   twitter: {
     card: 'summary_large_image',
@@ -24,9 +29,9 @@ export const metaDataResume: Metadata = {
     description: META_RESUME.description,
     images: [
       {
-        url: '/public/images/png/open-graph/pages/resume/resume-twitter.png',
+        url: resumeTwitter.src,
       },
     ],
-    site: '@krsiak_daniel',
+    site: TEXT.twitter,
   },
 }
