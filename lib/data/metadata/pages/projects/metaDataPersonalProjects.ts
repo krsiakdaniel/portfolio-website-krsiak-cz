@@ -6,8 +6,8 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
 
-import personalProjectsOverviewOG from '@/public/images/png/open-graph/pages/personal-projects-overview/personal-projects-overview-og.png'
-import personalProjectsOverviewTwitter from '@/public/images/png/open-graph/pages/personal-projects-overview/personal-projects-overview-twitter.png'
+import personalProjectsOverviewOG from '@/public/images/png/open-graph/pages/personal-projects/personal-projects-og.png'
+import personalProjectsOverviewTwitter from '@/public/images/png/open-graph/pages/personal-projects/personal-projects-twitter.png'
 
 export const metaDataPersonalProjects: Metadata = {
   title: META_PROJECTS_OVERVIEW_PERSONAL.title,

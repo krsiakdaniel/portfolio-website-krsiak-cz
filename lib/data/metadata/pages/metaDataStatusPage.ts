@@ -6,8 +6,8 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
 
-import statusPageOG from '@/public/images/png/open-graph/pages/status/status-og.png'
-import statusPageTwitter from '@/public/images/png/open-graph/pages/status/status-twitter.png'
+import statusPageOG from '@/public/images/png/open-graph/pages/status-page/status-page-og.png'
+import statusPageTwitter from '@/public/images/png/open-graph/pages/status-page/status-page-twitter.png'
 
 export const metaDataStatusPage: Metadata = {
   title: META_STATUS_PAGE.title,
