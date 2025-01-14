@@ -3,11 +3,11 @@ import { FC } from 'react'
 
 import { TEXT } from '@/localization/english'
 
-import krsiak from '@/public/images/webp/photo/krsiak-daniel-400.webp'
+import krsiak from '@/public/images/webp/photo/krsiak-daniel-296x296.webp'
 
 const Photo: FC = (): JSX.Element => {
   return (
-    <>
+    <div className="flex flex-col">
       <Image
         src={krsiak}
         alt={TEXT.nameDanielKrsiak}
@@ -18,7 +18,7 @@ const Photo: FC = (): JSX.Element => {
       <div className="mt-2">
         <p className="text-sm text-gray-500">{TEXT.nameDanielKrsiak}</p>
       </div>
-    </>
+    </div>
   )
 }
 
