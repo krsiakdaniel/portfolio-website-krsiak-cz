@@ -5,7 +5,7 @@ import DividerWithText from '@/components/shared/DividerWithText'
 
 import { DIVIDER_WITH_TEXT } from '@/localization/english'
 
-import contactQR from '@/public/images/svg/vcard-contact/qr-code-vcard.svg'
+import contactQR from '@/public/images/svg/vcard-contact/krsiak-daniel-qr-code-vcard.svg'
 
 type ScanMyContactQRProps = {
   showDivider?: boolean
