@@ -24,7 +24,7 @@ const ScanMyContactQR: FC<ScanMyContactQRProps> = ({
   height = HEIGHT,
 }): JSX.Element => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col items-center">
       {showDivider && <DividerWithText text={DIVIDER_WITH_TEXT.contactMe} />}
       <Image
         src={contactQR}
@@ -34,7 +34,7 @@ const ScanMyContactQR: FC<ScanMyContactQRProps> = ({
         className="rounded-lg bg-violet-100 p-1 ring-1 ring-violet-300"
       />
       {showNote && (
-        <div className="mt-2">
+        <div className="mt-2 self-start">
           <p className="text-sm text-gray-500">Scan Contact</p>
         </div>
       )}

@@ -13,8 +13,7 @@ const FooterContent: FC = (): JSX.Element => {
           <FooterSocialLinks />
         </section>
 
-        {/* FIXME: responsive is broken but also shared for QR footer and resume! */}
-        <section className="mt-16">
+        <section className="mt-16 flex justify-center">
           <ScanMyContactQR showDivider />
         </section>
       </div>
