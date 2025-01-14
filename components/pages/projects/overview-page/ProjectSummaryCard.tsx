@@ -7,7 +7,7 @@ import ProjectSkills from '@/components/pages/projects/overview-page/ProjectSkil
 
 import { Icon } from '@/lib/utils/interfaces/interfaces'
 
-type ProjectSummaryItemProps = {
+type ProjectSummaryCardProps = {
   isFeatured?: boolean | undefined
   image: string
   title: string
@@ -23,8 +23,7 @@ type ProjectSummaryItemProps = {
   className: string
 }
 
-// TODO: better naming for components
-const ProjectSummaryItem: FC<ProjectSummaryItemProps> = ({
+const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
   isFeatured,
   image,
   title,
@@ -64,4 +63,4 @@ const ProjectSummaryItem: FC<ProjectSummaryItemProps> = ({
   )
 }
 
-export default ProjectSummaryItem
+export default ProjectSummaryCard

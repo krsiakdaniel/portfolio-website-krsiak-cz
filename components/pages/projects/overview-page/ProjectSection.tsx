@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import ExperienceSection from '@/components/pages/projects/other-experience/ExperienceSection'
-import ProjectSummaryItem from '@/components/pages/projects/overview-page/ProjectSummaryItem'
+import ProjectSummaryCard from '@/components/pages/projects/overview-page/ProjectSummaryCard'
 
 import { Project } from '@/lib/utils/interfaces/interfaces'
 
@@ -11,14 +11,13 @@ type ProjectSectionProps = {
   sectionText: string
 }
 
-// TODO: better naming for components
 const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, sectionText }): JSX.Element => {
   return (
     <>
       <ExperienceSection id={sectionId} text={sectionText} />
 
       {projectData.map((item, index) => (
-        <ProjectSummaryItem
+        <ProjectSummaryCard
           key={item.id}
           isFeatured={item.isFeatured}
           image={item.image}
