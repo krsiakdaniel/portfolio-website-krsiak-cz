@@ -1,10 +1,10 @@
 import { FC } from 'react'
 
 import DividerInFooter from '@/components/layout/footer/divider/DividerInFooter'
-import FooterBanner from '@/components/layout/footer/FooterBanner'
 import FooterCopyright from '@/components/layout/footer/FooterCopyright'
-import FooterSocialLinks from '@/components/layout/footer/FooterSocialLinks'
 import FooterStatusAndScroll from '@/components/layout/footer/FooterStatusAndScroll'
+import ScanMyContactQR from '@/components/pages/home/ScanMyContactQR'
+
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 const Footer: FC = (): JSX.Element => {
@@ -14,9 +14,8 @@ const Footer: FC = (): JSX.Element => {
         <footer>
           <DividerInFooter />
 
-          <div className="mx-auto mt-20 flex w-full flex-col items-center pb-16">
-            <FooterSocialLinks />
-            <FooterBanner />
+          <div className="mx-auto flex w-full flex-col items-center pb-16">
+            <ScanMyContactQR />
             <FooterStatusAndScroll />
             <FooterCopyright />
           </div>

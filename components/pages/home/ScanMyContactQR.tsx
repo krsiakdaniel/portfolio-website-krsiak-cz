@@ -1,19 +1,21 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
+import FooterSocialLinks from '@/components/layout/footer/FooterSocialLinks'
 import DividerWithText from '@/components/shared/DividerWithText'
-import Heading2 from '@/components/shared/Heading2'
 
 import contactQR from '@/public/images/svg/vcard-contact/qr-code-vcard.svg'
 
 const ScanMyContactQR: FC = (): JSX.Element => {
   return (
-    <section className="mt-16">
-      <DividerWithText text="Contact Me" />
-      <div className="text-center">
-        <Heading2>Scan To Add Contact</Heading2>
-      </div>
-      <div className="mt-8 flex justify-center">
+    <div className="flex flex-col items-center justify-center">
+      <section className="mt-16 flex flex-col items-center">
+        <DividerWithText text="My Links" />
+        <FooterSocialLinks />
+      </section>
+
+      <section className="mt-16 flex flex-col items-center">
+        <DividerWithText text="Contact Me" />
         <Image
           src={contactQR}
           width={256}
@@ -21,8 +23,8 @@ const ScanMyContactQR: FC = (): JSX.Element => {
           alt="Contact Me - QR code"
           className="rounded-lg bg-violet-100 p-1 ring-1 ring-violet-300"
         />
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
 
