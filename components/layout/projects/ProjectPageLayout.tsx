@@ -1,10 +1,10 @@
 import { FC, ReactNode } from 'react'
 
 import PageContainer from '@/components/layout/PageContainer'
-import Gallery from '@/components/layout/projects/project-page-detail/Gallery'
-import HeaderSection from '@/components/layout/projects/project-page-detail/HeaderSection'
-import ProjectInformation from '@/components/layout/projects/project-page-detail/ProjectInformation'
-import ProjectResponsibility from '@/components/layout/projects/project-page-detail/ProjectResponsibility'
+import Gallery from '@/components/layout/projects/project-page/Gallery'
+import HeaderSection from '@/components/layout/projects/project-page/HeaderSection'
+import ProjectInformation from '@/components/layout/projects/project-page/ProjectInformation'
+import ProjectResponsibility from '@/components/layout/projects/project-page/ProjectResponsibility'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionResume from '@/components/shared/call-to-action/CallToActionResume'
 
@@ -47,21 +47,21 @@ const ProjectPageLayout: FC<ProjectPageLayoutProps> = ({
 }): JSX.Element => {
   return (
     <PageContainer id={pageID}>
+      <BreadCrumbs
+        level1Url={breadCrumbs.level1Url}
+        level1Text={breadCrumbs.level1Text}
+        level2Url={breadCrumbs.level2Url}
+        level2Text={breadCrumbs.level2Text}
+      />
+      <HeaderSection
+        title={title}
+        role={role}
+        years={years}
+        company={company}
+        goBackLink={goBackLink}
+        sectionID={sectionID}
+      />
       <article>
-        <BreadCrumbs
-          level1Url={breadCrumbs.level1Url}
-          level1Text={breadCrumbs.level1Text}
-          level2Url={breadCrumbs.level2Url}
-          level2Text={breadCrumbs.level2Text}
-        />
-        <HeaderSection
-          title={title}
-          role={role}
-          years={years}
-          company={company}
-          goBackLink={goBackLink}
-          sectionID={sectionID}
-        />
         <ProjectInformation
           description={description}
           skillsOverview={skillsOverview}
@@ -73,9 +73,9 @@ const ProjectPageLayout: FC<ProjectPageLayoutProps> = ({
         <Gallery imageShowcase={imageShowcase} />
 
         <CallToActionResume />
-
-        {PageNavigation}
       </article>
+
+      {PageNavigation}
     </PageContainer>
   )
 }

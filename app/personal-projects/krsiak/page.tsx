@@ -23,33 +23,32 @@ export const metadata = {
 const ProjectPersonalKrsiak: FC = (): JSX.Element => {
   const { title, role, description, skillsOverview, projectLinks, linkGitHub, imageShowcase } = projectsPersonalNext[0]
 
+  // TODO: use 'ProjectPageLayoutWrapper'
   return (
-    <>
-      <ProjectPageLayout
-        breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.krsiak, TEXT.portfolioWebsite)}
-        pageID={PAGES_URL.personal.krsiak}
-        title={title}
-        role={role}
-        goBackLink={GoBackLinkEnum.Personal}
-        sectionID={ID.section.next}
-        description={description}
-        skillsOverview={skillsOverview}
-        projectLinks={projectLinks}
-        linkGitHub={linkGitHub}
-        sections={sections}
-        imageShowcase={imageShowcase}
-        PageNavigation={
-          <PageNavigation
-            linkPrevious={PAGES_URL.personal.mainUrl}
-            namePrevious={TEXT.personalProjects}
-            dataTestIdPrevious={DATA_TEST_IDS.projects.personal.krsiak.previous}
-            linkNext={PAGES_URL.personal.cryptoMania}
-            nameNext={TEXT.cryptoMania}
-            dataTestIdNext={DATA_TEST_IDS.projects.personal.krsiak.next}
-          />
-        }
-      />
-    </>
+    <ProjectPageLayout
+      breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.krsiak, TEXT.portfolioWebsite)}
+      pageID={PAGES_URL.personal.krsiak}
+      title={title}
+      role={role}
+      goBackLink={GoBackLinkEnum.Personal}
+      sectionID={ID.section.next}
+      description={description}
+      skillsOverview={skillsOverview}
+      projectLinks={projectLinks}
+      linkGitHub={linkGitHub}
+      sections={sections}
+      imageShowcase={imageShowcase}
+      PageNavigation={
+        <PageNavigation
+          linkPrevious={PAGES_URL.personal.mainUrl}
+          namePrevious={TEXT.personalProjects}
+          dataTestIdPrevious={DATA_TEST_IDS.projects.personal.krsiak.previous}
+          linkNext={PAGES_URL.personal.cryptoMania}
+          nameNext={TEXT.cryptoMania}
+          dataTestIdNext={DATA_TEST_IDS.projects.personal.krsiak.next}
+        />
+      }
+    />
   )
 }
 

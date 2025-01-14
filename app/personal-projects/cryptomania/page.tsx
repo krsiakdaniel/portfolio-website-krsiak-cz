@@ -23,30 +23,29 @@ export const metadata = {
 const ProjectPersonalCryptomania: FC = (): JSX.Element => {
   const { title, role, description, skillsOverview, projectLinks, linkGitHub, imageShowcase } = projectsPersonalReact[0]
 
+  // TODO: use 'ProjectPageLayoutWrapper'
   return (
-    <>
-      <ProjectPageLayout
-        breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.cryptoMania, TEXT.cryptoMania)}
-        pageID={PAGES_URL.personal.cryptoMania}
-        title={title}
-        role={role}
-        goBackLink={GoBackLinkEnum.Personal}
-        sectionID={ID.section.react}
-        description={description}
-        skillsOverview={skillsOverview}
-        projectLinks={projectLinks}
-        linkGitHub={linkGitHub}
-        sections={sections}
-        imageShowcase={imageShowcase}
-        PageNavigation={
-          <PageNavigation
-            linkPrevious={PAGES_URL.personal.krsiak}
-            namePrevious={TEXT.portfolioWebsite}
-            dataTestIdPrevious={DATA_TEST_IDS.projects.personal.cryptoMania.previous}
-          />
-        }
-      />
-    </>
+    <ProjectPageLayout
+      breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.cryptoMania, TEXT.cryptoMania)}
+      pageID={PAGES_URL.personal.cryptoMania}
+      title={title}
+      role={role}
+      goBackLink={GoBackLinkEnum.Personal}
+      sectionID={ID.section.react}
+      description={description}
+      skillsOverview={skillsOverview}
+      projectLinks={projectLinks}
+      linkGitHub={linkGitHub}
+      sections={sections}
+      imageShowcase={imageShowcase}
+      PageNavigation={
+        <PageNavigation
+          linkPrevious={PAGES_URL.personal.krsiak}
+          namePrevious={TEXT.portfolioWebsite}
+          dataTestIdPrevious={DATA_TEST_IDS.projects.personal.cryptoMania.previous}
+        />
+      }
+    />
   )
 }
 

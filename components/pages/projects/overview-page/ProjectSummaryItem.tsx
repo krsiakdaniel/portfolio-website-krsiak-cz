@@ -39,25 +39,27 @@ const ProjectSummaryItem: FC<ProjectSummaryItemProps> = ({
   className,
 }): JSX.Element => {
   return (
-    <div className="flex flex-col lg:flex-row lg:space-x-10">
-      <div className={`grid grid-cols-1 items-start gap-8 lg:mx-auto lg:grid lg:grid-cols-2 ${className}`}>
-        <ProjectImage isFeatured={isFeatured} image={image} title={title} />
+    <section>
+      <div className="flex flex-col lg:flex-row lg:space-x-10">
+        <div className={`grid grid-cols-1 items-start gap-8 lg:mx-auto lg:grid lg:grid-cols-2 ${className}`}>
+          <ProjectImage isFeatured={isFeatured} image={image} title={title} />
 
-        <div>
-          <ProjectDetails
-            title={title}
-            company={company}
-            role={role}
-            description={description}
-            customers={customers}
-            personalProjectNote={personalProjectNote}
-          />
-          <ProjectSkills mySkillsIcons={mySkillsIcons} />
+          <div>
+            <ProjectDetails
+              title={title}
+              company={company}
+              role={role}
+              description={description}
+              customers={customers}
+              personalProjectNote={personalProjectNote}
+            />
+            <ProjectSkills mySkillsIcons={mySkillsIcons} />
 
-          <ProjectLink linkText={linkText} linkProjectPage={linkProjectPage} dataTestId={dataTestId} />
+            <ProjectLink linkText={linkText} linkProjectPage={linkProjectPage} dataTestId={dataTestId} />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
