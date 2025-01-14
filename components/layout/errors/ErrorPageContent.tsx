@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { FC } from 'react'
 
 import Heading1 from '@/components/shared/Heading1'
+import Heading2 from '@/components/shared/Heading2'
+import Paragraph from '@/components/shared/Paragraph'
 
 type ErrorPageContentProps = {
   imgSrc: StaticImageData
@@ -33,8 +35,8 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
           {heading}
         </Heading1>
       </div>
-      <p className="mt-4 text-3xl font-bold tracking-tight text-neutral-900 md:text-4xl">{description}</p>
-      <p className="mt-2 text-lg font-light text-neutral-600">{note}</p>
+      <Heading2>{description}</Heading2>
+      <Paragraph>{note}</Paragraph>
       {buttonText && buttonLink && (
         <Link
           href={buttonLink}

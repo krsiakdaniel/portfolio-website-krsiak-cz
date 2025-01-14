@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import SkillsIconGroup from '@/components/pages/home/skills/SkillsIconGroup'
 import DividerWithText from '@/components/shared/DividerWithText'
+import Paragraph from '@/components/shared/Paragraph'
 
 import {
   iconsDesignTools,
@@ -29,9 +30,13 @@ const Skills: FC = (): JSX.Element => {
         </div>
       </div>
       <div className="mt-4 flex flex-col items-center">
-        <p className="text-body-sm w-[300px] text-center italic text-neutral-500 md:w-[600px] lg:w-full">
+        <Paragraph
+          textColor="text-neutral-500"
+          size="text-md"
+          customCss="w-[300px] text-center italic md:w-[600px] lg:w-full"
+        >
           {TEXT.skillsIconsNames}
-        </p>
+        </Paragraph>
       </div>
     </div>
   )

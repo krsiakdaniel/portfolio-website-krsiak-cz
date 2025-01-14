@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import Heading5 from '@/components/shared/Heading5'
 import Highlight from '@/components/shared/Highlight'
+import Paragraph from '@/components/shared/Paragraph'
 
 type ExperienceCardProps = {
   company: string
@@ -17,7 +18,9 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ company, role, description })
         {' · '}
         <Highlight text={role} />
       </Heading5>
-      <p className="text-neutral-500">{description}</p>
+      <Paragraph marginTop="mt-0" textColor="text-neutral-500">
+        {description}
+      </Paragraph>
     </div>
   )
 }

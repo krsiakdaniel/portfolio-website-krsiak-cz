@@ -4,6 +4,7 @@ import { FC } from 'react'
 import PageContainer from '@/components/layout/PageContainer'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading1 from '@/components/shared/Heading1'
+import Paragraph from '@/components/shared/Paragraph'
 
 import { metaDataStatusPage } from '@/lib/data/metadata/pages/metaDataStatusPage'
 import { statusBadges } from '@/lib/data/pages/status-page'
@@ -25,9 +26,9 @@ const StatusPage: FC = (): JSX.Element => {
 
       <div className="mt-10">
         <Heading1>{TEXT.statusPage}</Heading1>
-        <p className="mt-4 text-lg text-neutral-600">
+        <Paragraph>
           Current statuses for key integrations, showcasing the health and performance of the project.
-        </p>
+        </Paragraph>
 
         <div className="mt-8" data-testid={DATA_TEST_IDS.footer.statusBadges}>
           {statusBadges.map((item) => (

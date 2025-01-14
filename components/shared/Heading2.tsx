@@ -1,5 +1,7 @@
 import { FC, ReactNode } from 'react'
 
+import { getDataTestIdAttribute } from '@/lib/utils/helpers/getDataTestIdAttribute'
+
 type Heading2Props = {
   children: ReactNode
   dataTestId?: string
@@ -15,7 +17,7 @@ const Heading2: FC<Heading2Props> = ({
 }): JSX.Element => {
   return (
     <h2
-      {...(dataTestId && { 'data-testid': dataTestId })}
+      {...getDataTestIdAttribute(dataTestId)}
       className={`text-4xl font-bold tracking-tight ${textColor} ${customCss}`}
     >
       {children}

@@ -1,6 +1,7 @@
 import { FC } from 'react'
 
 import Heading2 from '@/components/shared/Heading2'
+import Paragraph from '@/components/shared/Paragraph'
 
 import { TEXT } from '@/localization/english'
 
@@ -12,12 +13,12 @@ const MyMindset: FC = (): JSX.Element => {
       <Heading2>{TEXT.myMindset}</Heading2>
       {mindset.map((skill) => (
         <div className="mt-8" key={skill.id}>
-          <p className="mt-4 text-lg text-neutral-600">
+          <Paragraph>
             <span className="font-bold">
               <span className="text-violet-600">{skill.order}.</span> {skill.title}
             </span>
-          </p>
-          <p className="mt-2 text-lg text-neutral-600">{skill.description}</p>
+          </Paragraph>
+          <Paragraph marginTop="mt-2">{skill.description}</Paragraph>
         </div>
       ))}
     </div>

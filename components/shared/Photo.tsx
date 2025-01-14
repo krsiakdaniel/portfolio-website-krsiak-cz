@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
+import Paragraph from './Paragraph'
+
 import { TEXT } from '@/localization/english'
 
 import krsiak from '@/public/images/webp/photo/krsiak-daniel-296x296.webp'
@@ -15,8 +17,10 @@ const Photo: FC = (): JSX.Element => {
         placeholder="blur"
         loading="eager"
       />
-      <div className="mt-2">
-        <p className="text-sm text-gray-500">{TEXT.nameDanielKrsiak}</p>
+      <div>
+        <Paragraph marginTop="mt-2" size="text-sm" textColor="text-neutral-500">
+          {TEXT.nameDanielKrsiak}
+        </Paragraph>
       </div>
     </div>
   )
