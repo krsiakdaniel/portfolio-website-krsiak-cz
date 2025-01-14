@@ -37,7 +37,6 @@ const PageNavigation: FC<PageNavigationProps> = ({
               text={namePrevious}
               direction={NavigationDirectionEnum.Left}
               dataTestId={dataTestIdPrevious}
-              justify="start"
             />
           ) : (
             <DefaultNoLinkNavigation arrowDirection={NavigationDirectionEnum.Left} />
@@ -48,7 +47,6 @@ const PageNavigation: FC<PageNavigationProps> = ({
               text={nameNext}
               direction={NavigationDirectionEnum.Right}
               dataTestId={dataTestIdNext}
-              justify="end"
             />
           ) : (
             <DefaultNoLinkNavigation arrowDirection={NavigationDirectionEnum.Right} />
