@@ -3,7 +3,6 @@ import { FC } from 'react'
 const Smartlook: FC = (): JSX.Element => {
   return (
     <script
-      type="text/javascript"
       dangerouslySetInnerHTML={{
         __html: `
           window.smartlook||(function(d) {

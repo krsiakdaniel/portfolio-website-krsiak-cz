@@ -47,33 +47,35 @@ const ProjectPageLayout: FC<ProjectPageLayoutProps> = ({
 }): JSX.Element => {
   return (
     <PageContainer id={pageID}>
-      <BreadCrumbs
-        level1Url={breadCrumbs.level1Url}
-        level1Text={breadCrumbs.level1Text}
-        level2Url={breadCrumbs.level2Url}
-        level2Text={breadCrumbs.level2Text}
-      />
-      <HeaderSection
-        title={title}
-        role={role}
-        years={years}
-        company={company}
-        goBackLink={goBackLink}
-        sectionID={sectionID}
-      />
-      <ProjectInformation
-        description={description}
-        skillsOverview={skillsOverview}
-        customers={customers}
-        projectLinks={projectLinks}
-        linkGitHub={linkGitHub}
-      />
-      <ProjectResponsibility sections={sections} />
-      <Gallery imageShowcase={imageShowcase} />
+      <article>
+        <BreadCrumbs
+          level1Url={breadCrumbs.level1Url}
+          level1Text={breadCrumbs.level1Text}
+          level2Url={breadCrumbs.level2Url}
+          level2Text={breadCrumbs.level2Text}
+        />
+        <HeaderSection
+          title={title}
+          role={role}
+          years={years}
+          company={company}
+          goBackLink={goBackLink}
+          sectionID={sectionID}
+        />
+        <ProjectInformation
+          description={description}
+          skillsOverview={skillsOverview}
+          customers={customers}
+          projectLinks={projectLinks}
+          linkGitHub={linkGitHub}
+        />
+        <ProjectResponsibility sections={sections} />
+        <Gallery imageShowcase={imageShowcase} />
 
-      <CallToActionResume />
+        <CallToActionResume />
 
-      {PageNavigation}
+        {PageNavigation}
+      </article>
     </PageContainer>
   )
 }

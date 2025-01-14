@@ -7,7 +7,7 @@ import Heading2 from '@/components/shared/Heading2'
 
 import { TEXT } from '@/localization/english'
 
-import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
+import { getGoBackLinkID } from '@/lib/utils/helpers/page-navigation/getGoBackLink'
 import { HeaderSectionProps } from '@/lib/utils/interfaces/componentProps'
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 

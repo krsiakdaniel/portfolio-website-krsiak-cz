@@ -4,7 +4,7 @@ import { META_KOMERCNI_BANKA, TEXT } from '@/localization/english'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import komercniBankaOG from '@/public/images/png/open-graph/pages/work-experience/komercni-banka-og.png'
 import komercniBankaTwitter from '@/public/images/png/open-graph/pages/work-experience/komercni-banka-twitter.png'
@@ -12,7 +12,7 @@ import komercniBankaTwitter from '@/public/images/png/open-graph/pages/work-expe
 export const metaDataKomercniBanka: Metadata = {
   title: META_KOMERCNI_BANKA.title,
   description: META_KOMERCNI_BANKA.description,
-  keywords: getKeywordsString(META_KOMERCNI_BANKA.keywords),
+  keywords: formatKeywordsString(META_KOMERCNI_BANKA.keywords),
   openGraph: {
     title: META_KOMERCNI_BANKA.title,
     description: META_KOMERCNI_BANKA.description,

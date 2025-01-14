@@ -12,7 +12,7 @@ type TestimonialProps = {
 
 const Testimonial: FC<TestimonialProps> = ({ personName, personJob, personPhoto, testimonialText }): JSX.Element => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <div className="bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
         <figure className="mx-auto max-w-screen-md">
           <Image src={quote} width={40} height={40} alt="icon-quote" />
@@ -36,7 +36,7 @@ const Testimonial: FC<TestimonialProps> = ({ personName, personJob, personPhoto,
           </figcaption>
         </figure>
       </div>
-    </section>
+    </div>
   )
 }
 

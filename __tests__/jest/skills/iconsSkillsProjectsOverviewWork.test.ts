@@ -8,7 +8,7 @@ import {
   iconsSkillsProjectsWorkSmartsuppWeb,
 } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
-import { getSkillsIcons } from '@/lib/utils/helpers/getSkillsIcons'
+import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
 
 describe('iconsSkillsProjectsWork', () => {
   it('should return the correct icons for Smartsupp Dashboard project', () => {

@@ -1,4 +1,4 @@
-import { getSkillsIcons } from '@/lib/utils/helpers/getSkillsIcons'
+import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
 
 export const iconsSkillsProjectsWorkSmartsuppDashboard = getSkillsIcons([
   'javascript',

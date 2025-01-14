@@ -3,7 +3,7 @@ import {
   iconsSkillsProjectsPersonalKrsiak,
 } from '@/lib/data/pages/projects/personal/projects-overview/skillsProjectsPersonal'
 
-import { getSkillsIcons } from '@/lib/utils/helpers/getSkillsIcons'
+import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
 
 describe('iconsSkillsProjectsPersonal', () => {
   it('should return the correct icons for Krsiak project', () => {

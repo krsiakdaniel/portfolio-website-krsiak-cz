@@ -4,7 +4,7 @@ import CareerPathList from '@/components/pages/resume/CareerPathList'
 
 const CareerPath: FC = (): JSX.Element => {
   return (
-    <section>
+    <div>
       <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">My Career Path</div>
       <div>
         <p className="mt-4 text-lg text-neutral-600">
@@ -12,7 +12,7 @@ const CareerPath: FC = (): JSX.Element => {
         </p>
       </div>
       <CareerPathList />
-    </section>
+    </div>
   )
 }
 

@@ -4,7 +4,7 @@ import { META_PROJECTS_OVERVIEW_WORK, TEXT } from '@/localization/english'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import workExperienceOG from '@/public/images/png/open-graph/pages/work-experience/overview-page/work-experience-og.png'
 import workExperienceTwitter from '@/public/images/png/open-graph/pages/work-experience/overview-page/work-experience-twitter.png'
@@ -12,7 +12,7 @@ import workExperienceTwitter from '@/public/images/png/open-graph/pages/work-exp
 export const metaDataWorkExperience: Metadata = {
   title: META_PROJECTS_OVERVIEW_WORK.title,
   description: META_PROJECTS_OVERVIEW_WORK.description,
-  keywords: getKeywordsString(META_PROJECTS_OVERVIEW_WORK.keywords),
+  keywords: formatKeywordsString(META_PROJECTS_OVERVIEW_WORK.keywords),
   openGraph: {
     title: META_PROJECTS_OVERVIEW_WORK.title,
     description: META_PROJECTS_OVERVIEW_WORK.description,

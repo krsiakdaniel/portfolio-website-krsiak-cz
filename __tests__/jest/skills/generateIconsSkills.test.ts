@@ -1,4 +1,4 @@
-import { getSkillsIcons, skillIcons, SkillKeys } from '@/lib/utils/helpers/getSkillsIcons'
+import { getSkillsIcons, skillIcons, SkillKeys } from '@/lib/utils/helpers/skills/getSkillsIcons'
 
 describe('getSkillsIcons', () => {
   const expectedKeys: SkillKeys[] = [

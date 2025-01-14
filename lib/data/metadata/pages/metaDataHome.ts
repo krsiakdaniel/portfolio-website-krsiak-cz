@@ -4,7 +4,7 @@ import { COMMON_VALUES, META_HOME, TEXT } from '@/localization/english'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import homeOG from '@/public/images/png/open-graph/pages/home/home-og.png'
 import homeTwitter from '@/public/images/png/open-graph/pages/home/home-twitter.png'
@@ -12,7 +12,7 @@ import homeTwitter from '@/public/images/png/open-graph/pages/home/home-twitter.
 export const metaDataHome: Metadata = {
   title: META_HOME.title,
   description: META_HOME.description,
-  keywords: getKeywordsString(META_HOME.keywords),
+  keywords: formatKeywordsString(META_HOME.keywords),
   openGraph: {
     title: `${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
     description: `I am ${COMMON_VALUES.reactDeveloper} based in ${COMMON_VALUES.czechRepublic}. I specialize in ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, and ${COMMON_VALUES.next}. With 6 years of experience creating modern web applications, I focus on delivering high-quality, scalable, and reliable code.`,

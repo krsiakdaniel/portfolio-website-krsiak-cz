@@ -9,19 +9,19 @@ const FooterContent: FC = (): JSX.Element => {
   return (
     <div className="mx-auto flex w-full flex-col items-center pb-16">
       <div className="flex flex-col">
-        <section className="mt-16">
+        <div className="mt-16">
           <FooterSocialLinks />
-        </section>
+        </div>
 
-        <section className="mt-16 flex justify-center">
+        <div className="mt-16 flex justify-center">
           <ScanMyContactQR showDivider />
-        </section>
+        </div>
       </div>
 
-      <section>
+      <div>
         <FooterStatusAndScroll />
         <FooterCopyright />
-      </section>
+      </div>
     </div>
   )
 }
