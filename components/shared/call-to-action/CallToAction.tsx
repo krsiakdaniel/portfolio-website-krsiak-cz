@@ -3,6 +3,7 @@ import { FC } from 'react'
 import IconArrow from '@/components/icons/IconArrow'
 import Heading2 from '@/components/shared/Heading2'
 import Highlight from '@/components/shared/Highlight'
+import Paragraph from '@/components/shared/Paragraph'
 
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
@@ -37,7 +38,10 @@ const CallToAction: FC<CallToActionProps> = ({
             <Highlight text={highlight} />
           </div>
           <Heading2 textColor="text-neutral-900">{heading}</Heading2>
-          <p className="mt-3 text-xl tracking-tight text-neutral-900">{description}</p>
+          <Paragraph marginTop="mt-2" size="text-xl" textColor="text-neutral-900" customCss="tracking-tight">
+            {description}
+          </Paragraph>
+
           <div className="mt-8">
             <a
               href={link}

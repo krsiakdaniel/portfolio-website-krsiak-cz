@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import Heading2 from '@/components/shared/Heading2'
 import Heading3 from '@/components/shared/Heading3'
+import Paragraph from '@/components/shared/Paragraph'
 
 type ProjectDetailsProps = {
   title: string
@@ -21,13 +22,15 @@ const ProjectDetails: FC<ProjectDetailsProps> = ({
   personalProjectNote,
 }): JSX.Element => {
   return (
-    <div>
+    <div className="sm:max-w-[600px]">
       <Heading2 textColor="text-neutral-900">{title}</Heading2>
-      <Heading3>
-        <span className="text-violet-600">{role}</span>
-      </Heading3>
-      <div className="mt-0 text-xl font-semibold text-neutral-500">{company}</div>
-      <p className="mt-8 font-light text-neutral-600 sm:max-w-[600px] md:text-lg">{description}</p>
+      <Heading3 textColor="text-violet-600">{role}</Heading3>
+      <Paragraph marginTop="mt-0" size="text-xl" textColor="text-neutral-500" customCss="font-semibold">
+        {company}
+      </Paragraph>
+      <Paragraph marginTop="mt-8" textColor="text-neutral-500">
+        {description}
+      </Paragraph>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import ResumePlainTextLink from '@/components/pages/resume/ResumePlainTextLink'
 import ResumePlainTextPage from '@/components/pages/resume/ResumePlainTextPage'
+import Paragraph from '@/components/shared/Paragraph'
 
 import {
   resumePlainTextPage1,
@@ -13,9 +14,9 @@ const ResumePlainText: FC = (): JSX.Element => (
   <>
     <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Resume In Plain Text</div>
     <div>
-      <p className="mt-4 text-lg text-neutral-600">
+      <Paragraph>
         Read more about my professional experience. Or <ResumePlainTextLink /> 😉
-      </p>
+      </Paragraph>
     </div>
 
     <div>

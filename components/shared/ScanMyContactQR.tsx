@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { FC } from 'react'
 
 import DividerWithText from '@/components/shared/DividerWithText'
+import Paragraph from '@/components/shared/Paragraph'
 
 import { DIVIDER_WITH_TEXT } from '@/localization/english'
 
@@ -34,8 +35,10 @@ const ScanMyContactQR: FC<ScanMyContactQRProps> = ({
         className="rounded-lg bg-violet-100 p-1 ring-1 ring-violet-300"
       />
       {showNote && (
-        <div className="mt-2 self-start">
-          <p className="text-sm text-gray-500">Scan Contact</p>
+        <div className="self-start">
+          <Paragraph marginTop="mt-2" size="text-sm" textColor="text-neutral-500">
+            Scan Contact
+          </Paragraph>
         </div>
       )}
     </div>

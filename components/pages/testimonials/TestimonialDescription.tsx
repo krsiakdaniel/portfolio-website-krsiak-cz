@@ -1,11 +1,13 @@
 import { FC } from 'react'
 
+import Paragraph from '@/components/shared/Paragraph'
+
 interface TestimonialDescriptionProps {
   description: string
 }
 
 const TestimonialDescription: FC<TestimonialDescriptionProps> = ({ description }) => (
-  <p className="mt-4 text-lg text-neutral-600">{description}</p>
+  <Paragraph>{description}</Paragraph>
 )
 
 export default TestimonialDescription

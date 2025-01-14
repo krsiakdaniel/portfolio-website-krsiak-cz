@@ -16,20 +16,18 @@ const ProjectLinksList: FC<ProjectLinksListProps> = ({ projectLinks, linkGitHub 
     <List>
       {projectLinks &&
         projectLinks.map((link) => (
-          <div key={link.url}>
-            <ListItem>
-              <span className="leading-tight">
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-violet-600 underline hover:no-underline"
-                >
-                  {link.urlText}
-                </a>
-              </span>
-            </ListItem>
-          </div>
+          <ListItem key={link.url}>
+            <span className="leading-tight">
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-violet-600 underline hover:no-underline"
+              >
+                {link.urlText}
+              </a>
+            </span>
+          </ListItem>
         ))}
 
       {linkGitHub && <GitHubRepositoryLink link={linkGitHub} />}

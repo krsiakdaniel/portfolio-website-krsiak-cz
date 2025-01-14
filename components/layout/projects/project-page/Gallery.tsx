@@ -7,6 +7,7 @@ import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import Paragraph from '@/components/shared/Paragraph'
 import { ImageShowcaseItem } from '@/lib/utils/interfaces/interfaces'
 
 type GalleryProps = {
@@ -17,7 +18,7 @@ const Gallery: FC<GalleryProps> = ({ imageShowcase }): JSX.Element => {
   return (
     <div className="mt-8">
       <Heading3>{TEXT.gallery}</Heading3>
-      <p className="mt-4 text-neutral-600">See project screenshots below.</p>
+      <Paragraph>See project screenshots below.</Paragraph>
       <div data-testid={DATA_TEST_IDS.gallery}>
         {imageShowcase.map((image) => (
           <div data-testid={`gallery-image-${image.id}`} key={image.id}>

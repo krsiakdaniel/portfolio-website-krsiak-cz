@@ -1,14 +1,16 @@
 import { FC } from 'react'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import Paragraph from '@/components/shared/Paragraph'
 
 import { TEXT } from '@/localization/english'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
 const HeroParagraph: FC = (): JSX.Element => {
   return (
-    <p data-testid={DATA_TEST_IDS.hero.paragraph} className="mt-4 text-center text-lg font-semibold text-neutral-600">
+    <Paragraph dataTestId={DATA_TEST_IDS.hero.paragraph} customCss="text-center font-semibold">
       {TEXT.heroText}
-    </p>
+    </Paragraph>
   )
 }
 

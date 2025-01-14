@@ -24,7 +24,7 @@ const Menu: FC<MenuProps> = ({ isMobile }): JSX.Element => {
           <li key={link.id}>
             <Link
               href={link.href}
-              className={`font-bold text-neutral-700 hover:text-violet-600 ${getMenuLinkCSS(isMobile)}`}
+              className={`font-bold text-neutral-600 hover:text-violet-600 ${getMenuLinkCSS(isMobile)}`}
               data-testid={isMobile ? `mobile-${link.testId}` : `desktop-${link.testId}`}
               id={getMenuLinkID({
                 isMobile: isMobile,

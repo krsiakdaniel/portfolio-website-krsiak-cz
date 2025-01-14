@@ -27,6 +27,7 @@ type ProjectProps = Pick<Project, 'description' | 'skillsOverview' | 'customers'
 
 type ProjectPageLayoutProps = BreadCrumbsProps & HeaderSectionProps & ProjectProps & PageProps
 
+// TODO: merge ProjectPageLayout + ProjectPageLayoutWrapper
 const ProjectPageLayout: FC<ProjectPageLayoutProps> = ({
   breadCrumbs,
   pageID,

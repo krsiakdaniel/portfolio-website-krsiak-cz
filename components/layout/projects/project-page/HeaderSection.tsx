@@ -21,14 +21,14 @@ const HeaderSection: FC<HeaderSectionProps> = ({ title, role, years, company, go
           {years && <small className="text-md text-neutral-500">{` · ${years} · ${company}`}</small>}
         </Heading2>
       </div>
-      <p className="mt-4">
+      <div className="mt-4">
         <Link
           href={getGoBackLinkID(goBackLink, sectionID)}
           className="inline-flex items-center text-neutral-500 hover:text-neutral-700"
         >
           <IconArrow direction={NavigationDirectionEnum.Left} /> {TEXT.goBack}
         </Link>
-      </p>
+      </div>
     </div>
   )
 }
