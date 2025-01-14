@@ -1,5 +1,7 @@
 import { FC, ReactNode } from 'react'
 
+import { getDataTestIdAttribute } from '@/lib/utils/helpers/getDataTestIdAttribute'
+
 type ParagraphProps = {
   marginTop?: 'mt-0' | 'mt-2' | 'mt-4' | 'mt-8' | 'mt-16'
   size?: 'text-sm' | 'text-md' | 'text-lg' | 'text-xl' | 'text-2xl'
@@ -17,10 +19,8 @@ const Paragraph: FC<ParagraphProps> = ({
   dataTestId = '',
   children,
 }) => {
-  const dataTestIdAttr = dataTestId && { 'data-testid': dataTestId }
-
   return (
-    <p className={`${marginTop} ${size} ${textColor} ${customCss}`} {...dataTestIdAttr}>
+    <p className={`${marginTop} ${size} ${textColor} ${customCss}`} {...getDataTestIdAttribute(dataTestId)}>
       {children}
     </p>
   )
