@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
-import ProjectPageLayout from '@/components/layout/projects/ProjectPageLayout'
+import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
 
 import { metaDataCryptomania } from '@/lib/data/metadata/pages/projects/personal/metaDataCryptomania'
 import { sections } from '@/lib/data/pages/projects/personal/cryptoMania'
@@ -21,31 +21,24 @@ export const metadata = {
 }
 
 const ProjectPersonalCryptomania: FC = (): JSX.Element => {
-  const { title, role, description, skillsOverview, projectLinks, linkGitHub, imageShowcase } = projectsPersonalReact[0]
-
-  // TODO: use 'ProjectPageLayoutWrapper'
   return (
-    <ProjectPageLayout
-      breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.cryptoMania, TEXT.cryptoMania)}
-      pageID={PAGES_URL.personal.cryptoMania}
-      title={title}
-      role={role}
-      goBackLink={GoBackLinkEnum.Personal}
-      sectionID={ID.section.react}
-      description={description}
-      skillsOverview={skillsOverview}
-      projectLinks={projectLinks}
-      linkGitHub={linkGitHub}
-      sections={sections}
-      imageShowcase={imageShowcase}
-      PageNavigation={
-        <PageNavigation
-          linkPrevious={PAGES_URL.personal.krsiak}
-          namePrevious={TEXT.portfolioWebsite}
-          dataTestIdPrevious={DATA_TEST_IDS.projects.personal.cryptoMania.previous}
-        />
-      }
-    />
+    <>
+      <ProjectPageLayoutWrapper
+        breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.cryptoMania, TEXT.cryptoMania)}
+        pageID={PAGES_URL.personal.cryptoMania}
+        goBackLink={GoBackLinkEnum.Personal}
+        sectionID={ID.section.react}
+        projectData={projectsPersonalReact[0]}
+        sections={sections}
+        PageNavigation={
+          <PageNavigation
+            linkPrevious={PAGES_URL.personal.krsiak}
+            namePrevious={TEXT.portfolioWebsite}
+            dataTestIdPrevious={DATA_TEST_IDS.projects.personal.cryptoMania.previous}
+          />
+        }
+      />
+    </>
   )
 }
 

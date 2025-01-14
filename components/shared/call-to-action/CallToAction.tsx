@@ -5,6 +5,7 @@ import Heading2 from '@/components/shared/Heading2'
 import Highlight from '@/components/shared/Highlight'
 
 import IconExternalLink from '@/components/icons/IconExternalLink'
+
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 
 interface CallToActionProps {

@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
-import ProjectPageLayout from '@/components/layout/projects/ProjectPageLayout'
+import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
 
 import { metaDataKrsiak } from '@/lib/data/metadata/pages/projects/personal/metaDataKrsiak'
 import { sections } from '@/lib/data/pages/projects/personal/krsiak'
@@ -20,24 +20,16 @@ export const metadata = {
   ...metaDataKrsiak,
 }
 
+// FIXME: fix all pages with 'pageID={PAGES_URL.' using correct ID format from file
 const ProjectPersonalKrsiak: FC = (): JSX.Element => {
-  const { title, role, description, skillsOverview, projectLinks, linkGitHub, imageShowcase } = projectsPersonalNext[0]
-
-  // TODO: use 'ProjectPageLayoutWrapper'
   return (
-    <ProjectPageLayout
+    <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.krsiak, TEXT.portfolioWebsite)}
       pageID={PAGES_URL.personal.krsiak}
-      title={title}
-      role={role}
       goBackLink={GoBackLinkEnum.Personal}
       sectionID={ID.section.next}
-      description={description}
-      skillsOverview={skillsOverview}
-      projectLinks={projectLinks}
-      linkGitHub={linkGitHub}
+      projectData={projectsPersonalNext[0]}
       sections={sections}
-      imageShowcase={imageShowcase}
       PageNavigation={
         <PageNavigation
           linkPrevious={PAGES_URL.personal.mainUrl}

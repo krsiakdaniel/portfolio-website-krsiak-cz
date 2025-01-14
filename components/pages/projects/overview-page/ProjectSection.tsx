@@ -11,6 +11,7 @@ type ProjectSectionProps = {
   sectionText: string
 }
 
+// TODO: better naming for components
 const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, sectionText }): JSX.Element => {
   return (
     <>

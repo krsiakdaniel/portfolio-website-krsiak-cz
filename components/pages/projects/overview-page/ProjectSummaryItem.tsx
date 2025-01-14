@@ -23,6 +23,7 @@ type ProjectSummaryItemProps = {
   className: string
 }
 
+// TODO: better naming for components
 const ProjectSummaryItem: FC<ProjectSummaryItemProps> = ({
   isFeatured,
   image,
