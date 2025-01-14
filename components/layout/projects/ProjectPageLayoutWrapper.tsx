@@ -25,8 +25,18 @@ const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
   sections,
   PageNavigation,
 }): JSX.Element => {
-  const { title, role, years, company, description, skillsOverview, customers, projectLinks, imageShowcase } =
-    projectData
+  const {
+    title,
+    role,
+    years,
+    company,
+    description,
+    skillsOverview,
+    customers,
+    projectLinks,
+    linkGitHub,
+    imageShowcase,
+  } = projectData
 
   return (
     <ProjectPageLayout
@@ -42,6 +52,7 @@ const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
       skillsOverview={skillsOverview}
       customers={customers}
       projectLinks={projectLinks}
+      linkGitHub={linkGitHub}
       sections={sections}
       imageShowcase={imageShowcase}
       PageNavigation={PageNavigation}

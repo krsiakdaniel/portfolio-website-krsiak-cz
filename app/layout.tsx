@@ -40,12 +40,8 @@ const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element =>
       </head>
       <body className={inter.className}>
         <Header />
-        <div>
-          <main>{children}</main>
-        </div>
+        <main>{children}</main>
         <Footer />
-
-        {/* Scripts */}
         <GoogleAnalytics />
         <Smartlook />
       </body>

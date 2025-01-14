@@ -1,4 +1,4 @@
-import { getUrlPersonalProject, getUrlWorkExperience } from '@/lib/utils/helpers/getPageUrls'
+import { getUrlPersonalProject, getUrlWorkExperience } from '@/lib/utils/helpers/urls/getPageUrls'
 
 export const PAGES_URL = {
   websiteProduction: 'https://krsiak.cz',

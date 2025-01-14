@@ -3,14 +3,17 @@ import { FC } from 'react'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
-import ExperienceCard from '@/components/pages/projects/other-experience/ExperienceCard'
+import OtherExperienceContent from '@/components/pages/projects/other-experience/OtherExperienceContent'
 import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
 import WorkExperienceIntroduction from '@/components/pages/work-experience/WorkExperienceIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionResume from '@/components/shared/call-to-action/CallToActionResume'
-import Heading4 from '@/components/shared/Heading4'
 
 import { metaDataWorkExperience } from '@/lib/data/metadata/pages/projects/metaDataWorkExperience'
+import { otherExperienceFrontEnd } from '@/lib/data/pages/projects/work/other-experience/otherExperienceFrontEnd'
+import { otherExperienceLocalization } from '@/lib/data/pages/projects/work/other-experience/otherExperienceLocalization'
+import { otherExperienceQA } from '@/lib/data/pages/projects/work/other-experience/otherExperienceQA'
+import { otherExperienceWordPress } from '@/lib/data/pages/projects/work/other-experience/otherExperienceWordPress'
 import { projectsWorkFrontEnd } from '@/lib/data/pages/projects/work/projects-overview/front-end/workFrontEnd'
 import { projectsWorkLocalization } from '@/lib/data/pages/projects/work/projects-overview/localization/workLocalization'
 import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview/quality-assurance/workQA'
@@ -22,7 +25,6 @@ import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { MONTHS, YEARS } from '@/lib/utils/constants/yearsExperience'
 
 export const metadata = {
   ...metaDataWorkExperience,
@@ -42,46 +44,15 @@ const ProjectsWork: FC = (): JSX.Element => {
 
         {/* FRONT END */}
         <ProjectSection sectionId={ID.section.frontEnd} sectionText="Front End" projectData={projectsWorkFrontEnd} />
-        <Heading4>{TEXT.otherExperience}</Heading4>
-        <div className="mt-4">
-          <ExperienceCard
-            company="Freelance"
-            role="Web Developer / Consultant"
-            description={`${YEARS.consultantWebsites} years · part-time — I used to create websites for small companies.`}
-          />
-          <ExperienceCard
-            company="Freelance"
-            role="Web Developer"
-            description={`${YEARS.webCoder} year — First web company job coding website layouts.`}
-          />
-        </div>
+        <OtherExperienceContent experience={otherExperienceFrontEnd} />
 
         {/* WORDPRESS */}
         <ProjectSection sectionId={ID.section.wordpress} sectionText="WordPress" projectData={projectsWorkWordPress} />
-        <Heading4>{TEXT.otherExperience}</Heading4>
-        <div className="mt-4">
-          <ExperienceCard
-            company="Freelance"
-            role="WordPress Developer / Consultant"
-            description={`${YEARS.consultantWordPress} years · part-time — I used to create websites for small companies.`}
-          />
-        </div>
+        <OtherExperienceContent experience={otherExperienceWordPress} />
 
         {/* QA */}
         <ProjectSection sectionId={ID.section.qa} sectionText="QA Automation & Testing" projectData={projectsWorkQA} />
-        <Heading4>{TEXT.otherExperience}</Heading4>
-        <div className="mt-4">
-          <ExperienceCard
-            company="Smartsupp"
-            role="QA Automation - Team Leader"
-            description={`${MONTHS.qaTeamLeaderAtSmartsupp} months — Set up Cypress E2E testing for SaaS company.`}
-          />
-          <ExperienceCard
-            company="RWS - Moravia IT"
-            role="Localization - Tester"
-            description={`${YEARS.localizationTester} years — Testing Windows 7 + Windows Store layouts.`}
-          />
-        </div>
+        <OtherExperienceContent experience={otherExperienceQA} />
 
         {/* LOCALIZATION */}
         <ProjectSection
@@ -89,14 +60,7 @@ const ProjectsWork: FC = (): JSX.Element => {
           sectionText="Localization"
           projectData={projectsWorkLocalization}
         />
-        <Heading4>{TEXT.otherExperience}</Heading4>
-        <div className="mt-4">
-          <ExperienceCard
-            company="Smartsupp"
-            role="Localization - Manager"
-            description={`${YEARS.localizationManager} years — Company website localization. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱`}
-          />
-        </div>
+        <OtherExperienceContent experience={otherExperienceLocalization} />
 
         {/* CTA */}
         <CallToActionResume />

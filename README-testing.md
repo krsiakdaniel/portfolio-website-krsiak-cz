@@ -26,6 +26,10 @@ Runs the unit tests.
 npm run test
 ```
 
+Expected result after running tests.
+
+![jest](/readme-images/development/testing/jest-passing.png)
+
 ### Test Coverage for Jest
 
 Jest will generate a code coverage report.
@@ -47,14 +51,12 @@ Playwright is library for browser automation E2E testing.
 Runs the E2E tests.
 
 ```bash
-npx playwright test
-```
-
-Runs the E2E tests using alias for `npx playwright test`
-
-```bash
 npm run test:e2e
 ```
+
+Expected result after running tests.
+
+![playwright](/readme-images/development/testing/e2e-playwright-passing.png)
 
 ### Test Coverage for Playwright
 

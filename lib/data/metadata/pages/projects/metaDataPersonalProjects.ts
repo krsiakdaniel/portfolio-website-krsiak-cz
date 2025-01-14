@@ -4,7 +4,7 @@ import { META_PROJECTS_OVERVIEW_PERSONAL, TEXT } from '@/localization/english'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import personalProjectsOverviewOG from '@/public/images/png/open-graph/pages/personal-projects/overview-page/personal-projects-og.png'
 import personalProjectsOverviewTwitter from '@/public/images/png/open-graph/pages/personal-projects/overview-page/personal-projects-twitter.png'
@@ -12,7 +12,7 @@ import personalProjectsOverviewTwitter from '@/public/images/png/open-graph/page
 export const metaDataPersonalProjects: Metadata = {
   title: META_PROJECTS_OVERVIEW_PERSONAL.title,
   description: META_PROJECTS_OVERVIEW_PERSONAL.description,
-  keywords: getKeywordsString(META_PROJECTS_OVERVIEW_PERSONAL.keywords),
+  keywords: formatKeywordsString(META_PROJECTS_OVERVIEW_PERSONAL.keywords),
   openGraph: {
     title: META_PROJECTS_OVERVIEW_PERSONAL.title,
     description: META_PROJECTS_OVERVIEW_PERSONAL.description,

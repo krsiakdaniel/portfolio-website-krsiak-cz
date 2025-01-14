@@ -4,7 +4,7 @@ import { META_MORAVIA, TEXT } from '@/localization/english'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import moraviaOG from '@/public/images/png/open-graph/pages/work-experience/moravia-og.png'
 import moraviaTwitter from '@/public/images/png/open-graph/pages/work-experience/moravia-twitter.png'
@@ -12,7 +12,7 @@ import moraviaTwitter from '@/public/images/png/open-graph/pages/work-experience
 export const metaDataMoravia: Metadata = {
   title: META_MORAVIA.title,
   description: META_MORAVIA.description,
-  keywords: getKeywordsString(META_MORAVIA.keywords),
+  keywords: formatKeywordsString(META_MORAVIA.keywords),
   openGraph: {
     title: META_MORAVIA.title,
     description: META_MORAVIA.description,

@@ -6,12 +6,10 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { Project } from '@/lib/utils/interfaces/interfaces'
 
 // project images
-import cryptomania4 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-1-dark.webp'
+import cryptomania3 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-1-dark.webp'
 import cryptomania1 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-1-light.webp'
-import cryptomania5 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-2-dark.webp'
+import cryptomania4 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-2-dark.webp'
 import cryptomania2 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-2-light.webp'
-import cryptomania6 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-3-dark.webp'
-import cryptomania3 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-3-light.webp'
 import cryptomaniaThumb from '@/public/images/webp/projects/personal/cryptomania/cryptomania-thumb.webp'
 
 export const projectsPersonalReact: Project[] = [
@@ -24,8 +22,6 @@ export const projectsPersonalReact: Project[] = [
       { id: 1, src: cryptomania2.src },
       { id: 2, src: cryptomania3.src },
       { id: 3, src: cryptomania4.src },
-      { id: 4, src: cryptomania5.src },
-      { id: 5, src: cryptomania6.src },
     ],
     title: '💰 CryptoMania',
     company: 'Personal project',

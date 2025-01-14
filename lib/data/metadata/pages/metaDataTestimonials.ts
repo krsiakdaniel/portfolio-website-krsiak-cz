@@ -4,7 +4,7 @@ import { META_TESTIMONIALS, TEXT } from '@/localization/english'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import testimonialsOG from '@/public/images/png/open-graph/pages/testimonials/testimonials-og.png'
 import testimonialsTwitter from '@/public/images/png/open-graph/pages/testimonials/testimonials-twitter.png'
@@ -12,7 +12,7 @@ import testimonialsTwitter from '@/public/images/png/open-graph/pages/testimonia
 export const metaDataTestimonials: Metadata = {
   title: META_TESTIMONIALS.title,
   description: META_TESTIMONIALS.description,
-  keywords: getKeywordsString(META_TESTIMONIALS.keywords),
+  keywords: formatKeywordsString(META_TESTIMONIALS.keywords),
   openGraph: {
     title: META_TESTIMONIALS.title,
     description: META_TESTIMONIALS.description,

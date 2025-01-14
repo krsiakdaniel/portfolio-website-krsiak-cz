@@ -5,7 +5,6 @@ const GoogleAnalytics: FC = (): JSX.Element => {
     <>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-NC44T6F2TL"></script>
       <script
-        type="text/javascript"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];

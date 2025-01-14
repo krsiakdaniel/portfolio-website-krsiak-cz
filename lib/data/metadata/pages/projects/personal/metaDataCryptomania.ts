@@ -4,7 +4,7 @@ import { META_CRYPTOMANIA, TEXT } from '@/localization/english'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import cryptomaniaOG from '@/public/images/png/open-graph/pages/personal-projects/cryptomania-og.png'
 import cryptomaniaTwitter from '@/public/images/png/open-graph/pages/personal-projects/cryptomania-twitter.png'
@@ -12,7 +12,7 @@ import cryptomaniaTwitter from '@/public/images/png/open-graph/pages/personal-pr
 export const metaDataCryptomania: Metadata = {
   title: META_CRYPTOMANIA.title,
   description: META_CRYPTOMANIA.description,
-  keywords: getKeywordsString(META_CRYPTOMANIA.keywords),
+  keywords: formatKeywordsString(META_CRYPTOMANIA.keywords),
   openGraph: {
     title: META_CRYPTOMANIA.title,
     description: META_CRYPTOMANIA.description,

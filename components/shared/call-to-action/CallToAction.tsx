@@ -5,6 +5,7 @@ import Heading2 from '@/components/shared/Heading2'
 import Highlight from '@/components/shared/Highlight'
 
 import IconExternalLink from '@/components/icons/IconExternalLink'
+
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 
 interface CallToActionProps {
@@ -29,7 +30,7 @@ const CallToAction: FC<CallToActionProps> = ({
   icon,
 }): JSX.Element => {
   return (
-    <div className="mt-16 rounded-lg bg-blue-50 p-8 md:p-16">
+    <section className="mt-16 rounded-lg bg-blue-50 p-8 md:p-16">
       <div className="flex">
         <div className="md:w-2/3">
           <div className="mb-2 uppercase">
@@ -61,7 +62,7 @@ const CallToAction: FC<CallToActionProps> = ({
           <div className="text-9xl">{icon}</div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

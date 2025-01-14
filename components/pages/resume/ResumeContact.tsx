@@ -5,7 +5,7 @@ import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 
 const ResumeContact: FC = (): JSX.Element => {
   return (
-    <section>
+    <div>
       <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Contact Me</div>
       <p className="mt-4 text-lg text-neutral-600">Scan my contact and feel free to call me or write an email.</p>
 
@@ -13,7 +13,7 @@ const ResumeContact: FC = (): JSX.Element => {
         <ScanMyContactQR width={296} height={296} showNote />
         <Photo />
       </div>
-    </section>
+    </div>
   )
 }
 

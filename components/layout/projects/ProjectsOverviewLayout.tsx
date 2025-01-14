@@ -16,7 +16,7 @@ const ProjectsOverviewLayout: FC<ProjectsOverviewLayoutProps> = ({ heading, desc
         <div>{description}</div>
       </div>
 
-      {/* Content for 'ProjectSummaryItem.tsx' */}
+      {/* Content for 'ProjectSummaryCard.tsx' */}
       <div>{children}</div>
     </>
   )

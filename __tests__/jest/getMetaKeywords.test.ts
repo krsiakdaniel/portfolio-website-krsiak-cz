@@ -1,20 +1,20 @@
-import { getKeywordsString } from '@/lib/utils/helpers/getMetaKeywords'
+import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 import { MetaDataKeywords } from '@/lib/utils/interfaces/interfaces'
 
-describe('getKeywordsString', () => {
+describe('formatKeywordsString', () => {
   it('should convert metadata keywords object to a comma-separated string', () => {
     const metadataKeywords: MetaDataKeywords = {
       keyword1: 'typescript',
       keyword2: 'jest',
       keyword3: 'testing',
     }
-    const result = getKeywordsString(metadataKeywords)
+    const result = formatKeywordsString(metadataKeywords)
     expect(result).toBe('typescript, jest, testing')
   })
 
   it('should return an empty string if metadata keywords object is empty', () => {
     const metadataKeywords: MetaDataKeywords = {}
-    const result = getKeywordsString(metadataKeywords)
+    const result = formatKeywordsString(metadataKeywords)
     expect(result).toBe('')
   })
 
@@ -22,7 +22,7 @@ describe('getKeywordsString', () => {
     const metadataKeywords: MetaDataKeywords = {
       keyword1: 'typescript',
     }
-    const result = getKeywordsString(metadataKeywords)
+    const result = formatKeywordsString(metadataKeywords)
     expect(result).toBe('typescript')
   })
 
@@ -33,7 +33,7 @@ describe('getKeywordsString', () => {
       keyword3: 'testing',
       keyword4: 'development',
     }
-    const result = getKeywordsString(metadataKeywords)
+    const result = formatKeywordsString(metadataKeywords)
     expect(result).toBe('typescript, jest, testing, development')
   })
 
@@ -43,7 +43,7 @@ describe('getKeywordsString', () => {
       keyword2: 'unit testing',
       keyword3: 'integration testing',
     }
-    const result = getKeywordsString(metadataKeywords)
+    const result = formatKeywordsString(metadataKeywords)
     expect(result).toBe('typescript, unit testing, integration testing')
   })
 })

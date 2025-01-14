@@ -28,6 +28,7 @@ export const ID = {
     toggle: 'menu-toggle',
   },
   statusPage: 'status-page',
+  testimonials: 'testimonials',
   websiteLink: {
     resume: 'resume',
     testimonials: 'testimonials',

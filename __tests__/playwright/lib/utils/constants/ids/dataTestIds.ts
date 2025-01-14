@@ -1,6 +1,7 @@
 const NAVIGATION = {
   NEXT: 'page-navigation-next',
   PREVIOUS: 'page-navigation-previous',
+  END_OF_PAGE: 'page-navigation-previous-next',
 }
 
 const SECTIONS = {
@@ -185,4 +186,5 @@ export const DATA_TEST_IDS = {
   pagesLinks: PAGES_LINKS,
   callToAction: CALL_TO_ACTION,
   resume: RESUME,
+  navigation: NAVIGATION,
 }

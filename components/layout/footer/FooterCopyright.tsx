@@ -4,7 +4,7 @@ import { FC } from 'react'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { getCurrentYear } from '@/lib/utils/helpers/getCurrentYear'
+import { getCurrentYear } from '@/lib/utils/helpers/years/getCurrentYear'
 
 const FooterCopyright: FC = (): JSX.Element => {
   return (

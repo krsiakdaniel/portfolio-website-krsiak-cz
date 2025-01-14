@@ -1,10 +1,10 @@
 import { FC, ReactNode } from 'react'
 
 import PageContainer from '@/components/layout/PageContainer'
-import Gallery from '@/components/layout/projects/project-page-detail/Gallery'
-import HeaderSection from '@/components/layout/projects/project-page-detail/HeaderSection'
-import ProjectInformation from '@/components/layout/projects/project-page-detail/ProjectInformation'
-import ProjectResponsibility from '@/components/layout/projects/project-page-detail/ProjectResponsibility'
+import Gallery from '@/components/layout/projects/project-page/Gallery'
+import HeaderSection from '@/components/layout/projects/project-page/HeaderSection'
+import ProjectInformation from '@/components/layout/projects/project-page/ProjectInformation'
+import ProjectResponsibility from '@/components/layout/projects/project-page/ProjectResponsibility'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionResume from '@/components/shared/call-to-action/CallToActionResume'
 
@@ -61,17 +61,19 @@ const ProjectPageLayout: FC<ProjectPageLayoutProps> = ({
         goBackLink={goBackLink}
         sectionID={sectionID}
       />
-      <ProjectInformation
-        description={description}
-        skillsOverview={skillsOverview}
-        customers={customers}
-        projectLinks={projectLinks}
-        linkGitHub={linkGitHub}
-      />
-      <ProjectResponsibility sections={sections} />
-      <Gallery imageShowcase={imageShowcase} />
+      <article>
+        <ProjectInformation
+          description={description}
+          skillsOverview={skillsOverview}
+          customers={customers}
+          projectLinks={projectLinks}
+          linkGitHub={linkGitHub}
+        />
+        <ProjectResponsibility sections={sections} />
+        <Gallery imageShowcase={imageShowcase} />
 
-      <CallToActionResume />
+        <CallToActionResume />
+      </article>
 
       {PageNavigation}
     </PageContainer>

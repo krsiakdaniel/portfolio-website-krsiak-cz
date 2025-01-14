@@ -24,7 +24,7 @@ export const metadata = {
 
 const Testimonials: FC = (): JSX.Element => {
   return (
-    <PageContainer id={ID.websiteLink.testimonials}>
+    <PageContainer id={ID.testimonials}>
       <BreadCrumbs level1Url={PAGES_URL.testimonials} level1Text={TEXT.testimonials} />
 
       <div className="mt-10">

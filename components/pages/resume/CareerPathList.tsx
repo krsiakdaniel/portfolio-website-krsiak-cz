@@ -5,7 +5,7 @@ import ListItem from '@/components/shared/ListItem'
 
 import { jobs } from '@/lib/data/pages/resume'
 
-import { formatExperienceMonthsYears } from '@/lib/utils/helpers/formatExperienceMonthsYears'
+import { getYearsMonths } from '@/lib/utils/helpers/years/getYearsMonths'
 
 const CareerPathList: FC = (): JSX.Element => {
   return (
@@ -18,7 +18,7 @@ const CareerPathList: FC = (): JSX.Element => {
                 <span className="font-bold">{job.title}</span>
                 <span className="hidden sm:inline">
                   {' · '}
-                  {job.duration} {formatExperienceMonthsYears({ duration: job.duration, unit: job.unit })}
+                  {job.duration} {getYearsMonths({ duration: job.duration, unit: job.unit })}
                 </span>
               </p>
             </div>

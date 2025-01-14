@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import ExperienceSection from '@/components/pages/projects/other-experience/ExperienceSection'
-import ProjectSummaryItem from '@/components/pages/projects/overview-page/ProjectSummaryItem'
+import ProjectSummaryCard from '@/components/pages/projects/overview-page/ProjectSummaryCard'
 
 import { Project } from '@/lib/utils/interfaces/interfaces'
 
@@ -17,7 +17,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, secti
       <ExperienceSection id={sectionId} text={sectionText} />
 
       {projectData.map((item, index) => (
-        <ProjectSummaryItem
+        <ProjectSummaryCard
           key={item.id}
           isFeatured={item.isFeatured}
           image={item.image}

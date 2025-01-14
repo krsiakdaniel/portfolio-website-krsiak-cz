@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
-import ProjectPageLayout from '@/components/layout/projects/ProjectPageLayout'
+import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
 
 import { metaDataCryptomania } from '@/lib/data/metadata/pages/projects/personal/metaDataCryptomania'
 import { sections } from '@/lib/data/pages/projects/personal/cryptoMania'
@@ -11,6 +11,7 @@ import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
@@ -21,23 +22,15 @@ export const metadata = {
 }
 
 const ProjectPersonalCryptomania: FC = (): JSX.Element => {
-  const { title, role, description, skillsOverview, projectLinks, linkGitHub, imageShowcase } = projectsPersonalReact[0]
-
   return (
     <>
-      <ProjectPageLayout
+      <ProjectPageLayoutWrapper
         breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.cryptoMania, TEXT.cryptoMania)}
-        pageID={PAGES_URL.personal.cryptoMania}
-        title={title}
-        role={role}
+        pageID={PROJECT_ID.personal.cryptoMania}
         goBackLink={GoBackLinkEnum.Personal}
         sectionID={ID.section.react}
-        description={description}
-        skillsOverview={skillsOverview}
-        projectLinks={projectLinks}
-        linkGitHub={linkGitHub}
+        projectData={projectsPersonalReact[0]}
         sections={sections}
-        imageShowcase={imageShowcase}
         PageNavigation={
           <PageNavigation
             linkPrevious={PAGES_URL.personal.krsiak}
