@@ -11,6 +11,7 @@ import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
@@ -24,7 +25,7 @@ const ProjectWorkSmartsuppHelp: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.smartsupp.help, TEXT.smartsuppHELP)}
-      pageID={PAGES_URL.work.smartsupp.help}
+      pageID={PROJECT_ID.work.smartsupp.help}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.wordpress}
       projectData={projectsWorkWordPress[0]}

@@ -11,6 +11,7 @@ import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
@@ -24,7 +25,7 @@ const ProjectWorkKomercniBanka: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.komercniBanka, TEXT.komercniBanka)}
-      pageID={PAGES_URL.work.komercniBanka}
+      pageID={PROJECT_ID.work.komercniBanka}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.react}
       projectData={projectsWorkReact[2]}

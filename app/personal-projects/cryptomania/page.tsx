@@ -11,6 +11,7 @@ import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
@@ -25,7 +26,7 @@ const ProjectPersonalCryptomania: FC = (): JSX.Element => {
     <>
       <ProjectPageLayoutWrapper
         breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.cryptoMania, TEXT.cryptoMania)}
-        pageID={PAGES_URL.personal.cryptoMania}
+        pageID={PROJECT_ID.personal.cryptoMania}
         goBackLink={GoBackLinkEnum.Personal}
         sectionID={ID.section.react}
         projectData={projectsPersonalReact[0]}

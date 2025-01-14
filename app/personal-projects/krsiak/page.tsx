@@ -11,6 +11,7 @@ import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
@@ -20,12 +21,11 @@ export const metadata = {
   ...metaDataKrsiak,
 }
 
-// FIXME: fix all pages with 'pageID={PAGES_URL.' using correct ID format from file
 const ProjectPersonalKrsiak: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.krsiak, TEXT.portfolioWebsite)}
-      pageID={PAGES_URL.personal.krsiak}
+      pageID={PROJECT_ID.personal.krsiak}
       goBackLink={GoBackLinkEnum.Personal}
       sectionID={ID.section.next}
       projectData={projectsPersonalNext[0]}
