@@ -8,14 +8,12 @@ type ListItemProps = {
 
 const ListItem: FC<ListItemProps> = ({ children }): JSX.Element => {
   return (
-    <>
-      <li className="flex-start flex">
-        <span className="flex">
-          <IconCheck />
-        </span>
-        {children}
-      </li>
-    </>
+    <li className="flex-start flex">
+      <span className="flex">
+        <IconCheck />
+      </span>
+      {children}
+    </li>
   )
 }
 
