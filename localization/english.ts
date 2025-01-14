@@ -27,6 +27,15 @@ export const COMMON_VALUES = {
   graphql: 'GraphQL',
 }
 
+export const DIVIDER_WITH_TEXT = {
+  companies: 'Companies',
+  myLinks: 'My Links',
+  contactMe: 'Contact Me',
+  whatIDo: 'What I Do',
+  skills: 'Skills',
+  myMainSkills: 'My Main Skills',
+}
+
 export const SOCIAL_LINKS = {
   linkedIn: 'My LinkedIn',
   resumePDF: 'Resume PDF',
@@ -88,9 +97,23 @@ export const WORK = {
   myJob: 'My job',
 }
 
+export const PROJECT_INFORMATION = {
+  information: 'Information',
+  skills: 'Skills',
+  link: 'Link',
+  links: 'Links',
+}
+
+export const MY_WORK = {
+  workedForCompanies: 'Worked For Companies',
+  myMindset: '🥇🚀 I Have Committed Mindset',
+  skillsForCompany: '💰📈 My Skills For Your Company',
+}
+
 export const MISC = {
   description: 'Description',
   goBack: 'Go back',
+  gallery: 'Gallery',
   skillsIconsNames: `
       ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, ${COMMON_VALUES.next},
       ${COMMON_VALUES.redux}, ${COMMON_VALUES.graphql}, ${COMMON_VALUES.jest}, ${COMMON_VALUES.playwright},
@@ -475,6 +498,8 @@ export const IMAGE_ALT = {
 }
 
 export const TEXT = {
+  ...PROJECT_INFORMATION,
+  ...MY_WORK,
   ...SOCIAL_LINKS,
   ...HOME,
   ...COMPANIES,
