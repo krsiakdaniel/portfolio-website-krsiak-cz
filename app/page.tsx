@@ -5,7 +5,6 @@ import PageContainer from '@/components/layout/PageContainer'
 import Companies from '@/components/pages/home/Companies'
 import WhatIDoMindset from '@/components/pages/home/expertise/MySKills'
 import Hero from '@/components/pages/home/hero/Hero'
-import ScanMyContactQR from '@/components/pages/home/ScanMyContactQR'
 import Skills from '@/components/pages/home/skills/Skills'
 import SkillsMain from '@/components/pages/home/skills/SkillsMain'
 import CallToActionWorkExperience from '@/components/shared/call-to-action/CallToActionWorkExperience'
@@ -31,7 +30,6 @@ const Page: FC = (): JSX.Element => {
       <CallToActionWorkExperience />
       <WhatIDoMindset />
       <Companies />
-      <ScanMyContactQR />
 
       <PageNavigation
         linkNext={PAGES_URL.work.mainUrl}

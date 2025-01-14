@@ -4,7 +4,7 @@ import { FC } from 'react'
 import DividerWithText from '@/components/shared/DividerWithText'
 import Heading2 from '@/components/shared/Heading2'
 
-import { IMAGE_ALT } from '@/localization/english'
+import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization/english'
 
 import ibm from '@/public/images/svg/logo/ibm.svg'
 import komercniBanka from '@/public/images/svg/logo/komercni-banka.svg'
@@ -20,9 +20,9 @@ const Companies: FC = (): JSX.Element => {
   return (
     <section>
       <div className="mt-16">
-        <DividerWithText text="Companies" />
+        <DividerWithText text={DIVIDER_WITH_TEXT.companies} />
         <div className="text-center">
-          <Heading2>Worked For Companies</Heading2>
+          <Heading2>{TEXT.workedForCompanies}</Heading2>
         </div>
 
         <div className={logosWrapperCss}>

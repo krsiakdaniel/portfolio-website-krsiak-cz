@@ -3,6 +3,8 @@ import { FC } from 'react'
 
 import Heading3 from '@/components/shared/Heading3'
 
+import { TEXT } from '@/localization/english'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { ImageShowcaseItem } from '@/lib/utils/interfaces/interfaces'
@@ -14,7 +16,7 @@ type GalleryProps = {
 const Gallery: FC<GalleryProps> = ({ imageShowcase }): JSX.Element => {
   return (
     <div className="mt-8">
-      <Heading3>Gallery</Heading3>
+      <Heading3>{TEXT.gallery}</Heading3>
       <p className="mt-4 text-neutral-600">See project screenshots below.</p>
       <div data-testid={DATA_TEST_IDS.gallery}>
         {imageShowcase.map((image) => (

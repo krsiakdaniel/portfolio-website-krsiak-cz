@@ -7,6 +7,8 @@ import Heading3 from '@/components/shared/Heading3'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
+import { TEXT } from '@/localization/english'
+
 import { Project } from '@/lib/utils/interfaces/interfaces'
 
 type ProjectInformationProps = Pick<
@@ -27,7 +29,7 @@ const ProjectInformation: FC<ProjectInformationProps> = ({
   return (
     <>
       <div className="mt-16">
-        <Heading3>Information</Heading3>
+        <Heading3>{TEXT.information}</Heading3>
         <div className="mt-4">
           {customers && <CustomersCount count={customers} />}
           <List>
@@ -37,14 +39,14 @@ const ProjectInformation: FC<ProjectInformationProps> = ({
       </div>
 
       <div className="mt-8">
-        <Heading3>Skills</Heading3>
+        <Heading3>{TEXT.skills}</Heading3>
         <div className="mt-4">
           <SkillsList skillsOverview={skillsOverview} />
         </div>
       </div>
 
       <div className="mt-8">
-        <Heading3>{hasMoreLinks || hasGithub ? 'Links' : 'Link'}</Heading3>
+        <Heading3>{hasMoreLinks || hasGithub ? TEXT.links : TEXT.link}</Heading3>
         <div className="mt-4">
           <ProjectLinksList projectLinks={projectLinks} linkGitHub={linkGitHub} />
         </div>
