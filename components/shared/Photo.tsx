@@ -3,7 +3,7 @@ import { FC } from 'react'
 
 import { TEXT } from '@/localization/english'
 
-import krsiak from '@/public/images/webp/photo/krsiak-daniel-400.webp'
+import krsiak from '@/public/images/webp/photo/krsiak-daniel-296x296.webp'
 
 const Photo: FC = (): JSX.Element => {
   return (

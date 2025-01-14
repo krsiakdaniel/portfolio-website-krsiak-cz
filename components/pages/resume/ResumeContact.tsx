@@ -10,7 +10,7 @@ const ResumeContact: FC = (): JSX.Element => {
       <p className="mt-4 text-lg text-neutral-600">Scan my contact and feel free to call me or write an email.</p>
 
       <div className="mt-8 flex flex-col items-center space-y-8 md:flex-row md:space-x-8 md:space-y-0">
-        <ScanMyContactQR width={308} height={308} showNote />
+        <ScanMyContactQR width={296} height={296} showNote />
         <Photo />
       </div>
     </section>
