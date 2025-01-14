@@ -104,6 +104,16 @@ export const PROJECT_INFORMATION = {
   links: 'Links',
 }
 
+export const SOCIAL_PROOF = {
+  sectionTitle: 'React and Automation',
+  companiesTitle: 'Companies 5+',
+  companiesDescription: 'From startup to corporate',
+  featuresTitle: 'Features',
+  featuresDescription: 'Countless UI components delivered',
+  automationTitle: 'Automation ∞',
+  automationDescription: 'Automated testing and streamlined CI/CD',
+}
+
 export const MY_WORK = {
   workedForCompanies: 'Worked For Companies',
   myMindset: '🥇🚀 I Have Committed Mindset',

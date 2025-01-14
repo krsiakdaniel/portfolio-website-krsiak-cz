@@ -6,7 +6,7 @@ import Photo from '@/components/shared/Photo'
 const CareerPath: FC = (): JSX.Element => {
   return (
     <>
-      <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">My Career Since High School</div>
+      <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">My Career Path</div>
       <div>
         <p className="mt-4 text-lg text-neutral-600">
           My journey has been diverse in a range of roles in different fields all making my career.
