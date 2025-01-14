@@ -2,7 +2,6 @@ import { FC } from 'react'
 
 import ResumePlainTextLink from '@/components/pages/resume/ResumePlainTextLink'
 import ResumePlainTextPage from '@/components/pages/resume/ResumePlainTextPage'
-import CallToActionLinkedIn from '@/components/shared/call-to-action/CallToActionLinkedIn'
 
 import {
   resumePlainTextPage1,
@@ -21,12 +20,7 @@ const ResumePlainText: FC = (): JSX.Element => (
 
     <div>
       <ResumePlainTextPage content={resumePlainTextPage1} />
-
-      <CallToActionLinkedIn />
-
-      <div className="mt-16">
-        <ResumePlainTextPage content={resumePlainTextPage2} />
-      </div>
+      <ResumePlainTextPage content={resumePlainTextPage2} />
       <ResumePlainTextPage content={resumePlainTextPage3} />
     </div>
   </>

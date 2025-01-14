@@ -9,21 +9,23 @@ import { formatExperienceMonthsYears } from '@/lib/utils/helpers/formatExperienc
 
 const CareerPathList: FC = (): JSX.Element => {
   return (
-    <List>
-      {jobs.map((job) => (
-        <ListItem key={job.id}>
-          <div>
-            <p>
-              <span className="font-bold">{job.title}</span>
-              <span className="hidden sm:inline">
-                {' · '}
-                {job.duration} {formatExperienceMonthsYears({ duration: job.duration, unit: job.unit })}
-              </span>
-            </p>
-          </div>
-        </ListItem>
-      ))}
-    </List>
+    <div className="mt-8">
+      <List>
+        {jobs.map((job) => (
+          <ListItem key={job.id}>
+            <div>
+              <p>
+                <span className="font-bold">{job.title}</span>
+                <span className="hidden sm:inline">
+                  {' · '}
+                  {job.duration} {formatExperienceMonthsYears({ duration: job.duration, unit: job.unit })}
+                </span>
+              </p>
+            </div>
+          </ListItem>
+        ))}
+      </List>
+    </div>
   )
 }
 
