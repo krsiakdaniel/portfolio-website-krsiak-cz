@@ -66,11 +66,9 @@ export interface Project {
   linkProjectPage: string
 }
 
-export interface SkillInfo {
+export interface SkillsInfo {
   id: number
-  order: number
-  title: string
-  description: string
+  text: string
 }
 
 export interface Job {
