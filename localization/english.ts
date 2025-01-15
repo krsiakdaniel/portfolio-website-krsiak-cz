@@ -31,7 +31,7 @@ export const DIVIDER_WITH_TEXT = {
   companies: 'Companies',
   myLinks: 'My Links',
   contactMe: 'Contact Me',
-  whatIDo: 'What I Do',
+  myExpertise: 'My Expertise',
   skills: 'Skills',
   myMainSkills: 'My Main Skills',
 }
