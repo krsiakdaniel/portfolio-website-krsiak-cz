@@ -31,7 +31,7 @@ export const DIVIDER_WITH_TEXT = {
   companies: 'Companies',
   myLinks: 'My Links',
   contactMe: 'Contact Me',
-  whatIDo: 'What I Do',
+  myExpertise: 'My Expertise',
   skills: 'Skills',
   myMainSkills: 'My Main Skills',
 }
@@ -49,8 +49,6 @@ export const HOME = {
   nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
   reactDeveloper: COMMON_VALUES.reactDeveloper,
   heroText: `Hi 👋 I am based in ${COMMON_VALUES.brno}, ${COMMON_VALUES.czechRepublicNBSP} 🇨🇿`,
-  mindset: '💡 My Committed Mindset',
-  skillsForCompany: '🥇 Skills For Company',
 }
 
 export const RESUME = {
@@ -116,8 +114,9 @@ export const SOCIAL_PROOF = {
 
 export const MY_WORK = {
   workedForCompanies: 'Worked For Companies',
-  myMindset: '🥇🚀 I Have Committed Mindset',
-  skillsForCompany: '💰📈 My Skills For Your Company',
+  skillsForCompany: '🥇 Skills',
+  committedMindset: '🚀 Mindset',
+  problemSolving: '🎨 Adaptive',
 }
 
 export const MISC = {

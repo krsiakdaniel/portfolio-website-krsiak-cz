@@ -3,7 +3,7 @@ import { FC } from 'react'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import Companies from '@/components/pages/home/Companies'
-import WhatIDoMindset from '@/components/pages/home/expertise/MySKills'
+import MyExpertise from '@/components/pages/home/expertise/MyExpertise'
 import Hero from '@/components/pages/home/hero/Hero'
 import Skills from '@/components/pages/home/skills/Skills'
 import SkillsMain from '@/components/pages/home/skills/SkillsMain'
@@ -28,7 +28,7 @@ const Page: FC = (): JSX.Element => {
       <Skills />
       <SkillsMain />
       <CallToActionWorkExperience />
-      <WhatIDoMindset />
+      <MyExpertise />
       <Companies />
 
       <PageNavigation
