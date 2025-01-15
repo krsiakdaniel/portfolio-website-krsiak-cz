@@ -6,11 +6,15 @@ import { pagesLinks } from '@/lib/data/layout/pagesLinks'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { getMenuLinkCSS } from '@/lib/utils/helpers/menu/getMenuLinkCSS'
+
 import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
 
 type MenuProps = {
   isMobile: boolean
+}
+
+const getMenuLinkCSS = (isMobile: boolean): string => {
+  return isMobile ? 'block border-b  border-neutral-100 py-3 pl-3 pr-4 hover:bg-neutral-50' : 'text-md cursor-pointer'
 }
 
 const Menu: FC<MenuProps> = ({ isMobile }): JSX.Element => {

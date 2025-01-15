@@ -5,9 +5,10 @@ import { FC, useState } from 'react'
 import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 
 import Logo from '@/components/layout/header/Logo'
-import Menu from '@/components/layout/header/menu/Menu'
-import MenuToggle from '@/components/layout/header/menu/MenuToggle'
+import MenuDesktop from '@/components/layout/header/menu/MenuDesktop'
+import MenuMobile from '@/components/layout/header/menu/MenuMobile'
 import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
+import PageContainer from '@/components/layout/PageContainer'
 
 const Header: FC = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -18,16 +19,14 @@ const Header: FC = (): JSX.Element => {
   }
 
   return (
-    <header className="sticky top-0 z-20 border-b border-neutral-400 bg-white px-5">
-      <div className="container mx-auto max-w-screen-xl px-5">
+    <header className="sticky top-0 z-20 border-b border-neutral-400 bg-white">
+      <PageContainer marginTop="mt-0">
         <div className="flex items-center justify-between py-3">
           <Logo />
-          {/* desktop menu */}
-          <Menu isMobile={false} />
-          <MenuToggle isOpen={isOpen} handleMenuToggle={handleMenuToggle} />
+          <MenuDesktop isOpen={isOpen} handleMenuToggle={handleMenuToggle} />
         </div>
-        {isOpen && <Menu isMobile={true} />}
-      </div>
+        {isOpen && <MenuMobile />}
+      </PageContainer>
 
       <ScrollProgressBar scroll={scroll} />
     </header>
