@@ -20,6 +20,7 @@ type PageProps = {
   pageID: string
   projectData: Project
   sections: Section[]
+  showAlert?: ReactNode
   PageNavigation: ReactNode
 }
 
@@ -32,6 +33,7 @@ const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
   sectionID,
   projectData,
   sections,
+  showAlert,
   PageNavigation,
 }): JSX.Element => {
   const { level1Url, level1Text, level2Url, level2Text } = breadCrumbs
@@ -61,6 +63,9 @@ const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
           goBackLink={goBackLink}
           sectionID={sectionID}
         />
+
+        {showAlert}
+
         <article>
           <ProjectInformation
             description={description}
