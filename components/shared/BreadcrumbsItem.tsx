@@ -3,7 +3,7 @@ import { FC } from 'react'
 
 import IconCaretRight from '@/components/icons/IconCaretRight'
 
-import { BreadcrumbsItemProps } from '@/lib/utils/interfaces/componentProps'
+import { BreadcrumbsItemProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const BreadcrumbsItem: FC<BreadcrumbsItemProps> = ({ url, text }): JSX.Element => (
   <li>

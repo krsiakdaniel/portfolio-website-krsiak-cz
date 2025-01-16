@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import Heading1 from '@/components/shared/Heading1'
 
-import { ProjectsOverviewLayoutProps } from '@/lib/utils/interfaces/componentProps'
+import { ProjectsOverviewLayoutProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const ProjectsOverviewLayout: FC<ProjectsOverviewLayoutProps> = ({ heading, description, children }): JSX.Element => {
   return (

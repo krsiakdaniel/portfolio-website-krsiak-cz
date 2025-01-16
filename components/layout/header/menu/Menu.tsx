@@ -9,7 +9,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
 
-import { MenuProps } from '@/lib/utils/interfaces/componentProps'
+import { MenuProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const getMenuLinkCSS = (isMobile: boolean): string => {
   return isMobile ? 'block border-b  border-neutral-100 py-3 pl-3 pr-4 hover:bg-neutral-50' : 'text-md cursor-pointer'

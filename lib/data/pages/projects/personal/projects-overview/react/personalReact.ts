@@ -3,7 +3,7 @@ import { iconsSkillsProjectsPersonalCryptomania } from '@/lib/data/pages/project
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { Project } from '@/lib/utils/interfaces/interfaces'
+import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // project images
 import cryptomania3 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-1-dark.webp'

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { ExperienceSectionProps } from '@/lib/utils/interfaces/componentProps'
+import { ExperienceSectionProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const ExperienceSection: FC<ExperienceSectionProps> = ({ id, text }): JSX.Element => {
   return (

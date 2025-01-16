@@ -3,7 +3,7 @@ import { iconsSkillsProjectsWorkKooperativa } from '@/lib/data/pages/projects/wo
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { Project } from '@/lib/utils/interfaces/interfaces'
+import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // kooperativa
 import kooperativa1 from '@/public/images/webp/projects/work/kooperativa/kooperativa-1-light.webp'

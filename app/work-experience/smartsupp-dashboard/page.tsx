@@ -15,7 +15,7 @@ import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
-import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
+import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
 
 export const metadata = {
   ...metaDataSmartsuppDashboard,

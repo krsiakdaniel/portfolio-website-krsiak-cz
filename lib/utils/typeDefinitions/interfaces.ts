@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image'
 
-import { DurationUnit } from '@/lib/utils/interfaces/enums'
-import { SkillCategoryType } from '@/lib/utils/interfaces/types'
+import { DurationUnit } from '@/lib/utils/typeDefinitions/enums'
+import { SkillCategoryType } from '@/lib/utils/typeDefinitions/types'
 
 // icons
 export interface Icon {

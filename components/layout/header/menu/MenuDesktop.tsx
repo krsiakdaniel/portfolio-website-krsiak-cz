@@ -3,7 +3,7 @@ import { FC } from 'react'
 import Menu from '@/components/layout/header/menu/Menu'
 import MenuToggle from '@/components/layout/header/menu/MenuToggle'
 
-import { MenuDesktopProps } from '@/lib/utils/interfaces/componentProps'
+import { MenuDesktopProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const MenuDesktop: FC<MenuDesktopProps> = ({ isOpen, handleMenuToggle }): JSX.Element => {
   return (

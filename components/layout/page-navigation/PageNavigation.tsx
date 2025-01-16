@@ -5,9 +5,9 @@ import PageNavigationLink from '@/components/layout/page-navigation/PageNavigati
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
+import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
-import { PageNavigationProps } from '@/lib/utils/interfaces/componentProps'
+import { PageNavigationProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const PageNavigation: FC<PageNavigationProps> = ({
   linkPrevious,

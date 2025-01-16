@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { ResumePlainTextPageProps } from '@/lib/utils/interfaces/componentProps'
+import { ResumePlainTextPageProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const ResumePlainTextPage: FC<ResumePlainTextPageProps> = ({ content }): JSX.Element => {
   return (

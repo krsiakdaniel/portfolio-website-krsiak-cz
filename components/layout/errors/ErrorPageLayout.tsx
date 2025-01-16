@@ -5,7 +5,7 @@ import PageContainer from '@/components/layout/PageContainer'
 
 import { TEXT } from '@/localization/english'
 
-import { ErrorPageLayoutProps } from '@/lib/utils/interfaces/componentProps'
+import { ErrorPageLayoutProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 import imgError from '@/public/images/webp/errors/error.webp'
 

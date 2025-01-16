@@ -1,6 +1,6 @@
 import { statusBadgeImgsUrls } from '@/lib/utils/constants/urls/statusBadgesUrls'
 
-import { StatusBadge } from '@/lib/utils/interfaces/interfaces'
+import { StatusBadge } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const statusBadges: StatusBadge[] = [
   {

@@ -18,7 +18,7 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
-import { GoBackLinkEnum, LinkColors } from '@/lib/utils/interfaces/enums'
+import { GoBackLinkEnum, LinkColors } from '@/lib/utils/typeDefinitions/enums'
 
 export const metadata = {
   ...metaDataCryptomania,

@@ -8,7 +8,7 @@ import { DIVIDER_WITH_TEXT } from '@/localization/english'
 
 import contactQR from '@/public/images/svg/vcard-contact/krsiak-daniel-qr-code-vcard.svg'
 
-import { ScanMyContactQRProps } from '@/lib/utils/interfaces/componentProps'
+import { ScanMyContactQRProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const IMAGE_WIDTH = 256
 const IMAGE_HEIGHT = 256

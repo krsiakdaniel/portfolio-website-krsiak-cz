@@ -4,7 +4,7 @@ import Heading2 from '@/components/shared/Heading2'
 import Heading3 from '@/components/shared/Heading3'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ProjectDetailsProps } from '@/lib/utils/interfaces/componentProps'
+import { ProjectDetailsProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const ProjectDetails: FC<ProjectDetailsProps> = ({ title, company, role, description }): JSX.Element => {
   return (

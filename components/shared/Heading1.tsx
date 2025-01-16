@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import { getDataTestIdAttribute } from '@/lib/utils/helpers/getDataTestIdAttribute'
 
-import { Heading1Props } from '@/lib/utils/interfaces/componentProps'
+import { Heading1Props } from '@/lib/utils/typeDefinitions/componentProps'
 
 const Heading1: FC<Heading1Props> = ({
   children,

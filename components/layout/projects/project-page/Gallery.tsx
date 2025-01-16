@@ -9,7 +9,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import Paragraph from '@/components/shared/Paragraph'
 
-import { GalleryProps } from '@/lib/utils/interfaces/componentProps'
+import { GalleryProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const Gallery: FC<GalleryProps> = ({ imageShowcase }): JSX.Element => {
   return (

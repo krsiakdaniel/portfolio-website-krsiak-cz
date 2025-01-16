@@ -3,7 +3,7 @@ import { iconsSkillsProjectsWorkKomercniBanka } from '@/lib/data/pages/projects/
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { Project } from '@/lib/utils/interfaces/interfaces'
+import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // komercni banka
 import komercniBanka1 from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-1-light.webp'

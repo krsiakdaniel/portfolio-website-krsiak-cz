@@ -1,8 +1,8 @@
 import { FC } from 'react'
 
-import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
+import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
-import { IconArrowProps } from '@/lib/utils/interfaces/componentProps'
+import { IconArrowProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const IconArrow: FC<IconArrowProps> = ({ direction = NavigationDirectionEnum.Left }): JSX.Element => {
   return (

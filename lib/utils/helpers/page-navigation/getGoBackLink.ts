@@ -1,6 +1,6 @@
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { GoBackLinkEnum } from '@/lib/utils/interfaces/enums'
+import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
 
 /**
  * Generates the go-back link based on the provided section and ID.

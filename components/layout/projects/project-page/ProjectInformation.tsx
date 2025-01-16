@@ -9,7 +9,7 @@ import ListItem from '@/components/shared/ListItem'
 
 import { TEXT } from '@/localization/english'
 
-import { ProjectInformationProps } from '@/lib/utils/interfaces/componentProps'
+import { ProjectInformationProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const ProjectInformation: FC<ProjectInformationProps> = ({
   description,

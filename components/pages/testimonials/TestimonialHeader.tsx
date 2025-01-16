@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { TestimonialHeaderProps } from '@/lib/utils/interfaces/componentProps'
+import { TestimonialHeaderProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const TestimonialHeader: FC<TestimonialHeaderProps> = ({ title }) => (
   <div className="border-b pb-2 text-2xl font-bold uppercase">{title}</div>

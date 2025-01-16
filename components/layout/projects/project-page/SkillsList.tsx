@@ -3,9 +3,9 @@ import { FC } from 'react'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
-import { Skill } from '@/lib/utils/interfaces/interfaces'
+import { Skill } from '@/lib/utils/typeDefinitions/interfaces'
 
-import { SkillsListProps } from '@/lib/utils/interfaces/componentProps'
+import { SkillsListProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const getSkillBadge = (skillCategoryObject: Skill): JSX.Element[] => {
   return skillCategoryObject.skillsList.map((skill: string) => (

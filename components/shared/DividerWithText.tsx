@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { DividerWithTextProps } from '@/lib/utils/interfaces/componentProps'
+import { DividerWithTextProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 const DividerWithText: FC<DividerWithTextProps> = ({ text }): JSX.Element => {
   return (

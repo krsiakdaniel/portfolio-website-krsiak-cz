@@ -1,4 +1,4 @@
-import { Job } from '@/lib/utils/interfaces/interfaces'
+import { Job } from '@/lib/utils/typeDefinitions/interfaces'
 
 type GetYearsMonthsType = Pick<Job, 'duration' | 'unit'>
 

@@ -10,7 +10,7 @@ import Smartlook from '@/components/layout/scripts/Smartlook'
 
 import { defaultMetaData } from '@/lib/data/metadata/shared/defaultMetaData'
 
-import { RootLayoutProps } from '@/lib/utils/interfaces/componentProps'
+import { RootLayoutProps } from '@/lib/utils/typeDefinitions/componentProps'
 
 import './globals.css'
 

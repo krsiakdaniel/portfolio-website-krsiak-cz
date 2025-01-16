@@ -3,7 +3,7 @@ import { iconsSkillsProjectsPersonalKrsiak } from '@/lib/data/pages/projects/per
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { Project } from '@/lib/utils/interfaces/interfaces'
+import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // project images
 import krsiak1 from '@/public/images/webp/projects/personal/krsiak/krsiak-1-light.webp'

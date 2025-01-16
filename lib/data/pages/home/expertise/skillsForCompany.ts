@@ -1,4 +1,4 @@
-import { SkillsInfo } from '@/lib/utils/interfaces/interfaces'
+import { SkillsInfo } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const skillsForCompanyItems: SkillsInfo[] = [
   { id: 0, text: 'TypeScript, React, Redux, Next.js' },

@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image'
 import { ReactNode } from 'react'
 
-import { GoBackLinkEnum, LinkColors, NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
+import { GoBackLinkEnum, LinkColors, NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 import {
   Icon,
   ImageShowcaseItem,
@@ -12,8 +12,8 @@ import {
   SkillCardItem,
   SkillsInfo,
   TestimonialItem,
-} from '@/lib/utils/interfaces/interfaces'
-import { BreadCrumbsType, HandleMenuToggleType } from '@/lib/utils/interfaces/types'
+} from '@/lib/utils/typeDefinitions/interfaces'
+import { BreadCrumbsType, HandleMenuToggleType } from '@/lib/utils/typeDefinitions/types'
 
 // TODO: split these into files inside a folder /utils/props/...
 
