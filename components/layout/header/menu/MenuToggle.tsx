@@ -9,7 +9,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-import { MenuToggleProps } from '@/lib/utils/typeDefinitions/componentProps'
+import { MenuToggleProps } from '@/lib/utils/typeDefinitions/props'
 
 const MenuToggle: FC<MenuToggleProps> = ({ isOpen, handleMenuToggle }): JSX.Element => {
   return (

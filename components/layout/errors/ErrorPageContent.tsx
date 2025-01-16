@@ -6,7 +6,7 @@ import Heading1 from '@/components/shared/Heading1'
 import Heading2 from '@/components/shared/Heading2'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ErrorPageContentProps } from '@/lib/utils/typeDefinitions/componentProps'
+import { ErrorPageContentProps } from '@/lib/utils/typeDefinitions/props'
 
 const ErrorPageContent: FC<ErrorPageContentProps> = ({
   imgSrc,

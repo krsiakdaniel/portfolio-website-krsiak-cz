@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import { getDataTestIdAttribute } from '@/lib/utils/helpers/getDataTestIdAttribute'
 
-import { ParagraphProps } from '@/lib/utils/typeDefinitions/componentProps'
+import { ParagraphProps } from '@/lib/utils/typeDefinitions/props'
 
 const Paragraph: FC<ParagraphProps> = ({
   marginTop = 'mt-4',

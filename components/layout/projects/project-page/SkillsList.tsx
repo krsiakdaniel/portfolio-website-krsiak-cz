@@ -5,7 +5,7 @@ import ListItem from '@/components/shared/ListItem'
 
 import { Skill } from '@/lib/utils/typeDefinitions/interfaces'
 
-import { SkillsListProps } from '@/lib/utils/typeDefinitions/componentProps'
+import { SkillsListProps } from '@/lib/utils/typeDefinitions/props'
 
 const getSkillBadge = (skillCategoryObject: Skill): JSX.Element[] => {
   return skillCategoryObject.skillsList.map((skill: string) => (

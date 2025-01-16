@@ -4,7 +4,7 @@ import Heading2 from '@/components/shared/Heading2'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
-import { ExpertiseSectionProps } from '@/lib/utils/typeDefinitions/componentProps'
+import { ExpertiseSectionProps } from '@/lib/utils/typeDefinitions/props'
 
 const ExpertiseSection: FC<ExpertiseSectionProps> = ({ heading, listItems }): JSX.Element => {
   return (

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { IconCheckProps } from '@/lib/utils/typeDefinitions/componentProps'
+import { IconCheckProps } from '@/lib/utils/typeDefinitions/props'
 
 const IconCheck: FC<IconCheckProps> = ({ iconColor = 'text-violet-600' }): JSX.Element => {
   return (

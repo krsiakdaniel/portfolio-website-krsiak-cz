@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import IconCheck from '@/components/icons/IconCheck'
 
-import { ListItemProps } from '@/lib/utils/typeDefinitions/componentProps'
+import { ListItemProps } from '@/lib/utils/typeDefinitions/props'
 
 const ListItem: FC<ListItemProps> = ({ children }): JSX.Element => {
   return (

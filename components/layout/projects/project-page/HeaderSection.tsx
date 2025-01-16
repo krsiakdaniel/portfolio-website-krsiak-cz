@@ -10,7 +10,7 @@ import { TEXT } from '@/localization/english'
 import { getGoBackLinkID } from '@/lib/utils/helpers/page-navigation/getGoBackLink'
 import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
-import { HeaderSectionProps } from '@/lib/utils/typeDefinitions/componentProps'
+import { HeaderSectionProps } from '@/lib/utils/typeDefinitions/props'
 
 const HeaderSection: FC<HeaderSectionProps> = ({ title, role, years, company, goBackLink, sectionID }): JSX.Element => {
   return (

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
-import { ProjectImageProps } from '@/lib/utils/typeDefinitions/componentProps'
+import { ProjectImageProps } from '@/lib/utils/typeDefinitions/props'
 
 const ProjectImage: FC<ProjectImageProps> = ({ isFeatured, image, title }): JSX.Element => {
   const imageCSS = `rounded-lg p-1 ring-1 ${

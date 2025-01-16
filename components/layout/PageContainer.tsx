@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { PageContainerProps } from '@/lib/utils/typeDefinitions/componentProps'
+import { PageContainerProps } from '@/lib/utils/typeDefinitions/props'
 
 const PageContainer: FC<PageContainerProps> = ({ id, marginTop = 'mt-20', children }): JSX.Element => {
   return (

@@ -3,7 +3,7 @@ import { FC } from 'react'
 
 import Paragraph from '@/components/shared/Paragraph'
 
-import { TestimonialProps } from '@/lib/utils/typeDefinitions/componentProps'
+import { TestimonialProps } from '@/lib/utils/typeDefinitions/props'
 
 import quote from '@/public/icons/svg/quote.svg'
 

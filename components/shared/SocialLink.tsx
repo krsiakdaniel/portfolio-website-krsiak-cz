@@ -4,7 +4,7 @@ import IconExternalLink from '@/components/icons/IconExternalLink'
 
 import { LinkColors } from '@/lib/utils/typeDefinitions/enums'
 
-import { SocialLinkProps } from '@/lib/utils/typeDefinitions/componentProps'
+import { SocialLinkProps } from '@/lib/utils/typeDefinitions/props'
 
 const SocialLink: FC<SocialLinkProps> = ({
   href,
