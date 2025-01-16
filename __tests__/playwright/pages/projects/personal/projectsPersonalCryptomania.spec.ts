@@ -1,5 +1,7 @@
 import { Browser, BrowserContext, expect, Page, test } from '@playwright/test'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
 import { setupBrowser, setupPage, teardownContext } from '@/__tests__/playwright/lib/utils/helpers/setup'
 
 let browser: Browser
@@ -35,6 +37,14 @@ test.describe('Project - Cryptomania', () => {
     // Navigate to the personal project page
     await test.step('Go to page', async () => {
       await page.goto('/personal-projects/cryptomania')
+    })
+
+    // Check the Alert link
+    await test.step('Check Alert link', async () => {
+      const alertLink = await page.getByTestId(DATA_TEST_IDS.alert.alertLinkGitHub)
+      const hrefAlertLink = await alertLink.getAttribute('href')
+      const expectedUrlAlertLink = 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz'
+      expect(hrefAlertLink).toBe(expectedUrlAlertLink)
     })
 
     // Check the Website link
