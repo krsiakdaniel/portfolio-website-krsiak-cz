@@ -40,6 +40,10 @@ const FOOTER = {
   statusBadges: 'status-badges',
 }
 
+const ALERT = {
+  alertLinkGitHub: `alert-link-${LINKS.GITHUB}`,
+}
+
 const MENU = {
   mobile: {
     componentMenu: 'menu-mobile',
@@ -187,4 +191,5 @@ export const DATA_TEST_IDS = {
   callToAction: CALL_TO_ACTION,
   resume: RESUME,
   navigation: NAVIGATION,
+  alert: ALERT,
 }
