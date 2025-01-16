@@ -2,11 +2,7 @@ import { FC } from 'react'
 
 import PageSection from '@/components/layout/projects/project-page/PageSection'
 
-import { Section } from '@/lib/utils/interfaces/interfaces'
-
-type ProjectResponsibilityProps = {
-  sections: Section[]
-}
+import { ProjectResponsibilityProps } from '@/lib/utils/interfaces/componentProps'
 
 const ProjectResponsibility: FC<ProjectResponsibilityProps> = ({ sections }): JSX.Element => {
   return (

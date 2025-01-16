@@ -1,16 +1,11 @@
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import { FC } from 'react'
 
 import Paragraph from '@/components/shared/Paragraph'
 
-import quote from '@/public/icons/svg/quote.svg'
+import { TestimonialProps } from '@/lib/utils/interfaces/componentProps'
 
-type TestimonialProps = {
-  personPhoto: StaticImageData
-  personName: string
-  personJob: string
-  testimonialText: string
-}
+import quote from '@/public/icons/svg/quote.svg'
 
 const Testimonial: FC<TestimonialProps> = ({ personName, personJob, personPhoto, testimonialText }): JSX.Element => {
   return (

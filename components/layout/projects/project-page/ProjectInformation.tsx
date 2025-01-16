@@ -9,12 +9,7 @@ import ListItem from '@/components/shared/ListItem'
 
 import { TEXT } from '@/localization/english'
 
-import { Project } from '@/lib/utils/interfaces/interfaces'
-
-type ProjectInformationProps = Pick<
-  Project,
-  'description' | 'skillsOverview' | 'customers' | 'projectLinks' | 'linkGitHub'
->
+import { ProjectInformationProps } from '@/lib/utils/interfaces/componentProps'
 
 const ProjectInformation: FC<ProjectInformationProps> = ({
   description,

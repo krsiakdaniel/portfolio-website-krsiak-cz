@@ -5,11 +5,7 @@ import Heading4 from '@/components/shared/Heading4'
 
 import { TEXT } from '@/localization/english'
 
-import { OtherExperienceData } from '@/lib/utils/interfaces/interfaces'
-
-interface OtherExperienceContentProps {
-  experience: OtherExperienceData[]
-}
+import { OtherExperienceContentProps } from '@/lib/utils/interfaces/componentProps'
 
 const OtherExperienceContent: FC<OtherExperienceContentProps> = ({ experience }): JSX.Element => {
   return (

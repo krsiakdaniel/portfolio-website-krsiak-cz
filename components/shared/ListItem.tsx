@@ -1,10 +1,8 @@
-import { FC, ReactNode } from 'react'
+import { FC } from 'react'
 
 import IconCheck from '@/components/icons/IconCheck'
 
-type ListItemProps = {
-  children: ReactNode
-}
+import { ListItemProps } from '@/lib/utils/interfaces/componentProps'
 
 const ListItem: FC<ListItemProps> = ({ children }): JSX.Element => {
   return (

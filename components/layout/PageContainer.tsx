@@ -1,10 +1,6 @@
-import { FC, ReactNode } from 'react'
+import { FC } from 'react'
 
-type PageContainerProps = {
-  id?: string
-  marginTop?: 'mt-0' | 'mt-20'
-  children: ReactNode
-}
+import { PageContainerProps } from '@/lib/utils/interfaces/componentProps'
 
 const PageContainer: FC<PageContainerProps> = ({ id, marginTop = 'mt-20', children }): JSX.Element => {
   return (

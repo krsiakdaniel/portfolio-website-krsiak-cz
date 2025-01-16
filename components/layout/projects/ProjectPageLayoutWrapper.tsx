@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react'
+import { FC } from 'react'
 
 import PageContainer from '@/components/layout/PageContainer'
 import Gallery from '@/components/layout/projects/project-page/Gallery'
@@ -8,29 +8,13 @@ import ProjectResponsibility from '@/components/layout/projects/project-page/Pro
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionResume from '@/components/shared/call-to-action/CallToActionResume'
 
-import { HeaderSectionProps } from '@/lib/utils/interfaces/componentProps'
-import { Project, Section } from '@/lib/utils/interfaces/interfaces'
-import { BreadCrumbsType } from '@/lib/utils/interfaces/types'
-
-type BreadCrumbsProps = {
-  breadCrumbs: BreadCrumbsType
-}
-
-type PageProps = {
-  pageID: string
-  projectData: Project
-  sections: Section[]
-  showAlert?: ReactNode
-  PageNavigation: ReactNode
-}
-
-type ProjectPageLayoutWrapperProps = BreadCrumbsProps & HeaderSectionProps & PageProps
+import { ProjectPageLayoutWrapperProps } from '@/lib/utils/interfaces/componentProps'
 
 const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
-  breadCrumbs,
-  pageID,
   goBackLink,
   sectionID,
+  breadCrumbs,
+  pageID,
   projectData,
   sections,
   showAlert,

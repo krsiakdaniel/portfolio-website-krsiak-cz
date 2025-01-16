@@ -4,9 +4,7 @@ import IconArrow from '@/components/icons/IconArrow'
 
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 
-type DefaultNoLinkNavigationProps = {
-  arrowDirection: NavigationDirectionEnum
-}
+import { DefaultNoLinkNavigationProps } from '@/lib/utils/interfaces/componentProps'
 
 const DefaultNoLinkNavigation: FC<DefaultNoLinkNavigationProps> = ({ arrowDirection }) => {
   return (

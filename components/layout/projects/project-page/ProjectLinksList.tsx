@@ -4,12 +4,7 @@ import GitHubRepositoryLink from '@/components/layout/projects/project-page/GitH
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
-import { Link } from '@/lib/utils/interfaces/interfaces'
-
-type ProjectLinksListProps = {
-  projectLinks: Link[]
-  linkGitHub?: string
-}
+import { ProjectLinksListProps } from '@/lib/utils/interfaces/componentProps'
 
 const ProjectLinksList: FC<ProjectLinksListProps> = ({ projectLinks, linkGitHub }): JSX.Element => {
   return (

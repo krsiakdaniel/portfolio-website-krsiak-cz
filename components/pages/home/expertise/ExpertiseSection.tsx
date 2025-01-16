@@ -4,12 +4,7 @@ import Heading2 from '@/components/shared/Heading2'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
-import { SkillsInfo } from '@/lib/utils/interfaces/interfaces'
-
-interface ExpertiseSectionProps {
-  heading: string
-  listItems: SkillsInfo[]
-}
+import { ExpertiseSectionProps } from '@/lib/utils/interfaces/componentProps'
 
 const ExpertiseSection: FC<ExpertiseSectionProps> = ({ heading, listItems }): JSX.Element => {
   return (

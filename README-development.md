@@ -164,6 +164,11 @@ import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 ```
 
 ```ts
+// Component Props
+import { SkillCardProps } from '@/lib/utils/interfaces/componentProps'
+```
+
+```ts
 // Images
 import logo from '@/public/images/webp/logo.webp'
 ```

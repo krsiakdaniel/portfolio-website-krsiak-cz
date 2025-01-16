@@ -4,9 +4,7 @@ import Heading3 from '@/components/shared/Heading3'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
-import { Section } from '@/lib/utils/interfaces/interfaces'
-
-type PageSectionProps = Section
+import { PageSectionProps } from '@/lib/utils/interfaces/componentProps'
 
 const PageSection: FC<PageSectionProps> = ({ title, titleHighlight, items }): JSX.Element => {
   return (

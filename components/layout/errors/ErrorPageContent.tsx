@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 
@@ -6,16 +6,7 @@ import Heading1 from '@/components/shared/Heading1'
 import Heading2 from '@/components/shared/Heading2'
 import Paragraph from '@/components/shared/Paragraph'
 
-type ErrorPageContentProps = {
-  imgSrc: StaticImageData
-  imgAlt: string
-  heading: string
-  description: string
-  note: string
-  buttonText?: string
-  buttonLink?: string
-  onButtonClick?: () => void
-}
+import { ErrorPageContentProps } from '@/lib/utils/interfaces/componentProps'
 
 const ErrorPageContent: FC<ErrorPageContentProps> = ({
   imgSrc,

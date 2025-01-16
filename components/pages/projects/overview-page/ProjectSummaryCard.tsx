@@ -5,23 +5,7 @@ import ProjectImage from '@/components/pages/projects/overview-page/ProjectImage
 import ProjectLink from '@/components/pages/projects/overview-page/ProjectLink'
 import ProjectSkills from '@/components/pages/projects/overview-page/ProjectSkills'
 
-import { Icon } from '@/lib/utils/interfaces/interfaces'
-
-type ProjectSummaryCardProps = {
-  isFeatured?: boolean | undefined
-  image: string
-  title: string
-  company: string
-  role: string
-  description: string
-  mySkillsIcons: Icon[]
-  customers: string | undefined
-  personalProjectNote: string | undefined
-  linkText: string
-  linkProjectPage: string
-  dataTestId: string
-  className: string
-}
+import { ProjectSummaryCardProps } from '@/lib/utils/interfaces/componentProps'
 
 const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
   isFeatured,

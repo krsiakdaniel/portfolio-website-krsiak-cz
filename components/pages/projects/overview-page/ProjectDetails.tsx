@@ -4,23 +4,9 @@ import Heading2 from '@/components/shared/Heading2'
 import Heading3 from '@/components/shared/Heading3'
 import Paragraph from '@/components/shared/Paragraph'
 
-type ProjectDetailsProps = {
-  title: string
-  company: string
-  role: string
-  description: string
-  customers?: string
-  personalProjectNote?: string
-}
+import { ProjectDetailsProps } from '@/lib/utils/interfaces/componentProps'
 
-const ProjectDetails: FC<ProjectDetailsProps> = ({
-  title,
-  company,
-  role,
-  description,
-  customers,
-  personalProjectNote,
-}): JSX.Element => {
+const ProjectDetails: FC<ProjectDetailsProps> = ({ title, company, role, description }): JSX.Element => {
   return (
     <div className="sm:max-w-[600px]">
       <Heading2 textColor="text-neutral-900">{title}</Heading2>

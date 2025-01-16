@@ -4,11 +4,6 @@ import ManWalkingInForest from '@/components/layout/footer/divider/ManWalkingInF
 import TheMoon from '@/components/layout/footer/divider/TheMoon'
 import TheSun from '@/components/layout/footer/divider/TheSun'
 
-const sharedCSS = 'mx-2 h-1 w-full flex-1'
-
-const sunRiseToNoon = <div className={`bg-gradient-to-r from-yellow-400 via-sky-300 to-green-500 ${sharedCSS}`} />
-const noonToSunSet = <div className={`bg-gradient-to-r from-green-500 via-blue-700 to-gray-800 ${sharedCSS}`} />
-
 /**
  * @description
  *
@@ -26,6 +21,13 @@ const noonToSunSet = <div className={`bg-gradient-to-r from-green-500 via-blue-7
  * @joke Why don't mountains get cold in the winter? Because they wear snowcaps!
  *
  */
+
+// FIXME: sunrise is in the east = right, sunset is in the west = left, change the order of the elements and gradients
+
+const sharedCSS = 'mx-2 h-1 w-full flex-1'
+
+const sunRiseToNoon = <div className={`bg-gradient-to-r from-yellow-400 via-sky-300 to-green-500 ${sharedCSS}`} />
+const noonToSunSet = <div className={`bg-gradient-to-r from-green-500 via-blue-700 to-gray-800 ${sharedCSS}`} />
 
 const DividerWithGradient: FC = () => {
   return (

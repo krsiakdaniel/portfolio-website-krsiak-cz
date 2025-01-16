@@ -1,13 +1,8 @@
-import { FC, ReactNode } from 'react'
+import { FC } from 'react'
 
 import { getDataTestIdAttribute } from '@/lib/utils/helpers/getDataTestIdAttribute'
 
-type Heading5Props = {
-  children: ReactNode
-  dataTestId?: string
-  textColor?: string
-  customCss?: string
-}
+import { Heading5Props } from '@/lib/utils/interfaces/componentProps'
 
 const Heading5: FC<Heading5Props> = ({ children, dataTestId = '', textColor = '', customCss = '' }): JSX.Element => {
   return (

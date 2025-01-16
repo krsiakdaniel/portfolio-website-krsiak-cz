@@ -3,10 +3,7 @@ import { FC } from 'react'
 import Heading3 from '@/components/shared/Heading3'
 import Paragraph from '@/components/shared/Paragraph'
 
-type SocialProofCardProps = {
-  title: string
-  description: string
-}
+import { SocialProofCardProps } from '@/lib/utils/interfaces/componentProps'
 
 const SocialProofCard: FC<SocialProofCardProps> = ({ title, description }): JSX.Element => (
   <div className="flex w-full flex-col items-center justify-center rounded-lg bg-gray-100 p-6">

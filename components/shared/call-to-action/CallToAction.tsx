@@ -9,16 +9,7 @@ import IconExternalLink from '@/components/icons/IconExternalLink'
 
 import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
 
-interface CallToActionProps {
-  highlight: string
-  heading: string
-  description: string
-  link: string
-  isLinkExternal?: boolean
-  linkText: string
-  dataTestId: string
-  icon: string
-}
+import { CallToActionProps } from '@/lib/utils/interfaces/componentProps'
 
 const CallToAction: FC<CallToActionProps> = ({
   highlight,

@@ -1,3 +1,6 @@
+// menu toggle
+export type HandleMenuToggleType = () => void
+
 // breadcrumbs
 export type BreadCrumbsType = {
   level1Url: string
