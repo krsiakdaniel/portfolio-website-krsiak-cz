@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { AlertProps } from '@/lib/utils/typeDefinitions/props/props'
+import { AlertProps } from '@/lib/utils/typeDefinitions/props/shared/alert'
 
 const iconInfo = (
   <svg

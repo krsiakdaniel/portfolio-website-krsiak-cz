@@ -4,7 +4,7 @@ import Testimonial from '@/components/pages/testimonials/Testimonial'
 import TestimonialDescription from '@/components/pages/testimonials/TestimonialDescription'
 import TestimonialHeader from '@/components/pages/testimonials/TestimonialHeader'
 
-import { TestimonialsSectionProps } from '@/lib/utils/typeDefinitions/props/props'
+import { TestimonialsSectionProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
 
 const TestimonialsSection: FC<TestimonialsSectionProps> = ({ title, description, testimonials }) => (
   <div className="mt-16">

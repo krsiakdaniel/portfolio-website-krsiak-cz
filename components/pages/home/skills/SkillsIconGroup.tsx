@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
-import { SkillsIconGroupProps } from '@/lib/utils/typeDefinitions/props/props'
+import { SkillsIconGroupProps } from '@/lib/utils/typeDefinitions/props/pages/home/skills'
 
 const SkillsIconGroup: FC<SkillsIconGroupProps> = ({ icons, className = '' }): JSX.Element => {
   return (

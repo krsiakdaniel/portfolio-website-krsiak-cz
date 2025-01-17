@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import { getDataTestIdAttribute } from '@/lib/utils/helpers/getDataTestIdAttribute'
 
-import { Heading3Props } from '@/lib/utils/typeDefinitions/props/props'
+import { Heading3Props } from '@/lib/utils/typeDefinitions/props/shared/headings'
 
 const Heading3: FC<Heading3Props> = ({ children, dataTestId = '', textColor = '', customCss = '' }): JSX.Element => {
   return (

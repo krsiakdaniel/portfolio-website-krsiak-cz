@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import ListItem from '@/components/shared/ListItem'
 
-import { GitHubRepositoryLinkProps } from '@/lib/utils/typeDefinitions/props/props'
+import { GitHubRepositoryLinkProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
 const GitHubRepositoryLink: FC<GitHubRepositoryLinkProps> = ({ link }): JSX.Element => {
   return (

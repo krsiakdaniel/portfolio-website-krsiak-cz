@@ -5,7 +5,7 @@ import ProjectImage from '@/components/pages/projects/overview-page/ProjectImage
 import ProjectLink from '@/components/pages/projects/overview-page/ProjectLink'
 import ProjectSkills from '@/components/pages/projects/overview-page/ProjectSkills'
 
-import { ProjectSummaryCardProps } from '@/lib/utils/typeDefinitions/props/props'
+import { ProjectSummaryCardProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
 const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
   isFeatured,

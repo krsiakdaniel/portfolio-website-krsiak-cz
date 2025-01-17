@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
-import { ProjectSkillsProps } from '@/lib/utils/typeDefinitions/props/props'
+import { ProjectSkillsProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
 const ProjectSkills: FC<ProjectSkillsProps> = ({ mySkillsIcons }): JSX.Element => {
   return (

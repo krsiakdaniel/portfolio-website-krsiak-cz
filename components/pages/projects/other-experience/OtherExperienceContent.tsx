@@ -5,7 +5,7 @@ import Heading4 from '@/components/shared/Heading4'
 
 import { TEXT } from '@/localization/english'
 
-import { OtherExperienceContentProps } from '@/lib/utils/typeDefinitions/props/props'
+import { OtherExperienceContentProps } from '@/lib/utils/typeDefinitions/props/pages/projects/other-experience'
 
 const OtherExperienceContent: FC<OtherExperienceContentProps> = ({ experience }): JSX.Element => {
   return (
