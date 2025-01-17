@@ -24,6 +24,12 @@ export interface Job {
   description: string
 }
 
+// Link
+export interface Link {
+  urlText: string
+  url: string
+}
+
 // Menu
 export interface MenuLink {
   href: string
@@ -37,7 +43,15 @@ export interface MetaDataKeywords {
   [key: string]: string
 }
 
-// Pages Links
+// Other Experience Data
+export interface OtherExperienceData {
+  id: number
+  company: string
+  role: string
+  description: string
+}
+
+// Page Link Item
 export interface PageLinkItem {
   href: string
   text: string
@@ -45,49 +59,32 @@ export interface PageLinkItem {
   id: string
 }
 
-// Project
-export interface Link {
-  urlText: string
-  url: string
-}
-
-export interface Skill {
-  id: number
-  description: SkillCategoryType
-  skillsList: string[]
-}
-
-export interface ImageShowcaseItem {
-  id: number
-  src: string
-}
-
-export interface Project {
-  id: string
+// Project Base
+export interface ProjectBase {
   isFeatured?: boolean
   image: string
-  imageShowcase: ImageShowcaseItem[]
   title: string
   company: string
   role: string
-  years?: string
   description: string
   mySkillsIcons: Icon[]
-  skillsOverview: Skill[]
-  linkText: string
-  projectLinks: Link[]
-  linkGitHub?: string
   customers?: string
   personalProjectNote?: string
+  linkText: string
   linkProjectPage: string
 }
 
-// Sections
-export interface SectionItem {
+// Project
+export interface Project extends ProjectBase {
   id: string
-  text: string
+  imageShowcase: ImageShowcaseItem[]
+  years?: string
+  skillsOverview: Skill[]
+  projectLinks: Link[]
+  linkGitHub?: string
 }
 
+// Section
 export interface Section {
   id?: number
   title: string
@@ -95,12 +92,20 @@ export interface Section {
   items: SectionItem[]
 }
 
-// Skills
-export interface SkillsInfo {
-  id: number
+// Section Item
+export interface SectionItem {
+  id: string
   text: string
 }
 
+// Skill
+export interface Skill {
+  id: number
+  description: SkillCategoryType
+  skillsList: string[]
+}
+
+// Skill Card Item
 export interface SkillCardItem {
   id: string
   imgSrc: StaticImageData
@@ -109,7 +114,13 @@ export interface SkillCardItem {
   years: number
 }
 
-// Status Page
+// Skills Info
+export interface SkillsInfo {
+  id: number
+  text: string
+}
+
+// Status Badge
 export interface StatusBadge {
   id: number
   name: string
@@ -119,7 +130,7 @@ export interface StatusBadge {
   height: number
 }
 
-// Testimonials
+// Testimonial Item
 export interface TestimonialItem {
   id: string
   personPhoto: StaticImageData
@@ -128,10 +139,8 @@ export interface TestimonialItem {
   testimonialText: string
 }
 
-// Work Experience
-export interface OtherExperienceData {
+// Image Showcase Item
+export interface ImageShowcaseItem {
   id: number
-  company: string
-  role: string
-  description: string
+  src: string
 }
