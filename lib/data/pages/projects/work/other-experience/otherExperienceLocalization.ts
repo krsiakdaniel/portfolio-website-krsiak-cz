@@ -6,6 +6,6 @@ export const otherExperienceLocalization: OtherExperienceData[] = [
     id: 1,
     company: 'Smartsupp',
     role: 'Localization - Manager',
-    description: `${YEARS.localizationManager} years — Company web localization. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱`,
+    description: `${YEARS.localizationManager} years — Website localization. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱`,
   },
 ]
