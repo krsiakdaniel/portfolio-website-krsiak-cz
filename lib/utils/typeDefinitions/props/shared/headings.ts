@@ -34,3 +34,11 @@ export type Heading4Props = {
   dataTestId?: string
   textColor?: string
 }
+
+// Heading 5 Props
+export type Heading5Props = {
+  children: ReactNode
+  dataTestId?: string
+  textColor?: string
+  customCss?: string
+}
