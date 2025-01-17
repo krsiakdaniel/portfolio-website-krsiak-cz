@@ -1,5 +1,3 @@
-import { RESUME } from '@/localization/english'
-
 const NAVIGATION = {
   NEXT: 'page-navigation-next',
   PREVIOUS: 'page-navigation-previous',
@@ -187,7 +185,6 @@ export const DATA_TEST_IDS = {
   projects: PROJECTS,
   pagesLinks: PAGES_LINKS,
   callToAction: CALL_TO_ACTION,
-  resume: RESUME,
   navigation: NAVIGATION,
   alert: ALERT,
 }
