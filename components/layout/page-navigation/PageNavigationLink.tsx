@@ -4,7 +4,7 @@ import IconArrow from '@/components/icons/IconArrow'
 
 import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
-import { PageNavigationLinkProps } from '@/lib/utils/typeDefinitions/props'
+import { PageNavigationLinkProps } from '@/lib/utils/typeDefinitions/props/props'
 
 const PageNavigationLink: FC<PageNavigationLinkProps> = ({ href, text, direction, dataTestId }): JSX.Element => {
   const hasArrowLeft = direction === NavigationDirectionEnum.Left

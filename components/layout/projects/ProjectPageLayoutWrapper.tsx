@@ -8,7 +8,7 @@ import ProjectResponsibility from '@/components/layout/projects/project-page/Pro
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionResume from '@/components/shared/call-to-action/CallToActionResume'
 
-import { ProjectPageLayoutWrapperProps } from '@/lib/utils/typeDefinitions/props'
+import { ProjectPageLayoutWrapperProps } from '@/lib/utils/typeDefinitions/props/props'
 
 const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
   goBackLink,

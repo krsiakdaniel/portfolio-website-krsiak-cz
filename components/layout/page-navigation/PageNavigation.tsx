@@ -7,7 +7,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
-import { PageNavigationProps } from '@/lib/utils/typeDefinitions/props'
+import { PageNavigationProps } from '@/lib/utils/typeDefinitions/props/props'
 
 const PageNavigation: FC<PageNavigationProps> = ({
   linkPrevious,
