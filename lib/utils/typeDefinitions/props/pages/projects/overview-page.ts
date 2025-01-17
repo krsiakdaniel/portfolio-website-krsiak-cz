@@ -1,4 +1,4 @@
-import { Project } from '@/lib/utils/typeDefinitions/interfaces'
+import { Icon, Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // Project Details Props
 export type ProjectDetailsProps = {
@@ -29,4 +29,9 @@ export type ProjectSectionProps = {
   projectData: Project[]
   sectionId: string
   sectionText: string
+}
+
+// Project Skills Props
+export type ProjectSkillsProps = {
+  mySkillsIcons: Icon[]
 }
