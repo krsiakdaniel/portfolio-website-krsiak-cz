@@ -28,7 +28,7 @@ const ProjectWorkKomercniBanka: FC = (): JSX.Element => {
       pageID={PROJECT_ID.work.komercniBanka}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.react}
-      projectData={projectsWorkReact[2]}
+      projectData={projectsWorkReact[1]}
       sections={sections}
       PageNavigation={
         <PageNavigation

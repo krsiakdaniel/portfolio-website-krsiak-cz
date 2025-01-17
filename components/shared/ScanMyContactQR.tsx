@@ -32,7 +32,7 @@ const ScanMyContactQR: FC<ScanMyContactQRProps> = ({
       {showNote && (
         <div className="self-start">
           <Paragraph marginTop="mt-2" size="text-sm" textColor="text-neutral-500">
-            Scan Contact
+            Scan With Phone
           </Paragraph>
         </div>
       )}

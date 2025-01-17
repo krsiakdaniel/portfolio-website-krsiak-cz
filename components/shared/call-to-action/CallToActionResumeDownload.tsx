@@ -13,9 +13,9 @@ const CallToActionResumeDownload: FC = (): JSX.Element => {
       heading="Download My Resume"
       description="Get a PDF copy of my resume to learn more about my professional experience."
       link={EXTERNAL_URL.resume.resumeViewPDF}
-      linkText={`💾 ${TEXT.downloadResume}`}
+      linkText={TEXT.downloadResume}
       dataTestId={DATA_TEST_IDS.callToAction.linkResumeDownload}
-      icon="💾"
+      icon="📝"
       isLinkExternal
     />
   )

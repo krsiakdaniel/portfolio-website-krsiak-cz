@@ -1,6 +1,7 @@
 import { FC } from 'react'
 
 import Heading3 from '@/components/shared/Heading3'
+import Highlight from '@/components/shared/Highlight'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
@@ -10,7 +11,7 @@ const PageSection: FC<PageSectionProps> = ({ title, titleHighlight, items }): JS
   return (
     <div className="mt-8">
       <Heading3>
-        {title} {titleHighlight && <span className="text-violet-600">{titleHighlight}</span>}
+        {title} {titleHighlight && <Highlight text={titleHighlight} />}
       </Heading3>
       <div className="mt-4">
         <List>

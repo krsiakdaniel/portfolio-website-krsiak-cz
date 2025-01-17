@@ -5,8 +5,6 @@ import PageContainer from '@/components/layout/PageContainer'
 import CareerPath from '@/components/pages/resume/CareerPath'
 import ResumeContact from '@/components/pages/resume/ResumeContact'
 import ResumeIntroduction from '@/components/pages/resume/ResumeIntroduction'
-import ResumePlainText from '@/components/pages/resume/ResumePlainText'
-import SocialProof from '@/components/pages/resume/SocialProof'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/CallToActionLinkedIn'
 import CallToActionResumeDownload from '@/components/shared/call-to-action/CallToActionResumeDownload'
@@ -33,11 +31,9 @@ const Resume: FC = (): JSX.Element => {
         <Heading1>{TEXT.resume}</Heading1>
         <ResumeIntroduction />
         <CallToActionResumeDownload />
-        <SocialProof />
         <CareerPath />
         <ResumeContact />
         <CallToActionLinkedIn />
-        <ResumePlainText />
       </div>
 
       <PageNavigation

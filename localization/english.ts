@@ -30,7 +30,7 @@ export const COMMON_VALUES = {
 export const DIVIDER_WITH_TEXT = {
   companies: 'Companies',
   myLinks: 'My Links',
-  contactMe: 'Contact Me',
+  contactMe: 'Scan Contact',
   myExpertise: 'My Expertise',
   skills: 'Skills',
   myMainSkills: 'My Main Skills',
@@ -104,12 +104,12 @@ export const PROJECT_INFORMATION = {
 
 export const SOCIAL_PROOF = {
   sectionTitle: 'React and Automation',
-  companiesTitle: 'Companies 5+',
+  companiesTitle: 'React',
   companiesDescription: 'From startup to corporate',
   featuresTitle: 'Features',
-  featuresDescription: 'Countless UI components delivered',
-  automationTitle: 'Automation ∞',
-  automationDescription: 'Automated testing and streamlined CI/CD',
+  featuresDescription: 'Countless UI components',
+  automationTitle: 'Automation',
+  automationDescription: 'Testing and CI/CD',
 }
 
 export const MY_WORK = {
