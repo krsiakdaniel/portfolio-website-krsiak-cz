@@ -1,3 +1,5 @@
+import { RESUME } from '@/localization/english'
+
 const NAVIGATION = {
   NEXT: 'page-navigation-next',
   PREVIOUS: 'page-navigation-previous',
@@ -172,10 +174,6 @@ const CALL_TO_ACTION = {
   linkWorkExperience: 'call-to-action-link-work-experience',
   linkGitHub: 'call-to-action-link-github',
   linkLinkedIn: 'call-to-action-link-linkedin',
-}
-
-const RESUME = {
-  downloadLinkPlainText: 'resume-plain-text-view-pdf',
 }
 
 export const DATA_TEST_IDS = {

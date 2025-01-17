@@ -28,7 +28,7 @@ const ProjectWorkKooperativa: FC = (): JSX.Element => {
       pageID={PROJECT_ID.work.kooperativa}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.react}
-      projectData={projectsWorkReact[1]}
+      projectData={projectsWorkReact[2]}
       sections={sections}
       PageNavigation={
         <PageNavigation
