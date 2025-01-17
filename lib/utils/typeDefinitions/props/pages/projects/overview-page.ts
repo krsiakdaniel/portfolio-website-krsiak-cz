@@ -35,3 +35,20 @@ export type ProjectSectionProps = {
 export type ProjectSkillsProps = {
   mySkillsIcons: Icon[]
 }
+
+// Project Summary Card Props
+export type ProjectSummaryCardProps = {
+  isFeatured?: boolean | undefined
+  image: string
+  title: string
+  company: string
+  role: string
+  description: string
+  mySkillsIcons: Icon[]
+  customers: string | undefined
+  personalProjectNote: string | undefined
+  linkText: string
+  linkProjectPage: string
+  dataTestId: string
+  className: string
+}
