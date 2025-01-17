@@ -22,21 +22,19 @@ import TheSun from '@/components/layout/footer/divider/TheSun'
  *
  */
 
-// FIXME: sunrise is in the east = right, sunset is in the west = left, change the order of the elements and gradients
-
 const sharedCSS = 'mx-2 h-1 w-full flex-1'
 
-const sunRiseToNoon = <div className={`bg-gradient-to-r from-yellow-400 via-sky-300 to-green-500 ${sharedCSS}`} />
-const noonToSunSet = <div className={`bg-gradient-to-r from-green-500 via-blue-700 to-gray-800 ${sharedCSS}`} />
+const noonToSunSet = <div className={`bg-gradient-to-l from-sky-300 via-blue-400 to-gray-500 ${sharedCSS}`} />
+const sunRiseToNoon = <div className={`bg-gradient-to-l from-red-500 via-yellow-400 to-sky-300 ${sharedCSS}`} />
 
 const DividerWithGradient: FC = () => {
   return (
     <div className="flex w-full items-center justify-between">
-      <TheSun />
-      {sunRiseToNoon}
-      <ManWalkingInForest />
-      {noonToSunSet}
       <TheMoon />
+      {noonToSunSet}
+      <ManWalkingInForest />
+      {sunRiseToNoon}
+      <TheSun />
     </div>
   )
 }
