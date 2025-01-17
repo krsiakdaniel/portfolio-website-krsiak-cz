@@ -1,20 +1,22 @@
 import { StaticImageData } from 'next/image'
 
+// Error Page Content Props
 export type ErrorPageContentProps = {
-  imgSrc: StaticImageData
-  imgAlt: string
-  heading: string
-  description: string
-  note: string
-  buttonText?: string
   buttonLink?: string
+  buttonText?: string
+  description: string
+  heading: string
+  imgAlt: string
+  imgSrc: StaticImageData
+  note: string
   onButtonClick?: () => void
 }
 
+// Error Page Layout Props
 export type ErrorPageLayoutProps = {
-  error: Error
-  pageContainerId?: string
-  imgAlt: string
   description: string
+  error: Error
+  imgAlt: string
   note: string
+  pageContainerId?: string
 }

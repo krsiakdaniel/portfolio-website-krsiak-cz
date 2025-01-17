@@ -1,10 +1,11 @@
+// Call To Action Props
 export type CallToActionProps = {
-  highlight: string
-  heading: string
-  description: string
-  link: string
-  isLinkExternal?: boolean
-  linkText: string
   dataTestId: string
+  description: string
+  heading: string
+  highlight: string
   icon: string
+  isLinkExternal?: boolean
+  link: string
+  linkText: string
 }

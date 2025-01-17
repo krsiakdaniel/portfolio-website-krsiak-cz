@@ -1,9 +1,10 @@
 import { LinkColors } from '@/lib/utils/typeDefinitions/enums'
 
+// Social Link Props
 export type SocialLinkProps = {
-  href: string
-  text: string
-  linkColor: LinkColors
   className?: string
   dataTestId: string
+  href: string
+  linkColor: LinkColors
+  text: string
 }

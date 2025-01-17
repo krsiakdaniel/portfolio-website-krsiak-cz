@@ -1,15 +1,18 @@
 import { HandleMenuToggleType } from '@/lib/utils/typeDefinitions/types'
 
+// Menu Props
 export type MenuProps = {
   isMobile: boolean
 }
 
+// Menu Desktop Props
 export type MenuDesktopProps = {
-  isOpen: boolean
   handleMenuToggle: HandleMenuToggleType
+  isOpen: boolean
 }
 
+// Menu Toggle Props
 export type MenuToggleProps = {
-  isOpen: boolean
   handleMenuToggle: HandleMenuToggleType
+  isOpen: boolean
 }

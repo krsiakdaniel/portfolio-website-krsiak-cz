@@ -1,7 +1,8 @@
 import { ReactNode } from 'react'
 
+// Alert Props
 export type AlertProps = {
-  title: string
   description: string
   linkComponent: ReactNode
+  title: string
 }

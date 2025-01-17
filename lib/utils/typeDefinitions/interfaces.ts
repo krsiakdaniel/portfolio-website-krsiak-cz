@@ -3,13 +3,28 @@ import { StaticImageData } from 'next/image'
 import { DurationUnit } from '@/lib/utils/typeDefinitions/enums'
 import { SkillCategoryType } from '@/lib/utils/typeDefinitions/types'
 
-// icons
+// Error Pages
+export interface Errors {
+  error: Error
+}
+
+// Icons
 export interface Icon {
   name: string
   path: string
 }
 
-// menu
+// Job
+export interface Job {
+  id: number
+  path: string
+  title: string
+  duration: number
+  unit: DurationUnit.Year | DurationUnit.Month
+  description: string
+}
+
+// Menu
 export interface MenuLink {
   href: string
   text: string
@@ -17,19 +32,20 @@ export interface MenuLink {
   id: string
 }
 
-// sections
-export interface SectionItem {
-  id: string
-  text: string
-}
-export interface Section {
-  id?: number
-  title: string
-  titleHighlight?: string | undefined
-  items: SectionItem[]
+// Meta Data
+export interface MetaDataKeywords {
+  [key: string]: string
 }
 
-// project item
+// Pages Links
+export interface PageLinkItem {
+  href: string
+  text: string
+  testId: string
+  id: string
+}
+
+// Project
 export interface Link {
   urlText: string
   url: string
@@ -48,7 +64,7 @@ export interface ImageShowcaseItem {
 
 export interface Project {
   id: string
-  isFeatured?: boolean | undefined
+  isFeatured?: boolean
   image: string
   imageShowcase: ImageShowcaseItem[]
   title: string
@@ -66,18 +82,23 @@ export interface Project {
   linkProjectPage: string
 }
 
-export interface SkillsInfo {
-  id: number
+// Sections
+export interface SectionItem {
+  id: string
   text: string
 }
 
-export interface Job {
-  id: number
-  path: string
+export interface Section {
+  id?: number
   title: string
-  duration: number
-  unit: DurationUnit.Year | DurationUnit.Month
-  description: string
+  titleHighlight?: string
+  items: SectionItem[]
+}
+
+// Skills
+export interface SkillsInfo {
+  id: number
+  text: string
 }
 
 export interface SkillCardItem {
@@ -88,7 +109,7 @@ export interface SkillCardItem {
   years: number
 }
 
-// status page
+// Status Page
 export interface StatusBadge {
   id: number
   name: string
@@ -98,20 +119,7 @@ export interface StatusBadge {
   height: number
 }
 
-// pages links
-export interface PageLinkItem {
-  href: string
-  text: string
-  testId: string
-  id: string
-}
-
-// error pages
-export interface Errors {
-  error: Error
-}
-
-// testimonials
+// Testimonials
 export interface TestimonialItem {
   id: string
   personPhoto: StaticImageData
@@ -120,12 +128,7 @@ export interface TestimonialItem {
   testimonialText: string
 }
 
-// meta data
-export interface MetaDataKeywords {
-  [key: string]: string
-}
-
-// work experience
+// Work Experience
 export interface OtherExperienceData {
   id: number
   company: string

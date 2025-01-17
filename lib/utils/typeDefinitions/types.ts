@@ -1,13 +1,13 @@
-// menu toggle
-export type HandleMenuToggleType = () => void
-
-// breadcrumbs
+// Breadcrumbs
 export type BreadCrumbsType = {
-  level1Url: string
   level1Text: string
-  level2Url?: string
+  level1Url: string
   level2Text?: string
+  level2Url?: string
 }
 
-// skills
-export type SkillCategoryType = 'Frontend' | 'Design' | 'Other'
+// Menu Toggle
+export type HandleMenuToggleType = () => void
+
+// Skills
+export type SkillCategoryType = 'Design' | 'Frontend' | 'Other'

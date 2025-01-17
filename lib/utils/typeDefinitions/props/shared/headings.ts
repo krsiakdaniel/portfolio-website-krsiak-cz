@@ -1,40 +1,36 @@
 import { ReactNode } from 'react'
 
-// TODO: refactor file
+// Heading 1 Props
 export type Heading1Props = {
   children: ReactNode
+  customCss?: string | null
   dataTestId?: string
   textColor?: string
   textSize?: string
-  textSizeSM?: string
   textSizeLG?: string
-  customCss?: string | null
+  textSizeSM?: string
 }
 
+// Heading 2 Props
 export type Heading2Props = {
   children: ReactNode
+  customCss?: string
   dataTestId?: string
   textColor?: string
-  customCss?: string
 }
 
+// Heading 3 Props
 export type Heading3Props = {
   children: ReactNode
+  customCss?: string
   dataTestId?: string
   textColor?: string
-  customCss?: string
 }
 
+// Heading 4 Props
 export type Heading4Props = {
   children: ReactNode
+  customCss?: string
   dataTestId?: string
   textColor?: string
-  customCss?: string
-}
-
-export type Heading5Props = {
-  children: ReactNode
-  dataTestId?: string
-  textColor?: string
-  customCss?: string
 }
