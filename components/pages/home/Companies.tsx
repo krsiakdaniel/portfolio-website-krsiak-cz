@@ -6,6 +6,7 @@ import Heading2 from '@/components/shared/Heading2'
 
 import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization/english'
 
+import groupon from '@/public/images/svg/logo/groupon.svg'
 import ibm from '@/public/images/svg/logo/ibm.svg'
 import komercniBanka from '@/public/images/svg/logo/komercni-banka.svg'
 import kooperativa from '@/public/images/svg/logo/kooperativa.svg'
@@ -36,6 +37,9 @@ const Companies: FC = (): JSX.Element => {
         </div>
         <div className={logosWrapperCss}>
           <Image src={komercniBanka} width={130} alt={IMAGE_ALT.komercniBanka} className={imageCss} />
+        </div>
+        <div className={logosWrapperCss}>
+          <Image src={groupon} width={130} alt={IMAGE_ALT.komercniBanka} className={imageCss} />
         </div>
       </div>
     </section>

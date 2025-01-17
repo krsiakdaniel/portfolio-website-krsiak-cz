@@ -2,12 +2,13 @@ import { FC } from 'react'
 
 import SocialProofCard from '@/components/pages/resume/SocialProofCard'
 
+import DividerWithText from '@/components/shared/DividerWithText'
 import { SOCIAL_PROOF } from '@/localization/english'
 
 const SocialProof: FC = (): JSX.Element => {
   return (
     <div className="mt-16 w-full bg-white text-left">
-      <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">{SOCIAL_PROOF.sectionTitle}</div>
+      <DividerWithText text={SOCIAL_PROOF.sectionTitle} />
       <div className="mt-4 w-full py-0 text-center">
         <div className="flex w-full flex-col gap-4 text-gray-900 lg:flex-row">
           <div className="flex w-full flex-col gap-4 md:flex-row lg:w-2/3">

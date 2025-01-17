@@ -39,12 +39,12 @@ const ProjectsWork: FC = (): JSX.Element => {
         {/* REACT */}
         <ProjectSection sectionId={ID.section.react} sectionText="React" projectData={projectsWorkReact} />
 
-        {/* CTA */}
-        <CallToActionResume />
-
         {/* FRONT END */}
         <ProjectSection sectionId={ID.section.frontEnd} sectionText="Front End" projectData={projectsWorkFrontEnd} />
         <OtherExperienceContent experience={otherExperienceFrontEnd} />
+
+        {/* CTA */}
+        <CallToActionResume />
 
         {/* WORDPRESS */}
         <ProjectSection sectionId={ID.section.wordpress} sectionText="WordPress" projectData={projectsWorkWordPress} />

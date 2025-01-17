@@ -7,6 +7,7 @@ import MyExpertise from '@/components/pages/home/expertise/MyExpertise'
 import Hero from '@/components/pages/home/hero/Hero'
 import Skills from '@/components/pages/home/skills/Skills'
 import SkillsMain from '@/components/pages/home/skills/SkillsMain'
+import SocialProof from '@/components/pages/resume/SocialProof'
 import CallToActionWorkExperience from '@/components/shared/call-to-action/CallToActionWorkExperience'
 
 import { metaDataHome } from '@/lib/data/metadata/pages/metaDataHome'
@@ -29,6 +30,7 @@ const Page: FC = (): JSX.Element => {
       <SkillsMain />
       <CallToActionWorkExperience />
       <MyExpertise />
+      <SocialProof />
       <Companies />
 
       <PageNavigation

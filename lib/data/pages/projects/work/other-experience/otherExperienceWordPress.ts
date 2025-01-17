@@ -6,6 +6,6 @@ export const otherExperienceWordPress: OtherExperienceData[] = [
     id: 1,
     company: 'Freelance',
     role: 'WordPress Developer / Consultant',
-    description: `${YEARS.consultantWordPress} years · part-time — I used to create websites for small companies.`,
+    description: `${YEARS.consultantWordPress} years · part-time — Websites for small companies.`,
   },
 ]

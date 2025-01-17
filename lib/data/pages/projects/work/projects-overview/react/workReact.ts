@@ -4,4 +4,4 @@ import { workReactSmartsuppDashboard } from '@/lib/data/pages/projects/work/proj
 
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
-export const projectsWorkReact: Project[] = [workReactSmartsuppDashboard, workReactKooperativa, workReactKomercniBanka]
+export const projectsWorkReact: Project[] = [workReactSmartsuppDashboard, workReactKomercniBanka, workReactKooperativa]
