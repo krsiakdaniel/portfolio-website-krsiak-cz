@@ -1,44 +1,27 @@
 import { ReactNode } from 'react'
 
-// Heading 1 Props
-export type Heading1Props = {
+type SharedHeadingProps = {
   children: ReactNode
-  customCss?: string | null
+  customCss?: string
   dataTestId?: string
   textColor?: string
+}
+
+// Heading 1 Props
+export type Heading1Props = SharedHeadingProps & {
   textSize?: string
   textSizeLG?: string
   textSizeSM?: string
 }
 
 // Heading 2 Props
-export type Heading2Props = {
-  children: ReactNode
-  customCss?: string
-  dataTestId?: string
-  textColor?: string
-}
+export type Heading2Props = SharedHeadingProps
 
 // Heading 3 Props
-export type Heading3Props = {
-  children: ReactNode
-  customCss?: string
-  dataTestId?: string
-  textColor?: string
-}
+export type Heading3Props = SharedHeadingProps
 
 // Heading 4 Props
-export type Heading4Props = {
-  children: ReactNode
-  customCss?: string
-  dataTestId?: string
-  textColor?: string
-}
+export type Heading4Props = SharedHeadingProps
 
 // Heading 5 Props
-export type Heading5Props = {
-  children: ReactNode
-  dataTestId?: string
-  textColor?: string
-  customCss?: string
-}
+export type Heading5Props = SharedHeadingProps
