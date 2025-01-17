@@ -3,7 +3,7 @@ import { iconsSkillsProjectsWorkGroupon } from '@/lib/data/pages/projects/work/p
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { Project } from '@/lib/utils/interfaces/interfaces'
+import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // groupon
 import groupon1 from '@/public/images/webp/projects/work/groupon/groupon-1-light.webp'

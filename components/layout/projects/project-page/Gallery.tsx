@@ -8,11 +8,8 @@ import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import Paragraph from '@/components/shared/Paragraph'
-import { ImageShowcaseItem } from '@/lib/utils/interfaces/interfaces'
 
-type GalleryProps = {
-  imageShowcase: ImageShowcaseItem[]
-}
+import { GalleryProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
 const Gallery: FC<GalleryProps> = ({ imageShowcase }): JSX.Element => {
   return (

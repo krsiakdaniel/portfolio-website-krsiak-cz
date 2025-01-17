@@ -1,7 +1,7 @@
 import { MONTHS, YEARS } from '@/lib/utils/constants/yearsExperience'
 
-import { DurationUnit } from '@/lib/utils/interfaces/enums'
-import { Job } from '@/lib/utils/interfaces/interfaces'
+import { DurationUnit } from '@/lib/utils/typeDefinitions/enums'
+import { Job } from '@/lib/utils/typeDefinitions/interfaces'
 
 import bug from '@/public/icons/svg/bug.svg'
 import check from '@/public/icons/svg/check.svg'

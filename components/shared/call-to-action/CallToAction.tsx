@@ -7,18 +7,9 @@ import Paragraph from '@/components/shared/Paragraph'
 
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
-import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
+import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
-interface CallToActionProps {
-  highlight: string
-  heading: string
-  description: string
-  link: string
-  isLinkExternal?: boolean
-  linkText: string
-  dataTestId: string
-  icon: string
-}
+import { CallToActionProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
 const CallToAction: FC<CallToActionProps> = ({
   highlight,

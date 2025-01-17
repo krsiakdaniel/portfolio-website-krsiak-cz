@@ -9,9 +9,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { BreadCrumbsType } from '@/lib/utils/interfaces/types'
-
-type BreadCrumbsProps = BreadCrumbsType
+import { BreadCrumbsProps } from '@/lib/utils/typeDefinitions/props/shared/breadcrumbs'
 
 const BreadCrumbs: FC<BreadCrumbsProps> = ({ level1Url, level1Text, level2Url, level2Text }): JSX.Element => {
   {

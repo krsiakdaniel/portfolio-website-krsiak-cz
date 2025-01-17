@@ -5,15 +5,9 @@ import PageContainer from '@/components/layout/PageContainer'
 
 import { TEXT } from '@/localization/english'
 
-import imgError from '@/public/images/webp/errors/error.webp'
+import { ErrorPageLayoutProps } from '@/lib/utils/typeDefinitions/props/layout/errors'
 
-type ErrorPageLayoutProps = {
-  error: Error
-  pageContainerId?: string
-  imgAlt: string
-  description: string
-  note: string
-}
+import imgError from '@/public/images/webp/errors/error.webp'
 
 const reset = () => {
   window.location.reload()

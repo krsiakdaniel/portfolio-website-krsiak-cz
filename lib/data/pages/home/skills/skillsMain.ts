@@ -1,5 +1,5 @@
 import { YEARS } from '@/lib/utils/constants/yearsExperience'
-import { SkillCardItem } from '@/lib/utils/interfaces/interfaces'
+import { SkillCardItem } from '@/lib/utils/typeDefinitions/interfaces'
 
 import { TEXT } from '@/localization/english'
 

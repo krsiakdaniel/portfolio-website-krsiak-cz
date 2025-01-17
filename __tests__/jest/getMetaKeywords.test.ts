@@ -1,5 +1,5 @@
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
-import { MetaDataKeywords } from '@/lib/utils/interfaces/interfaces'
+import { MetaDataKeywords } from '@/lib/utils/typeDefinitions/interfaces'
 
 describe('formatKeywordsString', () => {
   it('should convert metadata keywords object to a comma-separated string', () => {

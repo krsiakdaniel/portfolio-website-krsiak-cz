@@ -1,9 +1,11 @@
 import { FC } from 'react'
 
-const IconCheck: FC = (): JSX.Element => {
+import { IconCheckProps } from '@/lib/utils/typeDefinitions/props/icons'
+
+const IconCheck: FC<IconCheckProps> = ({ iconColor = 'text-violet-600' }): JSX.Element => {
   return (
     <svg
-      className="mr-2 mt-1 h-3.5 w-3.5 text-violet-600"
+      className={`${iconColor} mr-2 mt-1 h-3.5 w-3.5`}
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"

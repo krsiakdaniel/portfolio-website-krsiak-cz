@@ -1,6 +1,6 @@
 import { BrowserContext, chromium, Page } from '@playwright/test'
 
-import { BrowserSetup } from '@/__tests__/playwright/lib/utils/interfaces/interfaces'
+import { BrowserSetup } from '@/__tests__/playwright/lib/utils/typeDefinitions/interfaces'
 
 /**
  * Function to setup the browser, context, and page.

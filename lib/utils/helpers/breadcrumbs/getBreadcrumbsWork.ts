@@ -2,7 +2,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { TEXT } from '@/localization/english'
 
-import { BreadCrumbsType } from '@/lib/utils/interfaces/types'
+import { BreadCrumbsType } from '@/lib/utils/typeDefinitions/types'
 
 /**
  * Generates breadcrumb data for work experience.

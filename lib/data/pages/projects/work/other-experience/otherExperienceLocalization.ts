@@ -1,5 +1,5 @@
 import { YEARS } from '@/lib/utils/constants/yearsExperience'
-import { OtherExperienceData } from '@/lib/utils/interfaces/interfaces'
+import { OtherExperienceData } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const otherExperienceLocalization: OtherExperienceData[] = [
   {

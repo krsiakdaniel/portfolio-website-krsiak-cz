@@ -2,11 +2,9 @@ import { FC } from 'react'
 
 import IconArrow from '@/components/icons/IconArrow'
 
-import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
+import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
-type DefaultNoLinkNavigationProps = {
-  arrowDirection: NavigationDirectionEnum
-}
+import { DefaultNoLinkNavigationProps } from '@/lib/utils/typeDefinitions/props/layout/page-navigation'
 
 const DefaultNoLinkNavigation: FC<DefaultNoLinkNavigationProps> = ({ arrowDirection }) => {
   return (

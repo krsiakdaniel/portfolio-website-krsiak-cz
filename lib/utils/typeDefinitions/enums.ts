@@ -1,25 +1,25 @@
-// go back link
+// Go Back Link
 export enum GoBackLinkEnum {
-  Work = 'work',
   Personal = 'personal',
+  Work = 'work',
 }
 
-// navigation links direction
+// Navigation Links Direction
 export enum NavigationDirectionEnum {
   Left = 'left',
   Right = 'right',
 }
 
-// social links
+// Social Links
 export enum LinkColors {
-  Red = 'red',
   Blue = 'blue',
   Gray = 'gray',
+  Red = 'red',
   Yellow = 'yellow',
 }
 
-// resume
+// Resume
 export enum DurationUnit {
-  Year = 'year',
   Month = 'month',
+  Year = 'year',
 }

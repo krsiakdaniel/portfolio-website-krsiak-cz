@@ -8,7 +8,7 @@ import { DIVIDER_WITH_TEXT, TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
-import { LinkColors } from '@/lib/utils/interfaces/enums'
+import { LinkColors } from '@/lib/utils/typeDefinitions/enums'
 
 const FooterSocialLinks: FC = (): JSX.Element => {
   return (

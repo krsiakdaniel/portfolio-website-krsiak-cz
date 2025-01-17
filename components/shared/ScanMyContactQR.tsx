@@ -6,23 +6,18 @@ import Paragraph from '@/components/shared/Paragraph'
 
 import { DIVIDER_WITH_TEXT } from '@/localization/english'
 
+import { ScanMyContactQRProps } from '@/lib/utils/typeDefinitions/props/shared/scan-my-contact-qr'
+
 import contactQR from '@/public/images/svg/vcard-contact/krsiak-daniel-qr-code-vcard.svg'
 
-type ScanMyContactQRProps = {
-  showDivider?: boolean
-  showNote?: boolean
-  width?: number
-  height?: number
-}
-
-const WIDTH = 256
-const HEIGHT = 256
+const IMAGE_WIDTH = 256
+const IMAGE_HEIGHT = 256
 
 const ScanMyContactQR: FC<ScanMyContactQRProps> = ({
   showDivider = false,
   showNote = false,
-  width = WIDTH,
-  height = HEIGHT,
+  width = IMAGE_WIDTH,
+  height = IMAGE_HEIGHT,
 }): JSX.Element => {
   return (
     <div className="flex flex-col items-center">

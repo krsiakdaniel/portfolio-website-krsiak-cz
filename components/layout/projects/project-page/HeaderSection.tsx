@@ -8,8 +8,9 @@ import Heading2 from '@/components/shared/Heading2'
 import { TEXT } from '@/localization/english'
 
 import { getGoBackLinkID } from '@/lib/utils/helpers/page-navigation/getGoBackLink'
-import { HeaderSectionProps } from '@/lib/utils/interfaces/componentProps'
-import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
+import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+
+import { HeaderSectionProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
 const HeaderSection: FC<HeaderSectionProps> = ({ title, role, years, company, goBackLink, sectionID }): JSX.Element => {
   return (

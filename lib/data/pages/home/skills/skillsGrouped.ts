@@ -1,5 +1,5 @@
 import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
-import { Icon } from '@/lib/utils/interfaces/interfaces'
+import { Icon } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const iconsWebDesign: Icon[] = getSkillsIcons(['html', 'css', 'scss', 'tailwind'])
 export const iconsWebDevelopment: Icon[] = getSkillsIcons(['javascript', 'typescript', 'react', 'next'])

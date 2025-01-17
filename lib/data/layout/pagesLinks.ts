@@ -4,7 +4,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { TEXT } from '@/localization/english'
 
-import { PageLinkItem } from '@/lib/utils/interfaces/interfaces'
+import { PageLinkItem } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const pagesLinks: PageLinkItem[] = [
   {

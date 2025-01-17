@@ -8,7 +8,7 @@ import { TEXT } from '@/localization/english'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-import { Errors } from '@/lib/utils/interfaces/interfaces'
+import { Errors } from '@/lib/utils/typeDefinitions/interfaces'
 
 type ErrorProps = Errors
 

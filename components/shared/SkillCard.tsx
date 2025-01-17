@@ -3,9 +3,8 @@ import { FC } from 'react'
 
 import { getSkillCardID } from '@/lib/utils/helpers/skills/getSkillCardID'
 import { getYearsText } from '@/lib/utils/helpers/years/getYearsText'
-import { SkillCardItem } from '@/lib/utils/interfaces/interfaces'
 
-type SkillCardProps = SkillCardItem
+import { SkillCardProps } from '@/lib/utils/typeDefinitions/props/shared/skill-card'
 
 const SkillCard: FC<SkillCardProps> = ({ id, imgSrc, imgAlt, title, years }): JSX.Element => {
   return (

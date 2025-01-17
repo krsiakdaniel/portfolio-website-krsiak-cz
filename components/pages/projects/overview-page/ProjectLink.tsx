@@ -2,13 +2,9 @@ import { FC } from 'react'
 
 import IconArrow from '@/components/icons/IconArrow'
 
-import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
+import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
-type ProjectLinkProps = {
-  linkText: string
-  linkProjectPage: string
-  dataTestId: string
-}
+import { ProjectLinkProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
 const ProjectLink: FC<ProjectLinkProps> = ({ linkText, linkProjectPage, dataTestId }): JSX.Element => (
   <p>

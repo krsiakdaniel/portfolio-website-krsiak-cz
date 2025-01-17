@@ -1,6 +1,6 @@
 import { TEXT } from '@/localization/english'
 
-import { TestimonialItem } from '@/lib/utils/interfaces/interfaces'
+import { TestimonialItem } from '@/lib/utils/typeDefinitions/interfaces'
 
 import personCastro from '@/public/images/webp/testimonials/personal/alexandre-castro.webp'
 import personMoorhead from '@/public/images/webp/testimonials/personal/jonathan-moorhead.webp'

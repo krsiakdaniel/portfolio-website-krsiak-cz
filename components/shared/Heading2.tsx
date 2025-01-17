@@ -1,13 +1,8 @@
-import { FC, ReactNode } from 'react'
+import { FC } from 'react'
 
 import { getDataTestIdAttribute } from '@/lib/utils/helpers/getDataTestIdAttribute'
 
-type Heading2Props = {
-  children: ReactNode
-  dataTestId?: string
-  textColor?: string
-  customCss?: string
-}
+import { Heading2Props } from '@/lib/utils/typeDefinitions/props/shared/headings'
 
 const Heading2: FC<Heading2Props> = ({
   children,

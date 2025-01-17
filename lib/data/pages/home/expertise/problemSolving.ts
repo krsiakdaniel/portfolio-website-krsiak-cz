@@ -1,4 +1,4 @@
-import { SkillsInfo } from '@/lib/utils/interfaces/interfaces'
+import { SkillsInfo } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const problemSolvingItems: SkillsInfo[] = [
   { id: 0, text: 'Ability to think outside the box' },

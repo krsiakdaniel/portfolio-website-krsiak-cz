@@ -3,13 +3,7 @@ import { FC } from 'react'
 import ExperienceSection from '@/components/pages/projects/other-experience/ExperienceSection'
 import ProjectSummaryCard from '@/components/pages/projects/overview-page/ProjectSummaryCard'
 
-import { Project } from '@/lib/utils/interfaces/interfaces'
-
-type ProjectSectionProps = {
-  projectData: Project[]
-  sectionId: string
-  sectionText: string
-}
+import { ProjectSectionProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
 const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, sectionText }): JSX.Element => {
   return (

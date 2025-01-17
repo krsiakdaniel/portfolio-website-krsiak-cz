@@ -1,4 +1,4 @@
-import { Icon } from '@/lib/utils/interfaces/interfaces'
+import { Icon } from '@/lib/utils/typeDefinitions/interfaces'
 
 // Import SVG icons
 import chakra from '@/public/icons/svg/skills/chakra.svg'

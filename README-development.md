@@ -159,8 +159,13 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 ```ts
 // Utils - Helpers and Interfaces
 import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
-import { HeaderSectionProps } from '@/lib/utils/interfaces/componentProps'
-import { NavigationDirectionEnum } from '@/lib/utils/interfaces/enums'
+import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+```
+
+```ts
+// Component Props
+import { HeaderSectionProps } from '@/lib/utils/typeDefinitions/props'
+import { SkillCardProps } from '@/lib/utils/typeDefinitions/props'
 ```
 
 ```ts

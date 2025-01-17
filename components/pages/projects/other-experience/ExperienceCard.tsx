@@ -4,11 +4,7 @@ import Heading5 from '@/components/shared/Heading5'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
-type ExperienceCardProps = {
-  company: string
-  role: string
-  description: string
-}
+import { ExperienceCardProps } from '@/lib/utils/typeDefinitions/props/pages/projects/other-experience'
 
 const ExperienceCard: FC<ExperienceCardProps> = ({ company, role, description }): JSX.Element => {
   return (
