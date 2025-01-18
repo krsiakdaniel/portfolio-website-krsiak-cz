@@ -22,7 +22,7 @@ export const COMMON_VALUES = {
   tailwindShort: 'Tailwind',
   figma: 'Figma',
   storybook: 'Storybook',
-  xd: 'XD',
+  xd: 'Adobe XD',
   sketch: 'Sketch',
   graphql: 'GraphQL',
 }
@@ -127,7 +127,7 @@ export const MISC = {
       ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, ${COMMON_VALUES.next},
       ${COMMON_VALUES.redux}, ${COMMON_VALUES.graphql}, ${COMMON_VALUES.jest}, ${COMMON_VALUES.playwright},
       ${COMMON_VALUES.html}, ${COMMON_VALUES.css}, ${COMMON_VALUES.sass}, ${COMMON_VALUES.tailwind}, 
-      ${COMMON_VALUES.storybook}, ${COMMON_VALUES.figma}, ${COMMON_VALUES.xd}, ${COMMON_VALUES.sketch}
+      ${COMMON_VALUES.sketch}, ${COMMON_VALUES.xd}, ${COMMON_VALUES.figma}, ${COMMON_VALUES.storybook}
     `,
   brno: COMMON_VALUES.brno,
   czechRepublic: COMMON_VALUES.czechRepublic,
