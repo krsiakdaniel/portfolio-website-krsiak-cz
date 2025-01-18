@@ -12,7 +12,7 @@ const CallToActionResumeDownload: FC = (): JSX.Element => {
       highlight="Resume in PDF"
       heading="Download My Resume"
       description="Get a PDF copy of my resume to learn more about my professional experience."
-      link={EXTERNAL_URL.resume.resumeViewPDF}
+      link={EXTERNAL_URL.resumeViewPDF}
       linkText={TEXT.downloadResume}
       dataTestId={DATA_TEST_IDS.callToAction.linkResumeDownload}
       icon="📝"
