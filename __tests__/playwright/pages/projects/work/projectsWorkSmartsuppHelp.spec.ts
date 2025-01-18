@@ -7,7 +7,7 @@ test.describe('Project Work - Smartsupp - HELP', () => {
     })
 
     await test.step('Check HELP Website link', async () => {
-      const link = page.getByRole('link', { name: 'Website →' })
+      const link = page.getByRole('link', { name: 'Website' })
       const href = await link.getAttribute('href')
       const expectedUrl = 'https://help.smartsupp.com/'
       expect(href).toBe(expectedUrl)

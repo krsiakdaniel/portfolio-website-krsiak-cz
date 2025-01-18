@@ -36,7 +36,7 @@ export const projectsWorkLocalization: Project[] = [
       },
     ],
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website →', url: 'https://www.rws.com/' }],
+    projectLinks: [{ urlText: 'Website', url: 'https://www.rws.com/' }],
     customers: '80 out of the world top 100 brands',
     linkProjectPage: PAGES_URL.work.moravia,
   },

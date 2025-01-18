@@ -39,7 +39,7 @@ test.describe('Project - Groupon', () => {
 
     // Check the Website link
     await test.step('Check Website link', async () => {
-      const link = page.getByRole('link', { name: 'Website →' })
+      const link = page.getByRole('link', { name: 'Website' })
       const href = await link.getAttribute('href')
       const expectedUrl = 'https://www.groupon.com/'
       expect(href).toBe(expectedUrl)

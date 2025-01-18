@@ -36,7 +36,7 @@ export const workReactKooperativa: Project = {
     { id: 2, description: 'Other', skillsList: ['Jira', 'Confluence'] },
   ],
   linkText: 'Project details',
-  projectLinks: [{ urlText: 'Website →', url: 'https://www.koop.cz/pojisteni/pojisteni-majetku' }],
+  projectLinks: [{ urlText: 'Website', url: 'https://www.koop.cz/pojisteni/pojisteni-majetku' }],
   customers: '2 480 000+',
   linkProjectPage: PAGES_URL.work.kooperativa,
 }

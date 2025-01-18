@@ -1,6 +1,7 @@
 import { FC } from 'react'
 
 import ExpertiseSection from '@/components/pages/home/expertise/ExpertiseSection'
+import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { careerAutomation } from '@/lib/data/pages/resume/career-path/careerAutomation'
@@ -14,8 +15,8 @@ const CareerPath: FC = (): JSX.Element => {
 
       <div>
         <Paragraph size="text-sm">
-          <strong>My journey:</strong> 🏢 IBM · Mainframes ← ✈️ Airport · Ticket Agent ← 🍗 KFC ← 📊 High School ·
-          Accountant
+          <strong>My journey:</strong> ⚛️ <Highlight text="React" /> ← 🖥️ <Highlight text="Front End" /> ← ⚙️{' '}
+          <Highlight text="Testing" /> ← 🏢 IBM · Mainframes ← ✈️ Airport · Ticket Agent ← 🍗 KFC ← 📚 High School
         </Paragraph>
       </div>
 

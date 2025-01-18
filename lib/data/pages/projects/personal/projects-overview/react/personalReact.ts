@@ -42,7 +42,7 @@ export const projectsPersonalReact: Project[] = [
       },
     ],
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website →', url: 'https://cryptocurrency-prices-one.vercel.app/' }],
+    projectLinks: [{ urlText: 'Website', url: 'https://cryptocurrency-prices-one.vercel.app/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
     personalProjectNote: 'Project to exercise coding.',
     linkProjectPage: PAGES_URL.personal.cryptoMania,

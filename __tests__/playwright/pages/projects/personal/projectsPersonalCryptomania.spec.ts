@@ -49,7 +49,7 @@ test.describe('Project - Cryptomania', () => {
 
     // Check the Website link
     await test.step('Check Website link', async () => {
-      const link = page.getByRole('link', { name: 'Website →' })
+      const link = page.getByTestId('project-link-website')
       const href = await link.getAttribute('href')
       const expectedUrl = 'https://cryptocurrency-prices-one.vercel.app/'
       expect(href).toBe(expectedUrl)
@@ -57,7 +57,7 @@ test.describe('Project - Cryptomania', () => {
 
     // Check the GitHub link
     await test.step('Check GitHub link', async () => {
-      const linkGitHub = page.getByRole('link', { name: 'GitHub repository →' })
+      const linkGitHub = page.getByTestId('project-link-github')
       const hrefGitHub = await linkGitHub.getAttribute('href')
       const expectedUrlGitHub = 'https://github.com/krsiakdaniel/cryptocurrency-prices'
       expect(hrefGitHub).toBe(expectedUrlGitHub)
