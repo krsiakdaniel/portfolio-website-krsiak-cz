@@ -16,18 +16,18 @@ const getMenuLinkCSS = (isMobile: boolean): string => {
 }
 
 const Menu: FC<MenuProps> = ({ isMobile }): JSX.Element => {
-  const menuDataTestID = isMobile ? DATA_TEST_IDS.menu.mobile.componentMenu : DATA_TEST_IDS.menu.desktop.componentMenu
-  const menuID = isMobile ? ID.menu.mobile : ID.menu.desktop
+  const menuDataTestId = isMobile ? DATA_TEST_IDS.menu.mobile.componentMenu : DATA_TEST_IDS.menu.desktop.componentMenu
+  const menuId = isMobile ? ID.menu.mobile : ID.menu.desktop
 
   return (
-    <nav aria-label={ARIA_LABELS.menu} data-testid={menuDataTestID} id={menuID}>
+    <nav aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
       <ul className={isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-8 lg:flex'}>
         {pagesLinks.map((link) => (
           <li key={link.id}>
             <Link
               href={link.href}
               className={`font-bold text-neutral-600 hover:text-violet-600 ${getMenuLinkCSS(isMobile)}`}
-              data-testid={isMobile ? `mobile-${link.testId}` : `desktop-${link.testId}`}
+              data-testid={isMobile ? `mobile-${link.dataTestId}` : `desktop-${link.dataTestId}`}
               id={getMenuLinkID({
                 isMobile: isMobile,
                 linkID: link.id,

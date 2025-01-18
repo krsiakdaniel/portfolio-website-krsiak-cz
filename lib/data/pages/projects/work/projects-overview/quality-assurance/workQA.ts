@@ -36,7 +36,7 @@ export const projectsWorkQA: Project[] = [
       { id: 2, description: 'Other', skillsList: ['Jira', 'Confluence', 'Tempo', 'QA', 'Team Management'] },
     ],
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website', url: 'https://www.groupon.com/' }],
+    projectLinks: [{ urlText: 'Website', url: 'https://www.groupon.com/', dataTestId: 'groupon' }],
     customers: '17 000 000+',
     linkProjectPage: PAGES_URL.work.groupon,
   },

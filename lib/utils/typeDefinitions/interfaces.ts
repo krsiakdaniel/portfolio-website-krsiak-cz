@@ -28,14 +28,7 @@ export interface Job {
 export interface Link {
   urlText: string
   url: string
-}
-
-// Menu
-export interface MenuLink {
-  href: string
-  text: string
-  testId: string
-  id: string
+  dataTestId: string
 }
 
 // Meta Data
@@ -55,7 +48,7 @@ export interface OtherExperienceData {
 export interface PageLinkItem {
   href: string
   text: string
-  testId: string
+  dataTestId: string
   id: string
 }
 

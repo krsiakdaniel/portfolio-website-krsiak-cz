@@ -43,18 +43,22 @@ export const workReactKomercniBanka: Project = {
     {
       urlText: 'Branches & ATMs',
       url: 'https://www.kb.cz/en/branches-and-atms',
+      dataTestId: 'branches-atms',
     },
     {
       urlText: 'Branches & ATMs - Details',
       url: 'https://www.kb.cz/en/branches-and-atms/branches/brno-nam-svobody-1',
+      dataTestId: 'branches-atms-details',
     },
     {
       urlText: 'Exchange Rates',
       url: 'https://www.kb.cz/en/exchange-rates',
+      dataTestId: 'exchange-rates',
     },
     {
       urlText: 'Exchange Rates - Details',
       url: 'https://www.kb.cz/en/exchange-rates/exchange-detail?curr=CHF&date=2024-12-27T07:00:00',
+      dataTestId: 'exchange-rates-details',
     },
   ],
   customers: '2 000 000+',

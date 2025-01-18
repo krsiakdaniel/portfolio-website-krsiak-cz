@@ -1,3 +1,5 @@
+export const PROJECT_LINK = 'project-link'
+
 const NAVIGATION = {
   NEXT: 'page-navigation-next',
   PREVIOUS: 'page-navigation-previous',
@@ -175,8 +177,8 @@ const CALL_TO_ACTION = {
 }
 
 const EXTERNAL_LINKS = {
-  projectLinkGitHub: `project-link-${LINKS.GITHUB}`,
-  projectLinkWebsite: `project-link-website`,
+  projectLinkGitHub: `${PROJECT_LINK}-${LINKS.GITHUB}`,
+  projectLinkWebsite: `${PROJECT_LINK}-website`,
 }
 
 export const DATA_TEST_IDS = {

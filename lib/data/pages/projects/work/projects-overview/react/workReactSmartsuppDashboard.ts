@@ -39,7 +39,13 @@ export const workReactSmartsuppDashboard: Project = {
     { id: 2, description: 'Other', skillsList: ['Trello'] },
   ],
   linkText: 'Project details',
-  projectLinks: [{ urlText: 'Website', url: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/' }],
+  projectLinks: [
+    {
+      urlText: 'Website',
+      url: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/',
+      dataTestId: 'smartsupp-dashboard',
+    },
+  ],
   customers: '100 000+',
   linkProjectPage: PAGES_URL.work.smartsupp.dashboard,
 }
