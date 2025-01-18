@@ -12,7 +12,9 @@ import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
 import { MenuProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
 const getMenuLinkCSS = (isMobile: boolean): string => {
-  return isMobile ? 'block border-b  border-neutral-100 py-3 pl-3 pr-4 hover:bg-neutral-50' : 'text-md cursor-pointer'
+  return isMobile
+    ? 'block border-b border-gray-100 hover:border-violet-100 py-3 pl-3 pr-4 hover:bg-violet-100 rounded-lg'
+    : 'text-md cursor-pointer'
 }
 
 const Menu: FC<MenuProps> = ({ isMobile }): JSX.Element => {

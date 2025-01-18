@@ -11,15 +11,17 @@ const PageNavigationLink: FC<PageNavigationLinkProps> = ({ href, text, direction
   const hasArrowRight = direction === NavigationDirectionEnum.Right
 
   const justifyArrowCSS = hasArrowLeft ? 'justify-start' : 'justify-end'
+  const hoverAndFocusCSS =
+    'hover:bg-violet-100 focus:outline-none focus:ring-4 focus:ring-violet-300 group-hover:text-violet-600'
 
   return (
     <a
       href={href}
-      className={`${justifyArrowCSS} flex w-full items-center rounded-lg border-violet-300 bg-violet-50 p-4 font-bold text-violet-600 hover:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-300 group-hover:text-violet-800 lg:w-1/2`}
+      className={`flex w-full items-center space-x-2 rounded-lg bg-violet-50 p-4 font-bold text-violet-500 ${justifyArrowCSS} ${hoverAndFocusCSS} lg:w-1/2`}
       data-testid={dataTestId}
     >
       {hasArrowLeft && <IconArrow direction={NavigationDirectionEnum.Left} />}
-      {text}
+      <span>{text}</span>
       {hasArrowRight && <IconArrow direction={NavigationDirectionEnum.Right} />}
     </a>
   )

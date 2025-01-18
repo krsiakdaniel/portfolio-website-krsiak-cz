@@ -7,7 +7,7 @@ const IconHamburger: FC = (): JSX.Element => {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
-      className="h-6 w-6 hover:text-violet-700"
+      className="h-6 w-6 text-violet-500 hover:text-violet-700"
     >
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
     </svg>

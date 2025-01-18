@@ -170,7 +170,7 @@ import { SkillCardProps } from '@/lib/utils/typeDefinitions/props'
 
 ```ts
 // Images
-import logo from '@/public/images/webp/logo.webp'
+import logo from '@/public/icons/png/icon-64x64.png'
 ```
 
 ```ts
