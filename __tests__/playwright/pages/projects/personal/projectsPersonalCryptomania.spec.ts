@@ -49,7 +49,7 @@ test.describe('Project - Cryptomania', () => {
 
     // Check the Website link
     await test.step('Check Website link', async () => {
-      const link = page.getByTestId('project-link-website')
+      const link = page.getByTestId('project-link-website-cryptomania')
       const href = await link.getAttribute('href')
       const expectedUrl = 'https://cryptocurrency-prices-one.vercel.app/'
       expect(href).toBe(expectedUrl)

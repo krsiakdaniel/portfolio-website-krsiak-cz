@@ -39,7 +39,7 @@ test.describe('Project - Krsiak', () => {
 
     // Check the Website link
     await test.step('Check Website link', async () => {
-      const link = page.getByTestId('project-link-website')
+      const link = page.getByTestId('project-link-website-krsiak')
       const href = await link.getAttribute('href')
       const expectedUrl = 'https://krsiak.cz/'
       expect(href).toBe(expectedUrl)
