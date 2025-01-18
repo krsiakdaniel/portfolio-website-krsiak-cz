@@ -8,7 +8,7 @@ import { GitHubRepositoryLinkProps } from '@/lib/utils/typeDefinitions/props/lay
 const GitHubRepositoryLink: FC<GitHubRepositoryLinkProps> = ({ href, text }): JSX.Element => {
   return (
     <ListItem>
-      <ExternalLink href={href} text={text} />
+      <ExternalLink href={href} text={text} dataTestId='project-link-github' />
     </ListItem>
   )
 }

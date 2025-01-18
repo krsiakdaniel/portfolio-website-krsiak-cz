@@ -4,7 +4,7 @@ import { ExternalLinkProps } from '@/lib/utils/typeDefinitions/props/shared/exte
 
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
-const ExternalLink: FC<ExternalLinkProps> = ({ href, text }) => {
+const ExternalLink: FC<ExternalLinkProps> = ({ href, text, dataTestId }) => {
   return (
     <span className="leading-tight">
       <a
@@ -12,6 +12,7 @@ const ExternalLink: FC<ExternalLinkProps> = ({ href, text }) => {
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center font-medium text-violet-600 underline hover:no-underline"
+        data-testid={dataTestId}
       >
         {text}
         <span className="ml-2">
