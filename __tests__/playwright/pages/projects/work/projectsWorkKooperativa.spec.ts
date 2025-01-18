@@ -39,7 +39,7 @@ test.describe('Project - Kooperativa', () => {
 
     // Check the Website link
     await test.step('Check Website link', async () => {
-      const link1 = page.getByRole('link', { name: 'Website →', exact: true })
+      const link1 = page.getByRole('link', { name: 'Website', exact: true })
       const href1 = await link1.getAttribute('href')
       const expectedUrl1 = 'https://www.koop.cz/pojisteni/pojisteni-majetku'
       expect(href1).toBe(expectedUrl1)

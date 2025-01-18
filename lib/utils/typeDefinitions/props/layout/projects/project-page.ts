@@ -13,7 +13,8 @@ export type GalleryProps = {
 
 // GitHub Repository Link Props
 export type GitHubRepositoryLinkProps = {
-  link: string
+  href: string
+  text: string
 }
 
 // Header Section Props

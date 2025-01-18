@@ -42,7 +42,7 @@ export const projectsPersonalNext: Project[] = [
       },
     ],
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website →', url: 'https://krsiak.cz/' }],
+    projectLinks: [{ urlText: 'Website', url: 'https://krsiak.cz/' }],
     linkGitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
     personalProjectNote: 'My main coding project.',
     linkProjectPage: PAGES_URL.personal.krsiak,
