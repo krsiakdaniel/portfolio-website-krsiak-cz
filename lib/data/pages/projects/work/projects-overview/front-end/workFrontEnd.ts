@@ -36,7 +36,7 @@ export const projectsWorkFrontEnd: Project[] = [
       { id: 2, description: 'Other', skillsList: ['Trello'] },
     ],
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website', url: 'https://www.smartsupp.com/' }],
+    projectLinks: [{ urlText: 'Website', url: 'https://www.smartsupp.com/', dataTestId: 'smartsupp-web' }],
     customers: '100 000+',
     linkProjectPage: PAGES_URL.work.smartsupp.web,
   },

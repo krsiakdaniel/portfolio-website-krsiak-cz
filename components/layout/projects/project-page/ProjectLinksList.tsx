@@ -17,7 +17,7 @@ const ProjectLinksList: FC<ProjectLinksListProps> = ({ projectLinks, linkGitHub 
             <ExternalLink
               href={link.url}
               text={link.urlText}
-              dataTestId={DATA_TEST_IDS.externalLinks.projectLinkWebsite}
+              dataTestId={`${DATA_TEST_IDS.externalLinks.projectLinkWebsite}-${link.dataTestId}`}
             />
           </ListItem>
         ))}
