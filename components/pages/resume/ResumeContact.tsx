@@ -10,8 +10,8 @@ const ResumeContact: FC = (): JSX.Element => {
     <div>
       <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Scan To Add Contact</div>
       <Paragraph>
-        For networking or job opportunities feel free to <Highlight text="call me" /> or{' '}
-        <Highlight text="write an email" />.
+        <span className="font-bold text-green-600">OPEN TO WORK:</span> For networking or job opportunities feel free to{' '}
+        <Highlight text="call me" /> or <Highlight text="write an email" />.
       </Paragraph>
 
       <div className="mt-8 flex flex-col items-center space-y-8 md:flex-row md:space-x-8 md:space-y-0">
