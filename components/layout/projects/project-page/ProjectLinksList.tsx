@@ -5,6 +5,7 @@ import ExternalLink from '@/components/shared/ExternalLink'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ProjectLinksListProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
 const ProjectLinksList: FC<ProjectLinksListProps> = ({ projectLinks, linkGitHub }): JSX.Element => {
@@ -13,7 +14,11 @@ const ProjectLinksList: FC<ProjectLinksListProps> = ({ projectLinks, linkGitHub 
       {projectLinks &&
         projectLinks.map((link) => (
           <ListItem key={link.url}>
-            <ExternalLink href={link.url} text={link.urlText} dataTestId="project-link-website" />
+            <ExternalLink
+              href={link.url}
+              text={link.urlText}
+              dataTestId={DATA_TEST_IDS.externalLinks.projectLinkWebsite}
+            />
           </ListItem>
         ))}
 

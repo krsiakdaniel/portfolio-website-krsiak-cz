@@ -174,6 +174,11 @@ const CALL_TO_ACTION = {
   linkLinkedIn: 'call-to-action-link-linkedin',
 }
 
+const EXTERNAL_LINKS = {
+  projectLinkGitHub: `project-link-${LINKS.GITHUB}`,
+  projectLinkWebsite: `project-link-website`,
+}
+
 export const DATA_TEST_IDS = {
   breadcrumbs: 'breadcrumbs',
   gallery: 'gallery',
@@ -187,4 +192,5 @@ export const DATA_TEST_IDS = {
   callToAction: CALL_TO_ACTION,
   navigation: NAVIGATION,
   alert: ALERT,
+  externalLinks: EXTERNAL_LINKS,
 }
