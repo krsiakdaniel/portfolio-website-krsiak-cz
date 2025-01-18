@@ -1,10 +1,5 @@
-const RESUME_GOOGLE_DRIVE_URL = 'https://drive.google.com/file/d/1NBBJJaK_zsvqtNiiF388kygQ4gqi0mLD'
-
 export const EXTERNAL_URL = {
   linkedin: 'https://www.linkedin.com/in/krsiakdaniel/',
   github: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
-  resume: {
-    resumeViewPDF: `${RESUME_GOOGLE_DRIVE_URL}/view`,
-    resumeEmbedPreviewPDF: `${RESUME_GOOGLE_DRIVE_URL}/preview`,
-  },
+  resumeViewPDF: 'https://drive.google.com/file/d/19f_qMtW2P2CPaNH_dkPdtAXRe-1pfUwL/view',
 }
