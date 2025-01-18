@@ -55,6 +55,7 @@ test.describe('Project - Cryptomania', () => {
       expect(href).toBe(expectedUrl)
     })
 
+    // FIXME: issue with → ?
     // Check the GitHub link
     await test.step('Check GitHub link', async () => {
       const linkGitHub = page.getByRole('link', { name: 'GitHub repository →' })
