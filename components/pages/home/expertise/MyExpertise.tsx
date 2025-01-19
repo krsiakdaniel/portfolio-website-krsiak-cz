@@ -10,10 +10,10 @@ import { DIVIDER_WITH_TEXT, TEXT } from '@/localization/english'
 
 const MyExpertise: FC = (): JSX.Element => {
   return (
-    <div className="mt-16">
+    <div className="mt-20">
       <DividerWithText text={DIVIDER_WITH_TEXT.myExpertise} />
 
-      <div className="mt-5 flex flex-wrap gap-20">
+      <div className="mt-4 flex flex-wrap gap-20">
         <div className="min-w-[300px] flex-1">
           <ExpertiseSection heading={TEXT.skillsForCompany} listItems={skillsForCompanyItems} />
         </div>

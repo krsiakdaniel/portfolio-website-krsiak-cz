@@ -25,7 +25,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, secti
           linkText={item.linkText}
           linkProjectPage={item.linkProjectPage}
           dataTestId={item.id}
-          className={index === 0 ? 'mt-8' : 'mt-16'}
+          className={index === 0 ? 'mt-8' : 'mt-20'}
         />
       ))}
     </>

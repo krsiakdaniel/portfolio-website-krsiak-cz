@@ -9,11 +9,11 @@ const FooterContent: FC = (): JSX.Element => {
   return (
     <div className="mx-auto flex w-full flex-col items-center pb-16">
       <div className="flex flex-col">
-        <div className="mt-16">
+        <div className="mt-20">
           <FooterSocialLinks />
         </div>
 
-        <div className="mt-16 flex justify-center">
+        <div className="mt-20 flex justify-center">
           <ScanMyContactQR showDivider />
         </div>
       </div>

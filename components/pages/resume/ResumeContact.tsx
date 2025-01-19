@@ -8,7 +8,7 @@ import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 const ResumeContact: FC = (): JSX.Element => {
   return (
     <div>
-      <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">Scan To Add Contact</div>
+      <div className="mt-20 border-b pb-2 text-2xl font-bold uppercase">Scan To Add Contact</div>
       <Paragraph>
         <span className="font-bold text-green-600">OPEN TO WORK:</span> For networking or job opportunities feel free to{' '}
         <Highlight text="call me" /> or <Highlight text="write an email" />.

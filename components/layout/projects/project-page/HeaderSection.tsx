@@ -25,9 +25,9 @@ const HeaderSection: FC<HeaderSectionProps> = ({ title, role, years, company, go
       <div className="mt-4">
         <Link
           href={getGoBackLinkID(goBackLink, sectionID)}
-          className="inline-flex items-center text-neutral-500 hover:text-neutral-700"
+          className="inline-flex items-center space-x-2 text-neutral-500 hover:text-neutral-700"
         >
-          <IconArrow arrowDirection={ArrowDirectionEnum.Left} /> {TEXT.goBack}
+          <IconArrow arrowDirection={ArrowDirectionEnum.Left} /> <span>{TEXT.goBack}</span>
         </Link>
       </div>
     </div>

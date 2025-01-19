@@ -20,7 +20,7 @@ const Companies: FC = (): JSX.Element => {
 
   return (
     <section>
-      <div className="mt-16">
+      <div className="mt-20">
         <DividerWithText text={DIVIDER_WITH_TEXT.companies} />
         <div className="text-center">
           <Heading2>{TEXT.workedForCompanies}</Heading2>
