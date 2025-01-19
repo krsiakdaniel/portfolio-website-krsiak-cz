@@ -14,7 +14,8 @@ import { CallToActionProps } from '@/lib/utils/typeDefinitions/props/shared/call
 const CallToAction: FC<CallToActionProps> = ({
   highlight,
   heading,
-  description,
+  textMobileAndDesktop,
+  textDesktop,
   link,
   isLinkExternal,
   linkText,
@@ -30,7 +31,9 @@ const CallToAction: FC<CallToActionProps> = ({
           </div>
           <Heading2 textColor="text-neutral-900">{heading}</Heading2>
           <Paragraph marginTop="mt-2" size="text-xl" textColor="text-neutral-900" customCss="tracking-tight">
-            {description}
+            <span>
+              {textMobileAndDesktop} <span className="hidden lg:inline">{textDesktop}</span>
+            </span>
           </Paragraph>
 
           <div className="mt-8">
@@ -47,6 +50,7 @@ const CallToAction: FC<CallToActionProps> = ({
             </a>
           </div>
         </div>
+
         <div className="hidden items-center justify-center md:flex md:w-1/3">
           <div className="text-9xl">{icon}</div>
         </div>

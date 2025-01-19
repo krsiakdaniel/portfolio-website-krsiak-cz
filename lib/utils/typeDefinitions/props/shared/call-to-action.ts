@@ -1,7 +1,8 @@
 // Call To Action Props
 export type CallToActionProps = {
   dataTestId: string
-  description: string
+  textMobileAndDesktop: string
+  textDesktop: string
   heading: string
   highlight: string
   icon: string
