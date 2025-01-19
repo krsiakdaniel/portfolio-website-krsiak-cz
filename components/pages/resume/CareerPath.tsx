@@ -11,7 +11,7 @@ import { careerReact } from '@/lib/data/pages/resume/career-path/careerReact'
 const CareerPath: FC = (): JSX.Element => {
   return (
     <>
-      <div className="mt-16 border-b pb-2 text-2xl font-bold uppercase">My Career Path</div>
+      <div className="mt-20 border-b pb-2 text-2xl font-bold uppercase">My Career Path</div>
 
       <div>
         <Paragraph size="text-sm">

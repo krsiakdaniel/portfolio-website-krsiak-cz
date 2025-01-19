@@ -22,7 +22,7 @@ const CallToAction: FC<CallToActionProps> = ({
   icon,
 }): JSX.Element => {
   return (
-    <section className="mt-16 rounded-lg bg-blue-50 p-8 md:p-16">
+    <section className="mt-20 rounded-lg bg-blue-50 p-8 md:p-16">
       <div className="flex">
         <div className="md:w-2/3">
           <div className="mb-2 uppercase">

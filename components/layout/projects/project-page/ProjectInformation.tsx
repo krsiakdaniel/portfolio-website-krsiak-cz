@@ -23,7 +23,7 @@ const ProjectInformation: FC<ProjectInformationProps> = ({
 
   return (
     <>
-      <div className="mt-16">
+      <div className="mt-20">
         <Heading3>{TEXT.information}</Heading3>
         <div className="mt-4">
           {customers && <CustomersCount count={customers} />}

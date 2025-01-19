@@ -9,7 +9,7 @@ import { skills } from '@/lib/data/pages/home/skills/skillsMain'
 
 const SkillsMain: FC = (): JSX.Element => {
   return (
-    <div className="mt-16">
+    <div className="mt-20">
       <DividerWithText text={DIVIDER_WITH_TEXT.myMainSkills} />
 
       <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">

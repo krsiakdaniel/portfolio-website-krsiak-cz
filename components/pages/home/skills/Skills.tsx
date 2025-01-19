@@ -17,7 +17,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 const Skills: FC = (): JSX.Element => {
   return (
-    <div id={ID.skills} className="mt-16">
+    <div id={ID.skills} className="mt-20">
       <DividerWithText text={DIVIDER_WITH_TEXT.skills} />
       <div className="mt-4 flex flex-col justify-center space-y-2 lg:flex-row lg:space-x-4 lg:space-y-0">
         <div className="flex flex-col justify-center space-y-2 md:flex-row md:space-x-4 md:space-y-0">
