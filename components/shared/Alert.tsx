@@ -16,10 +16,7 @@ const iconInfo = (
 
 const Alert: FC<AlertProps> = ({ title, description, linkComponent }) => {
   return (
-    <div
-      className="mt-4 rounded-lg border border-yellow-300 bg-yellow-50 p-4 text-yellow-800 dark:border-yellow-800 dark:bg-gray-800 dark:text-yellow-400"
-      role="alert"
-    >
+    <div role="alert" className="mt-4 rounded-lg border border-yellow-300 bg-yellow-50 p-4 text-yellow-800">
       <div className="flex items-center">
         {iconInfo}
         <h3 className="text-lg font-medium">{title}</h3>

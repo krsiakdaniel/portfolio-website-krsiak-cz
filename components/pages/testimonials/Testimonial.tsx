@@ -24,7 +24,7 @@ const Testimonial: FC<TestimonialProps> = ({ personName, personJob, personPhoto,
               width={48}
               height={48}
               alt={personName}
-              className="rounded-full bg-violet-100 p-1 ring-1 ring-violet-300"
+              className="rounded-full border border-violet-300 bg-violet-50 p-1"
             />
             <div className="flex flex-col">
               <div className="font-medium text-gray-900">{personName}</div>
