@@ -27,9 +27,11 @@ const ProjectInformation: FC<ProjectInformationProps> = ({
         <Heading3>{TEXT.information}</Heading3>
         <div className="mt-4">
           {customers && <CustomersCount count={customers} />}
-          <List>
-            <ListItem>{description}</ListItem>
-          </List>
+          <div className={customers ? 'mt-1' : 'mt-0'}>
+            <List>
+              <ListItem>{description}</ListItem>
+            </List>
+          </div>
         </div>
       </div>
 

@@ -7,11 +7,12 @@ import { Skill } from '@/lib/utils/typeDefinitions/interfaces'
 
 import { SkillsListProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
+// FIXME: the getSkillBadge function can be refactored into a component
 const getSkillBadge = (skillCategoryObject: Skill): JSX.Element[] => {
   return skillCategoryObject.skillsList.map((skill: string) => (
     <span
       key={skill}
-      className={`mt-2 rounded border border-yellow-400 bg-yellow-100 px-2.5 py-0.5 text-center text-xs font-medium text-yellow-800 first:mt-0 last:mr-0 md:mr-2 md:mt-0`}
+      className={`min-w-20 rounded border border-yellow-400 bg-yellow-100 px-2 text-center text-xs font-medium text-yellow-800`}
     >
       {skill}
     </span>
@@ -23,7 +24,9 @@ const SkillsList: FC<SkillsListProps> = ({ skillsOverview }): JSX.Element => {
     <List>
       {skillsOverview.map((skillCategoryObject) => (
         <ListItem key={skillCategoryObject.id}>
-          <div className="flex flex-col md:flex-row">{getSkillBadge(skillCategoryObject)}</div>
+          <div className="flex flex-col space-x-0 space-y-1 md:flex-row md:space-x-2 md:space-y-0">
+            {getSkillBadge(skillCategoryObject)}
+          </div>
         </ListItem>
       ))}
     </List>

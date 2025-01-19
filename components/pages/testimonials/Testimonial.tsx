@@ -13,7 +13,7 @@ const Testimonial: FC<TestimonialProps> = ({ personName, personJob, personPhoto,
         <figure className="mx-auto max-w-screen-md">
           <TestimonialQuote />
           <TestimonialText text={testimonialText} />
-          <figcaption className="mt-6 flex flex-row items-center space-x-4">
+          <figcaption className="mt-4 flex flex-row items-center space-x-4">
             <TestimonialPersonInfo name={personName} job={personJob} photo={personPhoto} />
           </figcaption>
         </figure>
