@@ -14,15 +14,9 @@ const MyExpertise: FC = (): JSX.Element => {
       <DividerWithText text={DIVIDER_WITH_TEXT.myExpertise} />
 
       <div className="mt-4 flex flex-wrap gap-20">
-        <div className="min-w-[300px] flex-1">
-          <ExpertiseSection heading={TEXT.skillsForCompany} listItems={skillsForCompanyItems} />
-        </div>
-        <div className="min-w-[300px] flex-1">
-          <ExpertiseSection heading={TEXT.committedMindset} listItems={committedMindsetItems} />
-        </div>
-        <div className="min-w-[300px] flex-1">
-          <ExpertiseSection heading={TEXT.problemSolving} listItems={problemSolvingItems} />
-        </div>
+        <ExpertiseSection heading={TEXT.skillsForCompany} listItems={skillsForCompanyItems} />
+        <ExpertiseSection heading={TEXT.committedMindset} listItems={committedMindsetItems} />
+        <ExpertiseSection heading={TEXT.problemSolving} listItems={problemSolvingItems} />
       </div>
     </div>
   )

@@ -8,12 +8,17 @@ import { ExpertiseSectionProps } from '@/lib/utils/typeDefinitions/props/pages/h
 
 const ExpertiseSection: FC<ExpertiseSectionProps> = ({ heading, listItems }): JSX.Element => {
   return (
-    <div>
+    <div className="min-w-[250px] flex-1">
       <Heading2>{heading}</Heading2>
       <div className="mt-4">
         <List>
           {listItems.map((item) => (
-            <ListItem key={item.id}>{item.text}</ListItem>
+            <ListItem key={item.id}>
+              <span className="inline">
+                {item.text}
+                <span className="hidden text-sm lg:ml-1 xl:inline">· {item.years}</span>
+              </span>
+            </ListItem>
           ))}
         </List>
       </div>

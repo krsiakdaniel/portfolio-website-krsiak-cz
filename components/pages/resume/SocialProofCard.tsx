@@ -6,7 +6,7 @@ import Paragraph from '@/components/shared/Paragraph'
 import { SocialProofCardProps } from '@/lib/utils/typeDefinitions/props/pages/resume'
 
 const SocialProofCard: FC<SocialProofCardProps> = ({ title, description }): JSX.Element => (
-  <div className="flex w-full flex-col items-center justify-center rounded-lg border border-gray-200 bg-gray-50 p-4 lg:p-6">
+  <div className="flex w-full flex-col items-center justify-center rounded-lg border border-gray-200 bg-gray-50 p-4">
     <Heading3 textColor="text-violet-600">{title}</Heading3>
     <Paragraph marginTop="mt-0" size="text-md" textColor="text-neutral-500">
       {description}

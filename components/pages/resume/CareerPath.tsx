@@ -15,21 +15,15 @@ const CareerPath: FC = (): JSX.Element => {
 
       <div>
         <Paragraph size="text-sm">
-          <strong>My journey:</strong> ⚛️ <Highlight text="React" /> ← 🖥️ <Highlight text="Front End" /> ← ⚙️{' '}
+          <strong>My journey:</strong> ⚛️ <Highlight text="React Dev" /> ← 🖥️ <Highlight text="Front End" /> ← ⚙️{' '}
           <Highlight text="Testing" /> ← 🏢 IBM · Mainframes ← ✈️ Airport · Ticket Agent ← 🍗 KFC ← 📚 High School
         </Paragraph>
       </div>
 
       <div className="mt-8 flex flex-wrap gap-20">
-        <div className="min-w-[300px] flex-1">
-          <ExpertiseSection heading="⚛️ React" listItems={careerReact} />
-        </div>
-        <div className="min-w-[300px] flex-1">
-          <ExpertiseSection heading="🖥️ Front End" listItems={careerFrontEnd} />
-        </div>
-        <div className="min-w-[300px] flex-1">
-          <ExpertiseSection heading="⚙️ Testing" listItems={careerAutomation} />
-        </div>
+        <ExpertiseSection heading="⚛️ React Dev" listItems={careerReact} />
+        <ExpertiseSection heading="🖥️ Front End" listItems={careerFrontEnd} />
+        <ExpertiseSection heading="⚙️ Testing" listItems={careerAutomation} />
       </div>
     </>
   )

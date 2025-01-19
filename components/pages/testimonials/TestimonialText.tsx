@@ -7,7 +7,9 @@ import { TestimonialTextProps } from '@/lib/utils/typeDefinitions/props/pages/te
 const TestimonialText: FC<TestimonialTextProps> = ({ text }) => {
   return (
     <blockquote>
-      <Paragraph size="text-2xl">{text}</Paragraph>
+      <Paragraph marginTop="mt-0" size="text-2xl">
+        {text}
+      </Paragraph>
     </blockquote>
   )
 }

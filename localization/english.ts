@@ -32,8 +32,8 @@ export const DIVIDER_WITH_TEXT = {
   myLinks: 'My Links',
   contactMe: 'Scan Contact',
   myExpertise: 'My Expertise',
-  skills: 'Skills',
-  myMainSkills: 'My Main Skills',
+  skills: 'All My Skills',
+  myMainSkills: 'Main Skills',
 }
 
 export const SOCIAL_LINKS = {
@@ -103,7 +103,7 @@ export const PROJECT_INFORMATION = {
 }
 
 export const SOCIAL_PROOF = {
-  sectionTitle: 'React and Automation',
+  sectionTitle: 'React and\u00A0Automation',
   companiesTitle: 'React',
   companiesDescription: 'From startup to corporate',
   featuresTitle: 'Features',
