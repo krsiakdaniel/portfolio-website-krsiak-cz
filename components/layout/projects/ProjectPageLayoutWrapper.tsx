@@ -6,7 +6,7 @@ import HeaderSection from '@/components/layout/projects/project-page/HeaderSecti
 import ProjectInformation from '@/components/layout/projects/project-page/ProjectInformation'
 import ProjectResponsibility from '@/components/layout/projects/project-page/ProjectResponsibility'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import CallToActionResume from '@/components/shared/call-to-action/CallToActionResume'
+import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
 
 import { ProjectPageLayoutWrapperProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page-layout'
 

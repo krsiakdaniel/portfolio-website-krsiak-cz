@@ -6,7 +6,7 @@ import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOvervie
 import PersonalProjectsIntroduction from '@/components/pages/personal-projects/PersonalProjectsIntroduction'
 import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import CallToActionGitHub from '@/components/shared/call-to-action/CallToActionGitHub'
+import CallToActionGitHub from '@/components/shared/call-to-action/cta-banners/CallToActionGitHub'
 
 import { metaDataPersonalProjects } from '@/lib/data/metadata/pages/projects/metaDataPersonalProjects'
 import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
