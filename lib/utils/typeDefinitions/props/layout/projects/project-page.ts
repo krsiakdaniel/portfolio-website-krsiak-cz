@@ -1,5 +1,5 @@
 import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
-import { ImageShowcaseItem, Link, Project, Section } from '@/lib/utils/typeDefinitions/interfaces'
+import { ImageShowcaseItem, Link, Project, Section, Skill } from '@/lib/utils/typeDefinitions/interfaces'
 
 // Customers Count Props
 export type CustomersCountProps = {
@@ -49,3 +49,6 @@ export type ProjectResponsibilityProps = {
 
 // Skills List Props
 export type SkillsListProps = Pick<Project, 'skillsOverview'>
+
+// Skills Badge Props
+export type SkillBadgeProps = { skillObject: Skill }

@@ -45,6 +45,7 @@ export const SOCIAL_LINKS = {
 
 export const HOME = {
   home: '🏠 Home',
+  homeTextOnly: 'Home',
   logo: 'krsiak.cz',
   nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
   reactDeveloper: COMMON_VALUES.reactDeveloper,
@@ -53,11 +54,13 @@ export const HOME = {
 
 export const RESUME = {
   resume: '📝 Resume',
+  resumeTextOnly: 'Resume',
   downloadResume: 'Download Resume in PDF',
 }
 
 export const TESTIMONIALS = {
   testimonials: '💬 Testimonials',
+  testimonialsTextOnly: 'Testimonials',
   nameCastro: 'Alexandre Castro',
   nameKvapil: 'Roman Kvapil',
   nameLosseff: 'Inka Losseff',
@@ -74,6 +77,7 @@ export const PROJECTS = {
   nextShort: COMMON_VALUES.nextShort,
   react: COMMON_VALUES.react,
   workExperience: '👨🏻‍💻 Work Experience',
+  workExperienceTextOnly: 'Work Experience',
 }
 
 export const STATUS_PAGE = {
@@ -85,7 +89,7 @@ export const COMPANIES = {
   komercniBanka: '🏦 Komerční banka',
   kooperativa: '☔ Kooperativa',
   smartsuppWeb: '💻 Smartsupp Web',
-  smartsuppHELP: '📚  Smartsupp HELP',
+  smartsuppHELP: '📚 Smartsupp HELP',
   groupon: '🛒 Groupon',
   moravia: '🌎 Moravia IT',
 }

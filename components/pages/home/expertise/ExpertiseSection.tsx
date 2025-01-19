@@ -16,7 +16,7 @@ const ExpertiseSection: FC<ExpertiseSectionProps> = ({ heading, listItems }): JS
             <ListItem key={item.id}>
               <span className="inline">
                 {item.text}
-                <span className="hidden text-sm lg:ml-1 xl:inline">· {item.years}</span>
+                {item.years && <span className="hidden text-sm lg:ml-1 xl:inline">· {item.years}</span>}
               </span>
             </ListItem>
           ))}

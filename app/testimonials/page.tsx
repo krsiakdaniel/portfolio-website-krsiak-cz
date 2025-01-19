@@ -5,7 +5,7 @@ import PageContainer from '@/components/layout/PageContainer'
 import TestimonialsIntroduction from '@/components/pages/testimonials/TestimonialsIntroduction'
 import TestimonialsSection from '@/components/pages/testimonials/TestimonialsSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import CallToActionLinkedIn from '@/components/shared/call-to-action/CallToActionLinkedIn'
+import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
 import Heading1 from '@/components/shared/Heading1'
 
 import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimonials'

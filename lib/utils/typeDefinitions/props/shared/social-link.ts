@@ -1,10 +1,10 @@
-import { LinkColors } from '@/lib/utils/typeDefinitions/enums'
+import { LinkColorsEnum } from '@/lib/utils/typeDefinitions/enums'
 
 // Social Link Props
 export type SocialLinkProps = {
   href: string
   linkText: string
-  linkColor: LinkColors
+  linkColor: LinkColorsEnum
   className?: string
   dataTestId: string
 }

@@ -7,7 +7,7 @@ import OtherExperienceContent from '@/components/pages/projects/other-experience
 import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
 import WorkExperienceIntroduction from '@/components/pages/work-experience/WorkExperienceIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import CallToActionResume from '@/components/shared/call-to-action/CallToActionResume'
+import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
 
 import { metaDataWorkExperience } from '@/lib/data/metadata/pages/projects/metaDataWorkExperience'
 import { otherExperienceFrontEnd } from '@/lib/data/pages/projects/work/other-experience/otherExperienceFrontEnd'
