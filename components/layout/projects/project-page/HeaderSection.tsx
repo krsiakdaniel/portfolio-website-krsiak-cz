@@ -8,7 +8,7 @@ import Heading2 from '@/components/shared/Heading2'
 import { TEXT } from '@/localization/english'
 
 import { getGoBackLinkID } from '@/lib/utils/helpers/page-navigation/getGoBackLink'
-import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { HeaderSectionProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
@@ -27,7 +27,7 @@ const HeaderSection: FC<HeaderSectionProps> = ({ title, role, years, company, go
           href={getGoBackLinkID(goBackLink, sectionID)}
           className="inline-flex items-center text-neutral-500 hover:text-neutral-700"
         >
-          <IconArrow direction={NavigationDirectionEnum.Left} /> {TEXT.goBack}
+          <IconArrow arrowDirection={ArrowDirectionEnum.Left} /> {TEXT.goBack}
         </Link>
       </div>
     </div>

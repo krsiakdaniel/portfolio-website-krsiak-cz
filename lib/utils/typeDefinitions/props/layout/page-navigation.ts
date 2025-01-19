@@ -1,8 +1,8 @@
-import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 // Default No Link Navigation Props
 export type DefaultNoLinkNavigationProps = {
-  arrowDirection: NavigationDirectionEnum
+  arrowDirection: ArrowDirectionEnum
 }
 
 // Page Navigation Props
@@ -18,7 +18,7 @@ export type PageNavigationProps = {
 // Page Navigation Link Props
 export type PageNavigationLinkProps = {
   dataTestId: string | undefined
-  direction?: NavigationDirectionEnum
+  arrowDirection?: ArrowDirectionEnum
   href: string
   text: string
 }

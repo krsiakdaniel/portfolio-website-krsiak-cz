@@ -7,12 +7,14 @@ type SharedHeadingProps = {
   textColor?: string
 }
 
-// Heading 1 Props
-export type Heading1Props = SharedHeadingProps & {
+type TextSizeProps = {
   textSize?: string
   textSizeLG?: string
   textSizeSM?: string
 }
+
+// Heading 1 Props
+export type Heading1Props = SharedHeadingProps & TextSizeProps
 
 // Heading 2 Props
 export type Heading2Props = SharedHeadingProps

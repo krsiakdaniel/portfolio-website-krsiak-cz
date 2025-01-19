@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import IconArrow from '@/components/icons/IconArrow'
 
-import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { ProjectLinkProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
@@ -15,7 +15,7 @@ const ProjectLink: FC<ProjectLinkProps> = ({ linkText, linkProjectPage, dataTest
       data-testid={dataTestId}
     >
       <span>{linkText}</span>
-      <IconArrow direction={NavigationDirectionEnum.Right} />
+      <IconArrow arrowDirection={ArrowDirectionEnum.Right} />
     </a>
   </p>
 )

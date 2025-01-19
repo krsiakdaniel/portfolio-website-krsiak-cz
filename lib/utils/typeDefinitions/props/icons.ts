@@ -1,8 +1,8 @@
-import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 // Icon Arrow Props
 export type IconArrowProps = {
-  direction: NavigationDirectionEnum
+  arrowDirection: ArrowDirectionEnum
 }
 
 // Icon Check Props

@@ -7,7 +7,7 @@ import Paragraph from '@/components/shared/Paragraph'
 
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
-import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { CallToActionProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
@@ -43,7 +43,7 @@ const CallToAction: FC<CallToActionProps> = ({
               data-testid={dataTestId}
             >
               <span>{linkText}</span>
-              {isLinkExternal ? <IconExternalLink /> : <IconArrow direction={NavigationDirectionEnum.Right} />}
+              {isLinkExternal ? <IconExternalLink /> : <IconArrow arrowDirection={ArrowDirectionEnum.Right} />}
             </a>
           </div>
         </div>

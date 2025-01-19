@@ -159,7 +159,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 ```ts
 // Utils - Helpers and Interfaces
 import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
-import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 ```
 
 ```ts
