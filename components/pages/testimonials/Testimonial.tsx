@@ -1,35 +1,20 @@
-import Image from 'next/image'
 import { FC } from 'react'
 
-import Paragraph from '@/components/shared/Paragraph'
+import TestimonialPersonInfo from '@/components/pages/testimonials/TestimonialPersonInfo'
+import TestimonialQuote from '@/components/pages/testimonials/TestimonialQuote'
+import TestimonialText from '@/components/pages/testimonials/TestimonialText'
 
 import { TestimonialProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
-
-import quote from '@/public/icons/svg/quote.svg'
 
 const Testimonial: FC<TestimonialProps> = ({ personName, personJob, personPhoto, testimonialText }): JSX.Element => {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
         <figure className="mx-auto max-w-screen-md">
-          <Image src={quote} width={40} height={40} alt="icon-quote" />
-
-          <blockquote>
-            <Paragraph size="text-2xl">{testimonialText}</Paragraph>
-          </blockquote>
-
+          <TestimonialQuote />
+          <TestimonialText text={testimonialText} />
           <figcaption className="mt-6 flex flex-row items-center space-x-4">
-            <Image
-              src={personPhoto}
-              width={48}
-              height={48}
-              alt={personName}
-              className="rounded-full border border-violet-300 bg-violet-50 p-1"
-            />
-            <div className="flex flex-col">
-              <div className="font-medium text-gray-900">{personName}</div>
-              <div className="text-sm font-light text-gray-500">{personJob}</div>
-            </div>
+            <TestimonialPersonInfo name={personName} job={personJob} photo={personPhoto} />
           </figcaption>
         </figure>
       </div>
