@@ -7,7 +7,7 @@ import Paragraph from '@/components/shared/Paragraph'
 
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
-import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { CallToActionProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
@@ -38,18 +38,12 @@ const CallToAction: FC<CallToActionProps> = ({
               href={link}
               target={isLinkExternal ? '_blank' : '_self'}
               rel="noopener noreferrer"
-              title="Opens in a new tab"
-              className="text-md flex max-w-[300px] items-center justify-center rounded-lg bg-violet-700 px-5 py-2.5 text-center font-medium text-white hover:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-300"
+              title={isLinkExternal ? `${linkText} - Opens in a new tab` : `${linkText}`}
+              className="flex max-w-[300px] items-center justify-center space-x-2 rounded-lg bg-violet-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-violet-800 focus:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-300"
               data-testid={dataTestId}
             >
-              {linkText}
-              {isLinkExternal ? (
-                <span className="ml-2">
-                  <IconExternalLink />
-                </span>
-              ) : (
-                <IconArrow direction={NavigationDirectionEnum.Right} />
-              )}
+              <span>{linkText}</span>
+              {isLinkExternal ? <IconExternalLink /> : <IconArrow arrowDirection={ArrowDirectionEnum.Right} />}
             </a>
           </div>
         </div>

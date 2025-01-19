@@ -31,7 +31,7 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
       {buttonText && buttonLink && (
         <Link
           href={buttonLink}
-          className="mt-8 inline-flex rounded-lg bg-purple-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300"
+          className="mt-8 inline-flex rounded-lg bg-violet-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-violet-800 focus:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-300"
         >
           {buttonText}
         </Link>
@@ -40,7 +40,7 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
         <button
           type="button"
           onClick={onButtonClick}
-          className="mt-8 rounded-lg bg-purple-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300"
+          className="mt-8 rounded-lg bg-violet-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-violet-800 focus:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-300"
         >
           {buttonText}
         </button>

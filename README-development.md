@@ -159,7 +159,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 ```ts
 // Utils - Helpers and Interfaces
 import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
-import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 ```
 
 ```ts
@@ -170,7 +170,7 @@ import { SkillCardProps } from '@/lib/utils/typeDefinitions/props'
 
 ```ts
 // Images
-import logo from '@/public/images/webp/logo.webp'
+import logo from '@/public/icons/png/icon-64x64.png'
 ```
 
 ```ts

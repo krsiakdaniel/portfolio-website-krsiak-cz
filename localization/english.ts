@@ -48,7 +48,7 @@ export const HOME = {
   logo: 'krsiak.cz',
   nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
   reactDeveloper: COMMON_VALUES.reactDeveloper,
-  heroText: `Hi 👋 I am based in ${COMMON_VALUES.brno}, ${COMMON_VALUES.czechRepublicNBSP} 🇨🇿`,
+  heroText: `Hi 👋 I am from ${COMMON_VALUES.czechRepublicNBSP} 🇨🇿`,
 }
 
 export const RESUME = {

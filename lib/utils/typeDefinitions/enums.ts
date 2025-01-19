@@ -4,8 +4,8 @@ export enum GoBackLinkEnum {
   Work = 'work',
 }
 
-// Navigation Links Direction
-export enum NavigationDirectionEnum {
+// Links Arrow Direction
+export enum ArrowDirectionEnum {
   Left = 'left',
   Right = 'right',
 }

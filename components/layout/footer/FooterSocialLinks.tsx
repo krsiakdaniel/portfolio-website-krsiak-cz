@@ -17,14 +17,14 @@ const FooterSocialLinks: FC = (): JSX.Element => {
       <div className="flex flex-col sm:flex-row">
         <SocialLink
           href={EXTERNAL_URL.linkedin}
-          text={TEXT.linkedIn}
+          linkText={TEXT.linkedIn}
           linkColor={LinkColors.Blue}
           className="sm:mr-4"
           dataTestId={DATA_TEST_IDS.footer.linkFooterLinkedIn}
         />
         <SocialLink
           href={EXTERNAL_URL.github}
-          text={TEXT.gitHub}
+          linkText={TEXT.gitHub}
           linkColor={LinkColors.Gray}
           className="mt-4 sm:mt-0"
           dataTestId={DATA_TEST_IDS.footer.linkFooterGitHub}

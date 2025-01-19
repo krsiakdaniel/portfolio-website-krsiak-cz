@@ -8,7 +8,7 @@ import { SkillCardProps } from '@/lib/utils/typeDefinitions/props/shared/skill-c
 
 const SkillCard: FC<SkillCardProps> = ({ id, imgSrc, imgAlt, title, years }): JSX.Element => {
   return (
-    <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-md lg:p-6" id={getSkillCardID(id)}>
+    <div className="rounded-lg border border-gray-200 bg-gray-50 p-4 lg:p-6" id={getSkillCardID(id)}>
       <div className="flex flex-wrap break-words">
         <Image src={imgSrc} alt={imgAlt} className="h-13 w-13 mr-4 lg:h-16 lg:w-16" />
 

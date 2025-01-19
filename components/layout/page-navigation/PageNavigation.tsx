@@ -5,7 +5,7 @@ import PageNavigationLink from '@/components/layout/page-navigation/PageNavigati
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { NavigationDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { PageNavigationProps } from '@/lib/utils/typeDefinitions/props/layout/page-navigation'
 
@@ -28,21 +28,21 @@ const PageNavigation: FC<PageNavigationProps> = ({
             <PageNavigationLink
               href={linkPrevious}
               text={namePrevious}
-              direction={NavigationDirectionEnum.Left}
+              arrowDirection={ArrowDirectionEnum.Left}
               dataTestId={dataTestIdPrevious}
             />
           ) : (
-            <DefaultNoLinkNavigation arrowDirection={NavigationDirectionEnum.Left} />
+            <DefaultNoLinkNavigation arrowDirection={ArrowDirectionEnum.Left} />
           )}
           {hasNextLink ? (
             <PageNavigationLink
               href={linkNext}
               text={nameNext}
-              direction={NavigationDirectionEnum.Right}
+              arrowDirection={ArrowDirectionEnum.Right}
               dataTestId={dataTestIdNext}
             />
           ) : (
-            <DefaultNoLinkNavigation arrowDirection={NavigationDirectionEnum.Right} />
+            <DefaultNoLinkNavigation arrowDirection={ArrowDirectionEnum.Right} />
           )}
         </div>
       </div>
