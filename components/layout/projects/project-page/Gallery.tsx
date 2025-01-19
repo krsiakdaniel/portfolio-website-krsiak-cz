@@ -23,7 +23,7 @@ const Gallery: FC<GalleryProps> = ({ imageShowcase }): JSX.Element => {
               src={image.src}
               width={1240}
               height={1272}
-              className="mt-8 rounded-lg bg-violet-100 p-1 ring-1 ring-violet-300"
+              className="border-1 mt-8 rounded-lg border border-violet-300 bg-violet-50 p-1"
               alt={`project-image-${image.id}`}
               placeholder="blur"
               blurDataURL={image.src}

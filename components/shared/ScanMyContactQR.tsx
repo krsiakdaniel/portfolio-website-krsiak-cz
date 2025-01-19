@@ -27,7 +27,7 @@ const ScanMyContactQR: FC<ScanMyContactQRProps> = ({
         width={width}
         height={height}
         alt="Contact Me - QR code"
-        className="rounded-lg bg-violet-100 p-1 ring-1 ring-violet-300"
+        className="rounded-lg border border-violet-300 bg-violet-50 p-1"
       />
       {showNote && (
         <div className="self-start">

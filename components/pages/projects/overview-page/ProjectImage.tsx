@@ -4,8 +4,8 @@ import { FC } from 'react'
 import { ProjectImageProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
 const ProjectImage: FC<ProjectImageProps> = ({ isFeatured, image, title }): JSX.Element => {
-  const imageCSS = `rounded-lg p-1 ring-1 ${
-    isFeatured ? 'bg-yellow-100 ring-yellow-300' : 'bg-violet-100 ring-violet-300'
+  const imageCSS = `rounded-lg p-1 border ${
+    isFeatured ? 'bg-yellow-50 border-yellow-300' : 'bg-violet-50 border-violet-300'
   }`
 
   return (

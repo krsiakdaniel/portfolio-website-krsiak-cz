@@ -23,7 +23,7 @@ export const personalTestimonials: TestimonialItem[] = [
     personName: `🤝 ${TEXT.nameCastro}`,
     personJob: 'QA Tester and Content Manager ~\u00A0Smartlook',
     testimonialText: `
-      On a personal note, Daniel helped me a great deal, back when I first started at Smartsupp. With him, I managed to learn so much stuff on many different topics. 
+      On a personal note, Daniel helped me a great deal, when I started at Smartsupp. With him, I managed to learn so much on many different topics. 
       To this day, I still rely on Daniel as a go-to person when I need advice on specific topics.
     `,
   },

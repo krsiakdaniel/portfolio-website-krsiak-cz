@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
-import Paragraph from './Paragraph'
+import Paragraph from '@/components/shared/Paragraph'
 
 import { TEXT } from '@/localization/english'
 
@@ -15,7 +15,7 @@ const Photo: FC = (): JSX.Element => {
         <Image
           src={krsiak}
           alt={TEXT.nameDanielKrsiak}
-          className="rounded-full bg-violet-100 p-1 ring-1 ring-violet-300 lg:mt-0"
+          className="rounded-full border border-violet-300 bg-violet-50 p-1"
           placeholder="blur"
           loading="eager"
         />
