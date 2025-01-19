@@ -111,6 +111,7 @@ export interface SkillCardItem {
 export interface SkillsInfo {
   id: number
   text: string
+  years?: string
 }
 
 // Status Badge

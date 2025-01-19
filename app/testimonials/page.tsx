@@ -34,21 +34,21 @@ const Testimonials: FC = (): JSX.Element => {
         </div>
 
         <TestimonialsSection
-          title="Character References"
-          description="In this section, you'll find personal testimonials that highlight my integrity and reliability."
-          testimonials={personalTestimonials}
-        />
-
-        <TestimonialsSection
           title="Professional References"
           description="Below, you'll find insightful feedback from colleagues who have experienced my contributions firsthand."
           testimonials={workTestimonials}
         />
+
+        <CallToActionLinkedIn />
+
+        <TestimonialsSection
+          title="Character References"
+          description="In this section, you'll find personal testimonials that highlight my integrity and reliability."
+          testimonials={personalTestimonials}
+        />
       </div>
 
       {/* TODO: Add section: 'Fitness Moderator' 🏋️‍♂️ */}
-
-      <CallToActionLinkedIn />
 
       <PageNavigation
         linkPrevious={PAGES_URL.personal.mainUrl}

@@ -8,6 +8,7 @@ import Hero from '@/components/pages/home/hero/Hero'
 import Skills from '@/components/pages/home/skills/Skills'
 import SkillsMain from '@/components/pages/home/skills/SkillsMain'
 import SocialProof from '@/components/pages/resume/SocialProof'
+import CallToActionResume from '@/components/shared/call-to-action/CallToActionResume'
 import CallToActionWorkExperience from '@/components/shared/call-to-action/CallToActionWorkExperience'
 
 import { metaDataHome } from '@/lib/data/metadata/pages/metaDataHome'
@@ -26,12 +27,13 @@ const Page: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.home}>
       <Hero />
-      <Skills />
       <SkillsMain />
+      <Skills />
       <CallToActionWorkExperience />
       <MyExpertise />
-      <SocialProof />
       <Companies />
+      <SocialProof />
+      <CallToActionResume />
 
       <PageNavigation
         linkNext={PAGES_URL.work.mainUrl}

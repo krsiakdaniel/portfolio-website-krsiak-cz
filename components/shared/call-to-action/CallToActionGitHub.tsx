@@ -12,7 +12,9 @@ const CallToActionGitHub: FC = (): JSX.Element => {
     <CallToAction
       highlight="GitHub"
       heading="Explore GitHub Projects"
-      description="Go through my GitHub repository to see my latest projects and how I code."
+      description="Go through my GitHub repository to see how I code my personal portfolio project.
+      Writing  maintainable, and efficient code, using React, Next.js, and TypeScript.
+      "
       link={EXTERNAL_URL.github}
       linkText={TEXT.gitHub}
       dataTestId={DATA_TEST_IDS.callToAction.linkGitHub}

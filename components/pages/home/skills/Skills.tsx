@@ -33,7 +33,7 @@ const Skills: FC = (): JSX.Element => {
         <Paragraph
           textColor="text-neutral-500"
           size="text-md"
-          customCss="w-[300px] text-center italic md:w-[600px] lg:w-full"
+          customCss="sm:w-[300px] text-center italic md:w-[600px] lg:w-full"
         >
           {TEXT.skillsIconsNames}
         </Paragraph>

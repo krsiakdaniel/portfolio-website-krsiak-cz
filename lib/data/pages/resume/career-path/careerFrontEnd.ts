@@ -1,7 +1,7 @@
 import { SkillsInfo } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const careerFrontEnd: SkillsInfo[] = [
-  { id: 0, text: '💻 Smartsupp - Website · 1 year' },
-  { id: 1, text: '💼 Freelance - Websites · 5 years' },
-  { id: 2, text: '👨🏻‍💻 Freelance - Web Coder · 1 year' },
+  { id: 0, text: '💻 Smartsupp - Website', years: '1 year' },
+  { id: 1, text: '💼 Freelance - Websites', years: '5 years' },
+  { id: 2, text: '👨🏻‍💻 Freelance - Web Coder', years: '1 year' },
 ]

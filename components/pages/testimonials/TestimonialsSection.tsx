@@ -10,7 +10,7 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({ title, description,
   <div className="mt-20">
     <TestimonialHeader title={title} />
     <TestimonialDescription description={description} />
-    <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
       {testimonials.map((testimonial) => (
         <Testimonial
           key={testimonial.id}
