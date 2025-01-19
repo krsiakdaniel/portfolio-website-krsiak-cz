@@ -11,7 +11,7 @@ export enum ArrowDirectionEnum {
 }
 
 // Social Links
-export enum LinkColors {
+export enum LinkColorsEnum {
   Blue = 'blue',
   Gray = 'gray',
   Red = 'red',
@@ -19,7 +19,13 @@ export enum LinkColors {
 }
 
 // Resume
-export enum DurationUnit {
+export enum DurationUnitEnum {
   Month = 'month',
   Year = 'year',
+}
+
+// CTA Banner Icon
+export enum IconDeviceTypeEnum {
+  Mobile = 'mobile',
+  Desktop = 'desktop',
 }

@@ -2,15 +2,14 @@ import { FC } from 'react'
 
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
-import { LinkColors } from '@/lib/utils/typeDefinitions/enums'
-
+import { LinkColorsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { SocialLinkProps } from '@/lib/utils/typeDefinitions/props/shared/social-link'
 
 const SocialLink: FC<SocialLinkProps> = ({
   href,
   linkText,
   className = '',
-  linkColor = LinkColors.Gray,
+  linkColor = LinkColorsEnum.Gray,
   dataTestId,
 }): JSX.Element => {
   // Define variables for CSS classes for the 'linkColor'
@@ -18,22 +17,22 @@ const SocialLink: FC<SocialLinkProps> = ({
 
   // Use CSS classes based on the provided 'linkColor'
   switch (linkColor) {
-    case LinkColors.Red:
+    case LinkColorsEnum.Red:
       bgColor = 'bg-red-700'
       hoverColor = 'hover:bg-red-800'
       focusRingColor = 'focus:ring-red-300'
       break
-    case LinkColors.Blue:
+    case LinkColorsEnum.Blue:
       bgColor = 'bg-blue-700'
       hoverColor = 'hover:bg-blue-800'
       focusRingColor = 'focus:ring-blue-300'
       break
-    case LinkColors.Gray:
+    case LinkColorsEnum.Gray:
       bgColor = 'bg-gray-700'
       hoverColor = 'hover:bg-gray-800'
       focusRingColor = 'focus:ring-gray-300'
       break
-    case LinkColors.Yellow:
+    case LinkColorsEnum.Yellow:
       bgColor = 'bg-yellow-700'
       hoverColor = 'hover:bg-yellow-800'
       focusRingColor = 'focus:ring-yellow-300'

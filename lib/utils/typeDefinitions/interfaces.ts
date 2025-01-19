@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image'
 
-import { DurationUnit } from '@/lib/utils/typeDefinitions/enums'
+import { DurationUnitEnum } from '@/lib/utils/typeDefinitions/enums'
 import { SkillCategoryType } from '@/lib/utils/typeDefinitions/types'
 
 // Error Pages
@@ -20,7 +20,7 @@ export interface Job {
   path: string
   title: string
   duration: number
-  unit: DurationUnit.Year | DurationUnit.Month
+  unit: DurationUnitEnum.Year | DurationUnitEnum.Month
   description: string
 }
 

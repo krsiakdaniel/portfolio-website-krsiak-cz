@@ -15,7 +15,7 @@ const CallToActionWorkExperience: FC = (): JSX.Element => {
       textMobileAndDesktop={`See the professional projects I worked on and had the opportunity to\u00A0improve.`}
       textDesktop="Developing scalable and robust web applications for big companies."
       link={PAGES_URL.work.mainUrl}
-      linkText={TEXT.workExperience}
+      linkText={TEXT.workExperienceTextOnly}
       dataTestId={DATA_TEST_IDS.callToAction.linkWorkExperience}
       icon="👨🏻‍💻"
     />

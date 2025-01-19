@@ -1,6 +1,6 @@
 import { MONTHS, YEARS } from '@/lib/utils/constants/yearsExperience'
 
-import { DurationUnit } from '@/lib/utils/typeDefinitions/enums'
+import { DurationUnitEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Job } from '@/lib/utils/typeDefinitions/interfaces'
 
 import bug from '@/public/icons/svg/bug.svg'
@@ -15,7 +15,7 @@ export const jobs: Job[] = [
     path: reactLogo,
     title: '⚛️ Front End — React Developer',
     duration: YEARS.react,
-    unit: DurationUnit.Year,
+    unit: DurationUnitEnum.Year,
     description: `
       I built a customer care dashboard,
       contributed to the\u00A0Komerční banka website,
@@ -27,7 +27,7 @@ export const jobs: Job[] = [
     path: globe,
     title: '💻 Front End — Web Developer',
     duration: YEARS.webDeveloper,
-    unit: DurationUnit.Year,
+    unit: DurationUnitEnum.Year,
     description: `
         I led the development of a\u00A0responsive website for\u00A0a\u00A0SaaS company, integrating PHP, JavaScript,
         and\u00A0UX\u00A0design principles to create a\u00A0seamless user experience.
@@ -38,7 +38,7 @@ export const jobs: Job[] = [
     path: check,
     title: '🤖 QA Automation — Team Leader',
     duration: YEARS.qaAutomation,
-    unit: DurationUnit.Year,
+    unit: DurationUnitEnum.Year,
     description: `
         I led 2 QA teams to implement Cypress and\u00A0Playwright for E2E testing,
         writing tests in JavaScript and\u00A0TypeScript to ensure high-quality code.
@@ -50,7 +50,7 @@ export const jobs: Job[] = [
     path: text,
     title: '🇨🇿 Localization — Manager',
     duration: YEARS.localizationManager,
-    unit: DurationUnit.Year,
+    unit: DurationUnitEnum.Year,
     description: `
         I worked on the localization of Microsoft Windows\u00A08, and\u00A0Windows\u00A0Phone.
         This role honed my\u00A0project management and\u00A0internationalization expertise.
@@ -62,7 +62,7 @@ export const jobs: Job[] = [
     path: bug,
     title: '🛠️ Localization — Tester',
     duration: YEARS.localizationTester,
-    unit: DurationUnit.Year,
+    unit: DurationUnitEnum.Year,
     description: `
         I performed layout testing for Microsoft projects,
         including Windows\u00A07 and\u00A0Windows\u00A0Store, ensuring cross-platform user experience quality.
@@ -74,7 +74,7 @@ export const jobs: Job[] = [
     path: globe,
     title: '🏢 IBM — Mainframe Operator',
     duration: YEARS.operatorIBM,
-    unit: DurationUnit.Year,
+    unit: DurationUnitEnum.Year,
     description: `
         Worked as a customer service representative and z/OS mainframe operator, managing mainframe operations and providing technical support.
         This role enhanced my technical skills and customer service abilities.
@@ -85,7 +85,7 @@ export const jobs: Job[] = [
     path: globe,
     title: '🖥️ Front End — Web Coder',
     duration: YEARS.webCoder,
-    unit: DurationUnit.Year,
+    unit: DurationUnitEnum.Year,
     description: `
           My IT career began with developing websites for\u00A0small businesses, laying the\u00A0foundation for\u00A0my\u00A0career in\u00A0IT.
           This experience taught me the importance of\u00A0continuous learning.
@@ -96,7 +96,7 @@ export const jobs: Job[] = [
     path: globe,
     title: '✈️ Airport — Airline Ticket Agent',
     duration: YEARS.ticketAgent,
-    unit: DurationUnit.Year,
+    unit: DurationUnitEnum.Year,
     description: `
           Worked as an airline ticket agent, handling reservations, ticketing, and customer service.
           This role developed my skills in communication and problem-solving.
@@ -107,7 +107,7 @@ export const jobs: Job[] = [
     path: globe,
     title: '✈️ Airport — Flights Information',
     duration: MONTHS.airportFlightsInfo,
-    unit: DurationUnit.Month,
+    unit: DurationUnitEnum.Month,
     description: `
           Worked in the airport's information desk, providing passengers with flight information and managing parking lot tickets.
           This role enhanced my abilities in customer service and multitasking.
@@ -118,7 +118,7 @@ export const jobs: Job[] = [
     path: globe,
     title: '🍗 KFC — Frying Chicken',
     duration: MONTHS.crewMemberKFC,
-    unit: DurationUnit.Month,
+    unit: DurationUnitEnum.Month,
     description: `
           Worked as a crew member at KFC, handling food preparation, customer service, and maintaining cleanliness.
           This role developed my teamwork and multitasking skills.
@@ -129,7 +129,7 @@ export const jobs: Job[] = [
     path: globe,
     title: '📊 High School — Finished as Accountant',
     duration: YEARS.highSchoolAccountant,
-    unit: DurationUnit.Year,
+    unit: DurationUnitEnum.Year,
     description: `
         Completed high school with a focus on accounting. This education provided a strong foundation in financial principles and practices.
       `,

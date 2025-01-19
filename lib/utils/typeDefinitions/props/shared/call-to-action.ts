@@ -13,6 +13,7 @@ export type CallToActionProps = {
 
 // Call To Action Icon Props
 export type CallToActionIconProps = {
+  type: 'mobile' | 'desktop'
   icon: string
 }
 
@@ -26,6 +27,7 @@ export type CallToActionLinkProps = {
 
 // Call To Action Texts Props
 export type CallToActionTextsProps = {
+  icon: string
   highlight: string
   heading: string
   textMobileAndDesktop: string

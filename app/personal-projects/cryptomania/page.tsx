@@ -18,7 +18,7 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
-import { GoBackLinkEnum, LinkColors } from '@/lib/utils/typeDefinitions/enums'
+import { GoBackLinkEnum, LinkColorsEnum } from '@/lib/utils/typeDefinitions/enums'
 
 export const metadata = {
   ...metaDataCryptomania,
@@ -42,7 +42,7 @@ const ProjectPersonalCryptomania: FC = (): JSX.Element => {
               <SocialLink
                 href={EXTERNAL_URL.github}
                 linkText="GitHub: portfolio-website-krsiak-cz"
-                linkColor={LinkColors.Yellow}
+                linkColor={LinkColorsEnum.Yellow}
                 dataTestId={DATA_TEST_IDS.alert.alertLinkGitHub}
               />
             }
