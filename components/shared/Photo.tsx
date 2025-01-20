@@ -8,7 +8,9 @@ import { TEXT } from '@/localization/english'
 import openToWork from '@/public/images/png/open-to-work.png'
 import krsiak from '@/public/images/webp/photo/krsiak-daniel-296x296.webp'
 
-const Photo: FC = (): JSX.Element => {
+import { PhotoProps } from '@/lib/utils/typeDefinitions/props/pages/resume'
+
+const Photo: FC<PhotoProps> = ({ isOpenToWork }): JSX.Element => {
   return (
     <div className="flex flex-col">
       <div className="relative rounded-full bg-black">
@@ -19,7 +21,7 @@ const Photo: FC = (): JSX.Element => {
           placeholder="blur"
           loading="eager"
         />
-        <Image src={openToWork} alt="Open To Work" className="absolute left-0 top-0 h-full w-full" />
+        {isOpenToWork && <Image src={openToWork} alt="Open To Work" className="absolute left-0 top-0 h-full w-full" />}
       </div>
       <div>
         <Paragraph marginTop="mt-2" size="text-sm" textColor="text-neutral-500" customCss="text-center">
