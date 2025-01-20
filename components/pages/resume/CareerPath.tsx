@@ -4,9 +4,9 @@ import ExpertiseSection from '@/components/pages/home/expertise/ExpertiseSection
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { careerAutomation } from '@/lib/data/pages/resume/career-path/careerAutomation'
-import { careerFrontEnd } from '@/lib/data/pages/resume/career-path/careerFrontEnd'
-import { careerReact } from '@/lib/data/pages/resume/career-path/careerReact'
+import { careerReactDev } from '@/lib/data/pages/resume/career-path/careerReactDev'
+import { careerTesting } from '@/lib/data/pages/resume/career-path/careerTesting'
+import { careerWebDev } from '@/lib/data/pages/resume/career-path/careerWebDev'
 
 const CareerPath: FC = (): JSX.Element => {
   return (
@@ -15,15 +15,15 @@ const CareerPath: FC = (): JSX.Element => {
 
       <div>
         <Paragraph size="text-sm">
-          <strong>My journey:</strong> ⚛️ <Highlight text="React Dev" /> ← 🖥️ <Highlight text="Front End" /> ← ⚙️{' '}
+          <strong>My journey:</strong> ⚛️ <Highlight text="React Dev" /> ← 🖥️ <Highlight text="Web Dev" /> ← ⚙️{' '}
           <Highlight text="Testing" /> ← 🏢 IBM · Mainframes ← ✈️ Airport · Ticket Agent ← 🍗 KFC ← 📚 High School
         </Paragraph>
       </div>
 
       <div className="mt-8 flex flex-wrap gap-20">
-        <ExpertiseSection heading="⚛️ React Dev" listItems={careerReact} />
-        <ExpertiseSection heading="🖥️ Front End" listItems={careerFrontEnd} />
-        <ExpertiseSection heading="⚙️ Testing" listItems={careerAutomation} />
+        <ExpertiseSection heading="⚛️ React Dev" listItems={careerReactDev} />
+        <ExpertiseSection heading="🖥️ Web Dev" listItems={careerWebDev} />
+        <ExpertiseSection heading="⚙️ Testing" listItems={careerTesting} />
       </div>
     </>
   )
