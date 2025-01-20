@@ -1,8 +1,8 @@
 import { FC } from 'react'
 
-import SocialProofCard from '@/components/pages/resume/SocialProofCard'
-
+import SocialProofCard from '@/components/pages/home/SocialProofCard'
 import DividerWithText from '@/components/shared/DividerWithText'
+
 import { SOCIAL_PROOF } from '@/localization/english'
 
 const SocialProof: FC = (): JSX.Element => {

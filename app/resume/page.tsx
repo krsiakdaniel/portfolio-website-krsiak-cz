@@ -6,8 +6,8 @@ import CareerPath from '@/components/pages/resume/CareerPath'
 import ResumeContact from '@/components/pages/resume/ResumeContact'
 import ResumeIntroduction from '@/components/pages/resume/ResumeIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import CallToActionResumeDownload from '@/components/shared/call-to-action/cta-banners/CallToActionResumeDownload'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
+import CallToActionResumeDownload from '@/components/shared/call-to-action/cta-banners/CallToActionResumeDownload'
 import Heading1 from '@/components/shared/Heading1'
 
 import { metaDataResume } from '@/lib/data/metadata/pages/metaDataResume'
@@ -32,7 +32,7 @@ const Resume: FC = (): JSX.Element => {
         <ResumeIntroduction />
         <CallToActionResumeDownload />
         <CareerPath />
-        <ResumeContact />
+        <ResumeContact isOpenToWork={true} />
         <CallToActionLinkedIn />
       </div>
 

@@ -1,10 +1,10 @@
-// Resume Plain Text Page Props
-export type ResumePlainTextPageProps = {
-  content: string
+// Open To Work Props
+export type OpenToWorkProps = {
+  isOpenToWork: boolean
 }
 
-// Social Proof Card Props
-export type SocialProofCardProps = {
-  description: string
-  title: string
-}
+// Resume Contact Props
+export type ResumeContactProps = OpenToWorkProps
+
+// Photo Props
+export type PhotoProps = OpenToWorkProps
