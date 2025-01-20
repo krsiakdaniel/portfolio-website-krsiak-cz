@@ -15,7 +15,7 @@ const CareerPath: FC = (): JSX.Element => {
 
       <div>
         <Paragraph size="text-sm">
-          <strong>My journey:</strong> ⚛️ <Highlight text="React Dev" /> ← 🖥️ <Highlight text="Front End" /> ← ⚙️{' '}
+          <strong>My journey:</strong> ⚛️ <Highlight text="React Dev" /> ← 🖥️ <Highlight text="Web Dev" /> ← ⚙️{' '}
           <Highlight text="Testing" /> ← 🏢 IBM · Mainframes ← ✈️ Airport · Ticket Agent ← 🍗 KFC ← 📚 High School
         </Paragraph>
       </div>
