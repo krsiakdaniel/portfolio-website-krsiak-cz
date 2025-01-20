@@ -6,6 +6,7 @@ import DividerWithText from '@/components/shared/DividerWithText'
 import { committedMindsetItems } from '@/lib/data/pages/home/expertise/committedMindset'
 import { problemSolvingItems } from '@/lib/data/pages/home/expertise/problemSolving'
 import { skillsForCompanyItems } from '@/lib/data/pages/home/expertise/skillsForCompany'
+
 import { DIVIDER_WITH_TEXT, TEXT } from '@/localization/english'
 
 const MyExpertise: FC = (): JSX.Element => {

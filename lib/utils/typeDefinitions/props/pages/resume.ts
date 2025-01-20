@@ -1,15 +1,10 @@
-// Social Proof Card Props
-export type SocialProofCardProps = {
-  description: string
-  title: string
+// Open To Work Props
+export type OpenToWorkProps = {
+  isOpenToWork: boolean
 }
 
 // Resume Contact Props
-export type ResumeContactProps = {
-  isOpenToWork: boolean
-}
+export type ResumeContactProps = OpenToWorkProps
 
 // Photo Props
-export type PhotoProps = {
-  isOpenToWork: boolean
-}
+export type PhotoProps = OpenToWorkProps

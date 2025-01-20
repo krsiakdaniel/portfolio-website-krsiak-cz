@@ -7,9 +7,9 @@ import MyExpertise from '@/components/pages/home/expertise/MyExpertise'
 import Hero from '@/components/pages/home/hero/Hero'
 import Skills from '@/components/pages/home/skills/Skills'
 import SkillsMain from '@/components/pages/home/skills/SkillsMain'
-import SocialProof from '@/components/pages/resume/SocialProof'
-import CallToActionWorkExperience from '@/components/shared/call-to-action/cta-banners/CallToActionWorkExperience'
+import SocialProof from '@/components/pages/home/SocialProof'
 import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
+import CallToActionWorkExperience from '@/components/shared/call-to-action/cta-banners/CallToActionWorkExperience'
 
 import { metaDataHome } from '@/lib/data/metadata/pages/metaDataHome'
 
