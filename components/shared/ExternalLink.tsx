@@ -11,7 +11,7 @@ const ExternalLink: FC<ExternalLinkProps> = ({ href, text, dataTestId }) => {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center font-medium text-violet-600 underline hover:no-underline"
+        className="flex items-center justify-center font-medium text-violet-600 underline hover:text-violet-800 hover:no-underline"
         data-testid={dataTestId}
       >
         {text}

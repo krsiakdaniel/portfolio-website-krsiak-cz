@@ -18,7 +18,7 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
-import { GoBackLinkEnum, LinkColorsEnum } from '@/lib/utils/typeDefinitions/enums'
+import { AlertTypeEnum, GoBackLinkEnum, LinkColorsEnum } from '@/lib/utils/typeDefinitions/enums'
 
 export const metadata = {
   ...metaDataCryptomania,
@@ -36,13 +36,14 @@ const ProjectPersonalCryptomania: FC = (): JSX.Element => {
         sections={sections}
         showAlert={
           <Alert
+            type={AlertTypeEnum.Info}
             title="'CryptoMania' web is simple project"
             description="For my latest production-level code, visit GitHub repo: 'Portfolio Website'."
             linkComponent={
               <SocialLink
                 href={EXTERNAL_URL.github}
                 linkText="GitHub: portfolio-website-krsiak-cz"
-                linkColor={LinkColorsEnum.Yellow}
+                linkColor={LinkColorsEnum.Blue}
                 dataTestId={DATA_TEST_IDS.alert.alertLinkGitHub}
               />
             }

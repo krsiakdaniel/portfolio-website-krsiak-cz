@@ -18,7 +18,7 @@ const MenuToggle: FC<MenuToggleProps> = ({ isOpen, handleMenuToggle }): JSX.Elem
       id={ID.menu.toggle}
       data-testid={DATA_TEST_IDS.menu.toggle.component}
       aria-label={ARIA_LABELS.toggleMenu}
-      className="rounded-lg bg-violet-50 p-2 hover:bg-violet-100 focus:bg-violet-100 focus:outline-none focus:ring-4 focus:ring-violet-300 lg:hidden"
+      className="rounded-lg bg-violet-50 p-2 hover:bg-violet-100 focus:bg-violet-100 focus:outline-none focus:ring-4 focus:ring-violet-400 lg:hidden"
     >
       {isOpen ? <IconClose /> : <IconHamburger />}
     </button>

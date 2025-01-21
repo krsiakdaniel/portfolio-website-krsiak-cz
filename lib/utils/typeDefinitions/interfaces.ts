@@ -20,7 +20,7 @@ export interface Job {
   path: string
   title: string
   duration: number
-  unit: DurationUnitEnum.Year | DurationUnitEnum.Month
+  unit: DurationUnitEnum
   description: string
 }
 

@@ -11,7 +11,7 @@ const ProjectLink: FC<ProjectLinkProps> = ({ linkText, linkProjectPage, dataTest
     <a
       href={linkProjectPage}
       title={linkText}
-      className="flex w-[162px] items-center justify-center space-x-2 rounded-lg bg-violet-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-violet-800 focus:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-300"
+      className="flex w-44 items-center justify-center space-x-2 rounded-lg bg-violet-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-violet-800 focus:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-400"
       data-testid={dataTestId}
     >
       <span>{linkText}</span>
