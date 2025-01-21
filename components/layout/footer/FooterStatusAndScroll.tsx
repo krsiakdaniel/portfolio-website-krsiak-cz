@@ -12,7 +12,7 @@ const FooterStatusAndScroll: FC = (): JSX.Element => {
       <div className="flex space-x-2">
         <Link
           href={PAGES_URL.statusPage}
-          className="text-violet-600 underline hover:no-underline"
+          className="text-violet-600 underline hover:text-violet-800 hover:no-underline"
           data-testid={DATA_TEST_IDS.footer.statusPage}
         >
           Status page

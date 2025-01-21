@@ -29,3 +29,11 @@ export enum IconDeviceTypeEnum {
   Mobile = 'mobile',
   Desktop = 'desktop',
 }
+
+// Alert
+export enum AlertTypeEnum {
+  Info = 'info',
+  Warning = 'warning',
+  Success = 'success',
+  Danger = 'danger',
+}

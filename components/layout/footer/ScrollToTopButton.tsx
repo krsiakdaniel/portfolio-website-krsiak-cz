@@ -11,7 +11,7 @@ const ScrollToTopButton: FC = (): JSX.Element => {
     <>
       <div className="flex space-x-2">
         <div
-          className="flex cursor-pointer text-violet-600 underline hover:text-violet-600 hover:no-underline"
+          className="flex cursor-pointer text-violet-600 underline hover:text-violet-800 hover:no-underline"
           data-testid={DATA_TEST_IDS.footer.scrollToTopButton}
         >
           <div onClick={scrollToTop}>Scroll to Top</div>

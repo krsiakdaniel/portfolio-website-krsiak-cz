@@ -18,29 +18,29 @@ const SocialLink: FC<SocialLinkProps> = ({
   // Use CSS classes based on the provided 'linkColor'
   switch (linkColor) {
     case LinkColorsEnum.Red:
-      bgColor = 'bg-red-700'
+      bgColor = 'bg-red-600'
       hoverColor = 'hover:bg-red-800'
-      focusRingColor = 'focus:ring-red-300'
+      focusRingColor = 'focus:ring-red-400'
       break
     case LinkColorsEnum.Blue:
-      bgColor = 'bg-blue-700'
+      bgColor = 'bg-blue-600'
       hoverColor = 'hover:bg-blue-800'
-      focusRingColor = 'focus:ring-blue-300'
+      focusRingColor = 'focus:ring-blue-400'
       break
     case LinkColorsEnum.Gray:
-      bgColor = 'bg-gray-700'
+      bgColor = 'bg-gray-600'
       hoverColor = 'hover:bg-gray-800'
-      focusRingColor = 'focus:ring-gray-300'
+      focusRingColor = 'focus:ring-gray-400'
       break
     case LinkColorsEnum.Yellow:
-      bgColor = 'bg-yellow-700'
+      bgColor = 'bg-yellow-600'
       hoverColor = 'hover:bg-yellow-800'
-      focusRingColor = 'focus:ring-yellow-300'
+      focusRingColor = 'focus:ring-yellow-400'
       break
     default:
-      bgColor = 'bg-gray-700'
+      bgColor = 'bg-gray-600'
       hoverColor = 'hover:bg-gray-800'
-      focusRingColor = 'focus:ring-gray-300'
+      focusRingColor = 'focus:ring-gray-400'
       break
   }
 

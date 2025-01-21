@@ -7,7 +7,7 @@ const IconClose: FC = (): JSX.Element => {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
-      className="h-6 w-6 text-violet-500 hover:text-violet-700"
+      className="h-6 w-6 text-violet-600 hover:text-violet-800"
     >
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
     </svg>
