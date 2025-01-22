@@ -1,6 +1,7 @@
 export const COMMON_VALUES = {
   nameDanielKrsiak: 'Daniel Kršiak',
   reactDeveloper: 'React Developer',
+  reactDeveloperTypeScript: 'Developer: React &\u00A0TypeScript',
   javaScript: 'JavaScript',
   javaScriptShort: 'JS',
   typeScript: 'TypeScript',
@@ -511,6 +512,7 @@ export const IMAGE_ALT = {
 }
 
 export const TEXT = {
+  ...COMMON_VALUES,
   ...PROJECT_INFORMATION,
   ...MY_WORK,
   ...SOCIAL_LINKS,
