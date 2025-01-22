@@ -72,6 +72,7 @@ const MENU = {
 
 const HERO = {
   heading: 'hero-heading',
+  headingSmall: 'hero-heading-small',
   paragraph: 'hero-paragraph',
 }
 
