@@ -125,7 +125,6 @@ The website contains these following sections and pages.
 - 🏠 Home
 - 📝 Resume
 - 👨🏻‍💻 Work Experience
-- 🤝 Hire Me
 - 🚀 Personal Projects
 - 💬 Testimonials
 
@@ -163,7 +162,7 @@ The website contains these following sections and pages.
 
 ## 📱 WPA - Web Progressive App
 
-The portfolio website is also available as a Web Progressive App (WPA). This allows users to install the website on their devices and access it like a native app.
+The portfolio website is also available as a Web Progressive App (WPA) that can be installed on their devices and accessed like an app.
 
 ### Installation
 
