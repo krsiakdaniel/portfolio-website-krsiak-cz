@@ -8,7 +8,9 @@ const HeroHeading: FC = (): JSX.Element => {
   return (
     <Heading1 dataTestId="hero-heading" textColor="text-neutral-900" customCss="flex flex-col text-center">
       <span>{TEXT.nameDanielKrsiak}</span>
-      <span className="mt-2 text-violet-600">{TEXT.reactDeveloper}</span>
+      <small className="mt-2">
+        <span className="text-violet-600">{TEXT.reactDeveloperTypeScript}</span>
+      </small>
     </Heading1>
   )
 }
