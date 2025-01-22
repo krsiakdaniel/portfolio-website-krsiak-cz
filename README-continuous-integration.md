@@ -8,12 +8,12 @@ This project uses CI = GitHub Actions.
   - [🚀 CI and CD - Process](#-ci-and-cd---process)
   - [🛠️ CI - Continuous Integration - ℹ️ Info](#️-ci---continuous-integration---ℹ️-info)
     - [Status of CI](#status-of-ci)
-    - [GitHub Actions](#github-actions)
-      - [Workflow for Jest 🃏](#workflow-for-jest-)
-      - [Workflow for Playwright 🎭](#workflow-for-playwright-)
-      - [Workflow for Prettier 🎨](#workflow-for-prettier-)
-      - [Workflow for Pull Request Labeler 🏷️](#workflow-for-pull-request-labeler-️)
-      - [Workflow for Auto Author Assign ✍️](#workflow-for-auto-author-assign-️)
+  - [GitHub Actions](#github-actions)
+    - [Workflow for Jest 🃏](#workflow-for-jest-)
+    - [Workflow for Playwright 🎭](#workflow-for-playwright-)
+    - [Workflow for Prettier 🎨](#workflow-for-prettier-)
+    - [Workflow for Pull Request Labeler 🏷️](#workflow-for-pull-request-labeler-️)
+    - [Workflow for Auto Author Assign ✍️](#workflow-for-auto-author-assign-️)
 
 ---
 
@@ -23,7 +23,7 @@ This project uses CI = GitHub Actions.
 
 ## 🛠️ CI - Continuous Integration - ℹ️ Info
 
-This app uses GitHub Actions for CI.
+This app uses workflow automation: [GitHub Actions](https://github.com/features/actions)
 
 ### Status of CI
 
@@ -32,11 +32,11 @@ The badges show the status of the workflows.
 [![Jest Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
 [![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
 
-### GitHub Actions
+## GitHub Actions
 
 Workflows are defined in the `.github/workflows` directory.
 
-#### Workflow for Jest 🃏
+### Workflow for Jest 🃏
 
 - **Workflow file:** [jest.yml](.github/workflows/jest.yml)
 - **View the results on GitHub:** [actions/workflows/jest.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
@@ -63,7 +63,7 @@ This workflow is triggered when a pull request is opened against the `master` br
    - Path: `jest-report/`
    - Retention: 7 days
 
-#### Workflow for Playwright 🎭
+### Workflow for Playwright 🎭
 
 - **Workflow file:** [playwright.yml](.github/workflows/playwright.yml)
 - **View the results on GitHub:** [actions/workflows/playwright.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
@@ -92,7 +92,7 @@ This workflow is triggered when a pull request is opened against the `master` br
    - Path: `playwright-report/`
    - Retention: 7 days
 
-#### Workflow for Prettier 🎨
+### Workflow for Prettier 🎨
 
 - **Workflow file:** [prettier-check-formatting.yml](.github/workflows/prettier-check-formatting.yml)
 - **View the results on GitHub:** [actions/workflows/prettier-check-formatting.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/prettier-check-formatting.yml)
@@ -114,7 +114,7 @@ This workflow is triggered when a pull request is opened against the `master` br
 4. **Run Prettier check**:
    - Command: `npm run prettier:check`
 
-#### Workflow for Pull Request Labeler 🏷️
+### Workflow for Pull Request Labeler 🏷️
 
 - **Workflow file:** [labeler.yml](.github/workflows/labeler.yml)
 - **View the results on GitHub:** [actions/workflows/labeler.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/labeler.yml)
@@ -132,7 +132,7 @@ This workflow is triggered when a pull request is opened against the `master` br
    - Action: `actions/labeler@v5`
    - Configuration: `.github/labeler.yml`
 
-#### Workflow for Auto Author Assign ✍️
+### Workflow for Auto Author Assign ✍️
 
 - **Workflow file:** [auto-author-assign.yml](.github/workflows/auto-author-assign.yml)
 - **View the results on GitHub:** [actions/workflows/auto-author-assign.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/auto-author-assign.yml)

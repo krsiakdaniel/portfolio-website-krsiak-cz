@@ -6,21 +6,28 @@ This project uses the following tools for testing.
 
 - [🐛 Testing](#-testing)
   - [🃏 JEST](#-jest)
-    - [Test Coverage for Jest](#test-coverage-for-jest)
+    - [Runs Unit Tests](#runs-unit-tests)
+    - [Test Coverage For Jest](#test-coverage-for-jest)
   - [🎭 Playwright](#-playwright)
-    - [Test Coverage for Playwright](#test-coverage-for-playwright)
-    - [Other Commands](#other-commands)
+    - [Runs E2E tests](#runs-e2e-tests)
+    - [Test Coverage For Playwright](#test-coverage-for-playwright)
+    - [Interactive Mode](#interactive-mode)
+    - [Run Specific File](#run-specific-file)
+    - [Codegen To Generate Tests](#codegen-to-generate-tests)
+    - [Debug Tests](#debug-tests)
 
 ---
 
 ## 🃏 JEST
+
+**Docs:** <https://jestjs.io/>
 
 Jest is JavaScript Testing Framework.
 
 - Test are located folder in `__tests__/jest`
 - Naming is `file.test.ts`
 
-Runs the unit tests.
+### Runs Unit Tests
 
 ```bash
 npm run test
@@ -30,7 +37,7 @@ Expected result after running tests.
 
 ![jest](/readme-images/development/testing/jest-passing.png)
 
-### Test Coverage for Jest
+### Test Coverage For Jest
 
 Jest will generate a code coverage report.
 
@@ -43,12 +50,14 @@ npm run test:coverage
 
 ## 🎭 Playwright
 
+**Docs:** <https://playwright.dev/docs/intro>
+
 Playwright is library for browser automation E2E testing.
 
 - Test are located folder in `__tests__/playwright`
 - Naming is `file.spec.ts`
 
-Runs the E2E tests.
+### Runs E2E tests
 
 ```bash
 npm run test:e2e
@@ -58,7 +67,7 @@ Expected result after running tests.
 
 ![playwright](/readme-images/development/testing/e2e-playwright-passing.png)
 
-### Test Coverage for Playwright
+### Test Coverage For Playwright
 
 Playwright will generate a code coverage report.
 
@@ -68,7 +77,7 @@ Playwright will generate a code coverage report.
   npx playwright show-report
 ```
 
-### Other Commands
+### Interactive Mode
 
 Starts the interactive UI mode.
 
@@ -82,20 +91,32 @@ Runs the tests only on Desktop Chrome.
 npx playwright test --project=chromium
 ```
 
+### Run Specific File
+
 Runs the tests in a specific file.
 
 ```bash
 npx playwright test file.spec.ts
 ```
 
+### Codegen To Generate Tests
+
+**Docs:** <https://playwright.dev/docs/codegen>
+
+Playwright comes with the ability to generate tests.
+
+```bash
+npx playwright codegen
+```
+
+When you perform actions in the browser it records them and it is a great way to quickly get started with testing.
+
+Playwright will look at your page and figure out the best locator, prioritizing role, text and test id locators. If the generator finds multiple elements matching the locator, it will improve the locator to make it resilient that uniquely identify the target element.
+
+### Debug Tests
+
 Runs the tests in debug mode.
 
 ```bash
 npx playwright test --debug
-```
-
-Auto generate tests with Codegen.
-
-```bash
-npx playwright codegen
 ```

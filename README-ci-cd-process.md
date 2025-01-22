@@ -1,6 +1,6 @@
 # 🚀 CI & CD - Process
 
-TL;DR - **Continuous Integration And Continuous Deployment**
+**Continuous Integration** and **Continuous Deployment**.
 
 This project uses:
 
@@ -10,13 +10,13 @@ This project uses:
 **Table of Contents:**
 
 - [🚀 CI \& CD - Process](#-ci--cd---process)
-  - [🚀 CI \& CD - Process - ℹ️ Info](#-ci--cd---process---ℹ️-info)
+  - [🚀 CI \& CD - Info](#-ci--cd---info)
   - [🛠️ CI - Continuous Integration](#️-ci---continuous-integration)
   - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
 
 ---
 
-## 🚀 CI & CD - Process - ℹ️ Info
+## 🚀 CI & CD - Info
 
 The entire process and information is visible on GitHub when a pull request is made.
 

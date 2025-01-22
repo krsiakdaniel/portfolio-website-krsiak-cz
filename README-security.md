@@ -17,7 +17,7 @@ Security of this repository is managed by the following tools and services.
 
 Identifies vulnerabilities and errors with CodeQL.
 
-- **Security scan:** [alerts](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/code-scanning)
+- **Security scan:** [Alerts](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/code-scanning)
 - It is run by GitHub Actions: [CodeQL workflow](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql)
 
 ## 🤖 Dependabot
@@ -26,7 +26,7 @@ Identifies vulnerabilities and errors with CodeQL.
 
 Automatically creates pull requests to update dependencies to the latest version.
 
-- **Dependabot:** [alerts](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/dependabot)
+- **Dependabot:** [Alerts](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/dependabot)
 - Settings are in configuration file: [dependabot.yml](.github/dependabot.yml)
 
 ## 📝 Codacy
