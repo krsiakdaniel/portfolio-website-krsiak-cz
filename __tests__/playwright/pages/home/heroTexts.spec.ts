@@ -41,12 +41,12 @@ test.describe('Hero - Heading and texts', () => {
   // Test to check if the small text inside h1 heading is rendered correctly
   test('should render small text inside h1 heading correctly', async () => {
     const h1Text = await page.textContent(getDataTestId('hero-heading-small'))
-    expect(h1Text).toContain('Developer: React &\u00A0TypeScript')
+    expect(h1Text).toContain('React Developer—TypeScript &\u00A0Next.js')
   })
 
   // Test to check if the paragraphs are rendered correctly
   test('should render the paragraphs correctly', async () => {
     const paragraph1Text = await page.textContent(getDataTestId('hero-paragraph'))
-    expect(paragraph1Text).toContain('Hi 👋 I am from Czech\u00A0Republic 🇨🇿')
+    expect(paragraph1Text).toContain('Hi 👋 I am from Czech\u00A0Republic\u00A0🇨🇿')
   })
 })

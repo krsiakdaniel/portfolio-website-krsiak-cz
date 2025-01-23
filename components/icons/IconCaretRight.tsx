@@ -3,7 +3,7 @@ import { FC } from 'react'
 const IconCaretRight: FC = (): JSX.Element => {
   return (
     <svg
-      className="mx-1 block h-2 w-2 text-neutral-400"
+      className="block h-2 w-2 text-neutral-400"
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
