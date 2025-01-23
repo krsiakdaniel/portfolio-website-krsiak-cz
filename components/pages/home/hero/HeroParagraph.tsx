@@ -8,7 +8,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 const HeroParagraph: FC = (): JSX.Element => {
   return (
-    <Paragraph dataTestId={DATA_TEST_IDS.hero.paragraph} customCss="text-center font-semibold">
+    <Paragraph dataTestId={DATA_TEST_IDS.hero.paragraph} marginTop="mt-8" customCss="text-center font-semibold">
       {TEXT.heroText}
     </Paragraph>
   )

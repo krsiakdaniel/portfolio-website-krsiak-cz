@@ -10,12 +10,12 @@ const Heading1: FC<Heading1Props> = ({
   textColor = 'text-violet-600',
   textSize = '5xl',
   textSizeSM = '6xl',
-  textSizeLG = '7xl',
+  textSizeMD = '7xl',
   customCss = '',
 }): JSX.Element => {
   return (
     <h1
-      className={`font-bold tracking-tight ${textColor} text-${textSize} sm:text-${textSizeSM} lg:text-${textSizeLG} ${customCss}`}
+      className={`font-bold tracking-tight ${textColor} text-${textSize} sm:text-${textSizeSM} md:text-${textSizeMD} ${customCss}`}
       {...getDataTestIdAttribute(dataTestId)}
     >
       {children}

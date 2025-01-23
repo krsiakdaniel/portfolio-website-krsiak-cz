@@ -25,17 +25,21 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
     <div className="flex flex-col items-center text-center">
       <Image src={imgSrc} width={400} height={417} alt={imgAlt} loading="eager" />
       <div className="mt-10">
-        <Heading1 textSize="8xl" textSizeSM="8xl" textSizeLG="8xl">
+        <Heading1 textSize="8xl" textSizeSM="8xl" textSizeMD="8xl">
           {heading}
         </Heading1>
       </div>
+
       <Heading2 textColor="text-neutral-600">{description}</Heading2>
+
       <Paragraph>{note}</Paragraph>
+
       {buttonText && buttonLink && (
         <Link href={buttonLink} className={`${sharedCss} inline-flex text-center`}>
           {buttonText}
         </Link>
       )}
+
       {buttonText && onButtonClick && (
         <button type="button" onClick={onButtonClick} className={sharedCss}>
           {buttonText}

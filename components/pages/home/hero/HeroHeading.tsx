@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import HeroSubHeading from '@/components/pages/home/hero/HeroSubHeading'
 import Heading1 from '@/components/shared/Heading1'
 
 import { TEXT } from '@/localization/english'
@@ -13,12 +14,9 @@ const HeroHeading: FC = (): JSX.Element => {
       textColor="text-neutral-900"
       customCss="flex flex-col text-center"
     >
-      <span>{TEXT.nameDanielKrsiak}</span>
-      <small className="mt-2 text-violet-600" data-testid={DATA_TEST_IDS.hero.headingSmall}>
-        {TEXT.reactDeveloperTypeScript}
-      </small>
+      {TEXT.nameDanielKrsiak}
+      <HeroSubHeading />
     </Heading1>
   )
 }
-
 export default HeroHeading

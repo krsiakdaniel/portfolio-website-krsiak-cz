@@ -1,7 +1,7 @@
 export const COMMON_VALUES = {
   nameDanielKrsiak: 'Daniel Kršiak',
   reactDeveloper: 'React Developer',
-  reactDeveloperTypeScript: 'Developer: React &\u00A0TypeScript',
+  reactDeveloperTypeScript: 'React Developer — TypeScript & Next.js',
   javaScript: 'JavaScript',
   javaScriptShort: 'JS',
   typeScript: 'TypeScript',
@@ -50,7 +50,7 @@ export const HOME = {
   logo: 'krsiak.cz',
   nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
   reactDeveloper: COMMON_VALUES.reactDeveloper,
-  heroText: `Hi 👋 I am from ${COMMON_VALUES.czechRepublicNBSP} 🇨🇿`,
+  heroText: `Hi 👋 I am from ${COMMON_VALUES.czechRepublicNBSP}\u00A0🇨🇿`,
 }
 
 export const RESUME = {

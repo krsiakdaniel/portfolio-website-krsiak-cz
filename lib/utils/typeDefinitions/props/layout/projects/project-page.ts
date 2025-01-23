@@ -27,6 +27,9 @@ export type HeaderSectionProps = {
   years?: string | undefined
 }
 
+// Go Back Link Props
+export type GoBackLinkProps = Pick<HeaderSectionProps, 'goBackLink' | 'sectionID'>
+
 // Page Section Props
 export type PageSectionProps = Section
 

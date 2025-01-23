@@ -9,8 +9,8 @@ type SharedHeadingProps = {
 
 type TextSizeProps = {
   textSize?: string
-  textSizeLG?: string
   textSizeSM?: string
+  textSizeMD?: string
 }
 
 // Heading 1 Props
