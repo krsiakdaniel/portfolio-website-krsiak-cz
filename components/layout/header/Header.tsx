@@ -7,8 +7,8 @@ import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 import Logo from '@/components/layout/header/Logo'
 import MenuDesktop from '@/components/layout/header/menu/MenuDesktop'
 import MenuMobile from '@/components/layout/header/menu/MenuMobile'
+import MenuMobileToggle from '@/components/layout/header/menu/MenuMobileToggle'
 import MenuSocialLinks from '@/components/layout/header/menu/MenuSocialLinks'
-import MenuToggle from '@/components/layout/header/menu/MenuToggle'
 import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
 import PageContainer from '@/components/layout/PageContainer'
 
@@ -18,7 +18,7 @@ const Header: FC = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
   const scroll = useScrollProgress()
 
-  const handleMenuToggle = (): void => {
+  const handleMenuMobileToggle = (): void => {
     setIsMenuOpen(!isMenuOpen)
   }
 
@@ -38,7 +38,7 @@ const Header: FC = (): JSX.Element => {
               <div className="hidden lg:flex">
                 <MenuSocialLinks type={DeviceTypeEnum.Desktop} />
               </div>
-              <MenuToggle isMenuOpen={isMenuOpen} handleMenuToggle={handleMenuToggle} />
+              <MenuMobileToggle isMenuOpen={isMenuOpen} handleMenuMobileToggle={handleMenuMobileToggle} />
             </div>
           </div>
         </div>

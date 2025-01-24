@@ -9,12 +9,12 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-import { MenuToggleProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
+import { MenuMobileToggleProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
-const MenuToggle: FC<MenuToggleProps> = ({ isMenuOpen, handleMenuToggle }): JSX.Element => {
+const MenuMobileToggle: FC<MenuMobileToggleProps> = ({ isMenuOpen, handleMenuMobileToggle }): JSX.Element => {
   return (
     <button
-      onClick={handleMenuToggle}
+      onClick={handleMenuMobileToggle}
       id={ID.menu.toggle}
       data-testid={DATA_TEST_IDS.menu.toggle.component}
       aria-label={ARIA_LABELS.toggleMenu}
@@ -25,4 +25,4 @@ const MenuToggle: FC<MenuToggleProps> = ({ isMenuOpen, handleMenuToggle }): JSX.
   )
 }
 
-export default MenuToggle
+export default MenuMobileToggle

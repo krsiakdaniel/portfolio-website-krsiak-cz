@@ -1,5 +1,5 @@
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
-import { HandleMenuToggleType } from '@/lib/utils/typeDefinitions/types'
+import { HandleMenuMobileToggleType } from '@/lib/utils/typeDefinitions/types'
 
 // Menu Props
 export type MenuProps = {
@@ -10,8 +10,8 @@ export type MenuSocialLinksProps = {
   type: DeviceTypeEnum
 }
 
-// Menu Toggle Props
-export type MenuToggleProps = {
-  handleMenuToggle: HandleMenuToggleType
+// Menu Mobile Toggle Props
+export type MenuMobileToggleProps = {
+  handleMenuMobileToggle: HandleMenuMobileToggleType
   isMenuOpen: boolean
 }

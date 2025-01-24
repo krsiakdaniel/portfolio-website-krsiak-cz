@@ -9,12 +9,16 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
 import { MenuSocialLinksProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
+import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+
 import iconGitHub from '@/public/icons/svg/social/github.svg'
 import iconLinkedIn from '@/public/icons/svg/social/linkedin.svg'
 
 const MenuSocialLinks: FC<MenuSocialLinksProps> = ({ type }): JSX.Element => {
+  const isMobile = type === DeviceTypeEnum.Mobile
+
   return (
-    <div className="ml-8 flex items-center space-x-2">
+    <div className={`flex items-center space-x-2 ${isMobile ? 'ml-2' : 'ml-8'}`}>
       <SocialLinkIcon
         type={type}
         href={EXTERNAL_URL.gitHub}
