@@ -9,6 +9,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
 
+import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { MenuProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
 const getMenuLinkCSS = (isMobile: boolean): string => {
@@ -17,12 +18,13 @@ const getMenuLinkCSS = (isMobile: boolean): string => {
     : 'text-md cursor-pointer'
 }
 
-const Menu: FC<MenuProps> = ({ isMobile }): JSX.Element => {
+const Menu: FC<MenuProps> = ({ type }): JSX.Element => {
+  const isMobile = type === DeviceTypeEnum.Mobile
   const menuDataTestId = isMobile ? DATA_TEST_IDS.menu.mobile.componentMenu : DATA_TEST_IDS.menu.desktop.componentMenu
   const menuId = isMobile ? ID.menu.mobile : ID.menu.desktop
 
   return (
-    <nav aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
+    <nav className="flex items-center" aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
       <ul className={isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-8 lg:flex'}>
         {pagesLinks.map((link) => (
           <li key={link.id}>

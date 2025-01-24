@@ -24,16 +24,16 @@ export enum DurationUnitEnum {
   Year = 'year',
 }
 
-// CTA Banner Icon
-export enum IconDeviceTypeEnum {
-  Mobile = 'mobile',
-  Desktop = 'desktop',
-}
-
 // Alert
 export enum AlertTypeEnum {
   Info = 'info',
   Warning = 'warning',
   Success = 'success',
   Danger = 'danger',
+}
+
+// Device Type
+export enum DeviceTypeEnum {
+  Mobile = 'mobile',
+  Desktop = 'desktop',
 }

@@ -10,7 +10,7 @@ const SkillCard: FC<SkillCardProps> = ({ id, imgSrc, imgAlt, title, years }): JS
   return (
     <div className="rounded-lg border border-gray-200 bg-gray-50 p-4" id={getSkillCardID(id)}>
       <div className="flex flex-wrap break-words">
-        <Image src={imgSrc} alt={imgAlt} className="h-13 w-13 mr-4 lg:h-16 lg:w-16" />
+        <Image src={imgSrc} alt={imgAlt} className="mr-4 h-14 w-14 lg:h-16 lg:w-16" />
 
         <div>
           <div className="text-xl font-semibold tracking-tight text-neutral-900 md:text-2xl lg:text-3xl">{title}</div>

@@ -6,8 +6,8 @@ export type BreadCrumbsType = {
   level2Url?: string
 }
 
-// Menu Toggle
-export type HandleMenuToggleType = () => void
+// Menu Mobile Toggle
+export type HandleMenuMobileToggleType = () => void
 
 // Skills
 export type SkillCategoryType = 'Design' | 'Frontend' | 'Other'

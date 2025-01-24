@@ -118,7 +118,7 @@ export interface SkillsInfo {
 export interface StatusBadge {
   id: number
   name: string
-  src: string
+  src: string // not 'StaticImageData' but 'string' because it's a URL
   alt: string
   width: number
   height: number

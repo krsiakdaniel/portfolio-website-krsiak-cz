@@ -16,15 +16,15 @@ const FooterSocialLinks: FC = (): JSX.Element => {
       <DividerWithText text={DIVIDER_WITH_TEXT.myLinks} />
       <div className="flex flex-col sm:flex-row">
         <SocialLink
-          href={EXTERNAL_URL.linkedin}
-          linkText={TEXT.linkedIn}
+          href={EXTERNAL_URL.linkedIn}
+          linkText={TEXT.myLinkedIn}
           linkColor={LinkColorsEnum.Blue}
           className="sm:mr-4"
           dataTestId={DATA_TEST_IDS.footer.linkFooterLinkedIn}
         />
         <SocialLink
-          href={EXTERNAL_URL.github}
-          linkText={TEXT.gitHub}
+          href={EXTERNAL_URL.gitHub}
+          linkText={TEXT.gitHubCode}
           linkColor={LinkColorsEnum.Gray}
           className="mt-4 sm:mt-0"
           dataTestId={DATA_TEST_IDS.footer.linkFooterGitHub}

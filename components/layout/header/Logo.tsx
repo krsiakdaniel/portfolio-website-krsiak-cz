@@ -11,6 +11,9 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import logo from '@/public/icons/png/icon-64x64.png'
 
+const IMAGE_WIDTH = 32
+const IMAGE_HEIGHT = 32
+
 const Logo: FC = (): JSX.Element => {
   return (
     <div>
@@ -20,7 +23,7 @@ const Logo: FC = (): JSX.Element => {
         data-testid={DATA_TEST_IDS.headerLogo}
       >
         <div>
-          <Image src={logo} width={32} height={32} alt="logo" loading="eager" />
+          <Image src={logo} width={IMAGE_WIDTH} height={IMAGE_HEIGHT} alt="logo" loading="eager" />
         </div>
         <Paragraph marginTop="mt-0" size="text-md" customCss="cursor-pointer font-bold group-hover:text-violet-600">
           {TEXT.logo}

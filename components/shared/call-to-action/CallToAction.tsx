@@ -4,7 +4,7 @@ import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIco
 import CallToActionLink from '@/components/shared/call-to-action/CallToActionLink'
 import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTexts'
 
-import { IconDeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { CallToActionProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
 const CallToAction: FC<CallToActionProps> = ({
@@ -33,7 +33,7 @@ const CallToAction: FC<CallToActionProps> = ({
         </div>
 
         <div className="hidden items-center justify-center md:flex md:w-1/3">
-          <CallToActionIcon type={IconDeviceTypeEnum.Desktop} icon={icon} />
+          <CallToActionIcon type={DeviceTypeEnum.Desktop} icon={icon} />
         </div>
       </div>
     </section>

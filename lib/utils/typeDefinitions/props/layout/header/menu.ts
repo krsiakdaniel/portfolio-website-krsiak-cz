@@ -1,18 +1,17 @@
-import { HandleMenuToggleType } from '@/lib/utils/typeDefinitions/types'
+import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+import { HandleMenuMobileToggleType } from '@/lib/utils/typeDefinitions/types'
 
 // Menu Props
 export type MenuProps = {
-  isMobile: boolean
+  type: DeviceTypeEnum
 }
 
-// Menu Desktop Props
-export type MenuDesktopProps = {
-  handleMenuToggle: HandleMenuToggleType
-  isOpen: boolean
+export type MenuSocialLinksProps = {
+  type: DeviceTypeEnum
 }
 
-// Menu Toggle Props
-export type MenuToggleProps = {
-  handleMenuToggle: HandleMenuToggleType
-  isOpen: boolean
+// Menu Mobile Toggle Props
+export type MenuMobileToggleProps = {
+  handleMenuMobileToggle: HandleMenuMobileToggleType
+  isMenuOpen: boolean
 }

@@ -11,6 +11,9 @@ import Paragraph from '@/components/shared/Paragraph'
 
 import { GalleryProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
+const IMAGE_WIDTH = 1240
+const IMAGE_HEIGHT = 1272
+
 const Gallery: FC<GalleryProps> = ({ imageShowcase }): JSX.Element => {
   return (
     <div className="mt-8">
@@ -21,8 +24,8 @@ const Gallery: FC<GalleryProps> = ({ imageShowcase }): JSX.Element => {
           <div data-testid={`gallery-image-${image.id}`} key={image.id}>
             <Image
               src={image.src}
-              width={1240}
-              height={1272}
+              width={IMAGE_WIDTH}
+              height={IMAGE_HEIGHT}
               className="border-1 mt-8 rounded-lg border border-violet-300 bg-violet-50 p-1"
               alt={`project-image-${image.id}`}
               placeholder="blur"

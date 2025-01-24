@@ -8,6 +8,9 @@ import Paragraph from '@/components/shared/Paragraph'
 
 import { ErrorPageContentProps } from '@/lib/utils/typeDefinitions/props/layout/errors'
 
+const IMAGE_WIDTH = 400
+const IMAGE_HEIGHT = 417
+
 const ErrorPageContent: FC<ErrorPageContentProps> = ({
   imgSrc,
   imgAlt,
@@ -23,7 +26,7 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
 
   return (
     <div className="flex flex-col items-center text-center">
-      <Image src={imgSrc} width={400} height={417} alt={imgAlt} loading="eager" />
+      <Image src={imgSrc} width={IMAGE_WIDTH} height={IMAGE_HEIGHT} alt={imgAlt} loading="eager" />
       <div className="mt-10">
         <Heading1 textSize="8xl" textSizeSM="8xl" textSizeMD="8xl">
           {heading}

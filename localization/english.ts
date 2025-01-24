@@ -38,9 +38,11 @@ export const DIVIDER_WITH_TEXT = {
 }
 
 export const SOCIAL_LINKS = {
-  linkedIn: 'My LinkedIn',
+  linkedIn: 'LinkedIn',
+  myLinkedIn: 'My LinkedIn',
+  gitHub: 'GitHub',
+  gitHubCode: 'GitHub Code',
   resumePDF: 'Resume PDF',
-  gitHub: 'GitHub Code',
   twitter: '@krsiak_daniel',
 }
 
@@ -192,6 +194,10 @@ export const META_TESTIMONIALS = {
     communication: 'Communication',
     knowledgeSharing: 'Knowledge Sharing',
   },
+}
+
+export const SHARED = {
+  opensInNewTab: 'Opens in a new tab',
 }
 
 export const META_PROJECTS_OVERVIEW_PERSONAL = {
@@ -513,6 +519,7 @@ export const IMAGE_ALT = {
 
 export const TEXT = {
   ...COMMON_VALUES,
+  ...SHARED,
   ...PROJECT_INFORMATION,
   ...MY_WORK,
   ...SOCIAL_LINKS,
