@@ -14,8 +14,8 @@ const CallToActionGitHub: FC = (): JSX.Element => {
       heading="Explore GitHub Projects"
       textMobileAndDesktop="Go through my GitHub repository to see how I code my personal portfolio project."
       textDesktop="Writing maintainable, and efficient code, using React, Next.js, and TypeScript."
-      link={EXTERNAL_URL.github}
-      linkText={TEXT.gitHub}
+      link={EXTERNAL_URL.gitHub}
+      linkText={TEXT.gitHubCode}
       dataTestId={DATA_TEST_IDS.callToAction.linkGitHub}
       icon="🚀"
       isLinkExternal

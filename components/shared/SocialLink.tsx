@@ -2,6 +2,8 @@ import { FC } from 'react'
 
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
+import { TEXT } from '@/localization/english'
+
 import { LinkColorsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { SocialLinkProps } from '@/lib/utils/typeDefinitions/props/shared/social-link'
 
@@ -49,7 +51,7 @@ const SocialLink: FC<SocialLinkProps> = ({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      title={`${linkText} - Opens in a new tab`}
+      title={`${linkText} - ${TEXT.opensInNewTab}`}
       className={`flex items-center justify-center space-x-2 rounded-lg text-sm sm:min-w-[248px] ${bgColor} px-5 py-2.5 text-center font-medium text-white ${hoverColor} focus:outline-none focus:ring-4 ${focusRingColor} ${className}`}
       data-testid={dataTestId}
     >

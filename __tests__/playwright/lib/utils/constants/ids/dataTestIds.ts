@@ -68,6 +68,10 @@ const MENU = {
   toggle: {
     component: 'menu-toggle',
   },
+  socialLinks: {
+    gitHubRepo: 'menu-link-social-github',
+    linkedInProfile: 'menu-link-social-linkedin',
+  },
 }
 
 const HERO = {

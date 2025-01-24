@@ -41,7 +41,7 @@ const ProjectPersonalCryptomania: FC = (): JSX.Element => {
             description="For my latest production-level code, visit GitHub repo: 'Portfolio Website'."
             linkComponent={
               <SocialLink
-                href={EXTERNAL_URL.github}
+                href={EXTERNAL_URL.gitHub}
                 linkText="GitHub: portfolio-website-krsiak-cz"
                 linkColor={LinkColorsEnum.Blue}
                 dataTestId={DATA_TEST_IDS.alert.alertLinkGitHub}

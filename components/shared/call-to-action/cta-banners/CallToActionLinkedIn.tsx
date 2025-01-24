@@ -14,8 +14,8 @@ const CallToActionLinkedIn: FC = (): JSX.Element => {
       heading="Connect on LinkedIn"
       textMobileAndDesktop={`Visit my LinkedIn profile to connect and\u00A0see my professional experiences.`}
       textDesktop={`It\u00A0showcases a\u00A0comprehensive overview of my career journey.`}
-      link={EXTERNAL_URL.linkedin}
-      linkText={TEXT.linkedIn}
+      link={EXTERNAL_URL.linkedIn}
+      linkText={TEXT.myLinkedIn}
       dataTestId={DATA_TEST_IDS.callToAction.linkLinkedIn}
       icon="🔗"
       isLinkExternal
