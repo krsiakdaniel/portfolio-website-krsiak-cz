@@ -24,7 +24,7 @@ const Menu: FC<MenuProps> = ({ type }): JSX.Element => {
   const menuId = isMobile ? ID.menu.mobile : ID.menu.desktop
 
   return (
-    <nav className="flex items-center" aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
+    <nav aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
       <ul className={isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-8 lg:flex'}>
         {pagesLinks.map((link) => (
           <li key={link.id}>

@@ -5,8 +5,7 @@ import { FC, useState } from 'react'
 import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 
 import Logo from '@/components/layout/header/Logo'
-import MenuDesktop from '@/components/layout/header/menu/MenuDesktop'
-import MenuMobile from '@/components/layout/header/menu/MenuMobile'
+import Menu from '@/components/layout/header/menu/Menu'
 import MenuMobileToggle from '@/components/layout/header/menu/MenuMobileToggle'
 import MenuSocialLinks from '@/components/layout/header/menu/MenuSocialLinks'
 import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
@@ -30,7 +29,7 @@ const Header: FC = (): JSX.Element => {
             <Logo />
 
             <div className="flex">
-              <MenuDesktop />
+              <Menu type={DeviceTypeEnum.Desktop} />
               <div className="flex lg:hidden">
                 <MenuSocialLinks type={DeviceTypeEnum.Mobile} />
               </div>
@@ -43,7 +42,7 @@ const Header: FC = (): JSX.Element => {
           </div>
         </div>
 
-        {isMenuOpen && <MenuMobile />}
+        {isMenuOpen && <Menu type={DeviceTypeEnum.Mobile} />}
       </PageContainer>
 
       <ScrollProgressBar scroll={scroll} />
