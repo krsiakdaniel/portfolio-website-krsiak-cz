@@ -1,7 +1,4 @@
-type GetMenuLinkIDType = {
-  isMobile: boolean
-  linkID: string
-}
+import { GetMenuLinkIDType } from '@/lib/utils/typeDefinitions/types'
 
 /**
  * Returns the ID string for a menu link based on whether it is displayed on mobile or desktop.

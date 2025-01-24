@@ -6,6 +6,12 @@ export type BreadCrumbsType = {
   level2Url?: string
 }
 
+// Get Menu Link ID
+export type GetMenuLinkIDType = {
+  isMobile: boolean
+  linkID: string
+}
+
 // Menu Mobile Toggle
 export type HandleMenuMobileToggleType = () => void
 

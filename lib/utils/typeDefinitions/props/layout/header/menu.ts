@@ -1,4 +1,5 @@
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+import { PageLinkItem } from '@/lib/utils/typeDefinitions/interfaces'
 import { HandleMenuMobileToggleType } from '@/lib/utils/typeDefinitions/types'
 
 // Menu Props
@@ -6,6 +7,13 @@ export type MenuProps = {
   type: DeviceTypeEnum
 }
 
+// Menu Item Props
+export type MenuItemProps = {
+  linkItem: PageLinkItem
+  isMobile: boolean
+}
+
+// Menu Social Links Props
 export type MenuSocialLinksProps = {
   type: DeviceTypeEnum
 }
