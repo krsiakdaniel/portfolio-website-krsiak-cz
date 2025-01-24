@@ -7,8 +7,12 @@ import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 import Logo from '@/components/layout/header/Logo'
 import MenuDesktop from '@/components/layout/header/menu/MenuDesktop'
 import MenuMobile from '@/components/layout/header/menu/MenuMobile'
+import MenuSocialLinks from '@/components/layout/header/menu/MenuSocialLinks'
+import MenuToggle from '@/components/layout/header/menu/MenuToggle'
 import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
 import PageContainer from '@/components/layout/PageContainer'
+
+import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 
 const Header: FC = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
@@ -24,7 +28,18 @@ const Header: FC = (): JSX.Element => {
         <div>
           <div className="flex items-center justify-between py-4">
             <Logo />
-            <MenuDesktop isOpen={isMenuOpen} handleMenuToggle={handleMenuToggle} />
+
+            <div className="flex">
+              <MenuDesktop />
+              <div className="flex lg:hidden">
+                <MenuSocialLinks type={DeviceTypeEnum.Mobile} />
+              </div>
+
+              <div className="hidden lg:flex">
+                <MenuSocialLinks type={DeviceTypeEnum.Desktop} />
+              </div>
+              <MenuToggle isMenuOpen={isMenuOpen} handleMenuToggle={handleMenuToggle} />
+            </div>
           </div>
         </div>
 

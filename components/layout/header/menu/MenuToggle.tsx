@@ -11,7 +11,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { MenuToggleProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
-const MenuToggle: FC<MenuToggleProps> = ({ isOpen, handleMenuToggle }): JSX.Element => {
+const MenuToggle: FC<MenuToggleProps> = ({ isMenuOpen, handleMenuToggle }): JSX.Element => {
   return (
     <button
       onClick={handleMenuToggle}
@@ -20,7 +20,7 @@ const MenuToggle: FC<MenuToggleProps> = ({ isOpen, handleMenuToggle }): JSX.Elem
       aria-label={ARIA_LABELS.toggleMenu}
       className="ml-8 rounded-lg bg-violet-50 p-2 hover:bg-violet-100 focus:bg-violet-100 focus:outline-none focus:ring-4 focus:ring-violet-400 lg:hidden"
     >
-      {isOpen ? <IconClose /> : <IconHamburger />}
+      {isMenuOpen ? <IconClose /> : <IconHamburger />}
     </button>
   )
 }

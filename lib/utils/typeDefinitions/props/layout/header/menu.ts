@@ -6,14 +6,12 @@ export type MenuProps = {
   type: DeviceTypeEnum
 }
 
-// Menu Desktop Props
-export type MenuDesktopProps = {
-  handleMenuToggle: HandleMenuToggleType
-  isOpen: boolean
+export type MenuSocialLinksProps = {
+  type: DeviceTypeEnum
 }
 
 // Menu Toggle Props
 export type MenuToggleProps = {
   handleMenuToggle: HandleMenuToggleType
-  isOpen: boolean
+  isMenuOpen: boolean
 }
