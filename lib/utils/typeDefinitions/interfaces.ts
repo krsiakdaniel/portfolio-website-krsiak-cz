@@ -46,10 +46,10 @@ export interface OtherExperienceData {
 
 // Page Link Item
 export interface PageLinkItem {
+  id: string
   href: string
   text: string
   dataTestId: string
-  id: string
 }
 
 // Project Base

@@ -17,7 +17,7 @@ const PageNavigationLink: FC<PageNavigationLinkProps> = ({ href, text, arrowDire
   return (
     <a
       href={href}
-      className={`flex w-full items-center space-x-2 rounded-lg bg-violet-50 p-4 font-bold text-violet-500 ${justifyArrowCSS} ${hoverAndFocusCSS} lg:w-1/2`}
+      className={`flex w-full items-center space-x-2 rounded-lg bg-violet-50 p-4 font-bold text-violet-500 ${justifyArrowCSS} ${hoverAndFocusCSS} select-none lg:w-1/2`}
       data-testid={dataTestId}
     >
       {hasArrowLeft && <IconArrow arrowDirection={ArrowDirectionEnum.Left} />}
