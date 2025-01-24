@@ -10,13 +10,13 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import iconGitHub from '@/public/icons/svg/social/github.svg'
 import iconLinkedIn from '@/public/icons/svg/social/linkedin.svg'
 
+// FIXME: responsive design, M: 32, D: 24
 const ICON_HEIGHT = 24
 const ICON_WIDTH = 24
 
-// TODO: improve responsive, position for Des: menu / icons ... Mob: icons / toggle
 const MenuSocialLinks: FC = (): JSX.Element => {
   return (
-    <div className="flex items-center space-x-2">
+    <div className="ml-8 flex items-center space-x-2">
       <SocialLinkIcon
         href={EXTERNAL_URL.gitHub}
         dataTestId={DATA_TEST_IDS.menu.socialLinks.gitHubRepo}

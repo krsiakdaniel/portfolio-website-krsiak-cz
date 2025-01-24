@@ -5,7 +5,7 @@ import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIcon'
 
-import { IconDeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { CallToActionTextsProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
 const CallToActionTexts: FC<CallToActionTextsProps> = ({
@@ -18,7 +18,7 @@ const CallToActionTexts: FC<CallToActionTextsProps> = ({
   return (
     <div>
       <div className="mb-2 flex items-center space-x-2 uppercase md:space-x-0">
-        <CallToActionIcon type={IconDeviceTypeEnum.Mobile} icon={icon} />
+        <CallToActionIcon type={DeviceTypeEnum.Mobile} icon={icon} />
         <Highlight text={highlight} />
       </div>
       <Heading2 textColor="text-neutral-900">{heading}</Heading2>
