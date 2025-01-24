@@ -17,12 +17,20 @@ import iconLinkedIn from '@/public/icons/svg/social/linkedin.svg'
 const MenuSocialLinks: FC<MenuSocialLinksProps> = ({ type }): JSX.Element => {
   const isMobile = type === DeviceTypeEnum.Mobile
 
+  const dataTestIdGitHub = isMobile
+    ? `mobile-${DATA_TEST_IDS.menu.socialLinks.gitHubRepo}`
+    : `desktop-${DATA_TEST_IDS.menu.socialLinks.gitHubRepo}`
+
+  const dataTestIdLinkedIn = isMobile
+    ? `mobile-${DATA_TEST_IDS.menu.socialLinks.linkedInProfile}`
+    : `desktop-${DATA_TEST_IDS.menu.socialLinks.linkedInProfile}`
+
   return (
     <div className={`flex items-center space-x-2 ${isMobile ? 'ml-2' : 'ml-6'}`}>
       <SocialLinkIcon
         type={type}
         href={EXTERNAL_URL.gitHub}
-        dataTestId={DATA_TEST_IDS.menu.socialLinks.gitHubRepo}
+        dataTestId={dataTestIdGitHub}
         title={`${TEXT.gitHub} - ${TEXT.opensInNewTab}`}
         ariaLabel={TEXT.gitHub}
         imgSrc={iconGitHub}
@@ -32,7 +40,7 @@ const MenuSocialLinks: FC<MenuSocialLinksProps> = ({ type }): JSX.Element => {
       <SocialLinkIcon
         type={type}
         href={EXTERNAL_URL.linkedIn}
-        dataTestId={DATA_TEST_IDS.menu.socialLinks.linkedInProfile}
+        dataTestId={dataTestIdLinkedIn}
         title={`${TEXT.linkedIn} - ${TEXT.opensInNewTab}`}
         ariaLabel={TEXT.linkedIn}
         imgSrc={iconLinkedIn}
