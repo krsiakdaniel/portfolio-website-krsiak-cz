@@ -18,7 +18,7 @@ const MenuSocialLinks: FC<MenuSocialLinksProps> = ({ type }): JSX.Element => {
   const isMobile = type === DeviceTypeEnum.Mobile
 
   return (
-    <div className={`flex items-center space-x-2 ${isMobile ? 'ml-2' : 'ml-4'}`}>
+    <div className={`flex items-center space-x-2 ${isMobile ? 'ml-2' : 'ml-6'}`}>
       <SocialLinkIcon
         type={type}
         href={EXTERNAL_URL.gitHub}
