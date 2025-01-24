@@ -7,7 +7,7 @@ export type SocialLinkIconProps = {
   title: string
   ariaLabel: string
   imgSrc: StaticImageData
+  width: number
+  height: number
   imgAlt: string
-  iconWidth: number
-  iconHeight: number
 }

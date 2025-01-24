@@ -10,9 +10,9 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import iconGitHub from '@/public/icons/svg/social/github.svg'
 import iconLinkedIn from '@/public/icons/svg/social/linkedin.svg'
 
-// FIXME: responsive design, M: 32, D: 24
-const ICON_HEIGHT = 24
-const ICON_WIDTH = 24
+// FIXME: responsive design, M: 32, D: 24 , default is 24, pass as prop on mobile, remove const here after
+const IMAGE_WIDTH = 24
+const IMAGE_HEIGHT = 24
 
 const MenuSocialLinks: FC = (): JSX.Element => {
   return (
@@ -23,9 +23,9 @@ const MenuSocialLinks: FC = (): JSX.Element => {
         title={`${TEXT.gitHub} - ${TEXT.opensInNewTab}`}
         ariaLabel={TEXT.gitHub}
         imgSrc={iconGitHub}
+        width={IMAGE_WIDTH}
+        height={IMAGE_HEIGHT}
         imgAlt={TEXT.gitHub}
-        iconWidth={ICON_WIDTH}
-        iconHeight={ICON_HEIGHT}
       />
 
       <SocialLinkIcon
@@ -34,9 +34,9 @@ const MenuSocialLinks: FC = (): JSX.Element => {
         title={`${TEXT.linkedIn} - ${TEXT.opensInNewTab}`}
         ariaLabel={TEXT.linkedIn}
         imgSrc={iconLinkedIn}
+        width={IMAGE_WIDTH}
+        height={IMAGE_HEIGHT}
         imgAlt={TEXT.linkedIn}
-        iconWidth={ICON_WIDTH}
-        iconHeight={ICON_HEIGHT}
       />
     </div>
   )

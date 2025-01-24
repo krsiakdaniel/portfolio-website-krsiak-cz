@@ -4,15 +4,18 @@ import Image from 'next/image'
 
 import { SocialLinkIconProps } from '@/lib/utils/typeDefinitions/props/shared/social-link-icon'
 
+const IMAGE_WIDTH = 24
+const IMAGE_HEIGHT = 24
+
 const SocialLinkIcon: FC<SocialLinkIconProps> = ({
   href,
   dataTestId,
   title,
   ariaLabel,
   imgSrc,
+  width = IMAGE_WIDTH,
+  height = IMAGE_HEIGHT,
   imgAlt,
-  iconWidth,
-  iconHeight,
 }): JSX.Element => {
   return (
     <a
@@ -24,7 +27,7 @@ const SocialLinkIcon: FC<SocialLinkIconProps> = ({
       title={title}
       aria-label={ariaLabel}
     >
-      <Image src={imgSrc} width={iconWidth} height={iconHeight} alt={imgAlt} loading="eager" />
+      <Image src={imgSrc} width={width} height={height} alt={imgAlt} loading="eager" />
     </a>
   )
 }

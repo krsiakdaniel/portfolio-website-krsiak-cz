@@ -136,5 +136,5 @@ export interface TestimonialItem {
 // Image Showcase Item
 export interface ImageShowcaseItem {
   id: number
-  src: StaticImageData
+  src: string
 }
