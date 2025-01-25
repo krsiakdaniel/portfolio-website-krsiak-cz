@@ -3,6 +3,7 @@ import { iconsSkillsProjectsWorkMoravia } from '@/lib/data/pages/projects/work/p
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // moravia
@@ -27,12 +28,12 @@ export const projectsWorkLocalization: Project[] = [
     years: '1 year',
     description:
       'I had amazing chance to be team leader on Microsoft products, doing quality checks for Microsoft projects Windows 8 + Windows Phone.',
-    mySkillsIcons: iconsSkillsProjectsWorkMoravia,
+    skillsIcons: iconsSkillsProjectsWorkMoravia,
     skillsOverview: [
       {
         id: 0,
-        description: 'Frontend',
-        skillsList: ['HTML', 'CSS', 'JavaScript', 'AutoHotkey'],
+        description: SkillCategoryEnum.FrontEnd,
+        skillsList: [SkillsEnum.HTML, SkillsEnum.CSS, SkillsEnum.JavaScript, SkillsEnum.AutoHotkey],
       },
     ],
     linkText: 'Project details',

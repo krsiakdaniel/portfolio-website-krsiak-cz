@@ -1,15 +1,15 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
-import { ProjectSkillsProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
+import { ProjectSkillsIconsProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
 const IMAGE_WIDTH = 32
 const IMAGE_HEIGHT = 32
 
-const ProjectSkills: FC<ProjectSkillsProps> = ({ mySkillsIcons }): JSX.Element => {
+const ProjectSkillsIcons: FC<ProjectSkillsIconsProps> = ({ skillsIcons = [] }): JSX.Element => {
   return (
     <div className="mt-2 flex flex-wrap lg:mt-4">
-      {mySkillsIcons.map((item) => (
+      {skillsIcons.map((item) => (
         <Image
           key={item.name}
           src={item.path}
@@ -23,4 +23,4 @@ const ProjectSkills: FC<ProjectSkillsProps> = ({ mySkillsIcons }): JSX.Element =
   )
 }
 
-export default ProjectSkills
+export default ProjectSkillsIcons

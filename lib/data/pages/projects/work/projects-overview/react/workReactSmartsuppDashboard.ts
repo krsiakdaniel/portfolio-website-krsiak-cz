@@ -3,6 +3,7 @@ import { iconsSkillsProjectsWorkSmartsuppDashboard } from '@/lib/data/pages/proj
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // smartsupp dashboard
@@ -28,15 +29,30 @@ export const workReactSmartsuppDashboard: Project = {
   years: '3\u00A0years 2\u00A0months',
   description:
     'I worked on chat dashboard features and new design, including redesign of settings. I was involved in UX team to learn.',
-  mySkillsIcons: iconsSkillsProjectsWorkSmartsuppDashboard,
+  skillsIcons: iconsSkillsProjectsWorkSmartsuppDashboard,
   skillsOverview: [
     {
       id: 0,
-      description: 'Frontend',
-      skillsList: ['JavaScript', 'TypeScript', 'React', 'Redux', 'Chakra UI', 'Cypress', 'Pair Programming'],
+      description: SkillCategoryEnum.FrontEnd,
+      skillsList: [
+        SkillsEnum.TypeScript,
+        SkillsEnum.React,
+        SkillsEnum.Redux,
+        SkillsEnum.ChakraUI,
+        SkillsEnum.Cypress,
+        SkillsEnum.PairProgramming,
+      ],
     },
-    { id: 1, description: 'Design', skillsList: ['UX', 'Adobe XD', 'Responsive Design'] },
-    { id: 2, description: 'Other', skillsList: ['Trello'] },
+    {
+      id: 1,
+      description: SkillCategoryEnum.Design,
+      skillsList: [SkillsEnum.UX, SkillsEnum.AdobeXD, SkillsEnum.ResponsiveDesign],
+    },
+    {
+      id: 2,
+      description: SkillCategoryEnum.Other,
+      skillsList: [SkillsEnum.Trello],
+    },
   ],
   linkText: 'Project details',
   projectLinks: [

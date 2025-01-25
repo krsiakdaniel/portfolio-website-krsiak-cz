@@ -3,6 +3,7 @@ import { iconsSkillsProjectsPersonalCryptomania } from '@/lib/data/pages/project
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // project images
@@ -28,17 +29,17 @@ export const projectsPersonalReact: Project[] = [
     role: 'Front End - React',
     description:
       'Crypto currency prices app fetching latest data from CoinGecko API. This is fun little project created in Chakra UI with dark mode available.',
-    mySkillsIcons: iconsSkillsProjectsPersonalCryptomania,
+    skillsIcons: iconsSkillsProjectsPersonalCryptomania,
     skillsOverview: [
       {
         id: 0,
-        description: 'Frontend',
-        skillsList: ['JavaScript', 'TypeScript', 'React', 'React App', 'Chakra UI', 'CoinGecko API'],
+        description: SkillCategoryEnum.FrontEnd,
+        skillsList: [SkillsEnum.TypeScript, SkillsEnum.React, SkillsEnum.ChakraUI, SkillsEnum.CoinGeckoAPI],
       },
       {
         id: 1,
-        description: 'Other',
-        skillsList: ['Netlify'],
+        description: SkillCategoryEnum.Other,
+        skillsList: [SkillsEnum.Netlify],
       },
     ],
     linkText: 'Project details',

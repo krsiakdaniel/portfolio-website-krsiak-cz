@@ -1,4 +1,6 @@
-export const ID = {
+import { ElementIds } from '@/lib/utils/typeDefinitions/interfaces'
+
+export const ID: ElementIds = {
   home: 'home',
   hero: 'hero',
   skills: 'skills',

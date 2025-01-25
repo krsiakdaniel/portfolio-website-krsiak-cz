@@ -5,7 +5,7 @@ import { appleTouchIconSizes } from '@/lib/data/metadata/shared/appleTouchIconSi
 const AppleTouchIcons: FC = (): JSX.Element => {
   return (
     <>
-      {appleTouchIconSizes.map((size) => {
+      {(appleTouchIconSizes ?? []).map((size) => {
         return <link key={size} rel="apple-touch-icon" sizes={size} href={`/icons/png/icon-${size}.png`} />
       })}
     </>

@@ -1,4 +1,6 @@
-export const YEARS = {
+import { MonthsExperience, YearsExperience } from '@/lib/utils/typeDefinitions/interfaces'
+
+export const YEARS: YearsExperience = {
   javaScript: 6,
   typeScript: 5,
   react: 5,
@@ -17,7 +19,7 @@ export const YEARS = {
   highSchoolAccountant: 4,
 }
 
-export const MONTHS = {
+export const MONTHS: MonthsExperience = {
   qaTeamLeaderAtSmartsupp: 6, // months
   airportFlightsInfo: 8, // months
   crewMemberKFC: 3, // months

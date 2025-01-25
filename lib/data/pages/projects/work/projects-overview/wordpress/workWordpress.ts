@@ -3,6 +3,7 @@ import { iconsSkillsProjectsWorkSmartsuppHelp } from '@/lib/data/pages/projects/
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // smartsupp help
@@ -27,12 +28,12 @@ export const projectsWorkWordPress: Project[] = [
     years: '6\u00A0months',
     description:
       'Responsible for the company HELP website running on WordPress and\u00A0writing tutorials. Localization into 9 languages.',
-    mySkillsIcons: iconsSkillsProjectsWorkSmartsuppHelp,
+    skillsIcons: iconsSkillsProjectsWorkSmartsuppHelp,
     skillsOverview: [
       {
         id: 0,
-        description: 'Frontend',
-        skillsList: ['JavaScript', 'WordPress', 'PHP'],
+        description: SkillCategoryEnum.FrontEnd,
+        skillsList: [SkillsEnum.JavaScript, SkillsEnum.PHP, SkillsEnum.WordPress],
       },
     ],
     linkText: 'Project details',

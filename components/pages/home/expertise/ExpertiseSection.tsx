@@ -6,7 +6,7 @@ import ListItem from '@/components/shared/ListItem'
 
 import { ExpertiseSectionProps } from '@/lib/utils/typeDefinitions/props/pages/home/expertise'
 
-const ExpertiseSection: FC<ExpertiseSectionProps> = ({ heading, listItems }): JSX.Element => {
+const ExpertiseSection: FC<ExpertiseSectionProps> = ({ heading, listItems = [] }): JSX.Element => {
   return (
     <div className="min-w-[250px] flex-1">
       <Heading2>{heading}</Heading2>

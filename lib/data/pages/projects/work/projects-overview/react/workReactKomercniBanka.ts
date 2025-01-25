@@ -3,6 +3,7 @@ import { iconsSkillsProjectsWorkKomercniBanka } from '@/lib/data/pages/projects/
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // komercni banka
@@ -28,15 +29,23 @@ export const workReactKomercniBanka: Project = {
   years: '10\u00A0months',
   description:
     'I created search page for ATM and branches, with their detail pages. And also Exchange rates page with details for each currency.',
-  mySkillsIcons: iconsSkillsProjectsWorkKomercniBanka,
+  skillsIcons: iconsSkillsProjectsWorkKomercniBanka,
   skillsOverview: [
     {
       id: 0,
-      description: 'Frontend',
-      skillsList: ['JavaScript', 'TypeScript', 'React', 'Tailwind CSS', 'Pair Programming'],
+      description: SkillCategoryEnum.FrontEnd,
+      skillsList: [SkillsEnum.TypeScript, SkillsEnum.React, SkillsEnum.Tailwind, SkillsEnum.PairProgramming],
     },
-    { id: 1, description: 'Design', skillsList: ['Figma', 'Responsive Design'] },
-    { id: 2, description: 'Other', skillsList: ['Jira', 'Confluence', 'Tempo', 'Kentico'] },
+    {
+      id: 1,
+      description: SkillCategoryEnum.Design,
+      skillsList: [SkillsEnum.Figma, SkillsEnum.ResponsiveDesign],
+    },
+    {
+      id: 2,
+      description: SkillCategoryEnum.Other,
+      skillsList: [SkillsEnum.Jira, SkillsEnum.Confluence, SkillsEnum.Tempo, SkillsEnum.Kentico],
+    },
   ],
   linkText: 'Project details',
   projectLinks: [

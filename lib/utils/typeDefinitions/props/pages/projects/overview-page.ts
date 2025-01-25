@@ -32,8 +32,8 @@ export type ProjectSectionProps = {
 }
 
 // Project Skills Props
-export type ProjectSkillsProps = {
-  mySkillsIcons: Icon[]
+export type ProjectSkillsIconsProps = {
+  skillsIcons: Icon[]
 }
 
 // Project Summary Card Props

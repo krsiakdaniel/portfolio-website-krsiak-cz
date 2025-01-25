@@ -1,17 +1,11 @@
 import { StaticImageData } from 'next/image'
 
-import { DurationUnitEnum } from '@/lib/utils/typeDefinitions/enums'
+import { DurationUnitEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { SkillCategoryType } from '@/lib/utils/typeDefinitions/types'
 
 // Error Pages
 export interface Errors {
   error: Error
-}
-
-// Icons
-export interface Icon {
-  name: string
-  path: string
 }
 
 // Job
@@ -60,7 +54,7 @@ export interface ProjectBase {
   company: string
   role: string
   description: string
-  mySkillsIcons: Icon[]
+  skillsIcons: Icon[]
   customers?: string
   personalProjectNote?: string
   linkText: string
@@ -95,7 +89,7 @@ export interface SectionItem {
 export interface Skill {
   id: number
   description: SkillCategoryType
-  skillsList: string[]
+  skillsList: SkillsEnum[]
 }
 
 // Skill Card Item
@@ -137,4 +131,157 @@ export interface TestimonialItem {
 export interface ImageShowcaseItem {
   id: number
   src: string
+}
+
+// External URL
+export interface ExternalURL {
+  gitHub: string
+  linkedIn: string
+  resumeViewPDF: string
+}
+
+// Page URLs
+export interface PageUrls {
+  websiteProduction: string
+  localhost: string
+  home: string
+  resume: string
+  work: {
+    mainUrl: string
+    kooperativa: string
+    smartsupp: {
+      dashboard: string
+      web: string
+      help: string
+    }
+    komercniBanka: string
+    groupon: string
+    moravia: string
+  }
+  personal: {
+    mainUrl: string
+    krsiak: string
+    cryptoMania: string
+  }
+  testimonials: string
+  statusPage: string
+}
+
+// Status Badge URLs
+export interface StatusBadgeUrls {
+  JEST: string
+  PLAYWRIGHT: string
+  CODEQL: string
+  CODE_QUALITY: string
+  DEPENDABOT: string
+  NETLIFY: string
+}
+
+// ARIA Labels
+export interface AriaLabels {
+  toggleMenu: string
+  menu: string
+  breadcrumbs: string
+  sun: string
+  moon: string
+  manWalking: string
+  forest: string
+  forestWithMountain: string
+}
+
+// Years of Experience
+export interface YearsExperience {
+  javaScript: number
+  typeScript: number
+  react: number
+  redux: number
+  tailwind: number
+  next: number
+  webDeveloper: number
+  qaAutomation: number
+  localizationManager: number
+  localizationTester: number
+  webCoder: number
+  consultantWebsites: number
+  consultantWordPress: number
+  operatorIBM: number
+  ticketAgent: number
+  highSchoolAccountant: number
+}
+
+// Months of Experience
+export interface MonthsExperience {
+  qaTeamLeaderAtSmartsupp: number
+  airportFlightsInfo: number
+  crewMemberKFC: number
+}
+
+// Project IDs
+export interface ProjectIds {
+  work: {
+    kooperativa: string
+    smartsupp: {
+      dashboard: string
+      web: string
+      help: string
+    }
+    komercniBanka: string
+    groupon: string
+    moravia: string
+  }
+  personal: {
+    krsiak: string
+    cryptoMania: string
+  }
+}
+
+// Element IDs
+export interface ElementIds {
+  home: string
+  hero: string
+  skills: string
+  skillsMain: string
+  resume: string
+  projects: {
+    work: string
+    personal: string
+  }
+  footer: string
+  section: {
+    react: string
+    frontEnd: string
+    wordpress: string
+    qa: string
+    localization: string
+    next: string
+  }
+  error: {
+    err404: string
+    errGeneral: string
+    errGlobal: string
+  }
+  menu: {
+    mobile: string
+    desktop: string
+    toggle: string
+  }
+  statusPage: string
+  testimonials: string
+  websiteLink: {
+    resume: string
+    testimonials: string
+    workExperience: string
+    personalProjects: string
+  }
+}
+
+// Skill Icon
+export interface Icon {
+  name: string
+  path: string
+}
+
+// Skill Icon Data - Map skill keys to their respective icons.
+export interface SkillToIconMap {
+  [key: string]: string
 }

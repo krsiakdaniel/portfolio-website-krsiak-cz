@@ -5,7 +5,11 @@ import ProjectSummaryCard from '@/components/pages/projects/overview-page/Projec
 
 import { ProjectSectionProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
-const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, sectionText }): JSX.Element => {
+const ProjectSection: FC<ProjectSectionProps> = ({
+  projectData = [],
+  sectionId = '',
+  sectionText = '',
+}): JSX.Element => {
   return (
     <>
       <ExperienceSection id={sectionId} text={sectionText} />
@@ -19,7 +23,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({ projectData, sectionId, secti
           company={item.company}
           role={item.role}
           description={item.description}
-          mySkillsIcons={item.mySkillsIcons}
+          skillsIcons={item.skillsIcons}
           customers={item.customers}
           personalProjectNote={item.personalProjectNote}
           linkText={item.linkText}

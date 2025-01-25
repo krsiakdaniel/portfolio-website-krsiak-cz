@@ -3,7 +3,7 @@ import { FC } from 'react'
 import ProjectDetails from '@/components/pages/projects/overview-page/ProjectDetails'
 import ProjectImage from '@/components/pages/projects/overview-page/ProjectImage'
 import ProjectLink from '@/components/pages/projects/overview-page/ProjectLink'
-import ProjectSkills from '@/components/pages/projects/overview-page/ProjectSkills'
+import ProjectSkillsIcons from '@/components/pages/projects/overview-page/ProjectSkillsIcons'
 
 import { ProjectSummaryCardProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
@@ -14,7 +14,7 @@ const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
   company,
   role,
   description,
-  mySkillsIcons,
+  skillsIcons,
   customers,
   personalProjectNote,
   linkText,
@@ -37,7 +37,7 @@ const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
               customers={customers}
               personalProjectNote={personalProjectNote}
             />
-            <ProjectSkills mySkillsIcons={mySkillsIcons} />
+            <ProjectSkillsIcons skillsIcons={skillsIcons} />
 
             <ProjectLink linkText={linkText} linkProjectPage={linkProjectPage} dataTestId={dataTestId} />
           </div>

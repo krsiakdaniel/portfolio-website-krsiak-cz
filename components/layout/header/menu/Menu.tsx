@@ -20,7 +20,7 @@ const Menu: FC<MenuProps> = ({ type }): JSX.Element => {
   return (
     <nav aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
       <ul className={isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-2 lg:flex'}>
-        {pagesLinks.map((link) => (
+        {(pagesLinks ?? []).map((link) => (
           <MenuItem key={link.id} linkItem={link} isMobile={isMobile} />
         ))}
       </ul>
