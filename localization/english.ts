@@ -39,7 +39,7 @@ export const DIVIDER_WITH_TEXT = {
 
 export const SOCIAL_LINKS = {
   linkedIn: 'LinkedIn',
-  myLinkedIn: 'My LinkedIn',
+  myLinkedIn: 'LinkedIn: Krsiak Daniel',
   gitHub: 'GitHub',
   gitHubCode: 'GitHub Code',
   resumePDF: 'Resume PDF',

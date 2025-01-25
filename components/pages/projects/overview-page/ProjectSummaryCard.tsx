@@ -38,13 +38,7 @@ const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
               personalProjectNote={personalProjectNote}
             />
             <ProjectSkillsIcons skillsIcons={skillsIcons} />
-            <LinkButton
-              href={linkProjectPage}
-              linkText={linkText}
-              isLinkExternal={false}
-              dataTestId={dataTestId}
-              maxWidth="176px"
-            />
+            <LinkButton href={linkProjectPage} linkText={linkText} isLinkExternal={false} dataTestId={dataTestId} />
           </div>
         </div>
       </div>
