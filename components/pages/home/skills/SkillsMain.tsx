@@ -13,7 +13,7 @@ const SkillsMain: FC = (): JSX.Element => {
       <DividerWithText text={DIVIDER_WITH_TEXT.myMainSkills} />
 
       <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-        {skills.map((skill) => (
+        {(skills ?? []).map((skill) => (
           <SkillCard
             id={skill.id}
             key={skill.id}

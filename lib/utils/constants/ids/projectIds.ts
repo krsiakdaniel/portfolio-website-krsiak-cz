@@ -1,4 +1,6 @@
-export const PROJECT_ID = {
+import { ProjectIds } from '@/lib/utils/typeDefinitions/interfaces'
+
+export const PROJECT_ID: ProjectIds = {
   work: {
     kooperativa: 'link-project-work-kooperativa',
     smartsupp: {

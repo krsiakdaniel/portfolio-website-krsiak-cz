@@ -7,7 +7,7 @@ import { TEXT } from '@/localization/english'
 
 import { OtherExperienceContentProps } from '@/lib/utils/typeDefinitions/props/pages/projects/other-experience'
 
-const OtherExperienceContent: FC<OtherExperienceContentProps> = ({ experience }): JSX.Element => {
+const OtherExperienceContent: FC<OtherExperienceContentProps> = ({ experience = [] }): JSX.Element => {
   return (
     <>
       <Heading4>{TEXT.otherExperience}</Heading4>

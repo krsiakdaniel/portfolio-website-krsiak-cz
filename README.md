@@ -168,18 +168,24 @@ The portfolio website is also available as a Web Progressive App (WPA) that can 
 
 You can install the WPA from the browser (example from Edge).
 
-![WPA Installation in Edge](/readme-images/main-readme/wpa-installation-in-edge.png)
+![WPA Installation in Edge](/readme-images/main-readme/wpa/wpa-installation-in-edge.png)
 
 ### WPA on Mac Desktop
 
 Once installed, the WPA can be accessed from desktop (example from Mac).
 
-![WPA - krsiak.cz](/readme-images/main-readme/wpa.png)
+![WPA - krsiak.cz](/readme-images/main-readme/wpa/wpa.png)
 
 ## 🖼️ Screenshots
 
 Project screenshots.
 
-![krsiak.cz | Portfolio Website](/readme-images/main-readme/krsiak-1-light.png)
+![krsiak.cz | Portfolio Website](/readme-images/main-readme/krsiak/krsiak-1-light.png)
 
-![krsiak.cz | Work Experience](/readme-images/main-readme/krsiak-2-light.png)
+![krsiak.cz | Work Experience](/readme-images/main-readme/krsiak/krsiak-2-light.png)
+
+![krsiak.cz | Resume](/readme-images/main-readme/krsiak/krsiak-3-light.png)
+
+![krsiak.cz | Personal Projects](/readme-images/main-readme/krsiak/krsiak-4-light.png)
+
+![krsiak.cz | Testimonials](/readme-images/main-readme/krsiak/krsiak-5-light.png)

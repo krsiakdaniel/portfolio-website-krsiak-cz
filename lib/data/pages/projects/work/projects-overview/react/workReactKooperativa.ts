@@ -3,6 +3,7 @@ import { iconsSkillsProjectsWorkKooperativa } from '@/lib/data/pages/projects/wo
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // kooperativa
@@ -25,15 +26,23 @@ export const workReactKooperativa: Project = {
   role: 'React Developer',
   years: '8\u00A0months',
   description: 'I worked on an application for managing insurance policies for citizens property and products.',
-  mySkillsIcons: iconsSkillsProjectsWorkKooperativa,
+  skillsIcons: iconsSkillsProjectsWorkKooperativa,
   skillsOverview: [
     {
       id: 0,
-      description: 'Frontend',
-      skillsList: ['JavaScript', 'TypeScript', 'React', 'Redux', 'Tailwind CSS'],
+      description: SkillCategoryEnum.FrontEnd,
+      skillsList: [SkillsEnum.TypeScript, SkillsEnum.React, SkillsEnum.Redux, SkillsEnum.Tailwind],
     },
-    { id: 1, description: 'Design', skillsList: ['Figma', 'Storybook'] },
-    { id: 2, description: 'Other', skillsList: ['Jira', 'Confluence'] },
+    {
+      id: 1,
+      description: SkillCategoryEnum.Design,
+      skillsList: [SkillsEnum.Figma, SkillsEnum.Storybook],
+    },
+    {
+      id: 2,
+      description: SkillCategoryEnum.Other,
+      skillsList: [SkillsEnum.Jira, SkillsEnum.Confluence],
+    },
   ],
   linkText: 'Project details',
   projectLinks: [

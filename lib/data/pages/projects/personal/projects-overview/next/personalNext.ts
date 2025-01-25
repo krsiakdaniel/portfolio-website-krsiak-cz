@@ -3,6 +3,7 @@ import { iconsSkillsProjectsPersonalKrsiak } from '@/lib/data/pages/projects/per
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // project images
@@ -28,17 +29,17 @@ export const projectsPersonalNext: Project[] = [
     role: 'Front End - Next.js',
     description:
       'My personal portfolio website to showcase my work and skills. The\u00A0latest iteration of what I know and can code as React Developer.',
-    mySkillsIcons: iconsSkillsProjectsPersonalKrsiak,
+    skillsIcons: iconsSkillsProjectsPersonalKrsiak,
     skillsOverview: [
       {
         id: 0,
-        description: 'Frontend',
-        skillsList: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
+        description: SkillCategoryEnum.FrontEnd,
+        skillsList: [SkillsEnum.TypeScript, SkillsEnum.React, SkillsEnum.Next, SkillsEnum.Tailwind],
       },
       {
         id: 1,
-        description: 'Other',
-        skillsList: ['JEST', 'Playwright', 'GitHub Actions', 'Netlify'],
+        description: SkillCategoryEnum.Other,
+        skillsList: [SkillsEnum.Jest, SkillsEnum.Playwright, SkillsEnum.GithubActions, SkillsEnum.Netlify],
       },
     ],
     linkText: 'Project details',

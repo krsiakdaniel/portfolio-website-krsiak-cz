@@ -1,0 +1,53 @@
+import { SkillToIconMap } from '@/lib/utils/typeDefinitions/interfaces'
+
+// Import SVG icons
+import {
+  chakraSVG,
+  cssSVG,
+  cypressSVG,
+  figmaSVG,
+  githubActionsSVG,
+  graphqlSVG,
+  htmlSVG,
+  javascriptSVG,
+  jestSVG,
+  netlifySVG,
+  nextSVG,
+  phpSVG,
+  playwrightSVG,
+  reactSVG,
+  reduxSVG,
+  scssSVG,
+  sketchSVG,
+  storybookSVG,
+  tailwindSVG,
+  typescriptSVG,
+  wordpressSVG,
+  xdSVG,
+} from '@/lib/data/skill-icons/skillIconsSVG'
+
+// Map skill names to their respective icons
+export const skillIcons: SkillToIconMap = {
+  chakra: chakraSVG,
+  css: cssSVG,
+  cypress: cypressSVG,
+  figma: figmaSVG,
+  githubActions: githubActionsSVG,
+  graphql: graphqlSVG,
+  html: htmlSVG,
+  jest: jestSVG,
+  javascript: javascriptSVG,
+  netlify: netlifySVG,
+  next: nextSVG,
+  php: phpSVG,
+  playwright: playwrightSVG,
+  react: reactSVG,
+  redux: reduxSVG,
+  scss: scssSVG,
+  sketch: sketchSVG,
+  storybook: storybookSVG,
+  tailwind: tailwindSVG,
+  typescript: typescriptSVG,
+  wordpress: wordpressSVG,
+  xd: xdSVG,
+}

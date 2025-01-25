@@ -3,6 +3,7 @@ import { iconsSkillsProjectsWorkSmartsuppWeb } from '@/lib/data/pages/projects/w
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // smartsupp web
@@ -29,11 +30,19 @@ export const projectsWorkFrontEnd: Project[] = [
     years: '1\u00A0year',
     description:
       'I created the company website Front End. I worked closely with the\u00A0main UX designer on new brand color theme and layout decisions.',
-    mySkillsIcons: iconsSkillsProjectsWorkSmartsuppWeb,
+    skillsIcons: iconsSkillsProjectsWorkSmartsuppWeb,
     skillsOverview: [
-      { id: 0, description: 'Frontend', skillsList: ['JavaScript', 'PHP', 'SASS', 'BEM', 'Cypress'] },
-      { id: 1, description: 'Design', skillsList: ['UX', 'Adobe XD', 'Responsive Design'] },
-      { id: 2, description: 'Other', skillsList: ['Trello'] },
+      {
+        id: 0,
+        description: SkillCategoryEnum.FrontEnd,
+        skillsList: [SkillsEnum.JavaScript, SkillsEnum.PHP, SkillsEnum.SASS, SkillsEnum.BEM, SkillsEnum.Cypress],
+      },
+      {
+        id: 1,
+        description: SkillCategoryEnum.Design,
+        skillsList: [SkillsEnum.UX, SkillsEnum.AdobeXD, SkillsEnum.ResponsiveDesign],
+      },
+      { id: 2, description: SkillCategoryEnum.Other, skillsList: [SkillsEnum.Trello] },
     ],
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website', url: 'https://www.smartsupp.com/', dataTestId: 'smartsupp-web' }],

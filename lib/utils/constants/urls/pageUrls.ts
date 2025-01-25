@@ -1,6 +1,7 @@
 import { getUrlPersonalProject, getUrlWorkExperience } from '@/lib/utils/helpers/urls/getPageUrls'
+import { PageUrls } from '@/lib/utils/typeDefinitions/interfaces'
 
-export const PAGES_URL = {
+export const PAGES_URL: PageUrls = {
   websiteProduction: 'https://krsiak.cz',
   localhost: 'http://localhost:3000',
   home: '/',

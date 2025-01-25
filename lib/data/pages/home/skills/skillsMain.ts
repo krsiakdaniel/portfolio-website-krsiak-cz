@@ -3,52 +3,54 @@ import { SkillCardItem } from '@/lib/utils/typeDefinitions/interfaces'
 
 import { TEXT } from '@/localization/english'
 
-import javascript from '@/public/icons/svg/skills/javascript.svg'
-import next from '@/public/icons/svg/skills/next.svg'
-import react from '@/public/icons/svg/skills/react.svg'
-import redux from '@/public/icons/svg/skills/redux.svg'
-import tailwind from '@/public/icons/svg/skills/tailwind.svg'
-import typescript from '@/public/icons/svg/skills/typescript.svg'
+import {
+  javascriptSVG,
+  nextSVG,
+  reactSVG,
+  reduxSVG,
+  tailwindSVG,
+  typescriptSVG,
+} from '@/lib/data/skill-icons/skillIconsSVG'
 
 export const skills: SkillCardItem[] = [
   {
     id: TEXT.javaScript,
-    imgSrc: javascript,
+    imgSrc: javascriptSVG,
     imgAlt: TEXT.javaScript,
     title: TEXT.javaScript,
     years: YEARS.javaScript,
   },
   {
     id: TEXT.typeScript,
-    imgSrc: typescript,
+    imgSrc: typescriptSVG,
     imgAlt: TEXT.typeScript,
     title: TEXT.typeScript,
     years: YEARS.typeScript,
   },
   {
     id: TEXT.react,
-    imgSrc: react,
+    imgSrc: reactSVG,
     imgAlt: TEXT.react,
     title: TEXT.react,
     years: YEARS.react,
   },
   {
     id: TEXT.nextShort,
-    imgSrc: next,
+    imgSrc: nextSVG,
     imgAlt: TEXT.nextShort,
     title: TEXT.nextShort,
     years: YEARS.next,
   },
   {
     id: TEXT.redux,
-    imgSrc: redux,
+    imgSrc: reduxSVG,
     imgAlt: TEXT.redux,
     title: TEXT.redux,
     years: YEARS.redux,
   },
   {
     id: TEXT.tailwindShort,
-    imgSrc: tailwind,
+    imgSrc: tailwindSVG,
     imgAlt: TEXT.tailwindShort,
     title: TEXT.tailwindShort,
     years: YEARS.tailwind,

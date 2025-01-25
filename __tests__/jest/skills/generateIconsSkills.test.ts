@@ -1,29 +1,33 @@
-import { getSkillsIcons, skillIcons, SkillKeys } from '@/lib/utils/helpers/skills/getSkillsIcons'
+import { skillIcons } from '@/lib/data/skill-icons/skillIcons'
+
+import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
+import { SkillIconEnum } from '@/lib/utils/typeDefinitions/enums'
+import { SkillIconType } from '@/lib/utils/typeDefinitions/types'
 
 describe('getSkillsIcons', () => {
-  const expectedKeys: SkillKeys[] = [
-    'chakra',
-    'css',
-    'cypress',
-    'figma',
-    'githubActions',
-    'graphql',
-    'html',
-    'jest',
-    'javascript',
-    'netlify',
-    'next',
-    'php',
-    'playwright',
-    'react',
-    'redux',
-    'scss',
-    'storybook',
-    'sketch',
-    'tailwind',
-    'typescript',
-    'wordpress',
-    'xd',
+  const expectedKeys: SkillIconType[] = [
+    SkillIconEnum.Chakra,
+    SkillIconEnum.CSS,
+    SkillIconEnum.Cypress,
+    SkillIconEnum.Figma,
+    SkillIconEnum.GithubActions,
+    SkillIconEnum.Graphql,
+    SkillIconEnum.HTML,
+    SkillIconEnum.Jest,
+    SkillIconEnum.JavaScript,
+    SkillIconEnum.Netlify,
+    SkillIconEnum.Next,
+    SkillIconEnum.PHP,
+    SkillIconEnum.Playwright,
+    SkillIconEnum.React,
+    SkillIconEnum.Redux,
+    SkillIconEnum.Scss,
+    SkillIconEnum.Storybook,
+    SkillIconEnum.Sketch,
+    SkillIconEnum.Tailwind,
+    SkillIconEnum.TypeScript,
+    SkillIconEnum.WordPress,
+    SkillIconEnum.XD,
   ]
 
   it('skillIcons should contain all the expected keys', () => {
@@ -33,7 +37,14 @@ describe('getSkillsIcons', () => {
   })
 
   it('getSkillsIcons should return an array of icons with the correct name and path', () => {
-    const skills: SkillKeys[] = ['javascript', 'typescript', 'react', 'next', 'redux', 'tailwind']
+    const skills: SkillIconType[] = [
+      SkillIconEnum.JavaScript,
+      SkillIconEnum.TypeScript,
+      SkillIconEnum.React,
+      SkillIconEnum.Next,
+      SkillIconEnum.Redux,
+      SkillIconEnum.Tailwind,
+    ]
     const results = getSkillsIcons(skills)
 
     results.forEach((resultIcon, index) => {

@@ -1,4 +1,6 @@
-export const statusBadgeImgsUrls = {
+import { StatusBadgeUrls } from '@/lib/utils/typeDefinitions/interfaces'
+
+export const statusBadgeImgsUrls: StatusBadgeUrls = {
   JEST: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg',
   PLAYWRIGHT: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg',
   CODEQL:

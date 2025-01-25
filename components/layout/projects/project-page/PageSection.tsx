@@ -7,7 +7,7 @@ import ListItem from '@/components/shared/ListItem'
 
 import { PageSectionProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
-const PageSection: FC<PageSectionProps> = ({ title, titleHighlight, items }): JSX.Element => {
+const PageSection: FC<PageSectionProps> = ({ title, titleHighlight, items = [] }): JSX.Element => {
   return (
     <div className="mt-8">
       <Heading3>

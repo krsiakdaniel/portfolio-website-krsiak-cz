@@ -31,7 +31,7 @@ const StatusPage: FC = (): JSX.Element => {
         </Paragraph>
 
         <div className="mt-8" data-testid={DATA_TEST_IDS.footer.statusBadges}>
-          {statusBadges.map((item) => (
+          {(statusBadges ?? []).map((item) => (
             <Image
               key={item.id}
               src={item.src}

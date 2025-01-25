@@ -14,7 +14,7 @@ import { GalleryProps } from '@/lib/utils/typeDefinitions/props/layout/projects/
 const IMAGE_WIDTH = 1240
 const IMAGE_HEIGHT = 1272
 
-const Gallery: FC<GalleryProps> = ({ imageShowcase }): JSX.Element => {
+const Gallery: FC<GalleryProps> = ({ imageShowcase = [] }): JSX.Element => {
   return (
     <div className="mt-8">
       <Heading3>{TEXT.gallery}</Heading3>

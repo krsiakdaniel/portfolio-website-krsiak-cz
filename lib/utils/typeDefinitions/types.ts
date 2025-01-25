@@ -1,3 +1,5 @@
+import { SkillCategoryEnum, SkillIconEnum } from '@/lib/utils/typeDefinitions/enums'
+
 // Breadcrumbs
 export type BreadCrumbsType = {
   level1Text: string
@@ -12,11 +14,33 @@ export type GetMenuLinkIDType = {
   linkID: string
 }
 
-// Menu Mobile Toggle
-export type HandleMenuMobileToggleType = () => void
-
 // Skills
-export type SkillCategoryType = 'Design' | 'Frontend' | 'Other'
+export type SkillCategoryType = SkillCategoryEnum.Design | SkillCategoryEnum.FrontEnd | SkillCategoryEnum.Other
+
+// Skill Icon
+export type SkillIconType =
+  | SkillIconEnum.Chakra
+  | SkillIconEnum.CSS
+  | SkillIconEnum.Cypress
+  | SkillIconEnum.Figma
+  | SkillIconEnum.GithubActions
+  | SkillIconEnum.Graphql
+  | SkillIconEnum.HTML
+  | SkillIconEnum.JavaScript
+  | SkillIconEnum.Jest
+  | SkillIconEnum.Netlify
+  | SkillIconEnum.Next
+  | SkillIconEnum.PHP
+  | SkillIconEnum.Playwright
+  | SkillIconEnum.React
+  | SkillIconEnum.Redux
+  | SkillIconEnum.Scss
+  | SkillIconEnum.Storybook
+  | SkillIconEnum.Sketch
+  | SkillIconEnum.Tailwind
+  | SkillIconEnum.TypeScript
+  | SkillIconEnum.WordPress
+  | SkillIconEnum.XD
 
 // PARAGRAPH
 // Define possible margin top values

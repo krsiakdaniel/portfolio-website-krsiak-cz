@@ -1,45 +1,57 @@
 import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
+import { SkillIconEnum } from '@/lib/utils/typeDefinitions/enums'
+import { Icon } from '@/lib/utils/typeDefinitions/interfaces'
 
-export const iconsSkillsProjectsWorkSmartsuppDashboard = getSkillsIcons([
-  'javascript',
-  'typescript',
-  'react',
-  'redux',
-  'chakra',
-  'cypress',
-  'xd',
+export const iconsSkillsProjectsWorkSmartsuppDashboard: Icon[] = getSkillsIcons([
+  SkillIconEnum.TypeScript,
+  SkillIconEnum.React,
+  SkillIconEnum.Redux,
+  SkillIconEnum.Chakra,
+  SkillIconEnum.Cypress,
+  SkillIconEnum.XD,
 ])
 
-export const iconsSkillsProjectsWorkKooperativa = getSkillsIcons([
-  'javascript',
-  'typescript',
-  'react',
-  'redux',
-  'tailwind',
-  'figma',
-  'storybook',
+export const iconsSkillsProjectsWorkKooperativa: Icon[] = getSkillsIcons([
+  SkillIconEnum.TypeScript,
+  SkillIconEnum.React,
+  SkillIconEnum.Redux,
+  SkillIconEnum.Tailwind,
+  SkillIconEnum.Figma,
+  SkillIconEnum.Storybook,
 ])
 
-export const iconsSkillsProjectsWorkKomercniBanka = getSkillsIcons([
-  'javascript',
-  'typescript',
-  'react',
-  'tailwind',
-  'figma',
+export const iconsSkillsProjectsWorkKomercniBanka: Icon[] = getSkillsIcons([
+  SkillIconEnum.TypeScript,
+  SkillIconEnum.React,
+  SkillIconEnum.Tailwind,
+  SkillIconEnum.Figma,
 ])
 
-export const iconsSkillsProjectsWorkSmartsuppWeb = getSkillsIcons(['javascript', 'php', 'scss', 'cypress', 'xd'])
-
-export const iconsSkillsProjectsWorkSmartsuppHelp = getSkillsIcons(['javascript', 'php', 'wordpress'])
-
-export const iconsSkillsProjectsWorkGroupon = getSkillsIcons([
-  'javascript',
-  'typescript',
-  'react',
-  'next',
-  'playwright',
-  'figma',
-  'storybook',
+export const iconsSkillsProjectsWorkSmartsuppWeb: Icon[] = getSkillsIcons([
+  SkillIconEnum.JavaScript,
+  SkillIconEnum.PHP,
+  SkillIconEnum.Scss,
+  SkillIconEnum.Cypress,
+  SkillIconEnum.XD,
 ])
 
-export const iconsSkillsProjectsWorkMoravia = getSkillsIcons(['html', 'css', 'javascript'])
+export const iconsSkillsProjectsWorkSmartsuppHelp: Icon[] = getSkillsIcons([
+  SkillIconEnum.JavaScript,
+  SkillIconEnum.PHP,
+  SkillIconEnum.WordPress,
+])
+
+export const iconsSkillsProjectsWorkGroupon: Icon[] = getSkillsIcons([
+  SkillIconEnum.TypeScript,
+  SkillIconEnum.React,
+  SkillIconEnum.Next,
+  SkillIconEnum.Playwright,
+  SkillIconEnum.Figma,
+  SkillIconEnum.Storybook,
+])
+
+export const iconsSkillsProjectsWorkMoravia: Icon[] = getSkillsIcons([
+  SkillIconEnum.HTML,
+  SkillIconEnum.CSS,
+  SkillIconEnum.JavaScript,
+])

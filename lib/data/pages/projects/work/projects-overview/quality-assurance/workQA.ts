@@ -3,6 +3,7 @@ import { iconsSkillsProjectsWorkGroupon } from '@/lib/data/pages/projects/work/p
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // groupon
@@ -25,15 +26,29 @@ export const projectsWorkQA: Project[] = [
     years: '4\u00A0months',
     description:
       'I was responsible setting up new QA team, related processes, hiring and managing people, making test plans, test cases, and scripts.',
-    mySkillsIcons: iconsSkillsProjectsWorkGroupon,
+    skillsIcons: iconsSkillsProjectsWorkGroupon,
     skillsOverview: [
       {
         id: 0,
-        description: 'Frontend',
-        skillsList: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Playwright'],
+        description: SkillCategoryEnum.FrontEnd,
+        skillsList: [SkillsEnum.TypeScript, SkillsEnum.React, SkillsEnum.Next, SkillsEnum.Playwright],
       },
-      { id: 1, description: 'Design', skillsList: ['Figma', 'Storybook'] },
-      { id: 2, description: 'Other', skillsList: ['Jira', 'Confluence', 'Tempo', 'QA', 'Team Management'] },
+      {
+        id: 1,
+        description: SkillCategoryEnum.Design,
+        skillsList: [SkillsEnum.Figma, SkillsEnum.Storybook],
+      },
+      {
+        id: 2,
+        description: SkillCategoryEnum.Other,
+        skillsList: [
+          SkillsEnum.Jira,
+          SkillsEnum.Confluence,
+          SkillsEnum.Tempo,
+          SkillsEnum.QA,
+          SkillsEnum.TeamManagement,
+        ],
+      },
     ],
     linkText: 'Project details',
     projectLinks: [{ urlText: 'Website', url: 'https://www.groupon.com/', dataTestId: 'groupon' }],

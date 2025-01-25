@@ -6,7 +6,7 @@ import ListItem from '@/components/shared/ListItem'
 
 import { SkillsListProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
-const SkillsList: FC<SkillsListProps> = ({ skillsOverview }): JSX.Element => {
+const SkillsList: FC<SkillsListProps> = ({ skillsOverview = [] }): JSX.Element => {
   return (
     <List>
       {skillsOverview.map((skill) => (

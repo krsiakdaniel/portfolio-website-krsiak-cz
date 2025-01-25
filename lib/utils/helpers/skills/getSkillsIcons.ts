@@ -1,93 +1,16 @@
+import { skillIcons } from '@/lib/data/skill-icons/skillIcons'
+
 import { Icon } from '@/lib/utils/typeDefinitions/interfaces'
-
-// Import SVG icons
-import chakra from '@/public/icons/svg/skills/chakra.svg'
-import css from '@/public/icons/svg/skills/css.svg'
-import cypress from '@/public/icons/svg/skills/cypress.svg'
-import figma from '@/public/icons/svg/skills/figma.svg'
-import githubActions from '@/public/icons/svg/skills/github-actions.svg'
-import graphql from '@/public/icons/svg/skills/graphql.svg'
-import html from '@/public/icons/svg/skills/html.svg'
-import javascript from '@/public/icons/svg/skills/javascript.svg'
-import jest from '@/public/icons/svg/skills/jest.svg'
-import netlify from '@/public/icons/svg/skills/netlify.svg'
-import next from '@/public/icons/svg/skills/next.svg'
-import php from '@/public/icons/svg/skills/php.svg'
-import playwright from '@/public/icons/svg/skills/playwright.svg'
-import react from '@/public/icons/svg/skills/react.svg'
-import redux from '@/public/icons/svg/skills/redux.svg'
-import scss from '@/public/icons/svg/skills/scss.svg'
-import sketch from '@/public/icons/svg/skills/sketch.svg'
-import storybook from '@/public/icons/svg/skills/storybook.svg'
-import tailwind from '@/public/icons/svg/skills/tailwind.svg'
-import typescript from '@/public/icons/svg/skills/typescript.svg'
-import wordpress from '@/public/icons/svg/skills/wordpress.svg'
-import xd from '@/public/icons/svg/skills/xd.svg'
-
-// Define skill keys type
-export type SkillKeys =
-  | 'chakra'
-  | 'css'
-  | 'cypress'
-  | 'figma'
-  | 'githubActions'
-  | 'graphql'
-  | 'html'
-  | 'javascript'
-  | 'jest'
-  | 'netlify'
-  | 'next'
-  | 'php'
-  | 'playwright'
-  | 'react'
-  | 'redux'
-  | 'scss'
-  | 'storybook'
-  | 'sketch'
-  | 'tailwind'
-  | 'typescript'
-  | 'wordpress'
-  | 'xd'
-
-/**
- * Map skill keys to their respective icons.
- *
- * @type {Record<SkillKeys, string>}
- */
-
-export const skillIcons: Record<SkillKeys, string> = {
-  chakra,
-  css,
-  cypress,
-  figma,
-  githubActions,
-  graphql,
-  html,
-  jest,
-  javascript,
-  netlify,
-  next,
-  php,
-  playwright,
-  react,
-  redux,
-  scss,
-  storybook,
-  sketch,
-  tailwind,
-  typescript,
-  wordpress,
-  xd,
-}
+import { SkillIconType } from '@/lib/utils/typeDefinitions/types'
 
 /**
  * Get relevant icons for the given skills.
  *
- * @param {SkillKeys[]} skills - The array of skill keys.
+ * @param {SkillIconType[]} skills - The array of skill keys.
  * @returns {Icon[]} - The array of icons corresponding to the skill keys.
  */
 
-export const getSkillsIcons = (skills: SkillKeys[]): Icon[] => {
+export const getSkillsIcons = (skills: SkillIconType[] = []): Icon[] => {
   return skills.map((skill) => ({
     name: skill,
     path: skillIcons[skill],
