@@ -17,14 +17,6 @@ export type CallToActionIconProps = {
   icon: string
 }
 
-// Call To Action Link Props
-export type CallToActionLinkProps = {
-  link: string
-  linkText: string
-  isLinkExternal: boolean | undefined
-  dataTestId?: string
-}
-
 // Call To Action Texts Props
 export type CallToActionTextsProps = {
   icon: string

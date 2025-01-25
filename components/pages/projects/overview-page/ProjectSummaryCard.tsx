@@ -2,8 +2,8 @@ import { FC } from 'react'
 
 import ProjectDetails from '@/components/pages/projects/overview-page/ProjectDetails'
 import ProjectImage from '@/components/pages/projects/overview-page/ProjectImage'
-import ProjectLink from '@/components/pages/projects/overview-page/ProjectLink'
 import ProjectSkillsIcons from '@/components/pages/projects/overview-page/ProjectSkillsIcons'
+import LinkButton from '@/components/shared/LinkButton'
 
 import { ProjectSummaryCardProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
@@ -38,8 +38,13 @@ const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
               personalProjectNote={personalProjectNote}
             />
             <ProjectSkillsIcons skillsIcons={skillsIcons} />
-
-            <ProjectLink linkText={linkText} linkProjectPage={linkProjectPage} dataTestId={dataTestId} />
+            <LinkButton
+              href={linkProjectPage}
+              linkText={linkText}
+              isLinkExternal={false}
+              dataTestId={dataTestId}
+              maxWidth="176px"
+            />
           </div>
         </div>
       </div>
