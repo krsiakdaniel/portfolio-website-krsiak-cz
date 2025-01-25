@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 
+import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { TEXT } from '@/localization/english'
@@ -23,7 +23,7 @@ const Logo: FC = (): JSX.Element => {
         data-testid={DATA_TEST_IDS.headerLogo}
       >
         <div>
-          <Image src={logo} width={IMAGE_WIDTH} height={IMAGE_HEIGHT} alt="logo" loading="eager" />
+          <ImageComponent src={logo} width={IMAGE_WIDTH} height={IMAGE_HEIGHT} alt="logo" loading="eager" />
         </div>
         <Paragraph marginTop="mt-0" size="text-md" customCss="cursor-pointer font-bold group-hover:text-violet-600">
           {TEXT.logo}

@@ -1,9 +1,9 @@
-import Image from 'next/image'
 import { FC } from 'react'
 
 import PageContainer from '@/components/layout/PageContainer'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading1 from '@/components/shared/Heading1'
+import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { metaDataStatusPage } from '@/lib/data/metadata/pages/metaDataStatusPage'
@@ -32,13 +32,13 @@ const StatusPage: FC = (): JSX.Element => {
 
         <div className="mt-8" data-testid={DATA_TEST_IDS.footer.statusBadges}>
           {(statusBadges ?? []).map((item) => (
-            <Image
+            <ImageComponent
               key={item.id}
               src={item.src}
               width={item.width}
               height={item.height}
               alt={item.alt}
-              className="mt-2 first:mt-0"
+              customCss="mt-2"
               loading="eager"
             />
           ))}

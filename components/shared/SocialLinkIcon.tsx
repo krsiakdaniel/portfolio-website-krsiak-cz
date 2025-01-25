@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import Image from 'next/image'
+import ImageComponent from '@/components/shared/ImageComponent'
 
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { SocialLinkIconProps } from '@/lib/utils/typeDefinitions/props/shared/social-link-icon'
@@ -34,7 +34,7 @@ const SocialLinkIcon: FC<SocialLinkIconProps> = ({
       title={title}
       aria-label={ariaLabel}
     >
-      <Image src={imgSrc} width={width} height={height} alt={imgAlt} loading="eager" />
+      <ImageComponent src={imgSrc} width={width} height={height} alt={imgAlt} loading="eager" />
     </a>
   )
 }

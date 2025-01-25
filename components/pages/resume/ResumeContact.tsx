@@ -20,12 +20,15 @@ const ResumeContact: FC<ResumeContactProps> = ({ isOpenToWork = false }): JSX.El
           {contactMessage}
         </span>
       </div>
-      <Paragraph>
-        Feel free to <Highlight text="call me" /> or <Highlight text="send an email" /> for {contactPurpose}.
-      </Paragraph>
+
+      <div>
+        <Paragraph>
+          Feel free to <Highlight text="call me" /> or <Highlight text="send an email" /> for {contactPurpose}.
+        </Paragraph>
+      </div>
 
       <div className="mt-8 flex flex-col items-center space-y-8 md:flex-row md:space-x-8 md:space-y-0">
-        <ScanMyContactQR width={296} height={296} showNote />
+        <ScanMyContactQR showImageCaption={true} />
         <Photo isOpenToWork={isOpenToWork} />
       </div>
     </div>

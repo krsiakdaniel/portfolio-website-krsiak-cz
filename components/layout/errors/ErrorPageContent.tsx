@@ -1,9 +1,9 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 
 import Heading1 from '@/components/shared/Heading1'
 import Heading2 from '@/components/shared/Heading2'
+import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { ErrorPageContentProps } from '@/lib/utils/typeDefinitions/props/layout/errors'
@@ -26,7 +26,8 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
 
   return (
     <div className="flex flex-col items-center text-center">
-      <Image src={imgSrc} width={IMAGE_WIDTH} height={IMAGE_HEIGHT} alt={imgAlt} loading="eager" />
+      <ImageComponent src={imgSrc} width={IMAGE_WIDTH} height={IMAGE_HEIGHT} alt={imgAlt} loading="eager" />
+
       <div className="mt-10">
         <Heading1 textSize="8xl" textSizeSM="8xl" textSizeMD="8xl">
           {heading}

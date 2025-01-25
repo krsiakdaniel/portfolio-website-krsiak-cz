@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import { FC } from 'react'
 
 import Heading3 from '@/components/shared/Heading3'
+import ImageComponent from '@/components/shared/ImageComponent'
 
 import { TEXT } from '@/localization/english'
 
@@ -22,12 +22,13 @@ const Gallery: FC<GalleryProps> = ({ imageShowcase = [] }): JSX.Element => {
       <div data-testid={DATA_TEST_IDS.gallery}>
         {imageShowcase.map((image) => (
           <div data-testid={`gallery-image-${image.id}`} key={image.id}>
-            <Image
+            <ImageComponent
               src={image.src}
               width={IMAGE_WIDTH}
               height={IMAGE_HEIGHT}
-              className="border-1 mt-8 rounded-lg border border-violet-300 bg-violet-50 p-1"
+              customCss="border-1 mt-8 rounded-lg border border-violet-300 bg-violet-50 p-1"
               alt={`project-image-${image.id}`}
+              loading="lazy"
               placeholder="blur"
               blurDataURL={image.src}
             />

@@ -509,6 +509,8 @@ export const META_STATUS_PAGE = {
 }
 
 export const IMAGE_ALT = {
+  defaultAlt: 'image',
+  iconQuote: 'icon-quote',
   microsoft: 'Microsoft',
   smartsupp: 'Smartsupp',
   kooperativa: 'Kooperativa',
@@ -517,7 +519,12 @@ export const IMAGE_ALT = {
   komercniBanka: 'Komerční Banka',
 }
 
+export const CONTACT = {
+  scanQR: 'Scan With Phone',
+}
+
 export const TEXT = {
+  ...CONTACT,
   ...COMMON_VALUES,
   ...SHARED,
   ...PROJECT_INFORMATION,
