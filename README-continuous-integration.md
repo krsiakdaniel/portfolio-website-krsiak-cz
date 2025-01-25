@@ -5,8 +5,7 @@ This project uses CI = GitHub Actions.
 **Table of Contents:**
 
 - [🛠️ CI - Continuous Integration](#️-ci---continuous-integration)
-  - [🚀 CI and CD - Process](#-ci-and-cd---process)
-  - [🛠️ CI - Continuous Integration - ℹ️ Info](#️-ci---continuous-integration---ℹ️-info)
+  - [ℹ️ Info](#ℹ️-info)
     - [Status of CI](#status-of-ci)
   - [GitHub Actions](#github-actions)
     - [Workflow for Jest 🃏](#workflow-for-jest-)
@@ -17,11 +16,7 @@ This project uses CI = GitHub Actions.
 
 ---
 
-## 🚀 CI and CD - Process
-
-- [README-ci-cd-process.md](README-ci-cd-process.md)
-
-## 🛠️ CI - Continuous Integration - ℹ️ Info
+## ℹ️ Info
 
 This app uses workflow automation: [GitHub Actions](https://github.com/features/actions)
 

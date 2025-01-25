@@ -1,6 +1,6 @@
-# Portfolio Website - krsiak.cz
+# Portfolio Website - [krsiak.cz](https://krsiak.cz)
 
-React Developer portfolio website ⚛️ 👨🏻‍💻
+⚛️ 👨🏻‍💻 Showcasing my work and skills as **React Developer** using **TypeScript** & **Next.js**.
 
 **Table of Contents:**
 
@@ -8,34 +8,37 @@ React Developer portfolio website ⚛️ 👨🏻‍💻
   - [⚡ Project Website](#-project-website)
   - [✏️ Project Description](#️-project-description)
   - [👨‍💼 Team Leadership and Task Management](#-team-leadership-and-task-management)
-  - [📈 Project Board and Issues](#-project-board-and-issues)
-  - [🔄 Pull Requests](#-pull-requests)
+  - [📈 GitHub - Project Board](#-github---project-board)
+  - [🔄 GitHub - PR, Labels, Milestones](#-github---pr-labels-milestones)
   - [📊 Insights and Analytics](#-insights-and-analytics)
   - [🐛 Handling Unexpected Bugs](#-handling-unexpected-bugs)
   - [🚦 Project Status](#-project-status)
   - [🛠️ Tech Stack](#️-tech-stack)
-  - [📋 Features](#-features)
+  - [📋 Pages \& Features](#-pages--features)
   - [💻 Development](#-development)
+  - [🔀 Pull Requests](#-pull-requests)
   - [🐛 Testing](#-testing)
   - [🚀 CI and CD - Process](#-ci-and-cd---process)
     - [🛠️ CI - Continuous Integration](#️-ci---continuous-integration)
     - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
-  - [🔒 Security](#-security)
-  - [📱 WPA - Web Progressive App](#-wpa---web-progressive-app)
-    - [Installation](#installation)
-    - [WPA on Mac Desktop](#wpa-on-mac-desktop)
+  - [🚨 Security](#-security)
+  - [📱 Web Progressive App](#-web-progressive-app)
   - [🖼️ Screenshots](#️-screenshots)
 
 ---
 
 ## ⚡ Project Website
 
-Website: <https://krsiak.cz>
+Website: [https://krsiak.cz](https://krsiak.cz)
 
 ## ✏️ Project Description
 
-- A portfolio website showcasing my work and skills as **React Developer** building web applications using **TypeScript**, **React** and **Next.js**.
-- Workflows are automated and the project is deployed using **CI/CD** pipelines.
+- Built with **React**, **TypeScript**, **Next.js**.
+- Responsive web application styled with **Tailwind CSS**.
+- Proficient in **UX**, **UI** design, scalable code delivery.
+- Workflows for **CI/CD**, **testing**, and **code formatting** are automated.
+- Writing **E2E** tests with **Playwright**.
+- Writing **Unit** tests with **Jest**.
 
 ## 👨‍💼 Team Leadership and Task Management
 
@@ -46,26 +49,28 @@ I have extensive experience in creating boards in **Trello**, **Jira**, **GitHub
 - Teams of 3, 10, and 40 members.
 - Collaboration across 4 teams and multiple time zones.
 
-## 📈 Project Board and Issues
+## 📈 GitHub - Project Board
 
 To keep track of the project's progress and manage tasks efficiently, I use a project board with issues.
 
-- [Project board](https://github.com/users/krsiakdaniel/projects/6)
-- [Issues](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/issues)
+- 📋 [Project board](https://github.com/users/krsiakdaniel/projects/6)
+- 📝 [Issues](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/issues)
 
-## 🔄 Pull Requests
+## 🔄 GitHub - PR, Labels, Milestones
 
-I organize pull requests to ensure a clear and efficient workflow. See the details in closed pull requests.
+I organize Issues and PRs to ensure efficient workflow.
 
-- [Closed 'Pull Requests'](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/pulls?q=is%3Apr+is%3Aclosed)
+- 🔄 Overview: [Closed 'Pull Requests'](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/pulls?q=is%3Apr+is%3Aclosed)
+- 🏷️ Marked with: [Labels](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/labels)
+- 🎯 Organized into: [Milestones](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/milestones)
 
 ## 📊 Insights and Analytics
 
 To provide a clear overview of the project's progress I use charts.
 
-- [Labels Overview](https://github.com/users/krsiakdaniel/projects/6/insights/3)
-- [Priorities](https://github.com/users/krsiakdaniel/projects/6/insights/2)
-- [Trend of Tasks](https://github.com/users/krsiakdaniel/projects/6/insights/1)
+- 🏅 [Priorities](https://github.com/users/krsiakdaniel/projects/6/insights/2)
+- 🏷️ [Labels Overview](https://github.com/users/krsiakdaniel/projects/6/insights/3)
+- 📈 [Trend of Tasks](https://github.com/users/krsiakdaniel/projects/6/insights/1)
 
 ## 🐛 Handling Unexpected Bugs
 
@@ -77,9 +82,9 @@ I follow a structured approach to identify and resolve unexpected issues.
 4. **Testing the Fix**
 5. **Documenting the Process**
 
-Explore link below to see how I apply this in practice:
+Explore link below to see how I apply this in practice.
 
-- Board issue: [Fix(Heading1)!: 🐛 Incorrect Text Size on Production Compared to Localhost](https://github.com/users/krsiakdaniel/projects/6/views/1?pane=issue&itemId=90896673&issue=krsiakdaniel%7Cportfolio-website-krsiak-cz%7C163)
+- **Board issue #163:** [Fix(Heading1)!: 🐛 Incorrect Text Size on Production](https://github.com/users/krsiakdaniel/projects/6/views/1?pane=issue&itemId=90896673&issue=krsiakdaniel%7Cportfolio-website-krsiak-cz%7C163)
 
 ## 🚦 Project Status
 
@@ -97,7 +102,7 @@ Using these following technologies and tools.
 
 - [TypeScript](https://www.typescriptlang.org/)
 
-**Libraries/Frameworks:**
+**React & Next:**
 
 - [React](https://react.dev/) - JavaScript library
 - [Next.js](https://nextjs.org/) - React Framework
@@ -111,70 +116,72 @@ Using these following technologies and tools.
 - [JEST](https://jestjs.io/) - UNIT testing
 - [Playwright](https://playwright.dev/) - E2E testing
 
-**CI/CD:**
+**CI & CD:**
 
 - [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) - CI - Continuous Integration
 - [Netlify](https://www.netlify.com/) - CD - Continuous Deployment
 
-## 📋 Features
+## 📋 Pages & Features
 
-The website contains these following sections and pages.
+The website contains these following pages and features on project detail pages.
 
 **Pages:**
 
-- 🏠 Home
-- 📝 Resume
-- 👨🏻‍💻 Work Experience
-- 🚀 Personal Projects
-- 💬 Testimonials
+- 🏠 [Home](https://krsiak.cz/)
+- 👨🏻‍💻 [Work Experience](https://krsiak.cz/work-experience)
+- 📝 [Resume](https://krsiak.cz/resume)
+- 🚀 [Personal Projects](https://krsiak.cz/personal-projects)
+- 💬 [Testimonials](https://krsiak.cz/testimonials)
 
-**Work and Project pages:**
+**Project Details - Work and Personal:**
 
 - 👉 Information
 - 👉 Skills
-- 👉 Description
 - 👉 Links
-- 👉 Screenshots
+- 👉 Description
+- 👉 Gallery
+
+**More:**
+
+- **CTA** - Call to Action Banners
+- **Resume in PDF** - Link to Download PDF
+- **Career Path** - Visual Timeline of My Work Experience
+- **QR Code** - Easy to scan Contact Information
+- **Social Links** - GitHub and LinkedIn
+- **Easy Navigation** - Going between pages with 'Previous' and 'Next' links
+- **Status** - 🚦 [Status Page](https://krsiak.cz/status-page)
 
 ## 💻 Development
 
-- [README-development.md](README-development.md)
+- [README: Development](README-development.md)
+
+## 🔀 Pull Requests
+
+- [README: Pull Requests](README-development-pull-requests.md)
 
 ## 🐛 Testing
 
-- [README-testing.md](README-testing.md)
+- [README: Testing](README-testing.md)
 
 ## 🚀 CI and CD - Process
 
-- [README-ci-cd-process.md](README-ci-cd-process.md)
+- [README: CI & CD - Process](README-ci-cd-process.md)
 
 ### 🛠️ CI - Continuous Integration
 
-- [README-continuous-integration.md](README-continuous-integration.md)
+- [README: Continuous Integration](README-continuous-integration.md)
 
 ### ✅ CD - Continuous Deployment
 
-- [README-continuous-deployment.md](README-continuous-deployment.md)
+- [README: Continuous Deployment](README-continuous-deployment.md)
 
-## 🔒 Security
+## 🚨 Security
 
-- [README-security.md](README-security.md)
+- [README: Security](README-security.md)
 
-## 📱 WPA - Web Progressive App
+## 📱 Web Progressive App
 
-The portfolio website is also available as a Web Progressive App (WPA) that can be installed on their devices and accessed like an app.
-
-### Installation
-
-You can install the WPA from the browser (example from Edge).
-
-![WPA Installation in Edge](/readme-images/main-readme/wpa/wpa-installation-in-edge.png)
-
-### WPA on Mac Desktop
-
-Once installed, the WPA can be accessed from desktop (example from Mac).
-
-![WPA - krsiak.cz](/readme-images/main-readme/wpa/wpa.png)
+- [README: Web Progressive App](README-wpa.md)
 
 ## 🖼️ Screenshots
 

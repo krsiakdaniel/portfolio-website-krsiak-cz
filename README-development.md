@@ -1,10 +1,10 @@
-# Development
+# 🛠️ Development
 
 Development environment for the project.
 
 **Table of Contents:**
 
-- [Development](#development)
+- [🛠️ Development](#️-development)
   - [💻 Commands](#-commands)
     - [Install Dependencies](#install-dependencies)
     - [Run Development Mode](#run-development-mode)
@@ -16,13 +16,6 @@ Development environment for the project.
     - [Format Code](#format-code)
   - [🔗 Imports Order in Files](#-imports-order-in-files)
     - [Example](#example)
-  - [🔀 Pull Requests](#-pull-requests)
-    - [Link Board Issue](#link-board-issue)
-    - [Generate Summary with GitHub Copilot](#generate-summary-with-github-copilot)
-    - [Empty Description in PR](#empty-description-in-pr)
-    - [Use Copilot to Generate Summary](#use-copilot-to-generate-summary)
-    - [Copilot Generates Summary](#copilot-generates-summary)
-    - [Save Comment with the Summary](#save-comment-with-the-summary)
 
 ---
 
@@ -171,47 +164,3 @@ import logo from '@/public/icons/png/icon-64x64.png'
 // CSS
 import '@/app/custom.css'
 ```
-
-## 🔀 Pull Requests
-
-When creating a pull request, follow these guidelines:
-
-### Link Board Issue
-
-Always link a related issue in the pull request description.
-
-![Linked Board Issue](/readme-images/development/pull-request/linked-board-issue.png)
-
-### Generate Summary with GitHub Copilot
-
-This can happen for small refactoring changes or quick README updates.
-
-Follow these steps:
-
-- Add in the PR description - Issue: `n/a`.
-- Use the GitHub Copilot feature inside the comment.
-- Generate a summary of the code changes done in the PR.
-
-### Empty Description in PR
-
-Edit the description.
-
-![PR summary 1](/readme-images/development/pull-request/changes-copilot-summary-1.png)
-
-### Use Copilot to Generate Summary
-
-Click on the Copilot icon.
-
-![PR summary 2](/readme-images/development/pull-request/changes-copilot-summary-2.png)
-
-### Copilot Generates Summary
-
-Wait for the generated summary made from the code changes.
-
-![PR summary 3](/readme-images/development/pull-request/changes-copilot-summary-3.png)
-
-### Save Comment with the Summary
-
-Review the text and save the comment.
-
-![PR summary 4](/readme-images/development/pull-request/changes-copilot-summary-4.png)

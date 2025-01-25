@@ -175,6 +175,8 @@ const PAGES_LINKS = {
 
 const CALL_TO_ACTION = {
   linkResume: 'call-to-action-link-resume',
+  linkResumeWorkExperience1: 'call-to-action-link-resume-1',
+  linkResumeWorkExperience2: 'call-to-action-link-resume-2',
   linkResumeDownload: 'call-to-action-link-resume-download',
   linkWorkExperience: 'call-to-action-link-work-experience',
   linkGitHub: 'call-to-action-link-github',
