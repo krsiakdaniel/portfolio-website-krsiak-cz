@@ -44,7 +44,7 @@ const ProjectsWork: FC = (): JSX.Element => {
         <OtherExperienceContent experience={otherExperienceFrontEnd} />
 
         {/* CTA */}
-        <CallToActionResume />
+        <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience1} />
 
         {/* WORDPRESS */}
         <ProjectSection sectionId={ID.section.wordpress} sectionText="WordPress" projectData={projectsWorkWordPress} />
@@ -63,7 +63,7 @@ const ProjectsWork: FC = (): JSX.Element => {
         <OtherExperienceContent experience={otherExperienceLocalization} />
 
         {/* CTA */}
-        <CallToActionResume />
+        <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience2} />
       </ProjectsOverviewLayout>
 
       <div className="mt-20">
