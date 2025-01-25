@@ -1,17 +1,17 @@
-# Security
+# 🚨 Security
 
 Security of this repository is managed by the following tools and services.
 
 **Table of Contents:**
 
-- [Security](#security)
-  - [🚨 CodeQL analysis](#-codeql-analysis)
+- [🚨 Security](#-security)
+  - [⚠️ CodeQL analysis](#️-codeql-analysis)
   - [🤖 Dependabot](#-dependabot)
   - [📝 Codacy](#-codacy)
 
 ---
 
-## 🚨 CodeQL analysis
+## ⚠️ CodeQL analysis
 
 [![CodeQL](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql)
 

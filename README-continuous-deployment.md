@@ -5,8 +5,7 @@ This project uses CD = Netlify.
 **Table of Contents:**
 
 - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
-  - [🚀 CI and CD - Process](#-ci-and-cd---process)
-  - [✅ CD - Continuous Deployment - ℹ️ Info](#-cd---continuous-deployment---ℹ️-info)
+  - [ℹ️ Info](#ℹ️-info)
     - [Status of CD](#status-of-cd)
   - [Netlify](#netlify)
     - [Branches and Deploy Contexts](#branches-and-deploy-contexts)
@@ -15,11 +14,7 @@ This project uses CD = Netlify.
 
 ---
 
-## 🚀 CI and CD - Process
-
-- [README-ci-cd-process.md](README-ci-cd-process.md)
-
-## ✅ CD - Continuous Deployment - ℹ️ Info
+## ℹ️ Info
 
 The website is deployed on: [Netlify](https://www.netlify.com/)
 
