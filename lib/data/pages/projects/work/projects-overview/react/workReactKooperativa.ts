@@ -31,12 +31,7 @@ export const workReactKooperativa: Project = {
     {
       id: 0,
       description: SkillCategoryEnum.FrontEnd,
-      skillsList: [
-        SkillsEnum.TypeScript,
-        SkillsEnum.React,
-        SkillsEnum.Redux,
-        SkillsEnum.Tailwind,
-      ],
+      skillsList: [SkillsEnum.TypeScript, SkillsEnum.React, SkillsEnum.Redux, SkillsEnum.Tailwind],
     },
     {
       id: 1,
