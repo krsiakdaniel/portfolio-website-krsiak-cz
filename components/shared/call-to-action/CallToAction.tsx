@@ -29,13 +29,7 @@ const CallToAction: FC<CallToActionProps> = ({
             textMobileAndDesktop={textMobileAndDesktop}
             textDesktop={textDesktop}
           />
-          <LinkButton
-            href={link}
-            linkText={linkText}
-            isLinkExternal={isLinkExternal}
-            dataTestId={dataTestId}
-            maxWidth="300px"
-          />
+          <LinkButton href={link} linkText={linkText} isLinkExternal={isLinkExternal} dataTestId={dataTestId} />
         </div>
 
         <div className="hidden items-center justify-center md:flex md:w-1/3">

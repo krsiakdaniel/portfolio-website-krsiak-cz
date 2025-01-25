@@ -4,5 +4,4 @@ type LinkButtonProps = {
   linkText: string
   isLinkExternal?: boolean
   dataTestId?: string
-  maxWidth?: string
 }
