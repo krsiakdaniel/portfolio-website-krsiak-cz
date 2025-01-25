@@ -17,13 +17,6 @@ export type ProjectImageProps = {
   title: string
 }
 
-// Project Link Props
-export type ProjectLinkProps = {
-  dataTestId: string
-  linkProjectPage: string
-  linkText: string
-}
-
 // Project Section Props
 export type ProjectSectionProps = {
   projectData: Project[]

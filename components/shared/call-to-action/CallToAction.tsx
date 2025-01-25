@@ -1,8 +1,8 @@
 import { FC } from 'react'
 
 import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIcon'
-import CallToActionLink from '@/components/shared/call-to-action/CallToActionLink'
 import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTexts'
+import LinkButton from '@/components/shared/LinkButton'
 
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { CallToActionProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
@@ -13,7 +13,7 @@ const CallToAction: FC<CallToActionProps> = ({
   textMobileAndDesktop,
   textDesktop,
   link,
-  isLinkExternal,
+  isLinkExternal = false,
   linkText,
   dataTestId,
   icon,
@@ -29,7 +29,13 @@ const CallToAction: FC<CallToActionProps> = ({
             textMobileAndDesktop={textMobileAndDesktop}
             textDesktop={textDesktop}
           />
-          <CallToActionLink link={link} linkText={linkText} isLinkExternal={isLinkExternal} dataTestId={dataTestId} />
+          <LinkButton
+            href={link}
+            linkText={linkText}
+            isLinkExternal={isLinkExternal}
+            dataTestId={dataTestId}
+            maxWidth="300px"
+          />
         </div>
 
         <div className="hidden items-center justify-center md:flex md:w-1/3">
