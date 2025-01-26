@@ -39,7 +39,7 @@ export const DIVIDER_WITH_TEXT = {
 
 export const SOCIAL_LINKS = {
   linkedIn: 'LinkedIn',
-  myLinkedIn: 'LinkedIn: Krsiak Daniel',
+  myLinkedIn: 'LinkedIn — Krsiak Daniel',
   gitHub: 'GitHub',
   gitHubCode: 'GitHub Code',
   resumePDF: 'Resume PDF',
@@ -110,9 +110,9 @@ export const PROJECT_INFORMATION = {
 }
 
 export const SOCIAL_PROOF = {
-  sectionTitle: 'React and\u00A0Automation',
+  sectionTitle: 'Startup &\u00A0Corporate',
   companiesTitle: 'React',
-  companiesDescription: 'From startup to corporate',
+  companiesDescription: 'Production level code',
   featuresTitle: 'Features',
   featuresDescription: 'Countless UI components',
   automationTitle: 'Automation',
@@ -121,9 +121,9 @@ export const SOCIAL_PROOF = {
 
 export const MY_WORK = {
   workedForCompanies: 'Worked For Companies',
-  skillsForCompany: '🥇 Skills',
-  committedMindset: '🚀 Mindset',
-  problemSolving: '🎨 Adaptive',
+  skillsForCompany: 'Skills',
+  committedMindset: 'Mindset',
+  problemSolving: 'Creative',
 }
 
 export const MISC = {

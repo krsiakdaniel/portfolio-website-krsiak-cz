@@ -7,16 +7,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* # Class names are in file: 'lib/utils/constants/global-css-classes/index.ts' */
+
 /* # Define base styles */
 @layer base {
-  /* ## Set default font to Roboto */
+  /* ## Set font ROBOTO */
   html,
   body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f9fafb; /* 'bg-gray-50': https://flowbite.com/docs/customize/colors/ */
   }
 
-  /* ## Set font Rubik */
-  /* ### Class names are in file: 'lib/utils/constants/global-css-classes/index.ts' */
+  /* ## Set font RUBIK */
   h1,
   h2,
   h3,
@@ -29,7 +31,7 @@
     font-family: 'Rubik', sans-serif;
   }
 
-  /* ## Define custom utilities */
+  /* ## Utilities */
   @layer utilities {
     ::-moz-selection {
       @apply bg-violet-400 text-white;

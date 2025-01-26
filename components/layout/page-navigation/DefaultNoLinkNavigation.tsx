@@ -13,7 +13,7 @@ const DefaultNoLinkNavigation: FC<DefaultNoLinkNavigationProps> = ({ arrowDirect
 
   return (
     <div
-      className={`flex w-full items-center rounded-lg border border-dashed border-gray-200 bg-gray-50 p-4 text-center font-bold text-gray-200 ${justifyArrowCSS} lg:w-1/2`}
+      className={`flex w-full items-center rounded-lg border border-dashed border-gray-200 bg-white p-4 text-center font-bold text-gray-200 ${justifyArrowCSS} lg:w-1/2`}
     >
       <IconArrow arrowDirection={arrowDirection} />
     </div>

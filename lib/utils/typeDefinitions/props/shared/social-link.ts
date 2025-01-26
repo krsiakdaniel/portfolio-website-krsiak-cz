@@ -5,6 +5,6 @@ export type SocialLinkProps = {
   href: string
   linkText: string
   linkColor: LinkColorsEnum
-  className?: string
   dataTestId: string
+  customCss?: string
 }

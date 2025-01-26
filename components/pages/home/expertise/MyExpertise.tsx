@@ -14,10 +14,17 @@ const MyExpertise: FC = (): JSX.Element => {
     <div className="mt-20">
       <DividerWithText text={DIVIDER_WITH_TEXT.myExpertise} />
 
-      <div className="mt-4 flex flex-wrap gap-20">
-        <ExpertiseSection heading={TEXT.skillsForCompany} listItems={skillsForCompanyItems} />
-        <ExpertiseSection heading={TEXT.committedMindset} listItems={committedMindsetItems} />
-        <ExpertiseSection heading={TEXT.problemSolving} listItems={problemSolvingItems} />
+      {/* TODO: This is layout needs to be refactored and shared 2x */}
+      <div className="mt-4 w-full">
+        <div className="flex w-full flex-col gap-6 lg:flex-row">
+          <div className="flex w-full flex-col gap-6 md:flex-row lg:w-2/3">
+            <ExpertiseSection icon="⭐️" heading={TEXT.skillsForCompany} listItems={skillsForCompanyItems} />
+            <ExpertiseSection icon="🚀" heading={TEXT.committedMindset} listItems={committedMindsetItems} />
+          </div>
+          <div className="flex w-full lg:w-1/3">
+            <ExpertiseSection icon="🎨" heading={TEXT.problemSolving} listItems={problemSolvingItems} />
+          </div>
+        </div>
       </div>
     </div>
   )

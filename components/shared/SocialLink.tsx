@@ -10,9 +10,9 @@ import { SocialLinkProps } from '@/lib/utils/typeDefinitions/props/shared/social
 const SocialLink: FC<SocialLinkProps> = ({
   href,
   linkText,
-  className = '',
   linkColor = LinkColorsEnum.Gray,
   dataTestId,
+  customCss = '',
 }): JSX.Element => {
   // Define variables for CSS classes for the 'linkColor'
   let bgColor, hoverColor, focusRingColor
@@ -52,7 +52,7 @@ const SocialLink: FC<SocialLinkProps> = ({
       target="_blank"
       rel="noopener noreferrer"
       title={`${linkText} - ${TEXT.opensInNewTab}`}
-      className={`flex select-none items-center justify-center space-x-2 rounded-lg text-sm sm:min-w-[248px] ${bgColor} px-5 py-2.5 text-center font-medium text-white ${hoverColor} focus:outline-none focus:ring-4 ${focusRingColor} ${className}`}
+      className={`flex select-none items-center justify-center space-x-2 rounded-lg text-sm sm:min-w-[248px] ${bgColor} px-5 py-2.5 text-center font-medium text-white ${hoverColor} focus:outline-none focus:ring-4 ${focusRingColor} ${customCss}`}
       data-testid={dataTestId}
     >
       <span>{linkText}</span>

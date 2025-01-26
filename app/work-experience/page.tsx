@@ -3,6 +3,7 @@ import { FC } from 'react'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
+import SocialProof from '@/components/pages/home/SocialProof'
 import OtherExperienceContent from '@/components/pages/projects/other-experience/OtherExperienceContent'
 import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
 import WorkExperienceIntroduction from '@/components/pages/work-experience/WorkExperienceIntroduction'
@@ -36,6 +37,8 @@ const ProjectsWork: FC = (): JSX.Element => {
       <BreadCrumbs level1Url={PAGES_URL.work.mainUrl} level1Text={TEXT.workExperience} />
 
       <ProjectsOverviewLayout heading={TEXT.workExperience} description={<WorkExperienceIntroduction />}>
+        <SocialProof />
+
         {/* REACT */}
         <ProjectSection sectionId={ID.section.react} sectionText="React" projectData={projectsWorkReact} />
 
