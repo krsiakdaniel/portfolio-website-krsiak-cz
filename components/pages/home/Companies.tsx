@@ -1,8 +1,8 @@
-import Image from 'next/image'
 import { FC } from 'react'
 
 import DividerWithText from '@/components/shared/DividerWithText'
 import Heading2 from '@/components/shared/Heading2'
+import ImageComponent from '@/components/shared/ImageComponent'
 
 import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization/english'
 
@@ -35,19 +35,55 @@ const Companies: FC = (): JSX.Element => {
         </div>
 
         <div className={logosWrapperCss}>
-          <Image src={microsoft} width={WIDTH_MICROSOFT} alt={IMAGE_ALT.microsoft} className={imageCss} />
-          <Image src={smartsupp} width={WIDTH_SMARTSUPP} alt={IMAGE_ALT.smartsupp} className={imageCss} />
-          <Image src={kooperativa} width={WIDTH_KOOPERATIVA} alt={IMAGE_ALT.kooperativa} className={imageCss} />
+          <ImageComponent
+            src={microsoft}
+            width={WIDTH_MICROSOFT}
+            alt={IMAGE_ALT.microsoft}
+            loading="lazy"
+            customCss={imageCss}
+          />
+          <ImageComponent
+            src={smartsupp}
+            width={WIDTH_SMARTSUPP}
+            alt={IMAGE_ALT.smartsupp}
+            loading="lazy"
+            customCss={imageCss}
+          />
+          <ImageComponent
+            src={kooperativa}
+            width={WIDTH_KOOPERATIVA}
+            alt={IMAGE_ALT.kooperativa}
+            loading="lazy"
+            customCss={imageCss}
+          />
         </div>
         <div className={logosWrapperCss}>
-          <Image src={ibm} width={WIDTH_IBM} alt={IMAGE_ALT.ibm} className={imageCss} />
-          <Image src={rwsMoravia} width={WIDTH_RWS_MORAVIA} alt={IMAGE_ALT.rwsMoravia} className={imageCss} />
+          <ImageComponent src={ibm} width={WIDTH_IBM} alt={IMAGE_ALT.ibm} loading="lazy" customCss={imageCss} />
+          <ImageComponent
+            src={rwsMoravia}
+            width={WIDTH_RWS_MORAVIA}
+            alt={IMAGE_ALT.rwsMoravia}
+            loading="lazy"
+            customCss={imageCss}
+          />
         </div>
         <div className={logosWrapperCss}>
-          <Image src={komercniBanka} width={WIDTH_KOMERCNI_BANKA} alt={IMAGE_ALT.komercniBanka} className={imageCss} />
+          <ImageComponent
+            src={komercniBanka}
+            width={WIDTH_KOMERCNI_BANKA}
+            alt={IMAGE_ALT.komercniBanka}
+            loading="lazy"
+            customCss={imageCss}
+          />
         </div>
         <div className={logosWrapperCss}>
-          <Image src={groupon} width={WIDTH_GROUPON} alt={IMAGE_ALT.komercniBanka} className={imageCss} />
+          <ImageComponent
+            src={groupon}
+            width={WIDTH_GROUPON}
+            alt={IMAGE_ALT.komercniBanka}
+            loading="lazy"
+            customCss={imageCss}
+          />
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import { FC } from 'react'
+
+import ImageComponent from '@/components/shared/ImageComponent'
 
 import { TestimonialPersonInfoProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
 
@@ -9,12 +10,13 @@ const IMAGE_HEIGHT = 48
 const TestimonialPersonInfo: FC<TestimonialPersonInfoProps> = ({ name, job, photo }) => {
   return (
     <>
-      <Image
+      <ImageComponent
         src={photo}
         width={IMAGE_WIDTH}
         height={IMAGE_HEIGHT}
         alt={name}
-        className="rounded-full border border-violet-300 bg-violet-50 p-1"
+        loading="lazy"
+        customCss="rounded-full border border-violet-300 bg-violet-50 p-1 shadow-lg"
       />
       <div className="flex flex-col">
         <div className="font-medium text-gray-900">{name}</div>

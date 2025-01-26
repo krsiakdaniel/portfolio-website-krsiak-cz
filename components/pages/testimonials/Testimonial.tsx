@@ -9,13 +9,13 @@ import { TestimonialProps } from '@/lib/utils/typeDefinitions/props/pages/testim
 const Testimonial: FC<TestimonialProps> = ({ personName, personJob, personPhoto, testimonialText }): JSX.Element => {
   return (
     <div className="mx-auto mt-4 max-w-screen-xl px-4 pt-8">
-      <figure className="mx-auto max-w-screen-md">
+      <div className="mx-auto max-w-screen-md">
         <TestimonialQuote />
         <TestimonialText text={testimonialText} />
-        <figcaption className="mt-4 flex flex-row items-center space-x-4">
+        <div className="mt-4 flex flex-row items-center space-x-4">
           <TestimonialPersonInfo name={personName} job={personJob} photo={personPhoto} />
-        </figcaption>
-      </figure>
+        </div>
+      </div>
     </div>
   )
 }

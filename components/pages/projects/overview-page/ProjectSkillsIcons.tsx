@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import { FC } from 'react'
+
+import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ProjectSkillsIconsProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
@@ -10,13 +11,14 @@ const ProjectSkillsIcons: FC<ProjectSkillsIconsProps> = ({ skillsIcons = [] }): 
   return (
     <div className="mt-2 flex flex-wrap lg:mt-4">
       {skillsIcons.map((item) => (
-        <Image
+        <ImageComponent
           key={item.name}
           src={item.path}
           width={IMAGE_WIDTH}
           height={IMAGE_HEIGHT}
           alt={item.name}
-          className="mr-2 mt-2 lg:mt-0"
+          loading="lazy"
+          customCss="mr-2 mt-2 lg:mt-0"
         />
       ))}
     </div>
