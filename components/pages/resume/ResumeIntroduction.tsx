@@ -8,12 +8,12 @@ import { YEARS } from '@/lib/utils/constants/yearsExperience'
 
 const ResumeIntroduction: FC = (): JSX.Element => {
   return (
-    <div>
+    <>
       <Paragraph dataTestId={DATA_TEST_IDS.page.resume.introduction}>
         Skilled <Highlight text="React Developer" /> with {YEARS.react} years of experience using{' '}
         <Highlight text="TypeScript" /> to build scalable web applications.
       </Paragraph>
-    </div>
+    </>
   )
 }
 

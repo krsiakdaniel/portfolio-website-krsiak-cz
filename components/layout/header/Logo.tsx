@@ -16,7 +16,7 @@ const IMAGE_HEIGHT = 32
 
 const Logo: FC = (): JSX.Element => {
   return (
-    <div>
+    <>
       <Link
         href={PAGES_URL.home}
         className="group flex flex-row items-center justify-center gap-3"
@@ -29,7 +29,7 @@ const Logo: FC = (): JSX.Element => {
           {TEXT.logo}
         </Paragraph>
       </Link>
-    </div>
+    </>
   )
 }
 
