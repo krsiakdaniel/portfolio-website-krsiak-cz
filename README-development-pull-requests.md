@@ -5,7 +5,9 @@ When creating a pull request, follow these guidelines.
 **Table of Contents:**
 
 - [🔀 Pull Requests](#-pull-requests)
-  - [✅ PR has Board Issue](#-pr-has-board-issue)
+  - [✏️ Naming for Branches and PRs](#️-naming-for-branches-and-prs)
+    - [Commit Message](#commit-message)
+  - [📝 PR has Board Issue](#-pr-has-board-issue)
     - [Link Board Issue](#link-board-issue)
     - [Generate Code Summary](#generate-code-summary)
   - [❌ PR has No Board Issue](#-pr-has-no-board-issue)
@@ -15,7 +17,56 @@ When creating a pull request, follow these guidelines.
 
 ---
 
-## ✅ PR has Board Issue
+## ✏️ Naming for Branches and PRs
+
+Guidelines for naming branches and pull requests.
+
+**Create a new branch from:**
+
+- `master`
+
+**Following this naming:**
+
+- `aria/branch-name`
+- `build/branch-name`
+- `chore/branch-name`
+- `cicd/branch-name`
+- `docs/branch-name`
+- `feature/branch-name`
+- `fix/branch-name`
+- `hotfix/branch-name`
+- `localization/branch-name`
+- `performance/branch-name`
+- `refactor/branch-name`
+- `revert/branch-name`
+- `style/branch-name`
+- `test/branch-name`
+
+### Commit Message
+
+**Message should use**: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+- Optional `context` can go inside the parentheses `()`.
+- Commit message and PR name should have similar naming.
+
+**Following this naming:**
+
+- aria(buttons): ♿ Improve accessibility by adding ARIA attributes
+- build(netlify): 🏗️ Update build scripts and configurations
+- chore(deps): 🛠️ Update dependencies
+- cicd(workflows): ⚙️ Update CI/CD pipelines and workflows
+- docs(readme): 📝 Update documentation
+- feature(banner): ✨ Add new features
+- fix(colors): 🐛 Fix bugs
+- hotfix(font): 🔥 Apply urgent fixes
+- localization(texts): 🇬🇧 Add or update translations
+- performance(loading): 🚀 Improve performance
+- refactor(fragments): 👷 Refactor code without changing functionality
+- revert(button): ⏪ Revert changes
+- style(prettier): 🎨 Code formatting
+- test(e2e): ✅ Add or update tests
+
+## 📝 PR has Board Issue
 
 What to do when the PR has a related board issue.
 

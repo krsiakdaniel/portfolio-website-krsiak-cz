@@ -22,7 +22,7 @@
     - [🛠️ CI - Continuous Integration](#️-ci---continuous-integration)
     - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
   - [🚨 Security](#-security)
-  - [📱 Web Progressive App](#-web-progressive-app)
+  - [📱 Progressive Web App](#-progressive-web-app)
   - [🖼️ Screenshots](#️-screenshots)
 
 ---
@@ -179,9 +179,9 @@ The website contains these following pages and features on project detail pages.
 
 - [README: Security](README-security.md)
 
-## 📱 Web Progressive App
+## 📱 Progressive Web App
 
-- [README: Web Progressive App](README-wpa.md)
+- [README: Progressive Web App](README-pwa.md)
 
 ## 🖼️ Screenshots
 
@@ -194,5 +194,3 @@ Project screenshots.
 ![krsiak.cz | Resume](/readme-images/main-readme/krsiak/krsiak-3-light.png)
 
 ![krsiak.cz | Personal Projects](/readme-images/main-readme/krsiak/krsiak-4-light.png)
-
-![krsiak.cz | Testimonials](/readme-images/main-readme/krsiak/krsiak-5-light.png)
