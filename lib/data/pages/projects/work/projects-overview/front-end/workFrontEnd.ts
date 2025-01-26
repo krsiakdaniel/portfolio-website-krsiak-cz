@@ -24,7 +24,7 @@ export const projectsWorkFrontEnd: Project[] = [
       { id: 2, src: smartsuppWeb3.src },
       { id: 3, src: smartsuppWeb4.src },
     ],
-    title: '💻 SaaS Company - Website',
+    title: '👨🏻‍💻 SaaS Company - Website',
     company: 'Smartsupp',
     role: 'Front End Developer',
     years: '1\u00A0year',
