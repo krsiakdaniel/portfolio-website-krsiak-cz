@@ -13,7 +13,7 @@ const ProjectImage: FC<ProjectImageProps> = ({ isFeatured, image, title }): JSX.
   return (
     <div className="flex first:mt-0 lg:mt-0 lg:justify-start">
       <div className="relative">
-        {isFeatured && <div className="absolute -right-4 -top-5 z-10 text-4xl">⭐</div>}
+        {isFeatured && <div className="absolute -left-4 -top-5 z-10 text-4xl">⭐</div>}
 
         <ImageComponent
           src={image}

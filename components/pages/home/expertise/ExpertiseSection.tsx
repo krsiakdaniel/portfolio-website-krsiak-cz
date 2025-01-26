@@ -10,7 +10,7 @@ const ExpertiseSection: FC<ExpertiseSectionProps> = ({ icon = '', heading, listI
   return (
     <div className="relative flex w-full flex-col rounded-lg border border-gray-200 bg-white px-4 py-6">
       <Heading3 textColor="text-violet-600 ml-2">
-        <span className="absolute -left-3 -top-5 text-4xl">{icon}</span>
+        <span className="absolute -left-3 -top-4 text-3xl md:-top-5 md:text-4xl">{icon}</span>
         {heading}
       </Heading3>
       <div className="mt-4">

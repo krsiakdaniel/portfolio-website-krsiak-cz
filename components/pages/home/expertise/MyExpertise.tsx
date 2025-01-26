@@ -18,7 +18,7 @@ const MyExpertise: FC = (): JSX.Element => {
       <div className="mt-4 w-full">
         <div className="flex w-full flex-col gap-6 lg:flex-row">
           <div className="flex w-full flex-col gap-6 md:flex-row lg:w-2/3">
-            <ExpertiseSection icon="🥇" heading={TEXT.skillsForCompany} listItems={skillsForCompanyItems} />
+            <ExpertiseSection icon="⭐️" heading={TEXT.skillsForCompany} listItems={skillsForCompanyItems} />
             <ExpertiseSection icon="🚀" heading={TEXT.committedMindset} listItems={committedMindsetItems} />
           </div>
           <div className="flex w-full lg:w-1/3">
