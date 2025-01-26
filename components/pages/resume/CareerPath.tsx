@@ -1,6 +1,7 @@
 import { FC } from 'react'
 
 import ExpertiseSection from '@/components/pages/home/expertise/ExpertiseSection'
+import HeadingSection from '@/components/shared/HeadingSection'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
@@ -11,7 +12,7 @@ import { careerWebDev } from '@/lib/data/pages/resume/career-path/careerWebDev'
 const CareerPath: FC = (): JSX.Element => {
   return (
     <>
-      <div className="mt-20 border-b pb-2 text-2xl font-bold uppercase">My Career Path</div>
+      <HeadingSection text="My Career Path" />
 
       <div>
         <Paragraph size="text-sm">

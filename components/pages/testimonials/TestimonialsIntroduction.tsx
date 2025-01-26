@@ -5,6 +5,7 @@ import Paragraph from '@/components/shared/Paragraph'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+// FIXME: refactor fiv to fragment <>
 const TestimonialsIntroduction: FC = (): JSX.Element => {
   return (
     <div>

@@ -14,7 +14,7 @@ const ProjectDetails: FC<ProjectDetailsProps> = ({ title, company, role, descrip
       <Paragraph marginTop="mt-0" size="text-xl" textColor="text-neutral-500" customCss="font-semibold">
         {company}
       </Paragraph>
-      <Paragraph marginTop="mt-8" textColor="text-neutral-500">
+      <Paragraph marginTop="mt-8" textColor="text-neutral-600">
         {description}
       </Paragraph>
     </div>

@@ -2,13 +2,13 @@ import { FC } from 'react'
 
 import Testimonial from '@/components/pages/testimonials/Testimonial'
 import TestimonialDescription from '@/components/pages/testimonials/TestimonialDescription'
-import TestimonialHeader from '@/components/pages/testimonials/TestimonialHeader'
+import HeadingSection from '@/components/shared/HeadingSection'
 
 import { TestimonialsSectionProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
 
 const TestimonialsSection: FC<TestimonialsSectionProps> = ({ title, description, testimonials = [] }) => (
   <div className="mt-20">
-    <TestimonialHeader title={title} />
+    <HeadingSection text={title} />
     <TestimonialDescription description={description} />
     <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
       {testimonials.map((testimonial) => (

@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
-import ExperienceSection from '@/components/pages/projects/other-experience/ExperienceSection'
 import ProjectSummaryCard from '@/components/pages/projects/overview-page/ProjectSummaryCard'
+import HeadingSection from '@/components/shared/HeadingSection'
 
 import { ProjectSectionProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
@@ -12,7 +12,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({
 }): JSX.Element => {
   return (
     <>
-      <ExperienceSection id={sectionId} text={sectionText} />
+      <HeadingSection text={sectionText} id={sectionId} />
 
       {projectData.map((item, index) => (
         <ProjectSummaryCard

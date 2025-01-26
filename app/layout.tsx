@@ -1,5 +1,4 @@
 import type { Viewport } from 'next'
-import { Inter } from 'next/font/google'
 import { FC } from 'react'
 
 import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
@@ -12,10 +11,8 @@ import { defaultMetaData } from '@/lib/data/metadata/shared/defaultMetaData'
 
 import { RootLayoutProps } from '@/lib/utils/typeDefinitions/props/app'
 
+import { roboto } from './fonts'
 import './globals.css'
-
-// Load the Inter font with the latin subset
-const inter = Inter({ subsets: ['latin'] })
 
 // Default metadata used by all pages if they don't have their own metadata
 export const metadata = {
@@ -33,11 +30,11 @@ export const viewport: Viewport = {
 // 'Readonly' make the properties of the object read-only, meaning that after the initial assignment they cannot be reassigned.
 const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element => {
   return (
-    <html lang="en">
+    <html lang="en" className={roboto.className}>
       <head>
         <AppleTouchIcons />
       </head>
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <Header />
         <main>{children}</main>
         <Footer />
