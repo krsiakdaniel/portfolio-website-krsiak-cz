@@ -16,7 +16,7 @@ const CallToActionTexts: FC<CallToActionTextsProps> = ({
   textDesktop,
 }) => {
   return (
-    <div>
+    <>
       <div className="mb-2 flex items-center space-x-2 uppercase md:space-x-0">
         <CallToActionIcon type={DeviceTypeEnum.Mobile} icon={icon} />
         <Highlight text={highlight} />
@@ -27,7 +27,7 @@ const CallToActionTexts: FC<CallToActionTextsProps> = ({
           {textMobileAndDesktop} <span className="hidden lg:inline">{textDesktop}</span>
         </span>
       </Paragraph>
-    </div>
+    </>
   )
 }
 

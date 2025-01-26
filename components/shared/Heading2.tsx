@@ -5,6 +5,7 @@ import { getDataTestIdAttribute } from '@/lib/utils/helpers/getDataTestIdAttribu
 import { Heading2Props } from '@/lib/utils/typeDefinitions/props/shared/headings'
 
 const Heading2: FC<Heading2Props> = ({
+  id = '',
   children,
   dataTestId = '',
   textColor = 'text-violet-600',
@@ -12,6 +13,7 @@ const Heading2: FC<Heading2Props> = ({
 }): JSX.Element => {
   return (
     <h2
+      id={id}
       {...getDataTestIdAttribute(dataTestId)}
       className={`text-4xl font-bold tracking-tight ${textColor} ${customCss}`}
     >

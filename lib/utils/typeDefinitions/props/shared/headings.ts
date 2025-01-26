@@ -5,6 +5,7 @@ type SharedHeadingProps = {
   customCss?: string
   dataTestId?: string
   textColor?: string
+  id?: string
 }
 
 type TextSizeProps = {

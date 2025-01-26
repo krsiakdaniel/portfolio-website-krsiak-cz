@@ -30,9 +30,9 @@ const Page: FC = (): JSX.Element => {
       <SkillsMain />
       <Skills />
       <CallToActionWorkExperience />
-      <MyExpertise />
       <Companies />
       <SocialProof />
+      <MyExpertise />
       <CallToActionResume />
 
       <PageNavigation

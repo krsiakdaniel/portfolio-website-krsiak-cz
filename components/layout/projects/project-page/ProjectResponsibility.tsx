@@ -6,7 +6,7 @@ import { ProjectResponsibilityProps } from '@/lib/utils/typeDefinitions/props/la
 
 const ProjectResponsibility: FC<ProjectResponsibilityProps> = ({ sections = [] }): JSX.Element => {
   return (
-    <div>
+    <>
       {sections.map((section) => (
         <PageSection
           key={section.id}
@@ -15,7 +15,7 @@ const ProjectResponsibility: FC<ProjectResponsibilityProps> = ({ sections = [] }
           items={section.items}
         />
       ))}
-    </div>
+    </>
   )
 }
 
