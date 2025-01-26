@@ -123,7 +123,7 @@ export const MY_WORK = {
   workedForCompanies: 'Worked For Companies',
   skillsForCompany: 'Skills',
   committedMindset: 'Mindset',
-  problemSolving: 'Adaptive',
+  problemSolving: 'Creative',
 }
 
 export const MISC = {
