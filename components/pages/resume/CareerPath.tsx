@@ -21,10 +21,16 @@ const CareerPath: FC = (): JSX.Element => {
         </Paragraph>
       </div>
 
-      <div className="mt-8 flex flex-wrap gap-20">
-        <ExpertiseSection heading="⚛️ React Dev" listItems={careerReactDev} />
-        <ExpertiseSection heading="🖥️ Web Dev" listItems={careerWebDev} />
-        <ExpertiseSection heading="⚙️ Testing" listItems={careerTesting} />
+      <div className="mt-10 w-full">
+        <div className="flex w-full flex-col gap-6 lg:flex-row">
+          <div className="flex w-full flex-col gap-6 md:flex-row lg:w-2/3">
+            <ExpertiseSection icon="⚛️" heading="React Dev" listItems={careerReactDev} />
+            <ExpertiseSection icon="💻" heading="Web Dev" listItems={careerWebDev} />
+          </div>
+          <div className="flex w-full lg:w-1/3">
+            <ExpertiseSection icon="⚙️" heading="Testing" listItems={careerTesting} />
+          </div>
+        </div>
       </div>
     </>
   )

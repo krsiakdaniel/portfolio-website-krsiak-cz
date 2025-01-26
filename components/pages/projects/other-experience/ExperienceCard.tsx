@@ -8,7 +8,7 @@ import { ExperienceCardProps } from '@/lib/utils/typeDefinitions/props/pages/pro
 
 const ExperienceCard: FC<ExperienceCardProps> = ({ company, role, description }): JSX.Element => {
   return (
-    <div className="mt-4 w-full rounded-lg border border-gray-200 bg-gray-50 p-4 first:mt-0 sm:max-w-[600px]">
+    <div className="mt-4 w-full rounded-lg border border-gray-200 bg-white p-4 first:mt-0 sm:max-w-[600px]">
       <Heading5>
         {company}
         {' · '}

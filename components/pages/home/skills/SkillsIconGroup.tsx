@@ -7,9 +7,9 @@ import { SkillsIconGroupProps } from '@/lib/utils/typeDefinitions/props/pages/ho
 const IMAGE_WIDTH = 44
 const IMAGE_HEIGHT = 44
 
-const SkillsIconGroup: FC<SkillsIconGroupProps> = ({ icons = [], className = '' }): JSX.Element => {
+const SkillsIconGroup: FC<SkillsIconGroupProps> = ({ icons = [], customCss = '' }): JSX.Element => {
   return (
-    <div className={`flex justify-center space-x-2 ${className}`}>
+    <div className={`flex justify-center space-x-2 ${customCss}`}>
       {icons.map((item) => (
         <ImageComponent
           key={item.name}

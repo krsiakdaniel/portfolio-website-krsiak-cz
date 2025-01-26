@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import CallToActionBubbles from '@/components/shared/call-to-action/CallToActionBubbles'
 import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIcon'
 import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTexts'
 import LinkButton from '@/components/shared/LinkButton'
@@ -19,24 +20,28 @@ const CallToAction: FC<CallToActionProps> = ({
   icon,
 }): JSX.Element => {
   return (
-    <section className="mt-20 rounded-lg bg-blue-50 p-8 md:p-16">
-      <div className="flex">
-        <div className="md:w-2/3">
-          <CallToActionTexts
-            icon={icon}
-            highlight={highlight}
-            heading={heading}
-            textMobileAndDesktop={textMobileAndDesktop}
-            textDesktop={textDesktop}
-          />
-          <LinkButton href={link} linkText={linkText} isLinkExternal={isLinkExternal} dataTestId={dataTestId} />
-        </div>
+    <div className="group relative mt-20">
+      <CallToActionBubbles />
 
-        <div className="hidden items-center justify-center md:flex md:w-1/3">
-          <CallToActionIcon type={DeviceTypeEnum.Desktop} icon={icon} />
+      <section className="relative rounded-lg border border-blue-300 bg-blue-100 p-8 md:p-16">
+        <div className="flex">
+          <div className="md:w-2/3">
+            <CallToActionTexts
+              icon={icon}
+              highlight={highlight}
+              heading={heading}
+              textMobileAndDesktop={textMobileAndDesktop}
+              textDesktop={textDesktop}
+            />
+            <LinkButton href={link} linkText={linkText} isLinkExternal={isLinkExternal} dataTestId={dataTestId} />
+          </div>
+
+          <div className={`hidden items-center justify-center md:flex md:w-1/3`}>
+            <CallToActionIcon type={DeviceTypeEnum.Desktop} icon={icon} />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
 

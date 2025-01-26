@@ -7,7 +7,6 @@ import MyExpertise from '@/components/pages/home/expertise/MyExpertise'
 import Hero from '@/components/pages/home/hero/Hero'
 import Skills from '@/components/pages/home/skills/Skills'
 import SkillsMain from '@/components/pages/home/skills/SkillsMain'
-import SocialProof from '@/components/pages/home/SocialProof'
 import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
 import CallToActionWorkExperience from '@/components/shared/call-to-action/cta-banners/CallToActionWorkExperience'
 
@@ -31,7 +30,6 @@ const Page: FC = (): JSX.Element => {
       <Skills />
       <CallToActionWorkExperience />
       <Companies />
-      <SocialProof />
       <MyExpertise />
       <CallToActionResume />
 
