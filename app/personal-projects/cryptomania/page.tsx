@@ -9,7 +9,7 @@ import { metaDataCryptomania } from '@/lib/data/metadata/pages/projects/personal
 import { sections } from '@/lib/data/pages/projects/personal/cryptoMania'
 import { projectsPersonalReact } from '@/lib/data/pages/projects/personal/projects-overview/react/personalReact'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -28,7 +28,7 @@ const ProjectPersonalCryptomania: FC = (): JSX.Element => {
   return (
     <>
       <ProjectPageLayoutWrapper
-        breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.cryptoMania, TEXT.cryptoMania)}
+        breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.cryptoMania, ICON_EMOJI.moneyBag, TEXT.cryptoMania)}
         pageID={PROJECT_ID.personal.cryptoMania}
         goBackLink={GoBackLinkEnum.Personal}
         sectionID={ID.section.react}
@@ -37,12 +37,12 @@ const ProjectPersonalCryptomania: FC = (): JSX.Element => {
         showAlert={
           <Alert
             type={AlertTypeEnum.Info}
-            title="'CryptoMania' web is simple project"
-            description="For my latest production-level code, visit GitHub repo: 'Portfolio Website'."
+            title="CryptoMania is simple project"
+            description="See production-level code for my 'Portfolio' on GitHub repo."
             linkComponent={
               <SocialLink
                 href={EXTERNAL_URL.gitHub}
-                linkText="GitHub: portfolio-website-krsiak-cz"
+                linkText={TEXT.gitHubKrsiak}
                 linkColor={LinkColorsEnum.Blue}
                 dataTestId={DATA_TEST_IDS.alert.alertLinkGitHub}
               />
@@ -52,6 +52,7 @@ const ProjectPersonalCryptomania: FC = (): JSX.Element => {
         PageNavigation={
           <PageNavigation
             linkPrevious={PAGES_URL.personal.krsiak}
+            iconPrevious={ICON_EMOJI.manTechnologist.lightSkinTone}
             namePrevious={TEXT.portfolioWebsite}
             dataTestIdPrevious={DATA_TEST_IDS.projects.personal.cryptoMania.previous}
           />

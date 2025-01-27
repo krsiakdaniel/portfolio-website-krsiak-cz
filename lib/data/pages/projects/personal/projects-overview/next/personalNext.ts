@@ -1,5 +1,7 @@
 import { iconsSkillsProjectsPersonalKrsiak } from '@/lib/data/pages/projects/personal/projects-overview/skillsProjectsPersonal'
 
+import { ICON_EMOJI } from '@/localization/english'
+
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
@@ -24,7 +26,8 @@ export const projectsPersonalNext: Project[] = [
       { id: 2, src: krsiak3.src },
       { id: 3, src: krsiak4.src },
     ],
-    title: '👨🏻‍💻 Portfolio Website',
+    icon: ICON_EMOJI.manTechnologist.lightSkinTone,
+    title: 'Portfolio Website',
     company: 'Personal project',
     role: 'Front End - Next.js',
     description:

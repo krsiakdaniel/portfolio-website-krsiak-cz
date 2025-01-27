@@ -3,7 +3,6 @@ import { FC } from 'react'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
-import SocialProof from '@/components/pages/home/SocialProof'
 import OtherExperienceContent from '@/components/pages/projects/other-experience/OtherExperienceContent'
 import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
 import WorkExperienceIntroduction from '@/components/pages/work-experience/WorkExperienceIntroduction'
@@ -21,7 +20,7 @@ import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview
 import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
 import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -34,11 +33,17 @@ export const metadata = {
 const ProjectsWork: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.projects.work}>
-      <BreadCrumbs level1Url={PAGES_URL.work.mainUrl} level1Text={TEXT.workExperience} />
+      <BreadCrumbs
+        level1Url={PAGES_URL.work.mainUrl}
+        level1Icon={ICON_EMOJI.manTechnologist.lightSkinTone}
+        level1Text={TEXT.workExperience}
+      />
 
-      <ProjectsOverviewLayout heading={TEXT.workExperience} description={<WorkExperienceIntroduction />}>
-        <SocialProof />
-
+      <ProjectsOverviewLayout
+        icon={ICON_EMOJI.manTechnologist.lightSkinTone}
+        heading={TEXT.workExperience}
+        description={<WorkExperienceIntroduction />}
+      >
         {/* REACT */}
         <ProjectSection sectionId={ID.section.react} sectionText="React" projectData={projectsWorkReact} />
 
@@ -54,7 +59,11 @@ const ProjectsWork: FC = (): JSX.Element => {
         <OtherExperienceContent experience={otherExperienceWordPress} />
 
         {/* QA */}
-        <ProjectSection sectionId={ID.section.qa} sectionText="QA Automation & Testing" projectData={projectsWorkQA} />
+        <ProjectSection
+          sectionId={ID.section.qa}
+          sectionText={`QA Automation &\u00A0Testing`}
+          projectData={projectsWorkQA}
+        />
         <OtherExperienceContent experience={otherExperienceQA} />
 
         {/* LOCALIZATION */}
@@ -72,9 +81,11 @@ const ProjectsWork: FC = (): JSX.Element => {
       <div className="mt-20">
         <PageNavigation
           linkPrevious={PAGES_URL.home}
+          iconPrevious={ICON_EMOJI.house}
           namePrevious={TEXT.home}
           dataTestIdPrevious={DATA_TEST_IDS.page.workExperience.previous}
           linkNext={PAGES_URL.resume}
+          iconNext={ICON_EMOJI.memo}
           nameNext={TEXT.resume}
           dataTestIdNext={DATA_TEST_IDS.page.workExperience.next}
         />

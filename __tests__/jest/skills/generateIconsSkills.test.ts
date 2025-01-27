@@ -1,4 +1,4 @@
-import { skillIcons } from '@/lib/data/skill-icons/skillIcons'
+import { skillIcons } from '@/lib/data/shared/skill-icons/skillIcons'
 
 import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
 import { SkillIconEnum } from '@/lib/utils/typeDefinitions/enums'

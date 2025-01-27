@@ -5,6 +5,8 @@ export type BreadCrumbsProps = BreadCrumbsType
 
 // Breadcrumbs Item Props
 export type BreadcrumbsItemProps = {
+  href: string
+  icon: string
   text: string
-  url: string
+  showSeparatorIcon?: boolean
 }

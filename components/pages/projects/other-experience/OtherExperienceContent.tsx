@@ -9,7 +9,7 @@ import { OtherExperienceContentProps } from '@/lib/utils/typeDefinitions/props/p
 
 const OtherExperienceContent: FC<OtherExperienceContentProps> = ({ experience = [] }): JSX.Element => {
   return (
-    <>
+    <div className="mt-8">
       <Heading4>{TEXT.otherExperience}</Heading4>
       <div className="mt-4">
         {experience.map((experience) => (
@@ -21,7 +21,7 @@ const OtherExperienceContent: FC<OtherExperienceContentProps> = ({ experience = 
           />
         ))}
       </div>
-    </>
+    </div>
   )
 }
 

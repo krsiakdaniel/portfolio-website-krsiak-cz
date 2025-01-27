@@ -46,13 +46,18 @@ const SocialLink: FC<SocialLinkProps> = ({
       break
   }
 
+  const hoverAndFocusCSS = `${bgColor} ${hoverColor} ${focusRingColor} focus:outline-none focus:ring-4`
+
+  const baseCss =
+    'flex select-none items-center justify-center space-x-2 rounded-lg px-5 py-3.5 text-center text-sm font-medium text-white min-w-full sm:min-w-[248px]'
+
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
       title={`${linkText} - ${TEXT.opensInNewTab}`}
-      className={`flex select-none items-center justify-center space-x-2 rounded-lg text-sm sm:min-w-[248px] ${bgColor} px-5 py-2.5 text-center font-medium text-white ${hoverColor} focus:outline-none focus:ring-4 ${focusRingColor} ${customCss}`}
+      className={`${baseCss} ${hoverAndFocusCSS} ${customCss}`}
       data-testid={dataTestId}
     >
       <span>{linkText}</span>

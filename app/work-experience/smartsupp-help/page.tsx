@@ -7,7 +7,7 @@ import { metaDataSmartsuppHelp } from '@/lib/data/metadata/pages/projects/work/m
 import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
 import { sections } from '@/lib/data/pages/projects/work/smartsuppHelp'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -24,7 +24,7 @@ export const metadata = {
 const ProjectWorkSmartsuppHelp: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
-      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.smartsupp.help, TEXT.smartsuppHELP)}
+      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.smartsupp.help, ICON_EMOJI.books, TEXT.smartsuppHELP)}
       pageID={PROJECT_ID.work.smartsupp.help}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.wordpress}
@@ -33,9 +33,11 @@ const ProjectWorkSmartsuppHelp: FC = (): JSX.Element => {
       PageNavigation={
         <PageNavigation
           linkPrevious={PAGES_URL.work.smartsupp.web}
+          iconPrevious={ICON_EMOJI.manTechnologist.lightSkinTone}
           namePrevious={TEXT.smartsuppWeb}
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.smartsupp.help.previous}
           linkNext={PAGES_URL.work.groupon}
+          iconNext={ICON_EMOJI.shoppingCart}
           nameNext={TEXT.groupon}
           dataTestIdNext={DATA_TEST_IDS.projects.work.smartsupp.help.next}
         />

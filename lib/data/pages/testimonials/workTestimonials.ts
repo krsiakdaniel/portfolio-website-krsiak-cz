@@ -1,4 +1,4 @@
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { TestimonialItem } from '@/lib/utils/typeDefinitions/interfaces'
 
@@ -11,7 +11,8 @@ export const workTestimonials: TestimonialItem[] = [
   {
     id: TEXT.nameLosseff,
     personPhoto: personLosseff,
-    personName: `👩‍💼 ${TEXT.nameLosseff}`,
+    personIcon: ICON_EMOJI.woman.officeWorker,
+    personName: TEXT.nameLosseff,
     personJob: 'Linguistic Services ~\u00A0Moravia IT',
     testimonialText: `
       Daniel is strong in creating automation utilities, term processing, all kinds of\u00A0tracking.
@@ -21,7 +22,8 @@ export const workTestimonials: TestimonialItem[] = [
   {
     id: TEXT.nameKvapil,
     personPhoto: personKvapil,
-    personName: `👨‍💼 ${TEXT.nameKvapil}`,
+    personIcon: ICON_EMOJI.man.officeWorker,
+    personName: TEXT.nameKvapil,
     personJob: 'Partner Account Manager ~\u00A0Microsoft',
     testimonialText: `
       I can recommend his knowledge and perspective about the IT globally,
@@ -31,7 +33,8 @@ export const workTestimonials: TestimonialItem[] = [
   {
     id: TEXT.namePridalek,
     personPhoto: personPridalek,
-    personName: `👨‍💼 ${TEXT.namePridalek}`,
+    personIcon: ICON_EMOJI.man.officeWorker,
+    personName: TEXT.namePridalek,
     personJob: 'Senior Localization Group Manager ~\u00A0Moravia IT',
     testimonialText: `
       Daniel helped team with engineering skills, automating bug management tasks.
@@ -41,7 +44,8 @@ export const workTestimonials: TestimonialItem[] = [
   {
     id: TEXT.namePopa,
     personPhoto: personPopa,
-    personName: `👨‍💼 ${TEXT.namePopa}`,
+    personIcon: ICON_EMOJI.man.officeWorker,
+    personName: TEXT.namePopa,
     personJob: 'Service Management Lead ~\u00A0IBM',
     testimonialText: `
       I met Daniel Krsiak working on different team, he\u00A0was my desk-mate.

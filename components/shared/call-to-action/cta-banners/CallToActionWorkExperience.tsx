@@ -11,7 +11,7 @@ const CallToActionWorkExperience: FC = (): JSX.Element => {
   return (
     <CallToAction
       highlight="Professional journey"
-      heading="Explore My Work Experience"
+      heading={`Explore My\u00A0Work Experience`}
       textMobileAndDesktop={`See the professional projects I worked on and had the opportunity to\u00A0improve.`}
       textDesktop="Developing scalable and robust web applications for big companies."
       link={PAGES_URL.work.mainUrl}

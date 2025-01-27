@@ -3,6 +3,8 @@ import { FC } from 'react'
 import DefaultNoLinkNavigation from '@/components/layout/page-navigation/DefaultNoLinkNavigation'
 import PageNavigationLink from '@/components/layout/page-navigation/PageNavigationLink'
 
+import { ICON_EMOJI } from '@/localization/english'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
@@ -11,10 +13,12 @@ import { PageNavigationProps } from '@/lib/utils/typeDefinitions/props/layout/pa
 
 const PageNavigation: FC<PageNavigationProps> = ({
   linkPrevious,
+  iconPrevious = ICON_EMOJI.ghost,
   namePrevious,
-  linkNext,
-  nameNext,
   dataTestIdPrevious,
+  linkNext,
+  iconNext = ICON_EMOJI.ghost,
+  nameNext,
   dataTestIdNext,
 }): JSX.Element => {
   const hasPreviousLink = linkPrevious && namePrevious
@@ -23,10 +27,11 @@ const PageNavigation: FC<PageNavigationProps> = ({
   return (
     <nav data-testid={DATA_TEST_IDS.navigation.END_OF_PAGE}>
       <div className="container mx-auto mt-20 max-w-screen-xl">
-        <div className={`group flex flex-col gap-4 md:flex-row ${hasPreviousLink ? 'justify-between' : 'justify-end'}`}>
+        <div className={`group flex flex-col gap-8 md:flex-row ${hasPreviousLink ? 'justify-between' : 'justify-end'}`}>
           {hasPreviousLink ? (
             <PageNavigationLink
               href={linkPrevious}
+              icon={iconPrevious}
               text={namePrevious}
               arrowDirection={ArrowDirectionEnum.Left}
               dataTestId={dataTestIdPrevious}
@@ -37,6 +42,7 @@ const PageNavigation: FC<PageNavigationProps> = ({
           {hasNextLink ? (
             <PageNavigationLink
               href={linkNext}
+              icon={iconNext}
               text={nameNext}
               arrowDirection={ArrowDirectionEnum.Right}
               dataTestId={dataTestIdNext}

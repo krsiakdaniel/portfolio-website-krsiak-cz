@@ -1,5 +1,7 @@
 import { iconsSkillsProjectsWorkMoravia } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
+import { ICON_EMOJI } from '@/localization/english'
+
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
@@ -22,7 +24,8 @@ export const projectsWorkLocalization: Project[] = [
       { id: 1, src: moravia2.src },
       { id: 2, src: moravia3.src },
     ],
-    title: '🌎 Windows',
+    icon: ICON_EMOJI.globeShowingAmericas,
+    title: 'Windows',
     company: 'RWS - Moravia IT',
     role: 'QA Automation - Team Leader',
     years: '1 year',

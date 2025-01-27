@@ -7,7 +7,7 @@ import { metaDataKomercniBanka } from '@/lib/data/metadata/pages/projects/work/m
 import { sections } from '@/lib/data/pages/projects/work/komercniBanka'
 import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -24,7 +24,7 @@ export const metadata = {
 const ProjectWorkKomercniBanka: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
-      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.komercniBanka, TEXT.komercniBanka)}
+      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.komercniBanka, ICON_EMOJI.bank, TEXT.komercniBanka)}
       pageID={PROJECT_ID.work.komercniBanka}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.react}
@@ -33,9 +33,11 @@ const ProjectWorkKomercniBanka: FC = (): JSX.Element => {
       PageNavigation={
         <PageNavigation
           linkPrevious={PAGES_URL.work.smartsupp.dashboard}
+          iconPrevious={ICON_EMOJI.speechBalloon}
           namePrevious={TEXT.smartsuppDashboard}
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.komercniBanka.previous}
           linkNext={PAGES_URL.work.kooperativa}
+          iconNext={ICON_EMOJI.umbrellaWithRainDrops}
           nameNext={TEXT.kooperativa}
           dataTestIdNext={DATA_TEST_IDS.projects.work.komercniBanka.next}
         />

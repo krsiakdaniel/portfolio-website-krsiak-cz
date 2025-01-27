@@ -24,7 +24,7 @@ import {
   typescriptSVG,
   wordpressSVG,
   xdSVG,
-} from '@/lib/data/skill-icons/skillIconsSVG'
+} from '@/lib/data/shared/skill-icons/skillIconsSVG'
 
 // Map skill names to their respective icons
 export const skillIcons: SkillToIconMap = {

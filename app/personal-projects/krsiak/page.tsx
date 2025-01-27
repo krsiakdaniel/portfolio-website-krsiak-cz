@@ -7,7 +7,7 @@ import { metaDataKrsiak } from '@/lib/data/metadata/pages/projects/personal/meta
 import { sections } from '@/lib/data/pages/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -24,7 +24,11 @@ export const metadata = {
 const ProjectPersonalKrsiak: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
-      breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.krsiak, TEXT.portfolioWebsite)}
+      breadCrumbs={getBreadcrumbsPersonal(
+        PAGES_URL.personal.krsiak,
+        ICON_EMOJI.manTechnologist.lightSkinTone,
+        TEXT.portfolioWebsite,
+      )}
       pageID={PROJECT_ID.personal.krsiak}
       goBackLink={GoBackLinkEnum.Personal}
       sectionID={ID.section.next}
@@ -33,9 +37,11 @@ const ProjectPersonalKrsiak: FC = (): JSX.Element => {
       PageNavigation={
         <PageNavigation
           linkPrevious={PAGES_URL.personal.mainUrl}
+          iconPrevious={ICON_EMOJI.rocket}
           namePrevious={TEXT.personalProjects}
           dataTestIdPrevious={DATA_TEST_IDS.projects.personal.krsiak.previous}
           linkNext={PAGES_URL.personal.cryptoMania}
+          iconNext={ICON_EMOJI.moneyBag}
           nameNext={TEXT.cryptoMania}
           dataTestIdNext={DATA_TEST_IDS.projects.personal.krsiak.next}
         />

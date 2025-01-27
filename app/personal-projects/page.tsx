@@ -12,7 +12,7 @@ import { metaDataPersonalProjects } from '@/lib/data/metadata/pages/projects/met
 import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
 import { projectsPersonalReact } from '@/lib/data/pages/projects/personal/projects-overview/react/personalReact'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -25,9 +25,17 @@ export const metadata = {
 const ProjectsPersonal: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.projects.personal}>
-      <BreadCrumbs level1Url={PAGES_URL.personal.mainUrl} level1Text={TEXT.personalProjects} />
+      <BreadCrumbs
+        level1Url={PAGES_URL.personal.mainUrl}
+        level1Icon={ICON_EMOJI.rocket}
+        level1Text={TEXT.personalProjects}
+      />
 
-      <ProjectsOverviewLayout heading={TEXT.personalProjects} description={<PersonalProjectsIntroduction />}>
+      <ProjectsOverviewLayout
+        icon={ICON_EMOJI.rocket}
+        heading={TEXT.personalProjects}
+        description={<PersonalProjectsIntroduction />}
+      >
         <CallToActionGitHub />
 
         {/* NEXT */}
@@ -40,9 +48,11 @@ const ProjectsPersonal: FC = (): JSX.Element => {
       <div className="mt-20">
         <PageNavigation
           linkPrevious={PAGES_URL.resume}
+          iconPrevious={ICON_EMOJI.memo}
           namePrevious={TEXT.resume}
           dataTestIdPrevious={DATA_TEST_IDS.page.personalProjects.previous}
           linkNext={PAGES_URL.testimonials}
+          iconNext={ICON_EMOJI.speechBalloon}
           nameNext={TEXT.testimonials}
           dataTestIdNext={DATA_TEST_IDS.page.personalProjects.next}
         />

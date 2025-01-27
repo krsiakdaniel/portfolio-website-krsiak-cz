@@ -39,13 +39,13 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
       <Paragraph>{note}</Paragraph>
 
       {buttonText && buttonLink && (
-        <Link href={buttonLink} className={`${sharedCss} inline-flex text-center`}>
+        <Link href={buttonLink} className={`${sharedCss} inline-flex select-none text-center`}>
           {buttonText}
         </Link>
       )}
 
       {buttonText && onButtonClick && (
-        <button type="button" onClick={onButtonClick} className={sharedCss}>
+        <button type="button" onClick={onButtonClick} className={`select-none ${sharedCss}`}>
           {buttonText}
         </button>
       )}

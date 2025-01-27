@@ -17,7 +17,8 @@ export type ProjectPageLayoutWrapperProps = HeaderSectionProps & {
 
 // Projects Overview Layout Props
 export type ProjectsOverviewLayoutProps = {
-  children: ReactNode
-  description: ReactNode
+  icon: string
   heading: string
+  description: ReactNode
+  children: ReactNode
 }

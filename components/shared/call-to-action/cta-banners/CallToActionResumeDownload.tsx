@@ -10,7 +10,7 @@ const CallToActionResumeDownload: FC = (): JSX.Element => {
   return (
     <CallToAction
       highlight="Resume in PDF"
-      heading="Download My Resume"
+      heading={`Download My\u00A0Resume`}
       textMobileAndDesktop="Get a PDF copy of my resume to learn more about my professional experience."
       textDesktop="Skilled React Developer building scalable applications using React and TypeScript."
       link={EXTERNAL_URL.resumeViewPDF}

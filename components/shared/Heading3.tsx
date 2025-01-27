@@ -6,7 +6,7 @@ import { Heading3Props } from '@/lib/utils/typeDefinitions/props/shared/headings
 
 const Heading3: FC<Heading3Props> = ({ children, dataTestId = '', textColor = '', customCss = '' }): JSX.Element => {
   return (
-    <h3 className={`text-3xl font-bold ${textColor} ${customCss}`} {...getDataTestIdAttribute(dataTestId)}>
+    <h3 className={`break-words text-3xl font-bold ${textColor} ${customCss}`} {...getDataTestIdAttribute(dataTestId)}>
       {children}
     </h3>
   )

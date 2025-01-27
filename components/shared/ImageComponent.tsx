@@ -26,7 +26,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({
         height={height}
         alt={alt}
         loading={loading}
-        className={customCss}
+        className={`select-none ${customCss}`}
         placeholder={placeholder}
         blurDataURL={blurDataURL}
       />

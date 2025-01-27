@@ -4,11 +4,21 @@ import Heading1 from '@/components/shared/Heading1'
 
 import { ProjectsOverviewLayoutProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page-layout'
 
-const ProjectsOverviewLayout: FC<ProjectsOverviewLayoutProps> = ({ heading, description, children }): JSX.Element => {
+const ProjectsOverviewLayout: FC<ProjectsOverviewLayoutProps> = ({
+  icon,
+  heading,
+  description,
+  children,
+}): JSX.Element => {
   return (
     <>
       <div className="mt-10 flex flex-col">
-        <Heading1>{heading}</Heading1>
+        <Heading1>
+          <span role="img" className="select-none">
+            {icon}
+          </span>
+          <span className="ml-4">{heading}</span>
+        </Heading1>
         <div>{description}</div>
       </div>
 

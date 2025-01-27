@@ -15,7 +15,7 @@ const Heading2: FC<Heading2Props> = ({
     <h2
       id={id}
       {...getDataTestIdAttribute(dataTestId)}
-      className={`text-4xl font-bold tracking-tight ${textColor} ${customCss}`}
+      className={`break-words text-4xl font-bold tracking-tight ${textColor} ${customCss}`}
     >
       {children}
     </h2>

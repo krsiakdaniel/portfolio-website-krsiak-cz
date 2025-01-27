@@ -6,7 +6,7 @@ import Photo from '@/components/shared/Photo'
 import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 
 import HeadingSection from '@/components/shared/HeadingSection'
-import { ResumeContactProps } from '@/lib/utils/typeDefinitions/props/pages/resume'
+import { ResumeContactProps } from '@/lib/utils/typeDefinitions/props/pages/resume/resume'
 
 const ResumeContact: FC<ResumeContactProps> = ({ isOpenToWork = false }): JSX.Element => {
   const contactMessage = isOpenToWork ? `Open To Work` : 'For Networking'

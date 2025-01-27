@@ -42,6 +42,7 @@ export interface OtherExperienceData {
 export interface PageLinkItem {
   id: string
   href: string
+  icon: string
   text: string
   dataTestId: string
 }
@@ -50,6 +51,7 @@ export interface PageLinkItem {
 export interface ProjectBase {
   isFeatured?: boolean
   image: string
+  icon: string
   title: string
   company: string
   role: string
@@ -97,7 +99,7 @@ export interface SkillCardItem {
   id: string
   imgSrc: StaticImageData
   imgAlt: string
-  title: string
+  technology: string
   years: number
 }
 
@@ -122,6 +124,7 @@ export interface StatusBadge {
 export interface TestimonialItem {
   id: string
   personPhoto: StaticImageData
+  personIcon: string
   personName: string
   personJob: string
   testimonialText: string
@@ -284,4 +287,11 @@ export interface Icon {
 // Skill Icon Data - Map skill keys to their respective icons.
 export interface SkillToIconMap {
   [key: string]: string
+}
+
+// Journey Step
+export interface CareerPathStep {
+  id: number
+  emoji: string
+  text: string
 }

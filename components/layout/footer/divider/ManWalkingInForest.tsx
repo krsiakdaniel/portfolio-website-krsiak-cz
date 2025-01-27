@@ -47,13 +47,13 @@ const ManWalkingInForest: FC = (): JSX.Element => {
 
   return (
     <>
-      <span role="img" aria-label={ARIA_LABELS.forest} className="text-2xl">
+      <span role="img" aria-label={ARIA_LABELS.forest} className="text-3xl">
         {forestIcon}
       </span>
       <span role="img" aria-label={ARIA_LABELS.manWalking} className="animate-walk text-2xl">
         🚶‍♂️
       </span>
-      <span role="img" aria-label={ARIA_LABELS.forestWithMountain} className="text-2xl">
+      <span role="img" aria-label={ARIA_LABELS.forestWithMountain} className="text-3xl">
         {mountainIcon}
       </span>
     </>

@@ -6,7 +6,13 @@ import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { PageNavigationLinkProps } from '@/lib/utils/typeDefinitions/props/layout/page-navigation'
 
-const PageNavigationLink: FC<PageNavigationLinkProps> = ({ href, text, arrowDirection, dataTestId }): JSX.Element => {
+const PageNavigationLink: FC<PageNavigationLinkProps> = ({
+  href,
+  icon,
+  text,
+  arrowDirection,
+  dataTestId,
+}): JSX.Element => {
   const hasArrowLeft = arrowDirection === ArrowDirectionEnum.Left
   const hasArrowRight = arrowDirection === ArrowDirectionEnum.Right
 
@@ -22,6 +28,7 @@ const PageNavigationLink: FC<PageNavigationLinkProps> = ({ href, text, arrowDire
       data-testid={dataTestId}
     >
       {hasArrowLeft && <IconArrow arrowDirection={ArrowDirectionEnum.Left} />}
+      <span>{icon}</span>
       <span>{text}</span>
       {hasArrowRight && <IconArrow arrowDirection={ArrowDirectionEnum.Right} />}
     </a>

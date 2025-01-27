@@ -20,7 +20,7 @@ test.describe('Header - Desktop Menu - Resume Link', () => {
 
     await test.step('Check if the H1 heading on the final page has the text "Resume"', async () => {
       const heading = await page.textContent('h1')
-      expect(heading).toBe('📝 Resume')
+      expect(heading).toBe('📝Resume')
     })
   })
 })

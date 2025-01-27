@@ -5,7 +5,7 @@ export const otherExperienceFrontEnd: OtherExperienceData[] = [
   {
     id: 1,
     company: 'Freelance',
-    role: 'Web Developer / Consultant',
+    role: 'Web Developer /\u00A0Consultant',
     description: `${YEARS.consultantWebsites} years · part-time — Websites for small companies.`,
   },
 ]

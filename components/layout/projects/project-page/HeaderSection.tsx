@@ -6,10 +6,20 @@ import Heading2 from '@/components/shared/Heading2'
 
 import { HeaderSectionProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
-const HeaderSection: FC<HeaderSectionProps> = ({ title, role, years, company, goBackLink, sectionID }): JSX.Element => {
+const HeaderSection: FC<HeaderSectionProps> = ({
+  icon,
+  title,
+  role,
+  years,
+  company,
+  goBackLink,
+  sectionID,
+}): JSX.Element => {
   return (
     <div className="mt-10">
-      <Heading1 textColor="text-neutral-900">{title}</Heading1>
+      <Heading1 textColor="text-neutral-900">
+        <span className="select-none">{icon}</span> <span className="ml-1">{title}</span>
+      </Heading1>
 
       <Heading2 customCss="mt-2">
         {role}

@@ -1,5 +1,7 @@
 import { iconsSkillsProjectsWorkGroupon } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
+import { ICON_EMOJI } from '@/localization/english'
+
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
@@ -20,7 +22,8 @@ export const projectsWorkQA: Project[] = [
       { id: 0, src: groupon1.src },
       { id: 1, src: groupon2.src },
     ],
-    title: '🛒 E-Commerce - Marketplace',
+    icon: ICON_EMOJI.shoppingCart,
+    title: 'E-Commerce - Marketplace',
     company: 'Groupon',
     role: 'QA Automation - Team Leader',
     years: '4\u00A0months',

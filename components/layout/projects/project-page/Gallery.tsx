@@ -26,7 +26,7 @@ const Gallery: FC<GalleryProps> = ({ imageShowcase = [] }): JSX.Element => {
               src={image.src}
               width={IMAGE_WIDTH}
               height={IMAGE_HEIGHT}
-              customCss="border-1 mt-8 rounded-lg border border-violet-300 bg-violet-50 p-1"
+              customCss="border-1 mt-8 rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md"
               alt={`project-image-${image.id}`}
               loading="lazy"
               placeholder="blur"

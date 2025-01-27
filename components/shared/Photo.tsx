@@ -5,7 +5,7 @@ import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
 
 import { TEXT } from '@/localization/english'
 
-import { PhotoProps } from '@/lib/utils/typeDefinitions/props/pages/resume'
+import { PhotoProps } from '@/lib/utils/typeDefinitions/props/pages/resume/resume'
 
 import openToWork from '@/public/images/png/open-to-work.png'
 import krsiak from '@/public/images/webp/photo/krsiak-daniel-296x296.webp'
@@ -24,7 +24,7 @@ const Photo: FC<PhotoProps> = ({ isOpenToWork }): JSX.Element => {
           height={IMAGE_HEIGHT}
           alt={TEXT.nameDanielKrsiak}
           loading="lazy"
-          customCss="rounded-full border border-violet-300 bg-violet-50 p-1"
+          customCss="rounded-full border border-violet-300 bg-violet-50 p-1 shadow-md"
         />
 
         {/* image overlay */}
