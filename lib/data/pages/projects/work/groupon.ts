@@ -36,7 +36,7 @@ export const sections: Section[] = [
   {
     id: 2,
     title: 'Responsibility #1:',
-    titleHighlight: 'QA Automation and Testing Scripts',
+    titleHighlight: 'QA Automation and\u00A0Testing Scripts',
     items: [
       {
         id: '2-0',

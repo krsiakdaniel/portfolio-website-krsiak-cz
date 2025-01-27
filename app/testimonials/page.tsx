@@ -12,7 +12,7 @@ import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimon
 import { personalTestimonials } from '@/lib/data/pages/testimonials/personalTestimonials'
 import { workTestimonials } from '@/lib/data/pages/testimonials/workTestimonials'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -25,11 +25,20 @@ export const metadata = {
 const Testimonials: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.testimonials}>
-      <BreadCrumbs level1Url={PAGES_URL.testimonials} level1Text={TEXT.testimonials} />
+      <BreadCrumbs
+        level1Url={PAGES_URL.testimonials}
+        level1Icon={ICON_EMOJI.speechBalloon}
+        level1Text={TEXT.testimonials}
+      />
 
       <div className="mt-10">
         <div>
-          <Heading1>{TEXT.testimonials}</Heading1>
+          <Heading1>
+            <span role="img" className="select-none">
+              {ICON_EMOJI.speechBalloon}
+            </span>
+            <span className="ml-4">{TEXT.testimonials}</span>
+          </Heading1>
           <TestimonialsIntroduction />
         </div>
 
@@ -52,6 +61,7 @@ const Testimonials: FC = (): JSX.Element => {
 
       <PageNavigation
         linkPrevious={PAGES_URL.personal.mainUrl}
+        iconPrevious={ICON_EMOJI.rocket}
         namePrevious={TEXT.personalProjects}
         dataTestIdPrevious={DATA_TEST_IDS.page.testimonials.previous}
       />

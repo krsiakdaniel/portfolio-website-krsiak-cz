@@ -12,7 +12,7 @@ import CallToActionWorkExperience from '@/components/shared/call-to-action/cta-b
 
 import { metaDataHome } from '@/lib/data/metadata/pages/metaDataHome'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -35,6 +35,7 @@ const Page: FC = (): JSX.Element => {
 
       <PageNavigation
         linkNext={PAGES_URL.work.mainUrl}
+        iconNext={ICON_EMOJI.manTechnologist.lightSkinTone}
         nameNext={TEXT.workExperience}
         dataTestIdNext={DATA_TEST_IDS.page.home.next}
       />

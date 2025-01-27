@@ -19,6 +19,7 @@ export type GitHubRepositoryLinkProps = {
 
 // Header Section Props
 export type HeaderSectionProps = {
+  icon?: string
   company?: string
   goBackLink: GoBackLinkEnum
   role?: string

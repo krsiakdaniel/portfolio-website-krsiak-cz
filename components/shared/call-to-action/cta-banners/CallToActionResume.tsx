@@ -15,7 +15,7 @@ const CallToActionResume: FC<CallToActionResumeProps> = ({
   return (
     <CallToAction
       highlight="React Developer"
-      heading="Explore My Resume"
+      heading={`Explore My\u00A0Resume`}
       textMobileAndDesktop={`Learn about  my skills and experience, to\u00A0understand my React Developer career.`}
       textDesktop="From startup to large corporations I have worked on a variety of projects."
       link={PAGES_URL.resume}

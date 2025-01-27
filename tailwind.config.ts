@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  // Config file for Tailwind CSS
   content: [
     './node_modules/flowbite-react/lib/**/*.js',
     './app/**/*.{js,ts,jsx,tsx,mdx}', // New - https://nextjs.org/docs/app
@@ -45,19 +46,11 @@ const config: Config = {
     xl: '1280px',
     '2xl': '1536px',
   },
+  // Theme configuration
   theme: {
-    extend: {
-      keyframes: {
-        walk: {
-          '0%, 100%': { transform: 'translateX(0)' },
-          '50%': { transform: 'translateX(2px)' },
-        },
-      },
-      animation: {
-        walk: 'walk 2s ease-in-out infinite',
-      },
-    },
+    extend: {},
   },
+  // Plugins
   plugins: [require('flowbite/plugin')],
 }
 

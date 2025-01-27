@@ -12,7 +12,7 @@ import Heading1 from '@/components/shared/Heading1'
 
 import { metaDataResume } from '@/lib/data/metadata/pages/metaDataResume'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -25,11 +25,19 @@ export const metadata = {
 const Resume: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.resume}>
-      <BreadCrumbs level1Url={PAGES_URL.resume} level1Text={TEXT.resume} />
+      <BreadCrumbs level1Url={PAGES_URL.resume} level1Icon={ICON_EMOJI.memo} level1Text={TEXT.resume} />
 
       <div className="mt-10">
-        <Heading1>{TEXT.resume}</Heading1>
-        <ResumeIntroduction />
+        <div>
+          <Heading1>
+            <span role="img" className="select-none">
+              {ICON_EMOJI.memo}
+            </span>
+            <span className="ml-4">{TEXT.resume}</span>
+          </Heading1>
+          <ResumeIntroduction />
+        </div>
+
         <CallToActionResumeDownload />
         <CareerPath />
         <ResumeContact isOpenToWork={true} />
@@ -38,9 +46,11 @@ const Resume: FC = (): JSX.Element => {
 
       <PageNavigation
         linkPrevious={PAGES_URL.work.mainUrl}
+        iconPrevious={ICON_EMOJI.manTechnologist.lightSkinTone}
         namePrevious={TEXT.workExperience}
         dataTestIdPrevious={DATA_TEST_IDS.page.resume.previous}
         linkNext={PAGES_URL.personal.mainUrl}
+        iconNext={ICON_EMOJI.rocket}
         nameNext={TEXT.personalProjects}
         dataTestIdNext={DATA_TEST_IDS.page.resume.next}
       />

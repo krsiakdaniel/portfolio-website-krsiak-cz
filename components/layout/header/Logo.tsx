@@ -25,7 +25,11 @@ const Logo: FC = (): JSX.Element => {
         <div>
           <ImageComponent src={logo} width={IMAGE_WIDTH} height={IMAGE_HEIGHT} alt="logo" loading="eager" />
         </div>
-        <Paragraph marginTop="mt-0" size="text-md" customCss="cursor-pointer font-bold group-hover:text-violet-600">
+        <Paragraph
+          marginTop="mt-0"
+          size="text-md"
+          customCss="select-none cursor-pointer font-bold group-hover:text-violet-600"
+        >
           {TEXT.logo}
         </Paragraph>
       </Link>

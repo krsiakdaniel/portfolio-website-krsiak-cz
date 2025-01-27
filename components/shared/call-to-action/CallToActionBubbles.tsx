@@ -1,13 +1,43 @@
-import { FC } from 'react'
+'use client'
+
+import { FC, useEffect, useState } from 'react'
 
 import Bubble from '@/components/shared/Bubble'
 
+import { generateBubbleCss } from '@/lib/utils/helpers/bubbles/generateBubbleCss'
+import { getBubbleStyles } from '@/lib/utils/helpers/bubbles/getBubbleStyles'
+import { shuffleArrayWithBubblesColors } from '@/lib/utils/helpers/bubbles/shuffleArrayWithBubblesColors'
+import { BubbleStyle } from '@/lib/utils/typeDefinitions/interfaces'
+
+/**
+ * CallToActionBubbles Component
+ *
+ * Displays a set of bubbles with randomized colors.
+ *
+ * The colors of the bubbles are shuffled on component mount.
+ * Each bubble has a specific position, size, and hover effect.
+ *
+ * @returns {JSX.Element} The rendered component.
+ */
 const CallToActionBubbles: FC = (): JSX.Element => {
+  const initialBubblesColors = ['bg-blue-300', 'bg-violet-400', 'bg-blue-400']
+
+  // State to manage the colors of the bubbles
+  const [colors, setColors] = useState<string[]>(initialBubblesColors)
+
+  // Shuffle the colors when the component mounts
+  useEffect(() => {
+    setColors(shuffleArrayWithBubblesColors(initialBubblesColors))
+  }, [])
+
+  // Generate styles for the bubbles based on the colors
+  const bubbleStyles: BubbleStyle[] = getBubbleStyles(colors)
+
   return (
     <>
-      <Bubble customCss="-left-10 -top-8 h-24 w-24 bg-blue-300 transition-transform duration-500 group-hover:-translate-x-2 group-hover:translate-y-2" />
-      <Bubble customCss="-right-16 -top-8 h-44 w-44 bg-violet-400 transition-transform duration-500 group-hover:translate-x-2 group-hover:translate-y-2" />
-      <Bubble customCss="-bottom-10 -right-8 h-32 w-32 bg-blue-400 transition-transform duration-500 group-hover:translate-x-2 group-hover:-translate-y-2" />
+      {(bubbleStyles ?? []).map((bubbleStyle) => (
+        <Bubble key={bubbleStyle.id} customCss={generateBubbleCss(bubbleStyle)} />
+      ))}
     </>
   )
 }

@@ -1,3 +1,32 @@
+export const ICON_EMOJI = {
+  latinCross: '✝️',
+  flagJapan: '🇯🇵',
+  flagCzechRepublic: '🇨🇿',
+  house: '🏠',
+  moneyBag: '💰',
+  rocket: '🚀',
+  speechBalloon: '💬',
+  bank: '🏦',
+  umbrellaWithRainDrops: '☔',
+  laptop: '💻',
+  books: '📚',
+  shoppingCart: '🛒',
+  globeShowingAmericas: '🌎',
+  memo: '📝',
+  ghost: '👻',
+  verticalTrafficLight: '🚦',
+  manTechnologist: {
+    lightSkinTone: '👨🏻‍💻',
+  },
+  man: {
+    lightSkinTone: '👨🏻',
+    officeWorker: '👨‍💼',
+  },
+  woman: {
+    officeWorker: '👩‍💼',
+  },
+}
+
 export const COMMON_VALUES = {
   nameDanielKrsiak: 'Daniel Kršiak',
   reactDeveloper: 'React Developer',
@@ -42,12 +71,13 @@ export const SOCIAL_LINKS = {
   myLinkedIn: 'LinkedIn — Krsiak Daniel',
   gitHub: 'GitHub',
   gitHubCode: 'GitHub Code',
+  gitHubKrsiak: 'GitHub — website-krsiak-cz',
   resumePDF: 'Resume PDF',
   twitter: '@krsiak_daniel',
 }
 
 export const HOME = {
-  home: '🏠 Home',
+  home: 'Home',
   homeTextOnly: 'Home',
   logo: 'krsiak.cz',
   nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
@@ -56,13 +86,13 @@ export const HOME = {
 }
 
 export const RESUME = {
-  resume: '📝 Resume',
+  resume: 'Resume',
   resumeTextOnly: 'Resume',
   downloadResume: 'Download Resume in PDF',
 }
 
 export const TESTIMONIALS = {
-  testimonials: '💬 Testimonials',
+  testimonials: 'Testimonials',
   testimonialsTextOnly: 'Testimonials',
   nameCastro: 'Alexandre Castro',
   nameKvapil: 'Roman Kvapil',
@@ -73,28 +103,28 @@ export const TESTIMONIALS = {
 }
 
 export const PROJECTS = {
-  cryptoMania: '💰 CryptoMania',
-  personalProjects: '🚀 Personal Projects',
-  portfolioWebsite: '👨🏻‍💻 Portfolio Website',
+  cryptoMania: 'CryptoMania',
+  personalProjects: 'Personal Projects',
+  portfolioWebsite: 'Portfolio Website',
   next: COMMON_VALUES.next,
   nextShort: COMMON_VALUES.nextShort,
   react: COMMON_VALUES.react,
-  workExperience: '👨🏻‍💻 Work Experience',
+  workExperience: 'Work Experience',
   workExperienceTextOnly: 'Work Experience',
 }
 
 export const STATUS_PAGE = {
-  statusPage: '🚦 Status Page',
+  statusPage: 'Status Page',
 }
 
 export const COMPANIES = {
-  smartsuppDashboard: '💬 Smartsupp Dashboard',
-  komercniBanka: '🏦 Komerční banka',
-  kooperativa: '☔ Kooperativa',
-  smartsuppWeb: '💻 Smartsupp Web',
-  smartsuppHELP: '📚 Smartsupp HELP',
-  groupon: '🛒 Groupon',
-  moravia: '🌎 Moravia IT',
+  smartsuppDashboard: 'Smartsupp — Chat Dashboard',
+  komercniBanka: 'Komerční banka',
+  kooperativa: 'Kooperativa',
+  smartsuppWeb: 'Smartsupp — Web',
+  smartsuppHELP: 'Smartsupp — HELP',
+  groupon: 'Groupon',
+  moravia: 'Moravia IT',
 }
 
 export const WORK = {
@@ -109,18 +139,8 @@ export const PROJECT_INFORMATION = {
   links: 'Links',
 }
 
-export const SOCIAL_PROOF = {
-  sectionTitle: 'Startup &\u00A0Corporate',
-  companiesTitle: 'React',
-  companiesDescription: 'Production level code',
-  featuresTitle: 'Features',
-  featuresDescription: 'Countless UI components',
-  automationTitle: 'Automation',
-  automationDescription: 'Testing and CI/CD',
-}
-
 export const MY_WORK = {
-  workedForCompanies: 'Worked For Companies',
+  workedForCompanies: 'Worked For\u00A0Companies',
   skillsForCompany: 'Skills',
   committedMindset: 'Mindset',
   problemSolving: 'Creative',
@@ -521,6 +541,10 @@ export const IMAGE_ALT = {
 
 export const CONTACT = {
   scanQR: 'Scan With Phone',
+}
+
+export const EASTER_EGG = {
+  ghostSound: 'wooooooo!',
 }
 
 export const TEXT = {

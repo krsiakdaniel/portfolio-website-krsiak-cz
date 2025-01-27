@@ -6,14 +6,20 @@ import TestimonialText from '@/components/pages/testimonials/TestimonialText'
 
 import { TestimonialProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
 
-const Testimonial: FC<TestimonialProps> = ({ personName, personJob, personPhoto, testimonialText }): JSX.Element => {
+const Testimonial: FC<TestimonialProps> = ({
+  personPhoto,
+  personIcon,
+  personName,
+  personJob,
+  testimonialText,
+}): JSX.Element => {
   return (
-    <div className="mx-auto mt-4 max-w-screen-xl px-4 pt-8">
+    <div className="mx-auto mt-4 max-w-screen-xl pt-8 md:px-8">
       <div className="mx-auto max-w-screen-md">
         <TestimonialQuote />
         <TestimonialText text={testimonialText} />
-        <div className="mt-4 flex flex-row items-center space-x-4">
-          <TestimonialPersonInfo name={personName} job={personJob} photo={personPhoto} />
+        <div className="mt-4 flex flex-row space-x-4">
+          <TestimonialPersonInfo photo={personPhoto} icon={personIcon} name={personName} job={personJob} />
         </div>
       </div>
     </div>

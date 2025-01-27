@@ -24,7 +24,7 @@ const Photo: FC<PhotoProps> = ({ isOpenToWork }): JSX.Element => {
           height={IMAGE_HEIGHT}
           alt={TEXT.nameDanielKrsiak}
           loading="lazy"
-          customCss="rounded-full border border-violet-300 bg-violet-50 p-1"
+          customCss="rounded-full border border-violet-300 bg-violet-50 p-1 shadow-md"
         />
 
         {/* image overlay */}

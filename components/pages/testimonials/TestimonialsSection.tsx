@@ -15,6 +15,7 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({ title, description,
         <Testimonial
           key={testimonial.id}
           personPhoto={testimonial.personPhoto}
+          personIcon={testimonial.personIcon}
           personName={testimonial.personName}
           personJob={testimonial.personJob}
           testimonialText={testimonial.testimonialText}

@@ -13,7 +13,7 @@ const Paragraph: FC<ParagraphProps> = ({
   children,
 }) => {
   return (
-    <p className={`${marginTop} ${size} ${textColor} ${customCss}`} {...getDataTestIdAttribute(dataTestId)}>
+    <p className={`break-words ${marginTop} ${size} ${textColor} ${customCss}`} {...getDataTestIdAttribute(dataTestId)}>
       {children}
     </p>
   )

@@ -10,6 +10,7 @@ import { ProjectSummaryCardProps } from '@/lib/utils/typeDefinitions/props/pages
 const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
   isFeatured,
   image,
+  icon,
   title,
   company,
   role,
@@ -31,6 +32,7 @@ const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
           <div>
             <ProjectDetails
               title={title}
+              icon={icon}
               company={company}
               role={role}
               description={description}
@@ -38,7 +40,9 @@ const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
               personalProjectNote={personalProjectNote}
             />
             <ProjectSkillsIcons skillsIcons={skillsIcons} />
-            <LinkButton href={linkProjectPage} linkText={linkText} isLinkExternal={false} dataTestId={dataTestId} />
+            <div className="mt-8 flex max-w-[248px]">
+              <LinkButton href={linkProjectPage} linkText={linkText} isLinkExternal={false} dataTestId={dataTestId} />
+            </div>
           </div>
         </div>
       </div>

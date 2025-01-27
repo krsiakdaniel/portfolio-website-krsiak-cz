@@ -9,7 +9,7 @@ const CustomersCount: FC<CustomersCountProps> = ({ count }): JSX.Element => {
   return (
     <List>
       <ListItem>
-        <span className="font-semibold text-neutral-600">{count} customers.</span>
+        <span className="font-bold text-neutral-600">{count} customers.</span>
       </ListItem>
     </List>
   )

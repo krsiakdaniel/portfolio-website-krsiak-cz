@@ -24,7 +24,7 @@ export const projectsWorkWordPress: Project[] = [
     ],
     title: '📚 SaaS Company - HELP Website',
     company: 'Smartsupp',
-    role: 'Admin & Content Writer',
+    role: 'Admin &\u00A0Content Writer',
     years: '6\u00A0months',
     description:
       'Responsible for the company HELP website running on WordPress and\u00A0writing tutorials. Localization into 9 languages.',

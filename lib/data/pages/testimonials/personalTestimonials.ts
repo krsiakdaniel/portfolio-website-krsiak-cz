@@ -1,4 +1,4 @@
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { TestimonialItem } from '@/lib/utils/typeDefinitions/interfaces'
 
@@ -9,7 +9,8 @@ export const personalTestimonials: TestimonialItem[] = [
   {
     id: TEXT.nameMoorhead,
     personPhoto: personMoorhead,
-    personName: `✝️ ${TEXT.nameMoorhead}`,
+    personIcon: ICON_EMOJI.latinCross,
+    personName: TEXT.nameMoorhead,
     personJob: 'Baptist Pastor ~ Grace Community Church',
     testimonialText: `
       I have known Daniel for almost a decade and he has always proven himself faithful.
@@ -20,7 +21,8 @@ export const personalTestimonials: TestimonialItem[] = [
   {
     id: TEXT.nameCastro,
     personPhoto: personCastro,
-    personName: `🤝 ${TEXT.nameCastro}`,
+    personIcon: ICON_EMOJI.man.lightSkinTone,
+    personName: TEXT.nameCastro,
     personJob: 'QA Tester and Content Manager ~\u00A0Smartlook',
     testimonialText: `
       On a personal note, Daniel helped me a great deal, when I started at Smartsupp. With him, I managed to learn so much on many different topics. 

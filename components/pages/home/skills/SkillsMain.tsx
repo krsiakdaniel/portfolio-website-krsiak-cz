@@ -19,7 +19,7 @@ const SkillsMain: FC = (): JSX.Element => {
             key={skill.id}
             imgSrc={skill.imgSrc}
             imgAlt={skill.imgAlt}
-            title={skill.title}
+            technology={skill.technology}
             years={skill.years}
           />
         ))}

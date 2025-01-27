@@ -7,18 +7,21 @@ export type DefaultNoLinkNavigationProps = {
 
 // Page Navigation Props
 export type PageNavigationProps = {
-  dataTestIdNext?: string
-  dataTestIdPrevious?: string
   linkNext?: string
-  linkPrevious?: string
+  iconNext?: string
   nameNext?: string
+  dataTestIdNext?: string
+  linkPrevious?: string
+  iconPrevious?: string
   namePrevious?: string
+  dataTestIdPrevious?: string
 }
 
 // Page Navigation Link Props
 export type PageNavigationLinkProps = {
-  dataTestId: string | undefined
-  arrowDirection?: ArrowDirectionEnum
   href: string
+  icon: string
   text: string
+  arrowDirection?: ArrowDirectionEnum
+  dataTestId: string | undefined
 }

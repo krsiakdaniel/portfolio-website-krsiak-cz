@@ -1,4 +1,4 @@
-import { skillIcons } from '@/lib/data/skill-icons/skillIcons'
+import { skillIcons } from '@/lib/data/shared/skill-icons/skillIcons'
 
 import { Icon } from '@/lib/utils/typeDefinitions/interfaces'
 import { SkillIconType } from '@/lib/utils/typeDefinitions/types'

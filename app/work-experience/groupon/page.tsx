@@ -7,7 +7,7 @@ import { metaDataGroupon } from '@/lib/data/metadata/pages/projects/work/metaDat
 import { sections } from '@/lib/data/pages/projects/work/groupon'
 import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview/quality-assurance/workQA'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -24,7 +24,7 @@ export const metadata = {
 const ProjectWorkGroupon: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
-      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.groupon, TEXT.groupon)}
+      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.groupon, ICON_EMOJI.shoppingCart, TEXT.groupon)}
       pageID={PROJECT_ID.work.groupon}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.qa}
@@ -33,9 +33,11 @@ const ProjectWorkGroupon: FC = (): JSX.Element => {
       PageNavigation={
         <PageNavigation
           linkPrevious={PAGES_URL.work.smartsupp.help}
+          iconPrevious={ICON_EMOJI.books}
           namePrevious={TEXT.smartsuppHELP}
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.groupon.previous}
           linkNext={PAGES_URL.work.moravia}
+          iconNext={ICON_EMOJI.globeShowingAmericas}
           nameNext={TEXT.moravia}
           dataTestIdNext={DATA_TEST_IDS.projects.work.groupon.next}
         />

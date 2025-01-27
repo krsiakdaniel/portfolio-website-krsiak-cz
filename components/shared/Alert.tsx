@@ -25,12 +25,14 @@ const Alert: FC<AlertProps> = ({ type = AlertTypeEnum.Info, title, description, 
 
   return (
     <div role="alert" className={`mt-4 rounded-lg border p-4 ${typeClasses[type]}`}>
-      <div className="flex items-center">
-        {iconInfo}
+      <div className="flex items-start md:items-center">
+        <span className="mt-1 md:mt-0">{iconInfo}</span>
         <h3 className="text-lg font-medium">{title}</h3>
       </div>
       <div className="mb-4 mt-2 text-sm">{description}</div>
-      <div className="flex">{linkComponent}</div>
+      <div className="sm:w-1/3">
+        <div className="flex">{linkComponent}</div>
+      </div>
     </div>
   )
 }

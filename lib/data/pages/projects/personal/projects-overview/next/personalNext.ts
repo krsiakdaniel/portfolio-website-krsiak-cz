@@ -24,7 +24,8 @@ export const projectsPersonalNext: Project[] = [
       { id: 2, src: krsiak3.src },
       { id: 3, src: krsiak4.src },
     ],
-    title: '👨🏻‍💻 Portfolio Website',
+    icon: '👨🏻‍💻',
+    title: 'Portfolio Website',
     company: 'Personal project',
     role: 'Front End - Next.js',
     description:

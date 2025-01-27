@@ -3,6 +3,8 @@ import { iconsSkillsProjectsWorkKomercniBanka } from '@/lib/data/pages/projects/
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { ICON_EMOJI } from '@/localization/english'
+
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
@@ -23,7 +25,8 @@ export const workReactKomercniBanka: Project = {
     { id: 2, src: komercniBanka3.src },
     { id: 3, src: komercniBanka4.src },
   ],
-  title: '🏦 Commerce Bank - Website',
+  icon: ICON_EMOJI.bank,
+  title: 'Commerce Bank - Website',
   company: 'Komerční banka',
   role: 'React Developer',
   years: '10\u00A0months',

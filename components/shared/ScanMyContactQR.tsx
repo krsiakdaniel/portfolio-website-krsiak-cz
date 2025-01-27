@@ -12,16 +12,20 @@ import contactQR from '@/public/images/svg/vcard-contact/krsiak-daniel-qr-code-v
 const IMAGE_WIDTH = 296
 const IMAGE_HEIGHT = 296
 
-const ScanMyContactQR: FC<ScanMyContactQRProps> = ({ showImageCaption = false }): JSX.Element => {
+const ScanMyContactQR: FC<ScanMyContactQRProps> = ({
+  width = IMAGE_WIDTH,
+  height = IMAGE_HEIGHT,
+  showImageCaption = false,
+}): JSX.Element => {
   return (
     <div className="flex flex-col items-center">
       <ImageComponent
         src={contactQR}
-        width={IMAGE_WIDTH}
-        height={IMAGE_HEIGHT}
+        width={width}
+        height={height}
         alt="Contact Me - QR code"
         loading="eager"
-        customCss="rounded-lg border border-violet-300 bg-violet-50 p-1"
+        customCss="rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md"
         caption={showImageCaption ? <ImageComponentCaption text={TEXT.scanQR} /> : ''}
       />
     </div>

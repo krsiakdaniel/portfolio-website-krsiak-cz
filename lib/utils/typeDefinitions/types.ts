@@ -2,10 +2,12 @@ import { SkillCategoryEnum, SkillIconEnum } from '@/lib/utils/typeDefinitions/en
 
 // Breadcrumbs
 export type BreadCrumbsType = {
-  level1Text: string
   level1Url: string
-  level2Text?: string
+  level1Icon: string
+  level1Text: string
   level2Url?: string
+  level2Icon?: string
+  level2Text?: string
 }
 
 // Get Menu Link ID

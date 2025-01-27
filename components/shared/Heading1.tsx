@@ -15,7 +15,7 @@ const Heading1: FC<Heading1Props> = ({
 }): JSX.Element => {
   return (
     <h1
-      className={`font-bold tracking-tight ${textColor} text-${textSize} sm:text-${textSizeSM} md:text-${textSizeMD} ${customCss}`}
+      className={`break-words font-bold tracking-tight ${textColor} text-${textSize} sm:text-${textSizeSM} md:text-${textSizeMD} ${customCss}`}
       {...getDataTestIdAttribute(dataTestId)}
     >
       {children}

@@ -7,6 +7,7 @@ export type ProjectDetailsProps = {
   description: string
   personalProjectNote?: string
   role: string
+  icon: string
   title: string
 }
 

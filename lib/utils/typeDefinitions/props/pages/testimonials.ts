@@ -4,9 +4,10 @@ import { TestimonialItem } from '@/lib/utils/typeDefinitions/interfaces'
 
 // Testimonial Props
 export type TestimonialProps = {
-  personJob: string
-  personName: string
   personPhoto: StaticImageData
+  personIcon: string
+  personName: string
+  personJob: string
   testimonialText: string
 }
 
@@ -22,9 +23,10 @@ export type TestimonialHeaderProps = {
 
 // Testimonial Person Info Props
 export type TestimonialPersonInfoProps = {
-  job: string
-  name: string
   photo: StaticImageData
+  name: string
+  icon: string
+  job: string
 }
 
 // Testimonials Section Props

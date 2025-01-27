@@ -23,7 +23,7 @@ const CallToAction: FC<CallToActionProps> = ({
     <div className="group relative mt-20">
       <CallToActionBubbles />
 
-      <section className="relative rounded-lg border border-blue-300 bg-blue-100 p-8 md:p-16">
+      <section className="relative rounded-lg border border-blue-300 bg-blue-100 p-8 transition duration-500 hover:border-blue-400 md:p-16">
         <div className="flex">
           <div className="md:w-2/3">
             <CallToActionTexts
@@ -33,7 +33,9 @@ const CallToAction: FC<CallToActionProps> = ({
               textMobileAndDesktop={textMobileAndDesktop}
               textDesktop={textDesktop}
             />
-            <LinkButton href={link} linkText={linkText} isLinkExternal={isLinkExternal} dataTestId={dataTestId} />
+            <div className="mt-8 flex max-w-[248px]">
+              <LinkButton href={link} linkText={linkText} isLinkExternal={isLinkExternal} dataTestId={dataTestId} />
+            </div>
           </div>
 
           <div className={`hidden items-center justify-center md:flex md:w-1/3`}>

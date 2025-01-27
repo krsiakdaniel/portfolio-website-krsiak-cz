@@ -24,7 +24,8 @@ export const projectsPersonalReact: Project[] = [
       { id: 2, src: cryptomania3.src },
       { id: 3, src: cryptomania4.src },
     ],
-    title: '💰 CryptoMania',
+    icon: '💰',
+    title: 'CryptoMania',
     company: 'Personal project',
     role: 'Front End - React',
     description:

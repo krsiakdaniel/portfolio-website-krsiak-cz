@@ -7,7 +7,7 @@ import { metaDataSmartsuppDashboard } from '@/lib/data/metadata/pages/projects/w
 import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
 import { sections } from '@/lib/data/pages/projects/work/smartsuppDashboard'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -24,7 +24,11 @@ export const metadata = {
 const ProjectWorkSmartsuppDashboard: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
-      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.smartsupp.dashboard, TEXT.smartsuppDashboard)}
+      breadCrumbs={getBreadcrumbsWork(
+        PAGES_URL.work.smartsupp.dashboard,
+        ICON_EMOJI.speechBalloon,
+        TEXT.smartsuppDashboard,
+      )}
       pageID={PROJECT_ID.work.smartsupp.dashboard}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.react}
@@ -33,9 +37,11 @@ const ProjectWorkSmartsuppDashboard: FC = (): JSX.Element => {
       PageNavigation={
         <PageNavigation
           linkPrevious={PAGES_URL.work.mainUrl}
+          iconPrevious={ICON_EMOJI.manTechnologist.lightSkinTone}
           namePrevious={TEXT.workExperience}
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.smartsupp.dashboard.previous}
           linkNext={PAGES_URL.work.komercniBanka}
+          iconNext={ICON_EMOJI.bank}
           nameNext={TEXT.komercniBanka}
           dataTestIdNext={DATA_TEST_IDS.projects.work.smartsupp.dashboard.next}
         />

@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
-/* # Import Tailwind CSS base, components, and utilities */
+/* Import Tailwind CSS base styles */
 @tailwind base;
+
+/* Import Tailwind CSS component styles */
 @tailwind components;
+
+/* Import Tailwind CSS utility styles */
 @tailwind utilities;
 
-/* # Class names are in file: 'lib/utils/constants/global-css-classes/index.ts' */
+/* # Class names used in JSX are in file: 'lib/utils/constants/global-css-classes/index.ts' */
 
 /* # Define base styles */
 @layer base {
@@ -29,6 +33,93 @@
   .divider-text,
   .heading-section {
     font-family: 'Rubik', sans-serif;
+  }
+
+  /* ## Animations */
+  /* ### Ghost - Previous */
+  @-webkit-keyframes animateGhostPrevious {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-30px);
+    }
+  }
+
+  @keyframes animateGhostPrevious {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-30px);
+    }
+  }
+
+  .animate-ghost-previous {
+    transition: transform 2s ease-in-out;
+  }
+
+  .animate-ghost-previous:hover {
+    -webkit-animation: animateGhostPrevious 2s ease-in-out infinite;
+    animation: animateGhostPrevious 2s ease-in-out infinite;
+  }
+
+  /* ### Ghost - Next */
+  @-webkit-keyframes animateGhostNext {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(30px);
+    }
+  }
+
+  @keyframes animateGhostNext {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(30px);
+    }
+  }
+
+  .animate-ghost-next {
+    transition: transform 2s ease-in-out;
+  }
+
+  .animate-ghost-next:hover {
+    -webkit-animation: animateGhostNext 2s ease-in-out infinite;
+    animation: animateGhostNext 2s ease-in-out infinite;
+  }
+
+  /* ### Forest - Man Walking */
+  @-webkit-keyframes walk {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(2px);
+    }
+  }
+
+  @keyframes walk {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(2px);
+    }
+  }
+
+  .animate-walk {
+    -webkit-animation: walk 2s ease-in-out infinite;
+    animation: walk 2s ease-in-out infinite;
   }
 
   /* ## Utilities */

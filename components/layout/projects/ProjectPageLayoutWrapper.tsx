@@ -20,9 +20,10 @@ const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
   showAlert,
   PageNavigation,
 }): JSX.Element => {
-  const { level1Url, level1Text, level2Url, level2Text } = breadCrumbs
+  const { level1Url, level1Icon, level1Text, level2Url, level2Icon, level2Text } = breadCrumbs
 
   const {
+    icon,
     title,
     role,
     years,
@@ -38,8 +39,16 @@ const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
   return (
     <>
       <PageContainer id={pageID}>
-        <BreadCrumbs level1Url={level1Url} level1Text={level1Text} level2Url={level2Url} level2Text={level2Text} />
+        <BreadCrumbs
+          level1Url={level1Url}
+          level1Icon={level1Icon}
+          level1Text={level1Text}
+          level2Url={level2Url}
+          level2Icon={level2Icon}
+          level2Text={level2Text}
+        />
         <HeaderSection
+          icon={icon}
           title={title}
           role={role}
           years={years}
