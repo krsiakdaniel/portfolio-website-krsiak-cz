@@ -295,21 +295,3 @@ export interface CareerPathStep {
   emoji: string
   text: string
 }
-
-/**
- * Generates the CSS classes for a bubble.
- *
- * @param {string} color - The color class of the bubble.
- * @param {string} position - The position class of the bubble.
- * @param {string} size - The size class of the bubble.
- * @param {string} hoverTranslate - The hover translate class of the bubble.
- *
- * @returns {string} The concatenated CSS classes.
- */
-export interface BubbleStyleCSS {
-  id: string
-  color: string
-  position: string
-  size: string
-  hoverTranslate: string
-}
