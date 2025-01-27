@@ -1,5 +1,7 @@
 import { iconsSkillsProjectsWorkSmartsuppHelp } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
+import { ICON_EMOJI } from '@/localization/english'
+
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
@@ -22,7 +24,8 @@ export const projectsWorkWordPress: Project[] = [
       { id: 1, src: smartsuppHelp2.src },
       { id: 2, src: smartsuppHelp3.src },
     ],
-    title: '📚 SaaS Company - HELP Website',
+    icon: ICON_EMOJI.books,
+    title: 'SaaS Company - HELP Website',
     company: 'Smartsupp',
     role: 'Admin &\u00A0Content Writer',
     years: '6\u00A0months',

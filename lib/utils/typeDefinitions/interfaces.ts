@@ -289,6 +289,13 @@ export interface SkillToIconMap {
   [key: string]: string
 }
 
+// Journey Step
+export interface CareerPathStep {
+  id: number
+  emoji: string
+  text: string
+}
+
 /**
  * Generates the CSS classes for a bubble.
  *

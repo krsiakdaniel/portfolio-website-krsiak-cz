@@ -1,5 +1,7 @@
 import { iconsSkillsProjectsWorkSmartsuppWeb } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
+import { ICON_EMOJI } from '@/localization/english'
+
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
@@ -24,7 +26,7 @@ export const projectsWorkFrontEnd: Project[] = [
       { id: 2, src: smartsuppWeb3.src },
       { id: 3, src: smartsuppWeb4.src },
     ],
-    icon: '👨🏻‍💻',
+    icon: ICON_EMOJI.manTechnologist.lightSkinTone,
     title: 'SaaS Company - Website',
     company: 'Smartsupp',
     role: 'Front End Developer',
