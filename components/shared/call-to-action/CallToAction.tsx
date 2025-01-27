@@ -5,6 +5,8 @@ import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIco
 import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTexts'
 import LinkButton from '@/components/shared/LinkButton'
 
+import { ICON_EMOJI } from '@/localization/english'
+
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { CallToActionProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
@@ -17,7 +19,7 @@ const CallToAction: FC<CallToActionProps> = ({
   isLinkExternal = false,
   linkText,
   dataTestId,
-  icon,
+  icon = ICON_EMOJI.atomSymbol,
 }): JSX.Element => {
   return (
     <div className="group relative mt-20">

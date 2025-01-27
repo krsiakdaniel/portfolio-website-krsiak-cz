@@ -3,6 +3,8 @@ import { FC } from 'react'
 
 import Paragraph from '@/components/shared/Paragraph'
 
+import { ICON_EMOJI } from '@/localization/english'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
@@ -23,7 +25,7 @@ const FooterCopyright: FC = (): JSX.Element => {
       </span>
 
       <span role="img" className="select-none">
-        😼 😺
+        {ICON_EMOJI.cat.nufka} {ICON_EMOJI.cat.ruzenka}
       </span>
     </Paragraph>
   )

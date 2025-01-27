@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
@@ -17,7 +17,7 @@ const CallToActionWorkExperience: FC = (): JSX.Element => {
       link={PAGES_URL.work.mainUrl}
       linkText={TEXT.workExperienceTextOnly}
       dataTestId={DATA_TEST_IDS.callToAction.linkWorkExperience}
-      icon="👨🏻‍💻"
+      icon={ICON_EMOJI.manTechnologist.lightSkinTone}
     />
   )
 }
