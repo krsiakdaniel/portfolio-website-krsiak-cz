@@ -25,24 +25,21 @@ const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
 }): JSX.Element => {
   return (
     <section>
-      <div className="flex flex-col lg:flex-row lg:space-x-10">
-        <div className={`grid grid-cols-1 items-start gap-8 lg:mx-auto lg:grid lg:grid-cols-2 ${className}`}>
-          <ProjectImage isFeatured={isFeatured} image={image} title={title} />
-
-          <div>
-            <ProjectDetails
-              title={title}
-              icon={icon}
-              company={company}
-              role={role}
-              description={description}
-              customers={customers}
-              personalProjectNote={personalProjectNote}
-            />
-            <ProjectSkillsIcons skillsIcons={skillsIcons} />
-            <div className="mt-8 flex max-w-[248px]">
-              <LinkButton href={linkProjectPage} linkText={linkText} isLinkExternal={false} dataTestId={dataTestId} />
-            </div>
+      <div className={`grid grid-cols-1 gap-8 lg:grid-cols-2 ${className}`}>
+        <ProjectImage isFeatured={isFeatured} image={image} title={title} />
+        <div>
+          <ProjectDetails
+            title={title}
+            icon={icon}
+            company={company}
+            role={role}
+            description={description}
+            customers={customers}
+            personalProjectNote={personalProjectNote}
+          />
+          <ProjectSkillsIcons skillsIcons={skillsIcons} />
+          <div className="mt-8 flex max-w-[248px]">
+            <LinkButton href={linkProjectPage} linkText={linkText} isLinkExternal={false} dataTestId={dataTestId} />
           </div>
         </div>
       </div>

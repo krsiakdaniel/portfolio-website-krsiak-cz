@@ -160,7 +160,9 @@ export const STATUS_PAGE = {
 }
 
 export const COMPANIES = {
-  smartsuppDashboard: 'Smartsupp — Chat Dashboard',
+  smartsuppDashboard: 'Smartsupp Dashboard',
+  customerCareChatDashboard: 'Chat Dashboard',
+  smartsuppChatDashboard: 'Smartsupp — Chat Dashboard',
   komercniBanka: 'Komerční banka',
   kooperativa: 'Kooperativa',
   smartsuppWeb: 'Smartsupp — Web',
@@ -186,6 +188,10 @@ export const MY_WORK = {
   skillsForCompany: 'Skills',
   committedMindset: 'Mindset',
   problemSolving: 'Creative',
+  reactDev: 'React Dev',
+  webDev: 'Web Dev',
+  testing: 'Testing',
+  myJourney: 'My journey:',
 }
 
 export const MISC = {
@@ -394,7 +400,7 @@ export const META_SMARTSUPP_DASHBOARD = {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
     smartsuppDashboard: 'Smartsupp Dashboard',
-    customerCareChatDashboard: 'Chat Dashboard',
+    chatDashboard: 'Chat Dashboard',
     javaScript: COMMON_VALUES.javaScript,
     typeScript: COMMON_VALUES.typeScript,
     react: COMMON_VALUES.react,
@@ -576,6 +582,7 @@ export const IMAGE_ALT = {
   microsoft: 'Microsoft',
   smartsupp: 'Smartsupp',
   kooperativa: 'Kooperativa',
+  groupon: 'Groupon',
   ibm: 'IBM',
   rwsMoravia: 'RWS - Moravia',
   komercniBanka: 'Komerční Banka',

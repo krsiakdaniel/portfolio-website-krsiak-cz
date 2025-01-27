@@ -18,7 +18,7 @@ const HeaderSection: FC<HeaderSectionProps> = ({
   return (
     <div className="mt-10">
       <Heading1 textColor="text-neutral-900">
-        <span className="select-none">{icon}</span> <span className="ml-1">{title}</span>
+        <span className="select-none">{icon}</span> <span className="ml-0">{title}</span>
       </Heading1>
 
       <Heading2 customCss="mt-2">

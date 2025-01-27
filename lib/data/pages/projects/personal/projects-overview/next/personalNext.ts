@@ -31,7 +31,7 @@ export const projectsPersonalNext: Project[] = [
     company: 'Personal project',
     role: 'Front End - Next.js',
     description:
-      'My personal portfolio website to showcase my work and skills. The\u00A0latest iteration of what I know and can code as React Developer.',
+      'My personal portfolio website to showcase my work and skills I have. Production level code that I code as React Developer.',
     skillsIcons: iconsSkillsProjectsPersonalKrsiak,
     skillsOverview: [
       {

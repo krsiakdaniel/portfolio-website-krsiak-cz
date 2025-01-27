@@ -32,7 +32,7 @@ export const projectsWorkFrontEnd: Project[] = [
     role: 'Front End Developer',
     years: '1\u00A0year',
     description:
-      'I created the company website Front End. I worked closely with the\u00A0main UX designer on new brand color theme and layout decisions.',
+      'I created SaaS company website and was responsible for Front End. I\u00A0worked with the\u00A0main UX designer on new brand color theme.',
     skillsIcons: iconsSkillsProjectsWorkSmartsuppWeb,
     skillsOverview: [
       {

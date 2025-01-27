@@ -31,10 +31,10 @@ const StatusPage: FC = (): JSX.Element => {
       <div className="mt-10">
         <div>
           <Heading1>
-            <span role="img" className="select-none">
+            <span role="img" className="mr-4 select-none">
               {ICON_EMOJI.verticalTrafficLight}
             </span>
-            <span className="ml-4">{TEXT.statusPage}</span>
+            <span>{TEXT.statusPage}</span>
           </Heading1>
           <StatusPageIntroduction />
         </div>

@@ -3,7 +3,7 @@ import { iconsSkillsProjectsWorkSmartsuppDashboard } from '@/lib/data/pages/proj
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { ICON_EMOJI } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
@@ -26,12 +26,12 @@ export const workReactSmartsuppDashboard: Project = {
     { id: 4, src: smartsuppDashboard4.src },
   ],
   icon: ICON_EMOJI.speechBalloon,
-  title: 'Chat Dashboard',
+  title: TEXT.customerCareChatDashboard,
   company: 'Smartsupp',
   role: 'React Developer',
   years: '3\u00A0years 2\u00A0months',
   description:
-    'I worked on chat dashboard features and new design, including redesign of settings. I was involved in UX team to learn.',
+    'I worked on chat dashboard features and new design of settings. I\u00A0was\u00A0involved in UX team learning about user needs.',
   skillsIcons: iconsSkillsProjectsWorkSmartsuppDashboard,
   skillsOverview: [
     {

@@ -19,22 +19,18 @@ const Skills: FC = (): JSX.Element => {
   return (
     <div id={ID.skills} className="mt-20">
       <DividerWithText text={DIVIDER_WITH_TEXT.skills} />
-      <div className="mt-4 flex flex-col justify-center space-y-2 lg:flex-row lg:space-x-4 lg:space-y-0">
-        <div className="flex flex-col justify-center space-y-2 md:flex-row md:space-x-4 md:space-y-0">
+      <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div className="flex flex-col justify-center space-y-2 md:flex-row md:space-x-4 md:space-y-0 lg:justify-end">
           <SkillsIconGroup icons={iconsWebDevelopment} />
           <SkillsIconGroup icons={iconsWebDevelopmentWithQA} />
         </div>
-        <div className="flex flex-col justify-center space-y-2 md:flex-row md:space-x-4 md:space-y-0">
+        <div className="flex flex-col justify-center space-y-2 md:flex-row md:space-x-4 md:space-y-0 lg:justify-start">
           <SkillsIconGroup icons={iconsWebDesign} />
           <SkillsIconGroup icons={iconsDesignTools} />
         </div>
       </div>
       <div className="mt-4 flex flex-col items-center">
-        <Paragraph
-          textColor="text-neutral-500"
-          size="text-md"
-          customCss="sm:w-[300px] text-center italic md:w-[600px] lg:w-full"
-        >
+        <Paragraph textColor="text-neutral-500" size="text-md" customCss="w-[270px] text-center italic md:w-[520px]">
           {TEXT.skillsIconsNames}
         </Paragraph>
       </div>

@@ -31,7 +31,7 @@ export const workReactKomercniBanka: Project = {
   role: 'React Developer',
   years: '10\u00A0months',
   description:
-    'I created search page for ATM and branches, with their detail pages. And also Exchange rates page with details for each currency.',
+    'I created search page for ATM and branches, with their detail pages. And\u00A0also Exchange rates page with details for each currency.',
   skillsIcons: iconsSkillsProjectsWorkKomercniBanka,
   skillsOverview: [
     {

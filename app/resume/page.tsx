@@ -30,10 +30,10 @@ const Resume: FC = (): JSX.Element => {
       <div className="mt-10">
         <div>
           <Heading1>
-            <span role="img" className="select-none">
+            <span role="img" className="mr-4 select-none">
               {ICON_EMOJI.memo}
             </span>
-            <span className="ml-4">{TEXT.resume}</span>
+            <span>{TEXT.resume}</span>
           </Heading1>
           <ResumeIntroduction />
         </div>

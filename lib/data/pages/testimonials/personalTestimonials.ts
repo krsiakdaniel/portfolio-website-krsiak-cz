@@ -11,7 +11,7 @@ export const personalTestimonials: TestimonialItem[] = [
     personPhoto: personMoorhead,
     personIcon: ICON_EMOJI.latinCross,
     personName: TEXT.nameMoorhead,
-    personJob: 'Baptist Pastor ~ Grace Community Church',
+    personJob: 'Baptist Pastor ~\u00A0Grace\u00A0Community\u00A0Church',
     testimonialText: `
       I have known Daniel for almost a decade and he has always proven himself faithful.
       He has always been very dedicated to his employment, and has always been very respectful in his words and opinions.

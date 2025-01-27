@@ -27,7 +27,7 @@ const ProjectWorkSmartsuppDashboard: FC = (): JSX.Element => {
       breadCrumbs={getBreadcrumbsWork(
         PAGES_URL.work.smartsupp.dashboard,
         ICON_EMOJI.speechBalloon,
-        TEXT.smartsuppDashboard,
+        TEXT.smartsuppChatDashboard,
       )}
       pageID={PROJECT_ID.work.smartsupp.dashboard}
       goBackLink={GoBackLinkEnum.Work}
