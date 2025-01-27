@@ -9,7 +9,7 @@ import { BubbleStyle } from '@/lib/utils/typeDefinitions/interfaces'
  * @param {string} bubbleStyle.position - The position of the bubble.
  * @param {string} bubbleStyle.size - The size of the bubble.
  * @param {string} bubbleStyle.hoverTranslate - The hover translation of the bubble.
- * 
+ *
  * @returns {string} A CSS string that combines the provided style properties.
  */
 export const generateBubbleCss = (bubbleStyle: BubbleStyle): string => {

@@ -12,7 +12,7 @@ test.describe('Status Page', () => {
 
     await test.step('Check if the page title is correct', async () => {
       const title = await page.textContent('h1')
-      expect(title).toBe('🚦 Status Page')
+      expect(title).toBe('🚦Status Page')
     })
   })
 

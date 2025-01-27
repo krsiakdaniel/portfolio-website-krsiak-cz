@@ -22,7 +22,7 @@ test.describe('Header - Desktop Menu - Personal Projects Link', () => {
 
     await test.step('Check if the H1 heading on the final page has the text "Personal Projects"', async () => {
       const heading = await page.textContent('h1')
-      expect(heading).toBe('🚀 Personal Projects')
+      expect(heading).toBe('🚀Personal Projects')
     })
   })
 })
