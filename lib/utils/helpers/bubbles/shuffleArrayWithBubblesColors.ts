@@ -1,5 +1,3 @@
-// TODO: write unit test
-
 /**
  * Swaps two elements in an array.
  *
