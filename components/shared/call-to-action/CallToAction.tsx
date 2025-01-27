@@ -23,9 +23,9 @@ const CallToAction: FC<CallToActionProps> = ({
     <div className="group relative mt-20">
       <CallToActionBubbles />
 
-      <section className="relative rounded-lg border border-blue-300 bg-blue-100 p-8 transition duration-500 hover:border-blue-400 md:p-16">
+      <section className="relative rounded-lg border border-violet-300 bg-blue-100 p-8 transition duration-500 hover:border-violet-600 md:p-16">
         <div className="flex">
-          <div className="md:w-2/3">
+          <div className="md:w-2/3 lg:mr-16">
             <CallToActionTexts
               icon={icon}
               highlight={highlight}

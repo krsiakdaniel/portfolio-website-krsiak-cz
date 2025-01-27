@@ -5,9 +5,9 @@ import { FC, useEffect, useState } from 'react'
 import Bubble from '@/components/shared/Bubble'
 
 import { generateBubbleCss } from '@/lib/utils/helpers/bubbles/generateBubbleCss'
-import { getBubbleStyles } from '@/lib/utils/helpers/bubbles/getBubbleStyles'
+import { getBubblesStyles } from '@/lib/utils/helpers/bubbles/getBubblesStyles'
 import { shuffleArrayWithBubblesColors } from '@/lib/utils/helpers/bubbles/shuffleArrayWithBubblesColors'
-import { BubbleStyle } from '@/lib/utils/typeDefinitions/interfaces'
+import { BubbleStyleCSS } from '@/lib/utils/typeDefinitions/interfaces'
 
 /**
  * CallToActionBubbles Component
@@ -31,12 +31,12 @@ const CallToActionBubbles: FC = (): JSX.Element => {
   }, [])
 
   // Generate styles for the bubbles based on the colors
-  const bubbleStyles: BubbleStyle[] = getBubbleStyles(colors)
+  const bubblesStylesCSS: BubbleStyleCSS[] = getBubblesStyles(colors)
 
   return (
     <>
-      {(bubbleStyles ?? []).map((bubbleStyle) => (
-        <Bubble key={bubbleStyle.id} customCss={generateBubbleCss(bubbleStyle)} />
+      {(bubblesStylesCSS ?? []).map((bubbleCSS) => (
+        <Bubble key={bubbleCSS.id} customCss={generateBubbleCss(bubbleCSS)} />
       ))}
     </>
   )
