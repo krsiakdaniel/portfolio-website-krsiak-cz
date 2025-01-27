@@ -2,9 +2,10 @@ import { FC } from 'react'
 
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
+import { ICON_EMOJI, TEXT } from '@/localization/english'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
-import { TEXT } from '@/localization/english'
 
 const CallToActionResumeDownload: FC = (): JSX.Element => {
   return (
@@ -16,7 +17,7 @@ const CallToActionResumeDownload: FC = (): JSX.Element => {
       link={EXTERNAL_URL.resumeViewPDF}
       linkText={TEXT.downloadResume}
       dataTestId={DATA_TEST_IDS.callToAction.linkResumeDownload}
-      icon="📝"
+      icon={ICON_EMOJI.memo}
       isLinkExternal
     />
   )

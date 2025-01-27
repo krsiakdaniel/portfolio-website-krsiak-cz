@@ -1,5 +1,7 @@
 import { MONTHS, YEARS } from '@/lib/utils/constants/yearsExperience'
 
+import { ICON_EMOJI } from '@/localization/english'
+
 import { DurationUnitEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Job } from '@/lib/utils/typeDefinitions/interfaces'
 
@@ -13,7 +15,7 @@ export const jobs: Job[] = [
   {
     id: 0,
     path: reactLogo,
-    title: '⚛️ Front End — React Developer',
+    title: `${ICON_EMOJI.atomSymbol} Front End — React Developer`,
     duration: YEARS.react,
     unit: DurationUnitEnum.Year,
     description: `
@@ -25,7 +27,7 @@ export const jobs: Job[] = [
   {
     id: 1,
     path: globe,
-    title: '💻 Front End — Web Developer',
+    title: `${ICON_EMOJI.laptop} Front End — Web Developer`,
     duration: YEARS.webDeveloper,
     unit: DurationUnitEnum.Year,
     description: `
@@ -36,7 +38,7 @@ export const jobs: Job[] = [
   {
     id: 2,
     path: check,
-    title: '🤖 QA Automation — Team Leader',
+    title: `${ICON_EMOJI.robot} QA Automation — Team Leader`,
     duration: YEARS.qaAutomation,
     unit: DurationUnitEnum.Year,
     description: `
@@ -48,7 +50,7 @@ export const jobs: Job[] = [
   {
     id: 3,
     path: text,
-    title: '🇨🇿 Localization — Manager',
+    title: `${ICON_EMOJI.flagCzechRepublic} Localization — Manager`,
     duration: YEARS.localizationManager,
     unit: DurationUnitEnum.Year,
     description: `
@@ -60,7 +62,7 @@ export const jobs: Job[] = [
   {
     id: 4,
     path: bug,
-    title: '🛠️ Localization — Tester',
+    title: `${ICON_EMOJI.hammerAndWrench} Localization — Tester`,
     duration: YEARS.localizationTester,
     unit: DurationUnitEnum.Year,
     description: `
@@ -72,7 +74,7 @@ export const jobs: Job[] = [
   {
     id: 5,
     path: globe,
-    title: '🏢 IBM — Mainframe Operator',
+    title: `${ICON_EMOJI.officeBuilding} IBM — Mainframe Operator`,
     duration: YEARS.operatorIBM,
     unit: DurationUnitEnum.Year,
     description: `
@@ -83,7 +85,7 @@ export const jobs: Job[] = [
   {
     id: 6,
     path: globe,
-    title: '🖥️ Front End — Web Coder',
+    title: `${ICON_EMOJI.desktopComputer} Front End — Web Coder`,
     duration: YEARS.webCoder,
     unit: DurationUnitEnum.Year,
     description: `
@@ -94,7 +96,7 @@ export const jobs: Job[] = [
   {
     id: 7,
     path: globe,
-    title: '✈️ Airport — Airline Ticket Agent',
+    title: `${ICON_EMOJI.airplane} Airport — Airline Ticket Agent`,
     duration: YEARS.ticketAgent,
     unit: DurationUnitEnum.Year,
     description: `
@@ -105,7 +107,7 @@ export const jobs: Job[] = [
   {
     id: 8,
     path: globe,
-    title: '✈️ Airport — Flights Information',
+    title: `${ICON_EMOJI.airplane} Airport — Flights Information`,
     duration: MONTHS.airportFlightsInfo,
     unit: DurationUnitEnum.Month,
     description: `
@@ -116,7 +118,7 @@ export const jobs: Job[] = [
   {
     id: 9,
     path: globe,
-    title: '🍗 KFC — Frying Chicken',
+    title: `${ICON_EMOJI.poultryLeg} KFC — Frying Chicken`,
     duration: MONTHS.crewMemberKFC,
     unit: DurationUnitEnum.Month,
     description: `
@@ -127,7 +129,7 @@ export const jobs: Job[] = [
   {
     id: 10,
     path: globe,
-    title: '📊 High School — Finished as Accountant',
+    title: `${ICON_EMOJI.barChart} High School — Finished as Accountant`,
     duration: YEARS.highSchoolAccountant,
     unit: DurationUnitEnum.Year,
     description: `

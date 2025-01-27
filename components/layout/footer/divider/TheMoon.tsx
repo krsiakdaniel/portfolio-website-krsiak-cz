@@ -1,8 +1,11 @@
 'use client'
 
-import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
 import { Hemisphere, Moon } from 'lunarphase-js'
 import { FC, useEffect, useState } from 'react'
+
+import { ICON_EMOJI } from '@/localization/english'
+
+import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
 
 // Define the interval duration in milliseconds (1 hour)
 const HOUR_IN_MILLISECONDS = 60 * 60 * 1000
@@ -21,7 +24,7 @@ export const updateLunarPhase = (setLunarPhaseEmoji: SetLunarPhaseEmoji): void =
 }
 
 const TheMoon: FC = (): JSX.Element => {
-  const [lunarPhaseEmoji, setLunarPhaseEmoji] = useState<string>('🌑')
+  const [lunarPhaseEmoji, setLunarPhaseEmoji] = useState<string>(ICON_EMOJI.moon.newMoon)
 
   useEffect(() => {
     // Initial update

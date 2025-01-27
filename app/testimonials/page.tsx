@@ -57,7 +57,7 @@ const Testimonials: FC = (): JSX.Element => {
         />
       </div>
 
-      {/* TODO: Add section: 'Fitness Moderator' 🏋️‍♂️ */}
+      {/* TODO: Add section: 'Fitness Moderator' */}
 
       <PageNavigation
         linkPrevious={PAGES_URL.personal.mainUrl}

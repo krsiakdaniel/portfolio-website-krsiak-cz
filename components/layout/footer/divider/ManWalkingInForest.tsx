@@ -2,6 +2,8 @@
 
 import { FC, useEffect, useState } from 'react'
 
+import { ICON_EMOJI } from '@/localization/english'
+
 import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
 
 // Function to update the forest and mountain icons based on the date
@@ -21,24 +23,24 @@ export const updateIcons = (
 
   // Update forest icon based on the season
   if (isChristmas) {
-    setForestIcon('🎄🎄') // Christmas trees
+    setForestIcon(ICON_EMOJI.nature.christmasForest) // Christmas trees
   } else {
-    setForestIcon('🌲🌲') // Evergreen trees
+    setForestIcon(ICON_EMOJI.nature.forest) // Evergreen trees
   }
 
   // Update mountain icon based on the season
   if (isChristmas) {
-    setMountainIcon('🏔️🎄') // Christmas trees
+    setMountainIcon(ICON_EMOJI.nature.christmasMountainAndTree) // Christmas
   } else if (isWinter) {
-    setMountainIcon('🏔️🌲') // Snowy mountain for winter
+    setMountainIcon(ICON_EMOJI.nature.winterMountainAndTree) // Winter
   } else {
-    setMountainIcon('⛰️🌲') // Regular mountain for other seasons
+    setMountainIcon(ICON_EMOJI.nature.mountainAndTree) // Other seasons
   }
 }
 
 const ManWalkingInForest: FC = (): JSX.Element => {
-  const [forestIcon, setForestIcon] = useState('🌲🌲') // Initial forest icon
-  const [mountainIcon, setMountainIcon] = useState('⛰️🌲') // Initial mountain icon
+  const [forestIcon, setForestIcon] = useState(ICON_EMOJI.nature.forest) // Initial forest icon
+  const [mountainIcon, setMountainIcon] = useState(ICON_EMOJI.nature.mountainAndTree) // Initial mountain icon
 
   useEffect(() => {
     // Initial update of icons
@@ -51,7 +53,7 @@ const ManWalkingInForest: FC = (): JSX.Element => {
         {forestIcon}
       </span>
       <span role="img" aria-label={ARIA_LABELS.manWalking} className="animate-walk text-2xl">
-        🚶‍♂️
+        {ICON_EMOJI.manWalking}
       </span>
       <span role="img" aria-label={ARIA_LABELS.forestWithMountain} className="text-3xl">
         {mountainIcon}

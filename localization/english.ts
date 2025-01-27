@@ -24,6 +24,13 @@ export const ICON_EMOJI = {
   officeBuilding: '🏢',
   airplane: '✈️',
   poultryLeg: '🍗',
+  link: '🔗',
+  barChart: '📊',
+  hammerAndWrench: '🛠️',
+  manLiftingWeights: '🏋️‍♂️',
+  manWalking: '🚶‍♂️',
+  sun: '☀️',
+  wavingHand: '👋',
   japaneseOpenForBusinessButton: '🈺',
   manTechnologist: {
     lightSkinTone: '👨🏻‍💻',
@@ -34,6 +41,31 @@ export const ICON_EMOJI = {
   },
   woman: {
     officeWorker: '👩‍💼',
+  },
+  evergreenTree: '🌲',
+  christmasTree: '🎄',
+  mountain: '⛰️',
+  snowyMountain: '🏔️',
+  nature: {
+    forest: '🌲🌲',
+    christmasForest: '🎄🎄',
+    mountainAndTree: '⛰️🌲',
+    winterMountainAndTree: '🏔️🌲',
+    christmasMountainAndTree: '🏔️🎄',
+  },
+  moon: {
+    newMoon: '🌑',
+    waxingCrescent: '🌒',
+    firstQuarter: '🌓',
+    waxingGibbous: '🌔',
+    fullMoon: '🌕',
+    waningGibbous: '🌖',
+    lastQuarter: '🌗',
+    waningCrescent: '🌘',
+  },
+  cat: {
+    ruzenka: '😺',
+    nufka: '😼',
   },
 }
 
@@ -92,7 +124,7 @@ export const HOME = {
   logo: 'krsiak.cz',
   nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
   reactDeveloper: COMMON_VALUES.reactDeveloper,
-  heroText: `Hi 👋 I am from ${COMMON_VALUES.czechRepublicNBSP}\u00A0🇨🇿`,
+  heroText: `Hi ${ICON_EMOJI.wavingHand} I am from ${COMMON_VALUES.czechRepublicNBSP}\u00A0${ICON_EMOJI.flagCzechRepublic}`,
 }
 
 export const RESUME = {

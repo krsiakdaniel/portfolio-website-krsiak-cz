@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
-import { TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
@@ -17,7 +17,7 @@ const CallToActionLinkedIn: FC = (): JSX.Element => {
       link={EXTERNAL_URL.linkedIn}
       linkText={TEXT.myLinkedIn}
       dataTestId={DATA_TEST_IDS.callToAction.linkLinkedIn}
-      icon="🔗"
+      icon={ICON_EMOJI.link}
       isLinkExternal
     />
   )
