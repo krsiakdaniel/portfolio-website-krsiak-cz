@@ -14,10 +14,10 @@ const ProjectsOverviewLayout: FC<ProjectsOverviewLayoutProps> = ({
     <>
       <div className="mt-10 flex flex-col">
         <Heading1>
-          <span role="img" className="select-none">
+          <span role="img" className="mr-4 select-none">
             {icon}
           </span>
-          <span className="ml-4">{heading}</span>
+          <span>{heading}</span>
         </Heading1>
         <div>{description}</div>
       </div>

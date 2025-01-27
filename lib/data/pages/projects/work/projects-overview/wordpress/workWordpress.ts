@@ -30,7 +30,7 @@ export const projectsWorkWordPress: Project[] = [
     role: 'Admin &\u00A0Content Writer',
     years: '6\u00A0months',
     description:
-      'Responsible for the company HELP website running on WordPress and\u00A0writing tutorials. Localization into 9 languages.',
+      'Localization of the company HELP website into 9 languages. I\u00A0was\u00A0also\u00A0writing tutorials and creating content.',
     skillsIcons: iconsSkillsProjectsWorkSmartsuppHelp,
     skillsOverview: [
       {

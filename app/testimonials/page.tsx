@@ -34,10 +34,10 @@ const Testimonials: FC = (): JSX.Element => {
       <div className="mt-10">
         <div>
           <Heading1>
-            <span role="img" className="select-none">
+            <span role="img" className="mr-4 select-none">
               {ICON_EMOJI.speechBalloon}
             </span>
-            <span className="ml-4">{TEXT.testimonials}</span>
+            <span>{TEXT.testimonials}</span>
           </Heading1>
           <TestimonialsIntroduction />
         </div>

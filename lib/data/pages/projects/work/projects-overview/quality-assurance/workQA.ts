@@ -28,7 +28,7 @@ export const projectsWorkQA: Project[] = [
     role: 'QA Automation - Team Leader',
     years: '4\u00A0months',
     description:
-      'I was responsible setting up new QA team, related processes, hiring and managing people, making test plans, test cases, and scripts.',
+      'I was responsible setting up new QA team, hiring and managing people. Setting up QA processes, writing test plans, and testing scripts.',
     skillsIcons: iconsSkillsProjectsWorkGroupon,
     skillsOverview: [
       {

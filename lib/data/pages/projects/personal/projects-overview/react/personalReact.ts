@@ -31,7 +31,7 @@ export const projectsPersonalReact: Project[] = [
     company: 'Personal project',
     role: 'Front End - React',
     description:
-      'Crypto currency prices app fetching latest data from CoinGecko API. This is fun little project created in Chakra UI with dark mode available.',
+      'Crypto currency prices app fetching latest data from CoinGecko API. This\u00A0is very small project in Chakra UI with dark mode.',
     skillsIcons: iconsSkillsProjectsPersonalCryptomania,
     skillsOverview: [
       {

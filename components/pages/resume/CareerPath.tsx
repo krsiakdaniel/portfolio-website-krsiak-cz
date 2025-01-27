@@ -5,7 +5,7 @@ import CareerPathJobStep from '@/components/pages/resume/CareerPathJobStep'
 import HeadingSection from '@/components/shared/HeadingSection'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ICON_EMOJI } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { careerPathSteps } from '@/lib/data/pages/resume/career-path/careerPathSteps'
 import { careerReactDev } from '@/lib/data/pages/resume/career-path/careerReactDev'
@@ -17,21 +17,22 @@ const CareerPath: FC = (): JSX.Element => {
     <>
       <HeadingSection text="My Career Path" />
 
-      <Paragraph size="text-sm">
-        <span className="font-bold">My journey:</span>{' '}
+      <Paragraph size="text-sm" customCss="hidden lg:block">
+        <span className="font-bold">{TEXT.myJourney}</span>{' '}
         {(careerPathSteps ?? []).map((step, index) => (
           <CareerPathJobStep key={step.id} step={step} index={index} />
         ))}
       </Paragraph>
 
+      {/* TODO: refactor this GRID into shared component for Expertise */}
       <div className="mt-10 w-full">
-        <div className="flex w-full flex-col gap-6 lg:flex-row">
-          <div className="flex w-full flex-col gap-6 md:flex-row lg:w-2/3">
-            <ExpertiseSection icon={ICON_EMOJI.atomSymbol} heading="React Dev" listItems={careerReactDev} />
-            <ExpertiseSection icon={ICON_EMOJI.laptop} heading="Web Dev" listItems={careerWebDev} />
+        <div className="grid w-full gap-6 lg:grid-cols-3">
+          <div className="grid w-full gap-6 md:grid-cols-2 lg:col-span-2">
+            <ExpertiseSection icon={ICON_EMOJI.atomSymbol} heading={TEXT.reactDev} listItems={careerReactDev} />
+            <ExpertiseSection icon={ICON_EMOJI.laptop} heading={TEXT.webDev} listItems={careerWebDev} />
           </div>
-          <div className="flex w-full lg:w-1/3">
-            <ExpertiseSection icon={ICON_EMOJI.cog} heading="Testing" listItems={careerTesting} />
+          <div className="w-full">
+            <ExpertiseSection icon={ICON_EMOJI.cog} heading={TEXT.testing} listItems={careerTesting} />
           </div>
         </div>
       </div>

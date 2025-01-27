@@ -30,7 +30,7 @@ export const projectsWorkLocalization: Project[] = [
     role: 'QA Automation - Team Leader',
     years: '1 year',
     description:
-      'I had amazing chance to be team leader on Microsoft products, doing quality checks for Microsoft projects Windows 8 + Windows Phone.',
+      'Worked\u00A0on\u00A0localization testing for Microsoft Windows 8 + Windows Phone. I\u00A0had\u00A0an\u00A0amazing chance to be team leader on Microsoft products.',
     skillsIcons: iconsSkillsProjectsWorkMoravia,
     skillsOverview: [
       {

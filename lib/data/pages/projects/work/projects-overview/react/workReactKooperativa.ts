@@ -28,7 +28,8 @@ export const workReactKooperativa: Project = {
   company: 'Kooperativa',
   role: 'React Developer',
   years: '8\u00A0months',
-  description: 'I worked on an application for managing insurance policies for citizens property and products.',
+  description:
+    'I worked on an application for managing insurance policies for citizens. Kooperativa has over 2 480 000+ customers in Czech Republic.',
   skillsIcons: iconsSkillsProjectsWorkKooperativa,
   skillsOverview: [
     {

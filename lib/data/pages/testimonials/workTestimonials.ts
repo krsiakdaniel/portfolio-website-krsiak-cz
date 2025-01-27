@@ -13,7 +13,7 @@ export const workTestimonials: TestimonialItem[] = [
     personPhoto: personLosseff,
     personIcon: ICON_EMOJI.woman.officeWorker,
     personName: TEXT.nameLosseff,
-    personJob: 'Linguistic Services ~\u00A0Moravia IT',
+    personJob: 'Linguistic Services ~\u00A0Moravia\u00A0IT',
     testimonialText: `
       Daniel is strong in creating automation utilities, term processing, all kinds of\u00A0tracking.
       He has gained a lot of\u00A0experience in\u00A0bug processing.
@@ -35,7 +35,7 @@ export const workTestimonials: TestimonialItem[] = [
     personPhoto: personPridalek,
     personIcon: ICON_EMOJI.man.officeWorker,
     personName: TEXT.namePridalek,
-    personJob: 'Senior Localization Group Manager ~\u00A0Moravia IT',
+    personJob: 'Senior Localization Group Manager ~\u00A0Moravia\u00A0IT',
     testimonialText: `
       Daniel helped team with engineering skills, automating bug management tasks.
       In\u00A0the\u00A0role of\u00A0bug-fixing engineer, he bridged linguistic managers and\u00A0production teams.
