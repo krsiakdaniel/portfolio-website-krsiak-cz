@@ -4,7 +4,12 @@ import { getDataTestIdAttribute } from '@/lib/utils/helpers/getDataTestIdAttribu
 
 import { Heading3Props } from '@/lib/utils/typeDefinitions/props/shared/headings'
 
-const Heading3: FC<Heading3Props> = ({ children, dataTestId = '', textColor = '', customCss = '' }): JSX.Element => {
+const Heading3: FC<Heading3Props> = ({
+  children,
+  dataTestId = '',
+  textColor = 'text-neutral-900',
+  customCss = '',
+}): JSX.Element => {
   return (
     <h3 className={`break-words text-3xl font-bold ${textColor} ${customCss}`} {...getDataTestIdAttribute(dataTestId)}>
       {children}

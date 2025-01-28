@@ -14,7 +14,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ company, role, description })
         {' · '}
         <Highlight text={role} />
       </Heading5>
-      <Paragraph marginTop="mt-0" size="text-md" textColor="text-neutral-500">
+      <Paragraph marginTop="mt-0" size="text-md" textColor="text-neutral-600">
         {description}
       </Paragraph>
     </div>

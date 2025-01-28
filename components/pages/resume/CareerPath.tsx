@@ -17,14 +17,13 @@ const CareerPath: FC = (): JSX.Element => {
     <>
       <HeadingSection text="My Career Path" />
 
-      <Paragraph size="text-sm" customCss="hidden lg:block">
+      <Paragraph size="text-sm" customCss="hidden xl:block">
         <span className="font-bold">{TEXT.myJourney}</span>{' '}
         {(careerPathSteps ?? []).map((step, index) => (
           <CareerPathJobStep key={step.id} step={step} index={index} />
         ))}
       </Paragraph>
 
-      {/* TODO: refactor this GRID into shared component for Expertise */}
       <div className="mt-10 w-full">
         <div className="grid w-full gap-6 lg:grid-cols-3">
           <div className="grid w-full gap-6 md:grid-cols-2 lg:col-span-2">

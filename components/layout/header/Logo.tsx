@@ -28,7 +28,7 @@ const Logo: FC = (): JSX.Element => {
         <Paragraph
           marginTop="mt-0"
           size="text-md"
-          customCss="select-none cursor-pointer font-bold group-hover:text-violet-600"
+          customCss="select-none cursor-pointer font-bold group-hover:text-violet-800"
         >
           {TEXT.logo}
         </Paragraph>

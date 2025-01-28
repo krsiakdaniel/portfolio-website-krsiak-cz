@@ -23,7 +23,7 @@ const CallToActionTexts: FC<CallToActionTextsProps> = ({
       </div>
       <Heading2 textColor="text-neutral-900">{heading}</Heading2>
       <Paragraph marginTop="mt-2" size="text-xl" textColor="text-neutral-900" customCss="tracking-tight">
-        <span>
+        <span className="text-neutral-600">
           {textMobileAndDesktop} <span className="hidden lg:inline">{textDesktop}</span>
         </span>
       </Paragraph>

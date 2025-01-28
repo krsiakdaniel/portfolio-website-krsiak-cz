@@ -31,8 +31,8 @@ export type HeaderSectionProps = {
 // Go Back Link Props
 export type GoBackLinkProps = Pick<HeaderSectionProps, 'goBackLink' | 'sectionID'>
 
-// Page Section Props
-export type PageSectionProps = Section
+// Project Responsibility Section Props
+export type ProjectResponsibilitySectionProps = Section
 
 // Project Information Props
 export type ProjectInformationProps = Pick<

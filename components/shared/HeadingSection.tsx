@@ -12,7 +12,7 @@ const HeadingSection: FC<HeadingSectionProps> = ({ text = '', id = '', dataTestI
       id={id}
       textColor="text-neutral-600"
       data-testid={dataTestId}
-      customCss={`mt-20 border-b pb-2 text-xl font-bold uppercase ${CSS_GLOBAL_CLASSES.HEADING_SECTION}`}
+      customCss={`mt-20 border-b pb-2 font-medium uppercase ${CSS_GLOBAL_CLASSES.HEADING_SECTION}`}
     >
       {text}
     </Heading3>

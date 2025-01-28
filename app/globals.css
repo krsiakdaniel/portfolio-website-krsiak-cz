@@ -1,6 +1,7 @@
 /* # Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 /* Import Tailwind CSS base styles */
 @tailwind base;
@@ -11,7 +12,7 @@
 /* Import Tailwind CSS utility styles */
 @tailwind utilities;
 
-/* # Class names used in JSX are in file: 'lib/utils/constants/global-css-classes/index.ts' */
+/* # Class names used here in CSS and in JSX are defined in file: 'cssGlobalClasses.ts' */
 
 /* # Define base styles */
 @layer base {
@@ -38,6 +39,12 @@
   /* ## React Tooltip */
   .react-tooltip {
     z-index: 20 !important; /* 'Header.tsx' has z-30 */
+  }
+
+  /* ## TestimonialText.tsx */
+  .testimonial-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* 'font-medium' is in file: 'fonts.ts' */
   }
 
   /* ## Animations */

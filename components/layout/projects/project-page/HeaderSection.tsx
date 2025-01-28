@@ -15,6 +15,8 @@ const HeaderSection: FC<HeaderSectionProps> = ({
   goBackLink,
   sectionID,
 }): JSX.Element => {
+  const middot = '·\u00A0'
+
   return (
     <div className="mt-10">
       <Heading1 textColor="text-neutral-900">
@@ -22,8 +24,13 @@ const HeaderSection: FC<HeaderSectionProps> = ({
       </Heading1>
 
       <Heading2 customCss="mt-2">
-        {role}
-        {years && <small className="text-md text-neutral-500">{` · ${years} · ${company}`}</small>}
+        <span>{role}</span>
+        {years && (
+          <span className="ml-0 block text-lg font-normal text-neutral-600 md:ml-2 md:inline">
+            <span className="ml-0">{`${middot}${years}`}</span>
+            <span className="ml-1">{`${middot}${company}`}</span>
+          </span>
+        )}
       </Heading2>
 
       <GoBackLink goBackLink={goBackLink} sectionID={sectionID} />

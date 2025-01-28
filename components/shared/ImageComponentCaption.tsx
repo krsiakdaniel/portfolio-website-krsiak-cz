@@ -7,7 +7,7 @@ import { ImageComponentCaptionProps } from '@/lib/utils/typeDefinitions/props/sh
 const ImageComponentCaption: FC<ImageComponentCaptionProps> = ({ text = '', alignSelf = 'self-start' }) => {
   return (
     <div className={alignSelf}>
-      <Paragraph marginTop="mt-2" size="text-sm" textColor="text-neutral-500">
+      <Paragraph marginTop="mt-2" size="text-sm" textColor="text-neutral-600">
         {text}
       </Paragraph>
     </div>
