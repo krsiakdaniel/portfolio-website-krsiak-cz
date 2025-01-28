@@ -38,9 +38,6 @@
   /* ## React Tooltip */
   .react-tooltip {
     z-index: 20 !important; /* 'Header.tsx' has z-30 */
-    border-radius: 0.5rem !important;
-    /* color: #222 !important;
-    background-color: rgb(255, 153, 0) !important; */
   }
 
   /* ## Animations */

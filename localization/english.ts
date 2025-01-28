@@ -70,7 +70,7 @@ export const ICON_EMOJI = {
 }
 
 export const TOOLTIP = {
-  scanQR: 'Scan my contact QR code',
+  scanQR: 'Add my phone and email',
 }
 
 export const COMMON_VALUES = {
