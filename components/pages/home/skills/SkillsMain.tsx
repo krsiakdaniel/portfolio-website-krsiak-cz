@@ -21,6 +21,7 @@ const SkillsMain: FC = (): JSX.Element => {
             imgAlt={skill.imgAlt}
             technology={skill.technology}
             years={skill.years}
+            tooltip={skill.tooltip}
           />
         ))}
       </div>

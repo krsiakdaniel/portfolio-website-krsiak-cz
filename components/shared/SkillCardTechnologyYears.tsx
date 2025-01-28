@@ -6,7 +6,7 @@ import { SkillCardTechnologyYearsProps } from '@/lib/utils/typeDefinitions/props
 
 const SkillCardTechnologyYears: FC<SkillCardTechnologyYearsProps> = ({ technology, years }): JSX.Element => {
   return (
-    <div>
+    <div className="break-words">
       <div className="text-xl font-semibold tracking-tight text-neutral-900 md:text-3xl">{technology}</div>
       {years && (
         <div className="text-md font-semibold tracking-tight text-neutral-500 md:text-xl">

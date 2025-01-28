@@ -1,6 +1,7 @@
 import { ElementIds } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const ID: ElementIds = {
+  reactTooltip: 'react-tooltip',
   home: 'home',
   hero: 'hero',
   skills: 'skills',

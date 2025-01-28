@@ -101,6 +101,7 @@ export interface SkillCardItem {
   imgAlt: string
   technology: string
   years: number
+  tooltip: string
 }
 
 // Skills Info
@@ -240,6 +241,7 @@ export interface ProjectIds {
 
 // Element IDs
 export interface ElementIds {
+  reactTooltip: string
   home: string
   hero: string
   skills: string

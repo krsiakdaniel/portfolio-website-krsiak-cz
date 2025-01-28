@@ -5,7 +5,7 @@ import IconExternalLink from '@/components/icons/IconExternalLink'
 
 import { TEXT } from '@/localization/english'
 
-import { GLOBAL_CSS_CLASS } from '@/lib/utils/constants/global-css-classes/index'
+import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
@@ -22,7 +22,7 @@ const LinkButton: FC<LinkButtonProps> = ({ href, linkText, isLinkExternal = fals
       target={isLinkExternal ? '_blank' : '_self'}
       rel={isLinkExternal ? 'noopener noreferrer' : 'next'}
       title={isLinkExternal ? `${linkText} - ${TEXT.opensInNewTab}` : linkText}
-      className={`${baseCss} bg-violet-600 ${hoverAndFocusCSS} ${GLOBAL_CSS_CLASS.LINK_BUTTON}`}
+      className={`${baseCss} bg-violet-600 ${hoverAndFocusCSS} ${CSS_GLOBAL_CLASSES.LINK_BUTTON}`}
       data-testid={dataTestId}
     >
       <span>{linkText}</span>
