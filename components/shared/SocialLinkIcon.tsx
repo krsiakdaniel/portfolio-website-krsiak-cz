@@ -30,7 +30,7 @@ const SocialLinkIcon: FC<SocialLinkIconProps> = ({
       target="_blank"
       rel="noopener noreferrer"
       data-testid={dataTestId}
-      className="transition-opacity duration-300 hover:rotate-12 hover:opacity-70"
+      className="transition-opacity duration-500 hover:opacity-70"
       title={title}
       aria-label={ariaLabel}
     >

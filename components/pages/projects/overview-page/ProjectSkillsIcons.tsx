@@ -19,6 +19,7 @@ const ProjectSkillsIcons: FC<ProjectSkillsIconsProps> = ({ skillsIcons = [] }): 
           alt={item.name}
           loading="lazy"
           customCss="mr-2 mt-2 lg:mt-0"
+          dataTooltipContent={item.name}
         />
       ))}
     </div>

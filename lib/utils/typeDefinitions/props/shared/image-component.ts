@@ -14,4 +14,5 @@ export type ImageComponentProps = {
   placeholder?: PlaceholderValue
   blurDataURL?: string
   caption?: string | ReactNode
+  dataTooltipContent?: string | null
 }

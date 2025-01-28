@@ -69,6 +69,10 @@ export const ICON_EMOJI = {
   },
 }
 
+export const TOOLTIP = {
+  scanQR: 'Add my phone and email',
+}
+
 export const COMMON_VALUES = {
   nameDanielKrsiak: 'Daniel Kršiak',
   reactDeveloper: 'React Developer',

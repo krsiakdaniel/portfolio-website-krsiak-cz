@@ -35,6 +35,11 @@
     font-family: 'Rubik', sans-serif;
   }
 
+  /* ## React Tooltip */
+  .react-tooltip {
+    z-index: 20 !important; /* 'Header.tsx' has z-30 */
+  }
+
   /* ## Animations */
   /* ### Ghost - Previous */
   @-webkit-keyframes animateGhostPrevious {

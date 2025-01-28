@@ -22,7 +22,7 @@ const Header: FC = (): JSX.Element => {
   }
 
   return (
-    <header className="sticky top-0 z-20 border-b border-neutral-400 bg-white">
+    <header className="sticky top-0 z-30 border-b border-neutral-400 bg-white">
       <PageContainer marginTop="mt-0">
         <div>
           <div className="flex items-center justify-between py-4">

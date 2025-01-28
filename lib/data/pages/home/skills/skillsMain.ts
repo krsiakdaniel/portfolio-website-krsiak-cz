@@ -19,6 +19,7 @@ export const skills: SkillCardItem[] = [
     imgAlt: TEXT.javaScript,
     technology: TEXT.javaScript,
     years: YEARS.javaScript,
+    tooltip: TEXT.javaScript,
   },
   {
     id: TEXT.typeScript,
@@ -26,6 +27,7 @@ export const skills: SkillCardItem[] = [
     imgAlt: TEXT.typeScript,
     technology: TEXT.typeScript,
     years: YEARS.typeScript,
+    tooltip: TEXT.typeScript,
   },
   {
     id: TEXT.react,
@@ -33,6 +35,7 @@ export const skills: SkillCardItem[] = [
     imgAlt: TEXT.react,
     technology: TEXT.react,
     years: YEARS.react,
+    tooltip: TEXT.react,
   },
   {
     id: TEXT.nextShort,
@@ -40,6 +43,7 @@ export const skills: SkillCardItem[] = [
     imgAlt: TEXT.nextShort,
     technology: TEXT.nextShort,
     years: YEARS.next,
+    tooltip: TEXT.nextShort,
   },
   {
     id: TEXT.redux,
@@ -47,6 +51,7 @@ export const skills: SkillCardItem[] = [
     imgAlt: TEXT.redux,
     technology: TEXT.redux,
     years: YEARS.redux,
+    tooltip: TEXT.redux,
   },
   {
     id: TEXT.tailwindShort,
@@ -54,5 +59,6 @@ export const skills: SkillCardItem[] = [
     imgAlt: TEXT.tailwindShort,
     technology: TEXT.tailwindShort,
     years: YEARS.tailwind,
+    tooltip: TEXT.tailwindShort,
   },
 ]
