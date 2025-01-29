@@ -4,10 +4,10 @@ import { MarginTopType, TextColorType, TextSizeType } from '@/lib/utils/typeDefi
 
 // Properties for Paragraph component
 export type ParagraphProps = {
-  children: ReactNode
-  customCss?: string
-  dataTestId?: string
   marginTop?: MarginTopType
-  size?: TextSizeType
+  dataTestId?: string
   textColor?: TextColorType
+  size?: TextSizeType
+  customCss?: string
+  children: ReactNode
 }

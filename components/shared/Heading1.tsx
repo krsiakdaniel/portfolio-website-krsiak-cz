@@ -1,22 +1,25 @@
 import { FC } from 'react'
 
-import { getDataTestIdAttribute } from '@/lib/utils/helpers/getDataTestIdAttribute'
+import { getAttributes } from '@/lib/utils/helpers/getAttributes'
 
-import { Heading1Props } from '@/lib/utils/typeDefinitions/props/shared/headings'
+import { HeadingProps } from '@/lib/utils/typeDefinitions/props/shared/headings'
 
-const Heading1: FC<Heading1Props> = ({
-  children,
+const Heading1: FC<HeadingProps> = ({
+  id = '',
   dataTestId = '',
   textColor = 'text-violet-600',
   textSize = '5xl',
   textSizeSM = '6xl',
   textSizeMD = '7xl',
   customCss = '',
+  children,
 }): JSX.Element => {
+  const attributes = getAttributes({ id, dataTestId })
+
   return (
     <h1
+      {...attributes}
       className={`break-words font-bold tracking-tight ${textColor} text-${textSize} sm:text-${textSizeSM} md:text-${textSizeMD} ${customCss}`}
-      {...getDataTestIdAttribute(dataTestId)}
     >
       {children}
     </h1>
