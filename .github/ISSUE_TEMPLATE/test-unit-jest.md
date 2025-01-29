@@ -1,7 +1,7 @@
 ---
 name: 🃏 Test request - JEST
 about: Template for new UNIT test.
-title: 'test: 🃏 '
+title: 'test(jest): 🃏 '
 labels: Test - JEST
 assignees: krsiakdaniel
 ---

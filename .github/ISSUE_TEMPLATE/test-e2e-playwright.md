@@ -1,7 +1,7 @@
 ---
-name: ✅ Test request - Playwright
+name: 🎭 Test request - Playwright
 about: Template for new E2E test.
-title: 'test: ✅ '
+title: 'test(e2e): 🎭 '
 labels: Test - Playwright
 assignees: krsiakdaniel
 ---
