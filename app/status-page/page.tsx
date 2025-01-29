@@ -15,7 +15,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import daisyUI from '@/public/images/webp/daisyui/smiling-face-with-sunglasses-animated.webp'
+import smilingFaceWithSunglasses from '@/public/images/webp/emoji-animated/smiling-face-with-sunglasses-animated.webp'
 
 export const metadata = {
   ...metaDataStatusPage,
@@ -59,7 +59,7 @@ const StatusPage: FC = (): JSX.Element => {
           </div>
           <div className="mt-16 flex md:mt-0 md:items-center md:justify-center">
             <ImageComponent
-              src={daisyUI}
+              src={smilingFaceWithSunglasses}
               width={80}
               height={80}
               alt={IMAGE_ALT.daisyUI}
