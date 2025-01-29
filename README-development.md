@@ -11,6 +11,10 @@ Development environment for the project.
   - [📦 Update Outdated Dependencies](#-update-outdated-dependencies)
     - [Manually](#manually)
     - [Using `npm-check-updates`](#using-npm-check-updates)
+      - [Install](#install)
+      - [Check Outdated Packages](#check-outdated-packages)
+      - [Proposed Updates](#proposed-updates)
+      - [Install Updated Packages](#install-updated-packages)
   - [💅 Prettier](#-prettier)
     - [Check Code](#check-code)
     - [Format Code](#format-code)
@@ -53,9 +57,13 @@ Find outdated packages and upgrade to the latest version if possible.
 npm outdated
 ```
 
+![npm - outdated](/readme-images/development/npm/npm-outdated.webp)
+
 ### Using `npm-check-updates`
 
 To update outdated packages, you can use the NCU tool: [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
+
+#### Install
 
 First, install `npm-check-updates` globally.
 
@@ -63,13 +71,17 @@ First, install `npm-check-updates` globally.
 npm install -g npm-check-updates
 ```
 
-Check for outdated packages.
+#### Check Outdated Packages
+
+Run the following command to check for outdated packages.
 
 ```bash
 ncu
 ```
 
-![ncu](/readme-images/development/npm/check-updates-checking.png)
+![ncu - check](/readme-images/development/npm/check-updates-checking.webp)
+
+#### Proposed Updates
 
 Update the `package.json` with the latest versions.
 
@@ -77,9 +89,15 @@ Update the `package.json` with the latest versions.
 ncu -u
 ```
 
-![ncu](/readme-images/development/npm/check-updates-upgrading.png)
+![ncu - upgrade](/readme-images/development/npm/check-updates-upgrading-terminal.webp)
 
-Install the updated packages.
+The result seen in `package.json`.
+
+![package.json](/readme-images/development/npm/check-updates-upgrading-package-json.webp)
+
+#### Install Updated Packages
+
+Run npm to install the updated packages.
 
 ```bash
 npm install

@@ -1,5 +1,5 @@
 ---
-name: Refactoring
+name: 👷 Refactoring
 about: Template for refactoring.
 title: 'refactor: 👷 '
 labels: Refactor

@@ -1,5 +1,5 @@
 ---
-name: Localization
+name: 🇬🇧 Localization
 about: Template for adding localization.
 title: 'localization: 🇬🇧'
 labels: Localization
