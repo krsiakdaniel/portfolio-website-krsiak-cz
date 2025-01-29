@@ -14,7 +14,7 @@ test.describe('Header - Desktop Menu - Work Experience Link', () => {
 
     await test.step('Check if the link redirects to the work experience page when clicked', async () => {
       await page.click(getDataTestId(DATA_TEST_IDS.menu.desktop.links.workExperience))
-      await page.waitForLoadState('networkidle')
+      await page.waitForURL('http://localhost:3000/work-experience')
       expect(page.url()).toBe('http://localhost:3000/work-experience')
     })
 
