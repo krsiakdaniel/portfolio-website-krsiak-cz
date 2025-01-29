@@ -3,6 +3,7 @@ import { expect, test } from '@playwright/test'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 const STATUS_BADGES_DIV_SELECTOR = `div[data-testid=${DATA_TEST_IDS.footer.statusBadges}] img`
+const EXPECTED_NUMBER_OF_BADGES = 9
 
 test.describe('Status Page', () => {
   test('Page title is correct', async ({ page }) => {
@@ -23,7 +24,7 @@ test.describe('Status Page', () => {
 
     await test.step('Check if all status badges are present', async () => {
       const statusBadges = await page.$$eval(STATUS_BADGES_DIV_SELECTOR, (badges) => badges.length)
-      expect(statusBadges).toBe(6)
+      expect(statusBadges).toBe(EXPECTED_NUMBER_OF_BADGES)
     })
   })
 })
