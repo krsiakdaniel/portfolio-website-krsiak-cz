@@ -1,5 +1,5 @@
 ---
-name: ARIA
+name: ♿ ARIA
 about: Template for implementing ARIA improvements.
 title: 'ARIA: ♿'
 labels: ARIA

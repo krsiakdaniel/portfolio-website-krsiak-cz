@@ -1,5 +1,5 @@
 ---
-name: Test request - Playwright
+name: ✅ Test request - Playwright
 about: Template for new E2E test.
 title: 'test: ✅ '
 labels: Test - Playwright

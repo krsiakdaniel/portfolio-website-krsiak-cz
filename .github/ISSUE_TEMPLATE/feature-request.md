@@ -1,5 +1,5 @@
 ---
-name: Feature request
+name: ✨ Feature request
 about: Template for new features.
 title: 'feature: ✨ '
 labels: Feature
