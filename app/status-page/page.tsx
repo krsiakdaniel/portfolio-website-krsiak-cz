@@ -3,13 +3,18 @@ import { FC } from 'react'
 import PageContainer from '@/components/layout/PageContainer'
 import StatusPageIntroduction from '@/components/pages/status-page/StatusPageIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import ExternalLink from '@/components/shared/ExternalLink'
 import Heading1 from '@/components/shared/Heading1'
+import Heading2 from '@/components/shared/Heading2'
 import ImageComponent from '@/components/shared/ImageComponent'
+import Paragraph from '@/components/shared/Paragraph'
+
+import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
 import { metaDataStatusPage } from '@/lib/data/metadata/pages/metaDataStatusPage'
 import { statusBadges } from '@/lib/data/pages/status-page'
 
-import { ICON_EMOJI, IMAGE_ALT, TEXT } from '@/localization/english'
+import { ICON_EMOJI, IMAGE_ALT, MISC, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -43,7 +48,10 @@ const StatusPage: FC = (): JSX.Element => {
           <StatusPageIntroduction />
         </div>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2">
+        <Heading2 customCss="mt-8">CI & CD</Heading2>
+        <Paragraph>Current status of integration and deployment pipelines.</Paragraph>
+
+        <div className="mt-2 grid grid-cols-1 md:grid-cols-2">
           <div data-testid={DATA_TEST_IDS.footer.statusBadges}>
             {(statusBadges ?? []).map((item) => (
               <ImageComponent
@@ -67,6 +75,21 @@ const StatusPage: FC = (): JSX.Element => {
               dataTooltipContent={DAISY_UI_TEXT}
             />
           </div>
+        </div>
+
+        <div className="mt-8">
+          <Heading2 customCss="mt-8">Uptime Monitoring</Heading2>
+          <Paragraph>
+            Status page monitoring this website's uptime.
+            <span className="align-self flex">
+              <ExternalLink
+                href={EXTERNAL_URL.uptimeMonitorStatusPageExternal}
+                text={MISC.uptimeMonitor}
+                title={TEXT.opensInNewTab}
+                dataTestId={DATA_TEST_IDS.externalLinks.uptimeMonitorStatusPageExternal}
+              />
+            </span>
+          </Paragraph>
         </div>
       </div>
     </PageContainer>

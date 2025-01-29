@@ -199,6 +199,7 @@ export const MY_WORK = {
 }
 
 export const MISC = {
+  uptimeMonitor: 'krsiak.betteruptime.com',
   description: 'Description',
   goBack: 'Go back',
   gallery: 'Gallery',

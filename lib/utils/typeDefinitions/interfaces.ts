@@ -142,6 +142,8 @@ export interface ExternalURL {
   gitHub: string
   linkedIn: string
   resumeViewPDF: string
+  uptimeMonitorStatusPage: string
+  uptimeMonitorStatusPageExternal: string
 }
 
 // Page URLs
@@ -182,6 +184,7 @@ export interface StatusBadgeUrls {
   CODE_QUALITY: string
   DEPENDABOT: string
   NETLIFY: string
+  UPTIME: string
 }
 
 // ARIA Labels

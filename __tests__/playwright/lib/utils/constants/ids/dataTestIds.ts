@@ -186,6 +186,8 @@ const CALL_TO_ACTION = {
 const EXTERNAL_LINKS = {
   projectLinkGitHub: `${PROJECT_LINK}-${LINKS.GITHUB}`,
   projectLinkWebsite: `${PROJECT_LINK}-website`,
+  uptimeMonitorStatusPage: 'uptime-krsiak',
+  uptimeMonitorStatusPageExternal: 'uptime-monitor',
 }
 
 export const DATA_TEST_IDS = {
