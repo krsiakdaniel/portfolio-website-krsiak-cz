@@ -21,7 +21,7 @@ export const metadata = {
   ...metaDataStatusPage,
 }
 
-const DAISY_UI_TEXT = `const daisyUI = () => { return 'daisyUI is awesome!' };`
+const DAISY_UI_TEXT = 'daisyUI is awesome!'
 
 const StatusPage: FC = (): JSX.Element => {
   return (
