@@ -18,13 +18,15 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
-import { AlertTypeEnum, GoBackLinkEnum, LinkColorsEnum } from '@/lib/utils/typeDefinitions/enums'
+import { AlertTypeEnum, GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
 
 export const metadata = {
   ...metaDataCryptomania,
 }
 
 const ProjectPersonalCryptomania: FC = (): JSX.Element => {
+  const AlertType = AlertTypeEnum.Info
+
   return (
     <>
       <ProjectPageLayoutWrapper
@@ -36,14 +38,14 @@ const ProjectPersonalCryptomania: FC = (): JSX.Element => {
         sections={sections}
         showAlert={
           <Alert
-            type={AlertTypeEnum.Info}
+            type={AlertType}
             title="CryptoMania is simple project"
             description="See production-level code for my 'Portfolio' on GitHub repo."
             linkComponent={
               <SocialLink
                 href={EXTERNAL_URL.gitHub}
                 linkText={TEXT.gitHubKrsiak}
-                linkColor={LinkColorsEnum.Blue}
+                linkColor={AlertType}
                 dataTestId={DATA_TEST_IDS.alert.alertLinkGitHub}
               />
             }
