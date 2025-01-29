@@ -48,7 +48,13 @@ const config: Config = {
   },
   // Theme configuration
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        violet: {
+          600: '#6829D3',
+        },
+      },
+    },
   },
   // Plugins
   plugins: [require('flowbite/plugin')],

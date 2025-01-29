@@ -581,6 +581,7 @@ export const META_STATUS_PAGE = {
 }
 
 export const IMAGE_ALT = {
+  daisyUI: 'daisyUI',
   defaultAlt: 'image',
   iconQuote: 'icon-quote',
   microsoft: 'Microsoft',

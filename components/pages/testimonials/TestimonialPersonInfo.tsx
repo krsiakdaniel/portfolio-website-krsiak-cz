@@ -25,7 +25,7 @@ const TestimonialPersonInfo: FC<TestimonialPersonInfoProps> = ({ photo, icon, na
           </span>
           <span className="ml-2">{name}</span>
         </div>
-        <div className="text-sm font-light text-gray-500">{job}</div>
+        <div className="text-sm font-normal text-gray-500">{job}</div>
       </div>
     </>
   )

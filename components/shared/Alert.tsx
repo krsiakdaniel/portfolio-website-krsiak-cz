@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import { alertTypeClasses } from '@/lib/data/shared/alertTypeClasses'
 import { AlertTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { AlertProps } from '@/lib/utils/typeDefinitions/props/shared/alert'
 
@@ -16,15 +17,8 @@ const iconInfo = (
 )
 
 const Alert: FC<AlertProps> = ({ type = AlertTypeEnum.Info, title, description, linkComponent }) => {
-  const typeClasses = {
-    info: 'border-blue-300 bg-blue-100 text-blue-800',
-    warning: 'border-yellow-300 bg-yellow-100 text-yellow-800',
-    danger: 'border-red-300 bg-red-100 text-red-800',
-    success: 'border-green-300 bg-green-100 text-green-800',
-  }
-
   return (
-    <div role="alert" className={`mt-4 rounded-lg border p-4 ${typeClasses[type]}`}>
+    <div role="alert" className={`mt-4 rounded-lg border p-4 ${alertTypeClasses[type]}`}>
       <div className="flex items-start md:items-center">
         <span className="mt-1 md:mt-0">{iconInfo}</span>
         <h3 className="text-lg font-medium">{title}</h3>

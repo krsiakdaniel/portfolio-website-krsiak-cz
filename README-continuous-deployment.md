@@ -1,24 +1,19 @@
 # ✅ CD - Continuous Deployment
 
-This project uses CD = Netlify.
+The website is deployed on: [Netlify](https://www.netlify.com/)
 
 **Table of Contents:**
 
 - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
-  - [ℹ️ Info](#ℹ️-info)
-    - [Status of CD](#status-of-cd)
+  - [Status of CD](#status-of-cd)
   - [Netlify](#netlify)
-    - [Branches and Deploy Contexts](#branches-and-deploy-contexts)
-    - [Build Plugins](#build-plugins)
-    - [Deploys](#deploys)
+  - [Branches and Deploy Contexts](#branches-and-deploy-contexts)
+  - [Build Plugins](#build-plugins)
+  - [Deploys](#deploys)
 
 ---
 
-## ℹ️ Info
-
-The website is deployed on: [Netlify](https://www.netlify.com/)
-
-### Status of CD
+## Status of CD
 
 The badge shows the status of the last deploy.
 
@@ -28,7 +23,7 @@ The badge shows the status of the last deploy.
 
 The website is built and deployed on Netlify.
 
-### Branches and Deploy Contexts
+## Branches and Deploy Contexts
 
 Deploy contexts are branch-based environments that enable you to configure builds depending on the context. This includes production and preview environments.
 
@@ -36,13 +31,13 @@ Deploy contexts are branch-based environments that enable you to configure build
 - **Branch Deploys**: Deploy only the production branch
 - **Deploy Previews**: Any pull request against your production branch / branch deploy branches
 
-### Build Plugins
+## Build Plugins
 
 The website can use different build plugins.
 
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) - automatically runs audit on the website after every build.
 
-### Deploys
+## Deploys
 
 You can see the list of the last deploys and their details.
 

@@ -17,7 +17,7 @@ const GoBackLink: FC<GoBackLinkProps> = ({ goBackLink, sectionID }): JSX.Element
     <div className="mt-4">
       <Link
         href={goBackUrlWithID}
-        className="inline-flex items-center space-x-2 text-neutral-500 hover:text-neutral-700"
+        className="inline-flex items-center space-x-2 text-neutral-600 hover:text-violet-800"
       >
         <IconArrow arrowDirection={ArrowDirectionEnum.Left} /> <span>{TEXT.goBack}</span>
       </Link>

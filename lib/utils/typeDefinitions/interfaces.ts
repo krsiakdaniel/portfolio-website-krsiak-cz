@@ -173,8 +173,11 @@ export interface PageUrls {
 
 // Status Badge URLs
 export interface StatusBadgeUrls {
-  JEST: string
-  PLAYWRIGHT: string
+  JEST_TEST: string
+  PLAYWRIGHT_TEST: string
+  PRETTIER_CHECK_FORMATTING: string
+  PULL_REQUEST_LABELER: string
+  AUTO_AUTHOR_ASSIGN: string
   CODEQL: string
   CODE_QUALITY: string
   DEPENDABOT: string

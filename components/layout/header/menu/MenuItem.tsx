@@ -8,8 +8,8 @@ const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile }) => {
   const { id, href, icon, text, dataTestId } = linkItem
 
   const mobileDesktopCSS = isMobile ? 'border-b border-gray-100 py-3' : 'py-2'
-  const hoverAndFocusCSS = 'hover:border-violet-100 hover:bg-violet-100'
-  const sharedCss = 'text-md block select-none rounded-lg px-4 font-bold text-neutral-600 hover:text-violet-600'
+  const hoverAndFocusCSS = 'hover:border-violet-50 hover:bg-violet-50'
+  const sharedCss = 'text-md block select-none rounded-lg px-4 font-bold text-neutral-600 hover:text-violet-800'
 
   return (
     <li>

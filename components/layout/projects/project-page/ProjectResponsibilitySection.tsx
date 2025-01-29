@@ -5,9 +5,13 @@ import Highlight from '@/components/shared/Highlight'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
-import { PageSectionProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
+import { ProjectResponsibilitySectionProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
-const PageSection: FC<PageSectionProps> = ({ title, titleHighlight, items = [] }): JSX.Element => {
+const ProjectResponsibilitySection: FC<ProjectResponsibilitySectionProps> = ({
+  title,
+  titleHighlight,
+  items = [],
+}): JSX.Element => {
   return (
     <div className="mt-8">
       <Heading3>
@@ -24,4 +28,4 @@ const PageSection: FC<PageSectionProps> = ({ title, titleHighlight, items = [] }
   )
 }
 
-export default PageSection
+export default ProjectResponsibilitySection

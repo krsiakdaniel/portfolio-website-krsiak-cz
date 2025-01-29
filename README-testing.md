@@ -1,10 +1,10 @@
-# 🐛 Testing
+# 🃏🎭 Testing
 
 This project uses the following tools for testing.
 
 **Table of Contents:**
 
-- [🐛 Testing](#-testing)
+- [🃏🎭 Testing](#-testing)
   - [🃏 JEST](#-jest)
     - [Runs Unit Tests](#runs-unit-tests)
     - [Test Coverage For Jest](#test-coverage-for-jest)
@@ -19,6 +19,8 @@ This project uses the following tools for testing.
 ---
 
 ## 🃏 JEST
+
+[![Jest Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml)
 
 **Docs:** <https://jestjs.io/>
 
@@ -49,6 +51,8 @@ npm run test:coverage
 ```
 
 ## 🎭 Playwright
+
+[![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml)
 
 **Docs:** <https://playwright.dev/docs/intro>
 

@@ -10,14 +10,6 @@ export enum ArrowDirectionEnum {
   Right = 'right',
 }
 
-// Social Links
-export enum LinkColorsEnum {
-  Blue = 'blue',
-  Gray = 'gray',
-  Red = 'red',
-  Yellow = 'yellow',
-}
-
 // Resume
 export enum DurationUnitEnum {
   Month = 'month',
@@ -27,9 +19,10 @@ export enum DurationUnitEnum {
 // Alert
 export enum AlertTypeEnum {
   Info = 'info',
-  Warning = 'warning',
   Success = 'success',
+  Warning = 'warning',
   Danger = 'danger',
+  Neutral = 'neutral',
 }
 
 // Device Type

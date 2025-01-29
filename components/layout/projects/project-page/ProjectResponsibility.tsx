@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import PageSection from '@/components/layout/projects/project-page/PageSection'
+import ProjectResponsibilitySection from '@/components/layout/projects/project-page/ProjectResponsibilitySection'
 
 import { ProjectResponsibilityProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
@@ -8,7 +8,7 @@ const ProjectResponsibility: FC<ProjectResponsibilityProps> = ({ sections = [] }
   return (
     <>
       {sections.map((section) => (
-        <PageSection
+        <ProjectResponsibilitySection
           key={section.id}
           title={section.title}
           titleHighlight={section.titleHighlight}
