@@ -8,6 +8,8 @@ I have experience in managing teams and tasks in various projects.
   - [📈 GitHub - Project Board](#-github---project-board)
   - [🔄 GitHub - PR, Labels, Milestones](#-github---pr-labels-milestones)
   - [📊 Insights and Analytics](#-insights-and-analytics)
+  - [🗂️ GitHub Issue Templates](#️-github-issue-templates)
+    - [Benefits](#benefits)
 
 ## 📈 GitHub - Project Board
 
@@ -31,3 +33,18 @@ To provide a clear overview of the project's progress I use charts.
 - 🏅 [Priorities](https://github.com/users/krsiakdaniel/projects/6/insights/2)
 - 🏷️ [Labels Overview](https://github.com/users/krsiakdaniel/projects/6/insights/3)
 - 📈 [Trend of Tasks](https://github.com/users/krsiakdaniel/projects/6/insights/1)
+
+Here's a shorter version for your README:
+
+## 🗂️ GitHub Issue Templates
+
+Using well-prepared issue templates in GitHub enhances task management by providing consistency.
+
+### Benefits
+
+- **Consistency**: Standard information for all issues.
+- **Efficiency**: Saves time with predefined templates.
+- **Clarity**: Clear structure improves communication.
+- **Accountability**: Defines acceptance criteria and tasks.
+
+<img src="/readme-images/task-management/github-issue-templates.webp" alt="GitHub Issue Template" width="600"/>
