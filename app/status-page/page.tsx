@@ -15,7 +15,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import daisyUI from '@/public/images/webp/daisyui/smiling-face-daisy-ui.webp'
+import daisyUI from '@/public/images/webp/daisyui/smiling-face-with-sunglasses-animated.webp'
 
 export const metadata = {
   ...metaDataStatusPage,
@@ -60,8 +60,8 @@ const StatusPage: FC = (): JSX.Element => {
           <div className="mt-16 flex md:mt-0 md:items-center md:justify-center">
             <ImageComponent
               src={daisyUI}
-              width={128}
-              height={128}
+              width={80}
+              height={80}
               alt={IMAGE_ALT.daisyUI}
               loading="eager"
               dataTooltipContent={DAISY_UI_TEXT}
