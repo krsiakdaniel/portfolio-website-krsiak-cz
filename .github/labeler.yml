@@ -33,7 +33,7 @@ Localization:
   - head-branch: ['^loc', 'loc', '.*loc.*', '^localization', 'localization', '.*localization.*']
 
 Performance:
-  - head-branch: ['^perf', 'perf', '.*perf.*']
+  - head-branch: ['^perf', 'perf', '.*perf.*', '^performance', 'performance', '.*performance.*']
 
 Refactor:
   - head-branch: ['^ref', 'ref', '.*ref.*', ^refactor', 'refactor', '.*refactor.*']
