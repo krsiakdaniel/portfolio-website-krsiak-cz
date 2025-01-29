@@ -80,7 +80,7 @@ const StatusPage: FC = (): JSX.Element => {
         <div className="mt-8">
           <Heading2 customCss="mt-8">Uptime Monitoring</Heading2>
           <Paragraph>
-            Status page monitoring this website's uptime.
+            Status page monitoring this website uptime.
             <span className="align-self flex">
               <ExternalLink
                 href={EXTERNAL_URL.uptimeMonitorStatusPageExternal}
