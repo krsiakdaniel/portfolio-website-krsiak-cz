@@ -1,6 +1,6 @@
-import { Hemisphere, Moon } from 'lunarphase-js'
+import { updateLunarPhase } from '@/lib/utils/helpers/updateLunarPhase'
 
-import { updateLunarPhase } from '@/components/layout/footer/divider/TheMoon'
+import { Hemisphere, Moon } from 'lunarphase-js'
 
 // Mock the lunarphase-js library to control its behavior during tests
 jest.mock('lunarphase-js', () => ({

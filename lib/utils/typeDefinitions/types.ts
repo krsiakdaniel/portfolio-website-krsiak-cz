@@ -53,3 +53,6 @@ export type TextColorType = 'text-neutral-600' | 'text-neutral-700' | 'text-neut
 
 // Define possible text sizes
 export type TextSizeType = 'text-sm' | 'text-md' | 'text-lg' | 'text-xl' | 'text-2xl'
+
+// Define the type for the setLunarPhaseEmoji function
+export type SetLunarPhaseEmoji = (emoji: string) => void
