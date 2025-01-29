@@ -1,11 +1,11 @@
 import type { Viewport } from 'next'
 import { FC } from 'react'
 
+import { GoogleTagManager } from '@next/third-parties/google'
+
 import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
 import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
-import GoogleAnalytics from '@/components/layout/scripts/GoogleAnalytics'
-import Smartlook from '@/components/layout/scripts/Smartlook'
 
 import { defaultMetaData } from '@/lib/data/metadata/shared/defaultMetaData'
 
@@ -37,6 +37,7 @@ export const viewport: Viewport = {
 const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element => {
   return (
     <html lang="en" className={roboto.className}>
+      <GoogleTagManager gtmId="GTM-53BJRX" />
       <head>
         <AppleTouchIcons />
       </head>
@@ -44,8 +45,6 @@ const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element =>
         <Header />
         <main>{children}</main>
         <Footer />
-        <GoogleAnalytics />
-        <Smartlook />
       </body>
     </html>
   )
