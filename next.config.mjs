@@ -44,6 +44,13 @@ const nextConfig = {
         pathname: '/**',
         search: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'uptime.betterstack.com',
+        port: '',
+        pathname: '/**',
+        search: '',
+      },
     ],
     dangerouslyAllowSVG: true, // Allows SVG images to be used
     unoptimized: false, // Setting 'unoptimized' to value 'false' means that images will be optimized by 'Next.js Image Optimization API'.

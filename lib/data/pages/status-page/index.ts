@@ -13,6 +13,7 @@ const BADGE_TEXT = {
   CODE_QUALITY: 'Code Quality',
   DEPENDABOT: 'Dependabot',
   NETLIFY: 'Netlify',
+  UPTIME: 'Uptime',
 }
 
 // Dimensions for different status badges
@@ -26,6 +27,7 @@ const BADGE_DIMENSIONS = {
   CODE_QUALITY: { width: 120, height: 20 },
   DEPENDABOT: { width: 130, height: 20 },
   NETLIFY: { width: 118, height: 20 },
+  UPTIME: { width: 88, height: 20 },
 }
 
 // Array of status badges
@@ -101,5 +103,13 @@ export const statusBadges: StatusBadge[] = [
     BADGE_TEXT.NETLIFY,
     BADGE_DIMENSIONS.NETLIFY.width,
     BADGE_DIMENSIONS.NETLIFY.height,
+  ),
+  createStatusBadge(
+    9,
+    BADGE_TEXT.UPTIME,
+    statusBadgeImgsUrls.UPTIME,
+    BADGE_TEXT.UPTIME,
+    BADGE_DIMENSIONS.UPTIME.width,
+    BADGE_DIMENSIONS.UPTIME.height,
   ),
 ]

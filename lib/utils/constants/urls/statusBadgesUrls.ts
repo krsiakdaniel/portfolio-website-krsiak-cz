@@ -15,4 +15,5 @@ export const statusBadgeImgsUrls: StatusBadgeUrls = {
   CODE_QUALITY: 'https://app.codacy.com/project/badge/Grade/eaa72f9b0a7242ae9179b0dfdd58faf5',
   DEPENDABOT: 'https://img.shields.io/badge/Dependabot-Enabled-green',
   NETLIFY: 'https://api.netlify.com/api/v1/badges/eb322254-0169-4941-9416-3806b0bd5be6/deploy-status',
+  UPTIME: 'https://uptime.betterstack.com/status-badges/v1/monitor/8z9z.svg',
 }
