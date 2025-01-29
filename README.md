@@ -35,7 +35,7 @@ Link: [https://krsiak.cz](https://krsiak.cz)
 
 ## 🛠️ Tech Stack
 
-![Tech Stack](/readme-images/main-readme/technologies-and-tools.png)
+![Tech Stack](/readme-images/main-readme/technologies-and-tools.webp)
 
 - **Language:** [TypeScript](https://www.typescriptlang.org/)
 - **Frameworks:** [React](https://react.dev/), [Next.js](https://nextjs.org/)
@@ -107,11 +107,11 @@ The website contains the following pages and features on the project detail page
 
 ## 📱 Progressive Web App
 
-- [README](README-pwa.md)
+- [README](README-progressive-web-app.md)
 
 ## 🖼️ Screenshots
 
-![krsiak.cz | Portfolio Website](/readme-images/main-readme/krsiak/krsiak-1-light.png)
-![krsiak.cz | Work Experience](/readme-images/main-readme/krsiak/krsiak-2-light.png)
-![krsiak.cz | Resume](/readme-images/main-readme/krsiak/krsiak-3-light.png)
-![krsiak.cz | Personal Projects](/readme-images/main-readme/krsiak/krsiak-4-light.png)
+![krsiak.cz | Portfolio Website](/readme-images/main-readme/krsiak/krsiak-1-light.webp)
+![krsiak.cz | Work Experience](/readme-images/main-readme/krsiak/krsiak-2-light.webp)
+![krsiak.cz | Resume](/readme-images/main-readme/krsiak/krsiak-3-light.webp)
+![krsiak.cz | Personal Projects](/readme-images/main-readme/krsiak/krsiak-4-light.webp)

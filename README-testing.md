@@ -37,7 +37,7 @@ npm run test
 
 Expected result after running tests.
 
-![jest](/readme-images/development/testing/jest-passing.png)
+![jest](/readme-images/development/testing/jest-passing.webp)
 
 ### Test Coverage For Jest
 
@@ -69,7 +69,7 @@ npm run test:e2e
 
 Expected result after running tests.
 
-![playwright](/readme-images/development/testing/e2e-playwright-passing.png)
+![playwright](/readme-images/development/testing/e2e-playwright-passing.webp)
 
 ### Test Coverage For Playwright
 
