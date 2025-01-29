@@ -2,6 +2,12 @@
 
 The website is available as **PWA - Progressive Web App** and can be installed on as an application.
 
+**Table of Contents:**
+
+- [📱 Progressive Web App](#-progressive-web-app)
+  - [Installation](#installation)
+  - [PWA on Mac Desktop](#pwa-on-mac-desktop)
+
 ## Installation
 
 You can install PWA via the browser, example from Edge.
