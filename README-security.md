@@ -16,9 +16,9 @@ Security of this repository is managed by the following tools and services.
 
 [![BetterUptime](https://betteruptime.com/status-badges/v1/monitor/8z9z.svg)](https://betteruptime.com/?utm_source=status_badge)
 
-A public status page informs users about the uptime of your services.
+A public status page for website uptime.
 
-<https://krsiak.betteruptime.com/>
+- **Page**: [status.krsiak.cz](https://status.krsiak.cz)
 
 ## ⚠️ CodeQL analysis
 
@@ -26,8 +26,8 @@ A public status page informs users about the uptime of your services.
 
 Identifies vulnerabilities and errors with CodeQL.
 
-- **Security scan:** [Alerts](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/code-scanning)
-- It is run by GitHub Actions: [CodeQL workflow](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql)
+- **Security scan**: [Alerts](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/code-scanning)
+- Run by GitHub Actions: [CodeQL workflow](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql)
 
 ## 📝 Codacy
 
@@ -35,7 +35,7 @@ Identifies vulnerabilities and errors with CodeQL.
 
 Measuring code quality in the repository.
 
-- **Static code analysis** online tool: [Codacy](https://www.codacy.com/)
+- **Static code analysis**: [Codacy](https://www.codacy.com/)
 
 ## 🤖 Dependabot
 
@@ -44,4 +44,4 @@ Measuring code quality in the repository.
 Automatically creates pull requests to update dependencies to the latest version.
 
 - **Dependabot:** [Alerts](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/dependabot)
-- Settings are in configuration file: [dependabot.yml](.github/dependabot.yml)
+- Configuration file: [dependabot.yml](.github/dependabot.yml)

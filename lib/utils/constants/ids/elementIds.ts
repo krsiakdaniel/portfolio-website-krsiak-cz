@@ -30,7 +30,7 @@ export const ID: ElementIds = {
     desktop: 'menu-desktop',
     toggle: 'menu-toggle',
   },
-  statusPage: 'status-page',
+  status: 'status',
   testimonials: 'testimonials',
   websiteLink: {
     resume: 'resume',

@@ -59,12 +59,17 @@ const nextConfig = {
     return [
       {
         source: '/about-me', // The deleted page
-        destination: '/resume', // Redirect to projects
+        destination: '/resume', // Redirect to 'resume'
         permanent: true, // Use 301 for permanent redirect
       },
       {
         source: '/personal-projects/eshop', // The deleted page
-        destination: '/personal-projects', // Redirect to projects
+        destination: '/personal-projects', // Redirect to 'personal-projects'
+        permanent: true, // Use 301 for permanent redirect
+      },
+      {
+        source: '/status-page', // Renamed page
+        destination: '/status', // Redirect to 'status'
         permanent: true, // Use 301 for permanent redirect
       },
     ]
