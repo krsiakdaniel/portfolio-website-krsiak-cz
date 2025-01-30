@@ -14,7 +14,7 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { metaDataStatus } from '@/lib/data/metadata/pages/metaDataStatus'
 import { statusBadges } from '@/lib/data/pages/status'
 
-import { DAISY_IU, ICON_EMOJI, MISC, TEXT } from '@/localization/english'
+import { DAISY_IU, ICON_EMOJI, STATUS, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -77,8 +77,8 @@ const Status: FC = (): JSX.Element => {
             Status page monitoring this website uptime.
             <span className="align-self flex">
               <ExternalLink
-                href={EXTERNAL_URL.uptimeMonitorStatusExternal}
-                text={MISC.uptimeMonitor}
+                href={EXTERNAL_URL.uptimeMonitorStatus}
+                text={STATUS.linkText}
                 title={TEXT.opensInNewTab}
                 dataTestId={DATA_TEST_IDS.externalLinks.uptimeMonitorStatusExternal}
               />
