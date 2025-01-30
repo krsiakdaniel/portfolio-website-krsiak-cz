@@ -38,12 +38,14 @@ Link: [https://krsiak.cz](https://krsiak.cz)
 
 ![Tech Stack](/readme-images/main-readme/technologies-and-tools.webp)
 
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Frameworks:** [React](https://react.dev/), [Next.js](https://nextjs.org/)
-- **CSS Framework:** [Tailwind CSS](https://tailwindcss.com/)
-- **Component Library for Tailwind CSS**: `daisyUI - planned upgrade`
-- **Testing:** [JEST](https://jestjs.io/), [Playwright](https://playwright.dev/)
-- **CI & CD:** [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions), [Netlify](https://www.netlify.com/)
+Documentation links:
+
+- **Language:** 📝 [TypeScript](https://www.typescriptlang.org/)
+- **Frameworks:** ⚛️ [React](https://react.dev/), ⏭️ [Next.js](https://nextjs.org/)
+- **CSS Framework:** 🎨 [Tailwind CSS](https://tailwindcss.com/)
+- **Component Library for Tailwind CSS**: 🌼 [daisyUI](https://daisyui.com/) `plan to use`
+- **Testing:** 🃏 [JEST](https://jestjs.io/), 🎭 [Playwright](https://playwright.dev/)
+- **CI & CD:** 🚀 [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) , 🌍 [Netlify](https://www.netlify.com/)
 
 ## 🌼 daisyUI - Component Library
 
@@ -55,11 +57,11 @@ This project will use component library for Tailwind CSS.
 - **Current Version:** `none`
 - **Planned Upgrade:** `version 5 (stable)`
 
-![daisyUI](/readme-images/main-readme/emoji-animated/smiling-face-with-sunglasses-animated.webp)
+![daisyUI](/readme-images/main-readme/smiling-face-with-sunglasses-animated.webp)
 
 ## 📋 Pages & Features
 
-The website contains the following pages and features on the project detail pages.
+The website contains the following pages and features.
 
 - **Pages:**
   - 🏠 [Home](https://krsiak.cz/)
@@ -67,8 +69,9 @@ The website contains the following pages and features on the project detail page
   - 📝 [Resume](https://krsiak.cz/resume)
   - 🚀 [Personal Projects](https://krsiak.cz/personal-projects)
   - 💬 [Testimonials](https://krsiak.cz/testimonials)
-- **Project Details:** Information, Skills, Links, Description, Gallery
-- **More:** CTA Banners, Resume PDF, Career Path, QR Code, Social Links, Easy Navigation
+  - 🚦 [Status](https://krsiak.cz/status)
+- **Project Detail Page:** Information, Skills, Links, Description, Gallery
+- **Features:** CTA Banners, Skills Icons, Resume in PDF, Career Path, Contact QR Code, Social Links
 
 ## ⚡ Performance Audit Results
 
@@ -120,3 +123,4 @@ The website contains the following pages and features on the project detail page
 ![krsiak.cz | Work Experience](/readme-images/main-readme/krsiak/krsiak-2-light.webp)
 ![krsiak.cz | Resume](/readme-images/main-readme/krsiak/krsiak-3-light.webp)
 ![krsiak.cz | Personal Projects](/readme-images/main-readme/krsiak/krsiak-4-light.webp)
+![krsiak.cz | Testimonials](/readme-images/main-readme/krsiak/krsiak-5-light.webp)

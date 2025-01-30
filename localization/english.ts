@@ -159,8 +159,8 @@ export const PROJECTS = {
   workExperienceTextOnly: 'Work Experience',
 }
 
-export const STATUS_PAGE = {
-  statusPage: 'Status Page',
+export const STATUS = {
+  status: 'Status',
 }
 
 export const COMPANIES = {
@@ -563,14 +563,14 @@ export const META_RESUME = {
   },
 }
 
-export const META_STATUS_PAGE = {
-  title: `Status page | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+export const META_STATUS = {
+  title: `Status | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
   description:
     'Explore status page showcasing project badges for Jest Tests, Playwright Tests, CodeQL, Code Quality, Dependabot, and Netlify.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
-    statusPage: 'Status page',
+    status: 'Status',
     projectBadges: 'Project badges',
     jestTests: 'Jest Tests',
     playwrightTests: 'Playwright Tests',
@@ -581,8 +581,12 @@ export const META_STATUS_PAGE = {
   },
 }
 
-export const IMAGE_ALT = {
+export const DAISY_IU = {
   daisyUI: 'daisyUI',
+  daisyIsAwesome: 'daisyUI is awesome!',
+}
+
+export const IMAGE_ALT = {
   welcome: 'Hi :)',
   defaultAlt: 'image',
   iconQuote: 'icon-quote',
@@ -616,7 +620,7 @@ export const TEXT = {
   ...TESTIMONIALS,
   ...WORK,
   ...PROJECTS,
-  ...STATUS_PAGE,
+  ...STATUS,
   ...MISC,
   ...ERROR,
 }

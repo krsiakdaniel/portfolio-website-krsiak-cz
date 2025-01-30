@@ -24,5 +24,5 @@ export const PAGES_URL: PageUrls = {
     cryptoMania: getUrlPersonalProject('cryptomania'),
   },
   testimonials: '/testimonials',
-  statusPage: '/status-page',
+  status: '/status',
 }

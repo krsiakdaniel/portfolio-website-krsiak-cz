@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import PageContainer from '@/components/layout/PageContainer'
-import StatusPageIntroduction from '@/components/pages/status-page/StatusPageIntroduction'
+import StatusIntroduction from '@/components/pages/status/StatusIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import ExternalLink from '@/components/shared/ExternalLink'
 import Heading1 from '@/components/shared/Heading1'
@@ -11,10 +11,10 @@ import Paragraph from '@/components/shared/Paragraph'
 
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
-import { metaDataStatusPage } from '@/lib/data/metadata/pages/metaDataStatusPage'
-import { statusBadges } from '@/lib/data/pages/status-page'
+import { metaDataStatus } from '@/lib/data/metadata/pages/metaDataStatus'
+import { statusBadges } from '@/lib/data/pages/status'
 
-import { ICON_EMOJI, IMAGE_ALT, MISC, TEXT } from '@/localization/english'
+import { DAISY_IU, ICON_EMOJI, MISC, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -23,19 +23,13 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import smilingFaceWithSunglasses from '@/public/images/webp/emoji-animated/smiling-face-with-sunglasses-animated.webp'
 
 export const metadata = {
-  ...metaDataStatusPage,
+  ...metaDataStatus,
 }
 
-const DAISY_UI_TEXT = 'daisyUI is awesome!'
-
-const StatusPage: FC = (): JSX.Element => {
+const Status: FC = (): JSX.Element => {
   return (
-    <PageContainer id={ID.statusPage}>
-      <BreadCrumbs
-        level1Url={PAGES_URL.statusPage}
-        level1Icon={ICON_EMOJI.verticalTrafficLight}
-        level1Text={TEXT.statusPage}
-      />
+    <PageContainer id={ID.status}>
+      <BreadCrumbs level1Url={PAGES_URL.status} level1Icon={ICON_EMOJI.verticalTrafficLight} level1Text={TEXT.status} />
 
       <div className="mt-10">
         <div>
@@ -43,9 +37,9 @@ const StatusPage: FC = (): JSX.Element => {
             <span role="img" className="mr-4 select-none">
               {ICON_EMOJI.verticalTrafficLight}
             </span>
-            <span>{TEXT.statusPage}</span>
+            <span>{TEXT.status}</span>
           </Heading1>
-          <StatusPageIntroduction />
+          <StatusIntroduction />
         </div>
 
         <Heading2 customCss="mt-8">CI & CD</Heading2>
@@ -70,9 +64,9 @@ const StatusPage: FC = (): JSX.Element => {
               src={smilingFaceWithSunglasses}
               width={80}
               height={80}
-              alt={IMAGE_ALT.daisyUI}
+              alt={DAISY_IU.daisyUI}
               loading="eager"
-              dataTooltipContent={DAISY_UI_TEXT}
+              dataTooltipContent={DAISY_IU.daisyIsAwesome}
             />
           </div>
         </div>
@@ -83,10 +77,10 @@ const StatusPage: FC = (): JSX.Element => {
             Status page monitoring this website uptime.
             <span className="align-self flex">
               <ExternalLink
-                href={EXTERNAL_URL.uptimeMonitorStatusPageExternal}
+                href={EXTERNAL_URL.uptimeMonitorStatusExternal}
                 text={MISC.uptimeMonitor}
                 title={TEXT.opensInNewTab}
-                dataTestId={DATA_TEST_IDS.externalLinks.uptimeMonitorStatusPageExternal}
+                dataTestId={DATA_TEST_IDS.externalLinks.uptimeMonitorStatusExternal}
               />
             </span>
           </Paragraph>
@@ -96,4 +90,4 @@ const StatusPage: FC = (): JSX.Element => {
   )
 }
 
-export default StatusPage
+export default Status

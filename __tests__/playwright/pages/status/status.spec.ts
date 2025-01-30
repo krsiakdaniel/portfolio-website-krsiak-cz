@@ -5,21 +5,21 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 const STATUS_BADGES_DIV_SELECTOR = `div[data-testid=${DATA_TEST_IDS.footer.statusBadges}] img`
 const EXPECTED_NUMBER_OF_BADGES = 10
 
-test.describe('Status Page', () => {
+test.describe('Status', () => {
   test('Page title is correct', async ({ page }) => {
-    await test.step('Go to status page', async () => {
-      await page.goto('/status-page')
+    await test.step('Go to status', async () => {
+      await page.goto('/status')
     })
 
     await test.step('Check if the page title is correct', async () => {
       const title = await page.textContent('h1')
-      expect(title).toBe('🚦Status Page')
+      expect(title).toBe('🚦Status')
     })
   })
 
   test('All status badges are present', async ({ page }) => {
-    await test.step('Go to status page', async () => {
-      await page.goto('/status-page')
+    await test.step('Go to status', async () => {
+      await page.goto('/status')
     })
 
     await test.step('Check if all status badges are present', async () => {
@@ -29,8 +29,8 @@ test.describe('Status Page', () => {
   })
 
   test('betteruptime - Link is correct', async ({ page }) => {
-    await test.step('Go to status page', async () => {
-      await page.goto('/status-page')
+    await test.step('Go to status', async () => {
+      await page.goto('/status')
     })
 
     await test.step(`Check if the external link for 'betteruptime' is correct`, async () => {

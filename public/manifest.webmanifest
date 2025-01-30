@@ -30,18 +30,6 @@
   ],
   "shortcuts": [
     {
-      "name": "krsiak.cz",
-      "short_name": "krsiak.cz",
-      "url": "/",
-      "icons": [
-        {
-          "src": "icons/png/icon-96x96.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
-    },
-    {
       "name": "Resume",
       "short_name": "Resume",
       "url": "/resume",
@@ -69,18 +57,6 @@
       "name": "Personal Projects",
       "short_name": "Projects",
       "url": "/personal-projects",
-      "icons": [
-        {
-          "src": "icons/png/icon-96x96.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
-    },
-    {
-      "name": "Testimonials",
-      "short_name": "Testimonials",
-      "url": "/testimonials",
       "icons": [
         {
           "src": "icons/png/icon-96x96.png",

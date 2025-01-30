@@ -142,8 +142,8 @@ export interface ExternalURL {
   gitHub: string
   linkedIn: string
   resumeViewPDF: string
-  uptimeMonitorStatusPage: string
-  uptimeMonitorStatusPageExternal: string
+  uptimeMonitorStatus: string
+  uptimeMonitorStatusExternal: string
 }
 
 // Page URLs
@@ -170,7 +170,7 @@ export interface PageUrls {
     cryptoMania: string
   }
   testimonials: string
-  statusPage: string
+  status: string
 }
 
 // Status Badge URLs
@@ -276,7 +276,7 @@ export interface ElementIds {
     desktop: string
     toggle: string
   }
-  statusPage: string
+  status: string
   testimonials: string
   websiteLink: {
     resume: string

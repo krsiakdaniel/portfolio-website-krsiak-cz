@@ -35,10 +35,10 @@ const FOOTER = {
   scrollToTopButton: 'scroll-to-top-button',
   copyright: 'footer-copyright',
   linkFooterHome: `${SECTIONS.FOOTER_LINK}-home`,
-  statusPage: 'footer-link-status-page',
   linkFooterLinkedIn: `${SECTIONS.FOOTER_LINK}-${LINKS.LINKEDIN}`,
   linkFooterResume: `${SECTIONS.FOOTER_LINK}-${LINKS.RESUME}`,
   linkFooterGitHub: `${SECTIONS.FOOTER_LINK}-${LINKS.GITHUB}`,
+  status: 'footer-link-status',
   statusBadges: 'status-badges',
 }
 
@@ -186,8 +186,8 @@ const CALL_TO_ACTION = {
 const EXTERNAL_LINKS = {
   projectLinkGitHub: `${PROJECT_LINK}-${LINKS.GITHUB}`,
   projectLinkWebsite: `${PROJECT_LINK}-website`,
-  uptimeMonitorStatusPage: 'uptime-krsiak',
-  uptimeMonitorStatusPageExternal: 'uptime-monitor',
+  uptimeMonitorStatus: 'uptime-krsiak',
+  uptimeMonitorStatusExternal: 'uptime-monitor',
 }
 
 export const DATA_TEST_IDS = {

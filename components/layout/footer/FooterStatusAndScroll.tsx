@@ -11,11 +11,11 @@ const FooterStatusAndScroll: FC = (): JSX.Element => {
     <div className="mt-8 flex space-x-4">
       <div className="flex space-x-2">
         <Link
-          href={PAGES_URL.statusPage}
+          href={PAGES_URL.status}
           className="text-violet-600 underline hover:text-violet-800 hover:no-underline"
-          data-testid={DATA_TEST_IDS.footer.statusPage}
+          data-testid={DATA_TEST_IDS.footer.status}
         >
-          Status page
+          Status
         </Link>
       </div>
       <ScrollToTopButton />
