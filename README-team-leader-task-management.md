@@ -1,10 +1,10 @@
-# 👨‍💼 Team Leader and Task Management
+# 👨🏻‍💼 Team Leader and Task Management
 
 I have experience in managing teams and tasks in various projects.
 
 **Table of Contents:**
 
-- [👨‍💼 Team Leader and Task Management](#-team-leader-and-task-management)
+- [👨🏻‍💼 Team Leader and Task Management](#-team-leader-and-task-management)
   - [📈 GitHub - Project Board](#-github---project-board)
   - [🔄 GitHub - PR, Labels, Milestones](#-github---pr-labels-milestones)
   - [📊 Insights and Analytics](#-insights-and-analytics)
