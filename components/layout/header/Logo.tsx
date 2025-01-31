@@ -9,7 +9,7 @@ import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import logo from '@/public/icons/png/icon-64x64.png'
+import logo from '@/public/icons/webp/logo.webp'
 
 const IMAGE_WIDTH = 32
 const IMAGE_HEIGHT = 32

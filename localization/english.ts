@@ -69,10 +69,6 @@ export const ICON_EMOJI = {
   },
 }
 
-export const TOOLTIP = {
-  scanQR: 'Add my phone and email',
-}
-
 export const COMMON_VALUES = {
   nameDanielKrsiak: 'Daniel Kršiak',
   reactDeveloper: 'React Developer',
@@ -135,6 +131,8 @@ export const RESUME = {
   resume: 'Resume',
   resumeTextOnly: 'Resume',
   downloadResume: 'Download Resume in PDF',
+  openToWork: 'Open To Work',
+  openToNetworking: 'Open To Networking',
 }
 
 export const TESTIMONIALS = {
@@ -606,6 +604,19 @@ export const CONTACT = {
 
 export const EASTER_EGG = {
   ghostSound: 'wooooooo!',
+}
+
+export const BIBLE = {
+  baptismTestimonyHeading: 'My Baptism - Testimony',
+  baptismChurch: 'Baptism - Church',
+  bookChapterVerse: '1 Peter 3:21',
+  verseText: `
+    And that water is\u00A0a\u00A0picture of\u00A0baptism,
+    which now saves you,
+    not\u00A0by\u00A0removing dirt from your body,
+    but\u00A0as\u00A0a\u00A0response to\u00A0God from\u00A0a\u00A0clean conscience.
+    It\u00A0is\u00A0effective because of\u00A0the\u00A0resurrection of\u00A0Jesus\u00A0Christ.
+  `,
 }
 
 export const TEXT = {

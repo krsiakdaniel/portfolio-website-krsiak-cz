@@ -22,7 +22,7 @@ test.afterAll(async () => {
 // Setup a new context and page before each test
 test.beforeEach(async () => {
   context = await browser.newContext()
-  page = await setupPage(context, '/')
+  page = await setupPage(context, '/testimonials')
 })
 
 // Close the context after each test
@@ -30,16 +30,18 @@ test.afterEach(async () => {
   await teardownContext(context)
 })
 
-test.describe('CTA - Home - Work, Resume', () => {
-  test('should render the Work Experience CTA link correctly', async () => {
-    const linkWorkExperience = page.getByTestId('call-to-action-link-work-experience')
-    expect(await linkWorkExperience.isVisible()).toBe(true)
-    expect(await linkWorkExperience.getAttribute('href')).toBe('/work-experience')
+test.describe('Baptism Testimony - Verse', () => {
+  test('should render the bible verse link correctly', async () => {
+    const verseLink = page.getByTestId('bible-verse-link')
+    expect(await verseLink.isVisible()).toBe(true)
+    expect(await verseLink.getAttribute('href')).toBe('https://www.bible.com/bible/116/1PE.3.21.NLT')
   })
+})
 
-  test('should render the Resume CTA link correctly', async () => {
-    const linkResume = page.getByTestId('call-to-action-link-resume')
-    expect(await linkResume.isVisible()).toBe(true)
-    expect(await linkResume.getAttribute('href')).toBe('/resume')
+test.describe('Baptism Testimony - Photo', () => {
+  test('should render the baptism testimony photo correctly', async () => {
+    const baptismImage = page.getByTestId('baptism-testimony-image')
+    expect(await baptismImage.isVisible()).toBe(true)
+    expect(await baptismImage.getAttribute('src')).toContain('krsiak-daniel-baptism-testimony')
   })
 })

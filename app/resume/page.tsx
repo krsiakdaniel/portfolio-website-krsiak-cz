@@ -40,7 +40,7 @@ const Resume: FC = (): JSX.Element => {
 
         <CallToActionResumeDownload />
         <CareerPath />
-        <ResumeContact isOpenToWork={true} />
+        <ResumeContact />
         <CallToActionLinkedIn />
       </div>
 

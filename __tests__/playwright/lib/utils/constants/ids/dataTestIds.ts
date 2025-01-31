@@ -190,6 +190,15 @@ const EXTERNAL_LINKS = {
   uptimeMonitorStatusExternal: 'uptime-monitor',
 }
 
+const MISC = {
+  linkedinPhoto: 'linkedin-photo',
+}
+
+const BAPTISM = {
+  verseLink: 'bible-verse-link',
+  image: 'baptism-testimony-image',
+}
+
 export const DATA_TEST_IDS = {
   breadcrumbs: 'breadcrumbs',
   gallery: 'gallery',
@@ -204,4 +213,6 @@ export const DATA_TEST_IDS = {
   navigation: NAVIGATION,
   alert: ALERT,
   externalLinks: EXTERNAL_LINKS,
+  misc: MISC,
+  baptism: BAPTISM,
 }

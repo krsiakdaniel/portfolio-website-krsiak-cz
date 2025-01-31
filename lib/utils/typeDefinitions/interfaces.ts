@@ -11,7 +11,6 @@ export interface Errors {
 // Job
 export interface Job {
   id: number
-  path: string
   title: string
   duration: number
   unit: DurationUnitEnum
@@ -144,6 +143,7 @@ export interface ExternalURL {
   resumeViewPDF: string
   uptimeMonitorStatus: string
   uptimeMonitorStatusExternal: string
+  verseBiblePeter1Chapter3Verse21: string
 }
 
 // Environment URLs

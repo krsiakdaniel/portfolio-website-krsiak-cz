@@ -4,9 +4,11 @@ import CallToActionBubbles from '@/components/shared/call-to-action/CallToAction
 import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIcon'
 import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTexts'
 import LinkButton from '@/components/shared/LinkButton'
+import Photo from '@/components/shared/Photo'
 
 import { ICON_EMOJI } from '@/localization/english'
 
+import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { CallToActionProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
@@ -16,10 +18,11 @@ const CallToAction: FC<CallToActionProps> = ({
   textMobileAndDesktop,
   textDesktop,
   link,
-  isLinkExternal = false,
   linkText,
+  isLinkExternal = false,
   dataTestId,
   icon = ICON_EMOJI.atomSymbol,
+  hasPhoto = false,
 }): JSX.Element => {
   return (
     <div className="group relative mt-20">
@@ -41,7 +44,11 @@ const CallToAction: FC<CallToActionProps> = ({
           </div>
 
           <div className={`hidden items-center justify-center md:flex md:w-1/3`}>
-            <CallToActionIcon type={DeviceTypeEnum.Desktop} icon={icon} />
+            {hasPhoto ? (
+              <Photo isPhotoSmall={true} isOpenToWork={IS_OPEN_TO_WORK} showCaption={false} />
+            ) : (
+              <CallToActionIcon type={DeviceTypeEnum.Desktop} icon={icon} />
+            )}
           </div>
         </div>
       </section>
