@@ -4,7 +4,7 @@ import ImageComponent from '@/components/shared/ImageComponent'
 
 import { IMAGE_ALT } from '@/localization/english'
 
-import quote from '@/public/icons/svg/quote.svg'
+import quote from '@/public/icons/svg/testimonial/quote.svg'
 
 const IMAGE_WIDTH = 40
 const IMAGE_HEIGHT = 40

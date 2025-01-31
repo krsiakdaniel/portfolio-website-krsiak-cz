@@ -1,16 +1,20 @@
 import { FC } from 'react'
 
+import HeadingSection from '@/components/shared/HeadingSection'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 import Photo from '@/components/shared/Photo'
 import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 
-import HeadingSection from '@/components/shared/HeadingSection'
-import { ResumeContactProps } from '@/lib/utils/typeDefinitions/props/pages/resume/resume'
+import { TEXT } from '@/localization/english'
 
-const ResumeContact: FC<ResumeContactProps> = ({ isOpenToWork = false }): JSX.Element => {
-  const contactMessage = isOpenToWork ? `Open To Work` : 'For Networking'
-  const contactPurpose = isOpenToWork ? 'job opportunities. I am open to new projects' : 'networking on LinkedIn'
+import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
+
+const ResumeContact: FC = (): JSX.Element => {
+  const isOpenToWork = IS_OPEN_TO_WORK
+
+  const contactMessage = isOpenToWork ? TEXT.openToWork : TEXT.openToNetworking
+  const contactPurpose = isOpenToWork ? 'regarding job opportunities' : 'for networking on LinkedIn'
 
   return (
     <>
@@ -28,13 +32,13 @@ const ResumeContact: FC<ResumeContactProps> = ({ isOpenToWork = false }): JSX.El
 
       <div>
         <Paragraph>
-          Feel free to <Highlight text="call me" /> or <Highlight text="send an email" /> for {contactPurpose}.
+          Feel free to <Highlight text="call me" /> or <Highlight text="send an email" /> {contactPurpose}.
         </Paragraph>
       </div>
 
       <div className="mt-8 flex flex-col items-center space-y-8 md:flex-row md:space-x-8 md:space-y-0">
         <ScanMyContactQR showImageCaption={true} />
-        <Photo isOpenToWork={isOpenToWork} />
+        <Photo isPhotoSmall={false} isOpenToWork={isOpenToWork} />
       </div>
     </>
   )

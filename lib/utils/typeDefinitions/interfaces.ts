@@ -11,7 +11,6 @@ export interface Errors {
 // Job
 export interface Job {
   id: number
-  path: string
   title: string
   duration: number
   unit: DurationUnitEnum

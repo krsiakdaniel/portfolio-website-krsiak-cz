@@ -3,7 +3,7 @@ import { FC } from 'react'
 import ImageComponent from '@/components/shared/ImageComponent'
 import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
 
-import { TEXT, TOOLTIP } from '@/localization/english'
+import { CONTACT, TEXT } from '@/localization/english'
 
 import { ScanMyContactQRProps } from '@/lib/utils/typeDefinitions/props/shared/scan-my-contact-qr'
 
@@ -27,7 +27,7 @@ const ScanMyContactQR: FC<ScanMyContactQRProps> = ({
         loading="eager"
         customCss="rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md"
         caption={showImageCaption ? <ImageComponentCaption text={TEXT.scanQR} /> : ''}
-        dataTooltipContent={TOOLTIP.scanQR}
+        dataTooltipContent={CONTACT.scanQR}
       />
     </div>
   )

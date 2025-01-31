@@ -1,14 +1,15 @@
 // Call To Action Props
 export type CallToActionProps = {
-  dataTestId: string
+  highlight: string
+  heading: string
   textMobileAndDesktop: string
   textDesktop: string
-  heading: string
-  highlight: string
-  icon: string
-  isLinkExternal?: boolean
   link: string
   linkText: string
+  isLinkExternal?: boolean
+  dataTestId: string
+  icon: string
+  hasPhoto?: boolean
 }
 
 // Call To Action Icon Props

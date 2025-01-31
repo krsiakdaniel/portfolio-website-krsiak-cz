@@ -15,4 +15,5 @@ export type ImageComponentProps = {
   blurDataURL?: string
   caption?: string | ReactNode
   dataTooltipContent?: string | null
+  dataTestId?: string
 }

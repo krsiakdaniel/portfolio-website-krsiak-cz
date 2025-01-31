@@ -42,4 +42,9 @@ test.describe('CTA - Home - Work, Resume', () => {
     expect(await linkResume.isVisible()).toBe(true)
     expect(await linkResume.getAttribute('href')).toBe('/resume')
   })
+
+  test('should render the LinkedIn photo inside the CTA correctly', async () => {
+    const linkedInPhoto = page.getByTestId('linkedin-photo')
+    expect(await linkedInPhoto.isVisible()).toBe(true)
+  })
 })

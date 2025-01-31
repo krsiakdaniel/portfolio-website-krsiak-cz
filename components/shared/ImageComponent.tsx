@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { FC } from 'react'
 import { Tooltip } from 'react-tooltip'
 
 import { IMAGE_ALT } from '@/localization/english'
@@ -12,7 +13,7 @@ import { ImageComponentProps } from '@/lib/utils/typeDefinitions/props/shared/im
 const IMAGE_WIDTH = 128
 const IMAGE_HEIGHT = 128
 
-const ImageComponent: React.FC<ImageComponentProps> = ({
+const ImageComponent: FC<ImageComponentProps> = ({
   src = '',
   width = IMAGE_WIDTH,
   height = IMAGE_HEIGHT,
@@ -23,6 +24,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({
   blurDataURL = '',
   caption = '',
   dataTooltipContent = '',
+  dataTestId = '',
 }) => {
   const hasTooltip = dataTooltipContent !== ''
 
@@ -51,7 +53,8 @@ const ImageComponent: React.FC<ImageComponentProps> = ({
         data-tooltip-id={ID.reactTooltip}
         data-tooltip-place="top"
         data-tooltip-variant="dark"
-        data-tooltip-content={hasTooltip ? dataTooltipContent : ''}
+        {...(dataTooltipContent && { 'data-tooltip-content': dataTooltipContent })}
+        {...(dataTestId && { 'data-testid': dataTestId })}
         unoptimized={isImageAnimated}
       />
       {caption && <figcaption>{caption}</figcaption>}

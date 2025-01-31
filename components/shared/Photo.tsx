@@ -7,40 +7,52 @@ import { TEXT } from '@/localization/english'
 
 import { PhotoProps } from '@/lib/utils/typeDefinitions/props/pages/resume/resume'
 
-import openToWork from '@/public/images/png/open-to-work.png'
-import krsiak from '@/public/images/webp/photo/krsiak-daniel-296x296.webp'
+import krsiakSM from '@/public/images/webp/photo/krsiak-daniel-216x216.webp'
+import openToWorkSM from '@/public/images/webp/photo/open-to-work-216x216.webp'
 
-const IMAGE_WIDTH = 296
-const IMAGE_HEIGHT = 296
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import krsiakLG from '@/public/images/webp/photo/krsiak-daniel-296x296.webp'
+import openToWorkLG from '@/public/images/webp/photo/open-to-work-296x296.webp'
 
-const Photo: FC<PhotoProps> = ({ isOpenToWork }): JSX.Element => {
+// small
+const IMAGE_WIDTH_SM = 216
+const IMAGE_HEIGHT_SM = 216
+
+// large
+const IMAGE_WIDTH_LG = 296
+const IMAGE_HEIGHT_LG = 296
+
+const Photo: FC<PhotoProps> = ({ isPhotoSmall, isOpenToWork }): JSX.Element => {
+  const showCaption = !isPhotoSmall
+
   return (
     <div className="flex flex-col">
       <div className="relative rounded-full bg-black">
         {/* base image */}
         <ImageComponent
-          src={krsiak}
-          width={IMAGE_WIDTH}
-          height={IMAGE_HEIGHT}
+          src={isPhotoSmall ? krsiakSM : krsiakLG}
+          width={isPhotoSmall ? IMAGE_WIDTH_SM : IMAGE_WIDTH_LG}
+          height={isPhotoSmall ? IMAGE_HEIGHT_SM : IMAGE_HEIGHT_LG}
           alt={TEXT.nameDanielKrsiak}
           loading="lazy"
           customCss="rounded-full border border-violet-300 bg-violet-50 p-1 shadow-md"
+          dataTestId={DATA_TEST_IDS.misc.linkedinPhoto}
         />
 
         {/* image overlay */}
         {isOpenToWork && (
           <ImageComponent
-            src={openToWork}
-            width={IMAGE_WIDTH}
-            height={IMAGE_HEIGHT}
-            alt="Open To Work"
+            src={isPhotoSmall ? openToWorkSM : openToWorkLG}
+            width={isPhotoSmall ? IMAGE_WIDTH_SM : IMAGE_WIDTH_LG}
+            height={isPhotoSmall ? IMAGE_HEIGHT_SM : IMAGE_HEIGHT_LG}
+            alt={TEXT.openToWork}
             loading="lazy"
             customCss="absolute left-0 top-0 h-full w-full"
           />
         )}
       </div>
 
-      <ImageComponentCaption text={TEXT.nameDanielKrsiak} alignSelf="self-center" />
+      {showCaption && <ImageComponentCaption text={TEXT.nameDanielKrsiak} alignSelf="self-center" />}
     </div>
   )
 }

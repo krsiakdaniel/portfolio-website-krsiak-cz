@@ -18,6 +18,7 @@ const CallToActionWorkExperience: FC = (): JSX.Element => {
       linkText={TEXT.workExperienceTextOnly}
       dataTestId={DATA_TEST_IDS.callToAction.linkWorkExperience}
       icon={ICON_EMOJI.manTechnologist.lightSkinTone}
+      hasPhoto={true}
     />
   )
 }
