@@ -22,9 +22,7 @@ const IMAGE_HEIGHT_SM = 216
 const IMAGE_WIDTH_LG = 296
 const IMAGE_HEIGHT_LG = 296
 
-const Photo: FC<PhotoProps> = ({ isPhotoSmall, isOpenToWork }): JSX.Element => {
-  const showCaption = !isPhotoSmall
-
+const Photo: FC<PhotoProps> = ({ isPhotoSmall, isOpenToWork, showCaption = true }): JSX.Element => {
   return (
     <div className="flex flex-col">
       <div className="relative rounded-full bg-black">

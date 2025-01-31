@@ -45,7 +45,7 @@ const CallToAction: FC<CallToActionProps> = ({
 
           <div className={`hidden items-center justify-center md:flex md:w-1/3`}>
             {hasPhoto ? (
-              <Photo isPhotoSmall={true} isOpenToWork={IS_OPEN_TO_WORK} />
+              <Photo isPhotoSmall={true} isOpenToWork={IS_OPEN_TO_WORK} showCaption={false} />
             ) : (
               <CallToActionIcon type={DeviceTypeEnum.Desktop} icon={icon} />
             )}
