@@ -603,7 +603,7 @@ export const CONTACT = {
 }
 
 export const EASTER_EGG = {
-  ghostSound: 'wooooooo!',
+  ghostScreaming: 'wooooooo!',
 }
 
 export const BIBLE = {

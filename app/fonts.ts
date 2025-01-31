@@ -1,4 +1,4 @@
-import { Poppins, Roboto, Rubik } from 'next/font/google'
+import { Roboto, Rubik } from 'next/font/google'
 
 // 'latin-ext' is a subset to support both English and Czech characters
 
@@ -11,13 +11,6 @@ export const roboto = Roboto({
 
 // headings only
 export const rubik = Rubik({
-  weight: ['300', '400', '500', '700'], // light, regular, medium, bold
-  subsets: ['latin-ext'],
-  display: 'swap',
-})
-
-// testimonials
-export const poppins = Poppins({
   weight: ['300', '400', '500', '700'], // light, regular, medium, bold
   subsets: ['latin-ext'],
   display: 'swap',
