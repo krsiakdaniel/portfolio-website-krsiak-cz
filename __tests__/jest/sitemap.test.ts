@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 
-import sitemap, { CHANGE_FREQUENCY_MONTHLY, URLS } from '@/app/sitemap'
+import sitemap, { CHANGE_FREQUENCY_MONTHLY } from '@/app/sitemap'
+import { SITEMAP_URLS } from '@/lib/utils/constants/urls/pageUrls'
 
 describe('sitemap', () => {
   let results: MetadataRoute.Sitemap
@@ -23,8 +24,8 @@ describe('sitemap', () => {
   })
 
   it('should return correct URLs', () => {
-    const urls = results.map((resultUrl) => resultUrl.url)
-    const flatURLs = Object.values(URLS).flatMap((value) => (typeof value === 'object' ? Object.values(value) : value))
+    const urls = results.map((resultUrl) => new URL(resultUrl.url).pathname)
+    const flatURLs = Object.values(SITEMAP_URLS)
     expect(urls).toEqual(expect.arrayContaining(flatURLs))
   })
 

@@ -31,6 +31,20 @@ export enum DeviceTypeEnum {
   Desktop = 'desktop',
 }
 
+// Change Frequency
+export enum ChangeFrequencyEnum {
+  MONTHLY = 'monthly',
+  WEEKLY = 'weekly',
+  DAILY = 'daily',
+}
+
+// Skill Category
+export enum SkillCategoryEnum {
+  Design = 'Design',
+  FrontEnd = 'FrontEnd',
+  Other = 'Other',
+}
+
 // Skill Icon
 export enum SkillIconEnum {
   Chakra = 'chakra',
@@ -55,13 +69,6 @@ export enum SkillIconEnum {
   TypeScript = 'typescript',
   WordPress = 'wordpress',
   XD = 'xd',
-}
-
-// Skill Category
-export enum SkillCategoryEnum {
-  Design = 'Design',
-  FrontEnd = 'FrontEnd',
-  Other = 'Other',
 }
 
 // Skills

@@ -1,27 +1,29 @@
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { MetadataRoute } from 'next'
 
-// change frequency
-export const CHANGE_FREQUENCY_MONTHLY = 'monthly'
+import { ENV_URLS, SITEMAP_URLS } from '@/lib/utils/constants/urls/pageUrls'
+import { ChangeFrequencyEnum } from '@/lib/utils/typeDefinitions/enums'
+import { SitemapItem } from '@/lib/utils/typeDefinitions/interfaces'
 
-const BASE_URL = PAGES_URL.websiteProduction
+export const CHANGE_FREQUENCY_MONTHLY = ChangeFrequencyEnum.MONTHLY
 
-const sitemapEntries = [
-  { url: BASE_URL + PAGES_URL.home, priority: 1 },
-  { url: BASE_URL + PAGES_URL.resume, priority: 0.8 },
-  { url: BASE_URL + PAGES_URL.work.mainUrl, priority: 0.8 },
-  { url: BASE_URL + PAGES_URL.work.smartsupp.dashboard, priority: 0.8 },
-  { url: BASE_URL + PAGES_URL.work.kooperativa, priority: 0.8 },
-  { url: BASE_URL + PAGES_URL.work.komercniBanka, priority: 0.8 },
-  { url: BASE_URL + PAGES_URL.work.smartsupp.web, priority: 0.8 },
-  { url: BASE_URL + PAGES_URL.work.smartsupp.help, priority: 0.8 },
-  { url: BASE_URL + PAGES_URL.work.groupon, priority: 0.8 },
-  { url: BASE_URL + PAGES_URL.work.moravia, priority: 0.8 },
-  { url: BASE_URL + PAGES_URL.personal.mainUrl, priority: 0.8 },
-  { url: BASE_URL + PAGES_URL.personal.krsiak, priority: 0.8 },
-  { url: BASE_URL + PAGES_URL.personal.cryptoMania, priority: 0.8 },
-  { url: BASE_URL + PAGES_URL.testimonials, priority: 0.4 },
-  { url: BASE_URL + PAGES_URL.status, priority: 0.2 },
+const BASE_URL = ENV_URLS.production
+
+const sitemapEntries: SitemapItem[] = [
+  { url: BASE_URL + SITEMAP_URLS.home, priority: 1 },
+  { url: BASE_URL + SITEMAP_URLS.resume, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workExperience, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workSmartsuppDashboard, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workKooperativa, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workKomercniBanka, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workSmartsuppWeb, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workSmartsuppHelp, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workGroupon, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workMoravia, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.personalProjects, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.personalKrsiak, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.personalCryptoMania, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.testimonials, priority: 0.4 },
+  { url: BASE_URL + SITEMAP_URLS.status, priority: 0.2 },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

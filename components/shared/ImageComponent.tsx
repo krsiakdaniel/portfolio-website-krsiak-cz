@@ -28,7 +28,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({
 
   return (
     <figure>
-      {hasTooltip && <Tooltip id={ID.reactTooltip} className={CSS_GLOBAL_CLASSES.REACT_TOOLTIP} />}
+      {hasTooltip && <Tooltip id={ID.reactTooltip} className={`select-none ${CSS_GLOBAL_CLASSES.REACT_TOOLTIP}`} />}
 
       <Image
         src={src}

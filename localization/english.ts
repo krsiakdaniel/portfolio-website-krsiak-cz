@@ -160,7 +160,7 @@ export const PROJECTS = {
 }
 
 export const STATUS = {
-  status: 'Status',
+  text: 'Status',
   linkText: 'https://status.krsiak.cz',
 }
 
