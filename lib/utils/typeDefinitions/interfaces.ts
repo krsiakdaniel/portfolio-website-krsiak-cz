@@ -146,10 +146,14 @@ export interface ExternalURL {
   uptimeMonitorStatusExternal: string
 }
 
+// Environment URLs
+export interface EnvUrls {
+  production: string
+  localhost: string
+}
+
 // Page URLs
 export interface PageUrls {
-  websiteProduction: string
-  localhost: string
   home: string
   resume: string
   work: {
@@ -171,6 +175,31 @@ export interface PageUrls {
   }
   testimonials: string
   status: string
+}
+
+// Sitemap URLs
+export interface SitemapUrls {
+  home: string
+  resume: string
+  workExperience: string
+  workKooperativa: string
+  workSmartsuppDashboard: string
+  workSmartsuppWeb: string
+  workSmartsuppHelp: string
+  workKomercniBanka: string
+  workGroupon: string
+  workMoravia: string
+  personalProjects: string
+  personalKrsiak: string
+  personalCryptoMania: string
+  testimonials: string
+  status: string
+}
+
+// Sitemap Item
+export interface SitemapItem {
+  url: string
+  priority: number
 }
 
 // Status Badge URLs

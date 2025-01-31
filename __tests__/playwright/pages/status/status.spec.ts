@@ -28,15 +28,15 @@ test.describe('Status', () => {
     })
   })
 
-  test('betteruptime - Link is correct', async ({ page }) => {
+  test('Uptime Monitor - Link is correct', async ({ page }) => {
     await test.step('Go to status', async () => {
       await page.goto('/status')
     })
 
-    await test.step(`Check if the external link for 'betteruptime' is correct`, async () => {
+    await test.step(`Check if the external link for 'Uptime Monitor' is correct`, async () => {
       const uptimeMonitor = await page.$('[data-testid="uptime-monitor"]')
       const href = await uptimeMonitor?.getAttribute('href')
-      expect(href).toContain('https://krsiak.betteruptime.com/')
+      expect(href).toContain('https://status.krsiak.cz')
     })
   })
 })

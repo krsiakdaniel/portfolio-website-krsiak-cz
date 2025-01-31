@@ -14,7 +14,7 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { metaDataStatus } from '@/lib/data/metadata/pages/metaDataStatus'
 import { statusBadges } from '@/lib/data/pages/status'
 
-import { DAISY_IU, ICON_EMOJI, MISC, TEXT } from '@/localization/english'
+import { DAISY_IU, ICON_EMOJI, STATUS, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -29,7 +29,7 @@ export const metadata = {
 const Status: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.status}>
-      <BreadCrumbs level1Url={PAGES_URL.status} level1Icon={ICON_EMOJI.verticalTrafficLight} level1Text={TEXT.status} />
+      <BreadCrumbs level1Url={PAGES_URL.status} level1Icon={ICON_EMOJI.verticalTrafficLight} level1Text={STATUS.text} />
 
       <div className="mt-10">
         <div>
@@ -37,7 +37,7 @@ const Status: FC = (): JSX.Element => {
             <span role="img" className="mr-4 select-none">
               {ICON_EMOJI.verticalTrafficLight}
             </span>
-            <span>{TEXT.status}</span>
+            <span>{STATUS.text}</span>
           </Heading1>
           <StatusIntroduction />
         </div>
@@ -77,8 +77,8 @@ const Status: FC = (): JSX.Element => {
             Status page monitoring this website uptime.
             <span className="align-self flex">
               <ExternalLink
-                href={EXTERNAL_URL.uptimeMonitorStatusExternal}
-                text={MISC.uptimeMonitor}
+                href={EXTERNAL_URL.uptimeMonitorStatus}
+                text={STATUS.linkText}
                 title={TEXT.opensInNewTab}
                 dataTestId={DATA_TEST_IDS.externalLinks.uptimeMonitorStatusExternal}
               />

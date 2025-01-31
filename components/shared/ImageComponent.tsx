@@ -26,9 +26,18 @@ const ImageComponent: React.FC<ImageComponentProps> = ({
 }) => {
   const hasTooltip = dataTooltipContent !== ''
 
+  // Is image src 'object' ? 'extract the image path from imported image object' : 'get string from direct image path'
+  const imagePath = typeof src === 'object' ? src.src : src
+
+  /**
+   * Detect animated images by checking if filename contains 'animated'
+   * Skip Next.js optimization as it can break animations (.webp, .gif)
+   */
+  const isImageAnimated = imagePath.toLowerCase().includes('animated')
+
   return (
     <figure>
-      {hasTooltip && <Tooltip id={ID.reactTooltip} className={CSS_GLOBAL_CLASSES.REACT_TOOLTIP} />}
+      {hasTooltip && <Tooltip id={ID.reactTooltip} className={`select-none ${CSS_GLOBAL_CLASSES.REACT_TOOLTIP}`} />}
 
       <Image
         src={src}
@@ -43,6 +52,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({
         data-tooltip-place="top"
         data-tooltip-variant="dark"
         data-tooltip-content={hasTooltip ? dataTooltipContent : ''}
+        unoptimized={isImageAnimated}
       />
       {caption && <figcaption>{caption}</figcaption>}
     </figure>

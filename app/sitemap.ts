@@ -1,53 +1,29 @@
 import { MetadataRoute } from 'next'
 
-// URLs
-const BASE_URL = 'https://krsiak.cz'
-const WORK_EXPERIENCE = `${BASE_URL}/work-experience`
-const PERSONAL_PROJECTS = `${BASE_URL}/personal-projects`
+import { ENV_URLS, SITEMAP_URLS } from '@/lib/utils/constants/urls/pageUrls'
+import { ChangeFrequencyEnum } from '@/lib/utils/typeDefinitions/enums'
+import { SitemapItem } from '@/lib/utils/typeDefinitions/interfaces'
 
-export const URLS = {
-  HOME: BASE_URL,
-  RESUME: `${BASE_URL}/resume`,
-  WORK_EXPERIENCE: {
-    OVERVIEW_PAGE: `${WORK_EXPERIENCE}`,
-    SMARTSUPP_DASHBOARD: `${WORK_EXPERIENCE}/smartsupp-dashboard`,
-    KOOPERATIVA: `${WORK_EXPERIENCE}/kooperativa`,
-    KOMERCNI_BANKA: `${WORK_EXPERIENCE}/komercni-banka`,
-    SMARTSUPP_WEB: `${WORK_EXPERIENCE}/smartsupp-web`,
-    SMARTSUPP_HELP: `${WORK_EXPERIENCE}/smartsupp-help`,
-    GROUPON: `${WORK_EXPERIENCE}/groupon`,
-    MORAVIA: `${WORK_EXPERIENCE}/moravia`,
-  },
-  PERSONAL_PROJECTS: {
-    OVERVIEW_PAGE: `${PERSONAL_PROJECTS}`,
-    KRSIAK: `${PERSONAL_PROJECTS}/krsiak`,
-    CRYPTOMANIA: `${PERSONAL_PROJECTS}/cryptomania`,
-  },
-  TESTIMONIALS: `${BASE_URL}/testimonials`,
-  STATUS: `${BASE_URL}/status`,
-  STATUS_MONITOR: 'https://status.krsiak.cz/',
-}
+export const CHANGE_FREQUENCY_MONTHLY = ChangeFrequencyEnum.MONTHLY
 
-// change frequency
-export const CHANGE_FREQUENCY_MONTHLY = 'monthly'
+const BASE_URL = ENV_URLS.production
 
-const sitemapEntries = [
-  { url: URLS.HOME, priority: 1 },
-  { url: URLS.RESUME, priority: 0.8 },
-  { url: URLS.WORK_EXPERIENCE.OVERVIEW_PAGE, priority: 0.8 },
-  { url: URLS.WORK_EXPERIENCE.SMARTSUPP_DASHBOARD, priority: 0.8 },
-  { url: URLS.WORK_EXPERIENCE.KOOPERATIVA, priority: 0.8 },
-  { url: URLS.WORK_EXPERIENCE.KOMERCNI_BANKA, priority: 0.8 },
-  { url: URLS.WORK_EXPERIENCE.SMARTSUPP_WEB, priority: 0.8 },
-  { url: URLS.WORK_EXPERIENCE.SMARTSUPP_HELP, priority: 0.8 },
-  { url: URLS.WORK_EXPERIENCE.GROUPON, priority: 0.8 },
-  { url: URLS.WORK_EXPERIENCE.MORAVIA, priority: 0.8 },
-  { url: URLS.PERSONAL_PROJECTS.OVERVIEW_PAGE, priority: 0.8 },
-  { url: URLS.PERSONAL_PROJECTS.KRSIAK, priority: 0.8 },
-  { url: URLS.PERSONAL_PROJECTS.CRYPTOMANIA, priority: 0.8 },
-  { url: URLS.TESTIMONIALS, priority: 0.4 },
-  { url: URLS.STATUS, priority: 0.2 },
-  { url: URLS.STATUS_MONITOR, priority: 0.2 },
+const sitemapEntries: SitemapItem[] = [
+  { url: BASE_URL + SITEMAP_URLS.home, priority: 1 },
+  { url: BASE_URL + SITEMAP_URLS.resume, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workExperience, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workSmartsuppDashboard, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workKooperativa, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workKomercniBanka, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workSmartsuppWeb, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workSmartsuppHelp, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workGroupon, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.workMoravia, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.personalProjects, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.personalKrsiak, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.personalCryptoMania, priority: 0.8 },
+  { url: BASE_URL + SITEMAP_URLS.testimonials, priority: 0.4 },
+  { url: BASE_URL + SITEMAP_URLS.status, priority: 0.2 },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

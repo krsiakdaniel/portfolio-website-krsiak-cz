@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 import { META_STATUS, TEXT } from '@/localization/english'
 
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
@@ -21,7 +21,7 @@ export const metaDataStatus: Metadata = {
         url: statusOG.src,
       },
     ],
-    url: PAGES_URL.websiteProduction + PAGES_URL.status,
+    url: ENV_URLS.production + PAGES_URL.status,
   },
   twitter: {
     card: 'summary_large_image',

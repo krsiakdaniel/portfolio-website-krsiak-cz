@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 import { META_CRYPTOMANIA, TEXT } from '@/localization/english'
 
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
@@ -21,7 +21,7 @@ export const metaDataCryptomania: Metadata = {
         url: cryptomaniaOG.src,
       },
     ],
-    url: PAGES_URL.websiteProduction + PAGES_URL.personal.cryptoMania,
+    url: ENV_URLS.production + PAGES_URL.personal.cryptoMania,
   },
   twitter: {
     card: 'summary_large_image',
