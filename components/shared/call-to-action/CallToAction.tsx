@@ -30,7 +30,7 @@ const CallToAction: FC<CallToActionProps> = ({
 
       <section className="relative rounded-lg border border-violet-300 bg-blue-50 p-8 transition duration-500 hover:border-violet-600 md:p-16">
         <div className="flex">
-          <div className="md:w-2/3 lg:mr-16">
+          <div className="pr-8 md:w-2/3">
             <CallToActionTexts
               icon={icon}
               highlight={highlight}

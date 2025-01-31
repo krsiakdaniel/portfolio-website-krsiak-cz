@@ -8,6 +8,8 @@ import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
 import { updateIconsManWalkingInForest } from '@/lib/utils/helpers/updateIconsManWalkingInForest'
 
 const ManWalkingInForest: FC = (): JSX.Element => {
+  const cssAnimationClass = 'animate-man-walk'
+
   const [forestIcon, setForestIcon] = useState(ICON_EMOJI.nature.forest) // Initial forest icon
   const [mountainIcon, setMountainIcon] = useState(ICON_EMOJI.nature.mountainAndTree) // Initial mountain icon
 
@@ -21,7 +23,7 @@ const ManWalkingInForest: FC = (): JSX.Element => {
       <span role="img" aria-label={ARIA_LABELS.forest} className="text-3xl">
         {forestIcon}
       </span>
-      <span role="img" aria-label={ARIA_LABELS.manWalking} className="animate-walk text-2xl">
+      <span role="img" aria-label={ARIA_LABELS.manWalking} className={`text-2xl ${cssAnimationClass}`}>
         {ICON_EMOJI.manWalking}
       </span>
       <span role="img" aria-label={ARIA_LABELS.forestWithMountain} className="text-3xl">

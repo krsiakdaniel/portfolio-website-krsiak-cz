@@ -6,7 +6,6 @@ import { Tooltip } from 'react-tooltip'
 
 import { IMAGE_ALT } from '@/localization/english'
 
-import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { ImageComponentProps } from '@/lib/utils/typeDefinitions/props/shared/image-component'
 
@@ -39,7 +38,7 @@ const ImageComponent: FC<ImageComponentProps> = ({
 
   return (
     <figure>
-      {hasTooltip && <Tooltip id={ID.reactTooltip} className={`select-none ${CSS_GLOBAL_CLASSES.REACT_TOOLTIP}`} />}
+      {hasTooltip && <Tooltip id={ID.reactTooltip} className={`z-20 select-none`} />}
 
       <Image
         src={src}
