@@ -63,7 +63,7 @@ const Testimonials: FC = (): JSX.Element => {
         linkPrevious={PAGES_URL.personal.mainUrl}
         iconPrevious={ICON_EMOJI.rocket}
         namePrevious={TEXT.personalProjects}
-        dataTestIdPrevious={DATA_TEST_IDS.page.testimonials.previous}
+        dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.testimonials.previous}
       />
     </PageContainer>
   )
