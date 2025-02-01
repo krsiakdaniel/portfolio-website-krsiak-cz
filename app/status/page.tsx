@@ -20,7 +20,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import smilingFaceWithSunglasses from '@/public/images/webp/emoji-animated/smiling-face-with-sunglasses-animated.webp'
+import EmojiAnimated, { EmojiSizeEnum, EmojiTypeEnum } from '@/components/shared/EmojiAnimated'
 
 export const metadata = {
   ...metaDataStatus,
@@ -60,13 +60,12 @@ const Status: FC = (): JSX.Element => {
             ))}
           </div>
           <div className="mt-16 flex md:mt-0 md:items-center md:justify-center">
-            <ImageComponent
-              src={smilingFaceWithSunglasses}
-              width={80}
-              height={80}
-              alt={DAISY_IU.daisyUI}
+            <EmojiAnimated
+              type={EmojiTypeEnum.ROBOT}
+              size={EmojiSizeEnum.MD}
+              alt={DAISY_IU.daisyIsAwesome}
               loading="eager"
-              dataTooltipContent={DAISY_IU.daisyIsAwesome}
+              className="mt-8"
             />
           </div>
         </div>

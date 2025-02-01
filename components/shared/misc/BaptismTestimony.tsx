@@ -20,10 +20,11 @@ const IMAGE_HEIGHT_PHOTO = 216
 const IMAGE_WIDTH_CHURCH = 1240
 const IMAGE_HEIGHT_CHURCH = 1860
 
+// TODO: add later when BLOG in MDX is implemented
 const BaptismTestimony = () => {
   // CSS classes
   const containerClass = 'flex flex-col lg:flex-row'
-  const textContainerClass = 'p-8 lg:w-3/4'
+  const textContainerClass = 'mt-4 pt-8 md:px-8 lg:w-3/4'
   const imageContainerClass = 'flex w-full items-center justify-center p-8 lg:w-1/4'
   const photoClass = `h-[${IMAGE_HEIGHT_PHOTO}px] w-[${IMAGE_WIDTH_PHOTO}px]`
   const imageComponentClass = 'border-1 mt-8 rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md'

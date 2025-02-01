@@ -8,6 +8,13 @@ import { PageLinkItem } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const pagesLinks: PageLinkItem[] = [
   {
+    id: ID.websiteLink.whoIAm,
+    href: PAGES_URL.whoIAm,
+    icon: ICON_EMOJI.wavingHand,
+    text: TEXT.whoIAm,
+    dataTestId: DATA_TEST_IDS.pagesLinks.whoIAm,
+  },
+  {
     id: ID.websiteLink.workExperience,
     href: PAGES_URL.work.mainUrl,
     icon: ICON_EMOJI.manTechnologist.lightSkinTone,

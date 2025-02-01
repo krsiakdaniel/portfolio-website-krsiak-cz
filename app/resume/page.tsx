@@ -48,11 +48,11 @@ const Resume: FC = (): JSX.Element => {
         linkPrevious={PAGES_URL.work.mainUrl}
         iconPrevious={ICON_EMOJI.manTechnologist.lightSkinTone}
         namePrevious={TEXT.workExperience}
-        dataTestIdPrevious={DATA_TEST_IDS.page.resume.previous}
+        dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.resume.previous}
         linkNext={PAGES_URL.personal.mainUrl}
         iconNext={ICON_EMOJI.rocket}
         nameNext={TEXT.personalProjects}
-        dataTestIdNext={DATA_TEST_IDS.page.resume.next}
+        dataTestIdNext={DATA_TEST_IDS.pageNavigation.resume.next}
       />
     </PageContainer>
   )

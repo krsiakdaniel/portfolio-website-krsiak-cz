@@ -50,11 +50,11 @@ const ProjectsPersonal: FC = (): JSX.Element => {
           linkPrevious={PAGES_URL.resume}
           iconPrevious={ICON_EMOJI.memo}
           namePrevious={TEXT.resume}
-          dataTestIdPrevious={DATA_TEST_IDS.page.personalProjects.previous}
+          dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.resume.previous}
           linkNext={PAGES_URL.testimonials}
           iconNext={ICON_EMOJI.speechBalloon}
           nameNext={TEXT.testimonials}
-          dataTestIdNext={DATA_TEST_IDS.page.personalProjects.next}
+          dataTestIdNext={DATA_TEST_IDS.pageNavigation.personalProjects.next}
         />
       </div>
     </PageContainer>

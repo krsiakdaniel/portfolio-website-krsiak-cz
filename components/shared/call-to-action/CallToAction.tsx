@@ -6,8 +6,6 @@ import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTe
 import LinkButton from '@/components/shared/LinkButton'
 import Photo from '@/components/shared/Photo'
 
-import { ICON_EMOJI } from '@/localization/english'
-
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { CallToActionProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
@@ -21,7 +19,7 @@ const CallToAction: FC<CallToActionProps> = ({
   linkText,
   isLinkExternal = false,
   dataTestId,
-  icon = ICON_EMOJI.atomSymbol,
+  icon,
   hasPhoto = false,
 }): JSX.Element => {
   return (
@@ -30,7 +28,7 @@ const CallToAction: FC<CallToActionProps> = ({
 
       <section className="relative rounded-lg border border-violet-300 bg-blue-50 p-8 transition duration-500 hover:border-violet-600 md:p-16">
         <div className="flex">
-          <div className="pr-8 md:w-2/3">
+          <div className="pr-0 md:w-2/3 md:pr-8">
             <CallToActionTexts
               icon={icon}
               highlight={highlight}

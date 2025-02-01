@@ -1,34 +1,34 @@
-# ⚡ Performance Audit Results
+# ⚡ PageSpeed Insights
 
-I strive to deliver the best possible performance, accessibility, and SEO for any website. Below are the results of the latest audit conducted using [PageSpeed Insights](https://pagespeed.web.dev/).
+I strive to deliver the best possible performance, accessibility, and SEO for any website.
 
 **Table of Contents:**
 
-- [⚡ Performance Audit Results](#-performance-audit-results)
-  - [📊 Performance Summary](#-performance-summary)
-  - [🛠️ Detailed Performance Metrics](#️-detailed-performance-metrics)
+- [⚡ PageSpeed Insights](#-pagespeed-insights)
+  - [📊 Results Summary](#-results-summary)
+  - [🛠️ Performance Metrics](#️-performance-metrics)
   - [📸 Screenshot](#-screenshot)
   - [💻 Technologies Used](#-technologies-used)
   - [📅 Audit Details](#-audit-details)
   - [📝 Conclusion](#-conclusion)
 
-## 📊 Performance Summary
+## 📊 Results Summary
 
-Our website was evaluated in four key categories:
+The website was evaluated in four key categories:
 
-- **Performance**: 99
+- **Performance**: 100
 - **Accessibility**: 100
 - **Best Practices**: 100
 - **SEO**: 100
 
-## 🛠️ Detailed Performance Metrics
+## 🛠️ Performance Metrics
 
 The performance score is derived from several crucial metrics:
 
-- **First Contentful Paint (FCP)**: 0.8 s
-- **Largest Contentful Paint (LCP)**: 0.8 s
-- **Total Blocking Time (TBT)**: 30 ms
-- **Cumulative Layout Shift (CLS)**: 0
+- **First Contentful Paint (FCP)**: 0.3 s
+- **Largest Contentful Paint (LCP)**: 0.4 s
+- **Total Blocking Time (TBT)**: 10 ms
+- **Cumulative Layout Shift (CLS)**: 0.003
 - **Speed Index**: 0.8 s
 
 ## 📸 Screenshot
@@ -48,9 +48,13 @@ The website utilizes the following technologies:
 
 ## 📅 Audit Details
 
-- **Captured On**: 30 Jan 2025, 01:05 CET
+- **Captured On**: Jan 31, 2025, 1:12 PM GMT+1
 - **Audit Tool**: Google Lighthouse 12.2.3
-- **Session Type**: Single-page session using HeadlessChromium 131.0.6778.264 with custom throttling
+- **Emulation**: Desktop
+- **Session Type**: Single-page session
+- **Page Load**: Initial page load
+- **Throttling**: Custom throttling
+- **Browser**: Using HeadlessChromium 131.0.6778.264
 
 ## 📝 Conclusion
 

@@ -5,14 +5,13 @@ import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
 
 import { TEXT } from '@/localization/english'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PhotoProps } from '@/lib/utils/typeDefinitions/props/pages/resume/resume'
 
-import krsiakSM from '@/public/images/webp/photo/krsiak-daniel-216x216.webp'
-import openToWorkSM from '@/public/images/webp/photo/open-to-work-216x216.webp'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import krsiakLG from '@/public/images/webp/photo/krsiak-daniel-296x296.webp'
-import openToWorkLG from '@/public/images/webp/photo/open-to-work-296x296.webp'
+import openToWorkSM from '@/public/images/webp/photo/linkedin/open-to-work-216x216.webp'
+import openToWorkLG from '@/public/images/webp/photo/linkedin/open-to-work-296x296.webp'
+import krsiakSM from '@/public/images/webp/photo/me/krsiak-daniel-216x216.webp'
+import krsiakLG from '@/public/images/webp/photo/me/krsiak-daniel-296x296.webp'
 
 // small
 const IMAGE_WIDTH_SM = 216

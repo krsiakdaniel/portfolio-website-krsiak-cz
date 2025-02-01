@@ -1,16 +1,45 @@
+import ImageComponent from '@/components/shared/ImageComponent'
 import { FC } from 'react'
 
-import { IMAGE_ALT } from '@/localization/english'
+// FIXME: opravit, bdue mi chybet slozka, udelat a k tomu ikony
+// SM = 32,
+// MD = 80,
+// LG = 128,
 
-import ImageComponent from '@/components/shared/ImageComponent'
-import smilingFaceWithSunglasses from '@/public/images/webp/emoji-animated/smiling-face-with-sunglasses-animated.webp'
+// TODO: to pak upravit v 'CallToActionTexts' a overit i veliskot ikon EMOJI, jeslti to nerozbiji tech 32x32
 
-// TODO: add 'ImageComponent' props so they can be passed down from <EmojiAnimated /> to <ImageComponent />
-// TODO: add more based on 'type' showing different emoji passed via props, update where is used
-const EmojiAnimated: FC = (): JSX.Element => {
+export enum EmojiSizeEnum {
+  SM = 80,
+  MD = 128,
+  LG = 256,
+}
+
+export enum EmojiTypeEnum {
+  SUNGLASSES = 'smiling-face-with-sunglasses',
+  ROCKET = 'rocket',
+  ROBOT = 'robot',
+}
+
+interface EmojiAnimatedProps {
+  type: EmojiTypeEnum
+  size: EmojiSizeEnum
+  alt: string
+  loading?: 'lazy' | 'eager'
+  className?: string
+}
+
+const EmojiAnimated: FC<EmojiAnimatedProps> = ({
+  type,
+  size = EmojiSizeEnum.MD,
+  alt,
+  loading = 'lazy',
+  className = '',
+}): JSX.Element => {
+  const src = `/images/webp/emoji-animated/${size}x${size}/${type}-animated-${size}x${size}.webp`
+
   return (
-    <div className="mt-8">
-      <ImageComponent src={smilingFaceWithSunglasses} width={80} height={80} alt={IMAGE_ALT.welcome} loading="eager" />
+    <div className={className}>
+      <ImageComponent src={src} width={size} height={size} alt={alt} loading={loading} />
     </div>
   )
 }
