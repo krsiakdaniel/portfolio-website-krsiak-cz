@@ -18,7 +18,7 @@
     "test:e2e:codegen": "bun playwright codegen",
     "test:e2e:debug": "bun playwright test --debug",
     "clean": "rm -rf ./node_modules",
-    "clean:install": "rm -rf ./node_modules && bun i",
+    "clean:install": "rm -rf ./node_modules && bun install",
     "deps:outdated": "bun outdated"
   },
   "dependencies": {
@@ -40,12 +40,12 @@
   "devDependencies": {
     "@happy-dom/jest-environment": "^16.8.1",
     "@netlify/plugin-nextjs": "^5.9.4",
-    "@playwright/test": "^1.50.0",
+    "@playwright/test": "^1.50.1",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@types/bun": "^1.2.2",
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.10.10",
+    "@types/node": "^22.13.0",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "autoprefixer": "^10.4.20",
