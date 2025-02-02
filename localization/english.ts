@@ -143,6 +143,12 @@ export const RESUME = {
   downloadResumeShort: 'Download PDF',
   openToWork: 'Open To Work',
   openToNetworking: 'Open To Networking',
+  scanQR: 'Scan My Contact',
+  feelFreeTo: 'Feel free to',
+  regardingJobOpportunities: 'regarding job opportunities',
+  forNetworkingOnLinkedIn: 'for networking on LinkedIn',
+  callMe: 'call me',
+  sendAnEmail: 'send an email',
 }
 
 export const TESTIMONIALS = {
@@ -301,6 +307,8 @@ export const META_TESTIMONIALS = {
 
 export const SHARED = {
   opensInNewTab: 'Opens in a new tab',
+  or: 'or',
+  and: 'and',
 }
 
 export const META_PROJECTS_OVERVIEW_PERSONAL = {
@@ -632,6 +640,7 @@ export const IMAGE_ALT = {
 
 export const CONTACT = {
   scanQR: 'Scan With Phone',
+  contactMeQRCode: 'Contact Me - QR code',
 }
 
 export const EASTER_EGG = {
