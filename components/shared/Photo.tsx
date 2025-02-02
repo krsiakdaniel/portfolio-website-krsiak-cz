@@ -49,7 +49,9 @@ const Photo: FC<PhotoProps> = ({ isPhotoSmall, isOpenToWork, showCaption = true 
         )}
       </div>
 
-      {showCaption && <ImageComponentCaption text={TEXT.nameDanielKrsiak} alignSelf="self-center" />}
+      {showCaption && (
+        <ImageComponentCaption text={TEXT.nameDanielKrsiak} alignSelf="self-center" />
+      )}
     </div>
   )
 }

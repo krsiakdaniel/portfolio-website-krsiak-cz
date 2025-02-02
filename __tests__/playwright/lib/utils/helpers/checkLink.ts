@@ -9,7 +9,11 @@ import { Page, expect } from '@playwright/test'
  * @returns {Promise<void>} - A promise that resolves when the check is complete.
  */
 
-export const checkLink = async (page: Page, dataTestId: string, expectedHref: string): Promise<void> => {
+export const checkLink = async (
+  page: Page,
+  dataTestId: string,
+  expectedHref: string,
+): Promise<void> => {
   const link = await page.getAttribute(`[data-testid="${dataTestId}"]`, 'href')
   expect(link).toBe(expectedHref)
 }

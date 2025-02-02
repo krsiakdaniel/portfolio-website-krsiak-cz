@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, expect, Page, test } from '@playwright/test'
 
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
-import { setupBrowser, setupPage, teardownContext } from '@/__tests__/playwright/lib/utils/helpers/setup'
+import {
+  setupBrowser,
+  setupPage,
+  teardownContext,
+} from '@/__tests__/playwright/lib/utils/helpers/setup'
 
 let browser: Browser
 let context: BrowserContext

@@ -7,8 +7,8 @@ const WorkExperienceIntroduction: FC = (): JSX.Element => {
   return (
     <>
       <Paragraph>
-        I am experienced <Highlight text="React Developer" /> who knows <Highlight text="QA Automation" /> and can lead
-        teams as a <Highlight text="Team Leader" />.
+        I am experienced <Highlight text="React Developer" /> who knows{' '}
+        <Highlight text="QA Automation" /> and can lead teams as a <Highlight text="Team Leader" />.
       </Paragraph>
     </>
   )

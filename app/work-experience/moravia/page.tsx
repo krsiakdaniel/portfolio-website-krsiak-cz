@@ -24,7 +24,11 @@ export const metadata = {
 const ProjectWorkMoravia: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
-      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.moravia, ICON_EMOJI.globeShowingAmericas, TEXT.moravia)}
+      breadCrumbs={getBreadcrumbsWork(
+        PAGES_URL.work.moravia,
+        ICON_EMOJI.globeShowingAmericas,
+        TEXT.moravia,
+      )}
       pageID={PROJECT_ID.work.moravia}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.localization}

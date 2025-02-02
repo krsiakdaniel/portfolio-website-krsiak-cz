@@ -6,7 +6,11 @@ import HeadingSection from '@/components/shared/HeadingSection'
 
 import { TestimonialsSectionProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
 
-const TestimonialsSection: FC<TestimonialsSectionProps> = ({ title, description, testimonials = [] }) => (
+const TestimonialsSection: FC<TestimonialsSectionProps> = ({
+  title,
+  description,
+  testimonials = [],
+}) => (
   <div className="mt-20">
     <HeadingSection text={title} />
     <TestimonialDescription description={description} />

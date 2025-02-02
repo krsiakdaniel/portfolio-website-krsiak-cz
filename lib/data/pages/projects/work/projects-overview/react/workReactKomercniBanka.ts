@@ -37,7 +37,12 @@ export const workReactKomercniBanka: Project = {
     {
       id: 0,
       description: SkillCategoryEnum.FrontEnd,
-      skillsList: [SkillsEnum.TypeScript, SkillsEnum.React, SkillsEnum.Tailwind, SkillsEnum.PairProgramming],
+      skillsList: [
+        SkillsEnum.TypeScript,
+        SkillsEnum.React,
+        SkillsEnum.Tailwind,
+        SkillsEnum.PairProgramming,
+      ],
     },
     {
       id: 1,

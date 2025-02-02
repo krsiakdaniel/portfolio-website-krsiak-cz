@@ -27,11 +27,23 @@ const CareerPath: FC = (): JSX.Element => {
       <div className="mt-10 w-full">
         <div className="grid w-full gap-6 lg:grid-cols-3">
           <div className="grid w-full gap-6 md:grid-cols-2 lg:col-span-2">
-            <ExpertiseSection icon={ICON_EMOJI.atomSymbol} heading={TEXT.reactDev} listItems={careerReactDev} />
-            <ExpertiseSection icon={ICON_EMOJI.laptop} heading={TEXT.webDev} listItems={careerWebDev} />
+            <ExpertiseSection
+              icon={ICON_EMOJI.atomSymbol}
+              heading={TEXT.reactDev}
+              listItems={careerReactDev}
+            />
+            <ExpertiseSection
+              icon={ICON_EMOJI.laptop}
+              heading={TEXT.webDev}
+              listItems={careerWebDev}
+            />
           </div>
           <div className="w-full">
-            <ExpertiseSection icon={ICON_EMOJI.cog} heading={TEXT.testing} listItems={careerTesting} />
+            <ExpertiseSection
+              icon={ICON_EMOJI.cog}
+              heading={TEXT.testing}
+              listItems={careerTesting}
+            />
           </div>
         </div>
       </div>

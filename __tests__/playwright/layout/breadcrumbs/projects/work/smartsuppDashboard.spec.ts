@@ -23,9 +23,13 @@ test.describe('Links', () => {
     })
 
     await test.step('Check the Smartsupp Dashboard link', async () => {
-      const smartsuppDashboardLink = breadcrumbs.locator('a[href="/work-experience/smartsupp-dashboard"]')
+      const smartsuppDashboardLink = breadcrumbs.locator(
+        'a[href="/work-experience/smartsupp-dashboard"]',
+      )
       expect(await smartsuppDashboardLink.count()).toBe(1)
-      expect(await smartsuppDashboardLink.getAttribute('href')).toBe('/work-experience/smartsupp-dashboard')
+      expect(await smartsuppDashboardLink.getAttribute('href')).toBe(
+        '/work-experience/smartsupp-dashboard',
+      )
     })
   })
 })

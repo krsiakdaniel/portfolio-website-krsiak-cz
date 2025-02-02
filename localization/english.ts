@@ -467,7 +467,8 @@ export const META_MORAVIA = {
 
 export const META_KOOPERATIVA = {
   title: `Kooperativa | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
-  description: 'I worked on an application for managing insurance policies for citizens property and products.',
+  description:
+    'I worked on an application for managing insurance policies for citizens property and products.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,

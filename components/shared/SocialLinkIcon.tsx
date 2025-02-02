@@ -34,7 +34,14 @@ const SocialLinkIcon: FC<SocialLinkIconProps> = ({
       title={title}
       aria-label={ariaLabel}
     >
-      <ImageComponent src={imgSrc} width={width} height={height} alt={imgAlt} loading="eager" customCss="shadow-md" />
+      <ImageComponent
+        src={imgSrc}
+        width={width}
+        height={height}
+        alt={imgAlt}
+        loading="eager"
+        customCss="shadow-md"
+      />
     </a>
   )
 }

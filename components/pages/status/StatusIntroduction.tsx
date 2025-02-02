@@ -7,8 +7,8 @@ const StatusIntroduction: FC = (): JSX.Element => {
   return (
     <>
       <Paragraph>
-        Current <Highlight text="status" /> showing the health and <Highlight text="performance" /> of the{' '}
-        <Highlight text="project" /> integrations and workflows.
+        Current <Highlight text="status" /> showing the health and <Highlight text="performance" />{' '}
+        of the <Highlight text="project" /> integrations and workflows.
       </Paragraph>
     </>
   )

@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, Page, test } from '@playwright/test'
 
 import { checkLink } from '@/__tests__/playwright/lib/utils/helpers/checkLink'
-import { setupBrowser, setupPage, teardownContext } from '@/__tests__/playwright/lib/utils/helpers/setup'
+import {
+  setupBrowser,
+  setupPage,
+  teardownContext,
+} from '@/__tests__/playwright/lib/utils/helpers/setup'
 
 let browser: Browser
 let context: BrowserContext

@@ -21,7 +21,8 @@ const WIDTH_KOMERCNI_BANKA = 130
 const WIDTH_GROUPON = 200
 
 const Companies: FC = (): JSX.Element => {
-  const logosGrid = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-16 justify-items-center'
+  const logosGrid =
+    'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-16 justify-items-center'
   const imgWrapper = 'flex items-center justify-center'
 
   return (
@@ -34,17 +35,37 @@ const Companies: FC = (): JSX.Element => {
 
         <div className={logosGrid}>
           <div className={imgWrapper}>
-            <ImageComponent src={kooperativa} width={WIDTH_KOOPERATIVA} alt={IMAGE_ALT.kooperativa} loading="lazy" />
+            <ImageComponent
+              src={kooperativa}
+              width={WIDTH_KOOPERATIVA}
+              alt={IMAGE_ALT.kooperativa}
+              loading="lazy"
+            />
           </div>
           <div className={imgWrapper}>
-            <ImageComponent src={smartsupp} width={WIDTH_SMARTSUPP} alt={IMAGE_ALT.smartsupp} loading="lazy" />
+            <ImageComponent
+              src={smartsupp}
+              width={WIDTH_SMARTSUPP}
+              alt={IMAGE_ALT.smartsupp}
+              loading="lazy"
+            />
           </div>
           <div className={imgWrapper}>
-            <ImageComponent src={microsoft} width={WIDTH_MICROSOFT} alt={IMAGE_ALT.microsoft} loading="lazy" />
+            <ImageComponent
+              src={microsoft}
+              width={WIDTH_MICROSOFT}
+              alt={IMAGE_ALT.microsoft}
+              loading="lazy"
+            />
           </div>
 
           <div className={imgWrapper}>
-            <ImageComponent src={rwsMoravia} width={WIDTH_RWS_MORAVIA} alt={IMAGE_ALT.rwsMoravia} loading="lazy" />
+            <ImageComponent
+              src={rwsMoravia}
+              width={WIDTH_RWS_MORAVIA}
+              alt={IMAGE_ALT.rwsMoravia}
+              loading="lazy"
+            />
           </div>
           <div className={imgWrapper}>
             <ImageComponent
@@ -55,7 +76,12 @@ const Companies: FC = (): JSX.Element => {
             />
           </div>
           <div className={imgWrapper}>
-            <ImageComponent src={groupon} width={WIDTH_GROUPON} alt={IMAGE_ALT.groupon} loading="lazy" />
+            <ImageComponent
+              src={groupon}
+              width={WIDTH_GROUPON}
+              alt={IMAGE_ALT.groupon}
+              loading="lazy"
+            />
           </div>
         </div>
       </div>

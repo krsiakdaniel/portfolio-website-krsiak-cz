@@ -11,7 +11,13 @@ const IMAGE_HEIGHT = 40
 
 const TestimonialQuote: FC = (): JSX.Element => {
   return (
-    <ImageComponent src={quote} width={IMAGE_WIDTH} height={IMAGE_HEIGHT} alt={IMAGE_ALT.iconQuote} loading="lazy" />
+    <ImageComponent
+      src={quote}
+      width={IMAGE_WIDTH}
+      height={IMAGE_HEIGHT}
+      alt={IMAGE_ALT.iconQuote}
+      loading="lazy"
+    />
   )
 }
 

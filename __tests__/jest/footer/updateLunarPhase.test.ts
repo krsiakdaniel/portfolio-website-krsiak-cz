@@ -22,7 +22,9 @@ describe('Moon Phases', () => {
     updateLunarPhase(setLunarPhaseEmoji) // Call the function to be tested
 
     // Verify that lunarPhaseEmoji was called with the correct parameters
-    expect(Moon.lunarPhaseEmoji).toHaveBeenCalledWith(expect.any(Date), { hemisphere: Hemisphere.NORTHERN })
+    expect(Moon.lunarPhaseEmoji).toHaveBeenCalledWith(expect.any(Date), {
+      hemisphere: Hemisphere.NORTHERN,
+    })
     // Verify that setLunarPhaseEmoji was called with the correct emoji
     expect(setLunarPhaseEmoji).toHaveBeenCalledWith(mockEmoji)
   })
@@ -35,6 +37,8 @@ describe('Moon Phases', () => {
     updateLunarPhase(setLunarPhaseEmoji) // Call the function to be tested
 
     // Verify that lunarPhaseEmoji was called with the correct parameters
-    expect(Moon.lunarPhaseEmoji).toHaveBeenCalledWith(expect.any(Date), { hemisphere: Hemisphere.NORTHERN })
+    expect(Moon.lunarPhaseEmoji).toHaveBeenCalledWith(expect.any(Date), {
+      hemisphere: Hemisphere.NORTHERN,
+    })
   })
 })

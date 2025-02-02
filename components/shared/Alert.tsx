@@ -16,7 +16,12 @@ const iconInfo = (
   </svg>
 )
 
-const Alert: FC<AlertProps> = ({ type = AlertTypeEnum.Info, title, description, linkComponent }) => {
+const Alert: FC<AlertProps> = ({
+  type = AlertTypeEnum.Info,
+  title,
+  description,
+  linkComponent,
+}) => {
   return (
     <div role="alert" className={`mt-4 rounded-lg border p-4 ${alertTypeClasses[type]}`}>
       <div className="flex items-start md:items-center">

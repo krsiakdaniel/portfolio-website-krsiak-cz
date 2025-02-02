@@ -10,7 +10,9 @@ test.describe('Header - Desktop Menu - Personal Projects Link', () => {
     })
 
     await test.step('Check if the link is visible', async () => {
-      const isLinkVisible = await page.isVisible(getDataTestId(DATA_TEST_IDS.menu.desktop.links.personalProjects))
+      const isLinkVisible = await page.isVisible(
+        getDataTestId(DATA_TEST_IDS.menu.desktop.links.personalProjects),
+      )
       expect(isLinkVisible).toBe(true)
     })
 

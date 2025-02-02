@@ -45,17 +45,29 @@ const ProjectsWork: FC = (): JSX.Element => {
         description={<WorkExperienceIntroduction />}
       >
         {/* REACT */}
-        <ProjectSection sectionId={ID.section.react} sectionText="React" projectData={projectsWorkReact} />
+        <ProjectSection
+          sectionId={ID.section.react}
+          sectionText="React"
+          projectData={projectsWorkReact}
+        />
 
         {/* FRONT END */}
-        <ProjectSection sectionId={ID.section.frontEnd} sectionText="Front End" projectData={projectsWorkFrontEnd} />
+        <ProjectSection
+          sectionId={ID.section.frontEnd}
+          sectionText="Front End"
+          projectData={projectsWorkFrontEnd}
+        />
         <OtherExperienceContent experience={otherExperienceFrontEnd} />
 
         {/* CTA */}
         <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience1} />
 
         {/* WORDPRESS */}
-        <ProjectSection sectionId={ID.section.wordpress} sectionText="WordPress" projectData={projectsWorkWordPress} />
+        <ProjectSection
+          sectionId={ID.section.wordpress}
+          sectionText="WordPress"
+          projectData={projectsWorkWordPress}
+        />
         <OtherExperienceContent experience={otherExperienceWordPress} />
 
         {/* QA */}

@@ -26,7 +26,11 @@ export const metadata = {
 const WhoIAm: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.whoIAm}>
-      <BreadCrumbs level1Url={PAGES_URL.whoIAm} level1Icon={ICON_EMOJI.wavingHand} level1Text={WHO_I_AM.whoIAm} />
+      <BreadCrumbs
+        level1Url={PAGES_URL.whoIAm}
+        level1Icon={ICON_EMOJI.wavingHand}
+        level1Text={WHO_I_AM.whoIAm}
+      />
 
       <div className="mt-10">
         <section>

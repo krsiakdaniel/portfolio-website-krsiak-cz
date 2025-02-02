@@ -5,7 +5,12 @@ import IconCaretRight from '@/components/icons/IconCaretRight'
 
 import { BreadcrumbsItemProps } from '@/lib/utils/typeDefinitions/props/shared/breadcrumbs'
 
-const BreadcrumbsItem: FC<BreadcrumbsItemProps> = ({ href, icon, text, showSeparatorIcon = true }): JSX.Element => {
+const BreadcrumbsItem: FC<BreadcrumbsItemProps> = ({
+  href,
+  icon,
+  text,
+  showSeparatorIcon = true,
+}): JSX.Element => {
   const hoverAndFocusCSS = 'hover:bg-violet-50 hover:text-violet-800'
 
   return (

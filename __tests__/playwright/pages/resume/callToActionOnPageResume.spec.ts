@@ -1,6 +1,10 @@
 import { Browser, BrowserContext, expect, Page, test } from '@playwright/test'
 
-import { setupBrowser, setupPage, teardownContext } from '@/__tests__/playwright/lib/utils/helpers/setup'
+import {
+  setupBrowser,
+  setupPage,
+  teardownContext,
+} from '@/__tests__/playwright/lib/utils/helpers/setup'
 
 let browser: Browser
 let context: BrowserContext
@@ -42,6 +46,8 @@ test.describe('CTA - Resume - Download Resume, LinkedIn', () => {
   test('should render the LinkedIn link correctly', async () => {
     const linkResumeDownload = page.getByTestId('call-to-action-link-linkedin')
     expect(await linkResumeDownload.isVisible()).toBe(true)
-    expect(await linkResumeDownload.getAttribute('href')).toBe('https://www.linkedin.com/in/krsiakdaniel/')
+    expect(await linkResumeDownload.getAttribute('href')).toBe(
+      'https://www.linkedin.com/in/krsiakdaniel/',
+    )
   })
 })

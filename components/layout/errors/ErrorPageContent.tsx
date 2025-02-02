@@ -26,7 +26,13 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
 
   return (
     <div className="flex flex-col items-center text-center">
-      <ImageComponent src={imgSrc} width={IMAGE_WIDTH} height={IMAGE_HEIGHT} alt={imgAlt} loading="eager" />
+      <ImageComponent
+        src={imgSrc}
+        width={IMAGE_WIDTH}
+        height={IMAGE_HEIGHT}
+        alt={imgAlt}
+        loading="eager"
+      />
 
       <div className="mt-10">
         <Heading1 textSize="8xl" textSizeSM="8xl" textSizeMD="8xl">

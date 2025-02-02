@@ -50,7 +50,11 @@ export const workReactKooperativa: Project = {
   ],
   linkText: 'Project details',
   projectLinks: [
-    { urlText: 'Website', url: 'https://www.koop.cz/pojisteni/pojisteni-majetku', dataTestId: 'kooperativa' },
+    {
+      urlText: 'Website',
+      url: 'https://www.koop.cz/pojisteni/pojisteni-majetku',
+      dataTestId: 'kooperativa',
+    },
   ],
   customers: '2 480 000+',
   linkProjectPage: PAGES_URL.work.kooperativa,

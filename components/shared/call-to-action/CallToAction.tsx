@@ -37,7 +37,12 @@ const CallToAction: FC<CallToActionProps> = ({
               textDesktop={textDesktop}
             />
             <div className="mt-8 flex max-w-[248px]">
-              <LinkButton href={link} linkText={linkText} isLinkExternal={isLinkExternal} dataTestId={dataTestId} />
+              <LinkButton
+                href={link}
+                linkText={linkText}
+                isLinkExternal={isLinkExternal}
+                dataTestId={dataTestId}
+              />
             </div>
           </div>
 

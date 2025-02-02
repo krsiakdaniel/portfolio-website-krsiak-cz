@@ -9,7 +9,11 @@ import { Page, expect } from '@playwright/test'
  * @returns {Promise<void>} - A promise that resolves when the test is complete.
  */
 
-export const testProjectLink = async (page: Page, projectPage: string, projectID: string): Promise<void> => {
+export const testProjectLink = async (
+  page: Page,
+  projectPage: string,
+  projectID: string,
+): Promise<void> => {
   const pageLink = projectPage
 
   const projectDetailsLink = page.getByTestId(projectID)

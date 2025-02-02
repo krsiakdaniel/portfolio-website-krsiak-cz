@@ -14,7 +14,11 @@ import { BreadCrumbsType } from '@/lib/utils/typeDefinitions/types'
  * @returns {BreadCrumbsType} - The breadcrumb data.
  */
 
-export const getBreadcrumbsWork = (level2Url: string, level2Icon: string, level2Text: string): BreadCrumbsType => {
+export const getBreadcrumbsWork = (
+  level2Url: string,
+  level2Icon: string,
+  level2Text: string,
+): BreadCrumbsType => {
   return {
     level1Url: PAGES_URL.work.mainUrl,
     level1Icon: ICON_EMOJI.manTechnologist.lightSkinTone,

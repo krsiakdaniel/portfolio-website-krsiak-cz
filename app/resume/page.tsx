@@ -25,7 +25,11 @@ export const metadata = {
 const Resume: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.resume}>
-      <BreadCrumbs level1Url={PAGES_URL.resume} level1Icon={ICON_EMOJI.memo} level1Text={TEXT.resume} />
+      <BreadCrumbs
+        level1Url={PAGES_URL.resume}
+        level1Icon={ICON_EMOJI.memo}
+        level1Text={TEXT.resume}
+      />
 
       <div className="mt-10">
         <div>

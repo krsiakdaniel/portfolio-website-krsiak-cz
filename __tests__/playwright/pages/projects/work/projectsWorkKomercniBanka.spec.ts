@@ -1,6 +1,10 @@
 import { Browser, BrowserContext, expect, Page, test } from '@playwright/test'
 
-import { setupBrowser, setupPage, teardownContext } from '@/__tests__/playwright/lib/utils/helpers/setup'
+import {
+  setupBrowser,
+  setupPage,
+  teardownContext,
+} from '@/__tests__/playwright/lib/utils/helpers/setup'
 
 let browser: Browser
 let context: BrowserContext
@@ -65,7 +69,8 @@ test.describe('Project - Komercni Banka', () => {
     await test.step('Check Exchange Rates - Details link', async () => {
       const link4 = page.getByRole('link', { name: 'Exchange Rates - Details', exact: true })
       const href4 = await link4.getAttribute('href')
-      const expectedUrl4 = 'https://www.kb.cz/en/exchange-rates/exchange-detail?curr=CHF&date=2024-12-27T07:00:00'
+      const expectedUrl4 =
+        'https://www.kb.cz/en/exchange-rates/exchange-detail?curr=CHF&date=2024-12-27T07:00:00'
       expect(href4).toBe(expectedUrl4)
     })
   })

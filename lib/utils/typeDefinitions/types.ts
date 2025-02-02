@@ -17,7 +17,10 @@ export type GetMenuLinkIDType = {
 }
 
 // Skills
-export type SkillCategoryType = SkillCategoryEnum.Design | SkillCategoryEnum.FrontEnd | SkillCategoryEnum.Other
+export type SkillCategoryType =
+  | SkillCategoryEnum.Design
+  | SkillCategoryEnum.FrontEnd
+  | SkillCategoryEnum.Other
 
 // Skill Icon
 export type SkillIconType =

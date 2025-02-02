@@ -21,9 +21,18 @@ const BreadCrumbs: FC<BreadCrumbsProps> = ({
   return (
     <nav aria-label={ARIA_LABELS.breadcrumbs} data-testid={DATA_TEST_IDS.breadcrumbs}>
       <ol className="inline-flex flex-row flex-wrap items-start">
-        <BreadcrumbsItem href={PAGES_URL.home} icon={ICON_EMOJI.house} text={TEXT.home} showSeparatorIcon={false} />
-        {level1Url && level1Text && <BreadcrumbsItem href={level1Url} icon={level1Icon} text={level1Text} />}
-        {level2Url && level2Text && <BreadcrumbsItem href={level2Url} icon={level2Icon} text={level2Text} />}
+        <BreadcrumbsItem
+          href={PAGES_URL.home}
+          icon={ICON_EMOJI.house}
+          text={TEXT.home}
+          showSeparatorIcon={false}
+        />
+        {level1Url && level1Text && (
+          <BreadcrumbsItem href={level1Url} icon={level1Icon} text={level1Text} />
+        )}
+        {level2Url && level2Text && (
+          <BreadcrumbsItem href={level2Url} icon={level2Icon} text={level2Text} />
+        )}
       </ol>
     </nav>
   )

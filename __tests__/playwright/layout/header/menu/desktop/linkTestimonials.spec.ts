@@ -9,7 +9,9 @@ test.describe('Header - Desktop Menu - Testimonials Link', () => {
       await page.goto('/')
     })
 
-    const isLinkVisible = await page.isVisible(getDataTestId(DATA_TEST_IDS.menu.desktop.links.testimonials))
+    const isLinkVisible = await page.isVisible(
+      getDataTestId(DATA_TEST_IDS.menu.desktop.links.testimonials),
+    )
     expect(isLinkVisible).toBe(true)
 
     await test.step('Check if the link redirects to the testimonials page when clicked', async () => {

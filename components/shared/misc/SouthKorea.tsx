@@ -18,7 +18,8 @@ const IMAGE_WIDTH = 1240
 const IMAGE_HEIGHT = 1650
 
 const SouthKorea = () => {
-  const imageComponentCSS = 'border-1 rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md'
+  const imageComponentCSS =
+    'border-1 rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md'
 
   return (
     <section>

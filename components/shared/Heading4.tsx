@@ -15,7 +15,10 @@ const Heading4: FC<HeadingProps> = ({
   const attributes = getAttributes({ id, dataTestId })
 
   return (
-    <h4 {...attributes} className={`break-words font-bold ${textColor} text-${textSize} ${customCss}`}>
+    <h4
+      {...attributes}
+      className={`break-words font-bold ${textColor} text-${textSize} ${customCss}`}
+    >
       {children}
     </h4>
   )

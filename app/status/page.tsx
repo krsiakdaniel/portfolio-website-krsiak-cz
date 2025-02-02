@@ -29,7 +29,11 @@ export const metadata = {
 const Status: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.status}>
-      <BreadCrumbs level1Url={PAGES_URL.status} level1Icon={ICON_EMOJI.verticalTrafficLight} level1Text={STATUS.text} />
+      <BreadCrumbs
+        level1Url={PAGES_URL.status}
+        level1Icon={ICON_EMOJI.verticalTrafficLight}
+        level1Text={STATUS.text}
+      />
 
       <div className="mt-10">
         <div>

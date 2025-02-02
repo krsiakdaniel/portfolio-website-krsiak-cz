@@ -34,7 +34,12 @@ export const projectsWorkQA: Project[] = [
       {
         id: 0,
         description: SkillCategoryEnum.FrontEnd,
-        skillsList: [SkillsEnum.TypeScript, SkillsEnum.React, SkillsEnum.Next, SkillsEnum.Playwright],
+        skillsList: [
+          SkillsEnum.TypeScript,
+          SkillsEnum.React,
+          SkillsEnum.Next,
+          SkillsEnum.Playwright,
+        ],
       },
       {
         id: 1,

@@ -1,5 +1,11 @@
 import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
-import { ImageShowcaseItem, Link, Project, Section, Skill } from '@/lib/utils/typeDefinitions/interfaces'
+import {
+  ImageShowcaseItem,
+  Link,
+  Project,
+  Section,
+  Skill,
+} from '@/lib/utils/typeDefinitions/interfaces'
 
 // Customers Count Props
 export type CustomersCountProps = {

@@ -39,10 +39,18 @@ const ProjectsPersonal: FC = (): JSX.Element => {
         <CallToActionGitHub />
 
         {/* NEXT */}
-        <ProjectSection sectionId={ID.section.next} sectionText={TEXT.next} projectData={projectsPersonalNext} />
+        <ProjectSection
+          sectionId={ID.section.next}
+          sectionText={TEXT.next}
+          projectData={projectsPersonalNext}
+        />
 
         {/* REACT */}
-        <ProjectSection sectionId={ID.section.react} sectionText={TEXT.react} projectData={projectsPersonalReact} />
+        <ProjectSection
+          sectionId={ID.section.react}
+          sectionText={TEXT.react}
+          projectData={projectsPersonalReact}
+        />
       </ProjectsOverviewLayout>
 
       <div className="mt-20">

@@ -1,6 +1,10 @@
 import { Browser, BrowserContext, expect, Page, test } from '@playwright/test'
 
-import { setupBrowser, setupPage, teardownContext } from '@/__tests__/playwright/lib/utils/helpers/setup'
+import {
+  setupBrowser,
+  setupPage,
+  teardownContext,
+} from '@/__tests__/playwright/lib/utils/helpers/setup'
 
 let browser: Browser
 let context: BrowserContext
@@ -35,7 +39,9 @@ test.describe('Baptism Testimony - Verse', () => {
   test.skip('should render the bible verse link correctly', async () => {
     const verseLink = page.getByTestId('bible-verse-link')
     expect(await verseLink.isVisible()).toBe(true)
-    expect(await verseLink.getAttribute('href')).toBe('https://www.bible.com/bible/116/1PE.3.21.NLT')
+    expect(await verseLink.getAttribute('href')).toBe(
+      'https://www.bible.com/bible/116/1PE.3.21.NLT',
+    )
   })
 })
 

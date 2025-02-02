@@ -58,7 +58,11 @@ describe('iconsSkillsProjectsWork', () => {
   })
 
   it('should return the correct icons for Smartsupp Help project', () => {
-    const expectedIcons = getSkillsIcons([SkillIconEnum.JavaScript, SkillIconEnum.PHP, SkillIconEnum.WordPress])
+    const expectedIcons = getSkillsIcons([
+      SkillIconEnum.JavaScript,
+      SkillIconEnum.PHP,
+      SkillIconEnum.WordPress,
+    ])
     expect(iconsSkillsProjectsWorkSmartsuppHelp).toEqual(expectedIcons)
   })
 
@@ -75,7 +79,11 @@ describe('iconsSkillsProjectsWork', () => {
   })
 
   it('should return the correct icons for Moravia project', () => {
-    const expectedIcons = getSkillsIcons([SkillIconEnum.HTML, SkillIconEnum.CSS, SkillIconEnum.JavaScript])
+    const expectedIcons = getSkillsIcons([
+      SkillIconEnum.HTML,
+      SkillIconEnum.CSS,
+      SkillIconEnum.JavaScript,
+    ])
     expect(iconsSkillsProjectsWorkMoravia).toEqual(expectedIcons)
   })
 })

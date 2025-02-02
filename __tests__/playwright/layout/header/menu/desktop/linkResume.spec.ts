@@ -9,7 +9,9 @@ test.describe('Header - Desktop Menu - Resume Link', () => {
       await page.goto('/')
     })
 
-    const isLinkVisible = await page.isVisible(getDataTestId(DATA_TEST_IDS.menu.desktop.links.resume))
+    const isLinkVisible = await page.isVisible(
+      getDataTestId(DATA_TEST_IDS.menu.desktop.links.resume),
+    )
     expect(isLinkVisible).toBe(true)
 
     await test.step('Check if the link redirects to the resume page when clicked', async () => {

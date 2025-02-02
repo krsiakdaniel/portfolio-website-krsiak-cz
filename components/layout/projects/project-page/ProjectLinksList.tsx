@@ -10,7 +10,10 @@ import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ProjectLinksListProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
-const ProjectLinksList: FC<ProjectLinksListProps> = ({ projectLinks = [], linkGitHub }): JSX.Element => {
+const ProjectLinksList: FC<ProjectLinksListProps> = ({
+  projectLinks = [],
+  linkGitHub,
+}): JSX.Element => {
   return (
     <List>
       {projectLinks.map((link) => (

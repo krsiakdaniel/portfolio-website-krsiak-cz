@@ -23,7 +23,13 @@ const Logo: FC = (): JSX.Element => {
         data-testid={DATA_TEST_IDS.headerLogo}
       >
         <div>
-          <ImageComponent src={logo} width={IMAGE_WIDTH} height={IMAGE_HEIGHT} alt="logo" loading="eager" />
+          <ImageComponent
+            src={logo}
+            width={IMAGE_WIDTH}
+            height={IMAGE_HEIGHT}
+            alt="logo"
+            loading="eager"
+          />
         </div>
         <Paragraph
           marginTop="mt-0"

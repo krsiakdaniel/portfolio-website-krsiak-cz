@@ -24,7 +24,11 @@ export const metadata = {
 const ProjectWorkSmartsuppHelp: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
-      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.smartsupp.help, ICON_EMOJI.books, TEXT.smartsuppHELP)}
+      breadCrumbs={getBreadcrumbsWork(
+        PAGES_URL.work.smartsupp.help,
+        ICON_EMOJI.books,
+        TEXT.smartsuppHELP,
+      )}
       pageID={PROJECT_ID.work.smartsupp.help}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.wordpress}
