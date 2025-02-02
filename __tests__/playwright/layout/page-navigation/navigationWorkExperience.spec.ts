@@ -9,10 +9,13 @@ test.describe('Navigation - Work Experience', () => {
     // Navigate to page
     await page.goto('/work-experience')
 
-    // Click on the PageNavigation component 'previous page'
-    await page.click(getDataTestId(DATA_TEST_IDS.pageNavigation.workExperience.previous))
+    // Wait for both click and navigation to complete
+    await Promise.all([
+      page.waitForURL('**/who-i-am'),
+      page.click(getDataTestId(DATA_TEST_IDS.pageNavigation.workExperience.previous)),
+    ])
 
-    // Check that it navigated to the page
+    // Verify the final URL
     expect(page.url()).toBe('http://localhost:3000/who-i-am')
   })
 
@@ -20,10 +23,13 @@ test.describe('Navigation - Work Experience', () => {
     // Navigate to page
     await page.goto('/work-experience')
 
-    // Click on the PageNavigation component 'next page'
-    await page.click(getDataTestId(DATA_TEST_IDS.pageNavigation.workExperience.next))
+    // Wait for both click and navigation to complete
+    await Promise.all([
+      page.waitForURL('**/resume'),
+      page.click(getDataTestId(DATA_TEST_IDS.pageNavigation.workExperience.next)),
+    ])
 
-    // Check that it navigated to the page
+    // Verify the final URL
     expect(page.url()).toBe('http://localhost:3000/resume')
   })
 })

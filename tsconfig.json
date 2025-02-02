@@ -1,27 +1,53 @@
 {
   "compilerOptions": {
+    // Runtime environment & language features
+    // These ensure we have access to DOM APIs and latest JavaScript features
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
+    "target": "esnext",
     "module": "esnext",
+    "moduleDetection": "force",
+    "jsx": "preserve", // Required for Next.js
+    "allowJs": true, // Allow JavaScript files to be compiled
+
+    // Module resolution and bundling settings
+    // These configure how TypeScript processes imports and exports
     "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": false,
+    "noEmit": true,
+
+    // Type checking and safety features
+    // These enforce better code quality and catch common mistakes
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
     "incremental": true,
+
+    // Additional strict checks
+    // These help maintain cleaner, more maintainable code
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noPropertyAccessFromIndexSignature": true,
+
+    // Path aliases
+    // Enables importing from absolute paths using @ prefix
+    "paths": {
+      "@/*": ["./*"]
+    },
+
+    // Next.js specific configuration
+    // Required for proper Next.js TypeScript support
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    },
-    "target": "ES2017"
+    ]
   },
+  // Files to include/exclude in compilation
+  // Specifically configured for Next.js TypeScript files
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

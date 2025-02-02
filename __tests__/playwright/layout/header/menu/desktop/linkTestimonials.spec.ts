@@ -14,9 +14,12 @@ test.describe('Header - Desktop Menu - Testimonials Link', () => {
     )
     expect(isLinkVisible).toBe(true)
 
-    await test.step('Check if the link redirects to the testimonials page when clicked', async () => {
-      await page.click(getDataTestId(DATA_TEST_IDS.menu.desktop.links.testimonials))
-      await page.waitForLoadState('networkidle')
+    await test.step('Check if the link goes to the testimonials page when clicked', async () => {
+      // Wait for both click and navigation to complete
+      await Promise.all([
+        page.waitForURL('**/testimonials'),
+        page.click(getDataTestId(DATA_TEST_IDS.menu.desktop.links.testimonials)),
+      ])
       expect(page.url()).toBe('http://localhost:3000/testimonials')
     })
 

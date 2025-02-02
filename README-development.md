@@ -5,6 +5,7 @@ Development environment for the project.
 **Table of Contents:**
 
 - [🛠️ Development](#️-development)
+  - [🚀 Website Version `2.48.23`](#-website-version-24823)
   - [💻 Commands](#-commands)
     - [Install Dependencies](#install-dependencies)
     - [Run Development Mode](#run-development-mode)
@@ -22,6 +23,14 @@ Development environment for the project.
     - [Example](#example)
 
 ---
+
+## 🚀 Website Version `2.48.23`
+
+As of Feb 2, 2025, the website is `"version": "2.48.23"`.
+
+- 2 - represents major redesign
+- 48 - new features added
+- 23 - bug fixes implemented
 
 ## 💻 Commands
 

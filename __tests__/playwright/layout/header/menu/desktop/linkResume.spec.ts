@@ -15,8 +15,11 @@ test.describe('Header - Desktop Menu - Resume Link', () => {
     expect(isLinkVisible).toBe(true)
 
     await test.step('Check if the link redirects to the resume page when clicked', async () => {
-      await page.click(getDataTestId(DATA_TEST_IDS.menu.desktop.links.resume))
-      await page.waitForLoadState('networkidle')
+      // Wait for both click and navigation to complete
+      await Promise.all([
+        page.waitForURL('**/resume'),
+        page.click(getDataTestId(DATA_TEST_IDS.menu.desktop.links.resume)),
+      ])
       expect(page.url()).toBe('http://localhost:3000/resume')
     })
 
