@@ -11,6 +11,7 @@ import { BIBLE, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import baptismKrsiakDaniel from '@/public/images/webp/testimonials/personal/baptism/krsiak-daniel-baptism-testimony.webp'
 
@@ -60,7 +61,7 @@ const BaptismTestimony = () => {
           width={IMAGE_WIDTH_CHURCH}
           height={IMAGE_HEIGHT_CHURCH}
           alt={BIBLE.baptismChurch}
-          loading="eager"
+          loading={ImageLoading.EAGER}
           customCss={imageComponentClass}
           dataTestId={DATA_TEST_IDS.baptism.image}
         />

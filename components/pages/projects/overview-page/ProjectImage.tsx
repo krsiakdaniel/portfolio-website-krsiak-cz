@@ -4,6 +4,7 @@ import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ICON_EMOJI } from '@/localization/english'
 
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { ProjectImageProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
 const IMAGE_WIDTH = 600
@@ -26,7 +27,7 @@ const ProjectImage: FC<ProjectImageProps> = ({ isFeatured, image, title }): JSX.
           width={IMAGE_WIDTH}
           height={IMAGE_HEIGHT}
           alt={title}
-          loading="lazy"
+          loading={ImageLoading.LAZY}
           customCss={`shadow-md rounded-lg border p-1 ${featuredProjectCSS}`}
         />
       </div>

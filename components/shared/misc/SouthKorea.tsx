@@ -8,6 +8,7 @@ import Paragraph from '@/components/shared/Paragraph'
 import { ICON_EMOJI, SOUTH_KOREA } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import hiking from '@/public/images/webp/photo/south-korea/hiking.webp'
 import nature from '@/public/images/webp/photo/south-korea/nature.webp'
@@ -45,7 +46,7 @@ const SouthKorea = () => {
               width={IMAGE_WIDTH}
               height={IMAGE_HEIGHT}
               alt={SOUTH_KOREA.hiking}
-              loading="eager"
+              loading={ImageLoading.EAGER}
               customCss={imageComponentCSS}
               dataTestId={DATA_TEST_IDS.southKorea.hiking}
             />
@@ -67,7 +68,7 @@ const SouthKorea = () => {
               width={IMAGE_WIDTH}
               height={IMAGE_HEIGHT}
               alt={SOUTH_KOREA.nature}
-              loading="eager"
+              loading={ImageLoading.EAGER}
               customCss={imageComponentCSS}
               dataTestId={DATA_TEST_IDS.southKorea.nature}
             />
@@ -80,7 +81,7 @@ const SouthKorea = () => {
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
             alt={SOUTH_KOREA.temple}
-            loading="eager"
+            loading={ImageLoading.EAGER}
             customCss={imageComponentCSS}
             dataTestId={DATA_TEST_IDS.southKorea.temple}
           />
@@ -92,7 +93,7 @@ const SouthKorea = () => {
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
             alt={SOUTH_KOREA.palace}
-            loading="eager"
+            loading={ImageLoading.EAGER}
             customCss={imageComponentCSS}
             dataTestId={DATA_TEST_IDS.southKorea.palace}
           />

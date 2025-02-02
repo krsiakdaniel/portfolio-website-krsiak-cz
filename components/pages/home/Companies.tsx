@@ -6,6 +6,8 @@ import ImageComponent from '@/components/shared/ImageComponent'
 
 import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization/english'
 
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
+
 import groupon from '@/public/images/svg/logo/groupon.svg'
 import komercniBanka from '@/public/images/svg/logo/komercni-banka.svg'
 import kooperativa from '@/public/images/svg/logo/kooperativa.svg'
@@ -39,7 +41,7 @@ const Companies: FC = (): JSX.Element => {
               src={kooperativa}
               width={WIDTH_KOOPERATIVA}
               alt={IMAGE_ALT.kooperativa}
-              loading="lazy"
+              loading={ImageLoading.LAZY}
             />
           </div>
           <div className={imgWrapper}>
@@ -47,7 +49,7 @@ const Companies: FC = (): JSX.Element => {
               src={smartsupp}
               width={WIDTH_SMARTSUPP}
               alt={IMAGE_ALT.smartsupp}
-              loading="lazy"
+              loading={ImageLoading.LAZY}
             />
           </div>
           <div className={imgWrapper}>
@@ -55,7 +57,7 @@ const Companies: FC = (): JSX.Element => {
               src={microsoft}
               width={WIDTH_MICROSOFT}
               alt={IMAGE_ALT.microsoft}
-              loading="lazy"
+              loading={ImageLoading.LAZY}
             />
           </div>
 
@@ -64,7 +66,7 @@ const Companies: FC = (): JSX.Element => {
               src={rwsMoravia}
               width={WIDTH_RWS_MORAVIA}
               alt={IMAGE_ALT.rwsMoravia}
-              loading="lazy"
+              loading={ImageLoading.LAZY}
             />
           </div>
           <div className={imgWrapper}>
@@ -72,7 +74,7 @@ const Companies: FC = (): JSX.Element => {
               src={komercniBanka}
               width={WIDTH_KOMERCNI_BANKA}
               alt={IMAGE_ALT.komercniBanka}
-              loading="lazy"
+              loading={ImageLoading.LAZY}
             />
           </div>
           <div className={imgWrapper}>
@@ -80,7 +82,7 @@ const Companies: FC = (): JSX.Element => {
               src={groupon}
               width={WIDTH_GROUPON}
               alt={IMAGE_ALT.groupon}
-              loading="lazy"
+              loading={ImageLoading.LAZY}
             />
           </div>
         </div>

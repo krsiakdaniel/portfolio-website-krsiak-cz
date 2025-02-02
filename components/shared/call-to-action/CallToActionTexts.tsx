@@ -17,8 +17,7 @@ const CallToActionTexts: FC<CallToActionTextsProps> = ({
 }) => {
   return (
     <>
-      <div className="mb-2 flex items-center space-x-2 uppercase md:space-x-0">
-        {/* FIXME: here set the size to XS */}
+      <div className="mb-2 flex items-end space-x-2 uppercase md:space-x-0">
         <CallToActionIcon type={DeviceTypeEnum.Mobile} icon={icon} />
         <Highlight text={highlight} customCss="text-violet-800" />
       </div>

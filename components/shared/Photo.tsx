@@ -6,6 +6,7 @@ import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
 import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { PhotoProps } from '@/lib/utils/typeDefinitions/props/pages/resume/resume'
 
 import openToWorkSM from '@/public/images/webp/photo/linkedin/open-to-work-216x216.webp'
@@ -31,7 +32,7 @@ const Photo: FC<PhotoProps> = ({ isPhotoSmall, isOpenToWork, showCaption = true 
           width={isPhotoSmall ? IMAGE_WIDTH_SM : IMAGE_WIDTH_LG}
           height={isPhotoSmall ? IMAGE_HEIGHT_SM : IMAGE_HEIGHT_LG}
           alt={TEXT.nameDanielKrsiak}
-          loading="lazy"
+          loading={ImageLoading.LAZY}
           customCss="rounded-full border border-violet-300 bg-violet-50 p-1 shadow-md"
           dataTestId={DATA_TEST_IDS.misc.linkedinPhoto}
         />
@@ -43,7 +44,7 @@ const Photo: FC<PhotoProps> = ({ isPhotoSmall, isOpenToWork, showCaption = true 
             width={isPhotoSmall ? IMAGE_WIDTH_SM : IMAGE_WIDTH_LG}
             height={isPhotoSmall ? IMAGE_HEIGHT_SM : IMAGE_HEIGHT_LG}
             alt={TEXT.openToWork}
-            loading="lazy"
+            loading={ImageLoading.LAZY}
             customCss="absolute left-0 top-0 h-full w-full"
           />
         )}

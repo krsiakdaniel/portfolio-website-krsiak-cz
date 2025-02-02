@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import ImageComponent from '@/components/shared/ImageComponent'
 
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { TestimonialPersonInfoProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
 
 const IMAGE_WIDTH = 48
@@ -15,7 +16,7 @@ const TestimonialPersonInfo: FC<TestimonialPersonInfoProps> = ({ photo, icon, na
         width={IMAGE_WIDTH}
         height={IMAGE_HEIGHT}
         alt={name}
-        loading="lazy"
+        loading={ImageLoading.LAZY}
         customCss="rounded-full border border-violet-300 bg-violet-50 p-1 shadow-md"
       />
       <div className="flex flex-col">

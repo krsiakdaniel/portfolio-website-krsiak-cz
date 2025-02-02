@@ -4,6 +4,8 @@ import ImageComponent from '@/components/shared/ImageComponent'
 
 import { IMAGE_ALT } from '@/localization/english'
 
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
+
 import quote from '@/public/icons/svg/testimonial/quote.svg'
 
 const IMAGE_WIDTH = 40
@@ -16,7 +18,7 @@ const TestimonialQuote: FC = (): JSX.Element => {
       width={IMAGE_WIDTH}
       height={IMAGE_HEIGHT}
       alt={IMAGE_ALT.iconQuote}
-      loading="lazy"
+      loading={ImageLoading.LAZY}
     />
   )
 }

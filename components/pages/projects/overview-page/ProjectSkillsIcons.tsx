@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import ImageComponent from '@/components/shared/ImageComponent'
 
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { ProjectSkillsIconsProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
 const IMAGE_WIDTH = 28
@@ -17,7 +18,7 @@ const ProjectSkillsIcons: FC<ProjectSkillsIconsProps> = ({ skillsIcons = [] }): 
           width={IMAGE_WIDTH}
           height={IMAGE_HEIGHT}
           alt={item.name}
-          loading="lazy"
+          loading={ImageLoading.LAZY}
           customCss="mr-2 mt-2 lg:mt-0"
           dataTooltipContent={item.name}
         />

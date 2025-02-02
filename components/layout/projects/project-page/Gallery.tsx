@@ -9,6 +9,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import Paragraph from '@/components/shared/Paragraph'
 
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { GalleryProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
 const IMAGE_WIDTH = 1240
@@ -28,7 +29,7 @@ const Gallery: FC<GalleryProps> = ({ imageShowcase = [] }): JSX.Element => {
               height={IMAGE_HEIGHT}
               customCss="border-1 mt-8 rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md"
               alt={`project-image-${image.id}`}
-              loading="lazy"
+              loading={ImageLoading.LAZY}
               placeholder="blur"
               blurDataURL={image.src}
             />

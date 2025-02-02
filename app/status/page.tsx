@@ -3,13 +3,12 @@ import { FC } from 'react'
 import PageContainer from '@/components/layout/PageContainer'
 import StatusIntroduction from '@/components/pages/status/StatusIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import EmojiAnimated from '@/components/shared/EmojiAnimated'
 import ExternalLink from '@/components/shared/ExternalLink'
 import Heading1 from '@/components/shared/Heading1'
 import Heading2 from '@/components/shared/Heading2'
 import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
-
-import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
 import { metaDataStatus } from '@/lib/data/metadata/pages/metaDataStatus'
 import { statusBadges } from '@/lib/data/pages/status'
@@ -18,9 +17,9 @@ import { DAISY_IU, ICON_EMOJI, STATUS, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
-import EmojiAnimated, { EmojiSizeEnum, EmojiTypeEnum } from '@/components/shared/EmojiAnimated'
+import { EmojiNameEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 export const metadata = {
   ...metaDataStatus,
@@ -59,16 +58,16 @@ const Status: FC = (): JSX.Element => {
                 height={item.height}
                 alt={item.alt}
                 customCss="mt-2"
-                loading="eager"
+                loading={ImageLoading.EAGER}
               />
             ))}
           </div>
           <div className="mt-16 flex md:mt-0 md:items-center md:justify-center">
             <EmojiAnimated
-              type={EmojiTypeEnum.ROBOT}
-              size={EmojiSizeEnum.MD}
+              type={EmojiNameEnum.ROBOT}
+              size={EmojiSizeEnum.LG}
               alt={DAISY_IU.daisyIsAwesome}
-              loading="eager"
+              loading={ImageLoading.EAGER}
               className="mt-8"
             />
           </div>

@@ -9,6 +9,8 @@ import { TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
+
 import logo from '@/public/icons/webp/logo.webp'
 
 const IMAGE_WIDTH = 32
@@ -28,7 +30,7 @@ const Logo: FC = (): JSX.Element => {
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
             alt="logo"
-            loading="eager"
+            loading={ImageLoading.EAGER}
           />
         </div>
         <Paragraph

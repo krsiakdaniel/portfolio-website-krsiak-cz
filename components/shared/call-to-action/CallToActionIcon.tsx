@@ -1,9 +1,16 @@
 import { FC } from 'react'
 
+import EmojiAnimated from '@/components/shared/EmojiAnimated'
+
 import { SOCIAL_LINKS } from '@/localization/english'
 
-import EmojiAnimated, { EmojiSizeEnum, EmojiTypeEnum } from '@/components/shared/EmojiAnimated'
-import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+import {
+  DeviceTypeEnum,
+  EmojiNameEnum,
+  EmojiSizeEnum,
+  ImageLoading,
+} from '@/lib/utils/typeDefinitions/enums'
+
 import { CallToActionIconProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
 const CallToActionIcon: FC<CallToActionIconProps> = ({ type, icon }) => {
@@ -14,17 +21,16 @@ const CallToActionIcon: FC<CallToActionIconProps> = ({ type, icon }) => {
 
   return (
     <div
-      className={`select-none ${isMobile ? 'text-2xl md:hidden' : 'text-9xl'} ${transitionIconCSS}`}
+      className={`flex select-none items-center justify-center ${isMobile ? 'h-8 w-8 text-2xl md:hidden' : 'h-32 w-32 text-9xl'} ${transitionIconCSS}`}
     >
       {isIconString ? (
         icon
       ) : (
         <EmojiAnimated
-          type={EmojiTypeEnum.ROCKET}
-          size={EmojiSizeEnum.MD}
+          type={EmojiNameEnum.ROCKET}
+          size={isMobile ? EmojiSizeEnum.SM : EmojiSizeEnum.LG}
           alt={SOCIAL_LINKS.gitHub}
-          loading="eager"
-          className="mt-8"
+          loading={ImageLoading.EAGER}
         />
       )}
     </div>

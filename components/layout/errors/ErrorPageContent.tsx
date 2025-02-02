@@ -6,6 +6,8 @@ import Heading2 from '@/components/shared/Heading2'
 import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
+
 import { ErrorPageContentProps } from '@/lib/utils/typeDefinitions/props/layout/errors'
 
 const IMAGE_WIDTH = 400
@@ -31,7 +33,7 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
         width={IMAGE_WIDTH}
         height={IMAGE_HEIGHT}
         alt={imgAlt}
-        loading="eager"
+        loading={ImageLoading.EAGER}
       />
 
       <div className="mt-10">

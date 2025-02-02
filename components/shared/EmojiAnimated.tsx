@@ -1,38 +1,22 @@
-import ImageComponent from '@/components/shared/ImageComponent'
 import { FC } from 'react'
 
-// FIXME: opravit, bdue mi chybet slozka, udelat a k tomu ikony
-// SM = 32,
-// MD = 80,
-// LG = 128,
+import ImageComponent from '@/components/shared/ImageComponent'
 
-// TODO: to pak upravit v 'CallToActionTexts' a overit i veliskot ikon EMOJI, jeslti to nerozbiji tech 32x32
-
-export enum EmojiSizeEnum {
-  SM = 80,
-  MD = 128,
-  LG = 256,
-}
-
-export enum EmojiTypeEnum {
-  SUNGLASSES = 'smiling-face-with-sunglasses',
-  ROCKET = 'rocket',
-  ROBOT = 'robot',
-}
+import { EmojiNameEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 interface EmojiAnimatedProps {
-  type: EmojiTypeEnum
+  type: EmojiNameEnum
   size: EmojiSizeEnum
   alt: string
-  loading?: 'lazy' | 'eager'
+  loading?: ImageLoading
   className?: string
 }
 
 const EmojiAnimated: FC<EmojiAnimatedProps> = ({
   type,
-  size = EmojiSizeEnum.MD,
+  size,
   alt,
-  loading = 'lazy',
+  loading = ImageLoading.LAZY,
   className = '',
 }): JSX.Element => {
   const src = `/images/webp/emoji-animated/${size}x${size}/${type}-animated-${size}x${size}.webp`

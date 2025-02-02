@@ -1,6 +1,8 @@
 'use client'
 
-import { FC, useEffect, useState } from 'react'
+import { FC } from 'react'
+
+import { useResponsiveText } from '@/lib/hooks/useResponsiveText'
 
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
@@ -10,29 +12,10 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
 const CallToActionLinkedIn: FC = (): JSX.Element => {
-  const [text, setText] = useState(TEXT.linkedIn)
-
-  // TODO: resize logic can be moved to a custom hook
-  // screenSize - md: 768px
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setText(TEXT.nameDanielKrsiak)
-      } else {
-        setText(`${TEXT.linkedIn} - ${TEXT.nameDanielKrsiak}`)
-      }
-    }
-
-    window.addEventListener('resize', handleResize)
-
-    // Call handler right away so state gets updated with initial window size
-    handleResize()
-
-    // Remove event listener on cleanup
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
-  const linkText = text ?? TEXT.linkedIn
+  const text = useResponsiveText({
+    mobileText: TEXT.nameDanielKrsiak,
+    desktopText: `${TEXT.linkedIn} - ${TEXT.nameDanielKrsiak}`,
+  })
 
   return (
     <CallToAction
@@ -41,7 +24,7 @@ const CallToActionLinkedIn: FC = (): JSX.Element => {
       textMobileAndDesktop={`Visit my LinkedIn profile to connect and\u00A0see my professional experiences.`}
       textDesktop={`It\u00A0showcases a\u00A0comprehensive overview of my career journey.`}
       link={EXTERNAL_URL.linkedIn}
-      linkText={linkText}
+      linkText={text ?? TEXT.linkedIn}
       dataTestId={DATA_TEST_IDS.callToAction.linkLinkedIn}
       icon={ICON_EMOJI.link}
       isLinkExternal
