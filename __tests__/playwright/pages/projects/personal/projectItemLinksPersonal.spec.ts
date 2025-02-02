@@ -1,6 +1,10 @@
 import { Browser, BrowserContext, Page, test } from '@playwright/test'
 
-import { setupBrowser, setupPage, teardownContext } from '@/__tests__/playwright/lib/utils/helpers/setup'
+import {
+  setupBrowser,
+  setupPage,
+  teardownContext,
+} from '@/__tests__/playwright/lib/utils/helpers/setup'
 import { testProjectLink } from '@/__tests__/playwright/lib/utils/helpers/testProjectLink'
 
 let browser: Browser
@@ -37,6 +41,10 @@ test.describe('Projects Personal - Page links', () => {
   })
 
   test('Project - Cryptomania', async () => {
-    await testProjectLink(page, '/personal-projects/cryptomania', 'link-project-personal-cryptomania')
+    await testProjectLink(
+      page,
+      '/personal-projects/cryptomania',
+      'link-project-personal-cryptomania',
+    )
   })
 })

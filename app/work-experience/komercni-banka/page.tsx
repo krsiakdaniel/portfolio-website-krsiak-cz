@@ -24,7 +24,11 @@ export const metadata = {
 const ProjectWorkKomercniBanka: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
-      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.komercniBanka, ICON_EMOJI.bank, TEXT.komercniBanka)}
+      breadCrumbs={getBreadcrumbsWork(
+        PAGES_URL.work.komercniBanka,
+        ICON_EMOJI.bank,
+        TEXT.komercniBanka,
+      )}
       pageID={PROJECT_ID.work.komercniBanka}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.react}

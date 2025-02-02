@@ -21,7 +21,10 @@ test.describe('Footer - Home page Link', () => {
     })
 
     await test.step('Check if link is correct', async () => {
-      const linkUrl = await page.getAttribute(getDataTestId(DATA_TEST_IDS.footer.linkFooterHome), 'href')
+      const linkUrl = await page.getAttribute(
+        getDataTestId(DATA_TEST_IDS.footer.linkFooterHome),
+        'href',
+      )
       expect(linkUrl).toBe('/')
     })
 

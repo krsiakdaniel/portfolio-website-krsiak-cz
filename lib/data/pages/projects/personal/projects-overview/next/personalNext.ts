@@ -42,7 +42,12 @@ export const projectsPersonalNext: Project[] = [
       {
         id: 1,
         description: SkillCategoryEnum.Other,
-        skillsList: [SkillsEnum.Jest, SkillsEnum.Playwright, SkillsEnum.GithubActions, SkillsEnum.Netlify],
+        skillsList: [
+          SkillsEnum.Jest,
+          SkillsEnum.Playwright,
+          SkillsEnum.GithubActions,
+          SkillsEnum.Netlify,
+        ],
       },
     ],
     linkText: 'Project details',

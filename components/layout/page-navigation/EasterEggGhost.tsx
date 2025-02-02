@@ -14,10 +14,15 @@ const EasterEggGhost: FC<EasterEggGhostProps> = ({ arrowDirection }) => {
   const isArrowDirectionLeft = arrowDirection === ArrowDirectionEnum.Left
   const isArrowDirectionRight = arrowDirection === ArrowDirectionEnum.Right
 
-  const moveGhostDirectionClass = isArrowDirectionLeft ? cssAnimationClassNext : cssAnimationClassPrevious
+  const moveGhostDirectionClass = isArrowDirectionLeft
+    ? cssAnimationClassNext
+    : cssAnimationClassPrevious
 
   return (
-    <span role="img" className={`${moveGhostDirectionClass} hidden select-none px-4 group-hover:inline-block`}>
+    <span
+      role="img"
+      className={`${moveGhostDirectionClass} hidden select-none px-4 group-hover:inline-block`}
+    >
       {isArrowDirectionRight && <GhostScreaming />}
       <span className="mx-2">{ICON_EMOJI.ghost}</span>
       {isArrowDirectionLeft && <GhostScreaming />}

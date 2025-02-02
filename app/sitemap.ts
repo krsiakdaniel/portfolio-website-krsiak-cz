@@ -10,6 +10,7 @@ const BASE_URL = ENV_URLS.production
 
 const sitemapEntries: SitemapItem[] = [
   { url: BASE_URL + SITEMAP_URLS.home, priority: 1 },
+  { url: BASE_URL + SITEMAP_URLS.whoIAm, priority: 0.8 },
   { url: BASE_URL + SITEMAP_URLS.resume, priority: 0.8 },
   { url: BASE_URL + SITEMAP_URLS.workExperience, priority: 0.8 },
   { url: BASE_URL + SITEMAP_URLS.workSmartsuppDashboard, priority: 0.8 },

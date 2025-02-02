@@ -6,7 +6,14 @@ const AppleTouchIcons: FC = (): JSX.Element => {
   return (
     <>
       {(appleTouchIconSizes ?? []).map((size) => {
-        return <link key={size} rel="apple-touch-icon" sizes={size} href={`/icons/png/icon-${size}.png`} />
+        return (
+          <link
+            key={size}
+            rel="apple-touch-icon"
+            sizes={size}
+            href={`/icons/png/icon-${size}.png`}
+          />
+        )
       })}
     </>
   )

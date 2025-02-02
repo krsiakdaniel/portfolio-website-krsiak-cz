@@ -45,17 +45,29 @@ const ProjectsWork: FC = (): JSX.Element => {
         description={<WorkExperienceIntroduction />}
       >
         {/* REACT */}
-        <ProjectSection sectionId={ID.section.react} sectionText="React" projectData={projectsWorkReact} />
+        <ProjectSection
+          sectionId={ID.section.react}
+          sectionText="React"
+          projectData={projectsWorkReact}
+        />
 
         {/* FRONT END */}
-        <ProjectSection sectionId={ID.section.frontEnd} sectionText="Front End" projectData={projectsWorkFrontEnd} />
+        <ProjectSection
+          sectionId={ID.section.frontEnd}
+          sectionText="Front End"
+          projectData={projectsWorkFrontEnd}
+        />
         <OtherExperienceContent experience={otherExperienceFrontEnd} />
 
         {/* CTA */}
         <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience1} />
 
         {/* WORDPRESS */}
-        <ProjectSection sectionId={ID.section.wordpress} sectionText="WordPress" projectData={projectsWorkWordPress} />
+        <ProjectSection
+          sectionId={ID.section.wordpress}
+          sectionText="WordPress"
+          projectData={projectsWorkWordPress}
+        />
         <OtherExperienceContent experience={otherExperienceWordPress} />
 
         {/* QA */}
@@ -78,18 +90,16 @@ const ProjectsWork: FC = (): JSX.Element => {
         <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience2} />
       </ProjectsOverviewLayout>
 
-      <div className="mt-20">
-        <PageNavigation
-          linkPrevious={PAGES_URL.home}
-          iconPrevious={ICON_EMOJI.house}
-          namePrevious={TEXT.home}
-          dataTestIdPrevious={DATA_TEST_IDS.page.workExperience.previous}
-          linkNext={PAGES_URL.resume}
-          iconNext={ICON_EMOJI.memo}
-          nameNext={TEXT.resume}
-          dataTestIdNext={DATA_TEST_IDS.page.workExperience.next}
-        />
-      </div>
+      <PageNavigation
+        linkPrevious={PAGES_URL.whoIAm}
+        iconPrevious={ICON_EMOJI.wavingHand}
+        namePrevious={TEXT.whoIAm}
+        dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.workExperience.previous}
+        linkNext={PAGES_URL.resume}
+        iconNext={ICON_EMOJI.memo}
+        nameNext={TEXT.resume}
+        dataTestIdNext={DATA_TEST_IDS.pageNavigation.workExperience.next}
+      />
     </PageContainer>
   )
 }

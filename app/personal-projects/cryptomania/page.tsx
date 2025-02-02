@@ -30,7 +30,11 @@ const ProjectPersonalCryptomania: FC = (): JSX.Element => {
   return (
     <>
       <ProjectPageLayoutWrapper
-        breadCrumbs={getBreadcrumbsPersonal(PAGES_URL.personal.cryptoMania, ICON_EMOJI.moneyBag, TEXT.cryptoMania)}
+        breadCrumbs={getBreadcrumbsPersonal(
+          PAGES_URL.personal.cryptoMania,
+          ICON_EMOJI.moneyBag,
+          TEXT.cryptoMania,
+        )}
         pageID={PROJECT_ID.personal.cryptoMania}
         goBackLink={GoBackLinkEnum.Personal}
         sectionID={ID.section.react}

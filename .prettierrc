@@ -2,7 +2,7 @@
   "semi": false,
   "singleQuote": true,
   "trailingComma": "all",
-  "printWidth": 120,
+  "printWidth": 100,
   "overrides": [
     { "files": "*.yml", "options": { "useTabs": false } },
     { "files": "*.json", "options": { "useTabs": false } },

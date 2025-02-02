@@ -51,7 +51,9 @@ test.describe('Menu Mobile - Link "Resume"', () => {
     await page.click(getDataTestId(DATA_TEST_IDS.menu.toggle.component))
 
     // Check if the link is visible
-    const isLinkVisible = await page.isVisible(getDataTestId(DATA_TEST_IDS.menu.mobile.links.resume))
+    const isLinkVisible = await page.isVisible(
+      getDataTestId(DATA_TEST_IDS.menu.mobile.links.resume),
+    )
     expect(isLinkVisible).toBe(true)
 
     // Click on the link

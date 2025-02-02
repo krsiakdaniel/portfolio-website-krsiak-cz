@@ -24,7 +24,11 @@ export const metadata = {
 const ProjectWorkGroupon: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
-      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.groupon, ICON_EMOJI.shoppingCart, TEXT.groupon)}
+      breadCrumbs={getBreadcrumbsWork(
+        PAGES_URL.work.groupon,
+        ICON_EMOJI.shoppingCart,
+        TEXT.groupon,
+      )}
       pageID={PROJECT_ID.work.groupon}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.qa}

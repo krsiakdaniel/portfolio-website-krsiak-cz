@@ -24,7 +24,11 @@ export const metadata = {
 const ProjectWorkKooperativa: FC = (): JSX.Element => {
   return (
     <ProjectPageLayoutWrapper
-      breadCrumbs={getBreadcrumbsWork(PAGES_URL.work.kooperativa, ICON_EMOJI.umbrellaWithRainDrops, TEXT.kooperativa)}
+      breadCrumbs={getBreadcrumbsWork(
+        PAGES_URL.work.kooperativa,
+        ICON_EMOJI.umbrellaWithRainDrops,
+        TEXT.kooperativa,
+      )}
       pageID={PROJECT_ID.work.kooperativa}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.react}

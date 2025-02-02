@@ -9,7 +9,9 @@ test.describe('Header - Desktop Menu - Work Experience Link', () => {
       await page.goto('/')
     })
 
-    const isLinkVisible = await page.isVisible(getDataTestId(DATA_TEST_IDS.menu.desktop.links.workExperience))
+    const isLinkVisible = await page.isVisible(
+      getDataTestId(DATA_TEST_IDS.menu.desktop.links.workExperience),
+    )
     expect(isLinkVisible).toBe(true)
 
     await test.step('Check if the link redirects to the work experience page when clicked', async () => {

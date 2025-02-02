@@ -14,7 +14,9 @@ import { MenuProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 const Menu: FC<MenuProps> = ({ type }): JSX.Element => {
   const isMobile = type === DeviceTypeEnum.Mobile
 
-  const menuDataTestId = isMobile ? DATA_TEST_IDS.menu.mobile.componentMenu : DATA_TEST_IDS.menu.desktop.componentMenu
+  const menuDataTestId = isMobile
+    ? DATA_TEST_IDS.menu.mobile.componentMenu
+    : DATA_TEST_IDS.menu.desktop.componentMenu
   const menuId = isMobile ? ID.menu.mobile : ID.menu.desktop
 
   return (

@@ -19,7 +19,12 @@ const Testimonial: FC<TestimonialProps> = ({
         <TestimonialQuote />
         <TestimonialText text={testimonialText} />
         <div className="mt-4 flex flex-row space-x-4">
-          <TestimonialPersonInfo photo={personPhoto} icon={personIcon} name={personName} job={personJob} />
+          <TestimonialPersonInfo
+            photo={personPhoto}
+            icon={personIcon}
+            name={personName}
+            job={personJob}
+          />
         </div>
       </div>
     </div>

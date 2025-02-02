@@ -7,8 +7,8 @@ const PersonalProjectsIntroduction: FC = (): JSX.Element => {
   return (
     <>
       <Paragraph>
-        I enjoy learning <Highlight text="new technologies" /> and creating <Highlight text="personal projects" /> where
-        I can apply my knowledge.
+        I enjoy learning <Highlight text="new technologies" /> and creating{' '}
+        <Highlight text="personal projects" /> where I can apply my knowledge.
       </Paragraph>
     </>
   )

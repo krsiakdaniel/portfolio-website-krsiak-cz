@@ -10,7 +10,7 @@ test.describe('Navigation - Testimonials', () => {
     await page.goto('/testimonials')
 
     // Click on the PageNavigation component 'previous page'
-    await page.click(getDataTestId(DATA_TEST_IDS.page.testimonials.previous))
+    await page.click(getDataTestId(DATA_TEST_IDS.pageNavigation.testimonials.previous))
 
     // Check that it navigated to the page
     expect(page.url()).toBe('http://localhost:3000/personal-projects')

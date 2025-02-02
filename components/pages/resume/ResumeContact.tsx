@@ -23,7 +23,9 @@ const ResumeContact: FC = (): JSX.Element => {
           <span>
             Scan My Contact
             <span className="mx-2 hidden sm:inline-block">—</span>
-            <span className={`block font-bold sm:inline md:ml-2 ${isOpenToWork ? 'text-green-600' : 'text-blue-600'}`}>
+            <span
+              className={`block font-bold sm:inline md:ml-2 ${isOpenToWork ? 'text-green-600' : 'text-blue-600'}`}
+            >
               {contactMessage}
             </span>
           </span>
@@ -32,7 +34,8 @@ const ResumeContact: FC = (): JSX.Element => {
 
       <div>
         <Paragraph>
-          Feel free to <Highlight text="call me" /> or <Highlight text="send an email" /> {contactPurpose}.
+          Feel free to <Highlight text="call me" /> or <Highlight text="send an email" />{' '}
+          {contactPurpose}.
         </Paragraph>
       </div>
 

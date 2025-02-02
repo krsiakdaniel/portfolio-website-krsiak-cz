@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image'
+
 // Call To Action Props
 export type CallToActionProps = {
   highlight: string
@@ -8,19 +10,19 @@ export type CallToActionProps = {
   linkText: string
   isLinkExternal?: boolean
   dataTestId: string
-  icon: string
+  icon: string | StaticImageData
   hasPhoto?: boolean
 }
 
 // Call To Action Icon Props
 export type CallToActionIconProps = {
   type: 'mobile' | 'desktop'
-  icon: string
+  icon: string | StaticImageData
 }
 
 // Call To Action Texts Props
 export type CallToActionTextsProps = {
-  icon: string
+  icon: string | StaticImageData
   highlight: string
   heading: string
   textMobileAndDesktop: string

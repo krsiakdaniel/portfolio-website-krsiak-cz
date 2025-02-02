@@ -17,12 +17,17 @@ const CallToActionTexts: FC<CallToActionTextsProps> = ({
 }) => {
   return (
     <>
-      <div className="mb-2 flex items-center space-x-2 uppercase md:space-x-0">
+      <div className="mb-2 flex items-end space-x-2 uppercase md:space-x-0">
         <CallToActionIcon type={DeviceTypeEnum.Mobile} icon={icon} />
         <Highlight text={highlight} customCss="text-violet-800" />
       </div>
       <Heading2 textColor="text-neutral-900">{heading}</Heading2>
-      <Paragraph marginTop="mt-2" size="text-xl" textColor="text-neutral-900" customCss="tracking-tight">
+      <Paragraph
+        marginTop="mt-2"
+        size="text-xl"
+        textColor="text-neutral-900"
+        customCss="tracking-tight"
+      >
         <span className="text-neutral-600">
           {textMobileAndDesktop} <span className="hidden lg:inline">{textDesktop}</span>
         </span>

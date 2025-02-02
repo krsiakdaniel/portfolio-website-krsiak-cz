@@ -37,7 +37,12 @@ export const projectsPersonalReact: Project[] = [
       {
         id: 0,
         description: SkillCategoryEnum.FrontEnd,
-        skillsList: [SkillsEnum.TypeScript, SkillsEnum.React, SkillsEnum.ChakraUI, SkillsEnum.CoinGeckoAPI],
+        skillsList: [
+          SkillsEnum.TypeScript,
+          SkillsEnum.React,
+          SkillsEnum.ChakraUI,
+          SkillsEnum.CoinGeckoAPI,
+        ],
       },
       {
         id: 1,
@@ -47,7 +52,11 @@ export const projectsPersonalReact: Project[] = [
     ],
     linkText: 'Project details',
     projectLinks: [
-      { urlText: 'Website', url: 'https://cryptocurrency-prices-one.vercel.app/', dataTestId: 'cryptomania' },
+      {
+        urlText: 'Website',
+        url: 'https://cryptocurrency-prices-one.vercel.app/',
+        dataTestId: 'cryptomania',
+      },
     ],
     linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
     personalProjectNote: 'Project to exercise coding.',

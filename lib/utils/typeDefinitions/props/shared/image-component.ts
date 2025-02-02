@@ -1,6 +1,7 @@
 import { StaticImageData } from 'next/image'
 import { ReactNode } from 'react'
 
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { PlaceholderValue } from '@/node_modules/next/dist/shared/lib/get-img-props'
 
 // Image Component Props
@@ -9,7 +10,7 @@ export type ImageComponentProps = {
   width?: number
   height?: number
   alt: string
-  loading: 'eager' | 'lazy' | undefined
+  loading: ImageLoading | undefined
   customCss?: string
   placeholder?: PlaceholderValue
   blurDataURL?: string

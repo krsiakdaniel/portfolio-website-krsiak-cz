@@ -2,7 +2,6 @@ import { FC } from 'react'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
-import BaptismTestimony from '@/components/pages/testimonials/baptism/BaptismTestimony'
 import TestimonialsIntroduction from '@/components/pages/testimonials/TestimonialsIntroduction'
 import TestimonialsSection from '@/components/pages/testimonials/TestimonialsSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
@@ -56,8 +55,6 @@ const Testimonials: FC = (): JSX.Element => {
           description="In this section, you'll find personal testimonials that highlight my integrity and reliability."
           testimonials={personalTestimonials}
         />
-
-        <BaptismTestimony />
       </div>
 
       {/* TODO: Add section: 'Fitness Moderator' */}
@@ -66,7 +63,7 @@ const Testimonials: FC = (): JSX.Element => {
         linkPrevious={PAGES_URL.personal.mainUrl}
         iconPrevious={ICON_EMOJI.rocket}
         namePrevious={TEXT.personalProjects}
-        dataTestIdPrevious={DATA_TEST_IDS.page.testimonials.previous}
+        dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.testimonials.previous}
       />
     </PageContainer>
   )

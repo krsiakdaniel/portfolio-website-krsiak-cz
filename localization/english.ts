@@ -1,7 +1,11 @@
 export const ICON_EMOJI = {
   latinCross: '✝️',
-  flagJapan: '🇯🇵',
   flagCzechRepublic: '🇨🇿',
+  flagSlovakia: '🇸🇰',
+  flagAlandIslands: '🇦🇽',
+  flagSouthKorea: '🇰🇷',
+  flagJapan: '🇯🇵',
+  japaneseCastle: '🏯',
   house: '🏠',
   moneyBag: '💰',
   rocket: '🚀',
@@ -12,12 +16,15 @@ export const ICON_EMOJI = {
   books: '📚',
   shoppingCart: '🛒',
   globeShowingAmericas: '🌎',
+  globeShowingEuropeAfrica: '🌍',
   memo: '📝',
   ghost: '👻',
   verticalTrafficLight: '🚦',
   desktopComputer: '🖥️',
   robot: '🤖',
   star: '⭐',
+  writingHand: '✍️',
+  church: '⛪',
   atomSymbol: '⚛️',
   cog: '⚙️',
   artistPalette: '🎨',
@@ -42,6 +49,8 @@ export const ICON_EMOJI = {
   woman: {
     officeWorker: '👩‍💼',
   },
+  waterWave: '🌊',
+  ship: '🚢',
   evergreenTree: '🌲',
   christmasTree: '🎄',
   mountain: '⛰️',
@@ -73,6 +82,7 @@ export const COMMON_VALUES = {
   nameDanielKrsiak: 'Daniel Kršiak',
   reactDeveloper: 'React Developer',
   reactDeveloperTypeScript: 'React Developer — TypeScript & Next.js',
+  reactDeveloperWorkingWithTypeScript: 'React Developer working with TypeScript & Next.js',
   javaScript: 'JavaScript',
   javaScriptShort: 'JS',
   typeScript: 'TypeScript',
@@ -110,7 +120,6 @@ export const DIVIDER_WITH_TEXT = {
 
 export const SOCIAL_LINKS = {
   linkedIn: 'LinkedIn',
-  myLinkedIn: 'LinkedIn — Krsiak Daniel',
   gitHub: 'GitHub',
   gitHubCode: 'GitHub Code',
   gitHubKrsiak: 'GitHub — website-krsiak-cz',
@@ -124,7 +133,7 @@ export const HOME = {
   logo: 'krsiak.cz',
   nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
   reactDeveloper: COMMON_VALUES.reactDeveloper,
-  heroText: `Hi ${ICON_EMOJI.wavingHand} I am from ${COMMON_VALUES.czechRepublicNBSP}\u00A0${ICON_EMOJI.flagCzechRepublic}`,
+  heroText: `Hi! I am from ${COMMON_VALUES.czechRepublicNBSP}\u00A0${ICON_EMOJI.flagCzechRepublic}`,
 }
 
 export const RESUME = {
@@ -198,6 +207,9 @@ export const MY_WORK = {
 }
 
 export const MISC = {
+  kaizen: 'Kaizen 改\u00A0善',
+  kaizenText1: 'I live by the Japanese philosophy',
+  kaizenText2: 'always aiming for continuous personal growth and improvement in my work.',
   uptimeMonitor: 'krsiak.betteruptime.com',
   description: 'Description',
   goBack: 'Go back',
@@ -239,6 +251,25 @@ export const ERROR = {
   mainText: "Sorry, we can't find that page.",
   smallText: 'It looks like we are fresh out of yarn!',
   backToHome: 'Back to Home',
+}
+
+export const META_WHO_I_AM = {
+  title: `Who I Am | ${COMMON_VALUES.nameDanielKrsiak}`,
+  description:
+    'React Developer with a passion for travel and outdoor adventures. Exploring from Czech forests to South Korean temples, combining technical expertise with a love for nature and cultural experiences.',
+  keywords: {
+    nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
+    reactDeveloper: COMMON_VALUES.reactDeveloper,
+    travelEnthusiast: 'Travel enthusiast',
+    hiking: 'Hiking',
+    czechRepublic: COMMON_VALUES.czechRepublic,
+    slovakia: 'Slovakia',
+    southKorea: 'South Korea',
+    alandIslands: 'Åland Islands',
+    outdoorAdventures: 'outdoor adventures',
+    webDevelopment: 'web development',
+    personalJourney: 'personal journey',
+  },
 }
 
 export const META_TESTIMONIALS = {
@@ -436,7 +467,8 @@ export const META_MORAVIA = {
 
 export const META_KOOPERATIVA = {
   title: `Kooperativa | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
-  description: 'I worked on an application for managing insurance policies for citizens property and products.',
+  description:
+    'I worked on an application for managing insurance policies for citizens property and products.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
@@ -619,9 +651,41 @@ export const BIBLE = {
   `,
 }
 
+export const WHO_I_AM = {
+  whoIAm: 'Who I Am',
+  introduction1: `Hi there!  My name is `,
+  introduction2: ` and at work I am ${COMMON_VALUES.reactDeveloperWorkingWithTypeScript}.`,
+  textPerson1: 'This page, however, is about me ',
+  textPerson2: 'as a person',
+  aboutMe: `
+    In my free time you'll find me exploring the great outdoors and spending time in forest.
+    As an avid hiker and traveler, I enjoy the nature.
+  `,
+  textCzechRepublic: `Hiking through the forests in  Czech Republic.`,
+  textSlovakia: `Scaling the majestic mountains in Slovakia.`,
+  textKorea: `Discovering the stunning landscapes in South Korea.`,
+  textAlandIslands: `Cruising across the Baltic Sea to the archipelago of the Åland Islands.`,
+}
+
+export const SOUTH_KOREA = {
+  headingTravel: 'Traveling',
+  headingSouthKorea: 'South Korea',
+  introduction:
+    'South Korea, where ancient traditions meet modern innovation, offers a journey through bustling cities, serene temples, and stunning landscapes.',
+  quote1: 'Travel makes one modest. You see what a\u00A0tiny place you occupy in the world.',
+  quoteAuthor1: 'Gustave Flaubert, Novelist',
+  quote2: 'The world is a book, and those who do not travel read only one page.',
+  quoteAuthor2: 'Saint Augustine, Bishop',
+  hiking: 'South Korea - hiking',
+  nature: 'South Korea - nature',
+  temple: 'South Korea - temple',
+  palace: 'South Korea - palace',
+}
+
 export const TEXT = {
-  ...CONTACT,
   ...COMMON_VALUES,
+  ...WHO_I_AM,
+  ...CONTACT,
   ...SHARED,
   ...PROJECT_INFORMATION,
   ...MY_WORK,

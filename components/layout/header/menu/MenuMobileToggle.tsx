@@ -11,7 +11,10 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { MenuMobileToggleProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
-const MenuMobileToggle: FC<MenuMobileToggleProps> = ({ isMenuOpen, handleMenuMobileToggle }): JSX.Element => {
+const MenuMobileToggle: FC<MenuMobileToggleProps> = ({
+  isMenuOpen,
+  handleMenuMobileToggle,
+}): JSX.Element => {
   return (
     <button
       onClick={handleMenuMobileToggle}

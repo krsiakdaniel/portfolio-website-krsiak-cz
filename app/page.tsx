@@ -34,10 +34,10 @@ const Page: FC = (): JSX.Element => {
       <CallToActionResume />
 
       <PageNavigation
-        linkNext={PAGES_URL.work.mainUrl}
-        iconNext={ICON_EMOJI.manTechnologist.lightSkinTone}
-        nameNext={TEXT.workExperience}
-        dataTestIdNext={DATA_TEST_IDS.page.home.next}
+        linkNext={PAGES_URL.whoIAm}
+        iconNext={ICON_EMOJI.wavingHand}
+        nameNext={TEXT.whoIAm}
+        dataTestIdNext={DATA_TEST_IDS.pageNavigation.home.next}
       />
     </PageContainer>
   )

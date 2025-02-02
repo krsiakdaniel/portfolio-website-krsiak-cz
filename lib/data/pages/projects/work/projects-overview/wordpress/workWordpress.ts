@@ -40,7 +40,9 @@ export const projectsWorkWordPress: Project[] = [
       },
     ],
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website', url: 'https://help.smartsupp.com/', dataTestId: 'smartsupp-help' }],
+    projectLinks: [
+      { urlText: 'Website', url: 'https://help.smartsupp.com/', dataTestId: 'smartsupp-help' },
+    ],
     customers: '100 000+',
     linkProjectPage: PAGES_URL.work.smartsupp.help,
   },

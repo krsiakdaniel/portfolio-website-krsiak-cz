@@ -29,7 +29,9 @@ export default defineConfig({
   workers: process.env.CI ? 3 : undefined,
 
   //Reporter to use. https://playwright.dev/docs/test-reporters
-  reporter: 'html',
+  reporter: process.env.CI
+    ? 'list' // Use list reporter in CI for console output
+    : 'html', // Use HTML reporter locally for better debugging
 
   // Shared settings for all the projects below. https://playwright.dev/docs/api/class-testoptions.
   use: {
@@ -38,6 +40,9 @@ export default defineConfig({
 
     // Collect trace when retrying the failed test. https://playwright.dev/docs/trace-viewer
     trace: 'on-first-retry',
+
+    // Capture screenshots only on test failures
+    screenshot: 'only-on-failure',
   },
 
   // Configure projects for major browsers

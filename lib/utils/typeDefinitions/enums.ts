@@ -1,3 +1,32 @@
+// Screen Sizes
+export enum ScreenSizeEnum {
+  SM = 640,
+  MD = 768,
+  LG = 1024,
+  XL = 1280,
+  XXL = 1536,
+}
+
+// Image Loading
+export enum ImageLoading {
+  EAGER = 'eager',
+  LAZY = 'lazy',
+}
+
+// Emoji Size
+export enum EmojiSizeEnum {
+  SM = 32,
+  MD = 80,
+  LG = 128,
+}
+
+// Emoji Name
+export enum EmojiNameEnum {
+  SUNGLASSES = 'smiling-face-with-sunglasses',
+  ROCKET = 'rocket',
+  ROBOT = 'robot',
+}
+
 // Go Back Link
 export enum GoBackLinkEnum {
   Personal = 'personal',

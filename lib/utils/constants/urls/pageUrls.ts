@@ -24,6 +24,7 @@ export const ENV_URLS = {
  */
 export const PAGES_URL: PageUrls = {
   home: '/',
+  whoIAm: '/who-i-am',
   resume: '/resume',
   work: {
     mainUrl: '/work-experience',
@@ -51,6 +52,7 @@ export const PAGES_URL: PageUrls = {
  */
 export const SITEMAP_URLS: SitemapUrls = {
   home: PAGES_URL.home,
+  whoIAm: PAGES_URL.whoIAm,
   resume: PAGES_URL.resume,
   workExperience: PAGES_URL.work.mainUrl,
   workKooperativa: PAGES_URL.work.kooperativa,

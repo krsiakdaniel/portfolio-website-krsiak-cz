@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import ImageComponent from '@/components/shared/ImageComponent'
 
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { SkillsIconGroupProps } from '@/lib/utils/typeDefinitions/props/pages/home/skills'
 
 const IMAGE_WIDTH = 44
@@ -17,7 +18,7 @@ const SkillsIconGroup: FC<SkillsIconGroupProps> = ({ icons = [], customCss = '' 
           width={IMAGE_WIDTH}
           height={IMAGE_HEIGHT}
           alt={item.name}
-          loading="eager"
+          loading={ImageLoading.EAGER}
           dataTooltipContent={item.name}
         />
       ))}

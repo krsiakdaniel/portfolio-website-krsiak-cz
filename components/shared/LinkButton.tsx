@@ -9,7 +9,12 @@ import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
-const LinkButton: FC<LinkButtonProps> = ({ href, linkText, isLinkExternal = false, dataTestId }) => {
+const LinkButton: FC<LinkButtonProps> = ({
+  href,
+  linkText,
+  isLinkExternal = false,
+  dataTestId,
+}) => {
   const hoverAndFocusCSS =
     'hover:bg-violet-800 focus:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-400'
 
@@ -26,7 +31,11 @@ const LinkButton: FC<LinkButtonProps> = ({ href, linkText, isLinkExternal = fals
       data-testid={dataTestId}
     >
       <span>{linkText}</span>
-      {isLinkExternal ? <IconExternalLink /> : <IconArrow arrowDirection={ArrowDirectionEnum.Right} />}
+      {isLinkExternal ? (
+        <IconExternalLink />
+      ) : (
+        <IconArrow arrowDirection={ArrowDirectionEnum.Right} />
+      )}
     </a>
   )
 }

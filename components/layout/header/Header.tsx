@@ -37,7 +37,10 @@ const Header: FC = (): JSX.Element => {
               <div className="hidden lg:flex">
                 <MenuSocialLinks type={DeviceTypeEnum.Desktop} />
               </div>
-              <MenuMobileToggle isMenuOpen={isMenuOpen} handleMenuMobileToggle={handleMenuMobileToggle} />
+              <MenuMobileToggle
+                isMenuOpen={isMenuOpen}
+                handleMenuMobileToggle={handleMenuMobileToggle}
+              />
             </div>
           </div>
         </div>

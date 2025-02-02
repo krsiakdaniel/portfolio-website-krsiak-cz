@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+import { DeviceTypeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { SocialLinkIconProps } from '@/lib/utils/typeDefinitions/props/shared/social-link-icon'
 
 const IMAGE_WIDTH_MOBILE = 32
@@ -34,7 +34,14 @@ const SocialLinkIcon: FC<SocialLinkIconProps> = ({
       title={title}
       aria-label={ariaLabel}
     >
-      <ImageComponent src={imgSrc} width={width} height={height} alt={imgAlt} loading="eager" customCss="shadow-md" />
+      <ImageComponent
+        src={imgSrc}
+        width={width}
+        height={height}
+        alt={imgAlt}
+        loading={ImageLoading.EAGER}
+        customCss="shadow-md"
+      />
     </a>
   )
 }

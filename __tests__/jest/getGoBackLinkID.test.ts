@@ -4,12 +4,16 @@ import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
 describe('getGoBackLinkID', () => {
   it('returns correct link for type "work"', () => {
     const sectionID = 'react'
-    expect(getGoBackLinkID('work' as GoBackLinkEnum, sectionID)).toEqual(`/work-experience/#${sectionID}`)
+    expect(getGoBackLinkID('work' as GoBackLinkEnum, sectionID)).toEqual(
+      `/work-experience/#${sectionID}`,
+    )
   })
 
   it('returns correct link for type "personal"', () => {
     const sectionID = 'next'
-    expect(getGoBackLinkID('personal' as GoBackLinkEnum, sectionID)).toEqual(`/personal-projects/#${sectionID}`)
+    expect(getGoBackLinkID('personal' as GoBackLinkEnum, sectionID)).toEqual(
+      `/personal-projects/#${sectionID}`,
+    )
   })
 
   it('returns default link for unknown type', () => {

@@ -7,6 +7,7 @@ import { Tooltip } from 'react-tooltip'
 import { IMAGE_ALT } from '@/localization/english'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { ImageComponentProps } from '@/lib/utils/typeDefinitions/props/shared/image-component'
 
 const IMAGE_WIDTH = 128
@@ -17,7 +18,7 @@ const ImageComponent: FC<ImageComponentProps> = ({
   width = IMAGE_WIDTH,
   height = IMAGE_HEIGHT,
   alt = IMAGE_ALT.defaultAlt,
-  loading = 'lazy',
+  loading = ImageLoading.LAZY,
   customCss = '',
   placeholder = 'empty',
   blurDataURL = '',

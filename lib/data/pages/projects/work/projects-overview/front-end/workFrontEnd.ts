@@ -38,7 +38,13 @@ export const projectsWorkFrontEnd: Project[] = [
       {
         id: 0,
         description: SkillCategoryEnum.FrontEnd,
-        skillsList: [SkillsEnum.JavaScript, SkillsEnum.PHP, SkillsEnum.SASS, SkillsEnum.BEM, SkillsEnum.Cypress],
+        skillsList: [
+          SkillsEnum.JavaScript,
+          SkillsEnum.PHP,
+          SkillsEnum.SASS,
+          SkillsEnum.BEM,
+          SkillsEnum.Cypress,
+        ],
       },
       {
         id: 1,
@@ -48,7 +54,9 @@ export const projectsWorkFrontEnd: Project[] = [
       { id: 2, description: SkillCategoryEnum.Other, skillsList: [SkillsEnum.Trello] },
     ],
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website', url: 'https://www.smartsupp.com/', dataTestId: 'smartsupp-web' }],
+    projectLinks: [
+      { urlText: 'Website', url: 'https://www.smartsupp.com/', dataTestId: 'smartsupp-web' },
+    ],
     customers: '100 000+',
     linkProjectPage: PAGES_URL.work.smartsupp.web,
   },

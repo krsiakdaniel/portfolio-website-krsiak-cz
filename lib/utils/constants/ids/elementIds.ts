@@ -3,6 +3,7 @@ import { ElementIds } from '@/lib/utils/typeDefinitions/interfaces'
 export const ID: ElementIds = {
   reactTooltip: 'react-tooltip',
   home: 'home',
+  whoIAm: 'who-i-am',
   hero: 'hero',
   skills: 'skills',
   skillsMain: 'skills-main',
@@ -33,6 +34,7 @@ export const ID: ElementIds = {
   status: 'status',
   testimonials: 'testimonials',
   websiteLink: {
+    whoIAm: 'who-i-am',
     resume: 'resume',
     testimonials: 'testimonials',
     workExperience: 'work-experience',

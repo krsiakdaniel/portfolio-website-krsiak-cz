@@ -23,7 +23,11 @@ const ManWalkingInForest: FC = (): JSX.Element => {
       <span role="img" aria-label={ARIA_LABELS.forest} className="text-3xl">
         {forestIcon}
       </span>
-      <span role="img" aria-label={ARIA_LABELS.manWalking} className={`text-2xl ${cssAnimationClass}`}>
+      <span
+        role="img"
+        aria-label={ARIA_LABELS.manWalking}
+        className={`text-2xl ${cssAnimationClass}`}
+      >
         {ICON_EMOJI.manWalking}
       </span>
       <span role="img" aria-label={ARIA_LABELS.forestWithMountain} className="text-3xl">

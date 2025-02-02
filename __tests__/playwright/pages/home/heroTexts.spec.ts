@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, expect, Page, test } from '@playwright/test'
 
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
-import { setupBrowser, setupPage, teardownContext } from '@/__tests__/playwright/lib/utils/helpers/setup'
+import {
+  setupBrowser,
+  setupPage,
+  teardownContext,
+} from '@/__tests__/playwright/lib/utils/helpers/setup'
 
 let browser: Browser
 let context: BrowserContext
@@ -47,6 +51,6 @@ test.describe('Hero - Heading and texts', () => {
   // Test to check if the paragraphs are rendered correctly
   test('should render the paragraphs correctly', async () => {
     const paragraph1Text = await page.textContent(getDataTestId('hero-paragraph'))
-    expect(paragraph1Text).toContain('Hi 👋 I am from Czech\u00A0Republic\u00A0🇨🇿')
+    expect(paragraph1Text).toContain('Hi! I am from Czech\u00A0Republic\u00A0🇨🇿')
   })
 })

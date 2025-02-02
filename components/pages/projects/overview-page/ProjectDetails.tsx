@@ -6,7 +6,13 @@ import Paragraph from '@/components/shared/Paragraph'
 
 import { ProjectDetailsProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
-const ProjectDetails: FC<ProjectDetailsProps> = ({ icon = '', title, company, role, description }): JSX.Element => {
+const ProjectDetails: FC<ProjectDetailsProps> = ({
+  icon = '',
+  title,
+  company,
+  role,
+  description,
+}): JSX.Element => {
   return (
     <div className="sm:max-w-[600px]">
       <Heading2 textColor="text-neutral-900">

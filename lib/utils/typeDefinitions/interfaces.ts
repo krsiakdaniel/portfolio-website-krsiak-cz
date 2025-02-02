@@ -155,6 +155,7 @@ export interface EnvUrls {
 // Page URLs
 export interface PageUrls {
   home: string
+  whoIAm: string
   resume: string
   work: {
     mainUrl: string
@@ -180,6 +181,7 @@ export interface PageUrls {
 // Sitemap URLs
 export interface SitemapUrls {
   home: string
+  whoIAm: string
   resume: string
   workExperience: string
   workKooperativa: string
@@ -278,6 +280,7 @@ export interface ProjectIds {
 export interface ElementIds {
   reactTooltip: string
   home: string
+  whoIAm: string
   hero: string
   skills: string
   skillsMain: string
@@ -308,10 +311,11 @@ export interface ElementIds {
   status: string
   testimonials: string
   websiteLink: {
-    resume: string
-    testimonials: string
+    whoIAm: string
     workExperience: string
+    resume: string
     personalProjects: string
+    testimonials: string
   }
 }
 
@@ -330,5 +334,13 @@ export interface SkillToIconMap {
 export interface CareerPathStep {
   id: number
   emoji: string
+  text: string
+}
+
+// Travel Item
+export interface TravelItem {
+  id: string
+  icon: string
+  flag: string
   text: string
 }

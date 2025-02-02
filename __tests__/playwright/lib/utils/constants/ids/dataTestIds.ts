@@ -14,14 +14,16 @@ const SECTIONS = {
 }
 
 const LINKS = {
-  PERSONAL_PROJECTS_OVERVIEW: 'personal-projects',
-  WORK_EXPERIENCE_OVERVIEW: 'work-experience',
-  LINKEDIN: 'linkedin',
-  RESUME: 'resume',
-  TESTIMONIALS: 'testimonials',
-  GITHUB: 'github',
+  // main pages
   HOME: 'home',
+  WHO_I_AM: 'who-i-am',
+  WORK_EXPERIENCE_OVERVIEW: 'work-experience',
+  RESUME: 'resume',
+  PERSONAL_PROJECTS_OVERVIEW: 'personal-projects',
+  // personal projects
+  TESTIMONIALS: 'testimonials',
   KRSIAK: 'krsiak',
+  // work projects
   CRYPTOMANIA: 'cryptomania',
   KOMERCNI_BANKA: 'komercni-banka',
   SMARTSUPP_WEB: 'smartsupp-web',
@@ -29,6 +31,9 @@ const LINKS = {
   MORAVIA: 'moravia',
   GROUPON: 'groupon',
   KOOPERATIVA: 'kooperativa',
+  // social links
+  GITHUB: 'github',
+  LINKEDIN: 'linkedin',
 }
 
 const FOOTER = {
@@ -82,30 +87,50 @@ const HERO = {
 
 const PAGE = {
   home: {
-    previous: '',
-    next: `${NAVIGATION.NEXT}-${LINKS.WORK_EXPERIENCE_OVERVIEW}`,
     introduction: 'home-introduction',
   },
+  whoIAm: {
+    introduction: 'who-i-am-introduction',
+  },
   workExperience: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.HOME}`,
-    next: `${NAVIGATION.NEXT}-${LINKS.RESUME}`,
     introduction: 'work-experience-introduction',
   },
   resume: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.WORK_EXPERIENCE_OVERVIEW}`,
-    next: `${NAVIGATION.NEXT}-${LINKS.PERSONAL_PROJECTS_OVERVIEW}`,
     introduction: 'resume-introduction',
     downloadResume: 'download-resume',
   },
   personalProjects: {
+    introduction: 'personal-projects-introduction',
+  },
+  testimonials: {
+    introduction: 'testimonials-introduction',
+  },
+}
+
+const PAGE_NAVIGATION = {
+  home: {
+    previous: '',
+    next: `${NAVIGATION.NEXT}-${LINKS.WHO_I_AM}`,
+  },
+  whoIAm: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.HOME}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.WORK_EXPERIENCE_OVERVIEW}`,
+  },
+  workExperience: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.WHO_I_AM}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.RESUME}`,
+  },
+  resume: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.PERSONAL_PROJECTS_OVERVIEW}`,
+  },
+  personalProjects: {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
     next: `${NAVIGATION.NEXT}-${LINKS.TESTIMONIALS}`,
-    introduction: 'personal-projects-introduction',
   },
   testimonials: {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.PERSONAL_PROJECTS_OVERVIEW}`,
     next: '',
-    introduction: 'testimonials-introduction',
   },
 }
 
@@ -167,10 +192,11 @@ const PROJECTS = {
 }
 
 const PAGES_LINKS = {
-  resume: 'resume-link',
-  testimonials: 'testimonials-link',
+  whoIAm: 'who-i-am-link',
   workExperience: 'work-experience-link',
+  resume: 'resume-link',
   personalProjects: 'personal-projects-link',
+  testimonials: 'testimonials-link',
 }
 
 const CALL_TO_ACTION = {
@@ -199,6 +225,13 @@ const BAPTISM = {
   image: 'baptism-testimony-image',
 }
 
+const SOUTH_KOREA = {
+  hiking: 'south-korea-hiking',
+  nature: 'south-korea-nature',
+  temple: 'south-korea-temple',
+  palace: 'south-korea-palace',
+}
+
 export const DATA_TEST_IDS = {
   breadcrumbs: 'breadcrumbs',
   gallery: 'gallery',
@@ -207,6 +240,7 @@ export const DATA_TEST_IDS = {
   menu: MENU,
   hero: HERO,
   page: PAGE,
+  pageNavigation: PAGE_NAVIGATION,
   projects: PROJECTS,
   pagesLinks: PAGES_LINKS,
   callToAction: CALL_TO_ACTION,
@@ -215,4 +249,5 @@ export const DATA_TEST_IDS = {
   externalLinks: EXTERNAL_LINKS,
   misc: MISC,
   baptism: BAPTISM,
+  southKorea: SOUTH_KOREA,
 }
