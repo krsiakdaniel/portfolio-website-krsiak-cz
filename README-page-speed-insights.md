@@ -7,7 +7,7 @@ I strive to deliver the best possible performance, accessibility, and SEO for an
 - [⚡ PageSpeed Insights](#-pagespeed-insights)
   - [📊 Results Summary](#-results-summary)
   - [🛠️ Performance Metrics](#️-performance-metrics)
-  - [📸 Screenshot](#-screenshot)
+  - [�️ Screenshot](#️-screenshot)
   - [💻 Technologies Used](#-technologies-used)
   - [📅 Audit Details](#-audit-details)
   - [📝 Conclusion](#-conclusion)
@@ -31,7 +31,7 @@ The performance score is derived from several crucial metrics:
 - **Cumulative Layout Shift (CLS)**: 0.003
 - **Speed Index**: 0.8 s
 
-## 📸 Screenshot
+## 🖼️ Screenshot
 
 The audit includes a screenshot of the evaluated website, showcasing the design and functionality:
 
