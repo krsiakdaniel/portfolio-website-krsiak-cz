@@ -12,7 +12,7 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 const CallToActionLinkedIn: FC = (): JSX.Element => {
   const [text, setText] = useState(TEXT.linkedIn)
 
-  // TODO: refactor to utils and add type
+  // TODO: resize logic can be moved to a custom hook
   // screenSize - md: 768px
   useEffect(() => {
     const handleResize = () => {

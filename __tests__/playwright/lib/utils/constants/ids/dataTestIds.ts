@@ -121,7 +121,7 @@ const PAGE_NAVIGATION = {
     next: `${NAVIGATION.NEXT}-${LINKS.RESUME}`,
   },
   resume: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.WORK_EXPERIENCE_OVERVIEW}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
     next: `${NAVIGATION.NEXT}-${LINKS.PERSONAL_PROJECTS_OVERVIEW}`,
   },
   personalProjects: {
