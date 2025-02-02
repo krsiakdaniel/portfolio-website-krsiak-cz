@@ -4,29 +4,14 @@ import EmojiAnimated from '@/components/shared/EmojiAnimated'
 
 import { SOCIAL_LINKS } from '@/localization/english'
 
-import {
-  DeviceTypeEnum,
-  EmojiNameEnum,
-  EmojiSizeEnum,
-  ImageLoading,
-} from '@/lib/utils/typeDefinitions/enums'
+import { DeviceTypeEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
+import { getEmojiEnum } from '@/lib/utils/helpers/getEmojiEnum'
 import { CallToActionIconProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
 const CallToActionIcon: FC<CallToActionIconProps> = ({ type, icon }) => {
   const isMobile = type === DeviceTypeEnum.Mobile
   const isIconString = typeof icon === 'string'
-
-  const getEmojiEnum = (importPath: string): EmojiNameEnum => {
-    const match = importPath.match(/([^/]+?)-animated-\d+x\d+/)
-    const name = match?.[1]
-
-    if (!name) return EmojiNameEnum.ROCKET
-
-    const enumKey = name.toUpperCase()
-    return EmojiNameEnum[enumKey as keyof typeof EmojiNameEnum] || EmojiNameEnum.ROCKET
-  }
-
   const transitionIconCSS = 'transition-transform duration-500 group-hover:scale-105'
 
   return (
