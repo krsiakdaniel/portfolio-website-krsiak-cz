@@ -10,9 +10,7 @@ This project uses the following tools for testing.
     - [Test Coverage For Jest](#test-coverage-for-jest)
   - [🎭 Playwright](#-playwright)
     - [Runs E2E tests](#runs-e2e-tests)
-    - [Test Coverage For Playwright](#test-coverage-for-playwright)
     - [Interactive Mode](#interactive-mode)
-    - [Run Specific File](#run-specific-file)
     - [Codegen To Generate Tests](#codegen-to-generate-tests)
     - [Debug Tests](#debug-tests)
 
@@ -26,18 +24,18 @@ This project uses the following tools for testing.
 
 Jest is JavaScript Testing Framework.
 
-- Test are located folder in `__tests__/jest`
+- Test are located folder in `__tests__/jest/tests`
 - Naming is `file.test.ts`
 
 ### Runs Unit Tests
 
 ```bash
-npm run test
+bun test:jest
 ```
 
 Expected result after running tests.
 
-![jest](/readme-images/development/testing/jest-passing.webp)
+![jest](/readme-images/development/testing/bun-test-jest.webp)
 
 ### Test Coverage For Jest
 
@@ -47,7 +45,7 @@ Jest will generate a code coverage report.
 - It will also be saved to a `/coverage` directory in project root as HTML file.
 
 ```bash
-npm run test:coverage
+bun test:jest:coverage
 ```
 
 ## 🎭 Playwright
@@ -64,43 +62,25 @@ Playwright is library for browser automation E2E testing.
 ### Runs E2E tests
 
 ```bash
-npm run test:e2e
+bun test:e2e
 ```
 
 Expected result after running tests.
 
-![playwright](/readme-images/development/testing/e2e-playwright-passing.webp)
-
-### Test Coverage For Playwright
-
-Playwright will generate a code coverage report.
-
-- It serves HTML report on new localhost port.
-
-```bash
-  npx playwright show-report
-```
+![playwright](/readme-images/development/testing/bun-test-e2e.webp)
 
 ### Interactive Mode
 
 Starts the interactive UI mode.
 
 ```bash
-npx playwright test --ui
+bun playwright test --ui
 ```
 
 Runs the tests only on Desktop Chrome.
 
 ```bash
-npx playwright test --project=chromium
-```
-
-### Run Specific File
-
-Runs the tests in a specific file.
-
-```bash
-npx playwright test file.spec.ts
+bun playwright test --project=chromium
 ```
 
 ### Codegen To Generate Tests
@@ -110,7 +90,7 @@ npx playwright test file.spec.ts
 Playwright comes with the ability to generate tests.
 
 ```bash
-npx playwright codegen
+bun playwright codegen
 ```
 
 When you perform actions in the browser it records them and it is a great way to quickly get started with testing.
@@ -122,5 +102,5 @@ Playwright will look at your page and figure out the best locator, prioritizing 
 Runs the tests in debug mode.
 
 ```bash
-npx playwright test --debug
+bun playwright test --debug
 ```

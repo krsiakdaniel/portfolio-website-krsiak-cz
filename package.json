@@ -8,13 +8,18 @@
     "start": "next start",
     "lint": "next lint",
     "prettier:check": "prettier --check .",
-    "prettier:fix": "prettier --write .",
+    "prettier:write": "prettier --write .",
     "test:jest": "jest",
     "test:jest:coverage": "jest --coverage",
+    "test:jest:watch": "jest --watch",
     "test:e2e": "bun playwright test",
-    "test:watch": "bun test --watch",
+    "test:e2e:ui": "bun playwright test --ui",
+    "test:e2e:chrome": "bun playwright test --project=chromium",
+    "test:e2e:codegen": "bun playwright codegen",
+    "test:e2e:debug": "bun playwright test --debug",
     "clean": "rm -rf ./node_modules",
-    "clean:install": "rm -rf ./node_modules && bun i"
+    "clean:install": "rm -rf ./node_modules && bun i",
+    "deps:outdated": "bun outdated"
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",
