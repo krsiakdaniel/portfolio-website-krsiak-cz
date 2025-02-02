@@ -7,11 +7,11 @@ Development environment for the project.
 - [🛠️ Development](#️-development)
   - [🚀 Website Version `2.48.23`](#-website-version-24823)
   - [💻 Commands](#-commands)
+    - [🔧 Bun Commands](#-bun-commands)
     - [Available Scripts](#available-scripts)
     - [Install Dependencies](#install-dependencies)
     - [Run Development Mode](#run-development-mode)
-  - [📦 Update Outdated Dependencies](#-update-outdated-dependencies)
-    - [Manually](#manually)
+  - [📦 Find Outdated Dependencies](#-find-outdated-dependencies)
   - [💅 Prettier](#-prettier)
     - [Check Code](#check-code)
     - [Format Code](#format-code)
@@ -22,7 +22,7 @@ Development environment for the project.
 
 ## 🚀 Website Version `2.48.23`
 
-As of Feb 2, 2025, the website is `"version": "2.48.23"`.
+As of **Feb 2, 2025**, the website is `"version": "2.48.23"`.
 
 - `2` - represents major redesign
 - `48` - new features added
@@ -32,9 +32,27 @@ As of Feb 2, 2025, the website is `"version": "2.48.23"`.
 
 Commands for the terminal using `bun` as the package manager: <https://bun.sh/>
 
+### 🔧 Bun Commands
+
+Common Bun CLI commands for package management:
+
+```bash
+bun install           # Install all dependencies
+bun add <package>     # Add a dependency
+bun remove <package>  # Remove a dependency
+bun update            # Update dependencies to their latest versions
+```
+
+For more details, see the official Bun documentation:
+
+- [bun install](https://bun.sh/docs/cli/install)
+- [bun add](https://bun.sh/docs/cli/add)
+- [bun remove](https://bun.sh/docs/cli/remove)
+- [bun update](https://bun.sh/docs/cli/update)
+
 ### Available Scripts
 
-All commands are available in: [package.json](/package.json)
+All commands in scripts are available in: [package.json](/package.json)
 
 ```bash
 # Development
@@ -83,13 +101,9 @@ bun dev
 
 To view the project in the browser, open: [http://localhost:3000](http://localhost:3000)
 
-## 📦 Update Outdated Dependencies
+## 📦 Find Outdated Dependencies
 
-There are two ways to update outdated dependencies.
-
-### Manually
-
-Find outdated packages and upgrade to the latest version if possible.
+Find out which dependencies are outdated.
 
 ```bash
 bun outdated
@@ -99,7 +113,7 @@ bun outdated
 
 ## 💅 Prettier
 
-This project uses Prettier for code formatting.
+This project uses [Prettier](https://prettier.io/) for code formatting.
 
 ### Check Code
 
