@@ -25,7 +25,7 @@ const ScanMyContactQR: FC<ScanMyContactQRProps> = ({
         src={contactQR}
         width={width}
         height={height}
-        alt="Contact Me - QR code"
+        alt={CONTACT.contactMeQRCode}
         loading={ImageLoading.EAGER}
         customCss="rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md"
         caption={showImageCaption ? <ImageComponentCaption text={TEXT.scanQR} /> : ''}

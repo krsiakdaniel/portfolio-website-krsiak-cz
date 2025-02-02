@@ -4,19 +4,14 @@ import EmojiAnimated from '@/components/shared/EmojiAnimated'
 
 import { SOCIAL_LINKS } from '@/localization/english'
 
-import {
-  DeviceTypeEnum,
-  EmojiNameEnum,
-  EmojiSizeEnum,
-  ImageLoading,
-} from '@/lib/utils/typeDefinitions/enums'
+import { DeviceTypeEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
+import { getEmojiEnum } from '@/lib/utils/helpers/getEmojiEnum'
 import { CallToActionIconProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
 const CallToActionIcon: FC<CallToActionIconProps> = ({ type, icon }) => {
   const isMobile = type === DeviceTypeEnum.Mobile
   const isIconString = typeof icon === 'string'
-
   const transitionIconCSS = 'transition-transform duration-500 group-hover:scale-105'
 
   return (
@@ -27,7 +22,7 @@ const CallToActionIcon: FC<CallToActionIconProps> = ({ type, icon }) => {
         icon
       ) : (
         <EmojiAnimated
-          type={EmojiNameEnum.ROCKET}
+          icon={getEmojiEnum(icon.src)}
           size={isMobile ? EmojiSizeEnum.SM : EmojiSizeEnum.LG}
           alt={SOCIAL_LINKS.gitHub}
           loading={ImageLoading.EAGER}

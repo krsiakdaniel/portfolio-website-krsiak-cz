@@ -53,6 +53,7 @@ const WhoIAm: FC = (): JSX.Element => {
           <WhoIAmTravelsList />
         </section>
 
+        {/* Quotes and photos of South Korea */}
         <SouthKorea />
       </div>
 

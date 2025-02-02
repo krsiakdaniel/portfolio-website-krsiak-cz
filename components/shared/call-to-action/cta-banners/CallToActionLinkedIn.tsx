@@ -27,6 +27,7 @@ const CallToActionLinkedIn: FC = (): JSX.Element => {
       linkText={text ?? TEXT.linkedIn}
       dataTestId={DATA_TEST_IDS.callToAction.linkLinkedIn}
       icon={ICON_EMOJI.link}
+      hasPhoto={true}
       isLinkExternal
     />
   )

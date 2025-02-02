@@ -25,6 +25,7 @@ export enum EmojiNameEnum {
   SUNGLASSES = 'smiling-face-with-sunglasses',
   ROCKET = 'rocket',
   ROBOT = 'robot',
+  STAR = 'star',
 }
 
 // Go Back Link
