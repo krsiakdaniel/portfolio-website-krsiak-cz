@@ -6,7 +6,7 @@ The project uses workflow automation: [GitHub Actions](https://github.com/featur
 
 - [🛠️ CI - Continuous Integration](#️-ci---continuous-integration)
   - [Status of CI](#status-of-ci)
-  - [GitHub Actions - Workflows](#github-actions---workflows)
+  - [Workflows for GitHub Actions](#workflows-for-github-actions)
   - [Workflow - Jest 🃏](#workflow---jest-)
   - [Workflow - Playwright 🎭](#workflow---playwright-)
   - [Workflow - Prettier 🎨](#workflow---prettier-)
@@ -21,9 +21,17 @@ The badges show the status of the workflows.
 
 [![Jest Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml) [![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml) [![Prettier Check Formatting](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/prettier-check-formatting.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/prettier-check-formatting.yml) [![Pull Request Labeler](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/labeler.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/labeler.yml) [![Auto Author Assign](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/auto-author-assign.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/auto-author-assign.yml)
 
-## GitHub Actions - Workflows
+## Workflows for GitHub Actions
 
 Workflows are defined in the directory: [.github/workflows/](.github/workflows/auto-author-assign.yml)
+
+**Quick Links to Workflow Files:**
+
+- [Jest Tests](.github/workflows/jest.yml)
+- [Playwright Tests](.github/workflows/playwright.yml)
+- [Prettier Check](.github/workflows/prettier-check-formatting.yml)
+- [PR Labeler](.github/workflows/labeler.yml)
+- [Auto Author Assign](.github/workflows/auto-author-assign.yml)
 
 ## Workflow - Jest 🃏
 
@@ -39,13 +47,13 @@ This workflow is triggered when a pull request is opened against the `master` br
 
 1. **Checkout the repository**:
    - Action: `actions/checkout@v4`
-2. **Setup Node.js environment**:
-   - Action: `actions/setup-node@v4`
-   - Node.js version: 18
+2. **Setup Bun environment**:
+   - Action: `oven-sh/setup-bun@v1`
+   - Bun version: latest
 3. **Install dependencies**:
-   - Command: `npm ci`
+   - Command: `bun install`
 4. **Run JEST tests**:
-   - Command: `npm test`
+   - Command: `bun run test:jest`
 5. **Upload test report**:
    - Action: `actions/upload-artifact@v4`
    - Artifact name: `jest-report`
@@ -66,16 +74,18 @@ This workflow is triggered when a pull request is opened against the `master` br
 
 1. **Checkout the repository**:
    - Action: `actions/checkout@v4`
-2. **Setup Node.js environment**:
-   - Action: `actions/setup-node@v4`
-   - Node.js version: 18
+2. **Setup Bun environment**:
+   - Action: `oven-sh/setup-bun@v1`
+   - Bun version: latest
 3. **Install dependencies**:
-   - Command: `npm ci`
-4. **Install Playwright browsers**:
-   - Command: `npx playwright install --with-deps`
-5. **Run Playwright tests**:
-   - Command: `npx playwright test`
-6. **Upload test report**:
+   - Command: `bun install`
+4. **Build the project**:
+   - Command: `bun run build`
+5. **Install Playwright browsers**:
+   - Command: `bunx playwright install --with-deps`
+6. **Run Playwright tests**:
+   - Command: `bun run test:e2e`
+7. **Upload test report**:
    - Action: `actions/upload-artifact@v4`
    - Artifact name: `playwright-report`
    - Path: `playwright-report/`
@@ -95,23 +105,26 @@ This workflow is triggered when a pull request is opened against the `master` br
 
 1. **Checkout the repository**:
    - Action: `actions/checkout@v4`
-2. **Setup Node.js environment**:
-   - Action: `actions/setup-node@v4`
-   - Node.js version: 20
+2. **Setup Bun environment**:
+   - Action: `oven-sh/setup-bun@v1`
+   - Bun version: latest
 3. **Install dependencies**:
-   - Command: `npm ci`
+   - Command: `bun install`
 4. **Run Prettier check**:
-   - Command: `npm run prettier:check`
+   - Command: `bun run prettier:check`
 
 ## Workflow - Pull Request Labeler 🏷️
 
 - **Workflow file:** [labeler.yml](.github/workflows/labeler.yml)
 - **View the results on GitHub:** [actions/workflows/labeler.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/labeler.yml)
 
-This workflow is triggered when a pull request is opened against the `master` branch.
+This workflow is triggered on `pull_request_target` events.
 
 - **Job:** `labeler`
 - **Runs on:** Latest version of Ubuntu
+- **Permissions:**
+  - contents: `read`
+  - pull-requests: `write`
 
 **Steps:**
 
@@ -119,17 +132,20 @@ This workflow is triggered when a pull request is opened against the `master` br
    - Action: `actions/checkout@v4`
 2. **Apply labels to the pull request**:
    - Action: `actions/labeler@v5`
-   - Configuration: `.github/labeler.yml`
+   - Configuration path: `.github/labeler.yml`
 
 ## Workflow - Auto Author Assign ✍️
 
 - **Workflow file:** [auto-author-assign.yml](.github/workflows/auto-author-assign.yml)
 - **View the results on GitHub:** [actions/workflows/auto-author-assign.yml](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/auto-author-assign.yml)
 
-This workflow is triggered when an issue is opened or reopened, or when a pull request is opened or reopened against the `master` branch.
+This workflow is triggered when an issue is opened or reopened, or when a pull request is opened or reopened.
 
 - **Job:** `assign-author`
 - **Runs on:** Latest version of Ubuntu
+- **Permissions:**
+  - issues: `write`
+  - pull-requests: `write`
 
 **Steps:**
 
