@@ -2,24 +2,17 @@ import { FC } from 'react'
 
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { EmojiNameEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-
-interface EmojiAnimatedProps {
-  type: EmojiNameEnum
-  size: EmojiSizeEnum
-  alt: string
-  loading?: ImageLoading
-  className?: string
-}
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
+import { EmojiAnimatedProps } from '@/lib/utils/typeDefinitions/props/shared/emoji-animated'
 
 const EmojiAnimated: FC<EmojiAnimatedProps> = ({
-  type,
+  icon,
   size,
   alt,
   loading = ImageLoading.LAZY,
   className = '',
 }): JSX.Element => {
-  const src = `/images/webp/emoji-animated/${size}x${size}/${type}-animated-${size}x${size}.webp`
+  const src = `/images/webp/emoji-animated/${size}x${size}/${icon}-animated-${size}x${size}.webp`
 
   return (
     <div className={className}>

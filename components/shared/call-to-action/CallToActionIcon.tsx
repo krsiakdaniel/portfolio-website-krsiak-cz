@@ -17,6 +17,16 @@ const CallToActionIcon: FC<CallToActionIconProps> = ({ type, icon }) => {
   const isMobile = type === DeviceTypeEnum.Mobile
   const isIconString = typeof icon === 'string'
 
+  const getEmojiEnum = (importPath: string): EmojiNameEnum => {
+    const match = importPath.match(/([^/]+?)-animated-\d+x\d+/)
+    const name = match?.[1]
+
+    if (!name) return EmojiNameEnum.ROCKET
+
+    const enumKey = name.toUpperCase()
+    return EmojiNameEnum[enumKey as keyof typeof EmojiNameEnum] || EmojiNameEnum.ROCKET
+  }
+
   const transitionIconCSS = 'transition-transform duration-500 group-hover:scale-105'
 
   return (
@@ -27,7 +37,7 @@ const CallToActionIcon: FC<CallToActionIconProps> = ({ type, icon }) => {
         icon
       ) : (
         <EmojiAnimated
-          type={EmojiNameEnum.ROCKET}
+          icon={getEmojiEnum(icon.src)}
           size={isMobile ? EmojiSizeEnum.SM : EmojiSizeEnum.LG}
           alt={SOCIAL_LINKS.gitHub}
           loading={ImageLoading.EAGER}

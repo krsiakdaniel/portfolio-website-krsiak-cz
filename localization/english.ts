@@ -140,6 +140,7 @@ export const RESUME = {
   resume: 'Resume',
   resumeTextOnly: 'Resume',
   downloadResume: 'Download Resume in PDF',
+  downloadResumeShort: 'Download PDF',
   openToWork: 'Open To Work',
   openToNetworking: 'Open To Networking',
 }
@@ -163,7 +164,6 @@ export const PROJECTS = {
   nextShort: COMMON_VALUES.nextShort,
   react: COMMON_VALUES.react,
   workExperience: 'Work Experience',
-  workExperienceTextOnly: 'Work Experience',
 }
 
 export const STATUS = {
@@ -655,8 +655,8 @@ export const WHO_I_AM = {
   whoIAm: 'Who I Am',
   introduction1: `Hi there!  My name is `,
   introduction2: ` and at work I am ${COMMON_VALUES.reactDeveloperWorkingWithTypeScript}.`,
-  textPerson1: 'This page, however, is about me ',
-  textPerson2: 'as a person',
+  textPerson1: 'This page, is about me ',
+  textPerson2: 'as\u00A0a\u00A0person',
   aboutMe: `
     In my free time you'll find me exploring the great outdoors and spending time in forest.
     As an avid hiker and traveler, I enjoy the nature.
@@ -672,9 +672,11 @@ export const SOUTH_KOREA = {
   headingSouthKorea: 'South Korea',
   introduction:
     'South Korea, where ancient traditions meet modern innovation, offers a journey through bustling cities, serene temples, and stunning landscapes.',
-  quote1: 'Travel makes one modest. You see what a\u00A0tiny place you occupy in the world.',
+  quote1:
+    'Travel makes one modest. You see what a\u00A0tiny place you occupy in\u00A0the\u00A0world.',
   quoteAuthor1: 'Gustave Flaubert, Novelist',
-  quote2: 'The world is a book, and those who do not travel read only one page.',
+  quote2:
+    'The world is\u00A0a\u00A0book, and\u00A0those who do\u00A0not travel read only one page.',
   quoteAuthor2: 'Saint Augustine, Bishop',
   hiking: 'South Korea - hiking',
   nature: 'South Korea - nature',
@@ -682,7 +684,18 @@ export const SOUTH_KOREA = {
   palace: 'South Korea - palace',
 }
 
+export const CALL_TO_ACTION = {
+  workExperience: {
+    highlight: 'Professional journey',
+    highlightShort: 'My journey',
+    heading: 'Explore My\u00A0Work Experience',
+    textMobileAndDesktop: `See the professional projects I worked on and had the opportunity to\u00A0improve.`,
+    textDesktop: 'Developing scalable and robust web applications for big companies.',
+  },
+}
+
 export const TEXT = {
+  ...CALL_TO_ACTION,
   ...COMMON_VALUES,
   ...WHO_I_AM,
   ...CONTACT,

@@ -16,7 +16,7 @@ const Hero: FC = (): JSX.Element => {
         <HeroHeading />
         <HeroParagraph />
         <EmojiAnimated
-          type={EmojiNameEnum.SUNGLASSES}
+          icon={EmojiNameEnum.SUNGLASSES}
           size={EmojiSizeEnum.LG}
           alt={IMAGE_ALT.welcome}
           loading={ImageLoading.EAGER}

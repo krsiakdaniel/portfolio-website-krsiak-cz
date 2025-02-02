@@ -64,7 +64,7 @@ const Status: FC = (): JSX.Element => {
           </div>
           <div className="mt-16 flex md:mt-0 md:items-center md:justify-center">
             <EmojiAnimated
-              type={EmojiNameEnum.ROBOT}
+              icon={EmojiNameEnum.ROBOT}
               size={EmojiSizeEnum.LG}
               alt={DAISY_IU.daisyIsAwesome}
               loading={ImageLoading.EAGER}

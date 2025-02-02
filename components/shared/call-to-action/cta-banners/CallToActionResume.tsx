@@ -4,10 +4,12 @@ import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { TEXT } from '@/localization/english'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { CallToActionResumeProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action-resume'
+
+import starAnimated from '@/public/images/webp/emoji-animated/128x128/star-animated-128x128.webp'
 
 const CallToActionResume: FC<CallToActionResumeProps> = ({
   dataTestId = DATA_TEST_IDS.callToAction.linkResume,
@@ -21,7 +23,7 @@ const CallToActionResume: FC<CallToActionResumeProps> = ({
       link={PAGES_URL.resume}
       linkText={TEXT.resumeTextOnly}
       dataTestId={dataTestId}
-      icon={ICON_EMOJI.memo}
+      icon={starAnimated}
     />
   )
 }
