@@ -57,7 +57,7 @@ This project will use component library for Tailwind CSS.
 - **Current Version:** `none`
 - **Planned Upgrade:** `version 5 (stable)`
 
-![daisyUI](/readme-images/main-readme/smiling-face-with-sunglasses-animated.webp)
+![daisyUI](/readme-images/main-readme/smiling-face-with-sunglasses-animated-80x80.webp)
 
 ## 📋 Pages & Features
 

@@ -8,6 +8,7 @@ import { TEXT } from '@/localization/english'
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { LinkButtonProps } from '@/lib/utils/typeDefinitions/props/shared/link-button'
 
 const LinkButton: FC<LinkButtonProps> = ({
   href,
