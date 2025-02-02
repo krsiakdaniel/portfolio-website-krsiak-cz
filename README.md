@@ -9,7 +9,7 @@
   - [🛠️ Tech Stack](#️-tech-stack)
   - [🌼 daisyUI - Component Library](#-daisyui---component-library)
   - [📋 Pages \& Features](#-pages--features)
-  - [⚡ Performance Audit Results](#-performance-audit-results)
+  - [⚡ PageSpeed Insights](#-pagespeed-insights)
   - [👨🏻‍💼 Team Leader and Task Management](#-team-leader-and-task-management)
   - [💻 Development](#-development)
   - [🃏 🎭 Testing](#--testing)
@@ -73,9 +73,9 @@ The website contains the following pages and features.
 - **Project Detail Page:** Information, Skills, Links, Description, Gallery
 - **Features:** CTA Banners, Skills Icons, Resume in PDF, Career Path, Contact QR Code, Social Links
 
-## ⚡ Performance Audit Results
+## ⚡ PageSpeed Insights
 
-- [README](README-performance.md)
+- [README](README-page-speed-insights.md)
 
 ## 👨🏻‍💼 Team Leader and Task Management
 
@@ -90,8 +90,6 @@ The website contains the following pages and features.
 - [README](README-testing.md)
 
 ## 🐛 Bug Fixing
-
-- [README](README-bug-fixing.md)
 
 ## 🔀 Pull Requests
 
