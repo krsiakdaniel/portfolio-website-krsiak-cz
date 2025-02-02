@@ -103,7 +103,20 @@ const config: Config = {
   // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  moduleNameMapper: {
+    '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
+    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/__mocks__/fileMock.ts',
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '^@components/(.*)$': '<rootDir>/src/components/$1',
+    '^@pages/(.*)$': '<rootDir>/src/pages/$1',
+    '^@app/(.*)$': '<rootDir>/src/app/$1',
+    '^@lib/(.*)$': '<rootDir>/src/lib/$1',
+    '^@utils/(.*)$': '<rootDir>/src/utils/$1',
+    // SVG and image mappings
+    '\\.svg$': '<rootDir>/__mocks__/svgMock.ts', // Simplified SVG pattern
+    '\\.(css|sass|scss)$': 'identity-obj-proxy',
+    '\\.(jpg|jpeg|png|gif|webp|avif|ico|bmp)$': '<rootDir>/__mocks__/fileMock.ts',
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -150,7 +163,7 @@ const config: Config = {
   // setupFiles: [],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  // setupFilesAfterEnv: [],
+  setupFilesAfterEnv: ['<rootDir>/__tests__/jest/setup/setupTests.ts'],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
@@ -168,10 +181,10 @@ const config: Config = {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  testMatch: ['**/__tests__/jest/**/*.[jt]s?(x)', '**/?(*.)+(test).[tj]s?(x)'],
+  testMatch: ['**/__tests__/jest/**/*.test.[jt]s?(x)', '**/src/app/**/*.test.[jt]s?(x)'],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns: ['/node_modules/', '/__tests__/playwright/', '.spec.ts', '.spec.js'],
+  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/playwright/', '/__tests__/playwright/'],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
@@ -186,10 +199,9 @@ const config: Config = {
   // transform: undefined,
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-  // transformIgnorePatterns: [
-  //   "/node_modules/",
-  //   "\\.pnp\\.[^\\/]+$"
-  // ],
+  transformIgnorePatterns: [
+    '/node_modules/(?!(nanoid|@testing-library/user-event|next|@next|@swc|@babel)/)',
+  ],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,
@@ -205,4 +217,4 @@ const config: Config = {
 }
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
-export default createJestConfig(config)
+module.exports = createJestConfig(config)

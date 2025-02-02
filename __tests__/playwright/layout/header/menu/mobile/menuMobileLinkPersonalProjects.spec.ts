@@ -56,14 +56,11 @@ test.describe('Menu Mobile - Link "Personal Projects"', () => {
     )
     expect(isLinkVisible).toBe(true)
 
-    // Click on the link
-    await page.click(getDataTestId(DATA_TEST_IDS.menu.mobile.links.personalProjects))
-
-    // Wait for the page to load
-    await page.waitForLoadState('networkidle')
-
-    // Assert that the URL is correct
-    expect(page.url()).toBe('http://localhost:3000/personal-projects')
+    // Click on the link and wait for navigation
+    await Promise.all([
+      page.waitForURL('**/personal-projects'),
+      page.click(getDataTestId(DATA_TEST_IDS.menu.mobile.links.personalProjects)),
+    ])
 
     // Check the heading text
     const heading = await page.textContent('h1')

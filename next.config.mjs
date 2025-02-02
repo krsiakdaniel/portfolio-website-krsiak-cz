@@ -12,9 +12,10 @@ const withPWA = withPWAInit({
   },
 })
 
-// Config for Next.js
+// Next.js configuration object
 const nextConfig = {
   images: {
+    // List of allowed domains for external images
     remotePatterns: [
       {
         protocol: 'https',
@@ -55,6 +56,8 @@ const nextConfig = {
     dangerouslyAllowSVG: true, // Allows SVG images to be used
     unoptimized: false, // Setting 'unoptimized' to value 'false' means that images will be optimized by 'Next.js Image Optimization API'.
   },
+
+  // Redirects configuration
   async redirects() {
     return [
       {
@@ -71,6 +74,33 @@ const nextConfig = {
         source: '/status-page', // Renamed page
         destination: '/status', // Redirect to 'status'
         permanent: true, // Use 301 for permanent redirect
+      },
+    ]
+  },
+
+  // Custom HTTP headers configuration
+  async headers() {
+    return [
+      {
+        source: '/:all*(svg|jpg|png|webp|gif)', // Match any image files in any directory
+        headers: [
+          {
+            key: 'Cache-Control',
+            value:
+              process.env.NODE_ENV === 'development'
+                ? 'no-cache, no-store, must-revalidate' // Disable caching in development for instant updates
+                : 'public, max-age=3600, must-revalidate', // Cache for 1 hour in production, then revalidate
+          },
+        ],
+      },
+      {
+        source: '/recorder.js', // Smartlook analytics script
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, stale-while-revalidate=86400', // Cache for 1 year, allow stale content for 24h while revalidating
+          },
+        ],
       },
     ]
   },

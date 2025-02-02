@@ -1,5 +1,5 @@
 // Link Button Props
-type LinkButtonProps = {
+export type LinkButtonProps = {
   href: string
   linkText: string
   isLinkExternal?: boolean

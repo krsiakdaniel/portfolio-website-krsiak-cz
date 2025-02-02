@@ -1,6 +1,6 @@
 import { Browser, BrowserContext, Page, test } from '@playwright/test'
 
-import { projectLinks } from '@/__tests__/playwright/lib/mock/projectLinksData'
+import { projectLinks } from '@/__tests__/playwright/lib/__mock__/projectLinksData'
 
 import {
   setupBrowser,

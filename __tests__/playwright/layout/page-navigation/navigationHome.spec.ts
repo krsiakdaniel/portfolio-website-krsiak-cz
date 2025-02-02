@@ -9,8 +9,11 @@ test.describe('Navigation - Home', () => {
     // Navigate to page
     await page.goto('/')
 
-    // Click on the PageNavigation component 'next page'
-    await page.click(getDataTestId(DATA_TEST_IDS.pageNavigation.home.next))
+    // Wait for both click and navigation to complete
+    await Promise.all([
+      page.click(getDataTestId(DATA_TEST_IDS.pageNavigation.home.next)),
+      page.waitForURL('**/who-i-am'),
+    ])
 
     // Check that it navigated to the page
     expect(page.url()).toBe('http://localhost:3000/who-i-am')

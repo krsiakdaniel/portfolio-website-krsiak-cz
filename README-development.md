@@ -5,16 +5,13 @@ Development environment for the project.
 **Table of Contents:**
 
 - [🛠️ Development](#️-development)
+  - [🚀 Website Version `2.48.23`](#-website-version-24823)
   - [💻 Commands](#-commands)
+    - [🔧 Bun Commands](#-bun-commands)
+    - [Available Scripts](#available-scripts)
     - [Install Dependencies](#install-dependencies)
     - [Run Development Mode](#run-development-mode)
-  - [📦 Update Outdated Dependencies](#-update-outdated-dependencies)
-    - [Manually](#manually)
-    - [Using `npm-check-updates`](#using-npm-check-updates)
-      - [Install](#install)
-      - [Check Outdated Packages](#check-outdated-packages)
-      - [Proposed Updates](#proposed-updates)
-      - [Install Updated Packages](#install-updated-packages)
+  - [📦 Find Outdated Dependencies](#-find-outdated-dependencies)
   - [💅 Prettier](#-prettier)
     - [Check Code](#check-code)
     - [Format Code](#format-code)
@@ -23,16 +20,75 @@ Development environment for the project.
 
 ---
 
+## 🚀 Website Version `2.48.23`
+
+As of **Feb 2, 2025**, the website is `"version": "2.48.23"`.
+
+- `2` - represents major redesign
+- `48` - new features added
+- `23` - bug fixes implemented
+
 ## 💻 Commands
 
-Miscellaneous commands for the terminal.
+Commands for the terminal using `bun` as the package manager: <https://bun.sh/>
+
+### 🔧 Bun Commands
+
+Common Bun CLI commands for package management:
+
+```bash
+bun install           # Install all dependencies
+bun add <package>     # Add a dependency
+bun remove <package>  # Remove a dependency
+bun update            # Update dependencies to their latest versions
+```
+
+For more details, see the official Bun documentation:
+
+- [bun install](https://bun.sh/docs/cli/install)
+- [bun add](https://bun.sh/docs/cli/add)
+- [bun remove](https://bun.sh/docs/cli/remove)
+- [bun update](https://bun.sh/docs/cli/update)
+
+### Available Scripts
+
+All commands in scripts are available in: [package.json](/package.json)
+
+```bash
+# Development
+bun dev                 # Start development server
+bun build               # Build the application
+bun start               # Start production server
+bun lint                # Run ESLint checks
+
+# Formatting
+bun prettier:check      # Check code formatting
+bun prettier:write      # Fix code formatting
+
+# Testing
+bun test:jest           # Run Jest tests
+bun test:jest:coverage  # Run Jest tests with coverage
+bun test:jest:watch     # Run Jest tests in watch mode
+
+# E2E Testing
+bun test:e2e            # Run Playwright tests
+bun test:e2e:ui         # Run Playwright tests with UI
+bun test:e2e:chrome     # Run Playwright tests in Chrome only
+bun test:e2e:codegen    # Generate Playwright tests
+bun test:e2e:debug      # Run Playwright tests in debug mode
+
+# Dependencies
+bun deps:outdated       # Check outdated dependencies
+bun clean               # Remove node_modules
+bun clean:install       # Remove node_modules and reinstall dependencies
+```
 
 ### Install Dependencies
 
-Run npm to install the necessary packages.
+Use `bun` to install the necessary packages.
 
 ```bash
-npm install
+bun install
 ```
 
 ### Run Development Mode
@@ -40,88 +96,53 @@ npm install
 Run the app in development mode.
 
 ```bash
-npm run dev
+bun dev
 ```
 
 To view the project in the browser, open: [http://localhost:3000](http://localhost:3000)
 
-## 📦 Update Outdated Dependencies
+## 📦 Find Outdated Dependencies
 
-There are two ways to update outdated dependencies.
-
-### Manually
-
-Find outdated packages and upgrade to the latest version if possible.
+Find out which dependencies are outdated.
 
 ```bash
-npm outdated
+bun outdated
 ```
 
-![npm - outdated](/readme-images/development/npm/npm-outdated.webp)
-
-### Using `npm-check-updates`
-
-To update outdated packages, you can use the NCU tool: [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
-
-#### Install
-
-First, install `npm-check-updates` globally.
-
-```bash
-npm install -g npm-check-updates
-```
-
-#### Check Outdated Packages
-
-Run the following command to check for outdated packages.
-
-```bash
-ncu
-```
-
-![ncu - check](/readme-images/development/npm/check-updates-checking.webp)
-
-#### Proposed Updates
-
-Update the `package.json` with the latest versions.
-
-```bash
-ncu -u
-```
-
-![ncu - upgrade](/readme-images/development/npm/check-updates-upgrading-terminal.webp)
-
-The result seen in `package.json`.
-
-![package.json](/readme-images/development/npm/check-updates-upgrading-package-json.webp)
-
-#### Install Updated Packages
-
-Run npm to install the updated packages.
-
-```bash
-npm install
-```
+![bun - outdated](/readme-images/development/bun/bun-outdated.webp)
 
 ## 💅 Prettier
 
-This project uses Prettier for code formatting.
+This project uses [Prettier](https://prettier.io/) for code formatting.
 
 ### Check Code
 
 Check if the code is formatted correctly.
 
 ```bash
-npm run prettier:check
+bun prettier:check
 ```
+
+The files that are not formatted correctly will be listed in the terminal as `[warn], error`.
+
+![bun - prettier check - warn](/readme-images/development/bun/bun-prettier-check-warn.webp)
+
+If all files are formatted correctly, terminal will show this message.
+
+![bun - prettier check - ok](/readme-images/development/bun/bun-prettier-check-ok.webp)
 
 ### Format Code
 
-Format the code in files using Prettier.
+In case there are files that are not formatted correctly:
+
+- There will be a warning in the terminal: `[warn], error`
+- Format the code in files using the Prettier command.
 
 ```bash
-npm run prettier:fix
+bun prettier:write
 ```
+
+Once done, you can check the code formatting running again the command: `bun prettier:check`
 
 ## 🔗 Imports Order in Files
 

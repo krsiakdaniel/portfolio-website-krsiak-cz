@@ -9,8 +9,11 @@ test.describe('Navigation - Personal Projects', () => {
     // Navigate to page
     await page.goto('/personal-projects')
 
-    // Click on the PageNavigation component 'previous page'
-    await page.click(getDataTestId(DATA_TEST_IDS.projects.personal.overview.previous))
+    // Wait for both click and navigation to complete
+    await Promise.all([
+      page.waitForURL('**/resume'),
+      page.click(getDataTestId(DATA_TEST_IDS.projects.personal.overview.previous)),
+    ])
 
     // Check that it navigated to the page
     expect(page.url()).toBe('http://localhost:3000/resume')
@@ -20,8 +23,11 @@ test.describe('Navigation - Personal Projects', () => {
     // Navigate to page
     await page.goto('/personal-projects')
 
-    // Click on the PageNavigation component 'next page'
-    await page.click(getDataTestId(DATA_TEST_IDS.projects.personal.overview.next))
+    // Wait for both click and navigation to complete
+    await Promise.all([
+      page.waitForURL('**/testimonials'),
+      page.click(getDataTestId(DATA_TEST_IDS.projects.personal.overview.next)),
+    ])
 
     // Check that it navigated to the page
     expect(page.url()).toBe('http://localhost:3000/testimonials')

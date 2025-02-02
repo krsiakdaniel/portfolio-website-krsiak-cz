@@ -56,11 +56,11 @@ test.describe('Menu Mobile - Link "Testimonials"', () => {
     )
     expect(isLinkVisible).toBe(true)
 
-    // Click on the link
-    await page.click(getDataTestId(DATA_TEST_IDS.menu.mobile.links.testimonials))
-
-    // Wait for the page to load
-    await page.waitForLoadState('networkidle')
+    // Wait for both click and navigation to complete
+    await Promise.all([
+      page.waitForURL('**/testimonials'),
+      page.click(getDataTestId(DATA_TEST_IDS.menu.mobile.links.testimonials)),
+    ])
 
     // Assert that the URL is correct
     expect(page.url()).toBe('http://localhost:3000/testimonials')
