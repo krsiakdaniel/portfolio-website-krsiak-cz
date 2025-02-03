@@ -80,10 +80,24 @@ export const ICON_EMOJI = {
   },
 }
 
+export const SHARED = {
+  opensInNewTab: 'Opens in a new tab',
+  or: 'or',
+  and: 'and',
+  customers: 'customers.',
+  githubRepository: 'GitHub Repository',
+  year: 'year',
+  years: 'years',
+  month: 'month',
+  months: 'months',
+  emDash: '—',
+  middleDot: '·',
+}
+
 export const COMMON_VALUES = {
   nameDanielKrsiak: 'Daniel Kršiak',
   reactDeveloper: 'React Developer',
-  reactDeveloperTypeScript: 'React Developer — TypeScript & Next.js',
+  reactDeveloperTypeScript: `React Developer ${SHARED.emDash} TypeScript & Next.js`,
   reactDeveloperWorkingWithTypeScript: 'React Developer working with TypeScript & Next.js',
   developer: 'Developer',
   frontEnd: 'Front End',
@@ -129,7 +143,7 @@ export const SOCIAL_LINKS = {
   linkedIn: 'LinkedIn',
   gitHub: 'GitHub',
   gitHubCode: 'GitHub Code',
-  gitHubKrsiak: 'GitHub — website-krsiak-cz',
+  gitHubKrsiak: `GitHub ${SHARED.emDash} website-krsiak-cz`,
   resumePDF: 'Resume PDF',
   twitter: '@krsiak_daniel',
 }
@@ -212,11 +226,11 @@ export const STATUS = {
 export const COMPANIES = {
   smartsuppDashboard: 'Smartsupp Dashboard',
   customerCareChatDashboard: 'Chat Dashboard',
-  smartsuppChatDashboard: 'Smartsupp — Chat Dashboard',
+  smartsuppChatDashboard: `Smartsupp ${SHARED.emDash} Chat Dashboard`,
   komercniBanka: 'Komerční banka',
   kooperativa: 'Kooperativa',
-  smartsuppWeb: 'Smartsupp — Web',
-  smartsuppHELP: 'Smartsupp — HELP',
+  smartsuppWeb: `Smartsupp ${SHARED.emDash} Web`,
+  smartsuppHELP: `Smartsupp ${SHARED.emDash} HELP`,
   groupon: 'Groupon',
   moravia: 'Moravia IT',
 }
@@ -335,18 +349,6 @@ export const META_TESTIMONIALS = {
     communication: 'Communication',
     knowledgeSharing: 'Knowledge Sharing',
   },
-}
-
-export const SHARED = {
-  opensInNewTab: 'Opens in a new tab',
-  or: 'or',
-  and: 'and',
-  customers: 'customers.',
-  githubRepository: 'GitHub Repository',
-  year: 'year',
-  years: 'years',
-  month: 'month',
-  months: 'months',
 }
 
 export const META_PROJECTS_OVERVIEW_PERSONAL = {
@@ -776,7 +778,7 @@ export const INTRODUCTION = {
   whoIAm: {
     text: {
       introduction1: `Hi!  My name is `,
-      introduction2: ` and at work I\u00A0am ${COMMON_VALUES.react} —\u00A0${COMMON_VALUES.typeScript} ${COMMON_VALUES.developer}.`,
+      introduction2: ` and at work I\u00A0am ${COMMON_VALUES.react} ${SHARED.emDash}\u00A0${COMMON_VALUES.typeScript} ${COMMON_VALUES.developer}.`,
       textPerson1: 'This page is about me ',
       textPerson2: 'as\u00A0a\u00A0person.',
     },

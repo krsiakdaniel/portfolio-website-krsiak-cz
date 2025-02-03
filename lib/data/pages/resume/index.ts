@@ -1,6 +1,6 @@
 import { MONTHS, YEARS } from '@/lib/utils/constants/yearsExperience'
 
-import { ICON_EMOJI } from '@/localization/english'
+import { ICON_EMOJI, SHARED } from '@/localization/english'
 
 import { DurationUnitEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Job } from '@/lib/utils/typeDefinitions/interfaces'
@@ -8,7 +8,7 @@ import { Job } from '@/lib/utils/typeDefinitions/interfaces'
 export const jobs: Job[] = [
   {
     id: 0,
-    title: `${ICON_EMOJI.atomSymbol} Front End — React Developer`,
+    title: `${ICON_EMOJI.atomSymbol} Front End ${SHARED.emDash} React Developer`,
     duration: YEARS.react,
     unit: DurationUnitEnum.Year,
     description: `
@@ -19,7 +19,7 @@ export const jobs: Job[] = [
   },
   {
     id: 1,
-    title: `${ICON_EMOJI.laptop} Front End — Web Developer`,
+    title: `${ICON_EMOJI.laptop} Front End ${SHARED.emDash} Web Developer`,
     duration: YEARS.webDeveloper,
     unit: DurationUnitEnum.Year,
     description: `
@@ -29,7 +29,7 @@ export const jobs: Job[] = [
   },
   {
     id: 2,
-    title: `${ICON_EMOJI.robot} QA Automation — Team Leader`,
+    title: `${ICON_EMOJI.robot} QA Automation ${SHARED.emDash} Team Leader`,
     duration: YEARS.qaAutomation,
     unit: DurationUnitEnum.Year,
     description: `
@@ -40,7 +40,7 @@ export const jobs: Job[] = [
   },
   {
     id: 3,
-    title: `${ICON_EMOJI.flagCzechRepublic} Localization — Manager`,
+    title: `${ICON_EMOJI.flagCzechRepublic} Localization ${SHARED.emDash} Manager`,
     duration: YEARS.localizationManager,
     unit: DurationUnitEnum.Year,
     description: `
@@ -51,7 +51,7 @@ export const jobs: Job[] = [
   },
   {
     id: 4,
-    title: `${ICON_EMOJI.hammerAndWrench} Localization — Tester`,
+    title: `${ICON_EMOJI.hammerAndWrench} Localization ${SHARED.emDash} Tester`,
     duration: YEARS.localizationTester,
     unit: DurationUnitEnum.Year,
     description: `
@@ -62,7 +62,7 @@ export const jobs: Job[] = [
   },
   {
     id: 5,
-    title: `${ICON_EMOJI.officeBuilding} IBM — Mainframe Operator`,
+    title: `${ICON_EMOJI.officeBuilding} IBM ${SHARED.emDash} Mainframe Operator`,
     duration: YEARS.operatorIBM,
     unit: DurationUnitEnum.Year,
     description: `
@@ -72,7 +72,7 @@ export const jobs: Job[] = [
   },
   {
     id: 6,
-    title: `${ICON_EMOJI.desktopComputer} Front End — Web Coder`,
+    title: `${ICON_EMOJI.desktopComputer} Front End ${SHARED.emDash} Web Coder`,
     duration: YEARS.webCoder,
     unit: DurationUnitEnum.Year,
     description: `
@@ -82,7 +82,7 @@ export const jobs: Job[] = [
   },
   {
     id: 7,
-    title: `${ICON_EMOJI.airplane} Airport — Airline Ticket Agent`,
+    title: `${ICON_EMOJI.airplane} Airport ${SHARED.emDash} Airline Ticket Agent`,
     duration: YEARS.ticketAgent,
     unit: DurationUnitEnum.Year,
     description: `
@@ -92,7 +92,7 @@ export const jobs: Job[] = [
   },
   {
     id: 8,
-    title: `${ICON_EMOJI.airplane} Airport — Flights Information`,
+    title: `${ICON_EMOJI.airplane} Airport ${SHARED.emDash} Flights Information`,
     duration: MONTHS.airportFlightsInfo,
     unit: DurationUnitEnum.Month,
     description: `
@@ -102,7 +102,7 @@ export const jobs: Job[] = [
   },
   {
     id: 9,
-    title: `${ICON_EMOJI.poultryLeg} KFC — Frying Chicken`,
+    title: `${ICON_EMOJI.poultryLeg} KFC ${SHARED.emDash} Frying Chicken`,
     duration: MONTHS.crewMemberKFC,
     unit: DurationUnitEnum.Month,
     description: `
@@ -112,7 +112,7 @@ export const jobs: Job[] = [
   },
   {
     id: 10,
-    title: `${ICON_EMOJI.barChart} High School — Finished as Accountant`,
+    title: `${ICON_EMOJI.barChart} High School ${SHARED.emDash} Finished as Accountant`,
     duration: YEARS.highSchoolAccountant,
     unit: DurationUnitEnum.Year,
     description: `

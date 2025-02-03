@@ -23,7 +23,7 @@ const ResumeContact: FC = (): JSX.Element => {
         text={
           <span>
             {RESUME.scanQR}
-            <span className="mx-2 hidden sm:inline-block">—</span>
+            <span className="mx-2 hidden sm:inline-block">{SHARED.emDash}</span>
             <span
               className={`block font-bold sm:inline md:ml-2 ${isOpenToWork ? 'text-green-600' : 'text-blue-600'}`}
             >
