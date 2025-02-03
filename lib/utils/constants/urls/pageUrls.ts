@@ -1,3 +1,8 @@
+import {
+  PAGE_TOP_LEVEL_URLS,
+  PROJECTS_PERSONAL_TOP_LEVEL_URLS,
+  PROJECTS_WORK_TOP_LEVEL_URLS,
+} from '@/lib/utils/constants/urls/pageTopLevelUrls'
 import { getUrlPersonalProject, getUrlWorkExperience } from '@/lib/utils/helpers/urls/getPageUrls'
 import { EnvUrls, PageUrls, SitemapUrls } from '@/lib/utils/typeDefinitions/interfaces'
 
@@ -23,28 +28,28 @@ export const ENV_URLS = {
  * Validates against PageUrls interface.
  */
 export const PAGES_URL: PageUrls = {
-  home: '/',
-  whoIAm: '/who-i-am',
-  resume: '/resume',
+  home: PAGE_TOP_LEVEL_URLS.home,
+  whoIAm: PAGE_TOP_LEVEL_URLS.whoIAm,
+  resume: PAGE_TOP_LEVEL_URLS.resume,
   work: {
-    mainUrl: '/work-experience',
-    kooperativa: getUrlWorkExperience('kooperativa'),
+    mainUrl: PAGE_TOP_LEVEL_URLS.workExperience,
+    kooperativa: getUrlWorkExperience(PROJECTS_WORK_TOP_LEVEL_URLS.kooperativa),
     smartsupp: {
-      dashboard: getUrlWorkExperience('smartsupp-dashboard'),
-      web: getUrlWorkExperience('smartsupp-web'),
-      help: getUrlWorkExperience('smartsupp-help'),
+      dashboard: getUrlWorkExperience(PROJECTS_WORK_TOP_LEVEL_URLS.smartsupp.dashboard),
+      web: getUrlWorkExperience(PROJECTS_WORK_TOP_LEVEL_URLS.smartsupp.web),
+      help: getUrlWorkExperience(PROJECTS_WORK_TOP_LEVEL_URLS.smartsupp.help),
     },
-    komercniBanka: getUrlWorkExperience('komercni-banka'),
-    groupon: getUrlWorkExperience('groupon'),
-    moravia: getUrlWorkExperience('moravia'),
+    komercniBanka: getUrlWorkExperience(PROJECTS_WORK_TOP_LEVEL_URLS.komercniBanka),
+    groupon: getUrlWorkExperience(PROJECTS_WORK_TOP_LEVEL_URLS.groupon),
+    moravia: getUrlWorkExperience(PROJECTS_WORK_TOP_LEVEL_URLS.moravia),
   },
   personal: {
-    mainUrl: '/personal-projects',
-    krsiak: getUrlPersonalProject('krsiak'),
-    cryptoMania: getUrlPersonalProject('cryptomania'),
+    mainUrl: PAGE_TOP_LEVEL_URLS.personalProjects,
+    krsiak: getUrlPersonalProject(PROJECTS_PERSONAL_TOP_LEVEL_URLS.krsiak),
+    cryptoMania: getUrlPersonalProject(PROJECTS_PERSONAL_TOP_LEVEL_URLS.cryptoMania),
   },
-  testimonials: '/testimonials',
-  status: '/status',
+  testimonials: PAGE_TOP_LEVEL_URLS.testimonials,
+  status: PAGE_TOP_LEVEL_URLS.status,
 } as const satisfies PageUrls
 
 /**

@@ -152,6 +152,36 @@ export interface EnvUrls {
   localhost: string
 }
 
+// Page Top Level URLs
+export interface PageTopLevelUrls {
+  home: string
+  whoIAm: string
+  workExperience: string
+  resume: string
+  personalProjects: string
+  testimonials: string
+  status: string
+}
+
+// Projects Personal Top Level URLs
+export interface ProjectsPersonalTopLevelUrls {
+  krsiak: string
+  cryptoMania: string
+}
+
+// Projects Work Top Level URLs
+export interface ProjectsWorkTopLevelUrls {
+  kooperativa: string
+  smartsupp: {
+    dashboard: string
+    web: string
+    help: string
+  }
+  komercniBanka: string
+  groupon: string
+  moravia: string
+}
+
 // Page URLs
 export interface PageUrls {
   home: string

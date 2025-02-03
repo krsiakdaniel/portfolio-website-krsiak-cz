@@ -1,5 +1,6 @@
 import { AriaLabels } from '@/lib/utils/typeDefinitions/interfaces'
 
+// TODO: move to english.ts
 export const ARIA_LABELS: AriaLabels = {
   toggleMenu: 'Toggle Menu',
   menu: 'Menu',
