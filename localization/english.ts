@@ -824,6 +824,17 @@ export const INTRODUCTION = {
   },
 }
 
+export const ARIA_LABELS = {
+  toggleMenu: 'Toggle Menu',
+  menu: 'Menu',
+  breadcrumbs: 'Breadcrumbs',
+  sun: 'The Sun',
+  moon: 'The Moon',
+  manWalking: 'Man walking',
+  forest: 'Forest',
+  forestWithMountain: 'Forest with mountain',
+}
+
 export const TEXT = {
   ...CALL_TO_ACTION,
   ...COMMON_VALUES,
@@ -843,4 +854,5 @@ export const TEXT = {
   ...MISC,
   ...ERROR,
   ...FOOTER,
+  ...ARIA_LABELS,
 }

@@ -1,8 +1,6 @@
 import { FC } from 'react'
 
-import { ICON_EMOJI } from '@/localization/english'
-
-import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
 
 const TheSun: FC = (): JSX.Element => {
   return (

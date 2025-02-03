@@ -5,7 +5,9 @@ import BreadcrumbsItem from '@/components/shared/BreadcrumbsItem'
 import { ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
+
+import { ARIA_LABELS } from '@/localization/english'
+
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { BreadCrumbsProps } from '@/lib/utils/typeDefinitions/props/shared/breadcrumbs'

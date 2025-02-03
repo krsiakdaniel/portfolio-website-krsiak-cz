@@ -2,9 +2,8 @@
 
 import { FC, useEffect, useState } from 'react'
 
-import { ICON_EMOJI } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
 
-import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
 import { updateIconsManWalkingInForest } from '@/lib/utils/helpers/updateIconsManWalkingInForest'
 
 const ManWalkingInForest: FC = (): JSX.Element => {

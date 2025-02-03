@@ -248,18 +248,6 @@ export interface StatusBadgeUrls {
   UPTIME: string
 }
 
-// ARIA Labels
-export interface AriaLabels {
-  toggleMenu: string
-  menu: string
-  breadcrumbs: string
-  sun: string
-  moon: string
-  manWalking: string
-  forest: string
-  forestWithMountain: string
-}
-
 // Years of Experience
 export interface YearsExperience {
   javaScript: number
