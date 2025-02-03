@@ -1,3 +1,5 @@
+import { TEXT } from '@/localization/english'
+
 /**
  * Returns the appropriate text for the given number of years.
  *
@@ -5,5 +7,5 @@
  * @returns {string} - The text 'year' if the number of years is 1, otherwise 'years'.
  */
 export const getYearsText = (years: number): string => {
-  return `${years === 1 ? 'year' : 'years'}`
+  return `${years === 1 ? TEXT.year : TEXT.years}`
 }

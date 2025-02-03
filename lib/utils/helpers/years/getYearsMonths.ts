@@ -1,5 +1,7 @@
 import { Job } from '@/lib/utils/typeDefinitions/interfaces'
 
+import { TEXT } from '@/localization/english'
+
 type GetYearsMonthsType = Pick<Job, 'duration' | 'unit'>
 
 /**
@@ -12,7 +14,7 @@ type GetYearsMonthsType = Pick<Job, 'duration' | 'unit'>
  */
 export const getYearsMonths = ({ duration, unit }: GetYearsMonthsType): string => {
   if (duration === 1) {
-    return unit === 'year' ? 'year' : 'month'
+    return unit === 'year' ? TEXT.year : TEXT.month
   }
-  return unit === 'year' ? 'years' : 'months'
+  return unit === 'year' ? TEXT.years : TEXT.months
 }

@@ -13,10 +13,9 @@ const WhoIAmIntroduction: FC = (): JSX.Element => {
       <Paragraph dataTestId={DATA_TEST_IDS.page.whoIAm.introduction}>
         <span>{WHO_I_AM.introduction1}</span> <Highlight text={COMMON_VALUES.nameDanielKrsiak} />
         <span>{WHO_I_AM.introduction2}</span>
-      </Paragraph>
-      <Paragraph marginTop="mt-2">
-        {WHO_I_AM.textPerson1} <Highlight text={WHO_I_AM.textPerson2} />
-        {'.'}
+        <span className="ml-1">
+          {WHO_I_AM.textPerson1} <Highlight text={WHO_I_AM.textPerson2} />
+        </span>
       </Paragraph>
     </>
   )

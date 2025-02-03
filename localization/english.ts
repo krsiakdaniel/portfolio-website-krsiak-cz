@@ -83,6 +83,7 @@ export const COMMON_VALUES = {
   reactDeveloper: 'React Developer',
   reactDeveloperTypeScript: 'React Developer — TypeScript & Next.js',
   reactDeveloperWorkingWithTypeScript: 'React Developer working with TypeScript & Next.js',
+  developer: 'Developer',
   javaScript: 'JavaScript',
   javaScriptShort: 'JS',
   typeScript: 'TypeScript',
@@ -309,6 +310,12 @@ export const SHARED = {
   opensInNewTab: 'Opens in a new tab',
   or: 'or',
   and: 'and',
+  customers: 'customers.',
+  githubRepository: 'GitHub Repository',
+  year: 'year',
+  years: 'years',
+  month: 'month',
+  months: 'months',
 }
 
 export const META_PROJECTS_OVERVIEW_PERSONAL = {
@@ -626,16 +633,17 @@ export const DAISY_IU = {
 }
 
 export const IMAGE_ALT = {
-  welcome: 'Hi :)',
-  defaultAlt: 'image',
-  iconQuote: 'icon-quote',
-  microsoft: 'Microsoft',
-  smartsupp: 'Smartsupp',
-  kooperativa: 'Kooperativa',
-  groupon: 'Groupon',
-  ibm: 'IBM',
-  rwsMoravia: 'RWS - Moravia',
-  komercniBanka: 'Komerční Banka',
+  altWelcome: 'Hi :)',
+  altLogo: 'logo',
+  altDefault: 'image',
+  altIconQuote: 'icon-quote',
+  altMicrosoft: 'Microsoft',
+  altSmartsupp: 'Smartsupp',
+  altKooperativa: 'Kooperativa',
+  altGroupon: 'Groupon',
+  altIbm: 'IBM',
+  altRwsMoravia: 'RWS - Moravia',
+  altKomercniBanka: 'Komerční Banka',
 }
 
 export const CONTACT = {
@@ -662,10 +670,10 @@ export const BIBLE = {
 
 export const WHO_I_AM = {
   whoIAm: 'Who I Am',
-  introduction1: `Hi there!  My name is `,
-  introduction2: ` and at work I am ${COMMON_VALUES.reactDeveloperWorkingWithTypeScript}.`,
-  textPerson1: 'This page, is about me ',
-  textPerson2: 'as\u00A0a\u00A0person',
+  introduction1: `Hi!  My name is `,
+  introduction2: ` and at work I\u00A0am ${COMMON_VALUES.react} —\u00A0${COMMON_VALUES.typeScript} ${COMMON_VALUES.developer}.`,
+  textPerson1: 'This page is about me ',
+  textPerson2: 'as\u00A0a\u00A0person.',
   aboutMe: `
     In my free time you'll find me exploring the great outdoors and spending time in forest.
     As an avid hiker and traveler, I enjoy the nature.

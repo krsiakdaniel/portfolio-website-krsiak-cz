@@ -40,7 +40,7 @@ const Companies: FC = (): JSX.Element => {
             <ImageComponent
               src={kooperativa}
               width={WIDTH_KOOPERATIVA}
-              alt={IMAGE_ALT.kooperativa}
+              alt={IMAGE_ALT.altKooperativa}
               loading={ImageLoading.LAZY}
             />
           </div>
@@ -48,7 +48,7 @@ const Companies: FC = (): JSX.Element => {
             <ImageComponent
               src={smartsupp}
               width={WIDTH_SMARTSUPP}
-              alt={IMAGE_ALT.smartsupp}
+              alt={IMAGE_ALT.altSmartsupp}
               loading={ImageLoading.LAZY}
             />
           </div>
@@ -56,7 +56,7 @@ const Companies: FC = (): JSX.Element => {
             <ImageComponent
               src={microsoft}
               width={WIDTH_MICROSOFT}
-              alt={IMAGE_ALT.microsoft}
+              alt={IMAGE_ALT.altMicrosoft}
               loading={ImageLoading.LAZY}
             />
           </div>
@@ -65,7 +65,7 @@ const Companies: FC = (): JSX.Element => {
             <ImageComponent
               src={rwsMoravia}
               width={WIDTH_RWS_MORAVIA}
-              alt={IMAGE_ALT.rwsMoravia}
+              alt={IMAGE_ALT.altRwsMoravia}
               loading={ImageLoading.LAZY}
             />
           </div>
@@ -73,7 +73,7 @@ const Companies: FC = (): JSX.Element => {
             <ImageComponent
               src={komercniBanka}
               width={WIDTH_KOMERCNI_BANKA}
-              alt={IMAGE_ALT.komercniBanka}
+              alt={IMAGE_ALT.altKomercniBanka}
               loading={ImageLoading.LAZY}
             />
           </div>
@@ -81,7 +81,7 @@ const Companies: FC = (): JSX.Element => {
             <ImageComponent
               src={groupon}
               width={WIDTH_GROUPON}
-              alt={IMAGE_ALT.groupon}
+              alt={IMAGE_ALT.altGroupon}
               loading={ImageLoading.LAZY}
             />
           </div>

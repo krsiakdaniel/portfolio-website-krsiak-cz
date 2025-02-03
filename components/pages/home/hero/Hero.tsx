@@ -18,7 +18,7 @@ const Hero: FC = (): JSX.Element => {
         <EmojiAnimated
           icon={EmojiNameEnum.SUNGLASSES}
           size={EmojiSizeEnum.LG}
-          alt={IMAGE_ALT.welcome}
+          alt={IMAGE_ALT.altWelcome}
           loading={ImageLoading.EAGER}
           className="mt-8"
         />
