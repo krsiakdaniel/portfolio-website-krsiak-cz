@@ -40,7 +40,7 @@ const ResumeContact: FC = (): JSX.Element => {
         </Paragraph>
       </div>
 
-      <div className="mt-8 flex flex-col items-center space-y-8 md:flex-row md:space-x-8 md:space-y-0">
+      <div className="mt-8 flex">
         <ScanMyContactQR showImageCaption={true} />
       </div>
     </>

@@ -20,6 +20,7 @@
   - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
   - [🚨 Security](#-security)
   - [📱 Progressive Web App](#-progressive-web-app)
+  - [🙇‍♂️ Attribution](#️-attribution)
   - [🖼️ Screenshots](#️-screenshots)
 
 ## ⚛️ Project Description
@@ -43,7 +44,9 @@ Documentation links:
 - **Language:** 📝 [TypeScript](https://www.typescriptlang.org/)
 - **Frameworks:** ⚛️ [React](https://react.dev/), ⏭️ [Next.js](https://nextjs.org/)
 - **CSS Framework:** 🎨 [Tailwind CSS](https://tailwindcss.com/)
-- **Component Library for Tailwind CSS**: 🌼 [daisyUI](https://daisyui.com/) `plan to use`
+- **Component library for Tailwind CSS:**
+  - 🌊 [Flowbite](https://flowbite.com/) = `now using - will remove` 👎
+  - 🌼 [daisyUI](https://daisyui.com/) = `plan to use` 👍
 - **Testing:** 🃏 [JEST](https://jestjs.io/), 🎭 [Playwright](https://playwright.dev/)
 - **CI & CD:** 🚀 [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) , 🌍 [Netlify](https://www.netlify.com/)
 
@@ -55,7 +58,7 @@ This project will use component library for Tailwind CSS.
 - GitHub: [Release information](https://github.com/saadeghi/daisyui/releases)
 
 - **Current Version:** `none`
-- **Planned Upgrade:** `version 5 (stable)`
+- **Planned To Use:** `version 5 (stable)`
 
 ![daisyUI](/readme-images/main-readme/smiling-face-with-sunglasses-animated-80x80.webp)
 
@@ -71,7 +74,7 @@ The website contains the following pages and features.
   - 💬 [Testimonials](https://krsiak.cz/testimonials)
   - 🚦 [Status](https://krsiak.cz/status)
 - **Project Detail Page:** Information, Skills, Links, Description, Gallery
-- **Features:** CTA Banners, Skills Icons, Resume in PDF, Career Path, Contact QR Code, Social Links
+- **Features:** CTA Banners, Skills Icons, Resume in PDF, Career Path, Contact QR Code, Social Links, Scroll to Top
 
 ## ⚡ PageSpeed Insights
 
@@ -114,6 +117,10 @@ The website contains the following pages and features.
 ## 📱 Progressive Web App
 
 - [README](README-progressive-web-app.md)
+
+## 🙇‍♂️ Attribution
+
+- [README](README-attribution.md)
 
 ## 🖼️ Screenshots
 

@@ -23,13 +23,27 @@ const customKeyframes = {
     '0%, 100%': { transform: 'translateX(0)' },
     '50%': { transform: 'translateX(2px)' },
   },
+  gentleBounce: {
+    '0%, 100%': { transform: 'translateY(0)' },
+    '50%': { transform: 'translateY(-10px)' },
+  },
 }
 
+// Animation timing
+const ANIMATION_TIMING = {
+  SLOW: '3s',
+  NORMAL: '2s',
+} as const
+
+// Animation types
+const EASE_IN_OUT = 'ease-in-out' as const
+
 const customAnimations = {
-  'pulse-bubble': 'pulseBubble 3s infinite',
-  'ghost-previous': 'animateGhostPrevious 2s ease-in-out infinite',
-  'ghost-next': 'animateGhostNext 2s ease-in-out infinite',
-  'man-walk': 'manWalk 2s ease-in-out infinite',
+  'pulse-bubble': `pulseBubble ${ANIMATION_TIMING.SLOW} infinite`,
+  'ghost-previous': `animateGhostPrevious ${ANIMATION_TIMING.NORMAL} ${EASE_IN_OUT} infinite`,
+  'ghost-next': `animateGhostNext ${ANIMATION_TIMING.NORMAL} ${EASE_IN_OUT} infinite`,
+  'man-walk': `manWalk infinite ${ANIMATION_TIMING.NORMAL} ${EASE_IN_OUT}`,
+  'gentle-bounce': `gentleBounce infinite ${ANIMATION_TIMING.NORMAL} ${EASE_IN_OUT}`,
 }
 
 const customScreenSizes = {
@@ -49,7 +63,7 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/**/*.{js,ts,jsx,tsx,mdx}', // https://nextjs.org/docs/app/building-your-application/configuring/src-directory
   ],
-  // If you need to make sure Tailwind generates certain class names that don’t exist in content files.
+  // If you need to make sure Tailwind generates certain class names that don't exist in content files.
   safelist: [
     'bg-blue-100',
     'bg-blue-600',

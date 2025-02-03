@@ -3,29 +3,32 @@ import { FC } from 'react'
 
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ICON_EMOJI } from '@/localization/english'
+import { FOOTER, ICON_EMOJI } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getCurrentYear } from '@/lib/utils/helpers/years/getCurrentYear'
 
-const FooterCopyright: FC = (): JSX.Element => {
+const Copyright: FC = (): JSX.Element => {
   return (
-    <Paragraph size="text-md" customCss="mt-4 flex flex-col text-center gap-2">
-      <span data-testid={DATA_TEST_IDS.footer.copyright}>Copyright ©&nbsp;{getCurrentYear()}</span>
+    <Paragraph size="text-md" marginTop="mt-4" customCss="flex flex-row text-center gap-2">
+      <span data-testid={DATA_TEST_IDS.footer.copyright}>
+        {FOOTER.copyrightSymbol}&nbsp;{getCurrentYear()}
+      </span>
+
+      <span role="img" className="select-none">
+        {ICON_EMOJI.cat.nufka} {ICON_EMOJI.cat.ruzenka}
+      </span>
+
       <Link
         href={PAGES_URL.home}
         className="text-neutral-600 underline hover:text-neutral-800 hover:no-underline"
         data-testid={DATA_TEST_IDS.footer.linkFooterHome}
       >
-        krsiak.cz
+        {FOOTER.linkHome}
       </Link>
-
-      <span role="img" className="mt-1 select-none">
-        {ICON_EMOJI.cat.nufka} {ICON_EMOJI.cat.ruzenka}
-      </span>
     </Paragraph>
   )
 }
 
-export default FooterCopyright
+export default Copyright

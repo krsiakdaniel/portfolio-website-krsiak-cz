@@ -703,6 +703,12 @@ export const CALL_TO_ACTION = {
   },
 }
 
+export const FOOTER = {
+  copyrightSymbol: '©',
+  linkHome: 'krsiak.cz',
+  scrollToTop: 'Scroll to top',
+}
+
 export const TEXT = {
   ...CALL_TO_ACTION,
   ...COMMON_VALUES,
@@ -721,4 +727,5 @@ export const TEXT = {
   ...STATUS,
   ...MISC,
   ...ERROR,
+  ...FOOTER,
 }

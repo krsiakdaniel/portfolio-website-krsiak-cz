@@ -1,14 +1,15 @@
 import { FC } from 'react'
 
-import DividerInFooter from '@/components/layout/footer/divider/DividerInFooter'
-import FooterCopyright from '@/components/layout/footer/FooterCopyright'
-import FooterStatusAndScroll from '@/components/layout/footer/FooterStatusAndScroll'
+import Copyright from '@/components/layout/footer/Copyright'
+import DividerWithEmojis from '@/components/layout/footer/divider/DividerWithEmojis'
+import Status from '@/components/layout/footer/Status'
 import PageContainer from '@/components/layout/PageContainer'
 import DividerWithText from '@/components/shared/DividerWithText'
 import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 
-import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { DIVIDER_WITH_TEXT } from '@/localization/english'
+
+import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 const IMAGE_WIDTH = 216
 const IMAGE_HEIGHT = 216
@@ -17,7 +18,7 @@ const Footer: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.footer}>
       <footer>
-        <DividerInFooter />
+        <DividerWithEmojis />
 
         <div className="mx-auto mt-20 flex w-full flex-col items-center justify-center pb-16">
           <div>
@@ -25,8 +26,11 @@ const Footer: FC = (): JSX.Element => {
             <ScanMyContactQR width={IMAGE_WIDTH} height={IMAGE_HEIGHT} showImageCaption={false} />
           </div>
 
-          <FooterStatusAndScroll />
-          <FooterCopyright />
+          <Status />
+          <Copyright />
+
+          {/* FIXME: Scroll to top button is not working as it should */}
+          {/* <ScrollToTopButton /> */}
         </div>
       </footer>
     </PageContainer>

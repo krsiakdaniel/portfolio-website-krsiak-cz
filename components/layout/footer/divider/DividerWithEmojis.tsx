@@ -31,7 +31,7 @@ const sunRiseToNoon = (
   <div className={`bg-gradient-to-l from-red-500 via-yellow-400 to-sky-300 ${sharedCSS}`} />
 )
 
-const DividerWithGradient: FC = (): JSX.Element => {
+const DividerWithEmojis: FC = (): JSX.Element => {
   return (
     <div className="flex w-full items-center justify-between">
       <TheMoon />
@@ -43,4 +43,4 @@ const DividerWithGradient: FC = (): JSX.Element => {
   )
 }
 
-export default DividerWithGradient
+export default DividerWithEmojis
