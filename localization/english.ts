@@ -1,3 +1,5 @@
+import { YEARS } from '@/lib/utils/constants/yearsExperience'
+
 export const ICON_EMOJI = {
   latinCross: '✝️',
   flagCzechRepublic: '🇨🇿',
@@ -84,6 +86,7 @@ export const COMMON_VALUES = {
   reactDeveloperTypeScript: 'React Developer — TypeScript & Next.js',
   reactDeveloperWorkingWithTypeScript: 'React Developer working with TypeScript & Next.js',
   developer: 'Developer',
+  frontEnd: 'Front End',
   javaScript: 'JavaScript',
   javaScriptShort: 'JS',
   typeScript: 'TypeScript',
@@ -108,6 +111,9 @@ export const COMMON_VALUES = {
   xd: 'Adobe XD',
   sketch: 'Sketch',
   graphql: 'GraphQL',
+  wordpress: 'WordPress',
+  qaAutomationTesting: 'QA Automation & Testing',
+  localization: 'Localization',
 }
 
 export const DIVIDER_WITH_TEXT = {
@@ -161,6 +167,18 @@ export const TESTIMONIALS = {
   namePopa: 'Daniel Popa',
   namePridalek: 'Vojtech Pridalek',
   nameMoorhead: 'Jonathan Moorhead',
+  sections: {
+    professional: {
+      title: 'Professional References',
+      description:
+        "Below, you'll find insightful feedback from colleagues who have experienced my contributions firsthand.",
+    },
+    character: {
+      title: 'Character References',
+      description:
+        "In this section, you'll find personal testimonials that highlight my integrity and reliability.",
+    },
+  },
 }
 
 export const PROJECTS = {
@@ -173,9 +191,22 @@ export const PROJECTS = {
   workExperience: 'Work Experience',
 }
 
+export const PROJECT_CRYPTOMANIA = {
+  alertTitle: 'CryptoMania is simple project',
+  alertDescription: "See production-level code for my 'Portfolio' on GitHub repo.",
+}
+
 export const STATUS = {
   text: 'Status',
   linkText: 'https://status.krsiak.cz',
+  heading: {
+    ciCd: 'CI & CD',
+    uptimeMonitoring: 'Uptime Monitoring',
+  },
+  description: {
+    ciCd: 'Current status of integration and deployment pipelines.',
+    uptimeMonitoring: 'Status page monitoring this website uptime.',
+  },
 }
 
 export const COMPANIES = {
@@ -668,22 +699,6 @@ export const BIBLE = {
   `,
 }
 
-export const WHO_I_AM = {
-  whoIAm: 'Who I Am',
-  introduction1: `Hi!  My name is `,
-  introduction2: ` and at work I\u00A0am ${COMMON_VALUES.react} —\u00A0${COMMON_VALUES.typeScript} ${COMMON_VALUES.developer}.`,
-  textPerson1: 'This page is about me ',
-  textPerson2: 'as\u00A0a\u00A0person.',
-  aboutMe: `
-    In my free time you'll find me exploring the great outdoors and spending time in forest.
-    As an avid hiker and traveler, I enjoy the nature.
-  `,
-  textCzechRepublic: `Hiking through the forests in  Czech Republic.`,
-  textSlovakia: `Scaling the majestic mountains in Slovakia.`,
-  textKorea: `Discovering the stunning landscapes in South Korea.`,
-  textAlandIslands: `Cruising across the Baltic Sea to the archipelago of the Åland Islands.`,
-}
-
 export const SOUTH_KOREA = {
   headingTravel: 'Traveling',
   headingSouthKorea: 'South Korea',
@@ -709,12 +724,104 @@ export const CALL_TO_ACTION = {
     textMobileAndDesktop: `See the professional projects I worked on and had the opportunity to\u00A0improve.`,
     textDesktop: 'Developing scalable and robust web applications for big companies.',
   },
+  resumeDownload: {
+    highlight: 'Resume in PDF',
+    heading: 'Download My\u00A0Resume',
+    textMobileAndDesktop:
+      'Get a PDF copy of my resume to learn more about my professional experience.',
+    textDesktop:
+      'Skilled React Developer building scalable applications using React and TypeScript.',
+  },
+  resume: {
+    highlight: 'React Developer',
+    heading: 'Explore My\u00A0Resume',
+    textMobileAndDesktop: `Learn about  my skills and experience, to\u00A0understand my React Developer career.`,
+    textDesktop: 'From startup to large corporations I have worked on a variety of projects.',
+  },
+  linkedIn: {
+    highlight: 'LinkedIn',
+    heading: 'Connect on\u00A0LinkedIn',
+    textMobileAndDesktop:
+      'Visit my LinkedIn profile to connect and see my professional experiences.',
+    textDesktop: 'It showcases a comprehensive overview of my career journey.',
+  },
+  github: {
+    highlight: 'GitHub',
+    heading: 'Explore GitHub Projects',
+    textMobileAndDesktop:
+      'Go through my GitHub repository to see how I code my personal portfolio project.',
+    textDesktop: 'Writing maintainable, and efficient code, using React, Next.js, and TypeScript.',
+  },
 }
 
 export const FOOTER = {
   copyrightSymbol: '©',
   linkHome: 'krsiak.cz',
   scrollToTop: 'Scroll to top',
+}
+
+export const WHO_I_AM = {
+  whoIAm: 'Who I Am',
+  aboutMe: `
+    In my free time you'll find me exploring the great outdoors and spending time in forest.
+    As an avid hiker and traveler, I enjoy the nature.
+  `,
+  textCzechRepublic: `Hiking through the forests in  Czech Republic.`,
+  textSlovakia: `Scaling the majestic mountains in Slovakia.`,
+  textKorea: `Discovering the stunning landscapes in South Korea.`,
+  textAlandIslands: `Cruising across the Baltic Sea to the archipelago of the Åland Islands.`,
+}
+
+export const INTRODUCTION = {
+  whoIAm: {
+    text: {
+      introduction1: `Hi!  My name is `,
+      introduction2: ` and at work I\u00A0am ${COMMON_VALUES.react} —\u00A0${COMMON_VALUES.typeScript} ${COMMON_VALUES.developer}.`,
+      textPerson1: 'This page is about me ',
+      textPerson2: 'as\u00A0a\u00A0person.',
+    },
+  },
+  resume: {
+    text: {
+      skilled: 'Skilled',
+      reactDeveloper: '{reactDeveloper}',
+      with: 'with',
+      yearsReact: `${YEARS.react} years`,
+      yearsText: 'of experience using',
+      typeScript: '{typeScript}',
+      buildText: 'to build scalable web applications.',
+    },
+  },
+  status: {
+    text: {
+      current: 'Current',
+      status: 'status',
+      showing: 'showing the health and',
+      performance: 'performance',
+      of: 'of the',
+      project: 'project',
+      integrations: 'integrations and workflows.',
+    },
+  },
+  personalProjects: {
+    text: {
+      enjoy: 'I enjoy learning',
+      newTechnologies: 'new technologies',
+      andCreating: 'and creating',
+      personalProjects: 'personal projects',
+      whereApply: 'where I can apply my knowledge.',
+    },
+  },
+  workExperience: {
+    text: {
+      experienced: 'I am experienced',
+      reactDeveloper: 'React Developer',
+      whoKnows: 'who knows',
+      qaAutomation: 'QA Automation',
+      andCanLead: 'and can lead teams as a',
+      teamLeader: 'Team Leader',
+    },
+  },
 }
 
 export const TEXT = {

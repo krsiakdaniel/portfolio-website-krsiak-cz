@@ -105,6 +105,9 @@ const PAGE = {
   testimonials: {
     introduction: 'testimonials-introduction',
   },
+  status: {
+    introduction: 'status-introduction',
+  },
 }
 
 const PAGE_NAVIGATION = {

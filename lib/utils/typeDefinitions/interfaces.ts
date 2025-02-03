@@ -294,7 +294,7 @@ export interface ElementIds {
     react: string
     frontEnd: string
     wordpress: string
-    qa: string
+    qualityAssurance: string
     localization: string
     next: string
   }

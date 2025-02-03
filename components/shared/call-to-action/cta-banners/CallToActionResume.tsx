@@ -4,7 +4,7 @@ import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { TEXT } from '@/localization/english'
+import { CALL_TO_ACTION, TEXT } from '@/localization/english'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { CallToActionResumeProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action-resume'
@@ -16,10 +16,10 @@ const CallToActionResume: FC<CallToActionResumeProps> = ({
 }): JSX.Element => {
   return (
     <CallToAction
-      highlight="React Developer"
-      heading={`Explore My\u00A0Resume`}
-      textMobileAndDesktop={`Learn about  my skills and experience, to\u00A0understand my React Developer career.`}
-      textDesktop="From startup to large corporations I have worked on a variety of projects."
+      highlight={CALL_TO_ACTION.resume.highlight}
+      heading={CALL_TO_ACTION.resume.heading}
+      textMobileAndDesktop={CALL_TO_ACTION.resume.textMobileAndDesktop}
+      textDesktop={CALL_TO_ACTION.resume.textDesktop}
       link={PAGES_URL.resume}
       linkText={TEXT.resumeTextOnly}
       dataTestId={dataTestId}

@@ -45,8 +45,8 @@ const Status: FC = (): JSX.Element => {
           <StatusIntroduction />
         </div>
 
-        <Heading2 customCss="mt-8">CI & CD</Heading2>
-        <Paragraph>Current status of integration and deployment pipelines.</Paragraph>
+        <Heading2 customCss="mt-8">{STATUS.heading.ciCd}</Heading2>
+        <Paragraph>{STATUS.description.ciCd}</Paragraph>
 
         <div className="mt-2 grid grid-cols-1 md:grid-cols-2">
           <div data-testid={DATA_TEST_IDS.footer.statusBadges}>
@@ -74,9 +74,9 @@ const Status: FC = (): JSX.Element => {
         </div>
 
         <div className="mt-8">
-          <Heading2 customCss="mt-8">Uptime Monitoring</Heading2>
+          <Heading2 customCss="mt-8">{STATUS.heading.uptimeMonitoring}</Heading2>
           <Paragraph>
-            Status page monitoring this website uptime.
+            {STATUS.description.uptimeMonitoring}
             <span className="align-self flex">
               <ExternalLink
                 href={EXTERNAL_URL.uptimeMonitorStatus}

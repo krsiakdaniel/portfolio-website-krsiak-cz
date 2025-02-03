@@ -12,10 +12,10 @@ import starAnimated from '@/public/images/webp/emoji-animated/128x128/star-anima
 const CallToActionResumeDownload: FC = (): JSX.Element => {
   return (
     <CallToAction
-      highlight="Resume in PDF"
-      heading={`Download My\u00A0Resume`}
-      textMobileAndDesktop="Get a PDF copy of my resume to learn more about my professional experience."
-      textDesktop="Skilled React Developer building scalable applications using React and TypeScript."
+      highlight={TEXT.resumeDownload.highlight}
+      heading={TEXT.resumeDownload.heading}
+      textMobileAndDesktop={TEXT.resumeDownload.textMobileAndDesktop}
+      textDesktop={TEXT.resumeDownload.textDesktop}
       link={EXTERNAL_URL.resumeViewPDF}
       linkText={TEXT.downloadResume}
       dataTestId={DATA_TEST_IDS.callToAction.linkResumeDownload}

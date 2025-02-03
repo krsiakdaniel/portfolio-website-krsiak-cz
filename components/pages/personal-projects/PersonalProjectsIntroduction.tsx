@@ -3,12 +3,17 @@ import { FC } from 'react'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
+import { INTRODUCTION } from '@/localization/english'
+
 const PersonalProjectsIntroduction: FC = (): JSX.Element => {
   return (
     <>
       <Paragraph>
-        I enjoy learning <Highlight text="new technologies" /> and creating{' '}
-        <Highlight text="personal projects" /> where I can apply my knowledge.
+        {INTRODUCTION.personalProjects.text.enjoy}{' '}
+        <Highlight text={INTRODUCTION.personalProjects.text.newTechnologies} />{' '}
+        {INTRODUCTION.personalProjects.text.andCreating}{' '}
+        <Highlight text={INTRODUCTION.personalProjects.text.personalProjects} />{' '}
+        {INTRODUCTION.personalProjects.text.whereApply}
       </Paragraph>
     </>
   )

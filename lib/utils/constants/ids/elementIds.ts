@@ -17,7 +17,7 @@ export const ID: ElementIds = {
     react: 'react',
     frontEnd: 'front-end',
     wordpress: 'wordpress',
-    qa: 'qa-automation-testing',
+    qualityAssurance: 'qa-automation-testing',
     localization: 'localization',
     next: 'next',
   },
