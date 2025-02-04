@@ -9,6 +9,7 @@ import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // project images
+import { PROJECTS_PERSONAL_OVERVIEW } from '@/localization/english-texts-data'
 import cryptomania3 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-1-dark.webp'
 import cryptomania1 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-1-light.webp'
 import cryptomania4 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-2-dark.webp'
@@ -27,11 +28,10 @@ export const projectsPersonalReact: Project[] = [
       { id: 3, src: cryptomania4.src },
     ],
     icon: ICON_EMOJI.moneyBag,
-    title: 'CryptoMania',
-    company: 'Personal project',
-    role: 'Front End - React',
-    description:
-      'Crypto currency prices app fetching latest data from CoinGecko API. This\u00A0is very small project in Chakra UI with dark mode.',
+    title: PROJECTS_PERSONAL_OVERVIEW.react.title,
+    company: PROJECTS_PERSONAL_OVERVIEW.react.company,
+    role: PROJECTS_PERSONAL_OVERVIEW.react.role,
+    description: PROJECTS_PERSONAL_OVERVIEW.react.description,
     skillsIcons: iconsSkillsProjectsPersonalCryptomania,
     skillsOverview: [
       {
@@ -50,16 +50,16 @@ export const projectsPersonalReact: Project[] = [
         skillsList: [SkillsEnum.Netlify],
       },
     ],
-    linkText: 'Project details',
+    linkText: PROJECTS_PERSONAL_OVERVIEW.react.linkText,
     projectLinks: [
       {
-        urlText: 'Website',
-        url: 'https://cryptocurrency-prices-one.vercel.app/',
-        dataTestId: 'cryptomania',
+        urlText: PROJECTS_PERSONAL_OVERVIEW.react.projectLinks[0].urlText,
+        url: PROJECTS_PERSONAL_OVERVIEW.react.projectLinks[0].url,
+        dataTestId: PROJECTS_PERSONAL_OVERVIEW.react.projectLinks[0].dataTestId,
       },
     ],
-    linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
-    personalProjectNote: 'Project to exercise coding.',
+    linkGitHub: PROJECTS_PERSONAL_OVERVIEW.react.linkGitHub,
+    personalProjectNote: PROJECTS_PERSONAL_OVERVIEW.react.personalProjectNote,
     linkProjectPage: PAGES_URL.personal.cryptoMania,
   },
 ]

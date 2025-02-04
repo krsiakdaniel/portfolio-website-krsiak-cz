@@ -4,6 +4,7 @@ import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { ICON_EMOJI } from '@/localization/english'
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
@@ -26,12 +27,11 @@ export const workReactKomercniBanka: Project = {
     { id: 3, src: komercniBanka4.src },
   ],
   icon: ICON_EMOJI.bank,
-  title: 'Commerce Bank - Website',
-  company: 'Komerční banka',
-  role: 'React Developer',
-  years: '10\u00A0months',
-  description:
-    'I created search page for ATM and branches, with their detail pages. And\u00A0also Exchange rates page with details for each currency.',
+  title: WORK_PROJECTS_OVERVIEW.komercniBanka.title,
+  company: WORK_PROJECTS_OVERVIEW.komercniBanka.company,
+  role: WORK_PROJECTS_OVERVIEW.komercniBanka.role,
+  years: WORK_PROJECTS_OVERVIEW.komercniBanka.years,
+  description: WORK_PROJECTS_OVERVIEW.komercniBanka.description,
   skillsIcons: iconsSkillsProjectsWorkKomercniBanka,
   skillsOverview: [
     {
@@ -55,29 +55,29 @@ export const workReactKomercniBanka: Project = {
       skillsList: [SkillsEnum.Jira, SkillsEnum.Confluence, SkillsEnum.Tempo, SkillsEnum.Kentico],
     },
   ],
-  linkText: 'Project details',
+  linkText: WORK_PROJECTS_OVERVIEW.komercniBanka.linkText,
   projectLinks: [
     {
-      urlText: 'Branches & ATMs',
-      url: 'https://www.kb.cz/en/branches-and-atms',
-      dataTestId: 'branches-atms',
+      urlText: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[0].urlText,
+      url: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[0].url,
+      dataTestId: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[0].dataTestId,
     },
     {
-      urlText: 'Branches & ATMs - Details',
-      url: 'https://www.kb.cz/en/branches-and-atms/branches/brno-nam-svobody-1',
-      dataTestId: 'branches-atms-details',
+      urlText: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[1].urlText,
+      url: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[1].url,
+      dataTestId: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[1].dataTestId,
     },
     {
-      urlText: 'Exchange Rates',
-      url: 'https://www.kb.cz/en/exchange-rates',
-      dataTestId: 'exchange-rates',
+      urlText: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[2].urlText,
+      url: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[2].url,
+      dataTestId: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[2].dataTestId,
     },
     {
-      urlText: 'Exchange Rates - Details',
-      url: 'https://www.kb.cz/en/exchange-rates/exchange-detail?curr=CHF&date=2024-12-27T07:00:00',
-      dataTestId: 'exchange-rates-details',
+      urlText: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[3].urlText,
+      url: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[3].url,
+      dataTestId: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[3].dataTestId,
     },
   ],
-  customers: '2 000 000+',
+  customers: WORK_PROJECTS_OVERVIEW.komercniBanka.customers,
   linkProjectPage: PAGES_URL.work.komercniBanka,
 }

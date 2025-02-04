@@ -1,6 +1,7 @@
 import { iconsSkillsProjectsPersonalKrsiak } from '@/lib/data/pages/projects/personal/projects-overview/skillsProjectsPersonal'
 
 import { ICON_EMOJI } from '@/localization/english'
+import { PROJECTS_PERSONAL_OVERVIEW } from '@/localization/english-texts-data'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
@@ -27,11 +28,10 @@ export const projectsPersonalNext: Project[] = [
       { id: 3, src: krsiak4.src },
     ],
     icon: ICON_EMOJI.manTechnologist.lightSkinTone,
-    title: 'Portfolio Website',
-    company: 'Personal project',
-    role: 'Front End - Next.js',
-    description:
-      'My personal portfolio website to showcase my work and skills I have. Production level code that I code as React Developer.',
+    title: PROJECTS_PERSONAL_OVERVIEW.next.title,
+    company: PROJECTS_PERSONAL_OVERVIEW.next.company,
+    role: PROJECTS_PERSONAL_OVERVIEW.next.role,
+    description: PROJECTS_PERSONAL_OVERVIEW.next.description,
     skillsIcons: iconsSkillsProjectsPersonalKrsiak,
     skillsOverview: [
       {
@@ -50,10 +50,16 @@ export const projectsPersonalNext: Project[] = [
         ],
       },
     ],
-    linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website', url: 'https://krsiak.cz/', dataTestId: 'krsiak' }],
-    linkGitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
-    personalProjectNote: 'My main coding project.',
+    linkText: PROJECTS_PERSONAL_OVERVIEW.next.linkText,
+    projectLinks: [
+      {
+        urlText: PROJECTS_PERSONAL_OVERVIEW.next.projectLinks[0].urlText,
+        url: PROJECTS_PERSONAL_OVERVIEW.next.projectLinks[0].url,
+        dataTestId: PROJECTS_PERSONAL_OVERVIEW.next.projectLinks[0].dataTestId,
+      },
+    ],
+    linkGitHub: PROJECTS_PERSONAL_OVERVIEW.next.linkGitHub,
+    personalProjectNote: PROJECTS_PERSONAL_OVERVIEW.next.personalProjectNote,
     linkProjectPage: PAGES_URL.personal.krsiak,
   },
 ]

@@ -1,9 +1,9 @@
 import { iconsSkillsProjectsWorkSmartsuppHelp } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
 import { ICON_EMOJI } from '@/localization/english'
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
@@ -25,12 +25,11 @@ export const projectsWorkWordPress: Project[] = [
       { id: 2, src: smartsuppHelp3.src },
     ],
     icon: ICON_EMOJI.books,
-    title: 'SaaS Company - HELP Website',
-    company: 'Smartsupp',
-    role: 'Admin &\u00A0Content Writer',
-    years: '6\u00A0months',
-    description:
-      'Localization of the company HELP website into 9 languages. I\u00A0was\u00A0also\u00A0writing tutorials and creating content.',
+    title: WORK_PROJECTS_OVERVIEW.wordPress.title,
+    company: WORK_PROJECTS_OVERVIEW.wordPress.company,
+    role: WORK_PROJECTS_OVERVIEW.wordPress.role,
+    years: WORK_PROJECTS_OVERVIEW.wordPress.years,
+    description: WORK_PROJECTS_OVERVIEW.wordPress.description,
     skillsIcons: iconsSkillsProjectsWorkSmartsuppHelp,
     skillsOverview: [
       {
@@ -39,11 +38,9 @@ export const projectsWorkWordPress: Project[] = [
         skillsList: [SkillsEnum.JavaScript, SkillsEnum.PHP, SkillsEnum.WordPress],
       },
     ],
-    linkText: 'Project details',
-    projectLinks: [
-      { urlText: 'Website', url: 'https://help.smartsupp.com/', dataTestId: 'smartsupp-help' },
-    ],
-    customers: '100 000+',
-    linkProjectPage: PAGES_URL.work.smartsupp.help,
+    linkText: WORK_PROJECTS_OVERVIEW.wordPress.linkText,
+    projectLinks: WORK_PROJECTS_OVERVIEW.wordPress.projectLinks,
+    customers: WORK_PROJECTS_OVERVIEW.wordPress.customers,
+    linkProjectPage: WORK_PROJECTS_OVERVIEW.wordPress.linkProjectPage,
   },
 ]

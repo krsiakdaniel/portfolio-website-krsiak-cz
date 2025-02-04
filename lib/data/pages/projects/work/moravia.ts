@@ -1,38 +1,37 @@
-import { TEXT } from '@/localization/english'
-
 import { Section } from '@/lib/utils/typeDefinitions/interfaces'
+import { PROJECTS_WORK } from '@/localization/english-texts-data'
 
 export const sections: Section[] = [
   {
     id: 0,
-    title: TEXT.myJob,
+    title: PROJECTS_WORK.moraviaManager.sections.responsibility.title,
     titleHighlight: '',
     items: [
       {
         id: '0-0',
-        text: 'I managed a team of 3 people in localization team.',
+        text: PROJECTS_WORK.moraviaManager.sections.responsibility.items[0],
       },
     ],
   },
   {
     id: 1,
-    title: 'Responsibility',
+    title: PROJECTS_WORK.moraviaManager.sections.delivery.title,
     titleHighlight: '',
     items: [
       {
         id: '1-0',
-        text: 'I was responsible for translation delivery and quality checks for Microsoft projects Windows 8 + Windows Phone.',
+        text: PROJECTS_WORK.moraviaManager.sections.delivery.items[0],
       },
     ],
   },
   {
     id: 2,
-    title: 'QA Automation',
+    title: PROJECTS_WORK.moraviaManager.sections.automation.title,
     titleHighlight: '',
     items: [
       {
         id: '2-0',
-        text: 'I was working on automation and scripts for manual repetitive tasks including filling in forms and checking translations.',
+        text: PROJECTS_WORK.moraviaManager.sections.automation.items[0],
       },
     ],
   },

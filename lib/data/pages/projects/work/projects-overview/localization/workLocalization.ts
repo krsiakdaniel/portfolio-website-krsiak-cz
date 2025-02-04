@@ -3,12 +3,12 @@ import { iconsSkillsProjectsWorkMoravia } from '@/lib/data/pages/projects/work/p
 import { ICON_EMOJI } from '@/localization/english'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // moravia
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
 import moravia1 from '@/public/images/webp/projects/work/moravia/moravia-1-light.webp'
 import moravia2 from '@/public/images/webp/projects/work/moravia/moravia-2-light.webp'
 import moravia3 from '@/public/images/webp/projects/work/moravia/moravia-3-light.webp'
@@ -25,12 +25,11 @@ export const projectsWorkLocalization: Project[] = [
       { id: 2, src: moravia3.src },
     ],
     icon: ICON_EMOJI.globeShowingAmericas,
-    title: 'Windows',
-    company: 'RWS - Moravia IT',
-    role: 'QA Automation - Team Leader',
-    years: '1 year',
-    description:
-      'Worked\u00A0on\u00A0localization testing for Microsoft Windows 8 + Windows Phone. I\u00A0had\u00A0an\u00A0amazing chance to be team leader on Microsoft products.',
+    title: WORK_PROJECTS_OVERVIEW.moravia.title,
+    company: WORK_PROJECTS_OVERVIEW.moravia.company,
+    role: WORK_PROJECTS_OVERVIEW.moravia.role,
+    years: WORK_PROJECTS_OVERVIEW.moravia.years,
+    description: WORK_PROJECTS_OVERVIEW.moravia.description,
     skillsIcons: iconsSkillsProjectsWorkMoravia,
     skillsOverview: [
       {
@@ -39,9 +38,9 @@ export const projectsWorkLocalization: Project[] = [
         skillsList: [SkillsEnum.HTML, SkillsEnum.CSS, SkillsEnum.JavaScript, SkillsEnum.AutoHotkey],
       },
     ],
-    linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website', url: 'https://www.rws.com/', dataTestId: 'rws' }],
-    customers: '80 out of the world top 100 brands',
-    linkProjectPage: PAGES_URL.work.moravia,
+    linkText: WORK_PROJECTS_OVERVIEW.moravia.linkText,
+    projectLinks: WORK_PROJECTS_OVERVIEW.moravia.projectLinks,
+    customers: WORK_PROJECTS_OVERVIEW.moravia.customers,
+    linkProjectPage: WORK_PROJECTS_OVERVIEW.moravia.linkProjectPage,
   },
 ]

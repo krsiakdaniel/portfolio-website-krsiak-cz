@@ -1,13 +1,12 @@
-import { SHARED } from '@/localization/english'
+import { OTHER_EXPERIENCE } from '@/localization/english-texts-data'
 
-import { YEARS } from '@/lib/utils/constants/yearsExperience'
 import { OtherExperienceData } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const otherExperienceFrontEnd: OtherExperienceData[] = [
   {
     id: 1,
-    company: 'Freelance',
-    role: 'Web Developer /\u00A0Consultant',
-    description: `${YEARS.consultantWebsites} years ${SHARED.middleDot} part-time ${SHARED.emDash} Websites for small companies.`,
+    company: OTHER_EXPERIENCE.frontEnd.freelance.company,
+    role: OTHER_EXPERIENCE.frontEnd.freelance.role,
+    description: OTHER_EXPERIENCE.frontEnd.freelance.description,
   },
 ]

@@ -1,9 +1,9 @@
 import { iconsSkillsProjectsWorkSmartsuppWeb } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
 import { ICON_EMOJI } from '@/localization/english'
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
@@ -27,12 +27,11 @@ export const projectsWorkFrontEnd: Project[] = [
       { id: 3, src: smartsuppWeb4.src },
     ],
     icon: ICON_EMOJI.manTechnologist.lightSkinTone,
-    title: 'SaaS Company - Website',
-    company: 'Smartsupp',
-    role: 'Front End Developer',
-    years: '1\u00A0year',
-    description:
-      'I created SaaS company website and was responsible for Front End. I\u00A0worked with the\u00A0main UX designer on new brand color theme.',
+    title: WORK_PROJECTS_OVERVIEW.frontEnd.title,
+    company: WORK_PROJECTS_OVERVIEW.frontEnd.company,
+    role: WORK_PROJECTS_OVERVIEW.frontEnd.role,
+    years: WORK_PROJECTS_OVERVIEW.frontEnd.years,
+    description: WORK_PROJECTS_OVERVIEW.frontEnd.description,
     skillsIcons: iconsSkillsProjectsWorkSmartsuppWeb,
     skillsOverview: [
       {
@@ -53,11 +52,9 @@ export const projectsWorkFrontEnd: Project[] = [
       },
       { id: 2, description: SkillCategoryEnum.Other, skillsList: [SkillsEnum.Trello] },
     ],
-    linkText: 'Project details',
-    projectLinks: [
-      { urlText: 'Website', url: 'https://www.smartsupp.com/', dataTestId: 'smartsupp-web' },
-    ],
-    customers: '100 000+',
-    linkProjectPage: PAGES_URL.work.smartsupp.web,
+    linkText: WORK_PROJECTS_OVERVIEW.frontEnd.linkText,
+    projectLinks: WORK_PROJECTS_OVERVIEW.frontEnd.projectLinks,
+    customers: WORK_PROJECTS_OVERVIEW.frontEnd.customers,
+    linkProjectPage: WORK_PROJECTS_OVERVIEW.frontEnd.linkProjectPage,
   },
 ]

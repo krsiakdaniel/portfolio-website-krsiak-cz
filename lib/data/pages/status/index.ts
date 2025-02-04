@@ -1,19 +1,21 @@
+import { TEXT_DATA } from '@/localization/english-texts-data'
+
 import { statusBadgeImgsUrls } from '@/lib/utils/constants/urls/statusBadgesUrls'
 import { createStatusBadge } from '@/lib/utils/helpers/createStatusBadge'
 import { StatusBadge } from '@/lib/utils/typeDefinitions/interfaces'
 
 // Text labels for different status badges
 const BADGE_TEXT = {
-  JEST_TESTS: 'Jest Tests',
-  PLAYWRIGHT_TESTS: 'Playwright Tests',
-  PRETTIER_CHECK_FORMATTING: 'Prettier Check Formatting',
-  PULL_REQUEST_LABELER: 'Pull Request Labeler',
-  AUTO_AUTHOR_ASSIGN: 'Auto Author Assign',
-  CODEQL: 'CodeQL',
-  CODE_QUALITY: 'Code Quality',
-  DEPENDABOT: 'Dependabot',
-  NETLIFY: 'Netlify',
-  UPTIME: 'Uptime',
+  JEST_TESTS: TEXT_DATA.tests.jest,
+  PLAYWRIGHT_TESTS: TEXT_DATA.tests.playwright,
+  PRETTIER_CHECK_FORMATTING: TEXT_DATA.code.prettier,
+  PULL_REQUEST_LABELER: TEXT_DATA.automation.prLabeler,
+  AUTO_AUTHOR_ASSIGN: TEXT_DATA.automation.authorAssign,
+  CODEQL: TEXT_DATA.code.codeql,
+  CODE_QUALITY: TEXT_DATA.code.quality,
+  DEPENDABOT: TEXT_DATA.automation.dependabot,
+  NETLIFY: TEXT_DATA.deployment.netlify,
+  UPTIME: TEXT_DATA.deployment.uptime,
 }
 
 // Dimensions for different status badges

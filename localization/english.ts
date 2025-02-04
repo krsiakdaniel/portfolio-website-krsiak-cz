@@ -768,6 +768,10 @@ export const WHO_I_AM = {
     In my free time you'll find me exploring the great outdoors and spending time in forest.
     As an avid hiker and traveler, I enjoy the nature.
   `,
+  idCZ: 'cz',
+  idSK: 'sk',
+  idFI: 'fi',
+  idKR: 'kr',
   textCzechRepublic: `Hiking through the forests in  Czech Republic.`,
   textSlovakia: `Scaling the majestic mountains in Slovakia.`,
   textKorea: `Discovering the stunning landscapes in South Korea.`,
