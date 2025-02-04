@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import { COMMON_VALUES, META_HOME, TEXT } from '@/localization/english'
+import { META_HOME, TEXT } from '@/localization/english'
 
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
@@ -14,8 +14,8 @@ export const metaDataHome: Metadata = {
   description: META_HOME.description,
   keywords: formatKeywordsString(META_HOME.keywords),
   openGraph: {
-    title: `${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
-    description: `I am ${COMMON_VALUES.reactDeveloper} based in ${COMMON_VALUES.czechRepublic}. I specialize in ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, and ${COMMON_VALUES.next}. With 6 years of experience creating modern web applications, I focus on delivering high-quality, scalable, and reliable code.`,
+    title: META_HOME.title,
+    description: META_HOME.description,
     images: [
       {
         url: homeOG.src,
@@ -25,8 +25,8 @@ export const metaDataHome: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
-    description: `I am ${COMMON_VALUES.reactDeveloper} based in ${COMMON_VALUES.czechRepublic}. I specialize in ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, and ${COMMON_VALUES.next}. With 6 years of experience creating modern web applications, I focus on delivering high-quality, scalable, and reliable code.`,
+    title: META_HOME.title,
+    description: META_HOME.description,
     images: [
       {
         url: homeTwitter.src,

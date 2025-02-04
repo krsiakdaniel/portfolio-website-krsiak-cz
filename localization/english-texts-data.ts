@@ -468,7 +468,7 @@ export const WORK_PROJECTS_OVERVIEW = {
       'Localization of the company HELP website into 9 languages. I\u00A0was\u00A0also\u00A0writing tutorials and creating content.',
     linkText: 'Project details',
     projectLinks: [
-      { urlText: 'Website', url: 'https://www.smartsupp.com/', dataTestId: 'smartsupp-help' },
+      { urlText: 'Website', url: 'https://help.smartsupp.com/', dataTestId: 'smartsupp-help' },
     ],
     customers: '100 000+',
     linkProjectPage: PAGES_URL.work.smartsupp.help,
