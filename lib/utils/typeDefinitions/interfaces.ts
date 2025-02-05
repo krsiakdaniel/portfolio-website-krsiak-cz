@@ -208,6 +208,38 @@ export interface PageUrls {
   status: string
 }
 
+// Projects URLs
+export interface ProjectsUrls {
+  personal: {
+    krsiak: string
+    cryptoMania: string
+  }
+  work: {
+    kooperativa: string
+    smartsupp: {
+      dashboard: string
+      web: string
+      help: string
+    }
+    komercniBanka: {
+      branchesAndAtms: string
+      branchesAndAtmsDetails: string
+      exchangeRates: string
+      exchangeRatesDetails: string
+    }
+    groupon: string
+    moravia: string
+  }
+}
+
+// GitHub URLs
+export interface GitHubUrls {
+  personal: {
+    krsiak: string
+    cryptoMania: string
+  }
+}
+
 // Sitemap URLs
 export interface SitemapUrls {
   home: string

@@ -1,3 +1,4 @@
+import { PAGE_TOP_LEVEL_URLS } from '@/lib/utils/constants/urls/pageTopLevelUrls'
 import { YEARS } from '@/lib/utils/constants/yearsExperience'
 
 export const ICON_EMOJI = {
@@ -212,7 +213,7 @@ export const PROJECT_CRYPTOMANIA = {
 
 export const STATUS = {
   text: 'Status',
-  linkText: 'https://status.krsiak.cz',
+  linkText: PAGE_TOP_LEVEL_URLS.status,
   heading: {
     ciCd: 'CI & CD',
     uptimeMonitoring: 'Uptime Monitoring',

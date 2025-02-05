@@ -1,6 +1,6 @@
 import { StatusBadgeUrls } from '@/lib/utils/typeDefinitions/interfaces'
 
-export const statusBadgeImgsUrls: StatusBadgeUrls = {
+export const STATUS_BADGE_IMGS_URLS: StatusBadgeUrls = {
   JEST_TEST:
     'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg',
   PLAYWRIGHT_TEST:

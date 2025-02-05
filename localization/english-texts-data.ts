@@ -1,7 +1,10 @@
+import { SHARED, TEXT } from '@/localization/english'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { GITHUB_URLS } from '@/lib/utils/constants/urls/githubUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { PROJECTS_URLS } from '@/lib/utils/constants/urls/projectsUrls'
 import { MONTHS, YEARS } from '@/lib/utils/constants/yearsExperience'
-import { TEXT } from '@/localization/english'
-import { SHARED } from './english'
 
 export const TESTIMONIALS = {
   personal: {
@@ -375,7 +378,13 @@ export const WORK_PROJECTS_OVERVIEW = {
     description:
       'Worked\u00A0on\u00A0localization testing for Microsoft Windows 8 + Windows Phone. I\u00A0had\u00A0an\u00A0amazing chance to be team leader on Microsoft products.',
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website', url: 'https://www.rws.com/', dataTestId: 'rws' }],
+    projectLinks: [
+      {
+        urlText: 'Website',
+        url: PROJECTS_URLS.work.moravia,
+        dataTestId: DATA_TEST_IDS.links.MORAVIA,
+      },
+    ],
     customers: '80 out of the world top 100 brands',
     linkProjectPage: PAGES_URL.work.moravia,
   },
@@ -387,7 +396,13 @@ export const WORK_PROJECTS_OVERVIEW = {
     description:
       'I was responsible setting up new QA team, hiring and managing people. Setting up QA processes, writing test plans, and testing scripts.',
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website', url: 'https://www.groupon.com/', dataTestId: 'groupon' }],
+    projectLinks: [
+      {
+        urlText: 'Website',
+        url: PROJECTS_URLS.work.groupon,
+        dataTestId: DATA_TEST_IDS.links.GROUPON,
+      },
+    ],
     customers: '17 million customers',
     linkProjectPage: PAGES_URL.work.groupon,
   },
@@ -402,23 +417,23 @@ export const WORK_PROJECTS_OVERVIEW = {
     projectLinks: [
       {
         urlText: 'Branches & ATMs',
-        url: 'https://www.kb.cz/en/branches-and-atms',
-        dataTestId: 'branches-atms',
+        url: PROJECTS_URLS.work.komercniBanka.branchesAndAtms,
+        dataTestId: DATA_TEST_IDS.links.KOMERCNI_BANKA_BRANCHES_AND_ATMS,
       },
       {
         urlText: 'Branches & ATMs - Details',
-        url: 'https://www.kb.cz/en/branches-and-atms/branches/brno-nam-svobody-1',
-        dataTestId: 'branches-atms-details',
+        url: PROJECTS_URLS.work.komercniBanka.branchesAndAtmsDetails,
+        dataTestId: DATA_TEST_IDS.links.KOMERCNI_BANKA_BRANCHES_AND_ATMS_DETAILS,
       },
       {
         urlText: 'Exchange Rates',
-        url: 'https://www.kb.cz/en/exchange-rates',
-        dataTestId: 'exchange-rates',
+        url: PROJECTS_URLS.work.komercniBanka.exchangeRates,
+        dataTestId: DATA_TEST_IDS.links.KOMERCNI_BANKA_EXCHANGE_RATES,
       },
       {
         urlText: 'Exchange Rates - Details',
-        url: 'https://www.kb.cz/en/exchange-rates/exchange-detail?curr=CHF&date=2024-12-27T07:00:00',
-        dataTestId: 'exchange-rates-details',
+        url: PROJECTS_URLS.work.komercniBanka.exchangeRatesDetails,
+        dataTestId: DATA_TEST_IDS.links.KOMERCNI_BANKA_EXCHANGE_RATES_DETAILS,
       },
     ],
     customers: '2 000 000+',
@@ -435,8 +450,8 @@ export const WORK_PROJECTS_OVERVIEW = {
     projectLinks: [
       {
         urlText: 'Website',
-        url: 'https://www.koop.cz/pojisteni/pojisteni-majetku',
-        dataTestId: 'kooperativa',
+        url: PROJECTS_URLS.work.kooperativa,
+        dataTestId: DATA_TEST_IDS.links.KOOPERATIVA,
       },
     ],
     customers: '2 480 000+',
@@ -451,7 +466,11 @@ export const WORK_PROJECTS_OVERVIEW = {
       'I created SaaS company website and was responsible for Front End. I worked with the main UX designer on new brand color theme.',
     linkText: 'Project details',
     projectLinks: [
-      { urlText: 'Website', url: 'https://www.smartsupp.com/', dataTestId: 'smartsupp-web' },
+      {
+        urlText: 'Website',
+        url: PROJECTS_URLS.work.smartsupp.web,
+        dataTestId: DATA_TEST_IDS.links.SMARTSUPP_WEB,
+      },
     ],
     customers: '100 000+',
     linkProjectPage: PAGES_URL.work.smartsupp.web,
@@ -465,7 +484,11 @@ export const WORK_PROJECTS_OVERVIEW = {
       'Localization of the company HELP website into 9 languages. I\u00A0was\u00A0also\u00A0writing tutorials and creating content.',
     linkText: 'Project details',
     projectLinks: [
-      { urlText: 'Website', url: 'https://help.smartsupp.com/', dataTestId: 'smartsupp-help' },
+      {
+        urlText: 'Website',
+        url: PROJECTS_URLS.work.smartsupp.help,
+        dataTestId: DATA_TEST_IDS.links.SMARTSUPP_HELP,
+      },
     ],
     customers: '100 000+',
     linkProjectPage: PAGES_URL.work.smartsupp.help,
@@ -481,8 +504,8 @@ export const WORK_PROJECTS_OVERVIEW = {
     projectLinks: [
       {
         urlText: 'Website',
-        url: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/',
-        dataTestId: 'smartsupp-dashboard',
+        url: PROJECTS_URLS.work.smartsupp.dashboard,
+        dataTestId: DATA_TEST_IDS.links.SMARTSUPP_DASHBOARD,
       },
     ],
     customers: '100 000+',
@@ -579,8 +602,14 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
     description:
       'My personal portfolio website showcases my work and skills as a React Developer. It features production-level code that I  write.',
     linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website', url: 'https://krsiak.cz/', dataTestId: 'krsiak' }],
-    linkGitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
+    projectLinks: [
+      {
+        urlText: 'Website',
+        url: PROJECTS_URLS.personal.krsiak,
+        dataTestId: DATA_TEST_IDS.links.KRSIAK,
+      },
+    ],
+    linkGitHub: GITHUB_URLS.personal.krsiak,
     personalProjectNote: 'My main coding project.',
     linkProjectPage: PAGES_URL.personal.krsiak,
   },
@@ -594,11 +623,11 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
     projectLinks: [
       {
         urlText: 'Website',
-        url: 'https://cryptocurrency-prices-one.vercel.app/',
-        dataTestId: 'cryptomania',
+        url: PROJECTS_URLS.personal.cryptoMania,
+        dataTestId: DATA_TEST_IDS.links.CRYPTOMANIA,
       },
     ],
-    linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
+    linkGitHub: GITHUB_URLS.personal.cryptoMania,
     personalProjectNote: 'Project to exercise coding.',
     linkProjectPage: PAGES_URL.personal.cryptoMania,
   },
