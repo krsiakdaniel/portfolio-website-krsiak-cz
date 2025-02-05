@@ -1,11 +1,12 @@
-import { YEARS } from '@/lib/utils/constants/yearsExperience'
+import { OTHER_EXPERIENCE } from '@/localization/english-texts-data'
+
 import { OtherExperienceData } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const otherExperienceFrontEnd: OtherExperienceData[] = [
   {
     id: 1,
-    company: 'Freelance',
-    role: 'Web Developer /\u00A0Consultant',
-    description: `${YEARS.consultantWebsites} years · part-time — Websites for small companies.`,
+    company: OTHER_EXPERIENCE.frontEnd.freelance.company,
+    role: OTHER_EXPERIENCE.frontEnd.freelance.role,
+    description: OTHER_EXPERIENCE.frontEnd.freelance.description,
   },
 ]

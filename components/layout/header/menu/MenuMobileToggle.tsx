@@ -5,8 +5,9 @@ import { FC } from 'react'
 import IconClose from '@/components/icons/IconClose'
 import IconHamburger from '@/components/icons/IconHamburger'
 
+import { ARIA_LABELS } from '@/localization/english'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { MenuMobileToggleProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'

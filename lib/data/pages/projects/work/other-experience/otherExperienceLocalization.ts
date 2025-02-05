@@ -1,11 +1,12 @@
-import { YEARS } from '@/lib/utils/constants/yearsExperience'
+import { OTHER_EXPERIENCE } from '@/localization/english-texts-data'
+
 import { OtherExperienceData } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const otherExperienceLocalization: OtherExperienceData[] = [
   {
     id: 1,
-    company: 'Smartsupp',
-    role: 'Localization - Manager',
-    description: `${YEARS.localizationManager} years — Website localization. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱`,
+    company: OTHER_EXPERIENCE.localization.smartsupp.company,
+    role: OTHER_EXPERIENCE.localization.smartsupp.role,
+    description: OTHER_EXPERIENCE.localization.smartsupp.description,
   },
 ]

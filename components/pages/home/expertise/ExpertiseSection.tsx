@@ -4,6 +4,8 @@ import Heading3 from '@/components/shared/Heading3'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
+import { SHARED } from '@/localization/english'
+
 import { ExpertiseSectionProps } from '@/lib/utils/typeDefinitions/props/pages/home/expertise'
 
 const ExpertiseSection: FC<ExpertiseSectionProps> = ({
@@ -26,7 +28,9 @@ const ExpertiseSection: FC<ExpertiseSectionProps> = ({
               <span className="inline">
                 {item.text}
                 {item.years && (
-                  <span className="hidden text-sm lg:ml-1 xl:inline">· {item.years}</span>
+                  <span className="hidden text-sm lg:ml-1 xl:inline">
+                    {SHARED.middleDot} {item.years}
+                  </span>
                 )}
               </span>
             </ListItem>

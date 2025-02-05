@@ -4,6 +4,8 @@ import GoBackLink from '@/components/layout/projects/project-page/GoBackLink'
 import Heading1 from '@/components/shared/Heading1'
 import Heading2 from '@/components/shared/Heading2'
 
+import { SHARED } from '@/localization/english'
+
 import { HeaderSectionProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
 const HeaderSection: FC<HeaderSectionProps> = ({
@@ -15,8 +17,6 @@ const HeaderSection: FC<HeaderSectionProps> = ({
   goBackLink,
   sectionID,
 }): JSX.Element => {
-  const middot = '·\u00A0'
-
   return (
     <div className="mt-10">
       <Heading1 textColor="text-neutral-900">
@@ -27,8 +27,8 @@ const HeaderSection: FC<HeaderSectionProps> = ({
         <span>{role}</span>
         {years && (
           <span className="ml-0 block text-lg font-normal text-neutral-600 md:ml-2 md:inline">
-            <span className="ml-0">{`${middot}${years}`}</span>
-            <span className="ml-1">{`${middot}${company}`}</span>
+            <span className="ml-0">{`${SHARED.middleDot} ${years}`}</span>
+            <span className="ml-1">{`${SHARED.middleDot} ${company}`}</span>
           </span>
         )}
       </Heading2>

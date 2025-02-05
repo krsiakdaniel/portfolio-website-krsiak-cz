@@ -1,16 +1,16 @@
-import { TEXT } from '@/localization/english'
+import { PROJECTS_PERSONAL } from '@/localization/english-texts-data'
 
 import { Section } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const sections: Section[] = [
   {
     id: 0,
-    title: TEXT.description,
-    titleHighlight: '',
+    title: PROJECTS_PERSONAL.krsiak.title,
+    titleHighlight: PROJECTS_PERSONAL.krsiak.titleHighlight,
     items: [
       {
         id: '0-0',
-        text: 'I needed a new website for my personal presentation. I learnt Next.js, and used Tailwind CSS.',
+        text: PROJECTS_PERSONAL.krsiak.items[0].text,
       },
     ],
   },

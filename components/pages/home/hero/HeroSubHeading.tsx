@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { TEXT } from '@/localization/english'
+import { SHARED, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
@@ -13,7 +13,7 @@ const HeroSubHeading: FC = (): JSX.Element => {
       data-testid={DATA_TEST_IDS.hero.headingSmall}
     >
       {TEXT.reactDeveloper}
-      <span className="mx-4 hidden md:inline-block">—</span>
+      <span className="mx-4 hidden md:inline-block">{SHARED.emDash}</span>
       <span className="block md:inline">{textTypeScriptAndNext}</span>
     </span>
   )

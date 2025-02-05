@@ -1,3 +1,6 @@
+import { PAGE_TOP_LEVEL_URLS } from '@/lib/utils/constants/urls/pageTopLevelUrls'
+import { YEARS } from '@/lib/utils/constants/yearsExperience'
+
 export const ICON_EMOJI = {
   latinCross: '✝️',
   flagCzechRepublic: '🇨🇿',
@@ -78,11 +81,27 @@ export const ICON_EMOJI = {
   },
 }
 
+export const SHARED = {
+  opensInNewTab: 'Opens in a new tab',
+  or: 'or',
+  and: 'and',
+  customers: 'customers.',
+  githubRepository: 'GitHub Repository',
+  year: 'year',
+  years: 'years',
+  month: 'month',
+  months: 'months',
+  emDash: '—',
+  middleDot: '·',
+}
+
 export const COMMON_VALUES = {
   nameDanielKrsiak: 'Daniel Kršiak',
   reactDeveloper: 'React Developer',
-  reactDeveloperTypeScript: 'React Developer — TypeScript & Next.js',
+  reactDeveloperTypeScript: `React Developer ${SHARED.emDash} TypeScript & Next.js`,
   reactDeveloperWorkingWithTypeScript: 'React Developer working with TypeScript & Next.js',
+  developer: 'Developer',
+  frontEnd: 'Front End',
   javaScript: 'JavaScript',
   javaScriptShort: 'JS',
   typeScript: 'TypeScript',
@@ -107,6 +126,9 @@ export const COMMON_VALUES = {
   xd: 'Adobe XD',
   sketch: 'Sketch',
   graphql: 'GraphQL',
+  wordpress: 'WordPress',
+  qaAutomationTesting: 'QA Automation & Testing',
+  localization: 'Localization',
 }
 
 export const DIVIDER_WITH_TEXT = {
@@ -122,7 +144,7 @@ export const SOCIAL_LINKS = {
   linkedIn: 'LinkedIn',
   gitHub: 'GitHub',
   gitHubCode: 'GitHub Code',
-  gitHubKrsiak: 'GitHub — website-krsiak-cz',
+  gitHubKrsiak: `GitHub ${SHARED.emDash} website-krsiak-cz`,
   resumePDF: 'Resume PDF',
   twitter: '@krsiak_daniel',
 }
@@ -160,6 +182,18 @@ export const TESTIMONIALS = {
   namePopa: 'Daniel Popa',
   namePridalek: 'Vojtech Pridalek',
   nameMoorhead: 'Jonathan Moorhead',
+  sections: {
+    professional: {
+      title: 'Professional References',
+      description:
+        "Below, you'll find insightful feedback from colleagues who have experienced my contributions firsthand.",
+    },
+    character: {
+      title: 'Character References',
+      description:
+        "In this section, you'll find personal testimonials that highlight my integrity and reliability.",
+    },
+  },
 }
 
 export const PROJECTS = {
@@ -172,19 +206,32 @@ export const PROJECTS = {
   workExperience: 'Work Experience',
 }
 
+export const PROJECT_CRYPTOMANIA = {
+  alertTitle: 'CryptoMania is simple project',
+  alertDescription: "See production-level code for my 'Portfolio' on GitHub repo.",
+}
+
 export const STATUS = {
   text: 'Status',
-  linkText: 'https://status.krsiak.cz',
+  linkText: PAGE_TOP_LEVEL_URLS.status,
+  heading: {
+    ciCd: 'CI & CD',
+    uptimeMonitoring: 'Uptime Monitoring',
+  },
+  description: {
+    ciCd: 'Current status of integration and deployment pipelines.',
+    uptimeMonitoring: 'Status page monitoring this website uptime.',
+  },
 }
 
 export const COMPANIES = {
   smartsuppDashboard: 'Smartsupp Dashboard',
   customerCareChatDashboard: 'Chat Dashboard',
-  smartsuppChatDashboard: 'Smartsupp — Chat Dashboard',
+  smartsuppChatDashboard: `Smartsupp ${SHARED.emDash} Chat Dashboard`,
   komercniBanka: 'Komerční banka',
   kooperativa: 'Kooperativa',
-  smartsuppWeb: 'Smartsupp — Web',
-  smartsuppHELP: 'Smartsupp — HELP',
+  smartsuppWeb: `Smartsupp ${SHARED.emDash} Web`,
+  smartsuppHELP: `Smartsupp ${SHARED.emDash} HELP`,
   groupon: 'Groupon',
   moravia: 'Moravia IT',
 }
@@ -195,7 +242,7 @@ export const WORK = {
 }
 
 export const PROJECT_INFORMATION = {
-  information: 'Information',
+  summary: 'Summary',
   skills: 'Skills',
   link: 'Link',
   links: 'Links',
@@ -214,7 +261,7 @@ export const MY_WORK = {
 
 export const MISC = {
   kaizen: 'Kaizen 改\u00A0善',
-  kaizenText1: 'I live by the Japanese philosophy',
+  kaizenText1: 'I follow the Japanese philosophy',
   kaizenText2: 'always aiming for continuous personal growth and improvement in my work.',
   uptimeMonitor: 'krsiak.betteruptime.com',
   description: 'Description',
@@ -303,12 +350,6 @@ export const META_TESTIMONIALS = {
     communication: 'Communication',
     knowledgeSharing: 'Knowledge Sharing',
   },
-}
-
-export const SHARED = {
-  opensInNewTab: 'Opens in a new tab',
-  or: 'or',
-  and: 'and',
 }
 
 export const META_PROJECTS_OVERVIEW_PERSONAL = {
@@ -626,16 +667,17 @@ export const DAISY_IU = {
 }
 
 export const IMAGE_ALT = {
-  welcome: 'Hi :)',
-  defaultAlt: 'image',
-  iconQuote: 'icon-quote',
-  microsoft: 'Microsoft',
-  smartsupp: 'Smartsupp',
-  kooperativa: 'Kooperativa',
-  groupon: 'Groupon',
-  ibm: 'IBM',
-  rwsMoravia: 'RWS - Moravia',
-  komercniBanka: 'Komerční Banka',
+  altWelcome: 'Hi :)',
+  altLogo: 'logo',
+  altDefault: 'image',
+  altIconQuote: 'icon-quote',
+  altMicrosoft: 'Microsoft',
+  altSmartsupp: 'Smartsupp',
+  altKooperativa: 'Kooperativa',
+  altGroupon: 'Groupon',
+  altIbm: 'IBM',
+  altRwsMoravia: 'RWS - Moravia',
+  altKomercniBanka: 'Komerční Banka',
 }
 
 export const CONTACT = {
@@ -658,22 +700,6 @@ export const BIBLE = {
     but\u00A0as\u00A0a\u00A0response to\u00A0God from\u00A0a\u00A0clean conscience.
     It\u00A0is\u00A0effective because of\u00A0the\u00A0resurrection of\u00A0Jesus\u00A0Christ.
   `,
-}
-
-export const WHO_I_AM = {
-  whoIAm: 'Who I Am',
-  introduction1: `Hi there!  My name is `,
-  introduction2: ` and at work I am ${COMMON_VALUES.reactDeveloperWorkingWithTypeScript}.`,
-  textPerson1: 'This page, is about me ',
-  textPerson2: 'as\u00A0a\u00A0person',
-  aboutMe: `
-    In my free time you'll find me exploring the great outdoors and spending time in forest.
-    As an avid hiker and traveler, I enjoy the nature.
-  `,
-  textCzechRepublic: `Hiking through the forests in  Czech Republic.`,
-  textSlovakia: `Scaling the majestic mountains in Slovakia.`,
-  textKorea: `Discovering the stunning landscapes in South Korea.`,
-  textAlandIslands: `Cruising across the Baltic Sea to the archipelago of the Åland Islands.`,
 }
 
 export const SOUTH_KOREA = {
@@ -701,12 +727,119 @@ export const CALL_TO_ACTION = {
     textMobileAndDesktop: `See the professional projects I worked on and had the opportunity to\u00A0improve.`,
     textDesktop: 'Developing scalable and robust web applications for big companies.',
   },
+  resumeDownload: {
+    highlight: 'Resume in PDF',
+    heading: 'Download My\u00A0Resume',
+    textMobileAndDesktop:
+      'Get a PDF copy of my resume to learn more about my professional experience.',
+    textDesktop:
+      'Skilled React Developer building scalable applications using React and TypeScript.',
+  },
+  resume: {
+    highlight: 'React Developer',
+    heading: 'Explore My\u00A0Resume',
+    textMobileAndDesktop: `To understand my React Developer career, learn about  my skills and experience.`,
+    textDesktop: 'From startup to large corporations I have worked on a variety of projects.',
+  },
+  linkedIn: {
+    highlight: 'LinkedIn',
+    heading: 'Connect on\u00A0LinkedIn',
+    textMobileAndDesktop:
+      'Visit my LinkedIn profile to connect and see my professional experiences.',
+    textDesktop: 'It showcases a comprehensive overview of my career journey.',
+  },
+  github: {
+    highlight: 'GitHub',
+    heading: 'Explore GitHub Projects',
+    textMobileAndDesktop:
+      'Go through my GitHub repository to see how I code my personal portfolio project.',
+    textDesktop: 'Writing maintainable, and efficient code, using React, Next.js, and TypeScript.',
+  },
 }
 
 export const FOOTER = {
   copyrightSymbol: '©',
   linkHome: 'krsiak.cz',
   scrollToTop: 'Scroll to top',
+}
+
+export const WHO_I_AM = {
+  whoIAm: 'Who I Am',
+  aboutMe: `
+    In my free time you'll find me exploring the great outdoors and spending time in forest.
+    As an avid hiker and traveler, I enjoy the nature.
+  `,
+  idCZ: 'cz',
+  idSK: 'sk',
+  idFI: 'fi',
+  idKR: 'kr',
+  textCzechRepublic: `Hiking through the forests in  Czech Republic.`,
+  textSlovakia: `Scaling the majestic mountains in Slovakia.`,
+  textKorea: `Discovering the stunning landscapes in South Korea.`,
+  textAlandIslands: `Cruising across the Baltic Sea to the archipelago of the Åland Islands.`,
+}
+
+export const INTRODUCTION = {
+  whoIAm: {
+    text: {
+      introduction1: `Hi!  My name is `,
+      introduction2: ` and at work I\u00A0am ${COMMON_VALUES.react} ${SHARED.emDash}\u00A0${COMMON_VALUES.typeScript} ${COMMON_VALUES.developer}.`,
+      textPerson1: 'This page is about me ',
+      textPerson2: 'as\u00A0a\u00A0person.',
+    },
+  },
+  resume: {
+    text: {
+      skilled: 'Skilled',
+      reactDeveloper: '{reactDeveloper}',
+      with: 'with',
+      yearsReact: `${YEARS.react} years`,
+      yearsText: 'of experience using',
+      typeScript: '{typeScript}',
+      buildText: 'to build scalable web applications.',
+    },
+  },
+  status: {
+    text: {
+      current: 'Current',
+      status: 'status',
+      showing: 'showing the health and',
+      performance: 'performance',
+      of: 'of the',
+      project: 'project',
+      integrations: 'integrations and workflows.',
+    },
+  },
+  personalProjects: {
+    text: {
+      enjoy: 'I enjoy learning',
+      newTechnologies: 'new technologies',
+      andCreating: 'and creating',
+      personalProjects: 'personal projects',
+      whereApply: 'where I can apply my knowledge.',
+    },
+  },
+  workExperience: {
+    text: {
+      experienced: 'I am experienced',
+      reactDeveloper: 'React Developer',
+      whoKnows: 'who knows',
+      qaAutomation: 'QA Automation',
+      andCanLead: 'and can lead teams as a',
+      teamLeader: 'Team Leader.',
+    },
+  },
+}
+
+export const ARIA_LABELS = {
+  toggleMenu: 'Toggle Menu',
+  menu: 'Menu',
+  breadcrumbs: 'Breadcrumbs',
+  sun: 'The Sun',
+  moon: 'The Moon',
+  manWalking: 'Man walking',
+  forest: 'Forest',
+  forestWithMountain: 'Forest with mountain',
 }
 
 export const TEXT = {
@@ -728,4 +861,5 @@ export const TEXT = {
   ...MISC,
   ...ERROR,
   ...FOOTER,
+  ...ARIA_LABELS,
 }

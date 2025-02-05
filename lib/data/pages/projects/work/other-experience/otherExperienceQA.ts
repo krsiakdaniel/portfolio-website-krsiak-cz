@@ -1,17 +1,18 @@
-import { MONTHS, YEARS } from '@/lib/utils/constants/yearsExperience'
+import { OTHER_EXPERIENCE } from '@/localization/english-texts-data'
+
 import { OtherExperienceData } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const otherExperienceQA: OtherExperienceData[] = [
   {
     id: 1,
-    company: 'Smartsupp',
-    role: 'QA Automation - Team Leader',
-    description: `${MONTHS.qaTeamLeaderAtSmartsupp} months — Set up Cypress E2E testing for SaaS company.`,
+    company: OTHER_EXPERIENCE.qualityAssurance.smartsupp.company,
+    role: OTHER_EXPERIENCE.qualityAssurance.smartsupp.role,
+    description: OTHER_EXPERIENCE.qualityAssurance.smartsupp.description,
   },
   {
     id: 2,
-    company: 'RWS - Moravia IT',
-    role: 'Localization - Tester',
-    description: `${YEARS.localizationTester} years — Testing Windows 7 + Windows Store layouts.`,
+    company: OTHER_EXPERIENCE.qualityAssurance.moravia.company,
+    role: OTHER_EXPERIENCE.qualityAssurance.moravia.role,
+    description: OTHER_EXPERIENCE.qualityAssurance.moravia.description,
   },
 ]

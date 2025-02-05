@@ -1,3 +1,5 @@
+import { PAGE_TOP_LEVEL_URLS } from '@/lib/utils/constants/urls/pageTopLevelUrls'
+
 /**
  * Generates the URL for a specific work experience.
  *
@@ -6,7 +8,7 @@
  */
 
 export const getUrlWorkExperience = (company: string): string => {
-  return `/work-experience/${company}`
+  return `${PAGE_TOP_LEVEL_URLS.workExperience}/${company}`
 }
 
 /**
@@ -17,5 +19,5 @@ export const getUrlWorkExperience = (company: string): string => {
  */
 
 export const getUrlPersonalProject = (project: string): string => {
-  return `/personal-projects/${project}`
+  return `${PAGE_TOP_LEVEL_URLS.personalProjects}/${project}`
 }

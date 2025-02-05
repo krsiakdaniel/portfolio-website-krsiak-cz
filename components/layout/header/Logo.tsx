@@ -4,7 +4,7 @@ import { FC } from 'react'
 import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { TEXT } from '@/localization/english'
+import { IMAGE_ALT, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
@@ -29,7 +29,7 @@ const Logo: FC = (): JSX.Element => {
             src={logo}
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
-            alt="logo"
+            alt={IMAGE_ALT.altLogo}
             loading={ImageLoading.EAGER}
           />
         </div>

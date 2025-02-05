@@ -17,7 +17,7 @@ const TestimonialQuote: FC = (): JSX.Element => {
       src={quote}
       width={IMAGE_WIDTH}
       height={IMAGE_HEIGHT}
-      alt={IMAGE_ALT.iconQuote}
+      alt={IMAGE_ALT.altIconQuote}
       loading={ImageLoading.LAZY}
     />
   )

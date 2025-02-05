@@ -1,6 +1,7 @@
 import { iconsSkillsProjectsWorkKooperativa } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
 import { ICON_EMOJI } from '@/localization/english'
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
@@ -24,12 +25,11 @@ export const workReactKooperativa: Project = {
     { id: 2, src: kooperativa3.src },
   ],
   icon: ICON_EMOJI.umbrellaWithRainDrops,
-  title: 'Insurance company app',
-  company: 'Kooperativa',
-  role: 'React Developer',
-  years: '8\u00A0months',
-  description:
-    'I worked on an application for managing insurance policies for citizens. Kooperativa has over 2 480 000+ customers in Czech Republic.',
+  title: WORK_PROJECTS_OVERVIEW.kooperativa.title,
+  company: WORK_PROJECTS_OVERVIEW.kooperativa.company,
+  role: WORK_PROJECTS_OVERVIEW.kooperativa.role,
+  years: WORK_PROJECTS_OVERVIEW.kooperativa.years,
+  description: WORK_PROJECTS_OVERVIEW.kooperativa.description,
   skillsIcons: iconsSkillsProjectsWorkKooperativa,
   skillsOverview: [
     {
@@ -48,14 +48,14 @@ export const workReactKooperativa: Project = {
       skillsList: [SkillsEnum.Jira, SkillsEnum.Confluence],
     },
   ],
-  linkText: 'Project details',
+  linkText: WORK_PROJECTS_OVERVIEW.kooperativa.linkText,
   projectLinks: [
     {
-      urlText: 'Website',
-      url: 'https://www.koop.cz/pojisteni/pojisteni-majetku',
-      dataTestId: 'kooperativa',
+      urlText: WORK_PROJECTS_OVERVIEW.kooperativa.projectLinks[0].urlText,
+      url: WORK_PROJECTS_OVERVIEW.kooperativa.projectLinks[0].url,
+      dataTestId: WORK_PROJECTS_OVERVIEW.kooperativa.projectLinks[0].dataTestId,
     },
   ],
-  customers: '2 480 000+',
+  customers: WORK_PROJECTS_OVERVIEW.kooperativa.customers,
   linkProjectPage: PAGES_URL.work.kooperativa,
 }

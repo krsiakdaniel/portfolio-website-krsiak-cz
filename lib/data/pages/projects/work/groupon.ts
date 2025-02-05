@@ -1,93 +1,92 @@
-import { TEXT } from '@/localization/english'
-
 import { Section } from '@/lib/utils/typeDefinitions/interfaces'
+import { PROJECTS_WORK } from '@/localization/english-texts-data'
 
 export const sections: Section[] = [
   {
     id: 0,
-    title: TEXT.myJob,
+    title: PROJECTS_WORK.groupon.sections.responsibility.title,
     titleHighlight: '',
     items: [
       {
         id: '0-0',
-        text: 'I worked on automation, testing scripts and team coordination.',
+        text: PROJECTS_WORK.groupon.sections.responsibility.items[0],
       },
       {
         id: '0-1',
-        text: 'Groupon is an online marketplace, offering discounts on products and services, with 17 million customers.',
+        text: PROJECTS_WORK.groupon.sections.responsibility.items[1],
       },
     ],
   },
   {
     id: 1,
-    title: 'My role',
+    title: PROJECTS_WORK.groupon.sections.role.title,
     titleHighlight: '',
     items: [
       {
         id: '1-0',
-        text: 'SDET = Software Development Engineer in Testing.',
+        text: PROJECTS_WORK.groupon.sections.role.items[0],
       },
       {
         id: '1-1',
-        text: 'In testing, it is an IT professional who can work equally in both development and testing.',
+        text: PROJECTS_WORK.groupon.sections.role.items[1],
       },
     ],
   },
   {
     id: 2,
-    title: 'Responsibility #1:',
-    titleHighlight: 'QA Automation and\u00A0Testing Scripts',
+    title: PROJECTS_WORK.groupon.sections.automation.title,
+    titleHighlight: PROJECTS_WORK.groupon.sections.automation.titleHighlight,
     items: [
       {
         id: '2-0',
-        text: 'Setting up automation, including Playwright for E2E.',
+        text: PROJECTS_WORK.groupon.sections.automation.items[0],
       },
       {
         id: '2-1',
-        text: 'Writing E2E tests in JavaScript and TypeScript.',
+        text: PROJECTS_WORK.groupon.sections.automation.items[1],
       },
       {
         id: '2-2',
-        text: 'Coordinating efforts related to unit tests and integration tests.',
+        text: PROJECTS_WORK.groupon.sections.automation.items[2],
       },
       {
         id: '2-3',
-        text: 'Writing documentation for developers.',
+        text: PROJECTS_WORK.groupon.sections.automation.items[3],
       },
       {
         id: '2-4',
-        text: 'CI/CD pipeline in GitHub using Jenkins, for unit, integration, and E2E tests.',
+        text: PROJECTS_WORK.groupon.sections.automation.items[4],
       },
     ],
   },
   {
     id: 3,
-    title: 'Responsibility #2:',
-    titleHighlight: 'Team Coordination',
+    title: PROJECTS_WORK.groupon.sections.coordination.title,
+    titleHighlight: PROJECTS_WORK.groupon.sections.coordination.titleHighlight,
     items: [
       {
         id: '3-0',
-        text: 'Involved in hiring new SDET members for QA team.',
+        text: PROJECTS_WORK.groupon.sections.coordination.items[0],
       },
       {
         id: '3-1',
-        text: 'Work across 4 teams.',
+        text: PROJECTS_WORK.groupon.sections.coordination.items[1],
       },
       {
         id: '3-2',
-        text: '3 DEV teams (15 developers). Setting priorities for writing unit and integration tests.',
+        text: PROJECTS_WORK.groupon.sections.coordination.items[2],
       },
       {
         id: '3-3',
-        text: '1 QA team (6 manual testers). Coordinating regression testing for the website.',
+        text: PROJECTS_WORK.groupon.sections.coordination.items[3],
       },
       {
         id: '3-4',
-        text: 'Drive the discussion and decisions on technical topics related to the teams.',
+        text: PROJECTS_WORK.groupon.sections.coordination.items[4],
       },
       {
         id: '3-5',
-        text: 'Keeping up-to-date JIRA tasks for testing.',
+        text: PROJECTS_WORK.groupon.sections.coordination.items[5],
       },
     ],
   },

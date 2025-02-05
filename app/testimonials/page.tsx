@@ -12,7 +12,7 @@ import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimon
 import { personalTestimonials } from '@/lib/data/pages/testimonials/personalTestimonials'
 import { workTestimonials } from '@/lib/data/pages/testimonials/workTestimonials'
 
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { ICON_EMOJI, TESTIMONIALS, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -43,16 +43,16 @@ const Testimonials: FC = (): JSX.Element => {
         </div>
 
         <TestimonialsSection
-          title="Professional References"
-          description="Below, you'll find insightful feedback from colleagues who have experienced my contributions firsthand."
+          title={TESTIMONIALS.sections.professional.title}
+          description={TESTIMONIALS.sections.professional.description}
           testimonials={workTestimonials}
         />
 
         <CallToActionLinkedIn />
 
         <TestimonialsSection
-          title="Character References"
-          description="In this section, you'll find personal testimonials that highlight my integrity and reliability."
+          title={TESTIMONIALS.sections.character.title}
+          description={TESTIMONIALS.sections.character.description}
           testimonials={personalTestimonials}
         />
       </div>

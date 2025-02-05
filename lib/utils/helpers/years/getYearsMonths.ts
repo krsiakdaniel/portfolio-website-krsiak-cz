@@ -1,5 +1,9 @@
 import { Job } from '@/lib/utils/typeDefinitions/interfaces'
 
+import { TEXT } from '@/localization/english'
+
+import { DurationUnitEnum } from '@/lib/utils/typeDefinitions/enums'
+
 type GetYearsMonthsType = Pick<Job, 'duration' | 'unit'>
 
 /**
@@ -12,7 +16,7 @@ type GetYearsMonthsType = Pick<Job, 'duration' | 'unit'>
  */
 export const getYearsMonths = ({ duration, unit }: GetYearsMonthsType): string => {
   if (duration === 1) {
-    return unit === 'year' ? 'year' : 'month'
+    return unit === DurationUnitEnum.Year ? TEXT.year : TEXT.month
   }
-  return unit === 'year' ? 'years' : 'months'
+  return unit === DurationUnitEnum.Year ? TEXT.years : TEXT.months
 }

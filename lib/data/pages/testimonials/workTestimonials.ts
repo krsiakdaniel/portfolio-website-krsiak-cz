@@ -1,4 +1,5 @@
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { ICON_EMOJI } from '@/localization/english'
+import { TEXT_DATA } from '@/localization/english-texts-data'
 
 import { TestimonialItem } from '@/lib/utils/typeDefinitions/interfaces'
 
@@ -9,47 +10,35 @@ import personPridalek from '@/public/images/webp/testimonials/work/vojtech-prida
 
 export const workTestimonials: TestimonialItem[] = [
   {
-    id: TEXT.nameLosseff,
+    id: TEXT_DATA.work.losseff.name,
     personPhoto: personLosseff,
     personIcon: ICON_EMOJI.woman.officeWorker,
-    personName: TEXT.nameLosseff,
-    personJob: 'Linguistic Services ~\u00A0Moravia\u00A0IT',
-    testimonialText: `
-      Daniel is strong in creating automation utilities, term processing, all kinds of\u00A0tracking.
-      He has gained a lot of\u00A0experience in\u00A0bug processing.
-    `,
+    personName: TEXT_DATA.work.losseff.name,
+    personJob: TEXT_DATA.work.losseff.job,
+    testimonialText: TEXT_DATA.work.losseff.text,
   },
   {
-    id: TEXT.nameKvapil,
+    id: TEXT_DATA.work.kvapil.name,
     personPhoto: personKvapil,
     personIcon: ICON_EMOJI.man.officeWorker,
-    personName: TEXT.nameKvapil,
-    personJob: 'Partner Account Manager ~\u00A0Microsoft',
-    testimonialText: `
-      I can recommend his knowledge and perspective about the IT globally,
-      and his behavior as a\u00A0person are excellent for team work.
-    `,
+    personName: TEXT_DATA.work.kvapil.name,
+    personJob: TEXT_DATA.work.kvapil.job,
+    testimonialText: TEXT_DATA.work.kvapil.text,
   },
   {
-    id: TEXT.namePridalek,
+    id: TEXT_DATA.work.pridalek.name,
     personPhoto: personPridalek,
     personIcon: ICON_EMOJI.man.officeWorker,
-    personName: TEXT.namePridalek,
-    personJob: 'Senior Localization Group Manager ~\u00A0Moravia\u00A0IT',
-    testimonialText: `
-      Daniel helped team with engineering skills, automating bug management tasks.
-      In\u00A0the\u00A0role of\u00A0bug-fixing engineer, he bridged linguistic managers and\u00A0production teams.
-    `,
+    personName: TEXT_DATA.work.pridalek.name,
+    personJob: TEXT_DATA.work.pridalek.job,
+    testimonialText: TEXT_DATA.work.pridalek.text,
   },
   {
-    id: TEXT.namePopa,
+    id: TEXT_DATA.work.popa.name,
     personPhoto: personPopa,
     personIcon: ICON_EMOJI.man.officeWorker,
-    personName: TEXT.namePopa,
-    personJob: 'Service Management Lead ~\u00A0IBM',
-    testimonialText: `
-      I met Daniel Krsiak working on different team, he\u00A0was my desk-mate.
-      I found him passionate about technologies, eager to learn all the time, communicative and willing to share knowledge.
-    `,
+    personName: TEXT_DATA.work.popa.name,
+    personJob: TEXT_DATA.work.popa.job,
+    testimonialText: TEXT_DATA.work.popa.text,
   },
 ]

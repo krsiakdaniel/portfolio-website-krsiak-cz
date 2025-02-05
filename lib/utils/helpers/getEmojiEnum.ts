@@ -1,3 +1,4 @@
+import { REGEX_GET_EMOJI_NAME_FROM_IMG_PATH } from '@/lib/utils/helpers/regex/getEmojiEnumRegex'
 import { EmojiNameEnum } from '@/lib/utils/typeDefinitions/enums'
 
 /**
@@ -6,7 +7,7 @@ import { EmojiNameEnum } from '@/lib/utils/typeDefinitions/enums'
  * @returns Corresponding EmojiNameEnum value or ROCKET as fallback
  */
 export const getEmojiEnum = (importPath: string): EmojiNameEnum => {
-  const match = importPath.match(/([^/]+?)-animated-\d+x\d+/)
+  const match = importPath.match(REGEX_GET_EMOJI_NAME_FROM_IMG_PATH)
   const name = match?.[1]
 
   if (!name) return EmojiNameEnum.ROCKET

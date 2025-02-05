@@ -2,9 +2,7 @@
 
 import { FC, useEffect, useState } from 'react'
 
-import { ICON_EMOJI } from '@/localization/english'
-
-import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
 
 import { updateLunarPhase } from '@/lib/utils/helpers/updateLunarPhase'
 

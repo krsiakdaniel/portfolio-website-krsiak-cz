@@ -152,6 +152,36 @@ export interface EnvUrls {
   localhost: string
 }
 
+// Page Top Level URLs
+export interface PageTopLevelUrls {
+  home: string
+  whoIAm: string
+  workExperience: string
+  resume: string
+  personalProjects: string
+  testimonials: string
+  status: string
+}
+
+// Projects Personal Top Level URLs
+export interface ProjectsPersonalTopLevelUrls {
+  krsiak: string
+  cryptoMania: string
+}
+
+// Projects Work Top Level URLs
+export interface ProjectsWorkTopLevelUrls {
+  kooperativa: string
+  smartsupp: {
+    dashboard: string
+    web: string
+    help: string
+  }
+  komercniBanka: string
+  groupon: string
+  moravia: string
+}
+
 // Page URLs
 export interface PageUrls {
   home: string
@@ -176,6 +206,38 @@ export interface PageUrls {
   }
   testimonials: string
   status: string
+}
+
+// Projects URLs
+export interface ProjectsUrls {
+  personal: {
+    krsiak: string
+    cryptoMania: string
+  }
+  work: {
+    kooperativa: string
+    smartsupp: {
+      dashboard: string
+      web: string
+      help: string
+    }
+    komercniBanka: {
+      branchesAndAtms: string
+      branchesAndAtmsDetails: string
+      exchangeRates: string
+      exchangeRatesDetails: string
+    }
+    groupon: string
+    moravia: string
+  }
+}
+
+// GitHub URLs
+export interface GitHubUrls {
+  personal: {
+    krsiak: string
+    cryptoMania: string
+  }
 }
 
 // Sitemap URLs
@@ -216,18 +278,6 @@ export interface StatusBadgeUrls {
   DEPENDABOT: string
   NETLIFY: string
   UPTIME: string
-}
-
-// ARIA Labels
-export interface AriaLabels {
-  toggleMenu: string
-  menu: string
-  breadcrumbs: string
-  sun: string
-  moon: string
-  manWalking: string
-  forest: string
-  forestWithMountain: string
 }
 
 // Years of Experience
@@ -294,7 +344,7 @@ export interface ElementIds {
     react: string
     frontEnd: string
     wordpress: string
-    qa: string
+    qualityAssurance: string
     localization: string
     next: string
   }

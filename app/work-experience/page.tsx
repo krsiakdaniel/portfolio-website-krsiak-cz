@@ -20,7 +20,7 @@ import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview
 import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
 import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
 
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { COMMON_VALUES, ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -47,14 +47,14 @@ const ProjectsWork: FC = (): JSX.Element => {
         {/* REACT */}
         <ProjectSection
           sectionId={ID.section.react}
-          sectionText="React"
+          sectionText={COMMON_VALUES.react}
           projectData={projectsWorkReact}
         />
 
         {/* FRONT END */}
         <ProjectSection
           sectionId={ID.section.frontEnd}
-          sectionText="Front End"
+          sectionText={COMMON_VALUES.frontEnd}
           projectData={projectsWorkFrontEnd}
         />
         <OtherExperienceContent experience={otherExperienceFrontEnd} />
@@ -65,15 +65,15 @@ const ProjectsWork: FC = (): JSX.Element => {
         {/* WORDPRESS */}
         <ProjectSection
           sectionId={ID.section.wordpress}
-          sectionText="WordPress"
+          sectionText={COMMON_VALUES.wordpress}
           projectData={projectsWorkWordPress}
         />
         <OtherExperienceContent experience={otherExperienceWordPress} />
 
-        {/* QA */}
+        {/* QUALITY ASSURANCE */}
         <ProjectSection
-          sectionId={ID.section.qa}
-          sectionText={`QA Automation &\u00A0Testing`}
+          sectionId={ID.section.qualityAssurance}
+          sectionText={COMMON_VALUES.qaAutomationTesting}
           projectData={projectsWorkQA}
         />
         <OtherExperienceContent experience={otherExperienceQA} />
@@ -81,7 +81,7 @@ const ProjectsWork: FC = (): JSX.Element => {
         {/* LOCALIZATION */}
         <ProjectSection
           sectionId={ID.section.localization}
-          sectionText="Localization"
+          sectionText={COMMON_VALUES.localization}
           projectData={projectsWorkLocalization}
         />
         <OtherExperienceContent experience={otherExperienceLocalization} />

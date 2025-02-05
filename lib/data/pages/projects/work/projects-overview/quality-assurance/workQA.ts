@@ -1,9 +1,9 @@
 import { iconsSkillsProjectsWorkGroupon } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
 import { ICON_EMOJI } from '@/localization/english'
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
@@ -23,12 +23,11 @@ export const projectsWorkQA: Project[] = [
       { id: 1, src: groupon2.src },
     ],
     icon: ICON_EMOJI.shoppingCart,
-    title: 'E-Commerce - Marketplace',
-    company: 'Groupon',
-    role: 'QA Automation - Team Leader',
-    years: '4\u00A0months',
-    description:
-      'I was responsible setting up new QA team, hiring and managing people. Setting up QA processes, writing test plans, and testing scripts.',
+    title: WORK_PROJECTS_OVERVIEW.groupon.title,
+    company: WORK_PROJECTS_OVERVIEW.groupon.company,
+    role: WORK_PROJECTS_OVERVIEW.groupon.role,
+    years: WORK_PROJECTS_OVERVIEW.groupon.years,
+    description: WORK_PROJECTS_OVERVIEW.groupon.description,
     skillsIcons: iconsSkillsProjectsWorkGroupon,
     skillsOverview: [
       {
@@ -58,9 +57,9 @@ export const projectsWorkQA: Project[] = [
         ],
       },
     ],
-    linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website', url: 'https://www.groupon.com/', dataTestId: 'groupon' }],
-    customers: '17 000 000+',
-    linkProjectPage: PAGES_URL.work.groupon,
+    linkText: WORK_PROJECTS_OVERVIEW.groupon.linkText,
+    projectLinks: WORK_PROJECTS_OVERVIEW.groupon.projectLinks,
+    customers: WORK_PROJECTS_OVERVIEW.groupon.customers,
+    linkProjectPage: WORK_PROJECTS_OVERVIEW.groupon.linkProjectPage,
   },
 ]

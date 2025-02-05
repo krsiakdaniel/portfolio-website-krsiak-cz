@@ -26,8 +26,13 @@ const LINKS = {
   // work projects
   CRYPTOMANIA: 'cryptomania',
   KOMERCNI_BANKA: 'komercni-banka',
+  KOMERCNI_BANKA_BRANCHES_AND_ATMS: 'komercni-banka-branches-and-atms',
+  KOMERCNI_BANKA_BRANCHES_AND_ATMS_DETAILS: 'komercni-banka-branches-and-atms-details',
+  KOMERCNI_BANKA_EXCHANGE_RATES: 'komercni-banka-exchange-rates',
+  KOMERCNI_BANKA_EXCHANGE_RATES_DETAILS: 'komercni-banka-exchange-rates-details',
   SMARTSUPP_WEB: 'smartsupp-web',
   SMARTSUPP_HELP: 'smartsupp-help',
+  SMARTSUPP_DASHBOARD: 'smartsupp-dashboard',
   MORAVIA: 'moravia',
   GROUPON: 'groupon',
   KOOPERATIVA: 'kooperativa',
@@ -104,6 +109,9 @@ const PAGE = {
   },
   testimonials: {
     introduction: 'testimonials-introduction',
+  },
+  status: {
+    introduction: 'status-introduction',
   },
 }
 
@@ -242,6 +250,7 @@ export const DATA_TEST_IDS = {
   page: PAGE,
   pageNavigation: PAGE_NAVIGATION,
   projects: PROJECTS,
+  links: LINKS,
   pagesLinks: PAGES_LINKS,
   callToAction: CALL_TO_ACTION,
   navigation: NAVIGATION,

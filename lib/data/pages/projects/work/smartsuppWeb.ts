@@ -1,38 +1,38 @@
-import { TEXT } from '@/localization/english'
+import { PROJECTS_WORK } from '@/localization/english-texts-data'
 
 import { Section } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const sections: Section[] = [
   {
     id: 0,
-    title: TEXT.myJob,
+    title: PROJECTS_WORK.smartsuppWeb.sections.responsibility.title,
     titleHighlight: '',
     items: [
       {
         id: '0-0',
-        text: 'I was responsible for the entire company’s Front End and website presentation.',
+        text: PROJECTS_WORK.smartsuppWeb.sections.responsibility.items[0],
       },
     ],
   },
   {
     id: 1,
-    title: 'Developed new website',
+    title: PROJECTS_WORK.smartsuppWeb.sections.website.title,
     titleHighlight: '',
     items: [
       {
         id: '1-0',
-        text: 'The main company website was built with PHP and JavaScript.',
+        text: PROJECTS_WORK.smartsuppWeb.sections.website.items[0],
       },
     ],
   },
   {
     id: 2,
-    title: 'Created new documentation site',
+    title: PROJECTS_WORK.smartsuppWeb.sections.docs.title,
     titleHighlight: '',
     items: [
       {
         id: '2-0',
-        text: 'I created a documentation site that was running on Jekyll, Markdown, and Shopify’s Liquid template language, and later the site was moved to VuePress.',
+        text: PROJECTS_WORK.smartsuppWeb.sections.docs.items[0],
       },
     ],
   },

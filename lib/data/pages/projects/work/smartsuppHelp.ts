@@ -1,38 +1,38 @@
-import { TEXT } from '@/localization/english'
+import { PROJECTS_WORK } from '@/localization/english-texts-data'
 
 import { Section } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const sections: Section[] = [
   {
     id: 0,
-    title: TEXT.myJob,
+    title: PROJECTS_WORK.smartsuppWordPress.sections.responsibility.title,
     titleHighlight: '',
     items: [
       {
         id: '0-0',
-        text: 'I was the company WordPress administrator and I was responsible for the website.',
+        text: PROJECTS_WORK.smartsuppWordPress.sections.responsibility.items[0],
       },
     ],
   },
   {
     id: 1,
-    title: 'Writing new tutorials',
+    title: PROJECTS_WORK.smartsuppWordPress.sections.tutorials.title,
     titleHighlight: '',
     items: [
       {
         id: '1-0',
-        text: 'I was writing tutorials for the company main product chat dashboard, taking screenshots and creating new content.',
+        text: PROJECTS_WORK.smartsuppWordPress.sections.tutorials.items[0],
       },
     ],
   },
   {
     id: 2,
-    title: 'Website localization',
+    title: PROJECTS_WORK.smartsuppWordPress.sections.localization.title,
     titleHighlight: '',
     items: [
       {
         id: '2-0',
-        text: 'The company had customers from different countries, I was responsible for the localization into 9 languages. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱',
+        text: PROJECTS_WORK.smartsuppWordPress.sections.localization.items[0],
       },
     ],
   },

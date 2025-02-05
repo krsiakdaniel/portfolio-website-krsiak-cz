@@ -4,8 +4,9 @@ import MenuItem from '@/components/layout/header/menu/MenuItem'
 
 import { pagesLinks } from '@/lib/data/layout/pagesLinks'
 
+import { ARIA_LABELS } from '@/localization/english'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { ARIA_LABELS } from '@/lib/utils/constants/ariaLabels'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'

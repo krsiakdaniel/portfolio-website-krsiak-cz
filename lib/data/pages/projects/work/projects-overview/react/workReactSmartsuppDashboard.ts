@@ -1,7 +1,7 @@
 import { iconsSkillsProjectsWorkSmartsuppDashboard } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { ICON_EMOJI, TEXT } from '@/localization/english'
 
@@ -27,11 +27,10 @@ export const workReactSmartsuppDashboard: Project = {
   ],
   icon: ICON_EMOJI.speechBalloon,
   title: TEXT.customerCareChatDashboard,
-  company: 'Smartsupp',
-  role: 'React Developer',
-  years: '3\u00A0years 2\u00A0months',
-  description:
-    'I worked on chat dashboard features and new design of settings. I\u00A0was\u00A0involved in UX team learning about user needs.',
+  company: WORK_PROJECTS_OVERVIEW.reactDashboard.company,
+  role: WORK_PROJECTS_OVERVIEW.reactDashboard.role,
+  years: WORK_PROJECTS_OVERVIEW.reactDashboard.years,
+  description: WORK_PROJECTS_OVERVIEW.reactDashboard.description,
   skillsIcons: iconsSkillsProjectsWorkSmartsuppDashboard,
   skillsOverview: [
     {
@@ -57,14 +56,14 @@ export const workReactSmartsuppDashboard: Project = {
       skillsList: [SkillsEnum.Trello],
     },
   ],
-  linkText: 'Project details',
+  linkText: WORK_PROJECTS_OVERVIEW.reactDashboard.linkText,
   projectLinks: [
     {
-      urlText: 'Website',
-      url: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/',
-      dataTestId: 'smartsupp-dashboard',
+      urlText: WORK_PROJECTS_OVERVIEW.reactDashboard.projectLinks[0].urlText,
+      url: WORK_PROJECTS_OVERVIEW.reactDashboard.projectLinks[0].url,
+      dataTestId: WORK_PROJECTS_OVERVIEW.reactDashboard.projectLinks[0].dataTestId,
     },
   ],
-  customers: '100 000+',
-  linkProjectPage: PAGES_URL.work.smartsupp.dashboard,
+  customers: WORK_PROJECTS_OVERVIEW.reactDashboard.customers,
+  linkProjectPage: WORK_PROJECTS_OVERVIEW.reactDashboard.linkProjectPage,
 }
