@@ -8,8 +8,8 @@
   - [🚦 Project Status](#-project-status)
   - [🛠️ Tech Stack](#️-tech-stack)
   - [🌼 daisyUI - Component Library](#-daisyui---component-library)
-  - [📋 Pages \& Features](#-pages--features)
-  - [⚡ PageSpeed Insights](#-pagespeed-insights)
+  - [📋 Pages](#-pages)
+  - [🏎️ Website Performance](#️-website-performance)
   - [👨🏻‍💼 Team Leader and Task Management](#-team-leader-and-task-management)
   - [💻 Development](#-development)
   - [🃏 🎭 Testing](#--testing)
@@ -45,7 +45,7 @@ Documentation links:
 - **Frameworks:** ⚛️ [React](https://react.dev/), ⏭️ [Next.js](https://nextjs.org/)
 - **CSS Framework:** 🎨 [Tailwind CSS](https://tailwindcss.com/)
 - **Component library for Tailwind CSS:**
-  - 🌊 [Flowbite](https://flowbite.com/) = `now using - will remove` 👎
+  - 🌊 [Flowbite](https://flowbite.com/) = `using now - will remove` 👎
   - 🌼 [daisyUI](https://daisyui.com/) = `plan to use` 👍
 - **Testing:** 🃏 [JEST](https://jestjs.io/), 🎭 [Playwright](https://playwright.dev/)
 - **CI & CD:** 🚀 [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) , 🌍 [Netlify](https://www.netlify.com/)
@@ -62,23 +62,22 @@ This project will use component library for Tailwind CSS.
 
 ![daisyUI](/readme-images/main-readme/smiling-face-with-sunglasses-animated-80x80.webp)
 
-## 📋 Pages & Features
+## 📋 Pages
 
-The website contains the following pages and features.
+The website has these top level pages and project detail pages.
 
-- **Pages:**
+- **Top Level Pages:**
   - 🏠 [Home](https://krsiak.cz/)
   - 👨🏻‍💻 [Work Experience](https://krsiak.cz/work-experience)
   - 📝 [Resume](https://krsiak.cz/resume)
   - 🚀 [Personal Projects](https://krsiak.cz/personal-projects)
   - 💬 [Testimonials](https://krsiak.cz/testimonials)
   - 🚦 [Status](https://krsiak.cz/status)
-- **Project Detail Page:** Information, Skills, Links, Description, Gallery
-- **Features:** CTA Banners, Skills Icons, Resume in PDF, Career Path, Contact QR Code, Social Links, Scroll to Top
+- **Project - Detail Pages:** Summary, Skills, Links, Project description, Gallery
 
-## ⚡ PageSpeed Insights
+## 🏎️ Website Performance
 
-- [README](README-page-speed-insights.md)
+- [README](README-website-performance.md)
 
 ## 👨🏻‍💼 Team Leader and Task Management
 

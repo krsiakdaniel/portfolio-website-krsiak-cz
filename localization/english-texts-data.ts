@@ -227,10 +227,7 @@ export const PROJECTS_WORK = {
     sections: {
       responsibility: {
         title: 'My Job',
-        items: [
-          'I worked for a company that creates a chat solution for customer care teams.',
-          'The product is a chat box for e-commerce and regular websites, and integrates with an email inbox and Facebook Messenger, all-in-one messaging platform.',
-        ],
+        items: ['I was the company WordPress administrator and I was responsible for the website.'],
       },
       features: {
         title: 'Developed new features',
@@ -478,7 +475,8 @@ export const WORK_PROJECTS_OVERVIEW = {
     company: 'Smartsupp',
     role: 'React Developer',
     years: '3\u00A0years 2\u00A0months',
-    description: "I was responsible for the entire company's Front End and website presentation.",
+    description:
+      'I worked on chat dashboard features and new design of settings. I was involved in UX team learning about user needs.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -574,6 +572,18 @@ export const PROJECTS_PERSONAL = {
 }
 
 export const PROJECTS_PERSONAL_OVERVIEW = {
+  next: {
+    title: 'Portfolio Website',
+    company: 'Personal project',
+    role: 'Front End - Next.js',
+    description:
+      'My personal portfolio website showcases my work and skills as a React Developer. It features production-level code that I  write.',
+    linkText: 'Project details',
+    projectLinks: [{ urlText: 'Website', url: 'https://krsiak.cz/', dataTestId: 'krsiak' }],
+    linkGitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
+    personalProjectNote: 'My main coding project.',
+    linkProjectPage: PAGES_URL.personal.krsiak,
+  },
   react: {
     title: 'CryptoMania',
     company: 'Personal project',
@@ -591,18 +601,6 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
     linkGitHub: 'https://github.com/krsiakdaniel/cryptocurrency-prices',
     personalProjectNote: 'Project to exercise coding.',
     linkProjectPage: PAGES_URL.personal.cryptoMania,
-  },
-  next: {
-    title: 'Portfolio Website',
-    company: 'Personal project',
-    role: 'Front End - Next.js',
-    description:
-      'My personal portfolio website to showcase my work and skills I have. Production level code that I code as React Developer.',
-    linkText: 'Project details',
-    projectLinks: [{ urlText: 'Website', url: 'https://krsiak.cz/', dataTestId: 'krsiak' }],
-    linkGitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
-    personalProjectNote: 'My main coding project.',
-    linkProjectPage: PAGES_URL.personal.krsiak,
   },
 }
 

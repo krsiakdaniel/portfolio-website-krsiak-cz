@@ -241,7 +241,7 @@ export const WORK = {
 }
 
 export const PROJECT_INFORMATION = {
-  information: 'Information',
+  summary: 'Summary',
   skills: 'Skills',
   link: 'Link',
   links: 'Links',
@@ -260,7 +260,7 @@ export const MY_WORK = {
 
 export const MISC = {
   kaizen: 'Kaizen 改\u00A0善',
-  kaizenText1: 'I live by the Japanese philosophy',
+  kaizenText1: 'I follow the Japanese philosophy',
   kaizenText2: 'always aiming for continuous personal growth and improvement in my work.',
   uptimeMonitor: 'krsiak.betteruptime.com',
   description: 'Description',
@@ -737,7 +737,7 @@ export const CALL_TO_ACTION = {
   resume: {
     highlight: 'React Developer',
     heading: 'Explore My\u00A0Resume',
-    textMobileAndDesktop: `Learn about  my skills and experience, to\u00A0understand my React Developer career.`,
+    textMobileAndDesktop: `To understand my React Developer career, learn about  my skills and experience.`,
     textDesktop: 'From startup to large corporations I have worked on a variety of projects.',
   },
   linkedIn: {
@@ -825,7 +825,7 @@ export const INTRODUCTION = {
       whoKnows: 'who knows',
       qaAutomation: 'QA Automation',
       andCanLead: 'and can lead teams as a',
-      teamLeader: 'Team Leader',
+      teamLeader: 'Team Leader.',
     },
   },
 }
