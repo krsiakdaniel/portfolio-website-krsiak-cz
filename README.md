@@ -9,6 +9,8 @@
   - [🛠️ Tech Stack](#️-tech-stack)
   - [🌼 daisyUI - Component Library](#-daisyui---component-library)
   - [📋 Pages](#-pages)
+    - [Pages - Main](#pages---main)
+    - [Pages - Projects Detail](#pages---projects-detail)
   - [🏎️ Website Performance](#️-website-performance)
   - [👨🏻‍💼 Team Leader and Task Management](#-team-leader-and-task-management)
   - [💻 Development](#-development)
@@ -66,14 +68,32 @@ This project will use component library for Tailwind CSS.
 
 The website has these top level pages and project detail pages.
 
-- **Top Level Pages:**
-  - 🏠 [Home](https://krsiak.cz/)
-  - 👨🏻‍💻 [Work Experience](https://krsiak.cz/work-experience)
-  - 📝 [Resume](https://krsiak.cz/resume)
-  - 🚀 [Personal Projects](https://krsiak.cz/personal-projects)
-  - 💬 [Testimonials](https://krsiak.cz/testimonials)
-  - 🚦 [Status](https://krsiak.cz/status)
-- **Project - Detail Pages:** Summary, Skills, Links, Project description, Gallery
+### Pages - Main
+
+- 🏠 [Home](https://krsiak.cz/)
+- 👋 [Who I Am](https://krsiak.cz/who-i-am)
+- 👨🏻‍💻 [Work Experience](https://krsiak.cz/work-experience)
+- 📝 [Resume](https://krsiak.cz/resume)
+- 🚀 [Personal Projects](https://krsiak.cz/personal-projects)
+- 💬 [Testimonials](https://krsiak.cz/testimonials)
+- 🚦 [Status](https://krsiak.cz/status)
+
+### Pages - Projects Detail
+
+🚀 **Personal projects**:
+
+- 👨🏻‍💻 [Portfolio Website - krsiak.cz](https://krsiak.cz/personal-projects/krsiak)
+- 💰 [CryptoMania](https://krsiak.cz/personal-projects/cryptomania)
+
+👨🏻‍💻 **Work Experience**:
+
+- 💬 [Smartsupp - Dashboard](https://krsiak.cz/work-experience/smartsupp-dashboard)
+- 🏦 [Komerční banka](https://krsiak.cz/work-experience/komercni-banka)
+- ☔ [Kooperativa](https://krsiak.cz/work-experience/kooperativa)
+- 👨🏻‍💻 [Smartsupp - Company Website](https://krsiak.cz/work-experience/smartsupp-web)
+- 📚 [Smartsupp - Help Website](https://krsiak.cz/work-experience/smartsupp-help)
+- 💼 [Groupon - QA Automation](https://krsiak.cz/work-experience/groupon)
+- 🌎 [Moravia - QA Automation](https://krsiak.cz/work-experience/moravia)
 
 ## 🏎️ Website Performance
 
