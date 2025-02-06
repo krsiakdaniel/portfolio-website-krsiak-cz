@@ -28,8 +28,8 @@ const customKeyframes = {
     '50%': { transform: 'translateY(-10px)' },
   },
   fadeIn: {
-    '0%': { transform: 'scale(0.95)', opacity: '0' },
-    '100%': { transform: 'scale(1)', opacity: '1' },
+    '0%': { opacity: '0.5' },
+    '100%': { opacity: '1' },
   },
 }
 

@@ -10,18 +10,18 @@ import { GalleryPreviewProps } from '@/lib/utils/typeDefinitions/props/layout/pr
 const IMAGE_WIDTH = 1240
 const IMAGE_HEIGHT = 1272
 
-const GalleryPreview: FC<GalleryPreviewProps> = ({ featuredImage }): JSX.Element => {
+const GalleryPreview: FC<GalleryPreviewProps> = ({ activeImage }): JSX.Element => {
   return (
     <div className="overflow-hidden">
       <ImageComponent
-        src={featuredImage.src}
+        src={activeImage.src}
         width={IMAGE_WIDTH}
         height={IMAGE_HEIGHT}
         customCss="border-1 rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md transition-all duration-500 ease-in-out animate-fadeIn"
-        alt={`${ARIA_LABELS.galleryActiveImage}: ${featuredImage.id}`}
+        alt={`${ARIA_LABELS.galleryActiveImage}: ${activeImage.id}`}
         loading={ImageLoading.LAZY}
         placeholder="blur"
-        blurDataURL={featuredImage.src}
+        blurDataURL={activeImage.src}
         aria-label={ARIA_LABELS.galleryActiveImage}
       />
     </div>

@@ -16,14 +16,14 @@ export type GalleryImageProps = GalleryProps['images'][0]
 
 // Gallery Preview Props
 export type GalleryPreviewProps = {
-  featuredImage: GalleryImageProps
+  activeImage: GalleryImageProps
 }
 
 // Gallery Thumbnails Props
 export type GalleryThumbnailsProps = {
   images: GalleryImageProps[]
-  featuredImage: GalleryImageProps
-  setFeaturedImage: (image: GalleryImageProps) => void
+  activeImage: GalleryImageProps
+  setActiveImage: (image: GalleryImageProps) => void
 }
 
 // GitHub Repository Link Props

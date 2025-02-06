@@ -15,7 +15,7 @@ import {
 import { ARIA_LABELS, GALLERY } from '@/localization/english'
 
 const Gallery: FC<GalleryProps> = ({ images = [] }): JSX.Element => {
-  const [featuredImage, setFeaturedImage] = useState<GalleryImageProps>(images[0])
+  const [activeImage, setActiveImage] = useState<GalleryImageProps>(images[0])
 
   return (
     <div className="mt-8">
@@ -27,11 +27,11 @@ const Gallery: FC<GalleryProps> = ({ images = [] }): JSX.Element => {
         role="region"
         aria-label={ARIA_LABELS.galleryProjectShowcase}
       >
-        <GalleryPreview featuredImage={featuredImage} />
+        <GalleryPreview activeImage={activeImage} />
         <GalleryThumbnails
           images={images}
-          featuredImage={featuredImage}
-          setFeaturedImage={setFeaturedImage}
+          activeImage={activeImage}
+          setActiveImage={setActiveImage}
         />
       </div>
     </div>
