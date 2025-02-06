@@ -87,9 +87,19 @@ const nextConfig = {
           {
             key: 'Content-Security-Policy',
             value: [
+              // Only allow resources to be loaded from the same origin
               "default-src 'self'",
+
+              // Allow scripts from same origin, inline scripts, eval(), and Google Tag Manager
               "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com",
+
+              // Allow API/network requests to same origin and Google Analytics endpoints
               "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com",
+
+              // Allow styles from same origin and inline styles (required for Tailwind CSS)
+              "style-src 'self' 'unsafe-inline'",
+
+              // Allow images from same origin, Google Analytics, data URIs, and any HTTPS source
               "img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com data: https:",
             ].join('; '),
           },

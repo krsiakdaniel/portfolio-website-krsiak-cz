@@ -863,6 +863,11 @@ export const ARIA_LABELS = {
   forestWithMountain: 'Forest with mountain',
 }
 
+export const ANALYTICS_WARNING = {
+  googleAnalytics: 'Google Analytics - is not configured!',
+  smartlook: 'Smartlook - is not configured!',
+}
+
 export const TEXT = {
   ...CALL_TO_ACTION,
   ...COMMON_VALUES,

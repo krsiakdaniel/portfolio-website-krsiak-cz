@@ -1,14 +1,21 @@
 import type { Viewport } from 'next'
 import { FC } from 'react'
 
-import { GoogleTagManager } from '@next/third-parties/google'
-
-import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
+// Layout
 import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
 
+// Apple Touch Icons
+import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
+
+// Analytics
+import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
+import Smartlook from '@/components/analytics/Smartlook'
+
+// Default metadata used by all pages if they don't have their own metadata
 import { defaultMetaData } from '@/lib/data/metadata/shared/defaultMetaData'
 
+// Root layout props
 import { RootLayoutProps } from '@/lib/utils/typeDefinitions/props/app'
 
 // Importing the Roboto font configuration
@@ -37,8 +44,9 @@ export const viewport: Viewport = {
 const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element => {
   return (
     <html lang="en" className={roboto.className}>
-      <GoogleTagManager gtmId="GTM-53BJRX" />
       <head>
+        <GoogleAnalytics />
+        <Smartlook />
         <AppleTouchIcons />
       </head>
       <body className={roboto.className}>
