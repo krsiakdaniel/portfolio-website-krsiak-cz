@@ -4,11 +4,9 @@ import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ICON_EMOJI } from '@/localization/english'
 
+import { PROJECT_OVERVIEW } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { ProjectImageProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
-
-const IMAGE_WIDTH = 600
-const IMAGE_HEIGHT = 340
 
 const ProjectImage: FC<ProjectImageProps> = ({ isFeatured, image, title }): JSX.Element => {
   const featuredProjectCSS = `${isFeatured ? 'bg-yellow-50 border-yellow-300' : 'bg-violet-50 border-violet-300'}`
@@ -24,8 +22,8 @@ const ProjectImage: FC<ProjectImageProps> = ({ isFeatured, image, title }): JSX.
 
         <ImageComponent
           src={image}
-          width={IMAGE_WIDTH}
-          height={IMAGE_HEIGHT}
+          width={PROJECT_OVERVIEW.WIDTH}
+          height={PROJECT_OVERVIEW.HEIGHT}
           alt={title}
           loading={ImageLoading.LAZY}
           customCss={`shadow-md rounded-lg border p-1 ${featuredProjectCSS}`}
