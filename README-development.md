@@ -30,7 +30,9 @@ As of **Feb 2, 2025**, the website is `"version": "2.48.23"`.
 
 ## 💻 Commands
 
-Commands for the terminal using `bun` as the package manager: <https://bun.sh/>
+This project uses `bun` as package manager: <https://bun.sh/>
+
+![bun - logo](/readme-images/development/bun/bun-logo.webp)
 
 ### 🔧 Bun Commands
 
