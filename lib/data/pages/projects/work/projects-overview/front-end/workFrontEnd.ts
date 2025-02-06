@@ -20,7 +20,7 @@ export const projectsWorkFrontEnd: Project[] = [
     id: PROJECT_ID.work.smartsupp.web,
     isFeatured: false,
     image: smartsuppWebThumb.src,
-    imageShowcase: [
+    galleryImages: [
       { id: 0, src: smartsuppWeb1.src },
       { id: 1, src: smartsuppWeb2.src },
       { id: 2, src: smartsuppWeb3.src },

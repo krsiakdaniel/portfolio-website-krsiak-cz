@@ -589,7 +589,7 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
     company: 'Personal project',
     role: `Front End ${EM_DASH}\u00A0Next.js`,
     description: `
-      My personal portfolio website showcases my\u00A0work and\u00A0skills as\u00A0a\u00A0${TEXT.reactDeveloperNBSP}.
+      My personal portfolio website showing my\u00A0work and\u00A0skills as\u00A0a\u00A0${TEXT.reactDeveloperNBSP}.
       It\u00A0features production-level code that I\u00A0write.`,
     linkText: 'Project details',
     projectLinks: [

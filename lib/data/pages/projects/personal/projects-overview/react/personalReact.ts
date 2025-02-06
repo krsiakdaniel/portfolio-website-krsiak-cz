@@ -21,7 +21,7 @@ export const projectsPersonalReact: Project[] = [
     id: PROJECT_ID.personal.cryptoMania,
     isFeatured: false,
     image: cryptomaniaThumb.src,
-    imageShowcase: [
+    galleryImages: [
       { id: 0, src: cryptomania1.src },
       { id: 1, src: cryptomania2.src },
       { id: 2, src: cryptomania3.src },

@@ -21,7 +21,7 @@ export const projectsPersonalNext: Project[] = [
     id: PROJECT_ID.personal.krsiak,
     isFeatured: true,
     image: krsiakThumb.src,
-    imageShowcase: [
+    galleryImages: [
       { id: 0, src: krsiak1.src },
       { id: 1, src: krsiak2.src },
       { id: 2, src: krsiak3.src },

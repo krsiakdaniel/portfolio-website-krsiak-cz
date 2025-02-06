@@ -19,7 +19,7 @@ export const projectsWorkWordPress: Project[] = [
     id: PROJECT_ID.work.smartsupp.help,
     isFeatured: false,
     image: smartsuppHelpThumb.src,
-    imageShowcase: [
+    galleryImages: [
       { id: 0, src: smartsuppHelp1.src },
       { id: 1, src: smartsuppHelp2.src },
       { id: 2, src: smartsuppHelp3.src },

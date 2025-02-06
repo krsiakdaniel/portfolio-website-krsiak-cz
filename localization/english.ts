@@ -286,7 +286,6 @@ export const MISC = {
   uptimeMonitor: 'krsiak.betteruptime.com',
   description: 'Description',
   goBack: 'Go\u00A0back',
-  gallery: 'Gallery',
   skillsIconsNames: `
       ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, ${COMMON_VALUES.next},
       ${COMMON_VALUES.redux}, ${COMMON_VALUES.graphql}, ${COMMON_VALUES.jest}, ${COMMON_VALUES.playwright},
@@ -767,7 +766,7 @@ export const CALL_TO_ACTION = {
     heading: 'Connect on\u00A0LinkedIn',
     textMobileAndDesktop:
       'Visit my LinkedIn profile to\u00A0connect and\u00A0see my\u00A0professional experiences.',
-    textDesktop: 'It showcases a\u00A0comprehensive overview of\u00A0my career journey.',
+    textDesktop: 'It shows a\u00A0comprehensive overview of\u00A0my career journey.',
   },
   github: {
     highlight: 'GitHub',
@@ -852,6 +851,11 @@ export const INTRODUCTION = {
   },
 }
 
+export const GALLERY = {
+  heading: 'Gallery',
+  screenshots: 'See project screenshots.',
+}
+
 export const ARIA_LABELS = {
   toggleMenu: 'Toggle Menu',
   menu: 'Menu',
@@ -861,6 +865,10 @@ export const ARIA_LABELS = {
   manWalking: 'Man walking',
   forest: 'Forest',
   forestWithMountain: 'Forest with mountain',
+  galleryProjectShowcase: 'Gallery - Project showcase',
+  galleryActiveImage: 'Active image',
+  galleryThumbnails: 'Gallery thumbnails',
+  galleryThumbnail: 'Thumbnail',
 }
 
 export const ANALYTICS_WARNING = {

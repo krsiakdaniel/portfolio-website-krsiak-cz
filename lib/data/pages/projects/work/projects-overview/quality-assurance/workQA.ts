@@ -18,7 +18,7 @@ export const projectsWorkQA: Project[] = [
     id: PROJECT_ID.work.groupon,
     isFeatured: false,
     image: grouponThumb.src,
-    imageShowcase: [
+    galleryImages: [
       { id: 0, src: groupon1.src },
       { id: 1, src: groupon2.src },
     ],

@@ -19,7 +19,7 @@ export const workReactKooperativa: Project = {
   id: PROJECT_ID.work.kooperativa,
   isFeatured: false,
   image: kooperativaThumb.src,
-  imageShowcase: [
+  galleryImages: [
     { id: 0, src: kooperativa1.src },
     { id: 1, src: kooperativa2.src },
     { id: 2, src: kooperativa3.src },

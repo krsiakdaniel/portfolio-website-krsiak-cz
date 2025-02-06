@@ -1,11 +1,5 @@
 import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
-import {
-  ImageShowcaseItem,
-  Link,
-  Project,
-  Section,
-  Skill,
-} from '@/lib/utils/typeDefinitions/interfaces'
+import { GalleryImage, Link, Project, Section, Skill } from '@/lib/utils/typeDefinitions/interfaces'
 
 // Customers Count Props
 export type CustomersCountProps = {
@@ -14,7 +8,22 @@ export type CustomersCountProps = {
 
 // Gallery Props
 export type GalleryProps = {
-  imageShowcase: ImageShowcaseItem[]
+  images: GalleryImage[]
+}
+
+// Gallery Image Props
+export type GalleryImageProps = GalleryProps['images'][0]
+
+// Gallery Preview Props
+export type GalleryPreviewProps = {
+  featuredImage: GalleryImageProps
+}
+
+// Gallery Thumbnails Props
+export type GalleryThumbnailsProps = {
+  images: GalleryImageProps[]
+  featuredImage: GalleryImageProps
+  setFeaturedImage: (image: GalleryImageProps) => void
 }
 
 // GitHub Repository Link Props

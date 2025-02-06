@@ -20,7 +20,7 @@ export const workReactKomercniBanka: Project = {
   id: PROJECT_ID.work.komercniBanka,
   isFeatured: false,
   image: komercniBankaThumb.src,
-  imageShowcase: [
+  galleryImages: [
     { id: 0, src: komercniBanka1.src },
     { id: 1, src: komercniBanka2.src },
     { id: 2, src: komercniBanka3.src },

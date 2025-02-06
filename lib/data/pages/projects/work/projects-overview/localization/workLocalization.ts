@@ -19,7 +19,7 @@ export const projectsWorkLocalization: Project[] = [
     id: PROJECT_ID.work.moravia,
     isFeatured: true,
     image: moraviaThumb.src,
-    imageShowcase: [
+    galleryImages: [
       { id: 0, src: moravia1.src },
       { id: 1, src: moravia2.src },
       { id: 2, src: moravia3.src },

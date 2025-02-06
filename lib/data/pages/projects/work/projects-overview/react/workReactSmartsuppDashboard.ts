@@ -19,7 +19,7 @@ export const workReactSmartsuppDashboard: Project = {
   id: PROJECT_ID.work.smartsupp.dashboard,
   isFeatured: true,
   image: smartsuppDashboardThumb.src,
-  imageShowcase: [
+  galleryImages: [
     { id: 0, src: smartsuppDashboard1.src },
     { id: 1, src: smartsuppDashboard2.src },
     { id: 2, src: smartsuppDashboard3.src },
