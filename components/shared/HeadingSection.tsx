@@ -6,7 +6,12 @@ import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 
 import { HeadingSectionProps } from '@/lib/utils/typeDefinitions/props/shared/heading-section'
 
-const HeadingSection: FC<HeadingSectionProps> = ({ text = '', id = '', dataTestId = '' }) => {
+const HeadingSection: FC<HeadingSectionProps> = ({
+  text,
+  icon = '',
+  id = '',
+  dataTestId = '',
+}): JSX.Element => {
   return (
     <Heading2
       id={id}
@@ -14,7 +19,12 @@ const HeadingSection: FC<HeadingSectionProps> = ({ text = '', id = '', dataTestI
       data-testid={dataTestId}
       customCss={`mt-20 border-b pb-2 font-medium uppercase ${CSS_GLOBAL_CLASSES.HEADING_SECTION}`}
     >
-      {text}
+      <span>{text}</span>
+      {icon && (
+        <span role="img" className="ml-2 text-3xl">
+          {icon}
+        </span>
+      )}
     </Heading2>
   )
 }

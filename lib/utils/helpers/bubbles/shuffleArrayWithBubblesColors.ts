@@ -5,7 +5,7 @@
  * @param {number} index1 - The index of the first element.
  * @param {number} index2 - The index of the second element.
  */
-const swapElements = (array: string[], index1: number, index2: number) => {
+const swapElements = (array: string[], index1: number, index2: number): void => {
   ;[array[index1], array[index2]] = [array[index2], array[index1]]
 }
 

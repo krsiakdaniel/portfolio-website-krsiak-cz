@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import TestimonialQuote from '@/components/pages/testimonials/TestimonialQuote'
@@ -22,7 +24,7 @@ const IMAGE_WIDTH_CHURCH = 1240
 const IMAGE_HEIGHT_CHURCH = 1860
 
 // TODO: add later when BLOG in MDX is implemented
-const BaptismTestimony = () => {
+const BaptismTestimony: FC = (): JSX.Element => {
   // CSS classes
   const containerClass = 'flex flex-col lg:flex-row'
   const textContainerClass = 'mt-4 pt-8 md:px-8 lg:w-3/4'

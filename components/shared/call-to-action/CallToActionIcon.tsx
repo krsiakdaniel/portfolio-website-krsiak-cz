@@ -9,7 +9,7 @@ import { DeviceTypeEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDef
 import { getEmojiEnum } from '@/lib/utils/helpers/getEmojiEnum'
 import { CallToActionIconProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
-const CallToActionIcon: FC<CallToActionIconProps> = ({ type, icon }) => {
+const CallToActionIcon: FC<CallToActionIconProps> = ({ type, icon }): JSX.Element => {
   const isMobile = type === DeviceTypeEnum.Mobile
   const isIconString = typeof icon === 'string'
   const transitionIconCSS = 'transition-transform duration-500 group-hover:scale-105'

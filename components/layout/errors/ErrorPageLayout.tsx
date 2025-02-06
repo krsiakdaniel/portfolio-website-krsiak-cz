@@ -9,7 +9,7 @@ import { ErrorPageLayoutProps } from '@/lib/utils/typeDefinitions/props/layout/e
 
 import imgError from '@/public/images/webp/errors/error.webp'
 
-const reset = () => {
+const reset = (): void => {
   window.location.reload()
 }
 

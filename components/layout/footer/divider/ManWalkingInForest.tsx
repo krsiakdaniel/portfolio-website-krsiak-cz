@@ -9,8 +9,8 @@ import { updateIconsManWalkingInForest } from '@/lib/utils/helpers/updateIconsMa
 const ManWalkingInForest: FC = (): JSX.Element => {
   const cssAnimationClass = 'animate-man-walk'
 
-  const [forestIcon, setForestIcon] = useState(ICON_EMOJI.nature.forest) // Initial forest icon
-  const [mountainIcon, setMountainIcon] = useState(ICON_EMOJI.nature.mountainAndTree) // Initial mountain icon
+  const [forestIcon, setForestIcon] = useState<string>(ICON_EMOJI.nature.forest) // Initial forest icon
+  const [mountainIcon, setMountainIcon] = useState<string>(ICON_EMOJI.nature.mountainAndTree) // Initial mountain icon
 
   useEffect(() => {
     // Initial update of icons

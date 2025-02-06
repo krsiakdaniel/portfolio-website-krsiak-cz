@@ -30,11 +30,11 @@ export const useResponsiveText = ({
   mobileText,
   desktopText,
   screenSize = ScreenSizeEnum.MD,
-}: ResponsiveTextProps) => {
-  const [text, setText] = useState(desktopText)
+}: ResponsiveTextProps): string => {
+  const [text, setText] = useState<string>(desktopText)
 
   useEffect(() => {
-    const handleResize = () => {
+    const handleResize = (): void => {
       setText(window.innerWidth <= screenSize ? mobileText : desktopText)
     }
 

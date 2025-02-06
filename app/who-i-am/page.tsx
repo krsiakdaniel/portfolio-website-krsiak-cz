@@ -45,7 +45,7 @@ const WhoIAm: FC = (): JSX.Element => {
         </section>
 
         <section>
-          <HeadingSection text={`${SOUTH_KOREA.headingTravel} ${ICON_EMOJI.airplane}`} />
+          <HeadingSection text={SOUTH_KOREA.headingTravel} icon={ICON_EMOJI.airplane} />
           <Paragraph>
             <span>{WHO_I_AM.aboutMe}</span>
           </Paragraph>

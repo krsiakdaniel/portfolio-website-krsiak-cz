@@ -10,7 +10,7 @@
   - [🌼 daisyUI - Component Library](#-daisyui---component-library)
   - [📋 Pages](#-pages)
     - [Pages - Main](#pages---main)
-    - [Pages - Projects Detail](#pages---projects-detail)
+    - [Pages - Projects Details](#pages---projects-details)
   - [🏎️ Website Performance](#️-website-performance)
   - [👨🏻‍💼 Team Leader and Task Management](#-team-leader-and-task-management)
   - [💻 Development](#-development)
@@ -78,9 +78,9 @@ The website has these top level pages and project detail pages.
 - 💬 [Testimonials](https://krsiak.cz/testimonials)
 - 🚦 [Status](https://krsiak.cz/status)
 
-### Pages - Projects Detail
+### Pages - Projects Details
 
-🚀 **Personal projects**:
+🚀 **Personal Projects**:
 
 - 👨🏻‍💻 [Portfolio Website - krsiak.cz](https://krsiak.cz/personal-projects/krsiak)
 - 💰 [CryptoMania](https://krsiak.cz/personal-projects/cryptomania)
@@ -92,7 +92,7 @@ The website has these top level pages and project detail pages.
 - ☔ [Kooperativa](https://krsiak.cz/work-experience/kooperativa)
 - 👨🏻‍💻 [Smartsupp - Company Website](https://krsiak.cz/work-experience/smartsupp-web)
 - 📚 [Smartsupp - Help Website](https://krsiak.cz/work-experience/smartsupp-help)
-- 💼 [Groupon - QA Automation](https://krsiak.cz/work-experience/groupon)
+- 🛒 [Groupon - QA Automation](https://krsiak.cz/work-experience/groupon)
 - 🌎 [Moravia - QA Automation](https://krsiak.cz/work-experience/moravia)
 
 ## 🏎️ Website Performance

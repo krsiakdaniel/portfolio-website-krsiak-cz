@@ -5,17 +5,20 @@ import { CAREER_REACT_DEV } from '@/localization/english-texts-data'
 export const careerReactDev: SkillsInfo[] = [
   {
     id: 0,
-    text: `${ICON_EMOJI.speechBalloon} ${CAREER_REACT_DEV.smartsupp.text}`,
+    icon: ICON_EMOJI.speechBalloon,
+    text: CAREER_REACT_DEV.smartsupp.text,
     years: CAREER_REACT_DEV.smartsupp.duration,
   },
   {
     id: 1,
-    text: `${ICON_EMOJI.bank} ${CAREER_REACT_DEV.kb.text}`,
-    years: CAREER_REACT_DEV.kb.duration,
+    icon: ICON_EMOJI.bank,
+    text: CAREER_REACT_DEV.komercniBanka.text,
+    years: CAREER_REACT_DEV.komercniBanka.duration,
   },
   {
     id: 2,
-    text: `${ICON_EMOJI.umbrellaWithRainDrops} ${CAREER_REACT_DEV.koop.text}`,
-    years: CAREER_REACT_DEV.koop.duration,
+    icon: ICON_EMOJI.umbrellaWithRainDrops,
+    text: CAREER_REACT_DEV.kooperativa.text,
+    years: CAREER_REACT_DEV.kooperativa.duration,
   },
 ]

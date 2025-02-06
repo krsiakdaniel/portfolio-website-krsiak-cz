@@ -11,8 +11,9 @@ const TestimonialsIntroduction: FC = (): JSX.Element => {
   return (
     <>
       <Paragraph dataTestId={DATA_TEST_IDS.page.testimonials.introduction}>
-        {TEXT.kaizenText1} {ICON_EMOJI.flagJapan} <Highlight text={TEXT.kaizen} />{' '}
-        {TEXT.kaizenText2}
+        {TEXT.kaizenText1} <span role="img">{ICON_EMOJI.flagJapan}</span>
+        {'\u00A0'}
+        <Highlight text={TEXT.kaizen} /> {TEXT.kaizenText2}
       </Paragraph>
     </>
   )

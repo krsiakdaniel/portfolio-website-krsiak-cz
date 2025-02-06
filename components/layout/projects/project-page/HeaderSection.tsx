@@ -4,7 +4,7 @@ import GoBackLink from '@/components/layout/projects/project-page/GoBackLink'
 import Heading1 from '@/components/shared/Heading1'
 import Heading2 from '@/components/shared/Heading2'
 
-import { SHARED } from '@/localization/english'
+import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 
 import { HeaderSectionProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
@@ -27,8 +27,8 @@ const HeaderSection: FC<HeaderSectionProps> = ({
         <span>{role}</span>
         {years && (
           <span className="ml-0 block text-lg font-normal text-neutral-600 md:ml-2 md:inline">
-            <span className="ml-0">{`${SHARED.middleDot} ${years}`}</span>
-            <span className="ml-1">{`${SHARED.middleDot} ${company}`}</span>
+            <span className="ml-0">{`${MIDDLE_DOT} ${years}`}</span>
+            <span className="ml-1">{`${MIDDLE_DOT} ${company}`}</span>
           </span>
         )}
       </Heading2>
