@@ -1,51 +1,53 @@
-import { SHARED, TEXT } from '@/localization/english'
+import { CUSTOMERS_COUNT, FLAGS_LOCALIZATION, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { EM_DASH, MIDDLE_DOT, NB_HYPHEN } from '@/lib/utils/constants/specialCharacters'
 import { GITHUB_URLS } from '@/lib/utils/constants/urls/githubUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { PROJECTS_URLS } from '@/lib/utils/constants/urls/projectsUrls'
 import { MONTHS, YEARS } from '@/lib/utils/constants/yearsExperience'
 
 export const TESTIMONIALS = {
-  personal: {
-    moorhead: {
-      name: 'Jonathan Moorhead',
-      job: 'Baptist Pastor ~\u00A0Grace\u00A0Community\u00A0Church',
-      text: `I have known Daniel for almost a decade and he has always proven himself faithful.
-      He has always been very dedicated to his employment, and has always been very respectful in his words and opinions.
-      I am very thankful for our friendship.`,
-    },
-    castro: {
-      name: 'Alexandre Castro',
-      job: 'QA Tester and Content Manager ~\u00A0Smartlook',
-      text: `On a personal note, Daniel helped me a great deal, when I started at Smartsupp. With him, I managed to learn so much on many different topics. 
-      To this day, I still rely on Daniel as a go-to person when I need advice on specific topics.`,
-    },
-  },
   work: {
     losseff: {
       name: 'Inka Losseff',
       job: 'Linguistic Services ~\u00A0Moravia\u00A0IT',
-      text: `Daniel is strong in creating automation utilities, term processing, all kinds of\u00A0tracking.
-      He has gained a lot of\u00A0experience in\u00A0bug processing.`,
+      text: `Daniel is\u00A0strong in\u00A0creating automation utilities, term processing, and\u00A0all kinds of\u00A0tracking.
+      He\u00A0has gained a\u00A0lot of\u00A0experience in\u00A0bug processing.`,
     },
     kvapil: {
       name: 'Roman Kvapil',
       job: 'Partner Account Manager ~\u00A0Microsoft',
-      text: `I can recommend his knowledge and perspective about the IT globally,
-      and his behavior as a\u00A0person are excellent for team work.`,
+      text: `I\u00A0can recommend his knowledge and\u00A0perspective about the\u00A0IT globally,
+      and\u00A0his behavior as\u00A0a\u00A0person is\u00A0excellent for\u00A0team work.`,
     },
     pridalek: {
       name: 'Vojtech Pridalek',
       job: 'Senior Localization Group Manager ~\u00A0Moravia\u00A0IT',
       text: `Daniel helped team with engineering skills, automating bug management tasks.
-      In\u00A0the\u00A0role of\u00A0bug-fixing engineer, he bridged linguistic managers and\u00A0production teams.`,
+      In\u00A0the\u00A0role of\u00A0bug-fixing engineer, he\u00A0bridged linguistic managers and\u00A0production teams.`,
     },
     popa: {
       name: 'Daniel Popa',
       job: 'Service Management Lead ~\u00A0IBM',
-      text: `I met Daniel Krsiak working on different team, he\u00A0was my desk-mate.
-      I found him passionate about technologies, eager to learn all the time, communicative and willing to share knowledge.`,
+      text: `I\u00A0met Daniel Krsiak working on\u00A0different team, he\u00A0was my\u00A0desk\u00A0mate.
+        I\u00A0found him passionate about technologies, eager to\u00A0learn all\u00A0the\u00A0time, communicative and\u00A0willing to\u00A0share knowledge.`,
+    },
+  },
+  personal: {
+    moorhead: {
+      name: 'Jonathan Moorhead',
+      job: 'Baptist Pastor ~\u00A0Grace\u00A0Community\u00A0Church',
+      text: `I\u00A0have known Daniel almost a\u00A0decade and\u00A0he\u00A0has always proven himself faithful.
+      He\u00A0has always been very dedicated to\u00A0his employment, and\u00A0has always been very respectful in\u00A0his\u00A0words and\u00A0opinions.
+      I\u00A0am\u00A0very thankful for\u00A0our friendship.`,
+    },
+    castro: {
+      name: 'Alexandre Castro',
+      job: 'QA Tester and\u00A0Content Manager ~\u00A0Smartlook',
+      text: `On\u00A0a\u00A0personal note, Daniel helped me\u00A0a\u00A0great deal, when I\u00A0started at\u00A0Smartsupp.
+        With him, I\u00A0managed to\u00A0learn so\u00A0much on\u00A0many different topics. 
+        To this day, I\u00A0still rely on\u00A0Daniel as\u00A0a\u00A0go\u00A0to\u00A0person when I\u00A0need advice on\u00A0specific topics.`,
     },
   },
 }
@@ -73,62 +75,62 @@ export const BADGES = {
 
 export const JOBS = {
   reactDev: {
-    title: `Front End ${SHARED.emDash} React Developer`,
-    description: `I built a customer care dashboard,
-      contributed to the\u00A0Komerční banka website,
+    title: `Front End ${EM_DASH} React Developer`,
+    description: `I\u00A0built a\u00A0customer care dashboard,
+      contributed to\u00A0the\u00A0Komerční banka website,
       and\u00A0developed the\u00A0Kooperativa insurance policy management app using JavaScript, TypeScript, React, and\u00A0Redux.`,
   },
   webDev: {
-    title: `Front End ${SHARED.emDash} Web Developer`,
-    description: `I led the development of a\u00A0responsive website for\u00A0a\u00A0SaaS company, integrating PHP, JavaScript,
-        and\u00A0UX\u00A0design principles to create a\u00A0seamless user experience.`,
+    title: `Front End ${EM_DASH} Web Developer`,
+    description: `I\u00A0led the\u00A0development of\u00A0a\u00A0responsive website for\u00A0a\u00A0SaaS company, integrating PHP, JavaScript,
+        and\u00A0UX\u00A0design principles to\u00A0create a\u00A0seamless user experience.`,
   },
   qaLead: {
-    title: `QA Automation ${SHARED.emDash} Team Leader`,
-    description: `I led 2 QA teams to implement Cypress and\u00A0Playwright for E2E testing,
-        writing tests in JavaScript and\u00A0TypeScript to ensure high-quality code.
-        This role sharpened my leadership skills and attention to detail.`,
+    title: `QA\u00A0Automation ${NB_HYPHEN}\u00A0Team\u00A0Leader`,
+    description: `I\u00A0led 2\u00A0QA teams to\u00A0implement Cypress and\u00A0Playwright for\u00A0E2E testing,
+        writing tests in\u00A0JavaScript and\u00A0TypeScript to\u00A0ensure high-quality code.
+        This role sharpened my\u00A0leadership skills and\u00A0attention to\u00A0detail.`,
   },
   locManager: {
-    title: `Localization ${SHARED.emDash} Manager`,
-    description: `I worked on the localization of Microsoft Windows\u00A08, and\u00A0Windows\u00A0Phone.
+    title: `Localization ${EM_DASH} Manager`,
+    description: `I\u00A0worked on\u00A0the\u00A0localization of\u00A0Microsoft Windows\u00A08, and\u00A0Windows\u00A0Phone.
         This role honed my\u00A0project management and\u00A0internationalization expertise.
-        I also led the localization of\u00A0a\u00A0SaaS company site translated into 9\u00A0languages: 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱`,
+        I\u00A0also led the\u00A0localization of\u00A0a\u00A0SaaS company site translated into 9\u00A0languages: 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱`,
   },
   locTester: {
-    title: `Localization ${SHARED.emDash} Tester`,
-    description: `I performed layout testing for Microsoft projects,
+    title: `Localization ${EM_DASH} Tester`,
+    description: `I\u00A0performed layout testing for\u00A0Microsoft projects,
         including Windows\u00A07 and\u00A0Windows\u00A0Store, ensuring cross-platform user experience quality.
         This role gave me understanding of\u00A0user-centric design.`,
   },
   ibmOperator: {
-    title: `IBM ${SHARED.emDash} Mainframe Operator`,
-    description: `Worked as a customer service representative and z/OS mainframe operator, managing mainframe operations and providing technical support.
-        This role enhanced my technical skills and customer service abilities.`,
+    title: `IBM ${EM_DASH} Mainframe Operator`,
+    description: `Worked as\u00A0a\u00A0customer service representative and\u00A0z/OS mainframe operator, managing mainframe operations and\u00A0providing technical support.
+        This role enhanced my\u00A0technical skills and\u00A0customer service abilities.`,
   },
   webCoder: {
-    title: `Front End ${SHARED.emDash} Web Coder`,
+    title: `Front End ${EM_DASH} Web Coder`,
     description: `My IT career began with developing websites for\u00A0small businesses, laying the\u00A0foundation for\u00A0my\u00A0career in\u00A0IT.
-          This experience taught me the importance of\u00A0continuous learning.`,
+          This experience taught me the\u00A0importance of\u00A0continuous learning.`,
   },
   ticketAgent: {
-    title: `Airport ${SHARED.emDash} Airline Ticket Agent`,
-    description: `Worked as an airline ticket agent, handling reservations, ticketing, and customer service.
-          This role developed my skills in communication and problem-solving.`,
+    title: `Airport ${EM_DASH} Airline Ticket Agent`,
+    description: `Worked as\u00A0an\u00A0airline ticket agent, handling reservations, ticketing, and\u00A0customer service.
+          This role developed my\u00A0skills in\u00A0communication and\u00A0problem-solving.`,
   },
   flightInfo: {
-    title: `Airport ${SHARED.emDash} Flights Information`,
-    description: `Worked in the airport's information desk, providing passengers with flight information and managing parking lot tickets.
-          This role enhanced my abilities in customer service and multitasking.`,
+    title: `Airport ${EM_DASH} Flights Information`,
+    description: `Worked in\u00A0the\u00A0airport's information desk, providing passengers with flight information and\u00A0managing parking tickets.
+          This role enhanced my abilities in\u00A0customer service and\u00A0multitasking.`,
   },
   kfc: {
-    title: `KFC ${SHARED.emDash} Frying Chicken`,
-    description: `Worked as a crew member at KFC, handling food preparation, customer service, and maintaining cleanliness.
-          This role developed my teamwork and multitasking skills.`,
+    title: `KFC ${EM_DASH} Frying Chicken`,
+    description: `Worked as\u00A0a\u00A0crew member at\u00A0KFC, handling food preparation, customer service, and\u00A0maintaining cleanliness.
+          This role developed my\u00A0teamwork and\u00A0multitasking skills.`,
   },
   highSchool: {
-    title: `High School ${SHARED.emDash} Finished as Accountant`,
-    description: `Completed high school with a focus on accounting. This education provided a strong foundation in financial principles and practices.`,
+    title: `High School ${EM_DASH} Finished as\u00A0Accountant`,
+    description: `Completed high school with a\u00A0focus on\u00A0accounting. This education provided a\u00A0strong foundation in\u00A0financial principles and\u00A0practices.`,
   },
 }
 
@@ -136,54 +138,54 @@ export const CAREER_PATH = {
   reactDev: 'React Dev',
   webDev: 'Web Dev',
   testing: 'Testing',
-  ibm: `IBM ${SHARED.middleDot} Mainframes`,
-  airport: `Airport ${SHARED.middleDot} Ticket Agent`,
+  ibm: `IBM ${MIDDLE_DOT} Mainframes`,
+  airport: `Airport ${MIDDLE_DOT} Ticket Agent`,
   kfc: 'KFC',
   highSchool: 'High School',
 }
 
 export const CAREER_REACT_DEV = {
   smartsupp: {
-    text: 'Smartsupp - Dashboard',
-    duration: '3 years',
+    text: `Smartsupp ${NB_HYPHEN}\u00A0Dashboard`,
+    duration: '3\u00A0years',
   },
-  kb: {
-    text: 'Komerční banka - Website',
-    duration: '10 months',
+  komercniBanka: {
+    text: `Komerční banka ${NB_HYPHEN}\u00A0Website`,
+    duration: '10\u00A0months',
   },
-  koop: {
-    text: 'Kooperativa - App',
-    duration: '8 months',
-  },
-}
-
-export const CAREER_TESTING = {
-  qaLead: {
-    text: 'QA Automation - Team Lead',
-    years: '1 year',
-  },
-  locManager: {
-    text: 'Localization - Manager',
-    years: '2 years',
-  },
-  locTester: {
-    text: 'Localization - Tester',
-    years: '3 years',
+  kooperativa: {
+    text: `Kooperativa ${NB_HYPHEN}\u00A0App`,
+    duration: '8\u00A0months',
   },
 }
 
 export const CAREER_WEB_DEV = {
   smartsupp: {
-    text: 'Smartsupp - Website',
-    years: '1 year',
+    text: `Smartsupp ${NB_HYPHEN}\u00A0Website`,
+    years: '1\u00A0year',
   },
   freelanceWeb: {
-    text: 'Freelance - Websites',
-    years: '5 years',
+    text: `Freelance ${NB_HYPHEN}\u00A0Websites`,
+    years: '5\u00A0years',
   },
   freelanceCoder: {
-    text: 'Freelance - Web Coder',
-    years: '1 year',
+    text: `Freelance ${NB_HYPHEN}\u00A0Web\u00A0Coder`,
+    years: '1\u00A0year',
+  },
+}
+
+export const CAREER_TESTING = {
+  qaLead: {
+    text: `QA\u00A0Automation ${NB_HYPHEN}\u00A0Team\u00A0Lead`,
+    years: '1\u00A0year',
+  },
+  locManager: {
+    text: `Localization ${NB_HYPHEN}\u00A0Manager`,
+    years: '2\u00A0years',
+  },
+  locTester: {
+    text: `Localization ${NB_HYPHEN}\u00A0Tester`,
+    years: '3\u00A0years',
   },
 }
 
@@ -192,36 +194,18 @@ export const PROJECTS_WORK = {
     sections: {
       responsibility: {
         title: 'My Job',
-        items: ["I was responsible for the entire company's Front End and website presentation."],
+        items: [
+          "I\u00A0was responsible for\u00A0the\u00A0entire company's Front\u00A0End and\u00A0website presentation.",
+        ],
       },
       website: {
         title: 'Developed new website',
-        items: ['The main company website was built with PHP and JavaScript.'],
+        items: ['The\u00A0main company website was built with PHP and\u00A0JavaScript.'],
       },
       docs: {
         title: 'Created new documentation site',
         items: [
-          'I created a documentation site that was running on Jekyll, Markdown, and Shopify Liquid template language, and later the site was moved to VuePress.',
-        ],
-      },
-    },
-  },
-  smartsuppWordPress: {
-    sections: {
-      responsibility: {
-        title: 'My Job',
-        items: ['I was the company WordPress administrator and I was responsible for the website.'],
-      },
-      tutorials: {
-        title: 'Writing new tutorials',
-        items: [
-          'I was writing tutorials for the company main product chat dashboard, taking screenshots and creating new content.',
-        ],
-      },
-      localization: {
-        title: 'Website localization',
-        items: [
-          'The company had customers from different countries, I was responsible for the localization into 9 languages. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱',
+          'I\u00A0created a\u00A0documentation site that was running on\u00A0Jekyll, Markdown, and\u00A0Shopify Liquid template language.',
         ],
       },
     },
@@ -230,14 +214,20 @@ export const PROJECTS_WORK = {
     sections: {
       responsibility: {
         title: 'My Job',
-        items: ['I was the company WordPress administrator and I was responsible for the website.'],
-      },
-      features: {
-        title: 'Developed new features',
         items: [
-          'I participated in the implementation of new features for the chat application dashboard.',
-          'Ranging from new chat features to working on a chatbot page and creating graphs for statistics.',
-          'I also updated the old JavaScript codebase to a modern one using REACT with hooks.',
+          'I\u00A0was the\u00A0company WordPress\u00A0administrator and\u00A0I\u00A0was responsible for\u00A0the\u00A0website.',
+        ],
+      },
+      tutorials: {
+        title: 'Writing new tutorials',
+        items: [
+          'I\u00A0was writing tutorials for\u00A0the\u00A0company main product chat\u00A0dashboard, taking screenshots and\u00A0creating new content.',
+        ],
+      },
+      localization: {
+        title: 'Website localization',
+        items: [
+          `The\u00A0company had customers from different countries, I\u00A0was responsible for\u00A0the\u00A0localization into 9\u00A0languages. ${FLAGS_LOCALIZATION.emojis}`,
         ],
       },
     },
@@ -247,16 +237,16 @@ export const PROJECTS_WORK = {
       responsibility: {
         title: 'My Job',
         items: [
-          'I worked for a company that creates a chat solution for customer care teams.',
-          'The product is a chat box for e-commerce and regular websites, and integrates with an email inbox and Facebook Messenger, all-in-one messaging platform.',
+          'I\u00A0worked for\u00A0a\u00A0company that creates a\u00A0chat solution for\u00A0customer care teams.',
+          'The\u00A0product is\u00A0a\u00A0chat box for\u00A0e-commerce and\u00A0regular websites, and\u00A0integrates with an\u00A0email inbox and\u00A0Facebook Messenger, all-in-one messaging platform.',
         ],
       },
       features: {
         title: 'Developed new features',
         items: [
-          'I participated in the implementation of new features for the chat application dashboard.',
-          'Ranging from new chat features to working on a chatbot page and creating graphs for statistics.',
-          'I also updated the old JavaScript codebase to a modern one using REACT with hooks.',
+          'I\u00A0participated in\u00A0the\u00A0implementation of\u00A0new features for\u00A0the\u00A0chat application dashboard.',
+          'Ranging from new chat features to\u00A0working on\u00A0a\u00A0chatbot page and\u00A0creating graphs for\u00A0statistics.',
+          'I\u00A0also updated the\u00A0old JavaScript codebase to\u00A0a\u00A0modern one using REACT with hooks.',
         ],
       },
     },
@@ -265,18 +255,18 @@ export const PROJECTS_WORK = {
     sections: {
       responsibility: {
         title: 'My Job',
-        items: ['I managed a team of 3 people in localization team.'],
+        items: ['I\u00A0managed a\u00A0team of\u00A03\u00A0people in\u00A0localization team.'],
       },
       delivery: {
         title: 'Responsibility',
         items: [
-          'I was responsible for translation delivery and quality checks for Microsoft projects Windows 8 + Windows Phone.',
+          'I\u00A0was responsible for\u00A0translation delivery and\u00A0quality checks for\u00A0Microsoft projects Windows\u00A08 +\u00A0Windows\u00A0Phone.',
         ],
       },
       automation: {
-        title: 'QA Automation',
+        title: 'QA\u00A0Automation',
         items: [
-          'I was working on automation and scripts for manual repetitive tasks including filling in forms and checking translations.',
+          'I\u00A0was working on\u00A0automation and\u00A0scripts for\u00A0manual repetitive tasks including filling in\u00A0forms and\u00A0checking translations.',
         ],
       },
     },
@@ -286,42 +276,42 @@ export const PROJECTS_WORK = {
       responsibility: {
         title: 'My Job',
         items: [
-          'I worked for Kooperativa, the 2nd biggest insurance company in the Czech Republic, owned by Vienna Insurance Group.',
-          'I was involved in the development of application that will improve services and customer experience of over 2 480 000+ customers.',
+          'I\u00A0worked for\u00A0Kooperativa, the\u00A02nd biggest insurance company in\u00A0the\u00A0Czech Republic, owned by\u00A0Vienna Insurance Group.',
+          'I\u00A0was involved in\u00A0the\u00A0development of\u00A0application that will improve services and\u00A0customer experience of\u00A0over 2\u00A0480\u00A0000+ customers.',
         ],
       },
       features: {
         title: 'Developed new features',
         items: [
-          'I was part of team to create comprehensive solution for arranging and managing insurance contracts.',
-          'The application is designed to enhance the customer experience while providing employees with a modern system that simplifies their work.',
-          'I worked with TypeScript, React, and Redux. I used Figma designs to develop a user interface. I also worked with a backend developer to ensure API integration.',
+          'I\u00A0was part of\u00A0team to\u00A0create comprehensive solution for\u00A0arranging and\u00A0managing insurance contracts.',
+          'The\u00A0application is\u00A0designed to\u00A0enhance the\u00A0customer experience while providing employees with a\u00A0modern system that simplifies their work.',
+          'I\u00A0worked with TypeScript, React, and\u00A0Redux. I\u00A0used Figma designs to\u00A0develop a\u00A0user interface. I\u00A0also worked with a\u00A0backend developer to\u00A0ensure API integration.',
         ],
       },
     },
   },
-  kb: {
+  komercniBanka: {
     sections: {
       responsibility: {
         title: 'My Job',
         items: [
-          'I worked for the 3rd biggest bank in the Czech Republic, Komerční banka, owned by Société Générale.',
-          'I worked on a website that is used by 2 000 000+ customers.',
+          'I\u00A0worked for\u00A0the\u00A03rd biggest bank in\u00A0the\u00A0Czech Republic, Komerční banka, owned by\u00A0Société Générale.',
+          `I\u00A0worked on\u00A0a\u00A0website that is\u00A0used by${CUSTOMERS_COUNT.komercniBanka} customers.`,
         ],
       },
       features: {
         title: 'Developed new features',
         items: [
-          'I was tasked with creating a search page, with filters and results pagination for the bank branches and ATM locations and detail sub-pages.',
-          'My task was to provide an easy user experience for all customers, using the Geolocation API and the Google Places Autocomplete API, so they could find their nearest bank branch or ATM.',
-          'I created an Exchange Rates page with rates detail pages.',
+          'I\u00A0was tasked with creating a\u00A0search page, with filters and\u00A0results pagination for\u00A0the\u00A0bank branches and\u00A0ATM locations and\u00A0detail sub-pages.',
+          'My task was to\u00A0provide an\u00A0easy user experience for\u00A0all customers, using the\u00A0Geolocation API and\u00A0the\u00A0Google Places Autocomplete API, so\u00A0they could find their nearest bank branch or\u00A0ATM.',
+          'I\u00A0created an\u00A0Exchange Rates page with rates detail pages.',
         ],
       },
       responsive: {
         title: 'Responsive design',
         items: [
-          'I was responsible for the responsive aspects of the web as well.',
-          'Making sure it works well for users across desktop, tablet, and mobile platforms.',
+          'I\u00A0was responsible for\u00A0the\u00A0responsive aspects of\u00A0the\u00A0web as\u00A0well.',
+          'Making sure it\u00A0works well for\u00A0users across desktop, tablet, and\u00A0mobile platforms.',
         ],
       },
     },
@@ -331,38 +321,38 @@ export const PROJECTS_WORK = {
       responsibility: {
         title: 'My Job',
         items: [
-          'I worked on automation, testing scripts and team coordination.',
-          'Groupon is an online marketplace, offering discounts on products and services, with 17 million customers.',
+          'I\u00A0worked on\u00A0automation, testing scripts and\u00A0team coordination.',
+          `Groupon is\u00A0an\u00A0online marketplace, offering discounts on\u00A0products and\u00A0services, with ${CUSTOMERS_COUNT.groupon} customers.`,
         ],
       },
       role: {
         title: 'My role',
         items: [
-          'SDET = Software Development Engineer in Testing.',
-          'In testing, it is an IT professional who can work equally in both development and testing.',
+          'SDET =\u00A0Software Development Engineer in\u00A0Testing.',
+          'In\u00A0testing, it\u00A0is\u00A0an\u00A0IT\u00A0professional who can work equally in\u00A0both development and\u00A0testing.',
         ],
       },
       automation: {
-        title: 'Responsibility #1:',
-        titleHighlight: 'QA Automation and\u00A0Testing Scripts',
+        title: 'Responsibility\u00A0#1:',
+        titleHighlight: 'QA\u00A0Automation and\u00A0Testing\u00A0Scripts',
         items: [
-          'Setting up automation, including Playwright for E2E.',
-          'Writing E2E tests in JavaScript and TypeScript.',
-          'Coordinating efforts related to unit tests and integration tests.',
-          'Writing documentation for developers.',
-          'CI/CD pipeline in GitHub using Jenkins, for unit, integration, and E2E tests.',
+          'Setting up\u00A0automation, including Playwright for\u00A0E2E.',
+          'Writing E2E tests in\u00A0JavaScript and\u00A0TypeScript.',
+          'Coordinating efforts related to\u00A0unit tests and\u00A0integration tests.',
+          'Writing documentation for\u00A0developers.',
+          'CI/CD pipeline in\u00A0GitHub using Jenkins, for\u00A0unit, integration, and\u00A0E2E tests.',
         ],
       },
       coordination: {
-        title: 'Responsibility #2:',
+        title: 'Responsibility\u00A0#2:',
         titleHighlight: 'Team Coordination',
         items: [
-          'Involved in hiring new SDET members for QA team.',
-          'Work across 4 teams.',
-          '3 DEV teams (15 developers). Setting priorities for writing unit and integration tests.',
-          '1 QA team (6 manual testers). Coordinating regression testing for the website.',
-          'Drive the discussion and decisions on technical topics related to the teams.',
-          'Keeping up-to-date JIRA tasks for testing.',
+          'Involved in\u00A0hiring new SDET members for\u00A0QA\u00A0team.',
+          'Work across 4\u00A0teams.',
+          '3\u00A0DEV teams (15\u00A0developers). Setting priorities for\u00A0writing unit and\u00A0integration tests.',
+          '1\u00A0QA team (6\u00A0manual testers). Coordinating regression testing for\u00A0the\u00A0website.',
+          'Drive the\u00A0discussion and\u00A0decisions on\u00A0technical topics related to\u00A0the\u00A0teams.',
+          'Keeping up-to-date JIRA tasks for\u00A0testing.',
         ],
       },
     },
@@ -372,11 +362,11 @@ export const PROJECTS_WORK = {
 export const WORK_PROJECTS_OVERVIEW = {
   moravia: {
     title: 'Windows',
-    company: 'RWS - Moravia IT',
-    role: 'QA Automation - Team Leader',
+    company: 'RWS - Moravia\u00A0IT',
+    role: `QA\u00A0Automation ${NB_HYPHEN}\u00A0Team\u00A0Leader`,
     years: '1 year',
     description:
-      'Worked\u00A0on\u00A0localization testing for Microsoft Windows 8 + Windows Phone. I\u00A0had\u00A0an\u00A0amazing chance to be team leader on Microsoft products.',
+      'Worked on\u00A0localization testing for\u00A0Microsoft Windows\u00A08 and\u00A0Windows Phone. I\u00A0had an\u00A0amazing chance to\u00A0be team leader on\u00A0Microsoft products.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -385,16 +375,16 @@ export const WORK_PROJECTS_OVERVIEW = {
         dataTestId: DATA_TEST_IDS.links.MORAVIA,
       },
     ],
-    customers: '80 out of the world top 100 brands',
+    customers: '80\u00A0out of\u00A0the\u00A0world top\u00A0100\u00A0brands',
     linkProjectPage: PAGES_URL.work.moravia,
   },
   groupon: {
-    title: 'E-Commerce - Marketplace',
+    title: `E${NB_HYPHEN}Commerce ${NB_HYPHEN}\u00A0Marketplace`,
     company: 'Groupon',
-    role: 'QA Automation - Team Leader',
+    role: `QA\u00A0Automation ${NB_HYPHEN}\u00A0Team\u00A0Leader`,
     years: '4 months',
     description:
-      'I was responsible setting up new QA team, hiring and managing people. Setting up QA processes, writing test plans, and testing scripts.',
+      'I\u00A0was responsible setting up\u00A0new QA\u00A0team, hiring and\u00A0managing people. Setting up\u00A0QA\u00A0processes, writing test plans, and\u00A0testing scripts.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -403,25 +393,25 @@ export const WORK_PROJECTS_OVERVIEW = {
         dataTestId: DATA_TEST_IDS.links.GROUPON,
       },
     ],
-    customers: '17 million customers',
+    customers: `${CUSTOMERS_COUNT.groupon}`,
     linkProjectPage: PAGES_URL.work.groupon,
   },
   komercniBanka: {
-    title: 'Commerce Bank - Website',
+    title: `Commerce Bank ${NB_HYPHEN}\u00A0Website`,
     company: 'Komerční banka',
     role: 'React Developer',
     years: '10\u00A0months',
     description:
-      'I created search page for ATM and branches, with their detail pages. And\u00A0also Exchange rates page with details for each currency.',
+      'I\u00A0created search page for\u00A0ATM and\u00A0branches, with their detail pages. And\u00A0also Exchange rates page with details for\u00A0each currency.',
     linkText: 'Project details',
     projectLinks: [
       {
-        urlText: 'Branches & ATMs',
+        urlText: `Branches &\u00A0ATMs`,
         url: PROJECTS_URLS.work.komercniBanka.branchesAndAtms,
         dataTestId: DATA_TEST_IDS.links.KOMERCNI_BANKA_BRANCHES_AND_ATMS,
       },
       {
-        urlText: 'Branches & ATMs - Details',
+        urlText: `Branches &\u00A0ATMs ${NB_HYPHEN}\u00A0Details`,
         url: PROJECTS_URLS.work.komercniBanka.branchesAndAtmsDetails,
         dataTestId: DATA_TEST_IDS.links.KOMERCNI_BANKA_BRANCHES_AND_ATMS_DETAILS,
       },
@@ -431,21 +421,20 @@ export const WORK_PROJECTS_OVERVIEW = {
         dataTestId: DATA_TEST_IDS.links.KOMERCNI_BANKA_EXCHANGE_RATES,
       },
       {
-        urlText: 'Exchange Rates - Details',
+        urlText: `Exchange Rates ${NB_HYPHEN}\u00A0Details`,
         url: PROJECTS_URLS.work.komercniBanka.exchangeRatesDetails,
         dataTestId: DATA_TEST_IDS.links.KOMERCNI_BANKA_EXCHANGE_RATES_DETAILS,
       },
     ],
-    customers: '2 000 000+',
+    customers: `${CUSTOMERS_COUNT.komercniBanka}`,
     linkProjectPage: PAGES_URL.work.komercniBanka,
   },
   kooperativa: {
-    title: 'Insurance Company - App',
+    title: `Insurance Company ${NB_HYPHEN}\u00A0App`,
     company: 'Kooperativa',
     role: 'React Developer',
     years: '8\u00A0months',
-    description:
-      'I worked on an application for managing insurance policies for citizens. Kooperativa has over 2 480 000+ customers in Czech Republic.',
+    description: `I\u00A0worked on\u00A0an\u00A0application for\u00A0managing insurance policies for\u00A0citizens. Kooperativa has over ${CUSTOMERS_COUNT.kooperativa} customers in\u00A0Czech\u00A0Republic.`,
     linkText: 'Project details',
     projectLinks: [
       {
@@ -454,16 +443,16 @@ export const WORK_PROJECTS_OVERVIEW = {
         dataTestId: DATA_TEST_IDS.links.KOOPERATIVA,
       },
     ],
-    customers: '2 480 000+',
+    customers: `${CUSTOMERS_COUNT.kooperativa}`,
     linkProjectPage: PAGES_URL.work.kooperativa,
   },
   frontEnd: {
-    title: 'SaaS Company - Website',
+    title: `SaaS Company ${NB_HYPHEN}\u00A0Website`,
     company: 'Smartsupp',
     role: 'Front End Developer',
     years: '1\u00A0year',
     description:
-      'I created SaaS company website and was responsible for Front End. I worked with the main UX designer on new brand color theme.',
+      'I\u00A0created SaaS company website and\u00A0was responsible for\u00A0Front End. I\u00A0worked with the\u00A0main UX designer on\u00A0new brand color theme.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -472,16 +461,16 @@ export const WORK_PROJECTS_OVERVIEW = {
         dataTestId: DATA_TEST_IDS.links.SMARTSUPP_WEB,
       },
     ],
-    customers: '100 000+',
+    customers: `${CUSTOMERS_COUNT.smartsupp}`,
     linkProjectPage: PAGES_URL.work.smartsupp.web,
   },
   wordPress: {
-    title: 'SaaS Company - HELP Website',
+    title: `SaaS Company ${NB_HYPHEN}\u00A0HELP Website`,
     company: 'Smartsupp',
     role: 'Admin &\u00A0Content Writer',
     years: '6\u00A0months',
     description:
-      'Localization of the company HELP website into 9 languages. I\u00A0was\u00A0also\u00A0writing tutorials and creating content.',
+      'Localization of\u00A0the\u00A0company HELP website into 9\u00A0languages. I\u00A0was\u00A0also\u00A0writing tutorials and\u00A0creating content.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -490,16 +479,16 @@ export const WORK_PROJECTS_OVERVIEW = {
         dataTestId: DATA_TEST_IDS.links.SMARTSUPP_HELP,
       },
     ],
-    customers: '100 000+',
+    customers: `${CUSTOMERS_COUNT.smartsupp}`,
     linkProjectPage: PAGES_URL.work.smartsupp.help,
   },
   reactDashboard: {
-    title: 'SaaS Company - Dashboard',
+    title: `SaaS Company\u00A0${NB_HYPHEN}\u00A0Dashboard`,
     company: 'Smartsupp',
     role: 'React Developer',
     years: '3\u00A0years 2\u00A0months',
     description:
-      'I worked on chat dashboard features and new design of settings. I was involved in UX team learning about user needs.',
+      'I\u00A0worked on\u00A0chat dashboard features and\u00A0new design of\u00A0settings. I\u00A0was involved in\u00A0UX team learning about user needs.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -508,7 +497,7 @@ export const WORK_PROJECTS_OVERVIEW = {
         dataTestId: DATA_TEST_IDS.links.SMARTSUPP_DASHBOARD,
       },
     ],
-    customers: '100 000+',
+    customers: `${CUSTOMERS_COUNT.smartsupp}`,
     linkProjectPage: PAGES_URL.work.smartsupp.dashboard,
   },
 }
@@ -518,31 +507,31 @@ export const OTHER_EXPERIENCE = {
     freelance: {
       company: 'Freelance',
       role: 'Web Developer /\u00A0Consultant',
-      description: `${YEARS.consultantWebsites} years ${SHARED.middleDot} part-time ${SHARED.emDash} Websites for small companies.`,
+      description: `${YEARS.consultantWebsites} years ${MIDDLE_DOT} part-time ${EM_DASH}\u00A0Websites for\u00A0small companies.`,
     },
   },
   wordPress: {
     company: 'Freelance',
     role: 'WordPress Developer /\u00A0Consultant',
-    description: `${YEARS.consultantWordPress} years ${SHARED.middleDot} part-time ${SHARED.emDash} Websites for small companies.`,
+    description: `${YEARS.consultantWordPress} years ${MIDDLE_DOT} part-time ${EM_DASH}\u00A0Websites for\u00A0small companies.`,
   },
   localization: {
     smartsupp: {
       company: 'Smartsupp',
-      role: 'Localization - Manager',
-      description: `${YEARS.localizationManager} years ${SHARED.emDash} Website localization. 🇬🇧 🇨🇿 🇪🇸 🇫🇷 🇭🇺 🇩🇪 🇮🇹 🇳🇱 🇵🇱`,
+      role: `Localization ${NB_HYPHEN}\u00A0Manager`,
+      description: `${YEARS.localizationManager} years ${EM_DASH} Website localization. ${FLAGS_LOCALIZATION.emojis}`,
     },
   },
   qualityAssurance: {
     smartsupp: {
       company: 'Smartsupp',
-      role: 'QA Automation - Team Leader',
-      description: `${MONTHS.qaTeamLeaderAtSmartsupp} months ${SHARED.emDash} Set up Cypress E2E testing for SaaS company.`,
+      role: `QA\u00A0Automation ${NB_HYPHEN}\u00A0Team\u00A0Leader`,
+      description: `${MONTHS.qaTeamLeaderAtSmartsupp} months ${EM_DASH} Set up\u00A0Cypress E2E testing for\u00A0SaaS company.`,
     },
     moravia: {
-      company: 'RWS - Moravia IT',
-      role: 'Localization - Tester',
-      description: `${YEARS.localizationTester} years ${SHARED.emDash} Testing Windows 7 + Windows Store layouts.`,
+      company: `RWS ${NB_HYPHEN} Moravia IT`,
+      role: `Localization ${NB_HYPHEN}\u00A0Tester`,
+      description: `${YEARS.localizationTester} years ${EM_DASH} Testing Windows\u00A07 +\u00A0Windows\u00A0Store layouts.`,
     },
   },
 }
@@ -551,7 +540,7 @@ export const PAGE_HOME = {
   expertise: {
     committedMindset: {
       items: [
-        { text: 'Curious and always learning' },
+        { text: 'Curious and\u00A0always learning' },
         { text: 'Streamlining processes' },
         { text: 'Strong team player' },
       ],
@@ -559,14 +548,14 @@ export const PAGE_HOME = {
     problemSolving: {
       items: [
         { text: 'Enjoying brainstorming sessions' },
-        { text: 'Thinking outside the box' },
-        { text: 'Adapting to changes' },
+        { text: 'Thinking outside the\u00A0box' },
+        { text: 'Adapting to\u00A0changes' },
       ],
     },
     skillsForCompany: {
       items: [
         { text: 'Developing scalable codebases' },
-        { text: 'Focus on CI/CD automation' },
+        { text: 'Focus on\u00A0CI/CD automation' },
         { text: 'Prioritizing type safety' },
       ],
     },
@@ -579,7 +568,7 @@ export const PROJECTS_PERSONAL = {
     titleHighlight: '',
     items: [
       {
-        text: 'I needed a new website for my personal presentation. I learnt Next.js, and used Tailwind CSS.',
+        text: 'I\u00A0needed a\u00A0new website for\u00A0my personal presentation. I\u00A0learnt Next.js, and\u00A0used Tailwind CSS.',
       },
     ],
   },
@@ -588,7 +577,7 @@ export const PROJECTS_PERSONAL = {
     titleHighlight: '',
     items: [
       {
-        text: 'This site was created to display cryptocurrencies with the ability to search for them and display their current value.',
+        text: 'This site was created to\u00A0display cryptocurrencies with the\u00A0ability to\u00A0search for\u00A0them and\u00A0display their current value.',
       },
     ],
   },
@@ -598,9 +587,10 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
   next: {
     title: 'Portfolio Website',
     company: 'Personal project',
-    role: 'Front End - Next.js',
-    description:
-      'My personal portfolio website showcases my work and skills as a React Developer. It features production-level code that I  write.',
+    role: `Front End ${EM_DASH}\u00A0Next.js`,
+    description: `
+      My personal portfolio website showcases my\u00A0work and\u00A0skills as\u00A0a\u00A0${TEXT.reactDeveloperNBSP}.
+      It\u00A0features production-level code that I\u00A0write.`,
     linkText: 'Project details',
     projectLinks: [
       {
@@ -616,9 +606,9 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
   react: {
     title: 'CryptoMania',
     company: 'Personal project',
-    role: 'Front End - React',
+    role: `Front End ${EM_DASH}\u00A0React`,
     description:
-      'Crypto currency prices app fetching latest data from CoinGecko API. This\u00A0is very small project in Chakra UI with dark mode.',
+      'Crypto currency prices app fetching latest data from CoinGecko\u00A0API. This\u00A0is very small project in\u00A0Chakra\u00A0UI with dark mode.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -628,7 +618,7 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
       },
     ],
     linkGitHub: GITHUB_URLS.personal.cryptoMania,
-    personalProjectNote: 'Project to exercise coding.',
+    personalProjectNote: 'Project to\u00A0exercise coding.',
     linkProjectPage: PAGES_URL.personal.cryptoMania,
   },
 }

@@ -25,7 +25,7 @@ const ImageComponent: FC<ImageComponentProps> = ({
   caption = '',
   dataTooltipContent = '',
   dataTestId = '',
-}) => {
+}): JSX.Element => {
   const hasTooltip = dataTooltipContent !== ''
 
   // Is image src 'object' ? 'extract the image path from imported image object' : 'get string from direct image path'

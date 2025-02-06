@@ -11,7 +11,7 @@ const Paragraph: FC<ParagraphProps> = ({
   size = 'text-lg',
   customCss = '',
   children,
-}) => {
+}): JSX.Element => {
   const attributes = getAttributes({ dataTestId })
 
   return (

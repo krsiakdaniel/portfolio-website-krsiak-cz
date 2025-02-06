@@ -240,6 +240,13 @@ const SOUTH_KOREA = {
   palace: 'south-korea-palace',
 }
 
+export const COUNTRY = {
+  czechRepublic: 'cz',
+  slovakia: 'sk',
+  finland: 'fi',
+  korea: 'kr',
+}
+
 export const DATA_TEST_IDS = {
   breadcrumbs: 'breadcrumbs',
   gallery: 'gallery',
@@ -259,4 +266,5 @@ export const DATA_TEST_IDS = {
   misc: MISC,
   baptism: BAPTISM,
   southKorea: SOUTH_KOREA,
+  country: COUNTRY,
 }

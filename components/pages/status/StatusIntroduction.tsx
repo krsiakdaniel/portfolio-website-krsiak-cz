@@ -12,8 +12,11 @@ const StatusIntroduction: FC = (): JSX.Element => {
     <>
       <Paragraph dataTestId={DATA_TEST_IDS.page.status.introduction}>
         {INTRODUCTION.status.text.current} <Highlight text={INTRODUCTION.status.text.status} />{' '}
-        {INTRODUCTION.status.text.showing} <Highlight text={INTRODUCTION.status.text.performance} />{' '}
-        {INTRODUCTION.status.text.of} <Highlight text={INTRODUCTION.status.text.project} />{' '}
+        {INTRODUCTION.status.text.showing}
+        {'\u00A0'}
+        <Highlight text={INTRODUCTION.status.text.performance} /> {INTRODUCTION.status.text.of}
+        {'\u00A0'}
+        <Highlight text={INTRODUCTION.status.text.project} />{' '}
         {INTRODUCTION.status.text.integrations}
       </Paragraph>
     </>

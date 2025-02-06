@@ -12,6 +12,7 @@ export interface Errors {
 export interface Job {
   id: number
   title: string
+  icon: string
   duration: number
   unit: DurationUnitEnum
   description: string
@@ -106,6 +107,7 @@ export interface SkillCardItem {
 // Skills Info
 export interface SkillsInfo {
   id: number
+  icon?: string
   text: string
   years?: string
 }

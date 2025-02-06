@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import { SkillBadgeProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
-const SkillBadge: FC<SkillBadgeProps> = ({ skillObject }) => {
+const SkillBadge: FC<SkillBadgeProps> = ({ skillObject }): JSX.Element => {
   return (
     <>
       {skillObject.skillsList.map((skill) => (

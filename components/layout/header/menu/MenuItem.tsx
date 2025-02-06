@@ -4,7 +4,7 @@ import { FC } from 'react'
 import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
 import { MenuItemProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
-const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile }) => {
+const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile }): JSX.Element => {
   const { id, href, icon, text, dataTestId } = linkItem
 
   const mobileDesktopCSS = isMobile ? 'border-b border-gray-100 py-3' : 'py-2'

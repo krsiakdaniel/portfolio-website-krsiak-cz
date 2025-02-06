@@ -7,7 +7,7 @@ import { ICON_EMOJI } from '@/localization/english'
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 import { EasterEggGhostProps } from '@/lib/utils/typeDefinitions/props/layout/easter-egg-ghost'
 
-const EasterEggGhost: FC<EasterEggGhostProps> = ({ arrowDirection }) => {
+const EasterEggGhost: FC<EasterEggGhostProps> = ({ arrowDirection }): JSX.Element => {
   const cssAnimationClassNext = 'animate-ghost-next'
   const cssAnimationClassPrevious = 'animate-ghost-previous'
 
@@ -24,7 +24,9 @@ const EasterEggGhost: FC<EasterEggGhostProps> = ({ arrowDirection }) => {
       className={`${moveGhostDirectionClass} hidden select-none px-4 group-hover:inline-block`}
     >
       {isArrowDirectionRight && <GhostScreaming />}
-      <span className="mx-2">{ICON_EMOJI.ghost}</span>
+      <span role="img" className="mx-2">
+        {ICON_EMOJI.ghost}
+      </span>
       {isArrowDirectionLeft && <GhostScreaming />}
     </span>
   )

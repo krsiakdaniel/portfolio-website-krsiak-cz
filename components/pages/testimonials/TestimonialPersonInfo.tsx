@@ -8,7 +8,12 @@ import { TestimonialPersonInfoProps } from '@/lib/utils/typeDefinitions/props/pa
 const IMAGE_WIDTH = 48
 const IMAGE_HEIGHT = 48
 
-const TestimonialPersonInfo: FC<TestimonialPersonInfoProps> = ({ photo, icon, name, job }) => {
+const TestimonialPersonInfo: FC<TestimonialPersonInfoProps> = ({
+  photo,
+  icon,
+  name,
+  job,
+}): JSX.Element => {
   return (
     <>
       <ImageComponent

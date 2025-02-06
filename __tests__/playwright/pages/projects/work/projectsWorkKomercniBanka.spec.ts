@@ -5,6 +5,7 @@ import {
   setupPage,
   teardownContext,
 } from '@/__tests__/playwright/lib/utils/helpers/setup'
+import { NB_HYPHEN } from '@/lib/utils/constants/specialCharacters'
 
 let browser: Browser
 let context: BrowserContext
@@ -43,7 +44,7 @@ test.describe('Project - Komercni Banka', () => {
 
     // Check Branches & ATMs link
     await test.step('Check Branches & ATMs link', async () => {
-      const link1 = page.getByRole('link', { name: 'Branches & ATMs', exact: true })
+      const link1 = page.getByRole('link', { name: 'Branches &\u00A0ATMs', exact: true })
       const href1 = await link1.getAttribute('href')
       const expectedUrl1 = 'https://www.kb.cz/en/branches-and-atms'
       expect(href1).toBe(expectedUrl1)
@@ -51,7 +52,10 @@ test.describe('Project - Komercni Banka', () => {
 
     // Check Branches & ATMs - Details link
     await test.step('Check Branches & ATMs - Details link', async () => {
-      const link2 = page.getByRole('link', { name: 'Branches & ATMs - Details', exact: true })
+      const link2 = page.getByRole('link', {
+        name: `Branches &\u00A0ATMs ${NB_HYPHEN}\u00A0Details`,
+        exact: true,
+      })
       const href2 = await link2.getAttribute('href')
       const expectedUrl2 = 'https://www.kb.cz/en/branches-and-atms/branches/brno-nam-svobody-1'
       expect(href2).toBe(expectedUrl2)
@@ -67,7 +71,10 @@ test.describe('Project - Komercni Banka', () => {
 
     // Check Exchange Rates - Details link
     await test.step('Check Exchange Rates - Details link', async () => {
-      const link4 = page.getByRole('link', { name: 'Exchange Rates - Details', exact: true })
+      const link4 = page.getByRole('link', {
+        name: `Exchange Rates ${NB_HYPHEN}\u00A0Details`,
+        exact: true,
+      })
       const href4 = await link4.getAttribute('href')
       const expectedUrl4 =
         'https://www.kb.cz/en/exchange-rates/exchange-detail?curr=CHF&date=2024-12-27T07:00:00'

@@ -16,15 +16,18 @@ const BreadcrumbsItem: FC<BreadcrumbsItemProps> = ({
   return (
     <li className="inline-flex items-center">
       {showSeparatorIcon && (
-        <span className="ml-0 sm:mx-2">
+        <span className="mx-2">
           <IconCaretRight />
         </span>
       )}
       <Link
         href={href}
-        className={`select-none rounded-lg px-3 py-2 text-sm font-medium text-neutral-600 ${hoverAndFocusCSS}`}
+        className={`select-none rounded-lg px-0 py-2 text-sm font-medium text-neutral-600 ${hoverAndFocusCSS}`}
       >
-        <span className="select-none">{icon}</span> <span className="ml-1">{text}</span>
+        <span role="img" className="select-none">
+          {icon}
+        </span>{' '}
+        <span className="ml-1">{text}</span>
       </Link>
     </li>
   )

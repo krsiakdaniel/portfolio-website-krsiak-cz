@@ -1,9 +1,18 @@
-import { PAGE_TOP_LEVEL_URLS } from '@/lib/utils/constants/urls/pageTopLevelUrls'
+import { COUNTRY } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
 import { YEARS } from '@/lib/utils/constants/yearsExperience'
 
 export const ICON_EMOJI = {
   latinCross: '✝️',
   flagCzechRepublic: '🇨🇿',
+  flagUnitedKingdom: '🇬🇧',
+  flagSpain: '🇪🇸',
+  flagFrance: '🇫🇷',
+  flagHungary: '🇭🇺',
+  flagGermany: '🇩🇪',
+  flagItaly: '🇮🇹',
+  flagNetherlands: '🇳🇱',
+  flagPoland: '🇵🇱',
   flagSlovakia: '🇸🇰',
   flagAlandIslands: '🇦🇽',
   flagSouthKorea: '🇰🇷',
@@ -41,7 +50,7 @@ export const ICON_EMOJI = {
   manWalking: '🚶‍♂️',
   sun: '☀️',
   wavingHand: '👋',
-  japaneseOpenForBusinessButton: '🈺',
+  ninja: '🥷',
   manTechnologist: {
     lightSkinTone: '👨🏻‍💻',
   },
@@ -91,14 +100,24 @@ export const SHARED = {
   years: 'years',
   month: 'month',
   months: 'months',
-  emDash: '—',
-  middleDot: '·',
+}
+
+export const CUSTOMERS_COUNT = {
+  smartsupp: '100\u00A0000+',
+  groupon: '17\u00A0000\u00A0000+',
+  komercniBanka: '2\u00A0000\u00A0000+',
+  kooperativa: '2\u00A0480\u00A0000+',
+}
+
+export const FLAGS_LOCALIZATION = {
+  emojis: `${ICON_EMOJI.flagUnitedKingdom}\u00A0${ICON_EMOJI.flagCzechRepublic}\u00A0${ICON_EMOJI.flagSpain}\u00A0${ICON_EMOJI.flagFrance}\u00A0${ICON_EMOJI.flagHungary}\u00A0${ICON_EMOJI.flagGermany}\u00A0${ICON_EMOJI.flagItaly}\u00A0${ICON_EMOJI.flagNetherlands}\u00A0${ICON_EMOJI.flagPoland}`,
 }
 
 export const COMMON_VALUES = {
   nameDanielKrsiak: 'Daniel Kršiak',
   reactDeveloper: 'React Developer',
-  reactDeveloperTypeScript: `React Developer ${SHARED.emDash} TypeScript & Next.js`,
+  reactDeveloperNBSP: 'React\u00A0Developer',
+  reactDeveloperTypeScript: `React Developer ${EM_DASH} TypeScript & Next.js`,
   reactDeveloperWorkingWithTypeScript: 'React Developer working with TypeScript & Next.js',
   developer: 'Developer',
   frontEnd: 'Front End',
@@ -127,24 +146,24 @@ export const COMMON_VALUES = {
   sketch: 'Sketch',
   graphql: 'GraphQL',
   wordpress: 'WordPress',
-  qaAutomationTesting: 'QA Automation & Testing',
+  qaAutomationTesting: `QA Automation &\u00A0Testing`,
   localization: 'Localization',
 }
 
 export const DIVIDER_WITH_TEXT = {
   companies: 'Companies',
-  myLinks: 'My Links',
-  contactMe: 'Scan Contact',
+  myLinks: 'My\u00A0Links',
+  contactMe: 'Scan\u00A0Contact',
   myExpertise: 'My Expertise',
-  skills: 'All My Skills',
-  myMainSkills: 'Main Skills',
+  skills: 'All My\u00A0Skills',
+  myMainSkills: 'Main\u00A0Skills',
 }
 
 export const SOCIAL_LINKS = {
   linkedIn: 'LinkedIn',
   gitHub: 'GitHub',
   gitHubCode: 'GitHub Code',
-  gitHubKrsiak: `GitHub ${SHARED.emDash} website-krsiak-cz`,
+  gitHubKrsiak: `GitHub ${EM_DASH} website-krsiak-cz`,
   resumePDF: 'Resume PDF',
   twitter: '@krsiak_daniel',
 }
@@ -155,22 +174,22 @@ export const HOME = {
   logo: 'krsiak.cz',
   nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
   reactDeveloper: COMMON_VALUES.reactDeveloper,
-  heroText: `Hi! I am from ${COMMON_VALUES.czechRepublicNBSP}\u00A0${ICON_EMOJI.flagCzechRepublic}`,
+  heroText: `Hi! I\u00A0am from ${COMMON_VALUES.czechRepublicNBSP}`,
 }
 
 export const RESUME = {
   resume: 'Resume',
   resumeTextOnly: 'Resume',
-  downloadResume: 'Download Resume in PDF',
+  downloadResume: 'Download Resume in\u00A0PDF',
   downloadResumeShort: 'Download PDF',
-  openToWork: 'Open To Work',
-  openToNetworking: 'Open To Networking',
-  scanQR: 'Scan My Contact',
+  openToWork: 'Open To\u00A0work',
+  openToNetworking: 'Open To\u00A0Networking',
+  scanQR: 'Scan My\u00A0Contact',
   feelFreeTo: 'Feel free to',
-  regardingJobOpportunities: 'regarding job opportunities',
-  forNetworkingOnLinkedIn: 'for networking on LinkedIn',
-  callMe: 'call me',
-  sendAnEmail: 'send an email',
+  regardingJobOpportunities: 'regarding job\u00A0opportunities',
+  forNetworkingOnLinkedIn: 'for networking on\u00A0LinkedIn',
+  callMe: 'call\u00A0me',
+  sendAnEmail: 'send\u00A0an\u00A0email',
 }
 
 export const TESTIMONIALS = {
@@ -186,12 +205,12 @@ export const TESTIMONIALS = {
     professional: {
       title: 'Professional References',
       description:
-        "Below, you'll find insightful feedback from colleagues who have experienced my contributions firsthand.",
+        "Below, you'll find insightful feedback from colleagues who\u00A0have experienced my\u00A0contributions firsthand.",
     },
     character: {
       title: 'Character References',
       description:
-        "In this section, you'll find personal testimonials that highlight my integrity and reliability.",
+        "In this section, you'll find personal testimonials that highlight my\u00A0integrity and\u00A0reliability.",
     },
   },
 }
@@ -208,32 +227,32 @@ export const PROJECTS = {
 
 export const PROJECT_CRYPTOMANIA = {
   alertTitle: 'CryptoMania is simple project',
-  alertDescription: "See production-level code for my 'Portfolio' on GitHub repo.",
+  alertDescription: "See production-level code for my 'Portfolio' on\u00A0GitHub repo.",
 }
 
 export const STATUS = {
   text: 'Status',
-  linkText: PAGE_TOP_LEVEL_URLS.status,
+  linkText: 'status.krsiak.cz',
   heading: {
     ciCd: 'CI & CD',
     uptimeMonitoring: 'Uptime Monitoring',
   },
   description: {
-    ciCd: 'Current status of integration and deployment pipelines.',
-    uptimeMonitoring: 'Status page monitoring this website uptime.',
+    ciCd: 'Current status of\u00A0integration and\u00A0deployment pipelines.',
+    uptimeMonitoring: 'Page monitoring the website uptime.',
   },
 }
 
 export const COMPANIES = {
   smartsuppDashboard: 'Smartsupp Dashboard',
   customerCareChatDashboard: 'Chat Dashboard',
-  smartsuppChatDashboard: `Smartsupp ${SHARED.emDash} Chat Dashboard`,
+  smartsuppChatDashboard: `Smartsupp ${EM_DASH} Chat Dashboard`,
   komercniBanka: 'Komerční banka',
   kooperativa: 'Kooperativa',
-  smartsuppWeb: `Smartsupp ${SHARED.emDash} Web`,
-  smartsuppHELP: `Smartsupp ${SHARED.emDash} HELP`,
+  smartsuppWeb: `Smartsupp ${EM_DASH} Web`,
+  smartsuppHELP: `Smartsupp ${EM_DASH} HELP`,
   groupon: 'Groupon',
-  moravia: 'Moravia IT',
+  moravia: 'Moravia\u00A0IT',
 }
 
 export const WORK = {
@@ -260,12 +279,13 @@ export const MY_WORK = {
 }
 
 export const MISC = {
-  kaizen: 'Kaizen 改\u00A0善',
-  kaizenText1: 'I follow the Japanese philosophy',
-  kaizenText2: 'always aiming for continuous personal growth and improvement in my work.',
+  kaizen: 'Kaizen\u00A0改\u00A0善',
+  kaizenText1: 'I\u00A0follow the Japanese philosophy',
+  kaizenText2:
+    'always aiming for\u00A0continuous personal growth and\u00A0improvement in\u00A0my work.',
   uptimeMonitor: 'krsiak.betteruptime.com',
   description: 'Description',
-  goBack: 'Go back',
+  goBack: 'Go\u00A0back',
   gallery: 'Gallery',
   skillsIconsNames: `
       ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, ${COMMON_VALUES.next},
@@ -293,16 +313,16 @@ export const MISC = {
 export const ERROR = {
   error404: '404',
   error404Description: "Sorry, we can't find that page.",
-  error404Note: 'It looks like we are fresh out of yarn!',
+  error404Note: 'It looks like we are fresh out of\u00A0yarn!',
   errorGlobalDescription: '',
-  errorGlobalNote: 'It looks like we are fresh out of yarn!',
+  errorGlobalNote: 'It looks like we are fresh out of\u00A0yarn!',
   errorGlobalAlt: 'error-global',
-  errorDescription: 'The page you requested could not be found.',
+  errorDescription: 'The page you requested could not be\u00A0found.',
   errorNote: 'Too many yarns, not enough time!',
   error: 'Error',
   tryAgain: 'Try again',
   mainText: "Sorry, we can't find that page.",
-  smallText: 'It looks like we are fresh out of yarn!',
+  smallText: 'It looks like we are fresh out of\u00A0yarn!',
   backToHome: 'Back to Home',
 }
 
@@ -451,7 +471,7 @@ export const META_SMARTSUPP_WEB = {
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     smartsuppWeb: 'Smartsupp Web',
-    saasCompanyWebsite: 'SaaS Company - Website',
+    saasCompanyWebsite: `SaaS Company Website`,
     frontEndDeveloper: 'Front End Developer',
     companyWebsiteFrontEnd: 'Company Website Front End',
     documentationSite: 'Documentation Site',
@@ -552,7 +572,7 @@ export const META_KOMERCNI_BANKA = {
 export const META_GROUPON = {
   title: `Groupon | ${COMMON_VALUES.nameDanielKrsiak} - QA Automation Team Leader`,
   description:
-    'QA Automation SDET - Team Lead at Groupon. Responsible for new QA team, hiring, coordinating testing for online marketplace with 17 million customers.',
+    'QA Automation SDET - Team Lead at Groupon. Responsible for new QA team, hiring, coordinating testing for online marketplace with 17 000 000 customers.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     groupon: 'Groupon',
@@ -692,7 +712,7 @@ export const EASTER_EGG = {
 export const BIBLE = {
   baptismTestimonyHeading: 'My Baptism - Testimony',
   baptismChurch: 'Baptism - Church',
-  bookChapterVerse: '1 Peter 3:21',
+  bookChapterVerse: '1\u00A0Peter\u00A03:21',
   verseText: `
     And that water is\u00A0a\u00A0picture of\u00A0baptism,
     which now saves you,
@@ -706,7 +726,7 @@ export const SOUTH_KOREA = {
   headingTravel: 'Traveling',
   headingSouthKorea: 'South Korea',
   introduction:
-    'South Korea, where ancient traditions meet modern innovation, offers a journey through bustling cities, serene temples, and stunning landscapes.',
+    'South Korea, where ancient traditions meet modern innovation, offers a\u00A0journey through bustling cities, serene temples, and\u00A0stunning landscapes.',
   quote1:
     'Travel makes one modest. You see what a\u00A0tiny place you occupy in\u00A0the\u00A0world.',
   quoteAuthor1: 'Gustave Flaubert, Novelist',
@@ -724,67 +744,68 @@ export const CALL_TO_ACTION = {
     highlight: 'Professional journey',
     highlightShort: 'My journey',
     heading: 'Explore My\u00A0Work Experience',
-    textMobileAndDesktop: `See the professional projects I worked on and had the opportunity to\u00A0improve.`,
-    textDesktop: 'Developing scalable and robust web applications for big companies.',
+    textMobileAndDesktop: `See the professional projects I\u00A0worked on\u00A0and\u00A0had the\u00A0opportunity to\u00A0improve.`,
+    textDesktop: 'Developing scalable and\u00A0robust web applications for\u00A0big companies.',
   },
   resumeDownload: {
-    highlight: 'Resume in PDF',
+    highlight: 'Resume in\u00A0PDF',
     heading: 'Download My\u00A0Resume',
     textMobileAndDesktop:
-      'Get a PDF copy of my resume to learn more about my professional experience.',
+      'Get a\u00A0PDF copy of\u00A0my resume to\u00A0learn more about my\u00A0professional experience.',
     textDesktop:
-      'Skilled React Developer building scalable applications using React and TypeScript.',
+      'Skilled React Developer building scalable applications using React and\u00A0TypeScript.',
   },
   resume: {
     highlight: 'React Developer',
     heading: 'Explore My\u00A0Resume',
-    textMobileAndDesktop: `To understand my React Developer career, learn about  my skills and experience.`,
-    textDesktop: 'From startup to large corporations I have worked on a variety of projects.',
+    textMobileAndDesktop: `To understand my\u00A0React Developer career, learn about my\u00A0skills and\u00A0experience.`,
+    textDesktop:
+      'From startup to large corporations I\u00A0have worked on\u00A0a\u00A0variety of\u00A0projects.',
   },
   linkedIn: {
     highlight: 'LinkedIn',
     heading: 'Connect on\u00A0LinkedIn',
     textMobileAndDesktop:
-      'Visit my LinkedIn profile to connect and see my professional experiences.',
-    textDesktop: 'It showcases a comprehensive overview of my career journey.',
+      'Visit my LinkedIn profile to\u00A0connect and\u00A0see my\u00A0professional experiences.',
+    textDesktop: 'It showcases a\u00A0comprehensive overview of\u00A0my career journey.',
   },
   github: {
     highlight: 'GitHub',
     heading: 'Explore GitHub Projects',
     textMobileAndDesktop:
-      'Go through my GitHub repository to see how I code my personal portfolio project.',
-    textDesktop: 'Writing maintainable, and efficient code, using React, Next.js, and TypeScript.',
+      'Go through my GitHub repository to\u00A0see how I\u00A0code my\u00A0personal portfolio project.',
+    textDesktop:
+      'Writing maintainable, and\u00A0efficient code, using React, Next.js, and\u00A0TypeScript.',
   },
 }
 
 export const FOOTER = {
-  copyrightSymbol: '©',
   linkHome: 'krsiak.cz',
   scrollToTop: 'Scroll to top',
 }
 
 export const WHO_I_AM = {
-  whoIAm: 'Who I Am',
+  whoIAm: 'Who I\u00A0Am',
   aboutMe: `
-    In my free time you'll find me exploring the great outdoors and spending time in forest.
-    As an avid hiker and traveler, I enjoy the nature.
+    In my free time you'll find me exploring the\u00A0great outdoors and\u00A0spending time in\u00A0forest.
+    As\u00A0an\u00A0avid hiker and\u00A0traveler, I\u00A0enjoy\u00A0the\u00A0nature.
   `,
-  idCZ: 'cz',
-  idSK: 'sk',
-  idFI: 'fi',
-  idKR: 'kr',
-  textCzechRepublic: `Hiking through the forests in  Czech Republic.`,
-  textSlovakia: `Scaling the majestic mountains in Slovakia.`,
-  textKorea: `Discovering the stunning landscapes in South Korea.`,
-  textAlandIslands: `Cruising across the Baltic Sea to the archipelago of the Åland Islands.`,
+  idCZ: COUNTRY.czechRepublic,
+  idSK: COUNTRY.slovakia,
+  idFI: COUNTRY.finland,
+  idKR: COUNTRY.korea,
+  textCzechRepublic: `Hiking through the\u00A0forests in\u00A0Czech\u00A0Republic.`,
+  textSlovakia: `Scaling the\u00A0majestic mountains in\u00A0Slovakia.`,
+  textKorea: `Discovering the\u00A0stunning landscapes in\u00A0South\u00A0Korea.`,
+  textAlandIslands: `Cruising across the\u00A0Baltic\u00A0Sea to\u00A0the\u00A0archipelago of\u00A0the\u00A0Åland\u00A0Islands.`,
 }
 
 export const INTRODUCTION = {
   whoIAm: {
     text: {
-      introduction1: `Hi!  My name is `,
-      introduction2: ` and at work I\u00A0am ${COMMON_VALUES.react} ${SHARED.emDash}\u00A0${COMMON_VALUES.typeScript} ${COMMON_VALUES.developer}.`,
-      textPerson1: 'This page is about me ',
+      introduction1: `Hi! My name is\u00A0`,
+      introduction2: ` and\u00A0at\u00A0work\u00A0I\u00A0am ${COMMON_VALUES.react} ${EM_DASH}\u00A0${COMMON_VALUES.typeScript} ${COMMON_VALUES.developer}.`,
+      textPerson1: 'This page is\u00A0about\u00A0me ',
       textPerson2: 'as\u00A0a\u00A0person.',
     },
   },
@@ -793,40 +814,40 @@ export const INTRODUCTION = {
       skilled: 'Skilled',
       reactDeveloper: '{reactDeveloper}',
       with: 'with',
-      yearsReact: `${YEARS.react} years`,
-      yearsText: 'of experience using',
+      yearsReact: `${YEARS.react}\u00A0years`,
+      yearsText: 'of\u00A0experience using',
       typeScript: '{typeScript}',
-      buildText: 'to build scalable web applications.',
+      buildText: 'to\u00A0build scalable web applications.',
     },
   },
   status: {
     text: {
       current: 'Current',
       status: 'status',
-      showing: 'showing the health and',
+      showing: 'showing the\u00A0health\u00A0and',
       performance: 'performance',
-      of: 'of the',
+      of: 'of\u00A0the',
       project: 'project',
-      integrations: 'integrations and workflows.',
+      integrations: 'integrations and\u00A0workflows.',
     },
   },
   personalProjects: {
     text: {
-      enjoy: 'I enjoy learning',
-      newTechnologies: 'new technologies',
-      andCreating: 'and creating',
-      personalProjects: 'personal projects',
-      whereApply: 'where I can apply my knowledge.',
+      enjoy: 'I\u00A0enjoy learning',
+      newTechnologies: 'new\u00A0technologies',
+      andCreating: 'and\u00A0creating',
+      personalProjects: 'personal\u00A0projects',
+      whereApply: 'where I\u00A0can apply my\u00A0knowledge.',
     },
   },
   workExperience: {
     text: {
-      experienced: 'I am experienced',
-      reactDeveloper: 'React Developer',
-      whoKnows: 'who knows',
-      qaAutomation: 'QA Automation',
-      andCanLead: 'and can lead teams as a',
-      teamLeader: 'Team Leader.',
+      experienced: 'I\u00A0am\u00A0experienced',
+      reactDeveloper: 'React\u00A0Developer',
+      whoKnows: 'who\u00A0knows',
+      qaAutomation: 'QA\u00A0Automation',
+      andCanLead: 'and\u00A0can lead teams\u00A0as\u00A0a',
+      teamLeader: 'Team\u00A0Leader.',
     },
   },
 }

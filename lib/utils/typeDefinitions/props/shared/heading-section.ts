@@ -1,8 +1,7 @@
-import { ReactElement } from 'react'
-
 // Heading Section Props
 export type HeadingSectionProps = {
-  text: string | ReactElement<HTMLSpanElement>
+  text: string | React.ReactNode
+  icon?: string
   id?: string
   dataTestId?: string
 }

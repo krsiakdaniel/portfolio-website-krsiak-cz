@@ -7,7 +7,9 @@ import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { DefaultNoLinkNavigationProps } from '@/lib/utils/typeDefinitions/props/layout/page-navigation'
 
-const DefaultNoLinkNavigation: FC<DefaultNoLinkNavigationProps> = ({ arrowDirection }) => {
+const DefaultNoLinkNavigation: FC<DefaultNoLinkNavigationProps> = ({
+  arrowDirection,
+}): JSX.Element => {
   const hasArrowLeft = arrowDirection === ArrowDirectionEnum.Left
   const hasArrowRight = arrowDirection === ArrowDirectionEnum.Right
 

@@ -1,3 +1,5 @@
+import { FC } from 'react'
+
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import TestimonialQuote from '@/components/pages/testimonials/TestimonialQuote'
@@ -18,13 +20,13 @@ import temple from '@/public/images/webp/photo/south-korea/temple.webp'
 const IMAGE_WIDTH = 1240
 const IMAGE_HEIGHT = 1650
 
-const SouthKorea = () => {
+const SouthKorea: FC = (): JSX.Element => {
   const imageComponentCSS =
     'border-1 rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md'
 
   return (
     <section>
-      <HeadingSection text={`${SOUTH_KOREA.headingSouthKorea} ${ICON_EMOJI.flagSouthKorea}`} />
+      <HeadingSection text={SOUTH_KOREA.headingSouthKorea} icon={ICON_EMOJI.flagSouthKorea} />
 
       <Paragraph>
         <span>{SOUTH_KOREA.introduction}</span>
@@ -35,10 +37,12 @@ const SouthKorea = () => {
           <div>
             <TestimonialQuote />
             <TestimonialText text={SOUTH_KOREA.quote1} />
-            <Paragraph
-              marginTop="mt-2"
-              customCss="flex"
-            >{`~ ${SOUTH_KOREA.quoteAuthor1} ${ICON_EMOJI.writingHand}`}</Paragraph>
+            <Paragraph marginTop="mt-2" customCss="flex">
+              {SOUTH_KOREA.quoteAuthor1}
+              <span role="img" className="ml-1">
+                {ICON_EMOJI.writingHand}
+              </span>
+            </Paragraph>
           </div>
           <div className="mt-8">
             <ImageComponent
@@ -57,10 +61,12 @@ const SouthKorea = () => {
           <div>
             <TestimonialQuote />
             <TestimonialText text={SOUTH_KOREA.quote2} />
-            <Paragraph
-              marginTop="mt-2"
-              customCss="flex"
-            >{`~ ${SOUTH_KOREA.quoteAuthor2} ${ICON_EMOJI.latinCross}`}</Paragraph>
+            <Paragraph marginTop="mt-2" customCss="flex">
+              {SOUTH_KOREA.quoteAuthor2}
+              <span role="img" className="ml-1">
+                {ICON_EMOJI.latinCross}
+              </span>
+            </Paragraph>
           </div>
           <div className="mt-8">
             <ImageComponent

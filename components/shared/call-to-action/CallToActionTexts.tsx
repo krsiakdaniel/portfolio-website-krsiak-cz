@@ -14,7 +14,7 @@ const CallToActionTexts: FC<CallToActionTextsProps> = ({
   heading,
   textMobileAndDesktop,
   textDesktop,
-}) => {
+}): JSX.Element => {
   return (
     <>
       <div className="mb-2 flex items-end space-x-2 uppercase md:space-x-0">

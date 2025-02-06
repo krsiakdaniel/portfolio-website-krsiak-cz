@@ -28,7 +28,7 @@ const PageNavigationLink: FC<PageNavigationLinkProps> = ({
       data-testid={dataTestId}
     >
       {hasArrowLeft && <IconArrow arrowDirection={ArrowDirectionEnum.Left} />}
-      <span>{icon}</span>
+      <span role="img">{icon}</span>
       <span>{text}</span>
       {hasArrowRight && <IconArrow arrowDirection={ArrowDirectionEnum.Right} />}
     </a>

@@ -13,7 +13,8 @@ const WorkExperienceIntroduction: FC = (): JSX.Element => {
         <Highlight text={INTRODUCTION.workExperience.text.reactDeveloper} />{' '}
         {INTRODUCTION.workExperience.text.whoKnows}{' '}
         <Highlight text={INTRODUCTION.workExperience.text.qaAutomation} />{' '}
-        {INTRODUCTION.workExperience.text.andCanLead}{' '}
+        {INTRODUCTION.workExperience.text.andCanLead}
+        {'\u00A0'}
         <Highlight text={INTRODUCTION.workExperience.text.teamLeader} />
       </Paragraph>
     </>

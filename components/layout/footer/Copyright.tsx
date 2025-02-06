@@ -6,6 +6,7 @@ import Paragraph from '@/components/shared/Paragraph'
 import { FOOTER, ICON_EMOJI } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { COPYRIGHT } from '@/lib/utils/constants/specialCharacters'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getCurrentYear } from '@/lib/utils/helpers/years/getCurrentYear'
 
@@ -13,7 +14,9 @@ const Copyright: FC = (): JSX.Element => {
   return (
     <Paragraph size="text-md" marginTop="mt-4" customCss="flex flex-row text-center gap-2">
       <span data-testid={DATA_TEST_IDS.footer.copyright}>
-        {FOOTER.copyrightSymbol}&nbsp;{getCurrentYear()}
+        {COPYRIGHT}
+        {'\u00A0'}
+        {getCurrentYear()}
       </span>
 
       <span role="img" className="select-none">

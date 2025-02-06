@@ -9,7 +9,7 @@ import { FC } from 'react'
  * Also it adds and uses custom CSS passed via props.
  *
  */
-const Bubble: FC<BubbleProps> = ({ customCss }) => {
+const Bubble: FC<BubbleProps> = ({ customCss }): JSX.Element => {
   return <div className={`absolute m-2 rounded-full opacity-50 lg:m-0 ${customCss}`} />
 }
 

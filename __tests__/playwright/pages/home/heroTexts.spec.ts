@@ -51,6 +51,6 @@ test.describe('Hero - Heading and texts', () => {
   // Test to check if the paragraphs are rendered correctly
   test('should render the paragraphs correctly', async () => {
     const paragraph1Text = await page.textContent(getDataTestId('hero-paragraph'))
-    expect(paragraph1Text).toContain('Hi! I am from Czech\u00A0Republic\u00A0🇨🇿')
+    expect(paragraph1Text).toContain('Hi! I\u00A0am from Czech\u00A0Republic\u00A0🇨🇿')
   })
 })

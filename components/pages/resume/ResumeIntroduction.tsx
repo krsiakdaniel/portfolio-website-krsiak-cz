@@ -15,7 +15,7 @@ const ResumeIntroduction: FC = (): JSX.Element => {
         <Highlight
           text={INTRODUCTION.resume.text.reactDeveloper.replace(
             '{reactDeveloper}',
-            TEXT.reactDeveloper,
+            TEXT.reactDeveloperNBSP,
           )}
         />{' '}
         {INTRODUCTION.resume.text.with} <Highlight text={INTRODUCTION.resume.text.yearsReact} />{' '}

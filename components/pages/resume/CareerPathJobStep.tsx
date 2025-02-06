@@ -11,7 +11,9 @@ const CareerPathJobStep: FC<CareerPathJobStepProps> = ({ step, index }) => {
   return (
     <span key={step.id}>
       {isNotFirstStep && <span className="ml-2">←</span>}
-      <span className="ml-2">{step.emoji}</span>
+      <span role="img" className="ml-2">
+        {step.emoji}
+      </span>
       <span className="ml-1">{isHighlighted ? <Highlight text={step.text} /> : step.text}</span>
     </span>
   )

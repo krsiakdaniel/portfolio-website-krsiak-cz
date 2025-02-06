@@ -82,6 +82,20 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: '/:path*', // Apply to all routes
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com",
+              "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com",
+              "img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com data: https:",
+            ].join('; '),
+          },
+        ],
+      },
+      {
         source: '/:all*(svg|jpg|png|webp|gif)', // Match any image files in any directory
         headers: [
           {
