@@ -14,7 +14,7 @@
   - [🏎️ Website Performance](#️-website-performance)
   - [👨🏻‍💼 Team Leader and Task Management](#-team-leader-and-task-management)
   - [💻 Development](#-development)
-  - [🃏 🎭 Testing](#--testing)
+  - [🧪 Testing Overview](#-testing-overview)
   - [🐛 Bug Fixing](#-bug-fixing)
   - [🔀 Pull Requests](#-pull-requests)
   - [🚀 CI and CD - Process](#-ci-and-cd---process)
@@ -107,11 +107,13 @@ The website has these top level pages and project detail pages.
 
 - [README](README-development.md)
 
-## 🃏 🎭 Testing
+## 🧪 Testing Overview
 
 - [README](README-testing.md)
 
 ## 🐛 Bug Fixing
+
+- [README](README-bug-fixing.md)
 
 ## 🔀 Pull Requests
 
