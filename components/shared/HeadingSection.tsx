@@ -17,7 +17,7 @@ const HeadingSection: FC<HeadingSectionProps> = ({
       id={id}
       textColor="text-neutral-600"
       data-testid={dataTestId}
-      customCss={`mt-20 border-b pb-2 font-medium uppercase ${CSS_GLOBAL_CLASSES.HEADING_SECTION}`}
+      customCss={`mt-20 border-b pb-2 font-medium uppercase flex items-center ${CSS_GLOBAL_CLASSES.HEADING_SECTION}`}
     >
       <span>{text}</span>
       {icon && (

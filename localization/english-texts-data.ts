@@ -50,6 +50,11 @@ export const TESTIMONIALS = {
         To this day, I\u00A0still rely on\u00A0Daniel as\u00A0a\u00A0go\u00A0to\u00A0person when I\u00A0need advice on\u00A0specific topics.`,
     },
   },
+  fitnessCoach: {
+    name: 'Shane Duquette',
+    job: 'Founder  ~\u00A0Bony to Beastly',
+    text: `Daniel has worked for\u00A0me\u00A0as\u00A0an\u00A0online fitness coach for\u00A0a\u00A0decade now, consistently and\u00A0with incredible attention to\u00A0detail. He's also a\u00A0pleasure to\u00A0work with and\u00A0popular with clients.`,
+  },
 }
 
 export const BADGES = {

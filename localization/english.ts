@@ -203,14 +203,16 @@ export const TESTIMONIALS = {
   nameMoorhead: 'Jonathan Moorhead',
   sections: {
     professional: {
-      title: 'Professional References',
-      description:
-        "Below, you'll find insightful feedback from colleagues who\u00A0have experienced my\u00A0contributions firsthand.",
+      title: 'Me At Work',
+      description: 'Feedback from colleagues who knew me\u00A0at\u00A0work.',
     },
     character: {
-      title: 'Character References',
-      description:
-        "In this section, you'll find personal testimonials that highlight my\u00A0integrity and\u00A0reliability.",
+      title: 'My Character',
+      description: 'Personal testimonials that highlight my\u00A0integrity.',
+    },
+    fitnessCoach: {
+      title: 'Me As Fitness Coach',
+      description: 'Testimonials from my online fitness coaching experience.',
     },
   },
 }
@@ -268,7 +270,7 @@ export const PROJECT_INFORMATION = {
 }
 
 export const MY_WORK = {
-  workedForCompanies: 'Worked For\u00A0Companies',
+  workedForCompanies: 'I\u00A0Worked\u00A0At',
   skillsForCompany: 'Skills',
   committedMindset: 'Mindset',
   problemSolving: 'Creative',

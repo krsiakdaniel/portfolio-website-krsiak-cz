@@ -31,9 +31,10 @@ export type TestimonialPersonInfoProps = {
 
 // Testimonials Section Props
 export type TestimonialsSectionProps = {
+  title: string
+  icon?: string
   description: string
   testimonials: TestimonialItem[]
-  title: string
 }
 
 // Testimonial Text Props
