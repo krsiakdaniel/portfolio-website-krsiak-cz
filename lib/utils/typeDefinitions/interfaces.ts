@@ -130,6 +130,7 @@ export interface TestimonialItem {
   personName: string
   personJob: string
   testimonialText: string
+  link?: string
 }
 
 // Image Showcase Item

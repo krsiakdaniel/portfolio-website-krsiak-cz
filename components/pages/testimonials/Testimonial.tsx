@@ -12,6 +12,7 @@ const Testimonial: FC<TestimonialProps> = ({
   personName,
   personJob,
   testimonialText,
+  link = '',
 }): JSX.Element => {
   return (
     <div className="mx-auto mt-4 max-w-screen-xl pt-8 md:px-8">
@@ -24,6 +25,7 @@ const Testimonial: FC<TestimonialProps> = ({
             icon={personIcon}
             name={personName}
             job={personJob}
+            link={link}
           />
         </div>
       </div>

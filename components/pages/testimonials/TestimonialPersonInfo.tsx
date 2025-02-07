@@ -13,6 +13,7 @@ const TestimonialPersonInfo: FC<TestimonialPersonInfoProps> = ({
   icon,
   name,
   job,
+  link = '',
 }): JSX.Element => {
   return (
     <>
@@ -31,7 +32,20 @@ const TestimonialPersonInfo: FC<TestimonialPersonInfoProps> = ({
           </span>
           <span className="ml-2">{name}</span>
         </div>
-        <div className="text-sm font-normal text-gray-500">{job}</div>
+        <div className="text-sm font-normal text-gray-500">
+          {job}{' '}
+          {link && (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="External link"
+              data-testid="testimonial-link"
+            >
+              {link}
+            </a>
+          )}
+        </div>
       </div>
     </>
   )

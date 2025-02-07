@@ -44,27 +44,29 @@ const Testimonials: FC = (): JSX.Element => {
           <TestimonialsIntroduction />
         </div>
 
+        {/* Character */}
+        <TestimonialsSection
+          title={TESTIMONIALS.sections.character.title}
+          icon={ICON_EMOJI.foldedHands}
+          description={TESTIMONIALS.sections.character.description}
+          testimonials={personalTestimonials}
+        />
+
+        {/* Fitness Coach */}
+        <TestimonialsSection
+          title={TESTIMONIALS.sections.fitnessCoach.title}
+          icon={ICON_EMOJI.personLiftingWeights}
+          description={TESTIMONIALS.sections.fitnessCoach.description}
+          testimonials={fitnessCoachTestimonials}
+        />
+
+        {/* Office Work */}
         <TestimonialsSection
           title={TESTIMONIALS.sections.professional.title}
           icon={ICON_EMOJI.manTechnologist.lightSkinTone}
           description={TESTIMONIALS.sections.professional.description}
           testimonials={workTestimonials}
         />
-
-        <TestimonialsSection
-          title={TESTIMONIALS.sections.character.title}
-          icon={ICON_EMOJI.ninja}
-          description={TESTIMONIALS.sections.character.description}
-          testimonials={personalTestimonials}
-        />
-
-        <TestimonialsSection
-          title={TESTIMONIALS.sections.fitnessCoach.title}
-          icon={ICON_EMOJI.manLiftingWeights}
-          description={TESTIMONIALS.sections.fitnessCoach.description}
-          testimonials={fitnessCoachTestimonials}
-        />
-
         <CallToActionLinkedIn />
       </div>
 

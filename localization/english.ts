@@ -36,6 +36,7 @@ export const ICON_EMOJI = {
   robot: '🤖',
   star: '⭐',
   writingHand: '✍️',
+  foldedHands: '🙏',
   church: '⛪',
   atomSymbol: '⚛️',
   cog: '⚙️',
@@ -47,6 +48,9 @@ export const ICON_EMOJI = {
   barChart: '📊',
   hammerAndWrench: '🛠️',
   manLiftingWeights: '🏋️‍♂️',
+  personLiftingWeights: '🏋️',
+  flexedBiceps: '💪',
+  personFlexingBicepsLightSkinTone: '💪🏻',
   manWalking: '🚶‍♂️',
   sun: '☀️',
   wavingHand: '👋',
@@ -203,7 +207,7 @@ export const TESTIMONIALS = {
   nameMoorhead: 'Jonathan Moorhead',
   sections: {
     professional: {
-      title: 'Me At Work',
+      title: 'Office Work',
       description: 'Feedback from colleagues who knew me\u00A0at\u00A0work.',
     },
     character: {
