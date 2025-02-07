@@ -19,12 +19,14 @@ const HeadingSection: FC<HeadingSectionProps> = ({
       data-testid={dataTestId}
       customCss={`mt-20 border-b pb-2 font-medium uppercase flex items-center ${CSS_GLOBAL_CLASSES.HEADING_SECTION}`}
     >
-      <span>{text}</span>
-      {icon && (
-        <span role="img" className="ml-2 text-3xl">
-          {icon}
-        </span>
-      )}
+      <span className="flex items-center">
+        {text}
+        {icon && (
+          <span role="img" className="ml-2 inline-flex text-3xl">
+            {icon}
+          </span>
+        )}
+      </span>
     </Heading2>
   )
 }

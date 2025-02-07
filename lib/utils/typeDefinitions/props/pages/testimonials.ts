@@ -8,8 +8,10 @@ export type TestimonialProps = {
   personIcon: string
   personName: string
   personJob: string
+  personCompany: string
   testimonialText: string
   link?: string
+  linkText?: string
 }
 
 // Testimonial Description Props
@@ -28,7 +30,9 @@ export type TestimonialPersonInfoProps = {
   name: string
   icon: string
   job: string
+  company: string
   link?: string
+  linkText?: string
 }
 
 // Testimonials Section Props

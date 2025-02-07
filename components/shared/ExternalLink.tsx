@@ -4,7 +4,7 @@ import { ExternalLinkProps } from '@/lib/utils/typeDefinitions/props/shared/exte
 
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
-const ExternalLink: FC<ExternalLinkProps> = ({ href, text, title = '', dataTestId }) => {
+const ExternalLink: FC<ExternalLinkProps> = ({ href, text, title, dataTestId = '' }) => {
   return (
     <span className="leading-tight">
       <a

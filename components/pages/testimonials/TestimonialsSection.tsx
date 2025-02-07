@@ -23,8 +23,10 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
           personIcon={testimonial.personIcon}
           personName={testimonial.personName}
           personJob={testimonial.personJob}
+          personCompany={testimonial.personCompany}
           testimonialText={testimonial.testimonialText}
           link={testimonial.link}
+          linkText={testimonial.linkText}
         />
       ))}
     </div>
