@@ -11,13 +11,13 @@ import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 // groupon
 import groupon1 from '@/public/images/webp/projects/work/groupon/groupon-1-light.webp'
 import groupon2 from '@/public/images/webp/projects/work/groupon/groupon-2-light.webp'
-import grouponThumb from '@/public/images/webp/projects/work/groupon/groupon-thumb.webp'
+import grouponProjectPreview from '@/public/images/webp/projects/work/groupon/groupon-project-preview.webp'
 
 export const projectsWorkQA: Project[] = [
   {
     id: PROJECT_ID.work.groupon,
     isFeatured: false,
-    image: grouponThumb.src,
+    image: grouponProjectPreview.src,
     galleryImages: [
       { id: 0, src: groupon1.src },
       { id: 1, src: groupon2.src },

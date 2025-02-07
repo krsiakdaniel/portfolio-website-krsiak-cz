@@ -13,12 +13,12 @@ import smartsuppDashboard1 from '@/public/images/webp/projects/work/smartsupp-da
 import smartsuppDashboard2 from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-2-light.webp'
 import smartsuppDashboard3 from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-3-light.webp'
 import smartsuppDashboard4 from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-4-light.webp'
-import smartsuppDashboardThumb from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-thumb.webp'
+import smartsuppDashboardProjectPreview from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-project-preview.webp'
 
 export const workReactSmartsuppDashboard: Project = {
   id: PROJECT_ID.work.smartsupp.dashboard,
   isFeatured: true,
-  image: smartsuppDashboardThumb.src,
+  image: smartsuppDashboardProjectPreview.src,
   galleryImages: [
     { id: 0, src: smartsuppDashboard1.src },
     { id: 1, src: smartsuppDashboard2.src },

@@ -14,13 +14,13 @@ import cryptomania3 from '@/public/images/webp/projects/personal/cryptomania/cry
 import cryptomania1 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-1-light.webp'
 import cryptomania4 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-2-dark.webp'
 import cryptomania2 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-2-light.webp'
-import cryptomaniaThumb from '@/public/images/webp/projects/personal/cryptomania/cryptomania-thumb.webp'
+import cryptomaniaProjectPreview from '@/public/images/webp/projects/personal/cryptomania/cryptomania-project-preview.webp'
 
 export const projectsPersonalReact: Project[] = [
   {
     id: PROJECT_ID.personal.cryptoMania,
     isFeatured: false,
-    image: cryptomaniaThumb.src,
+    image: cryptomaniaProjectPreview.src,
     galleryImages: [
       { id: 0, src: cryptomania1.src },
       { id: 1, src: cryptomania2.src },
