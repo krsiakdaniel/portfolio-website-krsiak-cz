@@ -4,7 +4,7 @@ import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ICON_EMOJI } from '@/localization/english'
 
-import { PROJECT_OVERVIEW } from '@/lib/utils/constants/imageGalleryConfig'
+import { PROJECT_PREVIEW } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { ProjectImageProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
@@ -22,8 +22,8 @@ const ProjectImage: FC<ProjectImageProps> = ({ isFeatured, image, title }): JSX.
 
         <ImageComponent
           src={image}
-          width={PROJECT_OVERVIEW.WIDTH}
-          height={PROJECT_OVERVIEW.HEIGHT}
+          width={PROJECT_PREVIEW.WIDTH}
+          height={PROJECT_PREVIEW.HEIGHT}
           alt={title}
           loading={ImageLoading.LAZY}
           customCss={`shadow-md rounded-lg border p-1 ${featuredProjectCSS}`}

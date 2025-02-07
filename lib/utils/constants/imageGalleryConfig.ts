@@ -1,20 +1,59 @@
-// Main gallery preview dimensions (1240x900)
-export const GALLERY_PREVIEW = {
-  WIDTH: 1240, // Full width container
-  HEIGHT: 900, // Maintains the 1.378:1 ratio (1240 / 1.378)
-  ASPECT_RATIO: 1.378,
+/**
+ * Project overview image configuration.
+ * @description Configuration for project overview images with 1.378:1 ratio.
+ * @property {number} WIDTH - Width of 604px
+ * @property {number} HEIGHT - Height of 438px
+ * @constant
+ */
+export const PROJECT_PREVIEW = {
+  WIDTH: 604,
+  HEIGHT: 438,
 } as const
 
-// Project overview image dimensions (604x438)
-export const PROJECT_OVERVIEW = {
-  WIDTH: 604, // Full half container width
-  HEIGHT: 438, // Maintains the 1.378:1 ratio
-  ASPECT_RATIO: 1.378,
+/**
+ * Main gallery preview image configuration.
+ * @description Configuration for main gallery preview images with 16:9 ratio.
+ * @property {number} WIDTH - Width of 1240px
+ * @property {number} HEIGHT - Height of 698px
+ * @constant
+ */
+export const GALLERY_PREVIEW_16_9 = {
+  WIDTH: 1240,
+  HEIGHT: 698,
 } as const
 
-// Gallery thumbnail dimensions (100x77)
-export const GALLERY_THUMBNAIL = {
-  WIDTH: 100,
-  HEIGHT: 77,
-  ASPECT_RATIO: 1.3,
+/**
+ * Main gallery preview image configuration.
+ * @description Configuration for main gallery preview images with 4:3 ratio.
+ * @property {number} WIDTH - Width of 1240px
+ * @property {number} HEIGHT - Height of 930px
+ * @constant
+ */
+export const GALLERY_PREVIEW_4_3 = {
+  WIDTH: 1240,
+  HEIGHT: 930,
+} as const
+
+/**
+ * Gallery thumbnail configuration for 16:9 ratio.
+ * @description Configuration for thumbnail images with 16:9 aspect ratio.
+ * @property {number} WIDTH - Width of 120px
+ * @property {number} HEIGHT - Height of 90px
+ * @constant
+ */
+export const GALLERY_THUMBNAIL_16_9 = {
+  WIDTH: 120,
+  HEIGHT: 90,
+} as const
+
+/**
+ * Gallery thumbnail configuration for 4:3 ratio.
+ * @description Configuration for thumbnail images with 4:3 aspect ratio.
+ * @property {number} WIDTH - Width of 120px
+ * @property {number} HEIGHT - Height of 95px
+ * @constant
+ */
+export const GALLERY_THUMBNAIL_4_3 = {
+  WIDTH: 120,
+  HEIGHT: 95,
 } as const

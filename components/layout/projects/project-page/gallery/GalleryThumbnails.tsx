@@ -4,15 +4,12 @@ import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ARIA_LABELS } from '@/localization/english'
 
-import { GALLERY_THUMBNAIL } from '@/lib/utils/constants/imageGalleryConfig'
+import { GALLERY_THUMBNAIL_16_9 } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import {
   GalleryImageProps,
   GalleryThumbnailsProps,
 } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
-
-// FIXME: make the main screenshots smaller, like KOOPERATIVA, narrow, add 4 images to all projects
-// TODO: RETAKE ALL SCREENSHOTS for all the projects, 1240x900
 
 const GalleryThumbnails: FC<GalleryThumbnailsProps> = ({
   images,
@@ -35,7 +32,7 @@ const GalleryThumbnails: FC<GalleryThumbnailsProps> = ({
 
   return (
     <div
-      className="mt-2 flex items-center justify-items-start gap-4 lg:mt-4"
+      className="mt-2 flex items-center justify-items-start gap-4"
       role="list"
       aria-label={ARIA_LABELS.galleryThumbnails}
     >
@@ -52,8 +49,8 @@ const GalleryThumbnails: FC<GalleryThumbnailsProps> = ({
         >
           <ImageComponent
             src={image.src}
-            width={GALLERY_THUMBNAIL.WIDTH}
-            height={GALLERY_THUMBNAIL.HEIGHT}
+            width={GALLERY_THUMBNAIL_16_9.WIDTH}
+            height={GALLERY_THUMBNAIL_16_9.HEIGHT}
             customCss={`rounded-lg border-violet-300 bg-violet-50 p-1 shadow-md transition-all duration-500 ease-in-out cursor-pointer opacity-80 hover:ring-2 hover:ring-violet-600 hover:bg-violet-100 hover:opacity-100
               ${
                 activeImage.id === image.id
