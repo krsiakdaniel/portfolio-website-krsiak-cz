@@ -4,7 +4,7 @@ import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ARIA_LABELS } from '@/localization/english'
 
-import { GALLERY_THUMBNAIL_16_9 } from '@/lib/utils/constants/imageGalleryConfig'
+import { GALLERY_THUMBNAIL_4_3 } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import {
   GalleryImageProps,
@@ -49,8 +49,8 @@ const GalleryThumbnails: FC<GalleryThumbnailsProps> = ({
         >
           <ImageComponent
             src={image.src}
-            width={GALLERY_THUMBNAIL_16_9.WIDTH}
-            height={GALLERY_THUMBNAIL_16_9.HEIGHT}
+            width={GALLERY_THUMBNAIL_4_3.WIDTH}
+            height={GALLERY_THUMBNAIL_4_3.HEIGHT}
             customCss={`rounded-lg border-violet-300 bg-violet-50 p-1 shadow-md transition-all duration-500 ease-in-out cursor-pointer opacity-80 hover:ring-2 hover:ring-violet-600 hover:bg-violet-100 hover:opacity-100
               ${
                 activeImage.id === image.id
