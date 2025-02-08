@@ -129,7 +129,32 @@ export interface TestimonialItem {
   personIcon: string
   personName: string
   personJob: string
+  personCompany: string
   testimonialText: string
+  link?: string
+  linkText?: string
+}
+
+// Testimonial Data
+export interface TestimonialData {
+  name: string
+  job: string
+  company: string
+  text: string
+  linkText?: string
+}
+
+// Testimonials Groups
+export interface TestimonialsGroups {
+  work: {
+    [key: string]: TestimonialData
+  }
+  personal: {
+    [key: string]: TestimonialData
+  }
+  fitness: {
+    [key: string]: TestimonialData
+  }
 }
 
 // Image Showcase Item
@@ -146,6 +171,8 @@ export interface ExternalURL {
   uptimeMonitorStatus: string
   uptimeMonitorStatusExternal: string
   verseBiblePeter1Chapter3Verse21: string
+  graceChurch: string
+  bonyToBeastly: string
 }
 
 // Environment URLs

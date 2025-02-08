@@ -15,6 +15,7 @@ export const workTestimonials: TestimonialItem[] = [
     personIcon: ICON_EMOJI.woman.officeWorker,
     personName: TEXT_DATA.work.losseff.name,
     personJob: TEXT_DATA.work.losseff.job,
+    personCompany: TEXT_DATA.work.losseff.company,
     testimonialText: TEXT_DATA.work.losseff.text,
   },
   {
@@ -23,6 +24,7 @@ export const workTestimonials: TestimonialItem[] = [
     personIcon: ICON_EMOJI.man.officeWorker,
     personName: TEXT_DATA.work.kvapil.name,
     personJob: TEXT_DATA.work.kvapil.job,
+    personCompany: TEXT_DATA.work.kvapil.company,
     testimonialText: TEXT_DATA.work.kvapil.text,
   },
   {
@@ -31,6 +33,7 @@ export const workTestimonials: TestimonialItem[] = [
     personIcon: ICON_EMOJI.man.officeWorker,
     personName: TEXT_DATA.work.pridalek.name,
     personJob: TEXT_DATA.work.pridalek.job,
+    personCompany: TEXT_DATA.work.pridalek.company,
     testimonialText: TEXT_DATA.work.pridalek.text,
   },
   {
@@ -39,6 +42,7 @@ export const workTestimonials: TestimonialItem[] = [
     personIcon: ICON_EMOJI.man.officeWorker,
     personName: TEXT_DATA.work.popa.name,
     personJob: TEXT_DATA.work.popa.job,
+    personCompany: TEXT_DATA.work.popa.company,
     testimonialText: TEXT_DATA.work.popa.text,
   },
 ]
