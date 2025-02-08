@@ -8,5 +8,5 @@ export const EXTERNAL_URL: ExternalURL = {
   uptimeMonitorStatusExternal: 'https://krsiak.betteruptime.com/',
   verseBiblePeter1Chapter3Verse21: 'https://www.bible.com/bible/116/1PE.3.21.NLT',
   graceChurch: 'https://www.gracechurch.org/about/gospel',
-  bonyToBeastly: 'https://bonytobeastly.com/',
+  bonyToBeastly: 'https://bonytobeastly.com/about',
 }

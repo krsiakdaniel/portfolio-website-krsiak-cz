@@ -42,7 +42,7 @@ const TestimonialPersonInfo: FC<TestimonialPersonInfoProps> = ({
         <span>{job}</span>
         <span className="hidden md:block">{' ~ '}</span>
         {link ? (
-          <ExternalLink href={link} text={company} title={TEXT.opensInNewTab} dataTestId={link} />
+          <ExternalLink href={link} text={company} title={TEXT.opensInNewTab} />
         ) : (
           <span>{company}</span>
         )}
