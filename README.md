@@ -4,7 +4,7 @@
 
 - [Portfolio Website - krsiak.cz](#portfolio-website---krsiakcz)
   - [⚛️ Project Description](#️-project-description)
-  - [⚡ Project Website](#-project-website)
+  - [🔗 Project Website](#-project-website)
   - [🚦 Project Status](#-project-status)
   - [🛠️ Tech Stack](#️-tech-stack)
   - [🌼 daisyUI - Component Library](#-daisyui---component-library)
@@ -29,7 +29,7 @@
 
 👨🏻‍💻 Showcasing my work and skills as **React Developer** using **TypeScript** & **Next.js**.
 
-## ⚡ Project Website
+## 🔗 Project Website
 
 Link: [https://krsiak.cz](https://krsiak.cz)
 
