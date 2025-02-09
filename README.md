@@ -4,13 +4,13 @@
 
 - [Portfolio Website - krsiak.cz](#portfolio-website---krsiakcz)
   - [⚛️ Project Description](#️-project-description)
-  - [⚡ Project Website](#-project-website)
+  - [🔗 Project Website](#-project-website)
   - [🚦 Project Status](#-project-status)
   - [🛠️ Tech Stack](#️-tech-stack)
   - [🌼 daisyUI - Component Library](#-daisyui---component-library)
   - [📋 Pages](#-pages)
-    - [Pages - Main](#pages---main)
-    - [Pages - Projects Details](#pages---projects-details)
+    - [Main](#main)
+    - [Projects Details](#projects-details)
   - [🏎️ Website Performance](#️-website-performance)
   - [👨🏻‍💼 Team Leader and Task Management](#-team-leader-and-task-management)
   - [💻 Development](#-development)
@@ -29,7 +29,7 @@
 
 👨🏻‍💻 Showcasing my work and skills as **React Developer** using **TypeScript** & **Next.js**.
 
-## ⚡ Project Website
+## 🔗 Project Website
 
 Link: [https://krsiak.cz](https://krsiak.cz)
 
@@ -68,7 +68,7 @@ This project will use component library for Tailwind CSS.
 
 The website has these top level pages and project detail pages.
 
-### Pages - Main
+### Main
 
 - 🏠 [Home](https://krsiak.cz/)
 - 👋 [Who I Am](https://krsiak.cz/who-i-am)
@@ -78,7 +78,7 @@ The website has these top level pages and project detail pages.
 - 💬 [Testimonials](https://krsiak.cz/testimonials)
 - 🚦 [Status](https://krsiak.cz/status)
 
-### Pages - Projects Details
+### Projects Details
 
 🚀 **Personal Projects**:
 
