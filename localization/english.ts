@@ -189,10 +189,10 @@ export const RESUME = {
   openToWork: 'Open To\u00A0work',
   openToNetworking: 'Open To\u00A0Networking',
   scanQR: 'Scan My\u00A0Contact',
-  feelFreeTo: 'Feel free to',
+  feelFreeTo: 'Feel free to scan my contact.',
   regardingJobOpportunities: 'regarding job\u00A0opportunities',
   forNetworkingOnLinkedIn: 'for networking on\u00A0LinkedIn',
-  callMe: 'call\u00A0me',
+  callMe: 'Call\u00A0me',
   sendAnEmail: 'send\u00A0an\u00A0email',
 }
 

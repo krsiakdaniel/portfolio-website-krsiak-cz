@@ -8,7 +8,6 @@ import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 import { RESUME, SHARED, TEXT } from '@/localization/english'
 
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
-import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
 
 const ResumeContact: FC = (): JSX.Element => {
   const isOpenToWork = IS_OPEN_TO_WORK
@@ -22,14 +21,8 @@ const ResumeContact: FC = (): JSX.Element => {
     <>
       <HeadingSection
         text={
-          <span>
-            {RESUME.scanQR}
-            <span className="mx-2 hidden sm:inline-block">{EM_DASH}</span>
-            <span
-              className={`block font-bold sm:inline md:ml-2 ${isOpenToWork ? 'text-green-600' : 'text-blue-600'}`}
-            >
-              {contactMessage}
-            </span>
+          <span className={isOpenToWork ? 'text-green-600' : 'text-blue-600'}>
+            {contactMessage}
           </span>
         }
       />
