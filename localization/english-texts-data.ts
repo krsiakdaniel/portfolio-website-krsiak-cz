@@ -569,8 +569,8 @@ export const PAGE_HOME = {
     },
     problemSolving: {
       items: [
-        { text: 'Enjoying brainstorming sessions' },
         { text: 'Thinking outside the\u00A0box' },
+        { text: 'Enjoying brainstorming' },
         { text: 'Adapting to\u00A0changes' },
       ],
     },

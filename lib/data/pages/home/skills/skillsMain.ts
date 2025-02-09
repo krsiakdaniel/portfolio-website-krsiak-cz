@@ -4,8 +4,8 @@ import { SkillCardItem } from '@/lib/utils/typeDefinitions/interfaces'
 import { TEXT } from '@/localization/english'
 
 import {
-  javascriptSVG,
   nextSVG,
+  playwrightSVG,
   reactSVG,
   reduxSVG,
   tailwindSVG,
@@ -13,14 +13,6 @@ import {
 } from '@/lib/data/shared/skill-icons/skillIconsSVG'
 
 export const skills: SkillCardItem[] = [
-  {
-    id: TEXT.javaScript,
-    imgSrc: javascriptSVG,
-    imgAlt: TEXT.javaScript,
-    technology: TEXT.javaScript,
-    years: YEARS.javaScript,
-    tooltip: TEXT.javaScript,
-  },
   {
     id: TEXT.typeScript,
     imgSrc: typescriptSVG,
@@ -60,5 +52,13 @@ export const skills: SkillCardItem[] = [
     technology: TEXT.tailwindShort,
     years: YEARS.tailwind,
     tooltip: TEXT.tailwindShort,
+  },
+  {
+    id: TEXT.playwright,
+    imgSrc: playwrightSVG,
+    imgAlt: TEXT.playwright,
+    technology: TEXT.playwright,
+    years: YEARS.playwright,
+    tooltip: TEXT.playwright,
   },
 ]
