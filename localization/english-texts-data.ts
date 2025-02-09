@@ -402,7 +402,7 @@ export const WORK_PROJECTS_OVERVIEW = {
   },
   groupon: {
     title: `E${NB_HYPHEN}Commerce ${NB_HYPHEN}\u00A0Marketplace`,
-    company: 'n',
+    company: 'Groupon',
     role: `QA\u00A0Automation ${NB_HYPHEN}\u00A0Team\u00A0Leader`,
     years: '4 months',
     description:
@@ -420,7 +420,7 @@ export const WORK_PROJECTS_OVERVIEW = {
   },
   komercniBanka: {
     title: `Commerce Bank ${NB_HYPHEN}\u00A0Website`,
-    company: 'ní banka',
+    company: 'Komerční banka',
     role: 'React Developer',
     years: '10\u00A0months',
     description:
@@ -453,7 +453,7 @@ export const WORK_PROJECTS_OVERVIEW = {
   },
   kooperativa: {
     title: `Insurance Company ${NB_HYPHEN}\u00A0App`,
-    company: 'ativa',
+    company: 'Kooperativa',
     role: 'React Developer',
     years: '8\u00A0months',
     description: `I\u00A0worked on\u00A0an\u00A0application for\u00A0managing insurance policies for\u00A0citizens. Kooperativa has over ${CUSTOMERS_COUNT.kooperativa} customers in\u00A0Czech\u00A0Republic.`,
@@ -470,7 +470,7 @@ export const WORK_PROJECTS_OVERVIEW = {
   },
   frontEnd: {
     title: `SaaS Company ${NB_HYPHEN}\u00A0Website`,
-    company: 'upp',
+    company: 'Smartsupp',
     role: 'Front End Developer',
     years: '1\u00A0year',
     description:
@@ -488,7 +488,7 @@ export const WORK_PROJECTS_OVERVIEW = {
   },
   wordPress: {
     title: `SaaS Company ${NB_HYPHEN}\u00A0HELP Website`,
-    company: 'upp',
+    company: 'Smartsupp',
     role: 'Admin &\u00A0Content Writer',
     years: '6\u00A0months',
     description:
@@ -506,7 +506,7 @@ export const WORK_PROJECTS_OVERVIEW = {
   },
   reactDashboard: {
     title: `SaaS Company\u00A0${NB_HYPHEN}\u00A0Dashboard`,
-    company: 'upp',
+    company: 'Smartsupp',
     role: 'React Developer',
     years: '3\u00A0years 2\u00A0months',
     description:
@@ -527,26 +527,26 @@ export const WORK_PROJECTS_OVERVIEW = {
 export const OTHER_EXPERIENCE = {
   frontEnd: {
     freelance: {
-      company: 'nce',
+      company: 'Freelance',
       role: 'Web Developer /\u00A0Consultant',
       description: `${YEARS.consultantWebsites} years ${MIDDLE_DOT} part-time ${EM_DASH}\u00A0Websites for\u00A0small companies.`,
     },
   },
   wordPress: {
-    company: 'nce',
+    company: 'Freelance',
     role: 'WordPress Developer /\u00A0Consultant',
     description: `${YEARS.consultantWordPress} years ${MIDDLE_DOT} part-time ${EM_DASH}\u00A0Websites for\u00A0small companies.`,
   },
   localization: {
     smartsupp: {
-      company: 'upp',
+      company: 'Smartsupp',
       role: `Localization ${NB_HYPHEN}\u00A0Manager`,
       description: `${YEARS.localizationManager} years ${EM_DASH} Website localization. ${FLAGS_LOCALIZATION.emojis}`,
     },
   },
   qualityAssurance: {
     smartsupp: {
-      company: 'upp',
+      company: 'Smartsupp',
       role: `QA\u00A0Automation ${NB_HYPHEN}\u00A0Team\u00A0Leader`,
       description: `${MONTHS.qaTeamLeaderAtSmartsupp} months ${EM_DASH} Set up\u00A0Cypress E2E testing for\u00A0SaaS company.`,
     },
@@ -569,8 +569,8 @@ export const PAGE_HOME = {
     },
     problemSolving: {
       items: [
-        { text: 'Enjoying brainstorming sessions' },
         { text: 'Thinking outside the\u00A0box' },
+        { text: 'Enjoying brainstorming' },
         { text: 'Adapting to\u00A0changes' },
       ],
     },
@@ -608,7 +608,7 @@ export const PROJECTS_PERSONAL = {
 export const PROJECTS_PERSONAL_OVERVIEW = {
   next: {
     title: 'Portfolio Website',
-    company: 'al project',
+    company: 'Personal project',
     role: `Front End ${EM_DASH}\u00A0Next.js`,
     description: `
       My personal portfolio website showing my\u00A0work and\u00A0skills as\u00A0a\u00A0${TEXT.reactDeveloperNBSP}.
@@ -627,7 +627,7 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
   },
   react: {
     title: 'CryptoMania',
-    company: 'al project',
+    company: 'Personal project',
     role: `Front End ${EM_DASH}\u00A0React`,
     description:
       'Crypto currency prices app fetching latest data from CoinGecko\u00A0API. This\u00A0is very small project in\u00A0Chakra\u00A0UI with dark mode.',

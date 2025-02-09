@@ -6,6 +6,7 @@ export const YEARS: YearsExperience = {
   react: 5,
   redux: 3,
   tailwind: 2,
+  playwright: 2,
   next: 1,
   webDeveloper: 1,
   qaAutomation: 1,

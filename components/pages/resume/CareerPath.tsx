@@ -15,10 +15,9 @@ import { careerWebDev } from '@/lib/data/pages/resume/career-path/careerWebDev'
 const CareerPath: FC = (): JSX.Element => {
   return (
     <>
-      <HeadingSection text="My Career Path" />
+      <HeadingSection text="Career Path" />
 
       <Paragraph size="text-sm" customCss="hidden xl:block">
-        <span className="font-bold">{TEXT.myJourney}</span>{' '}
         {(careerPathSteps ?? []).map((step, index) => (
           <CareerPathJobStep key={step.id} step={step} index={index} />
         ))}

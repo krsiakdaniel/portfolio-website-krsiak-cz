@@ -316,6 +316,7 @@ export interface YearsExperience {
   react: number
   redux: number
   tailwind: number
+  playwright: number
   next: number
   webDeveloper: number
   qaAutomation: number

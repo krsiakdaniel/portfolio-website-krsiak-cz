@@ -11,7 +11,6 @@ const StatusIntroduction: FC = (): JSX.Element => {
   return (
     <>
       <Paragraph dataTestId={DATA_TEST_IDS.page.status.introduction}>
-        {INTRODUCTION.status.text.current} <Highlight text={INTRODUCTION.status.text.status} />{' '}
         {INTRODUCTION.status.text.showing}
         {'\u00A0'}
         <Highlight text={INTRODUCTION.status.text.performance} /> {INTRODUCTION.status.text.of}

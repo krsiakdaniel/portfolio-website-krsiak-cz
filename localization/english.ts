@@ -274,7 +274,7 @@ export const PROJECT_INFORMATION = {
 }
 
 export const MY_WORK = {
-  workedForCompanies: 'I\u00A0Worked\u00A0At',
+  workedForCompanies: 'I\u00A0Worked\u00A0For',
   skillsForCompany: 'Skills',
   committedMindset: 'Mindset',
   problemSolving: 'Creative',
@@ -748,7 +748,7 @@ export const CALL_TO_ACTION = {
   workExperience: {
     highlight: 'Professional journey',
     highlightShort: 'My journey',
-    heading: 'Explore My\u00A0Work Experience',
+    heading: 'Work Experience',
     textMobileAndDesktop: `See the professional projects I\u00A0worked on\u00A0and\u00A0had the\u00A0opportunity to\u00A0improve.`,
     textDesktop: 'Developing scalable and\u00A0robust web applications for\u00A0big companies.',
   },
@@ -762,7 +762,7 @@ export const CALL_TO_ACTION = {
   },
   resume: {
     highlight: 'React Developer',
-    heading: 'Explore My\u00A0Resume',
+    heading: 'My\u00A0Resume',
     textMobileAndDesktop: `To understand my\u00A0React Developer career, learn about my\u00A0skills and\u00A0experience.`,
     textDesktop:
       'From startup to large corporations I\u00A0have worked on\u00A0a\u00A0variety of\u00A0projects.',
@@ -775,8 +775,8 @@ export const CALL_TO_ACTION = {
     textDesktop: 'It shows a\u00A0comprehensive overview of\u00A0my career journey.',
   },
   github: {
-    highlight: 'GitHub',
-    heading: 'Explore GitHub Projects',
+    highlight: 'Personal',
+    heading: 'GitHub Projects',
     textMobileAndDesktop:
       'Go through my GitHub repository to\u00A0see how I\u00A0code my\u00A0personal portfolio project.',
     textDesktop:
@@ -827,9 +827,7 @@ export const INTRODUCTION = {
   },
   status: {
     text: {
-      current: 'Current',
-      status: 'status',
-      showing: 'showing the\u00A0health\u00A0and',
+      showing: 'Showing the\u00A0health\u00A0and',
       performance: 'performance',
       of: 'of\u00A0the',
       project: 'project',
