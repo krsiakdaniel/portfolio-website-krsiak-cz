@@ -9,9 +9,8 @@ const WhoIAmTravelsList: FC = (): JSX.Element => {
   return (
     <div className="mt-4">
       <List>
-        {travelItems.map(({ id, icon, flag, text }) => (
+        {travelItems.map(({ id, flag, text }) => (
           <ListItem key={id}>
-            <span className="hidden md:inline-block">{icon}</span>
             <span className="ml-1">{flag}</span>
             <span className="ml-2">{text}</span>
           </ListItem>

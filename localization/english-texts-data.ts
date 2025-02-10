@@ -388,7 +388,7 @@ export const WORK_PROJECTS_OVERVIEW = {
     role: `QA\u00A0Automation ${NB_HYPHEN}\u00A0Team\u00A0Leader`,
     years: '1 year',
     description:
-      'Worked on\u00A0localization testing for\u00A0Microsoft Windows\u00A08 and\u00A0Windows Phone. I\u00A0had an\u00A0amazing chance to\u00A0be team leader on\u00A0Microsoft products.',
+      'Worked on\u00A0localization for\u00A0the\u00A0Microsoft Windows\u00A08 and\u00A0Windows Phone. I\u00A0had an\u00A0amazing chance to\u00A0be team leader on\u00A0Microsoft products.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -510,7 +510,7 @@ export const WORK_PROJECTS_OVERVIEW = {
     role: 'React Developer',
     years: '3\u00A0years 2\u00A0months',
     description:
-      'I\u00A0worked on\u00A0chat dashboard features and\u00A0new design of\u00A0settings. I\u00A0was involved in\u00A0UX team learning about user needs.',
+      'I\u00A0worked on\u00A0chat dashboard features and\u00A0new design the\u00A0app\u00A0settings. I\u00A0was involved in\u00A0UX team learning about user needs.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -611,7 +611,7 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
     company: 'Personal project',
     role: `Front End ${EM_DASH}\u00A0Next.js`,
     description: `
-      My personal portfolio website showing my\u00A0work and\u00A0skills as\u00A0a\u00A0${TEXT.reactDeveloperNBSP}.
+      Personal portfolio website with my\u00A0work and\u00A0skills as\u00A0a\u00A0${TEXT.reactDeveloperNBSP}.
       It\u00A0features production-level code that I\u00A0write.`,
     linkText: 'Project details',
     projectLinks: [

@@ -1,27 +1,35 @@
 import { MonthsExperience, YearsExperience } from '@/lib/utils/typeDefinitions/interfaces'
 
+const ONE = 1
+const TWO = 2
+const THREE = 3
+const FOUR = 4
+const FIVE = 5
+const SIX = 6
+const EIGHT = 8
+
 export const YEARS: YearsExperience = {
-  javaScript: 6,
-  typeScript: 5,
-  react: 5,
-  redux: 3,
-  tailwind: 2,
-  playwright: 2,
-  next: 1,
-  webDeveloper: 1,
-  qaAutomation: 1,
-  localizationManager: 2,
-  localizationTester: 3,
-  webCoder: 1,
-  consultantWebsites: 5,
-  consultantWordPress: 5,
-  operatorIBM: 2,
-  ticketAgent: 1,
-  highSchoolAccountant: 4,
+  javaScript: SIX,
+  typeScript: FIVE,
+  react: FIVE,
+  redux: THREE,
+  tailwind: TWO,
+  playwright: TWO,
+  next: ONE,
+  webDeveloper: ONE,
+  qaAutomation: ONE,
+  localizationManager: TWO,
+  localizationTester: THREE,
+  webCoder: ONE,
+  consultantWebsites: FIVE,
+  consultantWordPress: FIVE,
+  operatorIBM: TWO,
+  ticketAgent: ONE,
+  highSchoolAccountant: FOUR,
 }
 
 export const MONTHS: MonthsExperience = {
-  qaTeamLeaderAtSmartsupp: 6, // months
-  airportFlightsInfo: 8, // months
-  crewMemberKFC: 3, // months
+  qaTeamLeaderAtSmartsupp: SIX,
+  airportFlightsInfo: EIGHT,
+  crewMemberKFC: THREE,
 }

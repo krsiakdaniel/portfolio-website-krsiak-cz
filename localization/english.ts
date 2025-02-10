@@ -17,7 +17,6 @@ export const ICON_EMOJI = {
   flagAlandIslands: '🇦🇽',
   flagSouthKorea: '🇰🇷',
   flagJapan: '🇯🇵',
-  japaneseCastle: '🏯',
   house: '🏠',
   moneyBag: '💰',
   rocket: '🚀',
@@ -65,8 +64,6 @@ export const ICON_EMOJI = {
   woman: {
     officeWorker: '👩‍💼',
   },
-  waterWave: '🌊',
-  ship: '🚢',
   evergreenTree: '🌲',
   christmasTree: '🎄',
   mountain: '⛰️',
@@ -215,7 +212,7 @@ export const TESTIMONIALS = {
       description: 'Personal testimonials that highlight my\u00A0integrity.',
     },
     fitnessCoach: {
-      title: 'Me As Fitness Coach',
+      title: 'Me As\u00A0Fitness Coach',
       description: 'Testimonials from my online fitness coaching experience.',
     },
   },
