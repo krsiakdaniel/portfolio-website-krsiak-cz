@@ -7,7 +7,7 @@ import WhoIAmTravelsList from '@/components/pages/who-i-am/WhoIAmTravelsList'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading1 from '@/components/shared/Heading1'
 import HeadingSection from '@/components/shared/HeadingSection'
-import SouthKorea from '@/components/shared/misc/SouthKorea'
+import SouthKorea from '@/components/pages/who-i-am/SouthKorea'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { ICON_EMOJI, SOUTH_KOREA, TEXT, WHO_I_AM } from '@/localization/english'

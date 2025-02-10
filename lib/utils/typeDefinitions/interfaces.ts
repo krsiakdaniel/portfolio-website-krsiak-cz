@@ -420,7 +420,6 @@ export interface CareerPathStep {
 // Travel Item
 export interface TravelItem {
   id: string
-  icon: string
   flag: string
   text: string
 }
