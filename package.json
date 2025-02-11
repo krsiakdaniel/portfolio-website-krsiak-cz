@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",
-    "@next/third-parties": "^15.1.6",
+    "@next/third-parties": "^15.1.7",
     "braces": "^3.0.3",
     "cross-spawn": "^7.0.6",
     "flowbite": "^2.5.2",
@@ -38,7 +38,7 @@
     "ws": "^8.18.0"
   },
   "devDependencies": {
-    "@happy-dom/jest-environment": "^16.8.1",
+    "@happy-dom/jest-environment": "^17.0.3",
     "@netlify/plugin-nextjs": "^5.9.4",
     "@playwright/test": "^1.50.1",
     "@testing-library/jest-dom": "^6.6.3",
