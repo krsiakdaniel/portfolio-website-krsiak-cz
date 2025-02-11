@@ -10,7 +10,6 @@ import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
 
 // Analytics
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
-import Smartlook from '@/components/analytics/Smartlook'
 
 // Default metadata used by all pages if they don't have their own metadata
 import { defaultMetaData } from '@/lib/data/metadata/shared/defaultMetaData'
@@ -46,7 +45,6 @@ const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element =>
     <html lang="en" className={roboto.className}>
       <head>
         <GoogleAnalytics />
-        <Smartlook />
         <AppleTouchIcons />
       </head>
       <body className={roboto.className}>
