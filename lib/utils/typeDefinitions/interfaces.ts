@@ -66,7 +66,7 @@ export interface ProjectBase {
 // Project
 export interface Project extends ProjectBase {
   id: string
-  imageShowcase: ImageShowcaseItem[]
+  galleryImages: GalleryImage[]
   years?: string
   skillsOverview: Skill[]
   projectLinks: Link[]
@@ -157,8 +157,8 @@ export interface TestimonialsGroups {
   }
 }
 
-// Image Showcase Item
-export interface ImageShowcaseItem {
+// Gallery Image
+export interface GalleryImage {
   id: number
   src: string
 }

@@ -149,4 +149,3 @@ The website has these top level pages and project detail pages.
 ![krsiak.cz | Work Experience](/readme-images/main-readme/krsiak/krsiak-2-light.webp)
 ![krsiak.cz | Resume](/readme-images/main-readme/krsiak/krsiak-3-light.webp)
 ![krsiak.cz | Personal Projects](/readme-images/main-readme/krsiak/krsiak-4-light.webp)
-![krsiak.cz | Testimonials](/readme-images/main-readme/krsiak/krsiak-5-light.webp)
