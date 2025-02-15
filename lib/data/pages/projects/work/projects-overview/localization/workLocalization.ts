@@ -12,14 +12,14 @@ import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
 import moravia1 from '@/public/images/webp/projects/work/moravia/moravia-1-light.webp'
 import moravia2 from '@/public/images/webp/projects/work/moravia/moravia-2-light.webp'
 import moravia3 from '@/public/images/webp/projects/work/moravia/moravia-3-light.webp'
-import moraviaThumb from '@/public/images/webp/projects/work/moravia/moravia-thumb.webp'
+import moraviaProjectPreview from '@/public/images/webp/projects/work/moravia/moravia-project-preview.webp'
 
 export const projectsWorkLocalization: Project[] = [
   {
     id: PROJECT_ID.work.moravia,
     isFeatured: true,
-    image: moraviaThumb.src,
-    imageShowcase: [
+    image: moraviaProjectPreview.src,
+    galleryImages: [
       { id: 0, src: moravia1.src },
       { id: 1, src: moravia2.src },
       { id: 2, src: moravia3.src },
