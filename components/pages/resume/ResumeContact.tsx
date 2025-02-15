@@ -8,41 +8,30 @@ import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 import { RESUME, SHARED, TEXT } from '@/localization/english'
 
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
-import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
 
 const ResumeContact: FC = (): JSX.Element => {
   const isOpenToWork = IS_OPEN_TO_WORK
-
   const contactMessage = isOpenToWork ? TEXT.openToWork : TEXT.openToNetworking
-  const contactPurpose = isOpenToWork
-    ? RESUME.regardingJobOpportunities
-    : RESUME.forNetworkingOnLinkedIn
 
   return (
     <>
       <HeadingSection
         text={
-          <span>
-            {RESUME.scanQR}
-            <span className="mx-2 hidden sm:inline-block">{EM_DASH}</span>
-            <span
-              className={`block font-bold sm:inline md:ml-2 ${isOpenToWork ? 'text-green-600' : 'text-blue-600'}`}
-            >
-              {contactMessage}
-            </span>
+          <span className={isOpenToWork ? 'text-green-600' : 'text-blue-600'}>
+            {contactMessage}
           </span>
         }
       />
 
       <div>
         <Paragraph>
-          {RESUME.feelFreeTo} <Highlight text={RESUME.callMe} /> {SHARED.or}
-          {'\u00A0'}
-          <Highlight text={RESUME.sendAnEmail} /> {contactPurpose}.
+          <Highlight text={RESUME.callMe} /> {SHARED.or} <Highlight text={RESUME.sendAnEmail} />{' '}
+          {RESUME.contactOnLinkedIn}
+          {SHARED.textDot}
         </Paragraph>
       </div>
 
-      <div className="mt-8 flex">
+      <div className="mt-10 flex">
         <ScanMyContactQR showImageCaption={true} />
       </div>
     </>
