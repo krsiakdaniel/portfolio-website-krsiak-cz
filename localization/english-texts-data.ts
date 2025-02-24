@@ -50,7 +50,7 @@ export const TESTIMONIALS = {
     },
     castro: {
       name: 'Alexandre Castro',
-      job: 'QA Tester and\u00A0Content Manager',
+      job: 'QA Tester',
       company: 'Smartlook',
       text: `On\u00A0a\u00A0personal note, Daniel helped me\u00A0a\u00A0great deal, when I\u00A0started at\u00A0Smartsupp.
         With him, I\u00A0managed to\u00A0learn so\u00A0much on\u00A0many different topics. 
@@ -62,14 +62,20 @@ export const TESTIMONIALS = {
       name: 'Shane Duquette',
       job: 'Founder',
       company: 'Bony\u00A0to\u00A0Beastly',
-      text: `Daniel has worked for\u00A0me\u00A0as\u00A0an\u00A0online fitness coach for\u00A0a\u00A0decade now, consistently and\u00A0with incredible attention to\u00A0detail. He's also a\u00A0pleasure to\u00A0work with and\u00A0popular with clients.`,
+      text: `Daniel has worked for\u00A0me\u00A0as\u00A0an\u00A0online fitness coach for\u00A0almost 10 years now, consistently and\u00A0with incredible attention to\u00A0detail. He's also a\u00A0pleasure to\u00A0work with and\u00A0popular with clients.`,
       linkText: 'Bony to Beastly',
     },
     robert: {
       name: 'Robert Kesterson',
       job: 'Coach',
       company: 'Bony\u00A0to\u00A0Beastly',
-      text: `In the\u00A0six years I've worked with Daniel, he\u00A0has always been quick to\u00A0jump in\u00A0and\u00A0help to\u00A0solve every problem. His\u00A0generosity and\u00A0creativity are\u00A0inspirational to\u00A0everyone around him.”`,
+      text: `In the\u00A06 years I've worked with Daniel, he\u00A0has always been quick to\u00A0jump in\u00A0and\u00A0help to\u00A0solve every problem. His\u00A0generosity and\u00A0creativity are\u00A0inspirational to\u00A0everyone around him.”`,
+    },
+    steve: {
+      name: 'Steve McManus',
+      job: 'Coach',
+      company: 'Bony\u00A0to\u00A0Beastly',
+      text: `I have known Daniel for\u00A0over 10\u00A0years and\u00A0during this time we\u00A0have worked together as\u00A0online fitness coaches. Daniel\u00A0is\u00A0very reliable, personable and\u00A0has\u00A0the\u00A0ability to\u00A0inspire and\u00A0motivate others.`,
     },
   },
 }

@@ -5,6 +5,7 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { TestimonialItem } from '@/lib/utils/typeDefinitions/interfaces'
 
 import personRobert from '@/public/images/webp/testimonials/fitness/robert-kesterson.webp'
+import personSteve from '@/public/images/webp/testimonials/fitness/steve-mcmanus.webp'
 import personShane from '@/public/images/webp/testimonials/fitness/shane-duquette.webp'
 
 export const fitnessCoachTestimonials: TestimonialItem[] = [
@@ -27,5 +28,14 @@ export const fitnessCoachTestimonials: TestimonialItem[] = [
     personJob: TEXT_DATA.fitness.robert.job,
     personCompany: TEXT_DATA.fitness.robert.company,
     testimonialText: TEXT_DATA.fitness.robert.text,
+  },
+  {
+    id: TEXT_DATA.fitness.steve.name,
+    personPhoto: personSteve,
+    personIcon: ICON_EMOJI.personLiftingWeights,
+    personName: TEXT_DATA.fitness.steve.name,
+    personJob: TEXT_DATA.fitness.steve.job,
+    personCompany: TEXT_DATA.fitness.steve.company,
+    testimonialText: TEXT_DATA.fitness.steve.text,
   },
 ]
