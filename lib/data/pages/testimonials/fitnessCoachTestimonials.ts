@@ -7,6 +7,7 @@ import { TestimonialItem } from '@/lib/utils/typeDefinitions/interfaces'
 import personRobert from '@/public/images/webp/testimonials/fitness/robert-kesterson.webp'
 import personSteve from '@/public/images/webp/testimonials/fitness/steve-mcmanus.webp'
 import personShane from '@/public/images/webp/testimonials/fitness/shane-duquette.webp'
+import personMarco from '@/public/images/webp/testimonials/fitness/marco-walker-ng.webp'
 
 export const fitnessCoachTestimonials: TestimonialItem[] = [
   {
@@ -19,6 +20,17 @@ export const fitnessCoachTestimonials: TestimonialItem[] = [
     testimonialText: TEXT_DATA.fitness.shane.text,
     link: EXTERNAL_URL.bonyToBeastly,
     linkText: TEXT_DATA.fitness.shane.linkText,
+  },
+  {
+    id: TEXT_DATA.fitness.marco.name,
+    personPhoto: personMarco,
+    personIcon: ICON_EMOJI.manLiftingWeights,
+    personName: TEXT_DATA.fitness.marco.name,
+    personJob: TEXT_DATA.fitness.marco.job,
+    personCompany: TEXT_DATA.fitness.marco.company,
+    testimonialText: TEXT_DATA.fitness.marco.text,
+    link: EXTERNAL_URL.bonyToBeastly,
+    linkText: TEXT_DATA.fitness.marco.linkText,
   },
   {
     id: TEXT_DATA.fitness.robert.name,
