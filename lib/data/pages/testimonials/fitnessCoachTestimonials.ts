@@ -4,10 +4,10 @@ import { TEXT_DATA } from '@/localization/english-texts-data'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { TestimonialItem } from '@/lib/utils/typeDefinitions/interfaces'
 
-import personRobert from '@/public/images/webp/testimonials/fitness/robert-kesterson.webp'
-import personSteve from '@/public/images/webp/testimonials/fitness/steve-mcmanus.webp'
-import personShane from '@/public/images/webp/testimonials/fitness/shane-duquette.webp'
 import personMarco from '@/public/images/webp/testimonials/fitness/marco-walker-ng.webp'
+import personRobert from '@/public/images/webp/testimonials/fitness/robert-kesterson.webp'
+import personShane from '@/public/images/webp/testimonials/fitness/shane-duquette.webp'
+import personSteve from '@/public/images/webp/testimonials/fitness/steve-mcmanus.webp'
 
 export const fitnessCoachTestimonials: TestimonialItem[] = [
   {
@@ -22,6 +22,15 @@ export const fitnessCoachTestimonials: TestimonialItem[] = [
     linkText: TEXT_DATA.fitness.shane.linkText,
   },
   {
+    id: TEXT_DATA.fitness.robert.name,
+    personPhoto: personRobert,
+    personIcon: ICON_EMOJI.personLiftingWeights,
+    personName: TEXT_DATA.fitness.robert.name,
+    personJob: TEXT_DATA.fitness.robert.job,
+    personCompany: TEXT_DATA.fitness.robert.company,
+    testimonialText: TEXT_DATA.fitness.robert.text,
+  },
+  {
     id: TEXT_DATA.fitness.marco.name,
     personPhoto: personMarco,
     personIcon: ICON_EMOJI.manLiftingWeights,
@@ -31,15 +40,6 @@ export const fitnessCoachTestimonials: TestimonialItem[] = [
     testimonialText: TEXT_DATA.fitness.marco.text,
     link: EXTERNAL_URL.bonyToBeastly,
     linkText: TEXT_DATA.fitness.marco.linkText,
-  },
-  {
-    id: TEXT_DATA.fitness.robert.name,
-    personPhoto: personRobert,
-    personIcon: ICON_EMOJI.personLiftingWeights,
-    personName: TEXT_DATA.fitness.robert.name,
-    personJob: TEXT_DATA.fitness.robert.job,
-    personCompany: TEXT_DATA.fitness.robert.company,
-    testimonialText: TEXT_DATA.fitness.robert.text,
   },
   {
     id: TEXT_DATA.fitness.steve.name,
