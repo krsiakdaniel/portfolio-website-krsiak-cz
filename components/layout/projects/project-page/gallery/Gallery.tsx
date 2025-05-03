@@ -27,12 +27,12 @@ const Gallery: FC<GalleryProps> = ({ images = [] }): JSX.Element => {
         role="region"
         aria-label={ARIA_LABELS.galleryProjectShowcase}
       >
-        <GalleryPreview activeImage={activeImage} />
         <GalleryThumbnails
           images={images}
           activeImage={activeImage}
           setActiveImage={setActiveImage}
         />
+        <GalleryPreview activeImage={activeImage} />
       </div>
     </div>
   )
