@@ -1,5 +1,5 @@
 import { COUNTRY } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
+import { EM_DASH, EN_DASH } from '@/lib/utils/constants/specialCharacters'
 import { YEARS } from '@/lib/utils/constants/yearsExperience'
 
 export const ICON_EMOJI = {
@@ -101,6 +101,8 @@ export const SHARED = {
   years: 'years',
   month: 'month',
   months: 'months',
+  textDot: '.',
+  textComma: ',',
 }
 
 export const CUSTOMERS_COUNT = {
@@ -184,13 +186,19 @@ export const RESUME = {
   downloadResume: 'Download Resume in\u00A0PDF',
   downloadResumeShort: 'Download PDF',
   openToWork: 'Open To\u00A0work',
-  openToNetworking: 'Open To\u00A0Networking',
+  openToNetworking: 'Networking',
   scanQR: 'Scan My\u00A0Contact',
   feelFreeTo: 'Feel free to scan my contact.',
   regardingJobOpportunities: 'regarding job\u00A0opportunities',
   forNetworkingOnLinkedIn: 'for networking on\u00A0LinkedIn',
   callMe: 'Call\u00A0me',
   sendAnEmail: 'send\u00A0an\u00A0email',
+}
+
+export const CAREER_PATH = {
+  heading: 'Career Path',
+  text1: `My path to\u00A0become a\u00A0full${EN_DASH}time`,
+  text2: COMMON_VALUES.reactDeveloperNBSP,
 }
 
 export const TESTIMONIALS = {

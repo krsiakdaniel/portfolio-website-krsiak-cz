@@ -11,11 +11,7 @@ import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 
 const ResumeContact: FC = (): JSX.Element => {
   const isOpenToWork = IS_OPEN_TO_WORK
-
   const contactMessage = isOpenToWork ? TEXT.openToWork : TEXT.openToNetworking
-  const contactPurpose = isOpenToWork
-    ? RESUME.regardingJobOpportunities
-    : RESUME.forNetworkingOnLinkedIn
 
   return (
     <>
@@ -29,13 +25,13 @@ const ResumeContact: FC = (): JSX.Element => {
 
       <div>
         <Paragraph>
-          {RESUME.feelFreeTo} <Highlight text={RESUME.callMe} /> {SHARED.or}
-          {'\u00A0'}
-          <Highlight text={RESUME.sendAnEmail} /> {contactPurpose}.
+          <Highlight text={RESUME.callMe} /> {SHARED.or} <Highlight text={RESUME.sendAnEmail} />{' '}
+          {RESUME.contactOnLinkedIn}
+          {SHARED.textDot}
         </Paragraph>
       </div>
 
-      <div className="mt-8 flex">
+      <div className="mt-10 flex">
         <ScanMyContactQR showImageCaption={true} />
       </div>
     </>

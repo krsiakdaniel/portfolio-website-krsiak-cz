@@ -7,9 +7,10 @@ Development environment for the project.
 - [🛠️ Development](#️-development)
   - [🚀 Website Version `2.48.23`](#-website-version-24823)
   - [💻 Commands](#-commands)
-    - [🔧 Bun Commands](#-bun-commands)
+    - [Bun Commands](#bun-commands)
     - [Available Scripts](#available-scripts)
     - [Install Dependencies](#install-dependencies)
+    - [Specify Node Version](#specify-node-version)
     - [Run Development Mode](#run-development-mode)
   - [📦 Find Outdated Dependencies](#-find-outdated-dependencies)
   - [💅 Prettier](#-prettier)
@@ -34,7 +35,7 @@ This project uses `bun` as package manager: <https://bun.sh/>
 
 ![bun - logo](/readme-images/development/bun/bun-logo.webp)
 
-### 🔧 Bun Commands
+### Bun Commands
 
 Common Bun CLI commands for package management:
 
@@ -91,6 +92,22 @@ Use `bun` to install the necessary packages.
 
 ```bash
 bun install
+```
+
+### Specify Node Version
+
+Ensure the correct [Node](https://nodejs.org/en) version is used for the project by creating `.nvmrc` file in the root directory with the desired version.
+
+File `.nvmrc` content:
+
+```bash
+v23.8.0
+```
+
+Use `nvm` command to switch to the specified Node version before running the project.
+
+```bash
+nvm use 23
 ```
 
 ### Run Development Mode
