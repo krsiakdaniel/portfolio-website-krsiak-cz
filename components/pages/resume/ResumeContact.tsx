@@ -25,9 +25,9 @@ const ResumeContact: FC = (): JSX.Element => {
 
       <div>
         <Paragraph>
-          <Highlight text={RESUME.callMe} /> {SHARED.or} <Highlight text={RESUME.sendAnEmail} />{' '}
-          {RESUME.contactOnLinkedIn}
-          {SHARED.textDot}
+          <Highlight text={RESUME.callMe} />, <Highlight text={RESUME.sendAnEmail} /> {SHARED.or}{' '}
+          <Highlight text={RESUME.connectOnLinkedIn} />{' '}
+          {isOpenToWork ? RESUME.regardingJobOpportunities : RESUME.forNetworkingOnLinkedIn}
         </Paragraph>
       </div>
 

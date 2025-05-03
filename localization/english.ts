@@ -101,8 +101,6 @@ export const SHARED = {
   years: 'years',
   month: 'month',
   months: 'months',
-  textDot: '.',
-  textComma: ',',
 }
 
 export const CUSTOMERS_COUNT = {
@@ -189,10 +187,11 @@ export const RESUME = {
   openToNetworking: 'Networking',
   scanQR: 'Scan My\u00A0Contact',
   feelFreeTo: 'Feel free to scan my contact.',
-  regardingJobOpportunities: 'regarding job\u00A0opportunities',
-  forNetworkingOnLinkedIn: 'for networking on\u00A0LinkedIn',
+  regardingJobOpportunities: 'to hire me.',
+  forNetworkingOnLinkedIn: 'for networking.',
   callMe: 'Call\u00A0me',
   sendAnEmail: 'send\u00A0an\u00A0email',
+  connectOnLinkedIn: 'connect on\u00A0LinkedIn',
 }
 
 export const CAREER_PATH = {

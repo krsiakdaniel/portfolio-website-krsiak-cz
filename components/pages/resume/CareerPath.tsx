@@ -5,7 +5,7 @@ import HeadingSection from '@/components/shared/HeadingSection'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { CAREER_PATH, ICON_EMOJI, SHARED, TEXT } from '@/localization/english'
+import { CAREER_PATH, ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { careerReactDev } from '@/lib/data/pages/resume/career-path/careerReactDev'
 import { careerTesting } from '@/lib/data/pages/resume/career-path/careerTesting'
@@ -17,8 +17,7 @@ const CareerPath: FC = (): JSX.Element => {
       <HeadingSection text={CAREER_PATH.heading} />
 
       <Paragraph>
-        {CAREER_PATH.text1} <Highlight text={CAREER_PATH.text2} />
-        {SHARED.textDot}
+        {CAREER_PATH.text1} <Highlight text={CAREER_PATH.text2} />.
       </Paragraph>
 
       <div className="mt-10 w-full">
