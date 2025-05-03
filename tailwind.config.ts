@@ -27,23 +27,29 @@ const customKeyframes = {
     '0%, 100%': { transform: 'translateY(0)' },
     '50%': { transform: 'translateY(-10px)' },
   },
+  fadeIn: {
+    '0%': { opacity: '0.5' },
+    '100%': { opacity: '1' },
+  },
 }
 
 // Animation timing
 const ANIMATION_TIMING = {
-  SLOW: '3s',
-  NORMAL: '2s',
+  HALF_SECOND: '500ms',
+  TWO_SECONDS: '2000ms',
+  THREE_SECONDS: '3000ms',
 } as const
 
 // Animation types
 const EASE_IN_OUT = 'ease-in-out' as const
 
 const customAnimations = {
-  'pulse-bubble': `pulseBubble ${ANIMATION_TIMING.SLOW} infinite`,
-  'ghost-previous': `animateGhostPrevious ${ANIMATION_TIMING.NORMAL} ${EASE_IN_OUT} infinite`,
-  'ghost-next': `animateGhostNext ${ANIMATION_TIMING.NORMAL} ${EASE_IN_OUT} infinite`,
-  'man-walk': `manWalk infinite ${ANIMATION_TIMING.NORMAL} ${EASE_IN_OUT}`,
-  'gentle-bounce': `gentleBounce infinite ${ANIMATION_TIMING.NORMAL} ${EASE_IN_OUT}`,
+  'pulse-bubble': `pulseBubble ${ANIMATION_TIMING.THREE_SECONDS} infinite`,
+  'ghost-previous': `animateGhostPrevious ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
+  'ghost-next': `animateGhostNext ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
+  'man-walk': `manWalk infinite ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT}`,
+  'gentle-bounce': `gentleBounce infinite ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT}`,
+  'fade-in': `fadeIn ${ANIMATION_TIMING.HALF_SECOND} ${EASE_IN_OUT}`,
 }
 
 const customScreenSizes = {

@@ -101,8 +101,6 @@ export const SHARED = {
   years: 'years',
   month: 'month',
   months: 'months',
-  textDot: '.',
-  textComma: ',',
 }
 
 export const CUSTOMERS_COUNT = {
@@ -188,9 +186,12 @@ export const RESUME = {
   openToWork: 'Open To\u00A0work',
   openToNetworking: 'Networking',
   scanQR: 'Scan My\u00A0Contact',
-  contactOnLinkedIn: 'or\u00A0contact on\u00A0LinkedIn',
+  feelFreeTo: 'Feel free to scan my contact.',
+  regardingJobOpportunities: 'to hire me.',
+  forNetworkingOnLinkedIn: 'for networking.',
   callMe: 'Call\u00A0me',
   sendAnEmail: 'send\u00A0an\u00A0email',
+  connectOnLinkedIn: 'connect on\u00A0LinkedIn',
 }
 
 export const CAREER_PATH = {
@@ -295,7 +296,6 @@ export const MISC = {
   uptimeMonitor: 'krsiak.betteruptime.com',
   description: 'Description',
   goBack: 'Go\u00A0back',
-  gallery: 'Gallery',
   skillsIconsNames: `
       ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, ${COMMON_VALUES.next},
       ${COMMON_VALUES.redux}, ${COMMON_VALUES.graphql}, ${COMMON_VALUES.jest}, ${COMMON_VALUES.playwright},
@@ -776,7 +776,7 @@ export const CALL_TO_ACTION = {
     heading: 'Connect on\u00A0LinkedIn',
     textMobileAndDesktop:
       'Visit my LinkedIn profile to\u00A0connect and\u00A0see my\u00A0professional experiences.',
-    textDesktop: 'It showcases a\u00A0comprehensive overview of\u00A0my career journey.',
+    textDesktop: 'It shows a\u00A0comprehensive overview of\u00A0my career journey.',
   },
   github: {
     highlight: 'Personal',
@@ -859,6 +859,11 @@ export const INTRODUCTION = {
   },
 }
 
+export const GALLERY = {
+  heading: 'Gallery',
+  screenshots: 'See project screenshots.',
+}
+
 export const ARIA_LABELS = {
   toggleMenu: 'Toggle Menu',
   menu: 'Menu',
@@ -868,6 +873,10 @@ export const ARIA_LABELS = {
   manWalking: 'Man walking',
   forest: 'Forest',
   forestWithMountain: 'Forest with mountain',
+  galleryProjectShowcase: 'Gallery - Project showcase',
+  galleryActiveImage: 'Active image',
+  galleryThumbnails: 'Gallery thumbnails',
+  galleryThumbnail: 'Thumbnail',
 }
 
 export const ANALYTICS_WARNING = {

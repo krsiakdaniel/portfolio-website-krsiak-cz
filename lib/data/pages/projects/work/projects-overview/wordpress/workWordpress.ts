@@ -12,14 +12,14 @@ import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 import smartsuppHelp1 from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-1-light.webp'
 import smartsuppHelp2 from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-2-light.webp'
 import smartsuppHelp3 from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-3-light.webp'
-import smartsuppHelpThumb from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-thumb.webp'
+import smartsuppHelpProjectPreview from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-project-preview.webp'
 
 export const projectsWorkWordPress: Project[] = [
   {
     id: PROJECT_ID.work.smartsupp.help,
     isFeatured: false,
-    image: smartsuppHelpThumb.src,
-    imageShowcase: [
+    image: smartsuppHelpProjectPreview.src,
+    galleryImages: [
       { id: 0, src: smartsuppHelp1.src },
       { id: 1, src: smartsuppHelp2.src },
       { id: 2, src: smartsuppHelp3.src },

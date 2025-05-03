@@ -14,14 +14,14 @@ import krsiak1 from '@/public/images/webp/projects/personal/krsiak/krsiak-1-ligh
 import krsiak2 from '@/public/images/webp/projects/personal/krsiak/krsiak-2-light.webp'
 import krsiak3 from '@/public/images/webp/projects/personal/krsiak/krsiak-3-light.webp'
 import krsiak4 from '@/public/images/webp/projects/personal/krsiak/krsiak-4-light.webp'
-import krsiakThumb from '@/public/images/webp/projects/personal/krsiak/krsiak-thumb.webp'
+import krsiakProjectPreview from '@/public/images/webp/projects/personal/krsiak/krsiak-project-preview.webp'
 
 export const projectsPersonalNext: Project[] = [
   {
     id: PROJECT_ID.personal.krsiak,
     isFeatured: true,
-    image: krsiakThumb.src,
-    imageShowcase: [
+    image: krsiakProjectPreview.src,
+    galleryImages: [
       { id: 0, src: krsiak1.src },
       { id: 1, src: krsiak2.src },
       { id: 2, src: krsiak3.src },

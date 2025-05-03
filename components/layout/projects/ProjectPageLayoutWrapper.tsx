@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import PageContainer from '@/components/layout/PageContainer'
-import Gallery from '@/components/layout/projects/project-page/Gallery'
+import Gallery from '@/components/layout/projects/project-page/gallery/Gallery'
 import HeaderSection from '@/components/layout/projects/project-page/HeaderSection'
 import ProjectInformation from '@/components/layout/projects/project-page/ProjectInformation'
 import ProjectResponsibility from '@/components/layout/projects/project-page/ProjectResponsibility'
@@ -33,7 +33,7 @@ const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
     customers,
     projectLinks,
     linkGitHub,
-    imageShowcase,
+    galleryImages,
   } = projectData
 
   return (
@@ -68,9 +68,11 @@ const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
             linkGitHub={linkGitHub}
           />
           <ProjectResponsibility sections={sections} />
-          <Gallery imageShowcase={imageShowcase} />
+          <Gallery images={galleryImages} />
 
-          <CallToActionResume />
+          <div className="py-8">
+            <CallToActionResume />
+          </div>
         </article>
 
         {PageNavigation}
