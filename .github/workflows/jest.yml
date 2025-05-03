@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+permissions:
+  contents: read
+
 jobs:
   run-tests-jest:
     runs-on: ubuntu-latest
