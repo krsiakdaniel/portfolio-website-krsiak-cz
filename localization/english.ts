@@ -736,7 +736,7 @@ export const SOUTH_KOREA = {
   headingTravel: 'Traveling',
   headingSouthKorea: 'South Korea',
   introduction:
-    'Country where ancient traditions meet modern innovation, offers a\u00A0journey through bustling cities, serene temples, and\u00A0stunning landscapes.',
+    'South Korea is\u00A0a\u00A0fascinating country where ancient traditions seamlessly meet modern innovation, offering a\u00A0captivating journey through bustling metropolitan cities like\u00A0Seoul, serene Buddhist temples, stunning mountain vistas, and\u00A0nature full of\u00A0lush forests and\u00A0beautiful rivers.',
   quote1:
     'Travel makes one modest. You see what a\u00A0tiny place you occupy in\u00A0the\u00A0world.',
   quoteAuthor1: 'Gustave Flaubert, Novelist',
