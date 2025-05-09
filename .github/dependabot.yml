@@ -12,10 +12,10 @@ updates:
       interval: 'monthly'
     # Ignore updates for specified packages
     ignore:
-      - dependency-name: "flowbite"
-      - dependency-name: "flowbite-react"
-      - dependency-name: "react"
-      - dependency-name: "react-dom"
-      - dependency-name: "@types/react"
-      - dependency-name: "@types/react-dom"
-      - dependency-name: "tailwindcss"
+      - dependency-name: 'flowbite'
+      - dependency-name: 'flowbite-react'
+      - dependency-name: 'react'
+      - dependency-name: 'react-dom'
+      - dependency-name: '@types/react'
+      - dependency-name: '@types/react-dom'
+      - dependency-name: 'tailwindcss'
