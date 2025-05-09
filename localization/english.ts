@@ -95,6 +95,7 @@ export const SHARED = {
   opensInNewTab: 'Opens in a new tab',
   or: 'or',
   and: 'and',
+  but: 'but',
   customers: 'customers.',
   githubRepository: 'GitHub Repository',
   year: 'year',
@@ -236,8 +237,8 @@ export const PROJECTS = {
 }
 
 export const PROJECT_CRYPTOMANIA = {
-  alertTitle: 'CryptoMania is simple project',
-  alertDescription: "See production-level code for my 'Portfolio' on\u00A0GitHub repo.",
+  alertTitle: 'CryptoMania is\u00A0simple project',
+  alertDescription: "See production-level code for\u00A0my 'Portfolio website' on\u00A0GitHub.",
 }
 
 export const STATUS = {
@@ -735,7 +736,7 @@ export const SOUTH_KOREA = {
   headingTravel: 'Traveling',
   headingSouthKorea: 'South Korea',
   introduction:
-    'South Korea, where ancient traditions meet modern innovation, offers a\u00A0journey through bustling cities, serene temples, and\u00A0stunning landscapes.',
+    'Country where ancient traditions meet modern innovation, offers a\u00A0journey through bustling cities, serene temples, and\u00A0stunning landscapes.',
   quote1:
     'Travel makes one modest. You see what a\u00A0tiny place you occupy in\u00A0the\u00A0world.',
   quoteAuthor1: 'Gustave Flaubert, Novelist',
@@ -806,16 +807,16 @@ export const WHO_I_AM = {
   textCzechRepublic: `Hiking through the\u00A0forests in\u00A0Czech\u00A0Republic.`,
   textSlovakia: `Scaling the\u00A0majestic mountains in\u00A0Slovakia.`,
   textKorea: `Discovering the\u00A0stunning landscapes in\u00A0South\u00A0Korea.`,
-  textAlandIslands: `Cruising across the\u00A0Baltic\u00A0Sea to\u00A0the\u00A0archipelago of\u00A0the\u00A0Åland\u00A0Islands.`,
+  textAlandIslands: `Cruising across the\u00A0Baltic\u00A0Sea exploring the\u00A0Åland\u00A0Islands.`,
 }
 
 export const INTRODUCTION = {
   whoIAm: {
     text: {
       introduction1: `Hi! My name is\u00A0`,
-      introduction2: ` and\u00A0at\u00A0work\u00A0I\u00A0am ${COMMON_VALUES.react} ${EM_DASH}\u00A0${COMMON_VALUES.typeScript} ${COMMON_VALUES.developer}.`,
-      textPerson1: 'This page is\u00A0about\u00A0me ',
-      textPerson2: 'as\u00A0a\u00A0person.',
+      introduction2: `\u00A0at\u00A0work\u00A0I\u00A0am`,
+      developer: `${COMMON_VALUES.react} ${EM_DASH}\u00A0${COMMON_VALUES.typeScript} ${COMMON_VALUES.developer}`,
+      freeTime: 'in\u00A0my free\u00A0time I\u00A0love to\u00A0travel',
     },
   },
   resume: {
@@ -851,10 +852,10 @@ export const INTRODUCTION = {
     text: {
       experienced: 'I\u00A0am\u00A0experienced',
       reactDeveloper: 'React\u00A0Developer',
-      whoKnows: 'who\u00A0knows',
+      focus: 'with\u00A0a\u00A0strong\u00A0focus\u00A0on\u00A0',
+      performance: 'web performance',
+      uxui: 'UX/UI',
       qaAutomation: 'QA\u00A0Automation',
-      andCanLead: 'and\u00A0can lead teams\u00A0as\u00A0a',
-      teamLeader: 'Team\u00A0Leader.',
     },
   },
 }

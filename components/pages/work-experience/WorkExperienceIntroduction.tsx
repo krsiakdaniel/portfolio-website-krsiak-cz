@@ -3,19 +3,26 @@ import { FC } from 'react'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { INTRODUCTION } from '@/localization/english'
+import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
+import { COMMON_VALUES, INTRODUCTION, SHARED } from '@/localization/english'
 
 const WorkExperienceIntroduction: FC = (): JSX.Element => {
   return (
     <>
       <Paragraph>
         {INTRODUCTION.workExperience.text.experienced}{' '}
-        <Highlight text={INTRODUCTION.workExperience.text.reactDeveloper} />{' '}
-        {INTRODUCTION.workExperience.text.whoKnows}{' '}
-        <Highlight text={INTRODUCTION.workExperience.text.qaAutomation} />{' '}
-        {INTRODUCTION.workExperience.text.andCanLead}
+        <Highlight
+          text={`${COMMON_VALUES.react} ${EM_DASH}\u00A0${COMMON_VALUES.typeScript} ${COMMON_VALUES.developer}`}
+        />{' '}
+        {INTRODUCTION.workExperience.text.focus}
+        <Highlight text={INTRODUCTION.workExperience.text.performance} />
+        {', '}
+        <Highlight text={INTRODUCTION.workExperience.text.uxui} />
+        {', '}
+        {SHARED.and}
         {'\u00A0'}
-        <Highlight text={INTRODUCTION.workExperience.text.teamLeader} />
+        <Highlight text={INTRODUCTION.workExperience.text.qaAutomation} />
+        {'.'}
       </Paragraph>
     </>
   )

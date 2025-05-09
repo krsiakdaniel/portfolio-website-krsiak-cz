@@ -8,4 +8,5 @@ export type ListProps = {
 // List Item Props
 export type ListItemProps = {
   children: ReactNode
+  showIcon?: boolean
 }
