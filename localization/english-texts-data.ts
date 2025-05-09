@@ -529,7 +529,7 @@ export const WORK_PROJECTS_OVERVIEW = {
     role: 'React Developer',
     years: '3\u00A0years 2\u00A0months',
     description:
-      'I\u00A0worked on\u00A0chat dashboard features and\u00A0new design the\u00A0app\u00A0settings. I\u00A0was involved in\u00A0UX team learning about user needs.',
+      'I\u00A0worked on\u00A0chat dashboard features and\u00A0redesigned the\u00A0app\u00A0settings. I\u00A0was involved in\u00A0UX team learning about user needs.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -649,7 +649,7 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
     company: 'Personal project',
     role: `Front End ${EM_DASH}\u00A0React`,
     description:
-      'Crypto currency prices app fetching latest data from CoinGecko\u00A0API. This\u00A0is very small project in\u00A0Chakra\u00A0UI with dark mode.',
+      'Crypto currency prices app fetching latest data from CoinGecko\u00A0API. Simple project in\u00A0Chakra\u00A0UI with dark mode.',
     linkText: 'Project details',
     projectLinks: [
       {
