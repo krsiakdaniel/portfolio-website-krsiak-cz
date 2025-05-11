@@ -11,7 +11,7 @@ import { PlaceholderValue } from '@/node_modules/next/dist/shared/lib/get-img-pr
  * @property {number} [width] - Optional width of the image in pixels.
  * @property {number} [height] - Optional height of the image in pixels.
  * @property {string} alt - Required accessibility text description of the image.
- * @property {boolean} [priority] 
+ * @property {boolean} [priority]
  * - priority: When true, the image will be considered high priority and preloaded.
  * - priority: Use for images that will be visible in the initial viewport to improve LCP.
  * @property {ImageLoading | undefined} loading - Controls the loading behavior ('lazy', 'eager', or undefined).
