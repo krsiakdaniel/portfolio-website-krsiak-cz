@@ -10,6 +10,7 @@ export type ImageComponentProps = {
   width?: number
   height?: number
   alt: string
+  priority?: boolean
   loading: ImageLoading | undefined
   customCss?: string
   placeholder?: PlaceholderValue

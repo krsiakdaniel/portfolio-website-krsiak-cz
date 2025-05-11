@@ -63,7 +63,7 @@ const BaptismTestimony: FC = (): JSX.Element => {
           width={IMAGE_WIDTH_CHURCH}
           height={IMAGE_HEIGHT_CHURCH}
           alt={BIBLE.baptismChurch}
-          loading={ImageLoading.EAGER}
+          loading={ImageLoading.LAZY}
           customCss={imageComponentClass}
           dataTestId={DATA_TEST_IDS.baptism.image}
         />
