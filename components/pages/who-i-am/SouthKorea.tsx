@@ -50,6 +50,7 @@ const SouthKorea: FC = (): JSX.Element => {
               width={IMAGE_WIDTH}
               height={IMAGE_HEIGHT}
               alt={SOUTH_KOREA.hiking}
+              priority={true}
               loading={ImageLoading.EAGER}
               customCss={imageComponentCSS}
               dataTestId={DATA_TEST_IDS.southKorea.hiking}
@@ -74,6 +75,7 @@ const SouthKorea: FC = (): JSX.Element => {
               width={IMAGE_WIDTH}
               height={IMAGE_HEIGHT}
               alt={SOUTH_KOREA.nature}
+              priority={true}
               loading={ImageLoading.EAGER}
               customCss={imageComponentCSS}
               dataTestId={DATA_TEST_IDS.southKorea.nature}
@@ -87,6 +89,7 @@ const SouthKorea: FC = (): JSX.Element => {
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
             alt={SOUTH_KOREA.temple}
+            priority={true}
             loading={ImageLoading.EAGER}
             customCss={imageComponentCSS}
             dataTestId={DATA_TEST_IDS.southKorea.temple}
@@ -99,6 +102,7 @@ const SouthKorea: FC = (): JSX.Element => {
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
             alt={SOUTH_KOREA.palace}
+            priority={true}
             loading={ImageLoading.EAGER}
             customCss={imageComponentCSS}
             dataTestId={DATA_TEST_IDS.southKorea.palace}

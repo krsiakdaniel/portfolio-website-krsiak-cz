@@ -25,6 +25,7 @@ const ProjectImage: FC<ProjectImageProps> = ({ isFeatured, image, title }): JSX.
           width={PROJECT_IMAGE_PREVIEW.WIDTH}
           height={PROJECT_IMAGE_PREVIEW.HEIGHT}
           alt={title}
+          // FIXME: add logic to ImageLoading.EAGER for the 1st image on the page
           loading={ImageLoading.LAZY}
           customCss={`shadow-md rounded-lg border p-1 ${featuredProjectCSS}`}
         />
