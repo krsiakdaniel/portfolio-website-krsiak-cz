@@ -1,6 +1,3 @@
-// FIXME: refactor all test, simplify and remove this file
-// INFO: example file: 'projectsWorkGroupon.spec.ts'
-
 import { BrowserContext, chromium, Page } from '@playwright/test'
 
 import { BrowserSetup } from '@/__tests__/playwright/lib/utils/typeDefinitions/interfaces'

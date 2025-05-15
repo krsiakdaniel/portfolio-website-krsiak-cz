@@ -664,7 +664,6 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
   },
 }
 
-// TODO: Finish moving texts here from meta data files
 export const META_DATA_PAGES = {}
 
 export const META_DATA_PAGES_PROJECTS_WORK = {}

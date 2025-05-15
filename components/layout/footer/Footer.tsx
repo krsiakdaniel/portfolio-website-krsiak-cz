@@ -29,7 +29,6 @@ const Footer: FC = (): JSX.Element => {
           <Status />
           <Copyright />
 
-          {/* FIXME: Scroll to top button is not working as it should */}
           {/* <ScrollToTopButton /> */}
         </div>
       </footer>

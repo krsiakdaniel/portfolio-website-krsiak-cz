@@ -12,7 +12,6 @@ const NEUTRAL_BG_COLOR = 'bg-neutral-600'
 const NEUTRAL_HOVER_COLOR = 'hover:bg-neutral-800'
 const NEUTRAL_FOCUS_RING_COLOR = 'focus:ring-neutral-400'
 
-// TODO: refactor this later, not really used as before, now in ALERT only
 const SocialLink: FC<SocialLinkProps> = ({
   href,
   linkText,

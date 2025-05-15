@@ -22,8 +22,6 @@ export const GALLERY_PREVIEW_4_3 = {
   HEIGHT: 930,
 } as const
 
-// FIXME: krsiak-project-preview.webp = 604x438 = PROJECT PREVIEW, screenshot update name and in code
-// FIXME: resize big imgs to actual small = GALLERY_THUMBNAIL_4_3 = add thumbnails to folders, and update code to get correct thumb to preview image
 /**
  * Gallery thumbnail image configuration.
  * @description Configuration for gallery thumbnail images with 4:3 ratio.
