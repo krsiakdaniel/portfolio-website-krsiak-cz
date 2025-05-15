@@ -34,7 +34,6 @@ test.afterEach(async () => {
   await teardownContext(context)
 })
 
-// TODO: add later when BLOG in MDX is implemented
 test.describe('Baptism Testimony - Verse', () => {
   test.skip('should render the bible verse link correctly', async () => {
     const verseLink = page.getByTestId('bible-verse-link')
