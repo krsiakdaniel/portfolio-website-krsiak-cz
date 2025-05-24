@@ -20,7 +20,7 @@ import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview
 import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
 import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
 
-import { COMMON_VALUES, ICON_EMOJI, TEXT } from '@/localization/english'
+import { ARIA_LABELS, COMMON_VALUES, ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -36,6 +36,7 @@ const ProjectsWork: FC = (): JSX.Element => {
       <BreadCrumbs
         level1Url={PAGES_URL.work.mainUrl}
         level1Icon={ICON_EMOJI.manTechnologist.lightSkinTone}
+        level1AriaLabel={ARIA_LABELS.emoji.manTechnologist.lightSkinTone}
         level1Text={TEXT.workExperience}
       />
 

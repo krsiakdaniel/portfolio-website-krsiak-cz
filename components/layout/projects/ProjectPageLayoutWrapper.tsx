@@ -42,6 +42,7 @@ const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
         <BreadCrumbs
           level1Url={level1Url}
           level1Icon={level1Icon}
+          level1AriaLabel="projects"
           level1Text={level1Text}
           level2Url={level2Url}
           level2Icon={level2Icon}
