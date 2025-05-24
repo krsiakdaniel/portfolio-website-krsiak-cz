@@ -3,7 +3,7 @@ import { FC } from 'react'
 
 import Paragraph from '@/components/shared/Paragraph'
 
-import { FOOTER, ICON_EMOJI } from '@/localization/english'
+import { ARIA_LABELS, FOOTER, ICON_EMOJI } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { COPYRIGHT } from '@/lib/utils/constants/specialCharacters'
@@ -19,8 +19,11 @@ const Copyright: FC = (): JSX.Element => {
         {getCurrentYear()}
       </span>
 
-      <span role="img" className="select-none">
-        {ICON_EMOJI.cat.nufka} {ICON_EMOJI.cat.ruzenka}
+      <span role="img" aria-label={ARIA_LABELS.emoji.cats.nufka} className="select-none">
+        {ICON_EMOJI.cat.nufka}
+      </span>
+      <span role="img" aria-label={ARIA_LABELS.emoji.cats.ruzenka} className="select-none">
+        {ICON_EMOJI.cat.ruzenka}
       </span>
 
       <Link

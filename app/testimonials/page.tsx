@@ -14,7 +14,7 @@ import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimon
 import { personalTestimonials } from '@/lib/data/pages/testimonials/personalTestimonials'
 import { workTestimonials } from '@/lib/data/pages/testimonials/workTestimonials'
 
-import { ICON_EMOJI, TESTIMONIALS, TEXT } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, TESTIMONIALS, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { fitnessCoachTestimonials } from '@/lib/data/pages/testimonials/fitnessCoachTestimonials'
@@ -30,13 +30,18 @@ const Testimonials: FC = (): JSX.Element => {
       <BreadCrumbs
         level1Url={PAGES_URL.testimonials}
         level1Icon={ICON_EMOJI.speechBalloon}
+        level1AriaLabel={ARIA_LABELS.emoji.speechBalloon}
         level1Text={TEXT.testimonials}
       />
 
       <div className="mt-10">
         <div>
           <Heading1>
-            <span role="img" className="mr-4 select-none">
+            <span
+              role="img"
+              aria-label={ARIA_LABELS.emoji.speechBalloon}
+              className="mr-4 select-none"
+            >
               {ICON_EMOJI.speechBalloon}
             </span>
             <span>{TEXT.testimonials}</span>

@@ -8,6 +8,7 @@ import { BreadcrumbsItemProps } from '@/lib/utils/typeDefinitions/props/shared/b
 const BreadcrumbsItem: FC<BreadcrumbsItemProps> = ({
   href,
   icon,
+  ariaLabel = '',
   text,
   showSeparatorIcon = true,
 }): JSX.Element => {
@@ -24,7 +25,7 @@ const BreadcrumbsItem: FC<BreadcrumbsItemProps> = ({
         href={href}
         className={`select-none rounded-lg px-0 py-2 text-sm font-medium text-neutral-600 ${hoverAndFocusCSS}`}
       >
-        <span role="img" className="select-none">
+        <span role="img" aria-label={ariaLabel} className="select-none">
           {icon}
         </span>{' '}
         <span className="ml-1">{text}</span>
