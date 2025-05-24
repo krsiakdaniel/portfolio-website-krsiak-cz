@@ -708,6 +708,7 @@ export const IMAGE_ALT = {
   altIbm: 'IBM',
   altRwsMoravia: 'RWS - Moravia',
   altKomercniBanka: 'Komerční Banka',
+  altBata: 'Baťa',
 }
 
 export const CONTACT = {
