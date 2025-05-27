@@ -3,6 +3,7 @@ import { FC } from 'react'
 import Heading1 from '@/components/shared/Heading1'
 
 import { ProjectsOverviewLayoutProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page-layout'
+import { PROJECTS } from '@/localization/english'
 
 const ProjectsOverviewLayout: FC<ProjectsOverviewLayoutProps> = ({
   icon,
@@ -14,7 +15,7 @@ const ProjectsOverviewLayout: FC<ProjectsOverviewLayoutProps> = ({
     <>
       <div className="mt-10 flex flex-col">
         <Heading1>
-          <span role="img" className="mr-4 select-none">
+          <span role="img" aria-label={PROJECTS.workExperience} className="mr-4 select-none">
             {icon}
           </span>
           <span>{heading}</span>

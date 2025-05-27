@@ -5,6 +5,7 @@ import IconArrow from '@/components/icons/IconArrow'
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { PageNavigationLinkProps } from '@/lib/utils/typeDefinitions/props/layout/page-navigation'
+import { COMMON_VALUES } from '@/localization/english'
 
 const PageNavigationLink: FC<PageNavigationLinkProps> = ({
   href,
@@ -28,7 +29,12 @@ const PageNavigationLink: FC<PageNavigationLinkProps> = ({
       data-testid={dataTestId}
     >
       {hasArrowLeft && <IconArrow arrowDirection={ArrowDirectionEnum.Left} />}
-      <span role="img">{icon}</span>
+      <span
+        role="img"
+        aria-label={hasArrowLeft ? COMMON_VALUES.navigationPrevious : COMMON_VALUES.navigationNext}
+      >
+        {icon}
+      </span>
       <span>{text}</span>
       {hasArrowRight && <IconArrow arrowDirection={ArrowDirectionEnum.Right} />}
     </a>

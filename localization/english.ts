@@ -1,3 +1,4 @@
+import { quote } from '@/public/icons/svg/testimonial/quote.svg';
 import { COUNTRY } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EM_DASH, EN_DASH } from '@/lib/utils/constants/specialCharacters'
 import { YEARS } from '@/lib/utils/constants/yearsExperience'
@@ -150,6 +151,8 @@ export const COMMON_VALUES = {
   wordpress: 'WordPress',
   qaAutomationTesting: `QA Automation &\u00A0Testing`,
   localization: 'Localization',
+  navigationNext: 'navigation next',
+  navigationPrevious: 'navigation previous',
 }
 
 export const DIVIDER_WITH_TEXT = {
@@ -867,6 +870,7 @@ export const GALLERY = {
 }
 
 export const ARIA_LABELS = {
+  quote: 'Quote',
   toggleMenu: 'Toggle Menu',
   menu: 'Menu',
   breadcrumbs: 'Breadcrumbs',
@@ -880,6 +884,7 @@ export const ARIA_LABELS = {
   galleryThumbnails: 'Gallery thumbnails',
   galleryThumbnail: 'Thumbnail',
   emoji: {
+    icon: 'Emoji',
     latinCross: 'Latin cross',
     house: 'House',
     moneyBag: 'Money bag',

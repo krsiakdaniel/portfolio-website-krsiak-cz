@@ -3,7 +3,7 @@ import { FC } from 'react'
 
 import IconCaretRight from '@/components/icons/IconCaretRight'
 
-import { BreadcrumbsItemProps } from '@/lib/utils/typeDefinitions/props/shared/breadcrumbs'
+import { BreadcrumbsItemProps } from '@/lib/utils/typeDefinitions/props/shared/breadcrumbs-item'
 
 const BreadcrumbsItem: FC<BreadcrumbsItemProps> = ({
   href,

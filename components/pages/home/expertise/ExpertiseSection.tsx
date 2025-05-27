@@ -6,6 +6,7 @@ import ListItem from '@/components/shared/ListItem'
 
 import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 import { ExpertiseSectionProps } from '@/lib/utils/typeDefinitions/props/pages/home/expertise'
+import { ARIA_LABELS } from '@/localization/english'
 
 const ExpertiseSection: FC<ExpertiseSectionProps> = ({
   icon = '',
@@ -28,7 +29,9 @@ const ExpertiseSection: FC<ExpertiseSectionProps> = ({
           {listItems.map((item) => (
             <ListItem key={item.id}>
               <span className="inline">
-                <span role="img">{item.icon}</span>
+                <span role="img" aria-label={ARIA_LABELS.emoji.icon}>
+                  {item.icon}
+                </span>
                 <span className="ml-1">{item.text}</span>
                 {item.years && (
                   <span className="hidden text-sm lg:ml-1 xl:inline">
