@@ -53,6 +53,7 @@ export interface ProjectBase {
   isFeatured?: boolean
   image: string
   icon: string
+  ariaLabel: string
   title: string
   company: string
   role: string
