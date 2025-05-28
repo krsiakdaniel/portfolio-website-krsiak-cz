@@ -1,4 +1,3 @@
-import { quote } from '@/public/icons/svg/testimonial/quote.svg';
 import { COUNTRY } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EM_DASH, EN_DASH } from '@/lib/utils/constants/specialCharacters'
 import { YEARS } from '@/lib/utils/constants/yearsExperience'
