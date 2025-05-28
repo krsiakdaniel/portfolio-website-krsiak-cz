@@ -42,6 +42,7 @@ const ProjectsWork: FC = (): JSX.Element => {
 
       <ProjectsOverviewLayout
         icon={ICON_EMOJI.manTechnologist.lightSkinTone}
+        ariaLabel={ARIA_LABELS.emoji.manTechnologist.lightSkinTone}
         heading={TEXT.workExperience}
         description={<WorkExperienceIntroduction />}
       >

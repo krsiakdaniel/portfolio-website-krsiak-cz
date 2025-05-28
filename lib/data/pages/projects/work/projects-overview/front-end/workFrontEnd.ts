@@ -1,6 +1,6 @@
 import { iconsSkillsProjectsWorkSmartsuppWeb } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
-import { ICON_EMOJI } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
 import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
@@ -27,6 +27,7 @@ export const projectsWorkFrontEnd: Project[] = [
       { id: 3, src: smartsuppWeb4.src },
     ],
     icon: ICON_EMOJI.manTechnologist.lightSkinTone,
+    ariaLabel: ARIA_LABELS.emoji.manTechnologist.lightSkinTone,
     title: WORK_PROJECTS_OVERVIEW.frontEnd.title,
     company: WORK_PROJECTS_OVERVIEW.frontEnd.company,
     role: WORK_PROJECTS_OVERVIEW.frontEnd.role,

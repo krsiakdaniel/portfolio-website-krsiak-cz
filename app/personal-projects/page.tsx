@@ -34,6 +34,7 @@ const ProjectsPersonal: FC = (): JSX.Element => {
 
       <ProjectsOverviewLayout
         icon={ICON_EMOJI.rocket}
+        ariaLabel={ARIA_LABELS.emoji.rocket}
         heading={TEXT.personalProjects}
         description={<PersonalProjectsIntroduction />}
       >
