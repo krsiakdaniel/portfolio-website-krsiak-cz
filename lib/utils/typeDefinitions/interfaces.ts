@@ -43,6 +43,7 @@ export interface PageLinkItem {
   id: string
   href: string
   icon: string
+  ariaLabel: string
   text: string
   dataTestId: string
 }
