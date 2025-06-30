@@ -22,6 +22,7 @@ export const getBreadcrumbsPersonal = (
   return {
     level1Url: PAGES_URL.personal.mainUrl,
     level1Icon: ICON_EMOJI.rocket,
+    level1AriaLabel: TEXT.personalProjects,
     level1Text: TEXT.personalProjects,
     level2Url,
     level2Icon,

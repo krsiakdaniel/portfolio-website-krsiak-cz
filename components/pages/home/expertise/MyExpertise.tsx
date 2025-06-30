@@ -3,7 +3,7 @@ import { FC } from 'react'
 import ExpertiseSection from '@/components/pages/home/expertise/ExpertiseSection'
 import DividerWithText from '@/components/shared/DividerWithText'
 
-import { DIVIDER_WITH_TEXT, ICON_EMOJI, TEXT } from '@/localization/english'
+import { ARIA_LABELS, DIVIDER_WITH_TEXT, ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { committedMindsetItems } from '@/lib/data/pages/home/expertise/committedMindset'
 import { problemSolvingItems } from '@/lib/data/pages/home/expertise/problemSolving'
@@ -19,11 +19,13 @@ const MyExpertise: FC = (): JSX.Element => {
           <div className="grid w-full gap-6 md:grid-cols-2 lg:col-span-2">
             <ExpertiseSection
               icon={ICON_EMOJI.star}
+              ariaLabel={ARIA_LABELS.emoji.star}
               heading={TEXT.skillsForCompany}
               listItems={skillsForCompanyItems}
             />
             <ExpertiseSection
               icon={ICON_EMOJI.rocket}
+              ariaLabel={ARIA_LABELS.emoji.rocket}
               heading={TEXT.committedMindset}
               listItems={committedMindsetItems}
             />
@@ -31,6 +33,7 @@ const MyExpertise: FC = (): JSX.Element => {
           <div className="w-full">
             <ExpertiseSection
               icon={ICON_EMOJI.artistPalette}
+              ariaLabel={ARIA_LABELS.emoji.artistPalette}
               heading={TEXT.problemSolving}
               listItems={problemSolvingItems}
             />

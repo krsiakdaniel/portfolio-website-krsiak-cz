@@ -6,6 +6,7 @@ import { ProjectsOverviewLayoutProps } from '@/lib/utils/typeDefinitions/props/l
 
 const ProjectsOverviewLayout: FC<ProjectsOverviewLayoutProps> = ({
   icon,
+  ariaLabel,
   heading,
   description,
   children,
@@ -14,7 +15,7 @@ const ProjectsOverviewLayout: FC<ProjectsOverviewLayoutProps> = ({
     <>
       <div className="mt-10 flex flex-col">
         <Heading1>
-          <span role="img" className="mr-4 select-none">
+          <span role="img" aria-label={ariaLabel} className="mr-4 select-none">
             {icon}
           </span>
           <span>{heading}</span>

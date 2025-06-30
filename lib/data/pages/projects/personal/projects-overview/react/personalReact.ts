@@ -1,6 +1,6 @@
 import { iconsSkillsProjectsPersonalCryptomania } from '@/lib/data/pages/projects/personal/projects-overview/skillsProjectsPersonal'
 
-import { ICON_EMOJI } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
@@ -28,6 +28,7 @@ export const projectsPersonalReact: Project[] = [
       { id: 3, src: cryptomania4.src },
     ],
     icon: ICON_EMOJI.moneyBag,
+    ariaLabel: ARIA_LABELS.emoji.moneyBag,
     title: PROJECTS_PERSONAL_OVERVIEW.react.title,
     company: PROJECTS_PERSONAL_OVERVIEW.react.company,
     role: PROJECTS_PERSONAL_OVERVIEW.react.role,

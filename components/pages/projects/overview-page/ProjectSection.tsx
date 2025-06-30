@@ -20,6 +20,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({
           isFeatured={item.isFeatured}
           image={item.image}
           icon={item.icon}
+          ariaLabel={item.ariaLabel}
           title={item.title}
           company={item.company}
           role={item.role}

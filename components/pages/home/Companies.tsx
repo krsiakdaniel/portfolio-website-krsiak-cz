@@ -12,13 +12,13 @@ import groupon from '@/public/images/svg/logo/groupon.svg'
 import komercniBanka from '@/public/images/svg/logo/komercni-banka.svg'
 import kooperativa from '@/public/images/svg/logo/kooperativa.svg'
 import microsoft from '@/public/images/svg/logo/microsoft.svg'
-import rwsMoravia from '@/public/images/svg/logo/rws-moravia.svg'
+import bata from '@/public/images/svg/logo/bata.svg'
 import smartsupp from '@/public/images/svg/logo/smartsupp.svg'
 
 const WIDTH_MICROSOFT = 256
 const WIDTH_SMARTSUPP = 256
 const WIDTH_KOOPERATIVA = 256
-const WIDTH_RWS_MORAVIA = 200
+const WIDTH_BATA = 200
 const WIDTH_KOMERCNI_BANKA = 130
 const WIDTH_GROUPON = 200
 
@@ -63,9 +63,9 @@ const Companies: FC = (): JSX.Element => {
 
           <div className={imgWrapper}>
             <ImageComponent
-              src={rwsMoravia}
-              width={WIDTH_RWS_MORAVIA}
-              alt={IMAGE_ALT.altRwsMoravia}
+              src={bata}
+              width={WIDTH_BATA}
+              alt={IMAGE_ALT.altBata}
               loading={ImageLoading.LAZY}
             />
           </div>

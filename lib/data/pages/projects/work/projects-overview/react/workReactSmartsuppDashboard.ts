@@ -3,7 +3,7 @@ import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
@@ -26,6 +26,7 @@ export const workReactSmartsuppDashboard: Project = {
     { id: 4, src: smartsuppDashboard4.src },
   ],
   icon: ICON_EMOJI.speechBalloon,
+  ariaLabel: ARIA_LABELS.emoji.speechBalloon,
   title: TEXT.customerCareChatDashboard,
   company: WORK_PROJECTS_OVERVIEW.reactDashboard.company,
   role: WORK_PROJECTS_OVERVIEW.reactDashboard.role,

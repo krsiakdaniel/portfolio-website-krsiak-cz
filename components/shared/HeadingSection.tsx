@@ -5,6 +5,7 @@ import Heading2 from '@/components/shared/Heading2'
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 
 import { HeadingSectionProps } from '@/lib/utils/typeDefinitions/props/shared/heading-section'
+import { ARIA_LABELS } from '@/localization/english'
 
 const HeadingSection: FC<HeadingSectionProps> = ({
   text,
@@ -21,7 +22,7 @@ const HeadingSection: FC<HeadingSectionProps> = ({
     >
       <span className="flex items-start space-x-2 md:items-center">
         {icon && (
-          <span role="img" className="inline-flex text-4xl">
+          <span role="img" aria-label={ARIA_LABELS.emoji.icon} className="inline-flex text-4xl">
             {icon}
           </span>
         )}

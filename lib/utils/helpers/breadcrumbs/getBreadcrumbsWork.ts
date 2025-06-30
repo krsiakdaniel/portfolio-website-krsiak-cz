@@ -22,9 +22,11 @@ export const getBreadcrumbsWork = (
   return {
     level1Url: PAGES_URL.work.mainUrl,
     level1Icon: ICON_EMOJI.manTechnologist.lightSkinTone,
+    level1AriaLabel: '',
     level1Text: TEXT.workExperience,
     level2Url,
     level2Icon,
+    level2AriaLabel: '',
     level2Text,
   }
 }

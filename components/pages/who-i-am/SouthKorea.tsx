@@ -7,7 +7,7 @@ import TestimonialText from '@/components/pages/testimonials/TestimonialText'
 import HeadingSection from '@/components/shared/HeadingSection'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ICON_EMOJI, SOUTH_KOREA } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
@@ -39,7 +39,7 @@ const SouthKorea: FC = (): JSX.Element => {
             <TestimonialText text={SOUTH_KOREA.quote1} />
             <Paragraph marginTop="mt-2" customCss="flex">
               {SOUTH_KOREA.quoteAuthor1}
-              <span role="img" className="ml-1">
+              <span role="img" aria-label={ARIA_LABELS.emoji.writingHand} className="ml-1">
                 {ICON_EMOJI.writingHand}
               </span>
             </Paragraph>
@@ -64,7 +64,7 @@ const SouthKorea: FC = (): JSX.Element => {
             <TestimonialText text={SOUTH_KOREA.quote2} />
             <Paragraph marginTop="mt-2" customCss="flex">
               {SOUTH_KOREA.quoteAuthor2}
-              <span role="img" className="ml-1">
+              <span role="img" aria-label={ARIA_LABELS.emoji.latinCross} className="ml-1">
                 {ICON_EMOJI.latinCross}
               </span>
             </Paragraph>

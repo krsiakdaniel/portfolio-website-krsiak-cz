@@ -32,6 +32,7 @@ const ProjectWorkGroupon: FC = (): JSX.Element => {
       pageID={PROJECT_ID.work.groupon}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.qualityAssurance}
+      ariaLabel={TEXT.workExperience}
       projectData={projectsWorkQA[0]}
       sections={sections}
       PageNavigation={

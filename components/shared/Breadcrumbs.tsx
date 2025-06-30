@@ -15,9 +15,11 @@ import { BreadCrumbsProps } from '@/lib/utils/typeDefinitions/props/shared/bread
 const BreadCrumbs: FC<BreadCrumbsProps> = ({
   level1Url,
   level1Icon = '',
+  level1AriaLabel = '',
   level1Text,
   level2Url,
   level2Icon = '',
+  level2AriaLabel = '',
   level2Text,
 }): JSX.Element => {
   return (
@@ -26,14 +28,25 @@ const BreadCrumbs: FC<BreadCrumbsProps> = ({
         <BreadcrumbsItem
           href={PAGES_URL.home}
           icon={ICON_EMOJI.house}
+          ariaLabel={ARIA_LABELS.emoji.house}
           text={TEXT.home}
           showSeparatorIcon={false}
         />
         {level1Url && level1Text && (
-          <BreadcrumbsItem href={level1Url} icon={level1Icon} text={level1Text} />
+          <BreadcrumbsItem
+            href={level1Url}
+            icon={level1Icon}
+            ariaLabel={level1AriaLabel}
+            text={level1Text}
+          />
         )}
         {level2Url && level2Text && (
-          <BreadcrumbsItem href={level2Url} icon={level2Icon} text={level2Text} />
+          <BreadcrumbsItem
+            href={level2Url}
+            icon={level2Icon}
+            ariaLabel={level2AriaLabel}
+            text={level2Text}
+          />
         )}
       </ol>
     </nav>
