@@ -24,6 +24,7 @@ const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
 
   const {
     icon,
+    ariaLabel,
     title,
     role,
     years,
@@ -50,6 +51,7 @@ const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
         />
         <HeaderSection
           icon={icon}
+          ariaLabel={ariaLabel}
           title={title}
           role={role}
           years={years}
