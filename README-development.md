@@ -8,6 +8,7 @@ Development environment for the project.
   - [🚀 Website Version `2.48.23`](#-website-version-24823)
   - [💻 Commands](#-commands)
     - [Bun Commands](#bun-commands)
+    - [Bun Configuration](#bun-configuration)
     - [Available Scripts](#available-scripts)
     - [Install Dependencies](#install-dependencies)
     - [Specify Node Version](#specify-node-version)
@@ -52,6 +53,17 @@ For more details, see the official Bun documentation:
 - [bun add](https://bun.sh/docs/cli/add)
 - [bun remove](https://bun.sh/docs/cli/remove)
 - [bun update](https://bun.sh/docs/cli/update)
+
+### Bun Configuration
+
+The project includes a `bunfig.toml` file that configures Bun's behavior:
+
+- **JSX Configuration**: Configured for React with TypeScript
+- **Package Management**: Includes optional and dev dependencies
+- **Telemetry**: Disabled for privacy
+- **Log Level**: Set to debug for better development experience
+
+For more details about Bun configuration, see: [Bun Configuration](https://bun.sh/docs/runtime/bunfig)
 
 ### Available Scripts
 
