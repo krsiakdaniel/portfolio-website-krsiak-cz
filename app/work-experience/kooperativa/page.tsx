@@ -32,6 +32,7 @@ const ProjectWorkKooperativa: FC = (): JSX.Element => {
       pageID={PROJECT_ID.work.kooperativa}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.react}
+      ariaLabel={TEXT.workExperience}
       projectData={projectsWorkReact[2]}
       sections={sections}
       PageNavigation={

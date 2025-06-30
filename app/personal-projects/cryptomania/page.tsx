@@ -38,6 +38,7 @@ const ProjectPersonalCryptomania: FC = (): JSX.Element => {
         pageID={PROJECT_ID.personal.cryptoMania}
         goBackLink={GoBackLinkEnum.Personal}
         sectionID={ID.section.react}
+        ariaLabel={TEXT.cryptoMania}
         projectData={projectsPersonalReact[0]}
         sections={sections}
         showAlert={
