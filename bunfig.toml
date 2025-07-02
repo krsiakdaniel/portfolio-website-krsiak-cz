@@ -1,0 +1,19 @@
+# Bun configuration file for portfolio-website-krsiak-cz
+# https://bun.sh/docs/runtime/bunfig
+
+# JSX Configuration for React + TypeScript project
+jsx = "react"
+jsxFactory = "React.createElement"
+jsxFragment = "React.Fragment"
+jsxImportSource = "react"
+
+# Log level for better debugging
+logLevel = "debug"
+
+# Package Management
+[install]
+optional = true
+dev = true
+
+# Disable telemetry for privacy
+telemetry = false
