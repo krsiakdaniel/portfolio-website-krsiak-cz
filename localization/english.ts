@@ -4,6 +4,7 @@ import { YEARS } from '@/lib/utils/constants/yearsExperience'
 
 export const ICON_EMOJI = {
   latinCross: '✝️',
+  starAndCrescent: '☪️',
   flagCzechRepublic: '🇨🇿',
   flagUnitedKingdom: '🇬🇧',
   flagSpain: '🇪🇸',
@@ -740,12 +741,13 @@ export const SOUTH_KOREA = {
   headingSouthKorea: 'South Korea',
   introduction:
     'South Korea is\u00A0a\u00A0fascinating country where ancient traditions seamlessly meet modern innovation, offering a\u00A0captivating journey through bustling metropolitan cities like\u00A0Seoul, serene Buddhist temples, stunning mountain vistas, and\u00A0nature full of\u00A0lush forests and\u00A0beautiful rivers.',
-  quote1:
-    'Travel makes one modest. You see what a\u00A0tiny place you occupy in\u00A0the\u00A0world.',
-  quoteAuthor1: 'Gustave Flaubert, Novelist',
+  quote1: 'Traveling—it leaves you speechless, then turns you into a\u00A0storyteller.',
+  quoteAuthorName1: 'Ibn Battuta',
+  quoteAuthorOccupation1: '14th-century explorer',
   quote2:
     'The world is\u00A0a\u00A0book, and\u00A0those who do\u00A0not travel read only one page.',
-  quoteAuthor2: 'Saint Augustine, Bishop',
+  quoteAuthorName2: 'Saint Augustine',
+  quoteAuthorOccupation2: 'Bishop of Hippo',
   hiking: 'South Korea - hiking',
   nature: 'South Korea - nature',
   temple: 'South Korea - temple',
@@ -884,6 +886,7 @@ export const ARIA_LABELS = {
   galleryThumbnail: 'Thumbnail',
   emoji: {
     icon: 'Emoji',
+    starAndCrescent: 'Star and crescent',
     latinCross: 'Latin cross',
     house: 'House',
     moneyBag: 'Money bag',
