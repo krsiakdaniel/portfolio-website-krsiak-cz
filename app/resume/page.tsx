@@ -12,7 +12,7 @@ import Heading1 from '@/components/shared/Heading1'
 
 import { metaDataResume } from '@/lib/data/metadata/pages/metaDataResume'
 
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -28,13 +28,14 @@ const Resume: FC = (): JSX.Element => {
       <BreadCrumbs
         level1Url={PAGES_URL.resume}
         level1Icon={ICON_EMOJI.memo}
+        level1AriaLabel={ARIA_LABELS.emoji.memo}
         level1Text={TEXT.resume}
       />
 
       <div className="mt-10">
         <div>
           <Heading1>
-            <span role="img" className="mr-4 select-none">
+            <span role="img" aria-label={ARIA_LABELS.emoji.memo} className="mr-4 select-none">
               {ICON_EMOJI.memo}
             </span>
             <span>{TEXT.resume}</span>

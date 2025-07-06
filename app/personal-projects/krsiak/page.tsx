@@ -32,6 +32,7 @@ const ProjectPersonalKrsiak: FC = (): JSX.Element => {
       pageID={PROJECT_ID.personal.krsiak}
       goBackLink={GoBackLinkEnum.Personal}
       sectionID={ID.section.next}
+      ariaLabel={TEXT.portfolioWebsite}
       projectData={projectsPersonalNext[0]}
       sections={sections}
       PageNavigation={

@@ -2,15 +2,15 @@ import { FC } from 'react'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
+import SouthKorea from '@/components/pages/who-i-am/SouthKorea'
 import WhoIAmIntroduction from '@/components/pages/who-i-am/WhoIAmIntroduction'
 import WhoIAmTravelsList from '@/components/pages/who-i-am/WhoIAmTravelsList'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading1 from '@/components/shared/Heading1'
 import HeadingSection from '@/components/shared/HeadingSection'
-import SouthKorea from '@/components/pages/who-i-am/SouthKorea'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ICON_EMOJI, SOUTH_KOREA, TEXT, WHO_I_AM } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA, TEXT, WHO_I_AM } from '@/localization/english'
 
 import { metaDataWhoIam } from '@/lib/data/metadata/pages/metaDataWhoIAm'
 
@@ -29,13 +29,14 @@ const WhoIAm: FC = (): JSX.Element => {
       <BreadCrumbs
         level1Url={PAGES_URL.whoIAm}
         level1Icon={ICON_EMOJI.wavingHand}
+        level1AriaLabel={ARIA_LABELS.emoji.wavingHand}
         level1Text={WHO_I_AM.whoIAm}
       />
 
       <div className="mt-10">
         <section>
           <Heading1>
-            <span role="img" className="mr-4 select-none">
+            <span role="img" aria-label={ARIA_LABELS.emoji.wavingHand} className="mr-4 select-none">
               {ICON_EMOJI.wavingHand}
             </span>
             <span>{WHO_I_AM.whoIAm}</span>
@@ -53,7 +54,6 @@ const WhoIAm: FC = (): JSX.Element => {
           <WhoIAmTravelsList />
         </section>
 
-        {/* Quotes and photos of South Korea */}
         <SouthKorea />
       </div>
 

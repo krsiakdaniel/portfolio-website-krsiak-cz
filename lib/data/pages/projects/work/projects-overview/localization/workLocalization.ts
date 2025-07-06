@@ -1,6 +1,6 @@
 import { iconsSkillsProjectsWorkMoravia } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
-import { ICON_EMOJI } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
@@ -25,6 +25,7 @@ export const projectsWorkLocalization: Project[] = [
       { id: 2, src: moravia3.src },
     ],
     icon: ICON_EMOJI.globeShowingAmericas,
+    ariaLabel: ARIA_LABELS.emoji.globe.showingAmericas,
     title: WORK_PROJECTS_OVERVIEW.moravia.title,
     company: WORK_PROJECTS_OVERVIEW.moravia.company,
     role: WORK_PROJECTS_OVERVIEW.moravia.role,

@@ -5,7 +5,7 @@ import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
 import { MenuItemProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
 const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile }): JSX.Element => {
-  const { id, href, icon, text, dataTestId } = linkItem
+  const { id, href, icon, ariaLabel, text, dataTestId } = linkItem
 
   const mobileDesktopCSS = isMobile ? 'border-b border-gray-100 py-3' : 'py-2'
   const hoverAndFocusCSS = 'hover:border-violet-50 hover:bg-violet-50'
@@ -20,7 +20,9 @@ const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile }): JSX.Element => {
         data-testid={isMobile ? `mobile-${dataTestId}` : `desktop-${dataTestId}`}
         id={getMenuLinkID({ isMobile, linkID: id })}
       >
-        <span className="select-none">{icon}</span>
+        <span role="img" aria-label={ariaLabel} className="select-none">
+          {icon}
+        </span>
         <span className="ml-2">{text}</span>
       </Link>
     </li>

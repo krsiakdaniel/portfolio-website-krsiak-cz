@@ -13,7 +13,7 @@ import Paragraph from '@/components/shared/Paragraph'
 import { metaDataStatus } from '@/lib/data/metadata/pages/metaDataStatus'
 import { statusBadges } from '@/lib/data/pages/status'
 
-import { DAISY_IU, ICON_EMOJI, STATUS, TEXT } from '@/localization/english'
+import { ARIA_LABELS, DAISY_IU, ICON_EMOJI, STATUS, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -31,13 +31,18 @@ const Status: FC = (): JSX.Element => {
       <BreadCrumbs
         level1Url={PAGES_URL.status}
         level1Icon={ICON_EMOJI.verticalTrafficLight}
+        level1AriaLabel={ARIA_LABELS.emoji.verticalTrafficLight}
         level1Text={STATUS.text}
       />
 
       <div className="mt-10">
         <div>
           <Heading1>
-            <span role="img" className="mr-4 select-none">
+            <span
+              role="img"
+              aria-label={ARIA_LABELS.emoji.verticalTrafficLight}
+              className="mr-4 select-none"
+            >
               {ICON_EMOJI.verticalTrafficLight}
             </span>
             <span>{STATUS.text}</span>

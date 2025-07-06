@@ -8,6 +8,7 @@ import { ProjectDetailsProps } from '@/lib/utils/typeDefinitions/props/pages/pro
 
 const ProjectDetails: FC<ProjectDetailsProps> = ({
   icon = '',
+  ariaLabel = '',
   title,
   company,
   role,
@@ -16,7 +17,10 @@ const ProjectDetails: FC<ProjectDetailsProps> = ({
   return (
     <div className="sm:max-w-[600px]">
       <Heading2 textColor="text-neutral-900">
-        <span className="select-none">{icon}</span> <span className="ml-1">{title}</span>
+        <span role="img" aria-label={ariaLabel} className="select-none">
+          {icon}
+        </span>
+        <span className="ml-1">{title}</span>
       </Heading2>
       <Heading3 textColor="text-violet-600">{role}</Heading3>
       <Paragraph marginTop="mt-0" size="text-lg" textColor="text-neutral-600" customCss="font-bold">

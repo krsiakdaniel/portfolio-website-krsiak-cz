@@ -12,7 +12,7 @@ import { metaDataPersonalProjects } from '@/lib/data/metadata/pages/projects/met
 import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
 import { projectsPersonalReact } from '@/lib/data/pages/projects/personal/projects-overview/react/personalReact'
 
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -28,11 +28,13 @@ const ProjectsPersonal: FC = (): JSX.Element => {
       <BreadCrumbs
         level1Url={PAGES_URL.personal.mainUrl}
         level1Icon={ICON_EMOJI.rocket}
+        level1AriaLabel={ARIA_LABELS.emoji.rocket}
         level1Text={TEXT.personalProjects}
       />
 
       <ProjectsOverviewLayout
         icon={ICON_EMOJI.rocket}
+        ariaLabel={ARIA_LABELS.emoji.rocket}
         heading={TEXT.personalProjects}
         description={<PersonalProjectsIntroduction />}
       >

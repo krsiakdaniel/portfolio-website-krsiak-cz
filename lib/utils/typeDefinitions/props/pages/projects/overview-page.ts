@@ -8,6 +8,7 @@ export type ProjectDetailsProps = {
   personalProjectNote?: string
   role: string
   icon: string
+  ariaLabel: string
   title: string
 }
 

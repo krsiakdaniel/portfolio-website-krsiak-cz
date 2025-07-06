@@ -3,7 +3,7 @@ import { iconsSkillsProjectsWorkKomercniBanka } from '@/lib/data/pages/projects/
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { ICON_EMOJI } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
 import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
@@ -27,6 +27,7 @@ export const workReactKomercniBanka: Project = {
     { id: 3, src: komercniBanka4.src },
   ],
   icon: ICON_EMOJI.bank,
+  ariaLabel: ARIA_LABELS.emoji.bank,
   title: WORK_PROJECTS_OVERVIEW.komercniBanka.title,
   company: WORK_PROJECTS_OVERVIEW.komercniBanka.company,
   role: WORK_PROJECTS_OVERVIEW.komercniBanka.role,

@@ -32,6 +32,7 @@ const ProjectWorkSmartsuppWeb: FC = (): JSX.Element => {
       pageID={PROJECT_ID.work.smartsupp.web}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.frontEnd}
+      ariaLabel={TEXT.workExperience}
       projectData={projectsWorkFrontEnd[0]}
       sections={sections}
       PageNavigation={

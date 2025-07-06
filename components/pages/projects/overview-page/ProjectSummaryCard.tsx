@@ -11,6 +11,7 @@ const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
   isFeatured,
   image,
   icon,
+  ariaLabel,
   title,
   company,
   role,
@@ -31,6 +32,7 @@ const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
           <ProjectDetails
             title={title}
             icon={icon}
+            ariaLabel={ariaLabel}
             company={company}
             role={role}
             description={description}

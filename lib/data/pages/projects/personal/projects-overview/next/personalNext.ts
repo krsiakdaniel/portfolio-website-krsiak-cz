@@ -1,6 +1,6 @@
 import { iconsSkillsProjectsPersonalKrsiak } from '@/lib/data/pages/projects/personal/projects-overview/skillsProjectsPersonal'
 
-import { ICON_EMOJI } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
 import { PROJECTS_PERSONAL_OVERVIEW } from '@/localization/english-texts-data'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
@@ -28,6 +28,7 @@ export const projectsPersonalNext: Project[] = [
       { id: 3, src: krsiak4.src },
     ],
     icon: ICON_EMOJI.manTechnologist.lightSkinTone,
+    ariaLabel: ARIA_LABELS.emoji.manTechnologist.lightSkinTone,
     title: PROJECTS_PERSONAL_OVERVIEW.next.title,
     company: PROJECTS_PERSONAL_OVERVIEW.next.company,
     role: PROJECTS_PERSONAL_OVERVIEW.next.role,

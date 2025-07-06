@@ -43,6 +43,7 @@ export interface PageLinkItem {
   id: string
   href: string
   icon: string
+  ariaLabel: string
   text: string
   dataTestId: string
 }
@@ -52,6 +53,7 @@ export interface ProjectBase {
   isFeatured?: boolean
   image: string
   icon: string
+  ariaLabel: string
   title: string
   company: string
   role: string

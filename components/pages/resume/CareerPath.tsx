@@ -5,7 +5,7 @@ import HeadingSection from '@/components/shared/HeadingSection'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { CAREER_PATH, ICON_EMOJI, TEXT } from '@/localization/english'
+import { ARIA_LABELS, CAREER_PATH, ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { careerReactDev } from '@/lib/data/pages/resume/career-path/careerReactDev'
 import { careerTesting } from '@/lib/data/pages/resume/career-path/careerTesting'
@@ -25,17 +25,20 @@ const CareerPath: FC = (): JSX.Element => {
           <div className="flex flex-col gap-6">
             <ExpertiseSection
               icon={ICON_EMOJI.atomSymbol}
+              ariaLabel={ARIA_LABELS.emoji.atomSymbol}
               heading={TEXT.reactDev}
               listItems={careerReactDev}
             />
             <ExpertiseSection
               icon={ICON_EMOJI.laptop}
+              ariaLabel={ARIA_LABELS.emoji.laptop}
               heading={TEXT.webDev}
               listItems={careerWebDev}
             />
           </div>
           <ExpertiseSection
             icon={ICON_EMOJI.cog}
+            ariaLabel={ARIA_LABELS.emoji.cog}
             heading={TEXT.testing}
             listItems={careerTesting}
           />

@@ -32,6 +32,7 @@ const ProjectWorkMoravia: FC = (): JSX.Element => {
       pageID={PROJECT_ID.work.moravia}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.localization}
+      ariaLabel={TEXT.workExperience}
       projectData={projectsWorkLocalization[0]}
       sections={sections}
       PageNavigation={
