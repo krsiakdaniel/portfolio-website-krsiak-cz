@@ -38,7 +38,7 @@
     "ts-jest": "29.4.0"
   },
   "devDependencies": {
-    "@happy-dom/jest-environment": "^17.4.7",
+    "@happy-dom/jest-environment": "^18.0.1",
     "@netlify/plugin-nextjs": "5.11.4",
     "@playwright/test": "1.53.2",
     "@testing-library/jest-dom": "^6.6.3",
