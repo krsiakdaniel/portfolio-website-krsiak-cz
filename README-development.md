@@ -5,7 +5,7 @@ Development environment for the project.
 **Table of Contents:**
 
 - [🛠️ Development](#️-development)
-  - [🚀 Website Version `2.48.23`](#-website-version-24823)
+  - [🚀 Website Version](#-website-version)
   - [💻 Commands](#-commands)
     - [Bun Commands](#bun-commands)
     - [Bun Configuration](#bun-configuration)
@@ -22,13 +22,13 @@ Development environment for the project.
 
 ---
 
-## 🚀 Website Version `2.48.23`
+## 🚀 Website Version
 
-As of **Feb 2, 2025**, the website is `"version": "2.48.23"`.
+As of **Jul 7, 2025**, the website is `"version": "2.35.17"`.
 
-- `2` - represents major redesign
-- `48` - new features added
-- `23` - bug fixes implemented
+- `2` - major redesigns
+- `35` - features added
+- `17` - bug fixes
 
 ## 💻 Commands
 
@@ -60,7 +60,6 @@ The project includes a `bunfig.toml` file that configures Bun's behavior:
 
 - **JSX Configuration**: Configured for React with TypeScript
 - **Package Management**: Includes optional and dev dependencies
-- **Telemetry**: Disabled for privacy
 - **Log Level**: Set to debug for better development experience
 
 For more details about Bun configuration, see: [Bun Configuration](https://bun.sh/docs/runtime/bunfig)

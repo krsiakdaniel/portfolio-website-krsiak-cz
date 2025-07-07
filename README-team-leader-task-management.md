@@ -47,4 +47,4 @@ Using well-prepared issue templates in GitHub enhances task management by provid
 - **Clarity**: Clear structure improves communication.
 - **Accountability**: Defines acceptance criteria and tasks.
 
-<img src="/readme-images/task-management/github-issue-templates.webp" alt="GitHub Issue Template" width="600"/>
+![GitHub Issue Template](/readme-images/task-management/github-issue-templates.webp)

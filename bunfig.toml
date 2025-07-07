@@ -15,5 +15,3 @@ logLevel = "debug"
 optional = true
 dev = true
 
-# Disable telemetry for privacy
-telemetry = false
