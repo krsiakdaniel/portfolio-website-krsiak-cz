@@ -17,6 +17,7 @@ Development environment for the project.
   - [💅 Prettier](#-prettier)
     - [Check Code](#check-code)
     - [Format Code](#format-code)
+  - [🤖 GitHub Copilot Instructions](#-github-copilot-instructions)
   - [🔗 Imports Order in Files](#-imports-order-in-files)
     - [Example](#example)
 
@@ -173,6 +174,24 @@ bun prettier:write
 ```
 
 Once done, you can check the code formatting running again the command: `bun prettier:check`
+
+## 🤖 GitHub Copilot Instructions
+
+When working with GitHub Copilot, these instructions help ensure generated code follows the project's conventions and maintains high code quality standards.
+
+📁 **File Location:** [.github/copilot-instructions.md](/.github/copilot-instructions.md)
+
+The instructions file contains:
+
+- **Code Standards**: Pre-commit requirements and development workflow
+- **Project Structure**: Detailed repository organization
+- **Coding Guidelines**: TypeScript, React, and Next.js best practices
+- **Import Order**: Standardized import organization with examples
+- **Component Structure**: Templates for functional and page components
+- **Branch Naming**: Consistent naming conventions with prefixes
+- **Commit Messages**: Conventional commits format with emojis
+- **Testing Guidelines**: Jest and Playwright testing standards
+- **Performance & Accessibility**: Optimization and a11y best practices
 
 ## 🔗 Imports Order in Files
 
