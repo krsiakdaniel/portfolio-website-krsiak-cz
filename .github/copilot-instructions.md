@@ -1,18 +1,50 @@
-# GitHub Copilot Custom Instructions
+# GitHub Copilot Instructions
 
-This file contains custom instructions for GitHub Copilot to help generate code that follows the project's conventions and best practices.
+Copilot use this file to understand how to assist with your code contributions.
 
-## Technology Stack
+## About This Project
 
-This is a **Next.js portfolio website** built with:
+This is a React Next.js portfolio website written in TypeScript, using Bun as the runtime and package manager. It includes comprehensive testing with Jest and Playwright, and is deployed as a Progressive Web App. Please follow these guidelines when contributing:
 
-- **Language:** TypeScript (strict mode enabled)
-- **Framework:** React 18 + Next.js 15
-- **Styling:** Tailwind CSS
-- **Component Library:** Flowbite React (transitioning away from)
-- **Package Manager:** Bun (preferred) or npm as fallback
-- **Testing:** Jest (unit tests) + Playwright (E2E tests)
-- **Deployment:** Netlify with automated CI/CD
+## Code Standards
+
+### Required Before Each Commit
+
+- Run `bun prettier:write` before committing any changes to ensure proper code formatting
+- This will format all files according to the project's Prettier configuration with Tailwind CSS plugin
+- Ensure TypeScript compilation passes with `bun next build`
+- Run linting with `bun next lint` to catch potential issues
+
+### Development Flow
+
+- **Development**: `bun dev` - Start Next.js development server
+- **Build**: `bun build` - Create production build
+- **Lint**: `bun lint` - Run ESLint on the codebase
+- **Format**: `bun prettier:check` or `bun prettier:write` - Check/apply code formatting
+- **Unit Tests**: `bun test:jest` or `bun test:jest:coverage` for coverage reports
+- **E2E Tests**: `bun test:e2e` - Run Playwright end-to-end tests
+- **Full CI check**: Build + lint + format check + all tests
+
+## Repository Structure
+
+- `app/`: Next.js App Router pages and layouts (main application structure)
+- `components/`: Reusable React components organized by feature/type
+  - `analytics/`: Tracking and analytics components
+  - `icons/`: SVG icon components
+  - `layout/`: Layout-related components (header, footer, navigation)
+  - `pages/`: Page-specific components
+  - `shared/`: Shared utility components
+- `lib/`: Core utilities, hooks, and data management
+  - `data/`: Static data and content
+  - `hooks/`: Custom React hooks
+  - `utils/`: Utility functions and helpers
+- `localization/`: Internationalization data and configuration
+- `public/`: Static assets (images, icons, manifest files)
+- `__tests__/`: Test files organized by testing framework
+  - `jest/`: Unit and integration tests
+  - `playwright/`: End-to-end test suites
+- `__mocks__/`: Jest mock files and test utilities
+- `readme-images/`: Documentation images
 
 ## Code Style & Formatting
 
@@ -78,8 +110,8 @@ import styles from './Component.module.css'
 
 ## File Naming Conventions
 
-- Use **kebab-case** for file names: `my-component.tsx`
-- Use **PascalCase** for component names: `MyComponent`
+- Use **PascalCase** for file names: `ScanMyContactQR.tsx`
+- Use **PascalCase** for component names: `ScanMyContactQR`
 - Use **camelCase** for variables and functions: `myVariable`, `myFunction`
 - Use **UPPER_CASE** for constants: `MY_CONSTANT`
 
@@ -126,6 +158,48 @@ const MyPage: NextPage = () => {
 export default MyPage
 ```
 
+## Key Guidelines
+
+### TypeScript & React Best Practices
+
+1. Use TypeScript strictly - leverage the configured strict mode settings
+2. Follow React functional component patterns with hooks
+3. Use Next.js App Router conventions for routing and layouts
+4. Implement proper component composition and prop drilling avoidance
+5. Use custom hooks for shared logic and state management
+
+### Code Quality & Testing
+
+1. Write unit tests for new functionality using Jest and React Testing Library
+2. Add E2E tests for critical user flows using Playwright
+3. Use data-testid attributes for test selectors when needed
+4. Follow the existing test structure and naming conventions
+5. Maintain test coverage and avoid breaking existing tests
+
+### Styling & UI
+
+1. Use Tailwind CSS for styling - follow utility-first approach
+2. Leverage Flowbite components when appropriate
+3. Maintain responsive design principles (mobile-first)
+4. Follow the existing design system and component patterns
+5. Ensure accessibility standards (ARIA labels, semantic HTML)
+
+### Performance & PWA
+
+1. Optimize images using Next.js Image component
+2. Follow PWA best practices - maintain manifest and service worker
+3. Use proper lazy loading and code splitting techniques
+4. Monitor bundle size and performance metrics
+5. Implement proper SEO practices (metadata, robots.txt, sitemap)
+
+### Development Environment
+
+1. Use Bun for package management and script execution
+2. Follow the configured ESLint and Prettier rules
+3. Use the provided VS Code settings and extensions if available
+4. Document complex logic and provide meaningful commit messages
+5. Update documentation in `README.md` files when adding new features
+
 ## Tailwind CSS Guidelines
 
 - Use **Tailwind CSS classes** for styling
@@ -148,51 +222,81 @@ export default MyPage
 
 ### Unit Tests (Jest)
 
-- Place test files in `__tests__` directory
-- Use `.test.tsx` or `.test.ts` extensions
+- Place test files in `__tests__/jest` directory
+- Use `.test.ts` extension
 - Use **React Testing Library** for component testing
 - Follow **AAA pattern** (Arrange, Act, Assert)
 
 ### E2E Tests (Playwright)
 
-- Place test files in `tests` directory with `.spec.ts` extension
+- Place test files in `__tests__/playwright` directory
+- Use `.spec.ts` extension
 - Use **page object model** for better maintainability
 - Test **critical user journeys**
 
 ## Development Workflow
 
-### Commands
-
-- `bun dev` - Start development server
-- `bun build` - Build production bundle
-- `bun test:jest` - Run unit tests
-- `bun test:e2e` - Run E2E tests
-- `bun prettier:check` - Check code formatting
-- `bun prettier:write` - Format code
-
 ### Branch Naming
 
 Use prefixes followed by descriptive names:
 
-- `feature/branch-name` - New features
-- `fix/branch-name` - Bug fixes
-- `refactor/branch-name` - Code refactoring
-- `docs/branch-name` - Documentation updates
-- `test/branch-name` - Test additions/updates
-- `chore/branch-name` - Maintenance tasks
+```txt
+prefix/descriptive-name
+
+Available branch prefixes:
+- build/branch-name - Changes that affect the build system or external dependencies
+- chore/branch-name - Maintenance tasks that don't modify src or test files
+- cicd/branch-name - Changes to CI/CD configuration files and scripts
+- docs/branch-name - Documentation only changes
+- feature/branch-name - New features
+- fix/branch-name - Bug fixes
+- hotfix/branch-name - Critical fixes that need immediate attention
+- localization/branch-name - Internationalization and localization changes
+- performance/branch-name - Performance improvements
+- refactor/branch-name - Code changes that neither fix bugs nor add features
+- revert/branch-name - Reverts a previous commit
+- style/branch-name - Code style changes (formatting, missing semicolons, etc.)
+- test/branch-name - Test additions/updates (both unit and E2E)
+
+Examples:
+- feature/responsive-navigation - Add responsive navigation menu
+- fix/button-hover-state - Fix hover state styling issue
+- docs/update-readme - Update installation instructions
+- test/user-authentication - Add user authentication tests
+- performance/optimize-images - Optimize image loading with lazy loading
+- style/format-components - Format code with Prettier
+```
 
 ### Commit Messages
 
 Follow **Conventional Commits** format:
 
-```
+```txt
 type(scope): emoji description
+
+Available commit types:
+- build: 🏗️ - Changes that affect the build system or external dependencies
+- chore: 🛠️ - Maintenance tasks that don't modify src or test files
+- cicd: ⚙️ - Changes to CI/CD configuration files and scripts
+- docs: 📝 - Documentation only changes
+- feature: ✨ - New features
+- fix: 🐛 - Bug fixes
+- hotfix: 🔥 - Critical fixes that need immediate attention
+- localization: 🇬🇧 - Internationalization and localization changes
+- performance: 🚀 - Performance improvements
+- refactor: 👷 - Code changes that neither fix bugs nor add features
+- revert: ⏪ - Reverts a previous commit
+- style: 🎨 - Code style changes (formatting, missing semicolons, etc.)
+- test(e2e): 🎭 - End-to-end test changes
+- test(jest): 🃏 - Unit test changes
 
 Examples:
 - feature(header): ✨ Add responsive navigation menu
 - fix(button): 🐛 Fix hover state styling
 - docs(readme): 📝 Update installation instructions
-- test(login): ✅ Add user authentication tests
+- test(jest): 🃏 Add user authentication tests
+- performance(images): 🚀 Optimize image loading with lazy loading
+- style(components): 🎨 Format code with Prettier
 ```
 
 ## Performance Considerations
@@ -211,22 +315,6 @@ Examples:
 - Maintain **proper color contrast**
 - Use **alt text** for images
 - Test with **screen readers**
-
-## Project Structure
-
-```
-├── app/                    # Next.js app directory
-├── components/            # React components
-│   ├── ui/               # Reusable UI components
-│   ├── layout/           # Layout components
-│   └── features/         # Feature-specific components
-├── lib/                  # Utility libraries
-├── localization/         # Internationalization
-├── public/              # Static assets
-├── __tests__/           # Unit tests
-├── __mocks__/           # Test mocks
-└── readme-images/       # Documentation images
-```
 
 ## API and Data Handling
 
@@ -257,3 +345,13 @@ Examples:
 - Use **meaningful commit messages**
 - Link **related issues** in PR descriptions
 - Request **code reviews** from team members
+
+## Technology Stack
+
+- **Runtime**: Bun
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript (strict mode enabled)
+- **Styling**: Tailwind CSS with Flowbite components (transitioning away from)
+- **Testing**: Jest (unit) + Playwright (E2E)
+- **Deployment**: Netlify with PWA capabilities and automated CI/CD
+- **Analytics**: Google Analytics + Smartlook
