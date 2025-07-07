@@ -1,0 +1,43 @@
+# Bun configuration file for portfolio-website-krsiak-cz
+# https://bun.sh/docs/runtime/bunfig
+
+# JSX Configuration for React + TypeScript project
+jsx = "react"
+jsxFactory = "React.createElement"
+jsxImportSource = "react"
+
+# Log level for better debugging
+logLevel = "debug"
+
+# Disable telemetry for privacy (optional)
+telemetry = false
+
+# Package Management
+[install]
+optional = true
+dev = true
+
+# Test Configuration
+[test]
+
+# Set test root to match your project structure
+root = "./__tests__"
+
+# Enable coverage reporting
+coverage = true
+
+# Set coverage threshold for quality assurance
+coverageThreshold = 0.8
+
+# Use both console and file-based coverage reporting
+coverageReporter = ["text", "lcov"]
+
+# Runtime Configuration
+[run]
+
+# Use the system shell for executing commands
+shell = "system"
+
+# Suppress command output for cleaner logs
+silent = false
+
