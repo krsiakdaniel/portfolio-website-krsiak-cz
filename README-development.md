@@ -56,11 +56,11 @@ For more details, see the official Bun documentation:
 
 ### Bun Configuration
 
-The project includes a `bunfig.toml` file that configures Bun's behavior:
+The project includes a [bunfig.toml](/bunfig.toml) file that configures Bun's behavior:
 
 - **JSX Configuration**: Configured for React with TypeScript
-- **Package Management**: Includes optional and dev dependencies
 - **Log Level**: Set to debug for better development experience
+- **Package Management**: Includes optional and dev dependencies
 
 For more details about Bun configuration, see: [Bun Configuration](https://bun.sh/docs/runtime/bunfig)
 
