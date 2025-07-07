@@ -17,11 +17,6 @@ telemetry = false
 optional = true
 dev = true
 
-# Cache configuration for faster installs
-[install.cache]
-dir = "~/.bun/install/cache"
-disable = false
-
 # Test Configuration
 [test]
 
