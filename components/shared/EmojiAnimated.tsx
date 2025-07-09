@@ -13,10 +13,18 @@ const EmojiAnimated: FC<EmojiAnimatedProps> = ({
   className = '',
 }): JSX.Element => {
   const src = `/images/webp/emoji-animated/${size}x${size}/${icon}-animated-${size}x${size}.webp`
+  const isPriority = loading === ImageLoading.EAGER
 
   return (
     <div className={className}>
-      <ImageComponent src={src} width={size} height={size} alt={alt} loading={loading} />
+      <ImageComponent 
+        src={src} 
+        width={size} 
+        height={size} 
+        alt={alt} 
+        loading={loading}
+        priority={isPriority}
+      />
     </div>
   )
 }

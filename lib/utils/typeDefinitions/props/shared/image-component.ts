@@ -16,6 +16,7 @@ import { PlaceholderValue } from '@/node_modules/next/dist/shared/lib/get-img-pr
  * - priority: Use for images that will be visible in the initial viewport to improve LCP.
  * @property {ImageLoading | undefined} loading - Controls the loading behavior ('lazy', 'eager', or undefined).
  * @property {string} [customCss] - Optional CSS class names to apply to the image.
+ * @property {string} [sizes] - Optional sizes attribute for responsive images.
  * @property {PlaceholderValue} [placeholder] - Optional placeholder strategy ('blur' or 'empty').
  * @property {string} [blurDataURL] - Optional Base64 data URL to use as blur placeholder.
  * @property {string | ReactNode} [caption] - Optional caption to display below the image.
@@ -30,6 +31,7 @@ export type ImageComponentProps = {
   priority?: boolean
   loading: ImageLoading | undefined
   customCss?: string
+  sizes?: string
   placeholder?: PlaceholderValue
   blurDataURL?: string
   caption?: string | ReactNode
