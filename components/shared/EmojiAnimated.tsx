@@ -17,11 +17,11 @@ const EmojiAnimated: FC<EmojiAnimatedProps> = ({
 
   return (
     <div className={className}>
-      <ImageComponent 
-        src={src} 
-        width={size} 
-        height={size} 
-        alt={alt} 
+      <ImageComponent
+        src={src}
+        width={size}
+        height={size}
+        alt={alt}
         loading={loading}
         priority={isPriority}
       />
