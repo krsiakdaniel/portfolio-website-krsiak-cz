@@ -30,6 +30,7 @@ const Logo: FC = (): JSX.Element => {
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
             alt={IMAGE_ALT.altLogo}
+            priority={true}
             loading={ImageLoading.EAGER}
             sizes={`${IMAGE_WIDTH}px`}
           />
