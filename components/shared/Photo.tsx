@@ -35,6 +35,7 @@ const Photo: FC<PhotoProps> = ({ isPhotoSmall, isOpenToWork, showCaption = true 
           loading={ImageLoading.LAZY}
           customCss="rounded-full border border-violet-300 bg-violet-50 p-1 shadow-md"
           dataTestId={DATA_TEST_IDS.misc.linkedinPhoto}
+          sizes={`${isPhotoSmall ? IMAGE_WIDTH_SM : IMAGE_WIDTH_LG}px`}
         />
 
         {/* image overlay */}
@@ -46,6 +47,7 @@ const Photo: FC<PhotoProps> = ({ isPhotoSmall, isOpenToWork, showCaption = true 
             alt={TEXT.openToWork}
             loading={ImageLoading.LAZY}
             customCss="absolute left-0 top-0 h-full w-full"
+            sizes={`${isPhotoSmall ? IMAGE_WIDTH_SM : IMAGE_WIDTH_LG}px`}
           />
         )}
       </div>

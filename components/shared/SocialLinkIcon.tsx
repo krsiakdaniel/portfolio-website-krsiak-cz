@@ -41,6 +41,7 @@ const SocialLinkIcon: FC<SocialLinkIconProps> = ({
         alt={imgAlt}
         loading={ImageLoading.EAGER}
         customCss="shadow-md"
+        sizes={`${isMobile ? IMAGE_WIDTH_MOBILE : IMAGE_WIDTH_DESKTOP}px`}
       />
     </a>
   )

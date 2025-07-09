@@ -21,6 +21,7 @@ const ImageComponent: FC<ImageComponentProps> = ({
   priority = false,
   loading = ImageLoading.LAZY,
   customCss = '',
+  sizes,
   placeholder = 'empty',
   blurDataURL = '',
   caption = '',
@@ -52,6 +53,7 @@ const ImageComponent: FC<ImageComponentProps> = ({
         className={`select-none ${customCss}`}
         placeholder={placeholder}
         blurDataURL={blurDataURL}
+        {...(sizes && { sizes })}
         data-tooltip-id={ID.reactTooltip}
         data-tooltip-place="top"
         data-tooltip-variant="dark"

@@ -26,6 +26,7 @@ const TestimonialPersonInfo: FC<TestimonialPersonInfoProps> = ({
       alt={name}
       loading={ImageLoading.LAZY}
       customCss="rounded-full border border-violet-300 bg-violet-50 p-1 shadow-md"
+      sizes={`${IMAGE_WIDTH}px`}
     />
 
     <div className="flex flex-col items-start">

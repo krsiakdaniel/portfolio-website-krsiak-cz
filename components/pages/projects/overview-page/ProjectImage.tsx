@@ -31,6 +31,7 @@ const ProjectImage: FC<ProjectImageProps> = ({ isFeatured, image, title }): JSX.
           alt={title}
           loading={ImageLoading.LAZY}
           customCss={`shadow-md rounded-lg border p-1 ${featuredProjectCSS}`}
+          sizes={`(max-width: 768px) 100vw, (max-width: 1024px) 50vw, ${PROJECT_IMAGE_PREVIEW.WIDTH}px`}
         />
       </div>
     </div>

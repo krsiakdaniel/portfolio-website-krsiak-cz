@@ -61,6 +61,7 @@ const GalleryThumbnails: FC<GalleryThumbnailsProps> = ({
             loading={ImageLoading.LAZY}
             placeholder="blur"
             blurDataURL={image.src}
+            sizes={`${GALLERY_THUMBNAIL_4_3.WIDTH}px`}
           />
         </div>
       ))}
