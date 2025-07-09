@@ -15,16 +15,20 @@ import { MenuMobileToggleProps } from '@/lib/utils/typeDefinitions/props/layout/
 const MenuMobileToggle: FC<MenuMobileToggleProps> = ({
   isMenuOpen,
   handleMenuMobileToggle,
+  forwardedRef,
 }): JSX.Element => {
   return (
     <button
+      ref={forwardedRef}
       onClick={handleMenuMobileToggle}
       id={ID.menu.toggle}
       data-testid={DATA_TEST_IDS.menu.toggle.component}
       aria-label={ARIA_LABELS.toggleMenu}
-      className="ml-8 rounded-lg bg-violet-50 p-2 hover:bg-violet-100 focus:bg-violet-100 focus:outline-none focus:ring-4 focus:ring-violet-400 lg:hidden"
+      className="ml-8 rounded-lg bg-violet-50 p-2 transition-all duration-200 ease-in-out hover:bg-violet-100 focus:bg-violet-100 focus:outline-none focus:ring-4 focus:ring-violet-400 lg:hidden"
     >
-      {isMenuOpen ? <IconClose /> : <IconHamburger />}
+      <div className="transition-all duration-200 ease-in-out">
+        {isMenuOpen ? <IconClose /> : <IconHamburger />}
+      </div>
     </button>
   )
 }

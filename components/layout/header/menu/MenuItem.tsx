@@ -4,7 +4,7 @@ import { FC } from 'react'
 import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
 import { MenuItemProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
-const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile }): JSX.Element => {
+const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile, onClickLink }): JSX.Element => {
   const { id, href, icon, ariaLabel, text, dataTestId } = linkItem
 
   const mobileDesktopCSS = isMobile ? 'border-b border-gray-100 py-3' : 'py-2'
@@ -16,9 +16,10 @@ const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile }): JSX.Element => {
     <li>
       <Link
         href={href}
-        className={`${mobileDesktopCSS} ${hoverAndFocusCSS} ${sharedCss}`}
+        className={`${mobileDesktopCSS} ${hoverAndFocusCSS} ${sharedCss} transition-all duration-200 ease-in-out`}
         data-testid={isMobile ? `mobile-${dataTestId}` : `desktop-${dataTestId}`}
         id={getMenuLinkID({ isMobile, linkID: id })}
+        onClick={isMobile ? onClickLink : undefined}
       >
         <span role="img" aria-label={ariaLabel} className="select-none">
           {icon}
