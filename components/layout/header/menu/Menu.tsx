@@ -12,9 +12,13 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { MenuProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
+/**
+ * Menu component for both mobile and desktop navigation
+ */
 const Menu: FC<MenuProps> = ({ type, forwardedRef, onClickLink }): JSX.Element => {
   const isMobile = type === DeviceTypeEnum.Mobile
 
+  // Set the appropriate test ID and element ID based on device type
   const menuDataTestId = isMobile
     ? DATA_TEST_IDS.menu.mobile.componentMenu
     : DATA_TEST_IDS.menu.desktop.componentMenu
@@ -26,9 +30,11 @@ const Menu: FC<MenuProps> = ({ type, forwardedRef, onClickLink }): JSX.Element =
         ref={forwardedRef}
         className={isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-2 lg:flex'}
       >
-        {(pagesLinks ?? []).map((link) => (
-          <MenuItem key={link.id} linkItem={link} isMobile={isMobile} onClickLink={onClickLink} />
-        ))}
+        {(pagesLinks ?? []).map((link) => {
+          return (
+            <MenuItem key={link.id} linkItem={link} isMobile={isMobile} onClickLink={onClickLink} />
+          )
+        })}
       </ul>
     </nav>
   )

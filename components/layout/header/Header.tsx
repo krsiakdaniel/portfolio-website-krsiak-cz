@@ -74,13 +74,18 @@ const Header: FC = (): JSX.Element => {
           </div>
         </div>
 
-        {isMenuOpen && (
+        <div
+          className={`
+            overflow-hidden transition-all duration-300 ease-in-out lg:hidden
+            ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
+          `}
+        >
           <Menu
             type={DeviceTypeEnum.Mobile}
             forwardedRef={menuRef}
             onClickLink={() => setIsMenuOpen(false)}
           />
-        )}
+        </div>
       </PageContainer>
 
       <ScrollProgressBar scroll={scroll} />

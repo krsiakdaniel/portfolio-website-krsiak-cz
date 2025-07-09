@@ -31,11 +31,21 @@ const customKeyframes = {
     '0%': { opacity: '0.5' },
     '100%': { opacity: '1' },
   },
+  slideDown: {
+    '0%': { transform: 'translateY(-10px)', opacity: '0' },
+    '100%': { transform: 'translateY(0)', opacity: '1' },
+  },
+  slideUp: {
+    '0%': { transform: 'translateY(0)', opacity: '1' },
+    '100%': { transform: 'translateY(-10px)', opacity: '0' },
+  },
 }
 
 // Animation timing
 const ANIMATION_TIMING = {
+  QUARTER_SECOND: '250ms',
   HALF_SECOND: '500ms',
+  ONE_SECOND: '1000ms',
   TWO_SECONDS: '2000ms',
   THREE_SECONDS: '3000ms',
 } as const
@@ -50,6 +60,8 @@ const customAnimations = {
   'man-walk': `manWalk infinite ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT}`,
   'gentle-bounce': `gentleBounce infinite ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT}`,
   'fade-in': `fadeIn ${ANIMATION_TIMING.HALF_SECOND} ${EASE_IN_OUT}`,
+  'slide-down': `slideDown ${ANIMATION_TIMING.QUARTER_SECOND} ${EASE_IN_OUT}`,
+  'slide-up': `slideUp ${ANIMATION_TIMING.QUARTER_SECOND} ${EASE_IN_OUT}`,
 }
 
 const customScreenSizes = {

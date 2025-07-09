@@ -1,6 +1,6 @@
-import { RefObject } from 'react'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { PageLinkItem } from '@/lib/utils/typeDefinitions/interfaces'
+import { RefObject } from 'react'
 
 // Menu Props
 export type MenuProps = {
