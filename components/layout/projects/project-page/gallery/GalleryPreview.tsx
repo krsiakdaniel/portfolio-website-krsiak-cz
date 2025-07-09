@@ -21,6 +21,7 @@ const GalleryPreview: FC<GalleryPreviewProps> = ({ activeImage }): JSX.Element =
         placeholder="blur"
         blurDataURL={activeImage.src}
         aria-label={ARIA_LABELS.galleryActiveImage}
+        sizes={`(max-width: 768px) 100vw, (max-width: 1200px) 80vw, ${GALLERY_PREVIEW_4_3.WIDTH}px`}
       />
     </div>
   )

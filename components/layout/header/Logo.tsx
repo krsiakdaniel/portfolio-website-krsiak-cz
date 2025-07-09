@@ -31,6 +31,7 @@ const Logo: FC = (): JSX.Element => {
             height={IMAGE_HEIGHT}
             alt={IMAGE_ALT.altLogo}
             loading={ImageLoading.EAGER}
+            sizes={`${IMAGE_WIDTH}px`}
           />
         </div>
         <Paragraph

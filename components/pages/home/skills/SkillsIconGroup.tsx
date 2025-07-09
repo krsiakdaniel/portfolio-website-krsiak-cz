@@ -20,6 +20,7 @@ const SkillsIconGroup: FC<SkillsIconGroupProps> = ({ icons = [], customCss = '' 
           alt={item.name}
           loading={ImageLoading.EAGER}
           dataTooltipContent={item.name}
+          sizes={`${IMAGE_WIDTH}px`}
         />
       ))}
     </div>
