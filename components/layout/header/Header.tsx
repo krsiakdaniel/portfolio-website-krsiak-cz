@@ -75,10 +75,7 @@ const Header: FC = (): JSX.Element => {
         </div>
 
         <div
-          className={`
-            overflow-hidden transition-all duration-300 ease-in-out lg:hidden
-            ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
-          `}
+          className={`overflow-hidden transition-all duration-300 ease-in-out lg:hidden ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} `}
         >
           <Menu
             type={DeviceTypeEnum.Mobile}
