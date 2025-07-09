@@ -1,6 +1,6 @@
 'use client' // using hooks
 
-import { FC, useEffect, useRef, useState } from 'react'
+import { FC, useEffect, useMemo, useRef, useState } from 'react'
 
 import { useClickOutside } from '@/lib/hooks/useClickOutside'
 import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
@@ -25,13 +25,15 @@ const Header: FC = (): JSX.Element => {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  // Only add click outside listener when menu is open
-  useClickOutside(
-    isMenuOpen
+  // Memoize the refs array to avoid creating a new array on every render
+  const clickOutsideRefs = useMemo(() => {
+    return isMenuOpen
       ? [menuRef as React.RefObject<HTMLElement>, toggleRef as React.RefObject<HTMLElement>]
-      : [],
-    () => setIsMenuOpen(false),
-  )
+      : []
+  }, [isMenuOpen]) // Only re-create array when isMenuOpen changes
+
+  // Only add click outside listener when menu is open
+  useClickOutside(clickOutsideRefs, () => setIsMenuOpen(false))
 
   // Keyboard event handling for dialog accessibility
   useEffect(() => {
