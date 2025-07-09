@@ -53,6 +53,8 @@ const nextConfig = {
         search: '',
       },
     ],
+    // Modern image format support
+    formats: ['image/avif', 'image/webp'],
     dangerouslyAllowSVG: true, // Allows SVG images to be used
     unoptimized: false, // Setting 'unoptimized' to value 'false' means that images will be optimized by 'Next.js Image Optimization API'.
   },
@@ -106,7 +108,7 @@ const nextConfig = {
         ],
       },
       {
-        source: '/:all*(svg|jpg|png|webp|gif)', // Match any image files in any directory
+        source: '/:all*(svg|jpg|png|webp|avif|gif)', // Match any image files in any directory
         headers: [
           {
             key: 'Cache-Control',
