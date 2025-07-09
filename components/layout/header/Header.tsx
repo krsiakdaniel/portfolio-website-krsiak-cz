@@ -1,7 +1,8 @@
 'use client' // using hooks
 
-import { FC, useState } from 'react'
+import { FC, useEffect, useRef, useState } from 'react'
 
+import { useClickOutside } from '@/lib/hooks/useClickOutside'
 import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 
 import Logo from '@/components/layout/header/Logo'
@@ -17,9 +18,34 @@ const Header: FC = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
   const scroll = useScrollProgress()
 
+  const menuRef = useRef<HTMLUListElement>(null)
+  const toggleRef = useRef<HTMLButtonElement>(null)
+
   const handleMenuMobileToggle = (): void => {
     setIsMenuOpen(!isMenuOpen)
   }
+
+  // Only add click outside listener when menu is open
+  useClickOutside(
+    isMenuOpen
+      ? [menuRef as React.RefObject<HTMLElement>, toggleRef as React.RefObject<HTMLElement>]
+      : [],
+    () => setIsMenuOpen(false),
+  )
+
+  // Keyboard event handling for dialog accessibility
+  useEffect(() => {
+    if (!isMenuOpen) return
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsMenuOpen(false)
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [isMenuOpen])
 
   return (
     <header className="sticky top-0 z-30 border-b border-neutral-400 bg-white">
@@ -40,12 +66,19 @@ const Header: FC = (): JSX.Element => {
               <MenuMobileToggle
                 isMenuOpen={isMenuOpen}
                 handleMenuMobileToggle={handleMenuMobileToggle}
+                forwardedRef={toggleRef}
               />
             </div>
           </div>
         </div>
 
-        {isMenuOpen && <Menu type={DeviceTypeEnum.Mobile} />}
+        {isMenuOpen && (
+          <Menu
+            type={DeviceTypeEnum.Mobile}
+            forwardedRef={menuRef}
+            onClickLink={() => setIsMenuOpen(false)}
+          />
+        )}
       </PageContainer>
 
       <ScrollProgressBar scroll={scroll} />

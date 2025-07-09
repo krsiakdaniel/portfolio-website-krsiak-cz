@@ -12,7 +12,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { MenuProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
-const Menu: FC<MenuProps> = ({ type }): JSX.Element => {
+const Menu: FC<MenuProps> = ({ type, forwardedRef, onClickLink }): JSX.Element => {
   const isMobile = type === DeviceTypeEnum.Mobile
 
   const menuDataTestId = isMobile
@@ -22,9 +22,12 @@ const Menu: FC<MenuProps> = ({ type }): JSX.Element => {
 
   return (
     <nav aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
-      <ul className={isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-2 lg:flex'}>
+      <ul
+        ref={forwardedRef}
+        className={isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-2 lg:flex'}
+      >
         {(pagesLinks ?? []).map((link) => (
-          <MenuItem key={link.id} linkItem={link} isMobile={isMobile} />
+          <MenuItem key={link.id} linkItem={link} isMobile={isMobile} onClickLink={onClickLink} />
         ))}
       </ul>
     </nav>
