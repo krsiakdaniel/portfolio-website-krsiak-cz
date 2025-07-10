@@ -360,7 +360,7 @@ export const META_WHO_I_AM = {
 
 export const META_TESTIMONIALS = {
   title: `Testimonials | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
-  description: `Read testimonials from colleagues and partners regarding ${COMMON_VALUES.nameDanielKrsiak}'s work and skills.`,
+  description: `Testimonials about ${COMMON_VALUES.nameDanielKrsiak}'s work, integrity, leadership, coaching, and technical skills from colleagues, mentors and clients.`,
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
@@ -387,8 +387,7 @@ export const META_TESTIMONIALS = {
 
 export const META_PROJECTS_OVERVIEW_PERSONAL = {
   title: `Personal Projects | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
-  description:
-    'Explore my projects created with Next.js and React. My portfolio, crypto app, e-commerce site, all showcasing coding skills and trends in web development.',
+  description: `Explore my projects created with ${COMMON_VALUES.next}, ${COMMON_VALUES.react} and ${COMMON_VALUES.typeScript}. My portfolio, crypto app, showcasing coding skills and trends in web development.`,
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     personalProjects: 'Personal Projects',
@@ -403,7 +402,7 @@ export const META_PROJECTS_OVERVIEW_PERSONAL = {
 export const META_PROJECTS_OVERVIEW_WORK = {
   title: `Work Experience | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
-    'Experienced React Developer skilled in development, redesign, localization, QA automation, testing, team leadership, and UX collaboration.',
+    'Experienced React Developer skilled in UI and app development, redesign, localization, QA automation, testing, team leadership, and UX collaboration.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
@@ -645,7 +644,7 @@ export const META_CRYPTOMANIA = {
 
 export const META_RESUME = {
   title: `Resume | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
-  description: `Experienced ${COMMON_VALUES.reactDeveloper} proficient in ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.react}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.redux}. Also skilled in QA Automation, leading teams, and managing localization projects.`,
+  description: `Experienced ${COMMON_VALUES.reactDeveloper} skilled in ${COMMON_VALUES.javaScriptShort}, ${COMMON_VALUES.typeScriptShort}, ${COMMON_VALUES.react}, ${COMMON_VALUES.next}, ${COMMON_VALUES.redux}, QA Automation, team leadership, and localization project management.`,
   keywords: {
     resume: 'Resume',
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
@@ -679,7 +678,7 @@ export const META_RESUME = {
 export const META_STATUS = {
   title: `Status | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
-    'Explore status page showcasing project badges for Jest Tests, Playwright Tests, CodeQL, Code Quality, Dependabot, and Netlify.',
+    'Status page with badges for Jest, Playwright, CodeQL, Code Quality, Dependabot, Netlify—track test coverage and automation.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
