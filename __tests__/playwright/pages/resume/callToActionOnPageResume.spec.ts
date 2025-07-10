@@ -39,7 +39,7 @@ test.describe('CTA - Resume - Download Resume, LinkedIn', () => {
     const linkResumeDownload = page.getByTestId('call-to-action-link-resume-download')
     expect(await linkResumeDownload.isVisible()).toBe(true)
     expect(await linkResumeDownload.getAttribute('href')).toBe(
-      'https://drive.google.com/file/d/1DannR10afnADKGXRn4Ji0xJIpscIGVSR/view',
+      'https://drive.google.com/file/d/1Zw7kGKtEHBHn9mvWpCUTwNVo4jTwR7um/view',
     )
   })
 
