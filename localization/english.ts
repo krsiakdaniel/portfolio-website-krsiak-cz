@@ -342,7 +342,7 @@ export const ERROR = {
 export const META_WHO_I_AM = {
   title: `Who I Am | ${COMMON_VALUES.nameDanielKrsiak}`,
   description:
-    'React Developer with a passion for travel and outdoor adventures. Exploring from Czech forests to South Korean temples, combining technical expertise with a love for nature and cultural experiences.',
+    'I enjoy to travel and go on outdoor adventures. Exploring from Czech forests to South Korean temples, with a love for nature and cultural experiences.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
@@ -359,7 +359,7 @@ export const META_WHO_I_AM = {
 }
 
 export const META_TESTIMONIALS = {
-  title: `Testimonials | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+  title: `Testimonials | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description: `Read testimonials from colleagues and partners regarding ${COMMON_VALUES.nameDanielKrsiak}'s work and skills.`,
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
@@ -386,7 +386,7 @@ export const META_TESTIMONIALS = {
 }
 
 export const META_PROJECTS_OVERVIEW_PERSONAL = {
-  title: `Personal Projects | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+  title: `Personal Projects | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
     'Explore my projects created with Next.js and React. My portfolio, crypto app, e-commerce site, all showcasing coding skills and trends in web development.',
   keywords: {
@@ -401,7 +401,7 @@ export const META_PROJECTS_OVERVIEW_PERSONAL = {
 }
 
 export const META_PROJECTS_OVERVIEW_WORK = {
-  title: `Work Experience | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+  title: `Work Experience | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
     'Experienced React Developer skilled in development, redesign, localization, QA automation, testing, team leadership, and UX collaboration.',
   keywords: {
@@ -421,12 +421,12 @@ export const META_PROJECTS_OVERVIEW_WORK = {
     smartsupp: 'Smartsupp',
     komercniBanka: 'Komerční banka',
     groupon: 'Groupon',
-    rwsMoraviaIt: 'RWS - Moravia IT',
+    rwsMoraviaIt: 'RWS — Moravia IT',
   },
 }
 
 export const META_DEFAULT = {
-  title: `${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+  title: `${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description: `${COMMON_VALUES.nameDanielKrsiak}, ${COMMON_VALUES.reactDeveloper} from ${COMMON_VALUES.brno}, ${COMMON_VALUES.czechRepublic}. Specializing in ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}. 6 years of experience creating modern web applications.`,
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
@@ -447,11 +447,11 @@ export const META_DEFAULT = {
     figma: COMMON_VALUES.figma,
   },
   generator: 'Next.js',
-  applicationName: 'React - Portfolio website',
+  applicationName: 'React — Portfolio website',
 }
 
 export const META_HOME = {
-  title: `${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper} - ${COMMON_VALUES.typeScript} & ${COMMON_VALUES.next}`,
+  title: `${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper} | ${COMMON_VALUES.typeScript} & ${COMMON_VALUES.next}`,
   description: `Hi 👋 I am ${COMMON_VALUES.nameDanielKrsiak}, a ${COMMON_VALUES.reactDeveloper} from ${COMMON_VALUES.czechRepublic}. I craft scalable, high-quality web apps using ${COMMON_VALUES.javaScriptShort}, ${COMMON_VALUES.typeScriptShort}, ${COMMON_VALUES.react}, and ${COMMON_VALUES.next}.`,
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
@@ -478,7 +478,7 @@ export const META_HOME = {
 }
 
 export const META_SMARTSUPP_WEB = {
-  title: `Smartsupp Web | ${COMMON_VALUES.nameDanielKrsiak} - Front End Developer`,
+  title: `Smartsupp Web | ${COMMON_VALUES.nameDanielKrsiak} — Front End Developer`,
   description:
     'Worked as a Front End Developer at Smartsupp for 1 year. Created company website Front End, collaborated with UX designer on brand theme and layout.',
   keywords: {
@@ -495,13 +495,13 @@ export const META_SMARTSUPP_WEB = {
 }
 
 export const META_SMARTSUPP_HELP = {
-  title: `Smartsupp Help | ${COMMON_VALUES.nameDanielKrsiak} - Content Writer`,
+  title: `Smartsupp Help | ${COMMON_VALUES.nameDanielKrsiak} — Content Writer`,
   description:
     'Admin & Content Writer at Smartsupp for 6 months. Managed HELP website on WordPress, wrote tutorials, and handled localization into 9 languages.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     smartsuppHelp: 'Smartsupp Help',
-    saasCompanyHelpWebsite: 'SaaS Company - HELP Website',
+    saasCompanyHelpWebsite: 'SaaS Company — HELP Website',
     adminContentWriter: 'Admin & Content Writer',
     wordPress: 'WordPress',
     tutorials: 'Tutorials',
@@ -510,7 +510,7 @@ export const META_SMARTSUPP_HELP = {
 }
 
 export const META_SMARTSUPP_DASHBOARD = {
-  title: `Smartsupp Dashboard | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+  title: `Smartsupp Dashboard | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
     'Worked as a React Developer on the Smartsupp Dashboard for 3 years. Contributed to chat dashboard features, UX improvements, and modernizing the codebase.',
   keywords: {
@@ -528,14 +528,14 @@ export const META_SMARTSUPP_DASHBOARD = {
 }
 
 export const META_MORAVIA = {
-  title: `RWS - Moravia IT | ${COMMON_VALUES.nameDanielKrsiak} - QA Automation Team Leader`,
+  title: `RWS — Moravia IT | ${COMMON_VALUES.nameDanielKrsiak} — QA Automation Team Leader`,
   description:
-    'QA Automation - Team Leader at Moravia for 1 year. Microsoft projects Windows 8 + Windows Phone, managing translation delivery and ensuring quality.',
+    'QA Automation — Team Leader at Moravia for 1 year. Microsoft projects Windows 8 + Windows Phone, managing translation delivery and ensuring quality.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
-    rwsMoraviaIt: 'RWS - Moravia IT',
+    rwsMoraviaIt: 'RWS — Moravia IT',
     windows: 'Windows',
-    qaAutomationTeamLeader: 'QA Automation - Team Leader',
+    qaAutomationTeamLeader: 'QA Automation — Team Leader',
     html: COMMON_VALUES.html,
     css: COMMON_VALUES.css,
     javaScript: COMMON_VALUES.javaScript,
@@ -548,7 +548,7 @@ export const META_MORAVIA = {
 }
 
 export const META_KOOPERATIVA = {
-  title: `Kooperativa | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+  title: `Kooperativa | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
     'I worked on an application for managing insurance policies for citizens property and products.',
   keywords: {
@@ -567,12 +567,12 @@ export const META_KOOPERATIVA = {
 }
 
 export const META_KOMERCNI_BANKA = {
-  title: `Komerční banka | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+  title: `Komerční banka | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
     'Worked as a React Developer at Komerční banka. Developed search page for branches & ATMs, exchange rates. Enhanced UX, improved responsive design across devices.',
   keywords: {
     komercniBanka: 'Komerční banka',
-    commerceBankWebsite: 'Commerce Bank - Website',
+    commerceBankWebsite: 'Commerce Bank — Website',
     reactDeveloper: COMMON_VALUES.reactDeveloper,
     searchPage: 'Search Page',
     exchangeRatesPage: 'Exchange Rates Page',
@@ -583,15 +583,15 @@ export const META_KOMERCNI_BANKA = {
 }
 
 export const META_GROUPON = {
-  title: `Groupon | ${COMMON_VALUES.nameDanielKrsiak} - QA Automation Team Leader`,
+  title: `Groupon | ${COMMON_VALUES.nameDanielKrsiak} — QA Automation Team Leader`,
   description:
-    'QA Automation SDET - Team Lead at Groupon. Responsible for new QA team, hiring, coordinating testing for online marketplace with 17 000 000 customers.',
+    'QA Automation SDET — Team Lead at Groupon. Responsible for new QA team, hiring, coordinating testing for online marketplace with 17 000 000 customers.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     groupon: 'Groupon',
     sdet: 'SDET',
-    eCommerceMarketplace: 'E-Commerce - Marketplace',
-    qaAutomationTeamLeader: 'QA Automation - Team Leader',
+    eCommerceMarketplace: 'E-Commerce — Marketplace',
+    qaAutomationTeamLeader: 'QA Automation — Team Leader',
     javaScript: COMMON_VALUES.javaScript,
     typeScript: COMMON_VALUES.typeScript,
     react: COMMON_VALUES.react,
@@ -607,7 +607,7 @@ export const META_GROUPON = {
 }
 
 export const META_KRSIAK = {
-  title: `Portfolio Website | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+  title: `Portfolio Website | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
     'Portfolio website showcasing my skills. Using Next.js, Tailwind CSS, JavaScript, TypeScript, React, JEST, Playwright, GitHub Actions, and Netlify.',
   keywords: {
@@ -627,7 +627,7 @@ export const META_KRSIAK = {
 }
 
 export const META_CRYPTOMANIA = {
-  title: `Cryptomania | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+  title: `Cryptomania | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
     'Crypto currency prices app with latest data from CoinGecko API. Built with React and Chakra UI. Explore and search for cryptocurrencies with ease.',
   keywords: {
@@ -644,7 +644,7 @@ export const META_CRYPTOMANIA = {
 }
 
 export const META_RESUME = {
-  title: `Resume | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+  title: `Resume | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description: `Experienced ${COMMON_VALUES.reactDeveloper} proficient in ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.react}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.redux}. Also skilled in QA Automation, leading teams, and managing localization projects.`,
   keywords: {
     resume: 'Resume',
@@ -677,7 +677,7 @@ export const META_RESUME = {
 }
 
 export const META_STATUS = {
-  title: `Status | ${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
+  title: `Status | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
     'Explore status page showcasing project badges for Jest Tests, Playwright Tests, CodeQL, Code Quality, Dependabot, and Netlify.',
   keywords: {
@@ -709,14 +709,14 @@ export const IMAGE_ALT = {
   altKooperativa: 'Kooperativa',
   altGroupon: 'Groupon',
   altIbm: 'IBM',
-  altRwsMoravia: 'RWS - Moravia',
+  altRwsMoravia: 'RWS — Moravia',
   altKomercniBanka: 'Komerční Banka',
   altBata: 'Baťa',
 }
 
 export const CONTACT = {
   scanQR: 'Scan With Phone',
-  contactMeQRCode: 'Contact Me - QR code',
+  contactMeQRCode: 'Contact Me — QR code',
 }
 
 export const EASTER_EGG = {
@@ -724,8 +724,8 @@ export const EASTER_EGG = {
 }
 
 export const BIBLE = {
-  baptismTestimonyHeading: 'My Baptism - Testimony',
-  baptismChurch: 'Baptism - Church',
+  baptismTestimonyHeading: 'My Baptism — Testimony',
+  baptismChurch: 'Baptism — Church',
   bookChapterVerse: '1\u00A0Peter\u00A03:21',
   verseText: `
     And that water is\u00A0a\u00A0picture of\u00A0baptism,
@@ -748,10 +748,10 @@ export const SOUTH_KOREA = {
     'The world is\u00A0a\u00A0book, and\u00A0those who do\u00A0not travel read only one page.',
   quoteAuthorName2: 'Saint Augustine',
   quoteAuthorOccupation2: 'Bishop of Hippo',
-  hiking: 'South Korea - hiking',
-  nature: 'South Korea - nature',
-  temple: 'South Korea - temple',
-  palace: 'South Korea - palace',
+  hiking: 'South Korea — hiking',
+  nature: 'South Korea — nature',
+  temple: 'South Korea — temple',
+  palace: 'South Korea — palace',
 }
 
 export const CALL_TO_ACTION = {
@@ -880,7 +880,7 @@ export const ARIA_LABELS = {
   manWalking: 'Man walking',
   forest: 'Forest',
   forestWithMountain: 'Forest with mountain',
-  galleryProjectShowcase: 'Gallery - Project showcase',
+  galleryProjectShowcase: 'Gallery — Project showcase',
   galleryActiveImage: 'Active image',
   galleryThumbnails: 'Gallery thumbnails',
   galleryThumbnail: 'Thumbnail',
@@ -981,8 +981,8 @@ export const ARIA_LABELS = {
 }
 
 export const ANALYTICS_WARNING = {
-  googleAnalytics: 'Google Analytics - is not configured!',
-  smartlook: 'Smartlook - is not configured!',
+  googleAnalytics: 'Google Analytics — is not configured!',
+  smartlook: 'Smartlook — is not configured!',
 }
 
 export const TEXT = {
