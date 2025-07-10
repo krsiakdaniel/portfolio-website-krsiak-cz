@@ -342,7 +342,7 @@ export const ERROR = {
 export const META_WHO_I_AM = {
   title: `Who I Am | ${COMMON_VALUES.nameDanielKrsiak}`,
   description:
-    'I enjoy to travel and go on outdoor adventures. Exploring from Czech forests to South Korean temples, with a love for nature and cultural experiences.',
+    'I enjoy traveling and outdoor adventures, exploring from Czech forests to South Korean temples while embracing nature and cultural experiences.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
