@@ -6,16 +6,17 @@ const THREE = 3
 const FOUR = 4
 const FIVE = 5
 const SIX = 6
+const SEVEN = 7
 const EIGHT = 8
 
 export const YEARS: YearsExperience = {
-  javaScript: SIX,
-  typeScript: FIVE,
-  react: FIVE,
+  javaScript: SEVEN,
+  typeScript: SIX,
+  react: SIX,
   redux: THREE,
   tailwind: TWO,
-  playwright: TWO,
-  next: ONE,
+  playwright: THREE,
+  next: TWO,
   webDeveloper: ONE,
   qaAutomation: ONE,
   localizationManager: TWO,
