@@ -451,8 +451,8 @@ export const META_DEFAULT = {
 }
 
 export const META_HOME = {
-  title: `${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper}`,
-  description: `Hi 👋 I am ${COMMON_VALUES.nameDanielKrsiak}, a ${COMMON_VALUES.reactDeveloper} based in ${COMMON_VALUES.brno}, ${COMMON_VALUES.czechRepublic}. I specialize in ${COMMON_VALUES.javaScript}, ${COMMON_VALUES.typeScript}, ${COMMON_VALUES.react}, and ${COMMON_VALUES.next}. With 6 years of experience creating modern web applications, I focus on delivering high-quality, scalable, and reliable code.`,
+  title: `${COMMON_VALUES.nameDanielKrsiak} - ${COMMON_VALUES.reactDeveloper} - ${COMMON_VALUES.typeScript} & ${COMMON_VALUES.next}`,
+  description: `Hi 👋 I am ${COMMON_VALUES.nameDanielKrsiak}, a ${COMMON_VALUES.reactDeveloper} from ${COMMON_VALUES.czechRepublic}. I craft scalable, high-quality web apps using ${COMMON_VALUES.javaScriptShort}, ${COMMON_VALUES.typeScriptShort}, ${COMMON_VALUES.react}, and ${COMMON_VALUES.next}.`,
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
