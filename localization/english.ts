@@ -511,7 +511,7 @@ export const META_SMARTSUPP_HELP = {
 export const META_SMARTSUPP_DASHBOARD = {
   title: `Smartsupp Dashboard | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
-    'Worked as a React Developer on the Smartsupp Dashboard for 3 years. Contributed to chat dashboard features, UX improvements, and modernizing the codebase.',
+    'Worked 3 years as React Developer on Smartsupp Dashboard. Contributed to chat dashboard features, UX improvements, and modernizing the codebase.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
@@ -549,7 +549,7 @@ export const META_MORAVIA = {
 export const META_KOOPERATIVA = {
   title: `Kooperativa | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
-    'I worked on an application for managing insurance policies for citizens property and products.',
+    'I built a web app for managing insurance policies—covering citizen-owned property and products.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
@@ -568,7 +568,7 @@ export const META_KOOPERATIVA = {
 export const META_KOMERCNI_BANKA = {
   title: `Komerční banka | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
-    'Worked as a React Developer at Komerční banka. Developed search page for branches & ATMs, exchange rates. Enhanced UX, improved responsive design across devices.',
+    'React Developer at Komerční banka. Developed search page for branches & ATMs, exchange rates. Enhanced UX and responsive design across devices.',
   keywords: {
     komercniBanka: 'Komerční banka',
     commerceBankWebsite: 'Commerce Bank — Website',
@@ -584,7 +584,7 @@ export const META_KOMERCNI_BANKA = {
 export const META_GROUPON = {
   title: `Groupon | ${COMMON_VALUES.nameDanielKrsiak} — QA Automation Team Leader`,
   description:
-    'QA Automation SDET — Team Lead at Groupon. Responsible for new QA team, hiring, coordinating testing for online marketplace with 17 000 000 customers.',
+    'QA Automation SDET & QA Team Lead — hiring people, and testing coordination for marketplace with 17 000 000 customers.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     groupon: 'Groupon',
@@ -608,7 +608,7 @@ export const META_GROUPON = {
 export const META_KRSIAK = {
   title: `Portfolio Website | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
-    'Portfolio website showcasing my skills. Using Next.js, Tailwind CSS, JavaScript, TypeScript, React, JEST, Playwright, GitHub Actions, and Netlify.',
+    'Portfolio built with Next.js, Tailwind CSS, React, TS, JEST, Playwright, GitHub Actions & Netlify—showcasing frontend skills and test automation.',
   keywords: {
     portfolioWebsite: 'Portfolio Website',
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
