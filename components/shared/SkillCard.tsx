@@ -7,10 +7,8 @@ import { getSkillCardID } from '@/lib/utils/helpers/skills/getSkillCardID'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { SkillCardProps } from '@/lib/utils/typeDefinitions/props/shared/skill-card'
 
-const MOBILE_IMAGE_WIDTH = 12 // 3rem = 48px
-const DESKTOP_IMAGE_WIDTH = 16 // 4rem = 64px
-const MOBILE_IMAGE_WIDTH_PX = 48 // px value
-const DESKTOP_IMAGE_WIDTH_PX = 64 // px value
+const MOBILE_IMAGE_WIDTH_PX = 48 // 48px = 3 rem = 12 in Tailwind CSS
+const DESKTOP_IMAGE_WIDTH_PX = 64 // 48px = 4 rem = 16 in Tailwind CSS
 
 const SkillCard: FC<SkillCardProps> = ({
   id,
@@ -27,7 +25,7 @@ const SkillCard: FC<SkillCardProps> = ({
           src={imgSrc}
           alt={imgAlt}
           loading={ImageLoading.EAGER}
-          customCss={`mr-4 h-${MOBILE_IMAGE_WIDTH} w-${MOBILE_IMAGE_WIDTH} md:h-${DESKTOP_IMAGE_WIDTH} md:w-${DESKTOP_IMAGE_WIDTH}`}
+          customCss="mr-4 h-12 w-12 md:h-16 md:w-16"
           dataTooltipContent={tooltip}
           sizes={`(max-width: 768px) ${MOBILE_IMAGE_WIDTH_PX}px, ${DESKTOP_IMAGE_WIDTH_PX}px`}
         />
