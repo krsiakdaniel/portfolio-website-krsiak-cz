@@ -6,8 +6,8 @@ import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
-import cryptomaniaOG from '@/public/images/png/open-graph/pages/personal-projects/cryptomania-og.png'
-import cryptomaniaTwitter from '@/public/images/png/open-graph/pages/personal-projects/cryptomania-twitter.png'
+import cryptomaniaOG from '@/public/images/png/open-graph/pages/personal-projects/cryptomania/cryptomania-og.png'
+import cryptomaniaTwitter from '@/public/images/png/open-graph/pages/personal-projects/cryptomania/cryptomania-twitter.png'
 
 export const metaDataCryptomania: Metadata = {
   title: META_CRYPTOMANIA.title,
