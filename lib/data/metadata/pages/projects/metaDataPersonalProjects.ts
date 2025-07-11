@@ -6,8 +6,8 @@ import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
-import personalProjectsOverviewOG from '@/public/images/png/open-graph/pages/personal-projects/overview-page/personal-projects-og.png'
-import personalProjectsOverviewTwitter from '@/public/images/png/open-graph/pages/personal-projects/overview-page/personal-projects-twitter.png'
+import personalProjectsOverviewOG from '@/public/images/png/open-graph/pages/personal-projects/personal-projects-og.png'
+import personalProjectsOverviewTwitter from '@/public/images/png/open-graph/pages/personal-projects/personal-projects-twitter.png'
 
 export const metaDataPersonalProjects: Metadata = {
   title: META_PROJECTS_OVERVIEW_PERSONAL.title,

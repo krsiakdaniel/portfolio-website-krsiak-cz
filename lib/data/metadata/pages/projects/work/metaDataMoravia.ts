@@ -6,8 +6,8 @@ import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
-import moraviaOG from '@/public/images/png/open-graph/pages/work-experience/moravia-og.png'
-import moraviaTwitter from '@/public/images/png/open-graph/pages/work-experience/moravia-twitter.png'
+import moraviaOG from '@/public/images/png/open-graph/pages/work-experience/moravia/moravia-og.png'
+import moraviaTwitter from '@/public/images/png/open-graph/pages/work-experience/moravia/moravia-twitter.png'
 
 export const metaDataMoravia: Metadata = {
   title: META_MORAVIA.title,

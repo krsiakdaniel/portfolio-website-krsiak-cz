@@ -6,8 +6,8 @@ import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
-import komercniBankaOG from '@/public/images/png/open-graph/pages/work-experience/komercni-banka-og.png'
-import komercniBankaTwitter from '@/public/images/png/open-graph/pages/work-experience/komercni-banka-twitter.png'
+import komercniBankaOG from '@/public/images/png/open-graph/pages/work-experience/komercni-banka/komercni-banka-og.png'
+import komercniBankaTwitter from '@/public/images/png/open-graph/pages/work-experience/komercni-banka/komercni-banka-twitter.png'
 
 export const metaDataKomercniBanka: Metadata = {
   title: META_KOMERCNI_BANKA.title,

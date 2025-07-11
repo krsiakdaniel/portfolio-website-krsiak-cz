@@ -6,8 +6,8 @@ import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
-import kooperativaOG from '@/public/images/png/open-graph/pages/work-experience/kooperativa-og.png'
-import kooperativaTwitter from '@/public/images/png/open-graph/pages/work-experience/kooperativa-twitter.png'
+import kooperativaOG from '@/public/images/png/open-graph/pages/work-experience/kooperativa/kooperativa-og.png'
+import kooperativaTwitter from '@/public/images/png/open-graph/pages/work-experience/kooperativa/kooperativa-twitter.png'
 
 export const metaDataKooperativa: Metadata = {
   title: META_KOOPERATIVA.title,

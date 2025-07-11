@@ -6,8 +6,8 @@ import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
-import grouponOG from '@/public/images/png/open-graph/pages/work-experience/groupon-og.png'
-import grouponTwitter from '@/public/images/png/open-graph/pages/work-experience/groupon-twitter.png'
+import grouponOG from '@/public/images/png/open-graph/pages/work-experience/groupon/groupon-og.png'
+import grouponTwitter from '@/public/images/png/open-graph/pages/work-experience/groupon/groupon-twitter.png'
 
 export const metaDataGroupon: Metadata = {
   title: META_GROUPON.title,
