@@ -340,7 +340,7 @@ export const ERROR = {
 }
 
 export const META_WHO_I_AM = {
-  title: `Who I Am | ${COMMON_VALUES.nameDanielKrsiak}`,
+  title: `Who I Am | ${COMMON_VALUES.nameDanielKrsiak} — Traveler & Outdoor Enthusiast`,
   description:
     'I enjoy traveling and outdoor adventures, exploring from Czech forests to South Korean temples while embracing nature and cultural experiences.',
   keywords: {
@@ -450,7 +450,7 @@ export const META_DEFAULT = {
 }
 
 export const META_HOME = {
-  title: `${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper} | ${COMMON_VALUES.typeScript} & ${COMMON_VALUES.next}`,
+  title: `${COMMON_VALUES.nameDanielKrsiak} | ${COMMON_VALUES.reactDeveloper} — ${COMMON_VALUES.typeScript} & ${COMMON_VALUES.next}`,
   description: `Hi 👋 I am ${COMMON_VALUES.nameDanielKrsiak}, a ${COMMON_VALUES.reactDeveloper} from ${COMMON_VALUES.czechRepublic}. I craft scalable, high-quality web apps using ${COMMON_VALUES.javaScriptShort}, ${COMMON_VALUES.typeScriptShort}, ${COMMON_VALUES.react}, and ${COMMON_VALUES.next}.`,
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
@@ -479,7 +479,7 @@ export const META_HOME = {
 export const META_SMARTSUPP_WEB = {
   title: `Smartsupp Web | ${COMMON_VALUES.nameDanielKrsiak} — Front End Developer`,
   description:
-    'Worked as a Front End Developer at Smartsupp for 1 year. Created company website Front End, collaborated with UX designer on brand theme and layout.',
+    'Created Smartsupp website and collaborated on brand design as a Frontend Developer for 1 year, merging UX vision with sleek, functional UI.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     smartsuppWeb: 'Smartsupp Web',
@@ -549,7 +549,7 @@ export const META_MORAVIA = {
 export const META_KOOPERATIVA = {
   title: `Kooperativa | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
-    'I built a web app for managing insurance policies—covering citizen-owned property and products.',
+    'Developed a React-based app to manage insurance for citizen-owned assets at Kooperativa—serving 2.48M+ customers across Czechia.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
@@ -584,7 +584,7 @@ export const META_KOMERCNI_BANKA = {
 export const META_GROUPON = {
   title: `Groupon | ${COMMON_VALUES.nameDanielKrsiak} — QA Automation Team Leader`,
   description:
-    'QA Automation SDET & QA Team Lead — hiring people, and testing coordination for marketplace with 17 000 000 customers.',
+    'QA Automation SDET & QA Team Lead. Hired testers and coordinated QA for a marketplace with 17M+ users, optimizing automation and quality.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     groupon: 'Groupon',
@@ -628,7 +628,7 @@ export const META_KRSIAK = {
 export const META_CRYPTOMANIA = {
   title: `Cryptomania | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
-    'Crypto currency prices app with latest data from CoinGecko API. Built with React and Chakra UI. Explore and search for cryptocurrencies with ease.',
+    'Cryptocurrency price app using fresh CoinGecko data. Made with React + Chakra UI. Discover, browse, and track coins effortlessly.',
   keywords: {
     cryptomania: 'Cryptomania',
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
