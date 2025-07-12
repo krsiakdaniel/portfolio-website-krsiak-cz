@@ -12,6 +12,7 @@
     - [Main](#main)
     - [Projects Details](#projects-details)
   - [🏎️ Website Performance](#️-website-performance)
+  - [🏛️ Project Architecture](#️-project-architecture)
   - [👨🏻‍💼 Team Leader and Task Management](#-team-leader-and-task-management)
   - [💻 Development](#-development)
   - [🧪 Testing Overview](#-testing-overview)
@@ -21,8 +22,10 @@
   - [🛠️ CI - Continuous Integration](#️-ci---continuous-integration)
   - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
   - [🚨 Security](#-security)
-  - [📱 Progressive Web App](#-progressive-web-app)
+  - [📡 Progressive Web App](#-progressive-web-app)
   - [🙇‍♂️ Attribution](#️-attribution)
+  - [📝 Contributions](#-contributions)
+  - [📄 License](#-license)
   - [🖼️ Screenshots](#️-screenshots)
 
 ## ⚛️ Project Description
@@ -99,6 +102,10 @@ The website has these top level pages and project detail pages.
 
 - [README](README-website-performance.md)
 
+## 🏛️ Project Architecture
+
+- [README](README-architecture.md)
+
 ## 👨🏻‍💼 Team Leader and Task Management
 
 - [README](README-team-leader-task-management.md)
@@ -142,6 +149,30 @@ The website has these top level pages and project detail pages.
 ## 🙇‍♂️ Attribution
 
 - [README](README-attribution.md)
+
+## 📝 Contributions
+
+This is a personal portfolio project. I'm not accepting external contributions at this time.
+
+**However, you're welcome to:**
+- 🍴 Fork the repository for your own use
+- 📚 Use it as a learning reference
+- 💡 Draw inspiration for your own projects
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### What this means:
+- ✅ You can use this code for learning
+- ✅ You can fork and modify it
+- ✅ You can use it in your own projects
+- ✅ Just keep the license notice
+
+### Attribution appreciated but not required for:
+- Personal projects
+- Educational use
+- Learning purposes
 
 ## 🖼️ Screenshots
 

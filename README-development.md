@@ -5,6 +5,13 @@ Development environment for the project.
 **Table of Contents:**
 
 - [🛠️ Development](#️-development)
+  - [📋 Prerequisites](#-prerequisites)
+    - [System Requirements](#system-requirements)
+    - [Software Requirements](#software-requirements)
+    - [Installation Steps](#installation-steps)
+  - [🔐 Environment Variables](#-environment-variables)
+    - [Setup](#setup)
+    - [Available Variables](#available-variables)
   - [🚀 Website Version](#-website-version)
   - [💻 Commands](#-commands)
     - [Bun Commands](#bun-commands)
@@ -23,13 +30,95 @@ Development environment for the project.
 
 ---
 
-## 🚀 Website Version
+## 📋 Prerequisites
 
-As of **Jul 7, 2025**, the website is `"version": "2.35.17"`.
+Before you begin, ensure you have the following installed on your development machine:
 
-- `2` - major redesigns
-- `35` - features added
-- `17` - bug fixes
+### Software Requirements
+
+#### Required
+
+- **Node.js**: `v23.8.0` (specified in `.nvmrc`)
+  - Download from [nodejs.org](https://nodejs.org/)
+  - Or use Node Version Manager (NVM) - recommended
+- **Bun**: Latest stable version
+  - Install from [bun.sh](https://bun.sh/)
+  - Used as package manager and runtime
+- **Git**: For version control
+  - Download from [git-scm.com](https://git-scm.com/)
+
+#### Optional but Recommended
+
+- **NVM (Node Version Manager)**:
+  - Link to [nvm-sh/nvm](https://github.com/nvm-sh/nvm)
+- **VS Code**: For development
+  - Download from [code.visualstudio.com](https://code.visualstudio.com/)
+  - Recommended extensions: TypeScript, React, Tailwind CSS
+
+### Installation Steps
+
+1. **Install Node.js using NVM** (recommended):
+
+   ```bash
+   # Install NVM (if not already installed)
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+
+   # Use the project's Node version
+   nvm install 23.8.0
+   nvm use 23.8.0
+
+   # Or simply use the .nvmrc file
+   nvm use
+   ```
+
+2. **Install Bun**:
+
+   ```bash
+   # macOS/Linux
+   curl -fsSL https://bun.sh/install | bash
+
+   # Verify installation
+   bun --version
+   ```
+
+3. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/krsiakdaniel/portfolio-website-krsiak-cz.git
+   cd portfolio-website-krsiak-cz
+   ```
+
+4. **Install dependencies**:
+
+   ```bash
+   bun install
+   ```
+
+5. **Start development server**:
+
+   ```bash
+   bun dev
+   ```
+
+6. **Open in browser**:
+   - Navigate to [http://localhost:3000](http://localhost:3000)
+
+### Verification
+
+Run these commands to verify your setup:
+
+```bash
+node --version    # Should output: v23.8.0
+bun --version     # Should output: 1.x.x (latest)
+git --version     # Should output: git version 2.x.x
+```
+
+### Troubleshooting
+
+- **Node version issues**: Use `nvm use 23.8.0` to switch to the correct version
+- **Permission errors**: Avoid using `sudo` with Bun commands
+- **Port 3000 busy**: Use `bun dev -- --port 3001` to run on a different port
+- **Dependencies issues**: Try `bun clean:install` to reinstall dependencies
 
 ## 💻 Commands
 
