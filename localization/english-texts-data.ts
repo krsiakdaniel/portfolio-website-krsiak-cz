@@ -318,13 +318,13 @@ export const PROJECTS_WORK = {
         title: 'My Job',
         items: [
           'I\u00A0worked for\u00A0Kooperativa, the\u00A02nd biggest insurance company in\u00A0the\u00A0Czech Republic, owned by\u00A0Vienna Insurance Group.',
-          'I\u00A0was involved in\u00A0the\u00A0development of\u00A0application that will improve services and\u00A0customer experience of\u00A0over 2\u00A0480\u00A0000+ customers.',
+          'I\u00A0was involved in\u00A0the\u00A0development of\u00A0an\u00A0application that will improve services and\u00A0customer experience of\u00A0over 2\u00A0480\u00A0000+ customers.',
         ],
       },
       features: {
         title: 'Developed new features',
         items: [
-          'I\u00A0was part of\u00A0team to\u00A0create comprehensive solution for\u00A0arranging and\u00A0managing insurance contracts.',
+          'I\u00A0was part of\u00A0a\u00A0team to\u00A0create a\u00A0comprehensive solution for\u00A0arranging and\u00A0managing insurance contracts.',
           'The\u00A0application is\u00A0designed to\u00A0enhance the\u00A0customer experience while providing employees with a\u00A0modern system that simplifies their work.',
           'I\u00A0worked with TypeScript, React, and\u00A0Redux. I\u00A0used Figma designs to\u00A0develop a\u00A0user interface. I\u00A0also worked with a\u00A0backend developer to\u00A0ensure API integration.',
         ],
@@ -337,13 +337,13 @@ export const PROJECTS_WORK = {
         title: 'My Job',
         items: [
           'I\u00A0worked for\u00A0the\u00A03rd biggest bank in\u00A0the\u00A0Czech Republic, Komerční banka, owned by\u00A0Société Générale.',
-          `I\u00A0worked on\u00A0a\u00A0website that is\u00A0used by${CUSTOMERS_COUNT.komercniBanka} customers.`,
+          `I\u00A0worked on\u00A0a\u00A0website that is\u00A0used by ${CUSTOMERS_COUNT.komercniBanka} customers.`,
         ],
       },
       features: {
         title: 'Developed new features',
         items: [
-          'I\u00A0was tasked with creating a\u00A0search page, with filters and\u00A0results pagination for\u00A0the\u00A0bank branches and\u00A0ATM locations and\u00A0detail sub-pages.',
+          'I\u00A0was tasked with creating a\u00A0search page with filters and\u00A0results pagination for\u00A0the\u00A0bank branches, ATM locations, and\u00A0detail sub-pages.',
           'My task was to\u00A0provide an\u00A0easy user experience for\u00A0all customers, using the\u00A0Geolocation API and\u00A0the\u00A0Google Places Autocomplete API, so\u00A0they could find their nearest bank branch or\u00A0ATM.',
           'I\u00A0created an\u00A0Exchange Rates page with rates detail pages.',
         ],
@@ -425,7 +425,7 @@ export const WORK_PROJECTS_OVERVIEW = {
     role: `QA\u00A0Automation ${NB_HYPHEN}\u00A0Team\u00A0Leader`,
     years: '4 months',
     description:
-      'I\u00A0was responsible setting up\u00A0new QA\u00A0team, hiring and\u00A0managing people. Setting up\u00A0QA\u00A0processes, writing test plans, and\u00A0testing scripts.',
+      'I\u00A0was responsible for\u00A0setting up\u00A0a\u00A0new QA\u00A0team, hiring and\u00A0managing people. Setting up\u00A0QA\u00A0processes, writing test plans, and\u00A0testing scripts.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -443,7 +443,7 @@ export const WORK_PROJECTS_OVERVIEW = {
     role: 'React Developer',
     years: '10\u00A0months',
     description:
-      'I\u00A0created search page for\u00A0ATM and\u00A0branches, with their detail pages. And\u00A0also Exchange rates page with details for\u00A0each currency.',
+      'I\u00A0created a\u00A0search page for\u00A0ATMs and\u00A0branches, with their detail pages. I\u00A0also developed an\u00A0Exchange rates page with details for\u00A0each currency.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -493,7 +493,7 @@ export const WORK_PROJECTS_OVERVIEW = {
     role: 'Front End Developer',
     years: '1\u00A0year',
     description:
-      'I\u00A0created SaaS company website and\u00A0was responsible for\u00A0Front End. I\u00A0worked with the\u00A0main UX designer on\u00A0new brand color theme.',
+      'I\u00A0created a\u00A0SaaS company website and\u00A0was responsible for\u00A0the\u00A0Front End. I\u00A0worked with the\u00A0main UX designer on\u00A0a\u00A0new brand color theme.',
     linkText: 'Project details',
     projectLinks: [
       {
@@ -511,7 +511,7 @@ export const WORK_PROJECTS_OVERVIEW = {
     role: 'Admin &\u00A0Content Writer',
     years: '6\u00A0months',
     description:
-      'Localization of\u00A0the\u00A0company HELP website into 9\u00A0languages. I\u00A0was\u00A0also\u00A0writing tutorials and\u00A0creating content.',
+      "Localization of\u00A0the\u00A0company's HELP website into 9\u00A0languages. I\u00A0was\u00A0also\u00A0writing tutorials and\u00A0creating content.",
     linkText: 'Project details',
     projectLinks: [
       {
@@ -609,7 +609,7 @@ export const PROJECTS_PERSONAL = {
     titleHighlight: '',
     items: [
       {
-        text: 'I\u00A0needed a\u00A0new website for\u00A0my personal presentation. I\u00A0learnt Next.js, and\u00A0used Tailwind CSS.',
+        text: 'I\u00A0needed a\u00A0new website for\u00A0my personal presentation. I\u00A0learned Next.js, and\u00A0used Tailwind CSS.',
       },
     ],
   },
