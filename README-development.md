@@ -1,4 +1,4 @@
-  # 🛠️ Development
+# 🛠️ Development
 
 Development environment for the project.
 
