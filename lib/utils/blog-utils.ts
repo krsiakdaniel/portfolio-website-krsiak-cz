@@ -1,5 +1,4 @@
 import fs from 'fs'
-import { compileMDX } from 'next-mdx-remote/rsc'
 import path from 'path'
 import matter from 'gray-matter'
 
@@ -8,7 +7,7 @@ export interface BlogPost {
   date: string
   slug: string
   description: string
-  content: any // Using any for now due to type complexity
+  content: string
   author?: string
   tags?: string[]
 }
@@ -86,36 +85,13 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   // Parse frontmatter and content using gray-matter
   const { data: frontmatter, content } = matter(fileContents)
 
-  try {
-    // Compile MDX content
-    const mdxResult = await compileMDX({
-      source: content,
-      options: {
-        parseFrontmatter: false,
-      },
-    })
-
-    return {
-      slug,
-      title: frontmatter['title'] || slug,
-      date: frontmatter['date'] || new Date().toISOString(),
-      description: frontmatter['description'] || '',
-      content: mdxResult,
-      author: frontmatter['author'] || 'Daniel Kršiak',
-      tags: frontmatter['tags'] || [],
-    }
-  } catch (error) {
-    console.error(`Error compiling MDX for ${slug}:`, error)
-
-    // Return error object with placeholder content matching MDX result shape
-    return {
-      slug,
-      title: frontmatter['title'] || slug,
-      date: frontmatter['date'] || new Date().toISOString(),
-      description: frontmatter['description'] || '',
-      content: { content: () => 'Error rendering MDX content', frontmatter: {} },
-      author: frontmatter['author'] || 'Daniel Kršiak',
-      tags: frontmatter['tags'] || [],
-    }
+  return {
+    slug,
+    title: frontmatter['title'] || slug,
+    date: frontmatter['date'] || new Date().toISOString(),
+    description: frontmatter['description'] || '',
+    content: content, // Return raw content since Next.js will handle MDX compilation
+    author: frontmatter['author'] || 'Daniel Kršiak',
+    tags: frontmatter['tags'] || [],
   }
 }
