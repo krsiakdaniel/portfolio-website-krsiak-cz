@@ -151,6 +151,10 @@ The website has these top level pages and project detail pages.
 
 - [README](README-mdx-blog.md)
 
+## 🎨 Design System
+
+- [README](README-design-system.md)
+
 ## 🙇‍♂️ Attribution
 
 - [README](README-attribution.md)
