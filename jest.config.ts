@@ -30,11 +30,15 @@ const config = {
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: [
-    'src/**/*.{js,jsx,ts,tsx}', // src = include
-    '!src/**/*.d.ts', // !src = exclude
-    '!src/**/*.stories.{js,jsx,ts,tsx}', // !src = exclude
-    '!src/**/*.test.{js,jsx,ts,tsx}', // !src = exclude
-    '!src/types/**/*', // !src = exclude
+    'app/**/*.{js,jsx,ts,tsx}',
+    'components/**/*.{js,jsx,ts,tsx}',
+    'lib/**/*.{js,jsx,ts,tsx}',
+    '!**/*.d.ts',
+    '!**/*.stories.{js,jsx,ts,tsx}',
+    '!**/*.test.{js,jsx,ts,tsx}',
+    '!**/node_modules/**',
+    '!**/.next/**',
+    '!**/coverage/**',
   ],
 
   // The directory where Jest should output its coverage files
@@ -105,21 +109,19 @@ const config = {
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
-    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/__mocks__/fileMock.ts',
-    '^@/(.*)$': '<rootDir>/src/$1',
-    '^@components/(.*)$': '<rootDir>/src/components/$1',
-    '^@pages/(.*)$': '<rootDir>/src/pages/$1',
-    '^@app/(.*)$': '<rootDir>/src/app/$1',
-    '^@lib/(.*)$': '<rootDir>/src/lib/$1',
-    '^@utils/(.*)$': '<rootDir>/src/utils/$1',
-    // SVG and image mappings
-    '\\.svg$': '<rootDir>/__mocks__/svgMock.ts', // Simplified SVG pattern
-    '\\.(css|sass|scss)$': 'identity-obj-proxy',
-    '\\.(jpg|jpeg|png|gif|webp|avif|ico|bmp)$': '<rootDir>/__mocks__/fileMock.ts',
+    '\\.(gif|ttf|eot|svg|png|jpg|jpeg|webp|avif|ico|bmp)$': '<rootDir>/__mocks__/fileMock.ts',
+    '^@/(.*)$': '<rootDir>/$1',
+    '^@components/(.*)$': '<rootDir>/components/$1',
+    '^@app/(.*)$': '<rootDir>/app/$1',
+    '^@lib/(.*)$': '<rootDir>/lib/$1',
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
-  // modulePathIgnorePatterns: [],
+  modulePathIgnorePatterns: [
+    '<rootDir>/~/.bun/',
+    '<rootDir>/.next/',
+    '<rootDir>/node_modules/.cache/',
+  ],
 
   // Activates notifications for test results
   // notify: false,
@@ -181,10 +183,17 @@ const config = {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  testMatch: ['**/__tests__/jest/**/*.test.[jt]s?(x)', '**/src/app/**/*.test.[jt]s?(x)'],
+  testMatch: ['**/__tests__/jest/**/*.test.[jt]s?(x)'],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/playwright/', '/__tests__/playwright/'],
+  testPathIgnorePatterns: [
+    '/node_modules/',
+    '/.next/',
+    '/playwright/',
+    '/__tests__/playwright/',
+    '/~/.bun/',
+    '/coverage/',
+  ],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
