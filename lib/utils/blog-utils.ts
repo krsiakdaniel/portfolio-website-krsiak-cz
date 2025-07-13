@@ -1,6 +1,7 @@
 import fs from 'fs'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import path from 'path'
+import matter from 'gray-matter'
 
 export interface BlogPost {
   title: string
@@ -46,29 +47,8 @@ export async function getAllBlogPosts(): Promise<BlogPostMeta[]> {
       const fullPath = path.join(postsDirectory, filename)
       const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-      // Extract frontmatter using regex for simplicity
-      const frontmatterRegex = /---\s*([\s\S]*?)\s*---/
-      const match = frontmatterRegex.exec(fileContents)
-      const frontmatterBlock = match ? match[1] : ''
-
-      // Parse frontmatter
-      const frontmatter: Record<string, any> = {}
-      frontmatterBlock.split('\n').forEach((line) => {
-        const [key, ...valueParts] = line.split(':')
-        if (key && valueParts.length) {
-          let value = valueParts.join(':').trim()
-          // Handle array values
-          if (value.startsWith('[') && value.endsWith(']')) {
-            const arrayItems = value
-              .substring(1, value.length - 1)
-              .split(',')
-              .map((s) => s.trim())
-            frontmatter[key.trim()] = arrayItems
-          } else {
-            frontmatter[key.trim()] = value
-          }
-        }
-      })
+      // Parse frontmatter using gray-matter
+      const { data: frontmatter } = matter(fileContents)
 
       return {
         slug,
@@ -103,30 +83,8 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
 
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-  // Extract frontmatter using regex for simplicity
-  const frontmatterRegex = /---\s*([\s\S]*?)\s*---/
-  const match = frontmatterRegex.exec(fileContents)
-  const frontmatterBlock = match ? match[1] : ''
-  const content = fileContents.replace(frontmatterRegex, '').trim()
-
-  // Parse frontmatter
-  const frontmatter: Record<string, any> = {}
-  frontmatterBlock.split('\n').forEach((line) => {
-    const [key, ...valueParts] = line.split(':')
-    if (key && valueParts.length) {
-      let value = valueParts.join(':').trim()
-      // Handle array values
-      if (value.startsWith('[') && value.endsWith(']')) {
-        const arrayItems = value
-          .substring(1, value.length - 1)
-          .split(',')
-          .map((s) => s.trim())
-        frontmatter[key.trim()] = arrayItems
-      } else {
-        frontmatter[key.trim()] = value
-      }
-    }
-  })
+  // Parse frontmatter and content using gray-matter
+  const { data: frontmatter, content } = matter(fileContents)
 
   try {
     // Compile MDX content
@@ -149,13 +107,13 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   } catch (error) {
     console.error(`Error compiling MDX for ${slug}:`, error)
 
-    // Return error object with placeholder content
+    // Return error object with placeholder content matching MDX result shape
     return {
       slug,
       title: frontmatter['title'] || slug,
       date: frontmatter['date'] || new Date().toISOString(),
       description: frontmatter['description'] || '',
-      content: { content: 'Error rendering MDX content' },
+      content: { content: () => 'Error rendering MDX content', frontmatter: {} },
       author: frontmatter['author'] || 'Daniel Kršiak',
       tags: frontmatter['tags'] || [],
     }
