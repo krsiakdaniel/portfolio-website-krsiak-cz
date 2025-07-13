@@ -10,17 +10,13 @@ This document provides recommendations for setting up your development environme
 - **Why**: Excellent TypeScript/JavaScript support, great extension ecosystem, built-in Git integration
 - **Free**: Yes
 
-### Alternative Options
+### Alternative Option
 
-- **WebStorm**: [JetBrains WebStorm](https://www.jetbrains.com/webstorm/)
-  - Professional IDE with advanced refactoring tools
-  - Paid (free for students)
-- **Sublime Text**: [Sublime Text](https://www.sublimetext.com/)
-  - Lightweight and fast
-  - Good for quick edits
-- **Neovim/Vim**: For command-line enthusiasts
-  - Highly customizable
-  - Steep learning curve
+#### WebStorm
+
+- **Download**: [JetBrains WebStorm](https://www.jetbrains.com/webstorm/)
+- **Why:** Professional IDE with advanced refactoring tools
+- **Paid:** Yes (Free for students)
 
 ## 🔌 Essential VS Code Extensions
 
@@ -45,7 +41,6 @@ This document provides recommendations for setting up your development environme
 - ESLint
 - Prettier - Code formatter
 - Error Lens
-- Code Spell Checker
 ```
 
 ### Git & Version Control
@@ -102,20 +97,14 @@ Create or update your `.vscode/settings.json`:
 
 ## 🎨 Theme Recommendations
 
-### Dark Themes
-
 - **Dracula Official**
 - **Material Theme**
-
-### Light Themes
-
-- **Material Theme Lighter**
 
 ## 🔧 Additional Configuration Files
 
 ### Editor Configuration
 
-See file: [.editorconfig](/.editorconfig
+See file: [.editorconfig](/.editorconfig)
 
 ## 🐛 Debugging Setup
 
@@ -145,20 +134,15 @@ If working with mobile-responsive features:
 
 ## 🚀 Performance Tips
 
-- **Exclude node_modules**: Add to `.vscode/settings.json`:
-
-  ```json
-  {
-    "files.exclude": {
-      "**/node_modules": true,
-      "**/.git": true,
-      "**/.DS_Store": true
-    }
-  }
-  ```
-
 - **Use workspace settings**: Project-specific settings over global ones
+- **Exclude `node_modules`**: Add to `.vscode/settings.json`
 
----
-
-**Note**: This setup is optimized for modern web development. Adjust extensions and settings based on your specific tech stack and preferences.
+```json
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.git": true,
+    "**/.DS_Store": true
+  }
+}
+```

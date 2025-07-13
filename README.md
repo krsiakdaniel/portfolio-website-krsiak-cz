@@ -152,7 +152,7 @@ The website has these top level pages and project detail pages.
 
 ## 📝 Contributions
 
-This is a personal portfolio project. I'm not accepting external contributions at this time.
+This is a personal portfolio project. I'm not accepting external contributions.
 
 **However, you're welcome to:**
 
@@ -164,18 +164,14 @@ This is a personal portfolio project. I'm not accepting external contributions a
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### What this means:
+**What this means:**
 
 - ✅ You can use this code for learning
 - ✅ You can fork and modify it
 - ✅ You can use it in your own projects
 - ✅ Just keep the license notice
 
-### Attribution appreciated but not required for:
-
-- Personal projects
-- Educational use
-- Learning purposes
+_Attribution appreciated but not required._
 
 ## 🖼️ Screenshots
 

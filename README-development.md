@@ -1,18 +1,15 @@
-# 🛠️ Development
+  # 🛠️ Development
 
 Development environment for the project.
 
 **Table of Contents:**
 
-- [🛠️ Development](#️-development)
+- [🛠️ Development](#-development)
   - [📋 Prerequisites](#-prerequisites)
-    - [System Requirements](#system-requirements)
     - [Software Requirements](#software-requirements)
     - [Installation Steps](#installation-steps)
-  - [🔐 Environment Variables](#-environment-variables)
-    - [Setup](#setup)
-    - [Available Variables](#available-variables)
-  - [🚀 Website Version](#-website-version)
+    - [Verification](#verification)
+    - [Troubleshooting](#troubleshooting)
   - [💻 Commands](#-commands)
     - [Bun Commands](#bun-commands)
     - [Bun Configuration](#bun-configuration)
@@ -27,6 +24,7 @@ Development environment for the project.
   - [🤖 GitHub Copilot Instructions](#-github-copilot-instructions)
   - [🔗 Imports Order in Files](#-imports-order-in-files)
     - [Example](#example)
+  - [🌍 Environment Variables](#-environment-variables)
 
 ---
 
@@ -341,3 +339,53 @@ import logo from '@/public/icons/png/icon-64x64.png'
 // CSS
 import '@/app/custom.css'
 ```
+
+## 🌍 Environment Variables
+
+This project uses environment variables for configuration of various services and features.
+
+### Local Environment Setup
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```bash
+# Analytics
+NEXT_PUBLIC_GA_MEASUREMENT_ID=your-google-analytics-id
+NEXT_PUBLIC_SMARTLOOK_ID=your-smartlook-id
+
+# CI/CD
+CI=true|false  # Used in Playwright testing configuration
+```
+
+### Environment Variables Usage
+
+- **Development**: Variables in `.env.local` are used during local development
+- **Production**: Environment variables should be set in your hosting platform (e.g., Netlify)
+- **CI/CD**: Variables for CI workflows are defined in GitHub Actions workflow files
+
+### Accessing Environment Variables
+
+In Next.js, environment variables can be accessed in different ways:
+
+```typescript
+// Server Components/Pages
+// Available only on the server
+const apiKey = process.env.API_SECRET_KEY
+
+// Client Components
+// Must be prefixed with NEXT_PUBLIC_
+const analyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+```
+
+### Environment Files Precedence
+
+Next.js loads environment variables from the following files, in order:
+
+1. `.env.$(NODE_ENV).local` (e.g. `.env.development.local`)
+2. `.env.local` (except in test environment)
+3. `.env.$(NODE_ENV)` (e.g. `.env.production`)
+4. `.env`
+
+> **Note**: `.env*.local` files should be included in your `.gitignore` to avoid exposing sensitive information.
+
+For more information, see the [Next.js documentation on environment variables](https://nextjs.org/docs/basic-features/environment-variables).
