@@ -79,6 +79,7 @@ The website has these top level pages and project detail pages.
 - 📝 [Resume](https://krsiak.cz/resume)
 - 🚀 [Personal Projects](https://krsiak.cz/personal-projects)
 - 💬 [Testimonials](https://krsiak.cz/testimonials)
+- 📰 [Blog](https://krsiak.cz/blog)
 - 🚦 [Status](https://krsiak.cz/status)
 
 ### Projects Details
@@ -145,6 +146,10 @@ The website has these top level pages and project detail pages.
 ## 📱 Progressive Web App
 
 - [README](README-progressive-web-app.md)
+
+## 📰 MDX Blog
+
+- [README](README-mdx-blog.md)
 
 ## 🙇‍♂️ Attribution
 

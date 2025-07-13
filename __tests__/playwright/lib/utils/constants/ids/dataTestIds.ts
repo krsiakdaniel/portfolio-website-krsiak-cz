@@ -205,6 +205,7 @@ const PAGES_LINKS = {
   resume: 'resume-link',
   personalProjects: 'personal-projects-link',
   testimonials: 'testimonials-link',
+  blog: 'blog-link',
 }
 
 const CALL_TO_ACTION = {

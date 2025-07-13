@@ -47,4 +47,12 @@ export const pagesLinks: PageLinkItem[] = [
     text: TEXT.testimonials,
     dataTestId: DATA_TEST_IDS.pagesLinks.testimonials,
   },
+  {
+    id: ID.websiteLink.blog,
+    href: PAGES_URL.blog,
+    icon: ICON_EMOJI.newspaper,
+    ariaLabel: ARIA_LABELS.emoji.newspaper,
+    text: TEXT.blog,
+    dataTestId: DATA_TEST_IDS.pagesLinks.blog,
+  },
 ]
