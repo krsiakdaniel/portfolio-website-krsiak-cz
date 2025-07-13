@@ -79,13 +79,13 @@ Welcome to the design system documentation for Daniel Kršiak's portfolio websit
 
 ### Font Families
 
-- **📝 Body Text**: Roboto - Clean, readable sans-serif
-- **📰 Headings**: Rubik - Bold, modern heading font
-- **💻 Monospace**: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas
+- **📝 Body Text**: `Roboto - Clean, readable sans-serif`
+- **📰 Headings**: `Rubik - Bold, modern heading font`
+- **💻 Monospace**: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas`
 
 ### Heading Hierarchy
 
-```css
+```txt
 🏷️ H1: text-4xl font-bold (Rubik)
 🏷️ H2: text-3xl font-bold (Rubik)
 🏷️ H3: text-2xl font-bold (Rubik)
@@ -162,7 +162,7 @@ bg-violet-50 pl-6 py-4 italic
 dark:border-violet-400 dark:bg-violet-900/20
 ```
 
-## 🎭 Interactive States
+## 🔄 Interactive States
 
 ### 🎯 Focus
 
@@ -201,7 +201,7 @@ transition-colors duration-200 ease-in-out
 
 ## 🎪 Animations
 
-### 🎭 Custom Animations
+### Custom Animations
 
 - **💫 Pulse Bubble**: Gentle scaling pulse
 - **👻 Ghost Movement**: Left/right floating
