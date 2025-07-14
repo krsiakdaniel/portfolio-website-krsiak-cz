@@ -1,32 +1,18 @@
-# Portfolio Website - [krsiak.cz](https://krsiak.cz)
+# Portfolio Website: [krsiak.cz](https://krsiak.cz)
 
 **Table of Contents:**
 
-- [Portfolio Website - krsiak.cz](#portfolio-website---krsiakcz)
-  - [⚛️ Project Description](#️-project-description)
-  - [🔗 Project Website](#-project-website)
-  - [🚦 Project Status](#-project-status)
-  - [🛠️ Tech Stack](#️-tech-stack)
-  - [🌼 daisyUI - Component Library](#-daisyui---component-library)
-  - [📋 Pages](#-pages)
-    - [Main](#main)
-    - [Projects Details](#projects-details)
-  - [🏎️ Website Performance](#️-website-performance)
-  - [🏛️ Project Architecture](#️-project-architecture)
-  - [👨🏻‍💼 Team Leader and Task Management](#-team-leader-and-task-management)
-  - [💻 Development](#-development)
-  - [🧪 Testing Overview](#-testing-overview)
-  - [🐛 Bug Fixing](#-bug-fixing)
-  - [🔀 Pull Requests](#-pull-requests)
-  - [🚀 CI and CD - Process](#-ci-and-cd---process)
-  - [🛠️ CI - Continuous Integration](#️-ci---continuous-integration)
-  - [✅ CD - Continuous Deployment](#-cd---continuous-deployment)
-  - [🚨 Security](#-security)
-  - [📡 Progressive Web App](#-progressive-web-app)
-  - [🙇‍♂️ Attribution](#️-attribution)
-  - [📝 Contributions](#-contributions)
-  - [📄 License](#-license)
-  - [🖼️ Screenshots](#️-screenshots)
+- [⚛️ Project Description](#️-project-description)
+- [🔗 Project Website](#-project-website)
+- [🚦 Project Status](#-project-status)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📋 Pages](#-pages)
+  - [Main](#main)
+  - [Projects](#projects)
+- [📚 Documentation](#-documentation)
+- [📄 License](#-license)
+- [📫 Contact](#-contact)
+- [🖼️ Screenshots](#️-screenshots)
 
 ## ⚛️ Project Description
 
@@ -34,7 +20,9 @@
 
 ## 🔗 Project Website
 
-Link: [https://krsiak.cz](https://krsiak.cz)
+Checkout the link: [https://krsiak.cz](https://krsiak.cz)
+
+![daisyUI](/readme-images/main-readme/smiling-face-with-sunglasses-animated-80x80.webp)
 
 ## 🚦 Project Status
 
@@ -44,32 +32,20 @@ Link: [https://krsiak.cz](https://krsiak.cz)
 
 ![Tech Stack](/readme-images/main-readme/technologies-and-tools.webp)
 
-Documentation links:
-
-- **Language:** 📝 [TypeScript](https://www.typescriptlang.org/)
-- **Frameworks:** ⚛️ [React](https://react.dev/), ⏭️ [Next.js](https://nextjs.org/)
-- **CSS Framework:** 🎨 [Tailwind CSS](https://tailwindcss.com/)
-- **Component library for Tailwind CSS:**
-  - 🌊 [Flowbite](https://flowbite.com/) = `using now - will remove` 👎
-  - 🌼 [daisyUI](https://daisyui.com/) = `plan to use` 👍
-- **Testing:** 🃏 [JEST](https://jestjs.io/), 🎭 [Playwright](https://playwright.dev/)
-- **CI & CD:** 🚀 [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions) , 🌍 [Netlify](https://www.netlify.com/)
-
-## 🌼 daisyUI - Component Library
-
-This project will use component library for Tailwind CSS.
-
-- Docs: [daisyUI](https://daisyui.com/)
-- GitHub: [Release information](https://github.com/saadeghi/daisyui/releases)
-
-- **Current Version:** `none`
-- **Planned To Use:** `version 5 (stable)`
-
-![daisyUI](/readme-images/main-readme/smiling-face-with-sunglasses-animated-80x80.webp)
+- 📝 [TypeScript](https://www.typescriptlang.org/)
+- ⚛️ [React](https://react.dev/)
+- ⏭️ [Next.js](https://nextjs.org/)
+- 🎨 [Tailwind CSS](https://tailwindcss.com/)
+- 🌊 [Flowbite](https://flowbite.com/) `using for now`
+- 🌼 [daisyUI](https://daisyui.com/) `plan to use instead`
+- 🃏 [JEST](https://jestjs.io/)
+- 🎭 [Playwright](https://playwright.dev/)
+- 🚀 [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions)
+- 🌍 [Netlify](https://www.netlify.com/)
 
 ## 📋 Pages
 
-The website has these top level pages and project detail pages.
+The website has these main pages and project detail pages.
 
 ### Main
 
@@ -79,16 +55,15 @@ The website has these top level pages and project detail pages.
 - 📝 [Resume](https://krsiak.cz/resume)
 - 🚀 [Personal Projects](https://krsiak.cz/personal-projects)
 - 💬 [Testimonials](https://krsiak.cz/testimonials)
-- 🚦 [Status](https://krsiak.cz/status)
 
-### Projects Details
+### Projects
 
-🚀 **Personal Projects**:
+🚀 **Personal Projects**
 
 - 👨🏻‍💻 [Portfolio Website - krsiak.cz](https://krsiak.cz/personal-projects/krsiak)
 - 💰 [CryptoMania](https://krsiak.cz/personal-projects/cryptomania)
 
-👨🏻‍💻 **Work Experience**:
+👨🏻‍💻 **Work Experience**
 
 - 💬 [Smartsupp - Dashboard](https://krsiak.cz/work-experience/smartsupp-dashboard)
 - 🏦 [Komerční banka](https://krsiak.cz/work-experience/komercni-banka)
@@ -98,65 +73,32 @@ The website has these top level pages and project detail pages.
 - 🛒 [Groupon - QA Automation](https://krsiak.cz/work-experience/groupon)
 - 🌎 [Moravia - QA Automation](https://krsiak.cz/work-experience/moravia)
 
-## 🏎️ Website Performance
+## 📚 Documentation
 
-- [README](README-website-performance.md)
-
-## 🏛️ Project Architecture
-
-- [README](README-architecture.md)
-
-## 👨🏻‍💼 Team Leader and Task Management
-
-- [README](README-team-leader-task-management.md)
-
-## 💻 Development
-
-- [README](README-development.md)
-
-## 🧪 Testing Overview
-
-- [README](README-testing.md)
-
-## 🐛 Bug Fixing
-
-- [README](README-bug-fixing.md)
-
-## 🔀 Pull Requests
-
-- [README](README-development-pull-requests.md)
-
-## 🚀 CI and CD - Process
-
-- [README](README-ci-cd-process.md)
-
-## 🛠️ CI - Continuous Integration
-
-- [README](README-continuous-integration.md)
-
-## ✅ CD - Continuous Deployment
-
-- [README](README-continuous-deployment.md)
-
-## 🚨 Security
-
-- [README](README-security.md)
-
-## 📱 Progressive Web App
-
-- [README](README-progressive-web-app.md)
-
-## 🙇‍♂️ Attribution
-
-- [README](README-attribution.md)
-
-## 📝 Contributions
-
-- [README](README-contributions.md)
+- 🏎️ **Website Performance:** [README-website-performance.md](README-website-performance.md)
+- 🏛️ **Project Architecture:** [README-architecture.md](README-architecture.md)
+- 👨🏻‍💼 **Team Leader and Task Management:** [README-team-leader-task-management.md](README-team-leader-task-management.md)
+- 💻 **Development:** [README-development.md](README-development.md)
+- 🧪 **Testing Overview:** [README-testing.md](README-testing.md)
+- 🐛 **Bug Fixing:** [README-bug-fixing.md](README-bug-fixing.md)
+- 🔀 **Pull Requests:** [README-development-pull-requests.md](README-development-pull-requests.md)
+- 🚀 **CI and CD - Process:** [README-ci-cd-process.md](README-ci-cd-process.md)
+- 🛠️ **CI - Continuous Integration:** [README-continuous-integration.md](README-continuous-integration.md)
+- ✅ **CD - Continuous Deployment:** [README-continuous-deployment.md](README-continuous-deployment.md)
+- 🚨 **Security:** [README-security.md](README-security.md)
+- 📱 **Progressive Web App:** [README-progressive-web-app.md](README-progressive-web-app.md)
+- 🙇‍♂️ **Attribution:** [README-attribution.md](README-attribution.md)
+- 📝 **Contributions:** [README-contributions.md](README-contributions.md)
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📫 Contact
+
+- **Daniel Kršiak**
+- [https://www.linkedin.com/in/krsiakdaniel/](https://www.linkedin.com/in/krsiakdaniel/)
+- [https://krsiak.cz/resume](https://krsiak.cz/resume)
 
 ## 🖼️ Screenshots
 
