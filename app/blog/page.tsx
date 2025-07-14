@@ -2,6 +2,7 @@ import { getAllBlogPosts } from '@/lib/utils/blog-utils'
 import { Metadata } from 'next'
 import Link from 'next/link'
 
+// TODO: add OG and Twitter metadata for the blog pages each post
 export const metadata: Metadata = {
   title: 'Blog | Daniel Kršiak - React Developer',
   description: 'Blog posts by Daniel Kršiak about web development, TypeScript, React, and more.',
