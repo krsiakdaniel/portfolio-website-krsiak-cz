@@ -28,7 +28,9 @@ const Menu: FC<MenuProps> = ({ type, forwardedRef, onClickLink }): JSX.Element =
     <nav aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
       <ul
         ref={forwardedRef}
-        className={isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-2 lg:flex'}
+        className={
+          isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-2 lg:flex 2xl:gap-2'
+        }
       >
         {(pagesLinks ?? []).map((link) => {
           return (
