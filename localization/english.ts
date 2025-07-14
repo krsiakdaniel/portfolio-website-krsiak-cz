@@ -28,6 +28,7 @@ export const ICON_EMOJI = {
   books: '📚',
   shoppingCart: '🛒',
   globeShowingAmericas: '🌎',
+  newspaper: '📰',
   globeShowingEuropeAfrica: '🌍',
   memo: '📝',
   ghost: '👻',
@@ -237,6 +238,7 @@ export const PROJECTS = {
   nextShort: COMMON_VALUES.nextShort,
   react: COMMON_VALUES.react,
   workExperience: 'Work Experience',
+  blog: 'Blog',
 }
 
 export const PROJECT_CRYPTOMANIA = {
@@ -896,6 +898,7 @@ export const ARIA_LABELS = {
     laptop: 'Laptop',
     books: 'Books',
     shoppingCart: 'Shopping cart',
+    newspaper: 'Newspaper',
     memo: 'Memo',
     ghost: 'Ghost',
     verticalTrafficLight: 'Vertical traffic light',

@@ -10,7 +10,7 @@ const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile, onClickLink }): JSX.E
   const mobileDesktopCSS = isMobile ? 'border-b border-gray-100 py-3' : 'py-2'
   const hoverAndFocusCSS = 'hover:border-violet-50 hover:bg-violet-50'
   const sharedCss =
-    'text-md block select-none rounded-lg px-2 font-bold text-neutral-600 hover:text-violet-800'
+    'text-md block select-none rounded-lg px-1 xl:px-2 font-bold text-neutral-600 hover:text-violet-800'
 
   return (
     <li>
