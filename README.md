@@ -79,6 +79,7 @@ The website has these main pages and project detail pages.
 - 🏛️ **Project Architecture:** [README-architecture.md](README-architecture.md)
 - 👨🏻‍💼 **Team Leader and Task Management:** [README-team-leader-task-management.md](README-team-leader-task-management.md)
 - 💻 **Development:** [README-development.md](README-development.md)
+- 📦 **Dependencies:** [README-dependencies.md](README-dependencies.md)
 - 🧪 **Testing Overview:** [README-testing.md](README-testing.md)
 - 🐛 **Bug Fixing:** [README-bug-fixing.md](README-bug-fixing.md)
 - 🔀 **Pull Requests:** [README-development-pull-requests.md](README-development-pull-requests.md)
