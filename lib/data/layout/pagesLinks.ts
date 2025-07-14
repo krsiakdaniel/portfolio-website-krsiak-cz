@@ -50,8 +50,8 @@ export const pagesLinks: PageLinkItem[] = [
   {
     id: ID.websiteLink.blog,
     href: PAGES_URL.blog,
-    icon: ICON_EMOJI.newspaper,
-    ariaLabel: ARIA_LABELS.emoji.newspaper,
+    icon: ICON_EMOJI.writingHand,
+    ariaLabel: ARIA_LABELS.emoji.writingHand,
     text: TEXT.blog,
     dataTestId: DATA_TEST_IDS.pagesLinks.blog,
   },
