@@ -1,6 +1,8 @@
 import withPWAInit from '@ducanh2912/next-pwa'
 import createMDX from '@next/mdx'
 import rehypePrettyCode from 'rehype-pretty-code'
+import remarkFrontmatter from 'remark-frontmatter'
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
 // Config for PWA
 const withPWA = withPWAInit({
@@ -37,7 +39,7 @@ const prettyCodeOptions = {
 const withMDX = createMDX({
   extension: /\.(md|mdx)$/,
   options: {
-    remarkPlugins: [],
+    remarkPlugins: [remarkFrontmatter, [remarkMdxFrontmatter, { name: 'frontmatter' }]],
     rehypePlugins: [[rehypePrettyCode, prettyCodeOptions]],
   },
 })
