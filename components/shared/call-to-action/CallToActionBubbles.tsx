@@ -17,7 +17,7 @@ const CallToActionBubbles: FC = (): JSX.Element => {
   // Shuffle the colors when the component mounts
   useEffect(() => {
     setBubbleColors(shuffleArrayWithBubblesColors(initialBubblesColors))
-  }, [])
+  }, [initialBubblesColors])
 
   return (
     <>
