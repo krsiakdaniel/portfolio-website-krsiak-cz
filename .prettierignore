@@ -27,3 +27,6 @@ _site/
 
 public/sw.js
 public/workbox-7144475a.js
+
+# Husky hooks
+.husky/
