@@ -1,3 +1,4 @@
+#!/bin/sh
 # Commit message validation for Conventional Commits
 # Format: type(scope): emoji description
 
