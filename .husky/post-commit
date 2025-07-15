@@ -4,7 +4,7 @@ echo "Running repo-wide quality gates…"
 bunx tsc --noEmit
 
 # 2. Unit tests
-bun run test:jest --bail
+bun test:jest --bail
 
 # 3. E2E smoke (Chromium only, tag @smoke)
-bun run test:e2e:chrome --reporter=line --grep @smoke
+bun test:e2e:chrome --reporter=line --grep @smoke

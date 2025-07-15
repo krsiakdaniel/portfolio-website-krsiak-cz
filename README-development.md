@@ -408,7 +408,7 @@ Our pre-commit hooks automatically run the following quality checks:
    - Runs ESLint and Prettier on staged files
    - Automatically fixes formatting issues where possible
 
-2. **Unit Tests** - `bun run test:jest`
+2. **Unit Tests** - `bun test:jest`
    - Runs Jest test suite
    - Ensures all tests pass before allowing commit
 
@@ -443,10 +443,10 @@ To manually run the same checks that happen in CI:
 bun lint-staged
 
 # Unit tests
-bun run test:jest
+bun test:jest
 
 # E2E tests
-bun run test:e2e:chrome
+bun test:e2e:chrome
 ```
 
 ### Development Workflow
