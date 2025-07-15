@@ -19,7 +19,8 @@
     "test:e2e:debug": "bun playwright test --debug",
     "clean": "rm -rf ./node_modules",
     "clean:install": "rm -rf ./node_modules && bun install",
-    "deps:outdated": "bun outdated"
+    "deps:outdated": "bun outdated",
+    "pre-commit": "bun lint-staged"
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",
@@ -56,8 +57,10 @@
     "autoprefixer": "^10.4.21",
     "eslint": "9.30.1",
     "eslint-config-next": "15.3.5",
+    "husky": "^9.1.7",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.0.4",
+    "lint-staged": "^16.1.2",
     "mdx-components": "^1.0.1",
     "next": "15.3.5",
     "postcss": "8.5.6",
@@ -66,6 +69,15 @@
     "tailwindcss": "^3.4.17",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "next lint --fix --max-warnings=0",
+      "bun prettier --write"
+    ],
+    "*.{css,scss,md,mdx,json,yml}": [
+      "bun prettier --write"
+    ]
   },
   "module": "index.ts",
   "type": "module"

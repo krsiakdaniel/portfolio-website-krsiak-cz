@@ -25,6 +25,12 @@ Development environment for the project.
   - [🔗 Imports Order in Files](#-imports-order-in-files)
     - [Example](#example)
   - [🌍 Environment Variables](#-environment-variables)
+  - [🐕 Husky and Pre-commit Hook](#-husky-and-pre-commit-hook)
+    - [What Runs on Every Commit](#what-runs-on-every-commit)
+    - [Emergency Bypass](#emergency-bypass)
+    - [Local Commands to Replicate CI](#local-commands-to-replicate-ci)
+    - [Pre-commit Hook Troubleshooting](#pre-commit-hook-troubleshooting)
+    - [Development Workflow](#development-workflow)
 
 ---
 
@@ -389,3 +395,67 @@ Next.js loads environment variables from the following files, in order:
 > **Note**: `.env*.local` files should be included in your `.gitignore` to avoid exposing sensitive information.
 
 For more information, see the [Next.js documentation on environment variables](https://nextjs.org/docs/basic-features/environment-variables).
+
+## 🐕 Husky and Pre-commit Hook
+
+This guide explains the development workflow and quality gates that run automatically on every commit.
+
+### What Runs on Every Commit
+
+Our pre-commit hooks automatically run the following quality checks:
+
+1. **Lint Staged Files** - `bun lint-staged`
+   - Runs ESLint and Prettier on staged files
+   - Automatically fixes formatting issues where possible
+
+2. **Unit Tests** - `bun run test:jest`
+   - Runs Jest test suite
+   - Ensures all tests pass before allowing commit
+
+3. **End-to-End Tests** - `bun run test:e2e:chrome`
+   - Runs Playwright E2E tests in Chrome
+   - Validates critical user journeys
+
+4. **Optional Commit Message Reminder**
+   - Provides helpful reminders for commit message format
+   - Can be configured via commit-msg hook
+
+### Emergency Bypass
+
+In emergency situations, you can bypass the pre-commit hooks using:
+
+```bash
+git commit --no-verify
+```
+
+⚠️ **Use sparingly!** This should only be used when:
+
+- Urgent hotfix is needed
+- CI is temporarily broken
+- You're committing work-in-progress for collaboration
+
+### Local Commands to Replicate CI
+
+To manually run the same checks that happen in CI:
+
+```bash
+# Run lint-staged (same as pre-commit)
+bun lint-staged
+
+# Unit tests
+bun run test:jest
+
+# E2E tests
+bun run test:e2e:chrome
+```
+
+### Development Workflow
+
+1. Create a new branch from `master`
+2. Make your changes
+3. Run tests locally (optional, but recommended)
+4. Stage your changes: `git add .`
+5. Commit: `git commit -m "your message"`
+   - Pre-commit hooks will run automatically
+   - Fix any issues that arise
+6. Push your branch and create a PR

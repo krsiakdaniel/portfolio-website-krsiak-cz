@@ -1,0 +1,37 @@
+# Commit message validation for Conventional Commits
+# Format: type(scope): emoji description
+
+commit_regex='^(build|chore|cicd|docs|feature|fix|hotfix|localization|performance|refactor|revert|style|test)\([a-z0-9\-]+\): (🏗️|🛠️|⚙️|📝|✨|🐛|🔥|🇬🇧|🚀|👷|⏪|🎨|🎭|🃏) .{1,}'
+
+error_msg="Aborting commit. Your commit message is invalid.
+
+Expected format: type(scope): emoji description
+
+Available types:
+- build: 🏗️ - Changes that affect the build system or external dependencies
+- chore: 🛠️ - Maintenance tasks that don't modify src or test files
+- cicd: ⚙️ - Changes to CI/CD configuration files and scripts
+- docs: 📝 - Documentation only changes
+- feature: ✨ - New features
+- fix: 🐛 - Bug fixes
+- hotfix: 🔥 - Critical fixes that need immediate attention
+- localization: 🇬🇧 - Internationalization and localization changes
+- performance: 🚀 - Performance improvements
+- refactor: 👷 - Code changes that neither fix bugs nor add features
+- revert: ⏪ - Reverts a previous commit
+- style: 🎨 - Code style changes (formatting, missing semicolons, etc.)
+- test(e2e): 🎭 - End-to-end test changes
+- test(jest): 🃏 - Unit test changes
+
+Examples:
+- feature(header): ✨ Add responsive navigation menu
+- fix(button): 🐛 Fix hover state styling
+- docs(readme): 📝 Update installation instructions
+- test(jest): 🃏 Add user authentication tests"
+
+if ! grep -qE "$commit_regex" "$1"; then
+  echo "$error_msg" >&2
+  exit 1
+fi
+
+echo "✅ Commit message format is valid!"

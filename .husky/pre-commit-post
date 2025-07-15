@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running repo-wide quality gates…"
+
+# 1. Type-check
+bunx tsc --noEmit
+
+# 2. Unit tests
+bun run test:jest --bail
+
+# 3. E2E smoke (Chromium only, tag @smoke)
+bun run test:e2e:chrome --reporter=line --grep @smoke
