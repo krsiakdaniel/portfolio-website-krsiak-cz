@@ -123,5 +123,8 @@ Thumbs.db
 .module-cache
 .sass-cache
 
+# typescript
+*.tsbuildinfo
+
 # Local Netlify folder
 .netlify

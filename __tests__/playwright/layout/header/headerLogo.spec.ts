@@ -6,6 +6,9 @@ import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataT
 
 test.describe('Header - Logo', () => {
   test('Check link and text', async ({ page }) => {
+    // Set viewport to desktop size for consistent testing
+    await page.setViewportSize({ width: 1280, height: 720 })
+
     await test.step('Go to home page', async () => {
       await page.goto('/')
     })

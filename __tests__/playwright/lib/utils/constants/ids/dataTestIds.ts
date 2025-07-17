@@ -60,19 +60,23 @@ const MENU = {
   mobile: {
     componentMenu: 'menu-mobile',
     links: {
+      whoIAm: 'mobile-who-i-am-link',
       resume: 'mobile-resume-link',
       testimonials: 'mobile-testimonials-link',
       workExperience: 'mobile-work-experience-link',
       personalProjects: 'mobile-personal-projects-link',
+      blog: 'mobile-blog-link',
     },
   },
   desktop: {
     componentMenu: 'menu-desktop',
     links: {
+      whoIAm: 'desktop-who-i-am-link',
       resume: 'desktop-resume-link',
       testimonials: 'desktop-testimonials-link',
       workExperience: 'desktop-work-experience-link',
       personalProjects: 'desktop-personal-projects-link',
+      blog: 'desktop-blog-link',
     },
   },
   toggle: {

@@ -20,7 +20,8 @@
     "clean": "rm -rf ./node_modules",
     "clean:install": "rm -rf ./node_modules && bun install",
     "deps:outdated": "bun outdated",
-    "pre-commit": "bun lint-staged"
+    "pre-commit": "bun lint-staged",
+    "lint:fix": "bun next lint --fix --max-warnings=0"
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",
@@ -44,6 +45,7 @@
     "ts-jest": "29.4.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "@happy-dom/jest-environment": "^18.0.1",
     "@netlify/plugin-nextjs": "5.11.4",
     "@playwright/test": "1.53.2",
@@ -72,7 +74,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "next lint --fix --max-warnings=0",
+      "bun next lint --fix --max-warnings=0",
       "bun prettier --write"
     ],
     "*.{css,scss,md,mdx,json,yml}": [

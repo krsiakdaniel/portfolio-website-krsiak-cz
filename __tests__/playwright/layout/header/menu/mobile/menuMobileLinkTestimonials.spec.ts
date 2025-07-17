@@ -11,6 +11,7 @@ let page: Page
 
 test.beforeAll(async () => {
   browser = await chromium.launch()
+  // Mobile viewport: < 1024px to ensure mobile menu is visible
   context = await browser.newContext({ viewport: { width: 375, height: 812 } })
   page = await context.newPage()
 })
