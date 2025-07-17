@@ -42,7 +42,9 @@ const TestimonialPersonInfo: FC<TestimonialPersonInfoProps> = ({
         </span>
       </div>
 
-      <div className={`flex flex-col items-start ${TYPOGRAPHY_CLASSES.small} font-normal text-gray-500 md:flex-row md:space-x-1`}>
+      <div
+        className={`flex flex-col items-start ${TYPOGRAPHY_CLASSES.small} font-normal text-gray-500 md:flex-row md:space-x-1`}
+      >
         <span>{job}</span>
         <span className="hidden md:block">{' ~ '}</span>
         {link ? (

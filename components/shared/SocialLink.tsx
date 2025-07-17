@@ -61,8 +61,7 @@ const SocialLink: FC<SocialLinkProps> = ({
 
   const hoverAndFocusCSS = `${bgColor} ${hoverColor} ${focusRingColor} focus:outline-none focus:ring-4`
 
-  const baseCss =
-    `flex select-none items-center justify-center space-x-2 rounded-lg px-5 py-3.5 text-center ${TYPOGRAPHY_CLASSES.small} font-medium text-white min-w-full sm:min-w-[248px]`
+  const baseCss = `flex select-none items-center justify-center space-x-2 rounded-lg px-5 py-3.5 text-center ${TYPOGRAPHY_CLASSES.small} font-medium text-white min-w-full sm:min-w-[248px]`
 
   return (
     <a

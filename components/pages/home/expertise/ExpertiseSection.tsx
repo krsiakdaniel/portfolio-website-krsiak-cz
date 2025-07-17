@@ -39,7 +39,7 @@ const ExpertiseSection: FC<ExpertiseSectionProps> = ({
                 </span>
                 <span className="ml-1">{item.text}</span>
                 {item.years && (
-                <span className={`hidden ${TYPOGRAPHY_CLASSES.small} lg:ml-1 xl:inline`}>
+                  <span className={`hidden ${TYPOGRAPHY_CLASSES.small} lg:ml-1 xl:inline`}>
                     {MIDDLE_DOT} {item.years}
                   </span>
                 )}

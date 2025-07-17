@@ -13,11 +13,15 @@ const SkillCardTechnologyYears: FC<SkillCardTechnologyYearsProps> = ({
 }): JSX.Element => {
   return (
     <div className="break-words">
-      <div className={`${TYPOGRAPHY_CLASSES.large} font-bold tracking-tight text-neutral-900 md:text-3xl`}>
+      <div
+        className={`${TYPOGRAPHY_CLASSES.large} font-bold tracking-tight text-neutral-900 md:text-3xl`}
+      >
         {technology}
       </div>
       {years && (
-        <div className={`${TYPOGRAPHY_CLASSES.paragraph} tracking-tight text-neutral-600 md:text-xl`}>
+        <div
+          className={`${TYPOGRAPHY_CLASSES.paragraph} tracking-tight text-neutral-600 md:text-xl`}
+        >
           {years} {getYearsText(years)}
         </div>
       )}
