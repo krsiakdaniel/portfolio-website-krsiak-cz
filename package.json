@@ -7,6 +7,8 @@
     "build": "bun next build",
     "start": "bun next start",
     "lint": "bun next lint",
+    "lint:fix": "bun next lint --fix --max-warnings=0",
+    "pre-commit": "bun lint-staged",
     "prettier:check": "bun prettier --check .",
     "prettier:write": "bun prettier --write .",
     "test:jest": "bun jest",
@@ -19,9 +21,7 @@
     "test:e2e:debug": "bun playwright test --debug",
     "clean": "rm -rf ./node_modules",
     "clean:install": "rm -rf ./node_modules && bun install",
-    "deps:outdated": "bun outdated",
-    "pre-commit": "bun lint-staged",
-    "lint:fix": "bun next lint --fix --max-warnings=0"
+    "deps:outdated": "bun outdated"
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",
