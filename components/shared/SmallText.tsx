@@ -7,8 +7,8 @@ import { ParagraphProps } from '@/lib/utils/typeDefinitions/props/shared/paragra
 // Import typography design tokens
 import { TYPOGRAPHY_CLASSES } from '@/lib/design-tokens/typography'
 
-const Paragraph: FC<ParagraphProps> = ({
-  marginTop = 'mt-4',
+const SmallText: FC<ParagraphProps> = ({
+  marginTop = 'mt-2',
   dataTestId = '',
   textColor = 'text-neutral-600',
   customCss = '',
@@ -19,11 +19,11 @@ const Paragraph: FC<ParagraphProps> = ({
   return (
     <p
       {...attributes}
-      className={`${TYPOGRAPHY_CLASSES.paragraph} ${marginTop} ${textColor} ${customCss}`}
+      className={`${TYPOGRAPHY_CLASSES.small} ${marginTop} ${textColor} ${customCss}`}
     >
       {children}
     </p>
   )
 }
 
-export default Paragraph
+export default SmallText

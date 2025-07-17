@@ -3,40 +3,46 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+// Import typography design tokens
+import { TYPOGRAPHY_CLASSES } from '@/lib/design-tokens/typography'
+
 // Define custom MDX components with consistent site design system
 const customMDXComponents: MDXComponents = {
   h1: (props) => (
     <h1
-      className="font-rubik mb-6 mt-8 text-4xl font-bold text-gray-900 dark:text-white"
+      className={`font-rubik ${TYPOGRAPHY_CLASSES.h1} font-bold text-gray-900 dark:text-white`}
       {...props}
     />
   ),
   h2: (props) => (
     <h2
-      className="font-rubik mb-4 mt-8 text-3xl font-bold text-gray-900 dark:text-white"
+      className={`font-rubik ${TYPOGRAPHY_CLASSES.h2} font-bold text-gray-900 dark:text-white`}
       {...props}
     />
   ),
   h3: (props) => (
     <h3
-      className="font-rubik mb-3 mt-6 text-2xl font-bold text-gray-900 dark:text-white"
+      className={`font-rubik ${TYPOGRAPHY_CLASSES.h3} font-bold text-gray-900 dark:text-white`}
       {...props}
     />
   ),
   h4: (props) => (
     <h4
-      className="font-rubik mb-2 mt-5 text-xl font-bold text-gray-900 dark:text-white"
+      className={`font-rubik ${TYPOGRAPHY_CLASSES.h4} font-bold text-gray-900 dark:text-white`}
       {...props}
     />
   ),
   p: (props) => (
-    <p className="font-roboto mb-4 leading-relaxed text-gray-700 dark:text-gray-300" {...props} />
+    <p
+      className={`font-roboto ${TYPOGRAPHY_CLASSES.paragraph} text-gray-700 dark:text-gray-300`}
+      {...props}
+    />
   ),
   ul: (props) => <ul className="mb-4 list-disc pl-6 text-gray-700 dark:text-gray-300" {...props} />,
   ol: (props) => (
     <ol className="mb-4 list-decimal pl-6 text-gray-700 dark:text-gray-300" {...props} />
   ),
-  li: (props) => <li className="mb-2 leading-relaxed" {...props} />,
+  li: (props) => <li className="mb-2 text-base leading-relaxed" {...props} />,
   a: (props) => {
     const href = props.href || ''
     const isInternalLink = href.startsWith('/') || href.startsWith('#')

@@ -12,7 +12,7 @@ import { getCurrentYear } from '@/lib/utils/helpers/years/getCurrentYear'
 
 const Copyright: FC = (): JSX.Element => {
   return (
-    <Paragraph size="text-md" marginTop="mt-4" customCss="flex flex-row text-center gap-2">
+    <Paragraph marginTop="mt-4" customCss="flex flex-row text-center gap-2">
       <span data-testid={DATA_TEST_IDS.footer.copyright}>
         {COPYRIGHT}
         {'\u00A0'}

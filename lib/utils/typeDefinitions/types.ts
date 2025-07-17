@@ -50,14 +50,11 @@ export type SkillIconType =
   | SkillIconEnum.XD
 
 // PARAGRAPH
-// Define possible margin top values
-export type MarginTopType = 'mt-0' | 'mt-2' | 'mt-4' | 'mt-8' | 'mt-16'
+// Import typography design tokens
+import { TextSizeType, TextColorType, MarginTopType } from '@/lib/design-tokens/typography'
 
-// Define possible text colors
-export type TextColorType = 'text-neutral-600' | 'text-neutral-700' | 'text-neutral-900'
-
-// Define possible text sizes
-export type TextSizeType = 'text-sm' | 'text-md' | 'text-lg' | 'text-xl' | 'text-2xl'
+// Re-export typography types for compatibility
+export type { TextSizeType, TextColorType, MarginTopType }
 
 // Define the type for the setLunarPhaseEmoji function
 export type SetLunarPhaseEmoji = (emoji: string) => void

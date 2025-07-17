@@ -4,11 +4,13 @@ import { getAttributes } from '@/lib/utils/helpers/getAttributes'
 
 import { HeadingProps } from '@/lib/utils/typeDefinitions/props/shared/headings'
 
+// Import typography design tokens
+import { TYPOGRAPHY_CLASSES } from '@/lib/design-tokens/typography'
+
 const Heading5: FC<HeadingProps> = ({
   id = '',
   dataTestId = '',
   textColor = 'text-neutral-900',
-  textSize = 'lg',
   customCss = '',
   children,
 }): JSX.Element => {
@@ -17,7 +19,7 @@ const Heading5: FC<HeadingProps> = ({
   return (
     <h5
       {...attributes}
-      className={`break-words font-bold ${textColor} text-${textSize} ${customCss}`}
+      className={`${TYPOGRAPHY_CLASSES.h5} break-words font-bold ${textColor} ${customCss}`}
     >
       {children}
     </h5>

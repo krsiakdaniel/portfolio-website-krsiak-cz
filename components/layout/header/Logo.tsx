@@ -37,7 +37,6 @@ const Logo: FC = (): JSX.Element => {
         </div>
         <Paragraph
           marginTop="mt-0"
-          size="text-md"
           customCss="select-none cursor-pointer font-bold group-hover:text-violet-800"
         >
           {TEXT.logo}

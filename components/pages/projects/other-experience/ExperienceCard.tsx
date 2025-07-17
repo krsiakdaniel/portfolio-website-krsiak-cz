@@ -16,7 +16,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ company, role, description })
         <span className="mx-1">{MIDDLE_DOT}</span>
         <Highlight text={role} />
       </Heading5>
-      <Paragraph marginTop="mt-0" size="text-md" textColor="text-neutral-600">
+      <Paragraph marginTop="mt-0" textColor="text-neutral-600">
         {description}
       </Paragraph>
     </div>
