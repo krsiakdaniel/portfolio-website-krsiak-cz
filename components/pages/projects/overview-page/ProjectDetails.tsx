@@ -23,7 +23,7 @@ const ProjectDetails: FC<ProjectDetailsProps> = ({
         <span className="ml-1">{title}</span>
       </Heading2>
       <Heading3 textColor="text-violet-600">{role}</Heading3>
-      <Paragraph marginTop="mt-0" size="text-lg" textColor="text-neutral-600" customCss="font-bold">
+      <Paragraph marginTop="mt-0" textColor="text-neutral-600" customCss="font-bold">
         {company}
       </Paragraph>
       <Paragraph marginTop="mt-8" textColor="text-neutral-600">

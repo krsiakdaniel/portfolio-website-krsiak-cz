@@ -5,6 +5,9 @@ import IconCaretRight from '@/components/icons/IconCaretRight'
 
 import { BreadcrumbsItemProps } from '@/lib/utils/typeDefinitions/props/shared/breadcrumbs-item'
 
+// Import typography design tokens
+import { TYPOGRAPHY_CLASSES } from '@/lib/design-tokens/typography'
+
 const BreadcrumbsItem: FC<BreadcrumbsItemProps> = ({
   href,
   icon,
@@ -23,7 +26,7 @@ const BreadcrumbsItem: FC<BreadcrumbsItemProps> = ({
       )}
       <Link
         href={href}
-        className={`select-none rounded-lg px-0 py-2 text-sm font-medium text-neutral-600 ${hoverAndFocusCSS}`}
+        className={`select-none rounded-lg px-0 py-2 ${TYPOGRAPHY_CLASSES.small} font-medium text-neutral-600 ${hoverAndFocusCSS}`}
       >
         <span role="img" aria-label={ariaLabel} className="select-none">
           {icon}

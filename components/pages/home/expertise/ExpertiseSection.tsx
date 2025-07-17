@@ -8,6 +8,9 @@ import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 import { ExpertiseSectionProps } from '@/lib/utils/typeDefinitions/props/pages/home/expertise'
 import { ARIA_LABELS } from '@/localization/english'
 
+// Import typography design tokens
+import { TYPOGRAPHY_CLASSES } from '@/lib/design-tokens/typography'
+
 const ExpertiseSection: FC<ExpertiseSectionProps> = ({
   icon = '',
   ariaLabel = '',
@@ -36,7 +39,7 @@ const ExpertiseSection: FC<ExpertiseSectionProps> = ({
                 </span>
                 <span className="ml-1">{item.text}</span>
                 {item.years && (
-                  <span className="hidden text-sm lg:ml-1 xl:inline">
+                <span className={`hidden ${TYPOGRAPHY_CLASSES.small} lg:ml-1 xl:inline`}>
                     {MIDDLE_DOT} {item.years}
                   </span>
                 )}

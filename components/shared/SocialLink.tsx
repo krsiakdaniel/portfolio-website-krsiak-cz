@@ -7,6 +7,9 @@ import { TEXT } from '@/localization/english'
 import { AlertTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { SocialLinkProps } from '@/lib/utils/typeDefinitions/props/shared/social-link'
 
+// Import typography design tokens
+import { TYPOGRAPHY_CLASSES } from '@/lib/design-tokens/typography'
+
 // Define shared neutral color constants
 const NEUTRAL_BG_COLOR = 'bg-neutral-600'
 const NEUTRAL_HOVER_COLOR = 'hover:bg-neutral-800'
@@ -59,7 +62,7 @@ const SocialLink: FC<SocialLinkProps> = ({
   const hoverAndFocusCSS = `${bgColor} ${hoverColor} ${focusRingColor} focus:outline-none focus:ring-4`
 
   const baseCss =
-    'flex select-none items-center justify-center space-x-2 rounded-lg px-5 py-3.5 text-center text-sm font-medium text-white min-w-full sm:min-w-[248px]'
+    `flex select-none items-center justify-center space-x-2 rounded-lg px-5 py-3.5 text-center ${TYPOGRAPHY_CLASSES.small} font-medium text-white min-w-full sm:min-w-[248px]`
 
   return (
     <a

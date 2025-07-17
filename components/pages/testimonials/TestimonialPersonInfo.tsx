@@ -7,6 +7,9 @@ import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { TestimonialPersonInfoProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
 import { ARIA_LABELS, TEXT } from '@/localization/english'
 
+// Import typography design tokens
+import { TYPOGRAPHY_CLASSES } from '@/lib/design-tokens/typography'
+
 const IMAGE_WIDTH = 48
 const IMAGE_HEIGHT = 48
 
@@ -39,7 +42,7 @@ const TestimonialPersonInfo: FC<TestimonialPersonInfoProps> = ({
         </span>
       </div>
 
-      <div className="flex flex-col items-start text-sm font-normal text-gray-500 md:flex-row md:space-x-1">
+      <div className={`flex flex-col items-start ${TYPOGRAPHY_CLASSES.small} font-normal text-gray-500 md:flex-row md:space-x-1`}>
         <span>{job}</span>
         <span className="hidden md:block">{' ~ '}</span>
         {link ? (

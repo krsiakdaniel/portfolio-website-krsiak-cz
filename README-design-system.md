@@ -77,27 +77,54 @@ Welcome to the design system documentation for Daniel Kršiak's portfolio websit
 
 ## 🔤 Typography
 
+### Research-Backed Typography Standards
+
+Our typography system is built on research-backed principles for enhanced readability and user experience:
+
+- **📏 Font Size**: 16px minimum for accessibility and comfortable reading
+- **📐 Line Height**: 1.5–1.6× font size for optimal vertical spacing
+- **📦 Paragraph Spacing**: 1.5× line height for better content chunking
+- **🧠 Cognitive Benefits**: Reduces eye strain and improves reading comprehension
+
 ### Font Families
 
 - **📝 Body Text**: `Roboto - Clean, readable sans-serif`
 - **📰 Headings**: `Rubik - Bold, modern heading font`
 - **💻 Monospace**: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas`
 
+### Typography Scale
+
+```txt
+📝 Body Text: 16px (text-base) | line-height: 1.5 | margin-bottom: 1.5rem
+📰 Paragraph: 18px (text-lg) | line-height: 1.6 | margin-bottom: 1.5rem
+🔤 Small Text: 14px (text-sm) | line-height: 1.5 | margin-bottom: 1rem
+📢 Large Text: 20px (text-xl) | line-height: 1.5 | margin-bottom: 1.5rem
+```
+
 ### Heading Hierarchy
 
 ```txt
-🏷️ H1: text-4xl font-bold (Rubik)
-🏷️ H2: text-3xl font-bold (Rubik)
-🏷️ H3: text-2xl font-bold (Rubik)
-🏷️ H4: text-xl font-bold (Rubik)
+🏷️ H1: text-4xl font-bold (Rubik) | leading-tight | mb-6 mt-8
+🏷️ H2: text-3xl font-bold (Rubik) | leading-tight | mb-5 mt-8
+🏷️ H3: text-2xl font-bold (Rubik) | leading-8 | mb-4 mt-6
+🏷️ H4: text-xl font-bold (Rubik) | leading-7 | mb-3 mt-5
+🏷️ H5: text-lg font-bold (Rubik) | leading-7 | mb-2 mt-4
+🏷️ H6: text-base font-bold (Rubik) | leading-6 | mb-2 mt-4
 ```
 
 ### Text Styles
 
-- **📝 Body**: `font-roboto leading-relaxed`
+- **📝 Body**: `font-roboto text-lg leading-relaxed`
 - **💪 Bold**: `font-bold`
 - **📐 Medium**: `font-medium`
 - **🔗 Links**: `text-violet-600 hover:text-violet-700`
+- **🎯 Antialiased**: Improved text rendering for clarity
+
+### Responsive Typography
+
+- **📱 Mobile First**: Base sizes optimized for mobile readability
+- **📈 Progressive Enhancement**: Larger sizes on bigger screens
+- **🎯 Accessibility**: Maintains 16px minimum across all breakpoints
 
 ## 🎯 Component Patterns
 

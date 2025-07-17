@@ -10,6 +10,9 @@ import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 import { LinkButtonProps } from '@/lib/utils/typeDefinitions/props/shared/link-button'
 
+// Import typography design tokens
+import { TYPOGRAPHY_CLASSES } from '@/lib/design-tokens/typography'
+
 const LinkButton: FC<LinkButtonProps> = ({
   href,
   linkText,
@@ -20,7 +23,7 @@ const LinkButton: FC<LinkButtonProps> = ({
     'hover:bg-violet-800 focus:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-400'
 
   const baseCss =
-    'flex select-none items-center justify-center space-x-2 rounded-lg px-5 py-3.5 text-center text-sm font-medium text-white min-w-full sm:min-w-[248px]'
+    `flex select-none items-center justify-center space-x-2 rounded-lg px-5 py-3.5 text-center ${TYPOGRAPHY_CLASSES.small} font-medium text-white min-w-full sm:min-w-[248px]`
 
   return (
     <a

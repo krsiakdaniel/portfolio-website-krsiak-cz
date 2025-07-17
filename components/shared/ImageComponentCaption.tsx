@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import Paragraph from '@/components/shared/Paragraph'
+import SmallText from '@/components/shared/SmallText'
 
 import { ImageComponentCaptionProps } from '@/lib/utils/typeDefinitions/props/shared/image-component-caption'
 
@@ -10,9 +10,9 @@ const ImageComponentCaption: FC<ImageComponentCaptionProps> = ({
 }): JSX.Element => {
   return (
     <div className={alignSelf}>
-      <Paragraph marginTop="mt-2" size="text-sm" textColor="text-neutral-600">
+      <SmallText marginTop="mt-2" textColor="text-neutral-600">
         {text}
-      </Paragraph>
+      </SmallText>
     </div>
   )
 }

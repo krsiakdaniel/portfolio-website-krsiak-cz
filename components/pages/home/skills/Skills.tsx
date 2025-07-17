@@ -32,7 +32,6 @@ const Skills: FC = (): JSX.Element => {
       <div className="mt-4 flex flex-col items-center">
         <Paragraph
           textColor="text-neutral-600"
-          size="text-md"
           customCss="w-[270px] text-center italic md:w-[520px]"
         >
           {TEXT.skillsIconsNames}

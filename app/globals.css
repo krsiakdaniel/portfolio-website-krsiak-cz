@@ -11,11 +11,24 @@
 
 /* # Define base styles */
 @layer base {
-  /* ## Set font ROBOTO */
+  /* ## Set font ROBOTO with improved typography */
+  html {
+    font-size: 16px; /* Base font size - 16px minimum for accessibility */
+  }
+
   html,
   body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Ensure 16px minimum */
+    line-height: 1.5; /* Optimal line height 1.5x */
     background-color: #f9fafb; /* 'bg-gray-50': https://flowbite.com/docs/customize/colors/ */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ## Improved paragraph spacing */
+  p {
+    margin-bottom: 1.5rem; /* 24px - 1.5x line height for better chunking */
   }
 
   /* ## Set font RUBIK */

@@ -37,9 +37,7 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
       />
 
       <div className="mt-10">
-        <Heading1 textSize="8xl" textSizeSM="8xl" textSizeMD="8xl">
-          {heading}
-        </Heading1>
+        <Heading1 customCss="text-8xl">{heading}</Heading1>
       </div>
 
       <Heading2 textColor="text-neutral-600">{description}</Heading2>
