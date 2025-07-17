@@ -9,6 +9,9 @@ const dataTestIdLinkedIn = `desktop-${DATA_TEST_IDS.menu.socialLinks.linkedInPro
 
 test.describe('Header - Desktop Menu - Social Links', () => {
   test('should render GitHub link correctly', async ({ page }) => {
+    // Set viewport to desktop size to ensure desktop menu is visible (lg breakpoint = 1024px)
+    await page.setViewportSize({ width: 1280, height: 720 })
+
     // Navigate to the home page
     await test.step('Go to home page', async () => {
       await page.goto('/')
@@ -26,6 +29,9 @@ test.describe('Header - Desktop Menu - Social Links', () => {
   })
 
   test('should render LinkedIn link correctly', async ({ page }) => {
+    // Set viewport to desktop size to ensure desktop menu is visible (lg breakpoint = 1024px)
+    await page.setViewportSize({ width: 1280, height: 720 })
+
     // Navigate to the home page
     await test.step('Go to home page', async () => {
       await page.goto('/')

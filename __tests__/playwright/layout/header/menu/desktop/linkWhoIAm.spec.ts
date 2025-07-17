@@ -3,8 +3,8 @@ import { expect, test } from '@playwright/test'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
 
-test.describe('Header - Desktop Menu - Resume Link', () => {
-  test('should navigate to Resume page correctly', async ({ page }) => {
+test.describe('Header - Desktop Menu - Who I Am Link', () => {
+  test('should navigate to Who I Am page correctly', async ({ page }) => {
     // Set viewport to desktop size to ensure desktop menu is visible (lg breakpoint = 1024px)
     await page.setViewportSize({ width: 1280, height: 720 })
 
@@ -13,23 +13,23 @@ test.describe('Header - Desktop Menu - Resume Link', () => {
     })
 
     const isLinkVisible = await page.isVisible(
-      getDataTestId(DATA_TEST_IDS.menu.desktop.links.resume),
+      getDataTestId(DATA_TEST_IDS.menu.desktop.links.whoIAm),
     )
     expect(isLinkVisible).toBe(true)
 
-    await test.step('Check if the link redirects to the resume page when clicked', async () => {
+    await test.step('Check if the link goes to the who I am page when clicked', async () => {
       // Wait for the element to be ready and click it
-      await page.waitForSelector(getDataTestId(DATA_TEST_IDS.menu.desktop.links.resume))
-      await page.click(getDataTestId(DATA_TEST_IDS.menu.desktop.links.resume))
+      await page.waitForSelector(getDataTestId(DATA_TEST_IDS.menu.desktop.links.whoIAm))
+      await page.click(getDataTestId(DATA_TEST_IDS.menu.desktop.links.whoIAm))
 
       // Wait for navigation to complete
-      await page.waitForURL('**/resume')
-      expect(page.url()).toBe('http://localhost:3000/resume')
+      await page.waitForURL('**/who-i-am')
+      expect(page.url()).toBe('http://localhost:3000/who-i-am')
     })
 
-    await test.step('Check if the H1 heading on the final page has the text "Resume"', async () => {
+    await test.step('Check if the H1 heading on the final page has the text "Who I Am"', async () => {
       const heading = await page.textContent('h1')
-      expect(heading).toBe('📝Resume')
+      expect(heading).toBe('👋Who I\u00A0Am')
     })
   })
 })
