@@ -73,5 +73,5 @@ export const SITEMAP_URLS: SitemapUrls = {
   personalCryptoMania: PAGES_URL.personal.cryptoMania,
   testimonials: PAGES_URL.testimonials,
   status: PAGES_URL.status,
-  blog: PAGES_URL.blog,
+  // blog: PAGES_URL.blog,
 } as const satisfies SitemapUrls

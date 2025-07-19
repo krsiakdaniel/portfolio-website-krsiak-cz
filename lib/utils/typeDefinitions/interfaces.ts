@@ -291,7 +291,7 @@ export interface SitemapUrls {
   personalCryptoMania: string
   testimonials: string
   status: string
-  blog: string
+  // blog: string
 }
 
 // Sitemap Item
