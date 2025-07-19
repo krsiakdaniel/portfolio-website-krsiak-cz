@@ -74,7 +74,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "bun next lint --fix --max-warnings=0",
+      "bash -c 'bun next lint --fix --max-warnings=0'",
       "bun prettier --write"
     ],
     "*.{css,scss,md,mdx,json,yml}": [
