@@ -47,12 +47,13 @@ export const pagesLinks: PageLinkItem[] = [
     text: TEXT.testimonials,
     dataTestId: DATA_TEST_IDS.pagesLinks.testimonials,
   },
-  {
-    id: ID.websiteLink.blog,
-    href: PAGES_URL.blog,
-    icon: ICON_EMOJI.writingHand,
-    ariaLabel: ARIA_LABELS.emoji.writingHand,
-    text: TEXT.blog,
-    dataTestId: DATA_TEST_IDS.pagesLinks.blog,
-  },
+  // Note: Blog link temporarily hidden
+  // {
+  //   id: ID.websiteLink.blog,
+  //   href: PAGES_URL.blog,
+  //   icon: ICON_EMOJI.writingHand,
+  //   ariaLabel: ARIA_LABELS.emoji.writingHand,
+  //   text: TEXT.blog,
+  //   dataTestId: DATA_TEST_IDS.pagesLinks.blog,
+  // },
 ]

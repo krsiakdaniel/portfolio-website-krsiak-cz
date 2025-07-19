@@ -24,7 +24,8 @@ const sitemapEntries: SitemapItem[] = [
   { url: BASE_URL + SITEMAP_URLS.personalKrsiak, priority: 0.8 },
   { url: BASE_URL + SITEMAP_URLS.personalCryptoMania, priority: 0.8 },
   { url: BASE_URL + SITEMAP_URLS.testimonials, priority: 0.4 },
-  { url: BASE_URL + SITEMAP_URLS.blog, priority: 0.4 },
+  // Note: Blog page temporarily hidden from sitemap
+  // { url: BASE_URL + SITEMAP_URLS.blog, priority: 0.4 },
   { url: BASE_URL + SITEMAP_URLS.status, priority: 0.2 },
 ]
 
