@@ -14,7 +14,7 @@ const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile, onClickLink }): JSX.E
 
   // Active state styling
   const activeCSS = isActive
-    ? 'bg-violet-100 border-violet-200 text-violet-900'
+    ? 'bg-violet-100 text-violet-900'
     : 'text-neutral-600 hover:text-violet-800'
 
   return (
