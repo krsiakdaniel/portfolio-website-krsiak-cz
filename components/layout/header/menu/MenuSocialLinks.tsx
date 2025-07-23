@@ -26,7 +26,7 @@ const MenuSocialLinks: FC<MenuSocialLinksProps> = ({ type }): JSX.Element => {
     : `desktop-${DATA_TEST_IDS.menu.socialLinks.linkedInProfile}`
 
   return (
-    <div className={`flex items-center space-x-2 ${isMobile ? 'ml-2' : 'ml-3 xl:ml-6'}`}>
+    <div className={`flex items-center space-x-2 ${isMobile ? 'ml-2' : 'ml-2 md:ml-4 xl:ml-6'}`}>
       <SocialLinkIcon
         type={type}
         href={EXTERNAL_URL.gitHub}
