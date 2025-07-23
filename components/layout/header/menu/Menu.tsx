@@ -1,8 +1,12 @@
+'use client' // using usePathname hook
+
+import { usePathname } from 'next/navigation'
 import { FC } from 'react'
 
 import MenuItem from '@/components/layout/header/menu/MenuItem'
 
 import { pagesLinks } from '@/lib/data/layout/pagesLinks'
+import { isMenuItemActive } from '@/lib/utils/helpers/menu/isMenuItemActive'
 
 import { ARIA_LABELS } from '@/localization/english'
 
@@ -17,6 +21,7 @@ import { MenuProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
  */
 const Menu: FC<MenuProps> = ({ type, forwardedRef, onClickLink }): JSX.Element => {
   const isMobile = type === DeviceTypeEnum.Mobile
+  const currentPathname = usePathname()
 
   // Set the appropriate test ID and element ID based on device type
   const menuDataTestId = isMobile
@@ -29,12 +34,23 @@ const Menu: FC<MenuProps> = ({ type, forwardedRef, onClickLink }): JSX.Element =
       <ul
         ref={forwardedRef}
         className={
-          isMobile ? 'mb-6 mt-2 flex flex-col lg:hidden' : 'hidden gap-2 lg:flex 2xl:gap-2'
+          isMobile ? 'mb-6 mt-2 flex flex-col gap-1 lg:hidden' : 'hidden gap-2 lg:flex 2xl:gap-2'
         }
       >
         {(pagesLinks ?? []).map((link) => {
+          // Create a new link object with the active state
+          const linkWithActiveState = {
+            ...link,
+            isActive: isMenuItemActive(currentPathname, link.href),
+          }
+
           return (
-            <MenuItem key={link.id} linkItem={link} isMobile={isMobile} onClickLink={onClickLink} />
+            <MenuItem
+              key={link.id}
+              linkItem={linkWithActiveState}
+              isMobile={isMobile}
+              onClickLink={onClickLink}
+            />
           )
         })}
       </ul>

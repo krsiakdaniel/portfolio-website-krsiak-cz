@@ -46,6 +46,7 @@ export interface PageLinkItem {
   ariaLabel: string
   text: string
   dataTestId: string
+  isActive?: boolean
 }
 
 // Project Base
