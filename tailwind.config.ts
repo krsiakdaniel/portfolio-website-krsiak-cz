@@ -75,7 +75,6 @@ const customScreenSizes = {
 const config: Config = {
   // Config file for Tailwind CSS
   content: [
-    './node_modules/flowbite-react/lib/**/*.js',
     './app/**/*.{js,ts,jsx,tsx,mdx}', // New - https://nextjs.org/docs/app
     './pages/**/*.{js,ts,jsx,tsx,mdx}', // Old version - https://nextjs.org/docs/pages/building-your-application/routing
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -136,7 +135,7 @@ const config: Config = {
     },
   },
   // Plugins
-  plugins: [require('flowbite/plugin')],
+  plugins: [],
 }
 
 export default config
