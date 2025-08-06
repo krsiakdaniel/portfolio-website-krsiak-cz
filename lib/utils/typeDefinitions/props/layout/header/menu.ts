@@ -5,7 +5,7 @@ import { RefObject } from 'react'
 // Menu Props
 export type MenuProps = {
   type: DeviceTypeEnum
-  forwardedRef?: RefObject<HTMLUListElement>
+  forwardedRef?: RefObject<HTMLUListElement | null>
   onClickLink?: () => void
 }
 
@@ -25,5 +25,5 @@ export type MenuSocialLinksProps = {
 export type MenuMobileToggleProps = {
   handleMenuMobileToggle: () => void
   isMenuOpen: boolean
-  forwardedRef?: RefObject<HTMLButtonElement>
+  forwardedRef?: RefObject<HTMLButtonElement | null>
 }
