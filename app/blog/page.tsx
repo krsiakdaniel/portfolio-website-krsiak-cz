@@ -27,7 +27,7 @@ export default async function BlogPage() {
       </nav>
 
       {/* H1 Heading with consistent style */}
-      <h1 className="mb-6 flex items-center break-words text-5xl font-bold tracking-tight text-violet-600 sm:text-6xl md:text-7xl">
+      <h1 className="mb-6 flex items-center text-5xl font-bold tracking-tight break-words text-violet-600 sm:text-6xl md:text-7xl">
         <span role="img" aria-label="Writing hand" className="mr-4 select-none">
           ✍️
         </span>

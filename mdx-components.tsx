@@ -7,25 +7,25 @@ import React from 'react'
 const customMDXComponents: MDXComponents = {
   h1: (props) => (
     <h1
-      className="font-rubik mb-6 mt-8 text-4xl font-bold text-gray-900 dark:text-white"
+      className="font-rubik mt-8 mb-6 text-4xl font-bold text-gray-900 dark:text-white"
       {...props}
     />
   ),
   h2: (props) => (
     <h2
-      className="font-rubik mb-4 mt-8 text-3xl font-bold text-gray-900 dark:text-white"
+      className="font-rubik mt-8 mb-4 text-3xl font-bold text-gray-900 dark:text-white"
       {...props}
     />
   ),
   h3: (props) => (
     <h3
-      className="font-rubik mb-3 mt-6 text-2xl font-bold text-gray-900 dark:text-white"
+      className="font-rubik mt-6 mb-3 text-2xl font-bold text-gray-900 dark:text-white"
       {...props}
     />
   ),
   h4: (props) => (
     <h4
-      className="font-rubik mb-2 mt-5 text-xl font-bold text-gray-900 dark:text-white"
+      className="font-rubik mt-5 mb-2 text-xl font-bold text-gray-900 dark:text-white"
       {...props}
     />
   ),
@@ -62,7 +62,7 @@ const customMDXComponents: MDXComponents = {
   },
   blockquote: (props) => (
     <blockquote
-      className="my-6 rounded-r-lg border-l-4 border-violet-600 bg-violet-50 py-4 pl-6 italic text-gray-700 dark:border-violet-400 dark:bg-violet-900/20 dark:text-gray-300"
+      className="my-6 rounded-r-lg border-l-4 border-violet-600 bg-violet-50 py-4 pl-6 text-gray-700 italic dark:border-violet-400 dark:bg-violet-900/20 dark:text-gray-300"
       {...props}
     />
   ),

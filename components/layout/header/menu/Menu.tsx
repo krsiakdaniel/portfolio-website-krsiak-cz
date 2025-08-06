@@ -34,7 +34,7 @@ const Menu: FC<MenuProps> = ({ type, forwardedRef, onClickLink }): JSX.Element =
       <ul
         ref={forwardedRef}
         className={
-          isMobile ? 'mb-6 mt-2 flex flex-col gap-1 lg:hidden' : 'hidden gap-2 lg:flex 2xl:gap-2'
+          isMobile ? 'mt-2 mb-6 flex flex-col gap-1 lg:hidden' : 'hidden gap-2 lg:flex 2xl:gap-2'
         }
       >
         {(pagesLinks ?? []).map((link) => {

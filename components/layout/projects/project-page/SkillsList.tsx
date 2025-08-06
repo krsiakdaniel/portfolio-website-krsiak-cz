@@ -11,7 +11,7 @@ const SkillsList: FC<SkillsListProps> = ({ skillsOverview = [] }): JSX.Element =
     <List>
       {skillsOverview.map((skill) => (
         <ListItem key={skill.id}>
-          <div className="flex flex-col space-x-0 space-y-1 md:flex-row md:space-x-2 md:space-y-0">
+          <div className="flex flex-col space-y-1 space-x-0 md:flex-row md:space-y-0 md:space-x-2">
             <SkillBadge skillObject={skill} />
           </div>
         </ListItem>

@@ -20,11 +20,11 @@ const Skills: FC = (): JSX.Element => {
     <div id={ID.skills} className="mt-20">
       <DividerWithText text={DIVIDER_WITH_TEXT.skills} />
       <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
-        <div className="flex flex-col justify-center space-y-2 md:flex-row md:space-x-4 md:space-y-0 lg:justify-end">
+        <div className="flex flex-col justify-center space-y-2 md:flex-row md:space-y-0 md:space-x-4 lg:justify-end">
           <SkillsIconGroup icons={iconsWebDevelopment} />
           <SkillsIconGroup icons={iconsWebDevelopmentWithQA} />
         </div>
-        <div className="flex flex-col justify-center space-y-2 md:flex-row md:space-x-4 md:space-y-0 lg:justify-start">
+        <div className="flex flex-col justify-center space-y-2 md:flex-row md:space-y-0 md:space-x-4 lg:justify-start">
           <SkillsIconGroup icons={iconsWebDesign} />
           <SkillsIconGroup icons={iconsDesignTools} />
         </div>
