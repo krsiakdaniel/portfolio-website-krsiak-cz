@@ -14,6 +14,9 @@ CICD:
 Dependabot:
   - head-branch: ['^dependabot', 'dependabot', '.*dependabot.*']
 
+Dependencies:
+  - head-branch: ['^deps', 'deps', '.*deps.*']
+
 Docs:
   - head-branch: ['^docs', 'docs', '.*docs.*']
 
@@ -36,7 +39,7 @@ Performance:
   - head-branch: ['^perf', 'perf', '.*perf.*', '^performance', 'performance', '.*performance.*']
 
 Refactor:
-  - head-branch: ['^ref', 'ref', '.*ref.*', ^refactor', 'refactor', '.*refactor.*']
+  - head-branch: ['^ref', 'ref', '.*ref.*', '^refactor', 'refactor', '.*refactor.*']
 
 Revert:
   - head-branch: ['^revert', 'revert', '.*revert.*']
