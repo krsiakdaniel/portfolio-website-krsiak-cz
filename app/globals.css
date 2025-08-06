@@ -29,13 +29,20 @@
 
 /* # Class names used here in CSS and in JSX are defined in file: 'cssGlobalClasses.ts' */
 
+/* # Define CSS custom properties (variables) */
+:root {
+  --color-gray-50: #f9fafb;
+  --color-violet-400: #a78bfa;
+  --color-white: #ffffff;
+}
+
 /* # Define base styles */
 @layer base {
   /* ## Set font ROBOTO */
   html,
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9fafb; /* 'bg-gray-50' */
+    background-color: var(--color-gray-50);
   }
 
   /* ## Set font RUBIK */
@@ -54,10 +61,12 @@
   /* ## Utilities */
   @layer utilities {
     ::-moz-selection {
-      @apply bg-violet-400 text-white;
+      background-color: var(--color-violet-400);
+      color: var(--color-white);
     }
     ::selection {
-      @apply bg-violet-400 text-white;
+      background-color: var(--color-violet-400);
+      color: var(--color-white);
     }
   }
 }
