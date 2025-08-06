@@ -1,8 +1,4 @@
 import withPWAInit from '@ducanh2912/next-pwa'
-import createMDX from '@next/mdx'
-import rehypePrettyCode from 'rehype-pretty-code'
-import remarkFrontmatter from 'remark-frontmatter'
-import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
 // Config for PWA
 const withPWA = withPWAInit({
@@ -16,38 +12,10 @@ const withPWA = withPWAInit({
   },
 })
 
-// Pretty Code Options
-const prettyCodeOptions = {
-  theme: 'github-dark',
-  onVisitLine(node) {
-    // Prevent lines from collapsing in `display: grid` mode, and allow empty
-    // lines to be copy/pasted
-    if (node.children.length === 0) {
-      node.children = [{ type: 'text', value: ' ' }]
-    }
-  },
-  // Feel free to add classNames that suit your doc site
-  onVisitHighlightedLine(node) {
-    node.properties.className.push('highlighted')
-  },
-  onVisitHighlightedWord(node) {
-    node.properties.className = ['word']
-  },
-}
-
-// Config for MDX
-const withMDX = createMDX({
-  extension: /\.(md|mdx)$/,
-  options: {
-    remarkPlugins: [remarkFrontmatter, [remarkMdxFrontmatter, { name: 'frontmatter' }]],
-    rehypePlugins: [[rehypePrettyCode, prettyCodeOptions]],
-  },
-})
-
 // Next.js configuration object
 const nextConfig = {
-  // Configure pageExtensions to include markdown and MDX files
-  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+  // Configure pageExtensions
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
   images: {
     // List of allowed domains for external images
     remotePatterns: [
@@ -166,9 +134,7 @@ const nextConfig = {
   },
 }
 
-// Merge the configurations (PWA and MDX)
-export default withMDX(
-  withPWA({
-    ...nextConfig,
-  }),
-)
+// Merge the configurations (PWA)
+export default withPWA({
+  ...nextConfig,
+})

@@ -193,7 +193,6 @@ export interface PageTopLevelUrls {
   personalProjects: string
   testimonials: string
   status: string
-  blog: string
 }
 
 // Projects Personal Top Level URLs
@@ -239,7 +238,6 @@ export interface PageUrls {
   }
   testimonials: string
   status: string
-  blog: string
 }
 
 // Projects URLs
@@ -292,7 +290,6 @@ export interface SitemapUrls {
   personalCryptoMania: string
   testimonials: string
   status: string
-  blog: string
 }
 
 // Sitemap Item
@@ -402,7 +399,6 @@ export interface ElementIds {
     resume: string
     personalProjects: string
     testimonials: string
-    blog: string
   }
 }
 

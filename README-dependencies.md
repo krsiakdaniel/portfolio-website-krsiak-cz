@@ -8,7 +8,6 @@ This document provides a comprehensive overview of all packages used in the proj
   - [🎯 Production Dependencies](#-production-dependencies)
   - [🛠️ Development Dependencies](#️-development-dependencies)
     - [Core Framework](#core-framework)
-    - [MDX & Content](#mdx--content)
     - [UI Components](#ui-components)
     - [Progressive Web App](#progressive-web-app)
     - [Third-Party Integrations](#third-party-integrations)
@@ -20,7 +19,6 @@ This document provides a comprehensive overview of all packages used in the proj
     - [Styling](#styling)
     - [Build & Deployment](#build--deployment)
     - [Type Definitions (Development)](#type-definitions-development)
-    - [MDX Components](#mdx-components)
 
 ## 🎯 Production Dependencies
 
@@ -30,17 +28,6 @@ These packages are required for the application to run in production:
 
 - **[react](https://react.dev/)** - JavaScript library for building user interfaces
 - **[react-dom](https://reactjs.org/)** - React package for working with the DOM
-
-### MDX & Content
-
-- **[@mdx-js/loader](https://github.com/mdx-js/mdx)** - Webpack loader for MDX files (Markdown + JSX)
-- **[@mdx-js/react](https://github.com/mdx-js/mdx)** - React components for MDX content
-- **[@next/mdx](https://github.com/vercel/next.js/tree/canary/packages/next-mdx)** - Official Next.js MDX plugin
-- **[gray-matter](https://github.com/jonschlinkert/gray-matter)** - Front matter parser for Markdown files
-- **[remark-frontmatter](https://github.com/remarkjs/remark-frontmatter)** - Remark plugin for frontmatter support
-- **[remark-mdx-frontmatter](https://github.com/remcohaszing/remark-mdx-frontmatter)** - Remark plugin for MDX frontmatter
-- **[rehype-pretty-code](https://github.com/rehypejs/rehype-pretty-code)** - Syntax highlighting for code blocks
-- **[shiki](https://github.com/shikijs/shiki)** - Syntax highlighter using VS Code themes
 
 ### UI Components
 
@@ -62,8 +49,6 @@ These packages are required for the application to run in production:
 
 ### Type Definitions (Production)
 
-- **[@types/hast](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/hast)** - TypeScript definitions for HAST (Hypertext Abstract Syntax Tree)
-- **[@types/mdx](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/mdx)** - TypeScript definitions for MDX
 - **[ts-jest](https://github.com/kulshekhar/ts-jest)** - TypeScript preprocessor for Jest
 
 ## 🛠️ Development Dependencies
@@ -109,7 +94,3 @@ These packages are only used during development and are not included in the prod
 - **[@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node)** - TypeScript definitions for Node.js
 - **[@types/react](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react)** - TypeScript definitions for React
 - **[@types/react-dom](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-dom)** - TypeScript definitions for React DOM
-
-### MDX Components
-
-- **[mdx-components](https://github.com/mdx-js/mdx/tree/main/packages/mdx-components)** - MDX component utilities

@@ -65,7 +65,6 @@ const MENU = {
       testimonials: 'mobile-testimonials-link',
       workExperience: 'mobile-work-experience-link',
       personalProjects: 'mobile-personal-projects-link',
-      blog: 'mobile-blog-link',
     },
   },
   desktop: {
@@ -76,7 +75,6 @@ const MENU = {
       testimonials: 'desktop-testimonials-link',
       workExperience: 'desktop-work-experience-link',
       personalProjects: 'desktop-personal-projects-link',
-      blog: 'desktop-blog-link',
     },
   },
   toggle: {
@@ -209,7 +207,6 @@ const PAGES_LINKS = {
   resume: 'resume-link',
   personalProjects: 'personal-projects-link',
   testimonials: 'testimonials-link',
-  blog: 'blog-link',
 }
 
 const CALL_TO_ACTION = {

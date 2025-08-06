@@ -83,10 +83,10 @@ const customScreenSizes = {
 const config: ExtendedConfig = {
   // Config file for Tailwind CSS
   content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}', // New - https://nextjs.org/docs/app
-    './pages/**/*.{js,ts,jsx,tsx,mdx}', // Old version - https://nextjs.org/docs/pages/building-your-application/routing
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/**/*.{js,ts,jsx,tsx,mdx}', // https://nextjs.org/docs/app/building-your-application/configuring/src-directory
+    './app/**/*.{js,ts,jsx,tsx}', // New - https://nextjs.org/docs/app
+    './pages/**/*.{js,ts,jsx,tsx}', // Old version - https://nextjs.org/docs/pages/building-your-application/routing
+    './components/**/*.{js,ts,jsx,tsx}',
+    './src/**/*.{js,ts,jsx,tsx}', // https://nextjs.org/docs/app/building-your-application/configuring/src-directory
   ],
   // If you need to make sure Tailwind generates certain class names that don't exist in content files.
   safelist: [

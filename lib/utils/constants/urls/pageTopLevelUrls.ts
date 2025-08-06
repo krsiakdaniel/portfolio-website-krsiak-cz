@@ -13,7 +13,6 @@ export const PAGE_TOP_LEVEL_URLS: PageTopLevelUrls = {
   personalProjects: '/personal-projects',
   testimonials: '/testimonials',
   status: '/status',
-  blog: '/blog',
 }
 
 // page urls names - personal projects
