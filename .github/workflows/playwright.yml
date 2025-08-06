@@ -1,9 +1,8 @@
 name: Playwright Tests
 
+# Temporarily disabled - workflow will not run on any events
 on:
-  pull_request:
-    branches:
-      - master
+  workflow_dispatch: # Only manual trigger allowed
 
 permissions:
   contents: read
