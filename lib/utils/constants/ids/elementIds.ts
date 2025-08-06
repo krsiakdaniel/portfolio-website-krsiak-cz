@@ -39,6 +39,5 @@ export const ID: ElementIds = {
     testimonials: 'testimonials',
     workExperience: 'work-experience',
     personalProjects: 'personal-projects',
-    blog: 'blog',
   },
 }

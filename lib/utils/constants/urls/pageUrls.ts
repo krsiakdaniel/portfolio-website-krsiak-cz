@@ -50,7 +50,6 @@ export const PAGES_URL: PageUrls = {
   },
   testimonials: PAGE_TOP_LEVEL_URLS.testimonials,
   status: PAGE_TOP_LEVEL_URLS.status,
-  blog: PAGE_TOP_LEVEL_URLS.blog,
 } as const satisfies PageUrls
 
 /**
@@ -73,5 +72,4 @@ export const SITEMAP_URLS: SitemapUrls = {
   personalCryptoMania: PAGES_URL.personal.cryptoMania,
   testimonials: PAGES_URL.testimonials,
   status: PAGES_URL.status,
-  blog: PAGES_URL.blog,
 } as const satisfies SitemapUrls

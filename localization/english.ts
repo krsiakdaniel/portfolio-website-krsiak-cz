@@ -238,7 +238,6 @@ export const PROJECTS = {
   nextShort: COMMON_VALUES.nextShort,
   react: COMMON_VALUES.react,
   workExperience: 'Work Experience',
-  blog: 'Blog',
 }
 
 export const PROJECT_CRYPTOMANIA = {
