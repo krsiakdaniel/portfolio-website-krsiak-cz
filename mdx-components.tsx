@@ -92,7 +92,7 @@ const customMDXComponents: MDXComponents = {
     if (src && (src.startsWith('http') || src.startsWith('//'))) {
       return (
         <img
-          className="my-6 h-auto max-w-full rounded-lg border border-gray-200 shadow-sm dark:border-gray-700"
+          className="my-6 h-auto max-w-full rounded-lg border border-gray-200 shadow-xs dark:border-gray-700"
           alt={alt}
           src={src}
           {...props}
@@ -103,7 +103,7 @@ const customMDXComponents: MDXComponents = {
     // For local images, use Next.js Image component with explicit number props
     return (
       <Image
-        className="my-6 h-auto max-w-full rounded-lg border border-gray-200 shadow-sm dark:border-gray-700"
+        className="my-6 h-auto max-w-full rounded-lg border border-gray-200 shadow-xs dark:border-gray-700"
         src={src || ''}
         alt={alt || ''}
         width={700}

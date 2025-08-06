@@ -168,7 +168,7 @@ dark:border-violet-400 dark:bg-violet-900/20
 
 - **Ring**: `focus:ring-4`
 - **Colors**: Match component's semantic color
-- **Outline**: `focus:outline-none`
+- **Outline**: `focus:outline-hidden`
 
 ### 🖱️ Hover
 
