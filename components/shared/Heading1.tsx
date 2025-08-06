@@ -19,7 +19,7 @@ const Heading1: FC<HeadingProps> = ({
   return (
     <h1
       {...attributes}
-      className={`break-words font-bold tracking-tight ${textColor} text-${textSize} sm:text-${textSizeSM} md:text-${textSizeMD} ${customCss}`}
+      className={`font-bold tracking-tight break-words ${textColor} text-${textSize} sm:text-${textSizeSM} md:text-${textSizeMD} ${customCss}`}
     >
       {children}
     </h1>

@@ -17,7 +17,7 @@ const Heading4: FC<HeadingProps> = ({
   return (
     <h4
       {...attributes}
-      className={`break-words font-bold ${textColor} text-${textSize} ${customCss}`}
+      className={`font-bold break-words ${textColor} text-${textSize} ${customCss}`}
     >
       {children}
     </h4>

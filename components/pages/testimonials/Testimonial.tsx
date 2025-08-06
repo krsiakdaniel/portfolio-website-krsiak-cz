@@ -17,8 +17,8 @@ const Testimonial: FC<TestimonialProps> = ({
   linkText = '',
 }): JSX.Element => {
   return (
-    <div className="mx-auto mt-4 max-w-screen-xl pt-8 md:px-8">
-      <div className="mx-auto max-w-screen-md">
+    <div className="mx-auto mt-4 max-w-(--breakpoint-xl) pt-8 md:px-8">
+      <div className="mx-auto max-w-(--breakpoint-md)">
         <TestimonialQuote />
         <TestimonialText text={testimonialText} />
         <div className="mt-4 flex flex-row space-x-4">

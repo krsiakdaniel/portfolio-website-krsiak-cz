@@ -22,7 +22,7 @@ const EasterEggGhost: FC<EasterEggGhostProps> = ({ arrowDirection }): JSX.Elemen
     <span
       role="img"
       aria-label={ARIA_LABELS.emoji.ghost}
-      className={`${moveGhostDirectionClass} hidden select-none px-4 group-hover:inline-block`}
+      className={`${moveGhostDirectionClass} hidden px-4 select-none group-hover:inline-block`}
     >
       {isArrowDirectionRight && <GhostScreaming />}
       <span role="img" aria-label={ARIA_LABELS.emoji.ghost} className="mx-2">

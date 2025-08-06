@@ -30,7 +30,7 @@ const BaptismTestimony: FC = (): JSX.Element => {
   const imageContainerClass = 'flex w-full items-center justify-center p-8 lg:w-1/4'
   const photoClass = `h-[${IMAGE_HEIGHT_PHOTO}px] w-[${IMAGE_WIDTH_PHOTO}px]`
   const imageComponentClass =
-    'border-1 mt-8 rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md'
+    'border mt-8 rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md'
 
   return (
     <section>

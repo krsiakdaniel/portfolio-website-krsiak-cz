@@ -1,11 +1,19 @@
 import type { Config } from 'tailwindcss'
 
+// Extend the Config type to include safelist and screens
+type ExtendedConfig = Config & {
+  safelist?: string[]
+  screens?: Record<string, string>
+}
+
+// Custom colors for the project
 const customColors = {
   violet: {
     600: '#6829D3',
   },
 }
 
+// Custom keyframes for animations
 const customKeyframes = {
   pulseBubble: {
     '0%, 100%': { transform: 'scale(1)', opacity: '0.5' },
@@ -72,7 +80,7 @@ const customScreenSizes = {
   '2xl': '1536px',
 }
 
-const config: Config = {
+const config: ExtendedConfig = {
   // Config file for Tailwind CSS
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}', // New - https://nextjs.org/docs/app

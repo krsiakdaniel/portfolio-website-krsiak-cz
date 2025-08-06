@@ -18,7 +18,7 @@ const ProjectImage: FC<ProjectImageProps> = ({ isFeatured, image, title }): JSX.
           <span
             role="img"
             aria-label={ARIA_LABELS.emoji.star}
-            className="absolute -left-4 -top-5 z-10 select-none text-4xl"
+            className="absolute -top-5 -left-4 z-10 text-4xl select-none"
           >
             {ICON_EMOJI.star}
           </span>

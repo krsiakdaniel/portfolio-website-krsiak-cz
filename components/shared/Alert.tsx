@@ -20,7 +20,7 @@ const Alert: FC<AlertProps> = ({
         </span>
         <h3 className="text-lg font-medium">{title}</h3>
       </div>
-      <div className="mb-4 mt-2 text-sm">{description}</div>
+      <div className="mt-2 mb-4 text-sm">{description}</div>
       <div className="sm:w-1/3">
         <div className="flex">{linkComponent}</div>
       </div>

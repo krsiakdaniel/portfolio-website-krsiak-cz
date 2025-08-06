@@ -16,7 +16,7 @@ const CallToActionIcon: FC<CallToActionIconProps> = ({ type, icon }): JSX.Elemen
 
   return (
     <div
-      className={`flex select-none items-center justify-center ${isMobile ? 'h-8 w-8 text-2xl md:hidden' : 'h-32 w-32 text-9xl'} ${transitionIconCSS}`}
+      className={`flex items-center justify-center select-none ${isMobile ? 'h-8 w-8 text-2xl md:hidden' : 'h-32 w-32 text-9xl'} ${transitionIconCSS}`}
     >
       {isIconString ? (
         icon

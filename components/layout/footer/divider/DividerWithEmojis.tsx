@@ -25,10 +25,10 @@ import TheSun from '@/components/layout/footer/divider/TheSun'
 const sharedCSS = 'mx-2 h-1 w-full flex-1'
 
 const noonToSunSet = (
-  <div className={`bg-gradient-to-l from-sky-300 via-blue-400 to-gray-500 ${sharedCSS}`} />
+  <div className={`bg-linear-to-l from-sky-300 via-blue-400 to-gray-500 ${sharedCSS}`} />
 )
 const sunRiseToNoon = (
-  <div className={`bg-gradient-to-l from-red-500 via-yellow-400 to-sky-300 ${sharedCSS}`} />
+  <div className={`bg-linear-to-l from-red-500 via-yellow-400 to-sky-300 ${sharedCSS}`} />
 )
 
 const DividerWithEmojis: FC = (): JSX.Element => {

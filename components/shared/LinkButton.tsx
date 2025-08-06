@@ -17,7 +17,7 @@ const LinkButton: FC<LinkButtonProps> = ({
   dataTestId,
 }): JSX.Element => {
   const hoverAndFocusCSS =
-    'hover:bg-violet-800 focus:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-400'
+    'hover:bg-violet-800 focus:bg-violet-800 focus:outline-hidden focus:ring-4 focus:ring-violet-400'
 
   const baseCss =
     'flex select-none items-center justify-center space-x-2 rounded-lg px-5 py-3.5 text-center text-sm font-medium text-white min-w-full sm:min-w-[248px]'

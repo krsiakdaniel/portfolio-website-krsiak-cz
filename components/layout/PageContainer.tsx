@@ -9,7 +9,7 @@ const PageContainer: FC<PageContainerProps> = ({
 }): JSX.Element => {
   return (
     <div id={id} className={`${marginTop} px-5`}>
-      <div className="container mx-auto max-w-screen-xl px-5">{children}</div>
+      <div className="container mx-auto max-w-(--breakpoint-xl) px-5">{children}</div>
     </div>
   )
 }

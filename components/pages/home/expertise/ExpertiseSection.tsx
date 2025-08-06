@@ -20,7 +20,7 @@ const ExpertiseSection: FC<ExpertiseSectionProps> = ({
         <span
           role="img"
           aria-label={ariaLabel}
-          className="absolute -left-3 -top-4 select-none text-3xl md:-top-5 md:text-4xl"
+          className="absolute -top-4 -left-3 text-3xl select-none md:-top-5 md:text-4xl"
         >
           {icon}
         </span>

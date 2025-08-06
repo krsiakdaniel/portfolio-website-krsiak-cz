@@ -1,13 +1,40 @@
 /* Import Tailwind CSS base styles */
-@tailwind base;
+@import 'tailwindcss';
 
 /* Import Tailwind CSS component styles */
-@tailwind components;
 
 /* Import Tailwind CSS utility styles */
-@tailwind utilities;
+@config '../tailwind.config.ts';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  ::-webkit-backdrop {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 /* # Class names used here in CSS and in JSX are defined in file: 'cssGlobalClasses.ts' */
+
+/* # Define CSS custom properties (variables) */
+:root {
+  --color-gray-50: #f9fafb;
+  --color-violet-400: #a78bfa;
+  --color-white: #ffffff;
+}
 
 /* # Define base styles */
 @layer base {
@@ -15,7 +42,7 @@
   html,
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9fafb; /* 'bg-gray-50' */
+    background-color: var(--color-gray-50);
   }
 
   /* ## Set font RUBIK */
@@ -34,10 +61,12 @@
   /* ## Utilities */
   @layer utilities {
     ::-moz-selection {
-      @apply bg-violet-400 text-white;
+      background-color: var(--color-violet-400);
+      color: var(--color-white);
     }
     ::selection {
-      @apply bg-violet-400 text-white;
+      background-color: var(--color-violet-400);
+      color: var(--color-white);
     }
   }
 }

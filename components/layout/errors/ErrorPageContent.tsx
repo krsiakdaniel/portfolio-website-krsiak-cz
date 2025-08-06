@@ -24,7 +24,7 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
   onButtonClick,
 }): JSX.Element => {
   const sharedCss =
-    'mt-8 rounded-lg bg-violet-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-violet-800 focus:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-400'
+    'mt-8 rounded-lg bg-violet-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-violet-800 focus:bg-violet-800 focus:outline-hidden focus:ring-4 focus:ring-violet-400'
 
   return (
     <div className="flex flex-col items-center text-center">
@@ -47,7 +47,7 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
       <Paragraph>{note}</Paragraph>
 
       {buttonText && buttonLink && (
-        <Link href={buttonLink} className={`${sharedCss} inline-flex select-none text-center`}>
+        <Link href={buttonLink} className={`${sharedCss} inline-flex text-center select-none`}>
           {buttonText}
         </Link>
       )}
