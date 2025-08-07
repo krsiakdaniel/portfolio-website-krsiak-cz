@@ -3,7 +3,7 @@ import withPWAInit from '@ducanh2912/next-pwa'
 // Config for PWA
 const withPWA = withPWAInit({
   dest: 'public', // Output directory for service worker and precache files (relative to Next.js root directory).
-  disable: false, // Disable PWA in certain environments if needed (development, staging, ...).
+  disable: process.env.NODE_ENV === 'development', // Disable PWA in development to prevent compilation loops
   cacheOnFrontendNav: true, // Enable additional route caching when users navigate through pages with next/link.
   aggressiveFrontEndNavCaching: true, // Cache every <link rel="stylesheet" /> and <script /> on frontend navigation.
   reloadOnOnline: true, // Reload the app when it has gone back online.
