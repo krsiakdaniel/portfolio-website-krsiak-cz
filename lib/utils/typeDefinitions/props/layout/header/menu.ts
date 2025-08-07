@@ -1,11 +1,10 @@
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { PageLinkItem } from '@/lib/utils/typeDefinitions/interfaces'
-import { RefObject } from 'react'
 
 // Menu Props
 export type MenuProps = {
   type: DeviceTypeEnum
-  forwardedRef?: RefObject<HTMLUListElement>
+  ref?: React.Ref<HTMLUListElement>
   onClickLink?: () => void
 }
 
@@ -25,5 +24,5 @@ export type MenuSocialLinksProps = {
 export type MenuMobileToggleProps = {
   handleMenuMobileToggle: () => void
   isMenuOpen: boolean
-  forwardedRef?: RefObject<HTMLButtonElement>
+  ref?: React.Ref<HTMLButtonElement>
 }

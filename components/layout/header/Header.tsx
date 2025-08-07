@@ -68,7 +68,7 @@ const Header: FC = (): JSX.Element => {
               <MenuMobileToggle
                 isMenuOpen={isMenuOpen}
                 handleMenuMobileToggle={handleMenuMobileToggle}
-                forwardedRef={toggleRef}
+                ref={toggleRef}
               />
             </div>
           </div>
@@ -79,7 +79,7 @@ const Header: FC = (): JSX.Element => {
         >
           <Menu
             type={DeviceTypeEnum.Mobile}
-            forwardedRef={menuRef}
+            ref={menuRef}
             onClickLink={() => setIsMenuOpen(false)}
           />
         </div>
