@@ -2,7 +2,7 @@
 
 **Table of Contents:**
 
-- [⚛️ Project Description](#️-project-description)
+- [⚛️ Project Description](#️---- 🚀 [CI- - � [Security](docs/security/README-security.md)🖥️ [Editor Setup](docs/editor-setup/README-editor-setup.md)and CD - Process](docs/deployment/README-ci-cd-process.md)📝 [Contributions](docs/contributions/README-contributions.md)🙇‍♂️ [Attribution](docs/attribution/README-attribution.md)roject-description)
 - [🔗 Project Website](#-project-website)
 - [🚦 Project Status](#-project-status)
 - [🛠️ Tech Stack](#️-tech-stack)
@@ -104,25 +104,25 @@ The website has these main pages and project detail pages.
 
 ## 📚 Documentation
 
-- 🏎️ **Website Performance:** [docs/performance/README-website-performance.md](docs/performance/README-website-performance.md)
-- 🏛️ **Project Architecture:** [docs/architecture/README-architecture.md](docs/architecture/README-architecture.md)
-- 👨🏻‍💼 **Team Leader and Task Management:** [docs/README-team-leader-task-management.md](docs/team-leader-task-management/README-team-leader-task-management.md)
-- 💻 **Development:** [docs/development/README-development.md](docs/development/README-development.md)
-- 🖥️ **Editor Setup:** [docs/editor-setup/README-editor-setup.md](docs/editor-setup/README-editor-setup.md)
-- 🎨 **Design System:** [docs/design-system/README-design-system.md](docs/design-system/README-design-system.md)
-- 📦 **Dependencies:** [docs/development/README-dependencies.md](docs/development/README-dependencies.md)
-- 🧪 **Testing Overview:** [docs/testing/README-testing.md](docs/testing/README-testing.md)
-- 🃏 **Jest Testing:** [docs/testing/jest/README-testing-jest.md](docs/testing/jest/README-testing-jest.md)
-- 🎭 **Playwright Testing:** [docs/testing/playwright/README-testing-playwright.md](docs/testing/playwright/README-testing-playwright.md)
-- 🐛 **Bug Fixing:** [docs/development/README-bug-fixing.md](docs/development/README-bug-fixing.md)
-- 🔀 **Pull Requests:** [docs/development/README-development-pull-requests.md](docs/development/README-development-pull-requests.md)
-- 🚀 **CI and CD - Process:** [docs/deployment/README-ci-cd-process.md](docs/deployment/README-ci-cd-process.md)
-- 🛠️ **CI - Continuous Integration:** [docs/deployment/README-continuous-integration.md](docs/deployment/README-continuous-integration.md)
-- ✅ **CD - Continuous Deployment:** [docs/deployment/README-continuous-deployment.md](docs/deployment/README-continuous-deployment.md)
-- 🚨 **Security:** [docs/security/README-security.md](docs/security/README-security.md)
-- 📱 **Progressive Web App:** [docs/README-progressive-web-app.md](docs/progressive-web-app/README-progressive-web-app.md)
-- 🙇‍♂️ **Attribution:** [docs/README-attribution.md](docs/attribution/README-attribution.md)
-- 📝 **Contributions:** [docs/README-contributions.md](docs/contributions/README-contributions.md)
+- 👨🏻‍💼 [Team Leader and Task Management](docs/team-leader-task-management/README-team-leader-task-management.md)
+- 🖥️ [Editor Setup](docs/editor-setup/README-editor-setup.md)
+- 🏛️ [Project Architecture](docs/project-architecture/README-project-architecture.md)
+- 📦 [Dependencies](docs/development/README-dependencies.md)
+- 💻 [Development](docs/development/README-development.md)
+- 🎨 [Design System](docs/design-system/README-design-system.md)
+- 🐛 [Bug Fixing](docs/development/README-bug-fixing.md)
+- 🔀 [Pull Requests](docs/development/README-development-pull-requests.md)
+- 🧪 [Testing Overview](docs/testing/README-testing.md)
+- 🃏 [Jest Testing](docs/testing/jest/README-testing-jest.md)
+- 🎭 [Playwright Testing](docs/testing/playwright/README-testing-playwright.md)
+- 🚀 [CI and CD - Process](docs/deployment/README-ci-cd-process.md)
+- 🛠️ [CI - Continuous Integration](docs/deployment/README-continuous-integration.md)
+- ✅ [CD - Continuous Deployment](docs/deployment/README-continuous-deployment.md)
+- 📱 [Progressive Web App](docs/progressive-web-app/README-progressive-web-app.md)
+- 🏎️ [Website Performance](docs/website-performance/README-website-performance.md)
+- 🔒 [Security](docs/security/README-security.md)
+- 🙇‍♂️ [Attribution](docs/attribution/README-attribution.md)
+- 📝 [Contributions](docs/contributions/README-contributions.md)
 
 ## 📄 License
 

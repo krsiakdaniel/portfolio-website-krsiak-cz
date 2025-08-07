@@ -5,22 +5,13 @@ This project uses resources from the following creators.
 **Table of Contents:**
 
 - [Attribution 🙇‍♂️](#attribution-️)
-  - [Microsoft](#microsoft)
-    - [FluentUI Emoji Animated](#fluentui-emoji-animated)
-      - [Tools to work with Animated PNG](#tools-to-work-with-animated-png)
+  - [Microsoft FluentUI Emoji](#microsoft-fluentui-emoji)
 
-## Microsoft
+## Microsoft FluentUI Emoji
 
-Using animated emojis `.apng`, which are animated `.png`, that get converted to `.webp` later for production.
+Using animated emojis from [FluentUI Emoji Animated](https://github.com/microsoft/fluentui-emoji-animated) repository. Files are provided as `.apng` (animated PNG) and converted to `.webp` for production.
 
-### FluentUI Emoji Animated
+**Tools for working with Animated PNG:**
 
-- Repository: [FluentUI Emoji Animated](https://github.com/microsoft/fluentui-emoji-animated/tree/main)
-- Example `.apng`: [Rocket Animated PNG](https://github.com/microsoft/fluentui-emoji-animated/blob/main/assets/Rocket/animated/rocket_animated.png)
-
-#### Tools to work with Animated PNG
-
-You cannot resize `.apng` files manually, you will lose the animation.
-
-- Resize: <https://www.photopea.com/>
-- Convert to `.webp`: <https://ezgif.com/apng-to-webp>
+- **Resize:** [Photopea](https://www.photopea.com/) (manual resizing will break animation)
+- **Convert to WebP:** [EZGIF](https://ezgif.com/apng-to-webp)

@@ -1,4 +1,4 @@
-# 🏛️ Project Architecture Overview
+# 🏛️ Project Architecture
 
 This document provides an overview of the architecture for the `portfolio-website-krsiak-cz` project. The design choices and structure aim to enhance scalability, maintainability, and ease of collaboration.
 
