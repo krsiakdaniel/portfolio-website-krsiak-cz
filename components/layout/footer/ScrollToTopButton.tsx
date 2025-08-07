@@ -34,9 +34,9 @@ const ScrollToTopButton: FC = (): JSX.Element => {
       }
     }
 
-    window.addEventListener('scroll', toggleVisibility)
+    window.addEventListener('scroll', toggleVisibility, { passive: true })
 
-    return () => window.removeEventListener('scroll', toggleVisibility)
+    return () => window.removeEventListener('scroll', toggleVisibility, { passive: true })
   }, [])
 
   if (!isVisible) {
