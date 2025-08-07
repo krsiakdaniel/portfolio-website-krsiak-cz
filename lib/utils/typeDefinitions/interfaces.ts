@@ -173,7 +173,6 @@ export interface ExternalURL {
   resumeViewPDF: string
   uptimeMonitorStatus: string
   uptimeMonitorStatusExternal: string
-  verseBiblePeter1Chapter3Verse21: string
   graceChurch: string
   bonyToBeastly: string
 }
