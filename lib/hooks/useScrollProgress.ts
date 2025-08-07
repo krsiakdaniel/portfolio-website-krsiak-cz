@@ -1,38 +1,37 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 /**
  * Custom hook to track the scroll progress of the page.
  *
- * @returns {number} - The scroll progress as a percentage.
- *
- * @example
- * ```tsx
- *  <div style={{ width: `${scroll}%` }} ></div>
- * ```
+ * @returns The scroll progress as a percentage (0-100).
  */
-
 export const useScrollProgress = (): number => {
-  const [scroll, setScroll] = useState<number>(0)
+  const [scrollProgress, setScrollProgress] = useState<number>(0)
 
-  const pageScrollProgress = (): void => {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
-    let scrolled = (winScroll / height) * 100
+  const calculateScrollProgress = useCallback((): void => {
+    const scrollTop = document.body.scrollTop || document.documentElement.scrollTop
+    const scrollHeight =
+      document.documentElement.scrollHeight - document.documentElement.clientHeight
 
-    if (document.documentElement.scrollHeight === document.documentElement.clientHeight) {
-      scrolled = 0
+    if (scrollHeight === 0) {
+      setScrollProgress(0)
+      return
     }
 
-    setScroll(scrolled)
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', pageScrollProgress)
-    return () => {
-      window.removeEventListener('scroll', pageScrollProgress)
-      setScroll(0) // reset scroll progress
-    }
+    const progress = Math.min(100, Math.max(0, (scrollTop / scrollHeight) * 100))
+    setScrollProgress(progress)
   }, [])
 
-  return scroll
+  useEffect(() => {
+    // Calculate initial scroll progress
+    calculateScrollProgress()
+
+    window.addEventListener('scroll', calculateScrollProgress, { passive: true })
+
+    return () => {
+      window.removeEventListener('scroll', calculateScrollProgress)
+    }
+  }, [calculateScrollProgress])
+
+  return scrollProgress
 }
