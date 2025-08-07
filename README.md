@@ -2,13 +2,11 @@
 
 **Table of Contents:**
 
-- [⚛️ Project Description](#️-project-description)
+- [⚛️ Project Description](#️---- 🚀 [CI- - � [Security](docs/security/README-security.md)🖥️ [Editor Setup](docs/editor-setup/README-editor-setup.md)and CD - Process](docs/deployment/README-ci-cd-process.md)📝 [Contributions](docs/contributions/README-contributions.md)🙇‍♂️ [Attribution](docs/attribution/README-attribution.md)roject-description)
 - [🔗 Project Website](#-project-website)
 - [🚦 Project Status](#-project-status)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [📋 Pages](#-pages)
-  - [Main](#main)
-  - [Projects](#projects)
 - [📚 Documentation](#-documentation)
 - [📄 License](#-license)
 - [📫 Contact](#-contact)
@@ -32,16 +30,47 @@ Checkout the link: [https://krsiak.cz](https://krsiak.cz)
 
 ![Tech Stack](/readme-images/main-readme/technologies-and-tools.webp)
 
+### Core Technologies
+
 - 📝 [TypeScript](https://www.typescriptlang.org/)
 - ⚛️ [React](https://react.dev/)
 - ⏭️ [Next.js](https://nextjs.org/)
+- 🚀 [Bun](https://bun.sh/)
+
+### Styling & UI
+
 - 🎨 [Tailwind CSS](https://tailwindcss.com/)
-- 🌊 [Flowbite](https://flowbite.com/) `using for now`
-- 🌼 [daisyUI](https://daisyui.com/) `plan to use instead`
-- 🃏 [JEST](https://jestjs.io/)
+- 🌼 [daisyUI](https://daisyui.com/)
+
+### Testing
+
+- 🃏 [Jest](https://jestjs.io/)
 - 🎭 [Playwright](https://playwright.dev/)
+
+### Development Tools
+
+- 🎨 [Prettier](https://prettier.io/)
+- 🔧 [ESLint](https://eslint.org/)
+- 🐕 [Husky](https://github.com/typicode/husky)
+
+### Performance & PWA
+
+- 🖼️ [Sharp](https://sharp.pixelplumbing.com/)
+- 📱 [next-pwa](https://github.com/DuCanhGH/next-pwa)
+
+### Analytics & Monitoring
+
+- 📊 [Google Analytics](https://analytics.google.com/)
+- 👁️ [Smartlook](https://www.smartlook.com/)
+- 📈 [Better Uptime](https://betteruptime.com/)
+
+### DevOps & Deployment
+
 - 🚀 [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions)
 - 🌍 [Netlify](https://www.netlify.com/)
+- 🛡️ [Dependabot](https://github.com/dependabot)
+- 🔍 [CodeQL](https://codeql.github.com/)
+- 📊 [Codacy](https://www.codacy.com/)
 
 ## 📋 Pages
 
@@ -75,21 +104,25 @@ The website has these main pages and project detail pages.
 
 ## 📚 Documentation
 
-- 🏎️ **Website Performance:** [README-website-performance.md](README-website-performance.md)
-- 🏛️ **Project Architecture:** [README-architecture.md](README-architecture.md)
-- 👨🏻‍💼 **Team Leader and Task Management:** [README-team-leader-task-management.md](README-team-leader-task-management.md)
-- 💻 **Development:** [README-development.md](README-development.md)
-- 📦 **Dependencies:** [README-dependencies.md](README-dependencies.md)
-- 🧪 **Testing Overview:** [README-testing.md](README-testing.md)
-- 🐛 **Bug Fixing:** [README-bug-fixing.md](README-bug-fixing.md)
-- 🔀 **Pull Requests:** [README-development-pull-requests.md](README-development-pull-requests.md)
-- 🚀 **CI and CD - Process:** [README-ci-cd-process.md](README-ci-cd-process.md)
-- 🛠️ **CI - Continuous Integration:** [README-continuous-integration.md](README-continuous-integration.md)
-- ✅ **CD - Continuous Deployment:** [README-continuous-deployment.md](README-continuous-deployment.md)
-- 🚨 **Security:** [README-security.md](README-security.md)
-- 📱 **Progressive Web App:** [README-progressive-web-app.md](README-progressive-web-app.md)
-- 🙇‍♂️ **Attribution:** [README-attribution.md](README-attribution.md)
-- 📝 **Contributions:** [README-contributions.md](README-contributions.md)
+- 👨🏻‍💼 [Team Leader and Task Management](docs/team-leader-task-management/README-team-leader-task-management.md)
+- 🖥️ [Editor Setup](docs/editor-setup/README-editor-setup.md)
+- 🏛️ [Project Architecture](docs/project-architecture/README-project-architecture.md)
+- 📦 [Dependencies](docs/development/README-dependencies.md)
+- 💻 [Development](docs/development/README-development.md)
+- 🎨 [Design System](docs/design-system/README-design-system.md)
+- 🐛 [Bug Fixing](docs/development/README-bug-fixing.md)
+- 🔀 [Pull Requests](docs/development/README-development-pull-requests.md)
+- 🧪 [Testing Overview](docs/testing/README-testing.md)
+- 🃏 [Jest Testing](docs/testing/jest/README-testing-jest.md)
+- 🎭 [Playwright Testing](docs/testing/playwright/README-testing-playwright.md)
+- 🚀 [CI and CD - Process](docs/deployment/README-ci-cd-process.md)
+- 🛠️ [CI - Continuous Integration](docs/deployment/README-continuous-integration.md)
+- ✅ [CD - Continuous Deployment](docs/deployment/README-continuous-deployment.md)
+- 📱 [Progressive Web App](docs/progressive-web-app/README-progressive-web-app.md)
+- 🏎️ [Website Performance](docs/website-performance/README-website-performance.md)
+- 🔒 [Security](docs/security/README-security.md)
+- 🙇‍♂️ [Attribution](docs/attribution/README-attribution.md)
+- 📝 [Contributions](docs/contributions/README-contributions.md)
 
 ## 📄 License
 
