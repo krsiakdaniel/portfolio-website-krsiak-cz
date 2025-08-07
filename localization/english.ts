@@ -723,31 +723,18 @@ export const EASTER_EGG = {
   ghostScreaming: 'wooooooo!',
 }
 
-export const BIBLE = {
-  baptismTestimonyHeading: 'My Baptism — Testimony',
-  baptismChurch: 'Baptism — Church',
-  bookChapterVerse: '1\u00A0Peter\u00A03:21',
-  verseText: `
-    And that water is\u00A0a\u00A0picture of\u00A0baptism,
-    which now saves you,
-    not\u00A0by\u00A0removing dirt from your body,
-    but\u00A0as\u00A0a\u00A0response to\u00A0God from\u00A0a\u00A0clean conscience.
-    It\u00A0is\u00A0effective because of\u00A0the\u00A0resurrection of\u00A0Jesus\u00A0Christ.
-  `,
-}
-
 export const SOUTH_KOREA = {
   headingTravel: 'Traveling',
   headingSouthKorea: 'South Korea',
   introduction:
     'South Korea is\u00A0a\u00A0fascinating country where ancient traditions seamlessly meet modern innovation, offering a\u00A0captivating journey through bustling metropolitan cities like\u00A0Seoul, serene Buddhist temples, stunning mountain vistas, and\u00A0nature full of\u00A0lush forests and\u00A0beautiful rivers.',
-  quote1: 'Traveling—it leaves you speechless, then turns you into a\u00A0storyteller.',
-  quoteAuthorName1: 'Ibn Battuta',
-  quoteAuthorOccupation1: '14th-century explorer',
-  quote2:
+  quote1:
     'The world is\u00A0a\u00A0book, and\u00A0those who do\u00A0not travel read only one page.',
-  quoteAuthorName2: 'Saint Augustine',
-  quoteAuthorOccupation2: 'Bishop of Hippo',
+  quoteAuthorName1: 'Saint Augustine',
+  quoteAuthorOccupation1: 'Bishop of Hippo',
+  quote2: 'Traveling—it leaves you speechless, then turns you into a\u00A0storyteller.',
+  quoteAuthorName2: 'Ibn Battuta',
+  quoteAuthorOccupation2: '14th-century explorer',
   hiking: 'South Korea — hiking',
   nature: 'South Korea — nature',
   temple: 'South Korea — temple',

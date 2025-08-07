@@ -230,11 +230,6 @@ const MISC = {
   linkedinPhoto: 'linkedin-photo',
 }
 
-const BAPTISM = {
-  verseLink: 'bible-verse-link',
-  image: 'baptism-testimony-image',
-}
-
 const SOUTH_KOREA = {
   hiking: 'south-korea-hiking',
   nature: 'south-korea-nature',
@@ -266,7 +261,6 @@ export const DATA_TEST_IDS = {
   alert: ALERT,
   externalLinks: EXTERNAL_LINKS,
   misc: MISC,
-  baptism: BAPTISM,
   southKorea: SOUTH_KOREA,
   country: COUNTRY,
 }

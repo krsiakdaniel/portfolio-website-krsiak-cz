@@ -37,8 +37,8 @@ const SouthKorea: FC = (): JSX.Element => {
             <TestimonialQuote />
             <TestimonialText text={SOUTH_KOREA.quote1} />
             <Paragraph marginTop="mt-2" customCss="flex">
-              <span role="img" aria-label={ARIA_LABELS.emoji.starAndCrescent} className="ml-1">
-                {ICON_EMOJI.starAndCrescent}
+              <span role="img" aria-label={ARIA_LABELS.emoji.latinCross} className="ml-1">
+                {ICON_EMOJI.latinCross}
               </span>
               <span className="ml-2">
                 {SOUTH_KOREA.quoteAuthorName1}, {SOUTH_KOREA.quoteAuthorOccupation1}
@@ -64,8 +64,8 @@ const SouthKorea: FC = (): JSX.Element => {
             <TestimonialQuote />
             <TestimonialText text={SOUTH_KOREA.quote2} />
             <Paragraph marginTop="mt-2" customCss="flex">
-              <span role="img" aria-label={ARIA_LABELS.emoji.latinCross} className="ml-1">
-                {ICON_EMOJI.latinCross}
+              <span role="img" aria-label={ARIA_LABELS.emoji.starAndCrescent} className="ml-1">
+                {ICON_EMOJI.starAndCrescent}
               </span>
               <span className="ml-2">
                 {SOUTH_KOREA.quoteAuthorName2}, {SOUTH_KOREA.quoteAuthorOccupation2}
