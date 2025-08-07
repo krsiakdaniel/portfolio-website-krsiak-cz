@@ -18,29 +18,25 @@ const BUTTON_STYLES = `animate-fade-in-scroll
   hover:-translate-y-1 hover:scale-110 hover:bg-violet-700 hover:shadow-xl
   focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:outline-none`
 
-const ScrollToTopButton: FC = (): JSX.Element => {
+const ScrollToTopButton: FC = (): JSX.Element | null => {
   const [isVisible, setIsVisible] = useState<boolean>(false)
 
   const handleScrollToTop = useCallback(() => {
     scrollToTop()
   }, [])
 
-  useEffect(() => {
-    const toggleVisibility = () => {
-      if (window.pageYOffset > SCROLL_THRESHOLD) {
-        setIsVisible(true)
-      } else {
-        setIsVisible(false)
-      }
-    }
-
-    window.addEventListener('scroll', toggleVisibility, { passive: true })
-
-    return () => window.removeEventListener('scroll', toggleVisibility, { passive: true })
+  const toggleVisibility = useCallback(() => {
+    setIsVisible(window.pageYOffset > SCROLL_THRESHOLD)
   }, [])
 
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility, { passive: true })
+
+    return () => window.removeEventListener('scroll', toggleVisibility)
+  }, [toggleVisibility])
+
   if (!isVisible) {
-    return <></>
+    return null
   }
 
   return (

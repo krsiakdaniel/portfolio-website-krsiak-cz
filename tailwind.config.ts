@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindCSS'
+import type { Config } from 'tailwindcss'
 
 // Extend the Config type to include safelist and screens
 type ExtendedConfig = Config & {
