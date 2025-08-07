@@ -19,7 +19,7 @@ import { MenuProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 /**
  * Menu component for both mobile and desktop navigation
  */
-const Menu: FC<MenuProps> = ({ type, forwardedRef, onClickLink }): JSX.Element => {
+const Menu: FC<MenuProps> = ({ type, ref, onClickLink }): JSX.Element => {
   const isMobile = type === DeviceTypeEnum.Mobile
   const currentPathname = usePathname()
 
@@ -32,7 +32,7 @@ const Menu: FC<MenuProps> = ({ type, forwardedRef, onClickLink }): JSX.Element =
   return (
     <nav aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
       <ul
-        ref={forwardedRef}
+        ref={ref}
         className={
           isMobile ? 'mt-2 mb-6 flex flex-col gap-1 lg:hidden' : 'hidden gap-2 lg:flex 2xl:gap-2'
         }

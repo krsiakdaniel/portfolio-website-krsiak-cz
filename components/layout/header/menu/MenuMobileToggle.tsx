@@ -15,11 +15,11 @@ import { MenuMobileToggleProps } from '@/lib/utils/typeDefinitions/props/layout/
 const MenuMobileToggle: FC<MenuMobileToggleProps> = ({
   isMenuOpen,
   handleMenuMobileToggle,
-  forwardedRef,
+  ref,
 }): JSX.Element => {
   return (
     <button
-      ref={forwardedRef}
+      ref={ref}
       onClick={handleMenuMobileToggle}
       id={ID.menu.toggle}
       data-testid={DATA_TEST_IDS.menu.toggle.component}
