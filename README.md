@@ -7,8 +7,6 @@
 - [🚦 Project Status](#-project-status)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [📋 Pages](#-pages)
-  - [Main](#main)
-  - [Projects](#projects)
 - [📚 Documentation](#-documentation)
 - [📄 License](#-license)
 - [📫 Contact](#-contact)
@@ -32,15 +30,47 @@ Checkout the link: [https://krsiak.cz](https://krsiak.cz)
 
 ![Tech Stack](/readme-images/main-readme/technologies-and-tools.webp)
 
+### Core Technologies
+
 - 📝 [TypeScript](https://www.typescriptlang.org/)
 - ⚛️ [React](https://react.dev/)
 - ⏭️ [Next.js](https://nextjs.org/)
+- 🚀 [Bun](https://bun.sh/)
+
+### Styling & UI
+
 - 🎨 [Tailwind CSS](https://tailwindcss.com/)
 - 🌼 [daisyUI](https://daisyui.com/)
-- 🃏 [JEST](https://jestjs.io/)
+
+### Testing
+
+- 🃏 [Jest](https://jestjs.io/)
 - 🎭 [Playwright](https://playwright.dev/)
+
+### Development Tools
+
+- 🎨 [Prettier](https://prettier.io/)
+- 🔧 [ESLint](https://eslint.org/)
+- 🐕 [Husky](https://github.com/typicode/husky)
+
+### Performance & PWA
+
+- 🖼️ [Sharp](https://sharp.pixelplumbing.com/)
+- 📱 [next-pwa](https://github.com/DuCanhGH/next-pwa)
+
+### Analytics & Monitoring
+
+- 📊 [Google Analytics](https://analytics.google.com/)
+- 👁️ [Smartlook](https://www.smartlook.com/)
+- 📈 [Better Uptime](https://betteruptime.com/)
+
+### DevOps & Deployment
+
 - 🚀 [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions)
 - 🌍 [Netlify](https://www.netlify.com/)
+- 🛡️ [Dependabot](https://github.com/dependabot)
+- 🔍 [CodeQL](https://codeql.github.com/)
+- 📊 [Codacy](https://www.codacy.com/)
 
 ## 📋 Pages
 
