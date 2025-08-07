@@ -25,11 +25,14 @@ Development environment for the project.
   - [🔗 Imports Order in Files](#-imports-order-in-files)
     - [Example](#example)
   - [🌍 Environment Variables](#-environment-variables)
+    - [Local Environment Setup](#local-environment-setup)
+    - [Environment Variables Usage](#environment-variables-usage)
+    - [Accessing Environment Variables](#accessing-environment-variables)
+    - [Environment Files Precedence](#environment-files-precedence)
   - [🐕 Husky and Pre-commit Hook](#-husky-and-pre-commit-hook)
     - [What Runs on Every Commit](#what-runs-on-every-commit)
     - [Emergency Bypass](#emergency-bypass)
     - [Local Commands to Replicate CI](#local-commands-to-replicate-ci)
-    - [Pre-commit Hook Troubleshooting](#pre-commit-hook-troubleshooting)
     - [Development Workflow](#development-workflow)
 
 ---
