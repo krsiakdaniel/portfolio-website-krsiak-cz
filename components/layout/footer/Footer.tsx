@@ -10,6 +10,7 @@ import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 import { DIVIDER_WITH_TEXT } from '@/localization/english'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+import ScrollToTopButton from './ScrollToTopButton'
 
 const IMAGE_WIDTH = 216
 const IMAGE_HEIGHT = 216
@@ -28,9 +29,9 @@ const Footer: FC = (): JSX.Element => {
 
           <Status />
           <Copyright />
-
-          {/* <ScrollToTopButton /> */}
         </div>
+
+        <ScrollToTopButton />
       </footer>
     </PageContainer>
   )

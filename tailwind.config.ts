@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindCSS'
 
 // Extend the Config type to include safelist and screens
 type ExtendedConfig = Config & {
@@ -15,34 +15,42 @@ const customColors = {
 
 // Custom keyframes for animations
 const customKeyframes = {
+  // CSS classname: animate-pulse-bubble
   pulseBubble: {
     '0%, 100%': { transform: 'scale(1)', opacity: '0.5' },
     '50%': { transform: 'scale(1.1)', opacity: '0.7' },
   },
+  // CSS classname: animate-ghost-previous
   animateGhostPrevious: {
     '0%, 100%': { transform: 'translateX(0)' },
     '50%': { transform: 'translateX(-30px)' },
   },
+  // CSS classname: animate-ghost-next
   animateGhostNext: {
     '0%, 100%': { transform: 'translateX(0)' },
     '50%': { transform: 'translateX(30px)' },
   },
+  // CSS classname: animate-man-walk
   manWalk: {
     '0%, 100%': { transform: 'translateX(0)' },
     '50%': { transform: 'translateX(2px)' },
   },
+  // CSS classname: animate-gentle-bounce
   gentleBounce: {
     '0%, 100%': { transform: 'translateY(0)' },
     '50%': { transform: 'translateY(-10px)' },
   },
-  fadeIn: {
-    '0%': { opacity: '0.5' },
-    '100%': { opacity: '1' },
+  // CSS classname: animate-fade-in-scroll
+  fadeInScroll: {
+    '0%': { opacity: '0', transform: 'translateY(10px)' },
+    '100%': { opacity: '1', transform: 'translateY(0)' },
   },
+  // CSS classname: animate-slide-down
   slideDown: {
     '0%': { transform: 'translateY(-10px)', opacity: '0' },
     '100%': { transform: 'translateY(0)', opacity: '1' },
   },
+  // CSS classname: animate-slide-up
   slideUp: {
     '0%': { transform: 'translateY(0)', opacity: '1' },
     '100%': { transform: 'translateY(-10px)', opacity: '0' },
@@ -67,7 +75,7 @@ const customAnimations = {
   'ghost-next': `animateGhostNext ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
   'man-walk': `manWalk infinite ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT}`,
   'gentle-bounce': `gentleBounce infinite ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT}`,
-  'fade-in': `fadeIn ${ANIMATION_TIMING.HALF_SECOND} ${EASE_IN_OUT}`,
+  'fade-in-scroll': `fadeInScroll ${ANIMATION_TIMING.HALF_SECOND} ${EASE_IN_OUT}`,
   'slide-down': `slideDown ${ANIMATION_TIMING.QUARTER_SECOND} ${EASE_IN_OUT}`,
   'slide-up': `slideUp ${ANIMATION_TIMING.QUARTER_SECOND} ${EASE_IN_OUT}`,
 }
