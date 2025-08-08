@@ -80,26 +80,36 @@ const customAnimations = {
   'slide-up': `slideUp ${ANIMATION_TIMING.QUARTER_SECOND} ${EASE_IN_OUT}`,
 }
 
+// Standard Tailwind Breakpoints
 const customScreenSizes = {
-  sm: '640px',
-  md: '768px',
-  lg: '1024px',
-  xl: '1280px',
-  '2xl': '1536px',
+  sm: '640px', // Small tablets and large phones (landscape)
+  md: '768px', // Tablets
+  lg: '1024px', // Small laptops/desktops
+  xl: '1280px', // Large desktops
+  '2xl': '1536px', // Extra large screens
 }
 
 // Config file for Tailwind CSS
 const config: ExtendedConfig = {
-  // Paths Tailwind scans for class names to include in the final CSS
-  content: [
-    './app/**/*.{js,ts,jsx,tsx}', // New - https://nextjs.org/docs/app
-    './pages/**/*.{js,ts,jsx,tsx}', // Old version - https://nextjs.org/docs/pages/building-your-application/routing
-    './components/**/*.{js,ts,jsx,tsx}',
-    './src/**/*.{js,ts,jsx,tsx}', // https://nextjs.org/docs/app/building-your-application/configuring/src-directory
-  ],
+  // 1. Content paths - defines what files Tailwind scans for class names
+  content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
 
-  // Safelist ensures that specific classes are always included in the final CSS.
-  // Even if Tailwind cannot detect them because they are generated dynamically.
+  // 2. Custom screen sizes (overrides default breakpoints)
+  screens: customScreenSizes,
+
+  // 3. Theme configuration - core styling definitions
+  theme: {
+    extend: {
+      colors: customColors,
+      keyframes: customKeyframes,
+      animation: customAnimations,
+    },
+  },
+
+  // 4. Plugins - third-party extensions
+  plugins: [],
+
+  // 5. Safelist - classes always included in final CSS (for dynamic classes)
   safelist: [
     // Background colors
     'bg-blue-100',
@@ -165,21 +175,6 @@ const config: ExtendedConfig = {
     'text-red-800',
     'text-yellow-800',
   ],
-
-  // Define custom screen sizes
-  screens: customScreenSizes,
-
-  // Theme configuration
-  theme: {
-    extend: {
-      colors: customColors,
-      animation: customAnimations,
-      keyframes: customKeyframes,
-    },
-  },
-
-  // Plugins
-  plugins: [],
 }
 
 export default config
