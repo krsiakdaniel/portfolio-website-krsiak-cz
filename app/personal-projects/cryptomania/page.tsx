@@ -49,8 +49,8 @@ const ProjectPersonalCryptomania: FC = (): JSX.Element => {
             linkComponent={
               <SocialLink
                 href={EXTERNAL_URL.gitHub}
-                linkText={TEXT.gitHubKrsiak}
-                linkColor={AlertType}
+                text={TEXT.gitHubKrsiak}
+                type={AlertType}
                 dataTestId={DATA_TEST_IDS.alert.alertLinkGitHub}
               />
             }

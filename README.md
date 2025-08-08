@@ -40,7 +40,6 @@ Checkout the link: [https://krsiak.cz](https://krsiak.cz)
 ### Styling & UI
 
 - 🎨 [Tailwind CSS](https://tailwindcss.com/)
-- 🌼 [daisyUI](https://daisyui.com/)
 
 ### Testing
 
