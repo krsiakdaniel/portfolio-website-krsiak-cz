@@ -15,10 +15,12 @@ const Alert: FC<AlertProps> = ({
   return (
     <div role="alert" className={`mt-4 rounded-lg border p-4 ${alertTypeClasses[type]}`}>
       <div className="flex items-start md:items-center">
-        <span className="mt-1 md:mt-0">
-          <IconInfo />
-        </span>
-        <h3 className="text-lg font-medium">{title}</h3>
+        <h3 className="flex items-center gap-2 text-lg font-medium" id="alert-title">
+          <span className="mt-1 md:mt-0" aria-hidden="true">
+            <IconInfo />
+          </span>
+          {title}
+        </h3>
       </div>
       <div className="mt-2 mb-4 text-sm">{description}</div>
       <div className="sm:w-1/3">

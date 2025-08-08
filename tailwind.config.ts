@@ -88,40 +88,63 @@ const customScreenSizes = {
   '2xl': '1536px',
 }
 
+// Config file for Tailwind CSS
 const config: ExtendedConfig = {
-  // Config file for Tailwind CSS
+  // Paths Tailwind scans for class names to include in the final CSS
   content: [
     './app/**/*.{js,ts,jsx,tsx}', // New - https://nextjs.org/docs/app
     './pages/**/*.{js,ts,jsx,tsx}', // Old version - https://nextjs.org/docs/pages/building-your-application/routing
     './components/**/*.{js,ts,jsx,tsx}',
     './src/**/*.{js,ts,jsx,tsx}', // https://nextjs.org/docs/app/building-your-application/configuring/src-directory
   ],
-  // If you need to make sure Tailwind generates certain class names that don't exist in content files.
+
+  // Safelist ensures that specific classes are always included in the final CSS.
+  // Even if Tailwind cannot detect them because they are generated dynamically.
   safelist: [
+    // Background colors
     'bg-blue-100',
     'bg-blue-600',
     'bg-gray-600',
     'bg-gray-800',
     'bg-green-100',
+    'bg-green-600',
     'bg-neutral-100',
     'bg-red-100',
     'bg-red-600',
     'bg-yellow-100',
+    'bg-yellow-600',
+
+    // Border colors
     'border-blue-300',
     'border-green-300',
     'border-neutral-300',
     'border-red-300',
     'border-yellow-300',
+
+    // Focus ring colors
     'focus:ring-blue-300',
+    'focus:ring-blue-400',
     'focus:ring-gray-300',
+    'focus:ring-gray-400',
+    'focus:ring-green-400',
     'focus:ring-red-300',
+    'focus:ring-red-400',
+    'focus:ring-yellow-400',
+
+    // Hover background colors
     'hover:bg-blue-800',
     'hover:bg-gray-800',
+    'hover:bg-green-800',
     'hover:bg-red-800',
+    'hover:bg-yellow-800',
+
+    // Responsive text sizes
     'sm:text-6xl',
     'sm:text-9xl',
     'md:text-7xl',
     'lg:text-9xl',
+
+    // Base text sizes
     'text-sm',
     'text-md',
     'text-lg',
@@ -134,14 +157,18 @@ const config: ExtendedConfig = {
     'text-7xl',
     'text-8xl',
     'text-9xl',
+
+    // Text colors
     'text-blue-800',
     'text-green-800',
     'text-neutral-800',
     'text-red-800',
     'text-yellow-800',
   ],
+
   // Define custom screen sizes
   screens: customScreenSizes,
+
   // Theme configuration
   theme: {
     extend: {
@@ -150,6 +177,7 @@ const config: ExtendedConfig = {
       keyframes: customKeyframes,
     },
   },
+
   // Plugins
   plugins: [],
 }
