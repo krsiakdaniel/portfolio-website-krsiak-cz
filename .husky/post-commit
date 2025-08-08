@@ -1,0 +1,31 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🏗️  Running post-commit quality gates..."
+
+# Run TypeScript type checking
+echo "🔧 Running TypeScript type checking..."
+bun tsc --noEmit
+if [ $? -ne 0 ]; then
+  echo "❌ TypeScript type checking failed!"
+  echo "🔄 Consider fixing the issues and creating a follow-up commit."
+fi
+
+# Run Jest tests
+echo "🧪 Running Jest unit tests..."
+bun test:jest
+if [ $? -ne 0 ]; then
+  echo "❌ Jest unit tests failed!"
+  echo "🔄 Consider fixing the failing tests and creating a follow-up commit."
+fi
+
+# Run E2E smoke tests (basic tests only, not full suite)
+echo "🌐 Running E2E smoke tests..."
+bun playwright test --grep="smoke|critical" --reporter=line
+if [ $? -ne 0 ]; then
+  echo "⚠️  E2E smoke tests failed or no smoke tests found."
+  echo "💡 Consider running full E2E suite: bun test:e2e"
+fi
+
+echo "🎉 Post-commit quality gates completed!"
+echo "💡 For full integration testing, run: bun integrate"

@@ -2,7 +2,7 @@
 
 **Table of Contents:**
 
-- [⚛️ Project Description](#️---- 🚀 [CI- - � [Security](docs/security/README-security.md)🖥️ [Editor Setup](docs/editor-setup/README-editor-setup.md)and CD - Process](docs/deployment/README-ci-cd-process.md)📝 [Contributions](docs/contributions/README-contributions.md)🙇‍♂️ [Attribution](docs/attribution/README-attribution.md)roject-description)
+- [⚛️ Project Description](#️-project-description)
 - [🔗 Project Website](#-project-website)
 - [🚦 Project Status](#-project-status)
 - [🛠️ Tech Stack](#️-tech-stack)
@@ -104,14 +104,15 @@ The website has these main pages and project detail pages.
 
 ## 📚 Documentation
 
-- 👨🏻‍💼 [Team Leader and Task Management](docs/team-leader-task-management/README-team-leader-task-management.md)
+- 👨🏻‍💼 [Task Management](docs/team-leader-task-management/README-team-leader-task-management.md)
 - 🖥️ [Editor Setup](docs/editor-setup/README-editor-setup.md)
 - 🏛️ [Project Architecture](docs/project-architecture/README-project-architecture.md)
 - 📦 [Dependencies](docs/development/README-dependencies.md)
 - 💻 [Development](docs/development/README-development.md)
+- 🐕 [Pre-Commit Setup](docs/development/README-pre-commit-setup.md)
+- 🔀 [Pull Requests](docs/development/README-development-pull-requests.md)
 - 🎨 [Design System](docs/design-system/README-design-system.md)
 - 🐛 [Bug Fixing](docs/development/README-bug-fixing.md)
-- 🔀 [Pull Requests](docs/development/README-development-pull-requests.md)
 - 🧪 [Testing Overview](docs/testing/README-testing.md)
 - 🃏 [Jest Testing](docs/testing/README-testing-jest.md)
 - 🎭 [Playwright Testing](docs/testing/README-testing-playwright.md)
