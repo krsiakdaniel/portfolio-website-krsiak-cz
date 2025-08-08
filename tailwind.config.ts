@@ -72,8 +72,8 @@ const customAnimations = {
   'pulse-bubble': `pulseBubble ${ANIMATION_TIMING.THREE_SECONDS} infinite`,
   'ghost-previous': `animateGhostPrevious ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
   'ghost-next': `animateGhostNext ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
-  'man-walk': `manWalk infinite ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT}`,
-  'gentle-bounce': `gentleBounce infinite ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT}`,
+  'man-walk': `manWalk ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
+  'gentle-bounce': `gentleBounce ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
   'fade-in-scroll': `fadeInScroll ${ANIMATION_TIMING.HALF_SECOND} ${EASE_IN_OUT}`,
   'slide-down': `slideDown ${ANIMATION_TIMING.QUARTER_SECOND} ${EASE_IN_OUT}`,
   'slide-up': `slideUp ${ANIMATION_TIMING.QUARTER_SECOND} ${EASE_IN_OUT}`,
@@ -82,7 +82,11 @@ const customAnimations = {
 // Config file for Tailwind CSS
 const config: ExtendedConfig = {
   // 1. Content paths - defines what files Tailwind scans for class names
-  content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './app/**/*.{js,ts,jsx,tsx}', // Application code
+    './components/**/*.{js,ts,jsx,tsx}', // Reusable components
+    './lib/**/*.{js,ts,jsx,tsx}', // Utility functions
+  ],
 
   // 2. Theme configuration - core styling definitions
   theme: {
