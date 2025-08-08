@@ -1,5 +1,7 @@
 import { AlertTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 
+// TODO: review custom colors, update daisyUI theme, or use it as is and remove this file
+
 /**
  * A record that maps each alert type from `AlertTypeEnum` to a string of CSS classes.
  * These classes are used to style alerts based on their type.
