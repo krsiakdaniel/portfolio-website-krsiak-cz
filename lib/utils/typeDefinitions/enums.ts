@@ -48,10 +48,11 @@ export enum DurationUnitEnum {
 
 // Alert
 export enum AlertTypeEnum {
-  Info = 'alert-info',
-  Success = 'alert-success',
-  Warning = 'alert-warning',
-  Error = 'alert-error',
+  Neutral = 'neutral',
+  Info = 'info',
+  Success = 'success',
+  Warning = 'warning',
+  Error = 'error',
 }
 
 // Device Type

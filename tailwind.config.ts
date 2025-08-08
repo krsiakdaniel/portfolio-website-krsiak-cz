@@ -1,9 +1,8 @@
 import type { Config } from 'tailwindcss'
 
-// Extend the Config type to include safelist and screens
+// Extend the Config type to include safelist
 type ExtendedConfig = Config & {
   safelist?: string[]
-  screens?: Record<string, string>
 }
 
 // Custom colors for the project
@@ -73,55 +72,80 @@ const customAnimations = {
   'pulse-bubble': `pulseBubble ${ANIMATION_TIMING.THREE_SECONDS} infinite`,
   'ghost-previous': `animateGhostPrevious ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
   'ghost-next': `animateGhostNext ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
-  'man-walk': `manWalk infinite ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT}`,
-  'gentle-bounce': `gentleBounce infinite ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT}`,
+  'man-walk': `manWalk ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
+  'gentle-bounce': `gentleBounce ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
   'fade-in-scroll': `fadeInScroll ${ANIMATION_TIMING.HALF_SECOND} ${EASE_IN_OUT}`,
   'slide-down': `slideDown ${ANIMATION_TIMING.QUARTER_SECOND} ${EASE_IN_OUT}`,
   'slide-up': `slideUp ${ANIMATION_TIMING.QUARTER_SECOND} ${EASE_IN_OUT}`,
 }
 
-const customScreenSizes = {
-  sm: '640px',
-  md: '768px',
-  lg: '1024px',
-  xl: '1280px',
-  '2xl': '1536px',
-}
-
+// Config file for Tailwind CSS
 const config: ExtendedConfig = {
-  // Config file for Tailwind CSS
+  // 1. Content paths - defines what files Tailwind scans for class names
   content: [
-    './app/**/*.{js,ts,jsx,tsx}', // New - https://nextjs.org/docs/app
-    './pages/**/*.{js,ts,jsx,tsx}', // Old version - https://nextjs.org/docs/pages/building-your-application/routing
-    './components/**/*.{js,ts,jsx,tsx}',
-    './src/**/*.{js,ts,jsx,tsx}', // https://nextjs.org/docs/app/building-your-application/configuring/src-directory
+    './app/**/*.{js,ts,jsx,tsx}', // Application code
+    './components/**/*.{js,ts,jsx,tsx}', // Reusable components
+    './lib/**/*.{js,ts,jsx,tsx}', // Utility functions
   ],
-  // If you need to make sure Tailwind generates certain class names that don't exist in content files.
+
+  // 2. Theme configuration - core styling definitions
+  theme: {
+    extend: {
+      colors: customColors,
+      keyframes: customKeyframes,
+      animation: customAnimations,
+    },
+  },
+
+  // 3. Plugins - third-party extensions
+  plugins: [],
+
+  // 4. Safelist - classes always included in final CSS (for dynamic classes)
   safelist: [
+    // Background colors
     'bg-blue-100',
     'bg-blue-600',
     'bg-gray-600',
     'bg-gray-800',
     'bg-green-100',
+    'bg-green-600',
     'bg-neutral-100',
     'bg-red-100',
     'bg-red-600',
     'bg-yellow-100',
+    'bg-yellow-600',
+
+    // Border colors
     'border-blue-300',
     'border-green-300',
     'border-neutral-300',
     'border-red-300',
     'border-yellow-300',
+
+    // Focus ring colors
     'focus:ring-blue-300',
+    'focus:ring-blue-400',
     'focus:ring-gray-300',
+    'focus:ring-gray-400',
+    'focus:ring-green-400',
     'focus:ring-red-300',
+    'focus:ring-red-400',
+    'focus:ring-yellow-400',
+
+    // Hover background colors
     'hover:bg-blue-800',
     'hover:bg-gray-800',
+    'hover:bg-green-800',
     'hover:bg-red-800',
+    'hover:bg-yellow-800',
+
+    // Responsive text sizes
     'sm:text-6xl',
     'sm:text-9xl',
     'md:text-7xl',
     'lg:text-9xl',
+
+    // Base text sizes
     'text-sm',
     'text-md',
     'text-lg',
@@ -134,24 +158,14 @@ const config: ExtendedConfig = {
     'text-7xl',
     'text-8xl',
     'text-9xl',
+
+    // Text colors
     'text-blue-800',
     'text-green-800',
     'text-neutral-800',
     'text-red-800',
     'text-yellow-800',
   ],
-  // Define custom screen sizes
-  screens: customScreenSizes,
-  // Theme configuration
-  theme: {
-    extend: {
-      colors: customColors,
-      animation: customAnimations,
-      keyframes: customKeyframes,
-    },
-  },
-  // Plugins
-  plugins: [],
 }
 
 export default config

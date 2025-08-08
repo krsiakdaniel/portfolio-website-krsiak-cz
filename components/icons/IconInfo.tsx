@@ -3,17 +3,13 @@ import { FC } from 'react'
 const IconInfo: FC = (): JSX.Element => {
   return (
     <svg
+      aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      className="h-6 w-6 shrink-0 stroke-current"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+      className="h-4 w-4"
     >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-      />
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"></path>
     </svg>
   )
 }
