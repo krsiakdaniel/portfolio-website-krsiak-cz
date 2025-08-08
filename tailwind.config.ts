@@ -1,9 +1,8 @@
 import type { Config } from 'tailwindcss'
 
-// Extend the Config type to include safelist and screens
+// Extend the Config type to include safelist
 type ExtendedConfig = Config & {
   safelist?: string[]
-  screens?: Record<string, string>
 }
 
 // Custom colors for the project
@@ -80,24 +79,12 @@ const customAnimations = {
   'slide-up': `slideUp ${ANIMATION_TIMING.QUARTER_SECOND} ${EASE_IN_OUT}`,
 }
 
-// Standard Tailwind Breakpoints
-const customScreenSizes = {
-  sm: '640px', // Small tablets and large phones (landscape)
-  md: '768px', // Tablets
-  lg: '1024px', // Small laptops/desktops
-  xl: '1280px', // Large desktops
-  '2xl': '1536px', // Extra large screens
-}
-
 // Config file for Tailwind CSS
 const config: ExtendedConfig = {
   // 1. Content paths - defines what files Tailwind scans for class names
   content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
 
-  // 2. Custom screen sizes (overrides default breakpoints)
-  screens: customScreenSizes,
-
-  // 3. Theme configuration - core styling definitions
+  // 2. Theme configuration - core styling definitions
   theme: {
     extend: {
       colors: customColors,
@@ -106,10 +93,10 @@ const config: ExtendedConfig = {
     },
   },
 
-  // 4. Plugins - third-party extensions
+  // 3. Plugins - third-party extensions
   plugins: [],
 
-  // 5. Safelist - classes always included in final CSS (for dynamic classes)
+  // 4. Safelist - classes always included in final CSS (for dynamic classes)
   safelist: [
     // Background colors
     'bg-blue-100',
