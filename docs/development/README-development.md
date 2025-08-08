@@ -1,38 +1,17 @@
 # 🛠️ Development
 
-Development environment for the project.
+Complete guide for setting up and working with the development environment for this Next.js portfolio website.
 
 **Table of Contents:**
 
-- [🛠️ Development](#-development)
-  - [📋 Prerequisites](#-prerequisites)
-    - [Software Requirements](#software-requirements)
-      - [Required](#required)
-      - [Optional but Recommended](#optional-but-recommended)
-    - [Installation Steps](#installation-steps)
-    - [Verification](#verification)
-    - [Troubleshooting](#troubleshooting)
-  - [💻 Commands](#-commands)
-    - [Bun Commands](#bun-commands)
-    - [Bun Configuration](#bun-configuration)
-    - [Available Scripts](#available-scripts)
-    - [Install Dependencies](#install-dependencies)
-    - [Specify Node Version](#specify-node-version)
-    - [Run Development Mode](#run-development-mode)
-  - [📦 Find Outdated Dependencies](#-find-outdated-dependencies)
-  - [💅 Prettier](#-prettier)
-    - [Check Code](#check-code)
-    - [Format Code](#format-code)
-  - [🤖 GitHub Copilot Instructions](#-github-copilot-instructions)
-  - [🔗 Imports Order in Files](#-imports-order-in-files)
-    - [Example](#example)
-  - [🌍 Environment Variables](#-environment-variables)
-    - [Local Environment Setup](#local-environment-setup)
-    - [Environment Variables Usage](#environment-variables-usage)
-    - [Accessing Environment Variables](#accessing-environment-variables)
-    - [Environment Files Precedence](#environment-files-precedence)
-  - [🔄 Development Workflow](#-development-workflow)
-  - [🐕 Husky and Pre-commit Hook](#-husky-and-pre-commit-hook)
+- [📋 Prerequisites](#-prerequisites)
+- [💻 Commands](#-commands)
+- [💅 Prettier](#-prettier)
+- [🤖 GitHub Copilot Instructions](#-github-copilot-instructions)
+- [🔗 Imports Order in Files](#-imports-order-in-files)
+- [🌍 Environment Variables](#-environment-variables)
+- [🔄 Development Workflow](#-development-workflow)
+- [🐕 Husky and Pre-commit Hook](#-husky-and-pre-commit-hook)
 
 ---
 
@@ -235,16 +214,6 @@ bun dev
 
 To view the project in the browser, open: [http://localhost:3000](http://localhost:3000)
 
-## 📦 Find Outdated Dependencies
-
-Find out which dependencies are outdated.
-
-```bash
-bun outdated
-```
-
-![bun - outdated](/readme-images/development/bun/bun-outdated.webp)
-
 ## 💅 Prettier
 
 This project uses [Prettier](https://prettier.io/) for code formatting.
@@ -259,11 +228,11 @@ bun prettier:check
 
 The files that are not formatted correctly will be listed in the terminal as `[warn], error`.
 
-![bun - prettier check - warn](/readme-images/development/bun/bun-prettier-check-warn.webp)
+![bun - prettier check - error](/readme-images/development/bun/prettier-error.webp)
 
 If all files are formatted correctly, terminal will show this message.
 
-![bun - prettier check - ok](/readme-images/development/bun/bun-prettier-check-ok.webp)
+![bun - prettier check - ok](/readme-images/development/bun/prettier-ok.webp)
 
 ### Format Code
 
@@ -404,7 +373,7 @@ Next.js loads environment variables from the following files, in order:
 
 > **Note**: `.env*.local` files should be included in your `.gitignore` to avoid exposing sensitive information.
 
-For more information, see the [Next.js documentation on environment variables](https://nextjs.org/docs/basic-features/environment-variables).
+Next.js documentation: [environment variables](https://nextjs.org/docs/pages/guides/environment-variables)
 
 ## 🔄 Development Workflow
 

@@ -1,14 +1,21 @@
 # 📝 Contributions
 
-This is a personal portfolio project. I'm not accepting external contributions.
+This is a personal portfolio project.
+
+**Table of Contents:**
+
+- [🤝 Usage Guidelines](#-usage-guidelines)
+- [🙏 Feedback](#-feedback)
+
+## 🤝 Usage Guidelines
+
+I'm not accepting external contributions.
 
 **However, you're welcome to:**
 
 - 🍴 Fork the repository for your own use
 - 📚 Use it as a learning reference
 - 💡 Draw inspiration for your own projects
-
-## 🤝 Usage Guidelines
 
 If you decide to use this project as inspiration or a reference:
 
