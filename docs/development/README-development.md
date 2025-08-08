@@ -7,6 +7,8 @@ Development environment for the project.
 - [🛠️ Development](#-development)
   - [📋 Prerequisites](#-prerequisites)
     - [Software Requirements](#software-requirements)
+      - [Required](#required)
+      - [Optional but Recommended](#optional-but-recommended)
     - [Installation Steps](#installation-steps)
     - [Verification](#verification)
     - [Troubleshooting](#troubleshooting)
@@ -29,11 +31,8 @@ Development environment for the project.
     - [Environment Variables Usage](#environment-variables-usage)
     - [Accessing Environment Variables](#accessing-environment-variables)
     - [Environment Files Precedence](#environment-files-precedence)
+  - [🔄 Development Workflow](#-development-workflow)
   - [🐕 Husky and Pre-commit Hook](#-husky-and-pre-commit-hook)
-    - [What Runs on Every Commit](#what-runs-on-every-commit)
-    - [Emergency Bypass](#emergency-bypass)
-    - [Local Commands to Replicate CI](#local-commands-to-replicate-ci)
-    - [Development Workflow](#development-workflow)
 
 ---
 
@@ -170,28 +169,36 @@ All commands in scripts are available in: [package.json](/package.json)
 bun dev                 # Start development server
 bun build               # Build the application
 bun start               # Start production server
-bun lint                # Run ESLint checks
 
-# Formatting
+# Code Quality
+bun lint                # Run ESLint checks
+bun lint:fix            # Run ESLint with auto-fix
 bun prettier:check      # Check code formatting
 bun prettier:write      # Fix code formatting
+bun type-check          # Run TypeScript type checking
 
-# Testing
+# Testing - Unit
 bun test:jest           # Run Jest tests
 bun test:jest:coverage  # Run Jest tests with coverage
 bun test:jest:watch     # Run Jest tests in watch mode
 
-# E2E Testing
+# Testing - E2E
 bun test:e2e            # Run Playwright tests
 bun test:e2e:ui         # Run Playwright tests with UI
 bun test:e2e:chrome     # Run Playwright tests in Chrome only
 bun test:e2e:codegen    # Generate Playwright tests
 bun test:e2e:debug      # Run Playwright tests in debug mode
 
-# Dependencies
-bun deps:outdated       # Check outdated dependencies
+# CI/CD Workflows
+bun validate            # Run type-check + lint + unit tests
+bun integrate           # Run full integration (includes E2E tests)
+bun pre-commit          # Run pre-commit hooks
+bun pre-commit-check    # Run pre-commit validation script
+
+# Utilities
 bun clean               # Remove node_modules
 bun clean:install       # Remove node_modules and reinstall dependencies
+bun deps:outdated       # Check outdated dependencies
 ```
 
 ### Install Dependencies
@@ -399,66 +406,21 @@ Next.js loads environment variables from the following files, in order:
 
 For more information, see the [Next.js documentation on environment variables](https://nextjs.org/docs/basic-features/environment-variables).
 
-## 🐕 Husky and Pre-commit Hook
+## 🔄 Development Workflow
 
-This guide explains the development workflow and quality gates that run automatically on every commit.
-
-### What Runs on Every Commit
-
-Our pre-commit hooks automatically run the following quality checks:
-
-1. **Lint Staged Files** - `bun lint-staged`
-   - Runs ESLint and Prettier on staged files
-   - Automatically fixes formatting issues where possible
-
-2. **Unit Tests** - `bun test:jest`
-   - Runs Jest test suite
-   - Ensures all tests pass before allowing commit
-
-3. **End-to-End Tests** - `bun run test:e2e:chrome`
-   - Runs Playwright E2E tests in Chrome
-   - Validates critical user journeys
-
-4. **Optional Commit Message Reminder**
-   - Provides helpful reminders for commit message format
-   - Can be configured via commit-msg hook
-
-### Emergency Bypass
-
-In emergency situations, you can bypass the pre-commit hooks using:
-
-```bash
-git commit --no-verify
-```
-
-⚠️ **Use sparingly!** This should only be used when:
-
-- Urgent hotfix is needed
-- CI is temporarily broken
-- You're committing work-in-progress for collaboration
-
-### Local Commands to Replicate CI
-
-To manually run the same checks that happen in CI:
-
-```bash
-# Run lint-staged (same as pre-commit)
-bun lint-staged
-
-# Unit tests
-bun test:jest
-
-# E2E tests
-bun test:e2e:chrome
-```
-
-### Development Workflow
+The recommended development workflow:
 
 1. Create a new branch from `master`
 2. Make your changes
-3. Run tests locally (optional, but recommended)
+3. Run tests locally (optional, but recommended): `bun validate`
 4. Stage your changes: `git add .`
 5. Commit: `git commit -m "your message"`
    - Pre-commit hooks will run automatically
    - Fix any issues that arise
 6. Push your branch and create a PR
+
+## 🐕 Husky and Pre-commit Hook
+
+This guide explains the development workflow and quality gates that run automatically on every commit.
+
+- 📁 [README-pre-commit-setup.md](./README-pre-commit-setup.md)

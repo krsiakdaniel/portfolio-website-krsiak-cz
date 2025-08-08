@@ -1,1 +1,19 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Running pre-commit quality checks..."
+
+# Run lint-staged for file-specific checks
+echo "📝 Running lint-staged checks..."
 bun lint-staged
+
+# Run TypeScript type checking on the entire project
+echo "🔧 Running TypeScript type checking..."
+bun tsc --noEmit
+
+if [ $? -ne 0 ]; then
+  echo "❌ TypeScript type checking failed. Please fix the errors before committing."
+  exit 1
+fi
+
+echo "✅ All pre-commit checks passed!"
