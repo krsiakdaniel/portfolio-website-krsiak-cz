@@ -23,6 +23,11 @@ The pre-commit workflow consists of multiple layers of checks:
 3. **TypeScript type checking** for the entire project
 4. **Manual validation scripts** for on-demand testing
 
+**Scripts to run for quality checks:**
+
+1. `bun run pre-commit` - fast check for staged files only
+2. `bun run integrate` - full validation including JEST and E2E tests
+
 ## 🚀 Available Commands
 
 ### Core Commands
