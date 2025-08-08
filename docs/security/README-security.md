@@ -1,18 +1,18 @@
-# 🚨 Security
+# 🔒 Security
 
 Security of this repository is managed by the following tools and services.
 
 **Table of Contents:**
 
-- [🚨 Security](#-security)
-  - [Uptime Monitoring 🕒📈](#uptime-monitoring-)
+- [🔒 Security](#-security)
+  - [📈 Uptime Monitoring](#-uptime-monitoring)
   - [⚠️ CodeQL analysis](#️-codeql-analysis)
   - [📝 Codacy](#-codacy)
   - [🤖 Dependabot](#-dependabot)
 
 ---
 
-## Uptime Monitoring 🕒📈
+## 📈 Uptime Monitoring
 
 [![BetterUptime](https://betteruptime.com/status-badges/v1/monitor/8z9z.svg)](https://betteruptime.com/?utm_source=status_badge)
 

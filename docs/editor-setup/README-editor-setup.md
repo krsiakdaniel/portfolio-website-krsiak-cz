@@ -1,6 +1,6 @@
-# 🛠️ IDE/Editor Setup Recommendations
+# 🛠️ Editor Setup
 
-This document provides recommendations for setting up your development environment.
+Recommendations for setting up your development environment in editor.
 
 **Table of Contents:**
 
