@@ -1,10 +1,10 @@
-# Attribution 🙇‍♂️
+# 🙇‍♂️ Attribution
 
 This project uses resources from the following creators.
 
 **Table of Contents:**
 
-- [Attribution 🙇‍♂️](#attribution-️)
+- [🙇‍♂️ Attribution](#️-attribution)
   - [Microsoft FluentUI Emoji](#microsoft-fluentui-emoji)
 
 ## Microsoft FluentUI Emoji
