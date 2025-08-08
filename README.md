@@ -1,5 +1,7 @@
 # Portfolio Website: [krsiak.cz](https://krsiak.cz)
 
+🚀 **Professional React Developer Portfolio** - Showcasing modern React development with Next.js, TypeScript for type safety, and cutting-edge web technologies. This repository demonstrates best practices in frontend development, testing strategies, and deployment workflows.
+
 **Table of Contents:**
 
 - [⚛️ Project Description](#️-project-description)
@@ -24,9 +26,27 @@ Checkout the link: [https://krsiak.cz](https://krsiak.cz)
 
 ## 🚦 Project Status
 
-[![Jest Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml) [![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml) [![Prettier Check Formatting](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/prettier-check-formatting.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/prettier-check-formatting.yml) [![Pull Request Labeler](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/labeler.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/labeler.yml) [![Auto Author Assign](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/auto-author-assign.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/auto-author-assign.yml) [![CodeQL](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eaa72f9b0a7242ae9179b0dfdd58faf5)](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![Dependabot](https://img.shields.io/badge/Dependabot-Enabled-green)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/dependabot) [![Netlify Status](https://api.netlify.com/api/v1/badges/eb322254-0169-4941-9416-3806b0bd5be6/deploy-status)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys) [![BetterUptime](https://betteruptime.com/status-badges/v1/monitor/8z9z.svg)](https://betteruptime.com/?utm_source=status_badge)
+Real-time status badges that provide immediate visibility into the project's health, quality, and deployment status.
+
+### Testing & Quality
+
+[![Jest Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/jest.yml) [![Playwright Tests](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/playwright.yml) [![Prettier Check Formatting](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/prettier-check-formatting.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/prettier-check-formatting.yml)
+
+### Security & Code Quality
+
+[![CodeQL](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eaa72f9b0a7242ae9179b0dfdd58faf5)](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![Dependabot](https://img.shields.io/badge/Dependabot-Enabled-green)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/dependabot)
+
+### Automation & Workflow
+
+[![Pull Request Labeler](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/labeler.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/labeler.yml) [![Auto Author Assign](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/auto-author-assign.yml/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/auto-author-assign.yml)
+
+### Deployment & Monitoring
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eb322254-0169-4941-9416-3806b0bd5be6/deploy-status)](https://app.netlify.com/sites/portfolio-website-krsiak-cz/deploys) [![BetterUptime](https://betteruptime.com/status-badges/v1/monitor/8z9z.svg)](https://betteruptime.com/?utm_source=status_badge)
 
 ## 🛠️ Tech Stack
+
+This portfolio website is built using modern technologies and tools.
 
 ![Tech Stack](/readme-images/main-readme/technologies-and-tools.webp)
 
@@ -103,6 +123,8 @@ The website has these main pages and project detail pages.
 
 ## 📚 Documentation
 
+Comprehensive documentation covering all aspects of the project.
+
 - 👨🏻‍💼 [Task Management](docs/team-leader-task-management/README-team-leader-task-management.md)
 - 🖥️ [Editor Setup](docs/editor-setup/README-editor-setup.md)
 - 🏛️ [Project Architecture](docs/project-architecture/README-project-architecture.md)
@@ -130,11 +152,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📫 Contact
 
-- **Daniel Kršiak**
-- [https://www.linkedin.com/in/krsiakdaniel/](https://www.linkedin.com/in/krsiakdaniel/)
-- [https://krsiak.cz/resume](https://krsiak.cz/resume)
+Get in touch for collaboration opportunities or questions about the project.
+
+- 👨🏻‍💻 **Daniel Kršiak** - React Developer
+- 📧 **Email**: [krsiak.daniel@gmail.com](mailto:krsiak.daniel@gmail.com)
+- 💼 **LinkedIn**: [https://www.linkedin.com/in/krsiakdaniel](https://www.linkedin.com/in/krsiakdaniel)
+- 📄 **Resume**: [https://krsiak.cz/resume](https://krsiak.cz/resume)
 
 ## 🖼️ Screenshots
+
+Preview of the website's main pages and user interface.
 
 ![krsiak.cz | Portfolio Website](/readme-images/main-readme/krsiak/krsiak-1-light.webp)
 ![krsiak.cz | Work Experience](/readme-images/main-readme/krsiak/krsiak-2-light.webp)

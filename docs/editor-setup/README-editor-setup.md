@@ -2,21 +2,22 @@
 
 This document provides recommendations for setting up your development environment.
 
-## 📝 Recommended IDEs/Editors
+**Table of Contents:**
 
-### Primary Recommendation: Visual Studio Code
+- [📝 Editor - Visual Studio Code](#-editor---visual-studio-code)
+- [🔌 Essential VS Code Extensions](#-essential-vs-code-extensions)
+- [⚙️ Recommended VS Code Settings](#️-recommended-vs-code-settings)
+- [🎨 Theme Recommendations](#-theme-recommendations)
+- [🔧 Additional Configuration Files](#-additional-configuration-files)
+- [🐛 Debugging Setup](#-debugging-setup)
+- [📱 Mobile Development](#-mobile-development)
+- [🚀 Performance Tips](#-performance-tips)
 
-- **Download**: [VS Code](https://code.visualstudio.com/)
-- **Why**: Excellent TypeScript/JavaScript support, great extension ecosystem, built-in Git integration
+## 📝 Editor - Visual Studio Code
+
+- **Download**: [https://code.visualstudio.com/](https://code.visualstudio.com/)
+- **Why**: TypeScript / JavaScript support, great extension ecosystem, built-in Git integration
 - **Free**: Yes
-
-### Alternative Option
-
-#### WebStorm
-
-- **Download**: [JetBrains WebStorm](https://www.jetbrains.com/webstorm/)
-- **Why:** Professional IDE with advanced refactoring tools
-- **Paid:** Yes (Free for students)
 
 ## 🔌 Essential VS Code Extensions
 

@@ -4,52 +4,49 @@ This document provides a comprehensive overview of all packages used in the proj
 
 **Table of Contents:**
 
-- [📦 Dependencies](#-dependencies)
-  - [🎯 Production Dependencies](#-production-dependencies)
-  - [🛠️ Development Dependencies](#️-development-dependencies)
-    - [Core Framework](#core-framework)
-    - [UI Components](#ui-components)
-    - [Progressive Web App](#progressive-web-app)
-    - [Third-Party Integrations](#third-party-integrations)
-    - [Utilities](#utilities)
-    - [Type Definitions (Production)](#type-definitions-production)
-    - [Core Development](#core-development)
-    - [Testing](#testing)
-    - [Code Quality](#code-quality)
-    - [Styling](#styling)
-    - [Build & Deployment](#build--deployment)
-    - [Type Definitions (Development)](#type-definitions-development)
+- [📦 Find Outdated Dependencies](#-find-outdated-dependencies)
+- [🎯 Production Dependencies](#-production-dependencies)
+- [🛠️ Development Dependencies](#️-development-dependencies)
+
+## 📦 Find Outdated Dependencies
+
+Find out which dependencies are outdated.
+
+```bash
+bun outdated
+```
+
+![bun - outdated](/readme-images/development/bun/bun-outdated-result.webp)
 
 ## 🎯 Production Dependencies
 
-These packages are required for the application to run in production:
+These packages are essential for the application to run in production and are included in the final bundle:
 
-### Core Framework
+### Core Framework & React
 
-- **[react](https://react.dev/)** - JavaScript library for building user interfaces
-- **[react-dom](https://reactjs.org/)** - React package for working with the DOM
+- **[react](https://react.dev/)** - JavaScript library for building user interfaces with the latest React 19 features
+- **[react-dom](https://react.dev/)** - React package for working with the DOM, enabling React components to render in web browsers
 
-### UI Components
+### Progressive Web App (PWA)
 
-- **[flowbite](https://flowbite.com/)** - Tailwind CSS component library
-- **[react-tooltip](https://github.com/ReactTooltip/react-tooltip)** - React tooltip component
-
-### Progressive Web App
-
-- **[@ducanh2912/next-pwa](https://github.com/ducanh2912/next-pwa)** - Progressive Web App (PWA) support for Next.js applications
+- **[@ducanh2912/next-pwa](https://github.com/ducanh2912/next-pwa)** - Next.js plugin that adds Progressive Web App capabilities including service workers, offline support, and app manifest generation
 
 ### Third-Party Integrations
 
-- **[@next/third-parties](https://github.com/vercel/next.js/tree/canary/packages/next-third-parties)** - Next.js third-party library integration helpers
+- **[@next/third-parties](https://nextjs.org/docs/app/building-your-application/optimizing/third-party-libraries)** - Official Next.js library for optimized third-party script loading (Google Analytics, Google Maps, etc.)
 
-### Utilities
+### UI Components & Interactions
 
-- **[lunarphase-js](https://github.com/jasonsturges/lunarphase-js)** - JavaScript lunar phase calculator
-- **[sharp](https://sharp.pixelplumbing.com/)** - High-performance image processing
+- **[react-tooltip](https://react-tooltip.com/)** - Modern React tooltip component with TypeScript support and customizable styling options
 
-### Type Definitions (Production)
+### Utilities & Tools
 
-- **[ts-jest](https://github.com/kulshekhar/ts-jest)** - TypeScript preprocessor for Jest
+- **[lunarphase-js](https://github.com/jasonsturges/lunarphase-js)** - JavaScript library for calculating lunar phases and moon position data
+- **[sharp](https://sharp.pixelplumbing.com/)** - High-performance image processing library for Node.js, used by Next.js for image optimization
+
+### Testing Support (Production)
+
+- **[ts-jest](https://kulshekhar.github.io/ts-jest/)** - TypeScript preprocessor for Jest testing framework, enabling TypeScript test files
 
 ## 🛠️ Development Dependencies
 

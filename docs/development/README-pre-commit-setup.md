@@ -2,7 +2,7 @@
 
 This document explains the comprehensive pre-commit setup implemented to catch TypeScript errors, linting issues, and other quality problems before code is committed to the repository.
 
-Table of Contents:
+**Table of Contents:**
 
 - [🔧 Setup Overview](#-setup-overview)
 - [🚀 Available Commands](#-available-commands)

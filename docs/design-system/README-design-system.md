@@ -2,6 +2,19 @@
 
 Welcome to the design system documentation for Daniel Kršiak's portfolio website. This guide provides a comprehensive overview of the visual and functional design elements used throughout the site.
 
+**Table of Contents:**
+
+- [🌈 Color Palette](#-color-palette)
+- [🔤 Typography](#-typography)
+- [🎯 Component Patterns](#-component-patterns)
+- [🔄 Interactive States](#-interactive-states)
+- [📱 Responsive Design](#-responsive-design)
+- [🎪 Animations](#-animations)
+- [🌙 Dark Mode](#-dark-mode)
+- [🧩 Design Tokens](#-design-tokens)
+- [📋 Usage Guidelines](#-usage-guidelines)
+- [🔗 Related Files](#-related-files)
+
 ## 🌈 Color Palette
 
 ### Primary Brand Colors
@@ -39,7 +52,7 @@ Welcome to the design system documentation for Daniel Kršiak's portfolio websit
 - **Text**: `text-yellow-800` - Warning text
 - **Focus**: `focus:ring-yellow-300` - Warning focus
 
-#### 🔴 Danger/Error
+#### 🔴 Error
 
 - **Background**: `bg-red-100` - Error backgrounds
 - **Border**: `border-red-300` - Error borders
