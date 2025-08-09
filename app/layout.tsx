@@ -4,6 +4,7 @@ import { FC } from 'react'
 // Layout
 import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
+import SkipNavigationARIA from '@/components/shared/SkipNavigationARIA'
 
 // Apple Touch Icons
 import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
@@ -16,6 +17,10 @@ import { defaultMetaData } from '@/lib/data/metadata/shared/defaultMetaData'
 
 // Root layout props
 import { RootLayoutProps } from '@/lib/utils/typeDefinitions/props/app'
+
+// Constants
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { ARIA_LABELS } from '@/localization/english'
 
 // Importing the Roboto font configuration
 import { roboto } from './fonts'
@@ -48,8 +53,11 @@ const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element =>
         <AppleTouchIcons />
       </head>
       <body className={roboto.className}>
+        <SkipNavigationARIA />
         <Header />
-        <main>{children}</main>
+        <main id={ID.main} aria-label={ARIA_LABELS.mainContent}>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

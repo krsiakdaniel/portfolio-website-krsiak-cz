@@ -361,6 +361,7 @@ export interface ProjectIds {
 // Element IDs
 export interface ElementIds {
   reactTooltip: string
+  main: string
   home: string
   whoIAm: string
   hero: string

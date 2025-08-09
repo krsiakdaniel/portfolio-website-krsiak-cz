@@ -9,6 +9,7 @@ error_msg="Aborting commit. Your commit message is invalid.
 Expected format: type(scope): emoji description
 
 Available types:
+- aria: ♿ Website accessibility
 - build: 🏗️ - Changes that affect the build system or external dependencies
 - chore: 🛠️ - Maintenance tasks that don't modify src or test files
 - cicd: ⚙️ - Changes to CI/CD configuration files and scripts

@@ -13,6 +13,7 @@ import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
 import PageContainer from '@/components/layout/PageContainer'
 
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+import { ARIA_LABELS } from '@/localization/english'
 
 const Header: FC = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
@@ -50,7 +51,11 @@ const Header: FC = (): JSX.Element => {
   }, [isMenuOpen])
 
   return (
-    <header className="sticky top-0 z-30 border-b border-neutral-400 bg-white">
+    <header
+      role="banner"
+      aria-label={ARIA_LABELS.siteHeader}
+      className="sticky top-0 z-30 border-b border-neutral-400 bg-white"
+    >
       <PageContainer marginTop="mt-0">
         <div>
           <div className="flex items-center justify-between py-4">

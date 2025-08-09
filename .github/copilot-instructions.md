@@ -275,6 +275,7 @@ Follow **Conventional Commits** format:
 type(scope): emoji description
 
 Available commit types:
+- aria: ♿ Website accessibility
 - build: 🏗️ - Changes that affect the build system or external dependencies
 - chore: 🛠️ - Maintenance tasks that don't modify src or test files
 - cicd: ⚙️ - Changes to CI/CD configuration files and scripts

@@ -18,9 +18,10 @@ const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile, onClickLink }): JSX.E
     : 'text-neutral-600 hover:text-violet-800'
 
   return (
-    <li>
+    <li role="none">
       <Link
         href={href}
+        role="menuitem"
         className={`${mobileDesktopCSS} ${hoverAndFocusCSS} ${sharedCss} ${activeCSS}`}
         data-testid={isMobile ? `mobile-${dataTestId}` : `desktop-${dataTestId}`}
         id={getMenuLinkID({ isMobile, linkID: id })}
