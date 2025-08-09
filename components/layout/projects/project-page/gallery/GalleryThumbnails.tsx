@@ -43,9 +43,6 @@ const GalleryThumbnails: FC<GalleryThumbnailsProps> = ({
           onClick={handleImageClick(image)}
           role="button"
           aria-label={`${ARIA_LABELS.galleryThumbnail} ${index + 1} of ${images.length}`}
-          aria-describedby={
-            activeImage.id === image.id ? `active-thumbnail-${image.id}` : undefined
-          }
           tabIndex={0}
           onKeyDown={handleOnKeyDown(image)}
           aria-pressed={activeImage.id === image.id}
