@@ -2,7 +2,7 @@
 # Commit message validation for Conventional Commits
 # Format: type(scope): emoji description
 
-commit_regex='^(build|chore|cicd|docs|feature|fix|hotfix|localization|performance|refactor|revert|style|test)\([a-z0-9\-]+\): (🏗️|🛠️|⚙️|📝|✨|🐛|🔥|🇬🇧|🚀|👷|⏪|🎨|🎭|🃏) .{1,}'
+commit_regex='^(aria|build|chore|cicd|docs|feature|fix|hotfix|localization|performance|refactor|revert|style|test)\([a-z0-9\-]+\): (♿|🏗️|🛠️|⚙️|📝|✨|🐛|🔥|🇬🇧|🚀|👷|⏪|🎨|🎭|🃏) .{1,}'
 
 error_msg="Aborting commit. Your commit message is invalid.
 
