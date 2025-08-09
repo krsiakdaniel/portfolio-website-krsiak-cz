@@ -39,9 +39,9 @@ export default defineConfig({
 
   // Retry on CI only
   retries: process.env['CI'] ? CI_RETRIES : 0,
-  
-  // Opt out of parallel tests on CI. On localhost omit workers to use CPU-based default.
-  ...(process.env['CI'] && { workers: CI_WORKERS }),
+
+  // Number of parallel workers (3 in CI, 1 locally)
+  workers: process.env['CI'] ? CI_WORKERS : 1,
 
   //Reporter to use. https://playwright.dev/docs/test-reporters
   reporter: process.env['CI']
