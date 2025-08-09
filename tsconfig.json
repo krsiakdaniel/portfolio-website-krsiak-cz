@@ -2,52 +2,56 @@
   "compilerOptions": {
     // Runtime environment & language features
     // These ensure we have access to DOM APIs and latest JavaScript features
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "target": "esnext",
-    "module": "esnext",
-    "moduleDetection": "force",
+    "lib": ["dom", "dom.iterable", "esnext"], // Specify library files to include in compilation
+    "target": "esnext", // Set ECMAScript target version for emitted JavaScript
+    "module": "esnext", // Specify module code generation method
+    "moduleDetection": "force", // Force TypeScript to detect modules in all files
     "jsx": "preserve", // Required for Next.js
     "allowJs": true, // Allow JavaScript files to be compiled
 
     // Module resolution and bundling settings
     // These configure how TypeScript processes imports and exports
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": false,
-    "noEmit": true,
+    "moduleResolution": "bundler", // Use bundler-style module resolution for modern tools
+    "allowImportingTsExtensions": true, // Allow importing TypeScript files with extensions
+    "verbatimModuleSyntax": false, // Don't preserve import/export syntax exactly as written
+    "noEmit": true, // Don't emit JavaScript files (Next.js handles compilation)
 
     // Type checking and safety features
     // These enforce better code quality and catch common mistakes
-    "strict": true,
-    "skipLibCheck": true,
-    "noFallthroughCasesInSwitch": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "incremental": true,
+    "strict": true, // Enable all strict type checking options
+    "exactOptionalPropertyTypes": true, // Differentiate between undefined and missing properties
+    "noImplicitOverride": true, // Require explicit override keyword for inherited methods
+    "noImplicitReturns": true, // Ensure all code paths return a value
+    "noFallthroughCasesInSwitch": true, // Prevent fallthrough cases in switch statements
+    "noUncheckedIndexedAccess": true, // Add undefined to array/object index access types
+    "skipLibCheck": true, // Skip type checking of declaration files for faster builds
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES modules
+    "resolveJsonModule": true, // Allow importing JSON files as modules
+    "isolatedModules": true, // Ensure each file can be transpiled independently
+    "incremental": true, // Enable incremental compilation for faster rebuilds
 
     // Additional strict checks
     // These help maintain cleaner, more maintainable code
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true, // Report errors on unused local variables
+    "noUnusedParameters": true, // Report errors on unused function parameters
+    "noPropertyAccessFromIndexSignature": true, // Require bracket notation for index signature properties
 
     // Path aliases
     // Enables importing from absolute paths using @ prefix
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"] // Map @/ to root directory for cleaner imports
     },
 
     // Next.js specific configuration
     // Required for proper Next.js TypeScript support
     "plugins": [
       {
-        "name": "next"
+        "name": "next" // Enable Next.js TypeScript plugin for enhanced features
       }
     ]
   },
   // Files to include/exclude in compilation
   // Specifically configured for Next.js TypeScript files
-  "include": ["next-env.d.ts", "types/**/*.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "types/**/*.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"], // Include TypeScript files and type definitions
+  "exclude": ["node_modules"] // Exclude node_modules from compilation
 }
