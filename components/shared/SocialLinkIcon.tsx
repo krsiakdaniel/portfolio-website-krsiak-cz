@@ -8,8 +8,8 @@ import { SocialLinkIconProps } from '@/lib/utils/typeDefinitions/props/shared/so
 const IMAGE_WIDTH_MOBILE = 32
 const IMAGE_HEIGHT_MOBILE = 32
 
-const IMAGE_WIDTH_DESKTOP = 24
-const IMAGE_HEIGHT_DESKTOP = 24
+const IMAGE_WIDTH_DESKTOP = 28
+const IMAGE_HEIGHT_DESKTOP = 28
 
 const SocialLinkIcon: FC<SocialLinkIconProps> = ({
   type,

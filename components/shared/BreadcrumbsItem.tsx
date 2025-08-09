@@ -23,7 +23,7 @@ const BreadcrumbsItem: FC<BreadcrumbsItemProps> = ({
       )}
       <Link
         href={href}
-        className={`rounded-lg px-0 py-2 text-sm font-medium text-neutral-600 select-none ${hoverAndFocusCSS}`}
+        className={`rounded-lg p-2 text-sm font-medium text-neutral-600 select-none ${hoverAndFocusCSS}`}
       >
         <span role="img" aria-label={ariaLabel} className="select-none">
           {icon}
