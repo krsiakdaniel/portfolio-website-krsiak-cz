@@ -7,13 +7,10 @@ import PageContainer from '@/components/layout/PageContainer'
 import DividerWithText from '@/components/shared/DividerWithText'
 import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 
-import { DIVIDER_WITH_TEXT, ARIA_LABELS } from '@/localization/english'
+import { ARIA_LABELS, DIVIDER_WITH_TEXT } from '@/localization/english'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import ScrollToTopButton from './ScrollToTopButton'
-
-const IMAGE_WIDTH = 216
-const IMAGE_HEIGHT = 216
 
 const Footer: FC = (): JSX.Element => {
   return (
@@ -24,7 +21,7 @@ const Footer: FC = (): JSX.Element => {
         <div className="mx-auto mt-20 flex w-full flex-col items-center justify-center pb-16">
           <div>
             <DividerWithText text={DIVIDER_WITH_TEXT.contactMe} />
-            <ScanMyContactQR width={IMAGE_WIDTH} height={IMAGE_HEIGHT} showImageCaption={false} />
+            <ScanMyContactQR showImageCaption={false} />
           </div>
 
           <Status />

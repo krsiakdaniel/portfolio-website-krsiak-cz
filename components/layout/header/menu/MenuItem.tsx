@@ -7,10 +7,10 @@ import { MenuItemProps } from '@/lib/utils/typeDefinitions/props/layout/header/m
 const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile, onClickLink }): JSX.Element => {
   const { id, href, icon, ariaLabel, text, dataTestId, isActive } = linkItem
 
-  const mobileDesktopCSS = isMobile ? 'border-b border-gray-100 py-3' : 'py-2'
+  const mobileDesktopCSS = isMobile ? 'py-3' : 'py-2'
   const hoverAndFocusCSS = 'hover:border-violet-50 hover:bg-violet-50'
   const sharedCss =
-    'text-md block select-none rounded-lg px-4 md:px-1 lg:px-1.5 xl:px-2 font-bold transition-all duration-200 ease-in-out'
+    'text-md block select-none rounded-lg px-4 lg:px-3 xl:px-4 bg-neutral-50 font-bold transition-all duration-200 ease-in-out'
 
   // Active state styling
   const activeCSS = isActive
