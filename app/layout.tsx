@@ -4,7 +4,6 @@ import { FC } from 'react'
 // Layout
 import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
-import SkipNavigationARIA from '@/components/shared/SkipNavigationARIA'
 
 // Apple Touch Icons
 import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
@@ -53,7 +52,6 @@ const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element =>
         <AppleTouchIcons />
       </head>
       <body className={roboto.className}>
-        <SkipNavigationARIA />
         <Header />
         <main id={ID.main} aria-label={ARIA_LABELS.mainContent}>
           {children}
