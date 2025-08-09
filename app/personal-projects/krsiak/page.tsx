@@ -15,6 +15,7 @@ import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
+import { validateProjectData } from '@/lib/utils/helpers/validateProjectData'
 import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
 
 export const metadata = {
@@ -22,6 +23,8 @@ export const metadata = {
 }
 
 const ProjectPersonalKrsiak: FC = (): JSX.Element => {
+  const projectData = validateProjectData(projectsPersonalNext[0])
+
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsPersonal(
@@ -33,7 +36,7 @@ const ProjectPersonalKrsiak: FC = (): JSX.Element => {
       goBackLink={GoBackLinkEnum.Personal}
       sectionID={ID.section.next}
       ariaLabel={TEXT.portfolioWebsite}
-      projectData={projectsPersonalNext[0]}
+      projectData={projectData}
       sections={sections}
       PageNavigation={
         <PageNavigation

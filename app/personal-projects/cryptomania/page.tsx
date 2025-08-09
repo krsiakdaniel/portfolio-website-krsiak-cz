@@ -18,6 +18,7 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
+import { validateProjectData } from '@/lib/utils/helpers/validateProjectData'
 import { AlertTypeEnum, GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
 
 export const metadata = {
@@ -25,6 +26,7 @@ export const metadata = {
 }
 
 const ProjectPersonalCryptomania: FC = (): JSX.Element => {
+  const projectData = validateProjectData(projectsPersonalReact[0])
   const AlertType = AlertTypeEnum.Info
 
   return (
@@ -39,7 +41,7 @@ const ProjectPersonalCryptomania: FC = (): JSX.Element => {
         goBackLink={GoBackLinkEnum.Personal}
         sectionID={ID.section.react}
         ariaLabel={TEXT.cryptoMania}
-        projectData={projectsPersonalReact[0]}
+        projectData={projectData}
         sections={sections}
         showAlert={
           <Alert

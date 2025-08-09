@@ -364,6 +364,7 @@ export interface ElementIds {
   home: string
   whoIAm: string
   hero: string
+  header: string
   skills: string
   skillsMain: string
   resume: string

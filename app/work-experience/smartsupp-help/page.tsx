@@ -15,6 +15,7 @@ import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
+import { validateProjectData } from '@/lib/utils/helpers/validateProjectData'
 import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
 
 export const metadata = {
@@ -22,6 +23,8 @@ export const metadata = {
 }
 
 const ProjectWorkSmartsuppHelp: FC = (): JSX.Element => {
+  const projectData = validateProjectData(projectsWorkWordPress[0])
+
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(
@@ -33,7 +36,7 @@ const ProjectWorkSmartsuppHelp: FC = (): JSX.Element => {
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.wordpress}
       ariaLabel={TEXT.workExperience}
-      projectData={projectsWorkWordPress[0]}
+      projectData={projectData}
       sections={sections}
       PageNavigation={
         <PageNavigation

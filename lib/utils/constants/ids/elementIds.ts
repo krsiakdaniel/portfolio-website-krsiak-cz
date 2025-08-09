@@ -5,6 +5,7 @@ export const ID: ElementIds = {
   home: 'home',
   whoIAm: 'who-i-am',
   hero: 'hero',
+  header: 'header',
   skills: 'skills',
   skillsMain: 'skills-main',
   resume: 'resume',

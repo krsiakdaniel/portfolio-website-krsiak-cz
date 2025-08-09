@@ -18,5 +18,5 @@ export type ErrorPageLayoutProps = {
   error: Error
   imgAlt: string
   note: string
-  pageContainerId?: string
+  pageContainerId: string
 }

@@ -12,6 +12,7 @@ import MenuSocialLinks from '@/components/layout/header/menu/MenuSocialLinks'
 import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
 import PageContainer from '@/components/layout/PageContainer'
 
+import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 
 const Header: FC = (): JSX.Element => {
@@ -51,7 +52,7 @@ const Header: FC = (): JSX.Element => {
 
   return (
     <header className="sticky top-0 z-30 border-b border-neutral-400 bg-white">
-      <PageContainer marginTop="mt-0">
+      <PageContainer id={ID.header} marginTop="mt-0">
         <div>
           <div className="flex items-center justify-between py-4">
             <Logo />
