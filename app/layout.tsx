@@ -17,6 +17,10 @@ import { defaultMetaData } from '@/lib/data/metadata/shared/defaultMetaData'
 // Root layout props
 import { RootLayoutProps } from '@/lib/utils/typeDefinitions/props/app'
 
+// Constants
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { ARIA_LABELS } from '@/localization/english'
+
 // Importing the Roboto font configuration
 import { roboto } from './fonts'
 
@@ -49,7 +53,9 @@ const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element =>
       </head>
       <body className={roboto.className}>
         <Header />
-        <main>{children}</main>
+        <main id={ID.main} aria-label={ARIA_LABELS.mainContent}>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

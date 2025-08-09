@@ -142,6 +142,7 @@ Comprehensive documentation covering all aspects of the project.
 - ✅ [CD - Continuous Deployment](docs/deployment/README-continuous-deployment.md)
 - 📱 [Progressive Web App](docs/progressive-web-app/README-progressive-web-app.md)
 - 🏎️ [Website Performance](docs/website-performance/README-website-performance.md)
+- ♿ [ARIA Accessibility](docs/accessibility/README-ARIA-accessibility.md)
 - 🔒 [Security](docs/security/README-security.md)
 - 🙇‍♂️ [Attribution](docs/attribution/README-attribution.md)
 - 📝 [Contributions](docs/contributions/README-contributions.md)

@@ -2,6 +2,7 @@ import { ElementIds } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const ID: ElementIds = {
   reactTooltip: 'react-tooltip',
+  main: 'main-content',
   home: 'home',
   whoIAm: 'who-i-am',
   hero: 'hero',

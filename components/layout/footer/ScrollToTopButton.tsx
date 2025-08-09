@@ -2,7 +2,7 @@
 
 import { FC, useCallback, useEffect, useState } from 'react'
 
-import { FOOTER } from '@/localization/english'
+import { FOOTER, ARIA_LABELS } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
@@ -44,7 +44,7 @@ const ScrollToTopButton: FC = (): JSX.Element | null => {
       onClick={handleScrollToTop}
       className={BUTTON_STYLES}
       data-testid={DATA_TEST_IDS.footer.scrollToTopButton}
-      aria-label="Scroll to top of page"
+      aria-label={ARIA_LABELS.scrollToTopPage}
       title={FOOTER.scrollToTop}
     >
       <svg

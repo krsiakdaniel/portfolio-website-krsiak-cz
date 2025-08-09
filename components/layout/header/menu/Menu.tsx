@@ -33,6 +33,8 @@ const Menu: FC<MenuProps> = ({ type, ref, onClickLink }): JSX.Element => {
     <nav aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
       <ul
         ref={ref}
+        role="menubar"
+        aria-orientation={isMobile ? 'vertical' : 'horizontal'}
         className={
           isMobile ? 'mt-2 mb-6 flex flex-col gap-1 lg:hidden' : 'hidden gap-2 lg:flex 2xl:gap-2'
         }

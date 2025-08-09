@@ -7,7 +7,7 @@ import PageContainer from '@/components/layout/PageContainer'
 import DividerWithText from '@/components/shared/DividerWithText'
 import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 
-import { DIVIDER_WITH_TEXT } from '@/localization/english'
+import { DIVIDER_WITH_TEXT, ARIA_LABELS } from '@/localization/english'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import ScrollToTopButton from './ScrollToTopButton'
@@ -18,7 +18,7 @@ const IMAGE_HEIGHT = 216
 const Footer: FC = (): JSX.Element => {
   return (
     <PageContainer id={ID.footer}>
-      <footer>
+      <footer role="contentinfo" aria-label={ARIA_LABELS.siteFooter}>
         <DividerWithEmojis />
 
         <div className="mx-auto mt-20 flex w-full flex-col items-center justify-center pb-16">

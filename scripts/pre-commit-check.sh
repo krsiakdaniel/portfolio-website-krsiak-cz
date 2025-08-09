@@ -5,7 +5,7 @@
 
 set -e  # Exit on any error
 
-echo "🔍 Running pre-commit validation..."
+echo "🚧 Running pre-commit validation..."
 
 # Check if we're in a git repository
 if ! git rev-parse --git-dir > /dev/null 2>&1; then
@@ -23,7 +23,7 @@ echo "📝 Staged files:"
 git diff --cached --name-only
 
 echo ""
-echo "🔧 Running TypeScript type checking..."
+echo "📘 Running TypeScript type checking..."
 bun tsc --noEmit
 
 echo ""
@@ -35,12 +35,12 @@ echo "💅 Running Prettier..."
 bun prettier:write
 
 echo ""
-echo "🧪 Running Jest unit tests..."
+echo "🃏 Running Jest unit tests..."
 bun test:jest
 
 echo ""
 echo "✅ All pre-commit checks passed!"
-echo "💡 Your changes are ready to commit."
+echo "ℹ️ Your changes are ready to commit."
 echo ""
 echo "Next steps:"
 echo "  git commit -m 'your commit message'"

@@ -23,7 +23,10 @@ const MenuMobileToggle: FC<MenuMobileToggleProps> = ({
       onClick={handleMenuMobileToggle}
       id={ID.menu.toggle}
       data-testid={DATA_TEST_IDS.menu.toggle.component}
-      aria-label={ARIA_LABELS.toggleMenu}
+      aria-label={isMenuOpen ? ARIA_LABELS.menuExpanded : ARIA_LABELS.menuCollapsed}
+      aria-expanded={isMenuOpen}
+      aria-controls={ID.menu.mobile}
+      aria-haspopup="menu"
       className="ml-6 rounded-lg bg-violet-50 p-2 transition-all duration-200 ease-in-out hover:bg-violet-100 focus:bg-violet-100 focus:ring-4 focus:ring-violet-400 focus:outline-hidden lg:hidden"
     >
       <div className="transition-all duration-200 ease-in-out">

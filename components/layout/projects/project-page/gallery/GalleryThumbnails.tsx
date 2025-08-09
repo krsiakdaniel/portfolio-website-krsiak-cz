@@ -36,13 +36,13 @@ const GalleryThumbnails: FC<GalleryThumbnailsProps> = ({
       role="list"
       aria-label={ARIA_LABELS.galleryThumbnails}
     >
-      {images.map((image) => (
+      {images.map((image, index) => (
         <div
           data-testid={`gallery-image-${image.id}`}
           key={image.id}
           onClick={handleImageClick(image)}
           role="button"
-          aria-label={ARIA_LABELS.galleryThumbnail}
+          aria-label={`${ARIA_LABELS.galleryThumbnail} ${index + 1} of ${images.length}`}
           tabIndex={0}
           onKeyDown={handleOnKeyDown(image)}
           aria-pressed={activeImage.id === image.id}
