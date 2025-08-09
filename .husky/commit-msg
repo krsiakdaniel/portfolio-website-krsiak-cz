@@ -1,39 +1,51 @@
 #!/bin/sh
-# Commit message validation for Conventional Commits
-# Format: type(scope): emoji description
+# Format: type(scope): EMOJI description
 
 commit_regex='^(aria|build|chore|cicd|docs|feature|fix|hotfix|localization|performance|refactor|revert|style|test)\([a-z0-9\-]+\): (♿|🏗️|🛠️|⚙️|📝|✨|🐛|🔥|🇬🇧|🚀|👷|⏪|🎨|🎭|🃏) .{1,}'
 
-error_msg="Aborting commit. Your commit message is invalid.
+error_msg="❌ Aborting because 'commit message' is NOT VALID!
 
-Expected format: type(scope): emoji description
+ℹ️ Expected 'commit message' format is 'type(scope): EMOJI description'
 
-Available types:
-- aria: ♿ Website accessibility
-- build: 🏗️ - Changes that affect the build system or external dependencies
-- chore: 🛠️ - Maintenance tasks that don't modify src or test files
-- cicd: ⚙️ - Changes to CI/CD configuration files and scripts
-- docs: 📝 - Documentation only changes
-- feature: ✨ - New features
-- fix: 🐛 - Bug fixes
-- hotfix: 🔥 - Critical fixes that need immediate attention
-- localization: 🇬🇧 - Internationalization and localization changes
-- performance: 🚀 - Performance improvements
-- refactor: 👷 - Code changes that neither fix bugs nor add features
-- revert: ⏪ - Reverts a previous commit
-- style: 🎨 - Code style changes (formatting, missing semicolons, etc.)
+Available formats:
+
+- aria(): ♿ Website accessibility
+- build(): 🏗️ - Changes that affect the build system or external dependencies
+- chore(): 🛠️ - Maintenance tasks that don't modify src or test files
+- cicd(): ⚙️ - Changes to CI/CD configuration files and scripts
+- docs(): 📝 - Documentation only changes
+- feature(): ✨ - New features
+- fix(): 🐛 - Bug fixes
+- hotfix(): 🔥 - Critical fixes that need immediate attention
+- localization(): 🇬🇧 - Internationalization and localization changes
+- performance(): 🚀 - Performance improvements
+- refactor(): 👷 - Code changes that neither fix bugs nor add features
+- revert(): ⏪ - Reverts a previous commit
+- style(): 🎨 - Code style changes (formatting, missing semicolons, etc.)
 - test(e2e): 🎭 - End-to-end test changes
 - test(jest): 🃏 - Unit test changes
 
 Examples:
-- feature(header): ✨ Add responsive navigation menu
-- fix(button): 🐛 Fix hover state styling
-- docs(readme): 📝 Update installation instructions
-- test(jest): 🃏 Add user authentication tests"
+
+- aria(navigation): ♿ Add ARIA labels to main navigation menu
+- build(dependencies): 🏗️ Update Next.js to version 15.2
+- chore(cleanup): 🛠️ Remove unused dependencies from package.json
+- cicd(github): ⚙️ Add automated deployment workflow
+- docs(readme): 📝 Update installation instructions for Bun
+- feature(portfolio): ✨ Add new project showcase component
+- fix(responsive): 🐛 Fix mobile navigation menu collapse issue
+- hotfix(security): 🔥 Patch XSS vulnerability in contact form
+- localization(czech): 🇬🇧 Add Czech language support for portfolio
+- performance(images): 🚀 Optimize WebP image loading with lazy loading
+- refactor(components): 👷 Extract reusable Button component
+- revert(navigation): ⏪ Revert navigation changes that broke mobile layout
+- style(prettier): 🎨 Format all TypeScript files with Prettier
+- test(e2e): 🎭 Add Playwright tests for portfolio navigation
+- test(jest): 🃏 Add unit tests for utility functions"
 
 if ! grep -qE "$commit_regex" "$1"; then
   echo "$error_msg" >&2
   exit 1
 fi
 
-echo "✅ Commit message format is valid!"
+echo "✅ Commit message format is VALID."

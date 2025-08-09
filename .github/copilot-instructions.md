@@ -272,9 +272,10 @@ Examples:
 Follow **Conventional Commits** format:
 
 ```txt
-type(scope): emoji description
+Expected format: type(scope): EMOJI description
 
-Available commit types:
+Available commit message types:
+
 - aria: ♿ Website accessibility
 - build: 🏗️ - Changes that affect the build system or external dependencies
 - chore: 🛠️ - Maintenance tasks that don't modify src or test files
@@ -292,12 +293,22 @@ Available commit types:
 - test(jest): 🃏 - Unit test changes
 
 Examples:
-- feature(header): ✨ Add responsive navigation menu
-- fix(button): 🐛 Fix hover state styling
-- docs(readme): 📝 Update installation instructions
-- test(jest): 🃏 Add user authentication tests
-- performance(images): 🚀 Optimize image loading with lazy loading
-- style(components): 🎨 Format code with Prettier
+
+- aria(navigation): ♿ Add ARIA labels to main navigation menu
+- build(dependencies): 🏗️ Update Next.js to version 15.2
+- chore(cleanup): 🛠️ Remove unused dependencies from package.json
+- cicd(github): ⚙️ Add automated deployment workflow
+- docs(readme): 📝 Update installation instructions for Bun
+- feature(portfolio): ✨ Add new project showcase component
+- fix(responsive): 🐛 Fix mobile navigation menu collapse issue
+- hotfix(security): 🔥 Patch XSS vulnerability in contact form
+- localization(czech): 🇬🇧 Add Czech language support for portfolio
+- performance(images): 🚀 Optimize WebP image loading with lazy loading
+- refactor(components): 👷 Extract reusable Button component
+- revert(navigation): ⏪ Revert navigation changes that broke mobile layout
+- style(prettier): 🎨 Format all TypeScript files with Prettier
+- test(e2e): 🎭 Add Playwright tests for portfolio navigation
+- test(jest): 🃏 Add unit tests for utility functions"
 ```
 
 ## Performance Considerations
