@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
@@ -11,9 +9,9 @@ import { CallToActionResumeProps } from '@/lib/utils/typeDefinitions/props/share
 
 import starAnimated from '@/public/images/webp/emoji-animated/128x128/star-animated-128x128.webp'
 
-const CallToActionResume: FC<CallToActionResumeProps> = ({
+const CallToActionResume = ({
   dataTestId = DATA_TEST_IDS.callToAction.linkResume,
-}): JSX.Element => {
+}: CallToActionResumeProps) => {
   return (
     <CallToAction
       highlight={CALL_TO_ACTION.resume.highlight}

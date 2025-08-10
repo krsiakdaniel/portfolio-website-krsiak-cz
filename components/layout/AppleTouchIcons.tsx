@@ -1,8 +1,6 @@
-import { FC } from 'react'
-
 import { appleTouchIconSizes } from '@/lib/data/metadata/shared/appleTouchIconSizes'
 
-const AppleTouchIcons: FC = (): JSX.Element => {
+const AppleTouchIcons = () => {
   return (
     <>
       {(appleTouchIconSizes ?? []).map((size) => {

@@ -1,6 +1,4 @@
-import { FC } from 'react'
-
-const IconExternalLink: FC = (): JSX.Element => {
+const IconExternalLink = () => {
   return (
     <svg
       stroke="currentColor"

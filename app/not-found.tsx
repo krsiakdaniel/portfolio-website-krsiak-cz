@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ErrorPageContent from '@/components/layout/errors/ErrorPageContent'
 import PageContainer from '@/components/layout/PageContainer'
 
@@ -10,7 +8,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import img404 from '@/public/images/webp/errors/404.webp'
 
-const NotFoundPage: FC = (): JSX.Element => {
+const NotFoundPage = () => {
   return (
     <PageContainer id={ID.error.err404}>
       <ErrorPageContent

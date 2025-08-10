@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ImageComponent from '@/components/shared/ImageComponent'
 import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
 
@@ -14,11 +12,11 @@ import contactQR from '@/public/images/svg/vcard-contact/krsiak-daniel-qr-code-v
 const IMAGE_WIDTH = 296
 const IMAGE_HEIGHT = 296
 
-const ScanMyContactQR: FC<ScanMyContactQRProps> = ({
+const ScanMyContactQR = ({
   width = IMAGE_WIDTH,
   height = IMAGE_HEIGHT,
   showImageCaption = false,
-}): JSX.Element => {
+}: ScanMyContactQRProps) => {
   return (
     <div className="flex flex-col items-center">
       <ImageComponent

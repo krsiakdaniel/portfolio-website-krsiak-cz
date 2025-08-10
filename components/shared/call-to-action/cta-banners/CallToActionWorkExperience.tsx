@@ -1,7 +1,5 @@
 'use client'
 
-import { FC } from 'react'
-
 import { useResponsiveText } from '@/lib/hooks/useResponsiveText'
 
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
@@ -11,7 +9,7 @@ import { CALL_TO_ACTION, ICON_EMOJI, TEXT } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-const CallToActionWorkExperience: FC = (): JSX.Element => {
+const CallToActionWorkExperience = () => {
   const text = useResponsiveText({
     mobileText: CALL_TO_ACTION.workExperience.highlightShort,
     desktopText: CALL_TO_ACTION.workExperience.highlight,

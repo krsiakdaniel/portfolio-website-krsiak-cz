@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ExpertiseSection from '@/components/pages/home/expertise/ExpertiseSection'
 import DividerWithText from '@/components/shared/DividerWithText'
 
@@ -9,7 +7,7 @@ import { committedMindsetItems } from '@/lib/data/pages/home/expertise/committed
 import { problemSolvingItems } from '@/lib/data/pages/home/expertise/problemSolving'
 import { skillsForCompanyItems } from '@/lib/data/pages/home/expertise/skillsForCompany'
 
-const MyExpertise: FC = (): JSX.Element => {
+const MyExpertise = () => {
   return (
     <div className="mt-20">
       <DividerWithText text={DIVIDER_WITH_TEXT.myExpertise} />

@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import IconArrow from '@/components/icons/IconArrow'
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
@@ -10,12 +8,7 @@ import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 import { LinkButtonProps } from '@/lib/utils/typeDefinitions/props/shared/link-button'
 
-const LinkButton: FC<LinkButtonProps> = ({
-  href,
-  linkText,
-  isLinkExternal = false,
-  dataTestId,
-}): JSX.Element => {
+const LinkButton = ({ href, linkText, isLinkExternal = false, dataTestId }: LinkButtonProps) => {
   const hoverAndFocusCSS =
     'hover:bg-violet-800 focus:bg-violet-800 focus:outline-hidden focus:ring-4 focus:ring-violet-400'
 

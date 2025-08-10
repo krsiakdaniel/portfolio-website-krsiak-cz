@@ -1,10 +1,8 @@
-import { FC } from 'react'
-
 import { ExternalLinkProps } from '@/lib/utils/typeDefinitions/props/shared/external-link'
 
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
-const ExternalLink: FC<ExternalLinkProps> = ({ href, text, title, dataTestId = '' }) => {
+const ExternalLink = ({ href, text, title, dataTestId = '' }: ExternalLinkProps) => {
   return (
     <span className="leading-tight">
       <a

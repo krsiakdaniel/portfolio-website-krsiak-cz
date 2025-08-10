@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import HeadingSection from '@/components/shared/HeadingSection'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
@@ -9,7 +7,7 @@ import { RESUME, SHARED, TEXT } from '@/localization/english'
 
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 
-const ResumeContact: FC = (): JSX.Element => {
+const ResumeContact = () => {
   const isOpenToWork = IS_OPEN_TO_WORK
   const contactMessage = isOpenToWork ? TEXT.openToWork : TEXT.openToNetworking
 

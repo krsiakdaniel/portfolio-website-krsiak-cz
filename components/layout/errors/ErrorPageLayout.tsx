@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react'
+import { useEffect } from 'react'
 
 import ErrorPageContent from '@/components/layout/errors/ErrorPageContent'
 import PageContainer from '@/components/layout/PageContainer'
@@ -13,13 +13,13 @@ const reset = (): void => {
   window.location.reload()
 }
 
-const ErrorPageLayout: FC<ErrorPageLayoutProps> = ({
+const ErrorPageLayout = ({
   error,
   pageContainerId,
   imgAlt,
   description,
   note,
-}): JSX.Element => {
+}: ErrorPageLayoutProps) => {
   useEffect(() => {
     // Log the error to an error reporting service
     console.error('ERROR:', error.name, error.message, error.stack)

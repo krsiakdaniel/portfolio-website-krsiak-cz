@@ -1,19 +1,17 @@
-import { FC } from 'react'
-
 import Heading2 from '@/components/shared/Heading2'
 import Heading3 from '@/components/shared/Heading3'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { ProjectDetailsProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
-const ProjectDetails: FC<ProjectDetailsProps> = ({
+const ProjectDetails = ({
   icon = '',
   ariaLabel = '',
   title,
   company,
   role,
   description,
-}): JSX.Element => {
+}: ProjectDetailsProps) => {
   return (
     <div className="sm:max-w-[600px]">
       <Heading2 textColor="text-neutral-900">

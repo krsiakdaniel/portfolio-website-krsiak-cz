@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import DefaultNoLinkNavigation from '@/components/layout/page-navigation/DefaultNoLinkNavigation'
 import PageNavigationLink from '@/components/layout/page-navigation/PageNavigationLink'
 
@@ -11,7 +9,7 @@ import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { PageNavigationProps } from '@/lib/utils/typeDefinitions/props/layout/page-navigation'
 
-const PageNavigation: FC<PageNavigationProps> = ({
+const PageNavigation = ({
   linkPrevious,
   iconPrevious = ICON_EMOJI.ghost,
   namePrevious,
@@ -20,7 +18,7 @@ const PageNavigation: FC<PageNavigationProps> = ({
   iconNext = ICON_EMOJI.ghost,
   nameNext,
   dataTestIdNext,
-}): JSX.Element => {
+}: PageNavigationProps) => {
   const hasPreviousLink = linkPrevious && namePrevious
   const hasNextLink = linkNext && nameNext
 

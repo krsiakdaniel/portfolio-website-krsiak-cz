@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import SocialLinkIcon from '@/components/shared/SocialLinkIcon'
 
 import { TEXT } from '@/localization/english'
@@ -14,7 +12,7 @@ import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import iconGitHub from '@/public/icons/svg/social/github.svg'
 import iconLinkedIn from '@/public/icons/svg/social/linkedin.svg'
 
-const MenuSocialLinks: FC<MenuSocialLinksProps> = ({ type }): JSX.Element => {
+const MenuSocialLinks = ({ type }: MenuSocialLinksProps) => {
   const isMobile = type === DeviceTypeEnum.Mobile
 
   const dataTestIdGitHub = isMobile

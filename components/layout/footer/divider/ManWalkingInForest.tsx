@@ -1,12 +1,12 @@
 'use client'
 
-import { FC, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
 
 import { updateIconsManWalkingInForest } from '@/lib/utils/helpers/updateIconsManWalkingInForest'
 
-const ManWalkingInForest: FC = (): JSX.Element => {
+const ManWalkingInForest = () => {
   const cssAnimationClass = 'animate-man-walk'
 
   const [forestIcon, setForestIcon] = useState<string>(ICON_EMOJI.nature.forest) // Initial forest icon

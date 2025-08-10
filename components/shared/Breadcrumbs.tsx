@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import BreadcrumbsItem from '@/components/shared/BreadcrumbsItem'
 
 import { ICON_EMOJI, TEXT } from '@/localization/english'
@@ -12,7 +10,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { BreadCrumbsProps } from '@/lib/utils/typeDefinitions/props/shared/breadcrumbs'
 
-const BreadCrumbs: FC<BreadCrumbsProps> = ({
+const BreadCrumbs = ({
   level1Url,
   level1Icon = '',
   level1AriaLabel = '',
@@ -21,7 +19,7 @@ const BreadCrumbs: FC<BreadCrumbsProps> = ({
   level2Icon = '',
   level2AriaLabel = '',
   level2Text,
-}): JSX.Element => {
+}: BreadCrumbsProps) => {
   return (
     <nav aria-label={ARIA_LABELS.breadcrumbs} data-testid={DATA_TEST_IDS.breadcrumbs}>
       <ol className="inline-flex flex-row flex-wrap items-start">

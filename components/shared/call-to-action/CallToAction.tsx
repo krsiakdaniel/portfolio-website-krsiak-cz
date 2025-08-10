@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import CallToActionBubbles from '@/components/shared/call-to-action/CallToActionBubbles'
 import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIcon'
 import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTexts'
@@ -10,7 +8,7 @@ import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { CallToActionProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
-const CallToAction: FC<CallToActionProps> = ({
+const CallToAction = ({
   highlight,
   heading,
   textMobileAndDesktop,
@@ -21,7 +19,7 @@ const CallToAction: FC<CallToActionProps> = ({
   dataTestId,
   icon,
   hasPhoto = false,
-}): JSX.Element => {
+}: CallToActionProps) => {
   return (
     <div className="group relative mt-20">
       <CallToActionBubbles />

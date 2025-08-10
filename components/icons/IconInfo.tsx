@@ -1,6 +1,4 @@
-import { FC } from 'react'
-
-const IconInfo: FC = (): JSX.Element => {
+const IconInfo = () => {
   return (
     <svg
       aria-hidden="true"

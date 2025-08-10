@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import PageContainer from '@/components/layout/PageContainer'
 import Gallery from '@/components/layout/projects/project-page/gallery/Gallery'
 import HeaderSection from '@/components/layout/projects/project-page/HeaderSection'
@@ -10,7 +8,7 @@ import CallToActionResume from '@/components/shared/call-to-action/cta-banners/C
 
 import { ProjectPageLayoutWrapperProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page-layout'
 
-const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
+const ProjectPageLayoutWrapper = ({
   goBackLink,
   sectionID,
   breadCrumbs,
@@ -19,7 +17,7 @@ const ProjectPageLayoutWrapper: FC<ProjectPageLayoutWrapperProps> = ({
   sections,
   showAlert,
   PageNavigation,
-}): JSX.Element => {
+}: ProjectPageLayoutWrapperProps) => {
   const { level1Url, level1Icon, level1Text, level2Url, level2Icon, level2Text } = breadCrumbs
 
   const {

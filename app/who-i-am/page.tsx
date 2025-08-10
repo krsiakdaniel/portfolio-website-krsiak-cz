@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import SouthKorea from '@/components/pages/who-i-am/SouthKorea'
@@ -23,7 +21,7 @@ export const metadata = {
   ...metaDataWhoIam,
 }
 
-const WhoIAm: FC = (): JSX.Element => {
+const WhoIAm = () => {
   return (
     <PageContainer id={ID.whoIAm}>
       <BreadCrumbs

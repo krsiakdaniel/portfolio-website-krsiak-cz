@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ImageComponent from '@/components/shared/ImageComponent'
 import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
 
@@ -22,7 +20,7 @@ const IMAGE_HEIGHT_SM = 216
 const IMAGE_WIDTH_LG = 296
 const IMAGE_HEIGHT_LG = 296
 
-const Photo: FC<PhotoProps> = ({ isPhotoSmall, isOpenToWork, showCaption = true }): JSX.Element => {
+const Photo = ({ isPhotoSmall, isOpenToWork, showCaption = true }: PhotoProps) => {
   return (
     <div className="flex flex-col">
       <div className="relative rounded-full bg-black">

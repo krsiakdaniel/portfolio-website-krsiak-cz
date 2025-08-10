@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ManWalkingInForest from '@/components/layout/footer/divider/ManWalkingInForest'
 import TheMoon from '@/components/layout/footer/divider/TheMoon'
 import TheSun from '@/components/layout/footer/divider/TheSun'
@@ -31,7 +29,7 @@ const sunRiseToNoon = (
   <div className={`bg-linear-to-l from-red-500 via-yellow-400 to-sky-300 ${sharedCSS}`} />
 )
 
-const DividerWithEmojis: FC = (): JSX.Element => {
+const DividerWithEmojis = () => {
   return (
     <div className="flex w-full items-center justify-between">
       <TheMoon />

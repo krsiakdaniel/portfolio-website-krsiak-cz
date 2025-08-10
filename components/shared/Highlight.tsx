@@ -1,8 +1,6 @@
-import { FC } from 'react'
-
 import { HighlightProps } from '@/lib/utils/typeDefinitions/props/shared/highlight'
 
-const Highlight: FC<HighlightProps> = ({ text, customCss = 'text-violet-600' }): JSX.Element => {
+const Highlight = ({ text, customCss = 'text-violet-600' }: HighlightProps) => {
   return <span className={`font-bold ${customCss}`}>{text}</span>
 }
 

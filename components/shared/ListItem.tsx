@@ -1,10 +1,8 @@
-import { FC } from 'react'
-
 import IconCheck from '@/components/icons/IconCheck'
 
 import { ListItemProps } from '@/lib/utils/typeDefinitions/props/shared/list'
 
-const ListItem: FC<ListItemProps> = ({ children, showIcon = true }): JSX.Element => {
+const ListItem = ({ children, showIcon = true }: ListItemProps) => {
   return (
     <li className="flex-start flex">
       {showIcon && (

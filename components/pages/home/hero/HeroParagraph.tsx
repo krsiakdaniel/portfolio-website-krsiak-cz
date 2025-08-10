@@ -1,12 +1,10 @@
-import { FC } from 'react'
-
 import Paragraph from '@/components/shared/Paragraph'
 
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-const HeroParagraph: FC = (): JSX.Element => {
+const HeroParagraph = () => {
   return (
     <Paragraph
       dataTestId={DATA_TEST_IDS.hero.paragraph}

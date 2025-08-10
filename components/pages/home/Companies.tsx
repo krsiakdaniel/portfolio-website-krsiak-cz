@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import DividerWithText from '@/components/shared/DividerWithText'
 import Heading2 from '@/components/shared/Heading2'
 import ImageComponent from '@/components/shared/ImageComponent'
@@ -22,7 +20,7 @@ const WIDTH_BATA = 200
 const WIDTH_KOMERCNI_BANKA = 130
 const WIDTH_GROUPON = 200
 
-const Companies: FC = (): JSX.Element => {
+const Companies = () => {
   const logosGrid =
     'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-16 justify-items-center'
   const imgWrapper = 'flex items-center justify-center'

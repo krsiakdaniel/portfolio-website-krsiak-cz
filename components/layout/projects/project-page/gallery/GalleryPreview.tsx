@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ARIA_LABELS } from '@/localization/english'
@@ -8,7 +6,7 @@ import { GALLERY_PREVIEW_4_3 } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { GalleryPreviewProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
-const GalleryPreview: FC<GalleryPreviewProps> = ({ activeImage }): JSX.Element => {
+const GalleryPreview = ({ activeImage }: GalleryPreviewProps) => {
   return (
     <div className="overflow-hidden">
       <div

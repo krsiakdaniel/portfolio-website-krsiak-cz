@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, useState } from 'react'
+import { useState } from 'react'
 
 import GalleryPreview from '@/components/layout/projects/project-page/gallery/GalleryPreview'
 import GalleryThumbnails from '@/components/layout/projects/project-page/gallery/GalleryThumbnails'
@@ -14,7 +14,7 @@ import {
 } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 import { ARIA_LABELS, GALLERY } from '@/localization/english'
 
-const Gallery: FC<GalleryProps> = ({ images = [] }): JSX.Element => {
+const Gallery = ({ images = [] }: GalleryProps) => {
   const [activeImage, setActiveImage] = useState<GalleryImageProps>(images[0])
 
   return (

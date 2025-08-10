@@ -1,11 +1,9 @@
-import { FC } from 'react'
-
 import { TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
 
-const HeroSubHeading: FC = (): JSX.Element => {
+const HeroSubHeading = () => {
   const textTypeScriptAndNext = `${TEXT.typeScript} &\u00A0${TEXT.next}`
 
   return (

@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import Copyright from '@/components/layout/footer/Copyright'
 import DividerWithEmojis from '@/components/layout/footer/divider/DividerWithEmojis'
 import Status from '@/components/layout/footer/Status'
@@ -12,7 +10,7 @@ import { ARIA_LABELS, DIVIDER_WITH_TEXT } from '@/localization/english'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import ScrollToTopButton from './ScrollToTopButton'
 
-const Footer: FC = (): JSX.Element => {
+const Footer = () => {
   return (
     <PageContainer id={ID.footer}>
       <footer role="contentinfo" aria-label={ARIA_LABELS.siteFooter}>

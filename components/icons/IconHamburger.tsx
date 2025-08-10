@@ -1,6 +1,4 @@
-import { FC } from 'react'
-
-const IconHamburger: FC = (): JSX.Element => {
+const IconHamburger = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
 
@@ -9,7 +9,7 @@ import { updateLunarPhase } from '@/lib/utils/helpers/updateLunarPhase'
 // Define the interval duration in milliseconds (1 hour)
 const HOUR_IN_MILLISECONDS = 60 * 60 * 1000
 
-const TheMoon: FC = (): JSX.Element => {
+const TheMoon = () => {
   const [lunarPhaseEmoji, setLunarPhaseEmoji] = useState<string>(ICON_EMOJI.moon.newMoon)
 
   useEffect(() => {

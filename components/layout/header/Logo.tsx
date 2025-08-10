@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { FC } from 'react'
 
 import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
@@ -16,7 +15,7 @@ import logo from '@/public/icons/webp/logo.webp'
 const IMAGE_WIDTH = 32
 const IMAGE_HEIGHT = 32
 
-const Logo: FC = (): JSX.Element => {
+const Logo = () => {
   return (
     <>
       <Link

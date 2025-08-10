@@ -1,10 +1,8 @@
-import { FC } from 'react'
-
 import ProjectResponsibilitySection from '@/components/layout/projects/project-page/ProjectResponsibilitySection'
 
 import { ProjectResponsibilityProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
-const ProjectResponsibility: FC<ProjectResponsibilityProps> = ({ sections = [] }): JSX.Element => {
+const ProjectResponsibility = ({ sections = [] }: ProjectResponsibilityProps) => {
   return (
     <>
       {sections.map((section) => (

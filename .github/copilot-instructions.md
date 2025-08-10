@@ -122,12 +122,12 @@ import styles from './Component.module.css'
 ```typescript
 import React from 'react'
 
-interface ComponentProps {
+type ComponentProps = {
   title: string
   isVisible?: boolean
 }
 
-export const MyComponent: React.FC<ComponentProps> = ({ title, isVisible = true }) => {
+export const MyComponent = ({ title, isVisible = true }: ComponentProps) => {
   return (
     <div className="container mx-auto">
       <h1 className="text-2xl font-bold">{title}</h1>

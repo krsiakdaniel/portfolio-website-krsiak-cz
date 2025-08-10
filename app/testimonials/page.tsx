@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import TestimonialsIntroduction from '@/components/pages/testimonials/TestimonialsIntroduction'
@@ -24,7 +22,7 @@ export const metadata = {
   ...metaDataTestimonials,
 }
 
-const Testimonials: FC = (): JSX.Element => {
+const Testimonials = () => {
   return (
     <PageContainer id={ID.testimonials}>
       <BreadCrumbs

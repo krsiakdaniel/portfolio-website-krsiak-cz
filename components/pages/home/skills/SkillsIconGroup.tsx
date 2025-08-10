@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
@@ -8,7 +6,7 @@ import { SkillsIconGroupProps } from '@/lib/utils/typeDefinitions/props/pages/ho
 const IMAGE_WIDTH = 44
 const IMAGE_HEIGHT = 44
 
-const SkillsIconGroup: FC<SkillsIconGroupProps> = ({ icons = [], customCss = '' }): JSX.Element => {
+const SkillsIconGroup = ({ icons = [], customCss = '' }: SkillsIconGroupProps) => {
   return (
     <div className={`flex justify-center space-x-2 ${customCss}`}>
       {icons.map((item) => (

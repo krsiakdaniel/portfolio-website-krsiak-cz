@@ -1,9 +1,7 @@
 'use client'
 
-import { FC } from 'react'
-
-import { ARIA_LABELS } from '@/localization/english'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { ARIA_LABELS } from '@/localization/english'
 
 /**
  * A skip navigation component that provides accessibility shortcuts for keyboard users.
@@ -24,7 +22,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
  * <SkipNavigationARIA />
  * ```
  *
- * @returns {JSX.Element} A div containing skip navigation links
+ * @returns DIV containing skip navigation links
  *
  * @accessibility
  * - Provides keyboard shortcuts to main content and navigation
@@ -34,7 +32,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
  *
  * @see https://www.w3.org/WAI/WCAG21/Techniques/general/G1.html
  */
-const SkipNavigationARIA: FC = (): JSX.Element => {
+const SkipNavigationARIA = () => {
   return (
     <div className="sr-only focus-within:not-sr-only">
       <a

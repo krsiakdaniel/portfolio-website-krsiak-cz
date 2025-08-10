@@ -1,12 +1,10 @@
-import { FC } from 'react'
-
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
 import { COMMON_VALUES, INTRODUCTION, SHARED } from '@/localization/english'
 
-const WorkExperienceIntroduction: FC = (): JSX.Element => {
+const WorkExperienceIntroduction = () => {
   return (
     <>
       <Paragraph>

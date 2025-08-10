@@ -1,6 +1,4 @@
-import { FC } from 'react'
-
-const IconCaretRight: FC = (): JSX.Element => {
+const IconCaretRight = () => {
   return (
     <svg
       className="block h-2 w-2 text-violet-600"

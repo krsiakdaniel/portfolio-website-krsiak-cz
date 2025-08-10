@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { FC } from 'react'
 
 import IconArrow from '@/components/icons/IconArrow'
 
@@ -10,7 +9,7 @@ import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { GoBackLinkProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
-const GoBackLink: FC<GoBackLinkProps> = ({ goBackLink, sectionID }): JSX.Element => {
+const GoBackLink = ({ goBackLink, sectionID }: GoBackLinkProps) => {
   const goBackUrlWithID = getGoBackLinkID(goBackLink, sectionID)
 
   return (

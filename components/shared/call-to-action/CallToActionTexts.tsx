@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import Heading2 from '@/components/shared/Heading2'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
@@ -8,13 +6,13 @@ import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIco
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { CallToActionTextsProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
-const CallToActionTexts: FC<CallToActionTextsProps> = ({
+const CallToActionTexts = ({
   icon,
   highlight,
   heading,
   textMobileAndDesktop,
   textDesktop,
-}): JSX.Element => {
+}: CallToActionTextsProps) => {
   return (
     <>
       <div className="mb-2 flex items-end space-x-2 uppercase md:space-x-0">

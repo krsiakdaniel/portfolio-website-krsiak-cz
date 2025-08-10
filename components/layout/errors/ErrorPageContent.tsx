@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { FC } from 'react'
 
 import Heading1 from '@/components/shared/Heading1'
 import Heading2 from '@/components/shared/Heading2'
@@ -13,7 +12,7 @@ import { ErrorPageContentProps } from '@/lib/utils/typeDefinitions/props/layout/
 const IMAGE_WIDTH = 400
 const IMAGE_HEIGHT = 417
 
-const ErrorPageContent: FC<ErrorPageContentProps> = ({
+const ErrorPageContent = ({
   imgSrc,
   imgAlt,
   heading,
@@ -22,7 +21,7 @@ const ErrorPageContent: FC<ErrorPageContentProps> = ({
   buttonText,
   buttonLink,
   onButtonClick,
-}): JSX.Element => {
+}: ErrorPageContentProps) => {
   const sharedCss =
     'mt-8 rounded-lg bg-violet-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-violet-800 focus:bg-violet-800 focus:outline-hidden focus:ring-4 focus:ring-violet-400'
 

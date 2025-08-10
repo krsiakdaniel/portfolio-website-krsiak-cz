@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
 import { socialLinkTypeClasses } from '@/lib/data/shared/socialLinkTypeClasses'
@@ -9,13 +7,13 @@ import { TEXT } from '@/localization/english'
 import { AlertTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { SocialLinkProps } from '@/lib/utils/typeDefinitions/props/shared/social-link'
 
-const SocialLink: FC<SocialLinkProps> = ({
+const SocialLink = ({
   href,
   text,
   type = AlertTypeEnum.Info,
   dataTestId,
   customCss = '',
-}): JSX.Element => {
+}: SocialLinkProps) => {
   // Get CSS classes for the provided 'link type'
   const { bgColor, hoverColor, focusRingColor } = socialLinkTypeClasses[type]
 

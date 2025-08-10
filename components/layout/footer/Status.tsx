@@ -1,12 +1,11 @@
 import Link from 'next/link'
-import { FC } from 'react'
 
 import { STATUS } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-const Status: FC = (): JSX.Element => {
+const Status = () => {
   return (
     <div className="mt-8">
       <Link

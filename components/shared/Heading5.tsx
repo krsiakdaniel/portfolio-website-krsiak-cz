@@ -1,17 +1,15 @@
-import { FC } from 'react'
-
 import { getAttributes } from '@/lib/utils/helpers/getAttributes'
 
 import { HeadingProps } from '@/lib/utils/typeDefinitions/props/shared/headings'
 
-const Heading5: FC<HeadingProps> = ({
+const Heading5 = ({
   id = '',
   dataTestId = '',
   textColor = 'text-neutral-900',
   textSize = 'lg',
   customCss = '',
   children,
-}): JSX.Element => {
+}: HeadingProps) => {
   const attributes = getAttributes({ id, dataTestId })
 
   return (

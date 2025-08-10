@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import GhostScreaming from '@/components/layout/page-navigation/GhostScreaming'
 
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
@@ -7,7 +5,7 @@ import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 import { EasterEggGhostProps } from '@/lib/utils/typeDefinitions/props/layout/easter-egg-ghost'
 
-const EasterEggGhost: FC<EasterEggGhostProps> = ({ arrowDirection }): JSX.Element => {
+const EasterEggGhost = ({ arrowDirection }: EasterEggGhostProps) => {
   const cssAnimationClassNext = 'animate-ghost-next'
   const cssAnimationClassPrevious = 'animate-ghost-previous'
 

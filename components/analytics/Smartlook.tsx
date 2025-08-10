@@ -1,11 +1,10 @@
 'use client'
 
 import Script from 'next/script'
-import { FC } from 'react'
 
 import { ANALYTICS_WARNING } from '@/localization/english'
 
-const Smartlook: FC = () => {
+const Smartlook = () => {
   if (!process.env['NEXT_PUBLIC_SMARTLOOK_ID']) {
     console.warn(ANALYTICS_WARNING.smartlook)
     return null

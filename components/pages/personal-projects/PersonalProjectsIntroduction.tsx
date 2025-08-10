@@ -1,11 +1,9 @@
-import { FC } from 'react'
-
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { INTRODUCTION } from '@/localization/english'
 
-const PersonalProjectsIntroduction: FC = (): JSX.Element => {
+const PersonalProjectsIntroduction = () => {
   return (
     <>
       <Paragraph>

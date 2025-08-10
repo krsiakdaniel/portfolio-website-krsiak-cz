@@ -1,7 +1,5 @@
 'use client' // using onClick
 
-import { FC } from 'react'
-
 import IconClose from '@/components/icons/IconClose'
 import IconHamburger from '@/components/icons/IconHamburger'
 
@@ -12,11 +10,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { MenuMobileToggleProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
-const MenuMobileToggle: FC<MenuMobileToggleProps> = ({
-  isMenuOpen,
-  handleMenuMobileToggle,
-  ref,
-}): JSX.Element => {
+const MenuMobileToggle = ({ isMenuOpen, handleMenuMobileToggle, ref }: MenuMobileToggleProps) => {
   return (
     <button
       ref={ref}
