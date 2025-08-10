@@ -8,9 +8,7 @@ import Paragraph from '@/components/shared/Paragraph'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import { ErrorPageContentProps } from '@/lib/utils/typeDefinitions/props/layout/errors'
-
-const IMAGE_WIDTH = 400
-const IMAGE_HEIGHT = 417
+import { ERROR_PAGE_IMAGE } from '../constants'
 
 const ErrorPageContent = ({
   imgSrc,
@@ -29,8 +27,8 @@ const ErrorPageContent = ({
     <div className="flex flex-col items-center text-center">
       <ImageComponent
         src={imgSrc}
-        width={IMAGE_WIDTH}
-        height={IMAGE_HEIGHT}
+        width={ERROR_PAGE_IMAGE.WIDTH}
+        height={ERROR_PAGE_IMAGE.HEIGHT}
         alt={imgAlt}
         loading={ImageLoading.EAGER}
       />

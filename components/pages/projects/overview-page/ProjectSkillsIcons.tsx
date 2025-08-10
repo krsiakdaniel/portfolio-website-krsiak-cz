@@ -2,9 +2,7 @@ import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { ProjectSkillsIconsProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
-
-const IMAGE_WIDTH = 28
-const IMAGE_HEIGHT = 28
+import { PROJECT_SKILLS_ICON } from '@/components/pages/home/skills/constants'
 
 const ProjectSkillsIcons = ({ skillsIcons = [] }: ProjectSkillsIconsProps) => {
   return (
@@ -13,8 +11,8 @@ const ProjectSkillsIcons = ({ skillsIcons = [] }: ProjectSkillsIconsProps) => {
         <ImageComponent
           key={item.name}
           src={item.path}
-          width={IMAGE_WIDTH}
-          height={IMAGE_HEIGHT}
+          width={PROJECT_SKILLS_ICON.WIDTH}
+          height={PROJECT_SKILLS_ICON.HEIGHT}
           alt={item.name}
           loading={ImageLoading.LAZY}
           customCss="mr-2 mt-2 lg:mt-0"

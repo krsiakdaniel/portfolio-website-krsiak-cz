@@ -1,24 +1,30 @@
 import { useCallback, useEffect, useState } from 'react'
 
+import { SCROLL_PROGRESS } from '@/lib/utils/constants/scroll-progress-constants'
+
 /**
  * Custom hook to track the scroll progress of the page.
  *
  * @returns The scroll progress as a percentage (0-100).
  */
+
 export const useScrollProgress = (): number => {
-  const [scrollProgress, setScrollProgress] = useState<number>(0)
+  const [scrollProgress, setScrollProgress] = useState<number>(SCROLL_PROGRESS.MIN)
 
   const calculateScrollProgress = useCallback((): void => {
     const scrollTop = document.body.scrollTop || document.documentElement.scrollTop
     const scrollHeight =
       document.documentElement.scrollHeight - document.documentElement.clientHeight
 
-    if (scrollHeight === 0) {
-      setScrollProgress(0)
+    if (scrollHeight === SCROLL_PROGRESS.MIN) {
+      setScrollProgress(SCROLL_PROGRESS.MIN)
       return
     }
 
-    const progress = Math.min(100, Math.max(0, (scrollTop / scrollHeight) * 100))
+    const progress = Math.min(
+      SCROLL_PROGRESS.MAX,
+      Math.max(SCROLL_PROGRESS.MIN, (scrollTop / scrollHeight) * SCROLL_PROGRESS.MAX),
+    )
     setScrollProgress(progress)
   }, [])
 

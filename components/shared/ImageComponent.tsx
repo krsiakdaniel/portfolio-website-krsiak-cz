@@ -8,14 +8,12 @@ import { IMAGE_ALT } from '@/localization/english'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { ImageComponentProps } from '@/lib/utils/typeDefinitions/props/shared/image-component'
-
-const IMAGE_WIDTH = 128
-const IMAGE_HEIGHT = 128
+import { IMAGE_COMPONENT_DEFAULTS } from './constants'
 
 const ImageComponent = ({
   src = '',
-  width = IMAGE_WIDTH,
-  height = IMAGE_HEIGHT,
+  width = IMAGE_COMPONENT_DEFAULTS.WIDTH,
+  height = IMAGE_COMPONENT_DEFAULTS.HEIGHT,
   alt = IMAGE_ALT.altDefault,
   priority = false,
   loading = ImageLoading.LAZY,

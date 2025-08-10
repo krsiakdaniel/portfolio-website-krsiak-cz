@@ -2,12 +2,7 @@ import ImageComponent from '@/components/shared/ImageComponent'
 
 import { DeviceTypeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { SocialLinkIconProps } from '@/lib/utils/typeDefinitions/props/shared/social-link-icon'
-
-const IMAGE_WIDTH_MOBILE = 32
-const IMAGE_HEIGHT_MOBILE = 32
-
-const IMAGE_WIDTH_DESKTOP = 28
-const IMAGE_HEIGHT_DESKTOP = 28
+import { SOCIAL_ICON } from '@/components/layout/header/constants'
 
 const SocialLinkIcon = ({
   type,
@@ -19,8 +14,8 @@ const SocialLinkIcon = ({
   imgAlt,
 }: SocialLinkIconProps) => {
   const isMobile = type === DeviceTypeEnum.Mobile
-  const width = isMobile ? IMAGE_WIDTH_MOBILE : IMAGE_WIDTH_DESKTOP
-  const height = isMobile ? IMAGE_HEIGHT_MOBILE : IMAGE_HEIGHT_DESKTOP
+  const width = isMobile ? SOCIAL_ICON.MOBILE.WIDTH : SOCIAL_ICON.DESKTOP.WIDTH
+  const height = isMobile ? SOCIAL_ICON.MOBILE.HEIGHT : SOCIAL_ICON.DESKTOP.HEIGHT
 
   return (
     <a
@@ -39,7 +34,7 @@ const SocialLinkIcon = ({
         alt={imgAlt}
         loading={ImageLoading.EAGER}
         customCss="shadow-md"
-        sizes={`${isMobile ? IMAGE_WIDTH_MOBILE : IMAGE_WIDTH_DESKTOP}px`}
+        sizes={`${isMobile ? SOCIAL_ICON.MOBILE.WIDTH : SOCIAL_ICON.DESKTOP.WIDTH}px`}
       />
     </a>
   )

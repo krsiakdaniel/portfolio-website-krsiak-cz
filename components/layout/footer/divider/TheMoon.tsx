@@ -4,10 +4,11 @@ import { useEffect, useState } from 'react'
 
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
 
+import { TIME_INTERVALS } from '@/lib/utils/constants/time'
 import { updateLunarPhase } from '@/lib/utils/helpers/updateLunarPhase'
 
 // Define the interval duration in milliseconds (1 hour)
-const HOUR_IN_MILLISECONDS = 60 * 60 * 1000
+const HOUR_IN_MILLISECONDS = TIME_INTERVALS.HOUR_MS
 
 const TheMoon = () => {
   const [lunarPhaseEmoji, setLunarPhaseEmoji] = useState<string>(ICON_EMOJI.moon.newMoon)
