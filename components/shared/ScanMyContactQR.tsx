@@ -11,8 +11,8 @@ import contactQR from '@/public/images/svg/vcard-contact/krsiak-daniel-qr-code-v
 import { QR_CODE } from './constants'
 
 const ScanMyContactQR = ({
-  width = QR_CODE.WIDTH,
-  height = QR_CODE.HEIGHT,
+  width = QR_CODE.SMALL.WIDTH,
+  height = QR_CODE.SMALL.HEIGHT,
   showImageCaption = false,
 }: ScanMyContactQRProps) => {
   return (

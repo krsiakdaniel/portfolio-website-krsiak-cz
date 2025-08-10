@@ -19,8 +19,8 @@ const CareerPath = () => {
       </Paragraph>
 
       <div className="mt-10 w-full">
-        <div className="flex flex-col gap-6">
-          <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8">
             <ExpertiseSection
               icon={ICON_EMOJI.atomSymbol}
               ariaLabel={ARIA_LABELS.emoji.atomSymbol}
