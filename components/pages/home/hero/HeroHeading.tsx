@@ -1,5 +1,5 @@
 import HeroSubHeading from '@/components/pages/home/hero/HeroSubHeading'
-import Heading1 from '@/components/shared/Heading1'
+import Heading from '@/components/shared/Heading'
 
 import { TEXT } from '@/localization/english'
 
@@ -7,14 +7,15 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 const HeroHeading = () => {
   return (
-    <Heading1
+    <Heading
+      as="h1"
       dataTestId={DATA_TEST_IDS.hero.heading}
       textColor="text-neutral-900"
       customCss="flex flex-col text-center"
     >
       {TEXT.nameDanielKrsiak}
       <HeroSubHeading />
-    </Heading1>
+    </Heading>
   )
 }
 export default HeroHeading

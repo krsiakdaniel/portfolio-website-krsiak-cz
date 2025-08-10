@@ -1,6 +1,5 @@
 import GoBackLink from '@/components/layout/projects/project-page/GoBackLink'
-import Heading1 from '@/components/shared/Heading1'
-import Heading2 from '@/components/shared/Heading2'
+import Heading from '@/components/shared/Heading'
 
 import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 
@@ -18,14 +17,14 @@ const HeaderSection = ({
 }: HeaderSectionProps) => {
   return (
     <div className="mt-10">
-      <Heading1 textColor="text-neutral-900">
+      <Heading as="h1" textColor="text-neutral-900">
         <span role="img" aria-label={ariaLabel} className="select-none">
           {icon}
         </span>{' '}
         <span className="ml-0">{title}</span>
-      </Heading1>
+      </Heading>
 
-      <Heading2 customCss="mt-2">
+      <Heading as="h2" customCss="mt-2">
         <span>{role}</span>
         {years && (
           <span className="ml-0 block text-lg font-normal text-neutral-600 md:ml-2 md:inline">
@@ -33,7 +32,7 @@ const HeaderSection = ({
             <span className="ml-1">{`${MIDDLE_DOT} ${company}`}</span>
           </span>
         )}
-      </Heading2>
+      </Heading>
 
       <GoBackLink goBackLink={goBackLink} sectionID={sectionID} />
     </div>

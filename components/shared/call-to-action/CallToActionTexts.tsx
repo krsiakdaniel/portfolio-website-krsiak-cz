@@ -1,4 +1,4 @@
-import Heading2 from '@/components/shared/Heading2'
+import Heading from '@/components/shared/Heading'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIcon'
@@ -19,7 +19,9 @@ const CallToActionTexts = ({
         <CallToActionIcon type={DeviceTypeEnum.Mobile} icon={icon} />
         <Highlight text={highlight} customCss="text-violet-800" />
       </div>
-      <Heading2 textColor="text-neutral-900">{heading}</Heading2>
+      <Heading as="h2" textColor="text-neutral-900">
+        {heading}
+      </Heading>
       <Paragraph
         marginTop="mt-2"
         size="text-xl"

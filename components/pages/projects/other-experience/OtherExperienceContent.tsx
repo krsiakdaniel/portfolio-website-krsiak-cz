@@ -1,5 +1,5 @@
 import ExperienceCard from '@/components/pages/projects/other-experience/ExperienceCard'
-import Heading4 from '@/components/shared/Heading4'
+import Heading from '@/components/shared/Heading'
 
 import { TEXT } from '@/localization/english'
 
@@ -8,7 +8,7 @@ import { OtherExperienceContentProps } from '@/lib/utils/typeDefinitions/props/p
 const OtherExperienceContent = ({ experience = [] }: OtherExperienceContentProps) => {
   return (
     <div className="mt-8">
-      <Heading4>{TEXT.otherExperience}</Heading4>
+      <Heading as="h4">{TEXT.otherExperience}</Heading>
       <div className="mt-4">
         {experience.map((experience) => (
           <ExperienceCard
