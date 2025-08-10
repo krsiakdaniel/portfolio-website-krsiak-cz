@@ -1,4 +1,4 @@
-import Heading3 from '@/components/shared/Heading3'
+import Heading from '@/components/shared/Heading'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
@@ -14,7 +14,7 @@ const ExpertiseSection = ({
 }: ExpertiseSectionProps) => {
   return (
     <div className="relative flex w-full flex-col rounded-lg border border-gray-200 bg-white px-4 py-6">
-      <Heading3 textColor="text-violet-600 ml-2">
+      <Heading as="h3" textColor="text-violet-600 ml-2">
         <span
           role="img"
           aria-label={ariaLabel}
@@ -23,7 +23,7 @@ const ExpertiseSection = ({
           {icon}
         </span>
         {heading}
-      </Heading3>
+      </Heading>
       <div className="mt-4">
         <List>
           {listItems.map((item) => (

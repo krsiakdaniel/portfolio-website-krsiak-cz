@@ -3,8 +3,7 @@ import StatusIntroduction from '@/components/pages/status/StatusIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import EmojiAnimated from '@/components/shared/EmojiAnimated'
 import ExternalLink from '@/components/shared/ExternalLink'
-import Heading1 from '@/components/shared/Heading1'
-import Heading2 from '@/components/shared/Heading2'
+import Heading from '@/components/shared/Heading'
 import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
@@ -35,7 +34,7 @@ const Status = () => {
 
       <div className="mt-10">
         <div>
-          <Heading1>
+          <Heading as="h1">
             <span
               role="img"
               aria-label={ARIA_LABELS.emoji.verticalTrafficLight}
@@ -44,11 +43,13 @@ const Status = () => {
               {ICON_EMOJI.verticalTrafficLight}
             </span>
             <span>{STATUS.text}</span>
-          </Heading1>
+          </Heading>
           <StatusIntroduction />
         </div>
 
-        <Heading2 customCss="mt-8">{STATUS.heading.ciCd}</Heading2>
+        <Heading as="h2" customCss="mt-8">
+          {STATUS.heading.ciCd}
+        </Heading>
         <Paragraph>{STATUS.description.ciCd}</Paragraph>
 
         <div className="mt-2 grid grid-cols-1 md:grid-cols-2">
@@ -77,7 +78,9 @@ const Status = () => {
         </div>
 
         <div className="mt-8">
-          <Heading2 customCss="mt-8">{STATUS.heading.uptimeMonitoring}</Heading2>
+          <Heading as="h2" customCss="mt-8">
+            {STATUS.heading.uptimeMonitoring}
+          </Heading>
           <Paragraph>
             {STATUS.description.uptimeMonitoring}
             <span className="align-self flex">

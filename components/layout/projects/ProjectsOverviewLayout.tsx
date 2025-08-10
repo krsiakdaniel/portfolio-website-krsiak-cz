@@ -1,4 +1,4 @@
-import Heading1 from '@/components/shared/Heading1'
+import Heading from '@/components/shared/Heading'
 
 import { ProjectsOverviewLayoutProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page-layout'
 
@@ -12,12 +12,12 @@ const ProjectsOverviewLayout = ({
   return (
     <>
       <div className="mt-10 flex flex-col">
-        <Heading1>
+        <Heading as="h1">
           <span role="img" aria-label={ariaLabel} className="mr-4 select-none">
             {icon}
           </span>
           <span>{heading}</span>
-        </Heading1>
+        </Heading>
         <div>{description}</div>
       </div>
 

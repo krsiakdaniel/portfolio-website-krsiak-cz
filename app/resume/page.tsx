@@ -6,7 +6,7 @@ import ResumeIntroduction from '@/components/pages/resume/ResumeIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
 import CallToActionResumeDownload from '@/components/shared/call-to-action/cta-banners/CallToActionResumeDownload'
-import Heading1 from '@/components/shared/Heading1'
+import Heading from '@/components/shared/Heading'
 
 import { metaDataResume } from '@/lib/data/metadata/pages/metaDataResume'
 
@@ -32,12 +32,12 @@ const Resume = () => {
 
       <div className="mt-10">
         <div>
-          <Heading1>
+          <Heading as="h1">
             <span role="img" aria-label={ARIA_LABELS.emoji.memo} className="mr-4 select-none">
               {ICON_EMOJI.memo}
             </span>
             <span>{TEXT.resume}</span>
-          </Heading1>
+          </Heading>
           <ResumeIntroduction />
         </div>
 

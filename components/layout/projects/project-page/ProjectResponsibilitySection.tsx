@@ -1,4 +1,4 @@
-import Heading3 from '@/components/shared/Heading3'
+import Heading from '@/components/shared/Heading'
 import Highlight from '@/components/shared/Highlight'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
@@ -12,9 +12,9 @@ const ProjectResponsibilitySection = ({
 }: ProjectResponsibilitySectionProps) => {
   return (
     <div className="mt-8">
-      <Heading3>
+      <Heading as="h3">
         {title} {titleHighlight && <Highlight text={titleHighlight} />}
-      </Heading3>
+      </Heading>
       <div className="mt-4">
         <List>
           {items.map((item) => (

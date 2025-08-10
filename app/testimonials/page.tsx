@@ -4,7 +4,7 @@ import TestimonialsIntroduction from '@/components/pages/testimonials/Testimonia
 import TestimonialsSection from '@/components/pages/testimonials/TestimonialsSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
-import Heading1 from '@/components/shared/Heading1'
+import Heading from '@/components/shared/Heading'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
@@ -34,7 +34,7 @@ const Testimonials = () => {
 
       <div className="mt-10">
         <div>
-          <Heading1>
+          <Heading as="h1">
             <span
               role="img"
               aria-label={ARIA_LABELS.emoji.speechBalloon}
@@ -43,7 +43,7 @@ const Testimonials = () => {
               {ICON_EMOJI.speechBalloon}
             </span>
             <span>{TEXT.testimonials}</span>
-          </Heading1>
+          </Heading>
           <TestimonialsIntroduction />
         </div>
 

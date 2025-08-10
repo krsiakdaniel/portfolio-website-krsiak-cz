@@ -1,5 +1,5 @@
 import DividerWithText from '@/components/shared/DividerWithText'
-import Heading2 from '@/components/shared/Heading2'
+import Heading from '@/components/shared/Heading'
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization/english'
@@ -30,7 +30,7 @@ const Companies = () => {
       <div className="mt-20">
         <DividerWithText text={DIVIDER_WITH_TEXT.companies} />
         <div className="text-center">
-          <Heading2>{TEXT.workedForCompanies}</Heading2>
+          <Heading as="h2">{TEXT.workedForCompanies}</Heading>
         </div>
 
         <div className={logosGrid}>

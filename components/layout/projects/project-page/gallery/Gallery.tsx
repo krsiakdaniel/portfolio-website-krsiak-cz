@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 import GalleryPreview from '@/components/layout/projects/project-page/gallery/GalleryPreview'
 import GalleryThumbnails from '@/components/layout/projects/project-page/gallery/GalleryThumbnails'
-import Heading3 from '@/components/shared/Heading3'
+import Heading from '@/components/shared/Heading'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
@@ -19,7 +19,7 @@ const Gallery = ({ images = [] }: GalleryProps) => {
 
   return (
     <div className="mt-8">
-      <Heading3>{GALLERY.heading}</Heading3>
+      <Heading as="h3">{GALLERY.heading}</Heading>
       <Paragraph>{GALLERY.screenshots}</Paragraph>
       <div
         data-testid={DATA_TEST_IDS.gallery}

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-import Heading1 from '@/components/shared/Heading1'
-import Heading2 from '@/components/shared/Heading2'
+import Heading from '@/components/shared/Heading'
+
 import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
@@ -36,12 +36,14 @@ const ErrorPageContent = ({
       />
 
       <div className="mt-10">
-        <Heading1 textSize="8xl" textSizeSM="8xl" textSizeMD="8xl">
+        <Heading as="h1" size="8xl" sizeSM="8xl" sizeMD="8xl">
           {heading}
-        </Heading1>
+        </Heading>
       </div>
 
-      <Heading2 textColor="text-neutral-600">{description}</Heading2>
+      <Heading as="h2" textColor="text-neutral-600">
+        {description}
+      </Heading>
 
       <Paragraph>{note}</Paragraph>
 

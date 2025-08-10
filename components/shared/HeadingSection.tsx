@@ -1,4 +1,4 @@
-import Heading2 from '@/components/shared/Heading2'
+import Heading from '@/components/shared/Heading'
 
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 
@@ -7,10 +7,11 @@ import { ARIA_LABELS } from '@/localization/english'
 
 const HeadingSection = ({ text, icon = '', id = '', dataTestId = '' }: HeadingSectionProps) => {
   return (
-    <Heading2
+    <Heading
+      as="h2"
       id={id}
       textColor="text-neutral-600"
-      data-testid={dataTestId}
+      dataTestId={dataTestId}
       customCss={`mt-20 border-b pb-2 font-medium uppercase flex items-center ${CSS_GLOBAL_CLASSES.HEADING_SECTION}`}
     >
       <span className="flex items-start space-x-2 md:items-center">
@@ -21,7 +22,7 @@ const HeadingSection = ({ text, icon = '', id = '', dataTestId = '' }: HeadingSe
         )}
         <span>{text}</span>
       </span>
-    </Heading2>
+    </Heading>
   )
 }
 
