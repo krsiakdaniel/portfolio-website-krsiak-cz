@@ -139,7 +139,7 @@ Proper semantic structure with ARIA landmarks for navigation.
 Dynamic content announcements for screen readers.
 
 ```tsx
-type LiveRegionProps {
+type LiveRegionProps = {
   message?: string
   priority?: 'polite' | 'assertive'
 }
