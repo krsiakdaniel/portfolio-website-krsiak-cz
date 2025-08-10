@@ -61,8 +61,8 @@ const Status = () => {
                 width={item.width}
                 height={item.height}
                 alt={item.alt}
-                customCss="mt-2"
                 loading={ImageLoading.EAGER}
+                customCss="mt-2 bg-gray-100"
               />
             ))}
           </div>
