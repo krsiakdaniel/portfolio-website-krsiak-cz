@@ -9,7 +9,7 @@ const SkillCardTechnologyYears = ({ technology, years }: SkillCardTechnologyYear
         {technology}
       </div>
       {years && (
-        <div className="text-md tracking-tight text-neutral-600 md:text-xl">
+        <div className="text-base tracking-tight text-neutral-600 md:text-xl">
           {years} {getYearsText(years)}
         </div>
       )}

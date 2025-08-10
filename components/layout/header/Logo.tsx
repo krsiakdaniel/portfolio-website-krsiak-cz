@@ -34,7 +34,7 @@ const Logo = () => {
         </div>
         <Paragraph
           marginTop="mt-0"
-          size="text-md"
+          size="text-base"
           customCss="select-none cursor-pointer font-bold group-hover:text-violet-800"
         >
           {TEXT.logo}
