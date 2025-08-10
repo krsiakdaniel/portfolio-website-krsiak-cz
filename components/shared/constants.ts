@@ -10,8 +10,14 @@ export const PHOTO_DIMENSIONS = {
 } as const
 
 export const QR_CODE = {
-  WIDTH: 296,
-  HEIGHT: 296,
+  SMALL: {
+    WIDTH: 256,
+    HEIGHT: 256,
+  },
+  LARGE: {
+    WIDTH: 396,
+    HEIGHT: 396,
+  },
 } as const
 
 export const SKILL_CARD_IMAGE = {

@@ -5,6 +5,7 @@ import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 
 import { RESUME, SHARED, TEXT } from '@/localization/english'
 
+import { QR_CODE } from '@/components/shared/constants'
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 
 const ResumeContact = () => {
@@ -30,7 +31,11 @@ const ResumeContact = () => {
       </div>
 
       <div className="mt-10 flex">
-        <ScanMyContactQR showImageCaption={true} />
+        <ScanMyContactQR
+          width={QR_CODE.LARGE.WIDTH}
+          height={QR_CODE.LARGE.HEIGHT}
+          showImageCaption={true}
+        />
       </div>
     </>
   )
