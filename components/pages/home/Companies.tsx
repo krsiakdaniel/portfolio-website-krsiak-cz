@@ -12,13 +12,7 @@ import kooperativa from '@/public/images/svg/logo/kooperativa.svg'
 import microsoft from '@/public/images/svg/logo/microsoft.svg'
 import bata from '@/public/images/svg/logo/bata.svg'
 import smartsupp from '@/public/images/svg/logo/smartsupp.svg'
-
-const WIDTH_MICROSOFT = 256
-const WIDTH_SMARTSUPP = 256
-const WIDTH_KOOPERATIVA = 256
-const WIDTH_BATA = 200
-const WIDTH_KOMERCNI_BANKA = 130
-const WIDTH_GROUPON = 200
+import { COMPANY_LOGOS } from './constants'
 
 const Companies = () => {
   const logosGrid =
@@ -37,7 +31,7 @@ const Companies = () => {
           <div className={imgWrapper}>
             <ImageComponent
               src={kooperativa}
-              width={WIDTH_KOOPERATIVA}
+              width={COMPANY_LOGOS.KOOPERATIVA.WIDTH}
               alt={IMAGE_ALT.altKooperativa}
               loading={ImageLoading.LAZY}
             />
@@ -45,7 +39,7 @@ const Companies = () => {
           <div className={imgWrapper}>
             <ImageComponent
               src={smartsupp}
-              width={WIDTH_SMARTSUPP}
+              width={COMPANY_LOGOS.SMARTSUPP.WIDTH}
               alt={IMAGE_ALT.altSmartsupp}
               loading={ImageLoading.LAZY}
             />
@@ -53,7 +47,7 @@ const Companies = () => {
           <div className={imgWrapper}>
             <ImageComponent
               src={microsoft}
-              width={WIDTH_MICROSOFT}
+              width={COMPANY_LOGOS.MICROSOFT.WIDTH}
               alt={IMAGE_ALT.altMicrosoft}
               loading={ImageLoading.LAZY}
             />
@@ -62,7 +56,7 @@ const Companies = () => {
           <div className={imgWrapper}>
             <ImageComponent
               src={bata}
-              width={WIDTH_BATA}
+              width={COMPANY_LOGOS.BATA.WIDTH}
               alt={IMAGE_ALT.altBata}
               loading={ImageLoading.LAZY}
             />
@@ -70,7 +64,7 @@ const Companies = () => {
           <div className={imgWrapper}>
             <ImageComponent
               src={komercniBanka}
-              width={WIDTH_KOMERCNI_BANKA}
+              width={COMPANY_LOGOS.KOMERCNI_BANKA.WIDTH}
               alt={IMAGE_ALT.altKomercniBanka}
               loading={ImageLoading.LAZY}
             />
@@ -78,7 +72,7 @@ const Companies = () => {
           <div className={imgWrapper}>
             <ImageComponent
               src={groupon}
-              width={WIDTH_GROUPON}
+              width={COMPANY_LOGOS.GROUPON.WIDTH}
               alt={IMAGE_ALT.altGroupon}
               loading={ImageLoading.LAZY}
             />

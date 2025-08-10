@@ -4,9 +4,7 @@ import SkillCardTechnologyYears from '@/components/shared/SkillCardTechnologyYea
 import { getSkillCardID } from '@/lib/utils/helpers/skills/getSkillCardID'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { SkillCardProps } from '@/lib/utils/typeDefinitions/props/shared/skill-card'
-
-const MOBILE_IMAGE_WIDTH_PX = 48 // 48px = 3 rem = 12 in Tailwind CSS
-const DESKTOP_IMAGE_WIDTH_PX = 64 // 48px = 4 rem = 16 in Tailwind CSS
+import { SKILL_CARD_IMAGE } from './constants'
 
 const SkillCard = ({ id, imgSrc, imgAlt, technology, years, tooltip = '' }: SkillCardProps) => {
   return (
@@ -18,7 +16,7 @@ const SkillCard = ({ id, imgSrc, imgAlt, technology, years, tooltip = '' }: Skil
           loading={ImageLoading.EAGER}
           customCss="mr-4 h-12 w-12 md:h-16 md:w-16"
           dataTooltipContent={tooltip}
-          sizes={`(max-width: 768px) ${MOBILE_IMAGE_WIDTH_PX}px, ${DESKTOP_IMAGE_WIDTH_PX}px`}
+          sizes={`(max-width: 768px) ${SKILL_CARD_IMAGE.MOBILE.WIDTH}px, ${SKILL_CARD_IMAGE.DESKTOP.WIDTH}px`}
         />
         <SkillCardTechnologyYears technology={technology} years={years} />
       </div>

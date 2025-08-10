@@ -1,0 +1,8 @@
+export const COMPANY_LOGOS = {
+  MICROSOFT: { WIDTH: 256 },
+  SMARTSUPP: { WIDTH: 256 },
+  KOOPERATIVA: { WIDTH: 256 },
+  BATA: { WIDTH: 200 },
+  KOMERCNI_BANKA: { WIDTH: 130 },
+  GROUPON: { WIDTH: 200 },
+} as const

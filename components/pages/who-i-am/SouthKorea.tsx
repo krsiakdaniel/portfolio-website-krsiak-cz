@@ -14,9 +14,7 @@ import hiking from '@/public/images/webp/photo/south-korea/hiking.webp'
 import nature from '@/public/images/webp/photo/south-korea/nature.webp'
 import palace from '@/public/images/webp/photo/south-korea/palace.webp'
 import temple from '@/public/images/webp/photo/south-korea/temple.webp'
-
-const IMAGE_WIDTH = 1240
-const IMAGE_HEIGHT = 1650
+import { SOUTH_KOREA_IMAGES } from './constants'
 
 const SouthKorea = () => {
   const imageComponentCSS = 'border rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md'
@@ -46,8 +44,8 @@ const SouthKorea = () => {
           <div className="mt-8">
             <ImageComponent
               src={hiking}
-              width={IMAGE_WIDTH}
-              height={IMAGE_HEIGHT}
+              width={SOUTH_KOREA_IMAGES.WIDTH}
+              height={SOUTH_KOREA_IMAGES.HEIGHT}
               alt={SOUTH_KOREA.hiking}
               priority={true}
               loading={ImageLoading.EAGER}
@@ -73,8 +71,8 @@ const SouthKorea = () => {
           <div className="mt-8">
             <ImageComponent
               src={nature}
-              width={IMAGE_WIDTH}
-              height={IMAGE_HEIGHT}
+              width={SOUTH_KOREA_IMAGES.WIDTH}
+              height={SOUTH_KOREA_IMAGES.HEIGHT}
               alt={SOUTH_KOREA.nature}
               priority={true}
               loading={ImageLoading.EAGER}
@@ -87,8 +85,8 @@ const SouthKorea = () => {
         <div>
           <ImageComponent
             src={temple}
-            width={IMAGE_WIDTH}
-            height={IMAGE_HEIGHT}
+            width={SOUTH_KOREA_IMAGES.WIDTH}
+            height={SOUTH_KOREA_IMAGES.HEIGHT}
             alt={SOUTH_KOREA.temple}
             priority={true}
             loading={ImageLoading.EAGER}
@@ -100,8 +98,8 @@ const SouthKorea = () => {
         <div>
           <ImageComponent
             src={palace}
-            width={IMAGE_WIDTH}
-            height={IMAGE_HEIGHT}
+            width={SOUTH_KOREA_IMAGES.WIDTH}
+            height={SOUTH_KOREA_IMAGES.HEIGHT}
             alt={SOUTH_KOREA.palace}
             priority={true}
             loading={ImageLoading.EAGER}

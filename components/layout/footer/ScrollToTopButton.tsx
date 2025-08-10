@@ -7,8 +7,7 @@ import { ARIA_LABELS, FOOTER } from '@/localization/english'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { scrollToTop } from '@/lib/utils/helpers/scrollToTop'
-
-const SCROLL_THRESHOLD = 300 // Show button after scrolling 300px
+import { SCROLL_TO_TOP } from '../constants'
 
 const BUTTON_STYLES = `animate-fade-in-scroll 
   fixed right-8 bottom-8 z-50 
@@ -26,7 +25,7 @@ const ScrollToTopButton = () => {
   }, [])
 
   const toggleVisibility = useCallback(() => {
-    setIsVisible(window.pageYOffset > SCROLL_THRESHOLD)
+    setIsVisible(window.pageYOffset > SCROLL_TO_TOP.THRESHOLD)
   }, [])
 
   useEffect(() => {

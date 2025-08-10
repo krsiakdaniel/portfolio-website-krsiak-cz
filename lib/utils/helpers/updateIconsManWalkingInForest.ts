@@ -1,3 +1,4 @@
+import { CHRISTMAS_PERIOD, MONTHS, WINTER_MONTHS } from '@/lib/utils/constants/calendar'
 import { ICON_EMOJI } from '@/localization/english'
 
 /**
@@ -16,10 +17,13 @@ export const updateIconsManWalkingInForest = (
   const day = date.getDate()
 
   // Determine if it is winter (December, January, February)
-  const isWinter = month === 11 || month === 0 || month === 1
+  const isWinter = WINTER_MONTHS.includes(month)
 
   // Determine if it is Christmas week (December 23-29)
-  const isChristmas = month === 11 && day >= 23 && day <= 29
+  const isChristmas =
+    month === MONTHS.DECEMBER &&
+    day >= CHRISTMAS_PERIOD.START_DAY &&
+    day <= CHRISTMAS_PERIOD.END_DAY
 
   // Update forest icon based on the season
   if (isChristmas) {

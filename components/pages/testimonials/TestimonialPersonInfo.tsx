@@ -4,9 +4,7 @@ import ExternalLink from '@/components/shared/ExternalLink'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { TestimonialPersonInfoProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
 import { ARIA_LABELS, TEXT } from '@/localization/english'
-
-const IMAGE_WIDTH = 48
-const IMAGE_HEIGHT = 48
+import { TESTIMONIAL_PERSON_PHOTO } from './constants'
 
 const TestimonialPersonInfo = ({
   photo,
@@ -19,12 +17,12 @@ const TestimonialPersonInfo = ({
   <>
     <ImageComponent
       src={photo}
-      width={IMAGE_WIDTH}
-      height={IMAGE_HEIGHT}
+      width={TESTIMONIAL_PERSON_PHOTO.WIDTH}
+      height={TESTIMONIAL_PERSON_PHOTO.HEIGHT}
       alt={name}
       loading={ImageLoading.LAZY}
       customCss="rounded-full border border-violet-300 bg-violet-50 p-1 shadow-md"
-      sizes={`${IMAGE_WIDTH}px`}
+      sizes={`${TESTIMONIAL_PERSON_PHOTO.WIDTH}px`}
     />
 
     <div className="flex flex-col items-start">

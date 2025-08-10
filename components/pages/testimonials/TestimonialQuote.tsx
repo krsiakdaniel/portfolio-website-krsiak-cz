@@ -5,16 +5,14 @@ import { IMAGE_ALT } from '@/localization/english'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import quote from '@/public/icons/svg/testimonial/quote.svg'
-
-const IMAGE_WIDTH = 40
-const IMAGE_HEIGHT = 40
+import { TESTIMONIAL_QUOTE_ICON } from './constants'
 
 const TestimonialQuote = () => {
   return (
     <ImageComponent
       src={quote}
-      width={IMAGE_WIDTH}
-      height={IMAGE_HEIGHT}
+      width={TESTIMONIAL_QUOTE_ICON.WIDTH}
+      height={TESTIMONIAL_QUOTE_ICON.HEIGHT}
       alt={IMAGE_ALT.altIconQuote}
       loading={ImageLoading.LAZY}
     />

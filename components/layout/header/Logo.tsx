@@ -11,9 +11,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import logo from '@/public/icons/webp/logo.webp'
-
-const IMAGE_WIDTH = 32
-const IMAGE_HEIGHT = 32
+import { HEADER_LOGO } from './constants'
 
 const Logo = () => {
   return (
@@ -26,12 +24,12 @@ const Logo = () => {
         <div>
           <ImageComponent
             src={logo}
-            width={IMAGE_WIDTH}
-            height={IMAGE_HEIGHT}
+            width={HEADER_LOGO.WIDTH}
+            height={HEADER_LOGO.HEIGHT}
             alt={IMAGE_ALT.altLogo}
             priority={true}
             loading={ImageLoading.EAGER}
-            sizes={`${IMAGE_WIDTH}px`}
+            sizes={`${HEADER_LOGO.WIDTH}px`}
           />
         </div>
         <Paragraph

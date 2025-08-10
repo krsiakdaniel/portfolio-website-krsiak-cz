@@ -8,13 +8,11 @@ import { ScanMyContactQRProps } from '@/lib/utils/typeDefinitions/props/shared/s
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import contactQR from '@/public/images/svg/vcard-contact/krsiak-daniel-qr-code-vcard.svg'
-
-const IMAGE_WIDTH = 296
-const IMAGE_HEIGHT = 296
+import { QR_CODE } from './constants'
 
 const ScanMyContactQR = ({
-  width = IMAGE_WIDTH,
-  height = IMAGE_HEIGHT,
+  width = QR_CODE.WIDTH,
+  height = QR_CODE.HEIGHT,
   showImageCaption = false,
 }: ScanMyContactQRProps) => {
   return (

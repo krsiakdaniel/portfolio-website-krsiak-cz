@@ -2,9 +2,7 @@ import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { SkillsIconGroupProps } from '@/lib/utils/typeDefinitions/props/pages/home/skills'
-
-const IMAGE_WIDTH = 44
-const IMAGE_HEIGHT = 44
+import { SKILLS_ICON } from './constants'
 
 const SkillsIconGroup = ({ icons = [], customCss = '' }: SkillsIconGroupProps) => {
   return (
@@ -13,12 +11,12 @@ const SkillsIconGroup = ({ icons = [], customCss = '' }: SkillsIconGroupProps) =
         <ImageComponent
           key={item.name}
           src={item.path}
-          width={IMAGE_WIDTH}
-          height={IMAGE_HEIGHT}
+          width={SKILLS_ICON.WIDTH}
+          height={SKILLS_ICON.HEIGHT}
           alt={item.name}
           loading={ImageLoading.LAZY}
           dataTooltipContent={item.name}
-          sizes={`${IMAGE_WIDTH}px`}
+          sizes={`${SKILLS_ICON.WIDTH}px`}
         />
       ))}
     </div>
