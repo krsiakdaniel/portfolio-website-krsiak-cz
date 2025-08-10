@@ -22,13 +22,13 @@ const CallToActionBubbles = () => {
   return (
     <>
       <Bubble
-        customCss={`${bubbleColors[0]} ${cssAnimationClass} -left-8 -top-8 2xl:-left-12 h-24 w-24 transition duration-500`}
+        customCss={`${bubbleColors[0]} ${cssAnimationClass} -left-6 -top-8 2xl:-left-10 h-24 w-24 transition duration-500`}
       />
       <Bubble
-        customCss={`${bubbleColors[1]} ${cssAnimationClass} -right-8 2xl:-right-16 -top-12 2xl:-top-14 h-44 w-44 transition duration-500`}
+        customCss={`${bubbleColors[1]} ${cssAnimationClass} -right-6 -top-12 2xl:-right-8 2xl:-top-14 h-36 w-36 transition duration-500`}
       />
       <Bubble
-        customCss={`${bubbleColors[2]} ${cssAnimationClass} -bottom-10 2xl:-bottom-12 -right-8 2xl:-right-10 h-32 w-32 transition duration-500`}
+        customCss={`${bubbleColors[2]} ${cssAnimationClass} -bottom-8 -right-6 2xl:-bottom-10 2xl:-right-8 h-28 w-28 transition duration-500`}
       />
     </>
   )
