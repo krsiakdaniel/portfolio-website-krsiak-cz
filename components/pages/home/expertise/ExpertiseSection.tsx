@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import Heading3 from '@/components/shared/Heading3'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
@@ -8,12 +6,12 @@ import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 import { ExpertiseSectionProps } from '@/lib/utils/typeDefinitions/props/pages/home/expertise'
 import { ARIA_LABELS } from '@/localization/english'
 
-const ExpertiseSection: FC<ExpertiseSectionProps> = ({
+const ExpertiseSection = ({
   icon = '',
   ariaLabel = '',
   heading,
   listItems = [],
-}): JSX.Element => {
+}: ExpertiseSectionProps) => {
   return (
     <div className="relative flex w-full flex-col rounded-lg border border-gray-200 bg-white px-4 py-6">
       <Heading3 textColor="text-violet-600 ml-2">

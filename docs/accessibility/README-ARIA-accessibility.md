@@ -139,12 +139,12 @@ Proper semantic structure with ARIA landmarks for navigation.
 Dynamic content announcements for screen readers.
 
 ```tsx
-interface LiveRegionProps {
+type LiveRegionProps = {
   message?: string
   priority?: 'polite' | 'assertive'
 }
 
-const LiveRegion: FC<LiveRegionProps> = ({ message, priority = 'polite' }) => {
+const LiveRegion = ({ message, priority = 'polite' }: LiveRegionProps) => {
   return (
     <div role="status" aria-live={priority} className="sr-only">
       {message}

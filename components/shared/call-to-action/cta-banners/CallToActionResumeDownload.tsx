@@ -1,7 +1,5 @@
 'use client'
 
-import { FC } from 'react'
-
 import { useResponsiveText } from '@/lib/hooks/useResponsiveText'
 
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
@@ -13,7 +11,7 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
 import starAnimated from '@/public/images/webp/emoji-animated/128x128/star-animated-128x128.webp'
 
-const CallToActionResumeDownload: FC = (): JSX.Element => {
+const CallToActionResumeDownload = () => {
   const text = useResponsiveText({
     mobileText: TEXT.downloadResumeShort,
     desktopText: TEXT.downloadResume,

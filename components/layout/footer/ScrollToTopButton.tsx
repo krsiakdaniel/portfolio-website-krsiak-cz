@@ -1,8 +1,8 @@
 'use client' // Ensure the component is a Client Component if it has an onClick handler.
 
-import { FC, useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
-import { FOOTER, ARIA_LABELS } from '@/localization/english'
+import { ARIA_LABELS, FOOTER } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
@@ -18,7 +18,7 @@ const BUTTON_STYLES = `animate-fade-in-scroll
   hover:-translate-y-1 hover:scale-110 hover:bg-violet-700 hover:shadow-xl
   focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:outline-none`
 
-const ScrollToTopButton: FC = (): JSX.Element | null => {
+const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false)
 
   const handleScrollToTop = useCallback(() => {

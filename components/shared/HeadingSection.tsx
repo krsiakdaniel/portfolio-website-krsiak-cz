@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import Heading2 from '@/components/shared/Heading2'
 
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
@@ -7,12 +5,7 @@ import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 import { HeadingSectionProps } from '@/lib/utils/typeDefinitions/props/shared/heading-section'
 import { ARIA_LABELS } from '@/localization/english'
 
-const HeadingSection: FC<HeadingSectionProps> = ({
-  text,
-  icon = '',
-  id = '',
-  dataTestId = '',
-}): JSX.Element => {
+const HeadingSection = ({ text, icon = '', id = '', dataTestId = '' }: HeadingSectionProps) => {
   return (
     <Heading2
       id={id}

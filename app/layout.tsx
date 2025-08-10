@@ -1,5 +1,4 @@
 import type { Viewport } from 'next'
-import { FC } from 'react'
 
 // Layout
 import Footer from '@/components/layout/footer/Footer'
@@ -44,7 +43,7 @@ export const viewport: Viewport = {
 }
 
 // 'Readonly' make the properties of the object read-only, meaning that after the initial assignment they cannot be reassigned.
-const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }): JSX.Element => {
+const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
   return (
     <html lang="en" className={roboto.className}>
       <head>

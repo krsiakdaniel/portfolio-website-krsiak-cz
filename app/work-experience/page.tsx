@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
@@ -30,7 +28,7 @@ export const metadata = {
   ...metaDataWorkExperience,
 }
 
-const ProjectsWork: FC = (): JSX.Element => {
+const ProjectsWork = () => {
   return (
     <PageContainer id={ID.projects.work}>
       <BreadCrumbs

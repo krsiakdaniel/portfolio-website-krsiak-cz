@@ -1,11 +1,10 @@
 'use client'
 
 import Script from 'next/script'
-import { FC } from 'react'
 
 import { ANALYTICS_WARNING } from '@/localization/english'
 
-const GoogleAnalytics: FC = () => {
+const GoogleAnalytics = () => {
   if (!process.env['NEXT_PUBLIC_GA_MEASUREMENT_ID']) {
     console.warn(ANALYTICS_WARNING.googleAnalytics)
     return null

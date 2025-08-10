@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
 
@@ -21,7 +19,7 @@ export const metadata = {
   ...metaDataKooperativa,
 }
 
-const ProjectWorkKooperativa: FC = (): JSX.Element => {
+const ProjectWorkKooperativa = () => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(

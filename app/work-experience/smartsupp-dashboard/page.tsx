@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
 
@@ -21,7 +19,7 @@ export const metadata = {
   ...metaDataSmartsuppDashboard,
 }
 
-const ProjectWorkSmartsuppDashboard: FC = (): JSX.Element => {
+const ProjectWorkSmartsuppDashboard = () => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(

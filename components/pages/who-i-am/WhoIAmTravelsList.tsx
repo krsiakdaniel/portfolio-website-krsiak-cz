@@ -1,11 +1,9 @@
-import { FC } from 'react'
-
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
 import { travelItems } from '@/lib/data/pages/who-i-am/travelItems'
 
-const WhoIAmTravelsList: FC = (): JSX.Element => {
+const WhoIAmTravelsList = () => {
   return (
     <div className="mt-4">
       <List>

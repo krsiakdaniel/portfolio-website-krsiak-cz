@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import ExternalLink from '@/components/shared/ExternalLink'
@@ -10,14 +8,14 @@ import { ARIA_LABELS, TEXT } from '@/localization/english'
 const IMAGE_WIDTH = 48
 const IMAGE_HEIGHT = 48
 
-const TestimonialPersonInfo: FC<TestimonialPersonInfoProps> = ({
+const TestimonialPersonInfo = ({
   photo,
   icon,
   name,
   job,
   company,
   link = '',
-}): JSX.Element => (
+}: TestimonialPersonInfoProps) => (
   <>
     <ImageComponent
       src={photo}

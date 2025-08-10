@@ -1,4 +1,4 @@
-import { FC, MouseEventHandler } from 'react'
+import { MouseEventHandler } from 'react'
 
 import ImageComponent from '@/components/shared/ImageComponent'
 
@@ -11,11 +11,7 @@ import {
   GalleryThumbnailsProps,
 } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
-const GalleryThumbnails: FC<GalleryThumbnailsProps> = ({
-  images,
-  activeImage,
-  setActiveImage,
-}): JSX.Element => {
+const GalleryThumbnails = ({ images, activeImage, setActiveImage }: GalleryThumbnailsProps) => {
   // Handler for mouse clicks on thumbnail images
   const handleImageClick = (image: GalleryImageProps): MouseEventHandler<HTMLDivElement> => {
     return () => setActiveImage(image)
@@ -36,7 +32,7 @@ const GalleryThumbnails: FC<GalleryThumbnailsProps> = ({
       role="list"
       aria-label={ARIA_LABELS.galleryThumbnails}
     >
-      {images.map((image, index) => (
+      {images.map((image: GalleryImageProps, index: number) => (
         <div
           data-testid={`gallery-image-${image.id}`}
           key={image.id}

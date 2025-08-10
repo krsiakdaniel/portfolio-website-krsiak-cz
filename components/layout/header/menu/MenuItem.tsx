@@ -1,10 +1,9 @@
 import Link from 'next/link'
-import { FC } from 'react'
 
 import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
 import { MenuItemProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
-const MenuItem: FC<MenuItemProps> = ({ linkItem, isMobile, onClickLink }): JSX.Element => {
+const MenuItem = ({ linkItem, isMobile, onClickLink }: MenuItemProps) => {
   const { id, href, icon, ariaLabel, text, dataTestId, isActive } = linkItem
 
   const mobileDesktopCSS = isMobile ? 'py-3' : 'py-2'

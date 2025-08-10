@@ -1,8 +1,6 @@
-import { FC } from 'react'
-
 import { IconCheckProps } from '@/lib/utils/typeDefinitions/props/icons'
 
-const IconCheck: FC<IconCheckProps> = ({ iconColor = 'text-violet-600' }): JSX.Element => {
+const IconCheck = ({ iconColor = 'text-violet-600' }: IconCheckProps) => {
   return (
     <svg
       className={`${iconColor} mr-2 h-3.5 w-3.5`}

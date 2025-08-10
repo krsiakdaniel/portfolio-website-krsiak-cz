@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import Heading3 from '@/components/shared/Heading3'
 import Highlight from '@/components/shared/Highlight'
 import List from '@/components/shared/List'
@@ -7,11 +5,11 @@ import ListItem from '@/components/shared/ListItem'
 
 import { ProjectResponsibilitySectionProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
-const ProjectResponsibilitySection: FC<ProjectResponsibilitySectionProps> = ({
+const ProjectResponsibilitySection = ({
   title,
   titleHighlight,
   items = [],
-}): JSX.Element => {
+}: ProjectResponsibilitySectionProps) => {
   return (
     <div className="mt-8">
       <Heading3>

@@ -1,7 +1,5 @@
 'use client'
 
-import { FC } from 'react'
-
 import { LiveRegionProps } from '@/lib/utils/typeDefinitions/props/shared/liveRegion'
 import { ARIA_LABELS } from '@/localization/english'
 
@@ -40,7 +38,7 @@ import { ARIA_LABELS } from '@/localization/english'
  * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions
  * @see https://www.w3.org/wiki/PF/ARIA/BestPractices/LiveRegion
  */
-const LiveRegion: FC<LiveRegionProps> = ({ message = '', priority = 'polite' }): JSX.Element => {
+const LiveRegion = ({ message = '', priority = 'polite' }: LiveRegionProps) => {
   if (!message) {
     return <></>
   }

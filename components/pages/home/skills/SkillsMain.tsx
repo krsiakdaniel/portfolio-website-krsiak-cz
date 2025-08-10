@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import DividerWithText from '@/components/shared/DividerWithText'
 import SkillCard from '@/components/shared/SkillCard'
 
@@ -7,7 +5,7 @@ import { DIVIDER_WITH_TEXT } from '@/localization/english'
 
 import { skills } from '@/lib/data/pages/home/skills/skillsMain'
 
-const SkillsMain: FC = (): JSX.Element => {
+const SkillsMain = () => {
   return (
     <div className="mt-20">
       <DividerWithText text={DIVIDER_WITH_TEXT.myMainSkills} />

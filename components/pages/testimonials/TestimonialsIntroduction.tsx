@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
@@ -7,7 +5,7 @@ import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-const TestimonialsIntroduction: FC = (): JSX.Element => {
+const TestimonialsIntroduction = () => {
   return (
     <>
       <Paragraph dataTestId={DATA_TEST_IDS.page.testimonials.introduction}>

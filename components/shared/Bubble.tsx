@@ -1,5 +1,4 @@
 import { BubbleProps } from '@/lib/utils/typeDefinitions/props/shared/bubble'
-import { FC } from 'react'
 
 /**
  * Bubble component
@@ -9,7 +8,7 @@ import { FC } from 'react'
  * Also it adds and uses custom CSS passed via props.
  *
  */
-const Bubble: FC<BubbleProps> = ({ customCss }): JSX.Element => {
+const Bubble = ({ customCss }: BubbleProps) => {
   return <div className={`absolute m-2 rounded-full opacity-50 lg:m-0 ${customCss}`} />
 }
 

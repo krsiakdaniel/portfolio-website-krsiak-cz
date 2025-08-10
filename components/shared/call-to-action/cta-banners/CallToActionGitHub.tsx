@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
 import { CALL_TO_ACTION, TEXT } from '@/localization/english'
@@ -9,7 +7,7 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
 import rocketAnimated from '@/public/images/webp/emoji-animated/128x128/rocket-animated-128x128.webp'
 
-const CallToActionGitHub: FC = (): JSX.Element => {
+const CallToActionGitHub = () => {
   return (
     <CallToAction
       highlight={CALL_TO_ACTION.github.highlight}

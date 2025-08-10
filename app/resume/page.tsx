@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import CareerPath from '@/components/pages/resume/CareerPath'
@@ -22,7 +20,7 @@ export const metadata = {
   ...metaDataResume,
 }
 
-const Resume: FC = (): JSX.Element => {
+const Resume = () => {
   return (
     <PageContainer id={ID.resume}>
       <BreadCrumbs

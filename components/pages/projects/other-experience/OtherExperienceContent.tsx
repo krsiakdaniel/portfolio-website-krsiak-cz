@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ExperienceCard from '@/components/pages/projects/other-experience/ExperienceCard'
 import Heading4 from '@/components/shared/Heading4'
 
@@ -7,9 +5,7 @@ import { TEXT } from '@/localization/english'
 
 import { OtherExperienceContentProps } from '@/lib/utils/typeDefinitions/props/pages/projects/other-experience'
 
-const OtherExperienceContent: FC<OtherExperienceContentProps> = ({
-  experience = [],
-}): JSX.Element => {
+const OtherExperienceContent = ({ experience = [] }: OtherExperienceContentProps) => {
   return (
     <div className="mt-8">
       <Heading4>{TEXT.otherExperience}</Heading4>

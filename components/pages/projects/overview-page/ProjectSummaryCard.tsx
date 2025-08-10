@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ProjectDetails from '@/components/pages/projects/overview-page/ProjectDetails'
 import ProjectImage from '@/components/pages/projects/overview-page/ProjectImage'
 import ProjectSkillsIcons from '@/components/pages/projects/overview-page/ProjectSkillsIcons'
@@ -7,7 +5,7 @@ import LinkButton from '@/components/shared/LinkButton'
 
 import { ProjectSummaryCardProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
-const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
+const ProjectSummaryCard = ({
   isFeatured,
   image,
   icon,
@@ -23,7 +21,7 @@ const ProjectSummaryCard: FC<ProjectSummaryCardProps> = ({
   linkProjectPage,
   dataTestId,
   className,
-}): JSX.Element => {
+}: ProjectSummaryCardProps) => {
   return (
     <section>
       <div className={`grid grid-cols-1 gap-8 lg:grid-cols-2 ${className}`}>

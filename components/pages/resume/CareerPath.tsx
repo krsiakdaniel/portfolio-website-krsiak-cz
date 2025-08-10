@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ExpertiseSection from '@/components/pages/home/expertise/ExpertiseSection'
 import HeadingSection from '@/components/shared/HeadingSection'
 import Highlight from '@/components/shared/Highlight'
@@ -11,7 +9,7 @@ import { careerReactDev } from '@/lib/data/pages/resume/career-path/careerReactD
 import { careerTesting } from '@/lib/data/pages/resume/career-path/careerTesting'
 import { careerWebDev } from '@/lib/data/pages/resume/career-path/careerWebDev'
 
-const CareerPath: FC = (): JSX.Element => {
+const CareerPath = () => {
   return (
     <>
       <HeadingSection text={CAREER_PATH.heading} />

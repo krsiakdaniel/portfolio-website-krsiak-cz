@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
 import Companies from '@/components/pages/home/Companies'
@@ -22,7 +20,7 @@ export const metadata = {
   ...metaDataHome,
 }
 
-const Page: FC = (): JSX.Element => {
+const Page = () => {
   return (
     <PageContainer id={ID.home}>
       <Hero />

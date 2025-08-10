@@ -1,12 +1,8 @@
-import { FC } from 'react'
-
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { IconArrowProps } from '@/lib/utils/typeDefinitions/props/icons'
 
-const IconArrow: FC<IconArrowProps> = ({
-  arrowDirection = ArrowDirectionEnum.Left,
-}): JSX.Element => {
+const IconArrow = ({ arrowDirection = ArrowDirectionEnum.Left }: IconArrowProps) => {
   return (
     <svg
       className={`block h-4 w-4 ${arrowDirection === ArrowDirectionEnum.Left ? 'rotate-180' : ''}`}

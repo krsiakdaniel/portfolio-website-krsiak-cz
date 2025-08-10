@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
@@ -8,7 +6,7 @@ import { ProjectSkillsIconsProps } from '@/lib/utils/typeDefinitions/props/pages
 const IMAGE_WIDTH = 28
 const IMAGE_HEIGHT = 28
 
-const ProjectSkillsIcons: FC<ProjectSkillsIconsProps> = ({ skillsIcons = [] }): JSX.Element => {
+const ProjectSkillsIcons = ({ skillsIcons = [] }: ProjectSkillsIconsProps) => {
   return (
     <div className="mt-2 flex flex-wrap lg:mt-4">
       {skillsIcons.map((item) => (

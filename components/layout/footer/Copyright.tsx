@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { FC } from 'react'
 
 import Paragraph from '@/components/shared/Paragraph'
 
@@ -10,7 +9,7 @@ import { COPYRIGHT } from '@/lib/utils/constants/specialCharacters'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getCurrentYear } from '@/lib/utils/helpers/years/getCurrentYear'
 
-const Copyright: FC = (): JSX.Element => {
+const Copyright = () => {
   return (
     <Paragraph size="text-md" marginTop="mt-4" customCss="flex flex-row text-center gap-2">
       <span data-testid={DATA_TEST_IDS.footer.copyright}>

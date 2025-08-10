@@ -1,11 +1,9 @@
-import { FC } from 'react'
-
 import Highlight from '@/components/shared/Highlight'
 
 import { CareerPathJobStepProps } from '@/lib/utils/typeDefinitions/props/pages/resume/resume'
 import { ARIA_LABELS } from '@/localization/english'
 
-const CareerPathJobStep: FC<CareerPathJobStepProps> = ({ step, index }) => {
+const CareerPathJobStep = ({ step, index }: CareerPathJobStepProps) => {
   const isHighlighted = index < 3
   const isNotFirstStep = index > 0
 

@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
@@ -7,7 +5,7 @@ import { COMMON_VALUES, INTRODUCTION, SHARED } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-const WhoIAmIntroduction: FC = (): JSX.Element => {
+const WhoIAmIntroduction = () => {
   return (
     <>
       <Paragraph dataTestId={DATA_TEST_IDS.page.whoIAm.introduction}>

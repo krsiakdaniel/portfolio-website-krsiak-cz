@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import TestimonialQuote from '@/components/pages/testimonials/TestimonialQuote'
@@ -20,7 +18,7 @@ import temple from '@/public/images/webp/photo/south-korea/temple.webp'
 const IMAGE_WIDTH = 1240
 const IMAGE_HEIGHT = 1650
 
-const SouthKorea: FC = (): JSX.Element => {
+const SouthKorea = () => {
   const imageComponentCSS = 'border rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md'
 
   return (

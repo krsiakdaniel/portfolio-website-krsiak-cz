@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import IconArrow from '@/components/icons/IconArrow'
 
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
@@ -7,13 +5,13 @@ import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 import { PageNavigationLinkProps } from '@/lib/utils/typeDefinitions/props/layout/page-navigation'
 import { COMMON_VALUES } from '@/localization/english'
 
-const PageNavigationLink: FC<PageNavigationLinkProps> = ({
+const PageNavigationLink = ({
   href,
   icon,
   text,
   arrowDirection,
   dataTestId,
-}): JSX.Element => {
+}: PageNavigationLinkProps) => {
   const hasArrowLeft = arrowDirection === ArrowDirectionEnum.Left
   const hasArrowRight = arrowDirection === ArrowDirectionEnum.Right
 

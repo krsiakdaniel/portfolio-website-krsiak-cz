@@ -1,16 +1,14 @@
-import { FC } from 'react'
-
 import Heading1 from '@/components/shared/Heading1'
 
 import { ProjectsOverviewLayoutProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page-layout'
 
-const ProjectsOverviewLayout: FC<ProjectsOverviewLayoutProps> = ({
+const ProjectsOverviewLayout = ({
   icon,
   ariaLabel,
   heading,
   description,
   children,
-}): JSX.Element => {
+}: ProjectsOverviewLayoutProps) => {
   return (
     <>
       <div className="mt-10 flex flex-col">

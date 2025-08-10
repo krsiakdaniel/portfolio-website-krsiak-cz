@@ -1,17 +1,15 @@
-import { FC } from 'react'
-
 import { getAttributes } from '@/lib/utils/helpers/getAttributes'
 
 import { ParagraphProps } from '@/lib/utils/typeDefinitions/props/shared/paragraph'
 
-const Paragraph: FC<ParagraphProps> = ({
+const Paragraph = ({
   marginTop = 'mt-4',
   dataTestId = '',
   textColor = 'text-neutral-600',
   size = 'text-lg',
   customCss = '',
   children,
-}): JSX.Element => {
+}: ParagraphProps) => {
   const attributes = getAttributes({ dataTestId })
 
   return (

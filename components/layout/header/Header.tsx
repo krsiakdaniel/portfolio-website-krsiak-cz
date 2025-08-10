@@ -1,6 +1,6 @@
 'use client' // using hooks
 
-import { FC, useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 
 import { useClickOutside } from '@/lib/hooks/useClickOutside'
 import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
@@ -15,7 +15,7 @@ import PageContainer from '@/components/layout/PageContainer'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { ARIA_LABELS } from '@/localization/english'
 
-const Header: FC = (): JSX.Element => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
   const scroll = useScrollProgress()
 

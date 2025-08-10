@@ -1,17 +1,15 @@
-import { FC } from 'react'
-
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { EmojiAnimatedProps } from '@/lib/utils/typeDefinitions/props/shared/emoji-animated'
 
-const EmojiAnimated: FC<EmojiAnimatedProps> = ({
+const EmojiAnimated = ({
   icon,
   size,
   alt,
   loading = ImageLoading.LAZY,
   className = '',
-}): JSX.Element => {
+}: EmojiAnimatedProps) => {
   const src = `/images/webp/emoji-animated/${size}x${size}/${icon}-animated-${size}x${size}.webp`
   const isPriority = loading === ImageLoading.EAGER
 

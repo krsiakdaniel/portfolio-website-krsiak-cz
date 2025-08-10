@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import GoBackLink from '@/components/layout/projects/project-page/GoBackLink'
 import Heading1 from '@/components/shared/Heading1'
 import Heading2 from '@/components/shared/Heading2'
@@ -8,7 +6,7 @@ import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 
 import { HeaderSectionProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
-const HeaderSection: FC<HeaderSectionProps> = ({
+const HeaderSection = ({
   icon,
   ariaLabel,
   title,
@@ -17,7 +15,7 @@ const HeaderSection: FC<HeaderSectionProps> = ({
   company,
   goBackLink,
   sectionID,
-}): JSX.Element => {
+}: HeaderSectionProps) => {
   return (
     <div className="mt-10">
       <Heading1 textColor="text-neutral-900">

@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import PageContainer from '@/components/layout/PageContainer'
 import StatusIntroduction from '@/components/pages/status/StatusIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
@@ -25,7 +23,7 @@ export const metadata = {
   ...metaDataStatus,
 }
 
-const Status: FC = (): JSX.Element => {
+const Status = () => {
   return (
     <PageContainer id={ID.status}>
       <BreadCrumbs

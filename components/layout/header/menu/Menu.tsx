@@ -1,7 +1,6 @@
 'use client' // using usePathname hook
 
 import { usePathname } from 'next/navigation'
-import { FC } from 'react'
 
 import MenuItem from '@/components/layout/header/menu/MenuItem'
 
@@ -19,7 +18,7 @@ import { MenuProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 /**
  * Menu component for both mobile and desktop navigation
  */
-const Menu: FC<MenuProps> = ({ type, ref, onClickLink }): JSX.Element => {
+const Menu = ({ type, ref, onClickLink }: MenuProps) => {
   const isMobile = type === DeviceTypeEnum.Mobile
   const currentPathname = usePathname()
 

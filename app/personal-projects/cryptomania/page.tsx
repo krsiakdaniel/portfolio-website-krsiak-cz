@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
 import Alert from '@/components/shared/Alert'
@@ -24,7 +22,7 @@ export const metadata = {
   ...metaDataCryptomania,
 }
 
-const ProjectPersonalCryptomania: FC = (): JSX.Element => {
+const ProjectPersonalCryptomania = () => {
   const AlertType = AlertTypeEnum.Info
 
   return (

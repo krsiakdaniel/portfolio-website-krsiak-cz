@@ -1,17 +1,16 @@
 import Link from 'next/link'
-import { FC } from 'react'
 
 import IconCaretRight from '@/components/icons/IconCaretRight'
 
 import { BreadcrumbsItemProps } from '@/lib/utils/typeDefinitions/props/shared/breadcrumbs-item'
 
-const BreadcrumbsItem: FC<BreadcrumbsItemProps> = ({
+const BreadcrumbsItem = ({
   href,
   icon,
   ariaLabel = '',
   text,
   showSeparatorIcon = true,
-}): JSX.Element => {
+}: BreadcrumbsItemProps) => {
   const hoverAndFocusCSS = 'hover:bg-violet-50 hover:text-violet-800'
 
   return (

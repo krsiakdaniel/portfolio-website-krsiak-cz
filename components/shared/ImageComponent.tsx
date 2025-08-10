@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { FC } from 'react'
 import { Tooltip } from 'react-tooltip'
 
 import { IMAGE_ALT } from '@/localization/english'
@@ -13,7 +12,7 @@ import { ImageComponentProps } from '@/lib/utils/typeDefinitions/props/shared/im
 const IMAGE_WIDTH = 128
 const IMAGE_HEIGHT = 128
 
-const ImageComponent: FC<ImageComponentProps> = ({
+const ImageComponent = ({
   src = '',
   width = IMAGE_WIDTH,
   height = IMAGE_HEIGHT,
@@ -27,7 +26,7 @@ const ImageComponent: FC<ImageComponentProps> = ({
   caption = '',
   dataTooltipContent = '',
   dataTestId = '',
-}): JSX.Element => {
+}: ImageComponentProps) => {
   const hasTooltip = dataTooltipContent !== ''
 
   // Is image src 'object' ? 'extract the image path from imported image object' : 'get string from direct image path'

@@ -1,12 +1,12 @@
 'use client'
 
-import { FC, useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 import Bubble from '@/components/shared/Bubble'
 
 import { shuffleArrayWithBubblesColors } from '@/lib/utils/helpers/bubbles/shuffleArrayWithBubblesColors'
 
-const CallToActionBubbles: FC = (): JSX.Element => {
+const CallToActionBubbles = () => {
   const cssAnimationClass = 'animate-pulse-bubble'
 
   const initialBubblesColors = useMemo(() => ['bg-blue-300', 'bg-violet-400', 'bg-blue-400'], [])

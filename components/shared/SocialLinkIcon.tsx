@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { DeviceTypeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
@@ -11,7 +9,7 @@ const IMAGE_HEIGHT_MOBILE = 32
 const IMAGE_WIDTH_DESKTOP = 28
 const IMAGE_HEIGHT_DESKTOP = 28
 
-const SocialLinkIcon: FC<SocialLinkIconProps> = ({
+const SocialLinkIcon = ({
   type,
   href,
   dataTestId,
@@ -19,7 +17,7 @@ const SocialLinkIcon: FC<SocialLinkIconProps> = ({
   ariaLabel,
   imgSrc,
   imgAlt,
-}): JSX.Element => {
+}: SocialLinkIconProps) => {
   const isMobile = type === DeviceTypeEnum.Mobile
   const width = isMobile ? IMAGE_WIDTH_MOBILE : IMAGE_WIDTH_DESKTOP
   const height = isMobile ? IMAGE_HEIGHT_MOBILE : IMAGE_HEIGHT_DESKTOP
