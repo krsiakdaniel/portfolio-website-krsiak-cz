@@ -144,7 +144,7 @@ type LiveRegionProps = {
   priority?: 'polite' | 'assertive'
 }
 
-const LiveRegion: = ({ message, priority = 'polite' }: LiveRegionProps) => {
+const LiveRegion = ({ message, priority = 'polite' }: LiveRegionProps) => {
   return (
     <div role="status" aria-live={priority} className="sr-only">
       {message}
