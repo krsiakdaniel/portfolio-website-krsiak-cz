@@ -1,8 +1,8 @@
 import type { Config } from 'tailwindcss'
 
-// Extend the Config type to include safelist
+// Extend the Config type to include safelist with pattern support
 type ExtendedConfig = Config & {
-  safelist?: string[]
+  safelist?: (string | { pattern: RegExp })[]
 }
 
 // Custom colors for the project
@@ -101,70 +101,15 @@ const config: ExtendedConfig = {
   plugins: [],
 
   // 4. Safelist - classes always included in final CSS (for dynamic classes)
+  // Using pattern-based approach for better maintainability and scalability
   safelist: [
-    // Background colors
-    'bg-blue-100',
-    'bg-blue-600',
-    'bg-gray-600',
-    'bg-gray-800',
-    'bg-green-100',
-    'bg-green-600',
-    'bg-neutral-100',
-    'bg-red-100',
-    'bg-red-600',
-    'bg-yellow-100',
-    'bg-yellow-600',
-
-    // Border colors
-    'border-blue-300',
-    'border-green-300',
-    'border-neutral-300',
-    'border-red-300',
-    'border-yellow-300',
-
-    // Focus ring colors
-    'focus:ring-blue-300',
-    'focus:ring-blue-400',
-    'focus:ring-gray-300',
-    'focus:ring-gray-400',
-    'focus:ring-green-400',
-    'focus:ring-red-300',
-    'focus:ring-red-400',
-    'focus:ring-yellow-400',
-
-    // Hover background colors
-    'hover:bg-blue-800',
-    'hover:bg-gray-800',
-    'hover:bg-green-800',
-    'hover:bg-red-800',
-    'hover:bg-yellow-800',
-
-    // Responsive text sizes
-    'sm:text-6xl',
-    'sm:text-9xl',
-    'md:text-7xl',
-    'lg:text-9xl',
-
-    // Base text sizes
-    'text-sm',
-    'text-md',
-    'text-lg',
-    'text-xl',
-    'text-2xl',
-    'text-3xl',
-    'text-4xl',
-    'text-5xl',
-    'text-6xl',
-    'text-7xl',
-    'text-8xl',
-    'text-9xl',
-
-    // Text colors
-    'text-blue-800',
-    'text-green-800',
-    'text-neutral-800',
-    'text-red-800',
-    'text-yellow-800',
+    { pattern: /bg-(blue|gray|green|neutral|red|yellow)-(100|600|800)/ }, // Background colors
+    { pattern: /border-(blue|green|neutral|red|yellow)-300/ }, // Border colors
+    { pattern: /focus:ring-(blue|gray|green|red|yellow)-(300|400)/ }, // Focus ring colors
+    { pattern: /hover:bg-(blue|gray|green|red|yellow)-800/ }, // Hover background colors
+    { pattern: /text-(blue|green|neutral|red|yellow)-800/ }, // Text colors
+    { pattern: /text-(xs|sm|base|lg|xl|2xl|3xl|4xl|5xl|6xl|7xl|8xl|9xl)/ }, // Text sizes
+    { pattern: /(sm|md|lg):text-(6xl|7xl|9xl)/ }, // Responsive text sizes
   ],
 }
 

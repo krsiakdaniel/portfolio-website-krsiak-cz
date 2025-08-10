@@ -14,7 +14,7 @@ const ExperienceCard = ({ company, role, description }: ExperienceCardProps) => 
         <span className="mx-1">{MIDDLE_DOT}</span>
         <Highlight text={role} />
       </Heading>
-      <Paragraph marginTop="mt-0" size="text-md" textColor="text-neutral-600">
+      <Paragraph marginTop="mt-0" size="text-base" textColor="text-neutral-600">
         {description}
       </Paragraph>
     </div>
