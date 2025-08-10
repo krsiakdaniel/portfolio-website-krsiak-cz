@@ -195,6 +195,10 @@ This runs the full test suite including E2E tests.
 - `.husky/pre-commit` - Runs `lint-staged` + TypeScript type checking
 - `.husky/post-commit` - Runs quality gates (informational)
 
+**Error example that shows in FORK client:**
+
+![precommit-husky-error](/readme-images/development/pre-commit-setup/precommit-husky-error-in-fork.webp)
+
 ## 🚨 TypeScript Error Example
 
 The setup catches errors like:
