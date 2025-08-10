@@ -36,7 +36,7 @@ const ErrorPageContent = ({
       />
 
       <div className="mt-10">
-        <Heading as="h1" size="8xl" sizeSM="8xl" sizeMD="8xl">
+        <Heading as="h1" size="9xl" sizeSM="9xl" sizeMD="9xl">
           {heading}
         </Heading>
       </div>

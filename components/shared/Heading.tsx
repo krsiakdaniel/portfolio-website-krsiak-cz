@@ -1,22 +1,12 @@
 import { getAttributes } from '@/lib/utils/helpers/getAttributes'
 
 import {
+  HeadingDefaults,
+  HeadingLevel,
   HeadingProps,
   HeadingSize,
-  HeadingLevel,
 } from '@/lib/utils/typeDefinitions/props/shared/headings'
 
-// TODO: move type outside
-// Size and color defaults for each heading level
-type HeadingDefaults = {
-  size: HeadingSize
-  sizeSM?: HeadingSize
-  sizeMD?: HeadingSize
-  textColor: string
-  className: string
-}
-
-// TODO: move type outside
 const HEADING_DEFAULTS: Record<HeadingLevel, HeadingDefaults> = {
   h1: {
     size: '5xl' as HeadingSize,

@@ -16,7 +16,8 @@ export type HeadingSize =
   | '8xl'
   | '9xl'
 
-export interface HeadingProps {
+// Heading Props
+export type HeadingProps = {
   as?: HeadingLevel
   size?: HeadingSize
   sizeSM?: HeadingSize
@@ -26,4 +27,13 @@ export interface HeadingProps {
   textColor?: string
   customCss?: string
   children: ReactNode
+}
+
+// Size and color defaults for each heading level
+export type HeadingDefaults = {
+  size: HeadingSize
+  sizeSM?: HeadingSize
+  sizeMD?: HeadingSize
+  textColor: string
+  className: string
 }
