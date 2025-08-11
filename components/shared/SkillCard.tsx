@@ -9,7 +9,7 @@ import { SKILL_CARD_IMAGE } from './constants'
 const SkillCard = ({ id, imgSrc, imgAlt, technology, years }: SkillCardProps) => {
   return (
     <div
-      className="rounded-lg border border-gray-200 bg-white p-4 transition-shadow duration-250 ease-in-out hover:border-gray-300 hover:shadow-md"
+      className="rounded-lg border border-gray-200 bg-white p-4 transition-shadow duration-300 ease-in-out hover:border-gray-300 hover:shadow-md"
       id={getSkillCardID(id)}
     >
       <div className="flex flex-wrap">

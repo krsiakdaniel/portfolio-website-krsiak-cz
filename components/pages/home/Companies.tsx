@@ -18,7 +18,7 @@ const Companies = () => {
   const logosGrid =
     'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-16 justify-items-center'
   const imgWrapper = 'flex items-center justify-center'
-  const hoverScaleEffect = 'transition-transform duration-250 ease-in-out hover:scale-110'
+  const hoverScaleEffect = 'transition-transform duration-300 ease-in-out hover:scale-110'
 
   return (
     <section>

@@ -18,7 +18,7 @@ const SkillsIconGroup = ({ icons = [], customCss = '' }: SkillsIconGroupProps) =
           sizes={`${SKILLS_ICON.WIDTH}px`}
           alt={capitalizeFirstLetter(item.name)}
           dataTooltipContent={capitalizeFirstLetter(item.name)}
-          customCss="transition-transform duration-250 ease-in-out hover:scale-110"
+          customCss="transition-transform duration-300 ease-in-out hover:scale-110"
         />
       ))}
     </div>
