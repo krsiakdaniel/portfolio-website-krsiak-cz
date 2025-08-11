@@ -99,5 +99,74 @@
     a[href^='#']:focus {
       z-index: 9999;
     }
+
+    /* Company logos infinite scale animation */
+    @-webkit-keyframes pulse-scale {
+      0%,
+      16.66%,
+      100% {
+        transform: scale(1);
+      }
+      8.33% {
+        transform: scale(1.1);
+      }
+    }
+    @keyframes pulse-scale {
+      0%,
+      16.66%,
+      100% {
+        transform: scale(1);
+      }
+      8.33% {
+        transform: scale(1.1);
+      }
+    }
+
+    .animate-pulse-scale {
+      -webkit-animation: pulse-scale 12s ease-in-out infinite;
+      animation: pulse-scale 12s ease-in-out infinite;
+      will-change: transform;
+    }
+
+    /* Staggered animation delays for each logo */
+    .animate-pulse-scale-delay-1 {
+      -webkit-animation: pulse-scale 12s ease-in-out infinite;
+      animation: pulse-scale 12s ease-in-out infinite;
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+      will-change: transform;
+    }
+
+    .animate-pulse-scale-delay-2 {
+      -webkit-animation: pulse-scale 12s ease-in-out infinite;
+      animation: pulse-scale 12s ease-in-out infinite;
+      -webkit-animation-delay: 4s;
+      animation-delay: 4s;
+      will-change: transform;
+    }
+
+    .animate-pulse-scale-delay-3 {
+      -webkit-animation: pulse-scale 12s ease-in-out infinite;
+      animation: pulse-scale 12s ease-in-out infinite;
+      -webkit-animation-delay: 6s;
+      animation-delay: 6s;
+      will-change: transform;
+    }
+
+    .animate-pulse-scale-delay-4 {
+      -webkit-animation: pulse-scale 12s ease-in-out infinite;
+      animation: pulse-scale 12s ease-in-out infinite;
+      -webkit-animation-delay: 8s;
+      animation-delay: 8s;
+      will-change: transform;
+    }
+
+    .animate-pulse-scale-delay-5 {
+      -webkit-animation: pulse-scale 12s ease-in-out infinite;
+      animation: pulse-scale 12s ease-in-out infinite;
+      -webkit-animation-delay: 10s;
+      animation-delay: 10s;
+      will-change: transform;
+    }
   }
 }
