@@ -6,11 +6,11 @@ import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization/english'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
+import bata from '@/public/images/svg/logo/bata.svg'
 import groupon from '@/public/images/svg/logo/groupon.svg'
 import komercniBanka from '@/public/images/svg/logo/komercni-banka.svg'
 import kooperativa from '@/public/images/svg/logo/kooperativa.svg'
 import microsoft from '@/public/images/svg/logo/microsoft.svg'
-import bata from '@/public/images/svg/logo/bata.svg'
 import smartsupp from '@/public/images/svg/logo/smartsupp.svg'
 import { COMPANY_LOGOS } from './constants'
 
@@ -18,6 +18,7 @@ const Companies = () => {
   const logosGrid =
     'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-16 justify-items-center'
   const imgWrapper = 'flex items-center justify-center'
+  const hoverScaleEffect = 'transition-transform duration-250 ease-in-out hover:scale-110'
 
   return (
     <section>
@@ -34,6 +35,7 @@ const Companies = () => {
               width={COMPANY_LOGOS.KOOPERATIVA.WIDTH}
               alt={IMAGE_ALT.altKooperativa}
               loading={ImageLoading.LAZY}
+              customCss={hoverScaleEffect}
             />
           </div>
           <div className={imgWrapper}>
@@ -42,6 +44,7 @@ const Companies = () => {
               width={COMPANY_LOGOS.SMARTSUPP.WIDTH}
               alt={IMAGE_ALT.altSmartsupp}
               loading={ImageLoading.LAZY}
+              customCss={hoverScaleEffect}
             />
           </div>
           <div className={imgWrapper}>
@@ -50,6 +53,7 @@ const Companies = () => {
               width={COMPANY_LOGOS.MICROSOFT.WIDTH}
               alt={IMAGE_ALT.altMicrosoft}
               loading={ImageLoading.LAZY}
+              customCss={hoverScaleEffect}
             />
           </div>
 
@@ -59,6 +63,7 @@ const Companies = () => {
               width={COMPANY_LOGOS.BATA.WIDTH}
               alt={IMAGE_ALT.altBata}
               loading={ImageLoading.LAZY}
+              customCss={hoverScaleEffect}
             />
           </div>
           <div className={imgWrapper}>
@@ -67,6 +72,7 @@ const Companies = () => {
               width={COMPANY_LOGOS.KOMERCNI_BANKA.WIDTH}
               alt={IMAGE_ALT.altKomercniBanka}
               loading={ImageLoading.LAZY}
+              customCss={hoverScaleEffect}
             />
           </div>
           <div className={imgWrapper}>
@@ -75,6 +81,7 @@ const Companies = () => {
               width={COMPANY_LOGOS.GROUPON.WIDTH}
               alt={IMAGE_ALT.altGroupon}
               loading={ImageLoading.LAZY}
+              customCss={hoverScaleEffect}
             />
           </div>
         </div>
