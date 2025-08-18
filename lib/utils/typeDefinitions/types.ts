@@ -1,4 +1,5 @@
 import { SkillCategoryEnum, SkillIconEnum } from '@/lib/utils/typeDefinitions/enums'
+import { TECHNOLOGY_START_DATES } from '../helpers/years/calculateTechnologyYears'
 
 // Breadcrumbs
 export type BreadCrumbsType = {
@@ -73,3 +74,6 @@ export type TextSizeType =
 
 // Define the type for the setLunarPhaseEmoji function
 export type SetLunarPhaseEmoji = (emoji: string) => void
+
+// Technology Key Type
+export type TechnologyKey = keyof typeof TECHNOLOGY_START_DATES
