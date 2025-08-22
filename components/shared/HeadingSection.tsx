@@ -5,7 +5,12 @@ import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 import { HeadingSectionProps } from '@/lib/utils/typeDefinitions/props/shared/heading-section'
 import { ARIA_LABELS } from '@/localization/english'
 
-const HeadingSection = ({ text, icon = '', id = '', dataTestId = '' }: HeadingSectionProps) => {
+const HeadingSection = ({
+  text = '',
+  icon = '',
+  id = '',
+  dataTestId = '',
+}: HeadingSectionProps) => {
   return (
     <Heading
       as="h2"

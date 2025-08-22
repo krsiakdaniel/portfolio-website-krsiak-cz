@@ -427,3 +427,15 @@ export interface TravelItem {
   flag: string
   text: string
 }
+
+// Resume Preview Card
+export interface ResumePreviewCard {
+  title: string
+  description: string
+  highlight: string
+  href: string
+  imageSrc: string | StaticImageData
+  imageAlt: string
+  buttonText: string
+  dataTestId: string
+}
