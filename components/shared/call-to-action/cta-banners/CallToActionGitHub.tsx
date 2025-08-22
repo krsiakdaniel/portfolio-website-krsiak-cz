@@ -18,7 +18,7 @@ const CallToActionGitHub = () => {
       linkText={TEXT.gitHubCode}
       dataTestId={DATA_TEST_IDS.callToAction.linkGitHub}
       icon={rocketAnimated}
-      isLinkExternal
+      isLinkExternal={true}
     />
   )
 }

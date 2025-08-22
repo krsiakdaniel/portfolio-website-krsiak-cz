@@ -41,7 +41,7 @@ test.describe('Resume page', () => {
     await checkLink(
       page,
       'call-to-action-link-resume-download',
-      'https://drive.google.com/file/d/1Zw7kGKtEHBHn9mvWpCUTwNVo4jTwR7um/view',
+      'https://drive.google.com/file/d/1oRhPxdLv0fKnDOet2O5yEf_SSI_w3xQu/view',
     )
   })
 })

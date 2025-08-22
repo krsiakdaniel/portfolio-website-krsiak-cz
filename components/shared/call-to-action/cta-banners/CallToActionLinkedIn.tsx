@@ -26,7 +26,7 @@ const CallToActionLinkedIn = () => {
       dataTestId={DATA_TEST_IDS.callToAction.linkLinkedIn}
       icon={ICON_EMOJI.link}
       hasPhoto={true}
-      isLinkExternal
+      isLinkExternal={true}
     />
   )
 }
