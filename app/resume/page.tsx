@@ -43,7 +43,7 @@ const Resume = () => {
 
         <ResumePreviewSection />
 
-        <div className="flex flex-col gap-8 md:flex-row">
+        <div className="flex flex-col md:flex-row md:gap-8">
           <div className="md:w-1/2">
             <CareerPath />
           </div>

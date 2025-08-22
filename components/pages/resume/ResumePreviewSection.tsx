@@ -5,7 +5,7 @@ import { resumePreviewCardData } from '@/lib/data/pages/resume/preview-cards/res
 const ResumePreviewSection = () => {
   return (
     <section>
-      <div className="grid gap-8 md:grid-cols-2">
+      <div className="grid md:grid-cols-2 md:gap-8">
         {resumePreviewCardData.map((card) => (
           <ResumePreviewCard
             key={card.title}

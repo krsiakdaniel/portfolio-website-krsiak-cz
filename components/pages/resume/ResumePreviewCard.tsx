@@ -28,7 +28,7 @@ const ResumePreviewCard = ({
         <Highlight text={highlight} /> {description}
       </Paragraph>
 
-      <div className="mt-4 rounded-lg border border-violet-300 bg-blue-50 p-4 transition duration-300 hover:border-violet-600 lg:p-6">
+      <div className="mt-4">
         <Link
           href={href}
           target="_blank"
@@ -36,13 +36,13 @@ const ResumePreviewCard = ({
           className="block transition-transform duration-200 hover:scale-[1.01]"
           data-testid={dataTestId.image}
         >
-          <div className="relative overflow-hidden rounded-md border-2 border-gray-200 bg-white hover:border-violet-400">
+          <div className="bg-white">
             <ImageComponent
               src={imageSrc}
               alt={imageAlt}
               width={RESUME_PREVIEW_IMAGE.WIDTH}
               height={RESUME_PREVIEW_IMAGE.HEIGHT}
-              customCss="h-auto w-full"
+              customCss="rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md hover:border-violet-600"
               loading={ImageLoading.EAGER}
               priority={true}
             />
