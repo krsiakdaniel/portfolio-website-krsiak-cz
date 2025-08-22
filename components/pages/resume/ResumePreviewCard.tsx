@@ -36,7 +36,7 @@ const ResumePreviewCard = ({
           className="block transition-transform duration-200 hover:scale-[1.01]"
           data-testid={dataTestId.image}
         >
-          <div className="relative overflow-hidden rounded-md border-2 border-gray-200 hover:border-violet-400">
+          <div className="relative overflow-hidden rounded-md border-2 border-gray-200 bg-white hover:border-violet-400">
             <ImageComponent
               src={imageSrc}
               alt={imageAlt}
