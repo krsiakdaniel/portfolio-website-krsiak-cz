@@ -34,6 +34,7 @@ const ResumePreviewCard = ({
           target="_blank"
           rel="noopener noreferrer"
           className="block transition-transform duration-200 hover:scale-[1.01]"
+          data-testid={dataTestId.image}
         >
           <div className="relative overflow-hidden rounded-md border-2 border-gray-200 hover:border-violet-400">
             <ImageComponent
@@ -53,7 +54,7 @@ const ResumePreviewCard = ({
             href={href}
             linkText={buttonText}
             isLinkExternal={true}
-            dataTestId={dataTestId}
+            dataTestId={dataTestId.button}
           />
         </div>
       </div>

@@ -18,7 +18,10 @@ export const resumePreviewCardData: ResumePreviewCard[] = [
     imageSrc: previewPDF,
     imageAlt: TEXT.altPreviewPDF,
     buttonText: TEXT.downloadResumeShortPDF,
-    dataTestId: DATA_TEST_IDS.callToAction.linkResumeDownloadPDF,
+    dataTestId: {
+      image: DATA_TEST_IDS.resume.linkImageResumeDownloadPDF,
+      button: DATA_TEST_IDS.resume.linkButtonResumeDownloadPDF,
+    },
   },
   {
     title: TEXT.versionTXT,
@@ -28,6 +31,9 @@ export const resumePreviewCardData: ResumePreviewCard[] = [
     imageSrc: previewTXT,
     imageAlt: TEXT.altPreviewTXT,
     buttonText: TEXT.downloadResumeShortTXT,
-    dataTestId: DATA_TEST_IDS.callToAction.linkResumeDownloadTXT,
+    dataTestId: {
+      image: DATA_TEST_IDS.resume.linkImageResumeDownloadTXT,
+      button: DATA_TEST_IDS.resume.linkButtonResumeDownloadTXT,
+    },
   },
 ]

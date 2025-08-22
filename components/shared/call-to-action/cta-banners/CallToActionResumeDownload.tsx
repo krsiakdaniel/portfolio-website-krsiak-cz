@@ -25,7 +25,7 @@ const CallToActionResumeDownload = () => {
       textDesktop={TEXT.resumeDownload.textDesktop}
       link={EXTERNAL_URL.resumeViewPDF}
       linkText={text ?? TEXT.downloadResume}
-      dataTestId={DATA_TEST_IDS.callToAction.linkResumeDownloadPDF}
+      dataTestId={DATA_TEST_IDS.resume.linkButtonResumeDownloadPDF}
       icon={starAnimated}
       isLinkExternal={true}
     />

@@ -437,5 +437,8 @@ export interface ResumePreviewCard {
   imageSrc: string | StaticImageData
   imageAlt: string
   buttonText: string
-  dataTestId: string
+  dataTestId: {
+    image: string
+    button: string
+  }
 }

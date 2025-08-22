@@ -1,6 +1,5 @@
-import { Browser, BrowserContext, Page, test } from '@playwright/test'
+import { Browser, BrowserContext, expect, Page, test } from '@playwright/test'
 
-import { checkLink } from '@/__tests__/playwright/lib/utils/helpers/checkLink'
 import {
   setupBrowser,
   setupPage,
@@ -35,13 +34,10 @@ test.afterEach(async () => {
   await teardownContext(context)
 })
 
-test.describe('Resume page', () => {
-  // Test to check if the Resume link is correct
-  test('should have the correct Resume link', async () => {
-    await checkLink(
-      page,
-      'call-to-action-link-resume-download',
-      'https://drive.google.com/file/d/1oRhPxdLv0fKnDOet2O5yEf_SSI_w3xQu/view',
-    )
+test.describe('Resume - CTA LinkedIn', () => {
+  test('should render the LinkedIn link correctly', async () => {
+    const linkedInCTA = page.getByTestId('call-to-action-link-linkedin')
+    expect(await linkedInCTA.isVisible()).toBe(true)
+    expect(await linkedInCTA.getAttribute('href')).toBe('https://www.linkedin.com/in/krsiakdaniel/')
   })
 })
