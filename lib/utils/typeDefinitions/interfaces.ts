@@ -171,6 +171,7 @@ export interface ExternalURL {
   gitHub: string
   linkedIn: string
   resumeViewPDF: string
+  resumeViewTXT: string
   uptimeMonitorStatus: string
   uptimeMonitorStatusExternal: string
   graceChurch: string
@@ -425,4 +426,19 @@ export interface TravelItem {
   id: string
   flag: string
   text: string
+}
+
+// Resume Preview Card
+export interface ResumePreviewCard {
+  title: string
+  description: string
+  highlight: string
+  href: string
+  imageSrc: string | StaticImageData
+  imageAlt: string
+  buttonText: string
+  dataTestId: {
+    image: string
+    button: string
+  }
 }

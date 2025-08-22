@@ -1,4 +1,4 @@
-import { CareerPathStep } from '@/lib/utils/typeDefinitions/interfaces'
+import { CareerPathStep, ResumePreviewCard } from '@/lib/utils/typeDefinitions/interfaces'
 
 // Photo Props
 export type PhotoProps = {
@@ -12,3 +12,6 @@ export type CareerPathJobStepProps = {
   step: CareerPathStep
   index: number
 }
+
+// Resume Preview Card
+export type ResumePreviewCardProps = ResumePreviewCard

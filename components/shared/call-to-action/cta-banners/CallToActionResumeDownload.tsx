@@ -13,7 +13,7 @@ import starAnimated from '@/public/images/webp/emoji-animated/128x128/star-anima
 
 const CallToActionResumeDownload = () => {
   const text = useResponsiveText({
-    mobileText: TEXT.downloadResumeShort,
+    mobileText: TEXT.downloadResumeShortPDF,
     desktopText: TEXT.downloadResume,
   })
 
@@ -25,9 +25,9 @@ const CallToActionResumeDownload = () => {
       textDesktop={TEXT.resumeDownload.textDesktop}
       link={EXTERNAL_URL.resumeViewPDF}
       linkText={text ?? TEXT.downloadResume}
-      dataTestId={DATA_TEST_IDS.callToAction.linkResumeDownload}
+      dataTestId={DATA_TEST_IDS.resume.linkButtonResumeDownloadPDF}
       icon={starAnimated}
-      isLinkExternal
+      isLinkExternal={true}
     />
   )
 }

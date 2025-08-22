@@ -3,9 +3,9 @@ import PageContainer from '@/components/layout/PageContainer'
 import CareerPath from '@/components/pages/resume/CareerPath'
 import ResumeContact from '@/components/pages/resume/ResumeContact'
 import ResumeIntroduction from '@/components/pages/resume/ResumeIntroduction'
+import ResumePreviewSection from '@/components/pages/resume/ResumePreviewSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
-import CallToActionResumeDownload from '@/components/shared/call-to-action/cta-banners/CallToActionResumeDownload'
 import Heading from '@/components/shared/Heading'
 
 import { metaDataResume } from '@/lib/data/metadata/pages/metaDataResume'
@@ -41,8 +41,9 @@ const Resume = () => {
           <ResumeIntroduction />
         </div>
 
-        <CallToActionResumeDownload />
-        <div className="flex flex-col gap-8 md:flex-row">
+        <ResumePreviewSection />
+
+        <div className="flex flex-col md:flex-row md:gap-8">
           <div className="md:w-1/2">
             <CareerPath />
           </div>

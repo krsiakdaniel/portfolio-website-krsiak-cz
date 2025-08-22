@@ -213,10 +213,16 @@ const CALL_TO_ACTION = {
   linkResume: 'call-to-action-link-resume',
   linkResumeWorkExperience1: 'call-to-action-link-resume-1',
   linkResumeWorkExperience2: 'call-to-action-link-resume-2',
-  linkResumeDownload: 'call-to-action-link-resume-download',
   linkWorkExperience: 'call-to-action-link-work-experience',
   linkGitHub: 'call-to-action-link-github',
   linkLinkedIn: 'call-to-action-link-linkedin',
+}
+
+const RESUME = {
+  linkImageResumeDownloadPDF: 'link-image-download-resume-pdf',
+  linkImageResumeDownloadTXT: 'link-image-download-resume-txt',
+  linkButtonResumeDownloadPDF: 'link-button-download-resume-pdf',
+  linkButtonResumeDownloadTXT: 'link-button-download-resume-txt',
 }
 
 const EXTERNAL_LINKS = {
@@ -257,6 +263,7 @@ export const DATA_TEST_IDS = {
   links: LINKS,
   pagesLinks: PAGES_LINKS,
   callToAction: CALL_TO_ACTION,
+  resume: RESUME,
   navigation: NAVIGATION,
   alert: ALERT,
   externalLinks: EXTERNAL_LINKS,
