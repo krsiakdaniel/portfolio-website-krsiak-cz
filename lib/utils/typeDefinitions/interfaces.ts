@@ -171,7 +171,7 @@ export interface ExternalURL {
   gitHub: string
   linkedIn: string
   resumeViewPDF: string
-  resumeViewTXT: string
+  resumeViewDOCX: string
   uptimeMonitorStatus: string
   uptimeMonitorStatusExternal: string
   graceChurch: string
