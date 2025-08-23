@@ -34,23 +34,7 @@ test.afterEach(async () => {
   await teardownContext(context)
 })
 
-test.describe('Resume - Download links PDF and TXT', () => {
-  test('should render - button - Download Resume PDF link correctly', async () => {
-    const linkButtonDownloadResumePDF = page.getByTestId('link-button-download-resume-pdf')
-    expect(await linkButtonDownloadResumePDF.isVisible()).toBe(true)
-    expect(await linkButtonDownloadResumePDF.getAttribute('href')).toBe(
-      'https://drive.google.com/file/d/1oRhPxdLv0fKnDOet2O5yEf_SSI_w3xQu/view',
-    )
-  })
-
-  test('should render - button - Download Resume TXT link correctly', async () => {
-    const linkButtonDownloadResumeTXT = page.getByTestId('link-button-download-resume-txt')
-    expect(await linkButtonDownloadResumeTXT.isVisible()).toBe(true)
-    expect(await linkButtonDownloadResumeTXT.getAttribute('href')).toBe(
-      'https://drive.google.com/file/d/1Kjo1mlxdvWXCdtVqj8ftUYXCj0Mp2qbL/view',
-    )
-  })
-
+test.describe('Resume - Download links - PDF Format', () => {
   test('should render - image - Download Resume PDF link correctly', async () => {
     const linkImageDownloadResumePDF = page.getByTestId('link-image-download-resume-pdf')
     expect(await linkImageDownloadResumePDF.isVisible()).toBe(true)
@@ -59,11 +43,29 @@ test.describe('Resume - Download links PDF and TXT', () => {
     )
   })
 
-  test('should render - image - Download Resume TXT link correctly', async () => {
-    const linkImageDownloadResumeTXT = page.getByTestId('link-image-download-resume-txt')
-    expect(await linkImageDownloadResumeTXT.isVisible()).toBe(true)
-    expect(await linkImageDownloadResumeTXT.getAttribute('href')).toBe(
-      'https://drive.google.com/file/d/1Kjo1mlxdvWXCdtVqj8ftUYXCj0Mp2qbL/view',
+  test('should render - button - Download Resume PDF link correctly', async () => {
+    const linkButtonDownloadResumePDF = page.getByTestId('link-button-download-resume-pdf')
+    expect(await linkButtonDownloadResumePDF.isVisible()).toBe(true)
+    expect(await linkButtonDownloadResumePDF.getAttribute('href')).toBe(
+      'https://drive.google.com/file/d/1oRhPxdLv0fKnDOet2O5yEf_SSI_w3xQu/view',
+    )
+  })
+})
+
+test.describe('Resume - Download links - DOCX Format', () => {
+  test('should render - image - Download Resume DOCX link correctly', async () => {
+    const linkImageDownloadResumeDOCX = page.getByTestId('link-image-download-resume-docx')
+    expect(await linkImageDownloadResumeDOCX.isVisible()).toBe(true)
+    expect(await linkImageDownloadResumeDOCX.getAttribute('href')).toBe(
+      'https://docs.google.com/document/d/1n9i3mHUMvgpDzWZ8DYKGIi48FAV9rrTH/edit?usp=sharing&ouid=103683273055670815184&rtpof=true&sd=true',
+    )
+  })
+
+  test('should render - button - Download Resume DOCX link correctly', async () => {
+    const linkButtonDownloadResumeDOCX = page.getByTestId('link-button-download-resume-docx')
+    expect(await linkButtonDownloadResumeDOCX.isVisible()).toBe(true)
+    expect(await linkButtonDownloadResumeDOCX.getAttribute('href')).toBe(
+      'https://docs.google.com/document/d/1n9i3mHUMvgpDzWZ8DYKGIi48FAV9rrTH/edit?usp=sharing&ouid=103683273055670815184&rtpof=true&sd=true',
     )
   })
 })

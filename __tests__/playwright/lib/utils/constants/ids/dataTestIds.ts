@@ -220,9 +220,9 @@ const CALL_TO_ACTION = {
 
 const RESUME = {
   linkImageResumeDownloadPDF: 'link-image-download-resume-pdf',
-  linkImageResumeDownloadTXT: 'link-image-download-resume-txt',
+  linkImageResumeDownloadDOCX: 'link-image-download-resume-docx',
   linkButtonResumeDownloadPDF: 'link-button-download-resume-pdf',
-  linkButtonResumeDownloadTXT: 'link-button-download-resume-txt',
+  linkButtonResumeDownloadDOCX: 'link-button-download-resume-docx',
 }
 
 const EXTERNAL_LINKS = {

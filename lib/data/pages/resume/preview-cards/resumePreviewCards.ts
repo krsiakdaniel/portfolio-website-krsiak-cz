@@ -6,8 +6,8 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
 import { ResumePreviewCard } from '@/lib/utils/typeDefinitions/interfaces'
 
+import previewDOCX from '@/public/images/webp/resume/preview-docx.webp'
 import previewPDF from '@/public/images/webp/resume/preview-pdf.webp'
-import previewTXT from '@/public/images/webp/resume/preview-txt.webp'
 
 export const resumePreviewCardData: ResumePreviewCard[] = [
   {
@@ -24,16 +24,16 @@ export const resumePreviewCardData: ResumePreviewCard[] = [
     },
   },
   {
-    title: TEXT.versionTXT,
-    description: TEXT.descriptionTXT,
-    highlight: TEXT.descriptionHighlightTXT,
-    href: EXTERNAL_URL.resumeViewTXT,
-    imageSrc: previewTXT,
-    imageAlt: TEXT.altPreviewTXT,
-    buttonText: TEXT.downloadResumeShortTXT,
+    title: TEXT.versionDOCX,
+    description: TEXT.descriptionDOCX,
+    highlight: TEXT.descriptionHighlightDOCX,
+    href: EXTERNAL_URL.resumeViewDOCX,
+    imageSrc: previewDOCX,
+    imageAlt: TEXT.altPreviewDOCX,
+    buttonText: TEXT.downloadResumeShortDOCX,
     dataTestId: {
-      image: DATA_TEST_IDS.resume.linkImageResumeDownloadTXT,
-      button: DATA_TEST_IDS.resume.linkButtonResumeDownloadTXT,
+      image: DATA_TEST_IDS.resume.linkImageResumeDownloadDOCX,
+      button: DATA_TEST_IDS.resume.linkButtonResumeDownloadDOCX,
     },
   },
 ]
