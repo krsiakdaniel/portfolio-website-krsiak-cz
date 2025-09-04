@@ -44,7 +44,11 @@ const WhoIAm = () => {
         </section>
 
         <section>
-          <HeadingSection text={SOUTH_KOREA.headingTravel} icon={ICON_EMOJI.airplane} />
+          <HeadingSection
+            text={SOUTH_KOREA.headingTravel}
+            icon={ICON_EMOJI.airplane}
+            iconAria={ARIA_LABELS.emoji.airplane}
+          />
           <Paragraph>
             <span>{WHO_I_AM.aboutMe}</span>
           </Paragraph>

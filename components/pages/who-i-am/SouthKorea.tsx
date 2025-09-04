@@ -21,7 +21,11 @@ const SouthKorea = () => {
 
   return (
     <section>
-      <HeadingSection text={SOUTH_KOREA.headingSouthKorea} icon={ICON_EMOJI.flagSouthKorea} />
+      <HeadingSection
+        text={SOUTH_KOREA.headingSouthKorea}
+        icon={ICON_EMOJI.flagSouthKorea}
+        iconAria={ARIA_LABELS.emoji.flag.southKorea}
+      />
 
       <Paragraph>
         <span>{SOUTH_KOREA.introduction}</span>

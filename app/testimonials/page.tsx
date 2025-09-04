@@ -51,6 +51,7 @@ const Testimonials = () => {
         <TestimonialsSection
           title={TESTIMONIALS.sections.professional.title}
           icon={ICON_EMOJI.manTechnologist.lightSkinTone}
+          iconAria={ARIA_LABELS.emoji.manTechnologist.lightSkinTone}
           description={TESTIMONIALS.sections.professional.description}
           testimonials={workTestimonials}
         />
@@ -59,6 +60,7 @@ const Testimonials = () => {
         <TestimonialsSection
           title={TESTIMONIALS.sections.character.title}
           icon={ICON_EMOJI.foldedHands}
+          iconAria={ARIA_LABELS.emoji.foldedHands}
           description={TESTIMONIALS.sections.character.description}
           testimonials={personalTestimonials}
         />
@@ -67,6 +69,7 @@ const Testimonials = () => {
         <TestimonialsSection
           title={TESTIMONIALS.sections.fitnessCoach.title}
           icon={ICON_EMOJI.personLiftingWeights}
+          iconAria={ARIA_LABELS.emoji.personLiftingWeights}
           description={TESTIMONIALS.sections.fitnessCoach.description}
           testimonials={fitnessCoachTestimonials}
         />

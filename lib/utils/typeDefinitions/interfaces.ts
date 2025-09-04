@@ -424,7 +424,8 @@ export interface CareerPathStep {
 // Travel Item
 export interface TravelItem {
   id: string
-  flag: string
+  icon: string
+  iconAria: string
   text: string
 }
 
