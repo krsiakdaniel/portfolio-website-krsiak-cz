@@ -7,11 +7,12 @@ import { TestimonialsSectionProps } from '@/lib/utils/typeDefinitions/props/page
 const TestimonialsSection = ({
   title,
   icon = '',
+  iconAria = '',
   description,
   testimonials = [],
 }: TestimonialsSectionProps) => (
   <div className="mt-20">
-    <HeadingSection text={title} icon={icon} />
+    <HeadingSection text={title} icon={icon} iconAria={iconAria} />
     <TestimonialDescription description={description} />
     <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
       {testimonials.map((testimonial) => (

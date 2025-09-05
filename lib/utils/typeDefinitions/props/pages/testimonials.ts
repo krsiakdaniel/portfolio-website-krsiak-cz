@@ -39,6 +39,7 @@ export type TestimonialPersonInfoProps = {
 export type TestimonialsSectionProps = {
   title: string
   icon?: string
+  iconAria?: string
   description: string
   testimonials: TestimonialItem[]
 }

@@ -7,9 +7,11 @@ const WhoIAmTravelsList = () => {
   return (
     <div className="mt-4">
       <List>
-        {travelItems.map(({ id, flag, text }) => (
+        {travelItems.map(({ id, icon, iconAria, text }) => (
           <ListItem key={id} showIcon={false}>
-            <span>{flag}</span>
+            <span role="img" aria-label={iconAria}>
+              {icon}
+            </span>
             <span className="ml-2">{text}</span>
           </ListItem>
         ))}
