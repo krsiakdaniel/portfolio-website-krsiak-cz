@@ -2,7 +2,7 @@
 export type HeadingSectionProps = {
   text: string | React.ReactNode
   icon?: string
-  iconAria: string
+  iconAria?: string
   id?: string
   dataTestId?: string
 }
