@@ -151,14 +151,21 @@ Comprehensive documentation covering all aspects of the project.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 📝 Resume
+
+Read my [resume in PDF](https://krsiak.cz/resume)
+
 ## 📫 Contact
 
-Get in touch for collaboration opportunities or questions about the project.
+Get in touch for collaboration opportunities.
 
-- 👨🏻‍💻 **Daniel Kršiak** - React Developer
+- 👨🏻‍💻 **React Developer**: Daniel Kršiak
 - 📧 **Email**: [krsiak.daniel@gmail.com](mailto:krsiak.daniel@gmail.com)
 - 💼 **LinkedIn**: [https://www.linkedin.com/in/krsiakdaniel](https://www.linkedin.com/in/krsiakdaniel)
-- 📄 **Resume**: [https://krsiak.cz/resume](https://krsiak.cz/resume)
+
+## 📱 Scan - Add My Contact
+
+<img src="https://github.com/user-attachments/assets/e3f7b70f-6a56-459d-b7f4-afc3d78a4f6e" width="256" height="256" alt="vCard"/>
 
 ## 🖼️ Screenshots
 
