@@ -160,7 +160,6 @@ Read my [resume in PDF](https://krsiak.cz/resume)
 Get in touch for collaboration opportunities.
 
 - 👨🏻‍💻 **React Developer**: Daniel Kršiak
-- 📧 **Email**: [krsiak.daniel@gmail.com](mailto:krsiak.daniel@gmail.com)
 - 💼 **LinkedIn**: [https://www.linkedin.com/in/krsiakdaniel](https://www.linkedin.com/in/krsiakdaniel)
 
 ## 📱 Scan - Add My Contact
