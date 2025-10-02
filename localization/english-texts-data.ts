@@ -106,7 +106,6 @@ export const BADGES = {
   automation: {
     prLabeler: 'Pull Request Labeler',
     authorAssign: 'Auto Author Assign',
-    dependabot: 'Dependabot',
   },
   deployment: {
     netlify: 'Netlify',

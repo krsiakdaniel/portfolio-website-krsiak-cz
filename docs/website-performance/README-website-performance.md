@@ -117,6 +117,6 @@ This website implements comprehensive performance optimizations to achieve and m
 
 ### 🔄 Continuous Optimization
 
-- **Automated Dependency Updates**: Dependabot ensures latest performance improvements
+- **Regular Dependency Updates**: Keeping dependencies up-to-date ensures latest performance improvements
 - **Regular Audits**: Monthly PageSpeed Insights and Lighthouse audits
 - **Incremental Improvements**: Performance optimizations tracked in detailed changelog

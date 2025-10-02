@@ -34,7 +34,7 @@ Real-time status badges that provide immediate visibility into the project's hea
 
 ### Security & Code Quality
 
-[![CodeQL](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eaa72f9b0a7242ae9179b0dfdd58faf5)](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![Dependabot](https://img.shields.io/badge/Dependabot-Enabled-green)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/dependabot)
+[![CodeQL](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows/github-code-scanning/codeql) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eaa72f9b0a7242ae9179b0dfdd58faf5)](https://app.codacy.com/gh/krsiakdaniel/portfolio-website-krsiak-cz/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ### Automation & Workflow
 
@@ -87,7 +87,6 @@ This portfolio website is built using modern technologies and tools.
 
 - 🚀 [GitHub Actions](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions)
 - 🌍 [Netlify](https://www.netlify.com/)
-- 🛡️ [Dependabot](https://github.com/dependabot)
 - 🔍 [CodeQL](https://codeql.github.com/)
 - 📊 [Codacy](https://www.codacy.com/)
 

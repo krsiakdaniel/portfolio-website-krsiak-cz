@@ -307,7 +307,6 @@ export interface StatusBadgeUrls {
   AUTO_AUTHOR_ASSIGN: string
   CODEQL: string
   CODE_QUALITY: string
-  DEPENDABOT: string
   NETLIFY: string
   UPTIME: string
 }

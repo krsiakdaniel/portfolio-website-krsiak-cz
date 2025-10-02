@@ -11,9 +11,6 @@ Chore:
 CICD:
   - head-branch: ['^cicd', 'cicd', '.*cicd.*']
 
-Dependabot:
-  - head-branch: ['^dependabot', 'dependabot', '.*dependabot.*']
-
 Dependencies:
   - head-branch: ['^deps', 'deps', '.*deps.*']
 
