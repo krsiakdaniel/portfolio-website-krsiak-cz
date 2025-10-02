@@ -13,7 +13,6 @@ const BADGE_TEXT = {
   AUTO_AUTHOR_ASSIGN: TEXT_DATA.automation.authorAssign,
   CODEQL: TEXT_DATA.code.codeql,
   CODE_QUALITY: TEXT_DATA.code.quality,
-  DEPENDABOT: TEXT_DATA.automation.dependabot,
   NETLIFY: TEXT_DATA.deployment.netlify,
   UPTIME: TEXT_DATA.deployment.uptime,
 }
@@ -27,7 +26,6 @@ const BADGE_DIMENSIONS = {
   AUTO_AUTHOR_ASSIGN: { width: 184, height: 20 },
   CODEQL: { width: 120, height: 20 },
   CODE_QUALITY: { width: 120, height: 20 },
-  DEPENDABOT: { width: 130, height: 20 },
   NETLIFY: { width: 118, height: 20 },
   UPTIME: { width: 88, height: 20 },
 }
@@ -92,14 +90,6 @@ export const statusBadges: StatusBadge[] = [
   ),
   createStatusBadge(
     7,
-    BADGE_TEXT.DEPENDABOT,
-    STATUS_BADGE_IMGS_URLS.DEPENDABOT,
-    BADGE_TEXT.DEPENDABOT,
-    BADGE_DIMENSIONS.DEPENDABOT.width,
-    BADGE_DIMENSIONS.DEPENDABOT.height,
-  ),
-  createStatusBadge(
-    8,
     BADGE_TEXT.NETLIFY,
     STATUS_BADGE_IMGS_URLS.NETLIFY,
     BADGE_TEXT.NETLIFY,
@@ -107,7 +97,7 @@ export const statusBadges: StatusBadge[] = [
     BADGE_DIMENSIONS.NETLIFY.height,
   ),
   createStatusBadge(
-    9,
+    8,
     BADGE_TEXT.UPTIME,
     STATUS_BADGE_IMGS_URLS.UPTIME,
     BADGE_TEXT.UPTIME,

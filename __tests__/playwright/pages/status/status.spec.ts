@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 const STATUS_BADGES_DIV_SELECTOR = `div[data-testid=${DATA_TEST_IDS.footer.statusBadges}] img`
-const EXPECTED_NUMBER_OF_BADGES = 10
+const EXPECTED_NUMBER_OF_BADGES = 9
 
 test.describe('Status', () => {
   test('Page title is correct', async ({ page }) => {

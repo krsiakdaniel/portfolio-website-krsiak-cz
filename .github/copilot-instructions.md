@@ -341,7 +341,7 @@ Examples:
 - Use **HTTPS** everywhere
 - Sanitize **user inputs**
 - Follow **OWASP** security guidelines
-- Regular **dependency updates** via Dependabot
+- Keep **dependencies up-to-date** regularly
 
 ## Documentation
 

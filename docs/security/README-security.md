@@ -8,7 +8,6 @@ Security of this repository is managed by the following tools and services.
   - [📈 Uptime Monitoring](#-uptime-monitoring)
   - [⚠️ CodeQL analysis](#️-codeql-analysis)
   - [📝 Codacy](#-codacy)
-  - [🤖 Dependabot](#-dependabot)
 
 ---
 
@@ -36,12 +35,3 @@ Identifies vulnerabilities and errors with CodeQL.
 Measuring code quality in the repository.
 
 - **Static code analysis**: [Codacy](https://www.codacy.com/)
-
-## 🤖 Dependabot
-
-[![Dependabot](https://img.shields.io/badge/Dependabot-Enabled-green)](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/dependabot)
-
-Automatically creates pull requests to update dependencies to the latest version.
-
-- **Dependabot:** [Alerts](https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/security/dependabot)
-- Configuration file: [dependabot.yml](.github/dependabot.yml)

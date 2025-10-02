@@ -86,7 +86,7 @@ As of **Jul 12, 2025**, the website is `"version": "2.35.17"`.
 
 - 🧪 Comprehensive testing suite with Jest and Playwright
 - 🔄 CI/CD pipeline with GitHub Actions
-- 🤖 Automated dependency updates with Dependabot
+- 🔄 Regular dependency updates and maintenance
 - 🔒 Security scanning with CodeQL and Codacy
 - 📊 Performance monitoring and optimization
 
