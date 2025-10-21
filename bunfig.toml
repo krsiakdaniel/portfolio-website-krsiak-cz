@@ -1,43 +1,63 @@
 # Bun configuration file for portfolio-website-krsiak-cz
 # https://bun.sh/docs/runtime/bunfig
 
-# JSX Configuration for React + TypeScript project
-jsx = "react"
+# JSX Configuration for React 19 + TypeScript + Next.js 15
+jsx = "react-jsx"
 jsxFactory = "React.createElement"
+jsxFragment = "React.Fragment"
 jsxImportSource = "react"
 
-# Log level for better debugging
+# Development and Production settings
 logLevel = "debug"
-
-# Disable telemetry for privacy (optional)
 telemetry = false
 
-# Package Management
+# Package Management Configuration
 [install]
+# Install optional dependencies for complete feature set
 optional = true
+# Install development dependencies
 dev = true
+# Use exact versions for better reproducibility
+exact = false
+# Registry configuration (using default npm registry)
+registry = "https://registry.npmjs.org"
+# Automatically install peer dependencies
+auto = "auto"
 
-# Test Configuration
+# Bun Test Configuration (for unit tests - Jest is also configured separately)
 [test]
-
-# Set test root to match your project structure
+# Test files location
 root = "./__tests__"
-
-# Enable coverage reporting
+# Coverage settings aligned with Jest configuration
 coverage = true
-
-# Set coverage threshold for quality assurance
 coverageThreshold = 0.8
-
-# Use both console and file-based coverage reporting
+# Coverage output formats (limited to supported formats)
 coverageReporter = ["text", "lcov"]
 
 # Runtime Configuration
 [run]
-
-# Use the system shell for executing commands
+# Use system shell for compatibility with scripts
 shell = "system"
-
-# Suppress command output for cleaner logs
+# Show command output for transparency
 silent = false
+
+# Performance optimizations
+[loader]
+# File extensions mapping for better performance
+".webp" = "file"
+".avif" = "file"
+".ico" = "file"
+".svg" = "file"
+".png" = "file"
+".jpg" = "file"
+".jpeg" = "file"
+".gif" = "file"
+".bmp" = "file"
+".css" = "css"
+".scss" = "css"
+".sass" = "css"
+".ts" = "tsx"
+".tsx" = "tsx"
+".js" = "jsx"
+".jsx" = "jsx"
 
