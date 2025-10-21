@@ -108,6 +108,29 @@ import heroImage from '@/public/images/hero.webp'
 import styles from './Component.module.css'
 ```
 
+### Import/Export Patterns
+
+**Avoid barrel exports** - Don't create `index.ts` files that re-export multiple modules:
+
+```typescript
+// ❌ Avoid: src/components/index.ts
+export { Button } from './Button'
+export { TextField } from './TextField'
+export { Dialog } from './Dialog'
+
+// ✅ Prefer: Direct imports
+import { Button } from '@/components/ui/Button'
+import { TextField } from '@/components/shared/TextField'
+```
+
+**Reasons to avoid barrel exports:**
+
+- Better tree-shaking and bundle optimization
+- Clearer dependency relationships
+- Faster TypeScript compilation
+- Easier debugging and refactoring
+- Improved Next.js build performance
+
 ## File Naming Conventions
 
 - Use **PascalCase** for file names: `ScanMyContactQR.tsx`
@@ -160,26 +183,27 @@ export default MyPage
 
 ## Key Guidelines
 
-### TypeScript & React Best Practices
+### TypeScript & Next.js Best Practices
 
 1. Use TypeScript strictly - leverage the configured strict mode settings
-2. Follow React functional component patterns with hooks
-3. Use Next.js App Router conventions for routing and layouts
+2. Follow Next.js 15 App Router patterns (not Pages Router)
+3. Use React 19 functional component patterns with hooks
 4. Implement proper component composition and prop drilling avoidance
 5. Use custom hooks for shared logic and state management
+6. Distinguish between Server and Client Components appropriately
 
-### Code Quality & Testing
+### Code Quality & Performance
 
-1. Write unit tests for new functionality using Jest and React Testing Library
-2. Add E2E tests for critical user flows using Playwright
-3. Use data-testid attributes for test selectors when needed
-4. Follow the existing test structure and naming conventions
-5. Maintain test coverage and avoid breaking existing tests
+1. Run validation checks before committing (`bun pre-commit`)
+2. Use proper component patterns and avoid unnecessary re-renders
+3. Implement code splitting and lazy loading where appropriate
+4. Follow the existing project structure and naming conventions
+5. Optimize assets for web performance
 
 ### Styling & UI
 
 1. Use Tailwind CSS for styling - follow utility-first approach
-2. Leverage Flowbite components when appropriate
+2. Leverage components when appropriate
 3. Maintain responsive design principles (mobile-first)
 4. Follow the existing design system and component patterns
 5. Ensure accessibility standards (ARIA labels, semantic HTML)
@@ -363,7 +387,7 @@ Examples:
 - **Runtime**: Bun
 - **Framework**: Next.js 15 (App Router)
 - **Language**: TypeScript (strict mode enabled)
-- **Styling**: Tailwind CSS with Flowbite components (transitioning away from)
+- **Styling**: Tailwind CSS
 - **Testing**: Jest (unit) + Playwright (E2E)
 - **Deployment**: Netlify with PWA capabilities and automated CI/CD
 - **Analytics**: Google Analytics + Smartlook

@@ -133,5 +133,7 @@ Thumbs.db
 public/sw.js
 public/workbox-*.js
 
-# WARP development helper file
+# local files for LLMs
+copilot-instructions.md
+.warp
 WARP.md

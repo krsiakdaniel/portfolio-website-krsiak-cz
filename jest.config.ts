@@ -11,7 +11,7 @@ const createJestConfig = nextJest({
   dir: './',
 })
 
-// Add the addional setup required for the Next.js with Jest 30
+// Add the additional setup required for the Next.js with Jest 30
 const config = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,

@@ -2,7 +2,7 @@
 
 ## Reporting Security Issues
 
-If you discover a security vulnerability, please email me at **krsiak.daniel@gmail.com** instead of opening a public issue.
+If you discover a security vulnerability, please email me at <krsiak.daniel@gmail.com> instead of opening a public issue.
 
 I take security seriously and will respond as quickly as possible.
 
