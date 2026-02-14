@@ -14,6 +14,8 @@ const withPWA = withPWAInit({
 
 // Next.js configuration object
 const nextConfig = {
+  // Add this to silence the Turbopack warning
+  turbopack: {},
   // Configure pageExtensions
   pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
   images: {
