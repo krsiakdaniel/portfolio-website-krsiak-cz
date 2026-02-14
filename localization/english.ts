@@ -1,6 +1,6 @@
 import { COUNTRY } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
-import { YEARS } from '@/lib/utils/constants/yearsExperience'
+import { YEARS_EXPERIENCE } from '@/lib/utils/constants/yearsExperience'
 
 export const ICON_EMOJI = {
   latinCross: '✝️',
@@ -824,7 +824,7 @@ export const INTRODUCTION = {
       skilled: 'Skilled',
       reactDeveloper: '{reactDeveloper}',
       with: 'with',
-      yearsReact: `${YEARS.react}\u00A0years`,
+      yearsReact: `${YEARS_EXPERIENCE.react}\u00A0years`,
       yearsText: 'of\u00A0experience using',
       typeScript: '{typeScript}',
       buildText: 'to\u00A0build scalable web applications.',
