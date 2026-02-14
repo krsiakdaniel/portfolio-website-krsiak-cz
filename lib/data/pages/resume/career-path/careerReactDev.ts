@@ -21,4 +21,10 @@ export const careerReactDev: SkillsInfo[] = [
     text: CAREER_REACT_DEV.kooperativa.text,
     years: CAREER_REACT_DEV.kooperativa.duration,
   },
+  {
+    id: 3,
+    icon: ICON_EMOJI.mobilePhone,
+    text: CAREER_REACT_DEV.o2ItServices.text,
+    years: CAREER_REACT_DEV.o2ItServices.duration,
+  },
 ]

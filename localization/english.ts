@@ -24,6 +24,7 @@ export const ICON_EMOJI = {
   speechBalloon: '💬',
   bank: '🏦',
   umbrellaWithRainDrops: '☔',
+  mobilePhone: '📱',
   laptop: '💻',
   books: '📚',
   shoppingCart: '🛒',

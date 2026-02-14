@@ -39,7 +39,7 @@ test.describe('Resume - Download links - PDF Format', () => {
     const linkImageDownloadResumePDF = page.getByTestId('link-image-download-resume-pdf')
     expect(await linkImageDownloadResumePDF.isVisible()).toBe(true)
     expect(await linkImageDownloadResumePDF.getAttribute('href')).toBe(
-      'https://drive.google.com/file/d/1oRhPxdLv0fKnDOet2O5yEf_SSI_w3xQu/view',
+      'https://drive.google.com/file/d/1OPlDjxqHdSYAGrEtnLusd1qRAf4PRvY3/view',
     )
   })
 
@@ -47,7 +47,7 @@ test.describe('Resume - Download links - PDF Format', () => {
     const linkButtonDownloadResumePDF = page.getByTestId('link-button-download-resume-pdf')
     expect(await linkButtonDownloadResumePDF.isVisible()).toBe(true)
     expect(await linkButtonDownloadResumePDF.getAttribute('href')).toBe(
-      'https://drive.google.com/file/d/1oRhPxdLv0fKnDOet2O5yEf_SSI_w3xQu/view',
+      'https://drive.google.com/file/d/1OPlDjxqHdSYAGrEtnLusd1qRAf4PRvY3/view',
     )
   })
 })
@@ -57,7 +57,7 @@ test.describe('Resume - Download links - DOCX Format', () => {
     const linkImageDownloadResumeDOCX = page.getByTestId('link-image-download-resume-docx')
     expect(await linkImageDownloadResumeDOCX.isVisible()).toBe(true)
     expect(await linkImageDownloadResumeDOCX.getAttribute('href')).toBe(
-      'https://docs.google.com/document/d/1n9i3mHUMvgpDzWZ8DYKGIi48FAV9rrTH/edit?usp=sharing&ouid=103683273055670815184&rtpof=true&sd=true',
+      'https://docs.google.com/document/d/1wH4aG0Dyv7XJ_Ux2G07magO5b-sTuyv8',
     )
   })
 
@@ -65,7 +65,7 @@ test.describe('Resume - Download links - DOCX Format', () => {
     const linkButtonDownloadResumeDOCX = page.getByTestId('link-button-download-resume-docx')
     expect(await linkButtonDownloadResumeDOCX.isVisible()).toBe(true)
     expect(await linkButtonDownloadResumeDOCX.getAttribute('href')).toBe(
-      'https://docs.google.com/document/d/1n9i3mHUMvgpDzWZ8DYKGIi48FAV9rrTH/edit?usp=sharing&ouid=103683273055670815184&rtpof=true&sd=true',
+      'https://docs.google.com/document/d/1wH4aG0Dyv7XJ_Ux2G07magO5b-sTuyv8',
     )
   })
 })
