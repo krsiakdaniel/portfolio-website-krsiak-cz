@@ -5,7 +5,7 @@ import { EM_DASH, MIDDLE_DOT, NB_HYPHEN } from '@/lib/utils/constants/specialCha
 import { GITHUB_URLS } from '@/lib/utils/constants/urls/githubUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { PROJECTS_URLS } from '@/lib/utils/constants/urls/projectsUrls'
-import { MONTHS, YEARS } from '@/lib/utils/constants/yearsExperience'
+import { MONTHS_EXPERIENCE, YEARS_EXPERIENCE } from '@/lib/utils/constants/yearsExperience'
 
 export const TESTIMONIALS = {
   work: {
@@ -547,31 +547,31 @@ export const OTHER_EXPERIENCE = {
     freelance: {
       company: 'Freelance',
       role: 'Web Developer /\u00A0Consultant',
-      description: `${YEARS.consultantWebsites} years ${MIDDLE_DOT} part-time ${EM_DASH}\u00A0Websites for\u00A0small companies.`,
+      description: `${YEARS_EXPERIENCE.consultantWebsites} years ${MIDDLE_DOT} part-time ${EM_DASH}\u00A0Websites for\u00A0small companies.`,
     },
   },
   wordPress: {
     company: 'Freelance',
     role: 'WordPress Developer /\u00A0Consultant',
-    description: `${YEARS.consultantWordPress} years ${MIDDLE_DOT} part-time ${EM_DASH}\u00A0Websites for\u00A0small companies.`,
+    description: `${YEARS_EXPERIENCE.consultantWordPress} years ${MIDDLE_DOT} part-time ${EM_DASH}\u00A0Websites for\u00A0small companies.`,
   },
   localization: {
     smartsupp: {
       company: 'Smartsupp',
       role: `Localization ${NB_HYPHEN}\u00A0Manager`,
-      description: `${YEARS.localizationManager} years ${EM_DASH} Website localization. ${FLAGS_LOCALIZATION.emojis}`,
+      description: `${YEARS_EXPERIENCE.localizationManager} years ${EM_DASH} Website localization. ${FLAGS_LOCALIZATION.emojis}`,
     },
   },
   qualityAssurance: {
     smartsupp: {
       company: 'Smartsupp',
       role: `QA\u00A0Automation ${NB_HYPHEN}\u00A0Team\u00A0Leader`,
-      description: `${MONTHS.qaTeamLeaderAtSmartsupp} months ${EM_DASH} Set up\u00A0Cypress E2E testing for\u00A0SaaS company.`,
+      description: `${MONTHS_EXPERIENCE.qaTeamLeaderAtSmartsupp} months ${EM_DASH} Set up\u00A0Cypress E2E testing for\u00A0SaaS company.`,
     },
     moravia: {
       company: `RWS ${NB_HYPHEN} Moravia IT`,
       role: `Localization ${NB_HYPHEN}\u00A0Tester`,
-      description: `${YEARS.localizationTester} years ${EM_DASH} Testing Windows\u00A07 +\u00A0Windows\u00A0Store layouts.`,
+      description: `${YEARS_EXPERIENCE.localizationTester} years ${EM_DASH} Testing Windows\u00A07 +\u00A0Windows\u00A0Store layouts.`,
     },
   },
 }
