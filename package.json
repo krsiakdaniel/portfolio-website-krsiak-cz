@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",
-    "@next/third-parties": "15.5.4",
+    "@next/third-parties": "16.1.6",
     "lunarphase-js": "^2.0.3",
     "next": "^16.1.6",
     "react": "^19.2.4",
@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.3",
-    "@happy-dom/jest-environment": "^19.0.2",
+    "@happy-dom/jest-environment": "^20.6.1",
     "@netlify/plugin-nextjs": "5.15.8",
     "@playwright/test": "1.58.2",
     "@tailwindcss/postcss": "^4.1.18",
@@ -50,7 +50,7 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "eslint": "9.37.0",
-    "eslint-config-next": "15.5.4",
+    "eslint-config-next": "16.1.6",
     "husky": "^9.1.7",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.2.0",
