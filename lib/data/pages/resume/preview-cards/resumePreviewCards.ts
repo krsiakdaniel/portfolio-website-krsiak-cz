@@ -6,8 +6,8 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
 import { ResumePreviewCard } from '@/lib/utils/typeDefinitions/interfaces'
 
-import previewDOCX from '@/public/images/webp/resume/preview-docx.webp'
-import previewPDF from '@/public/images/webp/resume/preview-pdf.webp'
+import previewDOCX from '@/public/images/webp/resume/preview-page-docx.webp'
+import previewPDF from '@/public/images/webp/resume/preview-page-pdf.webp'
 
 export const resumePreviewCardData: ResumePreviewCard[] = [
   {

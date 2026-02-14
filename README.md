@@ -115,6 +115,7 @@ The website has these main pages and project detail pages.
 - 💬 [Smartsupp - Dashboard](https://krsiak.cz/work-experience/smartsupp-dashboard)
 - 🏦 [Komerční banka](https://krsiak.cz/work-experience/komercni-banka)
 - ☔ [Kooperativa](https://krsiak.cz/work-experience/kooperativa)
+- 📱 [O2 IT Services](https://krsiak.cz/work-experience/)
 - 👨🏻‍💻 [Smartsupp - Company Website](https://krsiak.cz/work-experience/smartsupp-web)
 - 📚 [Smartsupp - Help Website](https://krsiak.cz/work-experience/smartsupp-help)
 - 🛒 [Groupon - QA Automation](https://krsiak.cz/work-experience/groupon)

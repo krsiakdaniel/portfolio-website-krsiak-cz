@@ -186,7 +186,7 @@ export const CAREER_PATH = {
 
 export const CAREER_REACT_DEV = {
   smartsupp: {
-    text: `Smartsupp ${NB_HYPHEN}\u00A0Dashboard`,
+    text: `Smartsupp ${NB_HYPHEN}\u00A0Customer\u00A0Care\u00A0Dashboard`,
     duration: '3\u00A0years',
   },
   komercniBanka: {
@@ -194,7 +194,11 @@ export const CAREER_REACT_DEV = {
     duration: '10\u00A0months',
   },
   kooperativa: {
-    text: `Kooperativa ${NB_HYPHEN}\u00A0App`,
+    text: `Kooperativa ${NB_HYPHEN}\u00A0Insurance\u00A0Web\u00A0App`,
+    duration: '8\u00A0months',
+  },
+  o2ItServices: {
+    text: `O2 IT Services ${NB_HYPHEN}\u00A0AI\u00A0Chat\u00A0Dashboard`,
     duration: '8\u00A0months',
   },
 }
