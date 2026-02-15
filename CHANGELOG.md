@@ -46,7 +46,6 @@ As of **February 15, 2026**, the website is `"version": "2.48.23"`.
 
 ### 🗑️ Removed
 
-- 📧 Email contact information from public pages
 - 🤖 Dependabot automation (replaced with manual updates)
 
 ## `2.35.17` - 2024-12
