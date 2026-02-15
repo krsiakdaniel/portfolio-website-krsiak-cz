@@ -218,11 +218,10 @@ transition-colors duration-200 ease-in-out
 
 - **💫 Pulse Bubble**: Gentle scaling pulse
 - **👻 Ghost Movement**: Left/right floating
-- **🚶 Man Walk**: Subtle walking animation
 - **🏀 Gentle Bounce**: Vertical bouncing
 - **✨ Fade In**: Opacity transition
-- **📥 Slide Down**: Dropdown animations
-- **📤 Slide Up**: Slide-up animations
+- **⬆️ Slide Down**: Dropdown animations
+- **⬇️ Slide Up**: Slide-up animations
 
 ### ⏱️ Timing
 

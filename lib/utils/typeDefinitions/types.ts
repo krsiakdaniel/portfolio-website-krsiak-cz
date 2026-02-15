@@ -72,8 +72,5 @@ export type TextSizeType =
   | 'text-8xl'
   | 'text-9xl'
 
-// Define the type for the setLunarPhaseEmoji function
-export type SetLunarPhaseEmoji = (emoji: string) => void
-
 // Technology Key Type
 export type TechnologyKey = keyof typeof TECHNOLOGY_START_DATES

@@ -41,7 +41,6 @@ These packages are essential for the application to run in production and are in
 
 ### Utilities & Tools
 
-- **[lunarphase-js](https://github.com/jasonsturges/lunarphase-js)** - JavaScript library for calculating lunar phases and moon position data
 - **[sharp](https://sharp.pixelplumbing.com/)** - High-performance image processing library for Node.js, used by Next.js for image optimization
 
 ### Testing Support (Production)
