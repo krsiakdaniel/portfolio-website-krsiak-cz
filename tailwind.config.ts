@@ -29,11 +29,6 @@ const customKeyframes = {
     '0%, 100%': { transform: 'translateX(0)' },
     '50%': { transform: 'translateX(30px)' },
   },
-  // CSS classname: animate-man-walk
-  manWalk: {
-    '0%, 100%': { transform: 'translateX(0)' },
-    '50%': { transform: 'translateX(2px)' },
-  },
   // CSS classname: animate-gentle-bounce
   gentleBounce: {
     '0%, 100%': { transform: 'translateY(0)' },
@@ -72,7 +67,6 @@ const customAnimations = {
   'pulse-bubble': `pulseBubble ${ANIMATION_TIMING.THREE_SECONDS} infinite`,
   'ghost-previous': `animateGhostPrevious ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
   'ghost-next': `animateGhostNext ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
-  'man-walk': `manWalk ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
   'gentle-bounce': `gentleBounce ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
   'fade-in-scroll': `fadeInScroll ${ANIMATION_TIMING.HALF_SECOND} ${EASE_IN_OUT}`,
   'slide-down': `slideDown ${ANIMATION_TIMING.QUARTER_SECOND} ${EASE_IN_OUT}`,
