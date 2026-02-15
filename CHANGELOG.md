@@ -7,17 +7,46 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 🚀 Website Version History
 
-As of **Jul 12, 2025**, the website is `"version": "2.35.17"`.
+As of **February 15, 2026**, the website is `"version": "2.48.23"`.
 
 - `2.x.x`: Major version representing complete redesign (Feb 2024)
-- `x.35.x`: Feature additions (new pages, components, functionality)
-- `x.x.18`: Bug fixes and minor improvements
+- `x.48.x`: Feature additions (new pages, components, functionality)
+- `x.x.23`: Bug fixes and minor improvements
 
-## `2.35.18` - 2025-07
+## `2.35.18 - 2.48.23` - 2025-07 to 2026-02
 
-### Changed
+### ✨ Added
 
-- Improved mobile menu interaction (closes on outside click)
+- ♿ Enhanced ARIA accessibility attributes for emoji elements
+- 🤖 Improved GitHub Copilot instructions and development workflow
+- 🔧 Refined project configuration and build setup
+
+### 🔄 Changed
+
+- 📝 Updated resume page structure and content
+- 📧 Removed email contact information for privacy
+- 📚 Enhanced documentation and README content
+- 📱 Improved mobile menu interaction (closes on outside click)
+- 🎯 Refined component architecture and code organization
+
+### 📦 Dependencies
+
+- ⬆️ Upgraded to Next.js 16.1.6 (from 15.x)
+- ⬆️ Updated React to 19.2.4
+- ⬆️ Updated TypeScript, Jest, and Playwright to latest versions
+- ⬆️ Migrated to latest Bun version with updated configuration
+- ⬆️ Updated ESLint and related tooling
+- 🗑️ Removed Dependabot in favor of manual dependency management
+
+### 🐛 Fixed
+
+- 🎭 Resolved failing E2E tests in CI/CD pipeline
+- 🧪 Fixed Jest configuration and test setup issues
+- 🔧 Addressed Git tracking issues with auto-generated files
+
+### 🗑️ Removed
+
+- 🤖 Dependabot automation (replaced with manual updates)
 
 ## `2.35.17` - 2024-12
 
