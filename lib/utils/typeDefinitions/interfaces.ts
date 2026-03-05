@@ -168,20 +168,20 @@ export interface GalleryImage {
 
 // External URL
 export interface ExternalURL {
-  gitHub: string
-  linkedIn: string
-  resumeViewPDF: string
-  resumeViewDOCX: string
-  uptimeMonitorStatus: string
-  uptimeMonitorStatusExternal: string
-  graceChurch: string
-  bonyToBeastly: string
+  readonly gitHub: string
+  readonly linkedIn: string
+  readonly resumeViewPDF: string
+  readonly resumeViewDOCX: string
+  readonly uptimeMonitorStatus: string
+  readonly uptimeMonitorStatusExternal: string
+  readonly graceChurch: string
+  readonly bonyToBeastly: string
 }
 
 // Environment URLs
 export interface EnvUrls {
-  production: string
-  localhost: string
+  readonly production: string
+  readonly localhost: string
 }
 
 // Page URLs
@@ -231,49 +231,27 @@ export interface ProjectsPersonalUrls {
 
 // GitHub URLs
 export interface GitHubUrls {
-  personal: {
-    krsiak: string
-    cryptoMania: string
-  }
-}
-
-// Sitemap URLs
-export interface SitemapUrls {
-  home: string
-  whoIAm: string
-  resume: string
-  workExperience: string
-  workKooperativa: string
-  workSmartsuppDashboard: string
-  workSmartsuppWeb: string
-  workSmartsuppHelp: string
-  workKomercniBanka: string
-  workGroupon: string
-  workMoravia: string
-  personalProjects: string
-  personalKrsiak: string
-  personalCryptoMania: string
-  testimonials: string
-  status: string
+  readonly portfolioWebsiteKrsiak: string
+  readonly cryptoMania: string
 }
 
 // Sitemap Item
-export interface SitemapItem {
-  url: string
+export interface SitemapEntry {
+  readonly url: string
   priority: number
 }
 
 // Status Badge URLs
 export interface StatusBadgeUrls {
-  jestTest: string
-  playwrightTest: string
-  codeQl: string
-  prettierCheckFormatting: string
-  pullRequestLabeler: string
-  autoAuthorAssign: string
-  codeQuality: string
-  netlify: string
-  uptime: string
+  readonly jestTest: string
+  readonly playwrightTest: string
+  readonly codeQl: string
+  readonly prettierCheckFormatting: string
+  readonly pullRequestLabeler: string
+  readonly autoAuthorAssign: string
+  readonly codeQuality: string
+  readonly netlify: string
+  readonly uptime: string
 }
 
 // Years of Experience

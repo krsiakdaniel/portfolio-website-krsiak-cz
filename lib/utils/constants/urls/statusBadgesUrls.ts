@@ -14,4 +14,4 @@ export const STATUS_BADGE_IMGS_URLS: StatusBadgeUrls = {
   netlify:
     'https://api.netlify.com/api/v1/badges/eb322254-0169-4941-9416-3806b0bd5be6/deploy-status',
   uptime: 'https://uptime.betterstack.com/status-badges/v1/monitor/8z9z.svg',
-} as const
+} as const satisfies StatusBadgeUrls

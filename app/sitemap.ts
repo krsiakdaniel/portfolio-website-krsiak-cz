@@ -2,18 +2,18 @@ import { MetadataRoute } from 'next'
 
 import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { ChangeFrequencyEnum } from '@/lib/utils/typeDefinitions/enums'
-import { SitemapItem } from '@/lib/utils/typeDefinitions/interfaces'
+import { SitemapEntry } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const CHANGE_FREQUENCY_MONTHLY = ChangeFrequencyEnum.MONTHLY
 
 const BASE_URL = ENV_URLS.production
 
-const createSitemapEntry = (path: string, priority: number): SitemapItem => ({
+const createSitemapEntry = (path: string, priority: number): SitemapEntry => ({
   url: `${BASE_URL}${path}`,
   priority,
 })
 
-const sitemapEntries: SitemapItem[] = [
+const sitemapEntries: SitemapEntry[] = [
   // Priority 1.0
   createSitemapEntry(PAGES_URL.home, 1),
 

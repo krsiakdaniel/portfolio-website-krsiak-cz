@@ -9,4 +9,4 @@ export const EXTERNAL_URL: ExternalURL = {
   uptimeMonitorStatusExternal: 'https://krsiak.betteruptime.com/',
   graceChurch: 'https://www.gracechurch.org/about/gospel',
   bonyToBeastly: 'https://bonytobeastly.com/about',
-}
+} as const satisfies ExternalURL
