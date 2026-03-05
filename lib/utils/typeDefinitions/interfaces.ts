@@ -3,167 +3,170 @@ import { StaticImageData } from 'next/image'
 import { DurationUnitEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { SkillCategoryType } from '@/lib/utils/typeDefinitions/types'
 
-// Error Pages
-export interface Errors {
-  error: Error
-}
-
 // Job
 export interface Job {
-  id: number
-  title: string
-  icon: string
-  duration: number
-  unit: DurationUnitEnum
-  description: string
+  readonly id: number
+  readonly title: string
+  readonly icon: string
+  readonly duration: number
+  readonly unit: DurationUnitEnum
+  readonly description: string
 }
 
 // Link
 export interface Link {
-  urlText: string
-  url: string
-  dataTestId: string
+  readonly urlText: string
+  readonly url: string
+  readonly dataTestId: string
 }
 
 // Meta Data
-export interface MetaDataKeywords {
-  [key: string]: string
-}
+export type MetaDataKeywords = Record<string, string>
 
 // Other Experience Data
 export interface OtherExperienceData {
-  id: number
-  company: string
-  role: string
-  description: string
+  readonly id: number
+  readonly company: string
+  readonly role: string
+  readonly description: string
 }
 
 // Page Link Item
 export interface PageLinkItem {
-  id: string
-  href: string
-  icon: string
-  ariaLabel: string
-  text: string
-  dataTestId: string
-  isActive?: boolean
+  readonly id: string
+  readonly href: string
+  readonly icon: string
+  readonly ariaLabel: string
+  readonly text: string
+  readonly dataTestId: string
+  readonly isActive?: boolean
 }
 
-// Project Base
+/**
+ * Project Base
+ *
+ * Base interface for project data used across work and personal projects.
+ * Contains common properties shared by all projects.
+ */
 export interface ProjectBase {
-  isFeatured?: boolean
-  image: string
-  icon: string
-  ariaLabel: string
-  title: string
-  company: string
-  role: string
-  description: string
-  skillsIcons: Icon[]
-  customers?: string
-  personalProjectNote?: string
-  linkText: string
-  linkProjectPage: string
+  readonly isFeatured?: boolean
+  readonly image: string
+  readonly icon: string
+  readonly ariaLabel: string
+  readonly title: string
+  readonly company: string
+  readonly role: string
+  readonly description: string
+  readonly skillsIcons: Icon[]
+  readonly customers?: string
+  readonly personalProjectNote?: string
+  readonly linkText: string
+  readonly linkProjectPage: string
 }
 
-// Project
+/**
+ * Project
+ *
+ * Complete project interface extending ProjectBase with additional details.
+ * Used for rendering full project pages including galleries, skill breakdowns,
+ * external links, and GitHub repositories.
+ */
 export interface Project extends ProjectBase {
-  id: string
-  galleryImages: GalleryImage[]
-  years?: string
-  skillsOverview: Skill[]
-  projectLinks: Link[]
-  linkGitHub?: string
+  readonly id: string
+  readonly galleryImages: GalleryImage[]
+  readonly years?: string
+  readonly skillsOverview: Skill[]
+  readonly projectLinks: Link[]
+  readonly linkGitHub?: string
 }
 
 // Section
 export interface Section {
-  id?: number
-  title: string
-  titleHighlight?: string
-  items: SectionItem[]
+  readonly id?: number
+  readonly title: string
+  readonly titleHighlight?: string
+  readonly items: SectionItem[]
 }
 
 // Section Item
 export interface SectionItem {
-  id: string
-  text: string
+  readonly id: string
+  readonly text: string
 }
 
 // Skill
 export interface Skill {
-  id: number
-  description: SkillCategoryType
-  skillsList: SkillsEnum[]
+  readonly id: number
+  readonly description: SkillCategoryType
+  readonly skillsList: SkillsEnum[]
 }
 
 // Skill Card Item
 export interface SkillCardItem {
-  id: string
-  imgSrc: StaticImageData
-  imgAlt: string
-  technology: string
-  years: number
-  tooltip: string
+  readonly id: string
+  readonly imgSrc: StaticImageData
+  readonly imgAlt: string
+  readonly technology: string
+  readonly years: number
+  readonly tooltip: string
 }
 
 // Skills Info
 export interface SkillsInfo {
-  id: number
-  icon?: string
-  text: string
-  years?: string
+  readonly id: number
+  readonly icon?: string
+  readonly text: string
+  readonly years?: string
 }
 
 // Status Badge
 export interface StatusBadge {
-  id: number
-  name: string
-  src: string // not 'StaticImageData' but 'string' because it's a URL
-  alt: string
-  width: number
-  height: number
+  readonly id: number
+  readonly name: string
+  readonly src: string // not 'StaticImageData' but 'string' because it's a URL
+  readonly alt: string
+  readonly width: number
+  readonly height: number
 }
 
 // Testimonial Item
 export interface TestimonialItem {
-  id: string
-  personPhoto: StaticImageData
-  personIcon: string
-  personName: string
-  personJob: string
-  personCompany: string
-  testimonialText: string
-  link?: string
-  linkText?: string
+  readonly id: string
+  readonly personPhoto: StaticImageData
+  readonly personIcon: string
+  readonly personName: string
+  readonly personJob: string
+  readonly personCompany: string
+  readonly testimonialText: string
+  readonly link?: string
+  readonly linkText?: string
 }
 
 // Testimonial Data
 export interface TestimonialData {
-  name: string
-  job: string
-  company: string
-  text: string
-  linkText?: string
+  readonly name: string
+  readonly job: string
+  readonly company: string
+  readonly text: string
+  readonly linkText?: string
 }
 
-// Testimonials Groups
+/**
+ * Testimonials Groups
+ *
+ * Organizes testimonials into categorized groups (work, personal, fitness).
+ * Each category is a Record mapping to their respective TestimonialData.
+ */
 export interface TestimonialsGroups {
-  work: {
-    [key: string]: TestimonialData
-  }
-  personal: {
-    [key: string]: TestimonialData
-  }
-  fitness: {
-    [key: string]: TestimonialData
-  }
+  readonly work: Record<string, TestimonialData>
+  readonly personal: Record<string, TestimonialData>
+  readonly fitness: Record<string, TestimonialData>
 }
 
 // Gallery Image
 export interface GalleryImage {
-  id: number
-  src: string
+  readonly id: number
+  readonly src: string
 }
 
 // External URL
@@ -238,7 +241,7 @@ export interface GitHubUrls {
 // Sitemap Item
 export interface SitemapEntry {
   readonly url: string
-  priority: number
+  readonly priority: number
 }
 
 // Status Badge URLs
@@ -256,132 +259,135 @@ export interface StatusBadgeUrls {
 
 // Years of Experience
 export interface YearsExperience {
-  javaScript: number
-  typeScript: number
-  react: number
-  redux: number
-  tailwind: number
-  playwright: number
-  next: number
-  webDeveloper: number
-  qaAutomation: number
-  localizationManager: number
-  localizationTester: number
-  webCoder: number
-  consultantWebsites: number
-  consultantWordPress: number
-  operatorIBM: number
-  ticketAgent: number
-  highSchoolAccountant: number
+  readonly javaScript: number
+  readonly typeScript: number
+  readonly react: number
+  readonly redux: number
+  readonly tailwind: number
+  readonly playwright: number
+  readonly next: number
+  readonly webDeveloper: number
+  readonly qaAutomation: number
+  readonly localizationManager: number
+  readonly localizationTester: number
+  readonly webCoder: number
+  readonly consultantWebsites: number
+  readonly consultantWordPress: number
+  readonly operatorIBM: number
+  readonly ticketAgent: number
+  readonly highSchoolAccountant: number
 }
 
 // Months of Experience
 export interface MonthsExperience {
-  qaTeamLeaderAtSmartsupp: number
-  airportFlightsInfo: number
-  crewMemberKFC: number
+  readonly qaTeamLeaderAtSmartsupp: number
+  readonly airportFlightsInfo: number
+  readonly crewMemberKFC: number
 }
 
 // Project IDs
 export interface ProjectIds {
-  work: {
-    kooperativa: string
-    smartsupp: {
-      dashboard: string
-      web: string
-      help: string
+  readonly work: {
+    readonly kooperativa: string
+    readonly smartsupp: {
+      readonly dashboard: string
+      readonly web: string
+      readonly help: string
     }
-    komercniBanka: string
-    groupon: string
-    moravia: string
+    readonly komercniBanka: string
+    readonly groupon: string
+    readonly moravia: string
   }
-  personal: {
-    krsiak: string
-    cryptoMania: string
+  readonly personal: {
+    readonly krsiak: string
+    readonly cryptoMania: string
   }
 }
 
-// Element IDs
+/**
+ * Element IDs
+ *
+ * Comprehensive mapping of HTML element IDs used across the whole application.
+ * Organized by feature area with nested structures for related elements.
+ */
 export interface ElementIds {
-  reactTooltip: string
-  main: string
-  home: string
-  whoIAm: string
-  hero: string
-  skills: string
-  skillsMain: string
-  resume: string
-  projects: {
-    work: string
-    personal: string
+  readonly reactTooltip: string
+  readonly main: string
+  readonly home: string
+  readonly whoIAm: string
+  readonly hero: string
+  readonly skills: string
+  readonly skillsMain: string
+  readonly resume: string
+  readonly projects: {
+    readonly work: string
+    readonly personal: string
   }
-  footer: string
-  section: {
-    react: string
-    frontEnd: string
-    wordpress: string
-    qualityAssurance: string
-    localization: string
-    next: string
+  readonly footer: string
+  readonly section: {
+    readonly react: string
+    readonly frontEnd: string
+    readonly wordpress: string
+    readonly qualityAssurance: string
+    readonly localization: string
+    readonly next: string
   }
-  error: {
-    err404: string
-    errGeneral: string
-    errGlobal: string
+  readonly error: {
+    readonly err404: string
+    readonly errGeneral: string
+    readonly errGlobal: string
   }
-  menu: {
-    mobile: string
-    desktop: string
-    toggle: string
+  readonly menu: {
+    readonly mobile: string
+    readonly desktop: string
+    readonly toggle: string
   }
-  status: string
-  testimonials: string
-  websiteLink: {
-    whoIAm: string
-    workExperience: string
-    resume: string
-    personalProjects: string
-    testimonials: string
+  readonly status: string
+  readonly testimonials: string
+  readonly websiteLink: {
+    readonly whoIAm: string
+    readonly workExperience: string
+    readonly resume: string
+    readonly personalProjects: string
+    readonly testimonials: string
   }
 }
 
 // Skill Icon
 export interface Icon {
-  name: string
-  path: string
+  readonly name: string
+  readonly path: string
 }
 
 // Skill Icon Data - Map skill keys to their respective icons.
-export interface SkillToIconMap {
-  [key: string]: string
-}
+export type SkillToIconMap = Record<string, string>
 
 // Journey Step
 export interface CareerPathStep {
-  id: number
-  emoji: string
-  text: string
+  readonly id: number
+  readonly emoji: string
+  readonly text: string
 }
 
 // Travel Item
 export interface TravelItem {
-  id: string
-  icon: string
-  iconAria: string
-  text: string
+  readonly id: string
+  readonly icon: string
+  readonly iconAria: string
+  readonly text: string
 }
 
 // Resume Preview Card
 export interface ResumePreviewCard {
-  title: string
-  description: string
-  highlight: string
-  href: string
-  imageSrc: string | StaticImageData
-  imageAlt: string
-  buttonText: string
-  dataTestId: {
-    image: string
-    button: string
+  readonly title: string
+  readonly description: string
+  readonly highlight: string
+  readonly href: string
+  readonly imageSrc: string | StaticImageData
+  readonly imageAlt: string
+  readonly buttonText: string
+  readonly dataTestId: {
+    readonly image: string
+    readonly button: string
   }
 }

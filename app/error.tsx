@@ -6,9 +6,7 @@ import { TEXT } from '@/localization/english'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-import { Errors } from '@/lib/utils/typeDefinitions/interfaces'
-
-type ErrorProps = Errors
+import { ErrorProps } from '@/lib/utils/typeDefinitions/props/shared/error'
 
 const Error = ({ error }: ErrorProps) => {
   return (
