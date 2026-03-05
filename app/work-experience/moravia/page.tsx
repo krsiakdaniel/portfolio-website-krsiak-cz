@@ -23,7 +23,7 @@ const ProjectWorkMoravia = () => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(
-        PAGES_URL.work.moravia,
+        PAGES_URL.workMoravia,
         ICON_EMOJI.globeShowingAmericas,
         TEXT.moravia,
       )}
@@ -35,7 +35,7 @@ const ProjectWorkMoravia = () => {
       sections={sections}
       PageNavigation={
         <PageNavigation
-          linkPrevious={PAGES_URL.work.groupon}
+          linkPrevious={PAGES_URL.workGroupon}
           iconPrevious={ICON_EMOJI.shoppingCart}
           namePrevious={TEXT.groupon}
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.moravia.previous}

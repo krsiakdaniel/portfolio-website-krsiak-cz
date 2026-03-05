@@ -20,7 +20,7 @@ export const getBreadcrumbsPersonal = (
   level2Text: string,
 ): BreadCrumbsType => {
   return {
-    level1Url: PAGES_URL.personal.mainUrl,
+    level1Url: PAGES_URL.personalProjects,
     level1Icon: ICON_EMOJI.rocket,
     level1AriaLabel: TEXT.personalProjects,
     level1Text: TEXT.personalProjects,

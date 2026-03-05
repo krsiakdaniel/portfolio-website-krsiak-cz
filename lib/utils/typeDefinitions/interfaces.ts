@@ -184,84 +184,49 @@ export interface EnvUrls {
   localhost: string
 }
 
-// Page Top Level URLs
-export interface PageTopLevelUrls {
-  home: string
-  whoIAm: string
-  workExperience: string
-  resume: string
-  personalProjects: string
-  testimonials: string
-  status: string
-}
-
-// Projects Personal Top Level URLs
-export interface ProjectsPersonalTopLevelUrls {
-  krsiak: string
-  cryptoMania: string
-}
-
-// Projects Work Top Level URLs
-export interface ProjectsWorkTopLevelUrls {
-  kooperativa: string
-  smartsupp: {
-    dashboard: string
-    web: string
-    help: string
-  }
-  komercniBanka: string
-  groupon: string
-  moravia: string
-}
-
 // Page URLs
 export interface PageUrls {
-  home: string
-  whoIAm: string
-  resume: string
-  work: {
-    mainUrl: string
-    kooperativa: string
-    smartsupp: {
-      dashboard: string
-      web: string
-      help: string
-    }
-    komercniBanka: string
-    groupon: string
-    moravia: string
-  }
-  personal: {
-    mainUrl: string
-    krsiak: string
-    cryptoMania: string
-  }
-  testimonials: string
-  status: string
+  // Top-level pages
+  readonly home: string
+  readonly whoIAm: string
+  readonly workExperience: string
+  readonly resume: string
+  readonly personalProjects: string
+  readonly testimonials: string
+  readonly status: string
+
+  // Work experience pages
+  readonly workKooperativa: string
+  readonly workSmartsuppDashboard: string
+  readonly workSmartsuppWeb: string
+  readonly workSmartsuppHelp: string
+  readonly workKomercniBanka: string
+  readonly workGroupon: string
+  readonly workMoravia: string
+
+  // Personal project pages
+  readonly personalKrsiak: string
+  readonly personalCryptoMania: string
 }
 
-// Projects URLs
-export interface ProjectsUrls {
-  personal: {
-    krsiak: string
-    cryptoMania: string
-  }
-  work: {
-    kooperativa: string
-    smartsupp: {
-      dashboard: string
-      web: string
-      help: string
-    }
-    komercniBanka: {
-      branchesAndAtms: string
-      branchesAndAtmsDetails: string
-      exchangeRates: string
-      exchangeRatesDetails: string
-    }
-    groupon: string
-    moravia: string
-  }
+// Projects Work URLs
+export interface ProjectsWorkUrls {
+  readonly workKooperativaExternal: string
+  readonly workSmartsuppDashboardExternal: string
+  readonly workSmartsuppWebExternal: string
+  readonly workSmartsuppHelpExternal: string
+  readonly workKomercniBankaBranchesAndAtmsExternal: string
+  readonly workKomercniBankaBranchesDetailsExternal: string
+  readonly workKomercniBankaExchangeRatesExternal: string
+  readonly workKomercniBankaExchangeDetailsExternal: string
+  readonly workGrouponExternal: string
+  readonly workMoraviaExternal: string
+}
+
+// Projects Personal URLs
+export interface ProjectsPersonalUrls {
+  readonly personalKrsiakExternal: string
+  readonly personalCryptoManiaExternal: string
 }
 
 // GitHub URLs
@@ -300,15 +265,15 @@ export interface SitemapItem {
 
 // Status Badge URLs
 export interface StatusBadgeUrls {
-  JEST_TEST: string
-  PLAYWRIGHT_TEST: string
-  PRETTIER_CHECK_FORMATTING: string
-  PULL_REQUEST_LABELER: string
-  AUTO_AUTHOR_ASSIGN: string
-  CODEQL: string
-  CODE_QUALITY: string
-  NETLIFY: string
-  UPTIME: string
+  jestTest: string
+  playwrightTest: string
+  codeQl: string
+  prettierCheckFormatting: string
+  pullRequestLabeler: string
+  autoAuthorAssign: string
+  codeQuality: string
+  netlify: string
+  uptime: string
 }
 
 // Years of Experience

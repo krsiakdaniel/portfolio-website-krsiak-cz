@@ -4,7 +4,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { EM_DASH, MIDDLE_DOT, NB_HYPHEN } from '@/lib/utils/constants/specialCharacters'
 import { GITHUB_URLS } from '@/lib/utils/constants/urls/githubUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { PROJECTS_URLS } from '@/lib/utils/constants/urls/projectsUrls'
+import { PROJECTS_PERSONAL_URLS, PROJECTS_WORK_URLS } from '@/lib/utils/constants/urls/projectsUrls'
 import { MONTHS_EXPERIENCE, YEARS_EXPERIENCE } from '@/lib/utils/constants/yearsExperience'
 
 export const TESTIMONIALS = {
@@ -415,12 +415,12 @@ export const WORK_PROJECTS_OVERVIEW = {
     projectLinks: [
       {
         urlText: 'Website',
-        url: PROJECTS_URLS.work.moravia,
+        url: PROJECTS_WORK_URLS.workMoraviaExternal,
         dataTestId: DATA_TEST_IDS.links.MORAVIA,
       },
     ],
     customers: '80\u00A0out of\u00A0the\u00A0world top\u00A0100\u00A0brands',
-    linkProjectPage: PAGES_URL.work.moravia,
+    linkProjectPage: PAGES_URL.workMoravia,
   },
   groupon: {
     title: `E${NB_HYPHEN}Commerce ${NB_HYPHEN}\u00A0Marketplace`,
@@ -433,12 +433,12 @@ export const WORK_PROJECTS_OVERVIEW = {
     projectLinks: [
       {
         urlText: 'Website',
-        url: PROJECTS_URLS.work.groupon,
+        url: PROJECTS_WORK_URLS.workGrouponExternal,
         dataTestId: DATA_TEST_IDS.links.GROUPON,
       },
     ],
     customers: `${CUSTOMERS_COUNT.groupon}`,
-    linkProjectPage: PAGES_URL.work.groupon,
+    linkProjectPage: PAGES_URL.workGroupon,
   },
   komercniBanka: {
     title: `Commerce Bank ${NB_HYPHEN}\u00A0Website`,
@@ -451,27 +451,27 @@ export const WORK_PROJECTS_OVERVIEW = {
     projectLinks: [
       {
         urlText: `Branches &\u00A0ATMs`,
-        url: PROJECTS_URLS.work.komercniBanka.branchesAndAtms,
+        url: PROJECTS_WORK_URLS.workKomercniBankaBranchesAndAtmsExternal,
         dataTestId: DATA_TEST_IDS.links.KOMERCNI_BANKA_BRANCHES_AND_ATMS,
       },
       {
         urlText: `Branches &\u00A0ATMs ${NB_HYPHEN}\u00A0Details`,
-        url: PROJECTS_URLS.work.komercniBanka.branchesAndAtmsDetails,
+        url: PROJECTS_WORK_URLS.workKomercniBankaBranchesDetailsExternal,
         dataTestId: DATA_TEST_IDS.links.KOMERCNI_BANKA_BRANCHES_AND_ATMS_DETAILS,
       },
       {
         urlText: 'Exchange Rates',
-        url: PROJECTS_URLS.work.komercniBanka.exchangeRates,
+        url: PROJECTS_WORK_URLS.workKomercniBankaExchangeRatesExternal,
         dataTestId: DATA_TEST_IDS.links.KOMERCNI_BANKA_EXCHANGE_RATES,
       },
       {
         urlText: `Exchange Rates ${NB_HYPHEN}\u00A0Details`,
-        url: PROJECTS_URLS.work.komercniBanka.exchangeRatesDetails,
+        url: PROJECTS_WORK_URLS.workKomercniBankaExchangeDetailsExternal,
         dataTestId: DATA_TEST_IDS.links.KOMERCNI_BANKA_EXCHANGE_RATES_DETAILS,
       },
     ],
     customers: `${CUSTOMERS_COUNT.komercniBanka}`,
-    linkProjectPage: PAGES_URL.work.komercniBanka,
+    linkProjectPage: PAGES_URL.workKomercniBanka,
   },
   kooperativa: {
     title: `Insurance Company ${NB_HYPHEN}\u00A0App`,
@@ -483,12 +483,12 @@ export const WORK_PROJECTS_OVERVIEW = {
     projectLinks: [
       {
         urlText: 'Website',
-        url: PROJECTS_URLS.work.kooperativa,
+        url: PROJECTS_WORK_URLS.workKooperativaExternal,
         dataTestId: DATA_TEST_IDS.links.KOOPERATIVA,
       },
     ],
     customers: `${CUSTOMERS_COUNT.kooperativa}`,
-    linkProjectPage: PAGES_URL.work.kooperativa,
+    linkProjectPage: PAGES_URL.workKooperativa,
   },
   frontEnd: {
     title: `SaaS Company ${NB_HYPHEN}\u00A0Website`,
@@ -501,12 +501,12 @@ export const WORK_PROJECTS_OVERVIEW = {
     projectLinks: [
       {
         urlText: 'Website',
-        url: PROJECTS_URLS.work.smartsupp.web,
+        url: PROJECTS_WORK_URLS.workSmartsuppWebExternal,
         dataTestId: DATA_TEST_IDS.links.SMARTSUPP_WEB,
       },
     ],
     customers: `${CUSTOMERS_COUNT.smartsupp}`,
-    linkProjectPage: PAGES_URL.work.smartsupp.web,
+    linkProjectPage: PAGES_URL.workSmartsuppWeb,
   },
   wordPress: {
     title: `SaaS Company ${NB_HYPHEN}\u00A0HELP Website`,
@@ -519,12 +519,12 @@ export const WORK_PROJECTS_OVERVIEW = {
     projectLinks: [
       {
         urlText: 'Website',
-        url: PROJECTS_URLS.work.smartsupp.help,
+        url: PROJECTS_WORK_URLS.workSmartsuppHelpExternal,
         dataTestId: DATA_TEST_IDS.links.SMARTSUPP_HELP,
       },
     ],
     customers: `${CUSTOMERS_COUNT.smartsupp}`,
-    linkProjectPage: PAGES_URL.work.smartsupp.help,
+    linkProjectPage: PAGES_URL.workSmartsuppHelp,
   },
   reactDashboard: {
     title: `SaaS Company\u00A0${NB_HYPHEN}\u00A0Dashboard`,
@@ -537,12 +537,12 @@ export const WORK_PROJECTS_OVERVIEW = {
     projectLinks: [
       {
         urlText: 'Website',
-        url: PROJECTS_URLS.work.smartsupp.dashboard,
+        url: PROJECTS_WORK_URLS.workSmartsuppDashboardExternal,
         dataTestId: DATA_TEST_IDS.links.SMARTSUPP_DASHBOARD,
       },
     ],
     customers: `${CUSTOMERS_COUNT.smartsupp}`,
-    linkProjectPage: PAGES_URL.work.smartsupp.dashboard,
+    linkProjectPage: PAGES_URL.workSmartsuppDashboard,
   },
 }
 
@@ -639,13 +639,13 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
     projectLinks: [
       {
         urlText: 'Website',
-        url: PROJECTS_URLS.personal.krsiak,
+        url: PROJECTS_PERSONAL_URLS.personalKrsiakExternal,
         dataTestId: DATA_TEST_IDS.links.KRSIAK,
       },
     ],
     linkGitHub: GITHUB_URLS.personal.krsiak,
     personalProjectNote: 'My main coding project.',
-    linkProjectPage: PAGES_URL.personal.krsiak,
+    linkProjectPage: PAGES_URL.personalKrsiak,
   },
   react: {
     title: 'CryptoMania',
@@ -657,13 +657,13 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
     projectLinks: [
       {
         urlText: 'Website',
-        url: PROJECTS_URLS.personal.cryptoMania,
+        url: PROJECTS_PERSONAL_URLS.personalCryptoManiaExternal,
         dataTestId: DATA_TEST_IDS.links.CRYPTOMANIA,
       },
     ],
     linkGitHub: GITHUB_URLS.personal.cryptoMania,
     personalProjectNote: 'Project to\u00A0exercise coding.',
-    linkProjectPage: PAGES_URL.personal.cryptoMania,
+    linkProjectPage: PAGES_URL.personalCryptoMania,
   },
 }
 

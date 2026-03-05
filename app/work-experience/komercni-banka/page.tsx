@@ -23,7 +23,7 @@ const ProjectWorkKomercniBanka = () => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(
-        PAGES_URL.work.komercniBanka,
+        PAGES_URL.workKomercniBanka,
         ICON_EMOJI.bank,
         TEXT.komercniBanka,
       )}
@@ -35,11 +35,11 @@ const ProjectWorkKomercniBanka = () => {
       sections={sections}
       PageNavigation={
         <PageNavigation
-          linkPrevious={PAGES_URL.work.smartsupp.dashboard}
+          linkPrevious={PAGES_URL.workSmartsuppDashboard}
           iconPrevious={ICON_EMOJI.speechBalloon}
           namePrevious={TEXT.smartsuppDashboard}
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.komercniBanka.previous}
-          linkNext={PAGES_URL.work.kooperativa}
+          linkNext={PAGES_URL.workKooperativa}
           iconNext={ICON_EMOJI.umbrellaWithRainDrops}
           nameNext={TEXT.kooperativa}
           dataTestIdNext={DATA_TEST_IDS.projects.work.komercniBanka.next}

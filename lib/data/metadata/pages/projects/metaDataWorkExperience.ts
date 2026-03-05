@@ -21,7 +21,7 @@ export const metaDataWorkExperience: Metadata = {
         url: workExperienceOG.src,
       },
     ],
-    url: ENV_URLS.production + PAGES_URL.work.mainUrl,
+    url: ENV_URLS.production + PAGES_URL.workExperience,
   },
   twitter: {
     card: 'summary_large_image',

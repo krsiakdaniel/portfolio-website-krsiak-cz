@@ -22,7 +22,7 @@
 
 Checkout the link: [https://krsiak.cz](https://krsiak.cz)
 
-![daisyUI](/readme-images/main-readme/smiling-face-with-sunglasses-animated-80x80.webp)
+![smiling-face](/readme-images/main-readme/smiling-face-with-sunglasses-animated-80x80.webp)
 
 ## 🚦 Project Status
 

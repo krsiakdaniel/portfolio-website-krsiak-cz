@@ -680,11 +680,6 @@ export const META_STATUS = {
   },
 }
 
-export const DAISY_IU = {
-  daisyUI: 'daisyUI',
-  daisyIsAwesome: 'daisyUI is awesome!',
-}
-
 export const IMAGE_ALT = {
   altWelcome: 'Hi :)',
   altLogo: 'logo',
@@ -698,6 +693,7 @@ export const IMAGE_ALT = {
   altRwsMoravia: 'RWS — Moravia',
   altKomercniBanka: 'Komerční Banka',
   altBata: 'Baťa',
+  altEmojiRobot: 'Robot Emoji',
 }
 
 export const CONTACT = {

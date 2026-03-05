@@ -21,7 +21,7 @@ export const metaDataKooperativa: Metadata = {
         url: kooperativaOG.src,
       },
     ],
-    url: ENV_URLS.production + PAGES_URL.work.kooperativa,
+    url: ENV_URLS.production + PAGES_URL.workKooperativa,
   },
   twitter: {
     card: 'summary_large_image',

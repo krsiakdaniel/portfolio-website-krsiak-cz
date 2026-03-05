@@ -6,8 +6,8 @@
     "dev": "bun next dev",
     "build": "bun next build",
     "start": "bun next start",
-    "lint": "bun next lint",
-    "lint:fix": "bun next lint --fix --max-warnings=0",
+    "lint": "bunx eslint . --max-warnings=0",
+    "lint:fix": "bunx eslint . --fix --max-warnings=0",
     "prettier:check": "bun prettier --check .",
     "prettier:write": "bun prettier --write .",
     "type-check": "bun tsc --noEmit",
@@ -39,6 +39,7 @@
     "@eslint/eslintrc": "^3.3.3",
     "@happy-dom/jest-environment": "^20.6.1",
     "@netlify/plugin-nextjs": "5.15.8",
+    "@next/eslint-plugin-next": "^16.1.6",
     "@playwright/test": "1.58.2",
     "@tailwindcss/postcss": "^4.1.18",
     "@testing-library/jest-dom": "^6.9.1",
@@ -50,6 +51,8 @@
     "@types/react-dom": "19.2.3",
     "eslint": "9.37.0",
     "eslint-config-next": "16.1.6",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "husky": "^9.1.7",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.2.0",
@@ -61,11 +64,12 @@
     "tailwindcss": "^4.1.18",
     "ts-jest": "29.4.6",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "bun eslint --fix --max-warnings=0 --no-warn-ignored",
+      "bunx eslint --fix --max-warnings=0 --no-warn-ignored",
       "bun prettier --write"
     ],
     "*.{css,scss,md,json,yml}": [

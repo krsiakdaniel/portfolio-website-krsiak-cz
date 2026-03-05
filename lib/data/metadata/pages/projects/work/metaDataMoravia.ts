@@ -21,7 +21,7 @@ export const metaDataMoravia: Metadata = {
         url: moraviaOG.src,
       },
     ],
-    url: ENV_URLS.production + PAGES_URL.work.moravia,
+    url: ENV_URLS.production + PAGES_URL.workMoravia,
   },
   twitter: {
     card: 'summary_large_image',

@@ -23,7 +23,7 @@ const ProjectWorkSmartsuppWeb = () => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(
-        PAGES_URL.work.smartsupp.web,
+        PAGES_URL.workSmartsuppWeb,
         ICON_EMOJI.manTechnologist.lightSkinTone,
         TEXT.smartsuppWeb,
       )}
@@ -35,11 +35,11 @@ const ProjectWorkSmartsuppWeb = () => {
       sections={sections}
       PageNavigation={
         <PageNavigation
-          linkPrevious={PAGES_URL.work.kooperativa}
+          linkPrevious={PAGES_URL.workKooperativa}
           iconPrevious={ICON_EMOJI.umbrellaWithRainDrops}
           namePrevious={TEXT.kooperativa}
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.smartsupp.web.previous}
-          linkNext={PAGES_URL.work.smartsupp.help}
+          linkNext={PAGES_URL.workSmartsuppHelp}
           iconNext={ICON_EMOJI.books}
           nameNext={TEXT.smartsuppHELP}
           dataTestIdNext={DATA_TEST_IDS.projects.work.smartsupp.web.next}

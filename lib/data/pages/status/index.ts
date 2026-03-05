@@ -35,7 +35,7 @@ export const statusBadges: StatusBadge[] = [
   createStatusBadge(
     0,
     BADGE_TEXT.JEST_TESTS,
-    STATUS_BADGE_IMGS_URLS.JEST_TEST,
+    STATUS_BADGE_IMGS_URLS.jestTest,
     BADGE_TEXT.JEST_TESTS,
     BADGE_DIMENSIONS.JEST_TESTS.width,
     BADGE_DIMENSIONS.JEST_TESTS.height,
@@ -43,7 +43,7 @@ export const statusBadges: StatusBadge[] = [
   createStatusBadge(
     1,
     BADGE_TEXT.PLAYWRIGHT_TESTS,
-    STATUS_BADGE_IMGS_URLS.PLAYWRIGHT_TEST,
+    STATUS_BADGE_IMGS_URLS.playwrightTest,
     BADGE_TEXT.PLAYWRIGHT_TESTS,
     BADGE_DIMENSIONS.PLAYWRIGHT_TESTS.width,
     BADGE_DIMENSIONS.PLAYWRIGHT_TESTS.height,
@@ -51,7 +51,7 @@ export const statusBadges: StatusBadge[] = [
   createStatusBadge(
     2,
     BADGE_TEXT.PRETTIER_CHECK_FORMATTING,
-    STATUS_BADGE_IMGS_URLS.PRETTIER_CHECK_FORMATTING,
+    STATUS_BADGE_IMGS_URLS.prettierCheckFormatting,
     BADGE_TEXT.PRETTIER_CHECK_FORMATTING,
     BADGE_DIMENSIONS.PRETTIER_CHECK_FORMATTING.width,
     BADGE_DIMENSIONS.PRETTIER_CHECK_FORMATTING.height,
@@ -59,7 +59,7 @@ export const statusBadges: StatusBadge[] = [
   createStatusBadge(
     3,
     BADGE_TEXT.PULL_REQUEST_LABELER,
-    STATUS_BADGE_IMGS_URLS.PULL_REQUEST_LABELER,
+    STATUS_BADGE_IMGS_URLS.pullRequestLabeler,
     BADGE_TEXT.PULL_REQUEST_LABELER,
     BADGE_DIMENSIONS.PULL_REQUEST_LABELER.width,
     BADGE_DIMENSIONS.PULL_REQUEST_LABELER.height,
@@ -67,7 +67,7 @@ export const statusBadges: StatusBadge[] = [
   createStatusBadge(
     4,
     BADGE_TEXT.AUTO_AUTHOR_ASSIGN,
-    STATUS_BADGE_IMGS_URLS.AUTO_AUTHOR_ASSIGN,
+    STATUS_BADGE_IMGS_URLS.autoAuthorAssign,
     BADGE_TEXT.AUTO_AUTHOR_ASSIGN,
     BADGE_DIMENSIONS.AUTO_AUTHOR_ASSIGN.width,
     BADGE_DIMENSIONS.AUTO_AUTHOR_ASSIGN.height,
@@ -75,7 +75,7 @@ export const statusBadges: StatusBadge[] = [
   createStatusBadge(
     5,
     BADGE_TEXT.CODEQL,
-    STATUS_BADGE_IMGS_URLS.CODEQL,
+    STATUS_BADGE_IMGS_URLS.codeQl,
     BADGE_TEXT.CODEQL,
     BADGE_DIMENSIONS.CODEQL.width,
     BADGE_DIMENSIONS.CODEQL.height,
@@ -83,7 +83,7 @@ export const statusBadges: StatusBadge[] = [
   createStatusBadge(
     6,
     BADGE_TEXT.CODE_QUALITY,
-    STATUS_BADGE_IMGS_URLS.CODE_QUALITY,
+    STATUS_BADGE_IMGS_URLS.codeQuality,
     BADGE_TEXT.CODE_QUALITY,
     BADGE_DIMENSIONS.CODE_QUALITY.width,
     BADGE_DIMENSIONS.CODE_QUALITY.height,
@@ -91,7 +91,7 @@ export const statusBadges: StatusBadge[] = [
   createStatusBadge(
     7,
     BADGE_TEXT.NETLIFY,
-    STATUS_BADGE_IMGS_URLS.NETLIFY,
+    STATUS_BADGE_IMGS_URLS.netlify,
     BADGE_TEXT.NETLIFY,
     BADGE_DIMENSIONS.NETLIFY.width,
     BADGE_DIMENSIONS.NETLIFY.height,
@@ -99,7 +99,7 @@ export const statusBadges: StatusBadge[] = [
   createStatusBadge(
     8,
     BADGE_TEXT.UPTIME,
-    STATUS_BADGE_IMGS_URLS.UPTIME,
+    STATUS_BADGE_IMGS_URLS.uptime,
     BADGE_TEXT.UPTIME,
     BADGE_DIMENSIONS.UPTIME.width,
     BADGE_DIMENSIONS.UPTIME.height,

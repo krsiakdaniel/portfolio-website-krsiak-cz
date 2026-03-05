@@ -23,7 +23,7 @@ const ProjectWorkSmartsuppDashboard = () => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsWork(
-        PAGES_URL.work.smartsupp.dashboard,
+        PAGES_URL.workSmartsuppDashboard,
         ICON_EMOJI.speechBalloon,
         TEXT.smartsuppChatDashboard,
       )}
@@ -35,11 +35,11 @@ const ProjectWorkSmartsuppDashboard = () => {
       sections={sections}
       PageNavigation={
         <PageNavigation
-          linkPrevious={PAGES_URL.work.mainUrl}
+          linkPrevious={PAGES_URL.workExperience}
           iconPrevious={ICON_EMOJI.manTechnologist.lightSkinTone}
           namePrevious={TEXT.workExperience}
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.smartsupp.dashboard.previous}
-          linkNext={PAGES_URL.work.komercniBanka}
+          linkNext={PAGES_URL.workKomercniBanka}
           iconNext={ICON_EMOJI.bank}
           nameNext={TEXT.komercniBanka}
           dataTestIdNext={DATA_TEST_IDS.projects.work.smartsupp.dashboard.next}

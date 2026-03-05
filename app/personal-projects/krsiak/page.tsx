@@ -23,7 +23,7 @@ const ProjectPersonalKrsiak = () => {
   return (
     <ProjectPageLayoutWrapper
       breadCrumbs={getBreadcrumbsPersonal(
-        PAGES_URL.personal.krsiak,
+        PAGES_URL.personalKrsiak,
         ICON_EMOJI.manTechnologist.lightSkinTone,
         TEXT.portfolioWebsite,
       )}
@@ -35,11 +35,11 @@ const ProjectPersonalKrsiak = () => {
       sections={sections}
       PageNavigation={
         <PageNavigation
-          linkPrevious={PAGES_URL.personal.mainUrl}
+          linkPrevious={PAGES_URL.personalProjects}
           iconPrevious={ICON_EMOJI.rocket}
           namePrevious={TEXT.personalProjects}
           dataTestIdPrevious={DATA_TEST_IDS.projects.personal.krsiak.previous}
-          linkNext={PAGES_URL.personal.cryptoMania}
+          linkNext={PAGES_URL.personalCryptoMania}
           iconNext={ICON_EMOJI.moneyBag}
           nameNext={TEXT.cryptoMania}
           dataTestIdNext={DATA_TEST_IDS.projects.personal.krsiak.next}

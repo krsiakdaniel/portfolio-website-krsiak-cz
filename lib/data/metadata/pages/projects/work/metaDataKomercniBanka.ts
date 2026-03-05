@@ -21,7 +21,7 @@ export const metaDataKomercniBanka: Metadata = {
         url: komercniBankaOG.src,
       },
     ],
-    url: ENV_URLS.production + PAGES_URL.work.komercniBanka,
+    url: ENV_URLS.production + PAGES_URL.workKomercniBanka,
   },
   twitter: {
     card: 'summary_large_image',
