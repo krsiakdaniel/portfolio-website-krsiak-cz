@@ -29,7 +29,7 @@ const ProjectPersonalCryptomania = () => {
     <>
       <ProjectPageLayoutWrapper
         breadCrumbs={getBreadcrumbsPersonal(
-          PAGES_URL.personal.cryptoMania,
+          PAGES_URL.personalCryptoMania,
           ICON_EMOJI.moneyBag,
           TEXT.cryptoMania,
         )}
@@ -56,7 +56,7 @@ const ProjectPersonalCryptomania = () => {
         }
         PageNavigation={
           <PageNavigation
-            linkPrevious={PAGES_URL.personal.krsiak}
+            linkPrevious={PAGES_URL.personalKrsiak}
             iconPrevious={ICON_EMOJI.manTechnologist.lightSkinTone}
             namePrevious={TEXT.portfolioWebsite}
             dataTestIdPrevious={DATA_TEST_IDS.projects.personal.cryptoMania.previous}

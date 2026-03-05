@@ -77,7 +77,7 @@ const Testimonials = () => {
       </div>
 
       <PageNavigation
-        linkPrevious={PAGES_URL.personal.mainUrl}
+        linkPrevious={PAGES_URL.personalProjects}
         iconPrevious={ICON_EMOJI.rocket}
         namePrevious={TEXT.personalProjects}
         dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.testimonials.previous}

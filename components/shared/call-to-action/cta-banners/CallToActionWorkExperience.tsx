@@ -21,7 +21,7 @@ const CallToActionWorkExperience = () => {
       heading={CALL_TO_ACTION.workExperience.heading}
       textMobileAndDesktop={CALL_TO_ACTION.workExperience.textMobileAndDesktop}
       textDesktop={CALL_TO_ACTION.workExperience.textDesktop}
-      link={PAGES_URL.work.mainUrl}
+      link={PAGES_URL.workExperience}
       linkText={TEXT.workExperience}
       dataTestId={DATA_TEST_IDS.callToAction.linkWorkExperience}
       icon={ICON_EMOJI.manTechnologist.lightSkinTone}

@@ -20,7 +20,7 @@ export const getBreadcrumbsWork = (
   level2Text: string,
 ): BreadCrumbsType => {
   return {
-    level1Url: PAGES_URL.work.mainUrl,
+    level1Url: PAGES_URL.workExperience,
     level1Icon: ICON_EMOJI.manTechnologist.lightSkinTone,
     level1AriaLabel: '',
     level1Text: TEXT.workExperience,

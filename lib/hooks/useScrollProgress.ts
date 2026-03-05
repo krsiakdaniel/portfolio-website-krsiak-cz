@@ -29,12 +29,15 @@ export const useScrollProgress = (): number => {
   }, [])
 
   useEffect(() => {
-    // Calculate initial scroll progress
-    calculateScrollProgress()
+    // Calculate initial scroll progress after mount
+    const requestID = requestAnimationFrame(() => {
+      calculateScrollProgress()
+    })
 
     window.addEventListener('scroll', calculateScrollProgress, { passive: true })
 
     return () => {
+      cancelAnimationFrame(requestID)
       window.removeEventListener('scroll', calculateScrollProgress)
     }
   }, [calculateScrollProgress])

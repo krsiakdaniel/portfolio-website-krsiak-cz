@@ -168,147 +168,90 @@ export interface GalleryImage {
 
 // External URL
 export interface ExternalURL {
-  gitHub: string
-  linkedIn: string
-  resumeViewPDF: string
-  resumeViewDOCX: string
-  uptimeMonitorStatus: string
-  uptimeMonitorStatusExternal: string
-  graceChurch: string
-  bonyToBeastly: string
+  readonly gitHub: string
+  readonly linkedIn: string
+  readonly resumeViewPDF: string
+  readonly resumeViewDOCX: string
+  readonly uptimeMonitorStatus: string
+  readonly uptimeMonitorStatusExternal: string
+  readonly graceChurch: string
+  readonly bonyToBeastly: string
 }
 
 // Environment URLs
 export interface EnvUrls {
-  production: string
-  localhost: string
-}
-
-// Page Top Level URLs
-export interface PageTopLevelUrls {
-  home: string
-  whoIAm: string
-  workExperience: string
-  resume: string
-  personalProjects: string
-  testimonials: string
-  status: string
-}
-
-// Projects Personal Top Level URLs
-export interface ProjectsPersonalTopLevelUrls {
-  krsiak: string
-  cryptoMania: string
-}
-
-// Projects Work Top Level URLs
-export interface ProjectsWorkTopLevelUrls {
-  kooperativa: string
-  smartsupp: {
-    dashboard: string
-    web: string
-    help: string
-  }
-  komercniBanka: string
-  groupon: string
-  moravia: string
+  readonly production: string
+  readonly localhost: string
 }
 
 // Page URLs
 export interface PageUrls {
-  home: string
-  whoIAm: string
-  resume: string
-  work: {
-    mainUrl: string
-    kooperativa: string
-    smartsupp: {
-      dashboard: string
-      web: string
-      help: string
-    }
-    komercniBanka: string
-    groupon: string
-    moravia: string
-  }
-  personal: {
-    mainUrl: string
-    krsiak: string
-    cryptoMania: string
-  }
-  testimonials: string
-  status: string
+  // Top-level pages
+  readonly home: string
+  readonly whoIAm: string
+  readonly workExperience: string
+  readonly resume: string
+  readonly personalProjects: string
+  readonly testimonials: string
+  readonly status: string
+
+  // Work experience pages
+  readonly workKooperativa: string
+  readonly workSmartsuppDashboard: string
+  readonly workSmartsuppWeb: string
+  readonly workSmartsuppHelp: string
+  readonly workKomercniBanka: string
+  readonly workGroupon: string
+  readonly workMoravia: string
+
+  // Personal project pages
+  readonly personalKrsiak: string
+  readonly personalCryptoMania: string
 }
 
-// Projects URLs
-export interface ProjectsUrls {
-  personal: {
-    krsiak: string
-    cryptoMania: string
-  }
-  work: {
-    kooperativa: string
-    smartsupp: {
-      dashboard: string
-      web: string
-      help: string
-    }
-    komercniBanka: {
-      branchesAndAtms: string
-      branchesAndAtmsDetails: string
-      exchangeRates: string
-      exchangeRatesDetails: string
-    }
-    groupon: string
-    moravia: string
-  }
+// Projects Work URLs
+export interface ProjectsWorkUrls {
+  readonly workKooperativaExternal: string
+  readonly workSmartsuppDashboardExternal: string
+  readonly workSmartsuppWebExternal: string
+  readonly workSmartsuppHelpExternal: string
+  readonly workKomercniBankaBranchesAndAtmsExternal: string
+  readonly workKomercniBankaBranchesDetailsExternal: string
+  readonly workKomercniBankaExchangeRatesExternal: string
+  readonly workKomercniBankaExchangeDetailsExternal: string
+  readonly workGrouponExternal: string
+  readonly workMoraviaExternal: string
+}
+
+// Projects Personal URLs
+export interface ProjectsPersonalUrls {
+  readonly personalKrsiakExternal: string
+  readonly personalCryptoManiaExternal: string
 }
 
 // GitHub URLs
 export interface GitHubUrls {
-  personal: {
-    krsiak: string
-    cryptoMania: string
-  }
-}
-
-// Sitemap URLs
-export interface SitemapUrls {
-  home: string
-  whoIAm: string
-  resume: string
-  workExperience: string
-  workKooperativa: string
-  workSmartsuppDashboard: string
-  workSmartsuppWeb: string
-  workSmartsuppHelp: string
-  workKomercniBanka: string
-  workGroupon: string
-  workMoravia: string
-  personalProjects: string
-  personalKrsiak: string
-  personalCryptoMania: string
-  testimonials: string
-  status: string
+  readonly portfolioWebsiteKrsiak: string
+  readonly cryptoMania: string
 }
 
 // Sitemap Item
-export interface SitemapItem {
-  url: string
+export interface SitemapEntry {
+  readonly url: string
   priority: number
 }
 
 // Status Badge URLs
 export interface StatusBadgeUrls {
-  JEST_TEST: string
-  PLAYWRIGHT_TEST: string
-  PRETTIER_CHECK_FORMATTING: string
-  PULL_REQUEST_LABELER: string
-  AUTO_AUTHOR_ASSIGN: string
-  CODEQL: string
-  CODE_QUALITY: string
-  NETLIFY: string
-  UPTIME: string
+  readonly jestTest: string
+  readonly playwrightTest: string
+  readonly codeQl: string
+  readonly prettierCheckFormatting: string
+  readonly pullRequestLabeler: string
+  readonly autoAuthorAssign: string
+  readonly codeQuality: string
+  readonly netlify: string
+  readonly uptime: string
 }
 
 // Years of Experience

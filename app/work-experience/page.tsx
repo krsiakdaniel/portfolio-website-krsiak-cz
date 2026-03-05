@@ -32,7 +32,7 @@ const ProjectsWork = () => {
   return (
     <PageContainer id={ID.projects.work}>
       <BreadCrumbs
-        level1Url={PAGES_URL.work.mainUrl}
+        level1Url={PAGES_URL.workExperience}
         level1Icon={ICON_EMOJI.manTechnologist.lightSkinTone}
         level1AriaLabel={ARIA_LABELS.emoji.manTechnologist.lightSkinTone}
         level1Text={TEXT.workExperience}

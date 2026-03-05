@@ -10,7 +10,7 @@ import Paragraph from '@/components/shared/Paragraph'
 import { metaDataStatus } from '@/lib/data/metadata/pages/metaDataStatus'
 import { statusBadges } from '@/lib/data/pages/status'
 
-import { ARIA_LABELS, DAISY_IU, ICON_EMOJI, STATUS, TEXT } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, IMAGE_ALT, STATUS, TEXT } from '@/localization/english'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -70,7 +70,7 @@ const Status = () => {
             <EmojiAnimated
               icon={EmojiNameEnum.ROBOT}
               size={EmojiSizeEnum.LG}
-              alt={DAISY_IU.daisyIsAwesome}
+              alt={IMAGE_ALT.altEmojiRobot}
               loading={ImageLoading.EAGER}
               className="mt-8"
             />

@@ -13,9 +13,9 @@ import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
 export const getGoBackLinkID = (goBackLink: GoBackLinkEnum, sectionID: string): string => {
   switch (goBackLink) {
     case 'work':
-      return `${PAGES_URL.work.mainUrl}/#${sectionID}`
+      return `${PAGES_URL.workExperience}/#${sectionID}`
     case 'personal':
-      return `${PAGES_URL.personal.mainUrl}/#${sectionID}`
+      return `${PAGES_URL.personalProjects}/#${sectionID}`
     default:
       return PAGES_URL.home
   }

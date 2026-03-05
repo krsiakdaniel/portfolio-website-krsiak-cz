@@ -55,11 +55,11 @@ const Resume = () => {
       </div>
 
       <PageNavigation
-        linkPrevious={PAGES_URL.work.mainUrl}
+        linkPrevious={PAGES_URL.workExperience}
         iconPrevious={ICON_EMOJI.manTechnologist.lightSkinTone}
         namePrevious={TEXT.workExperience}
         dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.resume.previous}
-        linkNext={PAGES_URL.personal.mainUrl}
+        linkNext={PAGES_URL.personalProjects}
         iconNext={ICON_EMOJI.rocket}
         nameNext={TEXT.personalProjects}
         dataTestIdNext={DATA_TEST_IDS.pageNavigation.resume.next}

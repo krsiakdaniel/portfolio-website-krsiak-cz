@@ -22,11 +22,7 @@ export const metadata = {
 const ProjectWorkGroupon = () => {
   return (
     <ProjectPageLayoutWrapper
-      breadCrumbs={getBreadcrumbsWork(
-        PAGES_URL.work.groupon,
-        ICON_EMOJI.shoppingCart,
-        TEXT.groupon,
-      )}
+      breadCrumbs={getBreadcrumbsWork(PAGES_URL.workGroupon, ICON_EMOJI.shoppingCart, TEXT.groupon)}
       pageID={PROJECT_ID.work.groupon}
       goBackLink={GoBackLinkEnum.Work}
       sectionID={ID.section.qualityAssurance}
@@ -35,11 +31,11 @@ const ProjectWorkGroupon = () => {
       sections={sections}
       PageNavigation={
         <PageNavigation
-          linkPrevious={PAGES_URL.work.smartsupp.help}
+          linkPrevious={PAGES_URL.workSmartsuppHelp}
           iconPrevious={ICON_EMOJI.books}
           namePrevious={TEXT.smartsuppHELP}
           dataTestIdPrevious={DATA_TEST_IDS.projects.work.groupon.previous}
-          linkNext={PAGES_URL.work.moravia}
+          linkNext={PAGES_URL.workMoravia}
           iconNext={ICON_EMOJI.globeShowingAmericas}
           nameNext={TEXT.moravia}
           dataTestIdNext={DATA_TEST_IDS.projects.work.groupon.next}

@@ -61,6 +61,6 @@ export const projectsPersonalNext: Project[] = [
     ],
     linkGitHub: PROJECTS_PERSONAL_OVERVIEW.next.linkGitHub,
     personalProjectNote: PROJECTS_PERSONAL_OVERVIEW.next.personalProjectNote,
-    linkProjectPage: PAGES_URL.personal.krsiak,
+    linkProjectPage: PAGES_URL.personalKrsiak,
   },
 ]

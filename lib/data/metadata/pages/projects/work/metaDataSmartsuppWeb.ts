@@ -21,7 +21,7 @@ export const metaDataSmartsuppWeb: Metadata = {
         url: smartsuppWebOG.src,
       },
     ],
-    url: ENV_URLS.production + PAGES_URL.work.smartsupp.web,
+    url: ENV_URLS.production + PAGES_URL.workSmartsuppWeb,
   },
   twitter: {
     card: 'summary_large_image',

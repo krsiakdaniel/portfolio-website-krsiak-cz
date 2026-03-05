@@ -61,6 +61,6 @@ export const projectsPersonalReact: Project[] = [
     ],
     linkGitHub: PROJECTS_PERSONAL_OVERVIEW.react.linkGitHub,
     personalProjectNote: PROJECTS_PERSONAL_OVERVIEW.react.personalProjectNote,
-    linkProjectPage: PAGES_URL.personal.cryptoMania,
+    linkProjectPage: PAGES_URL.personalCryptoMania,
   },
 ]

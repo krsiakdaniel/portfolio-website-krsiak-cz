@@ -17,7 +17,7 @@ export const pagesLinks: PageLinkItem[] = [
   },
   {
     id: ID.websiteLink.workExperience,
-    href: PAGES_URL.work.mainUrl,
+    href: PAGES_URL.workExperience,
     icon: ICON_EMOJI.manTechnologist.lightSkinTone,
     ariaLabel: ARIA_LABELS.emoji.manTechnologist.lightSkinTone,
     text: TEXT.workExperience,
@@ -33,7 +33,7 @@ export const pagesLinks: PageLinkItem[] = [
   },
   {
     id: ID.websiteLink.personalProjects,
-    href: PAGES_URL.personal.mainUrl,
+    href: PAGES_URL.personalProjects,
     icon: ICON_EMOJI.rocket,
     ariaLabel: ARIA_LABELS.emoji.rocket,
     text: TEXT.personalProjects,

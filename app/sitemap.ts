@@ -1,30 +1,42 @@
 import { MetadataRoute } from 'next'
 
-import { ENV_URLS, SITEMAP_URLS } from '@/lib/utils/constants/urls/pageUrls'
+import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { ChangeFrequencyEnum } from '@/lib/utils/typeDefinitions/enums'
-import { SitemapItem } from '@/lib/utils/typeDefinitions/interfaces'
+import { SitemapEntry } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const CHANGE_FREQUENCY_MONTHLY = ChangeFrequencyEnum.MONTHLY
 
 const BASE_URL = ENV_URLS.production
 
-const sitemapEntries: SitemapItem[] = [
-  { url: BASE_URL + SITEMAP_URLS.home, priority: 1 },
-  { url: BASE_URL + SITEMAP_URLS.whoIAm, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.resume, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.workExperience, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.workSmartsuppDashboard, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.workKooperativa, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.workKomercniBanka, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.workSmartsuppWeb, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.workSmartsuppHelp, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.workGroupon, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.workMoravia, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.personalProjects, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.personalKrsiak, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.personalCryptoMania, priority: 0.8 },
-  { url: BASE_URL + SITEMAP_URLS.testimonials, priority: 0.4 },
-  { url: BASE_URL + SITEMAP_URLS.status, priority: 0.2 },
+const createSitemapEntry = (path: string, priority: number): SitemapEntry => ({
+  url: `${BASE_URL}${path}`,
+  priority,
+})
+
+const sitemapEntries: SitemapEntry[] = [
+  // Priority 1.0
+  createSitemapEntry(PAGES_URL.home, 1),
+
+  // Priority 0.8
+  createSitemapEntry(PAGES_URL.whoIAm, 0.8),
+  createSitemapEntry(PAGES_URL.resume, 0.8),
+  createSitemapEntry(PAGES_URL.workExperience, 0.8),
+  createSitemapEntry(PAGES_URL.workSmartsuppDashboard, 0.8),
+  createSitemapEntry(PAGES_URL.workKooperativa, 0.8),
+  createSitemapEntry(PAGES_URL.workKomercniBanka, 0.8),
+  createSitemapEntry(PAGES_URL.workSmartsuppWeb, 0.8),
+  createSitemapEntry(PAGES_URL.workSmartsuppHelp, 0.8),
+  createSitemapEntry(PAGES_URL.workGroupon, 0.8),
+  createSitemapEntry(PAGES_URL.workMoravia, 0.8),
+  createSitemapEntry(PAGES_URL.personalProjects, 0.8),
+  createSitemapEntry(PAGES_URL.personalKrsiak, 0.8),
+  createSitemapEntry(PAGES_URL.personalCryptoMania, 0.8),
+
+  // Priority 0.4
+  createSitemapEntry(PAGES_URL.testimonials, 0.4),
+
+  // Priority 0.2
+  createSitemapEntry(PAGES_URL.status, 0.2),
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

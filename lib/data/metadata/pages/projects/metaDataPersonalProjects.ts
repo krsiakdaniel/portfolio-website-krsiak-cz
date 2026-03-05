@@ -21,7 +21,7 @@ export const metaDataPersonalProjects: Metadata = {
         url: personalProjectsOverviewOG.src,
       },
     ],
-    url: ENV_URLS.production + PAGES_URL.personal.mainUrl,
+    url: ENV_URLS.production + PAGES_URL.personalProjects,
   },
   twitter: {
     card: 'summary_large_image',

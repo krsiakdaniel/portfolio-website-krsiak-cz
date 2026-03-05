@@ -58,5 +58,5 @@ export const workReactKooperativa: Project = {
     },
   ],
   customers: WORK_PROJECTS_OVERVIEW.kooperativa.customers,
-  linkProjectPage: PAGES_URL.work.kooperativa,
+  linkProjectPage: PAGES_URL.workKooperativa,
 }

@@ -21,7 +21,7 @@ export const metaDataGroupon: Metadata = {
         url: grouponOG.src,
       },
     ],
-    url: ENV_URLS.production + PAGES_URL.work.groupon,
+    url: ENV_URLS.production + PAGES_URL.workGroupon,
   },
   twitter: {
     card: 'summary_large_image',

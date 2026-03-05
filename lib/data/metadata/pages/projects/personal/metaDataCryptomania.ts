@@ -21,7 +21,7 @@ export const metaDataCryptomania: Metadata = {
         url: cryptomaniaOG.src,
       },
     ],
-    url: ENV_URLS.production + PAGES_URL.personal.cryptoMania,
+    url: ENV_URLS.production + PAGES_URL.personalCryptoMania,
   },
   twitter: {
     card: 'summary_large_image',

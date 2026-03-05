@@ -80,5 +80,5 @@ export const workReactKomercniBanka: Project = {
     },
   ],
   customers: WORK_PROJECTS_OVERVIEW.komercniBanka.customers,
-  linkProjectPage: PAGES_URL.work.komercniBanka,
+  linkProjectPage: PAGES_URL.workKomercniBanka,
 }

@@ -64,7 +64,7 @@ const WhoIAm = () => {
         iconPrevious={ICON_EMOJI.house}
         namePrevious={TEXT.home}
         dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.whoIAm.previous}
-        linkNext={PAGES_URL.work.mainUrl}
+        linkNext={PAGES_URL.workExperience}
         iconNext={ICON_EMOJI.manTechnologist.lightSkinTone}
         nameNext={TEXT.workExperience}
         dataTestIdNext={DATA_TEST_IDS.pageNavigation.whoIAm.next}
