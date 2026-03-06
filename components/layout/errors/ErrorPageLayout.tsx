@@ -9,20 +9,21 @@ import { ErrorPageLayoutProps } from '@/lib/utils/typeDefinitions/props/layout/e
 
 import imgError from '@/public/images/webp/errors/error.webp'
 
-const reset = (): void => {
-  window.location.reload()
-}
-
 const ErrorPageLayout = ({
   error,
   pageContainerId,
   imgAlt,
   description,
   note,
+  unstable_retry,
 }: ErrorPageLayoutProps) => {
   useEffect(() => {
     // Log the error to an error reporting service
     console.error('ERROR:', error.name, error.message, error.stack)
+    // Log digest if available for server-side error tracking
+    if (error.digest) {
+      console.error('Error digest:', error.digest)
+    }
   }, [error])
 
   return (
@@ -34,7 +35,7 @@ const ErrorPageLayout = ({
         description={description}
         note={note}
         buttonText={TEXT.tryAgain}
-        onButtonClick={() => reset()}
+        onButtonClick={unstable_retry}
       />
     </PageContainer>
   )

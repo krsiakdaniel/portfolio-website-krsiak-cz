@@ -15,8 +15,9 @@ export type ErrorPageContentProps = {
 // Error Page Layout Props
 export type ErrorPageLayoutProps = {
   description: string
-  error: Error
+  error: Error & { digest?: string }
   imgAlt: string
   note: string
   pageContainerId?: string
+  unstable_retry: () => void
 }
