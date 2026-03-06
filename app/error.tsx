@@ -6,14 +6,13 @@ import { TEXT } from '@/localization/english'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-import { Errors } from '@/lib/utils/typeDefinitions/interfaces'
+import { ErrorProps } from '@/lib/utils/typeDefinitions/props/shared/error'
 
-type ErrorProps = Errors
-
-const Error = ({ error }: ErrorProps) => {
+const Error = ({ error, unstable_retry }: ErrorProps) => {
   return (
     <ErrorPageLayout
       error={error}
+      unstable_retry={unstable_retry}
       pageContainerId={ID.error.errGeneral}
       imgAlt={TEXT.error}
       description={TEXT.errorDescription}
