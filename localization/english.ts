@@ -781,7 +781,7 @@ export const WHO_I_AM = {
   whoIAm: 'Who I\u00A0Am',
   aboutMe: `
     I\u00A0am a\u00A0traveler who\u00A0loves discovering the\u00A0world and\u00A0staying close to\u00A0nature.  
-    As\u00A0a\u00A0hiker I spend my free time exploring the\u00A0outdoors, forests and\u00A0mountains.
+    As\u00A0a\u00A0hiker I\u00A0spend my free time exploring the\u00A0outdoors, forests and\u00A0mountains.
   `,
   idCZ: COUNTRY.czechRepublic,
   idSK: COUNTRY.slovakia,
@@ -794,7 +794,6 @@ export const WHO_I_AM = {
   travels: {
     heading: 'Countries I\u00A0Have\u00A0Visited',
     totalCountries: '19',
-    totalVisits: '75',
     statsText: {
       countries: 'countries',
       visits: 'total\u00A0visits',
@@ -806,6 +805,7 @@ export const WHO_I_AM = {
     regions: {
       asia: {
         name: 'Asia',
+        continentVisits: 3,
         countries: [
           { flag: ICON_EMOJI.flagSouthKorea, name: 'South\u00A0Korea', visits: 1 },
           { flag: ICON_EMOJI.flagTurkey, name: 'Turkey', visits: 2 },
@@ -813,14 +813,17 @@ export const WHO_I_AM = {
       },
       africa: {
         name: 'Africa',
+        continentVisits: 1,
         countries: [{ flag: ICON_EMOJI.flagTunisia, name: 'Tunisia', visits: 1 }],
       },
       middleEast: {
         name: 'Middle\u00A0East',
+        continentVisits: 1,
         countries: [{ flag: ICON_EMOJI.flagUAE, name: `United Arab Emirates`, visits: 1 }],
       },
       europe: {
         name: 'Europe',
+        continentVisits: 70,
         countries: [
           { flag: ICON_EMOJI.flagAustria, name: 'Austria', visits: 20 },
           { flag: ICON_EMOJI.flagSlovakia, name: 'Slovakia', visits: 11 },
@@ -852,9 +855,9 @@ export const INTRODUCTION = {
   whoIAm: {
     text: {
       introduction1: `Hi! My name is\u00A0`,
-      introduction2: `\u00A0at\u00A0work\u00A0I\u00A0am`,
-      developer: `${COMMON_VALUES.react} ${EM_DASH}\u00A0${COMMON_VALUES.typeScript} ${COMMON_VALUES.developer}`,
-      freeTime: 'in\u00A0my free\u00A0time I\u00A0love to\u00A0travel',
+      introduction2: `I\u00A0am from Czech\u00A0Republic\u00A0🇨🇿`,
+      freeTime: 'In\u00A0my free\u00A0time',
+      loveTravel: 'I\u00A0love to\u00A0travel',
     },
   },
   resume: {

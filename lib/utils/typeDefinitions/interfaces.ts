@@ -387,6 +387,7 @@ export interface TravelCountry {
 // Travel Region
 export interface TravelRegion {
   readonly name: string
+  readonly continentVisits: number
   readonly countries: readonly TravelCountry[]
 }
 
