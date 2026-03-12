@@ -1,7 +1,7 @@
 import { COUNTRY } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
 import { YEARS_EXPERIENCE } from '@/lib/utils/constants/yearsExperience'
-import { ICON_EMOJI } from '../constants/icons'
+import { ICON_EMOJI } from '../constants/iconsEmoji'
 
 export const SOUTH_KOREA = {
   headingTravel: 'Traveling',

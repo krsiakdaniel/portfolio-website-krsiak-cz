@@ -1,10 +1,10 @@
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EM_DASH, NB_HYPHEN } from '@/lib/utils/constants/specialCharacters'
+import { GITHUB_URLS } from '@/lib/utils/constants/urls/githubUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { PROJECTS_PERSONAL_URLS, PROJECTS_WORK_URLS } from '@/lib/utils/constants/urls/projectsUrls'
-import { GITHUB_URLS } from '@/lib/utils/constants/urls/githubUrls'
 import { CUSTOMERS_COUNT } from '../constants/customers'
-import { FLAGS_LOCALIZATION } from '../constants/flags'
+import { FLAGS_LOCALIZATION } from '../constants/iconsEmoji'
 
 export const PROJECTS_WORK = {
   smartsuppWeb: {

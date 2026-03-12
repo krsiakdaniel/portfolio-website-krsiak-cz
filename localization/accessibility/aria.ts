@@ -1,6 +1,3 @@
-// Import ICON_EMOJI if needed for ARIA labels
-// import { ICON_EMOJI } from '../constants/icons'
-
 export const ARIA_LABELS = {
   quote: 'Quote',
   toggleMenu: 'Toggle Menu',

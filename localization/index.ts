@@ -1,7 +1,6 @@
 // Constants
 export { CUSTOMERS_COUNT } from './constants/customers'
-export { FLAGS_LOCALIZATION } from './constants/flags'
-export { ICON_EMOJI } from './constants/icons'
+export { FLAGS_LOCALIZATION, ICON_EMOJI } from './constants/iconsEmoji'
 
 // UI texts
 export { CALL_TO_ACTION } from './ui/callToAction'
