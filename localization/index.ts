@@ -47,7 +47,7 @@ export {
   META_STATUS,
   META_TESTIMONIALS,
   META_WHO_I_AM,
-} from './metadata/meta'
+} from './metadata'
 
 // Misc
 export { ANALYTICS_WARNING, CONTACT, EASTER_EGG, MISC } from './misc'
