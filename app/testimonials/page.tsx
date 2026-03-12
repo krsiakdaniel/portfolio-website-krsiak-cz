@@ -12,7 +12,7 @@ import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimon
 import { personalTestimonials } from '@/lib/data/pages/testimonials/personalTestimonials'
 import { workTestimonials } from '@/lib/data/pages/testimonials/workTestimonials'
 
-import { ARIA_LABELS, ICON_EMOJI, TESTIMONIALS, TEXT } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, TESTIMONIALS, TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { fitnessCoachTestimonials } from '@/lib/data/pages/testimonials/fitnessCoachTestimonials'

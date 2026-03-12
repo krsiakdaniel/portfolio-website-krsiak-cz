@@ -1,7 +1,7 @@
 import IconArrow from '@/components/icons/IconArrow'
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
-import { TEXT } from '@/localization/english'
+import { TEXT } from '@/localization'
 
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 

@@ -1,0 +1,15 @@
+export const IMAGE_ALT = {
+  altWelcome: 'Hi :)',
+  altLogo: 'logo',
+  altDefault: 'image',
+  altIconQuote: 'icon-quote',
+  altMicrosoft: 'Microsoft',
+  altSmartsupp: 'Smartsupp',
+  altKooperativa: 'Kooperativa',
+  altGroupon: 'Groupon',
+  altIbm: 'IBM',
+  altRwsMoravia: 'RWS — Moravia',
+  altKomercniBanka: 'Komerční Banka',
+  altBata: 'Baťa',
+  altEmojiRobot: 'Robot Emoji',
+}

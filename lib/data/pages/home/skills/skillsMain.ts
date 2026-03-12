@@ -1,7 +1,7 @@
 import { YEARS_EXPERIENCE } from '@/lib/utils/constants/yearsExperience'
 import { SkillCardItem } from '@/lib/utils/typeDefinitions/interfaces'
 
-import { TEXT } from '@/localization/english'
+import { TEXT } from '@/localization'
 
 import {
   nextSVG,

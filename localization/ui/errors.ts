@@ -1,0 +1,15 @@
+export const ERROR = {
+  error404: '404',
+  error404Description: "Sorry, we can't find that page.",
+  error404Note: 'It looks like we are fresh out of\u00A0yarn!',
+  errorGlobalDescription: '',
+  errorGlobalNote: 'It looks like we are fresh out of\u00A0yarn!',
+  errorGlobalAlt: 'error-global',
+  errorDescription: 'The page you requested could not be\u00A0found.',
+  errorNote: 'Too many yarns, not enough time!',
+  error: 'Error',
+  tryAgain: 'Try again',
+  mainText: "Sorry, we can't find that page.",
+  smallText: 'It looks like we are fresh out of\u00A0yarn!',
+  backToHome: 'Back to Home',
+}

@@ -1,4 +1,4 @@
-import { CUSTOMERS_COUNT, FLAGS_LOCALIZATION, TEXT } from '@/localization/english'
+import { CUSTOMERS_COUNT, FLAGS_LOCALIZATION, TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EM_DASH, MIDDLE_DOT, NB_HYPHEN } from '@/lib/utils/constants/specialCharacters'

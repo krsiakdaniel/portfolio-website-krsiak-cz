@@ -2,7 +2,7 @@ import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { CALL_TO_ACTION, TEXT } from '@/localization/english'
+import { CALL_TO_ACTION, TEXT } from '@/localization'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { CallToActionResumeProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action-resume'

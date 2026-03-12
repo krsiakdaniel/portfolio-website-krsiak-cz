@@ -5,7 +5,7 @@ import { metaDataSmartsuppWeb } from '@/lib/data/metadata/pages/projects/work/me
 import { projectsWorkFrontEnd } from '@/lib/data/pages/projects/work/projects-overview/front-end/workFrontEnd'
 import { sections } from '@/lib/data/pages/projects/work/smartsuppWeb'
 
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'

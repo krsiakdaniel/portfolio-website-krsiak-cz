@@ -12,7 +12,7 @@ import {
   GalleryImageProps,
   GalleryProps,
 } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
-import { ARIA_LABELS, GALLERY } from '@/localization/english'
+import { ARIA_LABELS, GALLERY } from '@/localization'
 
 const Gallery = ({ images = [] }: GalleryProps) => {
   const [activeImage, setActiveImage] = useState<GalleryImageProps>(images[0])

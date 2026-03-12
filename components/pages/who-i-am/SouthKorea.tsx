@@ -5,7 +5,7 @@ import TestimonialText from '@/components/pages/testimonials/TestimonialText'
 import HeadingSection from '@/components/shared/HeadingSection'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'

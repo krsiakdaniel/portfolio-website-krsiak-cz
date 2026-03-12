@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { Tooltip } from 'react-tooltip'
 
-import { IMAGE_ALT } from '@/localization/english'
+import { IMAGE_ALT } from '@/localization'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'

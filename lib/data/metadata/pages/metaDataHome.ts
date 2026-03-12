@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import { META_HOME, TEXT } from '@/localization/english'
+import { META_HOME, TEXT } from '@/localization'
 
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 

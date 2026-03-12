@@ -1,7 +1,7 @@
 'use client'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { ARIA_LABELS } from '@/localization/english'
+import { ARIA_LABELS } from '@/localization'
 
 /**
  * A skip navigation component that provides accessibility shortcuts for keyboard users.

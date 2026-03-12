@@ -3,7 +3,7 @@ import Link from 'next/link'
 import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { IMAGE_ALT, TEXT } from '@/localization/english'
+import { IMAGE_ALT, TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'

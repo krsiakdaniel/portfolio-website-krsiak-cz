@@ -1,4 +1,4 @@
-import { ICON_EMOJI } from '@/localization/english'
+import { ICON_EMOJI } from '@/localization'
 import { TEXT_DATA } from '@/localization/english-texts-data'
 
 import { TestimonialItem } from '@/lib/utils/typeDefinitions/interfaces'

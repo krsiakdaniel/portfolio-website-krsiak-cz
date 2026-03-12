@@ -1,10 +1,10 @@
 import BreadcrumbsItem from '@/components/shared/BreadcrumbsItem'
 
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { ARIA_LABELS } from '@/localization/english'
+import { ARIA_LABELS } from '@/localization'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 

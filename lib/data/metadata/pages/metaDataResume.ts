@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import { META_RESUME, TEXT } from '@/localization/english'
+import { META_RESUME, TEXT } from '@/localization'
 
 import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 

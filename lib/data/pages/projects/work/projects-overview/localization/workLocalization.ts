@@ -1,6 +1,6 @@
 import { iconsSkillsProjectsWorkMoravia } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 

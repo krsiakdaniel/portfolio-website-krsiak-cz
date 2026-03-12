@@ -5,7 +5,7 @@ import { metaDataGroupon } from '@/lib/data/metadata/pages/projects/work/metaDat
 import { sections } from '@/lib/data/pages/projects/work/groupon'
 import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview/quality-assurance/workQA'
 
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'

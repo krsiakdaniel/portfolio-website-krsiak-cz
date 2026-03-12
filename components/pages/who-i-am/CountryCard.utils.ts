@@ -1,4 +1,4 @@
-import { ARIA_LABELS } from '@/localization/english'
+import { ARIA_LABELS } from '@/localization'
 
 export const getFlagAriaLabel = (countryName: string): string => {
   const ariaMapping: Record<string, string> = {

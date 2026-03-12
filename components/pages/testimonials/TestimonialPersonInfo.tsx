@@ -3,7 +3,7 @@ import ImageComponent from '@/components/shared/ImageComponent'
 import ExternalLink from '@/components/shared/ExternalLink'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { TestimonialPersonInfoProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
-import { ARIA_LABELS, TEXT } from '@/localization/english'
+import { ARIA_LABELS, TEXT } from '@/localization'
 import { TESTIMONIAL_PERSON_PHOTO } from './constants'
 
 const TestimonialPersonInfo = ({

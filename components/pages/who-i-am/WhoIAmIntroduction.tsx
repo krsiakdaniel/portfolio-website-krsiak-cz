@@ -1,7 +1,7 @@
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { COMMON_VALUES, INTRODUCTION } from '@/localization/english'
+import { COMMON_VALUES, INTRODUCTION } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

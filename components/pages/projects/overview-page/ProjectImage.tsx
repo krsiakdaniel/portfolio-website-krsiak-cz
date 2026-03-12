@@ -1,6 +1,6 @@
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 import { PROJECT_IMAGE_PREVIEW } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'

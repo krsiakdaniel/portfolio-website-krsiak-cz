@@ -3,7 +3,7 @@
 import IconClose from '@/components/icons/IconClose'
 import IconHamburger from '@/components/icons/IconHamburger'
 
-import { ARIA_LABELS } from '@/localization/english'
+import { ARIA_LABELS } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'

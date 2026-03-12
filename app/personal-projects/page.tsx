@@ -10,7 +10,7 @@ import { metaDataPersonalProjects } from '@/lib/data/metadata/pages/projects/met
 import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
 import { projectsPersonalReact } from '@/lib/data/pages/projects/personal/projects-overview/react/personalReact'
 
-import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'

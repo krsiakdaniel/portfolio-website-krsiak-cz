@@ -1,6 +1,6 @@
 import { TravelItem } from '@/lib/utils/typeDefinitions/interfaces'
 
-import { ARIA_LABELS, ICON_EMOJI, WHO_I_AM } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, WHO_I_AM } from '@/localization'
 
 export const travelItems: TravelItem[] = [
   {

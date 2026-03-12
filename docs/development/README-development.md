@@ -304,7 +304,7 @@ import { metaDataShared } from '@/lib/data/metadata/shared/metaDataShared'
 import { mindset } from '@/lib/data/pages/home/expertise/mindset'
 
 // Localization
-import { TEXT } from '@/localization/english'
+import { TEXT } from '@/localization'
 
 // Utils - Constants
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'

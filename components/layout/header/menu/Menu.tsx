@@ -7,7 +7,7 @@ import MenuItem from '@/components/layout/header/menu/MenuItem'
 import { pagesLinks } from '@/lib/data/layout/pagesLinks'
 import { isMenuItemActive } from '@/lib/utils/helpers/menu/isMenuItemActive'
 
-import { ARIA_LABELS } from '@/localization/english'
+import { ARIA_LABELS } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'

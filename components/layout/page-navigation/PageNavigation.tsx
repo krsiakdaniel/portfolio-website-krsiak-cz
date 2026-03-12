@@ -1,7 +1,7 @@
 import DefaultNoLinkNavigation from '@/components/layout/page-navigation/DefaultNoLinkNavigation'
 import PageNavigationLink from '@/components/layout/page-navigation/PageNavigationLink'
 
-import { ICON_EMOJI } from '@/localization/english'
+import { ICON_EMOJI } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

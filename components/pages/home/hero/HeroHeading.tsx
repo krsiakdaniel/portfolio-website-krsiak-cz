@@ -1,7 +1,7 @@
 import HeroSubHeading from '@/components/pages/home/hero/HeroSubHeading'
 import Heading from '@/components/shared/Heading'
 
-import { TEXT } from '@/localization/english'
+import { TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

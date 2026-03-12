@@ -5,7 +5,7 @@ import { metaDataKomercniBanka } from '@/lib/data/metadata/pages/projects/work/m
 import { sections } from '@/lib/data/pages/projects/work/komercniBanka'
 import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
 
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'

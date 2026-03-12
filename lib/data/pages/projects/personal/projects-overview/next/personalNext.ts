@@ -1,6 +1,6 @@
 import { iconsSkillsProjectsPersonalKrsiak } from '@/lib/data/pages/projects/personal/projects-overview/skillsProjectsPersonal'
 
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 import { PROJECTS_PERSONAL_OVERVIEW } from '@/localization/english-texts-data'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'

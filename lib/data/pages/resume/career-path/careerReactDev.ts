@@ -1,5 +1,5 @@
 import { SkillsInfo } from '@/lib/utils/typeDefinitions/interfaces'
-import { ICON_EMOJI } from '@/localization/english'
+import { ICON_EMOJI } from '@/localization'
 import { CAREER_REACT_DEV } from '@/localization/english-texts-data'
 
 export const careerReactDev: SkillsInfo[] = [

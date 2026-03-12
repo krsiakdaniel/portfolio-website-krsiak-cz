@@ -3,7 +3,7 @@ import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 
-import { RESUME, SHARED, TEXT } from '@/localization/english'
+import { RESUME, SHARED, TEXT } from '@/localization'
 
 import { QR_CODE } from '@/components/shared/constants'
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'

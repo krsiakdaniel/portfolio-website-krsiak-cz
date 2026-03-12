@@ -1,7 +1,7 @@
 import ExperienceCard from '@/components/pages/projects/other-experience/ExperienceCard'
 import Heading from '@/components/shared/Heading'
 
-import { TEXT } from '@/localization/english'
+import { TEXT } from '@/localization'
 
 import { OtherExperienceContentProps } from '@/lib/utils/typeDefinitions/props/pages/projects/other-experience'
 

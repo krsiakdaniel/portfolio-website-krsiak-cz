@@ -1,6 +1,6 @@
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization'
 
 import { BreadCrumbsType } from '@/lib/utils/typeDefinitions/types'
 

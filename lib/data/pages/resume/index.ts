@@ -1,4 +1,4 @@
-import { ICON_EMOJI } from '@/localization/english'
+import { ICON_EMOJI } from '@/localization'
 import { JOBS } from '@/localization/english-texts-data'
 
 import { MONTHS_EXPERIENCE, YEARS_EXPERIENCE } from '@/lib/utils/constants/yearsExperience'
