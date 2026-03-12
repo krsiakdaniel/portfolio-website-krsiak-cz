@@ -18,6 +18,15 @@ export const ICON_EMOJI = {
   flagAlandIslands: '🇦🇽',
   flagSouthKorea: '🇰🇷',
   flagJapan: '🇯🇵',
+  flagTurkey: '🇹🇷',
+  flagTunisia: '🇹🇳',
+  flagUAE: '🇦🇪',
+  flagDenmark: '🇩🇰',
+  flagSweden: '🇸🇪',
+  flagCroatia: '🇭🇷',
+  flagGreece: '🇬🇷',
+  flagSwitzerland: '🇨🇭',
+  flagAustria: '🇦🇹',
   house: '🏠',
   moneyBag: '💰',
   rocket: '🚀',
@@ -771,8 +780,8 @@ export const FOOTER = {
 export const WHO_I_AM = {
   whoIAm: 'Who I\u00A0Am',
   aboutMe: `
-    In my free time you'll find me exploring the\u00A0great outdoors and\u00A0spending time in\u00A0forest.
-    As\u00A0an\u00A0avid hiker and\u00A0traveler, I\u00A0enjoy\u00A0the\u00A0nature.
+    I\u00A0am a\u00A0traveler who\u00A0loves discovering the\u00A0world and\u00A0staying close to\u00A0nature.  
+    As\u00A0a\u00A0hiker I spend my free time exploring the\u00A0outdoors, forests and\u00A0mountains.
   `,
   idCZ: COUNTRY.czechRepublic,
   idSK: COUNTRY.slovakia,
@@ -782,6 +791,61 @@ export const WHO_I_AM = {
   textSlovakia: `Scaling the\u00A0majestic mountains in\u00A0Slovakia.`,
   textKorea: `Discovering the\u00A0stunning landscapes in\u00A0South\u00A0Korea.`,
   textAlandIslands: `Cruising across the\u00A0Baltic\u00A0Sea exploring the\u00A0Åland\u00A0Islands.`,
+  travels: {
+    heading: 'Countries I\u00A0Have\u00A0Visited',
+    totalCountries: '19',
+    totalVisits: '75',
+    statsText: {
+      countries: 'countries',
+      visits: 'total\u00A0visits',
+    },
+    tableHeaders: {
+      country: 'Country',
+      visits: 'Visits',
+    },
+    regions: {
+      asia: {
+        name: 'Asia',
+        countries: [
+          { flag: ICON_EMOJI.flagSouthKorea, name: 'South\u00A0Korea', visits: 1 },
+          { flag: ICON_EMOJI.flagTurkey, name: 'Turkey', visits: 2 },
+        ],
+      },
+      africa: {
+        name: 'Africa',
+        countries: [{ flag: ICON_EMOJI.flagTunisia, name: 'Tunisia', visits: 1 }],
+      },
+      middleEast: {
+        name: 'Middle\u00A0East',
+        countries: [{ flag: ICON_EMOJI.flagUAE, name: `United Arab Emirates`, visits: 1 }],
+      },
+      europe: {
+        name: 'Europe',
+        countries: [
+          { flag: ICON_EMOJI.flagAustria, name: 'Austria', visits: 20 },
+          { flag: ICON_EMOJI.flagSlovakia, name: 'Slovakia', visits: 11 },
+          { flag: ICON_EMOJI.flagCroatia, name: 'Croatia', visits: 6 },
+          { flag: ICON_EMOJI.flagSwitzerland, name: 'Switzerland', visits: 6 },
+          { flag: ICON_EMOJI.flagPoland, name: 'Poland', visits: 5 },
+          { flag: ICON_EMOJI.flagGermany, name: 'Germany', visits: 5 },
+          { flag: ICON_EMOJI.flagGreece, name: 'Greece', visits: 3 },
+          { flag: ICON_EMOJI.flagFrance, name: 'France', visits: 3 },
+          { flag: ICON_EMOJI.flagUnitedKingdom, name: 'England', visits: 2 },
+          { flag: ICON_EMOJI.flagHungary, name: 'Hungary', visits: 2 },
+          { flag: ICON_EMOJI.flagItaly, name: 'Italy', visits: 2 },
+          { flag: ICON_EMOJI.flagSweden, name: 'Sweden', visits: 1 },
+          { flag: ICON_EMOJI.flagAlandIslands, name: 'Åland\u00A0Islands', visits: 1 },
+          { flag: ICON_EMOJI.flagDenmark, name: 'Denmark', visits: 1 },
+          { flag: ICON_EMOJI.flagSpain, name: `Spain ${EM_DASH}\u00A0Mallorca`, visits: 1 },
+          {
+            flag: ICON_EMOJI.flagSpain,
+            name: `Spain ${EM_DASH}\u00A0Canary\u00A0Islands`,
+            visits: 1,
+          },
+        ],
+      },
+    },
+  },
 }
 
 export const INTRODUCTION = {
@@ -909,6 +973,15 @@ export const ARIA_LABELS = {
       alandIslands: 'Flag of Åland Islands',
       southKorea: 'Flag of South Korea',
       japan: 'Flag of Japan',
+      turkey: 'Flag of Turkey',
+      tunisia: 'Flag of Tunisia',
+      uae: 'Flag of United Arab Emirates',
+      denmark: 'Flag of Denmark',
+      sweden: 'Flag of Sweden',
+      croatia: 'Flag of Croatia',
+      greece: 'Flag of Greece',
+      switzerland: 'Flag of Switzerland',
+      austria: 'Flag of Austria',
     },
     globe: {
       showingAmericas: 'Globe showing Americas',
