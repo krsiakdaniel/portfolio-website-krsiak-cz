@@ -377,6 +377,20 @@ export interface TravelItem {
   readonly text: string
 }
 
+// Travel Country
+export interface TravelCountry {
+  readonly flag: string
+  readonly name: string
+  readonly visits: number
+}
+
+// Travel Region
+export interface TravelRegion {
+  readonly name: string
+  readonly continentVisits: number
+  readonly countries: readonly TravelCountry[]
+}
+
 // Resume Preview Card
 export interface ResumePreviewCard {
   readonly title: string
