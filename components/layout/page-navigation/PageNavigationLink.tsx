@@ -3,7 +3,7 @@ import IconArrow from '@/components/icons/IconArrow'
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { PageNavigationLinkProps } from '@/lib/utils/typeDefinitions/props/layout/page-navigation'
-import { COMMON_VALUES } from '@/localization/english'
+import { COMMON_VALUES } from '@/localization'
 
 const PageNavigationLink = ({
   href,

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ARIA_LABELS, FOOTER, ICON_EMOJI } from '@/localization/english'
+import { ARIA_LABELS, FOOTER, ICON_EMOJI } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { COPYRIGHT } from '@/lib/utils/constants/specialCharacters'

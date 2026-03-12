@@ -9,7 +9,7 @@ import {
   iconsWebDevelopmentWithQA,
 } from '@/lib/data/pages/home/skills/skillsGrouped'
 
-import { DIVIDER_WITH_TEXT, TEXT } from '@/localization/english'
+import { DIVIDER_WITH_TEXT, TEXT } from '@/localization'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 

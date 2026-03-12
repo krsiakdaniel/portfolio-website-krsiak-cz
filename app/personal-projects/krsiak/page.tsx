@@ -5,7 +5,7 @@ import { metaDataKrsiak } from '@/lib/data/metadata/pages/projects/personal/meta
 import { sections } from '@/lib/data/pages/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
 
-import { ICON_EMOJI, TEXT } from '@/localization/english'
+import { ICON_EMOJI, TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'

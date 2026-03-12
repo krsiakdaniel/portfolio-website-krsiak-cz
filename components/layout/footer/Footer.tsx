@@ -4,7 +4,7 @@ import PageContainer from '@/components/layout/PageContainer'
 import DividerWithText from '@/components/shared/DividerWithText'
 import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 
-import { ARIA_LABELS, DIVIDER_WITH_TEXT } from '@/localization/english'
+import { ARIA_LABELS, DIVIDER_WITH_TEXT } from '@/localization'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import ScrollToTopButton from './ScrollToTopButton'

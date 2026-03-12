@@ -8,7 +8,7 @@ import Heading from '@/components/shared/Heading'
 import HeadingSection from '@/components/shared/HeadingSection'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA, TEXT, WHO_I_AM } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA, TEXT, WHO_I_AM } from '@/localization'
 
 import { metaDataWhoIam } from '@/lib/data/metadata/pages/metaDataWhoIAm'
 

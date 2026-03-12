@@ -7,7 +7,7 @@ import { metaDataCryptomania } from '@/lib/data/metadata/pages/projects/personal
 import { sections } from '@/lib/data/pages/projects/personal/cryptoMania'
 import { projectsPersonalReact } from '@/lib/data/pages/projects/personal/projects-overview/react/personalReact'
 
-import { ICON_EMOJI, PROJECT_CRYPTOMANIA, TEXT } from '@/localization/english'
+import { ICON_EMOJI, PROJECT_CRYPTOMANIA, TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'

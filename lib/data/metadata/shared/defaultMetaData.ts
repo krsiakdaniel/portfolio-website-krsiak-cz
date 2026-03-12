@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import { COMMON_VALUES, META_DEFAULT } from '@/localization/english'
+import { COMMON_VALUES, META_DEFAULT } from '@/localization'
 
 import { ENV_URLS } from '@/lib/utils/constants/urls/pageUrls'
 

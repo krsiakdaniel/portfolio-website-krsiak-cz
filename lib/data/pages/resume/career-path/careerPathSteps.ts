@@ -1,6 +1,5 @@
 import { CareerPathStep } from '@/lib/utils/typeDefinitions/interfaces'
-import { ICON_EMOJI } from '@/localization/english'
-import { TEXT_DATA } from '@/localization/english-texts-data'
+import { ICON_EMOJI, TEXT_DATA } from '@/localization'
 
 export const careerPathSteps: CareerPathStep[] = [
   { id: 0, emoji: ICON_EMOJI.atomSymbol, text: TEXT_DATA.reactDev },

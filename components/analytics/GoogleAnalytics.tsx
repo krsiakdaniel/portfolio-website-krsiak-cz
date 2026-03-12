@@ -2,7 +2,7 @@
 
 import Script from 'next/script'
 
-import { ANALYTICS_WARNING } from '@/localization/english'
+import { ANALYTICS_WARNING } from '@/localization'
 
 const GoogleAnalytics = () => {
   if (!process.env['NEXT_PUBLIC_GA_MEASUREMENT_ID']) {

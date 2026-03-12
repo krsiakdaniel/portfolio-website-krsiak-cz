@@ -1,6 +1,6 @@
 import { iconsSkillsProjectsPersonalCryptomania } from '@/lib/data/pages/projects/personal/projects-overview/skillsProjectsPersonal'
 
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
@@ -9,7 +9,7 @@ import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // project images
-import { PROJECTS_PERSONAL_OVERVIEW } from '@/localization/english-texts-data'
+import { PROJECTS_PERSONAL_OVERVIEW } from '@/localization/data/projects/personalProjects'
 import cryptomania3 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-1-dark.webp'
 import cryptomania1 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-1-light.webp'
 import cryptomania4 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-2-dark.webp'

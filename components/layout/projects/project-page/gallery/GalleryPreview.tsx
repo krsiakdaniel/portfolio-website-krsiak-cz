@@ -1,6 +1,6 @@
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { ARIA_LABELS } from '@/localization/english'
+import { ARIA_LABELS } from '@/localization'
 
 import { GALLERY_PREVIEW_4_3 } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'

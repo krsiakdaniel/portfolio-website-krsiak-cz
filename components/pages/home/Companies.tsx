@@ -2,7 +2,7 @@ import DividerWithText from '@/components/shared/DividerWithText'
 import Heading from '@/components/shared/Heading'
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization/english'
+import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 

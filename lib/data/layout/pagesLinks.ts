@@ -2,7 +2,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 import { PageLinkItem } from '@/lib/utils/typeDefinitions/interfaces'
 

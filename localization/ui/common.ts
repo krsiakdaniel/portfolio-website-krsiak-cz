@@ -1,0 +1,71 @@
+import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
+
+export const SHARED = {
+  opensInNewTab: 'Opens in a new tab',
+  or: 'or',
+  and: 'and',
+  but: 'but',
+  customers: 'customers.',
+  githubRepository: 'GitHub Repository',
+  year: 'year',
+  years: 'years',
+  month: 'month',
+  months: 'months',
+}
+
+export const COMMON_VALUES = {
+  nameDanielKrsiak: 'Daniel Kršiak',
+  reactDeveloper: 'React Developer',
+  reactDeveloperNBSP: 'React\u00A0Developer',
+  reactDeveloperTypeScript: `React Developer ${EM_DASH} TypeScript & Next.js`,
+  reactDeveloperWorkingWithTypeScript: 'React Developer working with TypeScript & Next.js',
+  developer: 'Developer',
+  frontEnd: 'Front End',
+  javaScript: 'JavaScript',
+  javaScriptShort: 'JS',
+  typeScript: 'TypeScript',
+  typeScriptShort: 'TS',
+  react: 'React',
+  redux: 'Redux',
+  next: 'Next.js',
+  nextShort: 'Next',
+  jest: 'JEST',
+  cypress: 'Cypress',
+  playwright: 'Playwright',
+  brno: 'Brno',
+  czechRepublic: 'Czech Republic',
+  czechRepublicNBSP: 'Czech\u00A0Republic',
+  html: 'HTML',
+  css: 'CSS',
+  sass: 'Sass',
+  tailwind: 'Tailwind CSS',
+  tailwindShort: 'Tailwind',
+  figma: 'Figma',
+  storybook: 'Storybook',
+  xd: 'Adobe XD',
+  sketch: 'Sketch',
+  graphql: 'GraphQL',
+  wordpress: 'WordPress',
+  qaAutomationTesting: `QA Automation &\u00A0Testing`,
+  localization: 'Localization',
+  navigationNext: 'navigation next',
+  navigationPrevious: 'navigation previous',
+}
+
+export const DIVIDER_WITH_TEXT = {
+  companies: 'Companies',
+  myLinks: 'My\u00A0Links',
+  contactMe: 'Scan\u00A0Contact',
+  myExpertise: 'My Expertise',
+  skills: 'All My\u00A0Skills',
+  myMainSkills: 'Main\u00A0Skills',
+}
+
+export const SOCIAL_LINKS = {
+  linkedIn: 'LinkedIn',
+  gitHub: 'GitHub',
+  gitHubCode: 'GitHub Code',
+  gitHubKrsiak: `GitHub ${EM_DASH} website-krsiak-cz`,
+  resumePDF: 'Resume PDF',
+  twitter: '@krsiak_daniel',
+}

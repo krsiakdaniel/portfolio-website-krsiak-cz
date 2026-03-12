@@ -1,6 +1,6 @@
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { IMAGE_ALT } from '@/localization/english'
+import { IMAGE_ALT } from '@/localization'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 

@@ -10,7 +10,7 @@ import Heading from '@/components/shared/Heading'
 
 import { metaDataResume } from '@/lib/data/metadata/pages/metaDataResume'
 
-import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'

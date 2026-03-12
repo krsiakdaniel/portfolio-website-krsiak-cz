@@ -1,5 +1,5 @@
 import { Section } from '@/lib/utils/typeDefinitions/interfaces'
-import { PROJECTS_WORK } from '@/localization/english-texts-data'
+import { PROJECTS_WORK } from '@/localization/data/projects/workProjects'
 
 export const sections: Section[] = [
   {

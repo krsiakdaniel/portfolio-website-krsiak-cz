@@ -1,7 +1,7 @@
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { INTRODUCTION } from '@/localization/english'
+import { INTRODUCTION } from '@/localization'
 
 const PersonalProjectsIntroduction = () => {
   return (

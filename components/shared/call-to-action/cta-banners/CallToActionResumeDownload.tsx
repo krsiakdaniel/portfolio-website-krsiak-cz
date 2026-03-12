@@ -4,7 +4,7 @@ import { useResponsiveText } from '@/lib/hooks/useResponsiveText'
 
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
-import { TEXT } from '@/localization/english'
+import { TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'

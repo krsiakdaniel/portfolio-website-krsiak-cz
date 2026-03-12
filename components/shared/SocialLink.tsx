@@ -2,7 +2,7 @@ import IconExternalLink from '@/components/icons/IconExternalLink'
 
 import { socialLinkTypeClasses } from '@/lib/data/shared/socialLinkTypeClasses'
 
-import { TEXT } from '@/localization/english'
+import { TEXT } from '@/localization'
 
 import { AlertTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { SocialLinkProps } from '@/lib/utils/typeDefinitions/props/shared/social-link'

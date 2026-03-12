@@ -1,7 +1,7 @@
 'use client'
 
 import { LiveRegionProps } from '@/lib/utils/typeDefinitions/props/shared/liveRegion'
-import { ARIA_LABELS } from '@/localization/english'
+import { ARIA_LABELS } from '@/localization'
 
 /**
  * A live region component that announces dynamic content changes to screen reader users.

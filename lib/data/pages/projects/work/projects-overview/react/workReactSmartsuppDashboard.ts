@@ -1,9 +1,9 @@
 import { iconsSkillsProjectsWorkSmartsuppDashboard } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
-import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization/english'
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'

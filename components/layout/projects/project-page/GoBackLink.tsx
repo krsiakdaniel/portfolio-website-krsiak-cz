@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import IconArrow from '@/components/icons/IconArrow'
 
-import { TEXT } from '@/localization/english'
+import { TEXT } from '@/localization'
 
 import { getGoBackLinkID } from '@/lib/utils/helpers/page-navigation/getGoBackLink'
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'

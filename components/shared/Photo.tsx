@@ -1,7 +1,7 @@
 import ImageComponent from '@/components/shared/ImageComponent'
 import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
 
-import { TEXT } from '@/localization/english'
+import { TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'

@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import ErrorPageContent from '@/components/layout/errors/ErrorPageContent'
 import PageContainer from '@/components/layout/PageContainer'
 
-import { TEXT } from '@/localization/english'
+import { TEXT } from '@/localization'
 
 import { ErrorPageLayoutProps } from '@/lib/utils/typeDefinitions/props/layout/errors'
 

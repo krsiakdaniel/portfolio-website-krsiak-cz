@@ -1,5 +1,4 @@
-import { ICON_EMOJI } from '@/localization/english'
-import { JOBS } from '@/localization/english-texts-data'
+import { ICON_EMOJI, JOBS } from '@/localization'
 
 import { MONTHS_EXPERIENCE, YEARS_EXPERIENCE } from '@/lib/utils/constants/yearsExperience'
 import { DurationUnitEnum } from '@/lib/utils/typeDefinitions/enums'

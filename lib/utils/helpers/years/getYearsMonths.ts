@@ -1,6 +1,6 @@
 import { Job } from '@/lib/utils/typeDefinitions/interfaces'
 
-import { TEXT } from '@/localization/english'
+import { TEXT } from '@/localization'
 
 import { DurationUnitEnum } from '@/lib/utils/typeDefinitions/enums'
 

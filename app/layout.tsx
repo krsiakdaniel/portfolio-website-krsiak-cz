@@ -18,7 +18,7 @@ import { RootLayoutProps } from '@/lib/utils/typeDefinitions/props/app'
 
 // Constants
 import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { ARIA_LABELS } from '@/localization/english'
+import { ARIA_LABELS } from '@/localization'
 
 // Importing the Roboto font configuration
 import { roboto } from './fonts'

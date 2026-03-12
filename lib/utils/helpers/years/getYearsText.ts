@@ -1,4 +1,4 @@
-import { TEXT } from '@/localization/english'
+import { TEXT } from '@/localization'
 
 /**
  * Returns the appropriate text for the given number of years.

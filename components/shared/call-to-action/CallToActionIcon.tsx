@@ -1,6 +1,6 @@
 import EmojiAnimated from '@/components/shared/EmojiAnimated'
 
-import { SOCIAL_LINKS } from '@/localization/english'
+import { SOCIAL_LINKS } from '@/localization'
 
 import { DeviceTypeEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 

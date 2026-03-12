@@ -3,8 +3,8 @@ import { iconsSkillsProjectsWorkKomercniBanka } from '@/lib/data/pages/projects/
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization/english'
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'

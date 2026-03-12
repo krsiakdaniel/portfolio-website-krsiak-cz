@@ -1,7 +1,7 @@
 import ImageComponent from '@/components/shared/ImageComponent'
 import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
 
-import { CONTACT, TEXT } from '@/localization/english'
+import { CONTACT, TEXT } from '@/localization'
 
 import { ScanMyContactQRProps } from '@/lib/utils/typeDefinitions/props/shared/scan-my-contact-qr'
 

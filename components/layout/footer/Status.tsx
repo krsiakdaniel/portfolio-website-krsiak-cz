@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { STATUS } from '@/localization/english'
+import { STATUS } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'

@@ -1,7 +1,7 @@
 import ExpertiseSection from '@/components/pages/home/expertise/ExpertiseSection'
 import DividerWithText from '@/components/shared/DividerWithText'
 
-import { ARIA_LABELS, DIVIDER_WITH_TEXT, ICON_EMOJI, TEXT } from '@/localization/english'
+import { ARIA_LABELS, DIVIDER_WITH_TEXT, ICON_EMOJI, TEXT } from '@/localization'
 
 import { committedMindsetItems } from '@/lib/data/pages/home/expertise/committedMindset'
 import { problemSolvingItems } from '@/lib/data/pages/home/expertise/problemSolving'

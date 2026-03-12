@@ -2,7 +2,7 @@ import { MouseEventHandler } from 'react'
 
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { ARIA_LABELS } from '@/localization/english'
+import { ARIA_LABELS } from '@/localization'
 
 import { GALLERY_THUMBNAIL_4_3 } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'

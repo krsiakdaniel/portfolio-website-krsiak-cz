@@ -13,7 +13,7 @@ import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
 import PageContainer from '@/components/layout/PageContainer'
 
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
-import { ARIA_LABELS } from '@/localization/english'
+import { ARIA_LABELS } from '@/localization'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)

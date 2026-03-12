@@ -1,6 +1,6 @@
 import Heading from '@/components/shared/Heading'
 
-import { WHO_I_AM } from '@/localization/english'
+import { WHO_I_AM } from '@/localization'
 
 import { TravelRegion } from '@/lib/utils/typeDefinitions/interfaces'
 import CountryCard from './CountryCard'
