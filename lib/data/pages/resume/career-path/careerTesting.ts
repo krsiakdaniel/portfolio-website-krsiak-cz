@@ -1,5 +1,4 @@
-import { ICON_EMOJI } from '@/localization'
-import { CAREER_TESTING } from '@/localization/english-texts-data'
+import { CAREER_TESTING, ICON_EMOJI } from '@/localization'
 
 import { SkillsInfo } from '@/lib/utils/typeDefinitions/interfaces'
 

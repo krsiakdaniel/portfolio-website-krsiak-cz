@@ -1,4 +1,4 @@
-import { OTHER_EXPERIENCE } from '@/localization/english-texts-data'
+import { OTHER_EXPERIENCE } from '@/localization'
 
 import { OtherExperienceData } from '@/lib/utils/typeDefinitions/interfaces'
 

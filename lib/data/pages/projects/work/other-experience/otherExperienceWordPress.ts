@@ -1,6 +1,6 @@
-import { OtherExperienceData } from '@/lib/utils/typeDefinitions/interfaces'
+import { OTHER_EXPERIENCE } from '@/localization'
 
-import { OTHER_EXPERIENCE } from '@/localization/english-texts-data'
+import { OtherExperienceData } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const otherExperienceWordPress: OtherExperienceData[] = [
   {

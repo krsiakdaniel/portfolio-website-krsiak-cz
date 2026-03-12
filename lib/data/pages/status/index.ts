@@ -1,4 +1,4 @@
-import { TEXT_DATA } from '@/localization/english-texts-data'
+import { TEXT_DATA } from '@/localization'
 
 import { STATUS_BADGE_IMGS_URLS } from '@/lib/utils/constants/urls/statusBadgesUrls'
 import { createStatusBadge } from '@/lib/utils/helpers/createStatusBadge'
