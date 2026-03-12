@@ -1,4 +1,4 @@
-import { PAGE_HOME } from '@/localization/english-texts-data'
+import { PAGE_HOME } from '@/localization/pages/home'
 
 import { SkillsInfo } from '@/lib/utils/typeDefinitions/interfaces'
 

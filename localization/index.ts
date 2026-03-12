@@ -59,14 +59,10 @@ export {
   JOBS,
   OTHER_EXPERIENCE,
 } from './data/careers'
-export {
-  PAGE_HOME,
-  PROJECTS_PERSONAL,
-  PROJECTS_PERSONAL_OVERVIEW,
-  PROJECTS_WORK,
-  WORK_PROJECTS_OVERVIEW,
-} from './data/projects'
+export { PROJECTS_PERSONAL, PROJECTS_PERSONAL_OVERVIEW } from './data/projects/personalProjects'
+export { PROJECTS_WORK, WORK_PROJECTS_OVERVIEW } from './data/projects/workProjects'
 export { TESTIMONIALS as TESTIMONIALS_DATA } from './data/testimonials'
+export { PAGE_HOME } from './pages/home'
 
 // Backward compatibility - TEXT aggregation object
 import { ARIA_LABELS } from './accessibility/aria'
@@ -114,14 +110,10 @@ import {
   JOBS,
   OTHER_EXPERIENCE,
 } from './data/careers'
-import {
-  PAGE_HOME,
-  PROJECTS_PERSONAL,
-  PROJECTS_PERSONAL_OVERVIEW,
-  PROJECTS_WORK,
-  WORK_PROJECTS_OVERVIEW,
-} from './data/projects'
+import { PROJECTS_PERSONAL, PROJECTS_PERSONAL_OVERVIEW } from './data/projects/personalProjects'
+import { PROJECTS_WORK, WORK_PROJECTS_OVERVIEW } from './data/projects/workProjects'
 import { TESTIMONIALS as TESTIMONIALS_DATA } from './data/testimonials'
+import { PAGE_HOME } from './pages/home'
 
 export const TEXT_DATA = {
   ...TESTIMONIALS_DATA,

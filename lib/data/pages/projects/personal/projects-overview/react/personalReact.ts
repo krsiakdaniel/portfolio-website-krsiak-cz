@@ -9,7 +9,7 @@ import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // project images
-import { PROJECTS_PERSONAL_OVERVIEW } from '@/localization/english-texts-data'
+import { PROJECTS_PERSONAL_OVERVIEW } from '@/localization/data/projects/personalProjects'
 import cryptomania3 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-1-dark.webp'
 import cryptomania1 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-1-light.webp'
 import cryptomania4 from '@/public/images/webp/projects/personal/cryptomania/cryptomania-2-dark.webp'

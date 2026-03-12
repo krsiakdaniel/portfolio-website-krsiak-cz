@@ -8,7 +8,7 @@ import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 // moravia
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/english-texts-data'
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
 import moravia1 from '@/public/images/webp/projects/work/moravia/moravia-1-light.webp'
 import moravia2 from '@/public/images/webp/projects/work/moravia/moravia-2-light.webp'
 import moravia3 from '@/public/images/webp/projects/work/moravia/moravia-3-light.webp'

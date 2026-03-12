@@ -1,10 +1,9 @@
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { EM_DASH, NB_HYPHEN } from '@/lib/utils/constants/specialCharacters'
-import { GITHUB_URLS } from '@/lib/utils/constants/urls/githubUrls'
+import { NB_HYPHEN } from '@/lib/utils/constants/specialCharacters'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { PROJECTS_PERSONAL_URLS, PROJECTS_WORK_URLS } from '@/lib/utils/constants/urls/projectsUrls'
-import { CUSTOMERS_COUNT } from '../constants/customers'
-import { FLAGS_LOCALIZATION } from '../constants/iconsEmoji'
+import { PROJECTS_WORK_URLS } from '@/lib/utils/constants/urls/projectsUrls'
+import { CUSTOMERS_COUNT } from '../../constants/customers'
+import { FLAGS_LOCALIZATION } from '../../constants/iconsEmoji'
 
 export const PROJECTS_WORK = {
   smartsuppWeb: {
@@ -316,92 +315,5 @@ export const WORK_PROJECTS_OVERVIEW = {
     ],
     customers: `${CUSTOMERS_COUNT.smartsupp}`,
     linkProjectPage: PAGES_URL.workSmartsuppDashboard,
-  },
-}
-
-export const PAGE_HOME = {
-  expertise: {
-    committedMindset: {
-      items: [
-        { text: 'Curious and\u00A0always learning' },
-        { text: 'Streamlining processes' },
-        { text: 'Strong team player' },
-      ],
-    },
-    problemSolving: {
-      items: [
-        { text: 'Thinking outside the\u00A0box' },
-        { text: 'Enjoying brainstorming' },
-        { text: 'Adapting to\u00A0changes' },
-      ],
-    },
-    skillsForCompany: {
-      items: [
-        { text: 'Developing scalable codebases' },
-        { text: 'Focus on\u00A0CI/CD automation' },
-        { text: 'Prioritizing type safety' },
-      ],
-    },
-  },
-}
-
-export const PROJECTS_PERSONAL = {
-  krsiak: {
-    title: 'Description', // This should reference TEXT.description
-    titleHighlight: '',
-    items: [
-      {
-        text: 'I\u00A0needed a\u00A0new website for\u00A0my personal presentation. I\u00A0learned Next.js, and\u00A0used Tailwind CSS.',
-      },
-    ],
-  },
-  cryptoMania: {
-    title: 'Description', // This should reference TEXT.description
-    titleHighlight: '',
-    items: [
-      {
-        text: 'This site was created to\u00A0display cryptocurrencies with the\u00A0ability to\u00A0search for\u00A0them and\u00A0display their current value.',
-      },
-    ],
-  },
-}
-
-export const PROJECTS_PERSONAL_OVERVIEW = {
-  next: {
-    title: 'Portfolio Website',
-    company: 'Personal project',
-    role: `Front End ${EM_DASH}\u00A0Next.js`,
-    description: `
-      Personal portfolio website with my\u00A0work and\u00A0skills as\u00A0a\u00A0React\u00A0Developer.
-      It\u00A0features production-level code that I\u00A0write.`,
-    linkText: 'Project details',
-    projectLinks: [
-      {
-        urlText: 'Website',
-        url: PROJECTS_PERSONAL_URLS.personalKrsiakExternal,
-        dataTestId: DATA_TEST_IDS.links.KRSIAK,
-      },
-    ],
-    linkGitHub: GITHUB_URLS.portfolioWebsiteKrsiak,
-    personalProjectNote: 'My main coding project.',
-    linkProjectPage: PAGES_URL.personalKrsiak,
-  },
-  react: {
-    title: 'CryptoMania',
-    company: 'Personal project',
-    role: `Front End ${EM_DASH}\u00A0React`,
-    description:
-      'Crypto currency prices app fetching latest data from CoinGecko\u00A0API. Simple project in\u00A0Chakra\u00A0UI with dark mode.',
-    linkText: 'Project details',
-    projectLinks: [
-      {
-        urlText: 'Website',
-        url: PROJECTS_PERSONAL_URLS.personalCryptoManiaExternal,
-        dataTestId: DATA_TEST_IDS.links.CRYPTOMANIA,
-      },
-    ],
-    linkGitHub: GITHUB_URLS.cryptoMania,
-    personalProjectNote: 'Project to\u00A0exercise coding.',
-    linkProjectPage: PAGES_URL.personalCryptoMania,
   },
 }

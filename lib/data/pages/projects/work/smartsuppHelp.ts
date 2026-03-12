@@ -1,4 +1,4 @@
-import { PROJECTS_WORK } from '@/localization/english-texts-data'
+import { PROJECTS_WORK } from '@/localization/data/projects/workProjects'
 
 import { Section } from '@/lib/utils/typeDefinitions/interfaces'
 
