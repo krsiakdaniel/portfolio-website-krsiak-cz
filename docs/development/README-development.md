@@ -47,9 +47,10 @@ Before you begin, ensure you have the following installed on your development ma
 
 #### Required
 
-- **Node.js**: >= `22.0.0` (LTS) or `v23.8.0` (specified in `.nvmrc`)
+- **Node.js**: >= `24.0.0` (Active LTS) — managed via Volta
+  - Latest: `v24.14.0`
   - Download from [nodejs.org](https://nodejs.org/)
-  - Or use Node Version Manager (NVM) - recommended
+  - Or use Volta (recommended) or Node Version Manager (NVM)
 - **Bun**: >= `1.2.0`
   - Install from [bun.sh](https://bun.sh/)
   - Used as package manager and runtime
@@ -58,7 +59,9 @@ Before you begin, ensure you have the following installed on your development ma
 
 #### Optional but Recommended
 
-- **NVM (Node Version Manager)**:
+- **Volta** (Node.js version manager) - currently in use:
+  - Link to [volta.sh](https://volta.sh/)
+- **NVM (Node Version Manager)** - alternative:
   - Link to [nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 - **VS Code**: For development
   - Download from [code.visualstudio.com](https://code.visualstudio.com/)
@@ -66,17 +69,27 @@ Before you begin, ensure you have the following installed on your development ma
 
 ### Installation Steps
 
-1. **Install Node.js using NVM** (recommended):
+1. **Install Node.js using Volta** (currently in use):
+
+   ```bash
+   # Install Volta (if not already installed)
+   curl https://get.volta.sh | bash
+
+   # Install Node.js 24 LTS
+   volta install node@24
+
+   # Verify installation
+   node --version  # Should show v24.x.x
+   ```
+
+   Or using NVM:
 
    ```bash
    # Install NVM (if not already installed)
    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
-   # Use the project's Node version
-   nvm install 23.8.0
-   nvm use 23.8.0
-
-   # Or simply use the .nvmrc file
+   # Use the project's Node version from .nvmrc
+   nvm install
    nvm use
    ```
 
@@ -117,14 +130,14 @@ Before you begin, ensure you have the following installed on your development ma
 Run these commands to verify your setup:
 
 ```bash
-node --version    # Should output: v23.8.0
+node --version    # Should output: v24.x.x (LTS)
 bun --version     # Should output: 1.x.x (latest)
 git --version     # Should output: git version 2.x.x
 ```
 
 ### Troubleshooting
 
-- **Node version issues**: Use `nvm use 23.8.0` to switch to the correct version
+- **Node version issues**: Use `volta install node@24` or `nvm use` to switch to the correct version
 - **Permission errors**: Avoid using `sudo` with Bun commands
 - **Port 3000 busy**: Use `bun dev -- --port 3001` to run on a different port
 - **Dependencies issues**: Try `bun clean:install` to reinstall dependencies
@@ -214,19 +227,21 @@ bun install
 
 ### Specify Node Version
 
-Ensure the correct [Node](https://nodejs.org/en) version is used for the project by creating `.nvmrc` file in the root directory with the desired version.
+Ensure the correct [Node](https://nodejs.org/en) version is used for the project. The `.nvmrc` file in the root directory specifies the version.
 
 File `.nvmrc` content:
 
 ```bash
-v23.8.0
+24
 ```
 
-Use `nvm` command to switch to the specified Node version before running the project.
+If using NVM, use the `nvm` command to switch to the specified Node version:
 
 ```bash
-nvm use 23
+nvm use
 ```
+
+If using Volta (currently in use), it will automatically use the correct version when you `cd` into the project directory.
 
 ### Run Development Mode
 
