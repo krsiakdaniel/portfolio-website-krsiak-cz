@@ -1,6 +1,6 @@
-import { CAREER_WEB_DEV, ICON_EMOJI } from '@/localization'
-
 import { SkillsInfo } from '@/lib/utils/typeDefinitions/interfaces'
+
+import { CAREER_WEB_DEV, ICON_EMOJI } from '@/localization'
 
 export const careerWebDev: SkillsInfo[] = [
   {

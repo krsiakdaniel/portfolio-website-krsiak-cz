@@ -7,11 +7,13 @@ import GalleryThumbnails from '@/components/layout/projects/project-page/gallery
 import Heading from '@/components/shared/Heading'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import {
   GalleryImageProps,
   GalleryProps,
 } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
 import { ARIA_LABELS, GALLERY } from '@/localization'
 
 const Gallery = ({ images = [] }: GalleryProps) => {

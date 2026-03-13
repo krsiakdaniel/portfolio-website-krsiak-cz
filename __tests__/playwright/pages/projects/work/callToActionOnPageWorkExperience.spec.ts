@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, expect, Page, test } from '@playwright/test'
+import { Browser, BrowserContext, Page, expect, test } from '@playwright/test'
 
 import {
   setupBrowser,

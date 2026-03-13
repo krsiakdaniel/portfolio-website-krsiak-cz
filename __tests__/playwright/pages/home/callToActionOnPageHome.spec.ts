@@ -1,5 +1,6 @@
-import { setupPage } from '@/__tests__/playwright/lib/utils/helpers/setup'
 import { expect, test } from '@playwright/test'
+
+import { setupPage } from '@/__tests__/playwright/lib/utils/helpers/setup'
 
 test.describe('CTA - Home - Work, Resume', () => {
   test('should render the Work Experience CTA link correctly', async ({ browser }) => {

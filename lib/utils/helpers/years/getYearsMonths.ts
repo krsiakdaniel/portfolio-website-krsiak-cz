@@ -1,8 +1,7 @@
+import { DurationUnitEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Job } from '@/lib/utils/typeDefinitions/interfaces'
 
 import { TEXT } from '@/localization'
-
-import { DurationUnitEnum } from '@/lib/utils/typeDefinitions/enums'
 
 type GetYearsMonthsType = Pick<Job, 'duration' | 'unit'>
 

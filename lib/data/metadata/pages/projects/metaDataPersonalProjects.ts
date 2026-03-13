@@ -1,13 +1,12 @@
 import { Metadata } from 'next'
 
-import { META_PROJECTS_OVERVIEW_PERSONAL, TEXT } from '@/localization'
-
 import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import personalProjectsOverviewOG from '@/public/images/png/open-graph/pages/personal-projects/personal-projects-og.png'
 import personalProjectsOverviewTwitter from '@/public/images/png/open-graph/pages/personal-projects/personal-projects-twitter.png'
+
+import { META_PROJECTS_OVERVIEW_PERSONAL, TEXT } from '@/localization'
 
 export const metaDataPersonalProjects: Metadata = {
   title: META_PROJECTS_OVERVIEW_PERSONAL.title,

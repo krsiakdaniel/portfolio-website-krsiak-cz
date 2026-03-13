@@ -1,6 +1,6 @@
-import { ExternalLinkProps } from '@/lib/utils/typeDefinitions/props/shared/external-link'
-
 import IconExternalLink from '@/components/icons/IconExternalLink'
+
+import { ExternalLinkProps } from '@/lib/utils/typeDefinitions/props/shared/external-link'
 
 const ExternalLink = ({ href, text, title, dataTestId = '' }: ExternalLinkProps) => {
   return (

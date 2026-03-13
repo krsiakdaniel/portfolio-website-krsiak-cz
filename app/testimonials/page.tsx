@@ -1,22 +1,22 @@
-import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import TestimonialsIntroduction from '@/components/pages/testimonials/TestimonialsIntroduction'
 import TestimonialsSection from '@/components/pages/testimonials/TestimonialsSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
 import Heading from '@/components/shared/Heading'
-
-import { ID } from '@/lib/utils/constants/ids/elementIds'
+import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
 
 import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimonials'
+import { fitnessCoachTestimonials } from '@/lib/data/pages/testimonials/fitnessCoachTestimonials'
 import { personalTestimonials } from '@/lib/data/pages/testimonials/personalTestimonials'
 import { workTestimonials } from '@/lib/data/pages/testimonials/workTestimonials'
 
-import { ARIA_LABELS, ICON_EMOJI, TESTIMONIALS, TEXT } from '@/localization'
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { fitnessCoachTestimonials } from '@/lib/data/pages/testimonials/fitnessCoachTestimonials'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
+import { ARIA_LABELS, ICON_EMOJI, TESTIMONIALS, TEXT } from '@/localization'
 
 export const metadata = {
   ...metaDataTestimonials,

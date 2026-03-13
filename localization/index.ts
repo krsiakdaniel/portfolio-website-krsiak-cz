@@ -1,3 +1,30 @@
+// Backward compatibility - TEXT aggregation object
+import { ARIA_LABELS } from './accessibility/aria'
+// Backward compatibility - TEXT_DATA aggregation object
+import { BADGES } from './data/badges'
+import {
+  CAREER_PATH as CAREER_PATH_DATA,
+  CAREER_REACT_DEV,
+  CAREER_TESTING,
+  CAREER_WEB_DEV,
+  JOBS,
+  OTHER_EXPERIENCE,
+} from './data/careers'
+import { PROJECTS_PERSONAL, PROJECTS_PERSONAL_OVERVIEW } from './data/projects/personalProjects'
+import { PROJECTS_WORK, WORK_PROJECTS_OVERVIEW } from './data/projects/workProjects'
+import { TESTIMONIALS as TESTIMONIALS_DATA } from './data/testimonials'
+import { CONTACT, MISC } from './misc'
+import { PAGE_HOME } from './pages/home'
+import { COMPANIES, MY_WORK, PROJECTS, PROJECT_INFORMATION, WORK } from './pages/projects'
+import { CAREER_PATH, RESUME } from './pages/resume'
+import { STATUS } from './pages/status'
+import { TESTIMONIALS } from './pages/testimonials'
+import { WHO_I_AM } from './pages/whoIAm'
+import { CALL_TO_ACTION } from './ui/callToAction'
+import { COMMON_VALUES, SHARED, SOCIAL_LINKS } from './ui/common'
+import { ERROR } from './ui/errors'
+import { FOOTER, HOME } from './ui/navigation'
+
 // Constants
 export { CUSTOMERS_COUNT } from './constants/customers'
 export { FLAGS_LOCALIZATION, ICON_EMOJI } from './constants/iconsEmoji'
@@ -64,19 +91,6 @@ export { PROJECTS_WORK, WORK_PROJECTS_OVERVIEW } from './data/projects/workProje
 export { TESTIMONIALS as TESTIMONIALS_DATA } from './data/testimonials'
 export { PAGE_HOME } from './pages/home'
 
-// Backward compatibility - TEXT aggregation object
-import { ARIA_LABELS } from './accessibility/aria'
-import { CONTACT, MISC } from './misc'
-import { COMPANIES, MY_WORK, PROJECT_INFORMATION, PROJECTS, WORK } from './pages/projects'
-import { CAREER_PATH, RESUME } from './pages/resume'
-import { STATUS } from './pages/status'
-import { TESTIMONIALS } from './pages/testimonials'
-import { WHO_I_AM } from './pages/whoIAm'
-import { CALL_TO_ACTION } from './ui/callToAction'
-import { COMMON_VALUES, SHARED, SOCIAL_LINKS } from './ui/common'
-import { ERROR } from './ui/errors'
-import { FOOTER, HOME } from './ui/navigation'
-
 export const TEXT = {
   ...CALL_TO_ACTION,
   ...COMMON_VALUES,
@@ -99,21 +113,6 @@ export const TEXT = {
   ...ARIA_LABELS,
   ...CAREER_PATH,
 }
-
-// Backward compatibility - TEXT_DATA aggregation object
-import { BADGES } from './data/badges'
-import {
-  CAREER_PATH as CAREER_PATH_DATA,
-  CAREER_REACT_DEV,
-  CAREER_TESTING,
-  CAREER_WEB_DEV,
-  JOBS,
-  OTHER_EXPERIENCE,
-} from './data/careers'
-import { PROJECTS_PERSONAL, PROJECTS_PERSONAL_OVERVIEW } from './data/projects/personalProjects'
-import { PROJECTS_WORK, WORK_PROJECTS_OVERVIEW } from './data/projects/workProjects'
-import { TESTIMONIALS as TESTIMONIALS_DATA } from './data/testimonials'
-import { PAGE_HOME } from './pages/home'
 
 export const TEXT_DATA = {
   ...TESTIMONIALS_DATA,

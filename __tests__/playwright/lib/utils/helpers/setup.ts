@@ -1,4 +1,4 @@
-import { BrowserContext, chromium, Page } from '@playwright/test'
+import { BrowserContext, Page, chromium } from '@playwright/test'
 
 import { BrowserSetup } from '@/__tests__/playwright/lib/utils/typeDefinitions/interfaces'
 

@@ -2,12 +2,10 @@ import { iconsSkillsProjectsWorkKomercniBanka } from '@/lib/data/pages/projects/
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
-
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
+
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
 
 // komercni banka
 import komercniBanka1 from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-1-light.webp'
@@ -15,6 +13,8 @@ import komercniBanka2 from '@/public/images/webp/projects/work/komercni-banka/ko
 import komercniBanka3 from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-3-light.webp'
 import komercniBanka4 from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-4-light.webp'
 import komercniBankaProjectPreview from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-project-preview.webp'
+
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 export const workReactKomercniBanka: Project = {
   id: PROJECT_ID.work.komercniBanka,

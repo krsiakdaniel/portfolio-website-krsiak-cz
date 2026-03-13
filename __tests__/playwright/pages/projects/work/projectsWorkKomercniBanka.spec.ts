@@ -1,11 +1,12 @@
-import { Browser, BrowserContext, expect, Page, test } from '@playwright/test'
+import { Browser, BrowserContext, Page, expect, test } from '@playwright/test'
+
+import { NB_HYPHEN } from '@/lib/utils/constants/specialCharacters'
 
 import {
   setupBrowser,
   setupPage,
   teardownContext,
 } from '@/__tests__/playwright/lib/utils/helpers/setup'
-import { NB_HYPHEN } from '@/lib/utils/constants/specialCharacters'
 
 let browser: Browser
 let context: BrowserContext

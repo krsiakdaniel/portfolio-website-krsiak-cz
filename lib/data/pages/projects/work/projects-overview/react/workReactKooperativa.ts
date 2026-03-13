@@ -1,19 +1,19 @@
 import { iconsSkillsProjectsWorkKooperativa } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
-
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
+
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
 
 // kooperativa
 import kooperativa1 from '@/public/images/webp/projects/work/kooperativa/kooperativa-1-light.webp'
 import kooperativa2 from '@/public/images/webp/projects/work/kooperativa/kooperativa-2-light.webp'
 import kooperativa3 from '@/public/images/webp/projects/work/kooperativa/kooperativa-3-light.webp'
 import kooperativaProjectPreview from '@/public/images/webp/projects/work/kooperativa/kooperativa-project-preview.webp'
+
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 export const workReactKooperativa: Project = {
   id: PROJECT_ID.work.kooperativa,

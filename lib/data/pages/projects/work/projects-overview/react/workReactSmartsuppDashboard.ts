@@ -1,12 +1,10 @@
 import { iconsSkillsProjectsWorkSmartsuppDashboard } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
-
-import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
-
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
+
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
 
 // smartsupp dashboard
 import smartsuppDashboard1 from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-1-light.webp'
@@ -14,6 +12,8 @@ import smartsuppDashboard2 from '@/public/images/webp/projects/work/smartsupp-da
 import smartsuppDashboard3 from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-3-light.webp'
 import smartsuppDashboard4 from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-4-light.webp'
 import smartsuppDashboardProjectPreview from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-project-preview.webp'
+
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const workReactSmartsuppDashboard: Project = {
   id: PROJECT_ID.work.smartsupp.dashboard,

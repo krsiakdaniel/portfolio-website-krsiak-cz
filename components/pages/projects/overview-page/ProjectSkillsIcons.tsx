@@ -1,8 +1,8 @@
+import { PROJECT_SKILLS_ICON } from '@/components/pages/home/skills/constants'
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { ProjectSkillsIconsProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
-import { PROJECT_SKILLS_ICON } from '@/components/pages/home/skills/constants'
 
 const ProjectSkillsIcons = ({ skillsIcons = [] }: ProjectSkillsIconsProps) => {
   return (

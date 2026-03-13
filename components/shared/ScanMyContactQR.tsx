@@ -1,13 +1,13 @@
 import ImageComponent from '@/components/shared/ImageComponent'
 import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
 
-import { CONTACT, TEXT } from '@/localization'
-
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { ScanMyContactQRProps } from '@/lib/utils/typeDefinitions/props/shared/scan-my-contact-qr'
 
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-
 import contactQR from '@/public/images/svg/vcard-contact/krsiak-daniel-qr-code-vcard.svg'
+
+import { CONTACT, TEXT } from '@/localization'
+
 import { QR_CODE } from './constants'
 
 const ScanMyContactQR = ({

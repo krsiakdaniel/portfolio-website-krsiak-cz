@@ -1,6 +1,7 @@
 'use client'
 
 import { LiveRegionProps } from '@/lib/utils/typeDefinitions/props/shared/liveRegion'
+
 import { ARIA_LABELS } from '@/localization'
 
 /**

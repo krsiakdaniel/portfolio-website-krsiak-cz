@@ -1,7 +1,9 @@
-import { StaticImageData } from 'next/image'
 import { ReactNode } from 'react'
 
+import { StaticImageData } from 'next/image'
+
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
+
 import { PlaceholderValue } from '@/node_modules/next/dist/shared/lib/get-img-props'
 
 /**

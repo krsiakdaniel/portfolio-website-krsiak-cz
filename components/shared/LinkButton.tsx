@@ -1,12 +1,11 @@
 import IconArrow from '@/components/icons/IconArrow'
 import IconExternalLink from '@/components/icons/IconExternalLink'
 
-import { TEXT } from '@/localization'
-
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
-
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 import { LinkButtonProps } from '@/lib/utils/typeDefinitions/props/shared/link-button'
+
+import { TEXT } from '@/localization'
 
 const LinkButton = ({ href, linkText, isLinkExternal = false, dataTestId }: LinkButtonProps) => {
   const hoverAndFocusCSS =

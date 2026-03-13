@@ -1,8 +1,8 @@
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
-
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 const HeroParagraph = () => {
   return (

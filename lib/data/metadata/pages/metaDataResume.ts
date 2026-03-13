@@ -1,13 +1,12 @@
 import { Metadata } from 'next'
 
-import { META_RESUME, TEXT } from '@/localization'
-
 import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import resumeOG from '@/public/images/png/open-graph/pages/resume/resume-og.png'
 import resumeTwitter from '@/public/images/png/open-graph/pages/resume/resume-twitter.png'
+
+import { META_RESUME, TEXT } from '@/localization'
 
 export const metaDataResume: Metadata = {
   title: META_RESUME.title,

@@ -1,13 +1,11 @@
 import { iconsSkillsProjectsPersonalKrsiak } from '@/lib/data/pages/projects/personal/projects-overview/skillsProjectsPersonal'
 
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
-import { PROJECTS_PERSONAL_OVERVIEW } from '@/localization/data/projects/personalProjects'
-
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
+
+import { PROJECTS_PERSONAL_OVERVIEW } from '@/localization/data/projects/personalProjects'
 
 // project images
 import krsiak1 from '@/public/images/webp/projects/personal/krsiak/krsiak-1-light.webp'
@@ -15,6 +13,8 @@ import krsiak2 from '@/public/images/webp/projects/personal/krsiak/krsiak-2-ligh
 import krsiak3 from '@/public/images/webp/projects/personal/krsiak/krsiak-3-light.webp'
 import krsiak4 from '@/public/images/webp/projects/personal/krsiak/krsiak-4-light.webp'
 import krsiakProjectPreview from '@/public/images/webp/projects/personal/krsiak/krsiak-project-preview.webp'
+
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 export const projectsPersonalNext: Project[] = [
   {

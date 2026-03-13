@@ -1,10 +1,9 @@
 import { Metadata } from 'next'
 
-import { COMMON_VALUES, META_DEFAULT } from '@/localization'
-
 import { ENV_URLS } from '@/lib/utils/constants/urls/pageUrls'
-
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
+
+import { COMMON_VALUES, META_DEFAULT } from '@/localization'
 
 export const defaultMetaData: Metadata = {
   metadataBase: new URL(ENV_URLS.production),

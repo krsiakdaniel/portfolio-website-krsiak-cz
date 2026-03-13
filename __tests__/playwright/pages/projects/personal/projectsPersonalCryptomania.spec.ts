@@ -1,7 +1,6 @@
-import { Browser, BrowserContext, expect, Page, test } from '@playwright/test'
+import { Browser, BrowserContext, Page, expect, test } from '@playwright/test'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import {
   setupBrowser,
   setupPage,

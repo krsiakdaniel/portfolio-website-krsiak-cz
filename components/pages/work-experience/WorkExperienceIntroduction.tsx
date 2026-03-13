@@ -2,6 +2,7 @@ import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
+
 import { COMMON_VALUES, INTRODUCTION, SHARED } from '@/localization'
 
 const WorkExperienceIntroduction = () => {

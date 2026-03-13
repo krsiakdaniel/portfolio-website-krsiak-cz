@@ -5,15 +5,15 @@ import { metaDataSmartsuppHelp } from '@/lib/data/metadata/pages/projects/work/m
 import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
 import { sections } from '@/lib/data/pages/projects/work/smartsuppHelp'
 
-import { ICON_EMOJI, TEXT } from '@/localization'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata = {
   ...metaDataSmartsuppHelp,

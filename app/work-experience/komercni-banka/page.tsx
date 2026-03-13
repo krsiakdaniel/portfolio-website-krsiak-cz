@@ -5,15 +5,15 @@ import { metaDataKomercniBanka } from '@/lib/data/metadata/pages/projects/work/m
 import { sections } from '@/lib/data/pages/projects/work/komercniBanka'
 import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
 
-import { ICON_EMOJI, TEXT } from '@/localization'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata = {
   ...metaDataKomercniBanka,

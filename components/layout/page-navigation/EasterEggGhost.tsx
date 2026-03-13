@@ -1,9 +1,9 @@
 import GhostScreaming from '@/components/layout/page-navigation/GhostScreaming'
 
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
-
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 import { EasterEggGhostProps } from '@/lib/utils/typeDefinitions/props/layout/easter-egg-ghost'
+
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 const EasterEggGhost = ({ arrowDirection }: EasterEggGhostProps) => {
   const cssAnimationClassNext = 'animate-ghost-next'

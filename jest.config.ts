@@ -2,7 +2,6 @@
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
  */
-
 import nextJest from 'next/jest.js'
 
 // https://nextjs.org/docs/app/building-your-application/testing/jest

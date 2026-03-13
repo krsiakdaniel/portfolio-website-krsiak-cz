@@ -1,4 +1,5 @@
 import { TravelCountry } from '@/lib/utils/typeDefinitions/interfaces'
+
 import { getFlagAriaLabel, getVisitCountColor } from './CountryCard.utils'
 
 const CountryCard = ({ country }: { country: TravelCountry }) => (

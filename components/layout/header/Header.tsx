@@ -1,18 +1,18 @@
 'use client' // using hooks
-
 import { useEffect, useMemo, useRef, useState } from 'react'
 
 import { useClickOutside } from '@/lib/hooks/useClickOutside'
 import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 
+import PageContainer from '@/components/layout/PageContainer'
 import Logo from '@/components/layout/header/Logo'
+import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
 import Menu from '@/components/layout/header/menu/Menu'
 import MenuMobileToggle from '@/components/layout/header/menu/MenuMobileToggle'
 import MenuSocialLinks from '@/components/layout/header/menu/MenuSocialLinks'
-import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
-import PageContainer from '@/components/layout/PageContainer'
 
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+
 import { ARIA_LABELS } from '@/localization'
 
 const Header = () => {

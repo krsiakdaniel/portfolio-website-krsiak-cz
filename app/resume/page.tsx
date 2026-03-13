@@ -1,20 +1,21 @@
-import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import CareerPath from '@/components/pages/resume/CareerPath'
 import ResumeContact from '@/components/pages/resume/ResumeContact'
 import ResumeIntroduction from '@/components/pages/resume/ResumeIntroduction'
 import ResumePreviewSection from '@/components/pages/resume/ResumePreviewSection'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
 import Heading from '@/components/shared/Heading'
+import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
 
 import { metaDataResume } from '@/lib/data/metadata/pages/metaDataResume'
 
-import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata = {
   ...metaDataResume,

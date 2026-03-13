@@ -1,7 +1,7 @@
 import {
+  TECHNOLOGY_START_DATES,
   calculateTechnologyYears,
   getAllTechnologyYears,
-  TECHNOLOGY_START_DATES,
 } from '@/lib/utils/helpers/years/calculateTechnologyYears'
 import { getCurrentYear } from '@/lib/utils/helpers/years/getCurrentYear'
 

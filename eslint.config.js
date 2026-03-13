@@ -1,8 +1,14 @@
-import js from '@eslint/js' // Core ESLint recommended rules
-import nextPlugin from '@next/eslint-plugin-next' // Next.js-specific rules
-import reactPlugin from 'eslint-plugin-react' // React-specific rules
-import reactHooksPlugin from 'eslint-plugin-react-hooks' // React Hooks rules
-import typescript from 'typescript-eslint' // TypeScript-specific rules
+import js from '@eslint/js'
+// Core ESLint recommended rules
+import nextPlugin from '@next/eslint-plugin-next'
+// Next.js-specific rules
+import reactPlugin from 'eslint-plugin-react'
+// React-specific rules
+import reactHooksPlugin from 'eslint-plugin-react-hooks'
+// React Hooks rules
+import typescript from 'typescript-eslint'
+
+// TypeScript-specific rules
 
 const eslintConfig = [
   {

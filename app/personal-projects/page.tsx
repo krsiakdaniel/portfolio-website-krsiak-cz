@@ -1,5 +1,5 @@
-import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
 import PersonalProjectsIntroduction from '@/components/pages/personal-projects/PersonalProjectsIntroduction'
 import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
@@ -10,11 +10,12 @@ import { metaDataPersonalProjects } from '@/lib/data/metadata/pages/projects/met
 import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
 import { projectsPersonalReact } from '@/lib/data/pages/projects/personal/projects-overview/react/personalReact'
 
-import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata = {
   ...metaDataPersonalProjects,

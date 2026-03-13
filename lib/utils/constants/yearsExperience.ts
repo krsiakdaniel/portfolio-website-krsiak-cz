@@ -1,6 +1,5 @@
-import { MonthsExperience, YearsExperience } from '@/lib/utils/typeDefinitions/interfaces'
-
 import { calculateTechnologyYears } from '@/lib/utils/helpers/years/calculateTechnologyYears'
+import { MonthsExperience, YearsExperience } from '@/lib/utils/typeDefinitions/interfaces'
 
 const YEARS = {
   ONE: 1,

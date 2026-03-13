@@ -1,9 +1,9 @@
 import DividerWithText from '@/components/shared/DividerWithText'
 import SkillCard from '@/components/shared/SkillCard'
 
-import { DIVIDER_WITH_TEXT } from '@/localization'
-
 import { skills } from '@/lib/data/pages/home/skills/skillsMain'
+
+import { DIVIDER_WITH_TEXT } from '@/localization'
 
 const SkillsMain = () => {
   return (

@@ -1,13 +1,12 @@
 import { Metadata } from 'next'
 
-import { META_HOME, TEXT } from '@/localization'
-
-import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
-
 import { ENV_URLS } from '@/lib/utils/constants/urls/pageUrls'
+import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import homeOG from '@/public/images/png/open-graph/pages/home/home-og.png'
 import homeTwitter from '@/public/images/png/open-graph/pages/home/home-twitter.png'
+
+import { META_HOME, TEXT } from '@/localization'
 
 export const metaDataHome: Metadata = {
   title: META_HOME.title,

@@ -1,6 +1,6 @@
-import { PAGE_HOME } from '@/localization/pages/home'
-
 import { SkillsInfo } from '@/lib/utils/typeDefinitions/interfaces'
+
+import { PAGE_HOME } from '@/localization/pages/home'
 
 export const skillsForCompanyItems: SkillsInfo[] = [
   { id: 0, text: PAGE_HOME.expertise.skillsForCompany.items[0].text },

@@ -1,6 +1,7 @@
 import IconInfo from '@/components/icons/IconInfo'
 
 import { alertTypeClasses } from '@/lib/data/shared/alertTypeClasses'
+
 import { AlertTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { AlertProps } from '@/lib/utils/typeDefinitions/props/shared/alert'
 

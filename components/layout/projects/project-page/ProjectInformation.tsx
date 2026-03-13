@@ -5,9 +5,9 @@ import Heading from '@/components/shared/Heading'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
-import { TEXT } from '@/localization'
-
 import { ProjectInformationProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
+
+import { TEXT } from '@/localization'
 
 const ProjectInformation = ({
   description,

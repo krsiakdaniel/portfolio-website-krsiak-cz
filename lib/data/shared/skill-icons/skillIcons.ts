@@ -1,5 +1,3 @@
-import { SkillToIconMap } from '@/lib/utils/typeDefinitions/interfaces'
-
 // Import SVG icons
 import {
   chakraSVG,
@@ -25,6 +23,8 @@ import {
   wordpressSVG,
   xdSVG,
 } from '@/lib/data/shared/skill-icons/skillIconsSVG'
+
+import { SkillToIconMap } from '@/lib/utils/typeDefinitions/interfaces'
 
 // Map skill names to their respective icons
 export const skillIcons: SkillToIconMap = {

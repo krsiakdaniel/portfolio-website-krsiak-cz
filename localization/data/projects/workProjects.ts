@@ -1,7 +1,9 @@
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { NB_HYPHEN } from '@/lib/utils/constants/specialCharacters'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { PROJECTS_WORK_URLS } from '@/lib/utils/constants/urls/projectsUrls'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
 import { CUSTOMERS_COUNT } from '../../constants/customers'
 import { FLAGS_LOCALIZATION } from '../../constants/iconsEmoji'
 

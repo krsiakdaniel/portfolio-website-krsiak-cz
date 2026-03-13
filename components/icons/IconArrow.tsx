@@ -1,5 +1,4 @@
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
-
 import { IconArrowProps } from '@/lib/utils/typeDefinitions/props/icons'
 
 const IconArrow = ({ arrowDirection = ArrowDirectionEnum.Left }: IconArrowProps) => {

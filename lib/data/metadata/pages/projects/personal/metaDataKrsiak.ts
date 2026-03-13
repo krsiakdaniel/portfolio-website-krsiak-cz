@@ -1,13 +1,12 @@
 import { Metadata } from 'next'
 
-import { META_KRSIAK, TEXT } from '@/localization'
-
 import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import krsiakOG from '@/public/images/png/open-graph/pages/personal-projects/krsiak/krsiak-og.png'
 import krsiakTwitter from '@/public/images/png/open-graph/pages/personal-projects/krsiak/krsiak-twitter.png'
+
+import { META_KRSIAK, TEXT } from '@/localization'
 
 export const metaDataKrsiak: Metadata = {
   title: META_KRSIAK.title,

@@ -1,5 +1,4 @@
 import { getAttributes } from '@/lib/utils/helpers/getAttributes'
-
 import { ParagraphProps } from '@/lib/utils/typeDefinitions/props/shared/paragraph'
 
 const Paragraph = ({

@@ -3,7 +3,6 @@ import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
-
 import { ExperienceCardProps } from '@/lib/utils/typeDefinitions/props/pages/projects/other-experience'
 
 const ExperienceCard = ({ company, role, description }: ExperienceCardProps) => {

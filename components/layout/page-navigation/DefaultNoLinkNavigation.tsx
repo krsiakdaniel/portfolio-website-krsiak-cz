@@ -2,7 +2,6 @@ import IconArrow from '@/components/icons/IconArrow'
 import EasterEggGhost from '@/components/layout/page-navigation/EasterEggGhost'
 
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
-
 import { DefaultNoLinkNavigationProps } from '@/lib/utils/typeDefinitions/props/layout/page-navigation'
 
 const DefaultNoLinkNavigation = ({ arrowDirection }: DefaultNoLinkNavigationProps) => {

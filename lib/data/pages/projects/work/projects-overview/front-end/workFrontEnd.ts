@@ -1,12 +1,10 @@
 import { iconsSkillsProjectsWorkSmartsuppWeb } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
-
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
-
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Project } from '@/lib/utils/typeDefinitions/interfaces'
+
+import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
 
 // smartsupp web
 import smartsuppWeb1 from '@/public/images/webp/projects/work/smartsupp-web/smartsupp-web-1-light.webp'
@@ -14,6 +12,8 @@ import smartsuppWeb2 from '@/public/images/webp/projects/work/smartsupp-web/smar
 import smartsuppWeb3 from '@/public/images/webp/projects/work/smartsupp-web/smartsupp-web-3-light.webp'
 import smartsuppWeb4 from '@/public/images/webp/projects/work/smartsupp-web/smartsupp-web-4-light.webp'
 import smartsuppWebProjectPreview from '@/public/images/webp/projects/work/smartsupp-web/smartsupp-web-project-preview.webp'
+
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 export const projectsWorkFrontEnd: Project[] = [
   {
