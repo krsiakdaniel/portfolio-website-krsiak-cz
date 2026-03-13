@@ -1,93 +1,165 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+// Disable react-hooks rule: Playwright's 'use' function is not a React Hook
 import { test as base } from '@playwright/test'
 
-// INFO: Example - Playwright - How to create fixtures for data
-// Define types for your data
-type User = {
-  id: number
-  name: string
-  email: string
+// Portfolio-specific test data fixtures
+// Use these in Playwright tests to access consistent test data
+
+type Project = {
+  id: string
+  title: string
+  company?: string
+  type: 'work' | 'personal'
+  url: string
+  technologies: string[]
+  description: string
+}
+
+type Testimonial = {
+  id: string
+  author: string
   role: string
+  company: string
+  text: string
+  avatarUrl?: string
 }
 
-type Product = {
-  id: number
+type Skill = {
+  id: string
   name: string
-  price: number
-  inStock: boolean
+  category: 'frontend' | 'backend' | 'tools' | 'other'
+  yearsOfExperience: number
+  proficiency: 'beginner' | 'intermediate' | 'advanced' | 'expert'
 }
 
-type Order = {
-  id: number
-  userId: number
-  products: { id: number; quantity: number }[]
-  total: number
-  status: string
+type Route = {
+  path: string
+  title: string
+  description: string
 }
 
 // Define fixture types
-type DataFixtures = {
-  users: User[]
-  products: Product[]
-  orders: Order[]
-  testUser: User // Convenience fixture for common user
-  testAdmin: User // Convenience fixture for admin user
+type PortfolioFixtures = {
+  workProjects: Project[]
+  personalProjects: Project[]
+  testimonials: Testimonial[]
+  skills: Skill[]
+  routes: Route[]
+  // Convenience fixtures
+  featuredProject: Project
+  recentTestimonial: Testimonial
 }
 
-// Create the fixture
-export const test = base.extend<DataFixtures>({
-  users: async ({}, use) => {
+// Create the portfolio fixtures
+export const test = base.extend<PortfolioFixtures>({
+  workProjects: async (_, use) => {
     await use([
       {
-        id: 1,
-        name: 'John Doe',
-        email: 'john@example.com',
-        role: 'user',
+        id: 'smartsupp-web',
+        title: 'Smartsupp Website',
+        company: 'Smartsupp',
+        type: 'work',
+        url: '/work-experience/smartsupp-web',
+        technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+        description: 'Marketing website for Smartsupp live chat platform',
       },
       {
-        id: 2,
-        name: 'Jane Smith',
-        email: 'jane@example.com',
-        role: 'admin',
+        id: 'groupon',
+        title: 'Groupon',
+        company: 'Groupon',
+        type: 'work',
+        url: '/work-experience/groupon',
+        technologies: ['React', 'Redux', 'JavaScript'],
+        description: 'E-commerce platform development',
       },
     ])
   },
 
-  products: async ({}, use) => {
+  personalProjects: async (_, use) => {
     await use([
       {
-        id: 1,
-        name: 'Product 1',
-        price: 99.99,
-        inStock: true,
+        id: 'krsiak-cz',
+        title: 'Portfolio Website',
+        type: 'personal',
+        url: '/personal-projects/krsiak',
+        technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+        description: 'Personal portfolio and blog',
       },
       {
-        id: 2,
-        name: 'Product 2',
-        price: 149.99,
-        inStock: false,
+        id: 'cryptomania',
+        title: 'Cryptomania',
+        type: 'personal',
+        url: '/personal-projects/cryptomania',
+        technologies: ['React', 'API Integration', 'Chart.js'],
+        description: 'Cryptocurrency price tracking application',
       },
     ])
   },
 
-  orders: async ({}, use) => {
+  testimonials: async (_, use) => {
     await use([
       {
-        id: 1,
-        userId: 1,
-        products: [{ id: 1, quantity: 2 }],
-        total: 199.98,
-        status: 'pending',
+        id: 'testimonial-1',
+        author: 'John Doe',
+        role: 'Engineering Manager',
+        company: 'Tech Corp',
+        text: 'Excellent developer with strong attention to detail and clean code practices.',
       },
+      {
+        id: 'testimonial-2',
+        author: 'Jane Smith',
+        role: 'Product Owner',
+        company: 'Innovation Ltd',
+        text: 'Great collaboration skills and ability to deliver high-quality solutions on time.',
+      },
+    ])
+  },
+
+  skills: async (_, use) => {
+    await use([
+      {
+        id: 'react',
+        name: 'React',
+        category: 'frontend',
+        yearsOfExperience: 5,
+        proficiency: 'expert',
+      },
+      {
+        id: 'typescript',
+        name: 'TypeScript',
+        category: 'frontend',
+        yearsOfExperience: 4,
+        proficiency: 'advanced',
+      },
+      {
+        id: 'nextjs',
+        name: 'Next.js',
+        category: 'frontend',
+        yearsOfExperience: 3,
+        proficiency: 'advanced',
+      },
+    ])
+  },
+
+  routes: async (_, use) => {
+    await use([
+      { path: '/', title: 'Home', description: 'Portfolio homepage' },
+      { path: '/resume', title: 'Resume', description: 'Professional resume and CV' },
+      { path: '/work-experience', title: 'Work Experience', description: 'Professional projects' },
+      { path: '/personal-projects', title: 'Personal Projects', description: 'Side projects' },
+      { path: '/testimonials', title: 'Testimonials', description: 'Client testimonials' },
+      { path: '/who-i-am', title: 'Who I Am', description: 'About me' },
+      { path: '/status', title: 'Status', description: 'Website status and uptime' },
     ])
   },
 
   // Convenience fixtures
-  testUser: async ({ users }, use) => {
-    await use(users.find((u) => u.role === 'user')!)
+  featuredProject: async ({ workProjects }, use) => {
+    await use(workProjects[0])
   },
 
-  testAdmin: async ({ users }, use) => {
-    await use(users.find((u) => u.role === 'admin')!)
+  recentTestimonial: async ({ testimonials }, use) => {
+    await use(testimonials[0])
   },
 })
 
