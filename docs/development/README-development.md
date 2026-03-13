@@ -4,6 +4,7 @@ Complete guide for setting up and working with the development environment for t
 
 **Table of Contents:**
 
+- [🎯 Technology Stack](#-technology-stack)
 - [📋 Prerequisites](#-prerequisites)
 - [💻 Commands](#-commands)
 - [💅 Prettier](#-prettier)
@@ -15,6 +16,29 @@ Complete guide for setting up and working with the development environment for t
 
 ---
 
+## 🎯 Technology Stack
+
+This project uses modern web technologies with the following stack:
+
+- **Runtime**: Bun (preferred over npm/yarn/pnpm)
+- **Framework**: Next.js 16 (App Router — not Pages Router)
+- **UI Library**: React 19 (with React Compiler enabled)
+- **Language**: TypeScript 5.9+ (strict mode enabled)
+- **Styling**: Tailwind CSS v4
+- **Testing**: Jest (unit) + Playwright (E2E)
+- **Deployment**: Netlify with PWA capabilities and automated CI/CD
+- **Analytics**: Google Analytics + Smartlook
+
+### Key Features
+
+- **Turbopack**: Default bundler in Next.js 16 (up to 10x faster Fast Refresh)
+- **React Compiler**: Automatic component optimization enabled
+- **TypeScript Strict Mode**: Enhanced type safety and code quality
+- **Automated Formatting**: Prettier with import sorting plugin
+- **Pre-commit Hooks**: Quality gates run automatically on every commit
+
+---
+
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed on your development machine:
@@ -23,10 +47,10 @@ Before you begin, ensure you have the following installed on your development ma
 
 #### Required
 
-- **Node.js**: `v23.8.0` (specified in `.nvmrc`)
+- **Node.js**: >= `22.0.0` (LTS) or `v23.8.0` (specified in `.nvmrc`)
   - Download from [nodejs.org](https://nodejs.org/)
   - Or use Node Version Manager (NVM) - recommended
-- **Bun**: Latest stable version
+- **Bun**: >= `1.2.0`
   - Install from [bun.sh](https://bun.sh/)
   - Used as package manager and runtime
 - **Git**: For version control
@@ -145,8 +169,8 @@ All commands in scripts are available in: [package.json](/package.json)
 
 ```bash
 # Development
-bun dev                 # Start development server
-bun build               # Build the application
+bun dev                 # Start Next.js development server (Turbopack default)
+bun build               # Create production build
 bun start               # Start production server
 
 # Code Quality
@@ -214,6 +238,8 @@ bun dev
 
 To view the project in the browser, open: [http://localhost:3000](http://localhost:3000)
 
+> **Note**: Turbopack is now the default bundler in Next.js 16. It provides up to 10x faster Fast Refresh and 2-5x faster production builds. Do not disable it unless there is a documented reason.
+
 ## 💅 Prettier
 
 This project uses [Prettier](https://prettier.io/) for code formatting.
@@ -267,62 +293,48 @@ The instructions file contains:
 
 ## 🔗 Imports Order in Files
 
-Order for imports in files:
+Import organization is **automated** via `@trivago/prettier-plugin-sort-imports` configured in `.prettierrc`. Imports are automatically sorted and grouped with blank lines on save.
 
-1. Third-Party Library Imports
-2. Custom Hooks
-3. Components
-4. Data
-5. Utils
-6. Localization
-7. Utils - Constants
-8. Utils - Helpers and Interfaces
-9. Images
-10. CSS
+**Automated grouping order:**
 
-### Example
+1. **React & Next.js** - Core framework imports
+2. **Third-Party Modules** - External dependencies
+3. **Custom Hooks** - `@/lib/hooks/`
+4. **Components** - `@/components/`
+5. **Data** - `@/lib/data/`
+6. **Utils** - `@/lib/utils/` (includes constants, helpers, interfaces)
+7. **Localization** - `@/localization/`
+8. **Test Utilities** - `@/__tests__/`
+9. **Public Assets** - `@/public/` (images, icons)
+10. **Types** - `@/types/`
+11. **Catch-all** - Other `@/` imports
+12. **Relative Imports** - `./` or `../`
+13. **Styles** - `.css` or `.scss` files
 
-Here is an example of how the imports should be ordered in a file.
+### Example Import Structure
 
-```ts
-// Third-Party Library Imports
-import { ReactNode } from 'react'
+```typescript
+// Automatically formatted by Prettier on save:
+import React from 'react'
 
-import { Inter } from 'next/font/google'
+import { NextPage } from 'next'
 
-import type { Metadata } from 'next'
+import { useCustomHook } from '@/lib/hooks/useCustomHook'
 
-// Custom Hooks
-import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
+import { Header } from '@/components/layout/Header'
+import { Button } from '@/components/ui/Button'
 
-// Components
-import PageContainer from '@/components/layout/PageContainer'
-import Footer from '@/components/layout/footer/Footer'
-import Header from '@/components/layout/header/Header'
-import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
+import { projectsData } from '@/lib/data/projects'
 
-// Data
-import { metaDataShared } from '@/lib/data/metadata/shared/metaDataShared'
-import { mindset } from '@/lib/data/pages/home/expertise/mindset'
+import { formatDate } from '@/lib/utils/date'
 
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-// Utils - Helpers and Interfaces
-import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
-import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
-// Component Props
-import { HeaderSectionProps } from '@/lib/utils/typeDefinitions/props'
-import { SkillCardProps } from '@/lib/utils/typeDefinitions/props'
+import { translations } from '@/localization/en'
 
-// Utils - Constants
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-// Images
-import logo from '@/public/icons/png/icon-64x64.png'
+import heroImage from '@/public/images/hero.webp'
 
-// CSS
-import '@/app/custom.css'
-// Localization
-import { TEXT } from '@/localization'
+import styles from './Component.module.css'
 ```
 
 ## 🌍 Environment Variables
@@ -387,6 +399,23 @@ The recommended development workflow:
    - Pre-commit hooks will run automatically
    - Fix any issues that arise
 6. Push your branch and create a PR
+
+### Pre-commit Requirements
+
+Before committing changes, ensure the following quality checks pass:
+
+- **Format code**: `bun prettier:write`
+- **Type checking**: `bun type-check` (or build with `bun build`)
+- **Linting**: `bun lint`
+- **Full validation**: `bun pre-commit` (runs all checks including tests)
+
+> **Note**: Pre-commit hooks are configured to run automatically, but you can manually run these commands to catch issues early.
+
+### CI/CD Notes
+
+- The `.next` directory structure changed in Next.js 16 — a new `.next/dev` directory enables concurrent dev and build
+- Update CI cache configuration to include `.next/dev` alongside `.next/cache`
+- Full CI check command: `bun pre-commit`
 
 ## 🐕 Husky and Pre-commit Hook
 

@@ -1,61 +1,138 @@
 # GitHub Copilot Instructions
 
-Copilot use this file to understand how to assist with your code contributions.
+Copilot: use this file to understand how to assist with code contributions.
 
 ## About This Project
 
-This is a React Next.js portfolio website written in TypeScript, using Bun as the runtime and package manager. It includes comprehensive testing with Jest and Playwright, and is deployed as a Progressive Web App. Please follow these guidelines when contributing:
+This is a React Next.js portfolio website written in TypeScript, using Bun as the runtime and package manager. It includes comprehensive testing with Jest and Playwright, and is deployed as a Progressive Web App. Please follow these guidelines when contributing.
+
+## Technology Stack
+
+- **Runtime**: Bun (preferred over npm/yarn/pnpm)
+- **Framework**: Next.js 16 (App Router — not Pages Router)
+- **UI Library**: React 19 (with React Compiler enabled)
+- **Language**: TypeScript 5.9+ (strict mode enabled)
+- **Styling**: Tailwind CSS v4
+- **Testing**: Jest (unit) + Playwright (E2E)
+- **Deployment**: Netlify with PWA capabilities and automated CI/CD
+- **Analytics**: Google Analytics + Smartlook
+
+### Minimum Requirements
+
+- Node.js >= 22.0.0 (LTS) — Node.js 20 EOL in 2026
+- React >= 19.0.0
+- TypeScript >= 5.9.0
+- Bun >= 1.2.0
+
+## Development Flow
+
+```bash
+bun dev                 # Start Next.js development server (Turbopack default)
+bun build               # Create production build
+bun lint                # Run ESLint (flat config)
+bun prettier:check      # Check code formatting
+bun prettier:write      # Apply code formatting
+bun test:jest           # Run unit tests
+bun test:jest:coverage  # Unit tests with coverage report
+bun test:e2e            # Run Playwright end-to-end tests
+bun pre-commit          # Full CI check: build + lint + format + all tests
+```
+
+> **Note**: Turbopack is now the default bundler in Next.js 16. It provides up to 10x faster Fast Refresh and 2-5x faster production builds. Do not disable it unless there is a documented reason.
+
+## React 19 Features
+
+This project uses **React 19** with the following modern patterns:
+
+### React Compiler (Automatic Optimization)
+
+- **React Compiler is enabled** — automatically optimizes components for performance
+- Avoid manual `useMemo`, `useCallback`, and `React.memo` unless profiling shows a specific need
+- The compiler handles memoization and re-render optimization automatically
+- Focus on writing clean, readable code; let the compiler optimize
+
+### React 19 Patterns
+
+- Use `use` hook for reading context and promises (when needed)
+- Form actions with `useActionState` for progressive enhancement
+- `useOptimistic` for optimistic UI updates
+- `useFormStatus` for form submission states
+- Server Components are the default — use Client Components only when needed
+
+### What's Different from React 18
+
+- **No more forwardRef**: Use `ref` as a prop directly
+- **Improved hydration**: Fewer mismatches, better error messages
+- **Document metadata**: Use `<title>`, `<meta>`, `<link>` directly in components (Next.js handles this differently)
+- **Asset loading**: New `preload`, `prefetch` APIs (use Next.js equivalents)
+
+```typescript
+// ✅ React 19 pattern — ref as prop (no forwardRef needed)
+type ButtonProps = {
+  ref?: React.Ref<HTMLButtonElement>
+  children: React.ReactNode
+}
+
+const Button = ({ ref, children }: ButtonProps) => {
+  return <button ref={ref}>{children}</button>
+}
+
+// ✅ Let React Compiler handle optimization
+const ExpensiveComponent = ({ data }: { data: Data[] }) => {
+  // No useMemo needed — compiler optimizes automatically
+  const filtered = data.filter(item => item.active)
+  const sorted = filtered.sort((a, b) => a.name.localeCompare(b.name))
+
+  return <div>{sorted.map(item => <Item key={item.id} {...item} />)}</div>
+}
+
+// ❌ Avoid manual memoization unless proven necessary
+const OverOptimized = ({ data }: { data: Data[] }) => {
+  const filtered = useMemo(() => data.filter(item => item.active), [data]) // unnecessary
+  // ...
+}
+```
 
 ## Code Standards
 
 ### Required Before Each Commit
 
-- Run `bun prettier:write` before committing any changes to ensure proper code formatting
-- This will format all files according to the project's Prettier configuration with Tailwind CSS plugin
-- Ensure TypeScript compilation passes with `bun next build`
-- Run linting with `bun next lint` to catch potential issues
-
-### Development Flow
-
-- **Development**: `bun dev` - Start Next.js development server
-- **Build**: `bun build` - Create production build
-- **Lint**: `bun lint` - Run ESLint on the codebase
-- **Format**: `bun prettier:check` or `bun prettier:write` - Check/apply code formatting
-- **Unit Tests**: `bun test:jest` or `bun test:jest:coverage` for coverage reports
-- **E2E Tests**: `bun test:e2e` - Run Playwright end-to-end tests
-- **Full CI check**: Build + lint + format check + all tests
-
-## Repository Structure
-
-- `app/`: Next.js App Router pages and layouts (main application structure)
-- `components/`: Reusable React components organized by feature/type
-  - `analytics/`: Tracking and analytics components
-  - `icons/`: SVG icon components
-  - `layout/`: Layout-related components (header, footer, navigation)
-  - `pages/`: Page-specific components
-  - `shared/`: Shared utility components
-- `lib/`: Core utilities, hooks, and data management
-  - `data/`: Static data and content
-  - `hooks/`: Custom React hooks
-  - `utils/`: Utility functions and helpers
-- `localization/`: Internationalization data and configuration
-- `public/`: Static assets (images, icons, manifest files)
-- `__tests__/`: Test files organized by testing framework
-  - `jest/`: Unit and integration tests
-  - `playwright/`: End-to-end test suites
-- `__mocks__/`: Jest mock files and test utilities
-- `readme-images/`: Documentation images
+- Run `bun prettier:write` before committing any changes
+- Ensure TypeScript compilation passes: `bun next build`
+- Run linting: `bun lint`
+- Run `bun pre-commit` for a full CI check
 
 ## Code Style & Formatting
 
 ### General Guidelines
 
-- Use **TypeScript** with strict type checking
-- Follow **ESLint** configuration defined in `eslint.config.js`
-- Use **Prettier** for code formatting with `@trivago/prettier-plugin-sort-imports` and `prettier-plugin-tailwindcss` (config in `.prettierrc`)
+- Use **TypeScript** with strict type checking — never use `any`, prefer `unknown` with type guards
+- Follow **ESLint** flat config defined in `eslint.config.ts`
+- Use **Prettier** for formatting (config in `.prettierrc`)
 - Prefer **functional components** with hooks over class components
 - Use **arrow functions** for component definitions
 - Follow **conventional commits** format for commit messages
+
+### TypeScript Strict Mode Patterns
+
+```typescript
+// Never use `any`
+const data: any = response.json() // ❌
+
+// Prefer `unknown` with type guards
+const data: unknown = await response.json()
+if (isProjectData(data)) { ... } // ✅
+
+// Non-null assertion only when provably safe
+document.getElementById('root')!  // ❌ avoid
+const el = document.getElementById('root')
+if (!el) throw new Error('Root element not found') // ✅
+
+// Use `satisfies` for config objects
+const config = {
+  title: 'My Portfolio',
+} satisfies SiteConfig // ✅
+```
 
 ### Import Order
 
@@ -81,14 +158,14 @@ Import organization is **automated** via `@trivago/prettier-plugin-sort-imports`
 
 ```typescript
 // Automatically formatted by Prettier on save:
-
 import React from 'react'
+
 import { NextPage } from 'next'
 
 import { useCustomHook } from '@/lib/hooks/useCustomHook'
 
-import { Button } from '@/components/ui/Button'
 import { Header } from '@/components/layout/Header'
+import { Button } from '@/components/ui/Button'
 
 import { projectsData } from '@/lib/data/projects'
 
@@ -103,131 +180,219 @@ import heroImage from '@/public/images/hero.webp'
 import styles from './Component.module.css'
 ```
 
-### Import/Export Patterns
-
-**Avoid barrel exports** - Don't create `index.ts` files that re-export multiple modules:
+### Avoid Barrel Exports
 
 ```typescript
+// ✅ Prefer: Direct imports
+import { TextField } from '@/components/shared/TextField'
+import { Button } from '@/components/ui/Button'
+
 // ❌ Avoid: src/components/index.ts
 export { Button } from './Button'
 export { TextField } from './TextField'
-export { Dialog } from './Dialog'
-
-// ✅ Prefer: Direct imports
-import { Button } from '@/components/ui/Button'
-import { TextField } from '@/components/shared/TextField'
 ```
 
-**Reasons to avoid barrel exports:**
-
-- Better tree-shaking and bundle optimization
-- Clearer dependency relationships
-- Faster TypeScript compilation
-- Easier debugging and refactoring
-- Improved Next.js build performance
+Barrel exports hurt tree-shaking, slow TypeScript compilation, and make debugging harder.
 
 ## File Naming Conventions
 
-- Use **PascalCase** for file names: `ScanMyContactQR.tsx`
-- Use **PascalCase** for component names: `ScanMyContactQR`
-- Use **camelCase** for variables and functions: `myVariable`, `myFunction`
-- Use **UPPER_CASE** for constants: `MY_CONSTANT`
+| Type                    | Convention                  | Example               |
+| ----------------------- | --------------------------- | --------------------- |
+| Component files         | PascalCase                  | `ProjectCard.tsx`     |
+| Component names         | PascalCase                  | `ProjectCard`         |
+| Variables / functions   | camelCase                   | `formatDate`          |
+| Constants               | UPPER_CASE                  | `SITE_CONFIG`         |
+| Hooks                   | camelCase with `use` prefix | `useProjectData`      |
+| Test files (Jest)       | `.test.ts`                  | `ProjectCard.test.ts` |
+| Test files (Playwright) | `.spec.ts`                  | `navigation.spec.ts`  |
 
 ## Component Structure
 
-### Functional Components
+### Server Components (default)
+
+All components are Server Components by default in the App Router. Do not add `"use client"` unless the component requires browser APIs, event handlers, or React state/effects.
 
 ```typescript
-import React from 'react'
-
-type ComponentProps = {
-  title: string
-  isVisible?: boolean
-}
-
-export const MyComponent = ({ title, isVisible = true }: ComponentProps) => {
-  return (
-    <div className="container mx-auto">
-      <h1 className="text-2xl font-bold">{title}</h1>
-    </div>
-  )
-}
-```
-
-### Page Components (Next.js)
-
-```typescript
-import { NextPage } from 'next'
+// app/projects/page.tsx — Server Component, no directive needed
 import { Metadata } from 'next'
+import { ProjectCard } from '@/components/pages/ProjectCard'
+import { projectsData } from '@/data/projects'
 
 export const metadata: Metadata = {
-  title: 'Page Title',
-  description: 'Page description',
+  title: 'Projects',
+  description: 'My portfolio projects',
 }
 
-const MyPage: NextPage = () => {
+const ProjectsPage = async () => {
   return (
     <main>
-      <h1>Page Content</h1>
+      {projectsData.map(p => (
+        <ProjectCard key={p.id} project={p} />
+      ))}
     </main>
   )
 }
 
-export default MyPage
+export default ProjectsPage
 ```
 
-## Key Guidelines
+### Client Components
 
-### TypeScript & Next.js Best Practices
+Keep `"use client"` boundaries as **deep in the component tree as possible**. Do not mark an entire page as a Client Component to handle one interactive element — extract only the interactive part.
 
-1. Use TypeScript strictly - leverage the configured strict mode settings
-2. Follow Next.js 15 App Router patterns (not Pages Router)
-3. Use React 19 functional component patterns with hooks
-4. Implement proper component composition and prop drilling avoidance
-5. Use custom hooks for shared logic and state management
-6. Distinguish between Server and Client Components appropriately
+```typescript
+// components/shared/ThemeToggle.tsx
+'use client'
 
-### Code Quality & Performance
+import { useState } from 'react'
 
-1. Run validation checks before committing (`bun pre-commit`)
-2. Use proper component patterns and avoid unnecessary re-renders
-3. Implement code splitting and lazy loading where appropriate
-4. Follow the existing project structure and naming conventions
-5. Optimize assets for web performance
+type ThemeToggleProps = {
+  defaultTheme?: 'light' | 'dark'
+}
 
-### Styling & UI
+export const ThemeToggle = ({ defaultTheme = 'light' }: ThemeToggleProps) => {
+  const [theme, setTheme] = useState(defaultTheme)
 
-1. Use Tailwind CSS for styling - follow utility-first approach
-2. Leverage components when appropriate
-3. Maintain responsive design principles (mobile-first)
-4. Follow the existing design system and component patterns
-5. Ensure accessibility standards (ARIA labels, semantic HTML)
+  return (
+    <button
+      onClick={() => setTheme(t => (t === 'light' ? 'dark' : 'light'))}
+      aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+    >
+      {theme}
+    </button>
+  )
+}
+```
 
-### Performance & PWA
+### Async Params — Mandatory in Next.js 16
 
-1. Optimize images using Next.js Image component
-2. Follow PWA best practices - maintain manifest and service worker
-3. Use proper lazy loading and code splitting techniques
-4. Monitor bundle size and performance metrics
-5. Implement proper SEO practices (metadata, robots.txt, sitemap)
+Synchronous access to `params` and `searchParams` was removed in Next.js 16. Always await them.
 
-### Development Environment
+```typescript
+// ❌ Removed in Next.js 16 — will throw at runtime
+const ProjectPage = ({ params }: { params: { slug: string } }) => {
+  const { slug } = params
+}
 
-1. Use Bun for package management and script execution
-2. Follow the configured ESLint and Prettier rules
-3. Use the provided VS Code settings and extensions if available
-4. Document complex logic and provide meaningful commit messages
-5. Update documentation in `README.md` files when adding new features
+// ✅ Correct pattern
+const ProjectPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params
+  return <div>{slug}</div>
+}
+```
 
-## Tailwind CSS Guidelines
+## Caching
 
-- Use **Tailwind CSS classes** for styling
-- Prefer **utility classes** over custom CSS
-- Use **responsive design** with Tailwind's responsive prefixes
-- Follow **mobile-first** approach
-- Use **semantic color names** from the Tailwind palette
+Next.js 16 uses **opt-in caching** — all dynamic code executes at request time by default. Use the `"use cache"` directive explicitly when you intend to cache a component or function. Do not assume caching is implicit.
 
-### Example Tailwind Usage
+```typescript
+// ✅ Explicitly opt into caching
+'use cache'
+
+import { cacheLife } from 'next/cache'
+
+export const getProjects = async () => {
+  cacheLife('hours')
+  const res = await fetch('https://api.example.com/projects')
+  return res.json()
+}
+```
+
+```typescript
+// ✅ Cache a Server Component
+'use cache'
+
+export const ProjectList = async () => {
+  const projects = await getProjects()
+  return (
+    <ul>
+      {projects.map(p => <li key={p.id}>{p.title}</li>)}
+    </ul>
+  )
+}
+```
+
+- Never add `"use cache"` to components with user-specific data (auth state, session, cookies)
+- Prefer `cacheLife('hours')` or `cacheLife('days')` with an explicit revalidation strategy over no revalidation
+- Use `revalidateTag()` or `revalidatePath()` in Server Actions to invalidate cache on mutation
+
+## Server Actions
+
+Use Server Actions for all data mutations (form submissions, API calls that write data). Do not use API routes for mutations that originate from the same app.
+
+```typescript
+// lib/actions/contact.ts
+'use server'
+
+import { z } from 'zod'
+
+const ContactSchema = z.object({
+  name: z.string().min(1),
+  email: z.string().email(),
+  message: z.string().min(10),
+})
+
+export const submitContact = async (formData: FormData) => {
+  const parsed = ContactSchema.safeParse({
+    name: formData.get('name'),
+    email: formData.get('email'),
+    message: formData.get('message'),
+  })
+
+  if (!parsed.success) {
+    return { error: parsed.error.flatten() }
+  }
+
+  // perform mutation
+  return { success: true }
+}
+```
+
+### Server Action Security Rules
+
+- Always validate and sanitize inputs with a schema (Zod preferred)
+- Never trust `FormData` values directly
+- Add authentication checks at the top of any action that accesses protected data
+- Do not expose internal error messages to the client
+
+## Testing Guidelines
+
+### Unit Tests (Jest)
+
+- Place test files in `__tests__/jest/`
+- Use `.test.ts` extension
+- Use **React Testing Library** for component tests
+- Follow **AAA pattern** (Arrange, Act, Assert)
+- Mock Server Actions and fetch calls — do not make real network requests in unit tests
+
+```typescript
+// __tests__/jest/ProjectCard.test.tsx
+import { render, screen } from '@testing-library/react'
+import { ProjectCard } from '@/components/pages/ProjectCard'
+import { mockProject } from '@/__mocks__/data'
+
+describe('ProjectCard', () => {
+  it('renders the project title', () => {
+    render(<ProjectCard project={mockProject} />)
+    expect(screen.getByRole('heading', { name: mockProject.title })).toBeInTheDocument()
+  })
+})
+```
+
+### E2E Tests (Playwright)
+
+- Place test files in `__tests__/playwright/`
+- Use `.spec.ts` extension
+- Use **page object model** for maintainability
+- Test **critical user journeys** only — not implementation details
+
+## Styling Guidelines
+
+- Use **Tailwind CSS v4** utility classes — avoid custom CSS unless unavoidable
+- Follow **mobile-first** responsive design
+- Use Tailwind's responsive prefixes: `sm:`, `md:`, `lg:`, `xl:`
+- Use **semantic color names** from the design system
+- Ensure accessible color contrast ratios (WCAG AA minimum)
 
 ```typescript
 <div className="container mx-auto px-4 py-8 md:px-8 lg:px-16">
@@ -237,152 +402,132 @@ export default MyPage
 </div>
 ```
 
-## Testing Guidelines
+## Performance Guidelines
 
-### Unit Tests (Jest)
+- Use **Next.js Image component** for all images — never raw `<img>` tags
+- Use **WebP format** for images
+- Implement **lazy loading** for components below the fold via `dynamic()`
+- Use `"use cache"` explicitly for cacheable data — do not assume implicit caching
+- Monitor **Core Web Vitals** — target LCP < 2.5s, CLS < 0.1, INP < 200ms
+- **React Compiler** is enabled — avoid unnecessary manual `useMemo` and `useCallback`; the compiler handles most memoization automatically
 
-- Place test files in `__tests__/jest` directory
-- Use `.test.ts` extension
-- Use **React Testing Library** for component testing
-- Follow **AAA pattern** (Arrange, Act, Assert)
+```typescript
+// Lazy load heavy components
+import dynamic from 'next/dynamic'
 
-### E2E Tests (Playwright)
-
-- Place test files in `__tests__/playwright` directory
-- Use `.spec.ts` extension
-- Use **page object model** for better maintainability
-- Test **critical user journeys**
-
-## Development Workflow
-
-### Branch Naming
-
-Use prefixes followed by descriptive names:
-
-```txt
-prefix/descriptive-name
-
-Available branch prefixes:
-- build/branch-name - Changes that affect the build system or external dependencies
-- chore/branch-name - Maintenance tasks that don't modify src or test files
-- cicd/branch-name - Changes to CI/CD configuration files and scripts
-- docs/branch-name - Documentation only changes
-- feature/branch-name - New features
-- fix/branch-name - Bug fixes
-- hotfix/branch-name - Critical fixes that need immediate attention
-- localization/branch-name - Internationalization and localization changes
-- performance/branch-name - Performance improvements
-- refactor/branch-name - Code changes that neither fix bugs nor add features
-- revert/branch-name - Reverts a previous commit
-- style/branch-name - Code style changes (formatting, missing semicolons, etc.)
-- test/branch-name - Test additions/updates (both unit and E2E)
-
-Examples:
-- feature/responsive-navigation - Add responsive navigation menu
-- fix/button-hover-state - Fix hover state styling issue
-- docs/update-readme - Update installation instructions
-- test/user-authentication - Add user authentication tests
-- performance/optimize-images - Optimize image loading with lazy loading
-- style/format-components - Format code with Prettier
+const HeavyChart = dynamic(() => import('@/components/shared/HeavyChart'), {
+  loading: () => <p>Loading...</p>,
+})
 ```
-
-### Commit Messages
-
-Follow **Conventional Commits** format:
-
-```txt
-Expected format: type(scope): EMOJI description
-
-Available commit message types:
-
-- aria: ♿ Website accessibility
-- build: 🏗️ - Changes that affect the build system or external dependencies
-- chore: 🛠️ - Maintenance tasks that don't modify src or test files
-- cicd: ⚙️ - Changes to CI/CD configuration files and scripts
-- docs: 📝 - Documentation only changes
-- feature: ✨ - New features
-- fix: 🐛 - Bug fixes
-- hotfix: 🔥 - Critical fixes that need immediate attention
-- localization: 🇬🇧 - Internationalization and localization changes
-- performance: 🚀 - Performance improvements
-- refactor: 👷 - Code changes that neither fix bugs nor add features
-- revert: ⏪ - Reverts a previous commit
-- style: 🎨 - Code style changes (formatting, missing semicolons, etc.)
-- test(e2e): 🎭 - End-to-end test changes
-- test(jest): 🃏 - Unit test changes
-
-Examples:
-
-- aria(navigation): ♿ Add ARIA labels to main navigation menu
-- build(dependencies): 🏗️ Update Next.js to version 15.2
-- chore(cleanup): 🛠️ Remove unused dependencies from package.json
-- cicd(github): ⚙️ Add automated deployment workflow
-- docs(readme): 📝 Update installation instructions for Bun
-- feature(portfolio): ✨ Add new project showcase component
-- fix(responsive): 🐛 Fix mobile navigation menu collapse issue
-- hotfix(security): 🔥 Patch XSS vulnerability in contact form
-- localization(czech): 🇬🇧 Add Czech language support for portfolio
-- performance(images): 🚀 Optimize WebP image loading with lazy loading
-- refactor(components): 👷 Extract reusable Button component
-- revert(navigation): ⏪ Revert navigation changes that broke mobile layout
-- style(prettier): 🎨 Format all TypeScript files with Prettier
-- test(e2e): 🎭 Add Playwright tests for portfolio navigation
-- test(jest): 🃏 Add unit tests for utility functions"
-```
-
-## Performance Considerations
-
-- Use **Next.js Image component** for optimized images
-- Implement **lazy loading** for components below the fold
-- Use **dynamic imports** for code splitting
-- Minimize **bundle size** and optimize **Core Web Vitals**
-- Use **WebP format** for images when possible
 
 ## Accessibility (a11y)
 
-- Use **semantic HTML** elements
-- Include **ARIA attributes** where needed
-- Ensure **keyboard navigation** works properly
-- Maintain **proper color contrast**
-- Use **alt text** for images
-- Test with **screen readers**
+- Use **semantic HTML** elements (`<main>`, `<nav>`, `<article>`, `<section>`)
+- Include **ARIA attributes** where semantic HTML is insufficient
+- Every interactive element must be keyboard-navigable
+- All images must have descriptive `alt` text (empty `alt=""` for decorative images)
+- Maintain **WCAG AA** color contrast
+- Test with a screen reader before shipping UI changes
+
+## Security
+
+- Always run on the **latest patch version** of Next.js — patch releases frequently include security fixes
+- **Server Actions**: validate all inputs with Zod, authenticate before accessing protected resources, never expose internal errors to the client
+- Implement **Content Security Policy** (CSP) headers via `next.config.ts`
+- Use **HTTPS** everywhere — enforce via Netlify redirect rules
+- Sanitize all user inputs before rendering or persisting
+- Keep **all dependencies up to date** — run `bun outdated` regularly
+- Follow **OWASP Top 10** guidelines
+- Never commit secrets — use environment variables via `.env.local` and Netlify environment config
 
 ## API and Data Handling
 
-- Use **fetch** with proper error handling
+- Use **Server Actions** for mutations originating within the app
+- Use **Next.js API routes** only for external webhook receivers or third-party integrations
+- Use `fetch` with proper error handling and typed responses
 - Implement **TypeScript interfaces** for all API responses
-- Use **Next.js API routes** for backend functionality
-- Handle **loading states** and **error states** properly
+- Always handle **loading states** and **error states** in UI
 
-## Security Considerations
+```typescript
+type ProjectResponse = {
+  id: string
+  title: string
+  description: string
+}
 
-- Implement **Content Security Policy** (CSP)
-- Use **HTTPS** everywhere
-- Sanitize **user inputs**
-- Follow **OWASP** security guidelines
-- Keep **dependencies up-to-date** regularly
+const fetchProject = async (id: string): Promise<ProjectResponse> => {
+  const res = await fetch(`/api/projects/${id}`)
+  if (!res.ok) throw new Error(`Failed to fetch project: ${res.status}`)
+  return res.json() as Promise<ProjectResponse>
+}
+```
+
+## CI/CD Notes
+
+- The `.next` directory structure changed in Next.js 16 — a new `.next/dev` directory enables concurrent dev and build
+- Update CI cache configuration to include `.next/dev` alongside `.next/cache`
+- Full CI check command: `bun pre-commit`
+
+## Branch Naming
+
+```text
+prefix/descriptive-name
+
+Prefixes:
+- build/       Changes to build system or external dependencies
+- chore/       Maintenance tasks
+- cicd/        CI/CD configuration changes
+- docs/        Documentation only
+- feature/     New features
+- fix/         Bug fixes
+- hotfix/      Critical immediate fixes
+- localization/ i18n changes
+- performance/ Performance improvements
+- refactor/    Code changes without feature or fix
+- revert/      Reverts a previous commit
+- style/       Formatting and code style only
+- test/        Test additions or updates
+
+Examples:
+  feature/responsive-navigation
+  fix/button-hover-state
+  performance/optimize-images
+  test/contact-form-validation
+```
+
+## Commit Messages
+
+```text
+Format: type(scope): EMOJI description
+
+Types:
+  aria(scope):         ♿  Accessibility
+  build(scope):        🏗️  Build system / dependencies
+  chore(scope):        🛠️  Maintenance
+  cicd(scope):         ⚙️  CI/CD configuration
+  docs(scope):         📝  Documentation
+  feature(scope):      ✨  New features
+  fix(scope):          🐛  Bug fixes
+  hotfix(scope):       🔥  Critical fixes
+  localization(scope): 🇬🇧  i18n changes
+  performance(scope):  🚀  Performance improvements
+  refactor(scope):     👷  Refactoring
+  revert(scope):       ⏪  Reverts
+  style(scope):        🎨  Code style / formatting
+  test(e2e):           🎭  Playwright tests
+  test(jest):          🃏  Jest unit tests
+
+Examples:
+  feature(portfolio): ✨ Add project showcase carousel
+  fix(responsive): 🐛 Fix mobile navigation collapse
+  performance(images): 🚀 Convert hero images to WebP
+  test(jest): 🃏 Add unit tests for formatDate utility
+  docs(readme): 📝 Update Bun installation instructions
+```
 
 ## Documentation
 
-- Update **README files** when adding new features
-- Include **inline comments** for complex logic
-- Document **API endpoints** and **component props**
-- Keep **changelog** updated for releases
-
-## Code Review Guidelines
-
-- Follow **existing patterns** in the codebase
-- Ensure **tests pass** before submitting PRs
-- Use **meaningful commit messages**
-- Link **related issues** in PR descriptions
-- Request **code reviews** from team members
-
-## Technology Stack
-
-- **Runtime**: Bun
-- **Framework**: Next.js 15 (App Router)
-- **Language**: TypeScript (strict mode enabled)
-- **Styling**: Tailwind CSS
-- **Testing**: Jest (unit) + Playwright (E2E)
-- **Deployment**: Netlify with PWA capabilities and automated CI/CD
-- **Analytics**: Google Analytics + Smartlook
+- Update `README.md` when adding new features or changing setup steps
+- Add inline comments for non-obvious logic
+- Document all Server Actions with their expected input shape and return type
+- Keep changelog updated for releases
