@@ -20,14 +20,14 @@ const Companies = () => {
     'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-16 justify-items-center'
   const imgWrapper = 'flex items-center justify-center'
 
-  // Animation classes for staggered infinite scaling using custom CSS delays
+  // Animation classes for staggered infinite scaling using CSS custom property for delay
   const animationClasses = [
     'animate-pulse-scale',
-    'animate-pulse-scale-delay-1',
-    'animate-pulse-scale-delay-2',
-    'animate-pulse-scale-delay-3',
-    'animate-pulse-scale-delay-4',
-    'animate-pulse-scale-delay-5',
+    'animate-pulse-scale [--pulse-delay:2s]',
+    'animate-pulse-scale [--pulse-delay:4s]',
+    'animate-pulse-scale [--pulse-delay:6s]',
+    'animate-pulse-scale [--pulse-delay:8s]',
+    'animate-pulse-scale [--pulse-delay:10s]',
   ]
 
   return (

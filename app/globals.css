@@ -10,9 +10,6 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  ::-webkit-backdrop {
-    border-color: var(--color-gray-200, currentcolor);
-  }
   *,
   ::after,
   ::before,
@@ -33,14 +30,14 @@
 
 /* # Define base styles */
 @layer base {
-  /* ## Set font ROBOTO */
+  /* ## Set font ROBOTO - uses Next.js font CSS variable */
   html,
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto), sans-serif;
     background-color: var(--color-gray-50);
   }
 
-  /* ## Set font RUBIK */
+  /* ## Set font RUBIK - uses Next.js font CSS variable */
   h1,
   h2,
   h3,
@@ -50,123 +47,56 @@
   .link-button,
   .divider-text,
   .heading-section {
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--font-rubik), sans-serif;
   }
 
-  /* ## Utilities */
-  @layer utilities {
-    ::-moz-selection {
-      background-color: var(--color-violet-400);
-      color: var(--color-white);
-    }
-    ::selection {
-      background-color: var(--color-violet-400);
-      color: var(--color-white);
-    }
+  /* ## Better typography for headings */
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+}
 
-    /* Screen reader only utility classes for accessibility */
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
+/* # Utilities - top-level layer (not nested inside base) */
+@layer utilities {
+  ::selection {
+    background-color: var(--color-violet-400);
+    color: var(--color-white);
+  }
 
-    .focus-within\:not-sr-only:focus-within .sr-only,
-    .focus\:not-sr-only:focus {
-      position: static;
-      width: auto;
-      height: auto;
-      padding: inherit;
-      margin: inherit;
-      overflow: visible;
-      clip: auto;
-      white-space: normal;
-    }
+  /* Enhanced focus indicators for better accessibility */
+  .focus\:outline-none:focus {
+    outline: 2px solid var(--color-violet-400);
+    outline-offset: 2px;
+  }
 
-    /* Enhanced focus indicators for better accessibility */
-    .focus\:outline-none:focus {
-      outline: 2px solid var(--color-violet-400);
-      outline-offset: 2px;
-    }
+  /* Skip link focus styles */
+  a[href^='#']:focus {
+    z-index: 9999;
+  }
 
-    /* Skip link focus styles */
-    a[href^='#']:focus {
-      z-index: 9999;
+  /* Company logos infinite scale animation */
+  @keyframes pulse-scale {
+    0%,
+    16.66%,
+    100% {
+      transform: scale(1);
     }
+    8.33% {
+      transform: scale(1.1);
+    }
+  }
 
-    /* Company logos infinite scale animation */
-    @-webkit-keyframes pulse-scale {
-      0%,
-      16.66%,
-      100% {
-        transform: scale(1);
-      }
-      8.33% {
-        transform: scale(1.1);
-      }
-    }
-    @keyframes pulse-scale {
-      0%,
-      16.66%,
-      100% {
-        transform: scale(1);
-      }
-      8.33% {
-        transform: scale(1.1);
-      }
-    }
+  .animate-pulse-scale {
+    animation: pulse-scale 12s ease-in-out infinite;
+    animation-delay: var(--pulse-delay, 0s);
+  }
 
+  /* Respect user's motion preferences */
+  @media (prefers-reduced-motion: reduce) {
     .animate-pulse-scale {
-      -webkit-animation: pulse-scale 12s ease-in-out infinite;
-      animation: pulse-scale 12s ease-in-out infinite;
-      will-change: transform;
-    }
-
-    /* Staggered animation delays for each logo */
-    .animate-pulse-scale-delay-1 {
-      -webkit-animation: pulse-scale 12s ease-in-out infinite;
-      animation: pulse-scale 12s ease-in-out infinite;
-      -webkit-animation-delay: 2s;
-      animation-delay: 2s;
-      will-change: transform;
-    }
-
-    .animate-pulse-scale-delay-2 {
-      -webkit-animation: pulse-scale 12s ease-in-out infinite;
-      animation: pulse-scale 12s ease-in-out infinite;
-      -webkit-animation-delay: 4s;
-      animation-delay: 4s;
-      will-change: transform;
-    }
-
-    .animate-pulse-scale-delay-3 {
-      -webkit-animation: pulse-scale 12s ease-in-out infinite;
-      animation: pulse-scale 12s ease-in-out infinite;
-      -webkit-animation-delay: 6s;
-      animation-delay: 6s;
-      will-change: transform;
-    }
-
-    .animate-pulse-scale-delay-4 {
-      -webkit-animation: pulse-scale 12s ease-in-out infinite;
-      animation: pulse-scale 12s ease-in-out infinite;
-      -webkit-animation-delay: 8s;
-      animation-delay: 8s;
-      will-change: transform;
-    }
-
-    .animate-pulse-scale-delay-5 {
-      -webkit-animation: pulse-scale 12s ease-in-out infinite;
-      animation: pulse-scale 12s ease-in-out infinite;
-      -webkit-animation-delay: 10s;
-      animation-delay: 10s;
-      will-change: transform;
+      animation: none;
     }
   }
 }

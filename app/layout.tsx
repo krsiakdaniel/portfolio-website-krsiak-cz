@@ -12,7 +12,7 @@ import { RootLayoutProps } from '@/lib/utils/typeDefinitions/props/app'
 
 import { ARIA_LABELS } from '@/localization'
 
-import { roboto } from './fonts'
+import { roboto, rubik } from './fonts'
 import './globals.css'
 
 import 'react-tooltip/dist/react-tooltip.css'
@@ -33,12 +33,12 @@ export const viewport: Viewport = {
 // 'Readonly' make the properties of the object read-only, meaning that after the initial assignment they cannot be reassigned.
 const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en" className={`${roboto.variable} ${rubik.variable}`}>
       <head>
         <GoogleAnalytics />
         <AppleTouchIcons />
       </head>
-      <body className={roboto.className}>
+      <body>
         <Header />
         <main id={ID.main} aria-label={ARIA_LABELS.mainContent}>
           {children}

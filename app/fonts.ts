@@ -7,6 +7,7 @@ export const roboto = Roboto({
   weight: ['300', '400', '500', '700'], // light, regular, medium, bold
   subsets: ['latin-ext'],
   display: 'swap',
+  variable: '--font-roboto',
 })
 
 // headings only
@@ -14,4 +15,5 @@ export const rubik = Rubik({
   weight: ['300', '400', '500', '700'], // light, regular, medium, bold
   subsets: ['latin-ext'],
   display: 'swap',
+  variable: '--font-rubik',
 })
