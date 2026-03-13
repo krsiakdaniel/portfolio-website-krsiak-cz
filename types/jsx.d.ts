@@ -1,16 +1,17 @@
 // JSX type definitions for React 19 compatibility
 // This file resolves the "Cannot find namespace 'JSX'" error in React 19
 
+// Use type aliases instead of empty interfaces to satisfy TypeScript ESLint
 declare global {
   namespace JSX {
-    interface Element extends React.JSX.Element {}
-    interface ElementClass extends React.JSX.ElementClass {}
-    interface ElementAttributesProperty extends React.JSX.ElementAttributesProperty {}
-    interface ElementChildrenAttribute extends React.JSX.ElementChildrenAttribute {}
-    interface LibraryManagedAttributes<C, P> extends React.JSX.LibraryManagedAttributes<C, P> {}
-    interface IntrinsicAttributes extends React.JSX.IntrinsicAttributes {}
-    interface IntrinsicClassAttributes<T> extends React.JSX.IntrinsicClassAttributes<T> {}
-    interface IntrinsicElements extends React.JSX.IntrinsicElements {}
+    type Element = React.JSX.Element
+    type ElementClass = React.JSX.ElementClass
+    type ElementAttributesProperty = React.JSX.ElementAttributesProperty
+    type ElementChildrenAttribute = React.JSX.ElementChildrenAttribute
+    type LibraryManagedAttributes<C, P> = React.JSX.LibraryManagedAttributes<C, P>
+    type IntrinsicAttributes = React.JSX.IntrinsicAttributes
+    type IntrinsicClassAttributes<T> = React.JSX.IntrinsicClassAttributes<T>
+    type IntrinsicElements = React.JSX.IntrinsicElements
   }
 }
 

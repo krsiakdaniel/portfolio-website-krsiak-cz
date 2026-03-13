@@ -5,10 +5,12 @@ import nextPlugin from '@next/eslint-plugin-next'
 import reactPlugin from 'eslint-plugin-react'
 // React-specific rules
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
+// TypeScript-specific rules
+import globals from 'globals'
 // React Hooks rules
 import typescript from 'typescript-eslint'
 
-// TypeScript-specific rules
+// Global variables for different environments
 
 const eslintConfig = [
   {
@@ -52,6 +54,15 @@ const eslintConfig = [
         ecmaFeatures: {
           jsx: true,
         },
+      },
+    },
+  },
+  // Node.js configuration for config files
+  {
+    files: ['next.config.mjs', '*.config.js', '*.config.ts', '*.config.mjs'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
       },
     },
   },
