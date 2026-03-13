@@ -21,6 +21,7 @@ const eslintConfig = [
       'coverage/**',
       'playwright-report/**',
       'test-results/**',
+      '~/**', // Bun cache directory
     ],
   },
   js.configs.recommended,

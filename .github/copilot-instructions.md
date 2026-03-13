@@ -19,7 +19,7 @@ This is a React Next.js portfolio website written in TypeScript, using Bun as th
 
 ### Minimum Requirements
 
-- Node.js >= 22.0.0 (LTS) — Node.js 20 EOL in 2026
+- Node.js >= 24.0.0 (Active LTS)
 - React >= 19.0.0
 - TypeScript >= 5.9.0
 - Bun >= 1.2.0
