@@ -51,60 +51,55 @@ This is a React Next.js portfolio website written in TypeScript, using Bun as th
 ### General Guidelines
 
 - Use **TypeScript** with strict type checking
-- Follow **ESLint** configuration defined in `.eslintrc.json`
-- Use **Prettier** for code formatting (config in `.prettierrc`)
+- Follow **ESLint** configuration defined in `eslint.config.js`
+- Use **Prettier** for code formatting with `@trivago/prettier-plugin-sort-imports` and `prettier-plugin-tailwindcss` (config in `.prettierrc`)
 - Prefer **functional components** with hooks over class components
 - Use **arrow functions** for component definitions
 - Follow **conventional commits** format for commit messages
 
 ### Import Order
 
-Organize imports in this specific order:
+Import organization is **automated** via `@trivago/prettier-plugin-sort-imports` configured in `.prettierrc`. Imports are automatically sorted and grouped with blank lines on save.
 
-1. Third-Party Library Imports
-2. Custom Hooks
-3. Components
-4. Data
-5. Utils
-6. Localization
-7. Utils - Constants
-8. Utils - Helpers and Interfaces
-9. Images
-10. CSS
+**Automated grouping order:**
+
+1. **React & Next.js** - Core framework imports
+2. **Third-Party Modules** - External dependencies
+3. **Custom Hooks** - `@/lib/hooks/`
+4. **Components** - `@/components/`
+5. **Data** - `@/lib/data/`
+6. **Utils** - `@/lib/utils/` (includes constants, helpers, interfaces)
+7. **Localization** - `@/localization/`
+8. **Test Utilities** - `@/__tests__/`
+9. **Public Assets** - `@/public/` (images, icons)
+10. **Types** - `@/types/`
+11. **Catch-all** - Other `@/` imports
+12. **Relative Imports** - `./` or `../`
+13. **Styles** - `.css` or `.scss` files
 
 ### Example Import Structure
 
 ```typescript
-// 1. Third-Party Library Imports
+// Automatically formatted by Prettier on save:
+
 import React from 'react'
 import { NextPage } from 'next'
 
-// 2. Custom Hooks
-import { useCustomHook } from '@/hooks/useCustomHook'
+import { useCustomHook } from '@/lib/hooks/useCustomHook'
 
-// 3. Components
 import { Button } from '@/components/ui/Button'
 import { Header } from '@/components/layout/Header'
 
-// 4. Data
-import { projectsData } from '@/data/projects'
+import { projectsData } from '@/lib/data/projects'
 
-// 5. Utils
-import { formatDate } from '@/utils/date'
+import { formatDate } from '@/lib/utils/date'
 
-// 6. Localization
 import { translations } from '@/localization/en'
 
-// 7. Utils - Constants
-import { SITE_CONFIG } from '@/utils/constants'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-// 8. Utils - Helpers and Interfaces
-import { ProjectInterface } from '@/utils/interfaces'
-
-// 9. Images
 import heroImage from '@/public/images/hero.webp'
 
-// 10. CSS
 import styles from './Component.module.css'
 ```
 
