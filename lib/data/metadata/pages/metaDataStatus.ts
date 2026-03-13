@@ -1,13 +1,12 @@
 import { Metadata } from 'next'
 
-import { META_STATUS, TEXT } from '@/localization'
-
 import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import statusOG from '@/public/images/png/open-graph/pages/status/status-og.png'
 import statusTwitter from '@/public/images/png/open-graph/pages/status/status-twitter.png'
+
+import { META_STATUS, TEXT } from '@/localization'
 
 export const metaDataStatus: Metadata = {
   title: META_STATUS.title,

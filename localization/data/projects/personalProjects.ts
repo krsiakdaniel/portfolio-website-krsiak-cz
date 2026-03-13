@@ -1,8 +1,9 @@
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
 import { GITHUB_URLS } from '@/lib/utils/constants/urls/githubUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { PROJECTS_PERSONAL_URLS } from '@/lib/utils/constants/urls/projectsUrls'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 export const PROJECTS_PERSONAL = {
   krsiak: {

@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, expect, Page, test } from '@playwright/test'
+import { Browser, BrowserContext, Page, expect, test } from '@playwright/test'
 
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
 import {

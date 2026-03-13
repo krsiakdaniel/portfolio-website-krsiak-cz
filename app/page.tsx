@@ -1,5 +1,5 @@
-import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import Companies from '@/components/pages/home/Companies'
 import MyExpertise from '@/components/pages/home/expertise/MyExpertise'
 import Hero from '@/components/pages/home/hero/Hero'
@@ -10,11 +10,12 @@ import CallToActionWorkExperience from '@/components/shared/call-to-action/cta-b
 
 import { metaDataHome } from '@/lib/data/metadata/pages/metaDataHome'
 
-import { ICON_EMOJI, TEXT } from '@/localization'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata = {
   ...metaDataHome,

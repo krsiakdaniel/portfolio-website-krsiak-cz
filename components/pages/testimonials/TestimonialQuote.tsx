@@ -1,10 +1,11 @@
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { IMAGE_ALT } from '@/localization'
-
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import quote from '@/public/icons/svg/testimonial/quote.svg'
+
+import { IMAGE_ALT } from '@/localization'
+
 import { TESTIMONIAL_QUOTE_ICON } from './constants'
 
 const TestimonialQuote = () => {

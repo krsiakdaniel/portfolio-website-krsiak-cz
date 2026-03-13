@@ -1,13 +1,12 @@
 import DefaultNoLinkNavigation from '@/components/layout/page-navigation/DefaultNoLinkNavigation'
 import PageNavigationLink from '@/components/layout/page-navigation/PageNavigationLink'
 
-import { ICON_EMOJI } from '@/localization'
+import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { PageNavigationProps } from '@/lib/utils/typeDefinitions/props/layout/page-navigation'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
-
-import { PageNavigationProps } from '@/lib/utils/typeDefinitions/props/layout/page-navigation'
+import { ICON_EMOJI } from '@/localization'
 
 const PageNavigation = ({
   linkPrevious,

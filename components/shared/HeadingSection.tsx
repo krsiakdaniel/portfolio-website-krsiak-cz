@@ -1,7 +1,6 @@
 import Heading from '@/components/shared/Heading'
 
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
-
 import { HeadingSectionProps } from '@/lib/utils/typeDefinitions/props/shared/heading-section'
 
 const HeadingSection = ({

@@ -1,5 +1,4 @@
 import { getAttributes } from '@/lib/utils/helpers/getAttributes'
-
 import {
   HeadingDefaults,
   HeadingLevel,

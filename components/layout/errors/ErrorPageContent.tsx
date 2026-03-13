@@ -1,13 +1,12 @@
 import Link from 'next/link'
 
 import Heading from '@/components/shared/Heading'
-
 import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-
 import { ErrorPageContentProps } from '@/lib/utils/typeDefinitions/props/layout/errors'
+
 import { ERROR_PAGE_IMAGE } from '../constants'
 
 const ErrorPageContent = ({

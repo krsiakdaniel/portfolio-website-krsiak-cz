@@ -1,13 +1,12 @@
 import { Metadata } from 'next'
 
-import { META_PROJECTS_OVERVIEW_WORK, TEXT } from '@/localization'
-
 import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import workExperienceOG from '@/public/images/png/open-graph/pages/work-experience/work-experience-og.png'
 import workExperienceTwitter from '@/public/images/png/open-graph/pages/work-experience/work-experience-twitter.png'
+
+import { META_PROJECTS_OVERVIEW_WORK, TEXT } from '@/localization'
 
 export const metaDataWorkExperience: Metadata = {
   title: META_PROJECTS_OVERVIEW_WORK.title,

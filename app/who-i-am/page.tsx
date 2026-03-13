@@ -1,5 +1,5 @@
-import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import SouthKorea from '@/components/pages/who-i-am/SouthKorea'
 import WhoIAmIntroduction from '@/components/pages/who-i-am/WhoIAmIntroduction'
 import WhoIAmTravelsList from '@/components/pages/who-i-am/WhoIAmTravelsList'
@@ -8,14 +8,14 @@ import Heading from '@/components/shared/Heading'
 import HeadingSection from '@/components/shared/HeadingSection'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA, TEXT, WHO_I_AM } from '@/localization'
-
 import { metaDataWhoIam } from '@/lib/data/metadata/pages/metaDataWhoIAm'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA, TEXT, WHO_I_AM } from '@/localization'
 
 export const metadata = {
   ...metaDataWhoIam,

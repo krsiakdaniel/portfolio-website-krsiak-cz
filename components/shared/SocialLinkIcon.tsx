@@ -1,8 +1,8 @@
+import { SOCIAL_ICON } from '@/components/layout/header/constants'
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { DeviceTypeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { SocialLinkIconProps } from '@/lib/utils/typeDefinitions/props/shared/social-link-icon'
-import { SOCIAL_ICON } from '@/components/layout/header/constants'
 
 const SocialLinkIcon = ({
   type,

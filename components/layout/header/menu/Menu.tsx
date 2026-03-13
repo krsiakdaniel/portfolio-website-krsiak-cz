@@ -1,19 +1,18 @@
 'use client' // using usePathname hook
-
 import { usePathname } from 'next/navigation'
 
 import MenuItem from '@/components/layout/header/menu/MenuItem'
 
 import { pagesLinks } from '@/lib/data/layout/pagesLinks'
-import { isMenuItemActive } from '@/lib/utils/helpers/menu/isMenuItemActive'
 
-import { ARIA_LABELS } from '@/localization'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
-
+import { isMenuItemActive } from '@/lib/utils/helpers/menu/isMenuItemActive'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 import { MenuProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { ARIA_LABELS } from '@/localization'
 
 /**
  * Menu component for both mobile and desktop navigation

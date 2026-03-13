@@ -2,8 +2,6 @@ import DividerWithText from '@/components/shared/DividerWithText'
 import Heading from '@/components/shared/Heading'
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization'
-
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import bata from '@/public/images/svg/logo/bata.svg'
@@ -12,6 +10,9 @@ import komercniBanka from '@/public/images/svg/logo/komercni-banka.svg'
 import kooperativa from '@/public/images/svg/logo/kooperativa.svg'
 import microsoft from '@/public/images/svg/logo/microsoft.svg'
 import smartsupp from '@/public/images/svg/logo/smartsupp.svg'
+
+import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization'
+
 import { COMPANY_LOGOS } from './constants'
 
 const Companies = () => {

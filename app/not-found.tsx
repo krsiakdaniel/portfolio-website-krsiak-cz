@@ -1,12 +1,12 @@
-import ErrorPageContent from '@/components/layout/errors/ErrorPageContent'
 import PageContainer from '@/components/layout/PageContainer'
-
-import { TEXT } from '@/localization'
+import ErrorPageContent from '@/components/layout/errors/ErrorPageContent'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import img404 from '@/public/images/webp/errors/404.webp'
+
+import { TEXT } from '@/localization'
 
 const NotFoundPage = () => {
   return (

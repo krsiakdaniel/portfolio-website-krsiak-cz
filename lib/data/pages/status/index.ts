@@ -1,8 +1,8 @@
-import { TEXT_DATA } from '@/localization'
-
 import { STATUS_BADGE_IMGS_URLS } from '@/lib/utils/constants/urls/statusBadgesUrls'
 import { createStatusBadge } from '@/lib/utils/helpers/createStatusBadge'
 import { StatusBadge } from '@/lib/utils/typeDefinitions/interfaces'
+
+import { TEXT_DATA } from '@/localization'
 
 // Text labels for different status badges
 const BADGE_TEXT = {

@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next'
 
-import sitemap, { CHANGE_FREQUENCY_MONTHLY } from '@/app/sitemap'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
+import sitemap, { CHANGE_FREQUENCY_MONTHLY } from '@/app/sitemap'
 
 describe('sitemap', () => {
   let results: MetadataRoute.Sitemap

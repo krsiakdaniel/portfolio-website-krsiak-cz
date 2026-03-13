@@ -1,4 +1,5 @@
 import { CareerPathStep } from '@/lib/utils/typeDefinitions/interfaces'
+
 import { ICON_EMOJI, TEXT_DATA } from '@/localization'
 
 export const careerPathSteps: CareerPathStep[] = [

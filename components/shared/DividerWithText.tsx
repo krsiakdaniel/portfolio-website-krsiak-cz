@@ -1,5 +1,4 @@
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
-
 import { DividerWithTextProps } from '@/lib/utils/typeDefinitions/props/shared/divider'
 
 const DividerWithText = ({ text }: DividerWithTextProps) => {

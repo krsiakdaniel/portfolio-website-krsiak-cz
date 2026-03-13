@@ -1,11 +1,10 @@
 import EmojiAnimated from '@/components/shared/EmojiAnimated'
 
-import { SOCIAL_LINKS } from '@/localization'
-
-import { DeviceTypeEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-
 import { getEmojiEnum } from '@/lib/utils/helpers/getEmojiEnum'
+import { DeviceTypeEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { CallToActionIconProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
+
+import { SOCIAL_LINKS } from '@/localization'
 
 const CallToActionIcon = ({ type, icon }: CallToActionIconProps) => {
   const isMobile = type === DeviceTypeEnum.Mobile

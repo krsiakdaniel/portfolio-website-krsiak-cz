@@ -1,6 +1,6 @@
-import { OTHER_EXPERIENCE } from '@/localization'
-
 import { OtherExperienceData } from '@/lib/utils/typeDefinitions/interfaces'
+
+import { OTHER_EXPERIENCE } from '@/localization'
 
 export const otherExperienceQA: OtherExperienceData[] = [
   {

@@ -1,5 +1,4 @@
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
 
 /**

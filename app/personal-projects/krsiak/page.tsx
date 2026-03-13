@@ -5,15 +5,15 @@ import { metaDataKrsiak } from '@/lib/data/metadata/pages/projects/personal/meta
 import { sections } from '@/lib/data/pages/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
 
-import { ICON_EMOJI, TEXT } from '@/localization'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
 import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata = {
   ...metaDataKrsiak,

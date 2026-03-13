@@ -1,8 +1,8 @@
 import PageContainer from '@/components/layout/PageContainer'
-import Gallery from '@/components/layout/projects/project-page/gallery/Gallery'
 import HeaderSection from '@/components/layout/projects/project-page/HeaderSection'
 import ProjectInformation from '@/components/layout/projects/project-page/ProjectInformation'
 import ProjectResponsibility from '@/components/layout/projects/project-page/ProjectResponsibility'
+import Gallery from '@/components/layout/projects/project-page/gallery/Gallery'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
 

@@ -1,19 +1,20 @@
-import ImageComponent from '@/components/shared/ImageComponent'
-
 import TestimonialQuote from '@/components/pages/testimonials/TestimonialQuote'
 import TestimonialText from '@/components/pages/testimonials/TestimonialText'
 import HeadingSection from '@/components/shared/HeadingSection'
+import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA } from '@/localization'
+import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import hiking from '@/public/images/webp/photo/south-korea/hiking.webp'
 import nature from '@/public/images/webp/photo/south-korea/nature.webp'
 import palace from '@/public/images/webp/photo/south-korea/palace.webp'
 import temple from '@/public/images/webp/photo/south-korea/temple.webp'
+
+import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA } from '@/localization'
+
 import { SOUTH_KOREA_IMAGES } from './constants'
 
 const SouthKorea = () => {

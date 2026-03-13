@@ -1,4 +1,5 @@
 import { SkillCategoryEnum, SkillIconEnum } from '@/lib/utils/typeDefinitions/enums'
+
 import { TECHNOLOGY_START_DATES } from '../helpers/years/calculateTechnologyYears'
 
 // Breadcrumbs

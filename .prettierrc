@@ -3,12 +3,30 @@
   "singleQuote": true,
   "trailingComma": "all",
   "printWidth": 100,
+  "plugins": ["prettier-plugin-tailwindcss", "@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "^react$",
+    "^next/(.*)$",
+    "<THIRD_PARTY_MODULES>",
+    "^@/lib/hooks/(.*)$",
+    "^@/components/(.*)$",
+    "^@/lib/data/(.*)$",
+    "^@/lib/utils/(.*)$",
+    "^@/localization/(.*)$",
+    "^@/__tests__/(.*)$",
+    "^@/public/(.*)$",
+    "^@/types/(.*)$",
+    "^@/(.*)$",
+    "^[./]",
+    "^.+\\.(css|scss)$"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
   "overrides": [
     { "files": "*.yml", "options": { "useTabs": false } },
     { "files": "*.json", "options": { "useTabs": false } },
     { "files": ".eslintrc", "options": { "useTabs": false } },
     { "files": ".prettierrc", "options": { "useTabs": false } },
     { "files": ".stylelintrc", "options": { "useTabs": false } }
-  ],
-  "plugins": ["prettier-plugin-tailwindcss"]
+  ]
 }

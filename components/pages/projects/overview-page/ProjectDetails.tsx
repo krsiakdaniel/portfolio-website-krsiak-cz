@@ -1,5 +1,4 @@
 import Heading from '@/components/shared/Heading'
-
 import Paragraph from '@/components/shared/Paragraph'
 
 import { ProjectDetailsProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'

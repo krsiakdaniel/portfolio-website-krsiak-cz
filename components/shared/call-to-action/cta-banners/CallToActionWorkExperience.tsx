@@ -4,10 +4,11 @@ import { useResponsiveText } from '@/lib/hooks/useResponsiveText'
 
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
-import { CALL_TO_ACTION, ICON_EMOJI, TEXT } from '@/localization'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
+import { CALL_TO_ACTION, ICON_EMOJI, TEXT } from '@/localization'
 
 const CallToActionWorkExperience = () => {
   const text = useResponsiveText({

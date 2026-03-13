@@ -1,13 +1,12 @@
 import { Metadata } from 'next'
 
-import { META_TESTIMONIALS, TEXT } from '@/localization'
-
 import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import testimonialsOG from '@/public/images/png/open-graph/pages/testimonials/testimonials-og.png'
 import testimonialsTwitter from '@/public/images/png/open-graph/pages/testimonials/testimonials-twitter.png'
+
+import { META_TESTIMONIALS, TEXT } from '@/localization'
 
 export const metaDataTestimonials: Metadata = {
   title: META_TESTIMONIALS.title,

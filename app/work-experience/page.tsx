@@ -1,5 +1,5 @@
-import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import PageContainer from '@/components/layout/PageContainer'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
 import OtherExperienceContent from '@/components/pages/projects/other-experience/OtherExperienceContent'
 import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
@@ -18,11 +18,12 @@ import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview
 import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
 import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
 
-import { ARIA_LABELS, COMMON_VALUES, ICON_EMOJI, TEXT } from '@/localization'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { ARIA_LABELS, COMMON_VALUES, ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata = {
   ...metaDataWorkExperience,

@@ -1,8 +1,8 @@
+import LinkButton from '@/components/shared/LinkButton'
+import Photo from '@/components/shared/Photo'
 import CallToActionBubbles from '@/components/shared/call-to-action/CallToActionBubbles'
 import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIcon'
 import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTexts'
-import LinkButton from '@/components/shared/LinkButton'
-import Photo from '@/components/shared/Photo'
 
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'

@@ -1,12 +1,13 @@
+import PageContainer from '@/components/layout/PageContainer'
 import Copyright from '@/components/layout/footer/Copyright'
 import Status from '@/components/layout/footer/Status'
-import PageContainer from '@/components/layout/PageContainer'
 import DividerWithText from '@/components/shared/DividerWithText'
 import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+
 import { ARIA_LABELS, DIVIDER_WITH_TEXT } from '@/localization'
 
-import { ID } from '@/lib/utils/constants/ids/elementIds'
 import ScrollToTopButton from './ScrollToTopButton'
 
 const Footer = () => {

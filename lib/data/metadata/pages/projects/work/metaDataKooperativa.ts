@@ -1,13 +1,12 @@
 import { Metadata } from 'next'
 
-import { META_KOOPERATIVA, TEXT } from '@/localization'
-
 import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
 import kooperativaOG from '@/public/images/png/open-graph/pages/work-experience/kooperativa/kooperativa-og.png'
 import kooperativaTwitter from '@/public/images/png/open-graph/pages/work-experience/kooperativa/kooperativa-twitter.png'
+
+import { META_KOOPERATIVA, TEXT } from '@/localization'
 
 export const metaDataKooperativa: Metadata = {
   title: META_KOOPERATIVA.title,

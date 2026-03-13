@@ -1,13 +1,12 @@
-import { TEXT } from '@/localization'
+import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
+import { ResumePreviewCard } from '@/lib/utils/typeDefinitions/interfaces'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
-
-import { ResumePreviewCard } from '@/lib/utils/typeDefinitions/interfaces'
-
 import previewDOCX from '@/public/images/webp/resume/preview-page-docx.webp'
 import previewPDF from '@/public/images/webp/resume/preview-page-pdf.webp'
+
+import { TEXT } from '@/localization'
 
 export const resumePreviewCardData: ResumePreviewCard[] = [
   {

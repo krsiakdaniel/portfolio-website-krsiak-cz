@@ -2,14 +2,14 @@ import { MouseEventHandler } from 'react'
 
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { ARIA_LABELS } from '@/localization'
-
 import { GALLERY_THUMBNAIL_4_3 } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import {
   GalleryImageProps,
   GalleryThumbnailsProps,
 } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
+
+import { ARIA_LABELS } from '@/localization'
 
 const GalleryThumbnails = ({ images, activeImage, setActiveImage }: GalleryThumbnailsProps) => {
   // Handler for mouse clicks on thumbnail images

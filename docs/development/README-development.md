@@ -286,43 +286,43 @@ Here is an example of how the imports should be ordered in a file.
 
 ```ts
 // Third-Party Library Imports
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
+
+import { Inter } from 'next/font/google'
+
+import type { Metadata } from 'next'
 
 // Custom Hooks
 import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 
 // Components
 import PageContainer from '@/components/layout/PageContainer'
-import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
-import Header from '@/components/layout/header/Header'
 import Footer from '@/components/layout/footer/Footer'
+import Header from '@/components/layout/header/Header'
+import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 
 // Data
 import { metaDataShared } from '@/lib/data/metadata/shared/metaDataShared'
 import { mindset } from '@/lib/data/pages/home/expertise/mindset'
 
-// Localization
-import { TEXT } from '@/localization'
-
-// Utils - Constants
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
 // Utils - Helpers and Interfaces
 import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
-
 // Component Props
 import { HeaderSectionProps } from '@/lib/utils/typeDefinitions/props'
 import { SkillCardProps } from '@/lib/utils/typeDefinitions/props'
+
+// Utils - Constants
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 // Images
 import logo from '@/public/icons/png/icon-64x64.png'
 
 // CSS
 import '@/app/custom.css'
+// Localization
+import { TEXT } from '@/localization'
 ```
 
 ## 🌍 Environment Variables

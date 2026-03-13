@@ -1,12 +1,12 @@
 'use client' // Ensure the component is a Client Component if it has an onClick handler.
-
 import { useCallback, useEffect, useState } from 'react'
 
-import { ARIA_LABELS, FOOTER } from '@/localization'
+import { scrollToTop } from '@/lib/utils/helpers/scrollToTop'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { scrollToTop } from '@/lib/utils/helpers/scrollToTop'
+import { ARIA_LABELS, FOOTER } from '@/localization'
+
 import { SCROLL_TO_TOP } from '../constants'
 
 const BUTTON_STYLES = `animate-fade-in-scroll 

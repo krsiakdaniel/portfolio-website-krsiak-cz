@@ -1,6 +1,6 @@
-import { PROJECTS_PERSONAL } from '@/localization/data/projects/personalProjects'
-
 import { Section } from '@/lib/utils/typeDefinitions/interfaces'
+
+import { PROJECTS_PERSONAL } from '@/localization/data/projects/personalProjects'
 
 export const sections: Section[] = [
   {

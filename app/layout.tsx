@@ -1,33 +1,21 @@
 import type { Viewport } from 'next'
 
-// Layout
+import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
+import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
 import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
 
-// Apple Touch Icons
-import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
-
-// Analytics
-import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
-
-// Default metadata used by all pages if they don't have their own metadata
 import { defaultMetaData } from '@/lib/data/metadata/shared/defaultMetaData'
 
-// Root layout props
+import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { RootLayoutProps } from '@/lib/utils/typeDefinitions/props/app'
 
-// Constants
-import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { ARIA_LABELS } from '@/localization'
 
-// Importing the Roboto font configuration
 import { roboto } from './fonts'
-
-// Importing CSS for react-tooltip
-import 'react-tooltip/dist/react-tooltip.css'
-
-// Importing global CSS styles
 import './globals.css'
+
+import 'react-tooltip/dist/react-tooltip.css'
 
 // Default metadata used by all pages if they don't have their own metadata
 export const metadata = {

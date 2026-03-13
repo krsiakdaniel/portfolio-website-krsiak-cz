@@ -1,9 +1,9 @@
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { INTRODUCTION } from '@/localization'
-
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { INTRODUCTION } from '@/localization'
 
 const StatusIntroduction = () => {
   return (
