@@ -9,19 +9,13 @@ import CountryCard from './CountryCard'
 const WhoIAmTravelsList = () => {
   const { travels } = WHO_I_AM
 
-  const outsideEurope: TravelRegion[] = [
-    travels.regions.asia,
-    travels.regions.asiaMinor,
-    travels.regions.africa,
-    travels.regions.middleEast,
-  ]
+  const { europe, ...otherRegions } = travels.regions
+  const outsideEurope: TravelRegion[] = Object.values(otherRegions)
 
-  const countriesTotalVisits =
-    travels.regions.asia.continentVisits +
-    travels.regions.asiaMinor.continentVisits +
-    travels.regions.africa.continentVisits +
-    travels.regions.middleEast.continentVisits +
-    travels.regions.europe.continentVisits
+  const countriesTotalVisits = outsideEurope.reduce(
+    (sum, region) => sum + region.continentVisits,
+    europe.continentVisits,
+  )
 
   return (
     <div className="mt-8">
@@ -59,12 +53,11 @@ const WhoIAmTravelsList = () => {
       {/* Second Row: Europe */}
       <div>
         <h4 className="mb-3 text-lg font-semibold text-gray-800 md:text-xl">
-          {travels.regions.europe.name}{' '}
-          <span className="text-sm">({travels.regions.europe.continentVisits})</span>
+          {europe.name} <span className="text-sm">({europe.continentVisits})</span>
         </h4>
 
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-2.5 md:gap-3 lg:grid-cols-4">
-          {travels.regions.europe.countries.map((country, index) => (
+          {europe.countries.map((country, index) => (
             <CountryCard key={`${country.name}-${index}`} country={country} />
           ))}
         </div>
