@@ -9,11 +9,13 @@ import CountryCard from './CountryCard'
 const WhoIAmTravelsList = () => {
   const { travels } = WHO_I_AM
 
-  const countriesTotalVisits =
-    travels.regions.asia.continentVisits +
-    travels.regions.africa.continentVisits +
-    travels.regions.middleEast.continentVisits +
-    travels.regions.europe.continentVisits
+  const { europe, ...otherRegions } = travels.regions
+  const outsideEurope: TravelRegion[] = Object.values(otherRegions)
+
+  const countriesTotalVisits = outsideEurope.reduce(
+    (sum, region) => sum + region.continentVisits,
+    europe.continentVisits,
+  )
 
   return (
     <div className="mt-8">
@@ -31,34 +33,31 @@ const WhoIAmTravelsList = () => {
         </p>
       </div>
 
-      {/* First Row: Asia, Africa, Middle East */}
-      <div className="mb-6 grid gap-6 md:mb-8 md:grid-cols-3 md:gap-4 lg:grid-cols-4 lg:gap-6">
-        {[travels.regions.asia, travels.regions.africa, travels.regions.middleEast].map(
-          (region: TravelRegion) => (
-            <div key={region.name}>
-              <h4 className="mb-3 text-lg font-semibold text-gray-800 md:text-xl">
-                {region.name} <span className="text-sm">({region.continentVisits})</span>
-              </h4>
+      <div className="grid grid-cols-1 gap-6 mb-6 md:mb-8 sm:grid-cols-2 md:gap-4 lg:grid-cols-4 lg:gap-6">
+        {/* First Row: Asia, Asia Minor, Africa, Middle East */}
+        {outsideEurope.map((region: TravelRegion) => (
+          <div key={region.name}>
+            <h4 className="mb-3 text-lg font-semibold text-gray-800 md:text-xl">
+              {region.name} <span className="text-sm">({region.continentVisits})</span>
+            </h4>
 
-              <div className="grid gap-2 sm:grid-cols-2 sm:gap-2.5 md:grid-cols-1 md:gap-3">
-                {region.countries.map((country, index) => (
-                  <CountryCard key={`${country.name}-${index}`} country={country} />
-                ))}
-              </div>
+            <div>
+              {region.countries.map((country, index) => (
+                <CountryCard key={`${country.name}-${index}`} country={country} />
+              ))}
             </div>
-          ),
-        )}
+          </div>
+        ))}
       </div>
 
       {/* Second Row: Europe */}
       <div>
         <h4 className="mb-3 text-lg font-semibold text-gray-800 md:text-xl">
-          {travels.regions.europe.name}{' '}
-          <span className="text-sm">({travels.regions.europe.continentVisits})</span>
+          {europe.name} <span className="text-sm">({europe.continentVisits})</span>
         </h4>
 
-        <div className="grid gap-2 sm:grid-cols-2 sm:gap-2.5 md:grid-cols-3 md:gap-3 lg:grid-cols-4">
-          {travels.regions.europe.countries.map((country, index) => (
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-2.5 md:gap-3 lg:grid-cols-4">
+          {europe.countries.map((country, index) => (
             <CountryCard key={`${country.name}-${index}`} country={country} />
           ))}
         </div>
