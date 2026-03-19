@@ -51,11 +51,13 @@ export const WHO_I_AM = {
     regions: {
       asia: {
         name: 'Asia',
-        continentVisits: 3,
-        countries: [
-          { flag: ICON_EMOJI.flagSouthKorea, name: 'South\u00A0Korea', visits: 1 },
-          { flag: ICON_EMOJI.flagTurkey, name: 'Turkey', visits: 2 },
-        ],
+        continentVisits: 1,
+        countries: [{ flag: ICON_EMOJI.flagSouthKorea, name: 'South\u00A0Korea', visits: 1 }],
+      },
+      asiaMinor: {
+        name: 'Asia\u00A0Minor',
+        continentVisits: 2,
+        countries: [{ flag: ICON_EMOJI.flagTurkey, name: 'Turkey', visits: 2 }],
       },
       africa: {
         name: 'Africa',
