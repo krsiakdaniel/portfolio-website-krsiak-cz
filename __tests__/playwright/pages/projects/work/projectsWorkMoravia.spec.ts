@@ -1,52 +1,15 @@
-import { Browser, BrowserContext, Page, expect, test } from '@playwright/test'
+import { expect, test } from '@playwright/test'
 
 import {
-  setupBrowser,
-  setupPage,
-  teardownContext,
-} from '@/__tests__/playwright/lib/utils/helpers/setup'
-
-let browser: Browser
-let context: BrowserContext
-let page: Page
-
-// Setup browser and context before all tests
-test.beforeAll(async () => {
-  const setup = await setupBrowser()
-  browser = setup.browser
-  context = setup.context
-  page = setup.page
-})
-
-// Close the browser after all tests
-test.afterAll(async () => {
-  await browser.close()
-})
-
-// Setup a new context and page before each test
-test.beforeEach(async () => {
-  context = await browser.newContext()
-  page = await setupPage(context, '/')
-})
-
-// Close the context after each test
-test.afterEach(async () => {
-  await teardownContext(context)
-})
+  PAGES_URL,
+  PROJECTS_WORK_URLS,
+} from '@/__tests__/playwright/lib/utils/constants/urls/e2eUrls'
 
 test.describe('Project - RWS - Moravia IT', () => {
-  test('Link', async () => {
-    // Navigate to the Moravia project page
-    await test.step('Go to page', async () => {
-      await page.goto('/work-experience/moravia')
-    })
+  test('Website link', async ({ page }) => {
+    await page.goto(PAGES_URL.workMoravia)
 
-    // Check the Website link
-    await test.step('Check Website link', async () => {
-      const link = page.getByRole('link', { name: 'Website' })
-      const href = await link.getAttribute('href')
-      const expectedUrl = 'https://www.rws.com/'
-      expect(href).toBe(expectedUrl)
-    })
+    const link = page.getByRole('link', { name: 'Website' })
+    await expect(link).toHaveAttribute('href', PROJECTS_WORK_URLS.workMoraviaExternal)
   })
 })

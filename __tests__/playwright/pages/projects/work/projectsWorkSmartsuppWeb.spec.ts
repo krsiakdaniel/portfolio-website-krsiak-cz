@@ -1,16 +1,15 @@
 import { expect, test } from '@playwright/test'
 
-test.describe('Project Work - Smartsupp - Web', () => {
-  test('Web - Link', async ({ page }) => {
-    await test.step('Go to Web page', async () => {
-      await page.goto('/work-experience/smartsupp-web')
-    })
+import {
+  PAGES_URL,
+  PROJECTS_WORK_URLS,
+} from '@/__tests__/playwright/lib/utils/constants/urls/e2eUrls'
 
-    await test.step('Check Web Website link', async () => {
-      const link = page.getByRole('link', { name: 'Website' })
-      const href = await link.getAttribute('href')
-      const expectedUrl = 'https://www.smartsupp.com/'
-      expect(href).toBe(expectedUrl)
-    })
+test.describe('Project Work - Smartsupp - Web', () => {
+  test('Website link', async ({ page }) => {
+    await page.goto(PAGES_URL.workSmartsuppWeb)
+
+    const link = page.getByRole('link', { name: 'Website' })
+    await expect(link).toHaveAttribute('href', PROJECTS_WORK_URLS.workSmartsuppWebExternal)
   })
 })

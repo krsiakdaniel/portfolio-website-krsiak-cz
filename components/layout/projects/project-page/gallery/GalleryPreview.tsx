@@ -4,6 +4,8 @@ import { GALLERY_PREVIEW_4_3 } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { GalleryPreviewProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
 import { ARIA_LABELS } from '@/localization'
 
 const GalleryPreview = ({ activeImage }: GalleryPreviewProps) => {
@@ -14,6 +16,7 @@ const GalleryPreview = ({ activeImage }: GalleryPreviewProps) => {
         aria-live="polite"
         aria-atomic="true"
         aria-label={`${ARIA_LABELS.galleryActiveImage}: ${activeImage.id}`}
+        data-testid={DATA_TEST_IDS.galleryPreview.activeImage}
       >
         <ImageComponent
           src={activeImage.src}

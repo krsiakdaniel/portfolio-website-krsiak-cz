@@ -28,9 +28,6 @@ export default defineConfig({
   // Timeout for each test
   timeout: TIMEOUT_60_SECONDS,
 
-  // Ignore tests in the "mobile" folder
-  testIgnore: ['**/mobile/**'],
-
   // Run tests in files in parallel
   fullyParallel: true,
 

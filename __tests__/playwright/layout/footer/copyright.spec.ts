@@ -1,23 +1,14 @@
-import { expect, test } from '@playwright/test'
+import { test } from '@playwright/test'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
+import { FooterPage } from '@/__tests__/playwright/lib/page-objects/FooterPage'
+import { PAGES_URL } from '@/__tests__/playwright/lib/utils/constants/urls/e2eUrls'
 
 test.describe('Footer - Copyright', () => {
-  test('Copyright', async ({ page }) => {
-    await test.step('Go to home page', async () => {
-      await page.goto('/')
-    })
+  test('displays correct copyright year', async ({ page }) => {
+    await page.goto(PAGES_URL.home)
+    const footer = new FooterPage(page)
 
-    await test.step('Check if the footer is present on the page', async () => {
-      const isFooterVisible = await page.isVisible('#footer')
-      expect(isFooterVisible).toBe(true)
-    })
-
-    await test.step('Check if the copyright year is correct', async () => {
-      const currentYear = new Date().getFullYear().toString()
-      const copyright = await page.textContent(getDataTestId(DATA_TEST_IDS.footer.copyright))
-      expect(copyright).toContain(currentYear)
-    })
+    await footer.expectFooterVisible()
+    await footer.expectCopyrightContainsCurrentYear()
   })
 })

@@ -1,36 +1,20 @@
 import { expect, test } from '@playwright/test'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
+import { HeaderPage } from '@/__tests__/playwright/lib/page-objects/HeaderPage'
+import { UI_TEXTS } from '@/__tests__/playwright/lib/utils/constants/texts/e2eTexts'
+import { PAGES_URL } from '@/__tests__/playwright/lib/utils/constants/urls/e2eUrls'
 
 test.describe('Header - Logo', () => {
-  test('Check link and text', async ({ page }) => {
-    // Set viewport to desktop size for consistent testing
-    await page.setViewportSize({ width: 1280, height: 720 })
+  test('has correct text, link, and navigates home', async ({ page }) => {
+    const header = new HeaderPage(page)
+    await header.setDesktopViewport()
+    await page.goto(PAGES_URL.home)
 
-    await test.step('Go to home page', async () => {
-      await page.goto('/')
-    })
+    await expect(header.logo).toBeVisible()
+    await expect(header.logo).toHaveText(UI_TEXTS.logo)
+    await expect(header.logo).toHaveAttribute('href', PAGES_URL.home)
 
-    await test.step('Check if the link is visible', async () => {
-      const isLinkVisible = await page.isVisible(getDataTestId(DATA_TEST_IDS.headerLogo))
-      expect(isLinkVisible).toBe(true)
-    })
-
-    await test.step('Check if the link text is correct', async () => {
-      const linkText = await page.textContent(getDataTestId(DATA_TEST_IDS.headerLogo))
-      expect(linkText).toBe('krsiak.cz')
-    })
-
-    await test.step('Check if link is correct', async () => {
-      const linkUrl = await page.getAttribute(getDataTestId(DATA_TEST_IDS.headerLogo), 'href')
-      expect(linkUrl).toBe('/')
-    })
-
-    await test.step('Check if the link goes to the home page when clicked', async () => {
-      await page.click(getDataTestId(DATA_TEST_IDS.headerLogo))
-      await page.waitForLoadState('networkidle')
-      expect(page.url()).toBe('http://localhost:3000/')
-    })
+    await header.logo.click()
+    await expect(page).toHaveURL(new RegExp(`${PAGES_URL.home}$`))
   })
 })

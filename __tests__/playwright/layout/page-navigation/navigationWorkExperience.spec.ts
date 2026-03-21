@@ -1,6 +1,7 @@
 import test, { expect } from '@playwright/test'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { PAGES_URL } from '@/__tests__/playwright/lib/utils/constants/urls/e2eUrls'
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
 
 test.describe('Navigation - Work Experience', () => {
@@ -15,7 +16,7 @@ test.describe('Navigation - Work Experience', () => {
     ])
 
     // Verify the final URL
-    expect(page.url()).toBe('http://localhost:3000/who-i-am')
+    await expect(page).toHaveURL(new RegExp(PAGES_URL.whoIAm))
   })
 
   test('navigates to next page - Resume', async ({ page }) => {
@@ -29,6 +30,6 @@ test.describe('Navigation - Work Experience', () => {
     ])
 
     // Verify the final URL
-    expect(page.url()).toBe('http://localhost:3000/resume')
+    await expect(page).toHaveURL(new RegExp(PAGES_URL.resume))
   })
 })

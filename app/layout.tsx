@@ -4,6 +4,7 @@ import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
 import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
 import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
+import SkipNavigationARIA from '@/components/shared/SkipNavigationARIA'
 
 import { defaultMetaData } from '@/lib/data/metadata/shared/defaultMetaData'
 
@@ -39,6 +40,7 @@ const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
         <AppleTouchIcons />
       </head>
       <body>
+        <SkipNavigationARIA />
         <Header />
         <main id={ID.main} aria-label={ARIA_LABELS.mainContent}>
           {children}

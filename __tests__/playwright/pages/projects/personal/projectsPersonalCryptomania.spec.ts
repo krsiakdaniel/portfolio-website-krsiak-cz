@@ -1,69 +1,32 @@
-import { Browser, BrowserContext, Page, expect, test } from '@playwright/test'
+import { expect, test } from '@playwright/test'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import {
-  setupBrowser,
-  setupPage,
-  teardownContext,
-} from '@/__tests__/playwright/lib/utils/helpers/setup'
-
-let browser: Browser
-let context: BrowserContext
-let page: Page
-
-// Setup browser and context before all tests
-test.beforeAll(async () => {
-  const setup = await setupBrowser()
-  browser = setup.browser
-  context = setup.context
-  page = setup.page
-})
-
-// Close the browser after all tests
-test.afterAll(async () => {
-  await browser.close()
-})
-
-// Setup a new context and page before each test
-test.beforeEach(async () => {
-  context = await browser.newContext()
-  page = await setupPage(context, '/')
-})
-
-// Close the context after each test
-test.afterEach(async () => {
-  await teardownContext(context)
-})
+  EXTERNAL_URL,
+  PAGES_URL,
+  PROJECTS_PERSONAL_URLS,
+} from '@/__tests__/playwright/lib/utils/constants/urls/e2eUrls'
 
 test.describe('Project - Cryptomania', () => {
-  test('Links', async () => {
-    // Navigate to the personal project page
-    await test.step('Go to page', async () => {
-      await page.goto('/personal-projects/cryptomania')
+  test('Links', async ({ page }) => {
+    await page.goto(PAGES_URL.personalCryptoMania)
+
+    await test.step('Alert GitHub link', async () => {
+      const alertLink = page.getByTestId(DATA_TEST_IDS.alert.alertLinkGitHub)
+      await expect(alertLink).toHaveAttribute('href', EXTERNAL_URL.gitHub)
     })
 
-    // Check the Alert link
-    await test.step('Check Alert link', async () => {
-      const alertLink = await page.getByTestId(DATA_TEST_IDS.alert.alertLinkGitHub)
-      const hrefAlertLink = await alertLink.getAttribute('href')
-      const expectedUrlAlertLink = 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz'
-      expect(hrefAlertLink).toBe(expectedUrlAlertLink)
-    })
-
-    // Check the Website link
-    await test.step('Check Website link', async () => {
+    await test.step('Website link', async () => {
       const link = page.getByTestId('project-link-website-cryptomania')
-      const href = await link.getAttribute('href')
-      const expectedUrl = 'https://cryptocurrency-prices-one.vercel.app/'
-      expect(href).toBe(expectedUrl)
+      await expect(link).toHaveAttribute('href', PROJECTS_PERSONAL_URLS.personalCryptoManiaExternal)
     })
 
-    // Check the GitHub link
-    await test.step('Check GitHub link', async () => {
-      const linkGitHub = page.getByTestId('project-link-github')
-      const hrefGitHub = await linkGitHub.getAttribute('href')
-      const expectedUrlGitHub = 'https://github.com/krsiakdaniel/cryptocurrency-prices'
-      expect(hrefGitHub).toBe(expectedUrlGitHub)
+    await test.step('GitHub link', async () => {
+      const link = page.getByTestId(DATA_TEST_IDS.externalLinks.projectLinkGitHub)
+      await expect(link).toHaveAttribute(
+        'href',
+        'https://github.com/krsiakdaniel/cryptocurrency-prices',
+      )
     })
   })
 })
