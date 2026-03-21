@@ -7,6 +7,8 @@ import Paragraph from '@/components/shared/Paragraph'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 import { ErrorPageContentProps } from '@/lib/utils/typeDefinitions/props/layout/errors'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
 import { ERROR_PAGE_IMAGE } from '../constants'
 
 const ErrorPageContent = ({
@@ -33,19 +35,33 @@ const ErrorPageContent = ({
       />
 
       <div className="mt-10">
-        <Heading as="h1" size="9xl" sizeSM="9xl" sizeMD="9xl">
+        <Heading
+          as="h1"
+          size="9xl"
+          sizeSM="9xl"
+          sizeMD="9xl"
+          dataTestId={DATA_TEST_IDS.errorPage.heading}
+        >
           {heading}
         </Heading>
       </div>
 
-      <Heading as="h2" textColor="text-neutral-600">
+      <Heading
+        as="h2"
+        textColor="text-neutral-600"
+        dataTestId={DATA_TEST_IDS.errorPage.description}
+      >
         {description}
       </Heading>
 
       <Paragraph>{note}</Paragraph>
 
       {buttonText && buttonLink && (
-        <Link href={buttonLink} className={`${sharedCss} inline-flex text-center select-none`}>
+        <Link
+          href={buttonLink}
+          className={`${sharedCss} inline-flex text-center select-none`}
+          data-testid={DATA_TEST_IDS.errorPage.backToHomeLink}
+        >
           {buttonText}
         </Link>
       )}

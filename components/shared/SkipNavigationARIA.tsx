@@ -2,6 +2,8 @@
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
 import { ARIA_LABELS } from '@/localization'
 
 /**
@@ -39,12 +41,14 @@ const SkipNavigationARIA = () => {
       <a
         href={`#${ID.main}`}
         className="absolute top-0 left-0 z-50 bg-violet-600 px-4 py-2 text-white underline hover:bg-violet-700 focus:bg-violet-700"
+        data-testid={DATA_TEST_IDS.skipNavigation.skipToMainContent}
       >
         {ARIA_LABELS.skipToMainContent}
       </a>
       <a
         href={`#${ID.menu.desktop}`}
         className="absolute top-0 left-20 z-50 bg-violet-600 px-4 py-2 text-white underline hover:bg-violet-700 focus:bg-violet-700"
+        data-testid={DATA_TEST_IDS.skipNavigation.skipToNavigation}
       >
         {ARIA_LABELS.skipToNavigation}
       </a>

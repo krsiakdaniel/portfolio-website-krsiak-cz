@@ -236,6 +236,21 @@ const MISC = {
   linkedinPhoto: 'linkedin-photo',
 }
 
+const ERROR_PAGE = {
+  heading: 'error-page-heading',
+  description: 'error-page-description',
+  backToHomeLink: 'error-page-back-to-home',
+}
+
+const SKIP_NAVIGATION = {
+  skipToMainContent: 'skip-to-main-content',
+  skipToNavigation: 'skip-to-navigation',
+}
+
+const GALLERY_PREVIEW = {
+  activeImage: 'gallery-preview-active-image',
+}
+
 const SOUTH_KOREA = {
   hiking: 'south-korea-hiking',
   nature: 'south-korea-nature',
@@ -253,6 +268,7 @@ export const COUNTRY = {
 export const DATA_TEST_IDS = {
   breadcrumbs: 'breadcrumbs',
   gallery: 'gallery',
+  galleryPreview: GALLERY_PREVIEW,
   headerLogo: 'header-logo',
   footer: FOOTER,
   menu: MENU,
@@ -270,4 +286,6 @@ export const DATA_TEST_IDS = {
   misc: MISC,
   southKorea: SOUTH_KOREA,
   country: COUNTRY,
+  errorPage: ERROR_PAGE,
+  skipNavigation: SKIP_NAVIGATION,
 }
