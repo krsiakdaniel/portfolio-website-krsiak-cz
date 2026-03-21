@@ -1,45 +1,14 @@
-import { Browser, BrowserContext, Page, expect, test } from '@playwright/test'
+import { expect, test } from '@playwright/test'
 
-import {
-  setupBrowser,
-  setupPage,
-  teardownContext,
-} from '@/__tests__/playwright/lib/utils/helpers/setup'
-
-let browser: Browser
-let context: BrowserContext
-let page: Page
-
-// Setup browser and context before all tests
-test.beforeAll(async () => {
-  const setup = await setupBrowser()
-  browser = setup.browser
-  context = setup.context
-  page = setup.page
-})
-
-// Close the browser after all tests
-test.afterAll(async () => {
-  await browser.close()
-})
-
-// Setup a new context and page before each test
-test.beforeEach(async () => {
-  context = await browser.newContext()
-  page = await setupPage(context, '/personal-projects')
-})
-
-// Close the context after each test
-test.afterEach(async () => {
-  await teardownContext(context)
-})
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { EXTERNAL_URL, PAGES_URL } from '@/__tests__/playwright/lib/utils/constants/urls/e2eUrls'
 
 test.describe('CTA - Personal Projects - GitHub', () => {
-  test('should render the GitHub link correctly', async () => {
-    const linkResumeDownload = page.getByTestId('call-to-action-link-github')
-    expect(await linkResumeDownload.isVisible()).toBe(true)
-    expect(await linkResumeDownload.getAttribute('href')).toBe(
-      'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',
-    )
+  test('should render the GitHub link correctly', async ({ page }) => {
+    await page.goto(PAGES_URL.personalProjects)
+    const link = page.getByTestId(DATA_TEST_IDS.callToAction.linkGitHub)
+
+    await expect(link).toBeVisible()
+    await expect(link).toHaveAttribute('href', EXTERNAL_URL.gitHub)
   })
 })

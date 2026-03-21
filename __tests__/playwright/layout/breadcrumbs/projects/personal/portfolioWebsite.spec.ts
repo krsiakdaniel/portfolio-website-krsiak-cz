@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test'
 
+import { PAGES_URL } from '@/__tests__/playwright/lib/utils/constants/urls/e2eUrls'
 import { getBreadcrumbsLocator } from '@/__tests__/playwright/lib/utils/helpers/breadcrumbsHelper'
 
 test.describe('Links', () => {
@@ -12,20 +13,20 @@ test.describe('Links', () => {
 
     await test.step('Check the Home link', async () => {
       const homeLink = breadcrumbs.locator('a[href="/"]')
-      expect(await homeLink.count()).toBe(1)
-      expect(await homeLink.getAttribute('href')).toBe('/')
+      await expect(homeLink).toHaveCount(1)
+      await expect(homeLink).toHaveAttribute('href', PAGES_URL.home)
     })
 
     await test.step('Check the Personal Projects link', async () => {
       const personalProjectsLink = breadcrumbs.locator('a[href="/personal-projects"]')
-      expect(await personalProjectsLink.count()).toBe(1)
-      expect(await personalProjectsLink.getAttribute('href')).toBe('/personal-projects')
+      await expect(personalProjectsLink).toHaveCount(1)
+      await expect(personalProjectsLink).toHaveAttribute('href', PAGES_URL.personalProjects)
     })
 
     await test.step('Check the Portfolio Website link', async () => {
       const portfolioWebsiteLink = breadcrumbs.locator('a[href="/personal-projects/krsiak"]')
-      expect(await portfolioWebsiteLink.count()).toBe(1)
-      expect(await portfolioWebsiteLink.getAttribute('href')).toBe('/personal-projects/krsiak')
+      await expect(portfolioWebsiteLink).toHaveCount(1)
+      await expect(portfolioWebsiteLink).toHaveAttribute('href', PAGES_URL.personalKrsiak)
     })
   })
 })

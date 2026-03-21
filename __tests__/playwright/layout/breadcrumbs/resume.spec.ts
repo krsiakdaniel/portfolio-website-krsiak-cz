@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test'
 
+import { PAGES_URL } from '@/__tests__/playwright/lib/utils/constants/urls/e2eUrls'
 import { getBreadcrumbsLocator } from '@/__tests__/playwright/lib/utils/helpers/breadcrumbsHelper'
 
 test.describe('Links', () => {
@@ -12,14 +13,14 @@ test.describe('Links', () => {
 
     await test.step('Check the Home link', async () => {
       const homeLink = breadcrumbs.locator('a[href="/"]')
-      expect(await homeLink.count()).toBe(1)
-      expect(await homeLink.getAttribute('href')).toBe('/')
+      await expect(homeLink).toHaveCount(1)
+      await expect(homeLink).toHaveAttribute('href', PAGES_URL.home)
     })
 
     await test.step('Check the Resume link', async () => {
       const resumeLink = breadcrumbs.locator('a[href="/resume"]')
-      expect(await resumeLink.count()).toBe(1)
-      expect(await resumeLink.getAttribute('href')).toBe('/resume')
+      await expect(resumeLink).toHaveCount(1)
+      await expect(resumeLink).toHaveAttribute('href', PAGES_URL.resume)
     })
   })
 })

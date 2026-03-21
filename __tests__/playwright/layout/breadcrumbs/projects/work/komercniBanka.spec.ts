@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test'
 
+import { PAGES_URL } from '@/__tests__/playwright/lib/utils/constants/urls/e2eUrls'
 import { getBreadcrumbsLocator } from '@/__tests__/playwright/lib/utils/helpers/breadcrumbsHelper'
 
 test.describe('Links', () => {
@@ -12,20 +13,20 @@ test.describe('Links', () => {
 
     await test.step('Check the Home link', async () => {
       const homeLink = breadcrumbs.locator('a[href="/"]')
-      expect(await homeLink.count()).toBe(1)
-      expect(await homeLink.getAttribute('href')).toBe('/')
+      await expect(homeLink).toHaveCount(1)
+      await expect(homeLink).toHaveAttribute('href', PAGES_URL.home)
     })
 
     await test.step('Check the Work Experience link', async () => {
       const workExperienceLink = breadcrumbs.locator('a[href="/work-experience"]')
-      expect(await workExperienceLink.count()).toBe(1)
-      expect(await workExperienceLink.getAttribute('href')).toBe('/work-experience')
+      await expect(workExperienceLink).toHaveCount(1)
+      await expect(workExperienceLink).toHaveAttribute('href', PAGES_URL.workExperience)
     })
 
     await test.step('Check the Komercni Banka link', async () => {
       const komercniBankaLink = breadcrumbs.locator('a[href="/work-experience/komercni-banka"]')
-      expect(await komercniBankaLink.count()).toBe(1)
-      expect(await komercniBankaLink.getAttribute('href')).toBe('/work-experience/komercni-banka')
+      await expect(komercniBankaLink).toHaveCount(1)
+      await expect(komercniBankaLink).toHaveAttribute('href', PAGES_URL.workKomercniBanka)
     })
   })
 })

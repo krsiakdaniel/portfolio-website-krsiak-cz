@@ -1,37 +1,29 @@
 import { expect, test } from '@playwright/test'
 
-import { setupPage } from '@/__tests__/playwright/lib/utils/helpers/setup'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+import { PAGES_URL } from '@/__tests__/playwright/lib/utils/constants/urls/e2eUrls'
 
 test.describe('CTA - Home - Work, Resume', () => {
-  test('should render the Work Experience CTA link correctly', async ({ browser }) => {
-    const context = await browser.newContext()
-    const page = await setupPage(context, '/')
+  test('should render the Work Experience CTA link correctly', async ({ page }) => {
+    await page.goto(PAGES_URL.home)
+    const link = page.getByTestId(DATA_TEST_IDS.callToAction.linkWorkExperience)
 
-    const linkWorkExperience = page.getByTestId('call-to-action-link-work-experience')
-    expect(await linkWorkExperience.isVisible()).toBe(true)
-    expect(await linkWorkExperience.getAttribute('href')).toBe('/work-experience')
-
-    await context.close()
+    await expect(link).toBeVisible()
+    await expect(link).toHaveAttribute('href', PAGES_URL.workExperience)
   })
 
-  test('should render the Resume CTA link correctly', async ({ browser }) => {
-    const context = await browser.newContext()
-    const page = await setupPage(context, '/')
+  test('should render the Resume CTA link correctly', async ({ page }) => {
+    await page.goto(PAGES_URL.home)
+    const link = page.getByTestId(DATA_TEST_IDS.callToAction.linkResume)
 
-    const linkResume = page.getByTestId('call-to-action-link-resume')
-    expect(await linkResume.isVisible()).toBe(true)
-    expect(await linkResume.getAttribute('href')).toBe('/resume')
-
-    await context.close()
+    await expect(link).toBeVisible()
+    await expect(link).toHaveAttribute('href', PAGES_URL.resume)
   })
 
-  test('should render the LinkedIn photo inside the CTA correctly', async ({ browser }) => {
-    const context = await browser.newContext()
-    const page = await setupPage(context, '/')
+  test('should render the LinkedIn photo inside the CTA correctly', async ({ page }) => {
+    await page.goto(PAGES_URL.home)
+    const photo = page.getByTestId(DATA_TEST_IDS.misc.linkedinPhoto)
 
-    const linkedInPhoto = page.getByTestId('linkedin-photo')
-    expect(await linkedInPhoto.isVisible()).toBe(true)
-
-    await context.close()
+    await expect(photo).toBeVisible()
   })
 })

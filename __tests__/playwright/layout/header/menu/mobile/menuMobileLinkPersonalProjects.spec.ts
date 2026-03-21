@@ -1,69 +1,20 @@
-import { Browser, BrowserContext, Page, chromium, expect, test } from '@playwright/test'
+import { expect, test } from '@playwright/test'
 
-import { ID } from '@/lib/utils/constants/ids/elementIds'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
-
-let browser: Browser
-let context: BrowserContext
-let page: Page
-
-test.beforeAll(async () => {
-  browser = await chromium.launch()
-  context = await browser.newContext({ viewport: { width: 375, height: 812 } })
-  page = await context.newPage()
-})
-
-test.beforeEach(async () => {
-  // Set the viewport size to a smaller size to simulate a mobile device
-  await page.setViewportSize({ width: 375, height: 812 })
-
-  // Go to home page
-  await test.step('Go to home page', async () => {
-    await page.goto('/')
-  })
-})
-
-test.afterAll(async () => {
-  await browser.close()
-})
+import { MobileMenuPage } from '@/__tests__/playwright/lib/page-objects/MobileMenuPage'
+import { PAGE_HEADINGS } from '@/__tests__/playwright/lib/utils/constants/texts/e2eTexts'
+import { PAGES_URL } from '@/__tests__/playwright/lib/utils/constants/urls/e2eUrls'
 
 test.describe('Menu Mobile - Link "Personal Projects"', () => {
-  test('renders the mobile menu', async () => {
-    // Click on the menu toggle to open the mobile menu
-    await page.click(getDataTestId(DATA_TEST_IDS.menu.toggle.component))
+  test('should navigate to Personal Projects page correctly', async ({ page }) => {
+    const mobileMenu = new MobileMenuPage(page)
+    await mobileMenu.setMobileViewport()
+    await page.goto(PAGES_URL.home)
 
-    // Select the mobile menu component
-    const menu = await page.$(getDataTestId(DATA_TEST_IDS.menu.mobile.componentMenu))
+    await mobileMenu.openMenu()
+    await expect(mobileMenu.links.personalProjects).toBeVisible()
 
-    // Assert that the menu component exists
-    expect(menu).toBeTruthy()
-
-    // If the menu component exists, check its 'id' attribute
-    if (menu) {
-      expect(await menu.getAttribute('id')).toBe(ID.menu.mobile)
-    }
-  })
-
-  test('should navigate to Personal Projects page correctly from the mobile menu', async () => {
-    // Click on the menu toggle to open the mobile menu
-    await page.click(getDataTestId(DATA_TEST_IDS.menu.toggle.component))
-
-    // Check if the link is visible
-    const isLinkVisible = await page.isVisible(
-      getDataTestId(DATA_TEST_IDS.menu.mobile.links.personalProjects),
-    )
-    expect(isLinkVisible).toBe(true)
-
-    // Click on the link and wait for navigation
-    await Promise.all([
-      page.waitForURL('**/personal-projects'),
-      page.click(getDataTestId(DATA_TEST_IDS.menu.mobile.links.personalProjects)),
-    ])
-
-    // Check the heading text
-    const heading = await page.textContent('h1')
-    expect(heading).toBe('🚀 Personal Projects')
+    await mobileMenu.navigateViaLink(mobileMenu.links.personalProjects, PAGES_URL.personalProjects)
+    await expect(page).toHaveURL(new RegExp(PAGES_URL.personalProjects))
+    await expect(page.locator('h1')).toContainText(PAGE_HEADINGS.personalProjects)
   })
 })
