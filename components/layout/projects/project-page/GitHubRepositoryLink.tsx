@@ -1,7 +1,6 @@
+import { GitHubRepositoryLinkProps } from '@/components/layout/projects/project-page/ProjectPage.types'
 import ExternalLink from '@/components/shared/ExternalLink'
 import ListItem from '@/components/shared/ListItem'
-
-import { GitHubRepositoryLinkProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

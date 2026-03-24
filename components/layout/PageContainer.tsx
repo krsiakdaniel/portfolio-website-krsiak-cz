@@ -1,4 +1,4 @@
-import { PageContainerProps } from '@/lib/utils/typeDefinitions/props/layout/pageContainer'
+import { PageContainerProps } from '@/components/layout/PageContainer.types'
 
 const PageContainer = ({ id, marginTop = 'mt-20', children }: PageContainerProps) => {
   return (

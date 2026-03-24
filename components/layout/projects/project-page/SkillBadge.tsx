@@ -1,4 +1,4 @@
-import { SkillBadgeProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
+import { SkillBadgeProps } from '@/components/layout/projects/project-page/ProjectPage.types'
 
 const SkillBadge = ({ skillObject }: SkillBadgeProps) => {
   return (

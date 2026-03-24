@@ -1,9 +1,9 @@
 'use client' // using onClick
 import IconClose from '@/components/icons/IconClose'
 import IconHamburger from '@/components/icons/IconHamburger'
+import { MenuMobileToggleProps } from '@/components/layout/header/menu/Menu.types'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { MenuMobileToggleProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

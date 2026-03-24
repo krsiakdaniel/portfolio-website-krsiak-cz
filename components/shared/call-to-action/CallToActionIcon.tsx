@@ -1,8 +1,8 @@
 import EmojiAnimated from '@/components/shared/EmojiAnimated'
+import { CallToActionIconProps } from '@/components/shared/call-to-action/CallToAction.types'
 
 import { getEmojiEnum } from '@/lib/utils/helpers/getEmojiEnum'
 import { DeviceTypeEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-import { CallToActionIconProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
 import { SOCIAL_LINKS } from '@/localization'
 

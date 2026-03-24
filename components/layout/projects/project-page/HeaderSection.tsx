@@ -1,8 +1,8 @@
 import GoBackLink from '@/components/layout/projects/project-page/GoBackLink'
+import { HeaderSectionProps } from '@/components/layout/projects/project-page/ProjectPage.types'
 import Heading from '@/components/shared/Heading'
 
 import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
-import { HeaderSectionProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
 const HeaderSection = ({
   icon,

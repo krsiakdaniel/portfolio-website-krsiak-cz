@@ -1,8 +1,8 @@
+import { ProjectImageProps } from '@/components/pages/projects/overview-page/OverviewPage.types'
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { PROJECT_IMAGE_PREVIEW } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-import { ProjectImageProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 

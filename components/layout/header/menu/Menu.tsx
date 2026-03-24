@@ -1,6 +1,7 @@
 'use client' // using usePathname hook
 import { usePathname } from 'next/navigation'
 
+import { MenuProps } from '@/components/layout/header/menu/Menu.types'
 import MenuItem from '@/components/layout/header/menu/MenuItem'
 
 import { pagesLinks } from '@/lib/data/layout/pagesLinks'
@@ -8,7 +9,6 @@ import { pagesLinks } from '@/lib/data/layout/pagesLinks'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { isMenuItemActive } from '@/lib/utils/helpers/menu/isMenuItemActive'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
-import { MenuProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
@@ -27,12 +27,14 @@ const Menu = ({ type, ref, onClickLink }: MenuProps) => {
     : DATA_TEST_IDS.menu.desktop.componentMenu
   const menuId = isMobile ? ID.menu.mobile : ID.menu.desktop
 
+  const menuOrientation: 'vertical' | 'horizontal' = isMobile ? 'vertical' : 'horizontal'
+
   return (
     <nav aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
       <ul
         ref={ref}
         role="menubar"
-        aria-orientation={isMobile ? 'vertical' : 'horizontal'}
+        aria-orientation={menuOrientation}
         className={isMobile ? 'mt-2 mb-6 flex flex-col gap-2 lg:hidden' : 'hidden gap-2 lg:flex'}
       >
         {(pagesLinks ?? []).map((link) => {

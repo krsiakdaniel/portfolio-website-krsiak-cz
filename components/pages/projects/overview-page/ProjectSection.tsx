@@ -1,7 +1,6 @@
+import { ProjectSectionProps } from '@/components/pages/projects/overview-page/OverviewPage.types'
 import ProjectSummaryCard from '@/components/pages/projects/overview-page/ProjectSummaryCard'
 import HeadingSection from '@/components/shared/HeadingSection'
-
-import { ProjectSectionProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
 const ProjectSection = ({
   projectData = [],

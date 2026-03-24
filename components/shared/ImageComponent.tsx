@@ -4,9 +4,10 @@ import Image from 'next/image'
 
 import { Tooltip } from 'react-tooltip'
 
+import { ImageComponentProps } from '@/components/shared/ImageComponent.types'
+
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-import { ImageComponentProps } from '@/lib/utils/typeDefinitions/props/shared/image-component'
 
 import { IMAGE_ALT } from '@/localization'
 

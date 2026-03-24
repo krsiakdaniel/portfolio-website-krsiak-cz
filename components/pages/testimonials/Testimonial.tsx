@@ -1,8 +1,7 @@
 import TestimonialPersonInfo from '@/components/pages/testimonials/TestimonialPersonInfo'
 import TestimonialQuote from '@/components/pages/testimonials/TestimonialQuote'
 import TestimonialText from '@/components/pages/testimonials/TestimonialText'
-
-import { TestimonialProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
+import { TestimonialProps } from '@/components/pages/testimonials/Testimonials.types'
 
 const Testimonial = ({
   personPhoto,

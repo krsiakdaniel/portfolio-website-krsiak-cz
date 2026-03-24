@@ -1,7 +1,8 @@
 import Link from 'next/link'
 
+import { MenuItemProps } from '@/components/layout/header/menu/Menu.types'
+
 import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
-import { MenuItemProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
 const MenuItem = ({ linkItem, isMobile, onClickLink }: MenuItemProps) => {
   const { id, href, icon, ariaLabel, text, dataTestId, isActive } = linkItem
@@ -17,7 +18,7 @@ const MenuItem = ({ linkItem, isMobile, onClickLink }: MenuItemProps) => {
     : 'text-neutral-600 hover:text-violet-800'
 
   return (
-    <li role="none">
+    <li>
       <Link
         href={href}
         role="menuitem"

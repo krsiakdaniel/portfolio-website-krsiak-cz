@@ -1,8 +1,8 @@
 import DefaultNoLinkNavigation from '@/components/layout/page-navigation/DefaultNoLinkNavigation'
+import { PageNavigationProps } from '@/components/layout/page-navigation/PageNavigation.types'
 import PageNavigationLink from '@/components/layout/page-navigation/PageNavigationLink'
 
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
-import { PageNavigationProps } from '@/lib/utils/typeDefinitions/props/layout/page-navigation'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

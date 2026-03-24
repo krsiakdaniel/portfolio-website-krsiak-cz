@@ -1,8 +1,8 @@
+import { GalleryPreviewProps } from '@/components/layout/projects/project-page/ProjectPage.types'
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { GALLERY_PREVIEW_4_3 } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-import { GalleryPreviewProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

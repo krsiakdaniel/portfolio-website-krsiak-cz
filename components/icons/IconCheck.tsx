@@ -1,4 +1,4 @@
-import { IconCheckProps } from '@/lib/utils/typeDefinitions/props/icons'
+import { IconCheckProps } from '@/components/icons/Icons.types'
 
 const IconCheck = ({ iconColor = 'text-violet-600' }: IconCheckProps) => {
   return (

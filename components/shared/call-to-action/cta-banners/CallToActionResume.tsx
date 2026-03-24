@@ -1,7 +1,7 @@
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
+import { CallToActionResumeProps } from '@/components/shared/call-to-action/CallToActionResume.types'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { CallToActionResumeProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action-resume'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

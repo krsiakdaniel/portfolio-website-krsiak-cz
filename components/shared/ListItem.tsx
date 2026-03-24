@@ -1,6 +1,5 @@
 import IconCheck from '@/components/icons/IconCheck'
-
-import { ListItemProps } from '@/lib/utils/typeDefinitions/props/shared/list'
+import { ListItemProps } from '@/components/shared/List.types'
 
 const ListItem = ({ children, showIcon = true }: ListItemProps) => {
   return (

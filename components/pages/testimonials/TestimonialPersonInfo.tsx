@@ -1,8 +1,8 @@
+import { TestimonialPersonInfoProps } from '@/components/pages/testimonials/Testimonials.types'
 import ExternalLink from '@/components/shared/ExternalLink'
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-import { TestimonialPersonInfoProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
 
 import { ARIA_LABELS, TEXT } from '@/localization'
 

@@ -1,8 +1,8 @@
+import { PhotoProps } from '@/components/pages/resume/Resume.types'
 import ImageComponent from '@/components/shared/ImageComponent'
 import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-import { PhotoProps } from '@/lib/utils/typeDefinitions/props/pages/resume/resume'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
