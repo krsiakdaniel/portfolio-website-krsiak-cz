@@ -1,3 +1,5 @@
+import { Metadata } from 'next'
+
 import PageContainer from '@/components/layout/PageContainer'
 import StatusIntroduction from '@/components/pages/status/StatusIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
@@ -19,7 +21,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { ARIA_LABELS, ICON_EMOJI, IMAGE_ALT, STATUS, TEXT } from '@/localization'
 
-export const metadata = {
+export const metadata: Metadata = {
   ...metaDataStatus,
 }
 

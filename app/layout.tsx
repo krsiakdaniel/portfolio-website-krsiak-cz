@@ -1,4 +1,4 @@
-import type { Viewport } from 'next'
+import type { Metadata, Viewport } from 'next'
 
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
 import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
@@ -19,7 +19,7 @@ import './globals.css'
 import 'react-tooltip/dist/react-tooltip.css'
 
 // Default metadata used by all pages if they don't have their own metadata
-export const metadata = {
+export const metadata: Metadata = {
   ...defaultMetaData,
 }
 // Viewport settings for the entire application

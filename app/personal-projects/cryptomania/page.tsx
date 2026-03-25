@@ -1,3 +1,5 @@
+import { Metadata } from 'next'
+
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
 import Alert from '@/components/shared/Alert'
@@ -18,7 +20,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { ICON_EMOJI, PROJECT_CRYPTOMANIA, TEXT } from '@/localization'
 
-export const metadata = {
+export const metadata: Metadata = {
   ...metaDataCryptomania,
 }
 
