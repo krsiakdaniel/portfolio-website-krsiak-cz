@@ -1,45 +1,8 @@
-import { getAttributes } from '@/lib/utils/helpers/getAttributes'
-import {
-  HeadingDefaults,
-  HeadingLevel,
-  HeadingProps,
-  HeadingSize,
-} from '@/lib/utils/typeDefinitions/props/shared/headings'
+import { HeadingProps } from '@/components/shared/Heading.types'
 
-const HEADING_DEFAULTS: Record<HeadingLevel, HeadingDefaults> = {
-  h1: {
-    size: '5xl' as HeadingSize,
-    sizeSM: '6xl' as HeadingSize,
-    sizeMD: '7xl' as HeadingSize,
-    textColor: 'text-violet-600',
-    className: 'font-bold tracking-tight break-words',
-  },
-  h2: {
-    size: '4xl' as HeadingSize,
-    textColor: 'text-violet-600',
-    className: 'font-bold tracking-tight break-words',
-  },
-  h3: {
-    size: '3xl' as HeadingSize,
-    textColor: 'text-neutral-900',
-    className: 'font-bold break-words',
-  },
-  h4: {
-    size: '2xl' as HeadingSize,
-    textColor: 'text-neutral-900',
-    className: 'font-bold break-words',
-  },
-  h5: {
-    size: 'lg' as HeadingSize,
-    textColor: 'text-neutral-900',
-    className: 'font-bold break-words',
-  },
-  h6: {
-    size: 'base' as HeadingSize,
-    textColor: 'text-neutral-900',
-    className: 'font-bold break-words',
-  },
-} as const
+import { getAttributes } from '@/lib/utils/helpers/getAttributes'
+
+import { HEADING_DEFAULTS } from './Heading.constants'
 
 const Heading = ({
   as = 'h1',

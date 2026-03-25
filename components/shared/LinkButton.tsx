@@ -1,9 +1,9 @@
 import IconArrow from '@/components/icons/IconArrow'
 import IconExternalLink from '@/components/icons/IconExternalLink'
+import { LinkButtonProps } from '@/components/shared/LinkButton.types'
 
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
-import { LinkButtonProps } from '@/lib/utils/typeDefinitions/props/shared/link-button'
 
 import { TEXT } from '@/localization'
 

@@ -1,8 +1,8 @@
 import ImageComponent from '@/components/shared/ImageComponent'
 import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
+import { ScanMyContactQRProps } from '@/components/shared/ScanMyContactQR.types'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-import { ScanMyContactQRProps } from '@/lib/utils/typeDefinitions/props/shared/scan-my-contact-qr'
 
 import contactQR from '@/public/images/svg/vcard-contact/krsiak-daniel-qr-code-vcard.svg'
 

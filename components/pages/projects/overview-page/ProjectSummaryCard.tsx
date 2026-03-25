@@ -1,9 +1,8 @@
+import { ProjectSummaryCardProps } from '@/components/pages/projects/overview-page/OverviewPage.types'
 import ProjectDetails from '@/components/pages/projects/overview-page/ProjectDetails'
 import ProjectImage from '@/components/pages/projects/overview-page/ProjectImage'
 import ProjectSkillsIcons from '@/components/pages/projects/overview-page/ProjectSkillsIcons'
 import LinkButton from '@/components/shared/LinkButton'
-
-import { ProjectSummaryCardProps } from '@/lib/utils/typeDefinitions/props/pages/projects/overview-page'
 
 const ProjectSummaryCard = ({
   isFeatured,

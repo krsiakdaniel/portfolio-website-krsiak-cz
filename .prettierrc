@@ -17,7 +17,7 @@
     "^@/public/(.*)$",
     "^@/types/(.*)$",
     "^@/(.*)$",
-    "^[./]",
+    "^(?!.*\\.(css|scss)$)[./]",
     "^.+\\.(css|scss)$"
   ],
   "importOrderSeparation": true,

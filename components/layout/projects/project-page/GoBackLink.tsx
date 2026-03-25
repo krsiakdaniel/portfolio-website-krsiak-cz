@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
 import IconArrow from '@/components/icons/IconArrow'
+import { GoBackLinkProps } from '@/components/layout/projects/project-page/ProjectPage.types'
 
 import { getGoBackLinkID } from '@/lib/utils/helpers/page-navigation/getGoBackLink'
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
-import { GoBackLinkProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
 import { TEXT } from '@/localization'
 

@@ -1,10 +1,10 @@
 import Heading from '@/components/shared/Heading'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
+import { CallToActionTextsProps } from '@/components/shared/call-to-action/CallToAction.types'
 import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIcon'
 
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
-import { CallToActionTextsProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
 const CallToActionTexts = ({
   icon,

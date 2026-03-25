@@ -1,6 +1,5 @@
+import { ImageComponentCaptionProps } from '@/components/shared/ImageComponentCaption.types'
 import Paragraph from '@/components/shared/Paragraph'
-
-import { ImageComponentCaptionProps } from '@/lib/utils/typeDefinitions/props/shared/image-component-caption'
 
 const ImageComponentCaption = ({
   text = '',

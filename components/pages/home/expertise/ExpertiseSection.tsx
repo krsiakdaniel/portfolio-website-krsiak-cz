@@ -1,9 +1,9 @@
+import { ExpertiseSectionProps } from '@/components/pages/home/expertise/Expertise.types'
 import Heading from '@/components/shared/Heading'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
 import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
-import { ExpertiseSectionProps } from '@/lib/utils/typeDefinitions/props/pages/home/expertise'
 
 import { ARIA_LABELS } from '@/localization'
 

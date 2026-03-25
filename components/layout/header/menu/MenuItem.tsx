@@ -1,11 +1,13 @@
 import Link from 'next/link'
 
+import { MenuItemProps } from '@/components/layout/header/menu/Menu.types'
+
 import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
-import { MenuItemProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
 const MenuItem = ({ linkItem, isMobile, onClickLink }: MenuItemProps) => {
   const { id, href, icon, ariaLabel, text, dataTestId, isActive } = linkItem
 
+  const testId = isMobile ? `mobile-${dataTestId}` : `desktop-${dataTestId}`
   const mobileDesktopCSS = isMobile ? 'py-3' : 'py-2'
   const hoverAndFocusCSS = 'hover:border-violet-50 hover:bg-violet-50'
   const sharedCss =
@@ -22,7 +24,7 @@ const MenuItem = ({ linkItem, isMobile, onClickLink }: MenuItemProps) => {
         href={href}
         role="menuitem"
         className={`${mobileDesktopCSS} ${hoverAndFocusCSS} ${sharedCss} ${activeCSS}`}
-        data-testid={isMobile ? `mobile-${dataTestId}` : `desktop-${dataTestId}`}
+        data-testid={testId}
         id={getMenuLinkID({ isMobile, linkID: id })}
         onClick={isMobile ? onClickLink : undefined}
         aria-current={isActive ? 'page' : undefined}

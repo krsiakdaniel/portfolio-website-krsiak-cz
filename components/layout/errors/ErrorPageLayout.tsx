@@ -2,8 +2,7 @@ import { useEffect } from 'react'
 
 import PageContainer from '@/components/layout/PageContainer'
 import ErrorPageContent from '@/components/layout/errors/ErrorPageContent'
-
-import { ErrorPageLayoutProps } from '@/lib/utils/typeDefinitions/props/layout/errors'
+import { ErrorPageLayoutProps } from '@/components/layout/errors/Errors.types'
 
 import imgError from '@/public/images/webp/errors/error.webp'
 

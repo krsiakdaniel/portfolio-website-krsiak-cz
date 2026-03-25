@@ -1,7 +1,7 @@
+import { EmojiAnimatedProps } from '@/components/shared/EmojiAnimated.types'
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-import { EmojiAnimatedProps } from '@/lib/utils/typeDefinitions/props/shared/emoji-animated'
 
 const EmojiAnimated = ({
   icon,

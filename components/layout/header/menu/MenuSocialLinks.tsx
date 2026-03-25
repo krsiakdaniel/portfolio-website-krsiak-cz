@@ -1,8 +1,8 @@
+import { MenuSocialLinksProps } from '@/components/layout/header/menu/Menu.types'
 import SocialLinkIcon from '@/components/shared/SocialLinkIcon'
 
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
-import { MenuSocialLinksProps } from '@/lib/utils/typeDefinitions/props/layout/header/menu'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

@@ -1,12 +1,12 @@
 import LinkButton from '@/components/shared/LinkButton'
 import Photo from '@/components/shared/Photo'
+import { CallToActionProps } from '@/components/shared/call-to-action/CallToAction.types'
 import CallToActionBubbles from '@/components/shared/call-to-action/CallToActionBubbles'
 import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIcon'
 import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTexts'
 
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
-import { CallToActionProps } from '@/lib/utils/typeDefinitions/props/shared/call-to-action'
 
 const CallToAction = ({
   highlight,

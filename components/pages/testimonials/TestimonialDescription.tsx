@@ -1,6 +1,5 @@
+import { TestimonialDescriptionProps } from '@/components/pages/testimonials/Testimonials.types'
 import Paragraph from '@/components/shared/Paragraph'
-
-import { TestimonialDescriptionProps } from '@/lib/utils/typeDefinitions/props/pages/testimonials'
 
 const TestimonialDescription = ({ description }: TestimonialDescriptionProps) => (
   <Paragraph>{description}</Paragraph>

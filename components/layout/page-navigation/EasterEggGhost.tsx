@@ -1,7 +1,7 @@
+import { EasterEggGhostProps } from '@/components/layout/page-navigation/EasterEggGhost.types'
 import GhostScreaming from '@/components/layout/page-navigation/GhostScreaming'
 
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
-import { EasterEggGhostProps } from '@/lib/utils/typeDefinitions/props/layout/easter-egg-ghost'
 
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 

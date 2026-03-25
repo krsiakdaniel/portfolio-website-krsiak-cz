@@ -9,13 +9,13 @@ import SkipNavigationARIA from '@/components/shared/SkipNavigationARIA'
 import { defaultMetaData } from '@/lib/data/metadata/shared/defaultMetaData'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { RootLayoutProps } from '@/lib/utils/typeDefinitions/props/app'
 
 import { ARIA_LABELS } from '@/localization'
 
 import { roboto, rubik } from './fonts'
-import './globals.css'
+import { RootLayoutProps } from './layout.types'
 
+import './globals.css'
 import 'react-tooltip/dist/react-tooltip.css'
 
 // Default metadata used by all pages if they don't have their own metadata

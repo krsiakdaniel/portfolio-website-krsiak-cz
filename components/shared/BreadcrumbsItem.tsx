@@ -1,8 +1,7 @@
 import Link from 'next/link'
 
 import IconCaretRight from '@/components/icons/IconCaretRight'
-
-import { BreadcrumbsItemProps } from '@/lib/utils/typeDefinitions/props/shared/breadcrumbs-item'
+import { BreadcrumbsItemProps } from '@/components/shared/BreadcrumbsItem.types'
 
 const BreadcrumbsItem = ({
   href,

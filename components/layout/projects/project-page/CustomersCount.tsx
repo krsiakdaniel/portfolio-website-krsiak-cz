@@ -1,7 +1,6 @@
+import { CustomersCountProps } from '@/components/layout/projects/project-page/ProjectPage.types'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
-
-import { CustomersCountProps } from '@/lib/utils/typeDefinitions/props/layout/projects/project-page'
 
 import { SHARED } from '@/localization'
 

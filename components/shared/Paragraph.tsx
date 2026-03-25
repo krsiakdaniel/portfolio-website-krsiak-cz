@@ -1,5 +1,6 @@
+import { ParagraphProps } from '@/components/shared/Paragraph.types'
+
 import { getAttributes } from '@/lib/utils/helpers/getAttributes'
-import { ParagraphProps } from '@/lib/utils/typeDefinitions/props/shared/paragraph'
 
 const Paragraph = ({
   marginTop = 'mt-4',

@@ -1,4 +1,4 @@
-import { ScrollProgressBarProps } from '@/lib/utils/typeDefinitions/props/layout/header/scrollProgressBar'
+import { ScrollProgressBarProps } from './ScrollProgressBar.types'
 
 const ScrollProgressBar = ({ scroll }: ScrollProgressBarProps) => {
   return (
