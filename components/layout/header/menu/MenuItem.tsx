@@ -7,6 +7,7 @@ import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
 const MenuItem = ({ linkItem, isMobile, onClickLink }: MenuItemProps) => {
   const { id, href, icon, ariaLabel, text, dataTestId, isActive } = linkItem
 
+  const testId = isMobile ? `mobile-${dataTestId}` : `desktop-${dataTestId}`
   const mobileDesktopCSS = isMobile ? 'py-3' : 'py-2'
   const hoverAndFocusCSS = 'hover:border-violet-50 hover:bg-violet-50'
   const sharedCss =
@@ -18,12 +19,12 @@ const MenuItem = ({ linkItem, isMobile, onClickLink }: MenuItemProps) => {
     : 'text-neutral-600 hover:text-violet-800'
 
   return (
-    <li>
+    <li role="none">
       <Link
         href={href}
         role="menuitem"
         className={`${mobileDesktopCSS} ${hoverAndFocusCSS} ${sharedCss} ${activeCSS}`}
-        data-testid={isMobile ? `mobile-${dataTestId}` : `desktop-${dataTestId}`}
+        data-testid={testId}
         id={getMenuLinkID({ isMobile, linkID: id })}
         onClick={isMobile ? onClickLink : undefined}
         aria-current={isActive ? 'page' : undefined}
