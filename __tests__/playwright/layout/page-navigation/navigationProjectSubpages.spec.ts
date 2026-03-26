@@ -5,7 +5,7 @@ import { PAGES_URL } from '@/__tests__/playwright/lib/utils/constants/urls/e2eUr
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
 
 test.describe('Navigation - Work Project Subpages', () => {
-  test('Smartsupp Dashboard: navigates to previous and next', async ({ page }) => {
+  test('Smartsupp Dashboard: navigates to next (Komercni Banka)', async ({ page }) => {
     await page.goto(PAGES_URL.workSmartsuppDashboard)
 
     const nextLink = page.locator(
@@ -36,7 +36,16 @@ test.describe('Navigation - Work Project Subpages', () => {
 })
 
 test.describe('Navigation - Personal Project Subpages', () => {
-  test('Krsiak: navigates to next (Cryptomania)', async ({ page }) => {
+  test('Korean Easy: navigates to next (Portfolio Website)', async ({ page }) => {
+    await page.goto(PAGES_URL.personalKoreanEasy)
+
+    const nextLink = page.locator(getDataTestId(DATA_TEST_IDS.projects.personal.koreanEasy.next))
+    await expect(nextLink).toBeVisible()
+    await nextLink.click()
+    await expect(page).toHaveURL(new RegExp(PAGES_URL.personalKrsiak))
+  })
+
+  test('Portfolio Website: navigates to next (Cryptomania)', async ({ page }) => {
     await page.goto(PAGES_URL.personalKrsiak)
 
     const nextLink = page.locator(getDataTestId(DATA_TEST_IDS.projects.personal.krsiak.next))
@@ -45,7 +54,7 @@ test.describe('Navigation - Personal Project Subpages', () => {
     await expect(page).toHaveURL(new RegExp(PAGES_URL.personalCryptoMania))
   })
 
-  test('Cryptomania: navigates to previous (Krsiak)', async ({ page }) => {
+  test('Cryptomania: navigates to previous (Portfolio Website)', async ({ page }) => {
     await page.goto(PAGES_URL.personalCryptoMania)
 
     const prevLink = page.locator(

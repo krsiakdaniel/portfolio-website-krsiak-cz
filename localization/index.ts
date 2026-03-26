@@ -40,9 +40,9 @@ export { FOOTER, HOME } from './ui/navigation'
 export {
   COMPANIES,
   MY_WORK,
+  PROJECTS,
   PROJECT_CRYPTOMANIA,
   PROJECT_INFORMATION,
-  PROJECTS,
   WORK,
 } from './pages/projects'
 export { CAREER_PATH, RESUME } from './pages/resume'
@@ -55,20 +55,29 @@ export { ARIA_LABELS } from './accessibility/aria'
 export { IMAGE_ALT } from './accessibility/imageAlts'
 
 // Metadata
-export { META_CRYPTOMANIA } from './metadata/meta-cryptomania'
 export { META_DEFAULT } from './metadata/meta-default'
-export { META_GROUPON } from './metadata/meta-groupon'
 export { META_HOME } from './metadata/meta-home'
+
+// Metadata - Projects - Work
+export { META_GROUPON } from './metadata/meta-groupon'
 export { META_KOMERCNI_BANKA } from './metadata/meta-komercni-banka'
 export { META_KOOPERATIVA } from './metadata/meta-kooperativa'
-export { META_KRSIAK } from './metadata/meta-krsiak'
 export { META_MORAVIA } from './metadata/meta-moravia'
-export { META_PROJECTS_OVERVIEW_PERSONAL } from './metadata/meta-projects-overview-personal'
 export { META_PROJECTS_OVERVIEW_WORK } from './metadata/meta-projects-overview-work'
-export { META_RESUME } from './metadata/meta-resume'
 export { META_SMARTSUPP_DASHBOARD } from './metadata/meta-smartsupp-dashboard'
 export { META_SMARTSUPP_HELP } from './metadata/meta-smartsupp-help'
 export { META_SMARTSUPP_WEB } from './metadata/meta-smartsupp-web'
+
+// Metadata - Resume
+export { META_RESUME } from './metadata/meta-resume'
+
+// Metadata - Projects - Personal
+export { META_CRYPTOMANIA } from './metadata/meta-cryptomania'
+export { META_KOREAN_EASY } from './metadata/meta-korean-easy'
+export { META_KRSIAK } from './metadata/meta-krsiak'
+export { META_PROJECTS_OVERVIEW_PERSONAL } from './metadata/meta-projects-overview-personal'
+
+// Metadata - Other pages
 export { META_STATUS } from './metadata/meta-status'
 export { META_TESTIMONIALS } from './metadata/meta-testimonials'
 export { META_WHO_I_AM } from './metadata/meta-who-i-am'

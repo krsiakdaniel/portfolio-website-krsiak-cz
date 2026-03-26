@@ -25,7 +25,7 @@ const PageNavigation = ({
     <nav data-testid={DATA_TEST_IDS.navigation.END_OF_PAGE}>
       <div className="container mx-auto mt-20 max-w-(--breakpoint-xl)">
         <div
-          className={`group flex flex-col gap-4 md:flex-row ${hasPreviousLink ? 'justify-between' : 'justify-end'}`}
+          className={`flex flex-col gap-4 md:flex-row ${hasPreviousLink ? 'justify-between' : 'justify-end'}`}
         >
           {hasPreviousLink ? (
             <PageNavigationLink

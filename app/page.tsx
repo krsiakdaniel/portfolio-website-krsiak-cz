@@ -35,9 +35,9 @@ const Page = () => {
       <CallToActionResume />
 
       <PageNavigation
-        linkNext={PAGES_URL.whoIAm}
-        iconNext={ICON_EMOJI.wavingHand}
-        nameNext={TEXT.whoIAm}
+        linkNext={PAGES_URL.workExperience}
+        iconNext={ICON_EMOJI.manTechnologist.lightSkinTone}
+        nameNext={TEXT.workExperience}
         dataTestIdNext={DATA_TEST_IDS.pageNavigation.home.next}
       />
     </PageContainer>

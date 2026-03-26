@@ -15,7 +15,7 @@ import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { ICON_EMOJI, TEXT } from '@/localization'
+import { ICON_EMOJI, PROJECTS, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataKrsiak,
@@ -33,13 +33,13 @@ const ProjectPersonalKrsiak = () => {
       goBackLink={GoBackLinkEnum.Personal}
       sectionID={ID.section.next}
       ariaLabel={TEXT.portfolioWebsite}
-      projectData={projectsPersonalNext[0]}
+      projectData={projectsPersonalNext[1]}
       sections={sections}
       PageNavigation={
         <PageNavigation
-          linkPrevious={PAGES_URL.personalProjects}
-          iconPrevious={ICON_EMOJI.rocket}
-          namePrevious={TEXT.personalProjects}
+          linkPrevious={PAGES_URL.personalKoreanEasy}
+          iconPrevious={ICON_EMOJI.flagSouthKorea}
+          namePrevious={PROJECTS.koreanEasy}
           dataTestIdPrevious={DATA_TEST_IDS.projects.personal.krsiak.previous}
           linkNext={PAGES_URL.personalCryptoMania}
           iconNext={ICON_EMOJI.moneyBag}

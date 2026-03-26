@@ -14,12 +14,16 @@ import playwrightSVG from '@/public/icons/svg/skills/playwright.svg'
 import reactSVG from '@/public/icons/svg/skills/react.svg'
 import reduxSVG from '@/public/icons/svg/skills/redux.svg'
 import scssSVG from '@/public/icons/svg/skills/scss.svg'
+import shadcnUISVG from '@/public/icons/svg/skills/shadcn-ui.svg'
 import sketchSVG from '@/public/icons/svg/skills/sketch.svg'
 import storybookSVG from '@/public/icons/svg/skills/storybook.svg'
 import tailwindSVG from '@/public/icons/svg/skills/tailwind.svg'
 import typescriptSVG from '@/public/icons/svg/skills/typescript.svg'
+import vercelSVG from '@/public/icons/svg/skills/vercel.svg'
 import wordpressSVG from '@/public/icons/svg/skills/wordpress.svg'
 import xdSVG from '@/public/icons/svg/skills/xd.svg'
+import zodSVG from '@/public/icons/svg/skills/zod.svg'
+import zustandSVG from '@/public/icons/svg/skills/zustand.svg'
 
 export {
   chakraSVG,
@@ -38,10 +42,14 @@ export {
   reactSVG,
   reduxSVG,
   scssSVG,
+  shadcnUISVG,
   sketchSVG,
   storybookSVG,
   tailwindSVG,
   typescriptSVG,
+  vercelSVG,
   wordpressSVG,
   xdSVG,
+  zodSVG,
+  zustandSVG,
 }

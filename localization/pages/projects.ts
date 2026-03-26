@@ -4,6 +4,7 @@ import { COMMON_VALUES } from '../ui/common'
 
 export const PROJECTS = {
   cryptoMania: 'CryptoMania',
+  koreanEasy: 'Korean Easy',
   personalProjects: 'Personal Projects',
   portfolioWebsite: 'Portfolio Website',
   next: COMMON_VALUES.next,

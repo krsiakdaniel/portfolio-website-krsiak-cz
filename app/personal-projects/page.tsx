@@ -62,9 +62,9 @@ const ProjectsPersonal = () => {
           iconPrevious={ICON_EMOJI.memo}
           namePrevious={TEXT.resume}
           dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.resume.previous}
-          linkNext={PAGES_URL.testimonials}
-          iconNext={ICON_EMOJI.speechBalloon}
-          nameNext={TEXT.testimonials}
+          linkNext={PAGES_URL.whoIAm}
+          iconNext={ICON_EMOJI.wavingHand}
+          nameNext={TEXT.whoIAm}
           dataTestIdNext={DATA_TEST_IDS.pageNavigation.personalProjects.next}
         />
       </div>

@@ -94,9 +94,9 @@ const ProjectsWork = () => {
       </ProjectsOverviewLayout>
 
       <PageNavigation
-        linkPrevious={PAGES_URL.whoIAm}
-        iconPrevious={ICON_EMOJI.wavingHand}
-        namePrevious={TEXT.whoIAm}
+        linkPrevious={PAGES_URL.home}
+        iconPrevious={ICON_EMOJI.house}
+        namePrevious={TEXT.home}
         dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.workExperience.previous}
         linkNext={PAGES_URL.resume}
         iconNext={ICON_EMOJI.memo}

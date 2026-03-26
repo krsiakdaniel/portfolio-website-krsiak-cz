@@ -17,23 +17,24 @@ export const ENV_URLS = {
 export const PAGES_URL = {
   // Top-level pages
   home: '/',
-  whoIAm: '/who-i-am',
   workExperience: '/work-experience',
   resume: '/resume',
   personalProjects: '/personal-projects',
+  whoIAm: '/who-i-am',
   testimonials: '/testimonials',
   status: '/status',
 
   // Work experience pages
-  workKooperativa: '/work-experience/kooperativa',
   workSmartsuppDashboard: '/work-experience/smartsupp-dashboard',
+  workKomercniBanka: '/work-experience/komercni-banka',
+  workKooperativa: '/work-experience/kooperativa',
   workSmartsuppWeb: '/work-experience/smartsupp-web',
   workSmartsuppHelp: '/work-experience/smartsupp-help',
-  workKomercniBanka: '/work-experience/komercni-banka',
   workGroupon: '/work-experience/groupon',
   workMoravia: '/work-experience/moravia',
 
   // Personal project pages
+  personalKoreanEasy: '/personal-projects/korean-easy',
   personalKrsiak: '/personal-projects/krsiak',
   personalCryptoMania: '/personal-projects/cryptomania',
 } as const satisfies PageUrls

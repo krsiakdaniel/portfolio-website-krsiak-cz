@@ -62,13 +62,13 @@ const WhoIAm = () => {
       </div>
 
       <PageNavigation
-        linkPrevious={PAGES_URL.home}
-        iconPrevious={ICON_EMOJI.house}
-        namePrevious={TEXT.home}
+        linkPrevious={PAGES_URL.personalProjects}
+        iconPrevious={ICON_EMOJI.rocket}
+        namePrevious={TEXT.personalProjects}
         dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.whoIAm.previous}
-        linkNext={PAGES_URL.workExperience}
-        iconNext={ICON_EMOJI.manTechnologist.lightSkinTone}
-        nameNext={TEXT.workExperience}
+        linkNext={PAGES_URL.testimonials}
+        iconNext={ICON_EMOJI.speechBalloon}
+        nameNext={TEXT.testimonials}
         dataTestIdNext={DATA_TEST_IDS.pageNavigation.whoIAm.next}
       />
     </PageContainer>

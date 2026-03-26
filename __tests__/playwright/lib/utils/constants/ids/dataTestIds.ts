@@ -14,29 +14,33 @@ const SECTIONS = {
 }
 
 const LINKS = {
-  // main pages
+  // Top-level pages
   HOME: 'home',
-  WHO_I_AM: 'who-i-am',
   WORK_EXPERIENCE_OVERVIEW: 'work-experience',
   RESUME: 'resume',
   PERSONAL_PROJECTS_OVERVIEW: 'personal-projects',
-  // personal projects
+  WHO_I_AM: 'who-i-am',
   TESTIMONIALS: 'testimonials',
-  KRSIAK: 'krsiak',
-  // work projects
-  CRYPTOMANIA: 'cryptomania',
+
+  // Work experience pages
+  SMARTSUPP_DASHBOARD: 'smartsupp-dashboard',
   KOMERCNI_BANKA: 'komercni-banka',
   KOMERCNI_BANKA_BRANCHES_AND_ATMS: 'komercni-banka-branches-and-atms',
   KOMERCNI_BANKA_BRANCHES_AND_ATMS_DETAILS: 'komercni-banka-branches-and-atms-details',
   KOMERCNI_BANKA_EXCHANGE_RATES: 'komercni-banka-exchange-rates',
   KOMERCNI_BANKA_EXCHANGE_RATES_DETAILS: 'komercni-banka-exchange-rates-details',
+  KOOPERATIVA: 'kooperativa',
   SMARTSUPP_WEB: 'smartsupp-web',
   SMARTSUPP_HELP: 'smartsupp-help',
-  SMARTSUPP_DASHBOARD: 'smartsupp-dashboard',
   MORAVIA: 'moravia',
   GROUPON: 'groupon',
-  KOOPERATIVA: 'kooperativa',
-  // social links
+
+  // Personal project pages
+  KOREAN_EASY: 'korean-easy',
+  KRSIAK: 'krsiak',
+  CRYPTOMANIA: 'cryptomania',
+
+  // Social links
   GITHUB: 'github',
   LINKEDIN: 'linkedin',
 }
@@ -120,26 +124,26 @@ const PAGE = {
 const PAGE_NAVIGATION = {
   home: {
     previous: '',
-    next: `${NAVIGATION.NEXT}-${LINKS.WHO_I_AM}`,
-  },
-  whoIAm: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.HOME}`,
     next: `${NAVIGATION.NEXT}-${LINKS.WORK_EXPERIENCE_OVERVIEW}`,
   },
   workExperience: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.WHO_I_AM}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.HOME}`,
     next: `${NAVIGATION.NEXT}-${LINKS.RESUME}`,
   },
   resume: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.WORK_EXPERIENCE_OVERVIEW}`,
     next: `${NAVIGATION.NEXT}-${LINKS.PERSONAL_PROJECTS_OVERVIEW}`,
   },
   personalProjects: {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.WHO_I_AM}`,
+  },
+  whoIAm: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.PERSONAL_PROJECTS_OVERVIEW}`,
     next: `${NAVIGATION.NEXT}-${LINKS.TESTIMONIALS}`,
   },
   testimonials: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.PERSONAL_PROJECTS_OVERVIEW}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.WHO_I_AM}`,
     next: '',
   },
 }
@@ -147,15 +151,19 @@ const PAGE_NAVIGATION = {
 const PERSONAL_PROJECTS = {
   overview: {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
-    next: `${NAVIGATION.NEXT}-${LINKS.TESTIMONIALS}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.WHO_I_AM}`,
   },
   cryptoMania: {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.KRSIAK}`,
     next: '',
   },
   krsiak: {
-    previous: `${NAVIGATION.PREVIOUS}-${SECTIONS.PERSONAL_PROJECTS}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.KOREAN_EASY}`,
     next: `${NAVIGATION.NEXT}-${LINKS.CRYPTOMANIA}`,
+  },
+  koreanEasy: {
+    previous: '',
+    next: `${NAVIGATION.NEXT}-${LINKS.KRSIAK}`,
   },
 }
 
@@ -178,7 +186,7 @@ const WORK_PROJECTS = {
       next: `${NAVIGATION.NEXT}-${LINKS.SMARTSUPP_HELP}`,
     },
     dashboard: {
-      previous: `${NAVIGATION.PREVIOUS}-${SECTIONS.WORK_EXPERIENCE}`,
+      previous: '',
       next: `${NAVIGATION.NEXT}-${LINKS.KOMERCNI_BANKA}`,
     },
     help: {

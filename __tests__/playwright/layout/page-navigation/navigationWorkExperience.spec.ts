@@ -5,18 +5,18 @@ import { PAGES_URL } from '@/__tests__/playwright/lib/utils/constants/urls/e2eUr
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
 
 test.describe('Navigation - Work Experience', () => {
-  test('navigates to previous page - Who I Am', async ({ page }) => {
+  test('navigates to previous page - Home', async ({ page }) => {
     // Navigate to page
     await page.goto('/work-experience')
 
     // Wait for both click and navigation to complete
     await Promise.all([
-      page.waitForURL('**/who-i-am'),
+      page.waitForURL('/'),
       page.click(getDataTestId(DATA_TEST_IDS.pageNavigation.workExperience.previous)),
     ])
 
     // Verify the final URL
-    await expect(page).toHaveURL(new RegExp(PAGES_URL.whoIAm))
+    await expect(page).toHaveURL(new RegExp(`${PAGES_URL.home}$`))
   })
 
   test('navigates to next page - Resume', async ({ page }) => {
