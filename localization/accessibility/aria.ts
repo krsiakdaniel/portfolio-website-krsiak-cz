@@ -37,7 +37,6 @@ export const ARIA_LABELS = {
     shoppingCart: 'Shopping cart',
     newspaper: 'Newspaper',
     memo: 'Memo',
-    ghost: 'Ghost',
     verticalTrafficLight: 'Vertical traffic light',
     desktopComputer: 'Desktop computer',
     robot: 'Robot',

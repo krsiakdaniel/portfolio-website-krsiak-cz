@@ -61,7 +61,7 @@ const ProjectsPersonal = () => {
           linkPrevious={PAGES_URL.resume}
           iconPrevious={ICON_EMOJI.memo}
           namePrevious={TEXT.resume}
-          dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.resume.previous}
+          dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.personalProjects.previous}
           linkNext={PAGES_URL.whoIAm}
           iconNext={ICON_EMOJI.wavingHand}
           nameNext={TEXT.whoIAm}

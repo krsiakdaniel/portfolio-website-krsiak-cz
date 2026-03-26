@@ -83,7 +83,7 @@ export { META_TESTIMONIALS } from './metadata/meta-testimonials'
 export { META_WHO_I_AM } from './metadata/meta-who-i-am'
 
 // Misc
-export { ANALYTICS_WARNING, CONTACT, EASTER_EGG, MISC } from './misc'
+export { ANALYTICS_WARNING, CONTACT, MISC } from './misc'
 
 // Data
 export { BADGES } from './data/badges'

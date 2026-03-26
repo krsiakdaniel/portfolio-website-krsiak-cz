@@ -36,10 +36,6 @@ export const CONTACT = {
   contactMeQRCode: 'Contact Me — QR code',
 }
 
-export const EASTER_EGG = {
-  ghostScreaming: 'wooooooo!',
-}
-
 export const ANALYTICS_WARNING = {
   googleAnalytics: 'Google Analytics — is not configured!',
   smartlook: 'Smartlook — is not configured!',

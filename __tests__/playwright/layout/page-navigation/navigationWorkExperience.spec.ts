@@ -11,7 +11,7 @@ test.describe('Navigation - Work Experience', () => {
 
     // Wait for both click and navigation to complete
     await Promise.all([
-      page.waitForURL('/'),
+      page.waitForURL(new RegExp(`${PAGES_URL.home}$`)),
       page.click(getDataTestId(DATA_TEST_IDS.pageNavigation.workExperience.previous)),
     ])
 

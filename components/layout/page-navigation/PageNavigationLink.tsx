@@ -17,7 +17,7 @@ const PageNavigationLink = ({
 
   const justifyArrowCSS = hasArrowLeft ? 'justify-start' : 'justify-end'
   const hoverAndFocusCSS =
-    'hover:border-violet-400 hover:bg-violet-100 group-hover:text-violet-800 focus:outline-hidden focus:ring-4 focus:ring-violet-400 focus:bg-violet-100 focus:border-violet-400 '
+    'hover:border-violet-400 hover:bg-violet-100 hover:text-violet-800 focus:outline-hidden focus:ring-4 focus:ring-violet-400 focus:bg-violet-100 focus:border-violet-400 '
 
   return (
     <a

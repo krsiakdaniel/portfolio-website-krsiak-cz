@@ -6,15 +6,13 @@ import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { ICON_EMOJI } from '@/localization'
-
 const PageNavigation = ({
   linkPrevious,
-  iconPrevious = ICON_EMOJI.ghost,
+  iconPrevious,
   namePrevious,
   dataTestIdPrevious,
   linkNext,
-  iconNext = ICON_EMOJI.ghost,
+  iconNext,
   nameNext,
   dataTestIdNext,
 }: PageNavigationProps) => {
@@ -30,7 +28,7 @@ const PageNavigation = ({
           {hasPreviousLink ? (
             <PageNavigationLink
               href={linkPrevious}
-              icon={iconPrevious}
+              icon={iconPrevious!}
               text={namePrevious}
               arrowDirection={ArrowDirectionEnum.Left}
               dataTestId={dataTestIdPrevious}
@@ -41,7 +39,7 @@ const PageNavigation = ({
           {hasNextLink ? (
             <PageNavigationLink
               href={linkNext}
-              icon={iconNext}
+              icon={iconNext!}
               text={nameNext}
               arrowDirection={ArrowDirectionEnum.Right}
               dataTestId={dataTestIdNext}
