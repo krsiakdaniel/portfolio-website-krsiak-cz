@@ -43,6 +43,8 @@ export {
   PROJECTS,
   PROJECT_CRYPTOMANIA,
   PROJECT_INFORMATION,
+  PROJECT_KOREAN_EASY,
+  PROJECT_KRSIAK,
   WORK,
 } from './pages/projects'
 export { CAREER_PATH, RESUME } from './pages/resume'

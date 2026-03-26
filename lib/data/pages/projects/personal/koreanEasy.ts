@@ -12,6 +12,18 @@ export const sections: Section[] = [
         id: '0-0',
         text: PROJECTS_PERSONAL.koreanEasy.items[0].text,
       },
+      {
+        id: '0-1',
+        text: PROJECTS_PERSONAL.koreanEasy.items[1].text,
+      },
+      {
+        id: '0-2',
+        text: PROJECTS_PERSONAL.koreanEasy.items[2].text,
+      },
+      {
+        id: '0-3',
+        text: PROJECTS_PERSONAL.koreanEasy.items[3].text,
+      },
     ],
   },
 ]

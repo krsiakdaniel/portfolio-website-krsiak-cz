@@ -6,8 +6,8 @@
  * @constant
  */
 export const PROJECT_IMAGE_PREVIEW = {
-  WIDTH: 604,
-  HEIGHT: 438,
+  WIDTH: 620,
+  HEIGHT: 433,
 } as const
 
 /**
@@ -19,7 +19,7 @@ export const PROJECT_IMAGE_PREVIEW = {
  */
 export const GALLERY_PREVIEW_4_3 = {
   WIDTH: 1240,
-  HEIGHT: 930,
+  HEIGHT: 866,
 } as const
 
 /**

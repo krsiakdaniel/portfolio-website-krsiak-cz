@@ -13,9 +13,22 @@ export const PROJECTS = {
   workExperience: 'Work Experience',
 }
 
+export const PROJECT_KOREAN_EASY = {
+  alertTitle: 'Private GitHub.',
+  alertDescription:
+    'This is\u00A0a\u00A0commercial project, so\u00A0the source code is\u00A0not publicly available.',
+  alertLinkText: 'Contact Me',
+}
+
+export const PROJECT_KRSIAK = {
+  alertTitle: 'Code quality.',
+  alertDescription: 'Visit my GitHub to see production-level code for the portfolio website.',
+}
+
 export const PROJECT_CRYPTOMANIA = {
-  alertTitle: 'CryptoMania is\u00A0simple project',
-  alertDescription: "See production-level code for\u00A0my 'Portfolio website' on\u00A0GitHub.",
+  alertTitle: 'CryptoMania is\u00A0simple project.',
+  alertDescription: 'See production-level code for\u00A0my Portfolio website.',
+  alertLinkText: 'View on GitHub - Portfolio website',
 }
 
 export const PROJECT_INFORMATION = {

@@ -58,6 +58,7 @@ const FOOTER = {
 
 const ALERT = {
   alertLinkGitHub: `alert-link-${LINKS.GITHUB}`,
+  alertLinkLinkedIn: `alert-link-${LINKS.LINKEDIN}`,
 }
 
 const MENU = {

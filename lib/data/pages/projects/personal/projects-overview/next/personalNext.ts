@@ -10,7 +10,13 @@ import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 import { PROJECTS_PERSONAL_OVERVIEW } from '@/localization/data/projects/personalProjects'
 
-// project images
+// project images - korean easy
+import koreanEasy1 from '@/public/images/webp/projects/personal/korean-easy/korean-easy-1.webp'
+import koreanEasy2 from '@/public/images/webp/projects/personal/korean-easy/korean-easy-2.webp'
+import koreanEasy3 from '@/public/images/webp/projects/personal/korean-easy/korean-easy-3.webp'
+import koreanEasy4 from '@/public/images/webp/projects/personal/korean-easy/korean-easy-4.webp'
+import koreanEasyProjectPreview from '@/public/images/webp/projects/personal/korean-easy/korean-easy-project-preview.webp'
+// project images - krsiak
 import krsiak1 from '@/public/images/webp/projects/personal/krsiak/krsiak-1-light.webp'
 import krsiak2 from '@/public/images/webp/projects/personal/krsiak/krsiak-2-light.webp'
 import krsiak3 from '@/public/images/webp/projects/personal/krsiak/krsiak-3-light.webp'
@@ -23,12 +29,12 @@ export const projectsPersonalNext: Project[] = [
   {
     id: PROJECT_ID.personal.koreanEasy,
     isFeatured: true,
-    image: 'https://placehold.co/600x400',
+    image: koreanEasyProjectPreview.src,
     galleryImages: [
-      { id: 0, src: 'https://placehold.co/600x400' },
-      { id: 1, src: 'https://placehold.co/600x400' },
-      { id: 2, src: 'https://placehold.co/600x400' },
-      { id: 3, src: 'https://placehold.co/600x400' },
+      { id: 0, src: koreanEasy1.src },
+      { id: 1, src: koreanEasy2.src },
+      { id: 2, src: koreanEasy3.src },
+      { id: 3, src: koreanEasy4.src },
     ],
     icon: ICON_EMOJI.flagSouthKorea,
     ariaLabel: ARIA_LABELS.emoji.flag.southKorea,

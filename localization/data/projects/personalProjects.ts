@@ -29,7 +29,16 @@ export const PROJECTS_PERSONAL = {
     titleHighlight: '',
     items: [
       {
-        text: 'Korean language learning app featuring interactive study tools including an alphabet table with stroke order diagrams and audio pronunciation, vocabulary quiz with spaced repetition, dictionary, loanwords, sound words, word pairings, and progress tracking — all centered around teaching Korean (Hangeul) to English speakers.',
+        text: 'Korean language learning app featuring interactive study tools centered around teaching Korean (Hangeul) to English speakers.',
+      },
+      {
+        text: 'Alphabet table with font preview, stroke order diagrams, audio wave pronunciation, and word examples for each letter.',
+      },
+      {
+        text: 'Syllables table showing how Korean consonants and vowels combine to form syllable blocks.',
+      },
+      {
+        text: 'Alphabet flash cards with the letter and illustration on the front, and its meaning revealed on the back.',
       },
     ],
   },
