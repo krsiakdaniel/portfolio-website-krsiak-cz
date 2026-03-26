@@ -6,7 +6,7 @@ import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeyword
 import cryptomaniaOG from '@/public/images/png/open-graph/pages/personal-projects/cryptomania/cryptomania-og.png'
 import cryptomaniaTwitter from '@/public/images/png/open-graph/pages/personal-projects/cryptomania/cryptomania-twitter.png'
 
-import { META_CRYPTOMANIA, TEXT } from '@/localization'
+import { META_CRYPTOMANIA } from '@/localization'
 
 export const metaDataCryptomania: Metadata = {
   title: META_CRYPTOMANIA.title,
@@ -31,6 +31,5 @@ export const metaDataCryptomania: Metadata = {
         url: cryptomaniaTwitter.src,
       },
     ],
-    site: TEXT.twitter,
   },
 }

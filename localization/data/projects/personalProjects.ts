@@ -29,7 +29,7 @@ export const PROJECTS_PERSONAL = {
     titleHighlight: '',
     items: [
       {
-        text: 'Korean language learning app featuring interactive study tools including an alphabet table with stroke order diagrams and audio pronunciation, vocabulary quiz with spaced repetition, dictionary, loanwords, sound words, formality levels, word pairings, and progress tracking — all centered around teaching Korean (Hangeul) to English speakers.',
+        text: 'Korean language learning app featuring interactive study tools including an alphabet table with stroke order diagrams and audio pronunciation, vocabulary quiz with spaced repetition, dictionary, loanwords, sound words, word pairings, and progress tracking — all centered around teaching Korean (Hangeul) to English speakers.',
       },
     ],
   },

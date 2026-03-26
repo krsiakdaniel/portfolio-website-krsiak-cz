@@ -6,7 +6,7 @@ import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeyword
 import smartsuppDashboardOG from '@/public/images/png/open-graph/pages/work-experience/smartsupp/smartsupp-dashboard-og.png'
 import smartsuppDashboardTwitter from '@/public/images/png/open-graph/pages/work-experience/smartsupp/smartsupp-dashboard-twitter.png'
 
-import { META_SMARTSUPP_DASHBOARD, TEXT } from '@/localization'
+import { META_SMARTSUPP_DASHBOARD } from '@/localization'
 
 export const metaDataSmartsuppDashboard: Metadata = {
   title: META_SMARTSUPP_DASHBOARD.title,
@@ -31,6 +31,5 @@ export const metaDataSmartsuppDashboard: Metadata = {
         url: smartsuppDashboardTwitter.src,
       },
     ],
-    site: TEXT.twitter,
   },
 }

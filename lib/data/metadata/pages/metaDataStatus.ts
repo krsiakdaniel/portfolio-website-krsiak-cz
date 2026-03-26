@@ -6,7 +6,7 @@ import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeyword
 import statusOG from '@/public/images/png/open-graph/pages/status/status-og.png'
 import statusTwitter from '@/public/images/png/open-graph/pages/status/status-twitter.png'
 
-import { META_STATUS, TEXT } from '@/localization'
+import { META_STATUS } from '@/localization'
 
 export const metaDataStatus: Metadata = {
   title: META_STATUS.title,
@@ -31,6 +31,5 @@ export const metaDataStatus: Metadata = {
         url: statusTwitter.src,
       },
     ],
-    site: TEXT.twitter,
   },
 }

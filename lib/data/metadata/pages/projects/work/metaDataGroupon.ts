@@ -6,7 +6,7 @@ import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeyword
 import grouponOG from '@/public/images/png/open-graph/pages/work-experience/groupon/groupon-og.png'
 import grouponTwitter from '@/public/images/png/open-graph/pages/work-experience/groupon/groupon-twitter.png'
 
-import { META_GROUPON, TEXT } from '@/localization'
+import { META_GROUPON } from '@/localization'
 
 export const metaDataGroupon: Metadata = {
   title: META_GROUPON.title,
@@ -31,6 +31,5 @@ export const metaDataGroupon: Metadata = {
         url: grouponTwitter.src,
       },
     ],
-    site: TEXT.twitter,
   },
 }

@@ -6,7 +6,7 @@ import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeyword
 import kooperativaOG from '@/public/images/png/open-graph/pages/work-experience/kooperativa/kooperativa-og.png'
 import kooperativaTwitter from '@/public/images/png/open-graph/pages/work-experience/kooperativa/kooperativa-twitter.png'
 
-import { META_KOOPERATIVA, TEXT } from '@/localization'
+import { META_KOOPERATIVA } from '@/localization'
 
 export const metaDataKooperativa: Metadata = {
   title: META_KOOPERATIVA.title,
@@ -31,6 +31,5 @@ export const metaDataKooperativa: Metadata = {
         url: kooperativaTwitter.src,
       },
     ],
-    site: TEXT.twitter,
   },
 }

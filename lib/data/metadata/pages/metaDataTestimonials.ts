@@ -6,7 +6,7 @@ import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeyword
 import testimonialsOG from '@/public/images/png/open-graph/pages/testimonials/testimonials-og.png'
 import testimonialsTwitter from '@/public/images/png/open-graph/pages/testimonials/testimonials-twitter.png'
 
-import { META_TESTIMONIALS, TEXT } from '@/localization'
+import { META_TESTIMONIALS } from '@/localization'
 
 export const metaDataTestimonials: Metadata = {
   title: META_TESTIMONIALS.title,
@@ -31,6 +31,5 @@ export const metaDataTestimonials: Metadata = {
         url: testimonialsTwitter.src,
       },
     ],
-    site: TEXT.twitter,
   },
 }

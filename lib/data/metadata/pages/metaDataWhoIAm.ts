@@ -6,7 +6,7 @@ import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeyword
 import whoIAmOG from '@/public/images/png/open-graph/pages/who-i-am/who-i-am-og.png'
 import whoIAmTwitter from '@/public/images/png/open-graph/pages/who-i-am/who-i-am-twitter.png'
 
-import { META_WHO_I_AM, TEXT } from '@/localization'
+import { META_WHO_I_AM } from '@/localization'
 
 export const metaDataWhoIam: Metadata = {
   title: META_WHO_I_AM.title,
@@ -31,6 +31,5 @@ export const metaDataWhoIam: Metadata = {
         url: whoIAmTwitter.src,
       },
     ],
-    site: TEXT.twitter,
   },
 }

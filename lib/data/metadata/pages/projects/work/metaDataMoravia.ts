@@ -6,7 +6,7 @@ import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeyword
 import moraviaOG from '@/public/images/png/open-graph/pages/work-experience/moravia/moravia-og.png'
 import moraviaTwitter from '@/public/images/png/open-graph/pages/work-experience/moravia/moravia-twitter.png'
 
-import { META_MORAVIA, TEXT } from '@/localization'
+import { META_MORAVIA } from '@/localization'
 
 export const metaDataMoravia: Metadata = {
   title: META_MORAVIA.title,
@@ -31,6 +31,5 @@ export const metaDataMoravia: Metadata = {
         url: moraviaTwitter.src,
       },
     ],
-    site: TEXT.twitter,
   },
 }

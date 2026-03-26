@@ -6,7 +6,7 @@ import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeyword
 import komercniBankaOG from '@/public/images/png/open-graph/pages/work-experience/komercni-banka/komercni-banka-og.png'
 import komercniBankaTwitter from '@/public/images/png/open-graph/pages/work-experience/komercni-banka/komercni-banka-twitter.png'
 
-import { META_KOMERCNI_BANKA, TEXT } from '@/localization'
+import { META_KOMERCNI_BANKA } from '@/localization'
 
 export const metaDataKomercniBanka: Metadata = {
   title: META_KOMERCNI_BANKA.title,
@@ -31,6 +31,5 @@ export const metaDataKomercniBanka: Metadata = {
         url: komercniBankaTwitter.src,
       },
     ],
-    site: TEXT.twitter,
   },
 }
