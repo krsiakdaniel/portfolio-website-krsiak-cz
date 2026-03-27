@@ -18,9 +18,9 @@ import koreanEasy4 from '@/public/images/webp/projects/personal/korean-easy/kore
 import koreanEasyProjectPreview from '@/public/images/webp/projects/personal/korean-easy/korean-easy-project-preview.webp'
 // project images - krsiak
 import krsiak1 from '@/public/images/webp/projects/personal/krsiak/krsiak-1.webp'
-import krsiak2 from '@/public/images/webp/projects/personal/krsiak/krsiak-2-light.webp'
-import krsiak3 from '@/public/images/webp/projects/personal/krsiak/krsiak-3-light.webp'
-import krsiak4 from '@/public/images/webp/projects/personal/krsiak/krsiak-4-light.webp'
+import krsiak2 from '@/public/images/webp/projects/personal/krsiak/krsiak-2.webp'
+import krsiak3 from '@/public/images/webp/projects/personal/krsiak/krsiak-3.webp'
+import krsiak4 from '@/public/images/webp/projects/personal/krsiak/krsiak-4.webp'
 import krsiakProjectPreview from '@/public/images/webp/projects/personal/krsiak/krsiak-project-preview.webp'
 
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
