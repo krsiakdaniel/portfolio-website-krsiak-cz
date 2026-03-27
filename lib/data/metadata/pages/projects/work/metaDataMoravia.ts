@@ -1,35 +1,14 @@
-import { Metadata } from 'next'
-
-import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { createPageMetadata } from '@/lib/utils/helpers/metadata/createPageMetadata'
 
 import moraviaOG from '@/public/images/png/open-graph/pages/work-experience/moravia/moravia-og.png'
 import moraviaTwitter from '@/public/images/png/open-graph/pages/work-experience/moravia/moravia-twitter.png'
 
 import { META_MORAVIA } from '@/localization'
 
-export const metaDataMoravia: Metadata = {
-  title: META_MORAVIA.title,
-  description: META_MORAVIA.description,
-  keywords: formatKeywordsString(META_MORAVIA.keywords),
-  openGraph: {
-    title: META_MORAVIA.title,
-    description: META_MORAVIA.description,
-    images: [
-      {
-        url: moraviaOG.src,
-      },
-    ],
-    url: ENV_URLS.production + PAGES_URL.workMoravia,
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: META_MORAVIA.title,
-    description: META_MORAVIA.description,
-    images: [
-      {
-        url: moraviaTwitter.src,
-      },
-    ],
-  },
-}
+export const metaDataMoravia = createPageMetadata({
+  meta: META_MORAVIA,
+  pageUrl: PAGES_URL.workMoravia,
+  ogImage: moraviaOG,
+  twitterImage: moraviaTwitter,
+})

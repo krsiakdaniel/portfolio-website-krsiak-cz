@@ -1,35 +1,14 @@
-import { Metadata } from 'next'
-
-import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { createPageMetadata } from '@/lib/utils/helpers/metadata/createPageMetadata'
 
 import whoIAmOG from '@/public/images/png/open-graph/pages/who-i-am/who-i-am-og.png'
 import whoIAmTwitter from '@/public/images/png/open-graph/pages/who-i-am/who-i-am-twitter.png'
 
 import { META_WHO_I_AM } from '@/localization'
 
-export const metaDataWhoIam: Metadata = {
-  title: META_WHO_I_AM.title,
-  description: META_WHO_I_AM.description,
-  keywords: formatKeywordsString(META_WHO_I_AM.keywords),
-  openGraph: {
-    title: META_WHO_I_AM.title,
-    description: META_WHO_I_AM.description,
-    images: [
-      {
-        url: whoIAmOG.src,
-      },
-    ],
-    url: ENV_URLS.production + PAGES_URL.whoIAm,
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: META_WHO_I_AM.title,
-    description: META_WHO_I_AM.description,
-    images: [
-      {
-        url: whoIAmTwitter.src,
-      },
-    ],
-  },
-}
+export const metaDataWhoIam = createPageMetadata({
+  meta: META_WHO_I_AM,
+  pageUrl: PAGES_URL.whoIAm,
+  ogImage: whoIAmOG,
+  twitterImage: whoIAmTwitter,
+})
