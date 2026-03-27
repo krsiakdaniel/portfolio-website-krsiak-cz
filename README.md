@@ -171,6 +171,6 @@ Get in touch for collaboration opportunities.
 Preview of the website's main pages and user interface.
 
 ![krsiak.cz | Portfolio Website](/readme-images/main-readme/krsiak/krsiak-1.webp)
-![krsiak.cz | Work Experience](/readme-images/main-readme/krsiak/krsiak-2-light.webp)
-![krsiak.cz | Resume](/readme-images/main-readme/krsiak/krsiak-3-light.webp)
-![krsiak.cz | Personal Projects](/readme-images/main-readme/krsiak/krsiak-4-light.webp)
+![krsiak.cz | Work Experience](/readme-images/main-readme/krsiak/krsiak-2.webp)
+![krsiak.cz | Resume](/readme-images/main-readme/krsiak/krsiak-3.webp)
+![krsiak.cz | Personal Projects](/readme-images/main-readme/krsiak/krsiak-4.webp)

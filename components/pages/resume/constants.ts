@@ -3,6 +3,6 @@ export const CAREER_PATH = {
 } as const
 
 export const RESUME_PREVIEW_IMAGE = {
-  WIDTH: 1150,
-  HEIGHT: 1500,
+  WIDTH: 610,
+  HEIGHT: 790,
 } as const
