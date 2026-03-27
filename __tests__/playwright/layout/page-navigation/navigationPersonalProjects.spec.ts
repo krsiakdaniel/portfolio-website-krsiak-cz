@@ -19,17 +19,17 @@ test.describe('Navigation - Personal Projects', () => {
     await expect(page).toHaveURL(new RegExp(PAGES_URL.resume))
   })
 
-  test('navigates to next page - Testimonials', async ({ page }) => {
+  test('navigates to next page - Who I Am', async ({ page }) => {
     // Navigate to page
     await page.goto('/personal-projects')
 
     // Wait for both click and navigation to complete
     await Promise.all([
-      page.waitForURL('**/testimonials'),
+      page.waitForURL('**/who-i-am'),
       page.click(getDataTestId(DATA_TEST_IDS.projects.personal.overview.next)),
     ])
 
     // Check that it navigated to the page
-    await expect(page).toHaveURL(new RegExp(PAGES_URL.testimonials))
+    await expect(page).toHaveURL(new RegExp(PAGES_URL.whoIAm))
   })
 })

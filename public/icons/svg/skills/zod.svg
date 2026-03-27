@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" fill="none" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#242938" rx="60"/>
+  <!-- Shield shape -->
+  <path fill="#3B82F6" d="M128 36C104 36 72 52 60 60L52 120C52 172 88 210 128 230C168 210 204 172 204 120L196 60C184 52 152 36 128 36Z"/>
+  <!-- Z letter -->
+  <path stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M94 100H162L94 162H162"/>
+</svg>

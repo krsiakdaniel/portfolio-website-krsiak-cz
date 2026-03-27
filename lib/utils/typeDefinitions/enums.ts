@@ -93,12 +93,16 @@ export enum SkillIconEnum {
   React = 'react',
   Redux = 'redux',
   Scss = 'scss',
+  ShadcnUI = 'shadcnUI',
   Storybook = 'storybook',
   Sketch = 'sketch',
   Tailwind = 'tailwind',
   TypeScript = 'typescript',
+  Vercel = 'vercel',
   WordPress = 'wordpress',
   XD = 'xd',
+  Zod = 'zod',
+  Zustand = 'zustand',
 }
 
 // Skills
@@ -129,6 +133,7 @@ export enum SkillsEnum {
   Redux = 'Redux',
   ResponsiveDesign = 'Responsive Design',
   SASS = 'SASS',
+  ShadcnUI = 'shadcn/ui',
   Storybook = 'Storybook',
   Tailwind = 'Tailwind',
   TeamManagement = 'Team Management',
@@ -136,5 +141,8 @@ export enum SkillsEnum {
   Trello = 'Trello',
   TypeScript = 'TypeScript',
   UX = 'UX',
+  Vercel = 'Vercel',
   WordPress = 'WordPress',
+  Zod = 'Zod',
+  Zustand = 'Zustand',
 }

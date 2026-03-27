@@ -52,6 +52,13 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'placehold.co',
+        port: '',
+        pathname: '/**',
+        search: '',
+      },
+      {
+        protocol: 'https',
         hostname: 'uptime.betterstack.com',
         port: '',
         pathname: '/**',

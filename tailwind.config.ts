@@ -19,16 +19,6 @@ const customKeyframes = {
     '0%, 100%': { transform: 'scale(1)', opacity: '0.5' },
     '50%': { transform: 'scale(1.1)', opacity: '0.7' },
   },
-  // CSS classname: animate-ghost-previous
-  animateGhostPrevious: {
-    '0%, 100%': { transform: 'translateX(0)' },
-    '50%': { transform: 'translateX(-30px)' },
-  },
-  // CSS classname: animate-ghost-next
-  animateGhostNext: {
-    '0%, 100%': { transform: 'translateX(0)' },
-    '50%': { transform: 'translateX(30px)' },
-  },
   // CSS classname: animate-gentle-bounce
   gentleBounce: {
     '0%, 100%': { transform: 'translateY(0)' },
@@ -65,8 +55,6 @@ const EASE_IN_OUT = 'ease-in-out' as const
 
 const customAnimations = {
   'pulse-bubble': `pulseBubble ${ANIMATION_TIMING.THREE_SECONDS} infinite`,
-  'ghost-previous': `animateGhostPrevious ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
-  'ghost-next': `animateGhostNext ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
   'gentle-bounce': `gentleBounce ${ANIMATION_TIMING.TWO_SECONDS} ${EASE_IN_OUT} infinite`,
   'fade-in-scroll': `fadeInScroll ${ANIMATION_TIMING.HALF_SECOND} ${EASE_IN_OUT}`,
   'slide-down': `slideDown ${ANIMATION_TIMING.QUARTER_SECOND} ${EASE_IN_OUT}`,

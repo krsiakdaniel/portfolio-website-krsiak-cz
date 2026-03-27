@@ -16,12 +16,16 @@ import {
   reactSVG,
   reduxSVG,
   scssSVG,
+  shadcnUISVG,
   sketchSVG,
   storybookSVG,
   tailwindSVG,
   typescriptSVG,
+  vercelSVG,
   wordpressSVG,
   xdSVG,
+  zodSVG,
+  zustandSVG,
 } from '@/lib/data/shared/skill-icons/skillIconsSVG'
 
 import { SkillToIconMap } from '@/lib/utils/typeDefinitions/interfaces'
@@ -44,10 +48,14 @@ export const skillIcons: SkillToIconMap = {
   react: reactSVG,
   redux: reduxSVG,
   scss: scssSVG,
+  shadcnUI: shadcnUISVG,
   sketch: sketchSVG,
   storybook: storybookSVG,
   tailwind: tailwindSVG,
   typescript: typescriptSVG,
+  vercel: vercelSVG,
   wordpress: wordpressSVG,
   xd: xdSVG,
+  zod: zodSVG,
+  zustand: zustandSVG,
 }

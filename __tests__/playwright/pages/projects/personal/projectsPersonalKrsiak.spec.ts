@@ -11,6 +11,11 @@ test.describe('Project - Krsiak', () => {
   test('Links', async ({ page }) => {
     await page.goto(PAGES_URL.personalKrsiak)
 
+    await test.step('Alert GitHub link', async () => {
+      const alertLink = page.getByTestId(DATA_TEST_IDS.alert.alertLinkGitHub)
+      await expect(alertLink).toHaveAttribute('href', EXTERNAL_URL.gitHub)
+    })
+
     await test.step('Website link', async () => {
       const link = page.getByTestId('project-link-website-krsiak')
       await expect(link).toHaveAttribute('href', PROJECTS_PERSONAL_URLS.personalKrsiakExternal)

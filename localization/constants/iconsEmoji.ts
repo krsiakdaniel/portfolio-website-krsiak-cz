@@ -37,7 +37,6 @@ export const ICON_EMOJI = {
   newspaper: '📰',
   globeShowingEuropeAfrica: '🌍',
   memo: '📝',
-  ghost: '👻',
   verticalTrafficLight: '🚦',
   desktopComputer: '🖥️',
   robot: '🤖',

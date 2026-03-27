@@ -20,13 +20,5 @@ test.describe('Project - Cryptomania', () => {
       const link = page.getByTestId('project-link-website-cryptomania')
       await expect(link).toHaveAttribute('href', PROJECTS_PERSONAL_URLS.personalCryptoManiaExternal)
     })
-
-    await test.step('GitHub link', async () => {
-      const link = page.getByTestId(DATA_TEST_IDS.externalLinks.projectLinkGitHub)
-      await expect(link).toHaveAttribute(
-        'href',
-        'https://github.com/krsiakdaniel/cryptocurrency-prices',
-      )
-    })
   })
 })

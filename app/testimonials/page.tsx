@@ -79,9 +79,9 @@ const Testimonials = () => {
       </div>
 
       <PageNavigation
-        linkPrevious={PAGES_URL.personalProjects}
-        iconPrevious={ICON_EMOJI.rocket}
-        namePrevious={TEXT.personalProjects}
+        linkPrevious={PAGES_URL.whoIAm}
+        iconPrevious={ICON_EMOJI.wavingHand}
+        namePrevious={TEXT.whoIAm}
         dataTestIdPrevious={DATA_TEST_IDS.pageNavigation.testimonials.previous}
       />
     </PageContainer>

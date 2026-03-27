@@ -57,8 +57,6 @@ const ProjectPageLayoutWrapper = ({
           sectionID={sectionID}
         />
 
-        {showAlert}
-
         <article>
           <ProjectInformation
             description={description}
@@ -67,6 +65,7 @@ const ProjectPageLayoutWrapper = ({
             projectLinks={projectLinks}
             linkGitHub={linkGitHub}
           />
+          {showAlert}
           <ProjectResponsibility sections={sections} />
           <Gallery images={galleryImages} />
 

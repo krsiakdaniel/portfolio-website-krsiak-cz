@@ -6,7 +6,7 @@ import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeyword
 import personalProjectsOverviewOG from '@/public/images/png/open-graph/pages/personal-projects/personal-projects-og.png'
 import personalProjectsOverviewTwitter from '@/public/images/png/open-graph/pages/personal-projects/personal-projects-twitter.png'
 
-import { META_PROJECTS_OVERVIEW_PERSONAL, TEXT } from '@/localization'
+import { META_PROJECTS_OVERVIEW_PERSONAL } from '@/localization'
 
 export const metaDataPersonalProjects: Metadata = {
   title: META_PROJECTS_OVERVIEW_PERSONAL.title,
@@ -31,6 +31,5 @@ export const metaDataPersonalProjects: Metadata = {
         url: personalProjectsOverviewTwitter.src,
       },
     ],
-    site: TEXT.twitter,
   },
 }

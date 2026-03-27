@@ -208,6 +208,7 @@ export interface PageUrls {
   readonly workMoravia: string
 
   // Personal project pages
+  readonly personalKoreanEasy: string
   readonly personalKrsiak: string
   readonly personalCryptoMania: string
 }
@@ -228,6 +229,7 @@ export interface ProjectsWorkUrls {
 
 // Projects Personal URLs
 export interface ProjectsPersonalUrls {
+  readonly personalKoreanEasyExternal: string
   readonly personalKrsiakExternal: string
   readonly personalCryptoManiaExternal: string
 }
@@ -299,6 +301,7 @@ export interface ProjectIds {
     readonly moravia: string
   }
   readonly personal: {
+    readonly koreanEasy: string
     readonly krsiak: string
     readonly cryptoMania: string
   }

@@ -49,7 +49,7 @@ const ProjectPersonalCryptomania = () => {
             linkComponent={
               <SocialLink
                 href={EXTERNAL_URL.gitHub}
-                text={TEXT.gitHubKrsiak}
+                text={PROJECT_CRYPTOMANIA.alertLinkText}
                 type={AlertType}
                 dataTestId={DATA_TEST_IDS.alert.alertLinkGitHub}
               />

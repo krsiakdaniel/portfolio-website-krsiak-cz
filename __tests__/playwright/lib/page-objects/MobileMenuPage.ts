@@ -46,6 +46,7 @@ export class MobileMenuPage {
   }
 
   async openMenu() {
+    await this.toggleButton.waitFor({ state: 'visible' })
     await this.toggleButton.click()
     await expect(this.menuComponent).toBeVisible()
   }

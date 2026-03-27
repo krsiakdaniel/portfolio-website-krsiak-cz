@@ -6,7 +6,7 @@ import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeyword
 import resumeOG from '@/public/images/png/open-graph/pages/resume/resume-og.png'
 import resumeTwitter from '@/public/images/png/open-graph/pages/resume/resume-twitter.png'
 
-import { META_RESUME, TEXT } from '@/localization'
+import { META_RESUME } from '@/localization'
 
 export const metaDataResume: Metadata = {
   title: META_RESUME.title,
@@ -31,6 +31,5 @@ export const metaDataResume: Metadata = {
         url: resumeTwitter.src,
       },
     ],
-    site: TEXT.twitter,
   },
 }

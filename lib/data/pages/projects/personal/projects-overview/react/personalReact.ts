@@ -59,7 +59,6 @@ export const projectsPersonalReact: Project[] = [
         dataTestId: PROJECTS_PERSONAL_OVERVIEW.react.projectLinks[0].dataTestId,
       },
     ],
-    linkGitHub: PROJECTS_PERSONAL_OVERVIEW.react.linkGitHub,
     personalProjectNote: PROJECTS_PERSONAL_OVERVIEW.react.personalProjectNote,
     linkProjectPage: PAGES_URL.personalCryptoMania,
   },

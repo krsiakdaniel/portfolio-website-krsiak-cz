@@ -43,6 +43,7 @@ export const COMMON_VALUES = {
   figma: 'Figma',
   storybook: 'Storybook',
   xd: 'Adobe XD',
+  vercel: 'Vercel',
   sketch: 'Sketch',
   graphql: 'GraphQL',
   wordpress: 'WordPress',
@@ -67,5 +68,4 @@ export const SOCIAL_LINKS = {
   gitHubCode: 'GitHub Code',
   gitHubKrsiak: `GitHub ${EM_DASH} website-krsiak-cz`,
   resumePDF: 'Resume PDF',
-  twitter: '@krsiak_daniel',
 }

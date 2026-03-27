@@ -8,14 +8,6 @@ import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const pagesLinks: PageLinkItem[] = [
   {
-    id: ID.websiteLink.whoIAm,
-    href: PAGES_URL.whoIAm,
-    icon: ICON_EMOJI.wavingHand,
-    ariaLabel: ARIA_LABELS.emoji.wavingHand,
-    text: TEXT.whoIAm,
-    dataTestId: DATA_TEST_IDS.pagesLinks.whoIAm,
-  },
-  {
     id: ID.websiteLink.workExperience,
     href: PAGES_URL.workExperience,
     icon: ICON_EMOJI.manTechnologist.lightSkinTone,
@@ -38,6 +30,14 @@ export const pagesLinks: PageLinkItem[] = [
     ariaLabel: ARIA_LABELS.emoji.rocket,
     text: TEXT.personalProjects,
     dataTestId: DATA_TEST_IDS.pagesLinks.personalProjects,
+  },
+  {
+    id: ID.websiteLink.whoIAm,
+    href: PAGES_URL.whoIAm,
+    icon: ICON_EMOJI.wavingHand,
+    ariaLabel: ARIA_LABELS.emoji.wavingHand,
+    text: TEXT.whoIAm,
+    dataTestId: DATA_TEST_IDS.pagesLinks.whoIAm,
   },
   {
     id: ID.websiteLink.testimonials,

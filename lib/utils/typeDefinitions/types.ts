@@ -44,12 +44,16 @@ export type SkillIconType =
   | SkillIconEnum.React
   | SkillIconEnum.Redux
   | SkillIconEnum.Scss
+  | SkillIconEnum.ShadcnUI
   | SkillIconEnum.Storybook
   | SkillIconEnum.Sketch
   | SkillIconEnum.Tailwind
   | SkillIconEnum.TypeScript
+  | SkillIconEnum.Vercel
   | SkillIconEnum.WordPress
   | SkillIconEnum.XD
+  | SkillIconEnum.Zod
+  | SkillIconEnum.Zustand
 
 // PARAGRAPH
 // Define possible margin top values

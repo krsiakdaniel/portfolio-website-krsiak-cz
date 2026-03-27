@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" fill="none" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#000000" rx="60"/>
+  <!-- Vercel triangle -->
+  <path fill="#FFFFFF" d="M128 52L220 204H36L128 52Z"/>
+</svg>
