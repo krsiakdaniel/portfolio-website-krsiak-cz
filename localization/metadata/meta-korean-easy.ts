@@ -3,7 +3,7 @@ import { COMMON_VALUES } from '../ui/common'
 export const META_KOREAN_EASY = {
   title: `Korean Easy | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'Korean language learning app with alphabet, spaced repetition, dictionary and loanwords, teaching Hangeul to English speakers.',
   keywords: {
     koreanEasy: 'Korean Easy',
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,

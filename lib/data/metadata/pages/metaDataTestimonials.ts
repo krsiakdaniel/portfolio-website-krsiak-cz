@@ -1,35 +1,14 @@
-import { Metadata } from 'next'
-
-import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+import { createPageMetadata } from '@/lib/utils/helpers/metadata/createPageMetadata'
 
 import testimonialsOG from '@/public/images/png/open-graph/pages/testimonials/testimonials-og.png'
 import testimonialsTwitter from '@/public/images/png/open-graph/pages/testimonials/testimonials-twitter.png'
 
 import { META_TESTIMONIALS } from '@/localization'
 
-export const metaDataTestimonials: Metadata = {
-  title: META_TESTIMONIALS.title,
-  description: META_TESTIMONIALS.description,
-  keywords: formatKeywordsString(META_TESTIMONIALS.keywords),
-  openGraph: {
-    title: META_TESTIMONIALS.title,
-    description: META_TESTIMONIALS.description,
-    images: [
-      {
-        url: testimonialsOG.src,
-      },
-    ],
-    url: ENV_URLS.production + PAGES_URL.testimonials,
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: META_TESTIMONIALS.title,
-    description: META_TESTIMONIALS.description,
-    images: [
-      {
-        url: testimonialsTwitter.src,
-      },
-    ],
-  },
-}
+export const metaDataTestimonials = createPageMetadata({
+  meta: META_TESTIMONIALS,
+  pageUrl: PAGES_URL.testimonials,
+  ogImage: testimonialsOG,
+  twitterImage: testimonialsTwitter,
+})
