@@ -109,17 +109,23 @@ const nextConfig = {
               // Only allow resources to be loaded from the same origin
               "default-src 'self'",
 
-              // Allow scripts from same origin, inline scripts, eval(), and Google Tag Manager
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com",
+              // Allow scripts from same origin, inline scripts, eval(), Google Tag Manager, and Hotjar
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.hotjar.com",
 
-              // Allow API/network requests to same origin and Google Analytics endpoints
-              "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com",
+              // Allow API/network requests to same origin, Google Analytics, and Hotjar endpoints
+              "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.hotjar.com wss://*.hotjar.com",
 
               // Allow styles from same origin and inline styles (required for Tailwind CSS)
               "style-src 'self' 'unsafe-inline'",
 
-              // Allow images from same origin, Google Analytics, data URIs, and any HTTPS source
-              "img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com data: https:",
+              // Allow images from same origin, Google Analytics, Hotjar, data URIs, and any HTTPS source
+              "img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com https://*.hotjar.com data: https:",
+
+              // Allow fonts from Hotjar
+              "font-src 'self' https://*.hotjar.com",
+
+              // Allow frames from Hotjar (for feedback widgets)
+              'frame-src https://*.hotjar.com',
             ].join('; '),
           },
         ],
@@ -133,15 +139,6 @@ const nextConfig = {
               process.env.NODE_ENV === 'development'
                 ? 'no-cache, no-store, must-revalidate' // Disable caching in development for instant updates
                 : 'public, max-age=3600, must-revalidate', // Cache for 1 hour in production, then revalidate
-          },
-        ],
-      },
-      {
-        source: '/recorder.js', // Smartlook analytics script
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, stale-while-revalidate=86400', // Cache for 1 year, allow stale content for 24h while revalidating
           },
         ],
       },

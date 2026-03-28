@@ -80,7 +80,7 @@ This portfolio website is built using modern technologies and tools.
 ### Analytics & Monitoring
 
 - 📊 [Google Analytics](https://analytics.google.com/)
-- 👁️ [Smartlook](https://www.smartlook.com/)
+- 👁️ [Hotjar](https://www.hotjar.com/)
 - 📈 [Better Uptime](https://betteruptime.com/)
 
 ### DevOps & Deployment

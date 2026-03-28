@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
+import Hotjar from '@/components/analytics/Hotjar'
 import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
 import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
@@ -37,6 +38,7 @@ const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
     <html lang="en" className={`${roboto.variable} ${rubik.variable}`}>
       <head>
         <GoogleAnalytics />
+        <Hotjar />
         <AppleTouchIcons />
       </head>
       <body>
