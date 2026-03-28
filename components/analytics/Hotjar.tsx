@@ -5,14 +5,8 @@ import Script from 'next/script'
 import { ANALYTICS_WARNING } from '@/localization'
 
 const Hotjar = () => {
-  // Don't load Hotjar in development or on localhost
-  if (
-    process.env.NODE_ENV === 'development' ||
-    (typeof window !== 'undefined' &&
-      (window.location.hostname === 'localhost' ||
-        window.location.hostname === '127.0.0.1' ||
-        window.location.hostname === '::1'))
-  ) {
+  // Don't load Hotjar in development
+  if (process.env.NODE_ENV === 'development') {
     return null
   }
 
