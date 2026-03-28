@@ -36,5 +36,4 @@ export const PAGES_URL = {
   // Personal project pages
   personalKoreanEasy: '/personal-projects/korean-easy',
   personalKrsiak: '/personal-projects/krsiak',
-  personalCryptoMania: '/personal-projects/cryptomania',
 } as const satisfies PageUrls

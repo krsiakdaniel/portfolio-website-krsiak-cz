@@ -85,6 +85,11 @@ const nextConfig = {
         permanent: true, // Use 301 for permanent redirect
       },
       {
+        source: '/personal-projects/cryptomania', // The deleted page
+        destination: '/personal-projects', // Redirect to 'personal-projects'
+        permanent: true, // Use 301 for permanent redirect
+      },
+      {
         source: '/status-page', // Renamed page
         destination: '/status', // Redirect to 'status'
         permanent: true, // Use 301 for permanent redirect

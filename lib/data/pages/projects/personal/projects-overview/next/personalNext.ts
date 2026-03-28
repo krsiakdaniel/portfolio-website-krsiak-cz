@@ -28,7 +28,7 @@ import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 export const projectsPersonalNext: Project[] = [
   {
     id: PROJECT_ID.personal.koreanEasy,
-    isFeatured: true,
+    isFeatured: false,
     image: koreanEasyProjectPreview.src,
     galleryImages: [
       { id: 0, src: koreanEasy1.src },

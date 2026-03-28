@@ -15,6 +15,5 @@ export const PROJECT_ID: ProjectIds = {
   personal: {
     koreanEasy: 'link-project-personal-korean-easy',
     krsiak: 'link-project-personal-krsiak',
-    cryptoMania: 'link-project-personal-cryptomania',
   },
 }

@@ -46,7 +46,7 @@ const eslintConfig = [
     },
     settings: {
       react: {
-        version: 'detect', // Auto-detect React version
+        version: '19.0', // Hardcoded to avoid scanning node_modules on every lint run
       },
     },
     languageOptions: {

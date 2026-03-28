@@ -10,7 +10,6 @@ import CallToActionGitHub from '@/components/shared/call-to-action/cta-banners/C
 
 import { metaDataPersonalProjects } from '@/lib/data/metadata/pages/projects/metaDataPersonalProjects'
 import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
-import { projectsPersonalReact } from '@/lib/data/pages/projects/personal/projects-overview/react/personalReact'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
@@ -46,13 +45,6 @@ const ProjectsPersonal = () => {
           sectionId={ID.section.next}
           sectionText={TEXT.next}
           projectData={projectsPersonalNext}
-        />
-
-        {/* REACT */}
-        <ProjectSection
-          sectionId={ID.section.react}
-          sectionText={TEXT.react}
-          projectData={projectsPersonalReact}
         />
       </ProjectsOverviewLayout>
 

@@ -41,7 +41,6 @@ export {
   COMPANIES,
   MY_WORK,
   PROJECTS,
-  PROJECT_CRYPTOMANIA,
   PROJECT_INFORMATION,
   PROJECT_KOREAN_EASY,
   PROJECT_KRSIAK,
@@ -74,7 +73,6 @@ export { META_SMARTSUPP_WEB } from './metadata/meta-smartsupp-web'
 export { META_RESUME } from './metadata/meta-resume'
 
 // Metadata - Projects - Personal
-export { META_CRYPTOMANIA } from './metadata/meta-cryptomania'
 export { META_KOREAN_EASY } from './metadata/meta-korean-easy'
 export { META_KRSIAK } from './metadata/meta-krsiak'
 export { META_PROJECTS_OVERVIEW_PERSONAL } from './metadata/meta-projects-overview-personal'
