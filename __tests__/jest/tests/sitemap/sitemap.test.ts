@@ -41,7 +41,6 @@ describe('sitemap', () => {
       PAGES_URL.workMoravia,
       PAGES_URL.personalProjects,
       PAGES_URL.personalKrsiak,
-      PAGES_URL.personalCryptoMania,
       PAGES_URL.testimonials,
       PAGES_URL.status,
     ]

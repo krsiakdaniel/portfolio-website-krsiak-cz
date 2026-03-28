@@ -15,15 +15,6 @@ export const PROJECTS_PERSONAL = {
       },
     ],
   },
-  cryptoMania: {
-    title: 'Description',
-    titleHighlight: '',
-    items: [
-      {
-        text: 'This site was created to\u00A0display cryptocurrencies with the\u00A0ability to\u00A0search for\u00A0them and\u00A0display their current value.',
-      },
-    ],
-  },
   koreanEasy: {
     title: 'Description',
     titleHighlight: '',
@@ -63,24 +54,6 @@ export const PROJECTS_PERSONAL_OVERVIEW = {
     linkGitHub: GITHUB_URLS.portfolioWebsiteKrsiak,
     personalProjectNote: 'My main coding project.',
     linkProjectPage: PAGES_URL.personalKrsiak,
-  },
-  react: {
-    title: 'CryptoMania',
-    company: 'Personal project',
-    role: `Front End ${EM_DASH}\u00A0React`,
-    description:
-      'Crypto currency prices app fetching latest data from CoinGecko\u00A0API. Simple project in\u00A0Chakra\u00A0UI with dark mode.',
-    linkText: 'Project details',
-    projectLinks: [
-      {
-        urlText: 'Website',
-        url: PROJECTS_PERSONAL_URLS.personalCryptoManiaExternal,
-        dataTestId: DATA_TEST_IDS.links.CRYPTOMANIA,
-      },
-    ],
-    linkGitHub: GITHUB_URLS.cryptoMania,
-    personalProjectNote: 'Project to\u00A0exercise coding.',
-    linkProjectPage: PAGES_URL.personalCryptoMania,
   },
   koreanEasy: {
     title: 'Korean Easy',

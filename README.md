@@ -108,7 +108,7 @@ The website has these main pages and project detail pages.
 🚀 **Personal Projects**
 
 - 👨🏻‍💻 [Portfolio Website - krsiak.cz](https://krsiak.cz/personal-projects/krsiak)
-- 💰 [CryptoMania](https://krsiak.cz/personal-projects/cryptomania)
+- 🇰🇷 [Korean Easy](https://krsiak.cz/personal-projects/korean-easy)
 
 👨🏻‍💻 **Work Experience**
 

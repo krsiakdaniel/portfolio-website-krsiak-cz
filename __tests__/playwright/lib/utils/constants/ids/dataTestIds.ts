@@ -38,7 +38,6 @@ const LINKS = {
   // Personal project pages
   KOREAN_EASY: 'korean-easy',
   KRSIAK: 'krsiak',
-  CRYPTOMANIA: 'cryptomania',
 
   // Social links
   GITHUB: 'github',
@@ -154,13 +153,9 @@ const PERSONAL_PROJECTS = {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.RESUME}`,
     next: `${NAVIGATION.NEXT}-${LINKS.WHO_I_AM}`,
   },
-  cryptoMania: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.KRSIAK}`,
-    next: '',
-  },
   krsiak: {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.KOREAN_EASY}`,
-    next: `${NAVIGATION.NEXT}-${LINKS.CRYPTOMANIA}`,
+    next: '',
   },
   koreanEasy: {
     previous: '',

@@ -85,14 +85,6 @@ export const test = base.extend<PortfolioFixtures>({
         technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
         description: 'Personal portfolio and blog',
       },
-      {
-        id: 'cryptomania',
-        title: 'Cryptomania',
-        type: 'personal',
-        url: '/personal-projects/cryptomania',
-        technologies: ['React', 'API Integration', 'Chart.js'],
-        description: 'Cryptocurrency price tracking application',
-      },
     ])
   },
 

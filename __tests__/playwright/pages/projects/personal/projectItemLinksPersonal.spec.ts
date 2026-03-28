@@ -8,9 +8,4 @@ test.describe('Projects Personal - Page links', () => {
     await page.goto(PAGES_URL.personalProjects)
     await testProjectLink(page, PAGES_URL.personalKrsiak, 'link-project-personal-krsiak')
   })
-
-  test('Project - Cryptomania', async ({ page }) => {
-    await page.goto(PAGES_URL.personalProjects)
-    await testProjectLink(page, PAGES_URL.personalCryptoMania, 'link-project-personal-cryptomania')
-  })
 })

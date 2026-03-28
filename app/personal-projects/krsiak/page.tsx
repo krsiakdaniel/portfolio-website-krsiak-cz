@@ -18,7 +18,7 @@ import { AlertTypeEnum, GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { ICON_EMOJI, PROJECTS, PROJECT_CRYPTOMANIA, PROJECT_KRSIAK, TEXT } from '@/localization'
+import { ICON_EMOJI, PROJECTS, PROJECT_KRSIAK, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataKrsiak,
@@ -37,7 +37,7 @@ const ProjectPersonalKrsiak = () => {
           linkComponent={
             <SocialLink
               href={EXTERNAL_URL.gitHub}
-              text={PROJECT_CRYPTOMANIA.alertLinkText}
+              text={PROJECT_KRSIAK.alertLinkText}
               type={AlertType}
               dataTestId={DATA_TEST_IDS.alert.alertLinkGitHub}
             />
@@ -61,10 +61,6 @@ const ProjectPersonalKrsiak = () => {
           iconPrevious={ICON_EMOJI.flagSouthKorea}
           namePrevious={PROJECTS.koreanEasy}
           dataTestIdPrevious={DATA_TEST_IDS.projects.personal.krsiak.previous}
-          linkNext={PAGES_URL.personalCryptoMania}
-          iconNext={ICON_EMOJI.moneyBag}
-          nameNext={TEXT.cryptoMania}
-          dataTestIdNext={DATA_TEST_IDS.projects.personal.krsiak.next}
         />
       }
     />

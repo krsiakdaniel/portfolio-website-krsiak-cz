@@ -3,7 +3,6 @@ import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
 import { COMMON_VALUES } from '../ui/common'
 
 export const PROJECTS = {
-  cryptoMania: 'CryptoMania',
   koreanEasy: 'Korean Easy',
   personalProjects: 'Personal Projects',
   portfolioWebsite: 'Portfolio Website',
@@ -21,13 +20,8 @@ export const PROJECT_KOREAN_EASY = {
 }
 
 export const PROJECT_KRSIAK = {
-  alertTitle: 'Code quality.',
-  alertDescription: 'Visit my GitHub to see production-level code for the portfolio website.',
-}
-
-export const PROJECT_CRYPTOMANIA = {
-  alertTitle: 'CryptoMania is\u00A0simple project.',
-  alertDescription: 'See production-level code for\u00A0my Portfolio website.',
+  alertTitle: 'Production-quality code.',
+  alertDescription: 'This codebase reflects how\u00A0I\u00A0work with code.',
   alertLinkText: 'View on GitHub - Portfolio website',
 }
 

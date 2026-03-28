@@ -17,7 +17,7 @@ import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 export const projectsWorkLocalization: Project[] = [
   {
     id: PROJECT_ID.work.moravia,
-    isFeatured: true,
+    isFeatured: false,
     image: moraviaProjectPreview.src,
     galleryImages: [
       { id: 0, src: moravia1.src },

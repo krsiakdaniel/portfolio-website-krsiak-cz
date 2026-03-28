@@ -30,7 +30,6 @@ const sitemapEntries: SitemapEntry[] = [
   createSitemapEntry(PAGES_URL.personalProjects, 0.8),
   createSitemapEntry(PAGES_URL.personalKoreanEasy, 0.8),
   createSitemapEntry(PAGES_URL.personalKrsiak, 0.8),
-  createSitemapEntry(PAGES_URL.personalCryptoMania, 0.8),
 
   // Priority 0.6
   createSitemapEntry(PAGES_URL.whoIAm, 0.6),

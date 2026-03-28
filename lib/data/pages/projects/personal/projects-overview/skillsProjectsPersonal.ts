@@ -13,13 +13,6 @@ export const iconsSkillsProjectsPersonalKrsiak: Icon[] = getSkillsIcons([
   SkillIconEnum.Netlify,
 ])
 
-export const iconsSkillsProjectsPersonalCryptomania: Icon[] = getSkillsIcons([
-  SkillIconEnum.TypeScript,
-  SkillIconEnum.React,
-  SkillIconEnum.Chakra,
-  SkillIconEnum.Netlify,
-])
-
 export const iconsSkillsProjectsPersonalKoreanEasy: Icon[] = getSkillsIcons([
   SkillIconEnum.TypeScript,
   SkillIconEnum.React,

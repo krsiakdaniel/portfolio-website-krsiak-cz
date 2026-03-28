@@ -18,5 +18,4 @@ export const PROJECTS_WORK_URLS = {
 export const PROJECTS_PERSONAL_URLS = {
   personalKoreanEasyExternal: 'https://koreaneasy.com/',
   personalKrsiakExternal: 'https://krsiak.cz/',
-  personalCryptoManiaExternal: 'https://cryptocurrency-prices-one.vercel.app/',
 } as const satisfies ProjectsPersonalUrls

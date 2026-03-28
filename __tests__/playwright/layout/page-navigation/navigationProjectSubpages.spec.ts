@@ -44,24 +44,4 @@ test.describe('Navigation - Personal Project Subpages', () => {
     await nextLink.click()
     await expect(page).toHaveURL(new RegExp(PAGES_URL.personalKrsiak))
   })
-
-  test('Portfolio Website: navigates to next (Cryptomania)', async ({ page }) => {
-    await page.goto(PAGES_URL.personalKrsiak)
-
-    const nextLink = page.locator(getDataTestId(DATA_TEST_IDS.projects.personal.krsiak.next))
-    await expect(nextLink).toBeVisible()
-    await nextLink.click()
-    await expect(page).toHaveURL(new RegExp(PAGES_URL.personalCryptoMania))
-  })
-
-  test('Cryptomania: navigates to previous (Portfolio Website)', async ({ page }) => {
-    await page.goto(PAGES_URL.personalCryptoMania)
-
-    const prevLink = page.locator(
-      getDataTestId(DATA_TEST_IDS.projects.personal.cryptoMania.previous),
-    )
-    await expect(prevLink).toBeVisible()
-    await prevLink.click()
-    await expect(page).toHaveURL(new RegExp(PAGES_URL.personalKrsiak))
-  })
 })
