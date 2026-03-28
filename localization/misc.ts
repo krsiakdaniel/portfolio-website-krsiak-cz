@@ -38,5 +38,5 @@ export const CONTACT = {
 
 export const ANALYTICS_WARNING = {
   googleAnalytics: 'Google Analytics — is not configured!',
-  smartlook: 'Smartlook — is not configured!',
+  hotjar: 'Hotjar — is not configured!',
 }

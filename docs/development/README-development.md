@@ -27,7 +27,7 @@ This project uses modern web technologies with the following stack:
 - **Styling**: Tailwind CSS v4
 - **Testing**: Jest (unit) + Playwright (E2E)
 - **Deployment**: Netlify with PWA capabilities and automated CI/CD
-- **Analytics**: Google Analytics + Smartlook
+- **Analytics**: Google Analytics + Hotjar
 
 ### Key Features
 
@@ -363,7 +363,8 @@ Create a `.env.local` file in the root directory with the following variables:
 ```bash
 # Analytics
 NEXT_PUBLIC_GA_MEASUREMENT_ID=your-google-analytics-id
-NEXT_PUBLIC_SMARTLOOK_ID=your-smartlook-id
+NEXT_PUBLIC_HOTJAR_ID=your-hotjar-site-id
+NEXT_PUBLIC_HOTJAR_VERSION=6
 
 # CI/CD
 CI=true|false  # Used in Playwright testing configuration
