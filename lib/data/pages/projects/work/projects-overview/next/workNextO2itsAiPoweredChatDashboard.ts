@@ -14,7 +14,7 @@ import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 export const workNextO2itsAiPoweredChatDashboard: Project = {
   id: PROJECT_ID.work.o2itsAiPoweredChatDashboard,
-  isFeatured: true,
+  isFeatured: false,
   image: o2itsAiPoweredChatDashboardProjectPreview.src,
   galleryImages: [{ id: 0, src: o2itsAiPoweredChatDashboard.src }],
   icon: ICON_EMOJI.robot,

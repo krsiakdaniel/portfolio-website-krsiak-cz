@@ -3,8 +3,7 @@ import { Metadata } from 'next'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
-import OtherExperienceContent from '@/components/pages/projects/other-experience/OtherExperienceContent'
-import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
+import ProjectSectionGrid from '@/components/pages/projects/overview-page/ProjectSectionGrid'
 import WorkExperienceIntroduction from '@/components/pages/work-experience/WorkExperienceIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
@@ -49,61 +48,51 @@ const ProjectsWork = () => {
         heading={TEXT.workExperience}
         description={<WorkExperienceIntroduction />}
       >
-        {/* NEXT.JS */}
-        <ProjectSection
-          sectionId={ID.section.next}
-          sectionText={COMMON_VALUES.next}
-          projectData={projectsWorkNext}
-        />
-
-        {/* VITE */}
-        <ProjectSection
-          sectionId={ID.section.vite}
-          sectionText={COMMON_VALUES.vite}
-          projectData={projectsWorkVite}
-        />
-
-        {/* REACT */}
-        <ProjectSection
+        {/* NEXT.JS / VITE / REACT */}
+        <ProjectSectionGrid
           sectionId={ID.section.react}
           sectionText={COMMON_VALUES.react}
-          projectData={projectsWorkReact}
+          projectData={[...projectsWorkReact, ...projectsWorkNext, ...projectsWorkVite]}
+          showPlaceholder={true}
         />
 
         {/* FRONT END */}
-        <ProjectSection
+        <ProjectSectionGrid
           sectionId={ID.section.frontEnd}
           sectionText={COMMON_VALUES.frontEnd}
           projectData={projectsWorkFrontEnd}
+          otherExperience={otherExperienceFrontEnd}
+          showPlaceholder={true}
         />
-        <OtherExperienceContent experience={otherExperienceFrontEnd} />
 
         {/* CTA */}
         <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience1} />
 
         {/* WORDPRESS */}
-        <ProjectSection
+        <ProjectSectionGrid
           sectionId={ID.section.wordpress}
           sectionText={COMMON_VALUES.wordpress}
           projectData={projectsWorkWordPress}
+          otherExperience={otherExperienceWordPress}
+          showPlaceholder={true}
         />
-        <OtherExperienceContent experience={otherExperienceWordPress} />
 
         {/* QUALITY ASSURANCE */}
-        <ProjectSection
+        <ProjectSectionGrid
           sectionId={ID.section.qualityAssurance}
           sectionText={COMMON_VALUES.qaAutomationTesting}
           projectData={projectsWorkQA}
+          otherExperience={otherExperienceQA}
         />
-        <OtherExperienceContent experience={otherExperienceQA} />
 
         {/* LOCALIZATION */}
-        <ProjectSection
+        <ProjectSectionGrid
           sectionId={ID.section.localization}
           sectionText={COMMON_VALUES.localization}
           projectData={projectsWorkLocalization}
+          otherExperience={otherExperienceLocalization}
+          showPlaceholder={true}
         />
-        <OtherExperienceContent experience={otherExperienceLocalization} />
 
         {/* CTA */}
         <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience2} />

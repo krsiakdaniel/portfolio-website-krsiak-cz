@@ -48,6 +48,8 @@ describe('iconsSkillsProjectsWork', () => {
 
   it('should return the correct icons for Smartsupp Web project', () => {
     const expectedIcons = getSkillsIcons([
+      SkillIconEnum.HTML,
+      SkillIconEnum.CSS,
       SkillIconEnum.JavaScript,
       SkillIconEnum.PHP,
       SkillIconEnum.Scss,

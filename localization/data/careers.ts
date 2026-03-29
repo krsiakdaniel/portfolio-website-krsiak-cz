@@ -125,32 +125,37 @@ export const OTHER_EXPERIENCE = {
   frontEnd: {
     freelance: {
       company: 'Freelance',
-      role: 'Web Developer /\u00A0Consultant',
-      description: `${YEARS_EXPERIENCE.consultantWebsites} years ${MIDDLE_DOT} part-time ${EM_DASH}\u00A0Websites for\u00A0small companies.`,
+      role: 'Web Developer',
+      years: `${YEARS_EXPERIENCE.consultantWebsites}\u00A0years`,
+      description: `Companies websites (part-time)`,
     },
   },
   wordPress: {
     company: 'Freelance',
-    role: 'WordPress Developer /\u00A0Consultant',
-    description: `${YEARS_EXPERIENCE.consultantWordPress} years ${MIDDLE_DOT} part-time ${EM_DASH}\u00A0Websites for\u00A0small companies.`,
+    role: 'WordPress Developer',
+    years: `${YEARS_EXPERIENCE.consultantWordPress}\u00A0years`,
+    description: `Companies websites (part-time)`,
   },
   localization: {
     smartsupp: {
       company: 'Smartsupp',
       role: `Localization ${NB_HYPHEN}\u00A0Manager`,
-      description: `${YEARS_EXPERIENCE.localizationManager} years ${EM_DASH} Website localization. 🇬🇧\u00A0🇨🇿\u00A0🇪🇸\u00A0🇫🇷\u00A0🇭🇺\u00A0🇩🇪\u00A0🇮🇹\u00A0🇳🇱\u00A0🇵🇱`,
+      years: `${YEARS_EXPERIENCE.localizationManager}\u00A0years`,
+      description: `Website localization`,
     },
   },
   qualityAssurance: {
     smartsupp: {
       company: 'Smartsupp',
       role: `QA\u00A0Automation ${NB_HYPHEN}\u00A0Team\u00A0Leader`,
-      description: `${MONTHS_EXPERIENCE.qaTeamLeaderAtSmartsupp} months ${EM_DASH} Set up\u00A0Cypress E2E testing for\u00A0SaaS company.`,
+      years: `${MONTHS_EXPERIENCE.qaTeamLeaderAtSmartsupp}\u00A0months`,
+      description: `E2E testing SaaS product`,
     },
     moravia: {
       company: `RWS ${NB_HYPHEN} Moravia IT`,
       role: `Localization ${NB_HYPHEN}\u00A0Tester`,
-      description: `${YEARS_EXPERIENCE.localizationTester} years ${EM_DASH} Testing Windows\u00A07 +\u00A0Windows\u00A0Store layouts.`,
+      years: `${YEARS_EXPERIENCE.localizationTester}\u00A0years`,
+      description: `Windows`,
     },
   },
 }

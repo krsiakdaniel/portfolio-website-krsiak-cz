@@ -366,12 +366,12 @@ export const WORK_PROJECTS_OVERVIEW = {
     linkProjectPage: PAGES_URL.workSmartsuppWeb,
   },
   wordPress: {
-    title: `SaaS Company ${NB_HYPHEN}\u00A0HELP Website`,
+    title: `SaaS Company ${NB_HYPHEN}\u00A0HELP`,
     company: 'Smartsupp',
     role: 'Admin &\u00A0Content Writer',
     years: '6\u00A0months',
     description:
-      "Localization of\u00A0the\u00A0company's HELP website into 9\u00A0languages. I\u00A0was\u00A0also\u00A0writing tutorials and\u00A0creating content.",
+      "Localization of\u00A0the\u00A0company's HELP site. I\u00A0was\u00A0also\u00A0writing tutorials and\u00A0creating content.",
     linkText: 'Project details',
     projectLinks: [
       {

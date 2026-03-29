@@ -40,6 +40,7 @@ export const ICON_EMOJI = {
   verticalTrafficLight: '🚦',
   desktopComputer: '🖥️',
   robot: '🤖',
+  ladyBug: '🐞',
   star: '⭐',
   writingHand: '✍️',
   foldedHands: '🙏',
