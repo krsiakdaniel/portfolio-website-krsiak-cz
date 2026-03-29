@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import Companies from '@/components/pages/home/Companies'
+import FeaturedProject from '@/components/pages/home/FeaturedProject'
 import MyExpertise from '@/components/pages/home/expertise/MyExpertise'
 import Hero from '@/components/pages/home/hero/Hero'
 import Skills from '@/components/pages/home/skills/Skills'
@@ -29,6 +30,7 @@ const Page = () => {
       <Hero />
       <SkillsMain />
       <Skills />
+      <FeaturedProject />
       <CallToActionWorkExperience />
       <Companies />
       <MyExpertise />

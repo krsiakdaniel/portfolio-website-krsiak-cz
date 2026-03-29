@@ -73,6 +73,7 @@ export const DIVIDER_WITH_TEXT = {
   myExpertise: 'My Expertise',
   skills: 'All My\u00A0Skills',
   myMainSkills: 'Main\u00A0Skills',
+  featuredProject: 'Featured Project',
 }
 
 export const SOCIAL_LINKS = {
