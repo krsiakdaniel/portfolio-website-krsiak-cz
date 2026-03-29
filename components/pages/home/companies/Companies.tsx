@@ -13,7 +13,7 @@ import smartsupp from '@/public/images/svg/logo/smartsupp.svg'
 
 import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization'
 
-import { COMPANY_LOGOS } from './constants'
+import { COMPANIES_LOGOS_SIZES } from './Companies.constants'
 
 const Companies = () => {
   const logosGrid =
@@ -42,7 +42,7 @@ const Companies = () => {
           <div className={imgWrapper}>
             <ImageComponent
               src={kooperativa}
-              width={COMPANY_LOGOS.KOOPERATIVA.WIDTH}
+              width={COMPANIES_LOGOS_SIZES.KOOPERATIVA.WIDTH}
               alt={IMAGE_ALT.altKooperativa}
               loading={ImageLoading.LAZY}
               customCss={animationClasses[0]}
@@ -51,7 +51,7 @@ const Companies = () => {
           <div className={imgWrapper}>
             <ImageComponent
               src={smartsupp}
-              width={COMPANY_LOGOS.SMARTSUPP.WIDTH}
+              width={COMPANIES_LOGOS_SIZES.SMARTSUPP.WIDTH}
               alt={IMAGE_ALT.altSmartsupp}
               loading={ImageLoading.LAZY}
               customCss={animationClasses[1]}
@@ -60,7 +60,7 @@ const Companies = () => {
           <div className={imgWrapper}>
             <ImageComponent
               src={microsoft}
-              width={COMPANY_LOGOS.MICROSOFT.WIDTH}
+              width={COMPANIES_LOGOS_SIZES.MICROSOFT.WIDTH}
               alt={IMAGE_ALT.altMicrosoft}
               loading={ImageLoading.LAZY}
               customCss={animationClasses[2]}
@@ -70,7 +70,7 @@ const Companies = () => {
           <div className={imgWrapper}>
             <ImageComponent
               src={bata}
-              width={COMPANY_LOGOS.BATA.WIDTH}
+              width={COMPANIES_LOGOS_SIZES.BATA.WIDTH}
               alt={IMAGE_ALT.altBata}
               loading={ImageLoading.LAZY}
               customCss={animationClasses[3]}
@@ -79,7 +79,7 @@ const Companies = () => {
           <div className={imgWrapper}>
             <ImageComponent
               src={komercniBanka}
-              width={COMPANY_LOGOS.KOMERCNI_BANKA.WIDTH}
+              width={COMPANIES_LOGOS_SIZES.KOMERCNI_BANKA.WIDTH}
               alt={IMAGE_ALT.altKomercniBanka}
               loading={ImageLoading.LAZY}
               customCss={animationClasses[4]}
@@ -88,7 +88,7 @@ const Companies = () => {
           <div className={imgWrapper}>
             <ImageComponent
               src={groupon}
-              width={COMPANY_LOGOS.GROUPON.WIDTH}
+              width={COMPANIES_LOGOS_SIZES.GROUPON.WIDTH}
               alt={IMAGE_ALT.altGroupon}
               loading={ImageLoading.LAZY}
               customCss={animationClasses[5]}
