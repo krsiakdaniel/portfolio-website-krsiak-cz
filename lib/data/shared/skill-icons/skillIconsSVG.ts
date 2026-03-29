@@ -23,6 +23,7 @@ import storybookSVG from '@/public/icons/svg/skills/storybook.svg'
 import tailwindSVG from '@/public/icons/svg/skills/tailwind.svg'
 import typescriptSVG from '@/public/icons/svg/skills/typescript.svg'
 import vercelSVG from '@/public/icons/svg/skills/vercel.svg'
+import viteSVG from '@/public/icons/svg/skills/vite.svg'
 import wordpressSVG from '@/public/icons/svg/skills/wordpress.svg'
 import xdSVG from '@/public/icons/svg/skills/xd.svg'
 import zodSVG from '@/public/icons/svg/skills/zod.svg'
@@ -54,6 +55,7 @@ export {
   tailwindSVG,
   typescriptSVG,
   vercelSVG,
+  viteSVG,
   wordpressSVG,
   xdSVG,
   zodSVG,

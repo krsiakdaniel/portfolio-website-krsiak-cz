@@ -54,6 +54,7 @@ export type SkillIconType =
   | SkillIconEnum.Tailwind
   | SkillIconEnum.TypeScript
   | SkillIconEnum.Vercel
+  | SkillIconEnum.Vite
   | SkillIconEnum.WordPress
   | SkillIconEnum.XD
   | SkillIconEnum.Zod

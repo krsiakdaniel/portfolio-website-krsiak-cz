@@ -103,6 +103,7 @@ export enum SkillIconEnum {
   Tailwind = 'tailwind',
   TypeScript = 'typescript',
   Vercel = 'vercel',
+  Vite = 'vite',
   WordPress = 'wordpress',
   XD = 'xd',
   Zod = 'zod',
