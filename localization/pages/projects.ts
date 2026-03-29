@@ -52,6 +52,7 @@ export const MY_WORK = {
 
 export const COMPANIES = {
   O2itsAiPoweredChatDashboard: `AI${EM_DASH}Powered Chat Dashboard`,
+  O2itsPublicTendersPortal: 'AI Public Tenders Portal',
   smartsuppDashboard: 'Smartsupp Dashboard',
   customerCareChatDashboard: 'Chat Dashboard',
   smartsuppChatDashboard: `Smartsupp ${EM_DASH} Chat Dashboard`,

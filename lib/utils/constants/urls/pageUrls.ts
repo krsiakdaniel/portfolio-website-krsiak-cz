@@ -26,6 +26,7 @@ export const PAGES_URL = {
 
   // Work experience pages
   workO2itsAiPoweredChatDashboard: '/work-experience/o2its-ai-powered-chat-dashboard',
+  workO2itsPublicTendersPortal: '/work-experience/o2its-public-tenders-portal',
   workSmartsuppDashboard: '/work-experience/smartsupp-dashboard',
   workKomercniBanka: '/work-experience/komercni-banka',
   workKooperativa: '/work-experience/kooperativa',

@@ -5,7 +5,7 @@ import { PAGES_URL } from '@/__tests__/playwright/lib/utils/constants/urls/e2eUr
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'
 
 test.describe('Navigation - Work Project Subpages', () => {
-  test('O2 ITS AI-Powered Chat Dashboard: navigates to next (Smartsupp Dashboard)', async ({
+  test('O2 ITS AI-Powered Chat Dashboard: navigates to next (Public Tenders Portal)', async ({
     page,
   }) => {
     await page.goto(PAGES_URL.workO2itsAiPoweredChatDashboard)
@@ -15,12 +15,36 @@ test.describe('Navigation - Work Project Subpages', () => {
     )
     await expect(nextLink).toBeVisible()
     await nextLink.click()
+    await expect(page).toHaveURL(new RegExp(PAGES_URL.workO2itsPublicTendersPortal))
+  })
+
+  test('O2 ITS Public Tenders Portal: navigates to previous (AI-Powered Chat Dashboard)', async ({
+    page,
+  }) => {
+    await page.goto(PAGES_URL.workO2itsPublicTendersPortal)
+
+    const previousLink = page.locator(
+      getDataTestId(DATA_TEST_IDS.projects.work.O2itsPublicTendersPortal.previous),
+    )
+    await expect(previousLink).toBeVisible()
+    await previousLink.click()
+    await expect(page).toHaveURL(new RegExp(PAGES_URL.workO2itsAiPoweredChatDashboard))
+  })
+
+  test('O2 ITS Public Tenders Portal: navigates to next (Smartsupp Dashboard)', async ({
+    page,
+  }) => {
+    await page.goto(PAGES_URL.workO2itsPublicTendersPortal)
+
+    const nextLink = page.locator(
+      getDataTestId(DATA_TEST_IDS.projects.work.O2itsPublicTendersPortal.next),
+    )
+    await expect(nextLink).toBeVisible()
+    await nextLink.click()
     await expect(page).toHaveURL(new RegExp(PAGES_URL.workSmartsuppDashboard))
   })
 
-  test('Smartsupp Dashboard: navigates to previous (O2 ITS AI-Powered Chat Dashboard)', async ({
-    page,
-  }) => {
+  test('Smartsupp Dashboard: navigates to previous (Public Tenders Portal)', async ({ page }) => {
     await page.goto(PAGES_URL.workSmartsuppDashboard)
 
     const previousLink = page.locator(
@@ -28,7 +52,7 @@ test.describe('Navigation - Work Project Subpages', () => {
     )
     await expect(previousLink).toBeVisible()
     await previousLink.click()
-    await expect(page).toHaveURL(new RegExp(PAGES_URL.workO2itsAiPoweredChatDashboard))
+    await expect(page).toHaveURL(new RegExp(PAGES_URL.workO2itsPublicTendersPortal))
   })
 
   test('Smartsupp Dashboard: navigates to next (Komercni Banka)', async ({ page }) => {

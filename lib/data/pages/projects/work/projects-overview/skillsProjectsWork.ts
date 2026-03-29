@@ -15,6 +15,15 @@ export const iconsSkillsProjectsWorkO2its: Icon[] = getSkillsIcons([
   SkillIconEnum.Figma,
 ])
 
+export const iconsSkillsProjectsWorkO2itsPublicTendersPortal: Icon[] = getSkillsIcons([
+  SkillIconEnum.TypeScript,
+  SkillIconEnum.React,
+  SkillIconEnum.MaterialUI,
+  SkillIconEnum.ReactHookForm,
+  SkillIconEnum.Zod,
+  SkillIconEnum.AI,
+])
+
 export const iconsSkillsProjectsWorkSmartsuppDashboard: Icon[] = getSkillsIcons([
   SkillIconEnum.TypeScript,
   SkillIconEnum.React,

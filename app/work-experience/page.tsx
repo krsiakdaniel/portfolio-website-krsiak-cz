@@ -19,6 +19,7 @@ import { projectsWorkLocalization } from '@/lib/data/pages/projects/work/project
 import { projectsWorkNext } from '@/lib/data/pages/projects/work/projects-overview/next/workNext'
 import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview/quality-assurance/workQA'
 import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
+import { projectsWorkVite } from '@/lib/data/pages/projects/work/projects-overview/vite/workVite'
 import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
@@ -53,6 +54,13 @@ const ProjectsWork = () => {
           sectionId={ID.section.next}
           sectionText={COMMON_VALUES.next}
           projectData={projectsWorkNext}
+        />
+
+        {/* VITE */}
+        <ProjectSection
+          sectionId={ID.section.vite}
+          sectionText={COMMON_VALUES.vite}
+          projectData={projectsWorkVite}
         />
 
         {/* REACT */}

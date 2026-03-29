@@ -32,6 +32,29 @@ export const PROJECTS_WORK = {
       },
     },
   },
+  O2itsPublicTendersPortal: {
+    sections: {
+      responsibility: {
+        title: 'My Job',
+        items: [
+          'I\u00A0designed structured prompts to\u00A0ensure consistent and\u00A0safe LLM outputs for\u00A0Public Tenders Portal application.',
+        ],
+      },
+      features: {
+        title: 'Key Contributions',
+        items: [
+          'I\u00A0created AI\u00A0prompt engineering patterns for\u00A0reliable and\u00A0predictable AI\u00A0responses.',
+          'I\u00A0refactored and\u00A0modernized the\u00A0full frontend architecture and\u00A0application setup.',
+        ],
+      },
+      note: {
+        title: 'Screenshots are confidential',
+        items: [
+          'Due to\u00A0confidentiality, I\u00A0cannot share actual screenshots from\u00A0the\u00A0enterprise application.',
+        ],
+      },
+    },
+  },
   smartsuppWeb: {
     sections: {
       responsibility: {
@@ -219,6 +242,24 @@ export const WORK_PROJECTS_OVERVIEW = {
     ],
     customers: 'Enterprise clients',
     linkProjectPage: PAGES_URL.workO2itsAiPoweredChatDashboard,
+  },
+  O2itsPublicTendersPortal: {
+    title: 'AI Public Tenders Portal',
+    company: 'O2\u00A0IT\u00A0Services',
+    role: 'React Developer',
+    years: '9\u00A0months',
+    description:
+      'I\u00A0designed structured AI\u00A0prompts and\u00A0refactored the\u00A0frontend architecture for\u00A0a\u00A0Public Tenders Portal application.',
+    linkText: 'Project details',
+    projectLinks: [
+      {
+        urlText: 'Website',
+        url: PROJECTS_WORK_URLS.workO2itsExternal,
+        dataTestId: DATA_TEST_IDS.links.O2ITS_PUBLIC_TENDERS_PORTAL,
+      },
+    ],
+    customers: 'Enterprise clients',
+    linkProjectPage: PAGES_URL.workO2itsPublicTendersPortal,
   },
   moravia: {
     title: 'Windows',

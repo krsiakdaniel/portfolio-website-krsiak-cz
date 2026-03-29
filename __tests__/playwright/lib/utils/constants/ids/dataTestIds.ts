@@ -24,6 +24,7 @@ const LINKS = {
 
   // Work experience pages
   O2ITS_AI_POWERED_CHAT_DASHBOARD: 'o2its-ai-powered-chat-dashboard',
+  O2ITS_PUBLIC_TENDERS_PORTAL: 'o2its-public-tenders-portal',
   SMARTSUPP_DASHBOARD: 'smartsupp-dashboard',
   KOMERCNI_BANKA: 'komercni-banka',
   KOMERCNI_BANKA_BRANCHES_AND_ATMS: 'komercni-banka-branches-and-atms',
@@ -171,6 +172,10 @@ const WORK_PROJECTS = {
   },
   O2itsAiPoweredChatDashboard: {
     previous: '',
+    next: `${NAVIGATION.NEXT}-${LINKS.O2ITS_PUBLIC_TENDERS_PORTAL}`,
+  },
+  O2itsPublicTendersPortal: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.O2ITS_AI_POWERED_CHAT_DASHBOARD}`,
     next: `${NAVIGATION.NEXT}-${LINKS.SMARTSUPP_DASHBOARD}`,
   },
   kooperativa: {
@@ -187,7 +192,7 @@ const WORK_PROJECTS = {
       next: `${NAVIGATION.NEXT}-${LINKS.SMARTSUPP_HELP}`,
     },
     dashboard: {
-      previous: `${NAVIGATION.PREVIOUS}-${LINKS.O2ITS_AI_POWERED_CHAT_DASHBOARD}`,
+      previous: `${NAVIGATION.PREVIOUS}-${LINKS.O2ITS_PUBLIC_TENDERS_PORTAL}`,
       next: `${NAVIGATION.NEXT}-${LINKS.KOMERCNI_BANKA}`,
     },
     help: {
