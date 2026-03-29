@@ -27,6 +27,8 @@
 /* # Define CSS custom properties (variables) */
 :root {
   --color-gray-50: #f9fafb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
   --color-violet-400: #a78bfa;
   --color-white: #ffffff;
 }
@@ -132,13 +134,13 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #d1d5db; /* gray-300 */
+    background: var(--color-gray-300);
     border-radius: 999px;
     border: 2px solid var(--color-gray-50);
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #9ca3af; /* gray-400 */
+    background: var(--color-gray-400);
   }
 
   ::-webkit-scrollbar-corner {
