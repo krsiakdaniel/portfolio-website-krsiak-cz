@@ -1,7 +1,7 @@
 import { COMMON_VALUES } from '../ui/common'
 
 export const META_O2ITS_AI_POWERED_CHAT_DASHBOARD = {
-  title: `O2 IT Services — AI-Powered Dashboard | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
+  title: `AI-Powered Chat Dashboard | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
     'Worked as Front End Developer on AI-powered chat application dashboard using React, Next.js, TypeScript, and AI integration.',
   keywords: {
