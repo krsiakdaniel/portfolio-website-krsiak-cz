@@ -10,6 +10,9 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+  ::-webkit-backdrop {
+    border-color: var(--color-gray-200, currentcolor);
+  }
   *,
   ::after,
   ::before,
@@ -24,6 +27,8 @@
 /* # Define CSS custom properties (variables) */
 :root {
   --color-gray-50: #f9fafb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
   --color-violet-400: #a78bfa;
   --color-white: #ffffff;
 }
@@ -60,6 +65,10 @@
 
 /* # Utilities - top-level layer (not nested inside base) */
 @layer utilities {
+  ::-moz-selection {
+    background-color: var(--color-violet-400);
+    color: var(--color-white);
+  }
   ::selection {
     background-color: var(--color-violet-400);
     color: var(--color-white);
@@ -77,6 +86,16 @@
   }
 
   /* Company logos infinite scale animation */
+  @-webkit-keyframes pulse-scale {
+    0%,
+    16.66%,
+    100% {
+      transform: scale(1);
+    }
+    8.33% {
+      transform: scale(1.1);
+    }
+  }
   @keyframes pulse-scale {
     0%,
     16.66%,
@@ -89,14 +108,42 @@
   }
 
   .animate-pulse-scale {
+    -webkit-animation: pulse-scale 12s ease-in-out infinite;
     animation: pulse-scale 12s ease-in-out infinite;
+    -webkit-animation-delay: var(--pulse-delay, 0s);
     animation-delay: var(--pulse-delay, 0s);
   }
 
   /* Respect user's motion preferences */
   @media (prefers-reduced-motion: reduce) {
     .animate-pulse-scale {
+      -webkit-animation: none;
       animation: none;
     }
+  }
+
+  /* Custom scrollbars */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-gray-50);
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-gray-300);
+    border-radius: 999px;
+    border: 2px solid var(--color-gray-50);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gray-400);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: var(--color-gray-50);
   }
 }
