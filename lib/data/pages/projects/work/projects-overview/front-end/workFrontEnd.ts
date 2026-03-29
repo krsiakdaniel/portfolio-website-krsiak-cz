@@ -18,7 +18,7 @@ import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 export const projectsWorkFrontEnd: Project[] = [
   {
     id: PROJECT_ID.work.smartsupp.web,
-    isFeatured: false,
+    isFeatured: true,
     image: smartsuppWebProjectPreview.src,
     galleryImages: [
       { id: 0, src: smartsuppWeb1.src },

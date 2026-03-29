@@ -16,6 +16,7 @@ import { otherExperienceQA } from '@/lib/data/pages/projects/work/other-experien
 import { otherExperienceWordPress } from '@/lib/data/pages/projects/work/other-experience/otherExperienceWordPress'
 import { projectsWorkFrontEnd } from '@/lib/data/pages/projects/work/projects-overview/front-end/workFrontEnd'
 import { projectsWorkLocalization } from '@/lib/data/pages/projects/work/projects-overview/localization/workLocalization'
+import { projectsWorkNext } from '@/lib/data/pages/projects/work/projects-overview/next/workNext'
 import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview/quality-assurance/workQA'
 import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
 import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
@@ -47,6 +48,13 @@ const ProjectsWork = () => {
         heading={TEXT.workExperience}
         description={<WorkExperienceIntroduction />}
       >
+        {/* NEXT.JS */}
+        <ProjectSection
+          sectionId={ID.section.next}
+          sectionText={COMMON_VALUES.next}
+          projectData={projectsWorkNext}
+        />
+
         {/* REACT */}
         <ProjectSection
           sectionId={ID.section.react}

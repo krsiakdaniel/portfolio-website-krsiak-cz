@@ -22,12 +22,14 @@ export type GetMenuLinkIDType = {
 
 // Skills
 export type SkillCategoryType =
+  | SkillCategoryEnum.AI
   | SkillCategoryEnum.Design
   | SkillCategoryEnum.FrontEnd
   | SkillCategoryEnum.Other
 
 // Skill Icon
 export type SkillIconType =
+  | SkillIconEnum.AI
   | SkillIconEnum.Chakra
   | SkillIconEnum.CSS
   | SkillIconEnum.Cypress
@@ -37,11 +39,13 @@ export type SkillIconType =
   | SkillIconEnum.HTML
   | SkillIconEnum.JavaScript
   | SkillIconEnum.Jest
+  | SkillIconEnum.MaterialUI
   | SkillIconEnum.Netlify
   | SkillIconEnum.Next
   | SkillIconEnum.PHP
   | SkillIconEnum.Playwright
   | SkillIconEnum.React
+  | SkillIconEnum.ReactHookForm
   | SkillIconEnum.Redux
   | SkillIconEnum.Scss
   | SkillIconEnum.ShadcnUI

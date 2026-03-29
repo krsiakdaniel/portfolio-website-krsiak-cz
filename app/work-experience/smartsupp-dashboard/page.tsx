@@ -37,6 +37,10 @@ const ProjectWorkSmartsuppDashboard = () => {
       sections={sections}
       PageNavigation={
         <PageNavigation
+          linkPrevious={PAGES_URL.workO2itsAiPoweredChatDashboard}
+          iconPrevious={ICON_EMOJI.robot}
+          namePrevious={TEXT.O2itsAiPoweredChatDashboard}
+          dataTestIdPrevious={DATA_TEST_IDS.projects.work.smartsupp.dashboard.previous}
           linkNext={PAGES_URL.workKomercniBanka}
           iconNext={ICON_EMOJI.bank}
           nameNext={TEXT.komercniBanka}

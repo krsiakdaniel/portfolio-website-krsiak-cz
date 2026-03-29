@@ -70,6 +70,7 @@ export enum ChangeFrequencyEnum {
 
 // Skill Category
 export enum SkillCategoryEnum {
+  AI = 'AI',
   Design = 'Design',
   FrontEnd = 'FrontEnd',
   Other = 'Other',
@@ -77,6 +78,7 @@ export enum SkillCategoryEnum {
 
 // Skill Icon
 export enum SkillIconEnum {
+  AI = 'ai',
   Chakra = 'chakra',
   CSS = 'css',
   Cypress = 'cypress',
@@ -86,11 +88,13 @@ export enum SkillIconEnum {
   HTML = 'html',
   JavaScript = 'javascript',
   Jest = 'jest',
+  MaterialUI = 'materialUI',
   Netlify = 'netlify',
   Next = 'next',
   PHP = 'php',
   Playwright = 'playwright',
   React = 'react',
+  ReactHookForm = 'reactHookForm',
   Redux = 'redux',
   Scss = 'scss',
   ShadcnUI = 'shadcnUI',
@@ -108,6 +112,7 @@ export enum SkillIconEnum {
 // Skills
 export enum SkillsEnum {
   AdobeXD = 'Adobe XD',
+  AI = 'AI Tools',
   AutoHotkey = 'AutoHotkey',
   BEM = 'BEM',
   ChakraUI = 'Chakra UI',
@@ -117,11 +122,13 @@ export enum SkillsEnum {
   Cypress = 'Cypress',
   Figma = 'Figma',
   GithubActions = 'Github Actions',
+  GraphQL = 'GraphQL',
   HTML = 'HTML',
   JavaScript = 'JavaScript',
   Jest = 'Jest',
   Jira = 'Jira',
   Kentico = 'Kentico',
+  MaterialUI = 'Material-UI',
   Netlify = 'Netlify',
   Next = 'Next',
   PairProgramming = 'Pair Programming',
@@ -130,6 +137,7 @@ export enum SkillsEnum {
   QA = 'QA',
   React = 'React',
   ReactApp = 'React App',
+  ReactHookForm = 'React Hook Form',
   Redux = 'Redux',
   ResponsiveDesign = 'Responsive Design',
   SASS = 'SASS',

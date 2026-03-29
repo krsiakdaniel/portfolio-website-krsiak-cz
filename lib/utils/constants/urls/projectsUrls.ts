@@ -1,6 +1,7 @@
 import { ProjectsPersonalUrls, ProjectsWorkUrls } from '@/lib/utils/typeDefinitions/interfaces'
 
 export const PROJECTS_WORK_URLS = {
+  workO2itsExternal: 'https://www.o2its.cz/',
   workKooperativaExternal: 'https://www.koop.cz/pojisteni/pojisteni-majetku',
   workSmartsuppDashboardExternal: 'https://www.smartsupp.com/live-chat-for-customer-care-teams/',
   workSmartsuppWebExternal: 'https://www.smartsupp.com/',

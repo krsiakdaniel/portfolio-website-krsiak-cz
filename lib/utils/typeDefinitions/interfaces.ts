@@ -199,6 +199,7 @@ export interface PageUrls {
   readonly status: string
 
   // Work experience pages
+  readonly workO2itsAiPoweredChatDashboard: string
   readonly workKooperativa: string
   readonly workSmartsuppDashboard: string
   readonly workSmartsuppWeb: string
@@ -214,6 +215,7 @@ export interface PageUrls {
 
 // Projects Work URLs
 export interface ProjectsWorkUrls {
+  readonly workO2itsExternal: string
   readonly workKooperativaExternal: string
   readonly workSmartsuppDashboardExternal: string
   readonly workSmartsuppWebExternal: string
@@ -287,6 +289,7 @@ export interface MonthsExperience {
 // Project IDs
 export interface ProjectIds {
   readonly work: {
+    readonly o2itsAiPoweredChatDashboard: string
     readonly kooperativa: string
     readonly smartsupp: {
       readonly dashboard: string

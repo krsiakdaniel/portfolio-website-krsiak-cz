@@ -25,6 +25,7 @@ export const PAGES_URL = {
   status: '/status',
 
   // Work experience pages
+  workO2itsAiPoweredChatDashboard: '/work-experience/o2its-ai-powered-chat-dashboard',
   workSmartsuppDashboard: '/work-experience/smartsupp-dashboard',
   workKomercniBanka: '/work-experience/komercni-banka',
   workKooperativa: '/work-experience/kooperativa',

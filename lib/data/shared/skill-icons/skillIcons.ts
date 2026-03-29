@@ -1,5 +1,6 @@
 // Import SVG icons
 import {
+  aiSVG,
   chakraSVG,
   cssSVG,
   cypressSVG,
@@ -9,10 +10,12 @@ import {
   htmlSVG,
   javascriptSVG,
   jestSVG,
+  materialUISVG,
   netlifySVG,
   nextSVG,
   phpSVG,
   playwrightSVG,
+  reactHookFormSVG,
   reactSVG,
   reduxSVG,
   scssSVG,
@@ -32,6 +35,7 @@ import { SkillToIconMap } from '@/lib/utils/typeDefinitions/interfaces'
 
 // Map skill names to their respective icons
 export const skillIcons: SkillToIconMap = {
+  ai: aiSVG,
   chakra: chakraSVG,
   css: cssSVG,
   cypress: cypressSVG,
@@ -41,11 +45,13 @@ export const skillIcons: SkillToIconMap = {
   html: htmlSVG,
   jest: jestSVG,
   javascript: javascriptSVG,
+  materialUI: materialUISVG,
   netlify: netlifySVG,
   next: nextSVG,
   php: phpSVG,
   playwright: playwrightSVG,
   react: reactSVG,
+  reactHookForm: reactHookFormSVG,
   redux: reduxSVG,
   scss: scssSVG,
   shadcnUI: shadcnUISVG,
