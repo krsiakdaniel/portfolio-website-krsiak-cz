@@ -9,7 +9,6 @@ export const META_KOREAN_EASY = {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
     next: COMMON_VALUES.next,
-    react: COMMON_VALUES.react,
     typeScript: COMMON_VALUES.typeScript,
     vercel: COMMON_VALUES.vercel,
   },
