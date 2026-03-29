@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" fill="none" viewBox="0 0 256 256">
-  <rect width="256" height="256" fill="#FBBF24" rx="60"/>
+  <rect width="256" height="256" fill="#FBBF24" rx="60" />
   <!-- Bear face -->
-  <circle cx="128" cy="136" r="76" fill="#92400E"/>
+  <circle cx="128" cy="136" r="76" fill="#92400E" />
   <!-- Ears -->
-  <circle cx="70" cy="76" r="28" fill="#92400E"/>
-  <circle cx="70" cy="76" r="16" fill="#D97706"/>
-  <circle cx="186" cy="76" r="28" fill="#92400E"/>
-  <circle cx="186" cy="76" r="16" fill="#D97706"/>
+  <circle cx="70" cy="76" r="28" fill="#92400E" />
+  <circle cx="70" cy="76" r="16" fill="#D97706" />
+  <circle cx="186" cy="76" r="28" fill="#92400E" />
+  <circle cx="186" cy="76" r="16" fill="#D97706" />
   <!-- Muzzle -->
-  <ellipse cx="128" cy="156" rx="38" ry="26" fill="#D97706"/>
+  <ellipse cx="128" cy="156" rx="38" ry="26" fill="#D97706" />
   <!-- Eyes -->
-  <circle cx="104" cy="120" r="9" fill="#1C1917"/>
-  <circle cx="152" cy="120" r="9" fill="#1C1917"/>
+  <circle cx="104" cy="120" r="9" fill="#1C1917" />
+  <circle cx="152" cy="120" r="9" fill="#1C1917" />
   <!-- Nose -->
-  <ellipse cx="128" cy="148" rx="11" ry="7" fill="#1C1917"/>
+  <ellipse cx="128" cy="148" rx="11" ry="7" fill="#1C1917" />
 </svg>

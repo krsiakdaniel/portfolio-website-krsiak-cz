@@ -8,6 +8,53 @@ import { CUSTOMERS_COUNT } from '../../constants/customers'
 import { FLAGS_LOCALIZATION } from '../../constants/iconsEmoji'
 
 export const PROJECTS_WORK = {
+  O2itsAiPoweredChatDashboard: {
+    sections: {
+      responsibility: {
+        title: 'My Job',
+        items: [
+          'I\u00A0built a\u00A0chat dashboard with AI-driven document analysis features for\u00A0a\u00A0major telecommunications company.',
+          'I\u00A0integrated AI\u00A0tooling into the\u00A0development workflow to\u00A0accelerate delivery and\u00A0enhance code quality.',
+        ],
+      },
+      features: {
+        title: 'Developed new features',
+        items: [
+          'I\u00A0developed the\u00A0AI-driven chat interface, file upload functionality, and\u00A0application settings.',
+          'I\u00A0redesigned application features and\u00A0improved overall UI\u00A0consistency.',
+        ],
+      },
+      note: {
+        title: 'Screenshots are confidential',
+        items: [
+          'Due to\u00A0confidentiality, I\u00A0cannot share actual screenshots from\u00A0the\u00A0enterprise application.',
+        ],
+      },
+    },
+  },
+  O2itsPublicTendersPortal: {
+    sections: {
+      responsibility: {
+        title: 'My Job',
+        items: [
+          'I\u00A0designed structured prompts to\u00A0ensure consistent and\u00A0safe LLM outputs for\u00A0Public Tenders Portal application.',
+        ],
+      },
+      features: {
+        title: 'Key Contributions',
+        items: [
+          'I\u00A0created AI\u00A0prompt engineering patterns for\u00A0reliable and\u00A0predictable AI\u00A0responses.',
+          'I\u00A0refactored and\u00A0modernized the\u00A0full frontend architecture and\u00A0application setup.',
+        ],
+      },
+      note: {
+        title: 'Screenshots are confidential',
+        items: [
+          'Due to\u00A0confidentiality, I\u00A0cannot share actual screenshots from\u00A0the\u00A0enterprise application.',
+        ],
+      },
+    },
+  },
   smartsuppWeb: {
     sections: {
       responsibility: {
@@ -178,6 +225,42 @@ export const PROJECTS_WORK = {
 }
 
 export const WORK_PROJECTS_OVERVIEW = {
+  O2itsAiPoweredChatDashboard: {
+    title: `AI${NB_HYPHEN}Powered Chat Dashboard`,
+    company: 'O2\u00A0IT\u00A0Services',
+    role: 'React Developer',
+    years: '9\u00A0months',
+    description:
+      'I\u00A0built an\u00A0AI-powered chat application dashboard with integrated AI\u00A0tools for\u00A0document analysis.',
+    linkText: 'Project details',
+    projectLinks: [
+      {
+        urlText: 'Website',
+        url: PROJECTS_WORK_URLS.workO2itsExternal,
+        dataTestId: DATA_TEST_IDS.links.O2ITS_AI_POWERED_CHAT_DASHBOARD,
+      },
+    ],
+    customers: 'Enterprise clients',
+    linkProjectPage: PAGES_URL.workO2itsAiPoweredChatDashboard,
+  },
+  O2itsPublicTendersPortal: {
+    title: 'AI Public Tenders Portal',
+    company: 'O2\u00A0IT\u00A0Services',
+    role: 'React Developer',
+    years: '9\u00A0months',
+    description:
+      'I\u00A0designed structured AI\u00A0prompts and\u00A0refactored the\u00A0frontend architecture for\u00A0a\u00A0Public Tenders Portal application.',
+    linkText: 'Project details',
+    projectLinks: [
+      {
+        urlText: 'Website',
+        url: PROJECTS_WORK_URLS.workO2itsExternal,
+        dataTestId: DATA_TEST_IDS.links.O2ITS_PUBLIC_TENDERS_PORTAL,
+      },
+    ],
+    customers: 'Enterprise clients',
+    linkProjectPage: PAGES_URL.workO2itsPublicTendersPortal,
+  },
   moravia: {
     title: 'Windows',
     company: 'Moravia\u00A0IT',

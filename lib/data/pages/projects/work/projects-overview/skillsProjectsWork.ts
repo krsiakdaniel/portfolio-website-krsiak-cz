@@ -2,6 +2,29 @@ import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
 import { SkillIconEnum } from '@/lib/utils/typeDefinitions/enums'
 import { Icon } from '@/lib/utils/typeDefinitions/interfaces'
 
+export const iconsSkillsProjectsWorkO2its: Icon[] = getSkillsIcons([
+  SkillIconEnum.TypeScript,
+  SkillIconEnum.React,
+  SkillIconEnum.Next,
+  SkillIconEnum.MaterialUI,
+  SkillIconEnum.ReactHookForm,
+  SkillIconEnum.Zod,
+  SkillIconEnum.Graphql,
+  SkillIconEnum.Zustand,
+  SkillIconEnum.AI,
+  SkillIconEnum.Figma,
+])
+
+export const iconsSkillsProjectsWorkO2itsPublicTendersPortal: Icon[] = getSkillsIcons([
+  SkillIconEnum.TypeScript,
+  SkillIconEnum.React,
+  SkillIconEnum.Vite,
+  SkillIconEnum.MaterialUI,
+  SkillIconEnum.ReactHookForm,
+  SkillIconEnum.Zod,
+  SkillIconEnum.AI,
+])
+
 export const iconsSkillsProjectsWorkSmartsuppDashboard: Icon[] = getSkillsIcons([
   SkillIconEnum.TypeScript,
   SkillIconEnum.React,

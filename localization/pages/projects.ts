@@ -19,6 +19,13 @@ export const PROJECT_KOREAN_EASY = {
   alertLinkText: 'Contact Me',
 }
 
+export const PROJECT_O2ITS = {
+  alertTitle: 'Enterprise project.',
+  alertDescription:
+    'This is\u00A0a\u00A0commercial enterprise project, so\u00A0the source code is\u00A0not publicly available.',
+  alertLinkText: 'Contact Me',
+}
+
 export const PROJECT_KRSIAK = {
   alertTitle: 'Production-quality code.',
   alertDescription: 'This codebase reflects how\u00A0I\u00A0work with code.',
@@ -44,6 +51,8 @@ export const MY_WORK = {
 }
 
 export const COMPANIES = {
+  O2itsAiPoweredChatDashboard: `AI${EM_DASH}Powered Chat Dashboard`,
+  O2itsPublicTendersPortal: 'AI Public Tenders Portal',
   smartsuppDashboard: 'Smartsupp Dashboard',
   customerCareChatDashboard: 'Chat Dashboard',
   smartsuppChatDashboard: `Smartsupp ${EM_DASH} Chat Dashboard`,

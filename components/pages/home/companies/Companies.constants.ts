@@ -1,4 +1,4 @@
-export const COMPANY_LOGOS = {
+export const COMPANIES_LOGOS_SIZES = {
   MICROSOFT: { WIDTH: 256 },
   SMARTSUPP: { WIDTH: 256 },
   KOOPERATIVA: { WIDTH: 256 },

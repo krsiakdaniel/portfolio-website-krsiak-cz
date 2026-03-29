@@ -44,6 +44,7 @@ export {
   PROJECT_INFORMATION,
   PROJECT_KOREAN_EASY,
   PROJECT_KRSIAK,
+  PROJECT_O2ITS,
   WORK,
 } from './pages/projects'
 export { CAREER_PATH, RESUME } from './pages/resume'
@@ -64,6 +65,8 @@ export { META_GROUPON } from './metadata/meta-groupon'
 export { META_KOMERCNI_BANKA } from './metadata/meta-komercni-banka'
 export { META_KOOPERATIVA } from './metadata/meta-kooperativa'
 export { META_MORAVIA } from './metadata/meta-moravia'
+export { META_O2ITS_AI_POWERED_CHAT_DASHBOARD } from './metadata/meta-o2its-ai-powered-chat-dashboard'
+export { META_O2ITS_PUBLIC_TENDERS_PORTAL } from './metadata/meta-o2its-public-tenders-portal'
 export { META_PROJECTS_OVERVIEW_WORK } from './metadata/meta-projects-overview-work'
 export { META_SMARTSUPP_DASHBOARD } from './metadata/meta-smartsupp-dashboard'
 export { META_SMARTSUPP_HELP } from './metadata/meta-smartsupp-help'

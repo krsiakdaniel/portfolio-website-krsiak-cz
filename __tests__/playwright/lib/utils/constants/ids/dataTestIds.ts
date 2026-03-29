@@ -23,6 +23,8 @@ const LINKS = {
   TESTIMONIALS: 'testimonials',
 
   // Work experience pages
+  O2ITS_AI_POWERED_CHAT_DASHBOARD: 'o2its-ai-powered-chat-dashboard',
+  O2ITS_PUBLIC_TENDERS_PORTAL: 'o2its-public-tenders-portal',
   SMARTSUPP_DASHBOARD: 'smartsupp-dashboard',
   KOMERCNI_BANKA: 'komercni-banka',
   KOMERCNI_BANKA_BRANCHES_AND_ATMS: 'komercni-banka-branches-and-atms',
@@ -168,6 +170,14 @@ const WORK_PROJECTS = {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.HOME}`,
     next: `${NAVIGATION.NEXT}-${LINKS.RESUME}`,
   },
+  O2itsAiPoweredChatDashboard: {
+    previous: '',
+    next: `${NAVIGATION.NEXT}-${LINKS.O2ITS_PUBLIC_TENDERS_PORTAL}`,
+  },
+  O2itsPublicTendersPortal: {
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.O2ITS_AI_POWERED_CHAT_DASHBOARD}`,
+    next: `${NAVIGATION.NEXT}-${LINKS.SMARTSUPP_DASHBOARD}`,
+  },
   kooperativa: {
     previous: `${NAVIGATION.PREVIOUS}-${LINKS.KOMERCNI_BANKA}`,
     next: `${NAVIGATION.NEXT}-${LINKS.SMARTSUPP_WEB}`,
@@ -182,7 +192,7 @@ const WORK_PROJECTS = {
       next: `${NAVIGATION.NEXT}-${LINKS.SMARTSUPP_HELP}`,
     },
     dashboard: {
-      previous: '',
+      previous: `${NAVIGATION.PREVIOUS}-${LINKS.O2ITS_PUBLIC_TENDERS_PORTAL}`,
       next: `${NAVIGATION.NEXT}-${LINKS.KOMERCNI_BANKA}`,
     },
     help: {
@@ -191,7 +201,7 @@ const WORK_PROJECTS = {
     },
   },
   komercniBanka: {
-    previous: `${NAVIGATION.PREVIOUS}-${LINKS.GROUPON}`,
+    previous: `${NAVIGATION.PREVIOUS}-${LINKS.SMARTSUPP_DASHBOARD}`,
     next: `${NAVIGATION.NEXT}-${LINKS.KOOPERATIVA}`,
   },
   moravia: {

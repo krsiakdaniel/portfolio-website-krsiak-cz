@@ -1,6 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" fill="none" viewBox="0 0 256 256">
-  <rect width="256" height="256" fill="#09090B" rx="60"/>
+  <rect width="256" height="256" fill="#09090B" rx="60" />
   <!-- shadcn/ui: overlapping component rectangles -->
-  <rect x="60" y="68" width="108" height="108" rx="10" fill="none" stroke="white" stroke-width="14"/>
-  <rect x="88" y="96" width="108" height="108" rx="10" fill="white"/>
+  <rect
+    x="60"
+    y="68"
+    width="108"
+    height="108"
+    rx="10"
+    fill="none"
+    stroke="white"
+    stroke-width="14"
+  />
+  <rect x="88" y="96" width="108" height="108" rx="10" fill="white" />
 </svg>

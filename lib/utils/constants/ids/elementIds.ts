@@ -21,6 +21,7 @@ export const ID: ElementIds = {
     qualityAssurance: 'qa-automation-testing',
     localization: 'localization',
     next: 'next',
+    vite: 'vite',
   },
   error: {
     err404: 'error-404',
