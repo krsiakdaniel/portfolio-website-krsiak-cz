@@ -3,30 +3,18 @@ import { Metadata } from 'next'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
-import ProjectSectionGrid from '@/components/pages/projects/overview-page/ProjectSectionGrid'
 import WorkExperienceIntroduction from '@/components/pages/work-experience/WorkExperienceIntroduction'
+import WorkExperienceLayoutSwitcher from '@/components/pages/work-experience/WorkExperienceLayoutSwitcher'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
 
 import { metaDataWorkExperience } from '@/lib/data/metadata/pages/projects/metaDataWorkExperience'
-import { otherExperienceFrontEnd } from '@/lib/data/pages/projects/work/other-experience/otherExperienceFrontEnd'
-import { otherExperienceLocalization } from '@/lib/data/pages/projects/work/other-experience/otherExperienceLocalization'
-import { otherExperienceQA } from '@/lib/data/pages/projects/work/other-experience/otherExperienceQA'
-import { otherExperienceWordPress } from '@/lib/data/pages/projects/work/other-experience/otherExperienceWordPress'
-import { projectsWorkFrontEnd } from '@/lib/data/pages/projects/work/projects-overview/front-end/workFrontEnd'
-import { projectsWorkLocalization } from '@/lib/data/pages/projects/work/projects-overview/localization/workLocalization'
-import { projectsWorkNext } from '@/lib/data/pages/projects/work/projects-overview/next/workNext'
-import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview/quality-assurance/workQA'
-import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
-import { projectsWorkVite } from '@/lib/data/pages/projects/work/projects-overview/vite/workVite'
-import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { ARIA_LABELS, COMMON_VALUES, ICON_EMOJI, TEXT } from '@/localization'
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataWorkExperience,
@@ -48,54 +36,7 @@ const ProjectsWork = () => {
         heading={TEXT.workExperience}
         description={<WorkExperienceIntroduction />}
       >
-        {/* NEXT.JS / VITE / REACT */}
-        <ProjectSectionGrid
-          sectionId={ID.section.react}
-          sectionText={COMMON_VALUES.react}
-          projectData={[...projectsWorkReact, ...projectsWorkNext, ...projectsWorkVite]}
-          showPlaceholder={true}
-        />
-
-        {/* FRONT END */}
-        <ProjectSectionGrid
-          sectionId={ID.section.frontEnd}
-          sectionText={COMMON_VALUES.frontEnd}
-          projectData={projectsWorkFrontEnd}
-          otherExperience={otherExperienceFrontEnd}
-          showPlaceholder={true}
-        />
-
-        {/* CTA */}
-        <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience1} />
-
-        {/* WORDPRESS */}
-        <ProjectSectionGrid
-          sectionId={ID.section.wordpress}
-          sectionText={COMMON_VALUES.wordpress}
-          projectData={projectsWorkWordPress}
-          otherExperience={otherExperienceWordPress}
-          showPlaceholder={true}
-        />
-
-        {/* QUALITY ASSURANCE */}
-        <ProjectSectionGrid
-          sectionId={ID.section.qualityAssurance}
-          sectionText={COMMON_VALUES.qaAutomationTesting}
-          projectData={projectsWorkQA}
-          otherExperience={otherExperienceQA}
-        />
-
-        {/* LOCALIZATION */}
-        <ProjectSectionGrid
-          sectionId={ID.section.localization}
-          sectionText={COMMON_VALUES.localization}
-          projectData={projectsWorkLocalization}
-          otherExperience={otherExperienceLocalization}
-          showPlaceholder={true}
-        />
-
-        {/* CTA */}
-        <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience2} />
+        <WorkExperienceLayoutSwitcher />
       </ProjectsOverviewLayout>
 
       <PageNavigation

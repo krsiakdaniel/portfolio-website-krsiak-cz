@@ -265,6 +265,11 @@ const GALLERY_PREVIEW = {
   activeImage: 'gallery-preview-active-image',
 }
 
+const LAYOUT_TOGGLE = {
+  listView: 'layout-toggle-list',
+  gridView: 'layout-toggle-grid',
+}
+
 const SOUTH_KOREA = {
   hiking: 'south-korea-hiking',
   nature: 'south-korea-nature',
@@ -283,6 +288,7 @@ export const DATA_TEST_IDS = {
   breadcrumbs: 'breadcrumbs',
   gallery: 'gallery',
   galleryPreview: GALLERY_PREVIEW,
+  layoutToggle: LAYOUT_TOGGLE,
   headerLogo: 'header-logo',
   footer: FOOTER,
   menu: MENU,

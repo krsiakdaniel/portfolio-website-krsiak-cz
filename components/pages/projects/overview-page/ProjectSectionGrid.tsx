@@ -1,16 +1,9 @@
 import Image from 'next/image'
 
 import GridPlaceholder from '@/components/pages/projects/overview-page/GridPlaceholder'
-import { ProjectSectionProps } from '@/components/pages/projects/overview-page/OverviewPage.types'
+import { ProjectSectionGridProps } from '@/components/pages/projects/overview-page/OverviewPage.types'
 import ProjectCompactCard from '@/components/pages/projects/overview-page/ProjectCompactCard'
 import HeadingSection from '@/components/shared/HeadingSection'
-
-import { OtherExperienceData } from '@/lib/utils/typeDefinitions/interfaces'
-
-type ProjectSectionGridProps = ProjectSectionProps & {
-  otherExperience?: OtherExperienceData[]
-  showPlaceholder?: boolean
-}
 
 const ProjectSectionGrid = ({
   projectData = [],

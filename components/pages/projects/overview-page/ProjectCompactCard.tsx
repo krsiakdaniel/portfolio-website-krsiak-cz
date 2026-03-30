@@ -5,24 +5,10 @@ import IconArrow from '@/components/icons/IconArrow'
 import ProjectSkillsIcons from '@/components/pages/projects/overview-page/ProjectSkillsIcons'
 
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
-import { Icon } from '@/lib/utils/typeDefinitions/interfaces'
 
 import { ICON_EMOJI } from '@/localization'
 
-type ProjectCompactCardProps = {
-  ariaLabel: string
-  company: string
-  dataTestId: string
-  icon: string
-  image: string
-  isFeatured?: boolean
-  linkProjectPage: string
-  linkText: string
-  role: string
-  skillsIcons: Icon[]
-  title: string
-  years?: string
-}
+import { ProjectCompactCardProps } from './OverviewPage.types'
 
 const ProjectCompactCard = ({
   ariaLabel,
