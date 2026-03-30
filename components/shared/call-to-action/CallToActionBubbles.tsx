@@ -10,9 +10,9 @@ const animationClassCss = 'animate-pulse-bubble'
 const initialBubblesColorsCss = ['bg-blue-300', 'bg-violet-400', 'bg-blue-400']
 
 const CallToActionBubbles = () => {
-  // Shuffle the colors
+  // Shuffle using a fresh copy to avoid mutating the module-level array
   const [bubbleColors] = useState<string[]>(() =>
-    shuffleArrayWithBubblesColors(initialBubblesColorsCss),
+    shuffleArrayWithBubblesColors([...initialBubblesColorsCss]),
   )
 
   return (
