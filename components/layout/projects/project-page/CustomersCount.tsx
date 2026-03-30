@@ -1,8 +1,9 @@
-import { CustomersCountProps } from '@/components/layout/projects/project-page/ProjectPage.types'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
 import { SHARED } from '@/localization'
+
+import { CustomersCountProps } from './CustomersCount.types'
 
 const CustomersCount = ({ count }: CustomersCountProps) => {
   return (

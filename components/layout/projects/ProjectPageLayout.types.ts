@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { HeaderSectionProps } from '@/components/layout/projects/project-page/ProjectPage.types'
+import { HeaderSectionProps } from '@/components/layout/projects/project-page/HeaderSection.types'
 
 import { Project, Section } from '@/lib/utils/typeDefinitions/interfaces'
 import { BreadCrumbsType } from '@/lib/utils/typeDefinitions/types'

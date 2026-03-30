@@ -1,6 +1,5 @@
 import Link from 'next/link'
 
-import { ErrorPageContentProps } from '@/components/layout/errors/Errors.types'
 import Heading from '@/components/shared/Heading'
 import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
@@ -9,7 +8,8 @@ import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { ERROR_PAGE_IMAGE } from '../constants'
+import { ERROR_PAGE_IMAGE } from './ErrorPageContent.constants'
+import { ErrorPageContentProps } from './ErrorPageContent.types'
 
 const ErrorPageContent = ({
   imgSrc,

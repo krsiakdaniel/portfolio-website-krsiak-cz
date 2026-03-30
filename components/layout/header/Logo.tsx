@@ -12,7 +12,7 @@ import logo from '@/public/icons/webp/logo.webp'
 
 import { IMAGE_ALT, TEXT } from '@/localization'
 
-import { HEADER_LOGO } from './constants'
+import { HEADER_LOGO } from './Logo.constants'
 
 const Logo = () => {
   return (

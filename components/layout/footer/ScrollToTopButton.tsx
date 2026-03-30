@@ -7,7 +7,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { ARIA_LABELS, FOOTER } from '@/localization'
 
-import { SCROLL_TO_TOP } from '../constants'
+import { SCROLL_TO_TOP } from './ScrollToTopButton.constants'
 
 const BUTTON_STYLES = `animate-fade-in-scroll 
   fixed right-8 bottom-8 z-50 

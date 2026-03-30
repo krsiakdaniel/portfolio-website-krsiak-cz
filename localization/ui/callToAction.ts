@@ -32,7 +32,7 @@ export const CALL_TO_ACTION = {
     highlight: 'Personal',
     heading: 'GitHub Projects',
     textMobileAndDesktop:
-      'Go through my GitHub repository to\u00A0see how I\u00A0code my\u00A0personal portfolio project.',
+      'Go through my GitHub repository to\u00A0see how I\u00A0code my\u00A0personal portfolio website.',
     textDesktop:
       'Writing maintainable, and\u00A0efficient code, using React, Next.js, and\u00A0TypeScript.',
   },

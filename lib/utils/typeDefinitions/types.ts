@@ -1,6 +1,6 @@
 import { SkillCategoryEnum, SkillIconEnum } from '@/lib/utils/typeDefinitions/enums'
 
-import { TECHNOLOGY_START_DATES } from '../helpers/years/calculateTechnologyYears'
+import { TECHNOLOGY_START_DATES } from '../helpers/years/calculateTechnologyYears.constants'
 
 // Breadcrumbs
 export type BreadCrumbsType = {

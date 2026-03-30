@@ -1,12 +1,13 @@
 import Link from 'next/link'
 
 import IconArrow from '@/components/icons/IconArrow'
-import { GoBackLinkProps } from '@/components/layout/projects/project-page/ProjectPage.types'
 
 import { getGoBackLinkID } from '@/lib/utils/helpers/page-navigation/getGoBackLink'
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { TEXT } from '@/localization'
+
+import { GoBackLinkProps } from './GoBackLink.types'
 
 const GoBackLink = ({ goBackLink, sectionID }: GoBackLinkProps) => {
   const goBackUrlWithID = getGoBackLinkID(goBackLink, sectionID)

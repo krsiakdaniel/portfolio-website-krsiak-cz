@@ -1,9 +1,8 @@
 import { DurationUnitEnum } from '@/lib/utils/typeDefinitions/enums'
-import { Job } from '@/lib/utils/typeDefinitions/interfaces'
 
 import { TEXT } from '@/localization'
 
-type GetYearsMonthsType = Pick<Job, 'duration' | 'unit'>
+import { GetYearsMonthsType } from './getYearsMonths.types'
 
 /**
  * Formats the duration and unit of a job experience into a string.

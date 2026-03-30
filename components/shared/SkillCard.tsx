@@ -5,7 +5,7 @@ import SkillCardTechnologyYears from '@/components/shared/SkillCardTechnologyYea
 import { getSkillCardID } from '@/lib/utils/helpers/skills/getSkillCardID'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
-import { SKILL_CARD_IMAGE } from './constants'
+import { SKILL_CARD_IMAGE } from './SkillCard.constants'
 
 const SkillCard = ({ id, imgSrc, imgAlt, technology, years }: SkillCardProps) => {
   return (

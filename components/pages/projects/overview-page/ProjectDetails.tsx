@@ -1,6 +1,7 @@
-import { ProjectDetailsProps } from '@/components/pages/projects/overview-page/OverviewPage.types'
 import Heading from '@/components/shared/Heading'
 import Paragraph from '@/components/shared/Paragraph'
+
+import { ProjectDetailsProps } from './ProjectDetails.types'
 
 const ProjectDetails = ({
   icon = '',

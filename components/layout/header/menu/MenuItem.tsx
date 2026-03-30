@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-import { MenuItemProps } from '@/components/layout/header/menu/Menu.types'
-
 import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
+
+import { MenuItemProps } from './MenuItem.types'
 
 const MenuItem = ({ linkItem, isMobile, onClickLink }: MenuItemProps) => {
   const { id, href, icon, ariaLabel, text, dataTestId, isActive } = linkItem

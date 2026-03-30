@@ -20,6 +20,7 @@ import { projectsWorkVite } from '@/lib/data/pages/projects/work/projects-overvi
 import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { LayoutViewEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
@@ -36,19 +37,19 @@ const allProjects = [
 ]
 
 const WorkExperienceLayoutSwitcher = () => {
-  const [activeView, setActiveView] = useState<'list' | 'grid'>('grid')
+  const [activeView, setActiveView] = useState<LayoutViewEnum>(LayoutViewEnum.Grid)
 
   return (
     <div className="relative">
       <div className="absolute -top-10 right-0 z-10">
         <LayoutToggle
           activeView={activeView}
-          onListClick={() => setActiveView('list')}
-          onGridClick={() => setActiveView('grid')}
+          onListClick={() => setActiveView(LayoutViewEnum.List)}
+          onGridClick={() => setActiveView(LayoutViewEnum.Grid)}
         />
       </div>
 
-      {activeView === 'list' ? (
+      {activeView === LayoutViewEnum.List ? (
         <ProjectWorkListView projects={allProjects} />
       ) : (
         <div className="mt-8">
@@ -68,9 +69,6 @@ const WorkExperienceLayoutSwitcher = () => {
             otherExperience={otherExperienceFrontEnd}
             showPlaceholder={true}
           />
-
-          {/* CTA */}
-          <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience1} />
 
           {/* WORDPRESS */}
           <ProjectSectionGrid

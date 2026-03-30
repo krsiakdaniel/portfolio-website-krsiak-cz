@@ -1,9 +1,10 @@
-import { ExperienceCardProps } from '@/components/pages/projects/other-experience/OtherExperience.types'
 import Heading from '@/components/shared/Heading'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
+
+import { ExperienceCardProps } from './ExperienceCard.types'
 
 const ExperienceCard = ({ company, role, description }: ExperienceCardProps) => {
   return (

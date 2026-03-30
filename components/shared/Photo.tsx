@@ -1,4 +1,3 @@
-import { PhotoProps } from '@/components/pages/resume/Resume.types'
 import ImageComponent from '@/components/shared/ImageComponent'
 import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
 
@@ -13,7 +12,8 @@ import krsiakLG from '@/public/images/webp/photo/me/krsiak-daniel-296x296.webp'
 
 import { TEXT } from '@/localization'
 
-import { PHOTO_DIMENSIONS } from './constants'
+import { PHOTO_DIMENSIONS } from './Photo.constants'
+import { PhotoProps } from './Photo.types'
 
 const Photo = ({ isPhotoSmall, isOpenToWork, showCaption = true }: PhotoProps) => {
   return (

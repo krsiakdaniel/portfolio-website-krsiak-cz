@@ -1,4 +1,3 @@
-import { MenuSocialLinksProps } from '@/components/layout/header/menu/Menu.types'
 import SocialLinkIcon from '@/components/shared/SocialLinkIcon'
 
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
@@ -10,6 +9,8 @@ import iconGitHub from '@/public/icons/svg/social/github.svg'
 import iconLinkedIn from '@/public/icons/svg/social/linkedin.svg'
 
 import { TEXT } from '@/localization'
+
+import { MenuSocialLinksProps } from './MenuSocialLinks.types'
 
 const MenuSocialLinks = ({ type }: MenuSocialLinksProps) => {
   const isMobile = type === DeviceTypeEnum.Mobile

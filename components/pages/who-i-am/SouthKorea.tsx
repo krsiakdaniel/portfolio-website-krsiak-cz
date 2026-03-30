@@ -15,7 +15,7 @@ import temple from '@/public/images/webp/photo/south-korea/temple.webp'
 
 import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA } from '@/localization'
 
-import { SOUTH_KOREA_IMAGES } from './constants'
+import { SOUTH_KOREA_IMAGES } from './SouthKorea.constants'
 
 const SouthKorea = () => {
   const imageComponentCSS = 'border rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md'

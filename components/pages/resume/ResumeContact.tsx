@@ -2,9 +2,9 @@ import HeadingSection from '@/components/shared/HeadingSection'
 import Highlight from '@/components/shared/Highlight'
 import Paragraph from '@/components/shared/Paragraph'
 import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
-import { QR_CODE } from '@/components/shared/constants'
 
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
+import { QR_CODE } from '@/lib/utils/constants/shared/qrCode'
 
 import { RESUME, SHARED, TEXT } from '@/localization'
 

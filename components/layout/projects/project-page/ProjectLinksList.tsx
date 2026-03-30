@@ -1,5 +1,4 @@
 import GitHubRepositoryLink from '@/components/layout/projects/project-page/GitHubRepositoryLink'
-import { ProjectLinksListProps } from '@/components/layout/projects/project-page/ProjectPage.types'
 import ExternalLink from '@/components/shared/ExternalLink'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
@@ -7,6 +6,8 @@ import ListItem from '@/components/shared/ListItem'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { SHARED, TEXT } from '@/localization'
+
+import { ProjectLinksListProps } from './ProjectLinksList.types'
 
 const ProjectLinksList = ({ projectLinks = [], linkGitHub }: ProjectLinksListProps) => {
   return (

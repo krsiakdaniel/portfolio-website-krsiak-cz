@@ -1,10 +1,11 @@
-import { ProjectImageProps } from '@/components/pages/projects/overview-page/OverviewPage.types'
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { PROJECT_IMAGE_PREVIEW } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+
+import { ProjectImageProps } from './ProjectImage.types'
 
 const ProjectImage = ({ isFeatured, image, title }: ProjectImageProps) => {
   const featuredProjectCSS = `${isFeatured ? 'bg-yellow-50 border-yellow-300' : 'bg-violet-50 border-violet-300'}`

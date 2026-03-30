@@ -8,7 +8,7 @@ import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { ICON_EMOJI } from '@/localization'
 
-import { ProjectCompactCardProps } from './OverviewPage.types'
+import { ProjectCompactCardProps } from './ProjectCompactCard.types'
 
 const ProjectCompactCard = ({
   ariaLabel,
@@ -24,8 +24,8 @@ const ProjectCompactCard = ({
   title,
   years,
 }: ProjectCompactCardProps) => {
-  const borderClass = isFeatured ? 'border-yellow-300' : 'border-violet-300'
-  const thumbnailColor = isFeatured
+  const borderClassCss = isFeatured ? 'border-yellow-300' : 'border-violet-300'
+  const thumbnailColorCss = isFeatured
     ? 'border-yellow-300 bg-yellow-50'
     : 'border-violet-300 bg-violet-50'
 
@@ -33,7 +33,7 @@ const ProjectCompactCard = ({
     <Link
       href={linkProjectPage}
       data-testid={dataTestId}
-      className={`group relative flex flex-col rounded-lg border bg-white shadow-sm transition-all hover:scale-[1.01] hover:shadow-md ${borderClass}`}
+      className={`group relative flex flex-col rounded-lg border bg-white shadow-sm transition-all hover:scale-[1.01] hover:shadow-md ${borderClassCss}`}
     >
       {isFeatured && (
         <span
@@ -45,7 +45,7 @@ const ProjectCompactCard = ({
         </span>
       )}
       {/* Thumbnail */}
-      <div className={`overflow-hidden rounded-t-lg border-b p-2 ${thumbnailColor}`}>
+      <div className={`overflow-hidden rounded-t-lg border-b p-2 ${thumbnailColorCss}`}>
         <Image
           src={image}
           alt={title}

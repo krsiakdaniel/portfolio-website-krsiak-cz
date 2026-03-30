@@ -1,4 +1,3 @@
-import { TestimonialPersonInfoProps } from '@/components/pages/testimonials/Testimonials.types'
 import ExternalLink from '@/components/shared/ExternalLink'
 import ImageComponent from '@/components/shared/ImageComponent'
 
@@ -6,7 +5,8 @@ import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import { ARIA_LABELS, TEXT } from '@/localization'
 
-import { TESTIMONIAL_PERSON_PHOTO } from './constants'
+import { TESTIMONIAL_PERSON_PHOTO } from './TestimonialPersonInfo.constants'
+import { TestimonialPersonInfoProps } from './TestimonialPersonInfo.types'
 
 const TestimonialPersonInfo = ({
   photo,

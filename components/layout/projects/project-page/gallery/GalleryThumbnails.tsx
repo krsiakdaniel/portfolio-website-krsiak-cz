@@ -7,7 +7,7 @@ import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import { ARIA_LABELS } from '@/localization'
 
-import { GalleryImageProps, GalleryThumbnailsProps } from '../ProjectPage.types'
+import { GalleryImageProps, GalleryThumbnailsProps } from './Gallery.types'
 
 const GalleryThumbnails = ({ images, activeImage, setActiveImage }: GalleryThumbnailsProps) => {
   // Handler for mouse clicks on thumbnail images

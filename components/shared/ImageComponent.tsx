@@ -11,7 +11,7 @@ import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import { IMAGE_ALT } from '@/localization'
 
-import { IMAGE_COMPONENT_DEFAULTS } from './constants'
+import { IMAGE_COMPONENT_DEFAULTS } from './ImageComponent.constants'
 
 const ImageComponent = ({
   src = '',

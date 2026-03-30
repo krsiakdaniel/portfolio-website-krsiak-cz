@@ -1,8 +1,8 @@
 import {
-  TECHNOLOGY_START_DATES,
   calculateTechnologyYears,
   getAllTechnologyYears,
 } from '@/lib/utils/helpers/years/calculateTechnologyYears'
+import { TECHNOLOGY_START_DATES } from '@/lib/utils/helpers/years/calculateTechnologyYears.constants'
 import { getCurrentYear } from '@/lib/utils/helpers/years/getCurrentYear'
 
 // Mock getCurrentYear to control the current year in tests

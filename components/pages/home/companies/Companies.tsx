@@ -16,9 +16,9 @@ import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization'
 import { COMPANIES_LOGOS_SIZES } from './Companies.constants'
 
 const Companies = () => {
-  const logosGrid =
+  const logosGridCss =
     'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-16 justify-items-center'
-  const imgWrapper = 'flex items-center justify-center'
+  const imgWrapperCss = 'flex items-center justify-center'
 
   // Animation classes for staggered infinite scaling using CSS custom property for delay
   const animationClasses = [
@@ -38,8 +38,8 @@ const Companies = () => {
           <Heading as="h2">{TEXT.workedForCompanies}</Heading>
         </div>
 
-        <div className={logosGrid}>
-          <div className={imgWrapper}>
+        <div className={logosGridCss}>
+          <div className={imgWrapperCss}>
             <ImageComponent
               src={kooperativa}
               width={COMPANIES_LOGOS_SIZES.KOOPERATIVA.WIDTH}
@@ -48,7 +48,7 @@ const Companies = () => {
               customCss={animationClasses[0]}
             />
           </div>
-          <div className={imgWrapper}>
+          <div className={imgWrapperCss}>
             <ImageComponent
               src={smartsupp}
               width={COMPANIES_LOGOS_SIZES.SMARTSUPP.WIDTH}
@@ -57,7 +57,7 @@ const Companies = () => {
               customCss={animationClasses[1]}
             />
           </div>
-          <div className={imgWrapper}>
+          <div className={imgWrapperCss}>
             <ImageComponent
               src={microsoft}
               width={COMPANIES_LOGOS_SIZES.MICROSOFT.WIDTH}
@@ -67,7 +67,7 @@ const Companies = () => {
             />
           </div>
 
-          <div className={imgWrapper}>
+          <div className={imgWrapperCss}>
             <ImageComponent
               src={bata}
               width={COMPANIES_LOGOS_SIZES.BATA.WIDTH}
@@ -76,7 +76,7 @@ const Companies = () => {
               customCss={animationClasses[3]}
             />
           </div>
-          <div className={imgWrapper}>
+          <div className={imgWrapperCss}>
             <ImageComponent
               src={komercniBanka}
               width={COMPANIES_LOGOS_SIZES.KOMERCNI_BANKA.WIDTH}
@@ -85,7 +85,7 @@ const Companies = () => {
               customCss={animationClasses[4]}
             />
           </div>
-          <div className={imgWrapper}>
+          <div className={imgWrapperCss}>
             <ImageComponent
               src={groupon}
               width={COMPANIES_LOGOS_SIZES.GROUPON.WIDTH}

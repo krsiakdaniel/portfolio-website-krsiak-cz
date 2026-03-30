@@ -1,9 +1,10 @@
 import Image from 'next/image'
 
 import GridPlaceholder from '@/components/pages/projects/overview-page/GridPlaceholder'
-import { ProjectSectionGridProps } from '@/components/pages/projects/overview-page/OverviewPage.types'
 import ProjectCompactCard from '@/components/pages/projects/overview-page/ProjectCompactCard'
 import HeadingSection from '@/components/shared/HeadingSection'
+
+import { ProjectSectionGridProps } from './ProjectSectionGrid.types'
 
 const ProjectSectionGrid = ({
   projectData = [],

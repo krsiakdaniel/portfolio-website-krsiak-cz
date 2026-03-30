@@ -1,6 +1,5 @@
 import Link from 'next/link'
 
-import { ResumePreviewCardProps } from '@/components/pages/resume/Resume.types'
 import HeadingSection from '@/components/shared/HeadingSection'
 import Highlight from '@/components/shared/Highlight'
 import ImageComponent from '@/components/shared/ImageComponent'
@@ -9,7 +8,8 @@ import Paragraph from '@/components/shared/Paragraph'
 
 import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
-import { RESUME_PREVIEW_IMAGE } from './constants'
+import { RESUME_PREVIEW_IMAGE } from './ResumePreviewCard.constants'
+import { ResumePreviewCardProps } from './ResumePreviewCard.types'
 
 const ResumePreviewCard = ({
   title,

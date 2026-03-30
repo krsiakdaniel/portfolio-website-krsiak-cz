@@ -1,10 +1,11 @@
-import { GitHubRepositoryLinkProps } from '@/components/layout/projects/project-page/ProjectPage.types'
 import ExternalLink from '@/components/shared/ExternalLink'
 import ListItem from '@/components/shared/ListItem'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { TEXT } from '@/localization'
+
+import { GitHubRepositoryLinkProps } from './GitHubRepositoryLink.types'
 
 const GitHubRepositoryLink = ({ href, text }: GitHubRepositoryLinkProps) => {
   return (

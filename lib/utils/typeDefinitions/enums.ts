@@ -61,6 +61,12 @@ export enum DeviceTypeEnum {
   Desktop = 'desktop',
 }
 
+// Layout View
+export enum LayoutViewEnum {
+  List = 'list',
+  Grid = 'grid',
+}
+
 // Change Frequency
 export enum ChangeFrequencyEnum {
   MONTHLY = 'monthly',

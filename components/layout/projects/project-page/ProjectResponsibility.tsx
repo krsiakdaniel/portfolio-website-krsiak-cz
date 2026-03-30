@@ -1,5 +1,6 @@
-import { ProjectResponsibilityProps } from '@/components/layout/projects/project-page/ProjectPage.types'
 import ProjectResponsibilitySection from '@/components/layout/projects/project-page/ProjectResponsibilitySection'
+
+import { ProjectResponsibilityProps } from './ProjectResponsibility.types'
 
 const ProjectResponsibility = ({ sections = [] }: ProjectResponsibilityProps) => {
   return (

@@ -1,6 +1,6 @@
 # 📝 Contributions
 
-This is a personal portfolio project.
+This is a personal portfolio website.
 
 **Table of Contents:**
 

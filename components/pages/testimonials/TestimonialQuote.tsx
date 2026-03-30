@@ -6,7 +6,7 @@ import quote from '@/public/icons/svg/testimonial/quote.svg'
 
 import { IMAGE_ALT } from '@/localization'
 
-import { TESTIMONIAL_QUOTE_ICON } from './constants'
+import { TESTIMONIAL_QUOTE_ICON } from './TestimonialQuote.constants'
 
 const TestimonialQuote = () => {
   return (

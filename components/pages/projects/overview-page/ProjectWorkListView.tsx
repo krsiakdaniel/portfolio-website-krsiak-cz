@@ -1,6 +1,6 @@
 import ProjectListRow from '@/components/pages/projects/overview-page/ProjectListRow'
 
-import { ProjectWorkListViewProps } from './OverviewPage.types'
+import { ProjectWorkListViewProps } from './ProjectWorkListView.types'
 
 const ProjectWorkListView = ({ projects }: ProjectWorkListViewProps) => {
   return (

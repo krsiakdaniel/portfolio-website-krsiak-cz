@@ -1,9 +1,10 @@
 import IconArrow from '@/components/icons/IconArrow'
-import { PageNavigationLinkProps } from '@/components/layout/page-navigation/PageNavigation.types'
 
 import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { COMMON_VALUES } from '@/localization'
+
+import { PageNavigationLinkProps } from './PageNavigationLink.types'
 
 const PageNavigationLink = ({
   href,
