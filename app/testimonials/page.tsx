@@ -8,16 +8,15 @@ import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading from '@/components/shared/Heading'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
 
-import { metaDataTestimonials } from '@/lib/data/metadata/pages/metaDataTestimonials'
-import { fitnessCoachTestimonials } from '@/lib/data/pages/testimonials/fitnessCoachTestimonials'
-import { personalTestimonials } from '@/lib/data/pages/testimonials/personalTestimonials'
-import { workTestimonials } from '@/lib/data/pages/testimonials/workTestimonials'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { metaDataTestimonials } from '@/data/metadata/pages/metaDataTestimonials'
+import { fitnessCoachTestimonials } from '@/data/pages/testimonials/fitnessCoachTestimonials'
+import { personalTestimonials } from '@/data/pages/testimonials/personalTestimonials'
+import { workTestimonials } from '@/data/pages/testimonials/workTestimonials'
 import { ARIA_LABELS, ICON_EMOJI, TESTIMONIALS, TEXT } from '@/localization'
 
 export const metadata: Metadata = {

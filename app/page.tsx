@@ -11,13 +11,12 @@ import SkillsMain from '@/components/pages/home/skills/SkillsMain'
 import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
 import CallToActionWorkExperience from '@/components/shared/call-to-action/cta-banners/CallToActionWorkExperience'
 
-import { metaDataHome } from '@/lib/data/metadata/pages/metaDataHome'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { metaDataHome } from '@/data/metadata/pages/metaDataHome'
 import { ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {

@@ -7,22 +7,21 @@ import ProjectSectionGrid from '@/components/pages/projects/overview-page/Projec
 import ProjectWorkListView from '@/components/pages/projects/overview-page/ProjectWorkListView'
 import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
 
-import { otherExperienceFrontEnd } from '@/lib/data/pages/projects/work/other-experience/otherExperienceFrontEnd'
-import { otherExperienceLocalization } from '@/lib/data/pages/projects/work/other-experience/otherExperienceLocalization'
-import { otherExperienceQA } from '@/lib/data/pages/projects/work/other-experience/otherExperienceQA'
-import { otherExperienceWordPress } from '@/lib/data/pages/projects/work/other-experience/otherExperienceWordPress'
-import { projectsWorkFrontEnd } from '@/lib/data/pages/projects/work/projects-overview/front-end/workFrontEnd'
-import { projectsWorkLocalization } from '@/lib/data/pages/projects/work/projects-overview/localization/workLocalization'
-import { projectsWorkNext } from '@/lib/data/pages/projects/work/projects-overview/next/workNext'
-import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview/quality-assurance/workQA'
-import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
-import { projectsWorkVite } from '@/lib/data/pages/projects/work/projects-overview/vite/workVite'
-import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { otherExperienceFrontEnd } from '@/data/pages/projects/work/other-experience/otherExperienceFrontEnd'
+import { otherExperienceLocalization } from '@/data/pages/projects/work/other-experience/otherExperienceLocalization'
+import { otherExperienceQA } from '@/data/pages/projects/work/other-experience/otherExperienceQA'
+import { otherExperienceWordPress } from '@/data/pages/projects/work/other-experience/otherExperienceWordPress'
+import { projectsWorkFrontEnd } from '@/data/pages/projects/work/projects-overview/front-end/workFrontEnd'
+import { projectsWorkLocalization } from '@/data/pages/projects/work/projects-overview/localization/workLocalization'
+import { projectsWorkNext } from '@/data/pages/projects/work/projects-overview/next/workNext'
+import { projectsWorkQA } from '@/data/pages/projects/work/projects-overview/quality-assurance/workQA'
+import { projectsWorkReact } from '@/data/pages/projects/work/projects-overview/react/workReact'
+import { projectsWorkVite } from '@/data/pages/projects/work/projects-overview/vite/workVite'
+import { projectsWorkWordPress } from '@/data/pages/projects/work/projects-overview/wordpress/workWordpress'
 import { LayoutViewEnum } from '@/lib/types/enums'
 import { COMMON_VALUES } from '@/localization'
 

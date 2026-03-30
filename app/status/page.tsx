@@ -9,15 +9,14 @@ import Heading from '@/components/shared/Heading'
 import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { metaDataStatus } from '@/lib/data/metadata/pages/metaDataStatus'
-import { statusBadges } from '@/lib/data/pages/status'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { metaDataStatus } from '@/data/metadata/pages/metaDataStatus'
+import { statusBadges } from '@/data/pages/status'
 import { EmojiNameEnum, EmojiSizeEnum, ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, ICON_EMOJI, IMAGE_ALT, STATUS, TEXT } from '@/localization'
 

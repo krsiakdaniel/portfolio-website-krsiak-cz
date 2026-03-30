@@ -2,15 +2,14 @@ import SkillsIconGroup from '@/components/pages/home/skills/SkillsIconGroup'
 import DividerWithText from '@/components/shared/DividerWithText'
 import Paragraph from '@/components/shared/Paragraph'
 
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+
 import {
   iconsDesignTools,
   iconsWebDesign,
   iconsWebDevelopment,
   iconsWebDevelopmentWithQA,
-} from '@/lib/data/pages/home/skills/skillsGrouped'
-
-import { ID } from '@/lib/utils/constants/ids/elementIds'
-
+} from '@/data/pages/home/skills/skillsGrouped'
 import { DIVIDER_WITH_TEXT, TEXT } from '@/localization'
 
 const Skills = () => {

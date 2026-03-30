@@ -1,8 +1,7 @@
 import IconInfo from '@/components/icons/IconInfo'
 import { AlertProps } from '@/components/shared/Alert.types'
 
-import { alertTypeClasses } from '@/lib/data/shared/alertTypeClasses'
-
+import { alertTypeClasses } from '@/data/shared/alertTypeClasses'
 import { AlertTypeEnum } from '@/lib/types/enums'
 
 const Alert = ({ type = AlertTypeEnum.Neutral, title, description, linkComponent }: AlertProps) => {

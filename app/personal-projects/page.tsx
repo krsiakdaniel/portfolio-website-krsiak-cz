@@ -8,14 +8,13 @@ import ProjectSection from '@/components/pages/projects/overview-page/ProjectSec
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import CallToActionGitHub from '@/components/shared/call-to-action/cta-banners/CallToActionGitHub'
 
-import { metaDataPersonalProjects } from '@/lib/data/metadata/pages/projects/metaDataPersonalProjects'
-import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { metaDataPersonalProjects } from '@/data/metadata/pages/projects/metaDataPersonalProjects'
+import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/next/personalNext'
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {

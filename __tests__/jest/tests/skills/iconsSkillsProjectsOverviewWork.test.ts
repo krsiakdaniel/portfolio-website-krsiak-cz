@@ -1,3 +1,5 @@
+import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
+
 import {
   iconsSkillsProjectsWorkGroupon,
   iconsSkillsProjectsWorkKomercniBanka,
@@ -6,10 +8,7 @@ import {
   iconsSkillsProjectsWorkSmartsuppDashboard,
   iconsSkillsProjectsWorkSmartsuppHelp,
   iconsSkillsProjectsWorkSmartsuppWeb,
-} from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
-
-import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
-
+} from '@/data/pages/projects/work/projects-overview/skillsProjectsWork'
 import { SkillIconEnum } from '@/lib/types/enums'
 
 describe('iconsSkillsProjectsWork', () => {

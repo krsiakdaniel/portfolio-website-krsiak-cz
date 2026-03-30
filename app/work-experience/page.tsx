@@ -7,13 +7,12 @@ import WorkExperience from '@/components/pages/work-experience/WorkExperience'
 import WorkExperienceIntroduction from '@/components/pages/work-experience/WorkExperienceIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 
-import { metaDataWorkExperience } from '@/lib/data/metadata/pages/projects/metaDataWorkExperience'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { metaDataWorkExperience } from '@/data/metadata/pages/projects/metaDataWorkExperience'
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {

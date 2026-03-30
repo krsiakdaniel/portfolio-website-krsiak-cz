@@ -3,10 +3,6 @@ import { Metadata } from 'next'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
 
-import { metaDataSmartsuppDashboard } from '@/lib/data/metadata/pages/projects/work/metaDataSmartsuppDashboard'
-import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
-import { sections } from '@/lib/data/pages/projects/work/smartsuppDashboard'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
@@ -14,6 +10,9 @@ import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrum
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { metaDataSmartsuppDashboard } from '@/data/metadata/pages/projects/work/metaDataSmartsuppDashboard'
+import { projectsWorkReact } from '@/data/pages/projects/work/projects-overview/react/workReact'
+import { sections } from '@/data/pages/projects/work/smartsuppDashboard'
 import { GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, TEXT } from '@/localization'
 
