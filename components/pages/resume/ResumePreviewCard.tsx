@@ -33,7 +33,7 @@ const ResumePreviewCard = ({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="block transition-transform duration-200 hover:scale-101"
+          className="block transition-transform duration-200 hover:scale-[1.01]"
           data-testid={dataTestId.image}
         >
           <div className="bg-white">

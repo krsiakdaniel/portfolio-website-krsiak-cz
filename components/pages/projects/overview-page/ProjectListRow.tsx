@@ -20,7 +20,7 @@ const ProjectListRow = ({
       href={linkProjectPage}
       data-testid={id}
       aria-label={ariaLabel}
-      className={`group flex items-center gap-3 rounded-lg border bg-white px-3 py-3 shadow-sm transition-all hover:scale-101 hover:shadow-md ${isFeatured ? 'border-yellow-300 hover:bg-yellow-50' : 'border-violet-300 hover:bg-violet-50'}`}
+      className={`group flex items-center gap-3 rounded-lg border bg-white px-3 py-3 shadow-sm transition-all hover:scale-[1.01] hover:shadow-md ${isFeatured ? 'border-yellow-300 hover:bg-yellow-50' : 'border-violet-300 hover:bg-violet-50'}`}
     >
       {/* Content */}
       <div className="flex min-w-0 flex-1 flex-col gap-0.5">

@@ -58,11 +58,17 @@ const ProjectSectionGrid = ({
 
               {item.svgIcons?.length || item.emojiIcons?.length ? (
                 <div className="mt-4 flex flex-wrap items-center gap-2">
-                  {item.svgIcons?.map((src) => (
-                    <Image key={src} src={src} alt="" width={28} height={28} />
-                  ))}
+                  {item.svgIcons?.map((src) => {
+                    const name = src.split('/').pop()?.replace('.svg', '') ?? ''
+                    return <Image key={src} src={src} alt={name} width={28} height={28} />
+                  })}
                   {item.emojiIcons?.map((emoji) => (
-                    <span key={emoji} className="text-[28px] leading-none">
+                    <span
+                      key={emoji}
+                      role="img"
+                      aria-label={emoji}
+                      className="text-[28px] leading-none"
+                    >
                       {emoji}
                     </span>
                   ))}

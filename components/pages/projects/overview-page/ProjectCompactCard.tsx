@@ -24,7 +24,8 @@ const ProjectCompactCard = ({
   title,
   years,
 }: ProjectCompactCardProps) => {
-  const borderColor = isFeatured
+  const borderClass = isFeatured ? 'border-yellow-300' : 'border-violet-300'
+  const thumbnailColor = isFeatured
     ? 'border-yellow-300 bg-yellow-50'
     : 'border-violet-300 bg-violet-50'
 
@@ -32,7 +33,7 @@ const ProjectCompactCard = ({
     <Link
       href={linkProjectPage}
       data-testid={dataTestId}
-      className={`group relative flex flex-col rounded-lg border bg-white shadow-sm transition-all hover:scale-101 hover:shadow-md ${isFeatured ? 'border-yellow-300' : 'border-violet-300'}`}
+      className={`group relative flex flex-col rounded-lg border bg-white shadow-sm transition-all hover:scale-[1.01] hover:shadow-md ${borderClass}`}
     >
       {isFeatured && (
         <span
@@ -44,7 +45,7 @@ const ProjectCompactCard = ({
         </span>
       )}
       {/* Thumbnail */}
-      <div className={`overflow-hidden rounded-t-lg border-b p-2 ${borderColor}`}>
+      <div className={`overflow-hidden rounded-t-lg border-b p-2 ${thumbnailColor}`}>
         <Image
           src={image}
           alt={title}
