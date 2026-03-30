@@ -99,7 +99,7 @@ const WorkExperienceLayoutSwitcher = () => {
       )}
 
       {/* CTA */}
-      <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience2} />
+      <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience} />
     </div>
   )
 }
