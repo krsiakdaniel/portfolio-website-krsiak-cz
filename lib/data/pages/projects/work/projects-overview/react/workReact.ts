@@ -2,7 +2,7 @@ import { workReactKomercniBanka } from '@/lib/data/pages/projects/work/projects-
 import { workReactKooperativa } from '@/lib/data/pages/projects/work/projects-overview/react/workReactKooperativa'
 import { workReactSmartsuppDashboard } from '@/lib/data/pages/projects/work/projects-overview/react/workReactSmartsuppDashboard'
 
-import { Project } from '@/lib/utils/typeDefinitions/interfaces'
+import { Project } from '@/lib/types/interfaces'
 
 export const projectsWorkReact: Project[] = [
   workReactSmartsuppDashboard,

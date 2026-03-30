@@ -9,7 +9,8 @@ import {
 } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
 import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
-import { SkillIconEnum } from '@/lib/utils/typeDefinitions/enums'
+
+import { SkillIconEnum } from '@/lib/types/enums'
 
 describe('iconsSkillsProjectsWork', () => {
   it('should return the correct icons for Smartsupp Dashboard project', () => {

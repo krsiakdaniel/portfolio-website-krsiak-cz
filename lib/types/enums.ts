@@ -8,7 +8,7 @@ export enum ScreenSizeEnum {
 }
 
 // Image Loading
-export enum ImageLoading {
+export enum ImageLoadingEnum {
   EAGER = 'eager',
   LAZY = 'lazy',
 }

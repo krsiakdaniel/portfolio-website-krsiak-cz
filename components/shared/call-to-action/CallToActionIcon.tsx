@@ -1,8 +1,8 @@
 import EmojiAnimated from '@/components/shared/EmojiAnimated'
 
 import { getEmojiEnum } from '@/lib/utils/helpers/getEmojiEnum'
-import { DeviceTypeEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
+import { DeviceTypeEnum, EmojiSizeEnum, ImageLoadingEnum } from '@/lib/types/enums'
 import { SOCIAL_LINKS } from '@/localization'
 
 import { CallToActionIconProps } from './CallToActionIcon.types'
@@ -25,7 +25,7 @@ const CallToActionIcon = ({ type, icon }: CallToActionIconProps) => {
           icon={getEmojiEnum(icon.src)}
           size={size}
           alt={SOCIAL_LINKS.gitHub}
-          loading={ImageLoading.EAGER}
+          loading={ImageLoadingEnum.EAGER}
         />
       )}
     </div>

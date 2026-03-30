@@ -1,4 +1,4 @@
-import { TravelCountry } from '@/lib/utils/typeDefinitions/interfaces'
+import { TravelCountry } from '@/lib/types/interfaces'
 
 import { getFlagAriaLabel, getVisitCountColor } from './CountryCard.utils'
 

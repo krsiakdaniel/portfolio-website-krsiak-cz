@@ -1,3 +1,3 @@
-import { Job } from '../../typeDefinitions/interfaces'
+import { Job } from '../../../types/interfaces'
 
 export type GetYearsMonthsType = Pick<Job, 'duration' | 'unit'>

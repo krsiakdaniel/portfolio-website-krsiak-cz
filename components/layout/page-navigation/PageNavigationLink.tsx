@@ -1,7 +1,6 @@
 import IconArrow from '@/components/icons/IconArrow'
 
-import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
-
+import { ArrowDirectionEnum } from '@/lib/types/enums'
 import { COMMON_VALUES } from '@/localization'
 
 import { PageNavigationLinkProps } from './PageNavigationLink.types'

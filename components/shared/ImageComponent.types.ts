@@ -2,8 +2,7 @@ import { ReactNode } from 'react'
 
 import { StaticImageData } from 'next/image'
 
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-
+import { ImageLoadingEnum } from '@/lib/types/enums'
 import { PlaceholderValue } from '@/node_modules/next/dist/shared/lib/get-img-props'
 
 /**
@@ -16,7 +15,7 @@ import { PlaceholderValue } from '@/node_modules/next/dist/shared/lib/get-img-pr
  * @property {boolean} [priority]
  * - priority: When true, the image will be considered high priority and preloaded.
  * - priority: Use for images that will be visible in the initial viewport to improve LCP.
- * @property {ImageLoading | undefined} loading - Controls the loading behavior ('lazy', 'eager', or undefined).
+ * @property {ImageLoadingEnum | undefined} loading - Controls the loading behavior ('lazy', 'eager', or undefined).
  * @property {string} [customCss] - Optional CSS class names to apply to the image.
  * @property {string} [sizes] - Optional sizes attribute for responsive images.
  * @property {PlaceholderValue} [placeholder] - Optional placeholder strategy ('blur' or 'empty').
@@ -31,7 +30,7 @@ export type ImageComponentProps = {
   height?: number
   alt: string
   priority?: boolean
-  loading: ImageLoading | undefined
+  loading: ImageLoadingEnum | undefined
   customCss?: string
   sizes?: string
   placeholder?: PlaceholderValue

@@ -1,7 +1,6 @@
 import Heading from '@/components/shared/Heading'
 
-import { TravelRegion } from '@/lib/utils/typeDefinitions/interfaces'
-
+import { TravelRegion } from '@/lib/types/interfaces'
 import { WHO_I_AM } from '@/localization'
 
 import CountryCard from './CountryCard'

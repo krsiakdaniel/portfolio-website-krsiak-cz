@@ -1,6 +1,7 @@
 import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
-import { SkillIconEnum } from '@/lib/utils/typeDefinitions/enums'
-import { Icon } from '@/lib/utils/typeDefinitions/interfaces'
+
+import { SkillIconEnum } from '@/lib/types/enums'
+import { Icon } from '@/lib/types/interfaces'
 
 export const iconsSkillsProjectsWorkO2its: Icon[] = getSkillsIcons([
   SkillIconEnum.TypeScript,

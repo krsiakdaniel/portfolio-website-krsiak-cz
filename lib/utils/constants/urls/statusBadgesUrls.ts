@@ -1,4 +1,4 @@
-import { StatusBadgeUrls } from '@/lib/utils/typeDefinitions/interfaces'
+import { StatusBadgeUrls } from '@/lib/types/interfaces'
 
 const GITHUB_WORKFLOW_URL =
   'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz/actions/workflows'

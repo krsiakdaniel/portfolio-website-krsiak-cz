@@ -1,10 +1,9 @@
-import { TestimonialItem } from '@/lib/utils/typeDefinitions/interfaces'
-
 import personPopa from '@/public/images/webp/testimonials/work/daniel-popa.webp'
 import personLosseff from '@/public/images/webp/testimonials/work/inka-losseff.webp'
 import personKvapil from '@/public/images/webp/testimonials/work/roman-kvapil.webp'
 import personPridalek from '@/public/images/webp/testimonials/work/vojtech-pridalek.webp'
 
+import { TestimonialItem } from '@/lib/types/interfaces'
 import { ICON_EMOJI, TEXT_DATA } from '@/localization'
 
 export const workTestimonials: TestimonialItem[] = [

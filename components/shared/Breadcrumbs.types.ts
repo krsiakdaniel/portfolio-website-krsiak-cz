@@ -1,3 +1,3 @@
-import { BreadCrumbsType } from '@/lib/utils/typeDefinitions/types'
+import { BreadCrumbsType } from '@/lib/types/types'
 
 export type BreadCrumbsProps = BreadCrumbsType

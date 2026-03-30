@@ -4,8 +4,7 @@ import Link from 'next/link'
 import IconArrow from '@/components/icons/IconArrow'
 import ProjectSkillsIcons from '@/components/pages/projects/overview-page/ProjectSkillsIcons'
 
-import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
-
+import { ArrowDirectionEnum } from '@/lib/types/enums'
 import { ICON_EMOJI } from '@/localization'
 
 import { ProjectCompactCardProps } from './ProjectCompactCard.types'

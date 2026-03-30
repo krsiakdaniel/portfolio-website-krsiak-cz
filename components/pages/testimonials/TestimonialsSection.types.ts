@@ -1,4 +1,4 @@
-import { TestimonialItem } from '@/lib/utils/typeDefinitions/interfaces'
+import { TestimonialItem } from '@/lib/types/interfaces'
 
 export type TestimonialsSectionProps = {
   title: string

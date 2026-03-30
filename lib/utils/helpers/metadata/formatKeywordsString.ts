@@ -1,4 +1,4 @@
-import { MetaDataKeywords } from '@/lib/utils/typeDefinitions/interfaces'
+import { MetaDataKeywords } from '@/lib/types/interfaces'
 
 /**
  * Converts the keywords object into a comma-separated string.

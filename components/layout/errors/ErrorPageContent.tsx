@@ -4,9 +4,9 @@ import Heading from '@/components/shared/Heading'
 import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { ImageLoadingEnum } from '@/lib/types/enums'
 
 import { ERROR_PAGE_IMAGE } from './ErrorPageContent.constants'
 import { ErrorPageContentProps } from './ErrorPageContent.types'
@@ -31,7 +31,7 @@ const ErrorPageContent = ({
         width={ERROR_PAGE_IMAGE.WIDTH}
         height={ERROR_PAGE_IMAGE.HEIGHT}
         alt={imgAlt}
-        loading={ImageLoading.EAGER}
+        loading={ImageLoadingEnum.EAGER}
       />
 
       <div className="mt-10">

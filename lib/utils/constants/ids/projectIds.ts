@@ -1,4 +1,4 @@
-import { ProjectIds } from '@/lib/utils/typeDefinitions/interfaces'
+import { ProjectIds } from '@/lib/types/interfaces'
 
 export const PROJECT_ID: ProjectIds = {
   work: {

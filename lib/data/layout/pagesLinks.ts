@@ -1,9 +1,9 @@
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { PageLinkItem } from '@/lib/utils/typeDefinitions/interfaces'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { PageLinkItem } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const pagesLinks: PageLinkItem[] = [

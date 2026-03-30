@@ -1,5 +1,5 @@
-import { TechnologyKey } from '../../typeDefinitions/types'
 import { TECHNOLOGY_START_DATES } from './calculateTechnologyYears.constants'
+import { TechnologyKey } from './calculateTechnologyYears.types'
 import { getCurrentYear } from './getCurrentYear'
 
 /**

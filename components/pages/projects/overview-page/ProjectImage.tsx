@@ -1,8 +1,8 @@
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { PROJECT_IMAGE_PREVIEW } from '@/lib/utils/constants/imageGalleryConfig'
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
+import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 import { ProjectImageProps } from './ProjectImage.types'
@@ -28,7 +28,7 @@ const ProjectImage = ({ isFeatured, image, title }: ProjectImageProps) => {
           width={PROJECT_IMAGE_PREVIEW.WIDTH}
           height={PROJECT_IMAGE_PREVIEW.HEIGHT}
           alt={title}
-          loading={ImageLoading.LAZY}
+          loading={ImageLoadingEnum.LAZY}
           customCss={`shadow-md rounded-lg border p-1 ${featuredProjectCSS}`}
           sizes={`(max-width: 768px) 100vw, (max-width: 1024px) 50vw, ${PROJECT_IMAGE_PREVIEW.WIDTH}px`}
         />

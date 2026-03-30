@@ -1,6 +1,4 @@
-import { SkillCategoryEnum, SkillIconEnum } from '@/lib/utils/typeDefinitions/enums'
-
-import { TECHNOLOGY_START_DATES } from '../helpers/years/calculateTechnologyYears.constants'
+import { SkillCategoryEnum, SkillIconEnum } from '@/lib/types/enums'
 
 // Breadcrumbs
 export type BreadCrumbsType = {
@@ -12,12 +10,6 @@ export type BreadCrumbsType = {
   level2Icon?: string
   level2AriaLabel?: string
   level2Text?: string
-}
-
-// Get Menu Link ID
-export type GetMenuLinkIDType = {
-  isMobile: boolean
-  linkID: string
 }
 
 // Skills
@@ -59,28 +51,3 @@ export type SkillIconType =
   | SkillIconEnum.XD
   | SkillIconEnum.Zod
   | SkillIconEnum.Zustand
-
-// PARAGRAPH
-// Define possible margin top values
-export type MarginTopType = 'mt-0' | 'mt-2' | 'mt-4' | 'mt-8' | 'mt-16'
-
-// Define possible text colors
-export type TextColorType = 'text-neutral-600' | 'text-neutral-700' | 'text-neutral-900'
-
-// Define possible text sizes
-export type TextSizeType =
-  | 'text-sm'
-  | 'text-base'
-  | 'text-lg'
-  | 'text-xl'
-  | 'text-2xl'
-  | 'text-3xl'
-  | 'text-4xl'
-  | 'text-5xl'
-  | 'text-6xl'
-  | 'text-7xl'
-  | 'text-8xl'
-  | 'text-9xl'
-
-// Technology Key Type
-export type TechnologyKey = keyof typeof TECHNOLOGY_START_DATES

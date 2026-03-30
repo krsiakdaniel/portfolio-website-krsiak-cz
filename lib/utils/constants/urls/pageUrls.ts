@@ -1,4 +1,4 @@
-import { EnvUrls, PageUrls } from '@/lib/utils/typeDefinitions/interfaces'
+import { EnvUrls, PageUrls } from '@/lib/types/interfaces'
 
 /**
  * Environment URLs.

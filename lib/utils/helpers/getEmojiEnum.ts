@@ -1,5 +1,6 @@
 import { REGEX_GET_EMOJI_NAME_FROM_IMG_PATH } from '@/lib/utils/helpers/regex/getEmojiEnumRegex'
-import { EmojiNameEnum } from '@/lib/utils/typeDefinitions/enums'
+
+import { EmojiNameEnum } from '@/lib/types/enums'
 
 /**
  * Extracts emoji enum value from an image path

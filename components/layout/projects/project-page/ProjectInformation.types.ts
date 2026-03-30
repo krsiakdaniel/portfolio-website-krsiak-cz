@@ -1,4 +1,4 @@
-import { Project } from '@/lib/utils/typeDefinitions/interfaces'
+import { Project } from '@/lib/types/interfaces'
 
 export type ProjectInformationProps = Pick<
   Project,

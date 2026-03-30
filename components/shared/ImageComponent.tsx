@@ -7,8 +7,8 @@ import { Tooltip } from 'react-tooltip'
 import { ImageComponentProps } from '@/components/shared/ImageComponent.types'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
+import { ImageLoadingEnum } from '@/lib/types/enums'
 import { IMAGE_ALT } from '@/localization'
 
 import { IMAGE_COMPONENT_DEFAULTS } from './ImageComponent.constants'
@@ -19,7 +19,7 @@ const ImageComponent = ({
   height = IMAGE_COMPONENT_DEFAULTS.HEIGHT,
   alt = IMAGE_ALT.altDefault,
   priority = false,
-  loading = ImageLoading.LAZY,
+  loading = ImageLoadingEnum.LAZY,
   customCss = '',
   sizes,
   placeholder = 'empty',

@@ -1,4 +1,4 @@
-import { ProjectLink } from '@/__tests__/playwright/lib/utils/typeDefinitions/interfaces'
+import { ProjectLink } from '@/__tests__/playwright/lib/types/interfaces'
 
 export const projectLinks: ProjectLink[] = [
   {

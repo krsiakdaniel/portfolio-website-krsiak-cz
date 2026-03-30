@@ -11,8 +11,7 @@ import Menu from '@/components/layout/header/menu/Menu'
 import MenuMobileToggle from '@/components/layout/header/menu/MenuMobileToggle'
 import MenuSocialLinks from '@/components/layout/header/menu/MenuSocialLinks'
 
-import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
-
+import { DeviceTypeEnum } from '@/lib/types/enums'
 import { ARIA_LABELS } from '@/localization'
 
 const Header = () => {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { ScreenSizeEnum } from '../utils/typeDefinitions/enums'
+import { ScreenSizeEnum } from '../types/enums'
 import { UseResponsiveTextOptions } from './useResponsiveText.types'
 
 /**

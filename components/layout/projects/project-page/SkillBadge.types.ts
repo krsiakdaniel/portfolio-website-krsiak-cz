@@ -1,3 +1,3 @@
-import { Skill } from '@/lib/utils/typeDefinitions/interfaces'
+import { Skill } from '@/lib/types/interfaces'
 
 export type SkillBadgeProps = { skillObject: Skill }

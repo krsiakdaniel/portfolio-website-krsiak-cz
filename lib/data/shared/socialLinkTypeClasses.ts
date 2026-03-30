@@ -1,4 +1,4 @@
-import { AlertTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+import { AlertTypeEnum } from '@/lib/types/enums'
 
 // Interface for styles
 interface SocialLinkStyles {

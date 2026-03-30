@@ -215,7 +215,7 @@ Every component that has exported types or non-CSS constants must have a compani
 - **`ComponentName.types.ts`** — all exported TypeScript types and interfaces for that component
 - **`ComponentName.constants.ts`** — all exported named constants (`UPPER_SNAKE_CASE`) for that component
 
-```
+```text
 ProjectCard.tsx                ← component
 ProjectCard.types.ts           ← types & interfaces
 ProjectCard.constants.ts       ← exported constants (image sizes, config values, etc.)
@@ -225,7 +225,7 @@ ProjectCard.constants.ts       ← exported constants (image sizes, config value
 
 - CSS/Tailwind class strings, animation classes, and color arrays stay **inline** in the `.tsx` file — do not extract them to a companion file
 - Constants that are reused across multiple components belong in `lib/utils/constants/`, not in a companion file
-- Shared project-wide types (interfaces, enums, utility types) belong in `lib/utils/typeDefinitions/` — not in component-level companion files
+- Shared project-wide types (interfaces, enums, utility types) belong in `lib/types/` — not in component-level companion files
 - Companion constants files use `UPPER_SNAKE_CASE` for both the export name and all object keys
 - Do **not** create a companion file if it would be empty
 

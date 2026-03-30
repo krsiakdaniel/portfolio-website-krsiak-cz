@@ -8,8 +8,8 @@ import {
 } from '@/lib/data/shared/skill-icons/skillIconsSVG'
 
 import { YEARS_EXPERIENCE } from '@/lib/utils/constants/yearsExperience'
-import { SkillCardItem } from '@/lib/utils/typeDefinitions/interfaces'
 
+import { SkillCardItem } from '@/lib/types/interfaces'
 import { TEXT } from '@/localization'
 
 export const skills: SkillCardItem[] = [

@@ -2,8 +2,6 @@ import DividerWithText from '@/components/shared/DividerWithText'
 import Heading from '@/components/shared/Heading'
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-
 import bata from '@/public/images/svg/logo/bata.svg'
 import groupon from '@/public/images/svg/logo/groupon.svg'
 import komercniBanka from '@/public/images/svg/logo/komercni-banka.svg'
@@ -11,6 +9,7 @@ import kooperativa from '@/public/images/svg/logo/kooperativa.svg'
 import microsoft from '@/public/images/svg/logo/microsoft.svg'
 import smartsupp from '@/public/images/svg/logo/smartsupp.svg'
 
+import { ImageLoadingEnum } from '@/lib/types/enums'
 import { DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization'
 
 import { COMPANIES_LOGOS_SIZES } from './Companies.constants'
@@ -44,7 +43,7 @@ const Companies = () => {
               src={kooperativa}
               width={COMPANIES_LOGOS_SIZES.KOOPERATIVA.WIDTH}
               alt={IMAGE_ALT.altKooperativa}
-              loading={ImageLoading.LAZY}
+              loading={ImageLoadingEnum.LAZY}
               customCss={animationClasses[0]}
             />
           </div>
@@ -53,7 +52,7 @@ const Companies = () => {
               src={smartsupp}
               width={COMPANIES_LOGOS_SIZES.SMARTSUPP.WIDTH}
               alt={IMAGE_ALT.altSmartsupp}
-              loading={ImageLoading.LAZY}
+              loading={ImageLoadingEnum.LAZY}
               customCss={animationClasses[1]}
             />
           </div>
@@ -62,7 +61,7 @@ const Companies = () => {
               src={microsoft}
               width={COMPANIES_LOGOS_SIZES.MICROSOFT.WIDTH}
               alt={IMAGE_ALT.altMicrosoft}
-              loading={ImageLoading.LAZY}
+              loading={ImageLoadingEnum.LAZY}
               customCss={animationClasses[2]}
             />
           </div>
@@ -72,7 +71,7 @@ const Companies = () => {
               src={bata}
               width={COMPANIES_LOGOS_SIZES.BATA.WIDTH}
               alt={IMAGE_ALT.altBata}
-              loading={ImageLoading.LAZY}
+              loading={ImageLoadingEnum.LAZY}
               customCss={animationClasses[3]}
             />
           </div>
@@ -81,7 +80,7 @@ const Companies = () => {
               src={komercniBanka}
               width={COMPANIES_LOGOS_SIZES.KOMERCNI_BANKA.WIDTH}
               alt={IMAGE_ALT.altKomercniBanka}
-              loading={ImageLoading.LAZY}
+              loading={ImageLoadingEnum.LAZY}
               customCss={animationClasses[4]}
             />
           </div>
@@ -90,7 +89,7 @@ const Companies = () => {
               src={groupon}
               width={COMPANIES_LOGOS_SIZES.GROUPON.WIDTH}
               alt={IMAGE_ALT.altGroupon}
-              loading={ImageLoading.LAZY}
+              loading={ImageLoadingEnum.LAZY}
               customCss={animationClasses[5]}
             />
           </div>

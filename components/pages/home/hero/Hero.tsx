@@ -3,8 +3,8 @@ import HeroParagraph from '@/components/pages/home/hero/HeroParagraph'
 import EmojiAnimated from '@/components/shared/EmojiAnimated'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { EmojiNameEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
+import { EmojiNameEnum, EmojiSizeEnum, ImageLoadingEnum } from '@/lib/types/enums'
 import { IMAGE_ALT } from '@/localization'
 
 const Hero = () => {
@@ -17,7 +17,7 @@ const Hero = () => {
           icon={EmojiNameEnum.SUNGLASSES}
           size={EmojiSizeEnum.LG}
           alt={IMAGE_ALT.altWelcome}
-          loading={ImageLoading.EAGER}
+          loading={ImageLoadingEnum.EAGER}
           className="mt-8"
         />
       </div>

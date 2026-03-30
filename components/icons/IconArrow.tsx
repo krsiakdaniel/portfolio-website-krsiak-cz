@@ -1,4 +1,4 @@
-import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { ArrowDirectionEnum } from '@/lib/types/enums'
 
 import { IconArrowProps } from './IconArrow.types'
 

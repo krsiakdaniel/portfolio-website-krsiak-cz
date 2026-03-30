@@ -1,8 +1,7 @@
 import ExternalLink from '@/components/shared/ExternalLink'
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-
+import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, TEXT } from '@/localization'
 
 import { TESTIMONIAL_PERSON_PHOTO } from './TestimonialPersonInfo.constants'
@@ -22,7 +21,7 @@ const TestimonialPersonInfo = ({
       width={TESTIMONIAL_PERSON_PHOTO.WIDTH}
       height={TESTIMONIAL_PERSON_PHOTO.HEIGHT}
       alt={name}
-      loading={ImageLoading.LAZY}
+      loading={ImageLoadingEnum.LAZY}
       customCss="rounded-full border border-violet-300 bg-violet-50 p-1 shadow-md"
       sizes={`${TESTIMONIAL_PERSON_PHOTO.WIDTH}px`}
     />

@@ -8,10 +8,10 @@ import { pagesLinks } from '@/lib/data/layout/pagesLinks'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { isMenuItemActive } from '@/lib/utils/helpers/menu/isMenuItemActive'
-import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { DeviceTypeEnum } from '@/lib/types/enums'
 import { ARIA_LABELS } from '@/localization'
 
 /**

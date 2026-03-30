@@ -1,4 +1,4 @@
-import { ProjectBase } from '@/lib/utils/typeDefinitions/interfaces'
+import { ProjectBase } from '@/lib/types/interfaces'
 
 export type ProjectSummaryCardProps = ProjectBase & {
   className: string

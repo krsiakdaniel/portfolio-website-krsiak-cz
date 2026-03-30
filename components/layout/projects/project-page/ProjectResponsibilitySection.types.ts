@@ -1,3 +1,3 @@
-import { Section } from '@/lib/utils/typeDefinitions/interfaces'
+import { Section } from '@/lib/types/interfaces'
 
 export type ProjectResponsibilitySectionProps = Section

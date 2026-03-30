@@ -1,4 +1,4 @@
-import { GalleryImage } from '@/lib/utils/typeDefinitions/interfaces'
+import { GalleryImage } from '@/lib/types/interfaces'
 
 export type GalleryProps = {
   images: GalleryImage[]

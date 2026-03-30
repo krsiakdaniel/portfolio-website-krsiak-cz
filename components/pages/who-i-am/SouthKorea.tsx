@@ -4,8 +4,6 @@ import HeadingSection from '@/components/shared/HeadingSection'
 import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import hiking from '@/public/images/webp/photo/south-korea/hiking.webp'
@@ -13,6 +11,7 @@ import nature from '@/public/images/webp/photo/south-korea/nature.webp'
 import palace from '@/public/images/webp/photo/south-korea/palace.webp'
 import temple from '@/public/images/webp/photo/south-korea/temple.webp'
 
+import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA } from '@/localization'
 
 import { SOUTH_KOREA_IMAGES } from './SouthKorea.constants'
@@ -53,7 +52,7 @@ const SouthKorea = () => {
               height={SOUTH_KOREA_IMAGES.HEIGHT}
               alt={SOUTH_KOREA.hiking}
               priority={true}
-              loading={ImageLoading.EAGER}
+              loading={ImageLoadingEnum.EAGER}
               customCss={imageComponentCSS}
               dataTestId={DATA_TEST_IDS.southKorea.hiking}
             />
@@ -80,7 +79,7 @@ const SouthKorea = () => {
               height={SOUTH_KOREA_IMAGES.HEIGHT}
               alt={SOUTH_KOREA.nature}
               priority={true}
-              loading={ImageLoading.EAGER}
+              loading={ImageLoadingEnum.EAGER}
               customCss={imageComponentCSS}
               dataTestId={DATA_TEST_IDS.southKorea.nature}
             />
@@ -94,7 +93,7 @@ const SouthKorea = () => {
             height={SOUTH_KOREA_IMAGES.HEIGHT}
             alt={SOUTH_KOREA.temple}
             priority={true}
-            loading={ImageLoading.EAGER}
+            loading={ImageLoadingEnum.EAGER}
             customCss={imageComponentCSS}
             dataTestId={DATA_TEST_IDS.southKorea.temple}
           />
@@ -107,7 +106,7 @@ const SouthKorea = () => {
             height={SOUTH_KOREA_IMAGES.HEIGHT}
             alt={SOUTH_KOREA.palace}
             priority={true}
-            loading={ImageLoading.EAGER}
+            loading={ImageLoadingEnum.EAGER}
             customCss={imageComponentCSS}
             dataTestId={DATA_TEST_IDS.southKorea.palace}
           />

@@ -1,4 +1,4 @@
-import { ScreenSizeEnum } from '../utils/typeDefinitions/enums'
+import { ScreenSizeEnum } from '../types/enums'
 
 export type UseResponsiveTextOptions = {
   mobileText: string

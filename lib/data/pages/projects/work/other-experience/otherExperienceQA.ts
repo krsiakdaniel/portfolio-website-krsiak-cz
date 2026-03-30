@@ -1,7 +1,6 @@
 import { SKILL_SVG } from '@/lib/data/pages/projects/work/other-experience/skillSvgPaths'
 
-import { OtherExperienceData } from '@/lib/utils/typeDefinitions/interfaces'
-
+import { OtherExperienceData } from '@/lib/types/interfaces'
 import { ICON_EMOJI, OTHER_EXPERIENCE } from '@/localization'
 
 export const otherExperienceQA: OtherExperienceData[] = [

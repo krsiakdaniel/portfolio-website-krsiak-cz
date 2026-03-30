@@ -6,7 +6,8 @@ import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIco
 import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTexts'
 
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
-import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+
+import { DeviceTypeEnum } from '@/lib/types/enums'
 
 const CallToAction = ({
   highlight,

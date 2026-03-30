@@ -1,3 +1,3 @@
-import { ResumePreviewCard } from '@/lib/utils/typeDefinitions/interfaces'
+import { ResumePreviewCard } from '@/lib/types/interfaces'
 
 export type ResumePreviewCardProps = ResumePreviewCard

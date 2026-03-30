@@ -20,10 +20,10 @@ import { projectsWorkVite } from '@/lib/data/pages/projects/work/projects-overvi
 import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { LayoutViewEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { LayoutViewEnum } from '@/lib/types/enums'
 import { COMMON_VALUES } from '@/localization'
 
 const allProjects = [

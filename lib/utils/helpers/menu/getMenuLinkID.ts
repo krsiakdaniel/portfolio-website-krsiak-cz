@@ -1,4 +1,4 @@
-import { GetMenuLinkIDType } from '@/lib/utils/typeDefinitions/types'
+import { GetMenuLinkIDType } from './getMenuLinkID.types'
 
 /**
  * Returns the ID string for a menu link based on whether it is displayed on mobile or desktop.
