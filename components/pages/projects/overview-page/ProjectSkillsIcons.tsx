@@ -16,7 +16,6 @@ const ProjectSkillsIcons = ({ skillsIcons = [] }: ProjectSkillsIconsProps) => {
           alt={item.name}
           loading={ImageLoading.LAZY}
           customCss="mr-2 mt-2 lg:mt-0"
-          dataTooltipContent={item.name}
         />
       ))}
     </div>

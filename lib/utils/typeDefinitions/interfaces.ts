@@ -26,8 +26,12 @@ export type MetaDataKeywords = Record<string, string>
 // Other Experience Data
 export interface OtherExperienceData {
   readonly id: number
+  readonly icon?: string
+  readonly svgIcons?: readonly string[]
+  readonly emojiIcons?: readonly string[]
   readonly company: string
   readonly role: string
+  readonly years?: string
   readonly description: string
 }
 

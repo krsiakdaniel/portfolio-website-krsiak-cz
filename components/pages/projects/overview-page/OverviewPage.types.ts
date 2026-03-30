@@ -1,4 +1,15 @@
-import { Icon, Project, ProjectBase } from '@/lib/utils/typeDefinitions/interfaces'
+import {
+  Icon,
+  OtherExperienceData,
+  Project,
+  ProjectBase,
+} from '@/lib/utils/typeDefinitions/interfaces'
+
+export type LayoutToggleProps = {
+  activeView: 'list' | 'grid'
+  onListClick: () => void
+  onGridClick: () => void
+}
 
 export type ProjectDetailsProps = {
   company: string
@@ -25,6 +36,43 @@ export type ProjectSectionProps = {
 
 export type ProjectSkillsIconsProps = {
   skillsIcons: Icon[]
+}
+
+export type ProjectSectionGridProps = ProjectSectionProps & {
+  otherExperience?: OtherExperienceData[]
+  showPlaceholder?: boolean
+}
+
+export type ProjectCompactCardProps = {
+  ariaLabel: string
+  company: string
+  dataTestId: string
+  icon: string
+  image: string
+  isFeatured?: boolean
+  linkProjectPage: string
+  linkText: string
+  role: string
+  skillsIcons: Icon[]
+  title: string
+  years?: string
+}
+
+export type ProjectListRowProps = {
+  ariaLabel: string
+  company: string
+  icon: string
+  id: string
+  isFeatured?: boolean
+  linkProjectPage: string
+  role: string
+  skillsIcons: Icon[]
+  title: string
+  years?: string
+}
+
+export type ProjectWorkListViewProps = {
+  projects: Project[]
 }
 
 export type ProjectSummaryCardProps = ProjectBase & {

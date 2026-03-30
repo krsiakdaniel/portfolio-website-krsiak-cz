@@ -9,9 +9,9 @@ export const iconsSkillsProjectsWorkO2its: Icon[] = getSkillsIcons([
   SkillIconEnum.MaterialUI,
   SkillIconEnum.ReactHookForm,
   SkillIconEnum.Zod,
+  SkillIconEnum.AI,
   SkillIconEnum.Graphql,
   SkillIconEnum.Zustand,
-  SkillIconEnum.AI,
   SkillIconEnum.Figma,
 ])
 
@@ -51,6 +51,8 @@ export const iconsSkillsProjectsWorkKomercniBanka: Icon[] = getSkillsIcons([
 ])
 
 export const iconsSkillsProjectsWorkSmartsuppWeb: Icon[] = getSkillsIcons([
+  SkillIconEnum.HTML,
+  SkillIconEnum.CSS,
   SkillIconEnum.JavaScript,
   SkillIconEnum.PHP,
   SkillIconEnum.Scss,

@@ -27,7 +27,6 @@
     { "files": "*.json", "options": { "useTabs": false } },
     { "files": ".eslintrc", "options": { "useTabs": false } },
     { "files": ".prettierrc", "options": { "useTabs": false } },
-    { "files": ".stylelintrc", "options": { "useTabs": false } },
-    { "files": "*.svg", "options": { "parser": "html" } }
+    { "files": ".stylelintrc", "options": { "useTabs": false } }
   ]
 }
