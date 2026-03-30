@@ -5,10 +5,6 @@ import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLa
 import Alert from '@/components/shared/Alert'
 import SocialLink from '@/components/shared/SocialLink'
 
-import { metaDataO2itsPublicTendersPortal } from '@/lib/data/metadata/pages/projects/work/metaDataO2itsPublicTendersPortal'
-import { sections } from '@/lib/data/pages/projects/work/o2its-public-tenders-portal'
-import { projectsWorkVite } from '@/lib/data/pages/projects/work/projects-overview/vite/workVite'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
@@ -17,6 +13,9 @@ import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrum
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { metaDataO2itsPublicTendersPortal } from '@/data/metadata/pages/projects/work/metaDataO2itsPublicTendersPortal'
+import { sections } from '@/data/pages/projects/work/o2its-public-tenders-portal'
+import { projectsWorkVite } from '@/data/pages/projects/work/projects-overview/vite/workVite'
 import { AlertTypeEnum, GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, PROJECT_O2ITS, TEXT } from '@/localization'
 

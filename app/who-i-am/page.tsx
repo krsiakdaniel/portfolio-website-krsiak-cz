@@ -10,13 +10,12 @@ import Heading from '@/components/shared/Heading'
 import HeadingSection from '@/components/shared/HeadingSection'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { metaDataWhoIam } from '@/lib/data/metadata/pages/metaDataWhoIAm'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { metaDataWhoIam } from '@/data/metadata/pages/metaDataWhoIAm'
 import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA, TEXT, WHO_I_AM } from '@/localization'
 
 export const metadata: Metadata = {

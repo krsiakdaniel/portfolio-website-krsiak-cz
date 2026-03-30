@@ -1,10 +1,9 @@
 import ExpertiseSection from '@/components/pages/home/expertise/ExpertiseSection'
 import DividerWithText from '@/components/shared/DividerWithText'
 
-import { committedMindsetItems } from '@/lib/data/pages/home/expertise/committedMindset'
-import { problemSolvingItems } from '@/lib/data/pages/home/expertise/problemSolving'
-import { skillsForCompanyItems } from '@/lib/data/pages/home/expertise/skillsForCompany'
-
+import { committedMindsetItems } from '@/data/pages/home/expertise/committedMindset'
+import { problemSolvingItems } from '@/data/pages/home/expertise/problemSolving'
+import { skillsForCompanyItems } from '@/data/pages/home/expertise/skillsForCompany'
 import { ARIA_LABELS, DIVIDER_WITH_TEXT, ICON_EMOJI, TEXT } from '@/localization'
 
 const MyExpertise = () => {

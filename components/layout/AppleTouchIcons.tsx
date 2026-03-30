@@ -1,4 +1,4 @@
-import { appleTouchIconSizes } from '@/lib/data/metadata/shared/appleTouchIconSizes'
+import { appleTouchIconSizes } from '@/data/metadata/shared/appleTouchIconSizes'
 
 const AppleTouchIcons = () => {
   return (

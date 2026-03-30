@@ -4,13 +4,12 @@ import { usePathname } from 'next/navigation'
 import { MenuProps } from '@/components/layout/header/menu/Menu.types'
 import MenuItem from '@/components/layout/header/menu/MenuItem'
 
-import { pagesLinks } from '@/lib/data/layout/pagesLinks'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { isMenuItemActive } from '@/lib/utils/helpers/menu/isMenuItemActive'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { pagesLinks } from '@/data/layout/pagesLinks'
 import { DeviceTypeEnum } from '@/lib/types/enums'
 import { ARIA_LABELS } from '@/localization'
 

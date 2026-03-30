@@ -5,10 +5,6 @@ import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLa
 import Alert from '@/components/shared/Alert'
 import SocialLink from '@/components/shared/SocialLink'
 
-import { metaDataKrsiak } from '@/lib/data/metadata/pages/projects/personal/metaDataKrsiak'
-import { sections } from '@/lib/data/pages/projects/personal/krsiak'
-import { projectsPersonalNext } from '@/lib/data/pages/projects/personal/projects-overview/next/personalNext'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
@@ -17,6 +13,9 @@ import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBread
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { metaDataKrsiak } from '@/data/metadata/pages/projects/personal/metaDataKrsiak'
+import { sections } from '@/data/pages/projects/personal/krsiak'
+import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/next/personalNext'
 import { AlertTypeEnum, GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, PROJECTS, PROJECT_KRSIAK, TEXT } from '@/localization'
 

@@ -10,13 +10,12 @@ import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import Heading from '@/components/shared/Heading'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
 
-import { metaDataResume } from '@/lib/data/metadata/pages/metaDataResume'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { metaDataResume } from '@/data/metadata/pages/metaDataResume'
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {

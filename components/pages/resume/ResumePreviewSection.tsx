@@ -1,4 +1,4 @@
-import { resumePreviewCardData } from '@/lib/data/pages/resume/preview-cards/resumePreviewCards'
+import { resumePreviewCardData } from '@/data/pages/resume/preview-cards/resumePreviewCards'
 
 import ResumePreviewCard from './ResumePreviewCard'
 
