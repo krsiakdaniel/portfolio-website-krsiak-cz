@@ -11,10 +11,10 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
-import { GoBackLinkEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {

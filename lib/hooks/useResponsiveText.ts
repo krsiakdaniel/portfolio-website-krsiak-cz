@@ -1,12 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import { ScreenSizeEnum } from '../utils/typeDefinitions/enums'
-
-interface ResponsiveTextProps {
-  mobileText: string
-  desktopText: string
-  screenSize?: ScreenSizeEnum
-}
+import { ScreenSizeEnum } from '../types/enums'
+import { UseResponsiveTextOptions } from './useResponsiveText.types'
 
 /**
  * Custom hook that returns different text content based on the viewport width.
@@ -31,7 +26,7 @@ export const useResponsiveText = ({
   mobileText,
   desktopText,
   screenSize = ScreenSizeEnum.MD,
-}: ResponsiveTextProps): string => {
+}: UseResponsiveTextOptions): string => {
   const [text, setText] = useState<string>(desktopText)
 
   useEffect(() => {

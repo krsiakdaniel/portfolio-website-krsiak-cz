@@ -1,6 +1,6 @@
-import { IconArrowProps } from '@/components/icons/Icons.types'
+import { ArrowDirectionEnum } from '@/lib/types/enums'
 
-import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { IconArrowProps } from './IconArrow.types'
 
 const IconArrow = ({ arrowDirection = ArrowDirectionEnum.Left }: IconArrowProps) => {
   return (

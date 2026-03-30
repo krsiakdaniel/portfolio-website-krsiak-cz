@@ -1,17 +1,17 @@
 import { EmojiAnimatedProps } from '@/components/shared/EmojiAnimated.types'
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
+import { ImageLoadingEnum } from '@/lib/types/enums'
 
 const EmojiAnimated = ({
   icon,
   size,
   alt,
-  loading = ImageLoading.LAZY,
+  loading = ImageLoadingEnum.LAZY,
   className = '',
 }: EmojiAnimatedProps) => {
   const src = `/images/webp/emoji-animated/${size}x${size}/${icon}-animated-${size}x${size}.webp`
-  const isPriority = loading === ImageLoading.EAGER
+  const isPriority = loading === ImageLoadingEnum.EAGER
 
   return (
     <div className={className}>

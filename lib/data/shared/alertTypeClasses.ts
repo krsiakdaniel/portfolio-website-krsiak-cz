@@ -1,4 +1,4 @@
-import { AlertTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+import { AlertTypeEnum } from '@/lib/types/enums'
 
 /**
  * A record that maps each alert type from `AlertTypeEnum` to a string of CSS classes.

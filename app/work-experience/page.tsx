@@ -3,8 +3,8 @@ import { Metadata } from 'next'
 import PageContainer from '@/components/layout/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
+import WorkExperience from '@/components/pages/work-experience/WorkExperience'
 import WorkExperienceIntroduction from '@/components/pages/work-experience/WorkExperienceIntroduction'
-import WorkExperienceLayoutSwitcher from '@/components/pages/work-experience/WorkExperienceLayoutSwitcher'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 
 import { metaDataWorkExperience } from '@/lib/data/metadata/pages/projects/metaDataWorkExperience'
@@ -36,7 +36,7 @@ const ProjectsWork = () => {
         heading={TEXT.workExperience}
         description={<WorkExperienceIntroduction />}
       >
-        <WorkExperienceLayoutSwitcher />
+        <WorkExperience />
       </ProjectsOverviewLayout>
 
       <PageNavigation

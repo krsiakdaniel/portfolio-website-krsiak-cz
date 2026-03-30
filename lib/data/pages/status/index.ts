@@ -1,7 +1,7 @@
 import { STATUS_BADGE_IMGS_URLS } from '@/lib/utils/constants/urls/statusBadgesUrls'
 import { createStatusBadge } from '@/lib/utils/helpers/createStatusBadge'
-import { StatusBadge } from '@/lib/utils/typeDefinitions/interfaces'
 
+import { StatusBadge } from '@/lib/types/interfaces'
 import { TEXT_DATA } from '@/localization'
 
 // Text labels for different status badges

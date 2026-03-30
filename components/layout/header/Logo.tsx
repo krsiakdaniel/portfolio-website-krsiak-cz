@@ -4,15 +4,15 @@ import ImageComponent from '@/components/shared/ImageComponent'
 import Paragraph from '@/components/shared/Paragraph'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import logo from '@/public/icons/webp/logo.webp'
 
+import { ImageLoadingEnum } from '@/lib/types/enums'
 import { IMAGE_ALT, TEXT } from '@/localization'
 
-import { HEADER_LOGO } from './constants'
+import { HEADER_LOGO } from './Logo.constants'
 
 const Logo = () => {
   return (
@@ -29,7 +29,7 @@ const Logo = () => {
             height={HEADER_LOGO.HEIGHT}
             alt={IMAGE_ALT.altLogo}
             priority={true}
-            loading={ImageLoading.EAGER}
+            loading={ImageLoadingEnum.EAGER}
             sizes={`${HEADER_LOGO.WIDTH}px`}
           />
         </div>

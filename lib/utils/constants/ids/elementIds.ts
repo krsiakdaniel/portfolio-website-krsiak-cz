@@ -1,4 +1,4 @@
-import { ElementIds } from '@/lib/utils/typeDefinitions/interfaces'
+import { ElementIds } from '@/lib/types/interfaces'
 
 export const ID: ElementIds = {
   reactTooltip: 'react-tooltip',

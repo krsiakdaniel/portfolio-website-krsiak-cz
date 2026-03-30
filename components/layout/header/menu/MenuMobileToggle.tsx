@@ -1,13 +1,14 @@
 'use client' // using onClick
 import IconClose from '@/components/icons/IconClose'
 import IconHamburger from '@/components/icons/IconHamburger'
-import { MenuMobileToggleProps } from '@/components/layout/header/menu/Menu.types'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { ARIA_LABELS } from '@/localization'
+
+import { MenuMobileToggleProps } from './MenuMobileToggle.types'
 
 const MenuMobileToggle = ({ isMenuOpen, handleMenuMobileToggle, ref }: MenuMobileToggleProps) => {
   return (

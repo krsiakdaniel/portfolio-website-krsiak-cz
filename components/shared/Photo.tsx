@@ -1,8 +1,5 @@
-import { PhotoProps } from '@/components/pages/resume/Resume.types'
 import ImageComponent from '@/components/shared/ImageComponent'
 import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
-
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
@@ -11,9 +8,11 @@ import openToWorkLG from '@/public/images/webp/photo/linkedin/open-to-work-296x2
 import krsiakSM from '@/public/images/webp/photo/me/krsiak-daniel-216x216.webp'
 import krsiakLG from '@/public/images/webp/photo/me/krsiak-daniel-296x296.webp'
 
+import { ImageLoadingEnum } from '@/lib/types/enums'
 import { TEXT } from '@/localization'
 
-import { PHOTO_DIMENSIONS } from './constants'
+import { PHOTO_DIMENSIONS } from './Photo.constants'
+import { PhotoProps } from './Photo.types'
 
 const Photo = ({ isPhotoSmall, isOpenToWork, showCaption = true }: PhotoProps) => {
   return (
@@ -25,7 +24,7 @@ const Photo = ({ isPhotoSmall, isOpenToWork, showCaption = true }: PhotoProps) =
           width={isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.WIDTH : PHOTO_DIMENSIONS.LARGE.WIDTH}
           height={isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.HEIGHT : PHOTO_DIMENSIONS.LARGE.HEIGHT}
           alt={TEXT.nameDanielKrsiak}
-          loading={ImageLoading.LAZY}
+          loading={ImageLoadingEnum.LAZY}
           customCss="rounded-full border border-violet-300 bg-violet-50 p-1 shadow-md"
           dataTestId={DATA_TEST_IDS.misc.linkedinPhoto}
           sizes={`${isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.WIDTH : PHOTO_DIMENSIONS.LARGE.WIDTH}px`}
@@ -38,7 +37,7 @@ const Photo = ({ isPhotoSmall, isOpenToWork, showCaption = true }: PhotoProps) =
             width={isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.WIDTH : PHOTO_DIMENSIONS.LARGE.WIDTH}
             height={isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.HEIGHT : PHOTO_DIMENSIONS.LARGE.HEIGHT}
             alt={TEXT.openToWork}
-            loading={ImageLoading.LAZY}
+            loading={ImageLoadingEnum.LAZY}
             customCss="absolute left-0 top-0 h-full w-full"
             sizes={`${isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.WIDTH : PHOTO_DIMENSIONS.LARGE.WIDTH}px`}
           />

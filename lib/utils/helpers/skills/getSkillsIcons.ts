@@ -1,7 +1,7 @@
 import { skillIcons } from '@/lib/data/shared/skill-icons/skillIcons'
 
-import { Icon } from '@/lib/utils/typeDefinitions/interfaces'
-import { SkillIconType } from '@/lib/utils/typeDefinitions/types'
+import { Icon } from '@/lib/types/interfaces'
+import { SkillIconType } from '@/lib/types/types'
 
 /**
  * Get relevant icons for the given skills.

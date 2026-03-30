@@ -3,8 +3,8 @@ import IconExternalLink from '@/components/icons/IconExternalLink'
 import { LinkButtonProps } from '@/components/shared/LinkButton.types'
 
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
-import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
 
+import { ArrowDirectionEnum } from '@/lib/types/enums'
 import { TEXT } from '@/localization'
 
 const LinkButton = ({ href, linkText, isLinkExternal = false, dataTestId }: LinkButtonProps) => {

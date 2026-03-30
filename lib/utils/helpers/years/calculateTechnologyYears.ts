@@ -1,15 +1,6 @@
-import { TechnologyKey } from '../../typeDefinitions/types'
+import { TECHNOLOGY_START_DATES } from './calculateTechnologyYears.constants'
+import { TechnologyKey } from './calculateTechnologyYears.types'
 import { getCurrentYear } from './getCurrentYear'
-
-// Technology start dates for automatic years calculation
-export const TECHNOLOGY_START_DATES = {
-  javaScript: 2018,
-  typeScript: 2019,
-  react: 2019,
-  playwright: 2022,
-  next: 2023,
-  tailwind: 2023,
-} as const
 
 /**
  * Calculates years of experience for a specific technology based on start date

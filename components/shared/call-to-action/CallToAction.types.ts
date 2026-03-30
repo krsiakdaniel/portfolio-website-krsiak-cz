@@ -12,16 +12,3 @@ export type CallToActionProps = {
   icon: string | StaticImageData
   hasPhoto?: boolean
 }
-
-export type CallToActionIconProps = {
-  type: 'mobile' | 'desktop'
-  icon: string | StaticImageData
-}
-
-export type CallToActionTextsProps = {
-  icon: string | StaticImageData
-  highlight: string
-  heading: string
-  textMobileAndDesktop: string
-  textDesktop: string
-}

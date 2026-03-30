@@ -2,13 +2,12 @@ import ImageComponent from '@/components/shared/ImageComponent'
 import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
 import { ScanMyContactQRProps } from '@/components/shared/ScanMyContactQR.types'
 
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
+import { QR_CODE } from '@/lib/utils/constants/shared/qrCode'
 
 import contactQR from '@/public/images/svg/vcard-contact/krsiak-daniel-qr-code-vcard.svg'
 
+import { ImageLoadingEnum } from '@/lib/types/enums'
 import { CONTACT, TEXT } from '@/localization'
-
-import { QR_CODE } from './constants'
 
 const ScanMyContactQR = ({
   width = QR_CODE.SMALL.WIDTH,
@@ -22,7 +21,7 @@ const ScanMyContactQR = ({
         width={width}
         height={height}
         alt={CONTACT.contactMeQRCode}
-        loading={ImageLoading.EAGER}
+        loading={ImageLoadingEnum.EAGER}
         customCss="rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md"
         caption={showImageCaption ? <ImageComponentCaption text={TEXT.scanQR} /> : ''}
         dataTooltipContent={CONTACT.scanQR}

@@ -1,4 +1,4 @@
-import { DefaultNoLinkNavigationProps } from '@/components/layout/page-navigation/PageNavigation.types'
+import { DefaultNoLinkNavigationProps } from './DefaultNoLinkNavigation.types'
 
 const DefaultNoLinkNavigation = (_: DefaultNoLinkNavigationProps) => {
   return (

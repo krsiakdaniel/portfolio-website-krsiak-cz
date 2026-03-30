@@ -3,8 +3,7 @@ import { SocialLinkProps } from '@/components/shared/SocialLink.types'
 
 import { socialLinkTypeClasses } from '@/lib/data/shared/socialLinkTypeClasses'
 
-import { AlertTypeEnum } from '@/lib/utils/typeDefinitions/enums'
-
+import { AlertTypeEnum } from '@/lib/types/enums'
 import { TEXT } from '@/localization'
 
 const SocialLink = ({

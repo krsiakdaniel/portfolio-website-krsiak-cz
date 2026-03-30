@@ -3,11 +3,11 @@ import { MouseEventHandler } from 'react'
 import ImageComponent from '@/components/shared/ImageComponent'
 
 import { GALLERY_THUMBNAIL_4_3 } from '@/lib/utils/constants/imageGalleryConfig'
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
+import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS } from '@/localization'
 
-import { GalleryImageProps, GalleryThumbnailsProps } from '../ProjectPage.types'
+import { GalleryImageProps, GalleryThumbnailsProps } from './Gallery.types'
 
 const GalleryThumbnails = ({ images, activeImage, setActiveImage }: GalleryThumbnailsProps) => {
   // Handler for mouse clicks on thumbnail images
@@ -52,7 +52,7 @@ const GalleryThumbnails = ({ images, activeImage, setActiveImage }: GalleryThumb
                   : 'border-violet-300'
               }`}
             alt={`${ARIA_LABELS.galleryThumbnail}: ${image.id}`}
-            loading={ImageLoading.LAZY}
+            loading={ImageLoadingEnum.LAZY}
             placeholder="blur"
             blurDataURL={image.src}
             sizes={`${GALLERY_THUMBNAIL_4_3.WIDTH}px`}

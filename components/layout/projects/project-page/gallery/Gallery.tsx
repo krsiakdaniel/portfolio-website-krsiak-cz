@@ -2,10 +2,6 @@
 
 import { useState } from 'react'
 
-import {
-  GalleryImageProps,
-  GalleryProps,
-} from '@/components/layout/projects/project-page/ProjectPage.types'
 import GalleryPreview from '@/components/layout/projects/project-page/gallery/GalleryPreview'
 import GalleryThumbnails from '@/components/layout/projects/project-page/gallery/GalleryThumbnails'
 import Heading from '@/components/shared/Heading'
@@ -14,6 +10,8 @@ import Paragraph from '@/components/shared/Paragraph'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { ARIA_LABELS, GALLERY } from '@/localization'
+
+import { GalleryImageProps, GalleryProps } from './Gallery.types'
 
 const Gallery = ({ images = [] }: GalleryProps) => {
   const [activeImage, setActiveImage] = useState<GalleryImageProps>(images[0])

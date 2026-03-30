@@ -1,8 +1,6 @@
 import { iconsSkillsProjectsWorkSmartsuppHelp } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
-import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
-import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
 
@@ -12,6 +10,8 @@ import smartsuppHelp2 from '@/public/images/webp/projects/work/smartsupp-help/sm
 import smartsuppHelp3 from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-3-light.webp'
 import smartsuppHelpProjectPreview from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-project-preview.webp'
 
+import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
+import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 export const projectsWorkWordPress: Project[] = [

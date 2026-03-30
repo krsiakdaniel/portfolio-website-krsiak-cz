@@ -1,4 +1,4 @@
-import { AlertTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+import { AlertTypeEnum } from '@/lib/types/enums'
 
 export type SocialLinkProps = {
   href: string

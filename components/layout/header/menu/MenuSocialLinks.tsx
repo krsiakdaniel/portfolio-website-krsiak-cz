@@ -1,15 +1,16 @@
-import { MenuSocialLinksProps } from '@/components/layout/header/menu/Menu.types'
 import SocialLinkIcon from '@/components/shared/SocialLinkIcon'
 
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
-import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import iconGitHub from '@/public/icons/svg/social/github.svg'
 import iconLinkedIn from '@/public/icons/svg/social/linkedin.svg'
 
+import { DeviceTypeEnum } from '@/lib/types/enums'
 import { TEXT } from '@/localization'
+
+import { MenuSocialLinksProps } from './MenuSocialLinks.types'
 
 const MenuSocialLinks = ({ type }: MenuSocialLinksProps) => {
   const isMobile = type === DeviceTypeEnum.Mobile

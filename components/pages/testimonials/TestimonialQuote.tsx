@@ -1,12 +1,11 @@
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
-
 import quote from '@/public/icons/svg/testimonial/quote.svg'
 
+import { ImageLoadingEnum } from '@/lib/types/enums'
 import { IMAGE_ALT } from '@/localization'
 
-import { TESTIMONIAL_QUOTE_ICON } from './constants'
+import { TESTIMONIAL_QUOTE_ICON } from './TestimonialQuote.constants'
 
 const TestimonialQuote = () => {
   return (
@@ -15,7 +14,7 @@ const TestimonialQuote = () => {
       width={TESTIMONIAL_QUOTE_ICON.WIDTH}
       height={TESTIMONIAL_QUOTE_ICON.HEIGHT}
       alt={IMAGE_ALT.altIconQuote}
-      loading={ImageLoading.LAZY}
+      loading={ImageLoadingEnum.LAZY}
     />
   )
 }

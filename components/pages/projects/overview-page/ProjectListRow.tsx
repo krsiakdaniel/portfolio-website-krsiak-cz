@@ -1,9 +1,10 @@
 import Link from 'next/link'
 
 import IconArrow from '@/components/icons/IconArrow'
-import { ProjectListRowProps } from '@/components/pages/projects/overview-page/OverviewPage.types'
 
-import { ArrowDirectionEnum } from '@/lib/utils/typeDefinitions/enums'
+import { ArrowDirectionEnum } from '@/lib/types/enums'
+
+import { ProjectListRowProps } from './ProjectListRow.types'
 
 const ProjectListRow = ({
   ariaLabel,

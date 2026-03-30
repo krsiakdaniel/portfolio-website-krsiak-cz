@@ -1,12 +1,13 @@
 import CustomersCount from '@/components/layout/projects/project-page/CustomersCount'
 import ProjectLinksList from '@/components/layout/projects/project-page/ProjectLinksList'
-import { ProjectInformationProps } from '@/components/layout/projects/project-page/ProjectPage.types'
 import SkillsList from '@/components/layout/projects/project-page/SkillsList'
 import Heading from '@/components/shared/Heading'
 import List from '@/components/shared/List'
 import ListItem from '@/components/shared/ListItem'
 
 import { TEXT } from '@/localization'
+
+import { ProjectInformationProps } from './ProjectInformation.types'
 
 const ProjectInformation = ({
   description,

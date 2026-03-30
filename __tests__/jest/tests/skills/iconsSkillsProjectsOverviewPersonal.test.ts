@@ -1,7 +1,8 @@
 import { iconsSkillsProjectsPersonalKrsiak } from '@/lib/data/pages/projects/personal/projects-overview/skillsProjectsPersonal'
 
 import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
-import { SkillIconEnum } from '@/lib/utils/typeDefinitions/enums'
+
+import { SkillIconEnum } from '@/lib/types/enums'
 
 describe('iconsSkillsProjectsPersonal', () => {
   it('should return the correct icons for Krsiak project', () => {

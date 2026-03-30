@@ -1,7 +1,7 @@
 import { MONTHS_EXPERIENCE, YEARS_EXPERIENCE } from '@/lib/utils/constants/yearsExperience'
-import { DurationUnitEnum } from '@/lib/utils/typeDefinitions/enums'
-import { Job } from '@/lib/utils/typeDefinitions/interfaces'
 
+import { DurationUnitEnum } from '@/lib/types/enums'
+import { Job } from '@/lib/types/interfaces'
 import { ICON_EMOJI, JOBS } from '@/localization'
 
 export const jobs: Job[] = [

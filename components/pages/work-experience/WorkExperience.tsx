@@ -1,0 +1,107 @@
+'use client'
+
+import { useState } from 'react'
+
+import LayoutToggle from '@/components/pages/projects/overview-page/LayoutToggle'
+import ProjectSectionGrid from '@/components/pages/projects/overview-page/ProjectSectionGrid'
+import ProjectWorkListView from '@/components/pages/projects/overview-page/ProjectWorkListView'
+import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
+
+import { otherExperienceFrontEnd } from '@/lib/data/pages/projects/work/other-experience/otherExperienceFrontEnd'
+import { otherExperienceLocalization } from '@/lib/data/pages/projects/work/other-experience/otherExperienceLocalization'
+import { otherExperienceQA } from '@/lib/data/pages/projects/work/other-experience/otherExperienceQA'
+import { otherExperienceWordPress } from '@/lib/data/pages/projects/work/other-experience/otherExperienceWordPress'
+import { projectsWorkFrontEnd } from '@/lib/data/pages/projects/work/projects-overview/front-end/workFrontEnd'
+import { projectsWorkLocalization } from '@/lib/data/pages/projects/work/projects-overview/localization/workLocalization'
+import { projectsWorkNext } from '@/lib/data/pages/projects/work/projects-overview/next/workNext'
+import { projectsWorkQA } from '@/lib/data/pages/projects/work/projects-overview/quality-assurance/workQA'
+import { projectsWorkReact } from '@/lib/data/pages/projects/work/projects-overview/react/workReact'
+import { projectsWorkVite } from '@/lib/data/pages/projects/work/projects-overview/vite/workVite'
+import { projectsWorkWordPress } from '@/lib/data/pages/projects/work/projects-overview/wordpress/workWordpress'
+
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { LayoutViewEnum } from '@/lib/types/enums'
+import { COMMON_VALUES } from '@/localization'
+
+const allProjects = [
+  ...projectsWorkReact,
+  ...projectsWorkNext,
+  ...projectsWorkVite,
+  ...projectsWorkFrontEnd,
+  ...projectsWorkWordPress,
+  ...projectsWorkQA,
+  ...projectsWorkLocalization,
+]
+
+const WorkExperienceLayoutSwitcher = () => {
+  const [activeView, setActiveView] = useState<LayoutViewEnum>(LayoutViewEnum.Grid)
+
+  return (
+    <div className="relative">
+      <div className="absolute -top-10 right-0 z-10">
+        <LayoutToggle
+          activeView={activeView}
+          onListClick={() => setActiveView(LayoutViewEnum.List)}
+          onGridClick={() => setActiveView(LayoutViewEnum.Grid)}
+        />
+      </div>
+
+      {activeView === LayoutViewEnum.List ? (
+        <ProjectWorkListView projects={allProjects} />
+      ) : (
+        <div className="mt-8">
+          {/* NEXT.JS / VITE / REACT */}
+          <ProjectSectionGrid
+            sectionId={ID.section.react}
+            sectionText={COMMON_VALUES.react}
+            projectData={[...projectsWorkReact, ...projectsWorkNext, ...projectsWorkVite]}
+            showPlaceholder={true}
+          />
+
+          {/* FRONT END */}
+          <ProjectSectionGrid
+            sectionId={ID.section.frontEnd}
+            sectionText={COMMON_VALUES.frontEnd}
+            projectData={projectsWorkFrontEnd}
+            otherExperience={otherExperienceFrontEnd}
+            showPlaceholder={true}
+          />
+
+          {/* WORDPRESS */}
+          <ProjectSectionGrid
+            sectionId={ID.section.wordpress}
+            sectionText={COMMON_VALUES.wordpress}
+            projectData={projectsWorkWordPress}
+            otherExperience={otherExperienceWordPress}
+            showPlaceholder={true}
+          />
+
+          {/* QUALITY ASSURANCE */}
+          <ProjectSectionGrid
+            sectionId={ID.section.qualityAssurance}
+            sectionText={COMMON_VALUES.qaAutomationTesting}
+            projectData={projectsWorkQA}
+            otherExperience={otherExperienceQA}
+          />
+
+          {/* LOCALIZATION */}
+          <ProjectSectionGrid
+            sectionId={ID.section.localization}
+            sectionText={COMMON_VALUES.localization}
+            projectData={projectsWorkLocalization}
+            otherExperience={otherExperienceLocalization}
+            showPlaceholder={true}
+          />
+        </div>
+      )}
+
+      {/* CTA */}
+      <CallToActionResume dataTestId={DATA_TEST_IDS.callToAction.linkResumeWorkExperience} />
+    </div>
+  )
+}
+
+export default WorkExperienceLayoutSwitcher

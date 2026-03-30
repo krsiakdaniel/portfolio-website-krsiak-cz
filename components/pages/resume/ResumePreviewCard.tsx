@@ -1,15 +1,15 @@
 import Link from 'next/link'
 
-import { ResumePreviewCardProps } from '@/components/pages/resume/Resume.types'
 import HeadingSection from '@/components/shared/HeadingSection'
 import Highlight from '@/components/shared/Highlight'
 import ImageComponent from '@/components/shared/ImageComponent'
 import LinkButton from '@/components/shared/LinkButton'
 import Paragraph from '@/components/shared/Paragraph'
 
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
+import { ImageLoadingEnum } from '@/lib/types/enums'
 
-import { RESUME_PREVIEW_IMAGE } from './constants'
+import { RESUME_PREVIEW_IMAGE } from './ResumePreviewCard.constants'
+import { ResumePreviewCardProps } from './ResumePreviewCard.types'
 
 const ResumePreviewCard = ({
   title,
@@ -43,7 +43,7 @@ const ResumePreviewCard = ({
               width={RESUME_PREVIEW_IMAGE.WIDTH}
               height={RESUME_PREVIEW_IMAGE.HEIGHT}
               customCss="rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md hover:border-violet-600"
-              loading={ImageLoading.EAGER}
+              loading={ImageLoadingEnum.EAGER}
               priority={true}
             />
           </div>

@@ -1,8 +1,9 @@
-import { PROJECT_SKILLS_ICON } from '@/components/pages/home/skills/constants'
-import { ProjectSkillsIconsProps } from '@/components/pages/projects/overview-page/OverviewPage.types'
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { ImageLoading } from '@/lib/utils/typeDefinitions/enums'
+import { ImageLoadingEnum } from '@/lib/types/enums'
+
+import { PROJECT_SKILLS_ICON } from './ProjectSkillsIcons.constants'
+import { ProjectSkillsIconsProps } from './ProjectSkillsIcons.types'
 
 const ProjectSkillsIcons = ({ skillsIcons = [] }: ProjectSkillsIconsProps) => {
   return (
@@ -14,7 +15,7 @@ const ProjectSkillsIcons = ({ skillsIcons = [] }: ProjectSkillsIconsProps) => {
           width={PROJECT_SKILLS_ICON.WIDTH}
           height={PROJECT_SKILLS_ICON.HEIGHT}
           alt={item.name}
-          loading={ImageLoading.LAZY}
+          loading={ImageLoadingEnum.LAZY}
           customCss="mr-2 mt-2 lg:mt-0"
         />
       ))}

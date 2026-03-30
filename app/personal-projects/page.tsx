@@ -38,14 +38,14 @@ const ProjectsPersonal = () => {
         heading={TEXT.personalProjects}
         description={<PersonalProjectsIntroduction />}
       >
-        <CallToActionGitHub />
-
         {/* NEXT */}
         <ProjectSection
           sectionId={ID.section.next}
           sectionText={TEXT.next}
           projectData={projectsPersonalNext}
         />
+
+        <CallToActionGitHub />
       </ProjectsOverviewLayout>
 
       <div className="mt-20">

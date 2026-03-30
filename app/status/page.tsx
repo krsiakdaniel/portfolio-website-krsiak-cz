@@ -15,10 +15,10 @@ import { statusBadges } from '@/lib/data/pages/status'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { EmojiNameEnum, EmojiSizeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { EmojiNameEnum, EmojiSizeEnum, ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, ICON_EMOJI, IMAGE_ALT, STATUS, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
@@ -64,7 +64,7 @@ const Status = () => {
                 width={item.width}
                 height={item.height}
                 alt={item.alt}
-                loading={ImageLoading.EAGER}
+                loading={ImageLoadingEnum.EAGER}
                 customCss="mt-2 bg-gray-100"
               />
             ))}
@@ -74,7 +74,7 @@ const Status = () => {
               icon={EmojiNameEnum.ROBOT}
               size={EmojiSizeEnum.LG}
               alt={IMAGE_ALT.altEmojiRobot}
-              loading={ImageLoading.EAGER}
+              loading={ImageLoadingEnum.EAGER}
               className="mt-8"
             />
           </div>

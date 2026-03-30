@@ -1,11 +1,11 @@
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
-import { TestimonialItem } from '@/lib/utils/typeDefinitions/interfaces'
 
 import personMarco from '@/public/images/webp/testimonials/fitness/marco-walker-ng.webp'
 import personRobert from '@/public/images/webp/testimonials/fitness/robert-kesterson.webp'
 import personShane from '@/public/images/webp/testimonials/fitness/shane-duquette.webp'
 import personSteve from '@/public/images/webp/testimonials/fitness/steve-mcmanus.webp'
 
+import { TestimonialItem } from '@/lib/types/interfaces'
 import { ICON_EMOJI, TEXT_DATA } from '@/localization'
 
 export const fitnessCoachTestimonials: TestimonialItem[] = [

@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image'
 
-import { DeviceTypeEnum } from '@/lib/utils/typeDefinitions/enums'
+import { DeviceTypeEnum } from '@/lib/types/enums'
 
 export type SocialLinkIconProps = {
   type: DeviceTypeEnum

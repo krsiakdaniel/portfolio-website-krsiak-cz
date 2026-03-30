@@ -1,8 +1,9 @@
-import { SOCIAL_ICON } from '@/components/layout/header/constants'
 import ImageComponent from '@/components/shared/ImageComponent'
 import { SocialLinkIconProps } from '@/components/shared/SocialLinkIcon.types'
 
-import { DeviceTypeEnum, ImageLoading } from '@/lib/utils/typeDefinitions/enums'
+import { DeviceTypeEnum, ImageLoadingEnum } from '@/lib/types/enums'
+
+import { SOCIAL_ICON } from './SocialLinkIcon.constants'
 
 const SocialLinkIcon = ({
   type,
@@ -32,7 +33,7 @@ const SocialLinkIcon = ({
         width={width}
         height={height}
         alt={imgAlt}
-        loading={ImageLoading.EAGER}
+        loading={ImageLoadingEnum.EAGER}
         customCss="shadow-md"
         sizes={`${isMobile ? SOCIAL_ICON.MOBILE.WIDTH : SOCIAL_ICON.DESKTOP.WIDTH}px`}
       />

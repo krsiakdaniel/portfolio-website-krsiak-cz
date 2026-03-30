@@ -1,5 +1,4 @@
-import { SkillsInfo } from '@/lib/utils/typeDefinitions/interfaces'
-
+import { SkillsInfo } from '@/lib/types/interfaces'
 import { CAREER_TESTING, ICON_EMOJI } from '@/localization'
 
 export const careerTesting: SkillsInfo[] = [

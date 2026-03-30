@@ -1,8 +1,6 @@
 import { iconsSkillsProjectsWorkO2its } from '@/lib/data/pages/projects/work/projects-overview/skillsProjectsWork'
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
-import { SkillCategoryEnum, SkillsEnum } from '@/lib/utils/typeDefinitions/enums'
-import { Project } from '@/lib/utils/typeDefinitions/interfaces'
 
 import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
 
@@ -10,6 +8,8 @@ import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProject
 import o2itsAiPoweredChatDashboard from '@/public/images/webp/projects/work/o2its-ai-powered-chat-dashboard/o2its-ai-powered-chat-dashboard-1.webp'
 import o2itsAiPoweredChatDashboardProjectPreview from '@/public/images/webp/projects/work/o2its-ai-powered-chat-dashboard/o2its-ai-powered-chat-dashboard-project-preview.webp'
 
+import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
+import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 export const workNextO2itsAiPoweredChatDashboard: Project = {
