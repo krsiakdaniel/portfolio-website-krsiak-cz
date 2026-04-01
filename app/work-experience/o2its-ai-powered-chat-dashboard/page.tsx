@@ -16,7 +16,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { metaDataO2itsAiPoweredChatDashboard } from '@/data/metadata/pages/projects/work/metaDataO2itsAiPoweredChatDashboard'
 import { sections } from '@/data/pages/projects/work/o2its-ai-powered-chat-dashboard'
 import { projectsWorkNext } from '@/data/pages/projects/work/projects-overview/next/workNext'
-import { AlertTypeEnum, GoBackLinkEnum } from '@/lib/types/enums'
+import { AlertColorVariantEnum, GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, PROJECT_O2ITS, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 }
 
 const ProjectWorkO2itsAiPoweredChatDashboard = () => {
-  const AlertType = AlertTypeEnum.Info
+  const AlertType = AlertColorVariantEnum.Info
 
   return (
     <ProjectPageLayoutWrapper

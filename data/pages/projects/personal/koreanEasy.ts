@@ -1,29 +1,5 @@
+import { buildPersonalSection } from '@/lib/utils/helpers/sections/buildPersonalSection'
+
 import { PROJECTS_PERSONAL } from '@/localization/data/projects/personalProjects'
 
-import { Section } from '@/lib/types/interfaces'
-
-export const sections: Section[] = [
-  {
-    id: 0,
-    title: PROJECTS_PERSONAL.koreanEasy.title,
-    titleHighlight: PROJECTS_PERSONAL.koreanEasy.titleHighlight,
-    items: [
-      {
-        id: '0-0',
-        text: PROJECTS_PERSONAL.koreanEasy.items[0].text,
-      },
-      {
-        id: '0-1',
-        text: PROJECTS_PERSONAL.koreanEasy.items[1].text,
-      },
-      {
-        id: '0-2',
-        text: PROJECTS_PERSONAL.koreanEasy.items[2].text,
-      },
-      {
-        id: '0-3',
-        text: PROJECTS_PERSONAL.koreanEasy.items[3].text,
-      },
-    ],
-  },
-]
+export const sections = buildPersonalSection(PROJECTS_PERSONAL.koreanEasy)

@@ -1,14 +1,15 @@
 import IconExternalLink from '@/components/icons/IconExternalLink'
 import { SocialLinkProps } from '@/components/shared/SocialLink.types'
 
-import { socialLinkTypeClasses } from '@/data/shared/socialLinkTypeClasses'
-import { AlertTypeEnum } from '@/lib/types/enums'
+import { AlertColorVariantEnum } from '@/lib/types/enums'
 import { TEXT } from '@/localization'
+
+import { socialLinkTypeClasses } from './SocialLink.constants'
 
 const SocialLink = ({
   href,
   text,
-  type = AlertTypeEnum.Info,
+  type = AlertColorVariantEnum.Info,
   dataTestId,
   customCss = '',
 }: SocialLinkProps) => {

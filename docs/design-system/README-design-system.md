@@ -286,7 +286,6 @@ violet: {
 
 - `tailwind.config.ts` - Tailwind configuration
 - `app/globals.css` - Global styles and fonts
-- `lib/data/shared/alertTypeClasses.ts` - Alert styling
 - `components/shared/` - Reusable styled components
 
 ---
