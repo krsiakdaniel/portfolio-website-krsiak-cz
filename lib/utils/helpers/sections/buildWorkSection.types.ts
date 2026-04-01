@@ -1,4 +1,4 @@
-export type SectionInput = {
+export type WorkSection = {
   title: string
   titleHighlight?: string
   items: string[]
