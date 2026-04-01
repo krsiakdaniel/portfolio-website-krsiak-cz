@@ -205,10 +205,10 @@ The setup catches errors like:
 
 ```typescript
 // ❌ This would be caught by pre-commit
-const alert: AlertTypeEnum = AlertTypeEnum.Neutral // Error: Property 'Neutral' does not exist
+const alert: AlertColorVariantEnum = AlertColorVariantEnum.Neutral // Error: Property 'Neutral' does not exist
 
 // ✅ This would pass
-const alert: AlertTypeEnum = AlertTypeEnum.Info
+const alert: AlertColorVariantEnum = AlertColorVariantEnum.Info
 ```
 
 ## 🔄 Troubleshooting

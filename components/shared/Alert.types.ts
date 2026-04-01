@@ -1,9 +1,9 @@
 import { ReactNode } from 'react'
 
-import { AlertTypeEnum } from '@/lib/types/enums'
+import { AlertColorVariantEnum } from '@/lib/types/enums'
 
 export type AlertProps = {
-  type?: AlertTypeEnum
+  type?: AlertColorVariantEnum
   title?: string
   description: ReactNode
   linkComponent?: ReactNode

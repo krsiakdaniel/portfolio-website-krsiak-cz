@@ -1,9 +1,9 @@
-import { AlertTypeEnum } from '@/lib/types/enums'
+import { AlertColorVariantEnum } from '@/lib/types/enums'
 
 export type SocialLinkProps = {
   href: string
   text: string
-  type: AlertTypeEnum
+  type: AlertColorVariantEnum
   dataTestId: string
   customCss?: string
 }

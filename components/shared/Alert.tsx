@@ -1,10 +1,16 @@
 import IconInfo from '@/components/icons/IconInfo'
 import { AlertProps } from '@/components/shared/Alert.types'
 
-import { alertTypeClasses } from '@/data/shared/alertTypeClasses'
-import { AlertTypeEnum } from '@/lib/types/enums'
+import { AlertColorVariantEnum } from '@/lib/types/enums'
 
-const Alert = ({ type = AlertTypeEnum.Neutral, title, description, linkComponent }: AlertProps) => {
+import { alertTypeClasses } from './Alert.constants'
+
+const Alert = ({
+  type = AlertColorVariantEnum.Neutral,
+  title,
+  description,
+  linkComponent,
+}: AlertProps) => {
   return (
     <div role="alert" className={`mt-4 rounded-lg border p-4 ${alertTypeClasses[type]}`}>
       <div className="flex flex-col gap-2 text-sm md:flex-row md:items-center">

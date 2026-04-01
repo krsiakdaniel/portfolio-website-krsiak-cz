@@ -46,8 +46,8 @@ export enum DurationUnitEnum {
   Year = 'year',
 }
 
-// Alert
-export enum AlertTypeEnum {
+// Alert Color Variant
+export enum AlertColorVariantEnum {
   Neutral = 'neutral',
   Info = 'info',
   Success = 'success',
