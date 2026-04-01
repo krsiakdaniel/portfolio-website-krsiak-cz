@@ -15,7 +15,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { metaDataKoreanEasy } from '@/data/metadata/pages/projects/personal/metaDataKoreanEasy'
 import { sections } from '@/data/pages/projects/personal/koreanEasy'
-import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/next/personalNext'
+import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/personalNext'
 import { AlertColorVariantEnum, GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, PROJECTS, PROJECT_KOREAN_EASY, TEXT } from '@/localization'
 

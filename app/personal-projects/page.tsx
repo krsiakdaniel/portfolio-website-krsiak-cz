@@ -14,7 +14,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { metaDataPersonalProjects } from '@/data/metadata/pages/projects/metaDataPersonalProjects'
-import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/next/personalNext'
+import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/personalNext'
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {

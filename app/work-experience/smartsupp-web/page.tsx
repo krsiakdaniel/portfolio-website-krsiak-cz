@@ -11,7 +11,7 @@ import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrum
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { metaDataSmartsuppWeb } from '@/data/metadata/pages/projects/work/metaDataSmartsuppWeb'
-import { projectsWorkFrontEnd } from '@/data/pages/projects/work/projects-overview/front-end/workFrontEnd'
+import { projectsWorkFrontEnd } from '@/data/pages/projects/work/projects-overview/workFrontEnd'
 import { sections } from '@/data/pages/projects/work/smartsuppWeb'
 import { GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, TEXT } from '@/localization'

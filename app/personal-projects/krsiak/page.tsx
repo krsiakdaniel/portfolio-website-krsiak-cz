@@ -15,7 +15,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { metaDataKrsiak } from '@/data/metadata/pages/projects/personal/metaDataKrsiak'
 import { sections } from '@/data/pages/projects/personal/krsiak'
-import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/next/personalNext'
+import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/personalNext'
 import { AlertColorVariantEnum, GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, PROJECTS, PROJECT_KRSIAK, TEXT } from '@/localization'
 

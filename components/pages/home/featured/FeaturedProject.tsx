@@ -1,7 +1,7 @@
 import ProjectSummaryCard from '@/components/pages/projects/overview-page/ProjectSummaryCard'
 import DividerWithText from '@/components/shared/DividerWithText'
 
-import { projectsWorkReact } from '@/data/pages/projects/work/projects-overview/react/workReact'
+import { projectsWorkReact } from '@/data/pages/projects/work/projects-overview/workReact'
 import { DIVIDER_WITH_TEXT } from '@/localization'
 
 const FeaturedProject = () => {
