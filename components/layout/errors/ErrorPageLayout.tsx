@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
-import PageContainer from '@/components/layout/PageContainer'
 import ErrorPageContent from '@/components/layout/errors/ErrorPageContent'
+import PageContainer from '@/components/layout/page-container/PageContainer'
 
 import imgError from '@/public/images/webp/errors/error.webp'
 

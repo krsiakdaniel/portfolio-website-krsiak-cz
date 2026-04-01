@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import PageContainer from '@/components/layout/PageContainer'
+import PageContainer from '@/components/layout/page-container/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
 import WorkExperience from '@/components/pages/work-experience/WorkExperience'

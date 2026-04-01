@@ -1,5 +1,5 @@
-import PageContainer from '@/components/layout/PageContainer'
 import ErrorPageContent from '@/components/layout/errors/ErrorPageContent'
+import PageContainer from '@/components/layout/page-container/PageContainer'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'

@@ -1,4 +1,4 @@
-import PageContainer from '@/components/layout/PageContainer'
+import PageContainer from '@/components/layout/page-container/PageContainer'
 import { ProjectPageLayoutWrapperProps } from '@/components/layout/projects/ProjectPageLayout.types'
 import HeaderSection from '@/components/layout/projects/project-page/HeaderSection'
 import ProjectInformation from '@/components/layout/projects/project-page/ProjectInformation'

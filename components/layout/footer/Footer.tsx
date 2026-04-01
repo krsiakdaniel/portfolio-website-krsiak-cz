@@ -1,6 +1,6 @@
-import PageContainer from '@/components/layout/PageContainer'
 import Copyright from '@/components/layout/footer/Copyright'
 import Status from '@/components/layout/footer/Status'
+import PageContainer from '@/components/layout/page-container/PageContainer'
 import DividerWithText from '@/components/shared/DividerWithText'
 import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
 

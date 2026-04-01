@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import PageContainer from '@/components/layout/PageContainer'
+import PageContainer from '@/components/layout/page-container/PageContainer'
 import StatusIntroduction from '@/components/pages/status/StatusIntroduction'
 import BreadCrumbs from '@/components/shared/Breadcrumbs'
 import EmojiAnimated from '@/components/shared/EmojiAnimated'
