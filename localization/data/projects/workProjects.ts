@@ -13,13 +13,13 @@ export const PROJECTS_WORK = {
       responsibility: {
         title: 'My Job',
         items: [
-          'I\u00A0built and modernized the\u00A0frontend of\u00A0the\u00A0O2 FindAI chat application, delivering new product features.',
+          'I modernized and unified the\u00A0frontend codebase, standardizing styling, form validation, and\u00A0test coverage across the\u00A0application.',
         ],
       },
       features: {
         title: 'Key Contributions',
         items: [
-          'Built the\u00A0Settings page from scratch and scaffolded the\u00A0full Integrations modulefor API\u00A0keys, connectors, and misc forms.',
+          'Built the\u00A0Settings page from scratch and scaffolded the\u00A0full Integrations module for API\u00A0keys, connectors, and misc forms.',
           'Added favorites for\u00A0conversations and files, full-text conversation search, and time-category grouping for\u00A0chat history.',
           'Unified the\u00A0entire application styling from a\u00A0mixed Emotion/sx approach to\u00A0a\u00A0consistent MUI\u00A0sx system.',
           'Introduced Zod\u00A0+ React Hook Form as the\u00A0standard validation layer across all forms.',
@@ -39,17 +39,17 @@ export const PROJECTS_WORK = {
       responsibility: {
         title: 'My Job',
         items: [
-          'I\u00A0led the\u00A0full frontend architecture refactoring of\u00A0the\u00A0web application, transforming a\u00A0flat file codebase into a\u00A0structured feature\u2011based architecture across 13\u00A0isolated business domains. I\u00A0also designed structured AI\u00A0prompt engineering patterns to\u00A0ensure consistent, reliable, and\u00A0safe LLM outputs for\u00A0the\u00A0Public Tenders Portal application.',
+          'I\u00A0led the\u00A0full frontend architecture refactoring of\u00A0the\u00A0web application, transforming a\u00A0flat file codebase into a\u00A0structured feature\u2011based architecture.',
         ],
       },
       features: {
         title: 'Key Contributions',
         items: [
           'Refactored the\u00A0entire frontend from a\u00A0flat component structure to\u00A0a\u00A0scalable feature\u2011based architecture, raising code quality.',
-          'Benchmark went from 28/100 to\u00A088/100 and\u00A0reduced cognitive complexity by\u00A073%.',
-          'Migrated legacy API\u00A0layer to\u00A0a\u00A0fully typed openapi\u2011fetch client, eliminating manual type duplication and\u00A0reducing type\u2011related bugs.',
-          'Created AI\u00A0prompt engineering patterns for\u00A0reliable and\u00A0predictable AI\u00A0responses in\u00A0production LLM\u2011powered features.',
           'Established codebase conventions, companion type file patterns, and\u00A0code ownership rules.',
+          'Migrated legacy API\u00A0layer to\u00A0a\u00A0fully typed openapi\u2011fetch client, eliminating manual type duplication and\u00A0reducing type\u2011related bugs.',
+          'Code quality benchmark went from 28/100 to\u00A088/100 and\u00A0reduced cognitive complexity by\u00A073%.',
+          'Created AI\u00A0prompt engineering patterns for\u00A0reliable and\u00A0predictable AI\u00A0responses in\u00A0production LLM\u2011powered features.',
         ],
       },
       note: {
