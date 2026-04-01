@@ -1,7 +1,7 @@
 import { SkillsIconGroupProps } from '@/components/pages/home/skills/SkillsIconGroup.types'
 import ImageComponent from '@/components/shared/ImageComponent'
 
-import { capitalizeFirstLetter } from '@/lib/utils/helpers/text/capitalizeFirstLetter'
+import { capitalizeFirstLetter } from '@/lib/utils/helpers/capitalizeFirstLetter'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'
 

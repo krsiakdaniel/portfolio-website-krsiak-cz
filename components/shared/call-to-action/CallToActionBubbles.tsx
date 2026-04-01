@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 import Bubble from '@/components/shared/Bubble'
 
-import { shuffleArrayWithBubblesColors } from '@/lib/utils/helpers/bubbles/shuffleArrayWithBubblesColors'
+import { shuffleArrayWithBubblesColors } from '@/lib/utils/helpers/shuffleArrayWithBubblesColors'
 
 const animationClassCss = 'animate-pulse-bubble'
 const initialBubblesColorsCss = ['bg-blue-300', 'bg-violet-400', 'bg-blue-400']

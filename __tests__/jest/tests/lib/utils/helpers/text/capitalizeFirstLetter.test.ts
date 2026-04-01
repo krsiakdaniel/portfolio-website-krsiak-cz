@@ -1,4 +1,4 @@
-import { capitalizeFirstLetter } from '@/lib/utils/helpers/text/capitalizeFirstLetter'
+import { capitalizeFirstLetter } from '@/lib/utils/helpers/capitalizeFirstLetter'
 
 describe('capitalizeFirstLetter', () => {
   it('should capitalize the first letter of a regular word', () => {
