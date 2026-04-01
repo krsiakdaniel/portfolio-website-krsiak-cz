@@ -1,4 +1,5 @@
-import IconExternalLink from '@/components/icons/IconExternalLink'
+import { ExternalLink } from 'lucide-react'
+
 import { SocialLinkProps } from '@/components/shared/SocialLink.types'
 
 import { AlertColorVariantEnum } from '@/lib/types/enums'
@@ -31,7 +32,7 @@ const SocialLink = ({
       data-testid={dataTestId}
     >
       <span>{text}</span>
-      <IconExternalLink />
+      <ExternalLink className="h-3 w-3" />
     </a>
   )
 }

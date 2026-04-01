@@ -1,6 +1,8 @@
 'use client' // Ensure the component is a Client Component if it has an onClick handler.
 import { useCallback, useEffect, useState } from 'react'
 
+import { ArrowUp } from 'lucide-react'
+
 import { scrollToTop } from '@/lib/utils/helpers/scrollToTop'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
@@ -46,20 +48,7 @@ const ScrollToTopButton = () => {
       aria-label={ARIA_LABELS.scrollToTopPage}
       title={FOOTER.scrollToTop}
     >
-      <svg
-        className="h-6 w-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M5 10l7-7m0 0l7 7m-7-7v18"
-        />
-      </svg>
+      <ArrowUp className="h-5 w-5" />
     </button>
   )
 }

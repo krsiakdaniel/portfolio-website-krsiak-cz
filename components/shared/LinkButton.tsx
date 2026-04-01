@@ -1,10 +1,9 @@
-import IconArrow from '@/components/icons/IconArrow'
-import IconExternalLink from '@/components/icons/IconExternalLink'
+import { ArrowRight, ExternalLink } from 'lucide-react'
+
 import { LinkButtonProps } from '@/components/shared/LinkButton.types'
 
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 
-import { ArrowDirectionEnum } from '@/lib/types/enums'
 import { TEXT } from '@/localization'
 
 const LinkButton = ({ href, linkText, isLinkExternal = false, dataTestId }: LinkButtonProps) => {
@@ -25,9 +24,9 @@ const LinkButton = ({ href, linkText, isLinkExternal = false, dataTestId }: Link
     >
       <span>{linkText}</span>
       {isLinkExternal ? (
-        <IconExternalLink />
+        <ExternalLink className="h-3 w-3" />
       ) : (
-        <IconArrow arrowDirection={ArrowDirectionEnum.Right} />
+        <ArrowRight className="block h-4 w-4" />
       )}
     </a>
   )

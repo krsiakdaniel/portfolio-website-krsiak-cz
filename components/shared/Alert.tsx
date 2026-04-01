@@ -1,4 +1,5 @@
-import IconInfo from '@/components/icons/IconInfo'
+import { Info } from 'lucide-react'
+
 import { AlertProps } from '@/components/shared/Alert.types'
 
 import { AlertColorVariantEnum } from '@/lib/types/enums'
@@ -16,7 +17,13 @@ const Alert = ({
       <div className="flex flex-col gap-2 text-sm md:flex-row md:items-center">
         <div className="flex items-start gap-2 lg:items-center">
           <span className="shrink-0 self-start lg:self-center" aria-hidden="true">
-            <IconInfo />
+            <Info
+              aria-hidden="true"
+              className="h-4 w-4"
+              fill="currentColor"
+              stroke="white"
+              strokeWidth={1.5}
+            />
           </span>
           <div className="flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-2">
             <span className="font-semibold">{title}</span>

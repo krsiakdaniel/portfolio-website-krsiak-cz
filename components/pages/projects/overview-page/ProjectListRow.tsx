@@ -1,8 +1,6 @@
 import Link from 'next/link'
 
-import IconArrow from '@/components/icons/IconArrow'
-
-import { ArrowDirectionEnum } from '@/lib/types/enums'
+import { ArrowRight } from 'lucide-react'
 
 import { ProjectListRowProps } from './ProjectListRow.types'
 
@@ -32,7 +30,7 @@ const ProjectListRow = ({
             </span>
             {title}
             <span className="flex-shrink-0 text-neutral-300 transition-colors group-hover:text-violet-500">
-              <IconArrow arrowDirection={ArrowDirectionEnum.Right} />
+              <ArrowRight className="block h-4 w-4" />
             </span>
           </h3>
           <span className="flex-shrink-0 text-sm text-neutral-400">{company}</span>

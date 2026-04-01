@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
-import IconCaretRight from '@/components/icons/IconCaretRight'
+import { ChevronRight } from 'lucide-react'
+
 import { BreadcrumbsItemProps } from '@/components/shared/BreadcrumbsItem.types'
 
 const BreadcrumbsItem = ({
@@ -16,7 +17,7 @@ const BreadcrumbsItem = ({
     <li className="inline-flex items-center">
       {showSeparatorIcon && (
         <span className="mx-2">
-          <IconCaretRight />
+          <ChevronRight className="block h-4 w-4 text-violet-600" aria-hidden="true" />
         </span>
       )}
       <Link

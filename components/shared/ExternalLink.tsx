@@ -1,4 +1,5 @@
-import IconExternalLink from '@/components/icons/IconExternalLink'
+import { ExternalLink as ExternalLinkIcon } from 'lucide-react'
+
 import { ExternalLinkProps } from '@/components/shared/ExternalLink.types'
 
 const ExternalLink = ({ href, text, title, dataTestId = '' }: ExternalLinkProps) => {
@@ -14,7 +15,7 @@ const ExternalLink = ({ href, text, title, dataTestId = '' }: ExternalLinkProps)
       >
         {text}
         <span className="ml-2">
-          <IconExternalLink />
+          <ExternalLinkIcon className="h-3 w-3" />
         </span>
       </a>
     </span>
