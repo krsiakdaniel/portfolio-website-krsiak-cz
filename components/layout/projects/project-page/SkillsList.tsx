@@ -1,6 +1,6 @@
 import SkillBadge from '@/components/layout/projects/project-page/SkillBadge'
-import List from '@/components/shared/List'
-import ListItem from '@/components/shared/ListItem'
+import List from '@/components/shared/list/List'
+import ListItem from '@/components/shared/list/ListItem'
 
 import { SkillsListProps } from './SkillsList.types'
 

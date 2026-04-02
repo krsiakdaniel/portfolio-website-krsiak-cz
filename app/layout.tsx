@@ -2,10 +2,9 @@ import type { Metadata, Viewport } from 'next'
 
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
 import Hotjar from '@/components/analytics/Hotjar'
-import AppleTouchIcons from '@/components/layout/AppleTouchIcons'
 import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
-import SkipNavigationARIA from '@/components/shared/SkipNavigationARIA'
+import SkipNavigationARIA from '@/components/shared/skip-navigation-aria/SkipNavigationARIA'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
@@ -38,7 +37,6 @@ const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
       <head>
         <GoogleAnalytics />
         <Hotjar />
-        <AppleTouchIcons />
       </head>
       <body>
         <SkipNavigationARIA />

@@ -1,5 +1,5 @@
-import List from '@/components/shared/List'
-import ListItem from '@/components/shared/ListItem'
+import List from '@/components/shared/list/List'
+import ListItem from '@/components/shared/list/ListItem'
 
 import { SHARED } from '@/localization'
 

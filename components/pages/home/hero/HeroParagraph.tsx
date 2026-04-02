@@ -1,4 +1,4 @@
-import Paragraph from '@/components/shared/Paragraph'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

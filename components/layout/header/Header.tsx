@@ -4,12 +4,12 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useClickOutside } from '@/lib/hooks/useClickOutside'
 import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 
-import PageContainer from '@/components/layout/PageContainer'
 import Logo from '@/components/layout/header/Logo'
 import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
 import Menu from '@/components/layout/header/menu/Menu'
 import MenuMobileToggle from '@/components/layout/header/menu/MenuMobileToggle'
 import MenuSocialLinks from '@/components/layout/header/menu/MenuSocialLinks'
+import PageContainer from '@/components/layout/page-container/PageContainer'
 
 import { DeviceTypeEnum } from '@/lib/types/enums'
 import { ARIA_LABELS } from '@/localization'

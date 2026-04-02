@@ -1,14 +1,14 @@
 import { Metadata } from 'next'
 
-import PageContainer from '@/components/layout/PageContainer'
+import PageContainer from '@/components/layout/page-container/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import CareerPath from '@/components/pages/resume/CareerPath'
 import ResumeContact from '@/components/pages/resume/ResumeContact'
 import ResumeIntroduction from '@/components/pages/resume/ResumeIntroduction'
 import ResumePreviewSection from '@/components/pages/resume/ResumePreviewSection'
-import BreadCrumbs from '@/components/shared/Breadcrumbs'
-import Heading from '@/components/shared/Heading'
+import BreadCrumbs from '@/components/shared/breadcrumbs/Breadcrumbs'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
+import Heading from '@/components/shared/heading/Heading'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'

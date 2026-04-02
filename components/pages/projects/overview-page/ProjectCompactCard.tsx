@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import IconArrow from '@/components/icons/IconArrow'
+import { ArrowRight } from 'lucide-react'
+
 import ProjectSkillsIcons from '@/components/pages/projects/overview-page/ProjectSkillsIcons'
 
-import { ArrowDirectionEnum } from '@/lib/types/enums'
 import { ICON_EMOJI } from '@/localization'
 
 import { ProjectCompactCardProps } from './ProjectCompactCard.types'
@@ -75,7 +75,7 @@ const ProjectCompactCard = ({
 
         <div className="mt-auto flex items-center gap-1 pt-2 text-base font-medium text-violet-600">
           <span>{linkText}</span>
-          <IconArrow arrowDirection={ArrowDirectionEnum.Right} />
+          <ArrowRight className="block h-4 w-4" />
         </div>
       </div>
     </Link>

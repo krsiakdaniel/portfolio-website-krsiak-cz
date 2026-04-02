@@ -12,7 +12,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { metaDataKomercniBanka } from '@/data/metadata/pages/projects/work/metaDataKomercniBanka'
 import { sections } from '@/data/pages/projects/work/komercniBanka'
-import { projectsWorkReact } from '@/data/pages/projects/work/projects-overview/react/workReact'
+import { projectsWorkReact } from '@/data/pages/projects/work/projects-overview/workReact'
 import { GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, TEXT } from '@/localization'
 

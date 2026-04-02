@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
-import Alert from '@/components/shared/Alert'
-import SocialLink from '@/components/shared/SocialLink'
+import Alert from '@/components/shared/alert/Alert'
+import SocialLink from '@/components/shared/social-link/SocialLink'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
@@ -15,7 +15,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { metaDataKrsiak } from '@/data/metadata/pages/projects/personal/metaDataKrsiak'
 import { sections } from '@/data/pages/projects/personal/krsiak'
-import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/next/personalNext'
+import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/personalNext'
 import { AlertColorVariantEnum, GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, PROJECTS, PROJECT_KRSIAK, TEXT } from '@/localization'
 

@@ -4,8 +4,8 @@ import { useState } from 'react'
 
 import GalleryPreview from '@/components/layout/projects/project-page/gallery/GalleryPreview'
 import GalleryThumbnails from '@/components/layout/projects/project-page/gallery/GalleryThumbnails'
-import Heading from '@/components/shared/Heading'
-import Paragraph from '@/components/shared/Paragraph'
+import Heading from '@/components/shared/heading/Heading'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

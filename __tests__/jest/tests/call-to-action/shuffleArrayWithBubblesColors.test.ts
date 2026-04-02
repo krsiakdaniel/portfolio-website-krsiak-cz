@@ -1,4 +1,4 @@
-import { shuffleArrayWithBubblesColors } from '@/lib/utils/helpers/bubbles/shuffleArrayWithBubblesColors'
+import { shuffleArrayWithBubblesColors } from '@/lib/utils/helpers/shuffleArrayWithBubblesColors'
 
 describe('shuffleArrayWithBubblesColors', () => {
   it('should return an array of the same length', () => {

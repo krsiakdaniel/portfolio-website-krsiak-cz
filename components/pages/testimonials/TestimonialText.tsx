@@ -1,4 +1,4 @@
-import Paragraph from '@/components/shared/Paragraph'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { TestimonialTextProps } from './TestimonialText.types'
 

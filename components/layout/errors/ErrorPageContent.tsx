@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-import Heading from '@/components/shared/Heading'
-import ImageComponent from '@/components/shared/ImageComponent'
-import Paragraph from '@/components/shared/Paragraph'
+import Heading from '@/components/shared/heading/Heading'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

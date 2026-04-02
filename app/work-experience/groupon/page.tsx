@@ -12,7 +12,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { metaDataGroupon } from '@/data/metadata/pages/projects/work/metaDataGroupon'
 import { sections } from '@/data/pages/projects/work/groupon'
-import { projectsWorkQA } from '@/data/pages/projects/work/projects-overview/quality-assurance/workQA'
+import { projectsWorkQA } from '@/data/pages/projects/work/projects-overview/workQA'
 import { GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, TEXT } from '@/localization'
 

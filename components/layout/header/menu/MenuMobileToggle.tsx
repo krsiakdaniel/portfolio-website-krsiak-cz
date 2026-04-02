@@ -1,6 +1,5 @@
 'use client' // using onClick
-import IconClose from '@/components/icons/IconClose'
-import IconHamburger from '@/components/icons/IconHamburger'
+import { Menu, X } from 'lucide-react'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
@@ -24,7 +23,11 @@ const MenuMobileToggle = ({ isMenuOpen, handleMenuMobileToggle, ref }: MenuMobil
       className="ml-6 rounded-lg bg-violet-50 p-2 transition-all duration-200 ease-in-out hover:bg-violet-100 focus:bg-violet-100 focus:ring-4 focus:ring-violet-400 focus:outline-hidden lg:hidden"
     >
       <div className="transition-all duration-200 ease-in-out">
-        {isMenuOpen ? <IconClose /> : <IconHamburger />}
+        {isMenuOpen ? (
+          <X className="h-6 w-6 text-violet-600 hover:text-violet-800" />
+        ) : (
+          <Menu className="h-6 w-6 text-violet-600 hover:text-violet-800" />
+        )}
       </div>
     </button>
   )

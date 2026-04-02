@@ -1,4 +1,4 @@
-import SocialLinkIcon from '@/components/shared/SocialLinkIcon'
+import SocialLinkIcon from '@/components/shared/social-link/SocialLinkIcon'
 
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 

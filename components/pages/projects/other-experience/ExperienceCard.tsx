@@ -1,6 +1,6 @@
-import Heading from '@/components/shared/Heading'
-import Highlight from '@/components/shared/Highlight'
-import Paragraph from '@/components/shared/Paragraph'
+import Heading from '@/components/shared/heading/Heading'
+import Highlight from '@/components/shared/highlight/Highlight'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 

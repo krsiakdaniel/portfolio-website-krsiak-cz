@@ -1,5 +1,5 @@
-import ExternalLink from '@/components/shared/ExternalLink'
-import ImageComponent from '@/components/shared/ImageComponent'
+import ExternalLink from '@/components/shared/external-link/ExternalLink'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, TEXT } from '@/localization'

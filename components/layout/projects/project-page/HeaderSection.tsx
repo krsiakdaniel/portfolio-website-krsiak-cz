@@ -1,5 +1,5 @@
 import GoBackLink from '@/components/layout/projects/project-page/GoBackLink'
-import Heading from '@/components/shared/Heading'
+import Heading from '@/components/shared/heading/Heading'
 
 import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 

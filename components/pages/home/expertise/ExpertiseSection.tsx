@@ -1,7 +1,7 @@
 import { ExpertiseSectionProps } from '@/components/pages/home/expertise/Expertise.types'
-import Heading from '@/components/shared/Heading'
-import List from '@/components/shared/List'
-import ListItem from '@/components/shared/ListItem'
+import Heading from '@/components/shared/heading/Heading'
+import List from '@/components/shared/list/List'
+import ListItem from '@/components/shared/list/ListItem'
 
 import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 

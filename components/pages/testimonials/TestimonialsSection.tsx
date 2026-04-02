@@ -1,6 +1,6 @@
 import Testimonial from '@/components/pages/testimonials/Testimonial'
 import TestimonialDescription from '@/components/pages/testimonials/TestimonialDescription'
-import HeadingSection from '@/components/shared/HeadingSection'
+import HeadingSection from '@/components/shared/heading/HeadingSection'
 
 import { TestimonialsSectionProps } from './TestimonialsSection.types'
 

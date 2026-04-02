@@ -1,8 +1,8 @@
 import TestimonialQuote from '@/components/pages/testimonials/TestimonialQuote'
 import TestimonialText from '@/components/pages/testimonials/TestimonialText'
-import HeadingSection from '@/components/shared/HeadingSection'
-import ImageComponent from '@/components/shared/ImageComponent'
-import Paragraph from '@/components/shared/Paragraph'
+import HeadingSection from '@/components/shared/heading/HeadingSection'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

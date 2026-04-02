@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-import ImageComponent from '@/components/shared/ImageComponent'
-import Paragraph from '@/components/shared/Paragraph'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 

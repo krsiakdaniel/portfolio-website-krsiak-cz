@@ -1,7 +1,7 @@
-import Heading from '@/components/shared/Heading'
-import Highlight from '@/components/shared/Highlight'
-import List from '@/components/shared/List'
-import ListItem from '@/components/shared/ListItem'
+import Heading from '@/components/shared/heading/Heading'
+import Highlight from '@/components/shared/highlight/Highlight'
+import List from '@/components/shared/list/List'
+import ListItem from '@/components/shared/list/ListItem'
 
 import { ProjectResponsibilitySectionProps } from './ProjectResponsibilitySection.types'
 

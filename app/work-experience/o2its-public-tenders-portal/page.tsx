@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
-import Alert from '@/components/shared/Alert'
-import SocialLink from '@/components/shared/SocialLink'
+import Alert from '@/components/shared/alert/Alert'
+import SocialLink from '@/components/shared/social-link/SocialLink'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
@@ -15,7 +15,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { metaDataO2itsPublicTendersPortal } from '@/data/metadata/pages/projects/work/metaDataO2itsPublicTendersPortal'
 import { sections } from '@/data/pages/projects/work/o2its-public-tenders-portal'
-import { projectsWorkVite } from '@/data/pages/projects/work/projects-overview/vite/workVite'
+import { projectsWorkVite } from '@/data/pages/projects/work/projects-overview/workVite'
 import { AlertColorVariantEnum, GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, PROJECT_O2ITS, TEXT } from '@/localization'
 
