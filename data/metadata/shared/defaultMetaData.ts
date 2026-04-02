@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import { ENV_URLS } from '@/lib/utils/constants/urls/pageUrls'
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
+import { appleTouchIconSizes } from '@/data/metadata/shared/appleTouchIconSizes'
 import { COMMON_VALUES, META_DEFAULT } from '@/localization'
 
 export const defaultMetaData: Metadata = {
@@ -20,5 +21,11 @@ export const defaultMetaData: Metadata = {
     email: false,
     address: false,
     telephone: false,
+  },
+  icons: {
+    apple: appleTouchIconSizes.map((size) => ({
+      url: `/icons/png/icon-${size}.png`,
+      sizes: size,
+    })),
   },
 }
