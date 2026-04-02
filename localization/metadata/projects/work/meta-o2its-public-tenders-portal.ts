@@ -1,4 +1,4 @@
-import { COMMON_VALUES } from '../ui/common'
+import { COMMON_VALUES } from '../../../ui/common'
 
 export const META_O2ITS_PUBLIC_TENDERS_PORTAL = {
   title: `AI Public Tenders Portal | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,

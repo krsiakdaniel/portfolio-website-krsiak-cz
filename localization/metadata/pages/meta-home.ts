@@ -1,5 +1,5 @@
-import { MISC } from '../misc'
-import { COMMON_VALUES } from '../ui/common'
+import { MISC } from '../../misc'
+import { COMMON_VALUES } from '../../ui/common'
 
 export const META_HOME = {
   title: `${COMMON_VALUES.nameDanielKrsiak} | ${COMMON_VALUES.reactDeveloper} — ${COMMON_VALUES.typeScript} & ${COMMON_VALUES.next}`,

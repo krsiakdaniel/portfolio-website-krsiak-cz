@@ -1,4 +1,4 @@
-import { COMMON_VALUES } from '../ui/common'
+import { COMMON_VALUES } from '../../../ui/common'
 
 export const META_O2ITS_AI_POWERED_CHAT_DASHBOARD = {
   title: `AI-Powered Chat Dashboard | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,

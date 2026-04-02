@@ -1,4 +1,4 @@
-import { COMMON_VALUES } from '../ui/common'
+import { COMMON_VALUES } from '../../ui/common'
 
 export const META_RESUME = {
   title: `Resume | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,

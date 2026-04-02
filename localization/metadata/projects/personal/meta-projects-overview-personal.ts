@@ -1,4 +1,4 @@
-import { COMMON_VALUES } from '../ui/common'
+import { COMMON_VALUES } from '../../../ui/common'
 
 export const META_PROJECTS_OVERVIEW_PERSONAL = {
   title: `Personal Projects | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,

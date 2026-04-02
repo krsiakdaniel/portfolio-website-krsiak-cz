@@ -58,32 +58,32 @@ export { IMAGE_ALT } from './accessibility/imageAlts'
 
 // Metadata
 export { META_DEFAULT } from './metadata/meta-default'
-export { META_HOME } from './metadata/meta-home'
+export { META_HOME } from './metadata/pages/meta-home'
 
 // Metadata - Projects - Work
-export { META_GROUPON } from './metadata/meta-groupon'
-export { META_KOMERCNI_BANKA } from './metadata/meta-komercni-banka'
-export { META_KOOPERATIVA } from './metadata/meta-kooperativa'
-export { META_MORAVIA } from './metadata/meta-moravia'
-export { META_O2ITS_AI_POWERED_CHAT_DASHBOARD } from './metadata/meta-o2its-ai-powered-chat-dashboard'
-export { META_O2ITS_PUBLIC_TENDERS_PORTAL } from './metadata/meta-o2its-public-tenders-portal'
-export { META_PROJECTS_OVERVIEW_WORK } from './metadata/meta-projects-overview-work'
-export { META_SMARTSUPP_DASHBOARD } from './metadata/meta-smartsupp-dashboard'
-export { META_SMARTSUPP_HELP } from './metadata/meta-smartsupp-help'
-export { META_SMARTSUPP_WEB } from './metadata/meta-smartsupp-web'
+export { META_GROUPON } from './metadata/projects/work/meta-groupon'
+export { META_KOMERCNI_BANKA } from './metadata/projects/work/meta-komercni-banka'
+export { META_KOOPERATIVA } from './metadata/projects/work/meta-kooperativa'
+export { META_MORAVIA } from './metadata/projects/work/meta-moravia'
+export { META_O2ITS_AI_POWERED_CHAT_DASHBOARD } from './metadata/projects/work/meta-o2its-ai-powered-chat-dashboard'
+export { META_O2ITS_PUBLIC_TENDERS_PORTAL } from './metadata/projects/work/meta-o2its-public-tenders-portal'
+export { META_PROJECTS_OVERVIEW_WORK } from './metadata/projects/work/meta-projects-overview-work'
+export { META_SMARTSUPP_DASHBOARD } from './metadata/projects/work/meta-smartsupp-dashboard'
+export { META_SMARTSUPP_HELP } from './metadata/projects/work/meta-smartsupp-help'
+export { META_SMARTSUPP_WEB } from './metadata/projects/work/meta-smartsupp-web'
 
 // Metadata - Resume
-export { META_RESUME } from './metadata/meta-resume'
+export { META_RESUME } from './metadata/pages/meta-resume'
 
 // Metadata - Projects - Personal
-export { META_KOREAN_EASY } from './metadata/meta-korean-easy'
-export { META_KRSIAK } from './metadata/meta-krsiak'
-export { META_PROJECTS_OVERVIEW_PERSONAL } from './metadata/meta-projects-overview-personal'
+export { META_KOREAN_EASY } from './metadata/projects/personal/meta-korean-easy'
+export { META_KRSIAK } from './metadata/projects/personal/meta-krsiak'
+export { META_PROJECTS_OVERVIEW_PERSONAL } from './metadata/projects/personal/meta-projects-overview-personal'
 
 // Metadata - Other pages
-export { META_STATUS } from './metadata/meta-status'
-export { META_TESTIMONIALS } from './metadata/meta-testimonials'
-export { META_WHO_I_AM } from './metadata/meta-who-i-am'
+export { META_STATUS } from './metadata/pages/meta-status'
+export { META_TESTIMONIALS } from './metadata/pages/meta-testimonials'
+export { META_WHO_I_AM } from './metadata/pages/meta-who-i-am'
 
 // Misc
 export { ANALYTICS_WARNING, CONTACT, MISC } from './misc'

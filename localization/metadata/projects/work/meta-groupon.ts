@@ -1,4 +1,4 @@
-import { COMMON_VALUES } from '../ui/common'
+import { COMMON_VALUES } from '../../../ui/common'
 
 export const META_GROUPON = {
   title: `Groupon | ${COMMON_VALUES.nameDanielKrsiak} — QA Automation Team Leader`,

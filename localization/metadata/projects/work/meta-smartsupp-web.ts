@@ -1,4 +1,4 @@
-import { COMMON_VALUES } from '../ui/common'
+import { COMMON_VALUES } from '../../../ui/common'
 
 export const META_SMARTSUPP_WEB = {
   title: `Smartsupp Web | ${COMMON_VALUES.nameDanielKrsiak} — Front End Developer`,

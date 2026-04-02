@@ -1,4 +1,4 @@
-import { COMMON_VALUES } from '../ui/common'
+import { COMMON_VALUES } from '../../../ui/common'
 
 export const META_MORAVIA = {
   title: `RWS — Moravia IT | ${COMMON_VALUES.nameDanielKrsiak} — QA Automation Team Leader`,
