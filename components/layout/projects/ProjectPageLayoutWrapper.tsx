@@ -4,7 +4,7 @@ import HeaderSection from '@/components/layout/projects/project-page/HeaderSecti
 import ProjectInformation from '@/components/layout/projects/project-page/ProjectInformation'
 import ProjectResponsibility from '@/components/layout/projects/project-page/ProjectResponsibility'
 import Gallery from '@/components/layout/projects/project-page/gallery/Gallery'
-import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import BreadCrumbs from '@/components/shared/breadcrumbs/Breadcrumbs'
 import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
 
 const ProjectPageLayoutWrapper = ({

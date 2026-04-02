@@ -1,5 +1,5 @@
 import HeroSubHeading from '@/components/pages/home/hero/HeroSubHeading'
-import Heading from '@/components/shared/Heading'
+import Heading from '@/components/shared/heading/Heading'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

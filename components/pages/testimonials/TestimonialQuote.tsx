@@ -1,4 +1,4 @@
-import ImageComponent from '@/components/shared/ImageComponent'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
 import quote from '@/public/icons/svg/testimonial/quote.svg'
 

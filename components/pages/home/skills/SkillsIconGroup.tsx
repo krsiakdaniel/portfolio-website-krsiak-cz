@@ -1,5 +1,5 @@
 import { SkillsIconGroupProps } from '@/components/pages/home/skills/SkillsIconGroup.types'
-import ImageComponent from '@/components/shared/ImageComponent'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
 import { capitalizeFirstLetter } from '@/lib/utils/helpers/capitalizeFirstLetter'
 

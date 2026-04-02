@@ -1,6 +1,6 @@
 import HeroHeading from '@/components/pages/home/hero/HeroHeading'
 import HeroParagraph from '@/components/pages/home/hero/HeroParagraph'
-import EmojiAnimated from '@/components/shared/EmojiAnimated'
+import EmojiAnimated from '@/components/shared/emoji-animated/EmojiAnimated'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 

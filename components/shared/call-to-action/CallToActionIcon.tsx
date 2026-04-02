@@ -1,4 +1,4 @@
-import EmojiAnimated from '@/components/shared/EmojiAnimated'
+import EmojiAnimated from '@/components/shared/emoji-animated/EmojiAnimated'
 
 import { getEmojiEnum } from '@/lib/utils/helpers/getEmojiEnum'
 

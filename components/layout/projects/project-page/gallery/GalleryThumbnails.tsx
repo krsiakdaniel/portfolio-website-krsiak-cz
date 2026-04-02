@@ -1,6 +1,6 @@
 import { MouseEventHandler } from 'react'
 
-import ImageComponent from '@/components/shared/ImageComponent'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
 import { GALLERY_THUMBNAIL_4_3 } from '@/lib/utils/constants/imageGalleryConfig'
 

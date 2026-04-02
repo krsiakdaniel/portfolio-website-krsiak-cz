@@ -1,5 +1,5 @@
-import ImageComponent from '@/components/shared/ImageComponent'
-import { SocialLinkIconProps } from '@/components/shared/SocialLinkIcon.types'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
+import { SocialLinkIconProps } from '@/components/shared/social-link/SocialLinkIcon.types'
 
 import { DeviceTypeEnum, ImageLoadingEnum } from '@/lib/types/enums'
 

@@ -4,7 +4,7 @@ import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
 import Hotjar from '@/components/analytics/Hotjar'
 import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
-import SkipNavigationARIA from '@/components/shared/SkipNavigationARIA'
+import SkipNavigationARIA from '@/components/shared/skip-navigation-aria/SkipNavigationARIA'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 

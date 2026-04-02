@@ -1,5 +1,5 @@
-import Highlight from '@/components/shared/Highlight'
-import Paragraph from '@/components/shared/Paragraph'
+import Highlight from '@/components/shared/highlight/Highlight'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

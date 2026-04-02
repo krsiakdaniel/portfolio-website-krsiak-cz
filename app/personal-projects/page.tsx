@@ -5,7 +5,7 @@ import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
 import PersonalProjectsIntroduction from '@/components/pages/personal-projects/PersonalProjectsIntroduction'
 import ProjectSection from '@/components/pages/projects/overview-page/ProjectSection'
-import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import BreadCrumbs from '@/components/shared/breadcrumbs/Breadcrumbs'
 import CallToActionGitHub from '@/components/shared/call-to-action/cta-banners/CallToActionGitHub'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'

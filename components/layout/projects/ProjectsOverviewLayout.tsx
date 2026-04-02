@@ -1,5 +1,5 @@
 import { ProjectsOverviewLayoutProps } from '@/components/layout/projects/ProjectPageLayout.types'
-import Heading from '@/components/shared/Heading'
+import Heading from '@/components/shared/heading/Heading'
 
 const ProjectsOverviewLayout = ({
   icon,

@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
-import Alert from '@/components/shared/Alert'
-import SocialLink from '@/components/shared/SocialLink'
+import Alert from '@/components/shared/alert/Alert'
+import SocialLink from '@/components/shared/social-link/SocialLink'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'

@@ -1,8 +1,8 @@
 import Copyright from '@/components/layout/footer/Copyright'
 import Status from '@/components/layout/footer/Status'
 import PageContainer from '@/components/layout/page-container/PageContainer'
-import DividerWithText from '@/components/shared/DividerWithText'
-import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
+import DividerWithText from '@/components/shared/divider-with-text/DividerWithText'
+import ScanMyContactQR from '@/components/shared/scan-my-contact-qr/ScanMyContactQR'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 

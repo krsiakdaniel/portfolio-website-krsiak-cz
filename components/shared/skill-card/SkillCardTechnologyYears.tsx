@@ -1,4 +1,4 @@
-import { SkillCardTechnologyYearsProps } from '@/components/shared/SkillCardTechnologyYears.types'
+import { SkillCardTechnologyYearsProps } from '@/components/shared/skill-card/SkillCardTechnologyYears.types'
 
 import { getYearsText } from '@/lib/utils/helpers/years/getYearsText'
 

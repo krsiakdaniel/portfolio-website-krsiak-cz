@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import Bubble from '@/components/shared/Bubble'
+import Bubble from '@/components/shared/bubble/Bubble'
 
 import { shuffleArrayWithBubblesColors } from '@/lib/utils/helpers/shuffleArrayWithBubblesColors'
 

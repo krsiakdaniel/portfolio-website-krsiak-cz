@@ -1,6 +1,6 @@
 import SkillsIconGroup from '@/components/pages/home/skills/SkillsIconGroup'
-import DividerWithText from '@/components/shared/DividerWithText'
-import Paragraph from '@/components/shared/Paragraph'
+import DividerWithText from '@/components/shared/divider-with-text/DividerWithText'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 

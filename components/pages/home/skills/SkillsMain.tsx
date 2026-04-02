@@ -1,5 +1,5 @@
-import DividerWithText from '@/components/shared/DividerWithText'
-import SkillCard from '@/components/shared/SkillCard'
+import DividerWithText from '@/components/shared/divider-with-text/DividerWithText'
+import SkillCard from '@/components/shared/skill-card/SkillCard'
 
 import { skills } from '@/data/pages/home/skills/skillsMain'
 import { DIVIDER_WITH_TEXT } from '@/localization'

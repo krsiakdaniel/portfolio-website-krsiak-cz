@@ -5,7 +5,7 @@ import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
 import WorkExperience from '@/components/pages/work-experience/WorkExperience'
 import WorkExperienceIntroduction from '@/components/pages/work-experience/WorkExperienceIntroduction'
-import BreadCrumbs from '@/components/shared/Breadcrumbs'
+import BreadCrumbs from '@/components/shared/breadcrumbs/Breadcrumbs'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'

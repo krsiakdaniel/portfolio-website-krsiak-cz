@@ -1,6 +1,6 @@
-import DividerWithText from '@/components/shared/DividerWithText'
-import Heading from '@/components/shared/Heading'
-import ImageComponent from '@/components/shared/ImageComponent'
+import DividerWithText from '@/components/shared/divider-with-text/DividerWithText'
+import Heading from '@/components/shared/heading/Heading'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
 import bata from '@/public/images/svg/logo/bata.svg'
 import groupon from '@/public/images/svg/logo/groupon.svg'

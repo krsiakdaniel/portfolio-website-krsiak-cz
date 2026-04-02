@@ -1,5 +1,5 @@
 import ExpertiseSection from '@/components/pages/home/expertise/ExpertiseSection'
-import DividerWithText from '@/components/shared/DividerWithText'
+import DividerWithText from '@/components/shared/divider-with-text/DividerWithText'
 
 import {
   committedMindsetItems,

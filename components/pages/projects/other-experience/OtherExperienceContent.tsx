@@ -1,5 +1,5 @@
 import ExperienceCard from '@/components/pages/projects/other-experience/ExperienceCard'
-import Heading from '@/components/shared/Heading'
+import Heading from '@/components/shared/heading/Heading'
 
 import { TEXT } from '@/localization'
 

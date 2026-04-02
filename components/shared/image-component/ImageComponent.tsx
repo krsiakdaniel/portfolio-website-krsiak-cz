@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import { Tooltip } from 'react-tooltip'
 
-import { ImageComponentProps } from '@/components/shared/ImageComponent.types'
+import { ImageComponentProps } from '@/components/shared/image-component/ImageComponent.types'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 

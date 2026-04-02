@@ -1,4 +1,4 @@
-import { ParagraphProps } from '@/components/shared/Paragraph.types'
+import { ParagraphProps } from '@/components/shared/paragraph/Paragraph.types'
 
 import { getAttributes } from '@/lib/utils/helpers/getAttributes'
 

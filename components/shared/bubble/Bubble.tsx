@@ -1,4 +1,4 @@
-import { BubbleProps } from '@/components/shared/Bubble.types'
+import { BubbleProps } from '@/components/shared/bubble/Bubble.types'
 
 /**
  * Bubble component

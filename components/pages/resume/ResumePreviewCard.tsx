@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
-import HeadingSection from '@/components/shared/HeadingSection'
-import Highlight from '@/components/shared/Highlight'
-import ImageComponent from '@/components/shared/ImageComponent'
-import LinkButton from '@/components/shared/LinkButton'
-import Paragraph from '@/components/shared/Paragraph'
+import HeadingSection from '@/components/shared/heading/HeadingSection'
+import Highlight from '@/components/shared/highlight/Highlight'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
+import LinkButton from '@/components/shared/link-button/LinkButton'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'
 

@@ -1,7 +1,7 @@
-import HeadingSection from '@/components/shared/HeadingSection'
-import Highlight from '@/components/shared/Highlight'
-import Paragraph from '@/components/shared/Paragraph'
-import ScanMyContactQR from '@/components/shared/ScanMyContactQR'
+import HeadingSection from '@/components/shared/heading/HeadingSection'
+import Highlight from '@/components/shared/highlight/Highlight'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
+import ScanMyContactQR from '@/components/shared/scan-my-contact-qr/ScanMyContactQR'
 
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 import { QR_CODE } from '@/lib/utils/constants/shared/qrCode'

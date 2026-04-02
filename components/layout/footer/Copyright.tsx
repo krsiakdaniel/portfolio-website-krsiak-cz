@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import Paragraph from '@/components/shared/Paragraph'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { COPYRIGHT } from '@/lib/utils/constants/specialCharacters'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'

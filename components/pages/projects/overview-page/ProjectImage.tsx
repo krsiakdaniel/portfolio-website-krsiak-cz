@@ -1,4 +1,4 @@
-import ImageComponent from '@/components/shared/ImageComponent'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
 import { PROJECT_IMAGE_PREVIEW } from '@/lib/utils/constants/imageGalleryConfig'
 

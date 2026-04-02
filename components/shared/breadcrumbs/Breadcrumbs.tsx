@@ -1,5 +1,5 @@
-import { BreadCrumbsProps } from '@/components/shared/Breadcrumbs.types'
-import BreadcrumbsItem from '@/components/shared/BreadcrumbsItem'
+import { BreadCrumbsProps } from '@/components/shared/breadcrumbs/Breadcrumbs.types'
+import BreadcrumbsItem from '@/components/shared/breadcrumbs/BreadcrumbsItem'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 

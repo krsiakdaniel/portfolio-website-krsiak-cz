@@ -1,5 +1,5 @@
-import ExternalLink from '@/components/shared/ExternalLink'
-import ListItem from '@/components/shared/ListItem'
+import ExternalLink from '@/components/shared/external-link/ExternalLink'
+import ListItem from '@/components/shared/list/ListItem'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

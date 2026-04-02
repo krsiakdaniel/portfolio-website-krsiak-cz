@@ -1,5 +1,5 @@
-import ImageComponent from '@/components/shared/ImageComponent'
-import ImageComponentCaption from '@/components/shared/ImageComponentCaption'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
+import ImageComponentCaption from '@/components/shared/image-component/ImageComponentCaption'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 

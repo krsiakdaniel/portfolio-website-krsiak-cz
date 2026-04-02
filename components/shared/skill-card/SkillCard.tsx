@@ -1,6 +1,6 @@
-import ImageComponent from '@/components/shared/ImageComponent'
-import { SkillCardProps } from '@/components/shared/SkillCard.types'
-import SkillCardTechnologyYears from '@/components/shared/SkillCardTechnologyYears'
+import ImageComponent from '@/components/shared/image-component/ImageComponent'
+import { SkillCardProps } from '@/components/shared/skill-card/SkillCard.types'
+import SkillCardTechnologyYears from '@/components/shared/skill-card/SkillCardTechnologyYears'
 
 import { getSkillCardID } from '@/lib/utils/helpers/skills/getSkillCardID'
 

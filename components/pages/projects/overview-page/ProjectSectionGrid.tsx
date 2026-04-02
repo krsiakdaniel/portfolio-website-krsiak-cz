@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import GridPlaceholder from '@/components/pages/projects/overview-page/GridPlaceholder'
 import ProjectCompactCard from '@/components/pages/projects/overview-page/ProjectCompactCard'
-import HeadingSection from '@/components/shared/HeadingSection'
+import HeadingSection from '@/components/shared/heading/HeadingSection'
 
 import { ProjectSectionGridProps } from './ProjectSectionGrid.types'
 

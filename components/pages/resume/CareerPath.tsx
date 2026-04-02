@@ -1,7 +1,7 @@
 import ExpertiseSection from '@/components/pages/home/expertise/ExpertiseSection'
-import HeadingSection from '@/components/shared/HeadingSection'
-import Highlight from '@/components/shared/Highlight'
-import Paragraph from '@/components/shared/Paragraph'
+import HeadingSection from '@/components/shared/heading/HeadingSection'
+import Highlight from '@/components/shared/highlight/Highlight'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { careerReactDev } from '@/data/pages/resume/career-path/careerReactDev'
 import { careerTesting } from '@/data/pages/resume/career-path/careerTesting'

@@ -1,9 +1,9 @@
 import CustomersCount from '@/components/layout/projects/project-page/CustomersCount'
 import ProjectLinksList from '@/components/layout/projects/project-page/ProjectLinksList'
 import SkillsList from '@/components/layout/projects/project-page/SkillsList'
-import Heading from '@/components/shared/Heading'
-import List from '@/components/shared/List'
-import ListItem from '@/components/shared/ListItem'
+import Heading from '@/components/shared/heading/Heading'
+import List from '@/components/shared/list/List'
+import ListItem from '@/components/shared/list/ListItem'
 
 import { TEXT } from '@/localization'
 

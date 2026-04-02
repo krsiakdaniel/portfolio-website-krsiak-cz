@@ -1,5 +1,5 @@
-import Highlight from '@/components/shared/Highlight'
-import Paragraph from '@/components/shared/Paragraph'
+import Highlight from '@/components/shared/highlight/Highlight'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
 

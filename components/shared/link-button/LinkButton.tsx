@@ -1,6 +1,6 @@
 import { ArrowRight, ExternalLink } from 'lucide-react'
 
-import { LinkButtonProps } from '@/components/shared/LinkButton.types'
+import { LinkButtonProps } from '@/components/shared/link-button/LinkButton.types'
 
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 

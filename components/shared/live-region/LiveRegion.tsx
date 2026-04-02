@@ -1,6 +1,6 @@
 'use client'
 
-import { LiveRegionProps } from '@/components/shared/LiveRegion.types'
+import { LiveRegionProps } from '@/components/shared/live-region/LiveRegion.types'
 
 import { ARIA_LABELS } from '@/localization'
 
