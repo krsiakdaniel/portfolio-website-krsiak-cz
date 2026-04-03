@@ -1,7 +1,7 @@
-import Testimonial from '@/components/pages/testimonials/Testimonial'
-import TestimonialDescription from '@/components/pages/testimonials/TestimonialDescription'
 import HeadingSection from '@/components/shared/heading/HeadingSection'
 
+import Testimonial from './Testimonial'
+import TestimonialDescription from './TestimonialDescription'
 import { TestimonialsSectionProps } from './TestimonialsSection.types'
 
 const TestimonialsSection = ({

@@ -1,5 +1,3 @@
-import TestimonialQuote from '@/components/pages/testimonials/TestimonialQuote'
-import TestimonialText from '@/components/pages/testimonials/TestimonialText'
 import HeadingSection from '@/components/shared/heading/HeadingSection'
 import ImageComponent from '@/components/shared/image-component/ImageComponent'
 import Paragraph from '@/components/shared/paragraph/Paragraph'
@@ -11,6 +9,8 @@ import nature from '@/public/images/webp/photo/south-korea/nature.webp'
 import palace from '@/public/images/webp/photo/south-korea/palace.webp'
 import temple from '@/public/images/webp/photo/south-korea/temple.webp'
 
+import TestimonialQuote from '@/features/testimonials/components/TestimonialQuote'
+import TestimonialText from '@/features/testimonials/components/TestimonialText'
 import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 

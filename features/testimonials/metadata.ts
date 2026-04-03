@@ -4,7 +4,7 @@ import { createPageMetadata } from '@/lib/utils/helpers/metadata/createPageMetad
 import testimonialsOG from '@/public/images/png/open-graph/pages/testimonials/testimonials-og.png'
 import testimonialsTwitter from '@/public/images/png/open-graph/pages/testimonials/testimonials-twitter.png'
 
-import { META_TESTIMONIALS } from '@/localization'
+import { META_TESTIMONIALS } from './localization'
 
 export const metaDataTestimonials = createPageMetadata({
   meta: META_TESTIMONIALS,
