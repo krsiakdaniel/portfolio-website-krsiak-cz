@@ -4,7 +4,7 @@ import { createPageMetadata } from '@/lib/utils/helpers/metadata/createPageMetad
 import resumeOG from '@/public/images/png/open-graph/pages/resume/resume-og.png'
 import resumeTwitter from '@/public/images/png/open-graph/pages/resume/resume-twitter.png'
 
-import { META_RESUME } from '@/localization'
+import { META_RESUME } from './localization'
 
 export const metaDataResume = createPageMetadata({
   meta: META_RESUME,

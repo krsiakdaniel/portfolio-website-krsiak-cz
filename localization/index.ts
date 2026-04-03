@@ -1,4 +1,5 @@
 // Backward compatibility - TEXT aggregation object
+import { CAREER_PATH, RESUME } from '@/features/resume/localization'
 import { STATUS } from '@/features/status/localization'
 import { WHO_I_AM } from '@/features/who-i-am/localization'
 
@@ -19,7 +20,6 @@ import { TESTIMONIALS as TESTIMONIALS_DATA } from './data/testimonials'
 import { CONTACT, MISC } from './misc'
 import { PAGE_HOME } from './pages/home'
 import { COMPANIES, MY_WORK, PROJECTS, PROJECT_INFORMATION, WORK } from './pages/projects'
-import { CAREER_PATH, RESUME } from './pages/resume'
 import { TESTIMONIALS } from './pages/testimonials'
 import { CALL_TO_ACTION } from './ui/callToAction'
 import { COMMON_VALUES, SHARED, SOCIAL_LINKS } from './ui/common'
@@ -48,7 +48,7 @@ export {
   PROJECT_O2ITS,
   WORK,
 } from './pages/projects'
-export { CAREER_PATH, RESUME } from './pages/resume'
+export { CAREER_PATH, RESUME } from '@/features/resume/localization'
 export { STATUS } from '@/features/status/localization'
 export { TESTIMONIALS } from './pages/testimonials'
 export { INTRODUCTION } from './pages/whoIAm'
@@ -75,7 +75,7 @@ export { META_SMARTSUPP_HELP } from './metadata/projects/work/meta-smartsupp-hel
 export { META_SMARTSUPP_WEB } from './metadata/projects/work/meta-smartsupp-web'
 
 // Metadata - Resume
-export { META_RESUME } from './metadata/pages/meta-resume'
+export { META_RESUME } from '@/features/resume/localization'
 
 // Metadata - Projects - Personal
 export { META_KOREAN_EASY } from './metadata/projects/personal/meta-korean-easy'

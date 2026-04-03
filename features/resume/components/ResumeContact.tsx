@@ -6,7 +6,9 @@ import ScanMyContactQR from '@/components/shared/scan-my-contact-qr/ScanMyContac
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 import { QR_CODE } from '@/lib/utils/constants/shared/qrCode'
 
-import { RESUME, SHARED, TEXT } from '@/localization'
+import { SHARED, TEXT } from '@/localization'
+
+import { RESUME } from '../localization'
 
 const ResumeContact = () => {
   const isOpenToWork = IS_OPEN_TO_WORK
