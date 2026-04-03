@@ -4,7 +4,7 @@ import { createPageMetadata } from '@/lib/utils/helpers/metadata/createPageMetad
 import koreanEasyOG from '@/public/images/png/open-graph/pages/personal-projects/korean-easy/korean-easy-og.png'
 import koreanEasyTwitter from '@/public/images/png/open-graph/pages/personal-projects/korean-easy/korean-easy-twitter.png'
 
-import { META_KOREAN_EASY } from '@/localization'
+import { META_KOREAN_EASY } from './localization'
 
 export const metaDataKoreanEasy = createPageMetadata({
   meta: META_KOREAN_EASY,

@@ -78,7 +78,7 @@ export { META_SMARTSUPP_WEB } from './metadata/projects/work/meta-smartsupp-web'
 export { META_RESUME } from '@/features/resume/localization'
 
 // Metadata - Projects - Personal
-export { META_KOREAN_EASY } from './metadata/projects/personal/meta-korean-easy'
+export { META_KOREAN_EASY } from '@/features/personal-korean-easy/localization'
 export { META_KRSIAK } from './metadata/projects/personal/meta-krsiak'
 export { META_PROJECTS_OVERVIEW_PERSONAL } from '@/features/personal-projects/localization'
 
