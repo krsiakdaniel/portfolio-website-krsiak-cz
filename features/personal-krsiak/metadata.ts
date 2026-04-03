@@ -4,7 +4,7 @@ import { createPageMetadata } from '@/lib/utils/helpers/metadata/createPageMetad
 import krsiakOG from '@/public/images/png/open-graph/pages/personal-projects/krsiak/krsiak-og.png'
 import krsiakTwitter from '@/public/images/png/open-graph/pages/personal-projects/krsiak/krsiak-twitter.png'
 
-import { META_KRSIAK } from '@/localization'
+import { META_KRSIAK } from './localization'
 
 export const metaDataKrsiak = createPageMetadata({
   meta: META_KRSIAK,
