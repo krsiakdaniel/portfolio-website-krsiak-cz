@@ -1,4 +1,3 @@
-import { SkillsIconGroupProps } from '@/components/pages/home/skills/SkillsIconGroup.types'
 import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
 import { capitalizeFirstLetter } from '@/lib/utils/helpers/capitalizeFirstLetter'
@@ -6,6 +5,7 @@ import { capitalizeFirstLetter } from '@/lib/utils/helpers/capitalizeFirstLetter
 import { ImageLoadingEnum } from '@/lib/types/enums'
 
 import { SKILLS_ICON } from './SkillsIconGroup.constants'
+import { SkillsIconGroupProps } from './SkillsIconGroup.types'
 
 const SkillsIconGroup = ({ icons = [], customCss = '' }: SkillsIconGroupProps) => {
   return (

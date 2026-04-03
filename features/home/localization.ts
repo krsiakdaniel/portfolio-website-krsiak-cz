@@ -1,5 +1,5 @@
-import { MISC } from '../../misc'
-import { COMMON_VALUES } from '../../ui/common'
+import { MISC } from '@/localization/misc'
+import { COMMON_VALUES } from '@/localization/ui/common'
 
 export const META_HOME = {
   title: `${COMMON_VALUES.nameDanielKrsiak} | ${COMMON_VALUES.reactDeveloper} — ${COMMON_VALUES.typeScript} & ${COMMON_VALUES.next}`,
@@ -25,5 +25,31 @@ export const META_HOME = {
     figma: COMMON_VALUES.figma,
     xd: COMMON_VALUES.xd,
     sketch: COMMON_VALUES.sketch,
+  },
+}
+
+export const PAGE_HOME = {
+  expertise: {
+    committedMindset: {
+      items: [
+        { text: 'Curious and\u00A0always learning' },
+        { text: 'Streamlining processes' },
+        { text: 'Strong team player' },
+      ],
+    },
+    problemSolving: {
+      items: [
+        { text: 'Thinking outside the\u00A0box' },
+        { text: 'Enjoying brainstorming' },
+        { text: 'Adapting to\u00A0changes' },
+      ],
+    },
+    skillsForCompany: {
+      items: [
+        { text: 'Developing scalable codebases' },
+        { text: 'Focus on\u00A0CI/CD automation' },
+        { text: 'Prioritizing type safety' },
+      ],
+    },
   },
 }

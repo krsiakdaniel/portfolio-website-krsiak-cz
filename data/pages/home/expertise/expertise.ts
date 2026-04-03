@@ -1,5 +1,4 @@
-import { PAGE_HOME } from '@/localization/pages/home'
-
+import { PAGE_HOME } from '@/features/home/localization'
 import { SkillsInfo } from '@/lib/types/interfaces'
 
 export const committedMindsetItems: SkillsInfo[] = [

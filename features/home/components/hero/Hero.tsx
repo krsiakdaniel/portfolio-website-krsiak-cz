@@ -1,11 +1,12 @@
-import HeroHeading from '@/components/pages/home/hero/HeroHeading'
-import HeroParagraph from '@/components/pages/home/hero/HeroParagraph'
 import EmojiAnimated from '@/components/shared/emoji-animated/EmojiAnimated'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { EmojiNameEnum, EmojiSizeEnum, ImageLoadingEnum } from '@/lib/types/enums'
 import { IMAGE_ALT } from '@/localization'
+
+import HeroHeading from './HeroHeading'
+import HeroParagraph from './HeroParagraph'
 
 const Hero = () => {
   return (

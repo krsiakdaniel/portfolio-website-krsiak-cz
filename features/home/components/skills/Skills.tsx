@@ -1,4 +1,3 @@
-import SkillsIconGroup from '@/components/pages/home/skills/SkillsIconGroup'
 import DividerWithText from '@/components/shared/divider-with-text/DividerWithText'
 import Paragraph from '@/components/shared/paragraph/Paragraph'
 
@@ -11,6 +10,8 @@ import {
   iconsWebDevelopmentWithQA,
 } from '@/data/pages/home/skills/skillsGrouped'
 import { DIVIDER_WITH_TEXT, TEXT } from '@/localization'
+
+import SkillsIconGroup from './SkillsIconGroup'
 
 const Skills = () => {
   return (

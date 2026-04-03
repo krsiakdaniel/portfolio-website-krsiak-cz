@@ -1,9 +1,10 @@
-import HeroSubHeading from '@/components/pages/home/hero/HeroSubHeading'
 import Heading from '@/components/shared/heading/Heading'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { TEXT } from '@/localization'
+
+import HeroSubHeading from './HeroSubHeading'
 
 const HeroHeading = () => {
   return (

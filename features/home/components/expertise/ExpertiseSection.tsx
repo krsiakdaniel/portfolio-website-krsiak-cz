@@ -1,4 +1,3 @@
-import { ExpertiseSectionProps } from '@/components/pages/home/expertise/Expertise.types'
 import Heading from '@/components/shared/heading/Heading'
 import List from '@/components/shared/list/List'
 import ListItem from '@/components/shared/list/ListItem'
@@ -6,6 +5,8 @@ import ListItem from '@/components/shared/list/ListItem'
 import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 
 import { ARIA_LABELS } from '@/localization'
+
+import { ExpertiseSectionProps } from './Expertise.types'
 
 const ExpertiseSection = ({
   icon = '',

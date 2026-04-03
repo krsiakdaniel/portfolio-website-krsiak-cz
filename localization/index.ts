@@ -1,4 +1,5 @@
 // Backward compatibility - TEXT aggregation object
+import { PAGE_HOME } from '@/features/home/localization'
 import { CAREER_PATH, RESUME } from '@/features/resume/localization'
 import { STATUS } from '@/features/status/localization'
 import { TESTIMONIALS } from '@/features/testimonials/localization'
@@ -19,7 +20,6 @@ import { PROJECTS_PERSONAL, PROJECTS_PERSONAL_OVERVIEW } from './data/projects/p
 import { PROJECTS_WORK, WORK_PROJECTS_OVERVIEW } from './data/projects/workProjects'
 import { TESTIMONIALS as TESTIMONIALS_DATA } from './data/testimonials'
 import { CONTACT, MISC } from './misc'
-import { PAGE_HOME } from './pages/home'
 import { COMPANIES, MY_WORK, PROJECTS, PROJECT_INFORMATION, WORK } from './pages/projects'
 import { CALL_TO_ACTION } from './ui/callToAction'
 import { COMMON_VALUES, SHARED, SOCIAL_LINKS } from './ui/common'
@@ -60,7 +60,7 @@ export { IMAGE_ALT } from './accessibility/imageAlts'
 
 // Metadata
 export { META_DEFAULT } from './metadata/meta-default'
-export { META_HOME } from './metadata/pages/meta-home'
+export { META_HOME } from '@/features/home/localization'
 
 // Metadata - Projects - Work
 export { META_GROUPON } from './metadata/projects/work/meta-groupon'
@@ -103,7 +103,7 @@ export {
 export { PROJECTS_PERSONAL, PROJECTS_PERSONAL_OVERVIEW } from './data/projects/personalProjects'
 export { PROJECTS_WORK, WORK_PROJECTS_OVERVIEW } from './data/projects/workProjects'
 export { TESTIMONIALS as TESTIMONIALS_DATA } from './data/testimonials'
-export { PAGE_HOME } from './pages/home'
+export { PAGE_HOME } from '@/features/home/localization'
 
 export const TEXT = {
   ...CALL_TO_ACTION,

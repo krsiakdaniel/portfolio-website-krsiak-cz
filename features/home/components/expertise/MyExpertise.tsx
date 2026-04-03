@@ -1,4 +1,3 @@
-import ExpertiseSection from '@/components/pages/home/expertise/ExpertiseSection'
 import DividerWithText from '@/components/shared/divider-with-text/DividerWithText'
 
 import {
@@ -7,6 +6,8 @@ import {
   skillsForCompanyItems,
 } from '@/data/pages/home/expertise/expertise'
 import { ARIA_LABELS, DIVIDER_WITH_TEXT, ICON_EMOJI, TEXT } from '@/localization'
+
+import ExpertiseSection from './ExpertiseSection'
 
 const MyExpertise = () => {
   return (
