@@ -1,5 +1,7 @@
 # AI Instructions
 
+> **IMPORTANT: NEVER run `git commit` or `git push` commands. The user commits and pushes code manually.**
+
 Use this file to understand how to assist with code contributions.
 
 ## About This Project

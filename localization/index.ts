@@ -1,5 +1,6 @@
 // Backward compatibility - TEXT aggregation object
 import { STATUS } from '@/features/status/localization'
+import { WHO_I_AM } from '@/features/who-i-am/localization'
 
 import { ARIA_LABELS } from './accessibility/aria'
 // Backward compatibility - TEXT_DATA aggregation object
@@ -20,7 +21,6 @@ import { PAGE_HOME } from './pages/home'
 import { COMPANIES, MY_WORK, PROJECTS, PROJECT_INFORMATION, WORK } from './pages/projects'
 import { CAREER_PATH, RESUME } from './pages/resume'
 import { TESTIMONIALS } from './pages/testimonials'
-import { WHO_I_AM } from './pages/whoIAm'
 import { CALL_TO_ACTION } from './ui/callToAction'
 import { COMMON_VALUES, SHARED, SOCIAL_LINKS } from './ui/common'
 import { ERROR } from './ui/errors'
@@ -51,7 +51,8 @@ export {
 export { CAREER_PATH, RESUME } from './pages/resume'
 export { STATUS } from '@/features/status/localization'
 export { TESTIMONIALS } from './pages/testimonials'
-export { INTRODUCTION, SOUTH_KOREA, WHO_I_AM } from './pages/whoIAm'
+export { INTRODUCTION } from './pages/whoIAm'
+export { SOUTH_KOREA, WHO_I_AM, WHO_I_AM_INTRODUCTION } from '@/features/who-i-am/localization'
 
 // Accessibility
 export { ARIA_LABELS } from './accessibility/aria'
@@ -84,7 +85,7 @@ export { META_PROJECTS_OVERVIEW_PERSONAL } from './metadata/projects/personal/me
 // Metadata - Other pages
 export { META_STATUS } from '@/features/status/localization'
 export { META_TESTIMONIALS } from './metadata/pages/meta-testimonials'
-export { META_WHO_I_AM } from './metadata/pages/meta-who-i-am'
+export { META_WHO_I_AM } from '@/features/who-i-am/localization'
 
 // Misc
 export { ANALYTICS_WARNING, CONTACT, MISC } from './misc'

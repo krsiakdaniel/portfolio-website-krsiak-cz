@@ -12,8 +12,9 @@ import palace from '@/public/images/webp/photo/south-korea/palace.webp'
 import temple from '@/public/images/webp/photo/south-korea/temple.webp'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'
-import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA } from '@/localization'
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
+import { SOUTH_KOREA } from '../localization'
 import { SOUTH_KOREA_IMAGES } from './SouthKorea.constants'
 
 const SouthKorea = () => {
