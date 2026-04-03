@@ -1,4 +1,4 @@
-import ProjectListRow from '@/components/pages/projects/overview-page/ProjectListRow'
+import ProjectListRow from '@/components/shared/projects/project-list-row/ProjectListRow'
 
 import { ProjectWorkListViewProps } from './ProjectWorkListView.types'
 

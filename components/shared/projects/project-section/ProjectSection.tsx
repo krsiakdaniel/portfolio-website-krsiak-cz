@@ -1,5 +1,5 @@
-import ProjectSummaryCard from '@/components/pages/projects/overview-page/ProjectSummaryCard'
 import HeadingSection from '@/components/shared/heading/HeadingSection'
+import ProjectSummaryCard from '@/components/shared/projects/project-summary-card/ProjectSummaryCard'
 
 import { ProjectSectionProps } from './ProjectSection.types'
 

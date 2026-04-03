@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { ArrowRight } from 'lucide-react'
 
-import ProjectSkillsIcons from '@/components/pages/projects/overview-page/ProjectSkillsIcons'
+import ProjectSkillsIcons from '@/components/shared/projects/project-skills-icons/ProjectSkillsIcons'
 
 import { ICON_EMOJI } from '@/localization'
 

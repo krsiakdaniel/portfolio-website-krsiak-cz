@@ -2,10 +2,10 @@
 
 import { useState } from 'react'
 
-import LayoutToggle from '@/components/pages/projects/overview-page/LayoutToggle'
-import ProjectSectionGrid from '@/components/pages/projects/overview-page/ProjectSectionGrid'
-import ProjectWorkListView from '@/components/pages/projects/overview-page/ProjectWorkListView'
 import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
+import LayoutToggle from '@/components/shared/projects/layout-toggle/LayoutToggle'
+import ProjectSectionGrid from '@/components/shared/projects/project-section-grid/ProjectSectionGrid'
+import ProjectWorkListView from '@/components/shared/projects/project-work-list-view/ProjectWorkListView'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 

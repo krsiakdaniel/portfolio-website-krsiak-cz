@@ -1,7 +1,7 @@
-import ProjectDetails from '@/components/pages/projects/overview-page/ProjectDetails'
-import ProjectImage from '@/components/pages/projects/overview-page/ProjectImage'
-import ProjectSkillsIcons from '@/components/pages/projects/overview-page/ProjectSkillsIcons'
 import LinkButton from '@/components/shared/link-button/LinkButton'
+import ProjectDetails from '@/components/shared/projects/project-details/ProjectDetails'
+import ProjectImage from '@/components/shared/projects/project-image/ProjectImage'
+import ProjectSkillsIcons from '@/components/shared/projects/project-skills-icons/ProjectSkillsIcons'
 
 import { ProjectSummaryCardProps } from './ProjectSummaryCard.types'
 

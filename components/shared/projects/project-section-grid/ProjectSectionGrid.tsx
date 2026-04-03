@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-import GridPlaceholder from '@/components/pages/projects/overview-page/GridPlaceholder'
-import ProjectCompactCard from '@/components/pages/projects/overview-page/ProjectCompactCard'
 import HeadingSection from '@/components/shared/heading/HeadingSection'
+import GridPlaceholder from '@/components/shared/projects/grid-placeholder/GridPlaceholder'
+import ProjectCompactCard from '@/components/shared/projects/project-compact-card/ProjectCompactCard'
 
 import { ProjectSectionGridProps } from './ProjectSectionGrid.types'
 
