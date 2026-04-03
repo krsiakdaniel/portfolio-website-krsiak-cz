@@ -4,7 +4,7 @@ import { createPageMetadata } from '@/lib/utils/helpers/metadata/createPageMetad
 import statusOG from '@/public/images/png/open-graph/pages/status/status-og.png'
 import statusTwitter from '@/public/images/png/open-graph/pages/status/status-twitter.png'
 
-import { META_STATUS } from '@/localization'
+import { META_STATUS } from './localization'
 
 export const metaDataStatus = createPageMetadata({
   meta: META_STATUS,

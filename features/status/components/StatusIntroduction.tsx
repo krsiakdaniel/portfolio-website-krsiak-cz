@@ -3,18 +3,18 @@ import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { INTRODUCTION } from '@/localization'
+import { STATUS_INTRODUCTION } from '@/features/status/localization'
 
 const StatusIntroduction = () => {
   return (
     <>
       <Paragraph dataTestId={DATA_TEST_IDS.page.status.introduction}>
-        {INTRODUCTION.status.text.showing}
+        {STATUS_INTRODUCTION.text.showing}
         {'\u00A0'}
-        <Highlight text={INTRODUCTION.status.text.performance} /> {INTRODUCTION.status.text.of}
+        <Highlight text={STATUS_INTRODUCTION.text.performance} /> {STATUS_INTRODUCTION.text.of}
         {'\u00A0'}
-        <Highlight text={INTRODUCTION.status.text.project} />{' '}
-        {INTRODUCTION.status.text.integrations}
+        <Highlight text={STATUS_INTRODUCTION.text.project} />{' '}
+        {STATUS_INTRODUCTION.text.integrations}
       </Paragraph>
     </>
   )

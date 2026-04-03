@@ -119,15 +119,6 @@ export const INTRODUCTION = {
       buildText: 'to\u00A0build scalable web applications.',
     },
   },
-  status: {
-    text: {
-      showing: 'Showing the\u00A0health\u00A0and',
-      performance: 'performance',
-      of: 'of\u00A0the',
-      project: 'project',
-      integrations: 'integrations and\u00A0workflows.',
-    },
-  },
   personalProjects: {
     text: {
       enjoy: 'I\u00A0enjoy learning',

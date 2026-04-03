@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 
 import PageContainer from '@/components/layout/page-container/PageContainer'
-import StatusIntroduction from '@/components/pages/status/StatusIntroduction'
 import BreadCrumbs from '@/components/shared/breadcrumbs/Breadcrumbs'
 import EmojiAnimated from '@/components/shared/emoji-animated/EmojiAnimated'
 import ExternalLink from '@/components/shared/external-link/ExternalLink'
@@ -15,10 +14,12 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { metaDataStatus } from '@/data/metadata/pages/metaDataStatus'
-import { statusBadges } from '@/data/pages/status'
+import StatusIntroduction from '@/features/status/components/StatusIntroduction'
+import { statusBadges } from '@/features/status/data/statusBadges'
+import { STATUS } from '@/features/status/localization'
+import { metaDataStatus } from '@/features/status/metadata'
 import { EmojiNameEnum, EmojiSizeEnum, ImageLoadingEnum } from '@/lib/types/enums'
-import { ARIA_LABELS, ICON_EMOJI, IMAGE_ALT, STATUS, TEXT } from '@/localization'
+import { ARIA_LABELS, ICON_EMOJI, IMAGE_ALT, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataStatus,
