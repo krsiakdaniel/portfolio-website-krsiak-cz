@@ -69,7 +69,7 @@ export { META_KOOPERATIVA } from './metadata/projects/work/meta-kooperativa'
 export { META_MORAVIA } from './metadata/projects/work/meta-moravia'
 export { META_O2ITS_AI_POWERED_CHAT_DASHBOARD } from './metadata/projects/work/meta-o2its-ai-powered-chat-dashboard'
 export { META_O2ITS_PUBLIC_TENDERS_PORTAL } from './metadata/projects/work/meta-o2its-public-tenders-portal'
-export { META_PROJECTS_OVERVIEW_WORK } from './metadata/projects/work/meta-projects-overview-work'
+export { META_PROJECTS_OVERVIEW_WORK } from '@/features/work-experience/localization'
 export { META_SMARTSUPP_DASHBOARD } from './metadata/projects/work/meta-smartsupp-dashboard'
 export { META_SMARTSUPP_HELP } from './metadata/projects/work/meta-smartsupp-help'
 export { META_SMARTSUPP_WEB } from './metadata/projects/work/meta-smartsupp-web'
@@ -80,7 +80,7 @@ export { META_RESUME } from '@/features/resume/localization'
 // Metadata - Projects - Personal
 export { META_KOREAN_EASY } from './metadata/projects/personal/meta-korean-easy'
 export { META_KRSIAK } from './metadata/projects/personal/meta-krsiak'
-export { META_PROJECTS_OVERVIEW_PERSONAL } from './metadata/projects/personal/meta-projects-overview-personal'
+export { META_PROJECTS_OVERVIEW_PERSONAL } from '@/features/personal-projects/localization'
 
 // Metadata - Other pages
 export { META_STATUS } from '@/features/status/localization'

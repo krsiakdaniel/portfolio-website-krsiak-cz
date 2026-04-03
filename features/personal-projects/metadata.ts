@@ -4,7 +4,7 @@ import { createPageMetadata } from '@/lib/utils/helpers/metadata/createPageMetad
 import personalProjectsOverviewOG from '@/public/images/png/open-graph/pages/personal-projects/personal-projects-og.png'
 import personalProjectsOverviewTwitter from '@/public/images/png/open-graph/pages/personal-projects/personal-projects-twitter.png'
 
-import { META_PROJECTS_OVERVIEW_PERSONAL } from '@/localization'
+import { META_PROJECTS_OVERVIEW_PERSONAL } from './localization'
 
 export const metaDataPersonalProjects = createPageMetadata({
   meta: META_PROJECTS_OVERVIEW_PERSONAL,

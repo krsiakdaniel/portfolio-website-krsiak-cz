@@ -35,7 +35,7 @@ const allProjects = [
   ...projectsWorkLocalization,
 ]
 
-const WorkExperienceLayoutSwitcher = () => {
+const WorkExperience = () => {
   const [activeView, setActiveView] = useState<LayoutViewEnum>(LayoutViewEnum.Grid)
 
   return (
@@ -103,4 +103,4 @@ const WorkExperienceLayoutSwitcher = () => {
   )
 }
 
-export default WorkExperienceLayoutSwitcher
+export default WorkExperience

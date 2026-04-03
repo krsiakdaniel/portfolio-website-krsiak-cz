@@ -3,7 +3,6 @@ import { Metadata } from 'next'
 import PageContainer from '@/components/layout/page-container/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectsOverviewLayout from '@/components/layout/projects/ProjectsOverviewLayout'
-import PersonalProjectsIntroduction from '@/components/pages/personal-projects/PersonalProjectsIntroduction'
 import BreadCrumbs from '@/components/shared/breadcrumbs/Breadcrumbs'
 import CallToActionGitHub from '@/components/shared/call-to-action/cta-banners/CallToActionGitHub'
 import ProjectSection from '@/components/shared/projects/project-section/ProjectSection'
@@ -13,8 +12,9 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { metaDataPersonalProjects } from '@/data/metadata/pages/projects/metaDataPersonalProjects'
 import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/personalNext'
+import PersonalProjectsIntroduction from '@/features/personal-projects/components/personal-projects-introduction/PersonalProjectsIntroduction'
+import { metaDataPersonalProjects } from '@/features/personal-projects/metadata'
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {

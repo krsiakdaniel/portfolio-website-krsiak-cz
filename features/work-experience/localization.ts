@@ -1,4 +1,4 @@
-import { COMMON_VALUES } from '../../../ui/common'
+import { COMMON_VALUES } from '@/localization/ui/common'
 
 export const META_PROJECTS_OVERVIEW_WORK = {
   title: `Work Experience | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
