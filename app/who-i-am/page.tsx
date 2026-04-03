@@ -12,9 +12,9 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import SouthKorea from '@/features/who-i-am/components/SouthKorea'
-import WhoIAmIntroduction from '@/features/who-i-am/components/WhoIAmIntroduction'
-import WhoIAmTravelsList from '@/features/who-i-am/components/WhoIAmTravelsList'
+import SouthKorea from '@/features/who-i-am/components/south-korea/SouthKorea'
+import WhoIAmIntroduction from '@/features/who-i-am/components/who-i-am-introduction/WhoIAmIntroduction'
+import WhoIAmTravelsList from '@/features/who-i-am/components/who-i-am-travels-list/WhoIAmTravelsList'
 import { SOUTH_KOREA, WHO_I_AM } from '@/features/who-i-am/localization'
 import { metaDataWhoIam } from '@/features/who-i-am/metadata'
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'

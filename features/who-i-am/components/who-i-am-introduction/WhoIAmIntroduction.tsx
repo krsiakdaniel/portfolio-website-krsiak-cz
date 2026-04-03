@@ -5,7 +5,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { COMMON_VALUES } from '@/localization'
 
-import { WHO_I_AM_INTRODUCTION } from '../localization'
+import { WHO_I_AM_INTRODUCTION } from '../../localization'
 
 const WhoIAmIntroduction = () => {
   return (

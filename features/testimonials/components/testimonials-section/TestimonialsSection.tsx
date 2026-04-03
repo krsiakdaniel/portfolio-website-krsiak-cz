@@ -1,7 +1,7 @@
 import HeadingSection from '@/components/shared/heading/HeadingSection'
 
-import Testimonial from './Testimonial'
-import TestimonialDescription from './TestimonialDescription'
+import TestimonialDescription from '../testimonial-description/TestimonialDescription'
+import Testimonial from '../testimonial/Testimonial'
 import { TestimonialsSectionProps } from './TestimonialsSection.types'
 
 const TestimonialsSection = ({

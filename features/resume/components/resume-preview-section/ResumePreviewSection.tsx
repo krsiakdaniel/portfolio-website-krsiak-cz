@@ -1,6 +1,6 @@
 import { resumePreviewCardData } from '@/data/pages/resume/preview-cards/resumePreviewCards'
 
-import ResumePreviewCard from './ResumePreviewCard'
+import ResumePreviewCard from '../resume-preview-card/ResumePreviewCard'
 
 const ResumePreviewSection = () => {
   return (

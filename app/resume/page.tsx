@@ -11,10 +11,10 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import CareerPath from '@/features/resume/components/CareerPath'
-import ResumeContact from '@/features/resume/components/ResumeContact'
-import ResumeIntroduction from '@/features/resume/components/ResumeIntroduction'
-import ResumePreviewSection from '@/features/resume/components/ResumePreviewSection'
+import CareerPath from '@/features/resume/components/career-path/CareerPath'
+import ResumeContact from '@/features/resume/components/resume-contact/ResumeContact'
+import ResumeIntroduction from '@/features/resume/components/resume-introduction/ResumeIntroduction'
+import ResumePreviewSection from '@/features/resume/components/resume-preview-section/ResumePreviewSection'
 import { metaDataResume } from '@/features/resume/metadata'
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 

@@ -14,7 +14,7 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import StatusIntroduction from '@/features/status/components/StatusIntroduction'
+import StatusIntroduction from '@/features/status/components/status-introduction/StatusIntroduction'
 import { statusBadges } from '@/features/status/data/statusBadges'
 import { STATUS } from '@/features/status/localization'
 import { metaDataStatus } from '@/features/status/metadata'

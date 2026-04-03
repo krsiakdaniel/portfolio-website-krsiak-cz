@@ -8,7 +8,7 @@ import { QR_CODE } from '@/lib/utils/constants/shared/qrCode'
 
 import { SHARED, TEXT } from '@/localization'
 
-import { RESUME } from '../localization'
+import { RESUME } from '../../localization'
 
 const ResumeContact = () => {
   const isOpenToWork = IS_OPEN_TO_WORK

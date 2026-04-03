@@ -9,12 +9,12 @@ import nature from '@/public/images/webp/photo/south-korea/nature.webp'
 import palace from '@/public/images/webp/photo/south-korea/palace.webp'
 import temple from '@/public/images/webp/photo/south-korea/temple.webp'
 
-import TestimonialQuote from '@/features/testimonials/components/TestimonialQuote'
-import TestimonialText from '@/features/testimonials/components/TestimonialText'
+import TestimonialQuote from '@/features/testimonials/components/testimonial-quote/TestimonialQuote'
+import TestimonialText from '@/features/testimonials/components/testimonial-text/TestimonialText'
 import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
-import { SOUTH_KOREA } from '../localization'
+import { SOUTH_KOREA } from '../../localization'
 import { SOUTH_KOREA_IMAGES } from './SouthKorea.constants'
 
 const SouthKorea = () => {

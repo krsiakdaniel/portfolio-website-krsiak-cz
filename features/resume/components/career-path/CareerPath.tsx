@@ -8,7 +8,7 @@ import { careerTesting } from '@/data/pages/resume/career-path/careerTesting'
 import { careerWebDev } from '@/data/pages/resume/career-path/careerWebDev'
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
-import { CAREER_PATH } from '../localization'
+import { CAREER_PATH } from '../../localization'
 
 const CareerPath = () => {
   return (
