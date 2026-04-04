@@ -2,8 +2,8 @@ import { CallToActionProps } from '@/components/shared/call-to-action/CallToActi
 import CallToActionBubbles from '@/components/shared/call-to-action/CallToActionBubbles'
 import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIcon'
 import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTexts'
+import Photo from '@/components/shared/call-to-action/Photo'
 import LinkButton from '@/components/shared/link-button/LinkButton'
-import Photo from '@/components/shared/photo/Photo'
 
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 

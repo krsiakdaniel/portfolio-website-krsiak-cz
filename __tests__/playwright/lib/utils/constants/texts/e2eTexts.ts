@@ -2,11 +2,12 @@ import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
 
 import { ICON_EMOJI } from '@/localization/constants/iconsEmoji'
 import { PROJECTS } from '@/localization/pages/projects'
-import { RESUME } from '@/localization/pages/resume'
-import { TESTIMONIALS } from '@/localization/pages/testimonials'
-import { WHO_I_AM } from '@/localization/pages/whoIAm'
 import { COMMON_VALUES } from '@/localization/ui/common'
 import { HOME } from '@/localization/ui/navigation'
+
+import { RESUME } from '@/features/resume/localization'
+import { TESTIMONIALS } from '@/features/testimonials/localization'
+import { WHO_I_AM } from '@/features/who-i-am/localization'
 
 /**
  * Page heading texts as rendered in the DOM (emoji + title).

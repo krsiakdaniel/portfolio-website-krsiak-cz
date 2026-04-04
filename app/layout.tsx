@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from 'next'
 
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
 import Hotjar from '@/components/analytics/Hotjar'
+import SkipNavigationARIA from '@/components/layout/SkipNavigationARIA'
 import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
-import SkipNavigationARIA from '@/components/shared/skip-navigation-aria/SkipNavigationARIA'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 

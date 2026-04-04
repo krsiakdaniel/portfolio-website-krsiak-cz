@@ -2,9 +2,6 @@ import { Metadata } from 'next'
 
 import PageContainer from '@/components/layout/page-container/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
-import SouthKorea from '@/components/pages/who-i-am/SouthKorea'
-import WhoIAmIntroduction from '@/components/pages/who-i-am/WhoIAmIntroduction'
-import WhoIAmTravelsList from '@/components/pages/who-i-am/WhoIAmTravelsList'
 import BreadCrumbs from '@/components/shared/breadcrumbs/Breadcrumbs'
 import Heading from '@/components/shared/heading/Heading'
 import HeadingSection from '@/components/shared/heading/HeadingSection'
@@ -15,8 +12,12 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { metaDataWhoIam } from '@/data/metadata/pages/metaDataWhoIAm'
-import { ARIA_LABELS, ICON_EMOJI, SOUTH_KOREA, TEXT, WHO_I_AM } from '@/localization'
+import SouthKorea from '@/features/who-i-am/components/south-korea/SouthKorea'
+import WhoIAmIntroduction from '@/features/who-i-am/components/who-i-am-introduction/WhoIAmIntroduction'
+import WhoIAmTravelsList from '@/features/who-i-am/components/who-i-am-travels-list/WhoIAmTravelsList'
+import { SOUTH_KOREA, WHO_I_AM } from '@/features/who-i-am/localization'
+import { metaDataWhoIam } from '@/features/who-i-am/metadata'
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataWhoIam,

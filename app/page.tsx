@@ -2,12 +2,6 @@ import { Metadata } from 'next'
 
 import PageContainer from '@/components/layout/page-container/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
-import Companies from '@/components/pages/home/companies/Companies'
-import MyExpertise from '@/components/pages/home/expertise/MyExpertise'
-import FeaturedProject from '@/components/pages/home/featured/FeaturedProject'
-import Hero from '@/components/pages/home/hero/Hero'
-import Skills from '@/components/pages/home/skills/Skills'
-import SkillsMain from '@/components/pages/home/skills/SkillsMain'
 import CallToActionResume from '@/components/shared/call-to-action/cta-banners/CallToActionResume'
 import CallToActionWorkExperience from '@/components/shared/call-to-action/cta-banners/CallToActionWorkExperience'
 
@@ -16,7 +10,13 @@ import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { metaDataHome } from '@/data/metadata/pages/metaDataHome'
+import Companies from '@/features/home/components/companies/Companies'
+import MyExpertise from '@/features/home/components/expertise/MyExpertise'
+import FeaturedProject from '@/features/home/components/featured/FeaturedProject'
+import Hero from '@/features/home/components/hero/Hero'
+import Skills from '@/features/home/components/skills/Skills'
+import SkillsMain from '@/features/home/components/skills/SkillsMain'
+import { metaDataHome } from '@/features/home/metadata'
 import { ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {

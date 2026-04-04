@@ -13,9 +13,9 @@ import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBread
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { metaDataKrsiak } from '@/data/metadata/pages/projects/personal/metaDataKrsiak'
 import { sections } from '@/data/pages/projects/personal/krsiak'
 import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/personalNext'
+import { metaDataKrsiak } from '@/features/personal-krsiak/metadata'
 import { AlertColorVariantEnum, GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, PROJECTS, PROJECT_KRSIAK, TEXT } from '@/localization'
 

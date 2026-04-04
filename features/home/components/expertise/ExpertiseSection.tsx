@@ -1,0 +1,52 @@
+import Heading from '@/components/shared/heading/Heading'
+import List from '@/components/shared/list/List'
+import ListItem from '@/components/shared/list/ListItem'
+
+import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
+
+import { ARIA_LABELS } from '@/localization'
+
+import { ExpertiseSectionProps } from './Expertise.types'
+
+const ExpertiseSection = ({
+  icon = '',
+  ariaLabel = '',
+  heading,
+  listItems = [],
+}: ExpertiseSectionProps) => {
+  return (
+    <div className="relative flex w-full flex-col rounded-lg border border-gray-200 bg-white px-4 py-6 transition-shadow duration-300 ease-in-out select-none hover:border-gray-300 hover:shadow-md">
+      <Heading as="h3" textColor="text-violet-600 ml-2">
+        <span
+          role="img"
+          aria-label={ariaLabel}
+          className="absolute -top-4 -left-3 text-3xl select-none md:-top-5 md:text-4xl"
+        >
+          {icon}
+        </span>
+        {heading}
+      </Heading>
+      <div className="mt-4">
+        <List>
+          {listItems.map((item) => (
+            <ListItem key={item.id}>
+              <span className="inline">
+                <span role="img" aria-label={ARIA_LABELS.emoji.icon}>
+                  {item.icon}
+                </span>
+                <span className="ml-1">{item.text}</span>
+                {item.years && (
+                  <span className="hidden text-sm lg:ml-1 xl:inline">
+                    {MIDDLE_DOT} {item.years}
+                  </span>
+                )}
+              </span>
+            </ListItem>
+          ))}
+        </List>
+      </div>
+    </div>
+  )
+}
+
+export default ExpertiseSection

@@ -1,0 +1,32 @@
+import Highlight from '@/components/shared/highlight/Highlight'
+import Paragraph from '@/components/shared/paragraph/Paragraph'
+
+import { INTRODUCTION } from '@/localization/pages/whoIAm'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { TEXT } from '@/localization'
+
+const ResumeIntroduction = () => {
+  return (
+    <>
+      <Paragraph dataTestId={DATA_TEST_IDS.page.resume.introduction}>
+        {INTRODUCTION.resume.text.skilled}{' '}
+        <Highlight
+          text={INTRODUCTION.resume.text.reactDeveloper.replace(
+            '{reactDeveloper}',
+            TEXT.reactDeveloperNBSP,
+          )}
+        />{' '}
+        {INTRODUCTION.resume.text.with} <Highlight text={INTRODUCTION.resume.text.yearsReact} />{' '}
+        {INTRODUCTION.resume.text.yearsText}{' '}
+        <Highlight
+          text={INTRODUCTION.resume.text.typeScript.replace('{typeScript}', TEXT.typeScript)}
+        />{' '}
+        {INTRODUCTION.resume.text.buildText}
+      </Paragraph>
+    </>
+  )
+}
+
+export default ResumeIntroduction

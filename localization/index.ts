@@ -1,4 +1,10 @@
 // Backward compatibility - TEXT aggregation object
+import { PAGE_HOME } from '@/features/home/localization'
+import { CAREER_PATH, RESUME } from '@/features/resume/localization'
+import { STATUS } from '@/features/status/localization'
+import { TESTIMONIALS } from '@/features/testimonials/localization'
+import { WHO_I_AM } from '@/features/who-i-am/localization'
+
 import { ARIA_LABELS } from './accessibility/aria'
 // Backward compatibility - TEXT_DATA aggregation object
 import { BADGES } from './data/badges'
@@ -14,12 +20,7 @@ import { PROJECTS_PERSONAL, PROJECTS_PERSONAL_OVERVIEW } from './data/projects/p
 import { PROJECTS_WORK, WORK_PROJECTS_OVERVIEW } from './data/projects/workProjects'
 import { TESTIMONIALS as TESTIMONIALS_DATA } from './data/testimonials'
 import { CONTACT, MISC } from './misc'
-import { PAGE_HOME } from './pages/home'
 import { COMPANIES, MY_WORK, PROJECTS, PROJECT_INFORMATION, WORK } from './pages/projects'
-import { CAREER_PATH, RESUME } from './pages/resume'
-import { STATUS } from './pages/status'
-import { TESTIMONIALS } from './pages/testimonials'
-import { WHO_I_AM } from './pages/whoIAm'
 import { CALL_TO_ACTION } from './ui/callToAction'
 import { COMMON_VALUES, SHARED, SOCIAL_LINKS } from './ui/common'
 import { ERROR } from './ui/errors'
@@ -47,10 +48,11 @@ export {
   PROJECT_O2ITS,
   WORK,
 } from './pages/projects'
-export { CAREER_PATH, RESUME } from './pages/resume'
-export { STATUS } from './pages/status'
-export { TESTIMONIALS } from './pages/testimonials'
-export { INTRODUCTION, SOUTH_KOREA, WHO_I_AM } from './pages/whoIAm'
+export { CAREER_PATH, RESUME } from '@/features/resume/localization'
+export { STATUS } from '@/features/status/localization'
+export { TESTIMONIALS } from '@/features/testimonials/localization'
+export { INTRODUCTION } from './pages/whoIAm'
+export { SOUTH_KOREA, WHO_I_AM, WHO_I_AM_INTRODUCTION } from '@/features/who-i-am/localization'
 
 // Accessibility
 export { ARIA_LABELS } from './accessibility/aria'
@@ -58,32 +60,32 @@ export { IMAGE_ALT } from './accessibility/imageAlts'
 
 // Metadata
 export { META_DEFAULT } from './metadata/meta-default'
-export { META_HOME } from './metadata/pages/meta-home'
+export { META_HOME } from '@/features/home/localization'
 
 // Metadata - Projects - Work
-export { META_GROUPON } from './metadata/projects/work/meta-groupon'
-export { META_KOMERCNI_BANKA } from './metadata/projects/work/meta-komercni-banka'
-export { META_KOOPERATIVA } from './metadata/projects/work/meta-kooperativa'
-export { META_MORAVIA } from './metadata/projects/work/meta-moravia'
-export { META_O2ITS_AI_POWERED_CHAT_DASHBOARD } from './metadata/projects/work/meta-o2its-ai-powered-chat-dashboard'
-export { META_O2ITS_PUBLIC_TENDERS_PORTAL } from './metadata/projects/work/meta-o2its-public-tenders-portal'
-export { META_PROJECTS_OVERVIEW_WORK } from './metadata/projects/work/meta-projects-overview-work'
-export { META_SMARTSUPP_DASHBOARD } from './metadata/projects/work/meta-smartsupp-dashboard'
-export { META_SMARTSUPP_HELP } from './metadata/projects/work/meta-smartsupp-help'
-export { META_SMARTSUPP_WEB } from './metadata/projects/work/meta-smartsupp-web'
+export { META_GROUPON } from '@/features/work-groupon/localization'
+export { META_KOMERCNI_BANKA } from '@/features/work-komercni-banka/localization'
+export { META_KOOPERATIVA } from '@/features/work-kooperativa/localization'
+export { META_MORAVIA } from '@/features/work-moravia/localization'
+export { META_O2ITS_AI_POWERED_CHAT_DASHBOARD } from '@/features/work-o2its-ai-powered-chat-dashboard/localization'
+export { META_O2ITS_PUBLIC_TENDERS_PORTAL } from '@/features/work-o2its-public-tenders-portal/localization'
+export { META_PROJECTS_OVERVIEW_WORK } from '@/features/work-experience/localization'
+export { META_SMARTSUPP_DASHBOARD } from '@/features/work-smartsupp-dashboard/localization'
+export { META_SMARTSUPP_HELP } from '@/features/work-smartsupp-help/localization'
+export { META_SMARTSUPP_WEB } from '@/features/work-smartsupp-web/localization'
 
 // Metadata - Resume
-export { META_RESUME } from './metadata/pages/meta-resume'
+export { META_RESUME } from '@/features/resume/localization'
 
 // Metadata - Projects - Personal
-export { META_KOREAN_EASY } from './metadata/projects/personal/meta-korean-easy'
-export { META_KRSIAK } from './metadata/projects/personal/meta-krsiak'
-export { META_PROJECTS_OVERVIEW_PERSONAL } from './metadata/projects/personal/meta-projects-overview-personal'
+export { META_KOREAN_EASY } from '@/features/personal-korean-easy/localization'
+export { META_KRSIAK } from '@/features/personal-krsiak/localization'
+export { META_PROJECTS_OVERVIEW_PERSONAL } from '@/features/personal-projects/localization'
 
 // Metadata - Other pages
-export { META_STATUS } from './metadata/pages/meta-status'
-export { META_TESTIMONIALS } from './metadata/pages/meta-testimonials'
-export { META_WHO_I_AM } from './metadata/pages/meta-who-i-am'
+export { META_STATUS } from '@/features/status/localization'
+export { META_TESTIMONIALS } from '@/features/testimonials/localization'
+export { META_WHO_I_AM } from '@/features/who-i-am/localization'
 
 // Misc
 export { ANALYTICS_WARNING, CONTACT, MISC } from './misc'
@@ -101,7 +103,7 @@ export {
 export { PROJECTS_PERSONAL, PROJECTS_PERSONAL_OVERVIEW } from './data/projects/personalProjects'
 export { PROJECTS_WORK, WORK_PROJECTS_OVERVIEW } from './data/projects/workProjects'
 export { TESTIMONIALS as TESTIMONIALS_DATA } from './data/testimonials'
-export { PAGE_HOME } from './pages/home'
+export { PAGE_HOME } from '@/features/home/localization'
 
 export const TEXT = {
   ...CALL_TO_ACTION,

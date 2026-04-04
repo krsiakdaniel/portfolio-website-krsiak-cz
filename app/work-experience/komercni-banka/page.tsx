@@ -10,9 +10,9 @@ import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrum
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { metaDataKomercniBanka } from '@/data/metadata/pages/projects/work/metaDataKomercniBanka'
 import { sections } from '@/data/pages/projects/work/komercniBanka'
 import { projectsWorkReact } from '@/data/pages/projects/work/projects-overview/workReact'
+import { metaDataKomercniBanka } from '@/features/work-komercni-banka/metadata'
 import { GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, TEXT } from '@/localization'
 
