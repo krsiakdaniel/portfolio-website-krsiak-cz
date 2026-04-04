@@ -1,9 +1,9 @@
 import ImageComponent from '@/components/shared/image-component/ImageComponent'
-import { SkillCardProps } from '@/components/shared/skill-card/SkillCard.types'
-import SkillCardTechnologyYears from '@/components/shared/skill-card/SkillCardTechnologyYears'
 
 import { getSkillCardID } from '@/lib/utils/helpers/skills/getSkillCardID'
 
+import { SkillCardProps } from '@/features/home/components/skill-card/SkillCard.types'
+import SkillCardTechnologyYears from '@/features/home/components/skill-card/SkillCardTechnologyYears'
 import { ImageLoadingEnum } from '@/lib/types/enums'
 
 import { SKILL_CARD_IMAGE } from './SkillCard.constants'

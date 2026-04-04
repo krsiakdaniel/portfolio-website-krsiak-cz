@@ -1,6 +1,6 @@
-import { SkillCardTechnologyYearsProps } from '@/components/shared/skill-card/SkillCardTechnologyYears.types'
-
 import { getYearsText } from '@/lib/utils/helpers/years/getYearsText'
+
+import { SkillCardTechnologyYearsProps } from '@/features/home/components/skill-card/SkillCardTechnologyYears.types'
 
 const SkillCardTechnologyYears = ({ technology, years }: SkillCardTechnologyYearsProps) => {
   return (
