@@ -4,7 +4,7 @@ import { createPageMetadata } from '@/lib/utils/helpers/metadata/createPageMetad
 import smartsuppHelpOG from '@/public/images/png/open-graph/pages/work-experience/smartsupp/smartsupp-help-og.png'
 import smartsuppHelpTwitter from '@/public/images/png/open-graph/pages/work-experience/smartsupp/smartsupp-help-twitter.png'
 
-import { META_SMARTSUPP_HELP } from '@/localization'
+import { META_SMARTSUPP_HELP } from './localization'
 
 export const metaDataSmartsuppHelp = createPageMetadata({
   meta: META_SMARTSUPP_HELP,

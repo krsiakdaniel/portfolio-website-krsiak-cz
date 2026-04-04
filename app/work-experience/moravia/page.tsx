@@ -10,9 +10,9 @@ import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrum
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { metaDataMoravia } from '@/data/metadata/pages/projects/work/metaDataMoravia'
 import { sections } from '@/data/pages/projects/work/moravia'
 import { projectsWorkLocalization } from '@/data/pages/projects/work/projects-overview/workLocalization'
+import { metaDataMoravia } from '@/features/work-moravia/metadata'
 import { GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, TEXT } from '@/localization'
 

@@ -4,7 +4,7 @@ import { createPageMetadata } from '@/lib/utils/helpers/metadata/createPageMetad
 import O2itsAiPoweredChatDashboardOG from '@/public/images/png/open-graph/pages/work-experience/o2its-ai-powered-chat-dashboard/o2its-ai-powered-chat-dashboard-og.png'
 import O2itsAiPoweredChatDashboardTwitter from '@/public/images/png/open-graph/pages/work-experience/o2its-ai-powered-chat-dashboard/o2its-ai-powered-chat-dashboard-twitter.png'
 
-import { META_O2ITS_AI_POWERED_CHAT_DASHBOARD } from '@/localization'
+import { META_O2ITS_AI_POWERED_CHAT_DASHBOARD } from './localization'
 
 export const metaDataO2itsAiPoweredChatDashboard = createPageMetadata({
   meta: META_O2ITS_AI_POWERED_CHAT_DASHBOARD,

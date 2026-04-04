@@ -4,7 +4,7 @@ import { createPageMetadata } from '@/lib/utils/helpers/metadata/createPageMetad
 import moraviaOG from '@/public/images/png/open-graph/pages/work-experience/moravia/moravia-og.png'
 import moraviaTwitter from '@/public/images/png/open-graph/pages/work-experience/moravia/moravia-twitter.png'
 
-import { META_MORAVIA } from '@/localization'
+import { META_MORAVIA } from './localization'
 
 export const metaDataMoravia = createPageMetadata({
   meta: META_MORAVIA,

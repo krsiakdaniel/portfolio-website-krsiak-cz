@@ -1,18 +1,16 @@
-import { COMMON_VALUES } from '../../../ui/common'
+import { COMMON_VALUES } from '@/localization/ui/common'
 
-export const META_O2ITS_PUBLIC_TENDERS_PORTAL = {
-  title: `AI Public Tenders Portal | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
+export const META_O2ITS_AI_POWERED_CHAT_DASHBOARD = {
+  title: `AI-Powered Chat Dashboard | ${COMMON_VALUES.nameDanielKrsiak} — ${COMMON_VALUES.reactDeveloper}`,
   description:
-    'I designed structured AI prompts and refactored the frontend architecture for Public Tenders Portal application.',
+    'Worked as Front End Developer on AI-powered chat application dashboard using React, Next.js, TypeScript, and AI integration.',
   keywords: {
     nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
     reactDeveloper: COMMON_VALUES.reactDeveloper,
     nextJsDeveloper: COMMON_VALUES.nextJsDeveloper,
     o2its: COMMON_VALUES.o2its,
     aiPowered: COMMON_VALUES.aiPowered,
-    publicTenders: COMMON_VALUES.publicTenders,
-    promptEngineering: COMMON_VALUES.promptEngineering,
-    llm: COMMON_VALUES.llm,
+    chatDashboard: COMMON_VALUES.chatDashboard,
     typeScript: COMMON_VALUES.typeScript,
     react: COMMON_VALUES.react,
     next: COMMON_VALUES.next,
