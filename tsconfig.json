@@ -2,7 +2,7 @@
   "compilerOptions": {
     // Runtime environment & language features
     // These ensure we have access to DOM APIs and latest JavaScript features
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": ["dom", "esnext"],
     "target": "esnext",
     "module": "esnext",
     "moduleDetection": "force",
@@ -28,6 +28,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noPropertyAccessFromIndexSignature": true,
+    // Explicit @types packages (required in TypeScript 6.0 — defaults to [] instead of all @types)
+    "types": ["node", "bun", "jest"],
     // Path aliases
     // Enables importing from absolute paths using @ prefix
     "paths": {
