@@ -1,5 +1,5 @@
 import { buildWorkSection } from '@/lib/utils/helpers/sections/buildWorkSection'
 
-import { PROJECTS_WORK } from '@/localization/data/projects/workProjects'
+import { PROJECTS_WORK_KOOPERATIVA } from '@/localization/pages/projects/work-kooperativa'
 
-export const sections = buildWorkSection(PROJECTS_WORK.kooperativa.sections)
+export const sections = buildWorkSection(PROJECTS_WORK_KOOPERATIVA.sections)

@@ -1,5 +1,5 @@
 import { buildWorkSection } from '@/lib/utils/helpers/sections/buildWorkSection'
 
-import { PROJECTS_WORK } from '@/localization/data/projects/workProjects'
+import { PROJECTS_WORK_O2ITS_AI_CHAT_DASHBOARD } from '@/localization/pages/projects/work-o2its-ai-powered-chat-dashboard'
 
-export const sections = buildWorkSection(PROJECTS_WORK.O2itsAiPoweredChatDashboard.sections)
+export const sections = buildWorkSection(PROJECTS_WORK_O2ITS_AI_CHAT_DASHBOARD.sections)

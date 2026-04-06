@@ -1,6 +1,6 @@
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
+import { PROJECTS_WORK_GROUPON_OVERVIEW } from '@/localization/pages/projects/work-groupon'
 
 // groupon
 import groupon1 from '@/public/images/webp/projects/work/groupon/groupon-1-light.webp'
@@ -11,6 +11,8 @@ import { iconsSkillsProjectsWorkGroupon } from '@/data/pages/projects/work/proje
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+
+const overview = PROJECTS_WORK_GROUPON_OVERVIEW
 
 export const projectsWorkQA: Project[] = [
   {
@@ -23,11 +25,11 @@ export const projectsWorkQA: Project[] = [
     ],
     icon: ICON_EMOJI.shoppingCart,
     ariaLabel: ARIA_LABELS.emoji.shoppingCart,
-    title: WORK_PROJECTS_OVERVIEW.groupon.title,
-    company: WORK_PROJECTS_OVERVIEW.groupon.company,
-    role: WORK_PROJECTS_OVERVIEW.groupon.role,
-    years: WORK_PROJECTS_OVERVIEW.groupon.years,
-    description: WORK_PROJECTS_OVERVIEW.groupon.description,
+    title: overview.title,
+    company: overview.company,
+    role: overview.role,
+    years: overview.years,
+    description: overview.description,
     skillsIcons: iconsSkillsProjectsWorkGroupon,
     skillsOverview: [
       {
@@ -57,9 +59,9 @@ export const projectsWorkQA: Project[] = [
         ],
       },
     ],
-    linkText: WORK_PROJECTS_OVERVIEW.groupon.linkText,
-    projectLinks: WORK_PROJECTS_OVERVIEW.groupon.projectLinks,
-    customers: WORK_PROJECTS_OVERVIEW.groupon.customers,
-    linkProjectPage: WORK_PROJECTS_OVERVIEW.groupon.linkProjectPage,
+    linkText: overview.linkText,
+    projectLinks: overview.projectLinks,
+    customers: overview.customers,
+    linkProjectPage: overview.linkProjectPage,
   },
 ]

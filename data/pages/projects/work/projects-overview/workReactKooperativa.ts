@@ -1,7 +1,7 @@
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
+import { PROJECTS_WORK_KOOPERATIVA_OVERVIEW } from '@/localization/pages/projects/work-kooperativa'
 
 // kooperativa
 import kooperativa1 from '@/public/images/webp/projects/work/kooperativa/kooperativa-1-light.webp'
@@ -14,6 +14,8 @@ import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
+const overview = PROJECTS_WORK_KOOPERATIVA_OVERVIEW
+
 export const workReactKooperativa: Project = {
   id: PROJECT_ID.work.kooperativa,
   isFeatured: false,
@@ -25,11 +27,11 @@ export const workReactKooperativa: Project = {
   ],
   icon: ICON_EMOJI.umbrellaWithRainDrops,
   ariaLabel: ARIA_LABELS.emoji.umbrellaWithRainDrops,
-  title: WORK_PROJECTS_OVERVIEW.kooperativa.title,
-  company: WORK_PROJECTS_OVERVIEW.kooperativa.company,
-  role: WORK_PROJECTS_OVERVIEW.kooperativa.role,
-  years: WORK_PROJECTS_OVERVIEW.kooperativa.years,
-  description: WORK_PROJECTS_OVERVIEW.kooperativa.description,
+  title: overview.title,
+  company: overview.company,
+  role: overview.role,
+  years: overview.years,
+  description: overview.description,
   skillsIcons: iconsSkillsProjectsWorkKooperativa,
   skillsOverview: [
     {
@@ -48,14 +50,14 @@ export const workReactKooperativa: Project = {
       skillsList: [SkillsEnum.Jira, SkillsEnum.Confluence],
     },
   ],
-  linkText: WORK_PROJECTS_OVERVIEW.kooperativa.linkText,
+  linkText: overview.linkText,
   projectLinks: [
     {
-      urlText: WORK_PROJECTS_OVERVIEW.kooperativa.projectLinks[0].urlText,
-      url: WORK_PROJECTS_OVERVIEW.kooperativa.projectLinks[0].url,
-      dataTestId: WORK_PROJECTS_OVERVIEW.kooperativa.projectLinks[0].dataTestId,
+      urlText: overview.projectLinks[0].urlText,
+      url: overview.projectLinks[0].url,
+      dataTestId: overview.projectLinks[0].dataTestId,
     },
   ],
-  customers: WORK_PROJECTS_OVERVIEW.kooperativa.customers,
+  customers: overview.customers,
   linkProjectPage: PAGES_URL.workKooperativa,
 }

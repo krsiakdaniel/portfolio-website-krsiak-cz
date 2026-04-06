@@ -1,7 +1,8 @@
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { PROJECTS_PERSONAL_OVERVIEW } from '@/localization/data/projects/personalProjects'
+import { PROJECTS_PERSONAL_KOREAN_EASY_OVERVIEW } from '@/localization/pages/projects/personal-korean-easy'
+import { PROJECTS_PERSONAL_KRSIAK_OVERVIEW } from '@/localization/pages/projects/personal-krsiak'
 
 // project images - korean easy
 import koreanEasy1 from '@/public/images/webp/projects/personal/korean-easy/korean-easy-1.webp'
@@ -24,6 +25,9 @@ import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
+const koreanEasyOverview = PROJECTS_PERSONAL_KOREAN_EASY_OVERVIEW
+const krsiakOverview = PROJECTS_PERSONAL_KRSIAK_OVERVIEW
+
 export const projectsPersonalNext: Project[] = [
   {
     id: PROJECT_ID.personal.koreanEasy,
@@ -37,10 +41,10 @@ export const projectsPersonalNext: Project[] = [
     ],
     icon: ICON_EMOJI.flagSouthKorea,
     ariaLabel: ARIA_LABELS.emoji.flag.southKorea,
-    title: PROJECTS_PERSONAL_OVERVIEW.koreanEasy.title,
-    company: PROJECTS_PERSONAL_OVERVIEW.koreanEasy.company,
-    role: PROJECTS_PERSONAL_OVERVIEW.koreanEasy.role,
-    description: PROJECTS_PERSONAL_OVERVIEW.koreanEasy.description,
+    title: koreanEasyOverview.title,
+    company: koreanEasyOverview.company,
+    role: koreanEasyOverview.role,
+    description: koreanEasyOverview.description,
     skillsIcons: iconsSkillsProjectsPersonalKoreanEasy,
     skillsOverview: [
       {
@@ -62,15 +66,15 @@ export const projectsPersonalNext: Project[] = [
         skillsList: [SkillsEnum.Playwright, SkillsEnum.Vercel],
       },
     ],
-    linkText: PROJECTS_PERSONAL_OVERVIEW.koreanEasy.linkText,
+    linkText: koreanEasyOverview.linkText,
     projectLinks: [
       {
-        urlText: PROJECTS_PERSONAL_OVERVIEW.koreanEasy.projectLinks[0].urlText,
-        url: PROJECTS_PERSONAL_OVERVIEW.koreanEasy.projectLinks[0].url,
-        dataTestId: PROJECTS_PERSONAL_OVERVIEW.koreanEasy.projectLinks[0].dataTestId,
+        urlText: koreanEasyOverview.projectLinks[0].urlText,
+        url: koreanEasyOverview.projectLinks[0].url,
+        dataTestId: koreanEasyOverview.projectLinks[0].dataTestId,
       },
     ],
-    personalProjectNote: PROJECTS_PERSONAL_OVERVIEW.koreanEasy.personalProjectNote,
+    personalProjectNote: koreanEasyOverview.personalProjectNote,
     linkProjectPage: PAGES_URL.personalKoreanEasy,
   },
   {
@@ -85,10 +89,10 @@ export const projectsPersonalNext: Project[] = [
     ],
     icon: ICON_EMOJI.manTechnologist.lightSkinTone,
     ariaLabel: ARIA_LABELS.emoji.manTechnologist.lightSkinTone,
-    title: PROJECTS_PERSONAL_OVERVIEW.next.title,
-    company: PROJECTS_PERSONAL_OVERVIEW.next.company,
-    role: PROJECTS_PERSONAL_OVERVIEW.next.role,
-    description: PROJECTS_PERSONAL_OVERVIEW.next.description,
+    title: krsiakOverview.title,
+    company: krsiakOverview.company,
+    role: krsiakOverview.role,
+    description: krsiakOverview.description,
     skillsIcons: iconsSkillsProjectsPersonalKrsiak,
     skillsOverview: [
       {
@@ -107,16 +111,16 @@ export const projectsPersonalNext: Project[] = [
         ],
       },
     ],
-    linkText: PROJECTS_PERSONAL_OVERVIEW.next.linkText,
+    linkText: krsiakOverview.linkText,
     projectLinks: [
       {
-        urlText: PROJECTS_PERSONAL_OVERVIEW.next.projectLinks[0].urlText,
-        url: PROJECTS_PERSONAL_OVERVIEW.next.projectLinks[0].url,
-        dataTestId: PROJECTS_PERSONAL_OVERVIEW.next.projectLinks[0].dataTestId,
+        urlText: krsiakOverview.projectLinks[0].urlText,
+        url: krsiakOverview.projectLinks[0].url,
+        dataTestId: krsiakOverview.projectLinks[0].dataTestId,
       },
     ],
-    linkGitHub: PROJECTS_PERSONAL_OVERVIEW.next.linkGitHub,
-    personalProjectNote: PROJECTS_PERSONAL_OVERVIEW.next.personalProjectNote,
+    linkGitHub: krsiakOverview.linkGitHub,
+    personalProjectNote: krsiakOverview.personalProjectNote,
     linkProjectPage: PAGES_URL.personalKrsiak,
   },
 ]
