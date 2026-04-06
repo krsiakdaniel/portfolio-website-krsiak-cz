@@ -70,10 +70,6 @@ export const ICON_EMOJI = {
   woman: {
     officeWorker: '👩‍💼',
   },
-  cat: {
-    ruzenka: '😺',
-    nufka: '😼',
-  },
 }
 
 export const FLAGS_LOCALIZATION = {

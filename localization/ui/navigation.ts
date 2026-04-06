@@ -10,6 +10,7 @@ export const HOME = {
 }
 
 export const FOOTER = {
+  nameDanielKrsiak: COMMON_VALUES.nameDanielKrsiak,
   linkHome: 'krsiak.cz',
   scrollToTop: 'Scroll to top',
 }
