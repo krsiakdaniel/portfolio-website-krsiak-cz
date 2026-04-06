@@ -1,7 +1,7 @@
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
 // moravia
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
+import { PROJECTS_WORK_MORAVIA_OVERVIEW } from '@/localization/pages/projects/work-moravia'
 
 import moravia1 from '@/public/images/webp/projects/work/moravia/moravia-1-light.webp'
 import moravia2 from '@/public/images/webp/projects/work/moravia/moravia-2-light.webp'
@@ -12,6 +12,8 @@ import { iconsSkillsProjectsWorkMoravia } from '@/data/pages/projects/work/proje
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+
+const overview = PROJECTS_WORK_MORAVIA_OVERVIEW
 
 export const projectsWorkLocalization: Project[] = [
   {
@@ -25,11 +27,11 @@ export const projectsWorkLocalization: Project[] = [
     ],
     icon: ICON_EMOJI.globeShowingAmericas,
     ariaLabel: ARIA_LABELS.emoji.globe.showingAmericas,
-    title: WORK_PROJECTS_OVERVIEW.moravia.title,
-    company: WORK_PROJECTS_OVERVIEW.moravia.company,
-    role: WORK_PROJECTS_OVERVIEW.moravia.role,
-    years: WORK_PROJECTS_OVERVIEW.moravia.years,
-    description: WORK_PROJECTS_OVERVIEW.moravia.description,
+    title: overview.title,
+    company: overview.company,
+    role: overview.role,
+    years: overview.years,
+    description: overview.description,
     skillsIcons: iconsSkillsProjectsWorkMoravia,
     skillsOverview: [
       {
@@ -38,9 +40,9 @@ export const projectsWorkLocalization: Project[] = [
         skillsList: [SkillsEnum.HTML, SkillsEnum.CSS, SkillsEnum.JavaScript, SkillsEnum.AutoHotkey],
       },
     ],
-    linkText: WORK_PROJECTS_OVERVIEW.moravia.linkText,
-    projectLinks: WORK_PROJECTS_OVERVIEW.moravia.projectLinks,
-    customers: WORK_PROJECTS_OVERVIEW.moravia.customers,
-    linkProjectPage: WORK_PROJECTS_OVERVIEW.moravia.linkProjectPage,
+    linkText: overview.linkText,
+    projectLinks: overview.projectLinks,
+    customers: overview.customers,
+    linkProjectPage: overview.linkProjectPage,
   },
 ]

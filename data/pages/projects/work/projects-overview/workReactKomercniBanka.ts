@@ -1,7 +1,7 @@
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
+import { PROJECTS_WORK_KOMERCNI_BANKA_OVERVIEW } from '@/localization/pages/projects/work-komercni-banka'
 
 // komercni banka
 import komercniBanka1 from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-1-light.webp'
@@ -15,6 +15,8 @@ import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
+const overview = PROJECTS_WORK_KOMERCNI_BANKA_OVERVIEW
+
 export const workReactKomercniBanka: Project = {
   id: PROJECT_ID.work.komercniBanka,
   isFeatured: false,
@@ -27,11 +29,11 @@ export const workReactKomercniBanka: Project = {
   ],
   icon: ICON_EMOJI.bank,
   ariaLabel: ARIA_LABELS.emoji.bank,
-  title: WORK_PROJECTS_OVERVIEW.komercniBanka.title,
-  company: WORK_PROJECTS_OVERVIEW.komercniBanka.company,
-  role: WORK_PROJECTS_OVERVIEW.komercniBanka.role,
-  years: WORK_PROJECTS_OVERVIEW.komercniBanka.years,
-  description: WORK_PROJECTS_OVERVIEW.komercniBanka.description,
+  title: overview.title,
+  company: overview.company,
+  role: overview.role,
+  years: overview.years,
+  description: overview.description,
   skillsIcons: iconsSkillsProjectsWorkKomercniBanka,
   skillsOverview: [
     {
@@ -55,29 +57,29 @@ export const workReactKomercniBanka: Project = {
       skillsList: [SkillsEnum.Jira, SkillsEnum.Confluence, SkillsEnum.Tempo, SkillsEnum.Kentico],
     },
   ],
-  linkText: WORK_PROJECTS_OVERVIEW.komercniBanka.linkText,
+  linkText: overview.linkText,
   projectLinks: [
     {
-      urlText: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[0].urlText,
-      url: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[0].url,
-      dataTestId: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[0].dataTestId,
+      urlText: overview.projectLinks[0].urlText,
+      url: overview.projectLinks[0].url,
+      dataTestId: overview.projectLinks[0].dataTestId,
     },
     {
-      urlText: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[1].urlText,
-      url: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[1].url,
-      dataTestId: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[1].dataTestId,
+      urlText: overview.projectLinks[1].urlText,
+      url: overview.projectLinks[1].url,
+      dataTestId: overview.projectLinks[1].dataTestId,
     },
     {
-      urlText: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[2].urlText,
-      url: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[2].url,
-      dataTestId: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[2].dataTestId,
+      urlText: overview.projectLinks[2].urlText,
+      url: overview.projectLinks[2].url,
+      dataTestId: overview.projectLinks[2].dataTestId,
     },
     {
-      urlText: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[3].urlText,
-      url: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[3].url,
-      dataTestId: WORK_PROJECTS_OVERVIEW.komercniBanka.projectLinks[3].dataTestId,
+      urlText: overview.projectLinks[3].urlText,
+      url: overview.projectLinks[3].url,
+      dataTestId: overview.projectLinks[3].dataTestId,
     },
   ],
-  customers: WORK_PROJECTS_OVERVIEW.komercniBanka.customers,
+  customers: overview.customers,
   linkProjectPage: PAGES_URL.workKomercniBanka,
 }

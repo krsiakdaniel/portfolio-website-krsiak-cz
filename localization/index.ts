@@ -7,7 +7,8 @@ import { WHO_I_AM } from '@/features/who-i-am/localization'
 
 import { ARIA_LABELS } from './accessibility/aria'
 // Backward compatibility - TEXT_DATA aggregation object
-import { BADGES } from './data/badges'
+import { BADGES } from './constants/badges'
+import { CONTACT, MISC } from './misc'
 import {
   CAREER_PATH as CAREER_PATH_DATA,
   CAREER_REACT_DEV,
@@ -15,12 +16,9 @@ import {
   CAREER_WEB_DEV,
   JOBS,
   OTHER_EXPERIENCE,
-} from './data/careers'
-import { PROJECTS_PERSONAL, PROJECTS_PERSONAL_OVERVIEW } from './data/projects/personalProjects'
-import { PROJECTS_WORK, WORK_PROJECTS_OVERVIEW } from './data/projects/workProjects'
-import { TESTIMONIALS as TESTIMONIALS_DATA } from './data/testimonials'
-import { CONTACT, MISC } from './misc'
+} from './pages/careers'
 import { COMPANIES, MY_WORK, PROJECTS, PROJECT_INFORMATION, WORK } from './pages/projects'
+import { TESTIMONIALS as TESTIMONIALS_DATA } from './pages/testimonials'
 import { CALL_TO_ACTION } from './ui/callToAction'
 import { COMMON_VALUES, SHARED, SOCIAL_LINKS } from './ui/common'
 import { ERROR } from './ui/errors'
@@ -91,7 +89,7 @@ export { META_WHO_I_AM } from '@/features/who-i-am/localization'
 export { ANALYTICS_WARNING, CONTACT, MISC } from './misc'
 
 // Data
-export { BADGES } from './data/badges'
+export { BADGES } from './constants/badges'
 export {
   CAREER_PATH as CAREER_PATH_DATA,
   CAREER_REACT_DEV,
@@ -99,10 +97,52 @@ export {
   CAREER_WEB_DEV,
   JOBS,
   OTHER_EXPERIENCE,
-} from './data/careers'
-export { PROJECTS_PERSONAL, PROJECTS_PERSONAL_OVERVIEW } from './data/projects/personalProjects'
-export { PROJECTS_WORK, WORK_PROJECTS_OVERVIEW } from './data/projects/workProjects'
-export { TESTIMONIALS as TESTIMONIALS_DATA } from './data/testimonials'
+} from './pages/careers'
+export {
+  PROJECTS_PERSONAL_KRSIAK,
+  PROJECTS_PERSONAL_KRSIAK_OVERVIEW,
+} from './pages/projects/personal-krsiak'
+export {
+  PROJECTS_PERSONAL_KOREAN_EASY,
+  PROJECTS_PERSONAL_KOREAN_EASY_OVERVIEW,
+} from './pages/projects/personal-korean-easy'
+export {
+  PROJECTS_WORK_GROUPON,
+  PROJECTS_WORK_GROUPON_OVERVIEW,
+} from './pages/projects/work-groupon'
+export {
+  PROJECTS_WORK_KOMERCNI_BANKA,
+  PROJECTS_WORK_KOMERCNI_BANKA_OVERVIEW,
+} from './pages/projects/work-komercni-banka'
+export {
+  PROJECTS_WORK_KOOPERATIVA,
+  PROJECTS_WORK_KOOPERATIVA_OVERVIEW,
+} from './pages/projects/work-kooperativa'
+export {
+  PROJECTS_WORK_MORAVIA,
+  PROJECTS_WORK_MORAVIA_OVERVIEW,
+} from './pages/projects/work-moravia'
+export {
+  PROJECTS_WORK_O2ITS_AI_CHAT_DASHBOARD,
+  PROJECTS_WORK_O2ITS_AI_CHAT_DASHBOARD_OVERVIEW,
+} from './pages/projects/work-o2its-ai-powered-chat-dashboard'
+export {
+  PROJECTS_WORK_O2ITS_PUBLIC_TENDERS_PORTAL,
+  PROJECTS_WORK_O2ITS_PUBLIC_TENDERS_PORTAL_OVERVIEW,
+} from './pages/projects/work-o2its-public-tenders-portal'
+export {
+  PROJECTS_WORK_SMARTSUPP_DASHBOARD,
+  PROJECTS_WORK_SMARTSUPP_DASHBOARD_OVERVIEW,
+} from './pages/projects/work-smartsupp-dashboard'
+export {
+  PROJECTS_WORK_SMARTSUPP_HELP,
+  PROJECTS_WORK_SMARTSUPP_HELP_OVERVIEW,
+} from './pages/projects/work-smartsupp-help'
+export {
+  PROJECTS_WORK_SMARTSUPP_WEB,
+  PROJECTS_WORK_SMARTSUPP_WEB_OVERVIEW,
+} from './pages/projects/work-smartsupp-web'
+export { TESTIMONIALS as TESTIMONIALS_DATA } from './pages/testimonials'
 export { PAGE_HOME } from '@/features/home/localization'
 
 export const TEXT = {
@@ -136,12 +176,8 @@ export const TEXT_DATA = {
   ...CAREER_REACT_DEV,
   ...CAREER_TESTING,
   ...CAREER_WEB_DEV,
-  ...PROJECTS_WORK,
-  ...WORK_PROJECTS_OVERVIEW,
   ...OTHER_EXPERIENCE,
   ...PAGE_HOME,
-  ...PROJECTS_PERSONAL,
-  ...PROJECTS_PERSONAL_OVERVIEW,
 }
 
 // Empty metadata objects for backward compatibility

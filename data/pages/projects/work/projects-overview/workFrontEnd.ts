@@ -1,6 +1,6 @@
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
+import { PROJECTS_WORK_SMARTSUPP_WEB_OVERVIEW } from '@/localization/pages/projects/work-smartsupp-web'
 
 // smartsupp web
 import smartsuppWeb1 from '@/public/images/webp/projects/work/smartsupp-web/smartsupp-web-1-light.webp'
@@ -13,6 +13,8 @@ import { iconsSkillsProjectsWorkSmartsuppWeb } from '@/data/pages/projects/work/
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+
+const overview = PROJECTS_WORK_SMARTSUPP_WEB_OVERVIEW
 
 export const projectsWorkFrontEnd: Project[] = [
   {
@@ -27,11 +29,11 @@ export const projectsWorkFrontEnd: Project[] = [
     ],
     icon: ICON_EMOJI.manTechnologist.lightSkinTone,
     ariaLabel: ARIA_LABELS.emoji.manTechnologist.lightSkinTone,
-    title: WORK_PROJECTS_OVERVIEW.frontEnd.title,
-    company: WORK_PROJECTS_OVERVIEW.frontEnd.company,
-    role: WORK_PROJECTS_OVERVIEW.frontEnd.role,
-    years: WORK_PROJECTS_OVERVIEW.frontEnd.years,
-    description: WORK_PROJECTS_OVERVIEW.frontEnd.description,
+    title: overview.title,
+    company: overview.company,
+    role: overview.role,
+    years: overview.years,
+    description: overview.description,
     skillsIcons: iconsSkillsProjectsWorkSmartsuppWeb,
     skillsOverview: [
       {
@@ -52,9 +54,9 @@ export const projectsWorkFrontEnd: Project[] = [
       },
       { id: 2, description: SkillCategoryEnum.Other, skillsList: [SkillsEnum.Trello] },
     ],
-    linkText: WORK_PROJECTS_OVERVIEW.frontEnd.linkText,
-    projectLinks: WORK_PROJECTS_OVERVIEW.frontEnd.projectLinks,
-    customers: WORK_PROJECTS_OVERVIEW.frontEnd.customers,
-    linkProjectPage: WORK_PROJECTS_OVERVIEW.frontEnd.linkProjectPage,
+    linkText: overview.linkText,
+    projectLinks: overview.projectLinks,
+    customers: overview.customers,
+    linkProjectPage: overview.linkProjectPage,
   },
 ]

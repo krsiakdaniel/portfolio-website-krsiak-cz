@@ -1,6 +1,6 @@
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
+import { PROJECTS_WORK_SMARTSUPP_DASHBOARD_OVERVIEW } from '@/localization/pages/projects/work-smartsupp-dashboard'
 
 // smartsupp dashboard
 import smartsuppDashboard1 from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-1-light.webp'
@@ -13,6 +13,8 @@ import { iconsSkillsProjectsWorkSmartsuppDashboard } from '@/data/pages/projects
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
+
+const overview = PROJECTS_WORK_SMARTSUPP_DASHBOARD_OVERVIEW
 
 export const workReactSmartsuppDashboard: Project = {
   id: PROJECT_ID.work.smartsupp.dashboard,
@@ -27,10 +29,10 @@ export const workReactSmartsuppDashboard: Project = {
   icon: ICON_EMOJI.speechBalloon,
   ariaLabel: ARIA_LABELS.emoji.speechBalloon,
   title: TEXT.customerCareChatDashboard,
-  company: WORK_PROJECTS_OVERVIEW.reactDashboard.company,
-  role: WORK_PROJECTS_OVERVIEW.reactDashboard.role,
-  years: WORK_PROJECTS_OVERVIEW.reactDashboard.years,
-  description: WORK_PROJECTS_OVERVIEW.reactDashboard.description,
+  company: overview.company,
+  role: overview.role,
+  years: overview.years,
+  description: overview.description,
   skillsIcons: iconsSkillsProjectsWorkSmartsuppDashboard,
   skillsOverview: [
     {
@@ -56,14 +58,14 @@ export const workReactSmartsuppDashboard: Project = {
       skillsList: [SkillsEnum.Trello],
     },
   ],
-  linkText: WORK_PROJECTS_OVERVIEW.reactDashboard.linkText,
+  linkText: overview.linkText,
   projectLinks: [
     {
-      urlText: WORK_PROJECTS_OVERVIEW.reactDashboard.projectLinks[0].urlText,
-      url: WORK_PROJECTS_OVERVIEW.reactDashboard.projectLinks[0].url,
-      dataTestId: WORK_PROJECTS_OVERVIEW.reactDashboard.projectLinks[0].dataTestId,
+      urlText: overview.projectLinks[0].urlText,
+      url: overview.projectLinks[0].url,
+      dataTestId: overview.projectLinks[0].dataTestId,
     },
   ],
-  customers: WORK_PROJECTS_OVERVIEW.reactDashboard.customers,
-  linkProjectPage: WORK_PROJECTS_OVERVIEW.reactDashboard.linkProjectPage,
+  customers: overview.customers,
+  linkProjectPage: overview.linkProjectPage,
 }

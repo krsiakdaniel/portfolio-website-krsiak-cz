@@ -1,6 +1,6 @@
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
-import { WORK_PROJECTS_OVERVIEW } from '@/localization/data/projects/workProjects'
+import { PROJECTS_WORK_SMARTSUPP_HELP_OVERVIEW } from '@/localization/pages/projects/work-smartsupp-help'
 
 // smartsupp help
 import smartsuppHelp1 from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-1-light.webp'
@@ -12,6 +12,8 @@ import { iconsSkillsProjectsWorkSmartsuppHelp } from '@/data/pages/projects/work
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+
+const overview = PROJECTS_WORK_SMARTSUPP_HELP_OVERVIEW
 
 export const projectsWorkWordPress: Project[] = [
   {
@@ -25,11 +27,11 @@ export const projectsWorkWordPress: Project[] = [
     ],
     icon: ICON_EMOJI.books,
     ariaLabel: ARIA_LABELS.emoji.books,
-    title: WORK_PROJECTS_OVERVIEW.wordPress.title,
-    company: WORK_PROJECTS_OVERVIEW.wordPress.company,
-    role: WORK_PROJECTS_OVERVIEW.wordPress.role,
-    years: WORK_PROJECTS_OVERVIEW.wordPress.years,
-    description: WORK_PROJECTS_OVERVIEW.wordPress.description,
+    title: overview.title,
+    company: overview.company,
+    role: overview.role,
+    years: overview.years,
+    description: overview.description,
     skillsIcons: iconsSkillsProjectsWorkSmartsuppHelp,
     skillsOverview: [
       {
@@ -38,9 +40,9 @@ export const projectsWorkWordPress: Project[] = [
         skillsList: [SkillsEnum.JavaScript, SkillsEnum.PHP, SkillsEnum.WordPress],
       },
     ],
-    linkText: WORK_PROJECTS_OVERVIEW.wordPress.linkText,
-    projectLinks: WORK_PROJECTS_OVERVIEW.wordPress.projectLinks,
-    customers: WORK_PROJECTS_OVERVIEW.wordPress.customers,
-    linkProjectPage: WORK_PROJECTS_OVERVIEW.wordPress.linkProjectPage,
+    linkText: overview.linkText,
+    projectLinks: overview.projectLinks,
+    customers: overview.customers,
+    linkProjectPage: overview.linkProjectPage,
   },
 ]
