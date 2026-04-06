@@ -1,4 +1,3 @@
-/* eslint-env node */
 import withPWAInit from '@ducanh2912/next-pwa'
 
 // Config for PWA
