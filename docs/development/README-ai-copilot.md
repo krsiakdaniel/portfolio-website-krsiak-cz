@@ -36,7 +36,7 @@ These files live under `.github/` and are automatically used by GitHub Copilot i
       SKILL.md                     ← audit skill definition
       checklist.md                 ← 29-item audit checklist
   hooks/
-    auto-format.json               ← PostToolUse: runs Prettier after every file write
+    auto-format.json               ← PostToolUse: runs Prettier after tool use
     block-git-commands.json        ← PreToolUse: blocks git commit and git push
     scripts/
       auto-format.sh
@@ -75,13 +75,13 @@ Prompts are **reusable slash commands** available in Copilot Chat. Type `/` to s
 
 Custom agents are **named personas** with specific tool restrictions, selectable from the agent picker dropdown in Copilot Chat.
 
-| Agent                | Tools                  | Purpose                                                                                             |
-| -------------------- | ---------------------- | --------------------------------------------------------------------------------------------------- |
-| `portfolio-reviewer` | `codebase`, `problems` | Read-only review — checks TypeScript, React 19, companion files, a11y, Tailwind. Never edits files. |
+| Agent                | Tools                              | Purpose                                                                                             |
+| -------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `portfolio-reviewer` | `search/codebase`, `read/problems` | Read-only review — checks TypeScript, React 19, companion files, a11y, Tailwind. Never edits files. |
 
 **How to use:** Click the agent picker at the bottom of the Copilot Chat panel → select `portfolio-reviewer` → ask it to review a file.
 
-```
+```text
 "review features/home/components/hero/Hero.tsx"
 ```
 
@@ -93,7 +93,7 @@ Skills are **on-demand workflows** bundled with supporting files. The agent load
 
 ### `component-audit`
 
-Audits a component or page file against all project conventions using a 29-item checklist.
+Audits a component or page file against all project conventions using the skill checklist.
 
 **Checklist categories:**
 
@@ -108,7 +108,7 @@ Audits a component or page file against all project conventions using a 29-item 
 
 **How to trigger:**
 
-```
+```text
 "audit this component"
 "audit features/home/components/hero/Hero.tsx before I commit"
 "check this file against project rules"
@@ -122,10 +122,10 @@ The skill reads [checklist.md](../../.github/skills/component-audit/checklist.md
 
 Hooks run **automatically** — no action needed.
 
-| Hook                 | Event                        | What it does                                               |
-| -------------------- | ---------------------------- | ---------------------------------------------------------- |
-| `auto-format`        | After every agent file write | Runs `bun prettier --write .` on the whole project         |
-| `block-git-commands` | Before any shell command     | Denies `git commit` and `git push` — user commits manually |
+| Hook                 | Event                    | What it does                                               |
+| -------------------- | ------------------------ | ---------------------------------------------------------- |
+| `auto-format`        | After matching tool use  | Runs `bun prettier --write .` on the whole project         |
+| `block-git-commands` | Before any shell command | Denies `git commit` and `git push` — user commits manually |
 
 ---
 
@@ -133,7 +133,7 @@ Hooks run **automatically** — no action needed.
 
 Typical workflow in a coding session:
 
-```
+```text
 1. Open a component or feature file
    → Instructions auto-load based on file type
 
