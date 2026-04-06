@@ -2,29 +2,30 @@ import Link from 'next/link'
 
 import Paragraph from '@/components/shared/paragraph/Paragraph'
 
-import { COPYRIGHT } from '@/lib/utils/constants/specialCharacters'
+import { COPYRIGHT, MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getCurrentYear } from '@/lib/utils/helpers/years/getCurrentYear'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { ARIA_LABELS, FOOTER, ICON_EMOJI } from '@/localization'
+import { FOOTER } from '@/localization'
 
 const Copyright = () => {
   return (
-    <Paragraph size="text-base" marginTop="mt-4" customCss="flex flex-row text-center gap-2">
+    <Paragraph
+      size="text-base"
+      marginTop="mt-4"
+      customCss="flex flex-col sm:flex-row text-center gap-2"
+    >
       <span data-testid={DATA_TEST_IDS.footer.copyright}>
         {COPYRIGHT}
         {'\u00A0'}
         {getCurrentYear()}
+        {'\u00A0'}
+        {FOOTER.nameDanielKrsiak}
       </span>
 
-      <span role="img" aria-label={ARIA_LABELS.emoji.cats.nufka} className="select-none">
-        {ICON_EMOJI.cat.nufka}
-      </span>
-      <span role="img" aria-label={ARIA_LABELS.emoji.cats.ruzenka} className="select-none">
-        {ICON_EMOJI.cat.ruzenka}
-      </span>
+      <span className="hidden sm:inline">{MIDDLE_DOT}</span>
 
       <Link
         href={PAGES_URL.home}
