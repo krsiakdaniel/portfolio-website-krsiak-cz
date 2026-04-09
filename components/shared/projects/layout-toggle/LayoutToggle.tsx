@@ -17,7 +17,7 @@ const LayoutToggle = ({ activeView, onListClick, onGridClick }: LayoutToggleProp
         aria-label="List view"
         data-testid="layout-toggle-list"
         onClick={onListClick}
-        className={`select-none ${activeView === LayoutViewEnum.List ? activeClassCss : inactiveClassCss}`}
+        className={`select-none cursor-pointer ${activeView === LayoutViewEnum.List ? activeClassCss : inactiveClassCss}`}
       >
         <Image
           src="/icons/svg/layout-toggle/layout-list.svg"
@@ -33,7 +33,7 @@ const LayoutToggle = ({ activeView, onListClick, onGridClick }: LayoutToggleProp
         aria-label="Grid view"
         data-testid="layout-toggle-grid"
         onClick={onGridClick}
-        className={`select-none ${activeView === LayoutViewEnum.Grid ? activeClassCss : inactiveClassCss}`}
+        className={`select-none cursor-pointer ${activeView === LayoutViewEnum.Grid ? activeClassCss : inactiveClassCss}`}
       >
         <Image
           src="/icons/svg/layout-toggle/layout-grid.svg"

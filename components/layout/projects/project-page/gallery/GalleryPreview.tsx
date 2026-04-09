@@ -23,7 +23,7 @@ const GalleryPreview = ({ activeImage }: GalleryPreviewProps) => {
           src={activeImage.src}
           width={GALLERY_PREVIEW_4_3.WIDTH}
           height={GALLERY_PREVIEW_4_3.HEIGHT}
-          customCss="border rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md transition-all duration-500 ease-in-out animate-fade-in"
+          customCss="border rounded-lg border border-violet-300 bg-violet-50 p-1 transition-all duration-500 ease-in-out animate-fade-in"
           alt={`${ARIA_LABELS.galleryActiveImage}: ${activeImage.id}`}
           loading={ImageLoadingEnum.LAZY}
           placeholder="blur"

@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="mx-auto mt-20 flex w-full flex-col items-center justify-center pb-16">
           <div>
             <DividerWithText text={DIVIDER_WITH_TEXT.contactMe} />
-            <ScanMyContactQR showImageCaption={false} />
+            <ScanMyContactQR />
           </div>
 
           <Status />

@@ -40,7 +40,7 @@ const WorkExperience = () => {
 
   return (
     <div className="relative">
-      <div className="absolute -top-10 right-0 z-10">
+      <div className="absolute top-1 right-0 z-10">
         <LayoutToggle
           activeView={activeView}
           onListClick={() => setActiveView(LayoutViewEnum.List)}

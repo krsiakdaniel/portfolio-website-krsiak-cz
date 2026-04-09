@@ -157,6 +157,7 @@ export enum SkillsEnum {
   TypeScript = 'TypeScript',
   UX = 'UX',
   Vercel = 'Vercel',
+  Vite = 'Vite',
   WordPress = 'WordPress',
   Zod = 'Zod',
   Zustand = 'Zustand',

@@ -11,17 +11,21 @@ const SkillsIconGroup = ({ icons = [], customCss = '' }: SkillsIconGroupProps) =
   return (
     <div className={`flex justify-center space-x-2 ${customCss}`}>
       {icons.map((item) => (
-        <ImageComponent
+        <div
           key={item.name}
-          src={item.path}
-          width={SKILLS_ICON.WIDTH}
-          height={SKILLS_ICON.HEIGHT}
-          loading={ImageLoadingEnum.LAZY}
-          sizes={`${SKILLS_ICON.WIDTH}px`}
-          alt={capitalizeFirstLetter(item.name)}
-          dataTooltipContent={capitalizeFirstLetter(item.name)}
-          customCss="transition-transform duration-300 ease-in-out hover:scale-110"
-        />
+          className={`rounded-lg bg-gray-100 w-[${SKILLS_ICON.WIDTH}px] h-[${SKILLS_ICON.HEIGHT}px]`}
+        >
+          <ImageComponent
+            src={item.path}
+            width={SKILLS_ICON.WIDTH}
+            height={SKILLS_ICON.HEIGHT}
+            loading={ImageLoadingEnum.EAGER}
+            sizes={`${SKILLS_ICON.WIDTH}px`}
+            alt={capitalizeFirstLetter(item.name)}
+            dataTooltipContent={capitalizeFirstLetter(item.name)}
+            customCss="transition-transform duration-300 ease-in-out hover:scale-110"
+          />
+        </div>
       ))}
     </div>
   )

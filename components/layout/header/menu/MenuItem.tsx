@@ -8,13 +8,13 @@ const MenuItem = ({ linkItem, isMobile, onClickLink }: MenuItemProps) => {
   const { id, href, icon, ariaLabel, text, dataTestId, isActive } = linkItem
 
   const testId = isMobile ? `mobile-${dataTestId}` : `desktop-${dataTestId}`
-  const mobileDesktopCSS = isMobile ? 'py-3' : 'py-2'
-  const hoverAndFocusCSS = 'hover:border-violet-50 hover:bg-violet-50'
+  const mobileDesktopCss = isMobile ? 'py-3' : 'py-2'
+  const hoverAndFocusCss = 'hover:border-violet-50 hover:bg-violet-50'
   const sharedCss =
     'text-base block select-none rounded-lg px-4 lg:px-3 xl:px-4 bg-neutral-50 font-bold transition-all duration-200 ease-in-out'
 
   // Active state styling
-  const activeCSS = isActive
+  const activeCss = isActive
     ? 'bg-violet-100 text-violet-900'
     : 'text-neutral-600 hover:text-violet-800'
 
@@ -23,7 +23,7 @@ const MenuItem = ({ linkItem, isMobile, onClickLink }: MenuItemProps) => {
       <Link
         href={href}
         role="menuitem"
-        className={`${mobileDesktopCSS} ${hoverAndFocusCSS} ${sharedCss} ${activeCSS}`}
+        className={`${mobileDesktopCss} ${hoverAndFocusCss} ${sharedCss} ${activeCss}`}
         data-testid={testId}
         id={getMenuLinkID({ isMobile, linkID: id })}
         onClick={isMobile ? onClickLink : undefined}

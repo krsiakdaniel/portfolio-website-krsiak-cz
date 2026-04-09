@@ -29,20 +29,14 @@ const ResumePreviewCard = ({
       </Paragraph>
 
       <div className="mt-4">
-        <Link
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block transition-transform duration-200 hover:scale-[1.01]"
-          data-testid={dataTestId.image}
-        >
+        <Link href={href} target="_blank" rel="noopener noreferrer" data-testid={dataTestId.image}>
           <div className="bg-white">
             <ImageComponent
               src={imageSrc}
               alt={imageAlt}
               width={RESUME_PREVIEW_IMAGE.WIDTH}
               height={RESUME_PREVIEW_IMAGE.HEIGHT}
-              customCss="rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md hover:border-violet-600"
+              customCss="rounded-lg border border-violet-300 bg-violet-50 p-1 transition-all duration-300 ease-in-out hover:border-violet-500 hover:scale-101"
               loading={ImageLoadingEnum.EAGER}
               priority={true}
             />

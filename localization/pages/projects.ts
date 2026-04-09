@@ -6,6 +6,7 @@ export const PROJECTS = {
   koreanEasy: 'Korean Easy',
   personalProjects: 'Personal Projects',
   portfolioWebsite: 'Portfolio Website',
+  projects: 'Projects',
   next: COMMON_VALUES.next,
   nextShort: COMMON_VALUES.nextShort,
   react: COMMON_VALUES.react,

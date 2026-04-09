@@ -26,11 +26,11 @@ const Menu = ({ type, ref, onClickLink }: MenuProps) => {
     : DATA_TEST_IDS.menu.desktop.componentMenu
   const menuId = isMobile ? ID.menu.mobile : ID.menu.desktop
   const menuOrientation: 'vertical' | 'horizontal' = isMobile ? 'vertical' : 'horizontal'
-  const mobileCSS = isMobile ? 'mt-2 mb-6 flex flex-col gap-2 lg:hidden' : 'hidden gap-2 lg:flex'
+  const mobileCss = isMobile ? 'mt-2 mb-6 flex flex-col gap-2 lg:hidden' : 'hidden gap-2 lg:flex'
 
   return (
     <nav aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
-      <ul ref={ref} role="menubar" aria-orientation={menuOrientation} className={mobileCSS}>
+      <ul ref={ref} role="menubar" aria-orientation={menuOrientation} className={mobileCss}>
         {(pagesLinks ?? []).map((link) => {
           // Create a new link object with the active state
           const linkWithActiveState = {

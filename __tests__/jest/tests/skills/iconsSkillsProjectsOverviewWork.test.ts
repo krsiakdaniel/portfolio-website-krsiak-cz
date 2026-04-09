@@ -28,6 +28,7 @@ describe('iconsSkillsProjectsWork', () => {
     const expectedIcons = getSkillsIcons([
       SkillIconEnum.TypeScript,
       SkillIconEnum.React,
+      SkillIconEnum.Next,
       SkillIconEnum.Redux,
       SkillIconEnum.Tailwind,
       SkillIconEnum.Figma,

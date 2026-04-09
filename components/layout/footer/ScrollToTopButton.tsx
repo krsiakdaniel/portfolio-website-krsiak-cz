@@ -11,12 +11,12 @@ import { ARIA_LABELS, FOOTER } from '@/localization'
 
 import { SCROLL_TO_TOP } from './ScrollToTopButton.constants'
 
-const BUTTON_STYLES = `animate-fade-in-scroll 
+const buttonCss = `animate-fade-in-scroll 
   fixed right-8 bottom-8 z-50 
   flex h-12 w-12 items-center justify-center 
-  rounded-full bg-violet-600 text-white shadow-lg
+  rounded-full bg-violet-600 text-white
   transition-all duration-300 ease-in-out
-  hover:-translate-y-1 hover:scale-110 hover:bg-violet-700 hover:shadow-xl
+  hover:-translate-y-1 hover:scale-110 hover:bg-violet-700
   focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:outline-none`
 
 const ScrollToTopButton = () => {
@@ -43,7 +43,7 @@ const ScrollToTopButton = () => {
   return (
     <button
       onClick={handleScrollToTop}
-      className={BUTTON_STYLES}
+      className={buttonCss}
       data-testid={DATA_TEST_IDS.footer.scrollToTopButton}
       aria-label={ARIA_LABELS.scrollToTopPage}
       title={FOOTER.scrollToTop}

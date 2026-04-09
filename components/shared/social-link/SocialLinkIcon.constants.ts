@@ -4,7 +4,7 @@ export const SOCIAL_ICON = {
     HEIGHT: 28,
   },
   MOBILE: {
-    WIDTH: 32,
-    HEIGHT: 32,
+    WIDTH: 36,
+    HEIGHT: 36,
   },
 } as const

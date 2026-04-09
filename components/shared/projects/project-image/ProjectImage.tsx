@@ -8,7 +8,7 @@ import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 import { ProjectImageProps } from './ProjectImage.types'
 
 const ProjectImage = ({ isFeatured, image, title }: ProjectImageProps) => {
-  const featuredProjectCSS = `${isFeatured ? 'bg-yellow-50 border-yellow-300' : 'bg-violet-50 border-violet-300'}`
+  const featuredProjectCss = `${isFeatured ? 'bg-yellow-50 border-yellow-300' : 'bg-violet-50 border-violet-300'}`
 
   return (
     <div className="flex first:mt-0 lg:mt-0 lg:justify-start">
@@ -29,7 +29,7 @@ const ProjectImage = ({ isFeatured, image, title }: ProjectImageProps) => {
           height={PROJECT_IMAGE_PREVIEW.HEIGHT}
           alt={title}
           loading={ImageLoadingEnum.LAZY}
-          customCss={`shadow-md rounded-lg border p-1 ${featuredProjectCSS}`}
+          customCss={`rounded-lg border p-1 ${featuredProjectCss}`}
           sizes={`(max-width: 768px) 100vw, (max-width: 1024px) 50vw, ${PROJECT_IMAGE_PREVIEW.WIDTH}px`}
         />
       </div>

@@ -45,7 +45,7 @@ const GalleryThumbnails = ({ images, activeImage, setActiveImage }: GalleryThumb
             src={image.src}
             width={GALLERY_THUMBNAIL_4_3.WIDTH}
             height={GALLERY_THUMBNAIL_4_3.HEIGHT}
-            customCss={`rounded-lg border-violet-300 bg-violet-50 p-1 shadow-md transition-all duration-500 ease-in-out cursor-pointer opacity-80 hover:ring-2 hover:ring-violet-600 hover:bg-violet-100 hover:opacity-100
+            customCss={`rounded-lg border border-violet-300 bg-violet-50 p-1 transition-all duration-500 ease-in-out cursor-pointer opacity-80 hover:ring-2 hover:ring-violet-600 hover:bg-violet-100 hover:opacity-100
               ${
                 activeImage.id === image.id
                   ? 'ring-2 ring-violet-400 bg-violet-100'

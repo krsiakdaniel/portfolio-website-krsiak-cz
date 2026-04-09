@@ -11,12 +11,12 @@ const CallToActionIcon = ({ type, icon }: CallToActionIconProps) => {
   const isMobile = type === DeviceTypeEnum.Mobile
   const size = isMobile ? EmojiSizeEnum.SM : EmojiSizeEnum.LG
   const isIconString = typeof icon === 'string'
-  const mobileCSS = isMobile ? 'h-8 w-8 text-2xl md:hidden' : 'h-32 w-32 text-9xl'
-  const transitionIconCSS = 'transition-transform duration-500 group-hover:scale-105'
+  const mobileCss = isMobile ? 'h-8 w-8 text-2xl md:hidden' : 'h-32 w-32 text-9xl'
+  const transitionIconCss = 'transition-transform duration-500 group-hover:scale-105'
 
   return (
     <div
-      className={`flex items-center justify-center select-none ${mobileCSS} ${transitionIconCSS}`}
+      className={`flex items-center justify-center select-none ${mobileCss} ${transitionIconCss}`}
     >
       {isIconString ? (
         icon

@@ -112,7 +112,7 @@ const nextConfig = {
               "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.hotjar.com",
 
               // Allow API/network requests to same origin, Google Analytics, and Hotjar endpoints
-              "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.hotjar.com wss://*.hotjar.com",
+              "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.hotjar.com wss://*.hotjar.com https://*.hotjar.io wss://*.hotjar.io",
 
               // Allow styles from same origin and inline styles (required for Tailwind CSS)
               "style-src 'self' 'unsafe-inline'",
