@@ -46,7 +46,6 @@ type PortfolioFixtures = {
   skills: Skill[]
   routes: Route[]
   // Convenience fixtures
-  featuredProject: Project
   recentTestimonial: Testimonial
 }
 
@@ -146,10 +145,6 @@ export const test = base.extend<PortfolioFixtures>({
   },
 
   // Convenience fixtures
-  featuredProject: async ({ workProjects }, use) => {
-    await use(workProjects[0])
-  },
-
   recentTestimonial: async ({ testimonials }, use) => {
     await use(testimonials[0])
   },
