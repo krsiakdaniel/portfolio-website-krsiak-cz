@@ -171,6 +171,8 @@ export interface TestimonialsGroups {
 export interface GalleryImage {
   readonly id: number
   readonly src: string
+  readonly width?: number
+  readonly height?: number
 }
 
 // External URL

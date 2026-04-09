@@ -21,9 +21,24 @@ export const projectsWorkWordPress: Project[] = [
     isFeatured: false,
     image: smartsuppHelpProjectPreview.src,
     galleryImages: [
-      { id: 0, src: smartsuppHelp1.src },
-      { id: 1, src: smartsuppHelp2.src },
-      { id: 2, src: smartsuppHelp3.src },
+      {
+        id: 0,
+        src: smartsuppHelp1.src,
+        width: smartsuppHelp1.width,
+        height: smartsuppHelp1.height,
+      },
+      {
+        id: 1,
+        src: smartsuppHelp2.src,
+        width: smartsuppHelp2.width,
+        height: smartsuppHelp2.height,
+      },
+      {
+        id: 2,
+        src: smartsuppHelp3.src,
+        width: smartsuppHelp3.width,
+        height: smartsuppHelp3.height,
+      },
     ],
     icon: ICON_EMOJI.books,
     ariaLabel: ARIA_LABELS.emoji.books,

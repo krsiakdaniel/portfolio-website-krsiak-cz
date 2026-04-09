@@ -5,6 +5,7 @@ import { ArrowRight } from 'lucide-react'
 
 import ProjectSkillsIcons from '@/components/shared/projects/project-skills-icons/ProjectSkillsIcons'
 
+import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ICON_EMOJI } from '@/localization'
 
 import { ProjectCompactCardProps } from './ProjectCompactCard.types'
@@ -18,10 +19,10 @@ const ProjectCompactCard = ({
   isFeatured,
   linkProjectPage,
   linkText,
+  priority = false,
   role,
   skillsIcons,
   title,
-  years,
 }: ProjectCompactCardProps) => {
   const borderClassCss = isFeatured
     ? 'border-yellow-300 hover:border-yellow-500'
@@ -53,7 +54,8 @@ const ProjectCompactCard = ({
           width={400}
           height={240}
           className="h-36 w-full rounded object-cover object-top"
-          loading="lazy"
+          priority={priority}
+          loading={priority ? undefined : ImageLoadingEnum.LAZY}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
         />
       </div>
@@ -68,10 +70,7 @@ const ProjectCompactCard = ({
         </h3>
 
         <p className="text-xl font-medium text-violet-600">{role}</p>
-        <p className="text-sm text-neutral-500">
-          {company}
-          {years && <span className="ml-1 text-neutral-400">· {years}</span>}
-        </p>
+        <p className="text-sm text-neutral-500">{company}</p>
 
         <ProjectSkillsIcons skillsIcons={skillsIcons} />
 

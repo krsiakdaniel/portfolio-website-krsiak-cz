@@ -21,9 +21,9 @@ export const projectsWorkLocalization: Project[] = [
     isFeatured: false,
     image: moraviaProjectPreview.src,
     galleryImages: [
-      { id: 0, src: moravia1.src },
-      { id: 1, src: moravia2.src },
-      { id: 2, src: moravia3.src },
+      { id: 0, src: moravia1.src, width: moravia1.width, height: moravia1.height },
+      { id: 1, src: moravia2.src, width: moravia2.width, height: moravia2.height },
+      { id: 2, src: moravia3.src, width: moravia3.width, height: moravia3.height },
     ],
     icon: ICON_EMOJI.globeShowingAmericas,
     ariaLabel: ARIA_LABELS.emoji.globe.showingAmericas,

@@ -8,6 +8,7 @@ import { ProjectSectionGridProps } from './ProjectSectionGrid.types'
 
 const ProjectSectionGrid = ({
   projectData = [],
+  priorityFirstCard = false,
   sectionId = '',
   sectionText = '',
   otherExperience = [],
@@ -18,7 +19,7 @@ const ProjectSectionGrid = ({
       <HeadingSection text={sectionText} id={sectionId} />
 
       <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-        {projectData.map((item) => (
+        {projectData.map((item, index) => (
           <ProjectCompactCard
             key={item.id}
             ariaLabel={item.ariaLabel}
@@ -29,10 +30,10 @@ const ProjectSectionGrid = ({
             isFeatured={item.isFeatured}
             linkProjectPage={item.linkProjectPage}
             linkText={item.linkText}
+            priority={priorityFirstCard && index === 0}
             role={item.role}
             skillsIcons={item.skillsIcons}
             title={item.title}
-            years={item.years}
           />
         ))}
         {otherExperience.map((item) => (

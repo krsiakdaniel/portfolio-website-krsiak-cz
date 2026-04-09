@@ -57,6 +57,7 @@ const WorkExperience = () => {
             sectionId={ID.section.react}
             sectionText={COMMON_VALUES.react}
             projectData={[...projectsWorkReact, ...projectsWorkNext, ...projectsWorkVite]}
+            priorityFirstCard={true}
             showPlaceholder={true}
           />
 

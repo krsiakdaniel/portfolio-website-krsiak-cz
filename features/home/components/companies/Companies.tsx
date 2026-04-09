@@ -42,6 +42,7 @@ const Companies = () => {
             <ImageComponent
               src={kooperativa}
               width={COMPANIES_LOGOS_SIZES.KOOPERATIVA.WIDTH}
+              height={COMPANIES_LOGOS_SIZES.KOOPERATIVA.HEIGHT}
               alt={IMAGE_ALT.altKooperativa}
               loading={ImageLoadingEnum.LAZY}
               customCss={animationClasses[0]}
@@ -51,6 +52,7 @@ const Companies = () => {
             <ImageComponent
               src={smartsupp}
               width={COMPANIES_LOGOS_SIZES.SMARTSUPP.WIDTH}
+              height={COMPANIES_LOGOS_SIZES.SMARTSUPP.HEIGHT}
               alt={IMAGE_ALT.altSmartsupp}
               loading={ImageLoadingEnum.LAZY}
               customCss={animationClasses[1]}
@@ -60,6 +62,7 @@ const Companies = () => {
             <ImageComponent
               src={microsoft}
               width={COMPANIES_LOGOS_SIZES.MICROSOFT.WIDTH}
+              height={COMPANIES_LOGOS_SIZES.MICROSOFT.HEIGHT}
               alt={IMAGE_ALT.altMicrosoft}
               loading={ImageLoadingEnum.LAZY}
               customCss={animationClasses[2]}
@@ -70,6 +73,7 @@ const Companies = () => {
             <ImageComponent
               src={bata}
               width={COMPANIES_LOGOS_SIZES.BATA.WIDTH}
+              height={COMPANIES_LOGOS_SIZES.BATA.HEIGHT}
               alt={IMAGE_ALT.altBata}
               loading={ImageLoadingEnum.LAZY}
               customCss={animationClasses[3]}
@@ -79,6 +83,7 @@ const Companies = () => {
             <ImageComponent
               src={komercniBanka}
               width={COMPANIES_LOGOS_SIZES.KOMERCNI_BANKA.WIDTH}
+              height={COMPANIES_LOGOS_SIZES.KOMERCNI_BANKA.HEIGHT}
               alt={IMAGE_ALT.altKomercniBanka}
               loading={ImageLoadingEnum.LAZY}
               customCss={animationClasses[4]}
@@ -88,6 +93,7 @@ const Companies = () => {
             <ImageComponent
               src={groupon}
               width={COMPANIES_LOGOS_SIZES.GROUPON.WIDTH}
+              height={COMPANIES_LOGOS_SIZES.GROUPON.HEIGHT}
               alt={IMAGE_ALT.altGroupon}
               loading={ImageLoadingEnum.LAZY}
               customCss={animationClasses[5]}

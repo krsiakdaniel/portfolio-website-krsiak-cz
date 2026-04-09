@@ -17,7 +17,14 @@ export const workNextO2itsAiPoweredChatDashboard: Project = {
   id: PROJECT_ID.work.o2itsAiPoweredChatDashboard,
   isFeatured: false,
   image: o2itsAiPoweredChatDashboardProjectPreview.src,
-  galleryImages: [{ id: 0, src: o2itsAiPoweredChatDashboard.src }],
+  galleryImages: [
+    {
+      id: 0,
+      src: o2itsAiPoweredChatDashboard.src,
+      width: o2itsAiPoweredChatDashboard.width,
+      height: o2itsAiPoweredChatDashboard.height,
+    },
+  ],
   icon: ICON_EMOJI.robot,
   ariaLabel: ARIA_LABELS.emoji.robot,
   title: overview.title,

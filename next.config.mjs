@@ -103,6 +103,10 @@ const nextConfig = {
         source: '/:path*', // Apply to all routes
         headers: [
           {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
             key: 'Content-Security-Policy',
             value: [
               // Only allow resources to be loaded from the same origin
