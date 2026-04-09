@@ -23,7 +23,7 @@ const Photo = ({ isPhotoSmall = false, isOpenToWork = false }: PhotoProps) => {
           height={isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.HEIGHT : PHOTO_DIMENSIONS.LARGE.HEIGHT}
           alt={TEXT.nameDanielKrsiak}
           loading={ImageLoadingEnum.LAZY}
-          customCss="rounded-full border border-violet-300 bg-violet-50 p-1"
+          customCss="rounded-full border border-violet-300 bg-white p-1"
           dataTestId={DATA_TEST_IDS.misc.linkedinPhoto}
           sizes={`${isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.WIDTH : PHOTO_DIMENSIONS.LARGE.WIDTH}px`}
         />

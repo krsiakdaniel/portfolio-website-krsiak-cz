@@ -9,6 +9,7 @@ export type ProjectCompactCardProps = {
   isFeatured?: boolean
   linkProjectPage: string
   linkText: string
+  priority?: boolean
   role: string
   skillsIcons: Icon[]
   title: string

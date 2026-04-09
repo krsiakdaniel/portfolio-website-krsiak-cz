@@ -28,7 +28,8 @@ const ProjectImage = ({ isFeatured, image, title }: ProjectImageProps) => {
           width={PROJECT_IMAGE_PREVIEW.WIDTH}
           height={PROJECT_IMAGE_PREVIEW.HEIGHT}
           alt={title}
-          loading={ImageLoadingEnum.LAZY}
+          priority={isFeatured}
+          loading={isFeatured ? ImageLoadingEnum.EAGER : ImageLoadingEnum.LAZY}
           customCss={`rounded-lg border p-1 ${featuredProjectCss}`}
           sizes={`(max-width: 768px) 100vw, (max-width: 1024px) 50vw, ${PROJECT_IMAGE_PREVIEW.WIDTH}px`}
         />

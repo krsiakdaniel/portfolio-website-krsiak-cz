@@ -19,6 +19,7 @@ const Hero = () => {
           size={EmojiSizeEnum.LG}
           alt={IMAGE_ALT.altWelcome}
           loading={ImageLoadingEnum.EAGER}
+          priority={true}
           className="mt-8"
         />
       </div>

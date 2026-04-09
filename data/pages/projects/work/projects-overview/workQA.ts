@@ -20,8 +20,8 @@ export const projectsWorkQA: Project[] = [
     isFeatured: false,
     image: grouponProjectPreview.src,
     galleryImages: [
-      { id: 0, src: groupon1.src },
-      { id: 1, src: groupon2.src },
+      { id: 0, src: groupon1.src, width: groupon1.width, height: groupon1.height },
+      { id: 1, src: groupon2.src, width: groupon2.width, height: groupon2.height },
     ],
     icon: ICON_EMOJI.shoppingCart,
     ariaLabel: ARIA_LABELS.emoji.shoppingCart,

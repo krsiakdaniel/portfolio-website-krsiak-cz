@@ -17,7 +17,14 @@ export const workViteO2itsPublicTendersPortal: Project = {
   id: PROJECT_ID.work.o2itsPublicTendersPortal,
   isFeatured: false,
   image: o2itsPublicTendersPortalProjectPreview.src,
-  galleryImages: [{ id: 0, src: o2itsPublicTendersPortal.src }],
+  galleryImages: [
+    {
+      id: 0,
+      src: o2itsPublicTendersPortal.src,
+      width: o2itsPublicTendersPortal.width,
+      height: o2itsPublicTendersPortal.height,
+    },
+  ],
   icon: ICON_EMOJI.robot,
   ariaLabel: ARIA_LABELS.emoji.robot,
   title: overview.title,

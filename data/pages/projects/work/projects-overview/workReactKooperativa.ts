@@ -21,9 +21,9 @@ export const workReactKooperativa: Project = {
   isFeatured: false,
   image: kooperativaProjectPreview.src,
   galleryImages: [
-    { id: 0, src: kooperativa1.src },
-    { id: 1, src: kooperativa2.src },
-    { id: 2, src: kooperativa3.src },
+    { id: 0, src: kooperativa1.src, width: kooperativa1.width, height: kooperativa1.height },
+    { id: 1, src: kooperativa2.src, width: kooperativa2.width, height: kooperativa2.height },
+    { id: 2, src: kooperativa3.src, width: kooperativa3.width, height: kooperativa3.height },
   ],
   icon: ICON_EMOJI.umbrellaWithRainDrops,
   ariaLabel: ARIA_LABELS.emoji.umbrellaWithRainDrops,

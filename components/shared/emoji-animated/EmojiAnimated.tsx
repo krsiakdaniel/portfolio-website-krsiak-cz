@@ -8,10 +8,10 @@ const EmojiAnimated = ({
   size,
   alt,
   loading = ImageLoadingEnum.LAZY,
+  priority = false,
   className = '',
 }: EmojiAnimatedProps) => {
   const src = `/images/webp/emoji-animated/${size}x${size}/${icon}-animated-${size}x${size}.webp`
-  const isPriority = loading === ImageLoadingEnum.EAGER
 
   return (
     <div className={className}>
@@ -21,7 +21,7 @@ const EmojiAnimated = ({
         height={size}
         alt={alt}
         loading={loading}
-        priority={isPriority}
+        priority={priority}
       />
     </div>
   )

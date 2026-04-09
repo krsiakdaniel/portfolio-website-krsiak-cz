@@ -5,5 +5,6 @@ export type EmojiAnimatedProps = {
   size: EmojiSizeEnum
   alt: string
   loading?: ImageLoadingEnum
+  priority?: boolean
   className?: string
 }

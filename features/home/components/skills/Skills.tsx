@@ -31,7 +31,7 @@ const Skills = () => {
         <Paragraph
           textColor="text-neutral-600"
           size="text-base"
-          customCss="w-[270px] text-center italic md:w-[520px]"
+          customCss="max-w-[270px] text-center italic md:max-w-[640px]"
         >
           {TEXT.skillsIconsNames}
         </Paragraph>
