@@ -57,6 +57,7 @@ const Testimonials = () => {
           description={TESTIMONIALS.sections.professional.description}
           testimonials={workTestimonials}
         />
+        <CallToActionLinkedIn />
 
         {/* Character */}
         <TestimonialsSection
@@ -75,7 +76,6 @@ const Testimonials = () => {
           description={TESTIMONIALS.sections.fitnessCoach.description}
           testimonials={fitnessCoachTestimonials}
         />
-        <CallToActionLinkedIn />
       </div>
 
       <PageNavigation
