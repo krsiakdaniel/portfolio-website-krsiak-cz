@@ -22,7 +22,7 @@ const CallToAction = ({
   hasPhoto = false,
 }: CallToActionProps) => {
   return (
-    <div className="group relative mt-20">
+    <div className="group relative my-40">
       <CallToActionBubbles />
 
       <section className="relative rounded-lg border border-violet-300 bg-blue-50 p-8 transition duration-300 hover:border-violet-500 md:p-16">
