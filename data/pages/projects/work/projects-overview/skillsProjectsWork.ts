@@ -38,6 +38,7 @@ export const iconsSkillsProjectsWorkSmartsuppDashboard: Icon[] = getSkillsIcons(
 export const iconsSkillsProjectsWorkKooperativa: Icon[] = getSkillsIcons([
   SkillIconEnum.TypeScript,
   SkillIconEnum.React,
+  SkillIconEnum.Next,
   SkillIconEnum.Redux,
   SkillIconEnum.Tailwind,
   SkillIconEnum.Figma,

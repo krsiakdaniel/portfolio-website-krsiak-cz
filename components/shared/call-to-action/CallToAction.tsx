@@ -25,7 +25,7 @@ const CallToAction = ({
     <div className="group relative mt-20">
       <CallToActionBubbles />
 
-      <section className="relative rounded-lg border border-violet-300 bg-blue-50 p-8 transition duration-300 hover:border-violet-600 md:p-16">
+      <section className="relative rounded-lg border border-violet-300 bg-blue-50 p-8 transition duration-300 hover:border-violet-500 md:p-16">
         <div className="flex">
           <div className="pr-0 md:w-2/3 md:pr-8">
             <CallToActionTexts
@@ -47,7 +47,7 @@ const CallToAction = ({
 
           <div className={`hidden items-center justify-center md:flex md:w-1/3`}>
             {hasPhoto ? (
-              <Photo isPhotoSmall={true} isOpenToWork={IS_OPEN_TO_WORK} showCaption={false} />
+              <Photo isPhotoSmall={true} isOpenToWork={IS_OPEN_TO_WORK} />
             ) : (
               <CallToActionIcon type={DeviceTypeEnum.Desktop} icon={icon} />
             )}

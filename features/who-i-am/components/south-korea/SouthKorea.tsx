@@ -18,7 +18,7 @@ import { SOUTH_KOREA } from '../../localization'
 import { SOUTH_KOREA_IMAGES } from './SouthKorea.constants'
 
 const SouthKorea = () => {
-  const imageComponentCSS = 'border rounded-lg border border-violet-300 bg-violet-50 p-1 shadow-md'
+  const imageComponentCss = 'border rounded-lg border border-violet-300 bg-violet-50 p-1'
 
   return (
     <section>
@@ -54,7 +54,7 @@ const SouthKorea = () => {
               alt={SOUTH_KOREA.hiking}
               priority={true}
               loading={ImageLoadingEnum.EAGER}
-              customCss={imageComponentCSS}
+              customCss={imageComponentCss}
               dataTestId={DATA_TEST_IDS.southKorea.hiking}
             />
           </div>
@@ -81,7 +81,7 @@ const SouthKorea = () => {
               alt={SOUTH_KOREA.nature}
               priority={true}
               loading={ImageLoadingEnum.EAGER}
-              customCss={imageComponentCSS}
+              customCss={imageComponentCss}
               dataTestId={DATA_TEST_IDS.southKorea.nature}
             />
           </div>
@@ -95,7 +95,7 @@ const SouthKorea = () => {
             alt={SOUTH_KOREA.temple}
             priority={true}
             loading={ImageLoadingEnum.EAGER}
-            customCss={imageComponentCSS}
+            customCss={imageComponentCss}
             dataTestId={DATA_TEST_IDS.southKorea.temple}
           />
         </div>
@@ -108,7 +108,7 @@ const SouthKorea = () => {
             alt={SOUTH_KOREA.palace}
             priority={true}
             loading={ImageLoadingEnum.EAGER}
-            customCss={imageComponentCSS}
+            customCss={imageComponentCss}
             dataTestId={DATA_TEST_IDS.southKorea.palace}
           />
         </div>

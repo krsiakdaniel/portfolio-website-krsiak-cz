@@ -23,7 +23,9 @@ const ProjectCompactCard = ({
   title,
   years,
 }: ProjectCompactCardProps) => {
-  const borderClassCss = isFeatured ? 'border-yellow-300' : 'border-violet-300'
+  const borderClassCss = isFeatured
+    ? 'border-yellow-300 hover:border-yellow-500'
+    : 'border-violet-300 hover:border-violet-500'
   const thumbnailColorCss = isFeatured
     ? 'border-yellow-300 bg-yellow-50'
     : 'border-violet-300 bg-violet-50'
@@ -32,7 +34,7 @@ const ProjectCompactCard = ({
     <Link
       href={linkProjectPage}
       data-testid={dataTestId}
-      className={`group relative flex flex-col rounded-lg border bg-white shadow-sm transition-all hover:scale-[1.01] hover:shadow-md ${borderClassCss}`}
+      className={`group relative flex flex-col rounded-lg border bg-white transition-all duration-300 ease-in-out hover:scale-101 ${borderClassCss}`}
     >
       {isFeatured && (
         <span

@@ -33,6 +33,7 @@ export const workViteO2itsPublicTendersPortal: Project = {
       skillsList: [
         SkillsEnum.TypeScript,
         SkillsEnum.React,
+        SkillsEnum.Vite,
         SkillsEnum.MaterialUI,
         SkillsEnum.ReactHookForm,
         SkillsEnum.Zod,

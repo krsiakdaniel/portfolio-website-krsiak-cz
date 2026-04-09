@@ -34,7 +34,6 @@ const SocialLinkIcon = ({
         height={height}
         alt={imgAlt}
         loading={ImageLoadingEnum.EAGER}
-        customCss="shadow-md"
         sizes={`${isMobile ? SOCIAL_ICON.MOBILE.WIDTH : SOCIAL_ICON.DESKTOP.WIDTH}px`}
       />
     </a>

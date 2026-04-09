@@ -7,7 +7,7 @@ import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 import { TEXT } from '@/localization'
 
 const LinkButton = ({ href, linkText, isLinkExternal = false, dataTestId }: LinkButtonProps) => {
-  const hoverAndFocusCSS =
+  const hoverAndFocusCss =
     'hover:bg-violet-800 focus:bg-violet-800 focus:outline-hidden focus:ring-4 focus:ring-violet-400'
 
   const baseCss =
@@ -19,7 +19,7 @@ const LinkButton = ({ href, linkText, isLinkExternal = false, dataTestId }: Link
       target={isLinkExternal ? '_blank' : '_self'}
       rel={isLinkExternal ? 'noopener noreferrer' : 'next'}
       title={isLinkExternal ? `${linkText} - ${TEXT.opensInNewTab}` : linkText}
-      className={`${baseCss} bg-violet-600 ${hoverAndFocusCSS} ${CSS_GLOBAL_CLASSES.LINK_BUTTON}`}
+      className={`${baseCss} bg-violet-600 ${hoverAndFocusCss} ${CSS_GLOBAL_CLASSES.LINK_BUTTON}`}
       data-testid={dataTestId}
     >
       <span>{linkText}</span>

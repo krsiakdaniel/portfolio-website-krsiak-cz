@@ -11,7 +11,7 @@ const BreadcrumbsItem = ({
   text,
   showSeparatorIcon = true,
 }: BreadcrumbsItemProps) => {
-  const hoverAndFocusCSS = 'hover:bg-violet-50 hover:text-violet-800'
+  const hoverAndFocusCss = 'hover:bg-violet-50 hover:text-violet-800'
 
   return (
     <li className="inline-flex items-center">
@@ -22,7 +22,7 @@ const BreadcrumbsItem = ({
       )}
       <Link
         href={href}
-        className={`rounded-lg p-2 text-sm font-medium text-neutral-600 select-none ${hoverAndFocusCSS}`}
+        className={`rounded-lg p-2 text-sm font-medium text-neutral-600 select-none ${hoverAndFocusCss}`}
       >
         <span role="img" aria-label={ariaLabel} className="select-none">
           {icon}

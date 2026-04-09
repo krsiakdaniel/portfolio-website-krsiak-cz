@@ -4,7 +4,7 @@ import Paragraph from '@/components/shared/paragraph/Paragraph'
 import ScanMyContactQR from '@/components/shared/scan-my-contact-qr/ScanMyContactQR'
 
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
-import { QR_CODE } from '@/lib/utils/constants/shared/qrCode'
+import { QR_CODE_SIZE } from '@/lib/utils/constants/shared/qrCode'
 
 import { SHARED, TEXT } from '@/localization'
 
@@ -33,11 +33,7 @@ const ResumeContact = () => {
       </div>
 
       <div className="mt-10 flex">
-        <ScanMyContactQR
-          width={QR_CODE.LARGE.WIDTH}
-          height={QR_CODE.LARGE.HEIGHT}
-          showImageCaption={true}
-        />
+        <ScanMyContactQR width={QR_CODE_SIZE.LARGE.WIDTH} height={QR_CODE_SIZE.LARGE.HEIGHT} />
       </div>
     </>
   )

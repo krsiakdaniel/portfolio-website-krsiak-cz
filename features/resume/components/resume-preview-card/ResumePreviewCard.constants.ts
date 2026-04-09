@@ -1,4 +1,4 @@
 export const RESUME_PREVIEW_IMAGE = {
-  WIDTH: 610,
+  WIDTH: 680,
   HEIGHT: 790,
 } as const

@@ -24,7 +24,6 @@ const ImageComponent = ({
   sizes,
   placeholder = 'empty',
   blurDataURL = '',
-  caption = '',
   dataTooltipContent = '',
   dataTestId = '',
 }: ImageComponentProps) => {
@@ -40,7 +39,7 @@ const ImageComponent = ({
   const isImageAnimated = imagePath.toLowerCase().includes('animated')
 
   return (
-    <figure>
+    <>
       {hasTooltip && <Tooltip id={ID.reactTooltip} className={`z-20 select-none`} />}
 
       <Image
@@ -61,8 +60,7 @@ const ImageComponent = ({
         {...(dataTestId && { 'data-testid': dataTestId })}
         unoptimized={isImageAnimated}
       />
-      {caption && <figcaption>{caption}</figcaption>}
-    </figure>
+    </>
   )
 }
 

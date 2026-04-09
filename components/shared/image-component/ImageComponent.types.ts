@@ -1,5 +1,3 @@
-import { ReactNode } from 'react'
-
 import { StaticImageData } from 'next/image'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'
@@ -20,7 +18,6 @@ import { PlaceholderValue } from '@/node_modules/next/dist/shared/lib/get-img-pr
  * @property {string} [sizes] - Optional sizes attribute for responsive images.
  * @property {PlaceholderValue} [placeholder] - Optional placeholder strategy ('blur' or 'empty').
  * @property {string} [blurDataURL] - Optional Base64 data URL to use as blur placeholder.
- * @property {string | ReactNode} [caption] - Optional caption to display below the image.
  * @property {string | null} [dataTooltipContent] - Optional tooltip content.
  * @property {string} [dataTestId] - Optional test ID for testing frameworks.
  */
@@ -35,7 +32,6 @@ export type ImageComponentProps = {
   sizes?: string
   placeholder?: PlaceholderValue
   blurDataURL?: string
-  caption?: string | ReactNode
   dataTooltipContent?: string | null
   dataTestId?: string
 }

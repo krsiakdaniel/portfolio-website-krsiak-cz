@@ -22,7 +22,7 @@ const TestimonialPersonInfo = ({
       height={TESTIMONIAL_PERSON_PHOTO.HEIGHT}
       alt={name}
       loading={ImageLoadingEnum.LAZY}
-      customCss="rounded-full border border-violet-300 bg-violet-50 p-1 shadow-md"
+      customCss="rounded-full border border-violet-300 bg-violet-50 p-1"
       sizes={`${TESTIMONIAL_PERSON_PHOTO.WIDTH}px`}
     />
 

@@ -51,11 +51,6 @@ export const workNextO2itsAiPoweredChatDashboard: Project = {
       description: SkillCategoryEnum.AI,
       skillsList: [SkillsEnum.AI],
     },
-    {
-      id: 3,
-      description: SkillCategoryEnum.Other,
-      skillsList: [SkillsEnum.Jira],
-    },
   ],
   linkText: overview.linkText,
   projectLinks: [
