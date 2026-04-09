@@ -53,10 +53,7 @@ const ProjectSectionGrid = ({
                 {item.company}
               </h3>
               <p className="text-xl font-medium text-violet-600">{item.role}</p>
-              <p className="text-sm text-neutral-500">
-                {item.description}
-                {item.years && <span className="ml-1 text-neutral-400">· {item.years}</span>}
-              </p>
+              <p className="text-sm text-neutral-500">{item.description}</p>
 
               {item.svgIcons?.length || item.emojiIcons?.length ? (
                 <div className="mt-4 flex flex-wrap items-center gap-2">
