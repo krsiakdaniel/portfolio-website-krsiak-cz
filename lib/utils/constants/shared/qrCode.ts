@@ -1,7 +1,7 @@
 export const QR_CODE_SIZE = {
   SMALL: {
-    WIDTH: 256,
-    HEIGHT: 256,
+    WIDTH: 280,
+    HEIGHT: 280,
   },
   LARGE: {
     WIDTH: 420,
