@@ -1,10 +1,11 @@
 import { resumePreviewCardData } from '@/data/pages/resume/preview-cards/resumePreviewCards'
+import { ARIA_LABELS } from '@/localization'
 
 import ResumePreviewCard from '../resume-preview-card/ResumePreviewCard'
 
 const ResumePreviewSection = () => {
   return (
-    <section>
+    <section aria-label={ARIA_LABELS.resumePreviewSection}>
       <div className="grid md:grid-cols-2 md:gap-8">
         {resumePreviewCardData.map((card) => (
           <ResumePreviewCard

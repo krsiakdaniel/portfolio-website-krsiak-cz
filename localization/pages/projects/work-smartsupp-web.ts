@@ -4,7 +4,9 @@ import { PROJECTS_WORK_URLS } from '@/lib/utils/constants/urls/projectsUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
+import { ARIA_LABELS } from '../../accessibility/aria'
 import { CUSTOMERS_COUNT } from '../../constants/customers'
+import { ICON_EMOJI } from '../../constants/iconsEmoji'
 
 export const PROJECTS_WORK_SMARTSUPP_WEB = {
   sections: {
@@ -18,10 +20,29 @@ export const PROJECTS_WORK_SMARTSUPP_WEB = {
       title: 'Developed new website',
       items: ['The\u00A0main company website was built with PHP and\u00A0JavaScript.'],
     },
-    docs: {
-      title: 'Created new documentation site',
+    localization: {
+      title: 'Website localization',
       items: [
-        'I\u00A0created a\u00A0documentation site that was running on\u00A0Jekyll, Markdown, and\u00A0Shopify Liquid template language.',
+        {
+          text: `The\u00A0company had customers from different countries, I\u00A0was responsible for\u00A0the\u00A0localization into 9\u00A0languages.`,
+          flags: [
+            {
+              emoji: ICON_EMOJI.flagUnitedKingdom,
+              ariaLabel: ARIA_LABELS.emoji.flag.unitedKingdom,
+            },
+            {
+              emoji: ICON_EMOJI.flagCzechRepublic,
+              ariaLabel: ARIA_LABELS.emoji.flag.czechRepublic,
+            },
+            { emoji: ICON_EMOJI.flagSpain, ariaLabel: ARIA_LABELS.emoji.flag.spain },
+            { emoji: ICON_EMOJI.flagFrance, ariaLabel: ARIA_LABELS.emoji.flag.france },
+            { emoji: ICON_EMOJI.flagHungary, ariaLabel: ARIA_LABELS.emoji.flag.hungary },
+            { emoji: ICON_EMOJI.flagGermany, ariaLabel: ARIA_LABELS.emoji.flag.germany },
+            { emoji: ICON_EMOJI.flagItaly, ariaLabel: ARIA_LABELS.emoji.flag.italy },
+            { emoji: ICON_EMOJI.flagNetherlands, ariaLabel: ARIA_LABELS.emoji.flag.netherlands },
+            { emoji: ICON_EMOJI.flagPoland, ariaLabel: ARIA_LABELS.emoji.flag.poland },
+          ],
+        },
       ],
     },
   },

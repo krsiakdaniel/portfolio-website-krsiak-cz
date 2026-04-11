@@ -3,6 +3,8 @@ import ProjectDetails from '@/components/shared/projects/project-details/Project
 import ProjectImage from '@/components/shared/projects/project-image/ProjectImage'
 import ProjectSkillsIcons from '@/components/shared/projects/project-skills-icons/ProjectSkillsIcons'
 
+import { ARIA_LABELS } from '@/localization'
+
 import { ProjectSummaryCardProps } from './ProjectSummaryCard.types'
 
 const ProjectSummaryCard = ({
@@ -23,7 +25,7 @@ const ProjectSummaryCard = ({
   className,
 }: ProjectSummaryCardProps) => {
   return (
-    <section>
+    <section aria-label={`${ARIA_LABELS.projectSummary}: ${title}`}>
       <div className={`grid grid-cols-1 gap-8 lg:grid-cols-2 ${className}`}>
         <ProjectImage isFeatured={isFeatured} image={image} title={title} />
         <div>

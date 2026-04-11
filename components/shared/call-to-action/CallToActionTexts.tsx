@@ -9,6 +9,7 @@ import { CallToActionTextsProps } from './CallToActionTexts.types'
 
 const CallToActionTexts = ({
   icon,
+  iconAlt,
   highlight,
   heading,
   textMobileAndDesktop,
@@ -17,7 +18,7 @@ const CallToActionTexts = ({
   return (
     <>
       <div className="mb-2 flex items-end space-x-2 uppercase md:space-x-0">
-        <CallToActionIcon type={DeviceTypeEnum.Mobile} icon={icon} />
+        <CallToActionIcon type={DeviceTypeEnum.Mobile} icon={icon} iconAlt={iconAlt} />
         <Highlight text={highlight} customCss="text-violet-800" />
       </div>
       <Heading as="h2" textColor="text-neutral-900">

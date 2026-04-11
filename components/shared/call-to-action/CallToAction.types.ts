@@ -10,5 +10,6 @@ export type CallToActionProps = {
   isLinkExternal?: boolean
   dataTestId: string
   icon: string | StaticImageData
+  iconAlt?: string
   hasPhoto?: boolean
 }

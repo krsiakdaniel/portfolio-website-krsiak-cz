@@ -7,5 +7,10 @@ export const buildWorkSection = (sectionsData: Record<string, WorkSection>): Sec
     id: sectionIndex,
     title: section.title,
     titleHighlight: section.titleHighlight ?? '',
-    items: section.items.map((text, itemIndex) => ({ id: `${sectionIndex}-${itemIndex}`, text })),
+    items: section.items.map((item, itemIndex) => {
+      if (typeof item === 'string') {
+        return { id: `${sectionIndex}-${itemIndex}`, text: item }
+      }
+      return { id: `${sectionIndex}-${itemIndex}`, text: item.text, flags: item.flags }
+    }),
   }))

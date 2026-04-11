@@ -1,15 +1,42 @@
 export const IMAGE_ALT = {
-  altWelcome: 'Hi :)',
-  altLogo: 'logo',
-  altDefault: 'image',
-  altIconQuote: 'icon-quote',
-  altMicrosoft: 'Microsoft',
-  altSmartsupp: 'Smartsupp',
-  altKooperativa: 'Kooperativa',
-  altGroupon: 'Groupon',
-  altIbm: 'IBM',
-  altRwsMoravia: 'RWS — Moravia',
-  altKomercniBanka: 'Komerční Banka',
-  altBata: 'Baťa',
-  altEmojiRobot: 'Robot Emoji',
+  // Generic fallback
+  default: 'Image',
+
+  // Site UI
+  logo: 'krsiak.cz logo',
+  layoutListView: 'List view',
+  layoutGridView: 'Grid view',
+
+  // Homepage
+  welcome: 'Animated sunglasses emoji',
+
+  // Profile
+  profilePhoto: 'Daniel Kršiak — React Developer',
+  openToWork: 'Open to work',
+
+  // Contact
+  contactQRCode: 'Contact Me — QR code',
+
+  // Resume
+  resumePreviewPDF: 'Resume PDF Preview',
+  resumePreviewDOCX: 'Resume DOCX Preview',
+
+  // Social icons
+  gitHub: 'GitHub',
+  linkedIn: 'LinkedIn',
+
+  // Animated emojis
+  emojiRocket: 'Rocket emoji',
+  emojiStar: 'Star emoji',
+  emojiRobot: 'Robot emoji',
+
+  // Company logos
+  microsoft: 'Microsoft',
+  smartsupp: 'Smartsupp',
+  kooperativa: 'Kooperativa',
+  groupon: 'Groupon',
+  ibm: 'IBM',
+  rwsMoravia: 'RWS — Moravia',
+  komercniBanka: 'Komerční Banka',
+  bata: 'Baťa',
 }

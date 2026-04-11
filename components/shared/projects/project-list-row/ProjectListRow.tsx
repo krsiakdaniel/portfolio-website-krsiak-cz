@@ -30,7 +30,7 @@ const ProjectListRow = ({
             </span>
             {title}
             <span className="flex-shrink-0 text-neutral-300 transition-colors group-hover:text-violet-500">
-              <ArrowRight className="block h-4 w-4" />
+              <ArrowRight aria-hidden="true" className="block h-4 w-4" />
             </span>
           </h3>
           <span className="flex-shrink-0 text-sm text-neutral-400 group-hover:text-neutral-600">

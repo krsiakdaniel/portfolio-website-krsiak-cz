@@ -3,11 +3,11 @@ import EmojiAnimated from '@/components/shared/emoji-animated/EmojiAnimated'
 import { getEmojiEnum } from '@/lib/utils/helpers/getEmojiEnum'
 
 import { DeviceTypeEnum, EmojiSizeEnum, ImageLoadingEnum } from '@/lib/types/enums'
-import { SOCIAL_LINKS } from '@/localization'
+import { IMAGE_ALT } from '@/localization'
 
 import { CallToActionIconProps } from './CallToActionIcon.types'
 
-const CallToActionIcon = ({ type, icon }: CallToActionIconProps) => {
+const CallToActionIcon = ({ type, icon, iconAlt = IMAGE_ALT.default }: CallToActionIconProps) => {
   const isMobile = type === DeviceTypeEnum.Mobile
   const size = isMobile ? EmojiSizeEnum.SM : EmojiSizeEnum.LG
   const isIconString = typeof icon === 'string'
@@ -24,7 +24,7 @@ const CallToActionIcon = ({ type, icon }: CallToActionIconProps) => {
         <EmojiAnimated
           icon={getEmojiEnum(icon.src)}
           size={size}
-          alt={SOCIAL_LINKS.gitHub}
+          alt={iconAlt}
           loading={ImageLoadingEnum.EAGER}
         />
       )}

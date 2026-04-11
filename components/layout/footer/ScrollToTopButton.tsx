@@ -48,7 +48,7 @@ const ScrollToTopButton = () => {
       aria-label={ARIA_LABELS.scrollToTopPage}
       title={FOOTER.scrollToTop}
     >
-      <ArrowUp className="h-5 w-5" />
+      <ArrowUp aria-hidden="true" className="h-5 w-5" />
     </button>
   )
 }

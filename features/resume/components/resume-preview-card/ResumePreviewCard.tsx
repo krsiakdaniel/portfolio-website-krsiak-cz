@@ -7,6 +7,7 @@ import LinkButton from '@/components/shared/link-button/LinkButton'
 import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'
+import { ARIA_LABELS, TEXT } from '@/localization'
 
 import { RESUME_PREVIEW_IMAGE } from './ResumePreviewCard.constants'
 import { ResumePreviewCardProps } from './ResumePreviewCard.types'
@@ -29,7 +30,13 @@ const ResumePreviewCard = ({
       </Paragraph>
 
       <div className="mt-4">
-        <Link href={href} target="_blank" rel="noopener noreferrer" data-testid={dataTestId.image}>
+        <Link
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid={dataTestId.image}
+          aria-label={`${ARIA_LABELS.resumePreview} — ${imageAlt} (${TEXT.opensInNewTab})`}
+        >
           <div className="bg-white">
             <ImageComponent
               src={imageSrc}

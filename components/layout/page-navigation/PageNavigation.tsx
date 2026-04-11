@@ -5,6 +5,7 @@ import PageNavigationLink from '@/components/layout/page-navigation/PageNavigati
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { ArrowDirectionEnum } from '@/lib/types/enums'
+import { ARIA_LABELS } from '@/localization'
 
 const PageNavigation = ({
   linkPrevious,
@@ -20,7 +21,7 @@ const PageNavigation = ({
   const hasNextLink = linkNext && nameNext
 
   return (
-    <nav data-testid={DATA_TEST_IDS.navigation.END_OF_PAGE}>
+    <nav data-testid={DATA_TEST_IDS.navigation.END_OF_PAGE} aria-label={ARIA_LABELS.pageNavigation}>
       <div className="container mx-auto mt-20 max-w-(--breakpoint-xl)">
         <div
           className={`flex flex-col gap-4 md:flex-row ${hasPreviousLink ? 'justify-between' : 'justify-end'}`}

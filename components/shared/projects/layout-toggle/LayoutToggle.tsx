@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { LayoutViewEnum } from '@/lib/types/enums'
+import { IMAGE_ALT } from '@/localization'
 
 import { LayoutToggleProps } from './LayoutToggle.types'
 
@@ -14,14 +15,14 @@ const LayoutToggle = ({ activeView, onListClick, onGridClick }: LayoutToggleProp
       {/* List view button */}
       <button
         type="button"
-        aria-label="List view"
+        aria-label={IMAGE_ALT.layoutListView}
         data-testid="layout-toggle-list"
         onClick={onListClick}
         className={`select-none cursor-pointer ${activeView === LayoutViewEnum.List ? activeClassCss : inactiveClassCss}`}
       >
         <Image
           src="/icons/svg/layout-toggle/layout-list.svg"
-          alt="List view"
+          alt={IMAGE_ALT.layoutListView}
           width={16}
           height={16}
         />
@@ -30,14 +31,14 @@ const LayoutToggle = ({ activeView, onListClick, onGridClick }: LayoutToggleProp
       {/* Grid view button */}
       <button
         type="button"
-        aria-label="Grid view"
+        aria-label={IMAGE_ALT.layoutGridView}
         data-testid="layout-toggle-grid"
         onClick={onGridClick}
         className={`select-none cursor-pointer ${activeView === LayoutViewEnum.Grid ? activeClassCss : inactiveClassCss}`}
       >
         <Image
           src="/icons/svg/layout-toggle/layout-grid.svg"
-          alt="Grid view"
+          alt={IMAGE_ALT.layoutGridView}
           width={16}
           height={16}
         />

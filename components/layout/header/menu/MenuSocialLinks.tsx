@@ -8,7 +8,7 @@ import iconGitHub from '@/public/icons/svg/social/github.svg'
 import iconLinkedIn from '@/public/icons/svg/social/linkedin.svg'
 
 import { DeviceTypeEnum } from '@/lib/types/enums'
-import { TEXT } from '@/localization'
+import { IMAGE_ALT, TEXT } from '@/localization'
 
 import { MenuSocialLinksProps } from './MenuSocialLinks.types'
 
@@ -32,7 +32,7 @@ const MenuSocialLinks = ({ type }: MenuSocialLinksProps) => {
         title={`${TEXT.gitHub} - ${TEXT.opensInNewTab}`}
         ariaLabel={TEXT.gitHub}
         imgSrc={iconGitHub}
-        imgAlt={TEXT.gitHub}
+        imgAlt={IMAGE_ALT.gitHub}
       />
 
       <SocialLinkIcon
@@ -42,7 +42,7 @@ const MenuSocialLinks = ({ type }: MenuSocialLinksProps) => {
         title={`${TEXT.linkedIn} - ${TEXT.opensInNewTab}`}
         ariaLabel={TEXT.linkedIn}
         imgSrc={iconLinkedIn}
-        imgAlt={TEXT.linkedIn}
+        imgAlt={IMAGE_ALT.linkedIn}
       />
     </div>
   )

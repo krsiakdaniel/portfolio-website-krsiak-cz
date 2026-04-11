@@ -76,7 +76,7 @@ const ProjectCompactCard = ({
 
         <div className="mt-auto flex items-center gap-1 pt-2 text-base font-medium text-violet-600">
           <span>{linkText}</span>
-          <ArrowRight className="block h-4 w-4" />
+          <ArrowRight aria-hidden="true" className="block h-4 w-4" />
         </div>
       </div>
     </Link>

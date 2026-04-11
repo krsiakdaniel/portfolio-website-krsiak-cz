@@ -17,7 +17,8 @@ const GoBackLink = ({ goBackLink, sectionID }: GoBackLinkProps) => {
         href={goBackUrlWithID}
         className="inline-flex items-center space-x-2 rounded-lg px-2 py-0.5 text-neutral-600 hover:bg-gray-100 hover:text-neutral-800"
       >
-        <ArrowRight className="block h-4 w-4 rotate-180" /> <span>{TEXT.goBack}</span>
+        <ArrowRight aria-hidden="true" className="block h-4 w-4 rotate-180" />{' '}
+        <span>{TEXT.goBack}</span>
       </Link>
     </div>
   )

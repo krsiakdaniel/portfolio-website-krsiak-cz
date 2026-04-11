@@ -32,7 +32,7 @@ const SocialLink = ({
       data-testid={dataTestId}
     >
       <span>{text}</span>
-      <ExternalLink className="h-3 w-3" />
+      <ExternalLink aria-hidden="true" className="h-3 w-3" />
     </a>
   )
 }

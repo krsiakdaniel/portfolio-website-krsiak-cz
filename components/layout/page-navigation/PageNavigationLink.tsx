@@ -26,7 +26,7 @@ const PageNavigationLink = ({
       className={`flex w-full items-center space-x-2 rounded-lg border border-dashed border-violet-200 bg-violet-50 p-4 font-bold text-violet-600 ${justifyArrowCss} ${hoverAndFocusCss} select-none lg:w-1/2`}
       data-testid={dataTestId}
     >
-      {hasArrowLeft && <ArrowRight className="block h-4 w-4 rotate-180" />}
+      {hasArrowLeft && <ArrowRight aria-hidden="true" className="block h-4 w-4 rotate-180" />}
       <span
         role="img"
         aria-label={hasArrowLeft ? COMMON_VALUES.navigationPrevious : COMMON_VALUES.navigationNext}
@@ -34,7 +34,7 @@ const PageNavigationLink = ({
         {icon}
       </span>
       <span>{text}</span>
-      {hasArrowRight && <ArrowRight className="block h-4 w-4" />}
+      {hasArrowRight && <ArrowRight aria-hidden="true" className="block h-4 w-4" />}
     </a>
   )
 }

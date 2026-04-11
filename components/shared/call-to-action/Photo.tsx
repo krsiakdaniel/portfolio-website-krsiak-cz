@@ -7,7 +7,7 @@ import openToWorkLG from '@/public/images/webp/photo/linkedin/open-to-work-296x2
 import krsiakPhoto from '@/public/images/webp/photo/me/krsiak-daniel-600x600.webp'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'
-import { TEXT } from '@/localization'
+import { IMAGE_ALT } from '@/localization'
 
 import { PHOTO_DIMENSIONS } from './Photo.constants'
 import { PhotoProps } from './Photo.types'
@@ -21,7 +21,7 @@ const Photo = ({ isPhotoSmall = false, isOpenToWork = false }: PhotoProps) => {
           src={krsiakPhoto}
           width={isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.WIDTH : PHOTO_DIMENSIONS.LARGE.WIDTH}
           height={isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.HEIGHT : PHOTO_DIMENSIONS.LARGE.HEIGHT}
-          alt={TEXT.nameDanielKrsiak}
+          alt={IMAGE_ALT.profilePhoto}
           loading={ImageLoadingEnum.LAZY}
           customCss="rounded-full border border-violet-300 bg-white p-1"
           dataTestId={DATA_TEST_IDS.misc.linkedinPhoto}
@@ -34,7 +34,7 @@ const Photo = ({ isPhotoSmall = false, isOpenToWork = false }: PhotoProps) => {
             src={isPhotoSmall ? openToWorkSM : openToWorkLG}
             width={isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.WIDTH : PHOTO_DIMENSIONS.LARGE.WIDTH}
             height={isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.HEIGHT : PHOTO_DIMENSIONS.LARGE.HEIGHT}
-            alt={TEXT.openToWork}
+            alt={IMAGE_ALT.openToWork}
             loading={ImageLoadingEnum.LAZY}
             customCss="absolute left-0 top-0 h-full w-full"
             sizes={`${isPhotoSmall ? PHOTO_DIMENSIONS.SMALL.WIDTH : PHOTO_DIMENSIONS.LARGE.WIDTH}px`}

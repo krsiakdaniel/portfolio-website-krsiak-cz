@@ -24,9 +24,9 @@ const LinkButton = ({ href, linkText, isLinkExternal = false, dataTestId }: Link
     >
       <span>{linkText}</span>
       {isLinkExternal ? (
-        <ExternalLink className="h-3 w-3" />
+        <ExternalLink aria-hidden="true" className="h-3 w-3" />
       ) : (
-        <ArrowRight className="block h-4 w-4" />
+        <ArrowRight aria-hidden="true" className="block h-4 w-4" />
       )}
     </a>
   )

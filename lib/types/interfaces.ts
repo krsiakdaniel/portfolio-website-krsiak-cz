@@ -27,8 +27,9 @@ export type MetaDataKeywords = Record<string, string>
 export interface OtherExperienceData {
   readonly id: number
   readonly icon?: string
+  readonly iconAriaLabel?: string
   readonly svgIcons?: readonly string[]
-  readonly emojiIcons?: readonly string[]
+  readonly emojiIcons?: readonly { emoji: string; ariaLabel: string }[]
   readonly company: string
   readonly role: string
   readonly years?: string
@@ -96,6 +97,7 @@ export interface Section {
 export interface SectionItem {
   readonly id: string
   readonly text: string
+  readonly flags?: readonly { emoji: string; ariaLabel: string }[]
 }
 
 // Skill

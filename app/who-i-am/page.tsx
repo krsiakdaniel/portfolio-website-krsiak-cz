@@ -34,7 +34,7 @@ const WhoIAm = () => {
       />
 
       <div className="mt-10">
-        <section>
+        <section aria-label={WHO_I_AM.whoIAm}>
           <Heading as="h1">
             <span role="img" aria-label={ARIA_LABELS.emoji.wavingHand} className="mr-4 select-none">
               {ICON_EMOJI.wavingHand}
@@ -45,7 +45,7 @@ const WhoIAm = () => {
           <WhoIAmIntroduction />
         </section>
 
-        <section>
+        <section aria-label={SOUTH_KOREA.headingTravel}>
           <HeadingSection
             text={SOUTH_KOREA.headingTravel}
             icon={ICON_EMOJI.airplane}
