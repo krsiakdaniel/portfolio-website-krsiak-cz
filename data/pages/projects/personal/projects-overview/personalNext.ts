@@ -1,3 +1,8 @@
+import {
+  iconsSkillsProjectsPersonalKoreanEasy,
+  iconsSkillsProjectsPersonalKrsiak,
+} from '@/data/pages/projects/personal/projects-overview/skillsProjectsPersonal'
+
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
@@ -17,10 +22,6 @@ import krsiak3 from '@/public/images/webp/projects/personal/krsiak/krsiak-3.webp
 import krsiak4 from '@/public/images/webp/projects/personal/krsiak/krsiak-4.webp'
 import krsiakProjectPreview from '@/public/images/webp/projects/personal/krsiak/krsiak-project-preview.webp'
 
-import {
-  iconsSkillsProjectsPersonalKoreanEasy,
-  iconsSkillsProjectsPersonalKrsiak,
-} from '@/data/pages/projects/personal/projects-overview/skillsProjectsPersonal'
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'

@@ -7,12 +7,13 @@ import BreadCrumbs from '@/components/shared/breadcrumbs/Breadcrumbs'
 import CallToActionGitHub from '@/components/shared/call-to-action/cta-banners/CallToActionGitHub'
 import ProjectSection from '@/components/shared/projects/project-section/ProjectSection'
 
+import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/personalNext'
+
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/personalNext'
 import PersonalProjectsIntroduction from '@/features/personal-projects/components/personal-projects-introduction/PersonalProjectsIntroduction'
 import { metaDataPersonalProjects } from '@/features/personal-projects/metadata'
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'

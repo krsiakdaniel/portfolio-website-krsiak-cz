@@ -1,3 +1,5 @@
+import { iconsSkillsProjectsWorkKomercniBanka } from '@/data/pages/projects/work/projects-overview/skillsProjectsWork'
+
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
@@ -10,7 +12,6 @@ import komercniBanka3 from '@/public/images/webp/projects/work/komercni-banka/ko
 import komercniBanka4 from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-4-light.webp'
 import komercniBankaProjectPreview from '@/public/images/webp/projects/work/komercni-banka/komercni-banka-project-preview.webp'
 
-import { iconsSkillsProjectsWorkKomercniBanka } from '@/data/pages/projects/work/projects-overview/skillsProjectsWork'
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'

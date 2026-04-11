@@ -3,6 +3,9 @@ import { Metadata } from 'next'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
 
+import { sections } from '@/data/pages/projects/work/komercniBanka'
+import { projectsWorkReact } from '@/data/pages/projects/work/projects-overview/workReact'
+
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
@@ -10,8 +13,6 @@ import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrum
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { sections } from '@/data/pages/projects/work/komercniBanka'
-import { projectsWorkReact } from '@/data/pages/projects/work/projects-overview/workReact'
 import { metaDataKomercniBanka } from '@/features/work-komercni-banka/metadata'
 import { GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, TEXT } from '@/localization'

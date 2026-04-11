@@ -1,6 +1,6 @@
 {
   "name": "portfolio-website-krsiak-cz",
-  "version": "2.48.23",
+  "version": "2.48.24",
   "private": true,
   "scripts": {
     "dev": "bun next dev",

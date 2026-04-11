@@ -1,3 +1,5 @@
+import { iconsSkillsProjectsWorkSmartsuppHelp } from '@/data/pages/projects/work/projects-overview/skillsProjectsWork'
+
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
 import { PROJECTS_WORK_SMARTSUPP_HELP_OVERVIEW } from '@/localization/pages/projects/work-smartsupp-help'
@@ -8,7 +10,6 @@ import smartsuppHelp2 from '@/public/images/webp/projects/work/smartsupp-help/sm
 import smartsuppHelp3 from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-3-light.webp'
 import smartsuppHelpProjectPreview from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-project-preview.webp'
 
-import { iconsSkillsProjectsWorkSmartsuppHelp } from '@/data/pages/projects/work/projects-overview/skillsProjectsWork'
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'

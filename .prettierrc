@@ -10,7 +10,7 @@
     "<THIRD_PARTY_MODULES>",
     "^@/lib/hooks/(.*)$",
     "^@/components/(.*)$",
-    "^@/lib/data/(.*)$",
+    "^@/data/(.*)$",
     "^@/lib/utils/(.*)$",
     "^@/localization/(.*)$",
     "^@/__tests__/(.*)$",

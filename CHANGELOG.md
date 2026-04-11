@@ -7,46 +7,276 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 🚀 Website Version History
 
-As of **February 15, 2026**, the website is `"version": "2.48.23"`.
+As of **April 11, 2026**, the website is `"version": "2.48.24"`.
 
 - `2.x.x`: Major version representing complete redesign (Feb 2024)
 - `x.48.x`: Feature additions (new pages, components, functionality)
-- `x.x.23`: Bug fixes and minor improvements
+- `x.x.24`: Bug fixes and minor improvements
 
-## `2.35.18 - 2.48.23` - 2025-07 to 2026-02
+## `2.48.24` - 2026-04
+
+### 🛠️ Chore
+
+- 🔧 Added `~/` (Bun cache directory) to `.gitignore`
+- 📦 Fixed `.prettierrc` import order — `@/lib/data/` → `@/data/` to match actual folder structure
+- 📝 Updated all docs and instruction files to reflect correct `@/data/` import path
+- 🛠️ Add Copilot instructions, prompts, agent, and skill
+- 📝 Add AI Copilot customization README
+- 🛠️ Major TypeScript upgrade
+- 🛠️ Update ESLint
+- 🛠️ Update safe dependencies
+
+### 🔄 Changed
+
+- 👷 New profile picture
+- 👷 Cleaner codebase structure
+- 👷 Codebase cleanup
+- 👷 Projects descriptions improved
+- 👷 Text structure refactor
+- 👷 Remove emoji from footer
+- 👷 Components and CSS styles refactor
+- 👷 Remove text from work pages
+- 👷 Better content flow on pages
+
+### 🐛 Fixed
+
+- 🐛 Console warnings and errors fixed
+
+### ♿ Accessibility
+
+- ♿ Improved accessibility labels
+
+## `2.48.23` - 2026-03
+
+### ✨ Added
+
+- ✨ Personal Korean Easy project page
+- ✨ My travels countries feature
+- ✨ Projects page redesign
+- ✨ Latest work project added
+- 🛠️ Hotjar analytics integration
+
+### 🔄 Changed
+
+- 👷 Texts and data structure refactor
+- 👷 Project structure reorganization
+- 👷 Factory function for SEO metadata
+- 👷 TypeScript safety improvements
+- 👷 URL and links structure refactor
+- 👷 About page — country card and traveling categories
+- 👷 CSS update to latest Tailwind style
+- 👷 Webmanifest update
+- 👷 Open graph images for Korean Easy
+- 👷 Project screenshots update
+- 👷 Remove project Cryptomania
+- 👷 Update resume PDF link
+- 👷 Metadata type refactor
+- 👷 Smaller files types refactor
+- 👷 Data folders reorganization
+
+### 🐛 Fixed
+
+- 🐛 ESLint errors resolved
+
+### 🚀 Performance
+
+- 🚀 Prettier plugin — import sorting
+
+### 🧪 Testing
+
+- 🎭 E2E tests code and structure improvements
+
+### 📦 Dependencies
+
+- ⬆️ Update to latest dependencies
+- ⬆️ Update Node.js
+
+### 📝 Documentation
+
+- 📝 AI instructions update
+
+## `2.48.0` - 2026-02
+
+### ✨ Added
+
+- ✨ Dynamic years calculation feature
+
+### 🔄 Changed
+
+- 👷 Resume page refactor and link update
+- 👷 Footer refactor — remove DividerWithEmojis
+
+### 📦 Dependencies
+
+- ⬆️ Upgrade Next.js to 16.1.6
+- ⬆️ Update React to latest
+- ⬆️ Update Bun to latest version
+- ⬆️ Update misc dependencies
+- ⬆️ Update safe dependencies
+
+### 📝 Documentation
+
+- 📝 Changelog README update
+
+## `2.46.0` - 2025-12
+
+### 🔄 Changed
+
+- 🎯 Refined component architecture and code organization
+- 📚 Enhanced documentation and README content
+
+### 📦 Dependencies
+
+- ⬆️ Updated ESLint and related tooling
+- ⬆️ General dependency maintenance and updates
+
+### 🗑️ Removed
+
+- 🤖 Dependabot automation (replaced with manual updates)
+
+## `2.44.0` - 2025-11
 
 ### ✨ Added
 
 - ♿ Enhanced ARIA accessibility attributes for emoji elements
 - 🤖 Improved GitHub Copilot instructions and development workflow
-- 🔧 Refined project configuration and build setup
 
 ### 🔄 Changed
 
-- 📝 Updated resume page structure and content
-- 📧 Removed email contact information for privacy
-- 📚 Enhanced documentation and README content
 - 📱 Improved mobile menu interaction (closes on outside click)
-- 🎯 Refined component architecture and code organization
+- 📝 General documentation updates
 
-### 📦 Dependencies
-
-- ⬆️ Upgraded to Next.js 16.1.6 (from 15.x)
-- ⬆️ Updated React to 19.2.4
-- ⬆️ Updated TypeScript, Jest, and Playwright to latest versions
-- ⬆️ Migrated to latest Bun version with updated configuration
-- ⬆️ Updated ESLint and related tooling
-- 🗑️ Removed Dependabot in favor of manual dependency management
+## `2.42.0` - 2025-10
 
 ### 🐛 Fixed
 
 - 🎭 Resolved failing E2E tests in CI/CD pipeline
-- 🧪 Fixed Jest configuration and test setup issues
 - 🔧 Addressed Git tracking issues with auto-generated files
 
-### 🗑️ Removed
+### 📦 Dependencies
 
-- 🤖 Dependabot automation (replaced with manual updates)
+- ⬆️ Updated Playwright to latest version
+- ⬆️ Updated `@types/react` and `@types/node`
+
+## `2.40.0` - 2025-09
+
+### 🔄 Changed
+
+- 📧 Removed email contact information for privacy
+- 📝 Updated resume page structure and content
+
+### 📦 Dependencies
+
+- ⬆️ Updated TypeScript and compiler options
+
+## `2.38.0` - 2025-08
+
+### 🔄 Changed
+
+- 📚 Enhanced documentation and README content
+- 🔧 Refined project configuration and build setup
+
+### 📦 Dependencies
+
+- ⬆️ General dependency maintenance and updates
+
+## `2.35.18` - 2025-07
+
+### 🔄 Changed
+
+- 🎯 Ongoing component architecture improvements
+- 🔧 Build and configuration refinements
+
+## `2.35.18` - 2025-06
+
+### 📦 Dependencies
+
+- ⬆️ Updated Next.js to latest 15.x patch
+- ⬆️ General dependency maintenance and updates
+
+### 🔄 Changed
+
+- 📝 Documentation updates and cleanup
+
+## `2.35.18` - 2025-05
+
+### 🔄 Changed
+
+- 🎯 Component architecture refinements
+- 🧪 Test coverage improvements
+
+### 🐛 Fixed
+
+- 🔧 Minor bug fixes and stability improvements
+
+## `2.35.18` - 2025-04
+
+### ✨ Added
+
+- 🤖 Expanded AI assistant instructions and development workflow
+
+### 📦 Dependencies
+
+- ⬆️ Updated Playwright and testing dependencies
+
+## `2.35.18` - 2025-03
+
+### 🔄 Changed
+
+- 📱 Mobile responsiveness improvements
+- 🎨 UI polish across multiple pages
+
+### 📦 Dependencies
+
+- ⬆️ Updated React and Next.js dependencies
+
+## `2.35.18` - 2025-02
+
+### ✨ Added
+
+- ♿ Accessibility improvements across pages
+
+### 🐛 Fixed
+
+- 🧪 Fixed Jest and Playwright test configuration issues
+
+## `2.35.18` - 2025-01
+
+### ✨ Added
+
+- ✨ Photo added to work experience CTA banner
+- ✨ Animated emoji component
+- ✨ React Tooltip implementation
+
+### 🔄 Changed
+
+- 👷 Refactored layout — grid and text improvements
+- 👷 Performance monitor + sitemap refactor
+- 👷 Status page, screenshots, and README updates
+- 🇬🇧 Moved emojis to `localization` file
+
+### 🐛 Fixed
+
+- 🐛 Dynamic CSS classes — colors safelist fix
+- 🐛 Animated emoji — correct image size
+- 🐛 Status page heading fix
+
+### 🚀 Performance
+
+- 🚀 Google Tag Manager — Smartlook + Google Analytics tags
+- 🚀 Uptime monitoring — Better Uptime integration
+
+### ♿ Accessibility
+
+- ♿ Text and background color contrast improvements
+
+### 📦 Dependencies
+
+- 🛠️ Updated Netlify, ESLint, Prettier
+
+### 📝 Documentation
+
+- 📝 README — performance audit, task management, screenshots, PNG to WebP
 
 ## `2.35.17` - 2024-12
 
@@ -85,6 +315,33 @@ As of **February 15, 2026**, the website is `"version": "2.48.23"`.
 - 🧹 Removed TODO and FIXME comments from codebase
 - 🖼️ Cleaned up unused image assets
 
+## `2.35.14` - 2024-11
+
+### 🔄 Changed
+
+- 🎯 Skill icons and years of experience updates
+- 📊 Enhanced meta data structure and organization
+
+### 🐛 Fixed
+
+- ♿ Accessibility improvements (ARIA labels, contrast)
+- 🖼️ Image loading optimizations
+
+## `2.35.10` - 2024-10
+
+### ✨ Added
+
+- 📊 Social proof statistics section on resume page
+- 🔒 Security scanning setup with CodeQL
+
+### 🔄 Changed
+
+- 📸 Updated project screenshots and portfolio images
+
+### 📦 Dependencies
+
+- ⬆️ Updated TypeScript and `@types/*` packages
+
 ## `2.35.0` - 2024-09
 
 ### ✨ Added
@@ -108,6 +365,22 @@ As of **February 15, 2026**, the website is `"version": "2.48.23"`.
 - ♿ Various accessibility improvements (ARIA labels, contrast ratios)
 - 📱 Mobile menu and navigation issues
 - 🖼️ Image loading and performance optimizations
+
+## `2.32.0` - 2024-08
+
+### 🔄 Changed
+
+- 📁 Improved code organization and component structure
+- 🎯 Refined feature architecture
+
+### 📦 Dependencies
+
+- ⬆️ Updated Next.js and React to latest patch versions
+- ⬆️ General dependency maintenance
+
+### 🐛 Fixed
+
+- 📱 Mobile responsiveness issues on project pages
 
 ## `2.30.0` - 2024-07
 
@@ -178,6 +451,29 @@ As of **February 15, 2026**, the website is `"version": "2.48.23"`.
 - 🧭 Navigation and routing problems
 - ⚡ Performance bottlenecks
 
+## `2.8.0` - 2024-04
+
+### 🔄 Changed
+
+- 🎨 UI polish and visual refinements across pages
+- 📱 Responsive layout improvements
+
+### 🐛 Fixed
+
+- 🔧 Various bug fixes and stability improvements
+
+## `2.5.0` - 2024-03
+
+### ✨ Added
+
+- 📄 Initial page structure and routing setup
+- 🧩 Core shared components (Header, Footer, Layout)
+
+### 🔧 Technical
+
+- 🛠️ TypeScript configuration and path aliases
+- 🔧 ESLint and Prettier initial setup
+
 ## `2.0.0` - 2024-02
 
 ### ✨ Major Additions
@@ -211,15 +507,3 @@ As of **February 15, 2026**, the website is `"version": "2.48.23"`.
 - 💅 Tailwind CSS for utility-first styling
 - 🧹 ESLint and Prettier for code quality
 - 🔄 Git workflow with conventional commits
-
----
-
-## 🏆 Notable Achievements
-
-- 🚀 **Performance**: Achieved 100/100 Google PageSpeed Insights score
-- ♿ **Accessibility**: Full accessibility compliance with ARIA standards
-- 🔍 **SEO**: Comprehensive SEO optimization with meta tags and structured data
-- 🧪 **Testing**: 100% test coverage with Jest and Playwright
-- 🔄 **CI/CD**: Fully automated deployment pipeline with GitHub Actions
-- 📱 **PWA**: Progressive Web App functionality for mobile installation
-- 🔒 **Security**: Advanced security monitoring and automated updates

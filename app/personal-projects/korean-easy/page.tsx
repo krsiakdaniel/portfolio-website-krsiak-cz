@@ -5,6 +5,9 @@ import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLa
 import Alert from '@/components/shared/alert/Alert'
 import SocialLink from '@/components/shared/social-link/SocialLink'
 
+import { sections } from '@/data/pages/projects/personal/koreanEasy'
+import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/personalNext'
+
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
@@ -13,8 +16,6 @@ import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBread
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { sections } from '@/data/pages/projects/personal/koreanEasy'
-import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/personalNext'
 import { metaDataKoreanEasy } from '@/features/personal-korean-easy/metadata'
 import { AlertColorVariantEnum, GoBackLinkEnum } from '@/lib/types/enums'
 import { ICON_EMOJI, PROJECTS, PROJECT_KOREAN_EASY, TEXT } from '@/localization'

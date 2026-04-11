@@ -10,6 +10,7 @@
 - [🛠️ Tech Stack](#️-tech-stack)
 - [📋 Pages](#-pages)
 - [📚 Documentation](#-documentation)
+- [📝 Changelog](CHANGELOG.md)
 - [📄 License](#-license)
 - [📫 Contact](#-contact)
 - [🖼️ Screenshots](#️-screenshots)
@@ -97,10 +98,10 @@ The website has these main pages and project detail pages.
 ### Main
 
 - 🏠 [Home](https://krsiak.cz/)
-- 👋 [Who I Am](https://krsiak.cz/who-i-am)
 - 👨🏻‍💻 [Work Experience](https://krsiak.cz/work-experience)
 - 📝 [Resume](https://krsiak.cz/resume)
 - 🚀 [Personal Projects](https://krsiak.cz/personal-projects)
+- 👋 [Who I Am](https://krsiak.cz/who-i-am)
 - 💬 [Testimonials](https://krsiak.cz/testimonials)
 
 ### Projects
@@ -115,7 +116,8 @@ The website has these main pages and project detail pages.
 - 💬 [Smartsupp - Dashboard](https://krsiak.cz/work-experience/smartsupp-dashboard)
 - 🏦 [Komerční banka](https://krsiak.cz/work-experience/komercni-banka)
 - ☔ [Kooperativa](https://krsiak.cz/work-experience/kooperativa)
-- 📱 [O2 IT Services](https://krsiak.cz/work-experience/)
+- 📱 [O2 IT Services - AI‑Powered Chat Dashboard](https://krsiak.cz/work-experience/o2its-ai-powered-chat-dashboard)
+- 📱 [O2 IT Services - AI Public Tenders Portal](https://krsiak.cz/work-experience/o2its-public-tenders-portal)
 - 👨🏻‍💻 [Smartsupp - Company Website](https://krsiak.cz/work-experience/smartsupp-web)
 - 📚 [Smartsupp - Help Website](https://krsiak.cz/work-experience/smartsupp-help)
 - 🛒 [Groupon - QA Automation](https://krsiak.cz/work-experience/groupon)

@@ -5,6 +5,9 @@
 *.sublime-workspace
 *~
 
+# bun cache (created as literal ~/  folder in project root)
+~/
+
 # env
 .env*
 .env.local

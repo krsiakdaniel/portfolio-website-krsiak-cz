@@ -1,3 +1,5 @@
+import { iconsSkillsProjectsWorkO2its } from '@/data/pages/projects/work/projects-overview/skillsProjectsWork'
+
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
 import { PROJECTS_WORK_O2ITS_AI_CHAT_DASHBOARD_OVERVIEW } from '@/localization/pages/projects/work-o2its-ai-powered-chat-dashboard'
@@ -6,7 +8,6 @@ import { PROJECTS_WORK_O2ITS_AI_CHAT_DASHBOARD_OVERVIEW } from '@/localization/p
 import o2itsAiPoweredChatDashboard from '@/public/images/webp/projects/work/o2its-ai-powered-chat-dashboard/o2its-ai-powered-chat-dashboard-1.webp'
 import o2itsAiPoweredChatDashboardProjectPreview from '@/public/images/webp/projects/work/o2its-ai-powered-chat-dashboard/o2its-ai-powered-chat-dashboard-project-preview.webp'
 
-import { iconsSkillsProjectsWorkO2its } from '@/data/pages/projects/work/projects-overview/skillsProjectsWork'
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'

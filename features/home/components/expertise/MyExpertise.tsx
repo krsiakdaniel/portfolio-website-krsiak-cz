@@ -5,6 +5,7 @@ import {
   problemSolvingItems,
   skillsForCompanyItems,
 } from '@/data/pages/home/expertise/expertise'
+
 import { ARIA_LABELS, DIVIDER_WITH_TEXT, ICON_EMOJI, TEXT } from '@/localization'
 
 import ExpertiseSection from './ExpertiseSection'

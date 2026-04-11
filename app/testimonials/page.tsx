@@ -6,14 +6,15 @@ import BreadCrumbs from '@/components/shared/breadcrumbs/Breadcrumbs'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
 import Heading from '@/components/shared/heading/Heading'
 
+import { fitnessCoachTestimonials } from '@/data/pages/testimonials/fitnessCoachTestimonials'
+import { personalTestimonials } from '@/data/pages/testimonials/personalTestimonials'
+import { workTestimonials } from '@/data/pages/testimonials/workTestimonials'
+
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { fitnessCoachTestimonials } from '@/data/pages/testimonials/fitnessCoachTestimonials'
-import { personalTestimonials } from '@/data/pages/testimonials/personalTestimonials'
-import { workTestimonials } from '@/data/pages/testimonials/workTestimonials'
 import TestimonialsIntroduction from '@/features/testimonials/components/testimonials-introduction/TestimonialsIntroduction'
 import TestimonialsSection from '@/features/testimonials/components/testimonials-section/TestimonialsSection'
 import { TESTIMONIALS } from '@/features/testimonials/localization'
