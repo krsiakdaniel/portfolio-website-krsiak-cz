@@ -7,7 +7,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import starAnimated from '@/public/images/webp/emoji-animated/128x128/star-animated-128x128.webp'
 
-import { CALL_TO_ACTION, TEXT } from '@/localization'
+import { CALL_TO_ACTION, IMAGE_ALT, TEXT } from '@/localization'
 
 const CallToActionResume = ({
   dataTestId = DATA_TEST_IDS.callToAction.linkResume,
@@ -22,6 +22,7 @@ const CallToActionResume = ({
       linkText={TEXT.resumeTextOnly}
       dataTestId={dataTestId}
       icon={starAnimated}
+      iconAlt={IMAGE_ALT.emojiStar}
     />
   )
 }

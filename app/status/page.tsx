@@ -73,7 +73,7 @@ const Status = () => {
             <EmojiAnimated
               icon={EmojiNameEnum.ROBOT}
               size={EmojiSizeEnum.LG}
-              alt={IMAGE_ALT.altEmojiRobot}
+              alt={IMAGE_ALT.emojiRobot}
               loading={ImageLoadingEnum.EAGER}
               className="mt-8"
             />

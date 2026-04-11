@@ -27,7 +27,7 @@ const Logo = () => {
             src={logo}
             width={HEADER_LOGO.WIDTH}
             height={HEADER_LOGO.HEIGHT}
-            alt={IMAGE_ALT.altLogo}
+            alt={IMAGE_ALT.logo}
             priority={true}
             loading={ImageLoadingEnum.EAGER}
             sizes={`${HEADER_LOGO.WIDTH}px`}

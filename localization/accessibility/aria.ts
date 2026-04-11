@@ -22,6 +22,12 @@ export const ARIA_LABELS = {
   siteHeader: 'Site header',
   siteFooter: 'Site footer',
   scrollToTopPage: 'Scroll to top of page',
+  pageNavigation: 'Page navigation',
+  resumePreview: 'Open resume preview in new tab',
+  companiesSection: 'Companies I worked for',
+  resumePreviewSection: 'Resume previews',
+  callToAction: 'Call to action',
+  projectSummary: 'Project summary',
   emoji: {
     icon: 'Emoji',
     starAndCrescent: 'Star and crescent',
@@ -40,6 +46,7 @@ export const ARIA_LABELS = {
     verticalTrafficLight: 'Vertical traffic light',
     desktopComputer: 'Desktop computer',
     robot: 'Robot',
+    ladyBug: 'Lady bug',
     star: 'Star',
     writingHand: 'Writing hand',
     foldedHands: 'Folded hands',
@@ -96,10 +103,6 @@ export const ARIA_LABELS = {
     },
     woman: {
       officeWorker: 'Woman office worker',
-    },
-    cats: {
-      ruzenka: 'Cat Růženka',
-      nufka: 'Cat Ňufka',
     },
   },
 }

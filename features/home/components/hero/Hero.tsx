@@ -17,7 +17,7 @@ const Hero = () => {
         <EmojiAnimated
           icon={EmojiNameEnum.SUNGLASSES}
           size={EmojiSizeEnum.LG}
-          alt={IMAGE_ALT.altWelcome}
+          alt={IMAGE_ALT.welcome}
           loading={ImageLoadingEnum.EAGER}
           priority={true}
           className="mt-8"

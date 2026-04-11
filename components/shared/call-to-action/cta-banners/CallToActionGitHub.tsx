@@ -6,7 +6,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import rocketAnimated from '@/public/images/webp/emoji-animated/128x128/rocket-animated-128x128.webp'
 
-import { CALL_TO_ACTION, TEXT } from '@/localization'
+import { CALL_TO_ACTION, IMAGE_ALT, TEXT } from '@/localization'
 
 const CallToActionGitHub = () => {
   return (
@@ -19,6 +19,7 @@ const CallToActionGitHub = () => {
       linkText={TEXT.gitHubCode}
       dataTestId={DATA_TEST_IDS.callToAction.linkGitHub}
       icon={rocketAnimated}
+      iconAlt={IMAGE_ALT.emojiRocket}
       isLinkExternal={true}
     />
   )

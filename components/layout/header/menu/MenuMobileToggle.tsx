@@ -24,9 +24,9 @@ const MenuMobileToggle = ({ isMenuOpen, handleMenuMobileToggle, ref }: MenuMobil
     >
       <div className="transition-all duration-200 ease-in-out">
         {isMenuOpen ? (
-          <X className="h-6 w-6 text-violet-600 hover:text-violet-800" />
+          <X aria-hidden="true" className="h-6 w-6 text-violet-600 hover:text-violet-800" />
         ) : (
-          <Menu className="h-6 w-6 text-violet-600 hover:text-violet-800" />
+          <Menu aria-hidden="true" className="h-6 w-6 text-violet-600 hover:text-violet-800" />
         )}
       </div>
     </button>

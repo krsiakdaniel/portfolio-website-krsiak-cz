@@ -21,7 +21,7 @@ const SouthKorea = () => {
   const imageComponentCss = 'border rounded-lg border border-violet-300 bg-violet-50 p-1'
 
   return (
-    <section>
+    <section aria-label={SOUTH_KOREA.headingSouthKorea}>
       <HeadingSection
         text={SOUTH_KOREA.headingSouthKorea}
         icon={ICON_EMOJI.flagSouthKorea}

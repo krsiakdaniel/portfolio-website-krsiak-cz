@@ -18,7 +18,14 @@ const ProjectResponsibilitySection = ({
       <div className="mt-4">
         <List>
           {items.map((item) => (
-            <ListItem key={item.id}>{item.text}</ListItem>
+            <ListItem key={item.id}>
+              {item.text}
+              {item.flags?.map(({ emoji, ariaLabel }) => (
+                <span key={emoji} role="img" aria-label={ariaLabel} className="ml-1">
+                  {emoji}
+                </span>
+              ))}
+            </ListItem>
           ))}
         </List>
       </div>

@@ -43,13 +43,21 @@ const ProjectSectionGrid = ({
           >
             {/* Thumbnail placeholder */}
             <div className="flex min-h-[161px] items-center justify-center overflow-hidden rounded-t-lg border-b border-dashed border-violet-300 bg-violet-50 p-2">
-              {item.icon && <span className="select-none text-6xl">{item.icon}</span>}
+              {item.icon && (
+                <span role="img" aria-label={item.iconAriaLabel} className="select-none text-6xl">
+                  {item.icon}
+                </span>
+              )}
             </div>
 
             {/* Content */}
             <div className="flex flex-1 flex-col gap-1 p-3">
               <h3 className="text-2xl font-semibold text-neutral-900">
-                {item.icon && <span className="mr-1 select-none">{item.icon}</span>}
+                {item.icon && (
+                  <span role="img" aria-label={item.iconAriaLabel} className="mr-1 select-none">
+                    {item.icon}
+                  </span>
+                )}
                 {item.company}
               </h3>
               <p className="text-xl font-medium text-violet-600">{item.role}</p>
@@ -61,11 +69,11 @@ const ProjectSectionGrid = ({
                     const name = src.split('/').pop()?.replace('.svg', '') ?? ''
                     return <Image key={src} src={src} alt={name} width={28} height={28} />
                   })}
-                  {item.emojiIcons?.map((emoji) => (
+                  {item.emojiIcons?.map(({ emoji, ariaLabel }) => (
                     <span
                       key={emoji}
                       role="img"
-                      aria-label={emoji}
+                      aria-label={ariaLabel}
                       className="text-[28px] leading-none"
                     >
                       {emoji}

@@ -1,3 +1,5 @@
+import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
+
 import { ARIA_LABELS } from '@/localization'
 
 export const getFlagAriaLabel = (countryName: string): string => {
@@ -5,7 +7,7 @@ export const getFlagAriaLabel = (countryName: string): string => {
     'South\u00A0Korea': ARIA_LABELS.emoji.flag.southKorea,
     Turkey: ARIA_LABELS.emoji.flag.turkey,
     Tunisia: ARIA_LABELS.emoji.flag.tunisia,
-    'United\u00A0Arab\u00A0Emirates': ARIA_LABELS.emoji.flag.uae,
+    'United Arab Emirates': ARIA_LABELS.emoji.flag.uae,
     Austria: ARIA_LABELS.emoji.flag.austria,
     Slovakia: ARIA_LABELS.emoji.flag.slovakia,
     Croatia: ARIA_LABELS.emoji.flag.croatia,
@@ -20,8 +22,8 @@ export const getFlagAriaLabel = (countryName: string): string => {
     Sweden: ARIA_LABELS.emoji.flag.sweden,
     '\u00c5land\u00A0Islands': ARIA_LABELS.emoji.flag.alandIslands,
     Denmark: ARIA_LABELS.emoji.flag.denmark,
-    Mallorca: ARIA_LABELS.emoji.flag.spain,
-    'Canary\u00A0Islands': ARIA_LABELS.emoji.flag.spain,
+    [`Spain ${EM_DASH}\u00A0Mallorca`]: ARIA_LABELS.emoji.flag.spain,
+    [`Spain ${EM_DASH}\u00A0Canary\u00A0Islands`]: ARIA_LABELS.emoji.flag.spain,
   }
 
   return ariaMapping[countryName] || ARIA_LABELS.emoji.icon

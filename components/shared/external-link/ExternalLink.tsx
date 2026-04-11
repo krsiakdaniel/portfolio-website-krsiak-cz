@@ -15,7 +15,7 @@ const ExternalLink = ({ href, text, title, dataTestId = '' }: ExternalLinkProps)
       >
         {text}
         <span className="ml-2">
-          <ExternalLinkIcon className="h-3 w-3" />
+          <ExternalLinkIcon aria-hidden="true" className="h-3 w-3" />
         </span>
       </a>
     </span>
