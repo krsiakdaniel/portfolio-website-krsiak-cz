@@ -2,8 +2,9 @@ import DividerWithText from '@/components/shared/divider-with-text/DividerWithTe
 
 import { skills } from '@/data/pages/home/skills/skillsMain'
 
-import SkillCard from '@/features/home/components/skill-card/SkillCard'
 import { DIVIDER_WITH_TEXT } from '@/localization'
+
+import SkillCard from '@/features/home/components/skill-card/SkillCard'
 
 const SkillsMain = () => {
   return (

@@ -8,6 +8,8 @@ import CallToActionWorkExperience from '@/components/shared/call-to-action/cta-b
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { ICON_EMOJI, TEXT } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import Companies from '@/features/home/components/companies/Companies'
@@ -17,7 +19,6 @@ import Skills from '@/features/home/components/skills/Skills'
 import SkillsMain from '@/features/home/components/skills/SkillsMain'
 import HomeTestimonials from '@/features/home/components/testimonials/HomeTestimonials'
 import { metaDataHome } from '@/features/home/metadata'
-import { ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataHome,

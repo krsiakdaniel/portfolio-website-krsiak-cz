@@ -1,8 +1,8 @@
 import { EM_DASH } from '@/lib/utils/constants/specialCharacters'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { TEXT } from '@/localization'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 const HeroSubHeading = () => {
   const textTypeScriptAndNext = `${TEXT.typeScript} &\u00A0${TEXT.next}`

@@ -14,11 +14,12 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getBreadcrumbsWork } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsWork'
 
+import { ICON_EMOJI, PROJECT_O2ITS, TEXT } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { metaDataO2itsAiPoweredChatDashboard } from '@/features/work-o2its-ai-powered-chat-dashboard/metadata'
 import { AlertColorVariantEnum, GoBackLinkEnum } from '@/lib/types/enums'
-import { ICON_EMOJI, PROJECT_O2ITS, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataO2itsAiPoweredChatDashboard,

@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD024 -->
+
 # Changelog
 
 All notable changes to this project are documented in this file.
@@ -7,11 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 🚀 Website Version History
 
-As of **April 11, 2026**, the website is `"version": "2.48.28"`.
+As of **April 11, 2026**, the website is `"version": "2.48.29"`.
 
 - `2.x.x`: Major version representing complete redesign (Feb 2024)
 - `x.48.x`: Feature additions (new pages, components, functionality)
 - `x.x.24`: Bug fixes and minor improvements
+
+## `2.48.29` - 2026-04
+
+### 📝 Documentation
+
+- 📝 Add type import rules to `components.instructions.md` — enforce inline `import { type X }` pattern
+- 📝 Add `data.instructions.md` — type import rules for `data/` folder
+- 📝 Add `localization.instructions.md` — type import rules for `localization/` folder
+- 📝 Update AI Copilot README to list new instruction files
 
 ## `2.48.28` - 2026-04
 
@@ -210,14 +221,14 @@ As of **April 11, 2026**, the website is `"version": "2.48.28"`.
 
 - ⬆️ General dependency maintenance and updates
 
-## `2.35.18` - 2025-07
+## `2.35.24` - 2025-07
 
 ### 🔄 Changed
 
 - 🎯 Ongoing component architecture improvements
 - 🔧 Build and configuration refinements
 
-## `2.35.18` - 2025-06
+## `2.35.23` - 2025-06
 
 ### 📦 Dependencies
 
@@ -228,7 +239,7 @@ As of **April 11, 2026**, the website is `"version": "2.48.28"`.
 
 - 📝 Documentation updates and cleanup
 
-## `2.35.18` - 2025-05
+## `2.35.22` - 2025-05
 
 ### 🔄 Changed
 
@@ -239,7 +250,7 @@ As of **April 11, 2026**, the website is `"version": "2.48.28"`.
 
 - 🔧 Minor bug fixes and stability improvements
 
-## `2.35.18` - 2025-04
+## `2.35.21` - 2025-04
 
 ### ✨ Added
 
@@ -249,7 +260,7 @@ As of **April 11, 2026**, the website is `"version": "2.48.28"`.
 
 - ⬆️ Updated Playwright and testing dependencies
 
-## `2.35.18` - 2025-03
+## `2.35.20` - 2025-03
 
 ### 🔄 Changed
 
@@ -260,7 +271,7 @@ As of **April 11, 2026**, the website is `"version": "2.48.28"`.
 
 - ⬆️ Updated React and Next.js dependencies
 
-## `2.35.18` - 2025-02
+## `2.35.19` - 2025-02
 
 ### ✨ Added
 

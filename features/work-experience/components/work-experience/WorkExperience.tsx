@@ -21,10 +21,11 @@ import { projectsWorkWordPress } from '@/data/pages/projects/work/projects-overv
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
+import { COMMON_VALUES } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { LayoutViewEnum } from '@/lib/types/enums'
-import { COMMON_VALUES } from '@/localization'
 
 const allProjects = [
   ...projectsWorkReact,

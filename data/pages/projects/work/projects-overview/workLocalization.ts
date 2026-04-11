@@ -2,6 +2,8 @@ import { iconsSkillsProjectsWorkMoravia } from '@/data/pages/projects/work/proje
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+
 // moravia
 import { PROJECTS_WORK_MORAVIA_OVERVIEW } from '@/localization/pages/projects/work-moravia'
 
@@ -12,7 +14,6 @@ import moraviaProjectPreview from '@/public/images/webp/projects/work/moravia/mo
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { type Project } from '@/lib/types/interfaces'
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 const overview = PROJECTS_WORK_MORAVIA_OVERVIEW
 

@@ -7,8 +7,9 @@ import LinkButton from '@/components/shared/link-button/LinkButton'
 
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 
-import { DeviceTypeEnum } from '@/lib/types/enums'
 import { ARIA_LABELS } from '@/localization'
+
+import { DeviceTypeEnum } from '@/lib/types/enums'
 
 const CallToAction = ({
   highlight,

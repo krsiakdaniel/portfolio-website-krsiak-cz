@@ -2,10 +2,11 @@ import DefaultNoLinkNavigation from '@/components/layout/page-navigation/Default
 import { type PageNavigationProps } from '@/components/layout/page-navigation/PageNavigation.types'
 import PageNavigationLink from '@/components/layout/page-navigation/PageNavigationLink'
 
+import { ARIA_LABELS } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { ArrowDirectionEnum } from '@/lib/types/enums'
-import { ARIA_LABELS } from '@/localization'
 
 const PageNavigation = ({
   linkPrevious,

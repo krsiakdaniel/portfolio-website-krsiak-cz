@@ -9,6 +9,8 @@ import Heading from '@/components/shared/heading/Heading'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import CareerPath from '@/features/resume/components/career-path/CareerPath'
@@ -16,7 +18,6 @@ import ResumeContact from '@/features/resume/components/resume-contact/ResumeCon
 import ResumeIntroduction from '@/features/resume/components/resume-introduction/ResumeIntroduction'
 import ResumePreviewSection from '@/features/resume/components/resume-preview-section/ResumePreviewSection'
 import { metaDataResume } from '@/features/resume/metadata'
-import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataResume,

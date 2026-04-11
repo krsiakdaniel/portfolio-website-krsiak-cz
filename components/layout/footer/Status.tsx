@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { STATUS } from '@/localization'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 const Status = () => {
   return (

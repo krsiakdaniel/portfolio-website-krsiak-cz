@@ -6,9 +6,9 @@ import { COPYRIGHT, MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getCurrentYear } from '@/lib/utils/helpers/years/getCurrentYear'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { FOOTER } from '@/localization'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 const Copyright = () => {
   return (

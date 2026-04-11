@@ -1,7 +1,8 @@
 import Image from 'next/image'
 
-import { LayoutViewEnum } from '@/lib/types/enums'
 import { IMAGE_ALT } from '@/localization'
+
+import { LayoutViewEnum } from '@/lib/types/enums'
 
 import { type LayoutToggleProps } from './LayoutToggle.types'
 

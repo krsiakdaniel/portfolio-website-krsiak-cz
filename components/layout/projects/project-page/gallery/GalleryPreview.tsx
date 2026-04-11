@@ -2,10 +2,11 @@ import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
 import { GALLERY_PREVIEW_4_3 } from '@/lib/utils/constants/imageGalleryConfig'
 
+import { ARIA_LABELS } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'
-import { ARIA_LABELS } from '@/localization'
 
 import { type GalleryPreviewProps } from './Gallery.types'
 import { calculateImageHeight } from './Gallery.utils'

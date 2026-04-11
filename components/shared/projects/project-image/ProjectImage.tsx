@@ -2,8 +2,9 @@ import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
 import { PROJECT_IMAGE_PREVIEW } from '@/lib/utils/constants/imageGalleryConfig'
 
-import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+
+import { ImageLoadingEnum } from '@/lib/types/enums'
 
 import { type ProjectImageProps } from './ProjectImage.types'
 

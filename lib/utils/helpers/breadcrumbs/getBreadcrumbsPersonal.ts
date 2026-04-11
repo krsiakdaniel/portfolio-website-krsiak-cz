@@ -1,7 +1,8 @@
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { type BreadCrumbsType } from '@/lib/types/types'
 import { ICON_EMOJI, TEXT } from '@/localization'
+
+import { type BreadCrumbsType } from '@/lib/types/types'
 
 /**
  * Generates breadcrumb data for personal projects.

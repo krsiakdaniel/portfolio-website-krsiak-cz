@@ -2,6 +2,8 @@ import { iconsSkillsProjectsWorkO2itsPublicTendersPortal } from '@/data/pages/pr
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+
 import { PROJECTS_WORK_O2ITS_PUBLIC_TENDERS_PORTAL_OVERVIEW } from '@/localization/pages/projects/work-o2its-public-tenders-portal'
 
 // o2its public tenders portal
@@ -10,7 +12,6 @@ import o2itsPublicTendersPortalProjectPreview from '@/public/images/webp/project
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { type Project } from '@/lib/types/interfaces'
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 const overview = PROJECTS_WORK_O2ITS_PUBLIC_TENDERS_PORTAL_OVERVIEW
 

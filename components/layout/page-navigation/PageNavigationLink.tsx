@@ -1,7 +1,8 @@
 import { ArrowRight } from 'lucide-react'
 
-import { ArrowDirectionEnum } from '@/lib/types/enums'
 import { COMMON_VALUES } from '@/localization'
+
+import { ArrowDirectionEnum } from '@/lib/types/enums'
 
 import { type PageNavigationLinkProps } from './PageNavigationLink.types'
 

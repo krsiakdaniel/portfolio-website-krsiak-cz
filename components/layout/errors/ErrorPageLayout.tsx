@@ -3,9 +3,9 @@ import { useEffect } from 'react'
 import ErrorPageContent from '@/components/layout/errors/ErrorPageContent'
 import PageContainer from '@/components/layout/page-container/PageContainer'
 
-import imgError from '@/public/images/webp/errors/error.webp'
-
 import { TEXT } from '@/localization'
+
+import imgError from '@/public/images/webp/errors/error.webp'
 
 import { type ErrorPageLayoutProps } from './ErrorPageLayout.types'
 

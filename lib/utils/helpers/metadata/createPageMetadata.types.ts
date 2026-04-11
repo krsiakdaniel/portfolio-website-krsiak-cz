@@ -1,4 +1,4 @@
-import { type MetaDataKeywords } from '../../../types/interfaces'
+import { type MetaDataKeywords } from '@/lib/types/interfaces'
 
 export type PageMeta = {
   title: string

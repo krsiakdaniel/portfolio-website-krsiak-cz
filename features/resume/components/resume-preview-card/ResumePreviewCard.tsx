@@ -6,8 +6,9 @@ import ImageComponent from '@/components/shared/image-component/ImageComponent'
 import LinkButton from '@/components/shared/link-button/LinkButton'
 import Paragraph from '@/components/shared/paragraph/Paragraph'
 
-import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, TEXT } from '@/localization'
+
+import { ImageLoadingEnum } from '@/lib/types/enums'
 
 import { RESUME_PREVIEW_IMAGE } from './ResumePreviewCard.constants'
 import { type ResumePreviewCardProps } from './ResumePreviewCard.types'

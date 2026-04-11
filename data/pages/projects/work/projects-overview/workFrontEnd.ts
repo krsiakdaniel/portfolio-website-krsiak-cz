@@ -2,6 +2,8 @@ import { iconsSkillsProjectsWorkSmartsuppWeb } from '@/data/pages/projects/work/
 
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+
 import { PROJECTS_WORK_SMARTSUPP_WEB_OVERVIEW } from '@/localization/pages/projects/work-smartsupp-web'
 
 // smartsupp web
@@ -13,7 +15,6 @@ import smartsuppWebProjectPreview from '@/public/images/webp/projects/work/smart
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { type Project } from '@/lib/types/interfaces'
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 const overview = PROJECTS_WORK_SMARTSUPP_WEB_OVERVIEW
 

@@ -3,8 +3,9 @@ import DividerWithText from '@/components/shared/divider-with-text/DividerWithTe
 import { personalTestimonials } from '@/data/pages/testimonials/personalTestimonials'
 import { workTestimonials } from '@/data/pages/testimonials/workTestimonials'
 
-import Testimonial from '@/features/testimonials/components/testimonial/Testimonial'
 import { DIVIDER_WITH_TEXT } from '@/localization'
+
+import Testimonial from '@/features/testimonials/components/testimonial/Testimonial'
 
 const HomeTestimonials = () => {
   const [moorhead, castro] = personalTestimonials

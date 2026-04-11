@@ -9,10 +9,11 @@ import { pagesLinks } from '@/data/layout/pagesLinks'
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { isMenuItemActive } from '@/lib/utils/helpers/menu/isMenuItemActive'
 
+import { ARIA_LABELS } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { DeviceTypeEnum } from '@/lib/types/enums'
-import { ARIA_LABELS } from '@/localization'
 
 /**
  * Menu component for both mobile and desktop navigation

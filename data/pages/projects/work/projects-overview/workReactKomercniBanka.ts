@@ -3,6 +3,8 @@ import { iconsSkillsProjectsWorkKomercniBanka } from '@/data/pages/projects/work
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+
 import { PROJECTS_WORK_KOMERCNI_BANKA_OVERVIEW } from '@/localization/pages/projects/work-komercni-banka'
 
 // komercni banka
@@ -14,7 +16,6 @@ import komercniBankaProjectPreview from '@/public/images/webp/projects/work/kome
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
 import { type Project } from '@/lib/types/interfaces'
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 const overview = PROJECTS_WORK_KOMERCNI_BANKA_OVERVIEW
 

@@ -1,5 +1,6 @@
-import { DurationUnitEnum } from '@/lib/types/enums'
 import { TEXT } from '@/localization'
+
+import { DurationUnitEnum } from '@/lib/types/enums'
 
 import { type GetYearsMonthsType } from './getYearsMonths.types'
 

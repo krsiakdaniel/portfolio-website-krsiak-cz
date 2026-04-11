@@ -1,9 +1,9 @@
 import Highlight from '@/components/shared/highlight/Highlight'
 import Paragraph from '@/components/shared/paragraph/Paragraph'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { COMMON_VALUES } from '@/localization'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { WHO_I_AM_INTRODUCTION } from '../../localization'
 

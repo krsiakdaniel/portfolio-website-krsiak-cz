@@ -5,9 +5,9 @@ import { ArrowUp } from 'lucide-react'
 
 import { scrollToTop } from '@/lib/utils/helpers/scrollToTop'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { ARIA_LABELS, FOOTER } from '@/localization'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { SCROLL_TO_TOP } from './ScrollToTopButton.constants'
 

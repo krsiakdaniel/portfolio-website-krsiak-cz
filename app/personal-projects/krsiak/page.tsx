@@ -14,11 +14,12 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
 
+import { ICON_EMOJI, PROJECTS, PROJECT_KRSIAK, TEXT } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { metaDataKrsiak } from '@/features/personal-krsiak/metadata'
 import { AlertColorVariantEnum, GoBackLinkEnum } from '@/lib/types/enums'
-import { ICON_EMOJI, PROJECTS, PROJECT_KRSIAK, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataKrsiak,

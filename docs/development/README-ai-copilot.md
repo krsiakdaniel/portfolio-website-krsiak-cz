@@ -22,6 +22,8 @@ These files live under `.github/` and are automatically used by GitHub Copilot i
   copilot-instructions.md          ← global always-on rules for every session
   instructions/
     components.instructions.md     ← auto-injected when editing components/ or features/
+    data.instructions.md           ← auto-injected when editing data/
+    localization.instructions.md   ← auto-injected when editing localization/
     testing-jest.instructions.md   ← auto-injected when editing __tests__/jest/
     testing-e2e.instructions.md    ← auto-injected when editing __tests__/playwright/
     nextjs-app.instructions.md     ← auto-injected when editing app/
@@ -49,13 +51,15 @@ These files live under `.github/` and are automatically used by GitHub Copilot i
 
 Instruction files are **automatically injected** by Copilot based on which file you are editing. No manual action needed.
 
-| File                           | Applies to                 | What it enforces                                         |
-| ------------------------------ | -------------------------- | -------------------------------------------------------- |
-| `copilot-instructions.md`      | Always — every session     | Stack, conventions, commit rules                         |
-| `components.instructions.md`   | `components/`, `features/` | Server/Client boundary, companion files, React 19, Image |
-| `testing-jest.instructions.md` | `__tests__/jest/`          | AAA pattern, RTL, no network requests                    |
-| `testing-e2e.instructions.md`  | `__tests__/playwright/`    | Page object model, DATA_TEST_IDS, PAGES_URL              |
-| `nextjs-app.instructions.md`   | `app/`                     | Async params, metadata, caching                          |
+| File                           | Applies to                 | What it enforces                                                   |
+| ------------------------------ | -------------------------- | ------------------------------------------------------------------ |
+| `copilot-instructions.md`      | Always — every session     | Stack, conventions, commit rules                                   |
+| `components.instructions.md`   | `components/`, `features/` | Server/Client boundary, companion files, React 19, Image           |
+| `data.instructions.md`         | `data/`                    | Inline type imports, `@/lib/types/interfaces`, `@/lib/types/types` |
+| `localization.instructions.md` | `localization/`            | Inline type imports, `@/lib/types/interfaces`, `@/lib/types/types` |
+| `testing-jest.instructions.md` | `__tests__/jest/`          | AAA pattern, RTL, no network requests                              |
+| `testing-e2e.instructions.md`  | `__tests__/playwright/`    | Page object model, DATA_TEST_IDS, PAGES_URL                        |
+| `nextjs-app.instructions.md`   | `app/`                     | Async params, metadata, caching                                    |
 
 ---
 

@@ -2,13 +2,14 @@ import SocialLinkIcon from '@/components/shared/social-link/SocialLinkIcon'
 
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
+import { IMAGE_ALT, TEXT } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import iconGitHub from '@/public/icons/svg/social/github.svg'
 import iconLinkedIn from '@/public/icons/svg/social/linkedin.svg'
 
 import { DeviceTypeEnum } from '@/lib/types/enums'
-import { IMAGE_ALT, TEXT } from '@/localization'
 
 import { type MenuSocialLinksProps } from './MenuSocialLinks.types'
 

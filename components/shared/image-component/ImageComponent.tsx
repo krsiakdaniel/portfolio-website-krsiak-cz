@@ -8,8 +8,9 @@ import { type ImageComponentProps } from '@/components/shared/image-component/Im
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-import { ImageLoadingEnum } from '@/lib/types/enums'
 import { IMAGE_ALT } from '@/localization'
+
+import { ImageLoadingEnum } from '@/lib/types/enums'
 
 import { IMAGE_COMPONENT_DEFAULTS } from './ImageComponent.constants'
 

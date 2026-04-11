@@ -1,9 +1,9 @@
 import ExternalLink from '@/components/shared/external-link/ExternalLink'
 import ListItem from '@/components/shared/list/ListItem'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { TEXT } from '@/localization'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { type GitHubRepositoryLinkProps } from './GitHubRepositoryLink.types'
 

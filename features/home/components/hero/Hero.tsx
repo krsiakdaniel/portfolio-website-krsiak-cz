@@ -2,8 +2,9 @@ import EmojiAnimated from '@/components/shared/emoji-animated/EmojiAnimated'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-import { EmojiNameEnum, EmojiSizeEnum, ImageLoadingEnum } from '@/lib/types/enums'
 import { IMAGE_ALT } from '@/localization'
+
+import { EmojiNameEnum, EmojiSizeEnum, ImageLoadingEnum } from '@/lib/types/enums'
 
 import HeroHeading from './HeroHeading'
 import HeroParagraph from './HeroParagraph'

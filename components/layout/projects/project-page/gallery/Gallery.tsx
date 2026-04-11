@@ -7,9 +7,9 @@ import GalleryThumbnails from '@/components/layout/projects/project-page/gallery
 import Heading from '@/components/shared/heading/Heading'
 import Paragraph from '@/components/shared/paragraph/Paragraph'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { ARIA_LABELS, GALLERY } from '@/localization'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { type GalleryImageProps, type GalleryProps } from './Gallery.types'
 

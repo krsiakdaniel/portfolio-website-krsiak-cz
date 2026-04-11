@@ -3,11 +3,11 @@ import { type CallToActionResumeProps } from '@/components/shared/call-to-action
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { CALL_TO_ACTION, IMAGE_ALT, TEXT } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import starAnimated from '@/public/images/webp/emoji-animated/128x128/star-animated-128x128.webp'
-
-import { CALL_TO_ACTION, IMAGE_ALT, TEXT } from '@/localization'
 
 const CallToActionResume = ({
   dataTestId = DATA_TEST_IDS.callToAction.linkResume,

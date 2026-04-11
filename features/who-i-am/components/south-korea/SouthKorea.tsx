@@ -2,6 +2,8 @@ import HeadingSection from '@/components/shared/heading/HeadingSection'
 import ImageComponent from '@/components/shared/image-component/ImageComponent'
 import Paragraph from '@/components/shared/paragraph/Paragraph'
 
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import hiking from '@/public/images/webp/photo/south-korea/hiking.webp'
@@ -12,7 +14,6 @@ import temple from '@/public/images/webp/photo/south-korea/temple.webp'
 import TestimonialQuote from '@/features/testimonials/components/testimonial-quote/TestimonialQuote'
 import TestimonialText from '@/features/testimonials/components/testimonial-text/TestimonialText'
 import { ImageLoadingEnum } from '@/lib/types/enums'
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 import { SOUTH_KOREA } from '../../localization'
 import { SOUTH_KOREA_IMAGES } from './SouthKorea.constants'

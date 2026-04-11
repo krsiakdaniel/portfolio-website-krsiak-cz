@@ -5,8 +5,9 @@ import { ArrowRight } from 'lucide-react'
 
 import ProjectSkillsIcons from '@/components/shared/projects/project-skills-icons/ProjectSkillsIcons'
 
-import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ICON_EMOJI } from '@/localization'
+
+import { ImageLoadingEnum } from '@/lib/types/enums'
 
 import { type ProjectCompactCardProps } from './ProjectCompactCard.types'
 

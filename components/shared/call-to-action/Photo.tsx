@@ -1,5 +1,7 @@
 import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
+import { IMAGE_ALT } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import openToWorkSM from '@/public/images/webp/photo/linkedin/open-to-work-216x216.webp'
@@ -7,7 +9,6 @@ import openToWorkLG from '@/public/images/webp/photo/linkedin/open-to-work-296x2
 import krsiakPhoto from '@/public/images/webp/photo/me/krsiak-daniel-600x600.webp'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'
-import { IMAGE_ALT } from '@/localization'
 
 import { PHOTO_DIMENSIONS } from './Photo.constants'
 import { type PhotoProps } from './Photo.types'

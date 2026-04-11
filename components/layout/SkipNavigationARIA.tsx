@@ -2,9 +2,9 @@
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { ARIA_LABELS } from '@/localization'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 /**
  * A skip navigation component that provides accessibility shortcuts for keyboard users.
