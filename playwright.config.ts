@@ -15,12 +15,6 @@ const VIEWPORT_HEIGHT = 720
 // Server configuration
 const URL_LOCALHOST = 'http://localhost:3000'
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
-
 export default defineConfig({
   // Look for test files in the "tests" directory, relative to this configuration file.
   testDir: './__tests__/playwright',
@@ -40,7 +34,7 @@ export default defineConfig({
   // Number of parallel workers (3 in CI, 1 locally)
   workers: process.env['CI'] ? CI_WORKERS : 1,
 
-  //Reporter to use. https://playwright.dev/docs/test-reporters
+  // Reporter to use. https://playwright.dev/docs/test-reporters
   reporter: process.env['CI']
     ? 'list' // Use list reporter in CI for console output
     : 'html', // Use HTML reporter locally for better debugging
