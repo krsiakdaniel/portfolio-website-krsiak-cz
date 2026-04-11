@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { LayoutViewEnum } from '@/lib/types/enums'
 import { IMAGE_ALT } from '@/localization'
 
-import { LayoutToggleProps } from './LayoutToggle.types'
+import { type LayoutToggleProps } from './LayoutToggle.types'
 
 const activeClassCss = 'rounded-md border border-violet-300 bg-violet-50 p-1.5 text-violet-700'
 const inactiveClassCss =

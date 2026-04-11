@@ -5,7 +5,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { TEXT } from '@/localization'
 
-import { ErrorProps } from './Error.types'
+import { type ErrorProps } from './Error.types'
 
 const GlobalError = ({ error, unstable_retry }: ErrorProps) => {
   return (

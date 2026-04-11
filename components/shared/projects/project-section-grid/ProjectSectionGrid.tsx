@@ -4,7 +4,7 @@ import HeadingSection from '@/components/shared/heading/HeadingSection'
 import GridPlaceholder from '@/components/shared/projects/grid-placeholder/GridPlaceholder'
 import ProjectCompactCard from '@/components/shared/projects/project-compact-card/ProjectCompactCard'
 
-import { ProjectSectionGridProps } from './ProjectSectionGrid.types'
+import { type ProjectSectionGridProps } from './ProjectSectionGrid.types'
 
 const ProjectSectionGrid = ({
   projectData = [],

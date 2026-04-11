@@ -1,4 +1,4 @@
-import { MouseEventHandler } from 'react'
+import { type MouseEventHandler } from 'react'
 
 import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
@@ -7,7 +7,7 @@ import { GALLERY_THUMBNAIL_4_3 } from '@/lib/utils/constants/imageGalleryConfig'
 import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS } from '@/localization'
 
-import { GalleryImageProps, GalleryThumbnailsProps } from './Gallery.types'
+import { type GalleryImageProps, type GalleryThumbnailsProps } from './Gallery.types'
 import { calculateImageHeight } from './Gallery.utils'
 
 const GalleryThumbnails = ({ images, activeImage, setActiveImage }: GalleryThumbnailsProps) => {

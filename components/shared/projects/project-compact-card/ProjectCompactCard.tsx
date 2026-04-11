@@ -8,7 +8,7 @@ import ProjectSkillsIcons from '@/components/shared/projects/project-skills-icon
 import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ICON_EMOJI } from '@/localization'
 
-import { ProjectCompactCardProps } from './ProjectCompactCard.types'
+import { type ProjectCompactCardProps } from './ProjectCompactCard.types'
 
 const ProjectCompactCard = ({
   ariaLabel,

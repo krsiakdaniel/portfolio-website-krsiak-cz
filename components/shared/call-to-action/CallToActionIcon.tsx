@@ -5,7 +5,7 @@ import { getEmojiEnum } from '@/lib/utils/helpers/getEmojiEnum'
 import { DeviceTypeEnum, EmojiSizeEnum, ImageLoadingEnum } from '@/lib/types/enums'
 import { IMAGE_ALT } from '@/localization'
 
-import { CallToActionIconProps } from './CallToActionIcon.types'
+import { type CallToActionIconProps } from './CallToActionIcon.types'
 
 const CallToActionIcon = ({ type, icon, iconAlt = IMAGE_ALT.default }: CallToActionIconProps) => {
   const isMobile = type === DeviceTypeEnum.Mobile

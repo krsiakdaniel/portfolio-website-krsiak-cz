@@ -3,7 +3,7 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import personCastro from '@/public/images/webp/testimonials/personal/alexandre-castro.webp'
 import personMoorhead from '@/public/images/webp/testimonials/personal/jonathan-moorhead.webp'
 
-import { TestimonialItem } from '@/lib/types/interfaces'
+import { type TestimonialItem } from '@/lib/types/interfaces'
 import { ICON_EMOJI, TEXT_DATA } from '@/localization'
 
 export const personalTestimonials: TestimonialItem[] = [

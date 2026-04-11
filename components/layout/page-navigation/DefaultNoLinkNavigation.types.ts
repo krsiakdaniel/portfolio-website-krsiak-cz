@@ -1,4 +1,4 @@
-import { ArrowDirectionEnum } from '@/lib/types/enums'
+import { type ArrowDirectionEnum } from '@/lib/types/enums'
 
 export type DefaultNoLinkNavigationProps = {
   arrowDirection: ArrowDirectionEnum

@@ -1,4 +1,4 @@
-import { Icon } from '@/lib/types/interfaces'
+import { type Icon } from '@/lib/types/interfaces'
 
 export type ProjectCompactCardProps = {
   ariaLabel: string

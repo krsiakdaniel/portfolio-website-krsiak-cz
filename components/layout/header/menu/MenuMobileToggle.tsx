@@ -7,7 +7,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { ARIA_LABELS } from '@/localization'
 
-import { MenuMobileToggleProps } from './MenuMobileToggle.types'
+import { type MenuMobileToggleProps } from './MenuMobileToggle.types'
 
 const MenuMobileToggle = ({ isMenuOpen, handleMenuMobileToggle, ref }: MenuMobileToggleProps) => {
   return (

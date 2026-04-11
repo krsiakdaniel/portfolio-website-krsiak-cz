@@ -1,7 +1,7 @@
 import HeadingSection from '@/components/shared/heading/HeadingSection'
 import ProjectSummaryCard from '@/components/shared/projects/project-summary-card/ProjectSummaryCard'
 
-import { ProjectSectionProps } from './ProjectSection.types'
+import { type ProjectSectionProps } from './ProjectSection.types'
 
 const ProjectSection = ({
   projectData = [],

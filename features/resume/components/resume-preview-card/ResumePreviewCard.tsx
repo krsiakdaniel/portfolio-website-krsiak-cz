@@ -10,7 +10,7 @@ import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, TEXT } from '@/localization'
 
 import { RESUME_PREVIEW_IMAGE } from './ResumePreviewCard.constants'
-import { ResumePreviewCardProps } from './ResumePreviewCard.types'
+import { type ResumePreviewCardProps } from './ResumePreviewCard.types'
 
 const ResumePreviewCard = ({
   title,

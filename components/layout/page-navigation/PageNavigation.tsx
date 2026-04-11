@@ -1,5 +1,5 @@
 import DefaultNoLinkNavigation from '@/components/layout/page-navigation/DefaultNoLinkNavigation'
-import { PageNavigationProps } from '@/components/layout/page-navigation/PageNavigation.types'
+import { type PageNavigationProps } from '@/components/layout/page-navigation/PageNavigation.types'
 import PageNavigationLink from '@/components/layout/page-navigation/PageNavigationLink'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'

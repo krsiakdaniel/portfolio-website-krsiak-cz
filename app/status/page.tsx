@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import { type Metadata } from 'next'
 
 import PageContainer from '@/components/layout/page-container/PageContainer'
 import BreadCrumbs from '@/components/shared/breadcrumbs/Breadcrumbs'

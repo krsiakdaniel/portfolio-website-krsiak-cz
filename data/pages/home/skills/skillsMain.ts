@@ -9,7 +9,7 @@ import {
 
 import { YEARS_EXPERIENCE } from '@/lib/utils/constants/yearsExperience'
 
-import { SkillCardItem } from '@/lib/types/interfaces'
+import { type SkillCardItem } from '@/lib/types/interfaces'
 import { TEXT } from '@/localization'
 
 export const skills: SkillCardItem[] = [

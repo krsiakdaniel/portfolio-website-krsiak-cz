@@ -1,4 +1,4 @@
-import { CallToActionProps } from '@/components/shared/call-to-action/CallToAction.types'
+import { type CallToActionProps } from '@/components/shared/call-to-action/CallToAction.types'
 import CallToActionBubbles from '@/components/shared/call-to-action/CallToActionBubbles'
 import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIcon'
 import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTexts'

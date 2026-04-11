@@ -7,7 +7,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { SHARED, TEXT } from '@/localization'
 
-import { ProjectLinksListProps } from './ProjectLinksList.types'
+import { type ProjectLinksListProps } from './ProjectLinksList.types'
 
 const ProjectLinksList = ({ projectLinks = [], linkGitHub }: ProjectLinksListProps) => {
   return (

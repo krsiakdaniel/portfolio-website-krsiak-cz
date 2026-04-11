@@ -1,4 +1,4 @@
-import { Link } from '@/lib/types/interfaces'
+import { type Link } from '@/lib/types/interfaces'
 
 export type ProjectLinksListProps = {
   linkGitHub?: string

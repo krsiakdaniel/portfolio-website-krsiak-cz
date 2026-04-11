@@ -1,6 +1,6 @@
 import { ExternalLink as ExternalLinkIcon } from 'lucide-react'
 
-import { ExternalLinkProps } from '@/components/shared/external-link/ExternalLink.types'
+import { type ExternalLinkProps } from '@/components/shared/external-link/ExternalLink.types'
 
 const ExternalLink = ({ href, text, title, dataTestId = '' }: ExternalLinkProps) => {
   return (

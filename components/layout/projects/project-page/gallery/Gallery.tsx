@@ -11,7 +11,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { ARIA_LABELS, GALLERY } from '@/localization'
 
-import { GalleryImageProps, GalleryProps } from './Gallery.types'
+import { type GalleryImageProps, type GalleryProps } from './Gallery.types'
 
 const Gallery = ({ images = [] }: GalleryProps) => {
   const [activeImage, setActiveImage] = useState<GalleryImageProps>(images[0])

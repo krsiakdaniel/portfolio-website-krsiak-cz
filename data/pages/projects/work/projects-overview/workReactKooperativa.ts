@@ -12,7 +12,7 @@ import kooperativa3 from '@/public/images/webp/projects/work/kooperativa/koopera
 import kooperativaProjectPreview from '@/public/images/webp/projects/work/kooperativa/kooperativa-project-preview.webp'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
-import { Project } from '@/lib/types/interfaces'
+import { type Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 const overview = PROJECTS_WORK_KOOPERATIVA_OVERVIEW

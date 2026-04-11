@@ -5,7 +5,7 @@ import personRobert from '@/public/images/webp/testimonials/fitness/robert-keste
 import personShane from '@/public/images/webp/testimonials/fitness/shane-duquette.webp'
 import personSteve from '@/public/images/webp/testimonials/fitness/steve-mcmanus.webp'
 
-import { TestimonialItem } from '@/lib/types/interfaces'
+import { type TestimonialItem } from '@/lib/types/interfaces'
 import { ICON_EMOJI, TEXT_DATA } from '@/localization'
 
 export const fitnessCoachTestimonials: TestimonialItem[] = [

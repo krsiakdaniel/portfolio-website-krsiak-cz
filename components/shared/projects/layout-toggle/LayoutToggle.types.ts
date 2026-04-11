@@ -1,4 +1,4 @@
-import { LayoutViewEnum } from '@/lib/types/enums'
+import { type LayoutViewEnum } from '@/lib/types/enums'
 
 export type LayoutToggleProps = {
   activeView: LayoutViewEnum

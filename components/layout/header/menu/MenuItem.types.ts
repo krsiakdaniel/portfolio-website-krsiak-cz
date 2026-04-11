@@ -1,4 +1,4 @@
-import { PageLinkItem } from '@/lib/types/interfaces'
+import { type PageLinkItem } from '@/lib/types/interfaces'
 
 export type MenuItemProps = {
   linkItem: PageLinkItem

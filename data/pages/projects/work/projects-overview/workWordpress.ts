@@ -11,7 +11,7 @@ import smartsuppHelp3 from '@/public/images/webp/projects/work/smartsupp-help/sm
 import smartsuppHelpProjectPreview from '@/public/images/webp/projects/work/smartsupp-help/smartsupp-help-project-preview.webp'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
-import { Project } from '@/lib/types/interfaces'
+import { type Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 const overview = PROJECTS_WORK_SMARTSUPP_HELP_OVERVIEW

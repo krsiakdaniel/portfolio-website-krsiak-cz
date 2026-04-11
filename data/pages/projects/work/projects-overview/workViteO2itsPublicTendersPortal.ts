@@ -9,7 +9,7 @@ import o2itsPublicTendersPortal from '@/public/images/webp/projects/work/o2its-p
 import o2itsPublicTendersPortalProjectPreview from '@/public/images/webp/projects/work/o2its-public-tenders-portal/o2its-public-tenders-portal-project-preview.webp'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
-import { Project } from '@/lib/types/interfaces'
+import { type Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 const overview = PROJECTS_WORK_O2ITS_PUBLIC_TENDERS_PORTAL_OVERVIEW

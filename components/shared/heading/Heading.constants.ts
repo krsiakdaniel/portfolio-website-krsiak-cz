@@ -1,4 +1,4 @@
-import { HeadingDefaults, HeadingLevel, HeadingSize } from './Heading.types'
+import { type HeadingDefaults, type HeadingLevel, type HeadingSize } from './Heading.types'
 
 export const HEADING_DEFAULTS: Record<HeadingLevel, HeadingDefaults> = {
   h1: {

@@ -2,7 +2,7 @@ import HeadingSection from '@/components/shared/heading/HeadingSection'
 
 import TestimonialDescription from '../testimonial-description/TestimonialDescription'
 import Testimonial from '../testimonial/Testimonial'
-import { TestimonialsSectionProps } from './TestimonialsSection.types'
+import { type TestimonialsSectionProps } from './TestimonialsSection.types'
 
 const TestimonialsSection = ({
   title,

@@ -1,4 +1,4 @@
-import { ProjectsOverviewLayoutProps } from '@/components/layout/projects/ProjectPageLayout.types'
+import { type ProjectsOverviewLayoutProps } from '@/components/layout/projects/ProjectPageLayout.types'
 import Heading from '@/components/shared/heading/Heading'
 
 const ProjectsOverviewLayout = ({

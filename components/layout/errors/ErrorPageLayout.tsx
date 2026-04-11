@@ -7,7 +7,7 @@ import imgError from '@/public/images/webp/errors/error.webp'
 
 import { TEXT } from '@/localization'
 
-import { ErrorPageLayoutProps } from './ErrorPageLayout.types'
+import { type ErrorPageLayoutProps } from './ErrorPageLayout.types'
 
 const ErrorPageLayout = ({
   error,

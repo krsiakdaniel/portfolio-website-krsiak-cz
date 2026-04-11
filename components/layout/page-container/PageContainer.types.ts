@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { type ReactNode } from 'react'
 
 export type MarginTop = 'mt-0' | 'mt-20'
 

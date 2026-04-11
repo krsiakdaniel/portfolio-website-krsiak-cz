@@ -1,6 +1,6 @@
 import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
 
-import { GoBackLinkEnum } from '@/lib/types/enums'
+import { type GoBackLinkEnum } from '@/lib/types/enums'
 
 describe('getGoBackLinkID', () => {
   it('returns correct link for type "work"', () => {

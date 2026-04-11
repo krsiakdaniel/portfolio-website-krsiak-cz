@@ -5,7 +5,7 @@ import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, TEXT } from '@/localization'
 
 import { TESTIMONIAL_PERSON_PHOTO } from './TestimonialPersonInfo.constants'
-import { TestimonialPersonInfoProps } from './TestimonialPersonInfo.types'
+import { type TestimonialPersonInfoProps } from './TestimonialPersonInfo.types'
 
 const TestimonialPersonInfo = ({
   photo,

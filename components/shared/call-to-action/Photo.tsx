@@ -10,7 +10,7 @@ import { ImageLoadingEnum } from '@/lib/types/enums'
 import { IMAGE_ALT } from '@/localization'
 
 import { PHOTO_DIMENSIONS } from './Photo.constants'
-import { PhotoProps } from './Photo.types'
+import { type PhotoProps } from './Photo.types'
 
 const Photo = ({ isPhotoSmall = false, isOpenToWork = false }: PhotoProps) => {
   return (

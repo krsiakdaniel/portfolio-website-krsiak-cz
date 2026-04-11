@@ -12,7 +12,7 @@ import smartsuppDashboard4 from '@/public/images/webp/projects/work/smartsupp-da
 import smartsuppDashboardProjectPreview from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-project-preview.webp'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
-import { Project } from '@/lib/types/interfaces'
+import { type Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 const overview = PROJECTS_WORK_SMARTSUPP_DASHBOARD_OVERVIEW

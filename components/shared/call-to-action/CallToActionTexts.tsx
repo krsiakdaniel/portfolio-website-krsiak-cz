@@ -5,7 +5,7 @@ import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { DeviceTypeEnum } from '@/lib/types/enums'
 
-import { CallToActionTextsProps } from './CallToActionTexts.types'
+import { type CallToActionTextsProps } from './CallToActionTexts.types'
 
 const CallToActionTexts = ({
   icon,

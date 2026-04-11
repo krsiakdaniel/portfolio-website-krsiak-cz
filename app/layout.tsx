@@ -13,7 +13,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { ARIA_LABELS } from '@/localization'
 
 import { roboto, rubik } from './fonts'
-import { RootLayoutProps } from './layout.types'
+import { type RootLayoutProps } from './layout.types'
 
 import './globals.css'
 import 'react-tooltip/dist/react-tooltip.css'

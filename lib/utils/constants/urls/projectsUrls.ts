@@ -1,4 +1,4 @@
-import { ProjectsPersonalUrls, ProjectsWorkUrls } from '@/lib/types/interfaces'
+import { type ProjectsPersonalUrls, type ProjectsWorkUrls } from '@/lib/types/interfaces'
 
 export const PROJECTS_WORK_URLS = {
   workO2itsExternal: 'https://www.o2its.cz/',

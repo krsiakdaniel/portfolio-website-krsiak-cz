@@ -1,6 +1,6 @@
-import { Section } from '@/lib/types/interfaces'
+import { type Section } from '@/lib/types/interfaces'
 
-import { PersonalSection } from './buildPersonalSection.types'
+import { type PersonalSection } from './buildPersonalSection.types'
 
 export const buildPersonalSection = (project: PersonalSection): Section[] => [
   {

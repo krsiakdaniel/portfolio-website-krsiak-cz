@@ -1,4 +1,4 @@
-import { DividerWithTextProps } from '@/components/shared/divider-with-text/DividerWithText.types'
+import { type DividerWithTextProps } from '@/components/shared/divider-with-text/DividerWithText.types'
 
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 

@@ -1,4 +1,4 @@
-import { EmojiAnimatedProps } from '@/components/shared/emoji-animated/EmojiAnimated.types'
+import { type EmojiAnimatedProps } from '@/components/shared/emoji-animated/EmojiAnimated.types'
 import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'

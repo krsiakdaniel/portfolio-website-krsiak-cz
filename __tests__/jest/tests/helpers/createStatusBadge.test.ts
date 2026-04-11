@@ -1,6 +1,6 @@
 import { createStatusBadge } from '@/lib/utils/helpers/createStatusBadge'
 
-import { StatusBadge } from '@/lib/types/interfaces'
+import { type StatusBadge } from '@/lib/types/interfaces'
 
 describe('createStatusBadge', () => {
   it('should create a status badge with the given properties', () => {

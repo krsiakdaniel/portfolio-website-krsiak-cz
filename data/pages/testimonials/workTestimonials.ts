@@ -3,7 +3,7 @@ import personLosseff from '@/public/images/webp/testimonials/work/inka-losseff.w
 import personKvapil from '@/public/images/webp/testimonials/work/roman-kvapil.webp'
 import personPridalek from '@/public/images/webp/testimonials/work/vojtech-pridalek.webp'
 
-import { TestimonialItem } from '@/lib/types/interfaces'
+import { type TestimonialItem } from '@/lib/types/interfaces'
 import { ICON_EMOJI, TEXT_DATA } from '@/localization'
 
 export const workTestimonials: TestimonialItem[] = [

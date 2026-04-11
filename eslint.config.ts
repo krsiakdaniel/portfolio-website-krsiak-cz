@@ -45,6 +45,10 @@ const eslintConfig = [
       'react/react-in-jsx-scope': 'off', // Not needed in Next.js 13+
       'react/prop-types': 'off', // Using TypeScript instead
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
+      ],
     },
     settings: {
       react: {

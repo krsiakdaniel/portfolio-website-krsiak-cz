@@ -1,5 +1,5 @@
 import Heading from '@/components/shared/heading/Heading'
-import { HeadingSectionProps } from '@/components/shared/heading/HeadingSection.types'
+import { type HeadingSectionProps } from '@/components/shared/heading/HeadingSection.types'
 
 import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 

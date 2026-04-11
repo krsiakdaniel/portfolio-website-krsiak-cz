@@ -1,6 +1,6 @@
-import { ReactNode } from 'react'
+import { type ReactNode } from 'react'
 
-import { AlertColorVariantEnum } from '@/lib/types/enums'
+import { type AlertColorVariantEnum } from '@/lib/types/enums'
 
 export type AlertProps = {
   type?: AlertColorVariantEnum

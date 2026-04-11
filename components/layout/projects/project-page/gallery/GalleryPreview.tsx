@@ -7,7 +7,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS } from '@/localization'
 
-import { GalleryPreviewProps } from './Gallery.types'
+import { type GalleryPreviewProps } from './Gallery.types'
 import { calculateImageHeight } from './Gallery.utils'
 
 const GalleryPreview = ({ activeImage }: GalleryPreviewProps) => {

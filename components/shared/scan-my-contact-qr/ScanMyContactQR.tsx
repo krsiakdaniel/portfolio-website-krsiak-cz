@@ -1,5 +1,5 @@
 import ImageComponent from '@/components/shared/image-component/ImageComponent'
-import { ScanMyContactQRProps } from '@/components/shared/scan-my-contact-qr/ScanMyContactQR.types'
+import { type ScanMyContactQRProps } from '@/components/shared/scan-my-contact-qr/ScanMyContactQR.types'
 
 import { QR_CODE_SIZE } from '@/lib/utils/constants/shared/qrCode'
 

@@ -1,5 +1,5 @@
 import PageContainer from '@/components/layout/page-container/PageContainer'
-import { ProjectPageLayoutWrapperProps } from '@/components/layout/projects/ProjectPageLayout.types'
+import { type ProjectPageLayoutWrapperProps } from '@/components/layout/projects/ProjectPageLayout.types'
 import HeaderSection from '@/components/layout/projects/project-page/HeaderSection'
 import ProjectInformation from '@/components/layout/projects/project-page/ProjectInformation'
 import ProjectResponsibility from '@/components/layout/projects/project-page/ProjectResponsibility'

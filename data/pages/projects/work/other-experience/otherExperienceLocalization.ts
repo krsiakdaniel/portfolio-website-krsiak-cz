@@ -1,4 +1,4 @@
-import { OtherExperienceData } from '@/lib/types/interfaces'
+import { type OtherExperienceData } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI, OTHER_EXPERIENCE } from '@/localization'
 
 export const otherExperienceLocalization: OtherExperienceData[] = [

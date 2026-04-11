@@ -5,7 +5,7 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { PROJECTS } from '@/localization'
 
-import { ProjectWorkListViewProps } from './ProjectWorkListView.types'
+import { type ProjectWorkListViewProps } from './ProjectWorkListView.types'
 
 const ProjectWorkListView = ({ projects }: ProjectWorkListViewProps) => {
   return (

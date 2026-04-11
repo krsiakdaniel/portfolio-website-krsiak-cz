@@ -1,3 +1,3 @@
-import { SkillCardItem } from '@/lib/types/interfaces'
+import { type SkillCardItem } from '@/lib/types/interfaces'
 
 export type SkillCardProps = SkillCardItem

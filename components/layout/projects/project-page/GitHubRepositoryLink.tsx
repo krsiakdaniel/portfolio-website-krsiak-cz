@@ -5,7 +5,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 
 import { TEXT } from '@/localization'
 
-import { GitHubRepositoryLinkProps } from './GitHubRepositoryLink.types'
+import { type GitHubRepositoryLinkProps } from './GitHubRepositoryLink.types'
 
 const GitHubRepositoryLink = ({ href, text }: GitHubRepositoryLinkProps) => {
   return (

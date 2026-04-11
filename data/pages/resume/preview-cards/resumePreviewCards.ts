@@ -5,7 +5,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import previewDOCX from '@/public/images/webp/resume/preview-page-docx.webp'
 import previewPDF from '@/public/images/webp/resume/preview-page-pdf.webp'
 
-import { ResumePreviewCard } from '@/lib/types/interfaces'
+import { type ResumePreviewCard } from '@/lib/types/interfaces'
 import { IMAGE_ALT, TEXT } from '@/localization'
 
 export const resumePreviewCardData: ResumePreviewCard[] = [

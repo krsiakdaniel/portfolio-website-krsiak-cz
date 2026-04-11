@@ -7,7 +7,7 @@ import ListItem from '@/components/shared/list/ListItem'
 
 import { TEXT } from '@/localization'
 
-import { ProjectInformationProps } from './ProjectInformation.types'
+import { type ProjectInformationProps } from './ProjectInformation.types'
 
 const ProjectInformation = ({
   description,

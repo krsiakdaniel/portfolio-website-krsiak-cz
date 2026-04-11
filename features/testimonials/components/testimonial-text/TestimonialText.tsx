@@ -1,6 +1,6 @@
 import Paragraph from '@/components/shared/paragraph/Paragraph'
 
-import { TestimonialTextProps } from './TestimonialText.types'
+import { type TestimonialTextProps } from './TestimonialText.types'
 
 const TestimonialText = ({ text }: TestimonialTextProps) => {
   return (

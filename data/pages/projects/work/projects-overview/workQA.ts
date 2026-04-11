@@ -10,7 +10,7 @@ import groupon2 from '@/public/images/webp/projects/work/groupon/groupon-2-light
 import grouponProjectPreview from '@/public/images/webp/projects/work/groupon/groupon-project-preview.webp'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
-import { Project } from '@/lib/types/interfaces'
+import { type Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 const overview = PROJECTS_WORK_GROUPON_OVERVIEW

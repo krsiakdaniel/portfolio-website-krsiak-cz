@@ -1,4 +1,4 @@
-import { HeadingProps } from '@/components/shared/heading/Heading.types'
+import { type HeadingProps } from '@/components/shared/heading/Heading.types'
 
 import { getAttributes } from '@/lib/utils/helpers/getAttributes'
 

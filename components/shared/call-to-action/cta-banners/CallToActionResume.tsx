@@ -1,5 +1,5 @@
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
-import { CallToActionResumeProps } from '@/components/shared/call-to-action/CallToActionResume.types'
+import { type CallToActionResumeProps } from '@/components/shared/call-to-action/CallToActionResume.types'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 

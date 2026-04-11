@@ -1,7 +1,7 @@
 import { DurationUnitEnum } from '@/lib/types/enums'
 import { TEXT } from '@/localization'
 
-import { GetYearsMonthsType } from './getYearsMonths.types'
+import { type GetYearsMonthsType } from './getYearsMonths.types'
 
 /**
  * Formats the duration and unit of a job experience into a string.

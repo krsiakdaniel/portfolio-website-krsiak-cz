@@ -1,7 +1,7 @@
-import { StaticImageData } from 'next/image'
+import { type StaticImageData } from 'next/image'
 
-import { ImageLoadingEnum } from '@/lib/types/enums'
-import { PlaceholderValue } from '@/node_modules/next/dist/shared/lib/get-img-props'
+import { type ImageLoadingEnum } from '@/lib/types/enums'
+import { type PlaceholderValue } from '@/node_modules/next/dist/shared/lib/get-img-props'
 
 /**
  * Props for the Image component

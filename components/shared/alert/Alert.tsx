@@ -1,6 +1,6 @@
 import { Info } from 'lucide-react'
 
-import { AlertProps } from '@/components/shared/alert/Alert.types'
+import { type AlertProps } from '@/components/shared/alert/Alert.types'
 
 import { AlertColorVariantEnum } from '@/lib/types/enums'
 

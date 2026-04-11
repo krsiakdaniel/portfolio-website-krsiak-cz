@@ -1,9 +1,9 @@
-import { Metadata } from 'next'
+import { type Metadata } from 'next'
 
 import { ENV_URLS } from '@/lib/utils/constants/urls/pageUrls'
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
-import { CreatePageMetadataParams } from './createPageMetadata.types'
+import { type CreatePageMetadataParams } from './createPageMetadata.types'
 
 export const createPageMetadata = ({
   meta,

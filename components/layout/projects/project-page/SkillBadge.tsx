@@ -1,4 +1,4 @@
-import { SkillBadgeProps } from './SkillBadge.types'
+import { type SkillBadgeProps } from './SkillBadge.types'
 
 const SkillBadge = ({ skillObject }: SkillBadgeProps) => {
   return (

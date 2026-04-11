@@ -1,4 +1,4 @@
-import { ExternalURL } from '@/lib/types/interfaces'
+import { type ExternalURL } from '@/lib/types/interfaces'
 
 export const EXTERNAL_URL: ExternalURL = {
   gitHub: 'https://github.com/krsiakdaniel/portfolio-website-krsiak-cz',

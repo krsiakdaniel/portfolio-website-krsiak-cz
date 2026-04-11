@@ -2,7 +2,7 @@ import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
 import { getSkillCardID } from '@/lib/utils/helpers/skills/getSkillCardID'
 
-import { SkillCardProps } from '@/features/home/components/skill-card/SkillCard.types'
+import { type SkillCardProps } from '@/features/home/components/skill-card/SkillCard.types'
 import SkillCardTechnologyYears from '@/features/home/components/skill-card/SkillCardTechnologyYears'
 import { ImageLoadingEnum } from '@/lib/types/enums'
 

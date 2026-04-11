@@ -1,7 +1,7 @@
 'use client' // using usePathname hook
 import { usePathname } from 'next/navigation'
 
-import { MenuProps } from '@/components/layout/header/menu/Menu.types'
+import { type MenuProps } from '@/components/layout/header/menu/Menu.types'
 import MenuItem from '@/components/layout/header/menu/MenuItem'
 
 import { pagesLinks } from '@/data/layout/pagesLinks'

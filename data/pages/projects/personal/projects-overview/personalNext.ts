@@ -23,7 +23,7 @@ import krsiak4 from '@/public/images/webp/projects/personal/krsiak/krsiak-4.webp
 import krsiakProjectPreview from '@/public/images/webp/projects/personal/krsiak/krsiak-project-preview.webp'
 
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
-import { Project } from '@/lib/types/interfaces'
+import { type Project } from '@/lib/types/interfaces'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 const koreanEasyOverview = PROJECTS_PERSONAL_KOREAN_EASY_OVERVIEW

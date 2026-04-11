@@ -10,7 +10,7 @@ import iconLinkedIn from '@/public/icons/svg/social/linkedin.svg'
 import { DeviceTypeEnum } from '@/lib/types/enums'
 import { IMAGE_ALT, TEXT } from '@/localization'
 
-import { MenuSocialLinksProps } from './MenuSocialLinks.types'
+import { type MenuSocialLinksProps } from './MenuSocialLinks.types'
 
 const MenuSocialLinks = ({ type }: MenuSocialLinksProps) => {
   const isMobile = type === DeviceTypeEnum.Mobile
