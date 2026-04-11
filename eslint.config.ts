@@ -1,16 +1,19 @@
+/**
+ * ESLint flat config dependencies:
+ * - `@eslint/js` — core ESLint recommended rules
+ * - `@next/eslint-plugin-next` — Next.js-specific rules
+ * - `eslint-plugin-react` — React-specific rules
+ * - `eslint-plugin-react-hooks` — React Hooks rules
+ * - `globals` — global variables for different environments
+ * - `typescript-eslint` — TypeScript-specific rules
+ */
 import js from '@eslint/js'
-// Core ESLint recommended rules
 import nextPlugin from '@next/eslint-plugin-next'
-// Next.js-specific rules
 import reactPlugin from 'eslint-plugin-react'
-// React-specific rules
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
-// TypeScript-specific rules
 import globals from 'globals'
-// React Hooks rules
 import typescript from 'typescript-eslint'
 
-// Global variables for different environments
 const eslintConfig = [
   {
     ignores: [

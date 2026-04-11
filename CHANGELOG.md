@@ -7,11 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 🚀 Website Version History
 
-As of **April 11, 2026**, the website is `"version": "2.48.27"`.
+As of **April 11, 2026**, the website is `"version": "2.48.28"`.
 
 - `2.x.x`: Major version representing complete redesign (Feb 2024)
 - `x.48.x`: Feature additions (new pages, components, functionality)
 - `x.x.24`: Bug fixes and minor improvements
+
+## `2.48.28` - 2026-04
+
+### 🛠️ Chore
+
+- 🔧 Fix `jest.config.ts` — `next/jest.js` → `next/jest` (remove legacy CJS extension)
+- 🔧 Fix `eslint.config.ts` — remove misaligned import comments
+- 🔧 Fix `.editorconfig` — `trim_trailing_whitespace: false` → `true`
 
 ## `2.48.27` - 2026-04
 
