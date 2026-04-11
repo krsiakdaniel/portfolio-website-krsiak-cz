@@ -2,6 +2,8 @@ import DividerWithText from '@/components/shared/divider-with-text/DividerWithTe
 import Heading from '@/components/shared/heading/Heading'
 import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
+import { ARIA_LABELS, DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization'
+
 import bata from '@/public/images/svg/logo/bata.svg'
 import groupon from '@/public/images/svg/logo/groupon.svg'
 import komercniBanka from '@/public/images/svg/logo/komercni-banka.svg'
@@ -10,7 +12,6 @@ import microsoft from '@/public/images/svg/logo/microsoft.svg'
 import smartsupp from '@/public/images/svg/logo/smartsupp.svg'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'
-import { ARIA_LABELS, DIVIDER_WITH_TEXT, IMAGE_ALT, TEXT } from '@/localization'
 
 import { COMPANIES_LOGOS_SIZES } from './Companies.constants'
 

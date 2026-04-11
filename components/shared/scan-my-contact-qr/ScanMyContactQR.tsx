@@ -1,12 +1,13 @@
 import ImageComponent from '@/components/shared/image-component/ImageComponent'
-import { ScanMyContactQRProps } from '@/components/shared/scan-my-contact-qr/ScanMyContactQR.types'
+import { type ScanMyContactQRProps } from '@/components/shared/scan-my-contact-qr/ScanMyContactQR.types'
 
 import { QR_CODE_SIZE } from '@/lib/utils/constants/shared/qrCode'
+
+import { IMAGE_ALT } from '@/localization'
 
 import contactQR from '@/public/images/svg/vcard-contact/krsiak-daniel-qr-code-vcard.svg'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'
-import { IMAGE_ALT } from '@/localization'
 
 const ScanMyContactQR = ({
   width = QR_CODE_SIZE.SMALL.WIDTH,

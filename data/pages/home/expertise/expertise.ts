@@ -1,5 +1,5 @@
 import { PAGE_HOME } from '@/features/home/localization'
-import { SkillsInfo } from '@/lib/types/interfaces'
+import { type SkillsInfo } from '@/lib/types/interfaces'
 
 export const committedMindsetItems: SkillsInfo[] = [
   { id: 0, text: PAGE_HOME.expertise.committedMindset.items[0].text },

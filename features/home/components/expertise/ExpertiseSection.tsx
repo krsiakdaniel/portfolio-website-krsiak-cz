@@ -6,7 +6,7 @@ import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 
 import { ARIA_LABELS } from '@/localization'
 
-import { ExpertiseSectionProps } from './Expertise.types'
+import { type ExpertiseSectionProps } from './Expertise.types'
 
 const ExpertiseSection = ({
   icon = '',

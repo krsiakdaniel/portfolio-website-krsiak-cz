@@ -1,3 +1,3 @@
-import { Project } from '@/lib/types/interfaces'
+import { type Project } from '@/lib/types/interfaces'
 
 export type SkillsListProps = Pick<Project, 'skillsOverview'>

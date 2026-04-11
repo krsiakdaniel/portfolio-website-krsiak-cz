@@ -6,7 +6,7 @@ import { getGoBackLinkID } from '@/lib/utils/helpers/getGoBackLink'
 
 import { TEXT } from '@/localization'
 
-import { GoBackLinkProps } from './GoBackLink.types'
+import { type GoBackLinkProps } from './GoBackLink.types'
 
 const GoBackLink = ({ goBackLink, sectionID }: GoBackLinkProps) => {
   const goBackUrlWithID = getGoBackLinkID(goBackLink, sectionID)

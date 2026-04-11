@@ -1,11 +1,11 @@
-import { BreadCrumbsProps } from '@/components/shared/breadcrumbs/Breadcrumbs.types'
+import { type BreadCrumbsProps } from '@/components/shared/breadcrumbs/Breadcrumbs.types'
 import BreadcrumbsItem from '@/components/shared/breadcrumbs/BreadcrumbsItem'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 const BreadCrumbs = ({
   level1Url,

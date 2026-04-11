@@ -17,7 +17,7 @@ This is a React Next.js portfolio website written in TypeScript, using Bun as th
 - **Styling**: Tailwind CSS v4
 - **Testing**: Jest (unit) + Playwright (E2E)
 - **Deployment**: Netlify with PWA capabilities and automated CI/CD
-- **Analytics**: Google Analytics + Smartlook
+- **Analytics**: Google Analytics + Hotjar
 
 ### Minimum Requirements
 
@@ -146,7 +146,7 @@ Import organization is **automated** via `@trivago/prettier-plugin-sort-imports`
 2. **Third-Party Modules** - External dependencies
 3. **Custom Hooks** - `@/lib/hooks/`
 4. **Components** - `@/components/`
-5. **Data** - `@/lib/data/`
+5. **Data** - `@/data/`
 6. **Utils** - `@/lib/utils/` (includes constants, helpers, interfaces)
 7. **Localization** - `@/localization/`
 8. **Test Utilities** - `@/__tests__/`
@@ -169,7 +169,7 @@ import { useCustomHook } from '@/lib/hooks/useCustomHook'
 import { Header } from '@/components/layout/Header'
 import { Button } from '@/components/ui/Button'
 
-import { projectsData } from '@/lib/data/projects'
+import { projectsData } from '@/data/projects'
 
 import { formatDate } from '@/lib/utils/date'
 

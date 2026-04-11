@@ -9,7 +9,7 @@ import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/da
 import { ImageLoadingEnum } from '@/lib/types/enums'
 
 import { ERROR_PAGE_IMAGE } from './ErrorPageContent.constants'
-import { ErrorPageContentProps } from './ErrorPageContent.types'
+import { type ErrorPageContentProps } from './ErrorPageContent.types'
 
 const ErrorPageContent = ({
   imgSrc,

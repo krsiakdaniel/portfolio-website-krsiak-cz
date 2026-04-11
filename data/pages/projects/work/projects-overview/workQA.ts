@@ -1,4 +1,8 @@
+import { iconsSkillsProjectsWorkGroupon } from '@/data/pages/projects/work/projects-overview/skillsProjectsWork'
+
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
+
+import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
 import { PROJECTS_WORK_GROUPON_OVERVIEW } from '@/localization/pages/projects/work-groupon'
 
@@ -7,10 +11,8 @@ import groupon1 from '@/public/images/webp/projects/work/groupon/groupon-1-light
 import groupon2 from '@/public/images/webp/projects/work/groupon/groupon-2-light.webp'
 import grouponProjectPreview from '@/public/images/webp/projects/work/groupon/groupon-project-preview.webp'
 
-import { iconsSkillsProjectsWorkGroupon } from '@/data/pages/projects/work/projects-overview/skillsProjectsWork'
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
-import { Project } from '@/lib/types/interfaces'
-import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
+import { type Project } from '@/lib/types/interfaces'
 
 const overview = PROJECTS_WORK_GROUPON_OVERVIEW
 

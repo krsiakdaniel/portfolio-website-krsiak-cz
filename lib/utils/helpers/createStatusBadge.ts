@@ -1,4 +1,4 @@
-import { StatusBadge } from '@/lib/types/interfaces'
+import { type StatusBadge } from '@/lib/types/interfaces'
 
 /**
  * Creates a status badge object.

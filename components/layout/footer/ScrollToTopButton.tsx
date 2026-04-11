@@ -5,13 +5,14 @@ import { ArrowUp } from 'lucide-react'
 
 import { scrollToTop } from '@/lib/utils/helpers/scrollToTop'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { ARIA_LABELS, FOOTER } from '@/localization'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { SCROLL_TO_TOP } from './ScrollToTopButton.constants'
 
-const buttonCss = `animate-fade-in-scroll 
+const getButtonCss = (isFadingOut: boolean) =>
+  `${isFadingOut ? 'animate-fade-out-scroll' : 'animate-fade-in-scroll'}
   fixed right-8 bottom-8 z-50 
   flex h-12 w-12 items-center justify-center 
   rounded-full bg-violet-600 text-white
@@ -20,15 +21,27 @@ const buttonCss = `animate-fade-in-scroll
   focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:outline-none`
 
 const ScrollToTopButton = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(false)
+  const [shouldRender, setShouldRender] = useState<boolean>(false)
+  const [isFadingOut, setIsFadingOut] = useState<boolean>(false)
 
   const handleScrollToTop = useCallback(() => {
     scrollToTop()
   }, [])
 
   const toggleVisibility = useCallback(() => {
-    setIsVisible(window.pageYOffset > SCROLL_TO_TOP.THRESHOLD)
-  }, [])
+    const aboveThreshold = window.pageYOffset > SCROLL_TO_TOP.THRESHOLD
+
+    if (aboveThreshold) {
+      setIsFadingOut(false)
+      setShouldRender(true)
+    } else if (shouldRender) {
+      setIsFadingOut(true)
+      setTimeout(() => {
+        setShouldRender(false)
+        setIsFadingOut(false)
+      }, SCROLL_TO_TOP.FADE_DURATION)
+    }
+  }, [shouldRender])
 
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility, { passive: true })
@@ -36,14 +49,14 @@ const ScrollToTopButton = () => {
     return () => window.removeEventListener('scroll', toggleVisibility)
   }, [toggleVisibility])
 
-  if (!isVisible) {
+  if (!shouldRender) {
     return null
   }
 
   return (
     <button
       onClick={handleScrollToTop}
-      className={buttonCss}
+      className={getButtonCss(isFadingOut)}
       data-testid={DATA_TEST_IDS.footer.scrollToTopButton}
       aria-label={ARIA_LABELS.scrollToTopPage}
       title={FOOTER.scrollToTop}

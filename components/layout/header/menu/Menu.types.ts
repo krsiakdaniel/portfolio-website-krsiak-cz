@@ -1,4 +1,4 @@
-import { DeviceTypeEnum } from '@/lib/types/enums'
+import { type DeviceTypeEnum } from '@/lib/types/enums'
 
 export type MenuProps = {
   type: DeviceTypeEnum

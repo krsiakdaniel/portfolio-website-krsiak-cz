@@ -1,9 +1,10 @@
-import { Metadata } from 'next'
+import { type Metadata } from 'next'
+
+import { appleTouchIconSizes } from '@/data/metadata/shared/appleTouchIconSizes'
 
 import { ENV_URLS } from '@/lib/utils/constants/urls/pageUrls'
 import { formatKeywordsString } from '@/lib/utils/helpers/metadata/formatKeywordsString'
 
-import { appleTouchIconSizes } from '@/data/metadata/shared/appleTouchIconSizes'
 import { COMMON_VALUES, META_DEFAULT } from '@/localization'
 
 export const defaultMetaData: Metadata = {

@@ -5,7 +5,7 @@ import ProjectSkillsIcons from '@/components/shared/projects/project-skills-icon
 
 import { ARIA_LABELS } from '@/localization'
 
-import { ProjectSummaryCardProps } from './ProjectSummaryCard.types'
+import { type ProjectSummaryCardProps } from './ProjectSummaryCard.types'
 
 const ProjectSummaryCard = ({
   isFeatured,

@@ -3,11 +3,11 @@ import { useEffect } from 'react'
 import ErrorPageContent from '@/components/layout/errors/ErrorPageContent'
 import PageContainer from '@/components/layout/page-container/PageContainer'
 
-import imgError from '@/public/images/webp/errors/error.webp'
-
 import { TEXT } from '@/localization'
 
-import { ErrorPageLayoutProps } from './ErrorPageLayout.types'
+import imgError from '@/public/images/webp/errors/error.webp'
+
+import { type ErrorPageLayoutProps } from './ErrorPageLayout.types'
 
 const ErrorPageLayout = ({
   error,
@@ -19,9 +19,11 @@ const ErrorPageLayout = ({
 }: ErrorPageLayoutProps) => {
   useEffect(() => {
     // Log the error to an error reporting service
+    // eslint-disable-next-line no-console
     console.error('ERROR:', error.name, error.message, error.stack)
     // Log digest if available for server-side error tracking
     if (error.digest) {
+      // eslint-disable-next-line no-console
       console.error('Error digest:', error.digest)
     }
   }, [error])

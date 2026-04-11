@@ -3,7 +3,7 @@ import Highlight from '@/components/shared/highlight/Highlight'
 import List from '@/components/shared/list/List'
 import ListItem from '@/components/shared/list/ListItem'
 
-import { ProjectResponsibilitySectionProps } from './ProjectResponsibilitySection.types'
+import { type ProjectResponsibilitySectionProps } from './ProjectResponsibilitySection.types'
 
 const ProjectResponsibilitySection = ({
   title,

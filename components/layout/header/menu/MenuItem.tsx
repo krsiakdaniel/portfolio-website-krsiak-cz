@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import { getMenuLinkID } from '@/lib/utils/helpers/menu/getMenuLinkID'
 
-import { MenuItemProps } from './MenuItem.types'
+import { type MenuItemProps } from './MenuItem.types'
 
 const MenuItem = ({ linkItem, isMobile, onClickLink }: MenuItemProps) => {
   const { id, href, icon, ariaLabel, text, dataTestId, isActive } = linkItem

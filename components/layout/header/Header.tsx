@@ -11,8 +11,9 @@ import MenuMobileToggle from '@/components/layout/header/menu/MenuMobileToggle'
 import MenuSocialLinks from '@/components/layout/header/menu/MenuSocialLinks'
 import PageContainer from '@/components/layout/page-container/PageContainer'
 
-import { DeviceTypeEnum } from '@/lib/types/enums'
 import { ARIA_LABELS } from '@/localization'
+
+import { DeviceTypeEnum } from '@/lib/types/enums'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)

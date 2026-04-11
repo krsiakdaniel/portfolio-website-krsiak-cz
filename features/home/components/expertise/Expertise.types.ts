@@ -1,4 +1,4 @@
-import { SkillsInfo } from '@/lib/types/interfaces'
+import { type SkillsInfo } from '@/lib/types/interfaces'
 
 export type ExpertiseSectionProps = {
   icon: string

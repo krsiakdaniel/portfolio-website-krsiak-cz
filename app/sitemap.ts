@@ -1,9 +1,9 @@
-import { MetadataRoute } from 'next'
+import { type MetadataRoute } from 'next'
 
 import { ENV_URLS, PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
 import { ChangeFrequencyEnum } from '@/lib/types/enums'
-import { SitemapEntry } from '@/lib/types/interfaces'
+import { type SitemapEntry } from '@/lib/types/interfaces'
 
 export const CHANGE_FREQUENCY_MONTHLY = ChangeFrequencyEnum.MONTHLY
 

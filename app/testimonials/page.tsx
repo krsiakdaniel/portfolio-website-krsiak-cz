@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import { type Metadata } from 'next'
 
 import PageContainer from '@/components/layout/page-container/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
@@ -6,19 +6,21 @@ import BreadCrumbs from '@/components/shared/breadcrumbs/Breadcrumbs'
 import CallToActionLinkedIn from '@/components/shared/call-to-action/cta-banners/CallToActionLinkedIn'
 import Heading from '@/components/shared/heading/Heading'
 
-import { ID } from '@/lib/utils/constants/ids/elementIds'
-import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { fitnessCoachTestimonials } from '@/data/pages/testimonials/fitnessCoachTestimonials'
 import { personalTestimonials } from '@/data/pages/testimonials/personalTestimonials'
 import { workTestimonials } from '@/data/pages/testimonials/workTestimonials'
+
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
 import TestimonialsIntroduction from '@/features/testimonials/components/testimonials-introduction/TestimonialsIntroduction'
 import TestimonialsSection from '@/features/testimonials/components/testimonials-section/TestimonialsSection'
 import { TESTIMONIALS } from '@/features/testimonials/localization'
 import { metaDataTestimonials } from '@/features/testimonials/metadata'
-import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataTestimonials,

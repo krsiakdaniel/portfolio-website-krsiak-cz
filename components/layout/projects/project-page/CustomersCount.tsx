@@ -3,7 +3,7 @@ import ListItem from '@/components/shared/list/ListItem'
 
 import { SHARED } from '@/localization'
 
-import { CustomersCountProps } from './CustomersCount.types'
+import { type CustomersCountProps } from './CustomersCount.types'
 
 const CustomersCount = ({ count }: CustomersCountProps) => {
   return (

@@ -1,6 +1,6 @@
 import { CircleCheck } from 'lucide-react'
 
-import { ListItemProps } from './ListItem.types'
+import { type ListItemProps } from './ListItem.types'
 
 const ListItem = ({ children, showIcon = true }: ListItemProps) => {
   return (

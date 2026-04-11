@@ -3,7 +3,7 @@ import ImageComponent from '@/components/shared/image-component/ImageComponent'
 import { ImageLoadingEnum } from '@/lib/types/enums'
 
 import { PROJECT_SKILLS_ICON } from './ProjectSkillsIcons.constants'
-import { ProjectSkillsIconsProps } from './ProjectSkillsIcons.types'
+import { type ProjectSkillsIconsProps } from './ProjectSkillsIcons.types'
 
 const ProjectSkillsIcons = ({ skillsIcons = [] }: ProjectSkillsIconsProps) => {
   return (

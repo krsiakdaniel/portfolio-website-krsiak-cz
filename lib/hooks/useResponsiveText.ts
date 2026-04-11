@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import { ScreenSizeEnum } from '../types/enums'
-import { UseResponsiveTextOptions } from './useResponsiveText.types'
+import { type UseResponsiveTextOptions } from './useResponsiveText.types'
 
 /**
  * Custom hook that returns different text content based on the viewport width.

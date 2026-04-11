@@ -1,9 +1,12 @@
-import { Metadata } from 'next'
+import { type Metadata } from 'next'
 
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
 import ProjectPageLayoutWrapper from '@/components/layout/projects/ProjectPageLayoutWrapper'
 import Alert from '@/components/shared/alert/Alert'
 import SocialLink from '@/components/shared/social-link/SocialLink'
+
+import { sections } from '@/data/pages/projects/personal/koreanEasy'
+import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/personalNext'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
@@ -11,13 +14,12 @@ import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 import { getBreadcrumbsPersonal } from '@/lib/utils/helpers/breadcrumbs/getBreadcrumbsPersonal'
 
+import { ICON_EMOJI, PROJECTS, PROJECT_KOREAN_EASY, TEXT } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import { sections } from '@/data/pages/projects/personal/koreanEasy'
-import { projectsPersonalNext } from '@/data/pages/projects/personal/projects-overview/personalNext'
 import { metaDataKoreanEasy } from '@/features/personal-korean-easy/metadata'
 import { AlertColorVariantEnum, GoBackLinkEnum } from '@/lib/types/enums'
-import { ICON_EMOJI, PROJECTS, PROJECT_KOREAN_EASY, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataKoreanEasy,

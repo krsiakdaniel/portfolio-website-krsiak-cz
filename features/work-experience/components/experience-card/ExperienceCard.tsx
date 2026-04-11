@@ -4,7 +4,7 @@ import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 
-import { ExperienceCardProps } from './ExperienceCard.types'
+import { type ExperienceCardProps } from './ExperienceCard.types'
 
 const ExperienceCard = ({ company, role, description }: ExperienceCardProps) => {
   return (

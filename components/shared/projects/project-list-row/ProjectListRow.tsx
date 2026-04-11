@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import { ArrowRight } from 'lucide-react'
 
-import { ProjectListRowProps } from './ProjectListRow.types'
+import { type ProjectListRowProps } from './ProjectListRow.types'
 
 const ProjectListRow = ({
   ariaLabel,

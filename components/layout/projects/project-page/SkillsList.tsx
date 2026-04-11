@@ -2,7 +2,7 @@ import SkillBadge from '@/components/layout/projects/project-page/SkillBadge'
 import List from '@/components/shared/list/List'
 import ListItem from '@/components/shared/list/ListItem'
 
-import { SkillsListProps } from './SkillsList.types'
+import { type SkillsListProps } from './SkillsList.types'
 
 const SkillsList = ({ skillsOverview = [] }: SkillsListProps) => {
   return (

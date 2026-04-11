@@ -5,12 +5,13 @@ import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { IMAGE_ALT, TEXT } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import logo from '@/public/icons/webp/logo.webp'
 
 import { ImageLoadingEnum } from '@/lib/types/enums'
-import { IMAGE_ALT, TEXT } from '@/localization'
 
 import { HEADER_LOGO } from './Logo.constants'
 

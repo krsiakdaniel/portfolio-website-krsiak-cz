@@ -1,4 +1,4 @@
-import { MetadataRoute } from 'next'
+import { type MetadataRoute } from 'next'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 

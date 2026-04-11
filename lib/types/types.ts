@@ -1,4 +1,4 @@
-import { SkillCategoryEnum, SkillIconEnum } from '@/lib/types/enums'
+import { type SkillCategoryEnum, type SkillIconEnum } from '@/lib/types/enums'
 
 // Breadcrumbs
 export type BreadCrumbsType = {

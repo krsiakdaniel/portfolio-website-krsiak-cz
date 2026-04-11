@@ -1,4 +1,4 @@
-import { TechnologyKey } from './calculateTechnologyYears.types'
+import { type TechnologyKey } from './calculateTechnologyYears.types'
 
 // Technology start dates for automatic years calculation
 export const TECHNOLOGY_START_DATES = {

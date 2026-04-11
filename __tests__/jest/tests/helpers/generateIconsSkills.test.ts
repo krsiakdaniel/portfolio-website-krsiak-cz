@@ -1,8 +1,9 @@
+import { skillIcons } from '@/data/shared/skill-icons/skillIcons'
+
 import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
 
-import { skillIcons } from '@/data/shared/skill-icons/skillIcons'
 import { SkillIconEnum } from '@/lib/types/enums'
-import { SkillIconType } from '@/lib/types/types'
+import { type SkillIconType } from '@/lib/types/types'
 
 describe('getSkillsIcons', () => {
   const expectedKeys: SkillIconType[] = [

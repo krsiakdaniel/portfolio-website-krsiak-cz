@@ -1,7 +1,7 @@
 import Heading from '@/components/shared/heading/Heading'
 import Paragraph from '@/components/shared/paragraph/Paragraph'
 
-import { ProjectDetailsProps } from './ProjectDetails.types'
+import { type ProjectDetailsProps } from './ProjectDetails.types'
 
 const ProjectDetails = ({
   icon = '',

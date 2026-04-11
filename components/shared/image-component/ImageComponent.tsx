@@ -4,12 +4,13 @@ import Image from 'next/image'
 
 import { Tooltip } from 'react-tooltip'
 
-import { ImageComponentProps } from '@/components/shared/image-component/ImageComponent.types'
+import { type ImageComponentProps } from '@/components/shared/image-component/ImageComponent.types'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-import { ImageLoadingEnum } from '@/lib/types/enums'
 import { IMAGE_ALT } from '@/localization'
+
+import { ImageLoadingEnum } from '@/lib/types/enums'
 
 import { IMAGE_COMPONENT_DEFAULTS } from './ImageComponent.constants'
 
@@ -40,7 +41,7 @@ const ImageComponent = ({
 
   return (
     <>
-      {hasTooltip && <Tooltip id={ID.reactTooltip} className={`z-20 select-none`} />}
+      {hasTooltip && <Tooltip id={ID.reactTooltip} className="z-20 select-none" />}
 
       <Image
         src={src}

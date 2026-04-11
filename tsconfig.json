@@ -1,47 +1,35 @@
 {
   "compilerOptions": {
-    // Runtime environment & language features
-    // These ensure we have access to DOM APIs and latest JavaScript features
-    "lib": ["dom", "esnext"],
-    "target": "esnext",
-    "module": "esnext",
-    "moduleDetection": "force",
-    "jsx": "react-jsx", // Required for Next.js
-    "allowJs": true, // Allow JavaScript files to be compiled
-    // Module resolution and bundling settings
-    // These configure how TypeScript processes imports and exports
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": false,
-    "noEmit": true,
-    // Type checking and safety features
-    // These enforce better code quality and catch common mistakes
-    "strict": true,
-    "skipLibCheck": true,
-    "noFallthroughCasesInSwitch": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "incremental": true,
-    // Additional strict checks
-    // These help maintain cleaner, more maintainable code
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noPropertyAccessFromIndexSignature": true,
-    // Explicit @types packages (required in TypeScript 6.0 — defaults to [] instead of all @types)
-    "types": ["node", "bun", "jest"],
-    // Path aliases
-    // Enables importing from absolute paths using @ prefix
+    "allowImportingTsExtensions": true, // Allow imports like `import foo from './foo.ts'` without emitting
+    "allowJs": true, // Allow JavaScript files alongside TypeScript
+    "esModuleInterop": true, // Enables default imports from CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Catches import casing mismatches (macOS is case-insensitive, Linux/Netlify is not)
+    "incremental": true, // Cache compilation info for faster rebuilds
+    "isolatedModules": true, // Required by Next.js — each file must be a standalone module
+    "jsx": "react-jsx", // Required for Next.js — uses the new JSX transform
+    "lib": ["dom", "esnext"], // Include DOM and latest JS APIs
+    "module": "esnext", // Output ES modules
+    "moduleDetection": "force", // Treat all files as modules even without import/export
+    "moduleResolution": "bundler", // Matches how Next.js / Bun resolves modules
+    "noEmit": true, // Type-check only — Next.js handles compilation
+    "noFallthroughCasesInSwitch": true, // Require break/return in every switch case
+    "noPropertyAccessFromIndexSignature": true, // Require bracket notation for index signature access
+    "noUnusedLocals": true, // Error on declared but unused local variables
+    "noUnusedParameters": true, // Error on declared but unused function parameters
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"] // Enables `@/` absolute path alias from the project root
     },
-    // Next.js specific configuration
-    // Required for proper Next.js TypeScript support
     "plugins": [
       {
-        "name": "next"
+        "name": "next" // Next.js TypeScript plugin — powers go-to-definition for App Router
       }
-    ]
+    ],
+    "resolveJsonModule": true, // Allow importing .json files
+    "skipLibCheck": true, // Skip type checking of .d.ts files in node_modules
+    "strict": true, // Enable all strict type-checking options
+    "target": "esnext", // Output modern JavaScript — bundler handles transpilation
+    "types": ["node", "bun", "jest"], // Explicit @types packages (required in TypeScript 6.0 — defaults to [] instead of all @types)
+    "verbatimModuleSyntax": false // Allow type-only imports without `import type` enforcement at tsc level (handled by ESLint)
   },
   // Files to include/exclude in compilation
   // Specifically configured for Next.js TypeScript files

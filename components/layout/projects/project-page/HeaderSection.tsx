@@ -3,7 +3,7 @@ import Heading from '@/components/shared/heading/Heading'
 
 import { MIDDLE_DOT } from '@/lib/utils/constants/specialCharacters'
 
-import { HeaderSectionProps } from './HeaderSection.types'
+import { type HeaderSectionProps } from './HeaderSection.types'
 
 const HeaderSection = ({
   icon,

@@ -17,7 +17,7 @@ This is a React Next.js portfolio website written in TypeScript, using Bun as th
 - **Styling**: Tailwind CSS v4
 - **Testing**: Jest (unit) + Playwright (E2E)
 - **Deployment**: Netlify with PWA capabilities and automated CI/CD
-- **Analytics**: Google Analytics + Smartlook
+- **Analytics**: Google Analytics + Hotjar
 
 ### Minimum Requirements
 
@@ -37,7 +37,9 @@ bun prettier:write      # Apply code formatting
 bun test:jest           # Run unit tests
 bun test:jest:coverage  # Unit tests with coverage report
 bun test:e2e            # Run Playwright end-to-end tests
-bun pre-commit          # Full CI check: build + lint + format + all tests
+bun validate            # Type check + lint + Jest (no E2E)
+bun integrate           # Full CI: type check + lint + Jest + Playwright
+bun pre-commit          # Lint-staged: runs ESLint + Prettier on changed files only
 ```
 
 > **Note**: Turbopack is now the default bundler in Next.js 16. It provides up to 10x faster Fast Refresh and 2-5x faster production builds. Do not disable it unless there is a documented reason.
@@ -100,16 +102,22 @@ const OverOptimized = ({ data }: { data: Data[] }) => {
 ### Required Before Each Commit
 
 - Run `bun prettier:write` before committing any changes
-- Ensure TypeScript compilation passes: `bun next build`
+- Ensure TypeScript compilation passes: `bun type-check`
 - Run linting: `bun lint`
-- Run `bun pre-commit` for a full CI check
+- Run `bun validate` for a quick CI check (type check + lint + Jest)
+- Run `bun integrate` for a full CI check (includes Playwright E2E)
 
 ## Code Style & Formatting
 
 ### General Guidelines
 
 - Use **TypeScript** with strict type checking — never use `any`, prefer `unknown` with type guards
-- Follow **ESLint** flat config defined in `eslint.config.ts`
+- Follow **ESLint** flat config defined in `eslint.config.ts` with the following plugins:
+  - `@typescript-eslint` — TypeScript rules (`no-explicit-any`, `consistent-type-imports`, `no-unused-vars`)
+  - `eslint-plugin-react` — React best practices
+  - `eslint-plugin-react-hooks` — Hooks rules
+  - `eslint-plugin-jsx-a11y` — JSX accessibility rules (WCAG AA) — catches missing `alt`, bad ARIA, inaccessible interactive elements
+  - `@next/eslint-plugin-next` — Next.js routing, Image, Link, Core Web Vitals
 - Use **Prettier** for formatting (config in `.prettierrc`)
 - Prefer **functional components** with hooks over class components
 - Use **arrow functions** for component definitions
@@ -146,7 +154,7 @@ Import organization is **automated** via `@trivago/prettier-plugin-sort-imports`
 2. **Third-Party Modules** - External dependencies
 3. **Custom Hooks** - `@/lib/hooks/`
 4. **Components** - `@/components/`
-5. **Data** - `@/lib/data/`
+5. **Data** - `@/data/`
 6. **Utils** - `@/lib/utils/` (includes constants, helpers, interfaces)
 7. **Localization** - `@/localization/`
 8. **Test Utilities** - `@/__tests__/`
@@ -169,7 +177,7 @@ import { useCustomHook } from '@/lib/hooks/useCustomHook'
 import { Header } from '@/components/layout/Header'
 import { Button } from '@/components/ui/Button'
 
-import { projectsData } from '@/lib/data/projects'
+import { projectsData } from '@/data/projects'
 
 import { formatDate } from '@/lib/utils/date'
 
@@ -491,7 +499,9 @@ const fetchProject = async (id: string): Promise<ProjectResponse> => {
 
 - The `.next` directory structure changed in Next.js 16 — a new `.next/dev` directory enables concurrent dev and build
 - Update CI cache configuration to include `.next/dev` alongside `.next/cache`
-- Full CI check command: `bun pre-commit`
+- Quick CI check (no E2E): `bun validate`
+- Full CI check (includes E2E): `bun integrate`
+- Pre-commit hook runs `bun pre-commit` (lint-staged, changed files only)
 
 ## Branch Naming
 

@@ -1,4 +1,8 @@
+import { iconsSkillsProjectsWorkSmartsuppDashboard } from '@/data/pages/projects/work/projects-overview/skillsProjectsWork'
+
 import { PROJECT_ID } from '@/lib/utils/constants/ids/projectIds'
+
+import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
 
 import { PROJECTS_WORK_SMARTSUPP_DASHBOARD_OVERVIEW } from '@/localization/pages/projects/work-smartsupp-dashboard'
 
@@ -9,10 +13,8 @@ import smartsuppDashboard3 from '@/public/images/webp/projects/work/smartsupp-da
 import smartsuppDashboard4 from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-4-light.webp'
 import smartsuppDashboardProjectPreview from '@/public/images/webp/projects/work/smartsupp-dashboard/smartsupp-dashboard-project-preview.webp'
 
-import { iconsSkillsProjectsWorkSmartsuppDashboard } from '@/data/pages/projects/work/projects-overview/skillsProjectsWork'
 import { SkillCategoryEnum, SkillsEnum } from '@/lib/types/enums'
-import { Project } from '@/lib/types/interfaces'
-import { ARIA_LABELS, ICON_EMOJI, TEXT } from '@/localization'
+import { type Project } from '@/lib/types/interfaces'
 
 const overview = PROJECTS_WORK_SMARTSUPP_DASHBOARD_OVERVIEW
 

@@ -11,6 +11,7 @@ const Hotjar = () => {
   }
 
   if (!process.env['NEXT_PUBLIC_HOTJAR_ID'] || !process.env['NEXT_PUBLIC_HOTJAR_VERSION']) {
+    // eslint-disable-next-line no-console
     console.warn(ANALYTICS_WARNING.hotjar)
     return null
   }

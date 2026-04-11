@@ -1,4 +1,4 @@
-import { Project } from '@/lib/types/interfaces'
+import { type Project } from '@/lib/types/interfaces'
 
 export type ProjectSectionProps = {
   projectData: Project[]

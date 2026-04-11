@@ -1,7 +1,7 @@
-import { StaticImageData } from 'next/image'
+import { type StaticImageData } from 'next/image'
 
-import { DurationUnitEnum, SkillsEnum } from '@/lib/types/enums'
-import { SkillCategoryType } from '@/lib/types/types'
+import { type DurationUnitEnum, type SkillsEnum } from '@/lib/types/enums'
+import { type SkillCategoryType } from '@/lib/types/types'
 
 // Job
 export interface Job {

@@ -1,6 +1,8 @@
 import { SKILL_SVG } from '@/data/shared/skill-icons/skillSvgPaths'
-import { OtherExperienceData } from '@/lib/types/interfaces'
+
 import { ARIA_LABELS, ICON_EMOJI, OTHER_EXPERIENCE } from '@/localization'
+
+import { type OtherExperienceData } from '@/lib/types/interfaces'
 
 export const otherExperienceWordPress: OtherExperienceData[] = [
   {

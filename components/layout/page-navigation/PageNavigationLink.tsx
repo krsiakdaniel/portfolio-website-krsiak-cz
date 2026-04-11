@@ -1,9 +1,10 @@
 import { ArrowRight } from 'lucide-react'
 
-import { ArrowDirectionEnum } from '@/lib/types/enums'
 import { COMMON_VALUES } from '@/localization'
 
-import { PageNavigationLinkProps } from './PageNavigationLink.types'
+import { ArrowDirectionEnum } from '@/lib/types/enums'
+
+import { type PageNavigationLinkProps } from './PageNavigationLink.types'
 
 const PageNavigationLink = ({
   href,

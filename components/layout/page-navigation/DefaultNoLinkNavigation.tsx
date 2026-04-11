@@ -1,4 +1,4 @@
-import { DefaultNoLinkNavigationProps } from './DefaultNoLinkNavigation.types'
+import { type DefaultNoLinkNavigationProps } from './DefaultNoLinkNavigation.types'
 
 const DefaultNoLinkNavigation = (_: DefaultNoLinkNavigationProps) => {
   return (

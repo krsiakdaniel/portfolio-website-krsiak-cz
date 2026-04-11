@@ -1,8 +1,9 @@
 import Heading from '@/components/shared/heading/Heading'
 
-import { TravelRegion } from '@/lib/types/interfaces'
+import { WHO_I_AM } from '@/localization'
 
-import { WHO_I_AM } from '../../localization'
+import { type TravelRegion } from '@/lib/types/interfaces'
+
 import CountryCard from '../country-card/CountryCard'
 
 const WhoIAmTravelsList = () => {

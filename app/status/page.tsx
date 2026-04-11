@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import { type Metadata } from 'next'
 
 import PageContainer from '@/components/layout/page-container/PageContainer'
 import BreadCrumbs from '@/components/shared/breadcrumbs/Breadcrumbs'
@@ -12,6 +12,8 @@ import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
 
+import { ARIA_LABELS, ICON_EMOJI, IMAGE_ALT, TEXT } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import StatusIntroduction from '@/features/status/components/status-introduction/StatusIntroduction'
@@ -19,7 +21,6 @@ import { statusBadges } from '@/features/status/data/statusBadges'
 import { STATUS } from '@/features/status/localization'
 import { metaDataStatus } from '@/features/status/metadata'
 import { EmojiNameEnum, EmojiSizeEnum, ImageLoadingEnum } from '@/lib/types/enums'
-import { ARIA_LABELS, ICON_EMOJI, IMAGE_ALT, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataStatus,

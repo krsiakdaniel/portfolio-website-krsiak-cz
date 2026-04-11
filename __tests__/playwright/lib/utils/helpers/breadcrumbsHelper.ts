@@ -1,4 +1,4 @@
-import { Page } from '@playwright/test'
+import { type Page } from '@playwright/test'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 import { getDataTestId } from '@/__tests__/playwright/lib/utils/helpers/getDataTestId'

@@ -1,5 +1,3 @@
-import { YEARS_EXPERIENCE } from '@/lib/utils/constants/yearsExperience'
-
 import {
   nextSVG,
   playwrightSVG,
@@ -8,8 +6,12 @@ import {
   tailwindSVG,
   typescriptSVG,
 } from '@/data/shared/skill-icons/skillIconsSVG'
-import { SkillCardItem } from '@/lib/types/interfaces'
+
+import { YEARS_EXPERIENCE } from '@/lib/utils/constants/yearsExperience'
+
 import { TEXT } from '@/localization'
+
+import { type SkillCardItem } from '@/lib/types/interfaces'
 
 export const skills: SkillCardItem[] = [
   {

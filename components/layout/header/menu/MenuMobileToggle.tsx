@@ -3,11 +3,11 @@ import { Menu, X } from 'lucide-react'
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { ARIA_LABELS } from '@/localization'
 
-import { MenuMobileToggleProps } from './MenuMobileToggle.types'
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { type MenuMobileToggleProps } from './MenuMobileToggle.types'
 
 const MenuMobileToggle = ({ isMenuOpen, handleMenuMobileToggle, ref }: MenuMobileToggleProps) => {
   return (

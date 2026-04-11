@@ -1,11 +1,12 @@
 import DefaultNoLinkNavigation from '@/components/layout/page-navigation/DefaultNoLinkNavigation'
-import { PageNavigationProps } from '@/components/layout/page-navigation/PageNavigation.types'
+import { type PageNavigationProps } from '@/components/layout/page-navigation/PageNavigation.types'
 import PageNavigationLink from '@/components/layout/page-navigation/PageNavigationLink'
+
+import { ARIA_LABELS } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import { ArrowDirectionEnum } from '@/lib/types/enums'
-import { ARIA_LABELS } from '@/localization'
 
 const PageNavigation = ({
   linkPrevious,
@@ -17,8 +18,8 @@ const PageNavigation = ({
   nameNext,
   dataTestIdNext,
 }: PageNavigationProps) => {
-  const hasPreviousLink = linkPrevious && namePrevious
-  const hasNextLink = linkNext && nameNext
+  const hasPreviousLink = linkPrevious && namePrevious && iconPrevious
+  const hasNextLink = linkNext && nameNext && iconNext
 
   return (
     <nav data-testid={DATA_TEST_IDS.navigation.END_OF_PAGE} aria-label={ARIA_LABELS.pageNavigation}>
@@ -29,7 +30,7 @@ const PageNavigation = ({
           {hasPreviousLink ? (
             <PageNavigationLink
               href={linkPrevious}
-              icon={iconPrevious!}
+              icon={iconPrevious}
               text={namePrevious}
               arrowDirection={ArrowDirectionEnum.Left}
               dataTestId={dataTestIdPrevious}
@@ -40,7 +41,7 @@ const PageNavigation = ({
           {hasNextLink ? (
             <PageNavigationLink
               href={linkNext}
-              icon={iconNext!}
+              icon={iconNext}
               text={nameNext}
               arrowDirection={ArrowDirectionEnum.Right}
               dataTestId={dataTestIdNext}

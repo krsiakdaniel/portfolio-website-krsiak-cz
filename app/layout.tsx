@@ -6,13 +6,14 @@ import SkipNavigationARIA from '@/components/layout/SkipNavigationARIA'
 import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
 
+import { defaultMetaData } from '@/data/metadata/shared/defaultMetaData'
+
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
-import { defaultMetaData } from '@/data/metadata/shared/defaultMetaData'
 import { ARIA_LABELS } from '@/localization'
 
 import { roboto, rubik } from './fonts'
-import { RootLayoutProps } from './layout.types'
+import { type RootLayoutProps } from './layout.types'
 
 import './globals.css'
 import 'react-tooltip/dist/react-tooltip.css'

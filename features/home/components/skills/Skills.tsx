@@ -1,14 +1,15 @@
 import DividerWithText from '@/components/shared/divider-with-text/DividerWithText'
 import Paragraph from '@/components/shared/paragraph/Paragraph'
 
-import { ID } from '@/lib/utils/constants/ids/elementIds'
-
 import {
   iconsDesignTools,
   iconsWebDesign,
   iconsWebDevelopment,
   iconsWebDevelopmentWithQA,
 } from '@/data/pages/home/skills/skillsGrouped'
+
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+
 import { DIVIDER_WITH_TEXT, TEXT } from '@/localization'
 
 import SkillsIconGroup from './SkillsIconGroup'

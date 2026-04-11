@@ -6,11 +6,11 @@ import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
 import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
 
+import { TEXT } from '@/localization'
+
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 import starAnimated from '@/public/images/webp/emoji-animated/128x128/star-animated-128x128.webp'
-
-import { TEXT } from '@/localization'
 
 const CallToActionResumeDownload = () => {
   const text = useResponsiveText({

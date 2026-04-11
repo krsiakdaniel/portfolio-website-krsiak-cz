@@ -7,10 +7,6 @@ import LayoutToggle from '@/components/shared/projects/layout-toggle/LayoutToggl
 import ProjectSectionGrid from '@/components/shared/projects/project-section-grid/ProjectSectionGrid'
 import ProjectWorkListView from '@/components/shared/projects/project-work-list-view/ProjectWorkListView'
 
-import { ID } from '@/lib/utils/constants/ids/elementIds'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
-
 import { otherExperienceFrontEnd } from '@/data/pages/projects/work/other-experience/otherExperienceFrontEnd'
 import { otherExperienceLocalization } from '@/data/pages/projects/work/other-experience/otherExperienceLocalization'
 import { otherExperienceQA } from '@/data/pages/projects/work/other-experience/otherExperienceQA'
@@ -22,8 +18,14 @@ import { projectsWorkQA } from '@/data/pages/projects/work/projects-overview/wor
 import { projectsWorkReact } from '@/data/pages/projects/work/projects-overview/workReact'
 import { projectsWorkVite } from '@/data/pages/projects/work/projects-overview/workVite'
 import { projectsWorkWordPress } from '@/data/pages/projects/work/projects-overview/workWordpress'
-import { LayoutViewEnum } from '@/lib/types/enums'
+
+import { ID } from '@/lib/utils/constants/ids/elementIds'
+
 import { COMMON_VALUES } from '@/localization'
+
+import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
+
+import { LayoutViewEnum } from '@/lib/types/enums'
 
 const allProjects = [
   ...projectsWorkReact,

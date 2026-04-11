@@ -1,4 +1,5 @@
 import { resumePreviewCardData } from '@/data/pages/resume/preview-cards/resumePreviewCards'
+
 import { ARIA_LABELS } from '@/localization'
 
 import ResumePreviewCard from '../resume-preview-card/ResumePreviewCard'

@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import { type Metadata } from 'next'
 
 import PageContainer from '@/components/layout/page-container/PageContainer'
 import PageNavigation from '@/components/layout/page-navigation/PageNavigation'
@@ -7,6 +7,8 @@ import CallToActionWorkExperience from '@/components/shared/call-to-action/cta-b
 
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
+
+import { ICON_EMOJI, TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
@@ -17,7 +19,6 @@ import Skills from '@/features/home/components/skills/Skills'
 import SkillsMain from '@/features/home/components/skills/SkillsMain'
 import HomeTestimonials from '@/features/home/components/testimonials/HomeTestimonials'
 import { metaDataHome } from '@/features/home/metadata'
-import { ICON_EMOJI, TEXT } from '@/localization'
 
 export const metadata: Metadata = {
   ...metaDataHome,

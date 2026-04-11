@@ -1,4 +1,4 @@
-import { EmojiNameEnum, EmojiSizeEnum, ImageLoadingEnum } from '@/lib/types/enums'
+import { type EmojiNameEnum, type EmojiSizeEnum, type ImageLoadingEnum } from '@/lib/types/enums'
 
 export type EmojiAnimatedProps = {
   icon: EmojiNameEnum

@@ -1,9 +1,10 @@
 import { ExternalLink } from 'lucide-react'
 
-import { SocialLinkProps } from '@/components/shared/social-link/SocialLink.types'
+import { type SocialLinkProps } from '@/components/shared/social-link/SocialLink.types'
+
+import { TEXT } from '@/localization'
 
 import { AlertColorVariantEnum } from '@/lib/types/enums'
-import { TEXT } from '@/localization'
 
 import { socialLinkTypeClasses } from './SocialLink.constants'
 

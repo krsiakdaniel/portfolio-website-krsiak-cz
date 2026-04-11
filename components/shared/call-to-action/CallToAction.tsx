@@ -1,4 +1,4 @@
-import { CallToActionProps } from '@/components/shared/call-to-action/CallToAction.types'
+import { type CallToActionProps } from '@/components/shared/call-to-action/CallToAction.types'
 import CallToActionBubbles from '@/components/shared/call-to-action/CallToActionBubbles'
 import CallToActionIcon from '@/components/shared/call-to-action/CallToActionIcon'
 import CallToActionTexts from '@/components/shared/call-to-action/CallToActionTexts'
@@ -7,8 +7,9 @@ import LinkButton from '@/components/shared/link-button/LinkButton'
 
 import { IS_OPEN_TO_WORK } from '@/lib/utils/constants/shared/openToWork'
 
-import { DeviceTypeEnum } from '@/lib/types/enums'
 import { ARIA_LABELS } from '@/localization'
+
+import { DeviceTypeEnum } from '@/lib/types/enums'
 
 const CallToAction = ({
   highlight,
@@ -51,7 +52,7 @@ const CallToAction = ({
             </div>
           </div>
 
-          <div className={`hidden items-center justify-center md:flex md:w-1/3`}>
+          <div className="hidden items-center justify-center md:flex md:w-1/3">
             {hasPhoto ? (
               <Photo isPhotoSmall={true} isOpenToWork={IS_OPEN_TO_WORK} />
             ) : (

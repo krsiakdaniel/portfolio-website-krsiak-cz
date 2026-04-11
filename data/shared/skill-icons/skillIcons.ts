@@ -31,7 +31,8 @@ import {
   zodSVG,
   zustandSVG,
 } from '@/data/shared/skill-icons/skillIconsSVG'
-import { SkillToIconMap } from '@/lib/types/interfaces'
+
+import { type SkillToIconMap } from '@/lib/types/interfaces'
 
 // Map skill names to their respective icons
 export const skillIcons: SkillToIconMap = {

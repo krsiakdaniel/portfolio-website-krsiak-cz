@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import { ChevronRight } from 'lucide-react'
 
-import { BreadcrumbsItemProps } from '@/components/shared/breadcrumbs/BreadcrumbsItem.types'
+import { type BreadcrumbsItemProps } from '@/components/shared/breadcrumbs/BreadcrumbsItem.types'
 
 const BreadcrumbsItem = ({
   href,

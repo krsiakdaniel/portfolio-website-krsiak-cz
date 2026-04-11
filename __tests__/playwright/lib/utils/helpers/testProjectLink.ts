@@ -1,4 +1,4 @@
-import { Page, expect } from '@playwright/test'
+import { type Page, expect } from '@playwright/test'
 
 import { UI_TEXTS } from '@/__tests__/playwright/lib/utils/constants/texts/e2eTexts'
 

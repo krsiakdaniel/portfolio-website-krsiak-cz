@@ -1,4 +1,4 @@
-import { OtherExperienceData, Project } from '@/lib/types/interfaces'
+import { type OtherExperienceData, type Project } from '@/lib/types/interfaces'
 
 export type ProjectSectionGridProps = {
   projectData: Project[]

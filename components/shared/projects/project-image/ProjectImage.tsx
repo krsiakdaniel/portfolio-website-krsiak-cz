@@ -2,10 +2,11 @@ import ImageComponent from '@/components/shared/image-component/ImageComponent'
 
 import { PROJECT_IMAGE_PREVIEW } from '@/lib/utils/constants/imageGalleryConfig'
 
-import { ImageLoadingEnum } from '@/lib/types/enums'
 import { ARIA_LABELS, ICON_EMOJI } from '@/localization'
 
-import { ProjectImageProps } from './ProjectImage.types'
+import { ImageLoadingEnum } from '@/lib/types/enums'
+
+import { type ProjectImageProps } from './ProjectImage.types'
 
 const ProjectImage = ({ isFeatured, image, title }: ProjectImageProps) => {
   const featuredProjectCss = `${isFeatured ? 'bg-yellow-50 border-yellow-300' : 'bg-violet-50 border-violet-300'}`
