@@ -9,11 +9,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 🚀 Website Version History
 
-As of **April 11, 2026**, the website is `"version": "2.48.29"`.
+As of **April 12, 2026**, the website is `"version": "2.48.30"`.
 
 - `2.x.x`: Major version representing complete redesign (Feb 2024)
 - `x.48.x`: Feature additions (new pages, components, functionality)
 - `x.x.24`: Bug fixes and minor improvements
+
+## `2.48.30` - 2026-04
+
+### 🛠️ Chore
+
+- 🔧 Sort `tsconfig.json` keys alphabetically — add inline comments for all options
+- 🔧 Add `forceConsistentCasingInFileNames: true` to `tsconfig.json` — catches import casing mismatches between macOS and Linux/Netlify
+- 🔧 Sort `.prettierrc` keys alphabetically
+- 🔧 Sort `eslint.config.ts` keys alphabetically — add new rules: `no-console`, `no-explicit-any`, `no-non-null-assertion`, `react/self-closing-comp`, `react/jsx-curly-brace-presence`
+- 🔧 Clean up `jest.config.ts` — remove scaffold boilerplate comments and unused path aliases
+- 🔧 Add inline type import rules to `components.instructions.md`, `data.instructions.md`, `localization.instructions.md`
+
+### 🐛 Fixed
+
+- 🐛 Fix `PageNavigation.tsx` — include `iconPrevious`/`iconNext` in guards, remove non-null assertions
+- 🐛 Fix `gallery.spec.ts` — replace `!` assertion with explicit null guard and `?? ''` fallback
+- 🐛 Fix `ScrollProgressBar.tsx`, `SkillBadge.tsx`, `CallToAction.tsx`, `ImageComponent.tsx` — ESLint auto-fix for self-closing and unnecessary curly braces
+- 🐛 Add `eslint-disable-next-line` comments to intentional `console.warn/error` usages in analytics and error components
 
 ## `2.48.29` - 2026-04
 

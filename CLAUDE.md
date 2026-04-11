@@ -35,7 +35,9 @@ bun prettier:write      # Apply code formatting
 bun test:jest           # Run unit tests
 bun test:jest:coverage  # Unit tests with coverage report
 bun test:e2e            # Run Playwright end-to-end tests
-bun pre-commit          # Full CI check: build + lint + format + all tests
+bun validate            # Type check + lint + Jest (no E2E)
+bun integrate           # Full CI: type check + lint + Jest + Playwright
+bun pre-commit          # Lint-staged: runs ESLint + Prettier on changed files only
 ```
 
 > **Note**: Turbopack is now the default bundler in Next.js 16. It provides up to 10x faster Fast Refresh and 2-5x faster production builds. Do not disable it unless there is a documented reason.
@@ -98,9 +100,10 @@ const OverOptimized = ({ data }: { data: Data[] }) => {
 ### Required Before Each Commit
 
 - Run `bun prettier:write` before committing any changes
-- Ensure TypeScript compilation passes: `bun next build`
+- Ensure TypeScript compilation passes: `bun type-check`
 - Run linting: `bun lint`
-- Run `bun pre-commit` for a full CI check
+- Run `bun validate` for a quick CI check (type check + lint + Jest)
+- Run `bun integrate` for a full CI check (includes Playwright E2E)
 
 ## Code Style & Formatting
 
@@ -489,7 +492,9 @@ const fetchProject = async (id: string): Promise<ProjectResponse> => {
 
 - The `.next` directory structure changed in Next.js 16 — a new `.next/dev` directory enables concurrent dev and build
 - Update CI cache configuration to include `.next/dev` alongside `.next/cache`
-- Full CI check command: `bun pre-commit`
+- Quick CI check (no E2E): `bun validate`
+- Full CI check (includes E2E): `bun integrate`
+- Pre-commit hook runs `bun pre-commit` (lint-staged, changed files only)
 
 ## Branch Naming
 

@@ -2,6 +2,7 @@
  * ESLint flat config dependencies:
  * - `@eslint/js` — core ESLint recommended rules
  * - `@next/eslint-plugin-next` — Next.js-specific rules
+ * - `eslint-plugin-jsx-a11y` — JSX accessibility rules (WCAG AA)
  * - `eslint-plugin-react` — React-specific rules
  * - `eslint-plugin-react-hooks` — React Hooks rules
  * - `globals` — global variables for different environments
@@ -9,6 +10,7 @@
  */
 import js from '@eslint/js'
 import nextPlugin from '@next/eslint-plugin-next'
+import a11yPlugin from 'eslint-plugin-jsx-a11y'
 import reactPlugin from 'eslint-plugin-react'
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 import globals from 'globals'
@@ -34,10 +36,12 @@ const eslintConfig = [
     files: ['**/*.{js,jsx,ts,tsx}'],
     plugins: {
       '@next/next': nextPlugin,
+      'jsx-a11y': a11yPlugin,
       react: reactPlugin,
       'react-hooks': reactHooksPlugin,
     },
     rules: {
+      ...a11yPlugin.configs.recommended.rules, // WCAG AA accessibility rules
       ...reactPlugin.configs.recommended.rules, // React best practices
       ...reactHooksPlugin.configs.recommended.rules, // Hooks rules
       ...nextPlugin.configs.recommended.rules, // Next.js routing, Image, Link rules
