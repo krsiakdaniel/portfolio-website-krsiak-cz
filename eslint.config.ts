@@ -17,12 +17,12 @@ import typescript from 'typescript-eslint'
 const eslintConfig = [
   {
     ignores: [
-      'node_modules/**',
       '.next/**',
-      'out/**',
       'build/**',
-      'next-env.d.ts',
       'coverage/**',
+      'next-env.d.ts',
+      'node_modules/**',
+      'out/**',
       'playwright-report/**',
       'test-results/**',
       '~/**', // Bun cache directory
@@ -33,22 +33,27 @@ const eslintConfig = [
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
     plugins: {
+      '@next/next': nextPlugin,
       react: reactPlugin,
       'react-hooks': reactHooksPlugin,
-      '@next/next': nextPlugin,
     },
     rules: {
       ...reactPlugin.configs.recommended.rules, // React best practices
-      ...reactHooksPlugin.configs.recommended.rules, // Hooks rules (like the one we fixed)
+      ...reactHooksPlugin.configs.recommended.rules, // Hooks rules
       ...nextPlugin.configs.recommended.rules, // Next.js routing, Image, Link rules
       ...nextPlugin.configs['core-web-vitals'].rules, // Performance rules
-      'react/react-in-jsx-scope': 'off', // Not needed in Next.js 13+
-      'react/prop-types': 'off', // Using TypeScript instead
-      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       '@typescript-eslint/consistent-type-imports': [
         'error',
-        { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
+        { prefer: 'type-imports', fixStyle: 'inline-type-imports' }, // Enforces `import { type X }` pattern
       ],
+      '@typescript-eslint/no-explicit-any': 'error', // Never use `any` — use `unknown` with type guards instead
+      '@typescript-eslint/no-non-null-assertion': 'warn', // Avoid `!` assertions — prefer explicit null checks
+      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }], // Allow unused params prefixed with _
+      'no-console': 'warn', // Catches leftover debug console.log statements
+      'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'ignore' }], // No unnecessary braces on props: label="text" not label={"text"}
+      'react/prop-types': 'off', // Using TypeScript instead
+      'react/react-in-jsx-scope': 'off', // Not needed in Next.js 13+
+      'react/self-closing-comp': 'error', // Enforce <Component /> over <Component></Component>
     },
     settings: {
       react: {

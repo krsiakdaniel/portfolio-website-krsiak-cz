@@ -6,6 +6,7 @@ import { ANALYTICS_WARNING } from '@/localization'
 
 const GoogleAnalytics = () => {
   if (!process.env['NEXT_PUBLIC_GA_MEASUREMENT_ID']) {
+    // eslint-disable-next-line no-console
     console.warn(ANALYTICS_WARNING.googleAnalytics)
     return null
   }

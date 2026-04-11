@@ -20,11 +20,12 @@ test.describe('Gallery - Thumbnail Interaction', () => {
     const preview = page.getByTestId(DATA_TEST_IDS.galleryPreview.activeImage)
 
     const initialLabel = await preview.getAttribute('aria-label')
+    expect(initialLabel).not.toBeNull()
 
     const secondThumbnail = page.getByTestId('gallery-image-1')
     await secondThumbnail.click()
 
-    await expect(preview).not.toHaveAttribute('aria-label', initialLabel!)
+    await expect(preview).not.toHaveAttribute('aria-label', initialLabel ?? '')
   })
 
   test('thumbnail shows pressed state for active image', async ({ page }) => {

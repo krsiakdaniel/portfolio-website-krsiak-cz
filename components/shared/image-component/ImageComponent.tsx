@@ -41,7 +41,7 @@ const ImageComponent = ({
 
   return (
     <>
-      {hasTooltip && <Tooltip id={ID.reactTooltip} className={`z-20 select-none`} />}
+      {hasTooltip && <Tooltip id={ID.reactTooltip} className="z-20 select-none" />}
 
       <Image
         src={src}

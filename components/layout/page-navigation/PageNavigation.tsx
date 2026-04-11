@@ -18,8 +18,8 @@ const PageNavigation = ({
   nameNext,
   dataTestIdNext,
 }: PageNavigationProps) => {
-  const hasPreviousLink = linkPrevious && namePrevious
-  const hasNextLink = linkNext && nameNext
+  const hasPreviousLink = linkPrevious && namePrevious && iconPrevious
+  const hasNextLink = linkNext && nameNext && iconNext
 
   return (
     <nav data-testid={DATA_TEST_IDS.navigation.END_OF_PAGE} aria-label={ARIA_LABELS.pageNavigation}>
@@ -30,7 +30,7 @@ const PageNavigation = ({
           {hasPreviousLink ? (
             <PageNavigationLink
               href={linkPrevious}
-              icon={iconPrevious!}
+              icon={iconPrevious}
               text={namePrevious}
               arrowDirection={ArrowDirectionEnum.Left}
               dataTestId={dataTestIdPrevious}
@@ -41,7 +41,7 @@ const PageNavigation = ({
           {hasNextLink ? (
             <PageNavigationLink
               href={linkNext}
-              icon={iconNext!}
+              icon={iconNext}
               text={nameNext}
               arrowDirection={ArrowDirectionEnum.Right}
               dataTestId={dataTestIdNext}

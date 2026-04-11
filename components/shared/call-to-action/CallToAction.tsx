@@ -52,7 +52,7 @@ const CallToAction = ({
             </div>
           </div>
 
-          <div className={`hidden items-center justify-center md:flex md:w-1/3`}>
+          <div className="hidden items-center justify-center md:flex md:w-1/3">
             {hasPhoto ? (
               <Photo isPhotoSmall={true} isOpenToWork={IS_OPEN_TO_WORK} />
             ) : (

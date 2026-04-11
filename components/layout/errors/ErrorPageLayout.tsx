@@ -19,9 +19,11 @@ const ErrorPageLayout = ({
 }: ErrorPageLayoutProps) => {
   useEffect(() => {
     // Log the error to an error reporting service
+    // eslint-disable-next-line no-console
     console.error('ERROR:', error.name, error.message, error.stack)
     // Log digest if available for server-side error tracking
     if (error.digest) {
+      // eslint-disable-next-line no-console
       console.error('Error digest:', error.digest)
     }
   }, [error])
