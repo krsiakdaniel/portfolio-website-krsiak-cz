@@ -17,7 +17,7 @@ This is a React Next.js portfolio website written in TypeScript, using Bun as th
 - **Styling**: Tailwind CSS v4
 - **Testing**: Jest (unit) + Playwright (E2E)
 - **Deployment**: Netlify with PWA capabilities and automated CI/CD
-- **Analytics**: Google Analytics + Smartlook
+- **Analytics**: Google Analytics + Hotjar
 
 ### Minimum Requirements
 

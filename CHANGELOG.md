@@ -7,11 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 🚀 Website Version History
 
-As of **April 11, 2026**, the website is `"version": "2.48.24"`.
+As of **April 11, 2026**, the website is `"version": "2.48.27"`.
 
 - `2.x.x`: Major version representing complete redesign (Feb 2024)
 - `x.48.x`: Feature additions (new pages, components, functionality)
 - `x.x.24`: Bug fixes and minor improvements
+
+## `2.48.27` - 2026-04
+
+### 🛠️ Chore
+
+- 🔧 Rename `next.config.mjs` → `next.config.ts` — add `NextConfig` type, TypeScript catches config errors
+- 🔧 Rename `eslint.config.js` → `eslint.config.ts` — native Bun TypeScript support, no extra deps needed
+- 🐛 Fixed `cacheOnFrontendNav` → `cacheOnFrontEndNav` typo in PWA config (caught by TypeScript)
+
+## `2.48.26` - 2026-04
+
+### 🗑️ Removed
+
+- 🧹 Deleted root `index.ts` — Bun init leftover (`console.log('Hello via Bun!')`)
+
+## `2.48.25` - 2026-04
+
+### 🛠️ Chore
+
+- 🔧 Add `features/` to Tailwind CSS content paths — feature components now correctly scanned for class names
+- 🔧 Add `features/` to Jest `collectCoverageFrom` — coverage reports now include all feature components
+- 🔧 Set `collectCoverage: false` in Jest config — coverage only generated when explicitly requested via `bun test:jest:coverage`
 
 ## `2.48.24` - 2026-04
 
@@ -263,7 +285,7 @@ As of **April 11, 2026**, the website is `"version": "2.48.24"`.
 
 ### 🚀 Performance
 
-- 🚀 Google Tag Manager — Smartlook + Google Analytics tags
+- 🚀 Google Tag Manager — Google Analytics tags
 - 🚀 Uptime monitoring — Better Uptime integration
 
 ### ♿ Accessibility

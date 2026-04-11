@@ -11,7 +11,6 @@ import globals from 'globals'
 import typescript from 'typescript-eslint'
 
 // Global variables for different environments
-
 const eslintConfig = [
   {
     ignores: [
@@ -59,7 +58,7 @@ const eslintConfig = [
   },
   // Node.js configuration for config files
   {
-    files: ['next.config.mjs', '*.config.js', '*.config.ts', '*.config.mjs'],
+    files: ['*.config.js', '*.config.ts'],
     languageOptions: {
       globals: {
         ...globals.node,

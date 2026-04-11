@@ -67,6 +67,7 @@ const config: ExtendedConfig = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}', // Application code
     './components/**/*.{js,ts,jsx,tsx}', // Reusable components
+    './features/**/*.{js,ts,jsx,tsx}', // Feature components
     './lib/**/*.{js,ts,jsx,tsx}', // Utility functions
   ],
 

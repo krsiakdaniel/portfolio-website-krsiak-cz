@@ -1,10 +1,11 @@
 import withPWAInit from '@ducanh2912/next-pwa'
+import type { NextConfig } from 'next'
 
 // Config for PWA
 const withPWA = withPWAInit({
   dest: 'public', // Output directory for service worker and precache files (relative to Next.js root directory).
   disable: process.env.NODE_ENV === 'development', // Disable PWA in development to prevent compilation loops
-  cacheOnFrontendNav: true, // Enable additional route caching when users navigate through pages with next/link.
+  cacheOnFrontEndNav: true, // Enable additional route caching when users navigate through pages with next/link.
   aggressiveFrontEndNavCaching: true, // Cache every <link rel="stylesheet" /> and <script /> on frontend navigation.
   reloadOnOnline: true, // Reload the app when it has gone back online.
   workboxOptions: {
@@ -13,7 +14,7 @@ const withPWA = withPWAInit({
 })
 
 // Next.js configuration object
-const nextConfig = {
+const nextConfig: NextConfig = {
   // Add this to silence the Turbopack warning
   turbopack: {},
   // Configure pageExtensions
