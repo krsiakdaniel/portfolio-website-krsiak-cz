@@ -1,4 +1,6 @@
+import { type ReactNode } from 'react'
+
 export type HighlightProps = {
-  text: string
+  text: ReactNode
   customCss?: string
 }

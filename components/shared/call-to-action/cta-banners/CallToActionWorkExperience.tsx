@@ -1,7 +1,3 @@
-'use client'
-
-import { useResponsiveText } from '@/lib/hooks/useResponsiveText'
-
 import CallToAction from '@/components/shared/call-to-action/CallToAction'
 
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
@@ -11,14 +7,14 @@ import { CALL_TO_ACTION, ICON_EMOJI, TEXT } from '@/localization'
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 const CallToActionWorkExperience = () => {
-  const text = useResponsiveText({
-    mobileText: CALL_TO_ACTION.workExperience.highlightShort,
-    desktopText: CALL_TO_ACTION.workExperience.highlight,
-  })
-
   return (
     <CallToAction
-      highlight={text}
+      highlight={
+        <>
+          <span className="sm:hidden">{CALL_TO_ACTION.workExperience.highlightShort}</span>
+          <span className="hidden sm:inline">{CALL_TO_ACTION.workExperience.highlight}</span>
+        </>
+      }
       heading={CALL_TO_ACTION.workExperience.heading}
       textMobileAndDesktop={CALL_TO_ACTION.workExperience.textMobileAndDesktop}
       textDesktop={CALL_TO_ACTION.workExperience.textDesktop}

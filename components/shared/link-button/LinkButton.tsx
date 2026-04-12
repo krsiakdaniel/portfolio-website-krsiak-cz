@@ -6,7 +6,13 @@ import { CSS_GLOBAL_CLASSES } from '@/lib/utils/constants/cssGlobalClasses'
 
 import { TEXT } from '@/localization'
 
-const LinkButton = ({ href, linkText, isLinkExternal = false, dataTestId }: LinkButtonProps) => {
+const LinkButton = ({
+  href,
+  linkText,
+  linkTextMobile,
+  isLinkExternal = false,
+  dataTestId,
+}: LinkButtonProps) => {
   const hoverAndFocusCss =
     'hover:bg-violet-800 focus:bg-violet-800 focus:outline-hidden focus:ring-4 focus:ring-violet-400'
 
@@ -22,7 +28,14 @@ const LinkButton = ({ href, linkText, isLinkExternal = false, dataTestId }: Link
       className={`${baseCss} bg-violet-600 ${hoverAndFocusCss} ${CSS_GLOBAL_CLASSES.LINK_BUTTON}`}
       data-testid={dataTestId}
     >
-      <span>{linkText}</span>
+      {linkTextMobile ? (
+        <>
+          <span className="md:hidden">{linkTextMobile}</span>
+          <span className="hidden md:inline">{linkText}</span>
+        </>
+      ) : (
+        <span>{linkText} </span>
+      )}
       {isLinkExternal ? (
         <ExternalLink aria-hidden="true" className="h-3 w-3" />
       ) : (

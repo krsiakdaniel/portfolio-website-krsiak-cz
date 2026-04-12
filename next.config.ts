@@ -113,8 +113,9 @@ const nextConfig: NextConfig = {
               // Only allow resources to be loaded from the same origin
               "default-src 'self'",
 
-              // Allow scripts from same origin, inline scripts, eval(), Google Tag Manager, and Hotjar
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.hotjar.com",
+              // Allow scripts from same origin, inline scripts, Google Tag Manager, and Hotjar
+              // 'unsafe-eval' is only required in development for Turbopack — excluded from production
+              `script-src 'self' 'unsafe-inline' ${process.env.NODE_ENV === 'development' ? "'unsafe-eval' " : ''}https://*.googletagmanager.com https://*.hotjar.com`,
 
               // Allow API/network requests to same origin, Google Analytics, and Hotjar endpoints
               "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.hotjar.com wss://*.hotjar.com https://*.hotjar.io wss://*.hotjar.io",

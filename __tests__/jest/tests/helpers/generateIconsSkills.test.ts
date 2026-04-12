@@ -3,10 +3,9 @@ import { skillIcons } from '@/data/shared/skill-icons/skillIcons'
 import { getSkillsIcons } from '@/lib/utils/helpers/skills/getSkillsIcons'
 
 import { SkillIconEnum } from '@/lib/types/enums'
-import { type SkillIconType } from '@/lib/types/types'
 
 describe('getSkillsIcons', () => {
-  const expectedKeys: SkillIconType[] = [
+  const expectedKeys: SkillIconEnum[] = [
     SkillIconEnum.Chakra,
     SkillIconEnum.CSS,
     SkillIconEnum.Cypress,
@@ -38,7 +37,7 @@ describe('getSkillsIcons', () => {
   })
 
   it('getSkillsIcons should return an array of icons with the correct name and path', () => {
-    const skills: SkillIconType[] = [
+    const skills: SkillIconEnum[] = [
       SkillIconEnum.JavaScript,
       SkillIconEnum.TypeScript,
       SkillIconEnum.React,
