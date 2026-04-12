@@ -7,6 +7,11 @@ error_msg="❌ Aborting because 'commit message' is NOT VALID!
 
 ℹ️ Expected 'commit message' format is 'type(scope): EMOJI description'
 
+📐 Format rules:
+- type and scope must be lowercase
+- one space between ':' and the EMOJI
+- one space between the EMOJI and the description
+
 Available formats:
 
 - aria(): ♿ Website accessibility
