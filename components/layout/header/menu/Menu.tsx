@@ -28,7 +28,7 @@ const Menu = ({ type, ref, onClickLink }: MenuProps) => {
     : DATA_TEST_IDS.menu.desktop.componentMenu
   const menuId = isMobile ? ID.menu.mobile : ID.menu.desktop
   const menuOrientation: 'vertical' | 'horizontal' = isMobile ? 'vertical' : 'horizontal'
-  const mobileCss = isMobile ? 'mt-2 mb-6 flex flex-col gap-2 lg:hidden' : 'hidden gap-2 lg:flex'
+  const mobileCss = isMobile ? 'mt-4 mb-0 flex flex-col gap-2 lg:hidden' : 'hidden gap-2 lg:flex'
 
   return (
     <nav aria-label={ARIA_LABELS.menu} data-testid={menuDataTestId} id={menuId}>
