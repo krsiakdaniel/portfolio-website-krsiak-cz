@@ -34,7 +34,7 @@ const LinkButton = ({
           <span className="hidden md:inline">{linkText}</span>
         </>
       ) : (
-        <span>{linkText} </span>
+        <span>{linkText}</span>
       )}
       {isLinkExternal ? (
         <ExternalLink aria-hidden="true" className="h-3 w-3" />
