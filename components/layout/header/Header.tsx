@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useClickOutside } from '@/lib/hooks/useClickOutside'
 import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 
+import BottomDrawer from '@/components/layout/header/BottomDrawer'
 import Logo from '@/components/layout/header/Logo'
 import ScrollProgressBar from '@/components/layout/header/ScrollProgressBar'
 import Menu from '@/components/layout/header/menu/Menu'
@@ -36,6 +37,14 @@ const Header = () => {
   // Only add click outside listener when menu is open
   useClickOutside(clickOutsideRefs, () => setIsMenuOpen(false))
 
+  // Lock body scroll when drawer is open
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isMenuOpen])
+
   // Keyboard event handling for dialog accessibility
   useEffect(() => {
     if (!isMenuOpen) return
@@ -51,47 +60,41 @@ const Header = () => {
   }, [isMenuOpen])
 
   return (
-    <header
-      role="banner"
-      aria-label={ARIA_LABELS.siteHeader}
-      className="sticky top-0 z-30 border-b border-neutral-400 bg-white"
-    >
-      <PageContainer marginTop="mt-0">
-        <div>
-          <div className="flex items-center justify-between py-4">
-            <Logo />
+    <>
+      <header
+        role="banner"
+        aria-label={ARIA_LABELS.siteHeader}
+        className="sticky top-0 z-30 border-b border-neutral-400 bg-white"
+      >
+        <PageContainer marginTop="mt-0">
+          <div>
+            <div className="flex items-center justify-between py-4">
+              <Logo />
 
-            <div className="flex">
-              <Menu type={DeviceTypeEnum.Desktop} />
-              <div className="flex lg:hidden">
-                <MenuSocialLinks type={DeviceTypeEnum.Mobile} />
-              </div>
+              <div className="flex">
+                <Menu type={DeviceTypeEnum.Desktop} />
+                <div className="flex lg:hidden">
+                  <MenuSocialLinks type={DeviceTypeEnum.Mobile} />
+                </div>
 
-              <div className="hidden lg:flex">
-                <MenuSocialLinks type={DeviceTypeEnum.Desktop} />
+                <div className="hidden lg:flex">
+                  <MenuSocialLinks type={DeviceTypeEnum.Desktop} />
+                </div>
+                <MenuMobileToggle
+                  isMenuOpen={isMenuOpen}
+                  handleMenuMobileToggle={handleMenuMobileToggle}
+                  ref={toggleRef}
+                />
               </div>
-              <MenuMobileToggle
-                isMenuOpen={isMenuOpen}
-                handleMenuMobileToggle={handleMenuMobileToggle}
-                ref={toggleRef}
-              />
             </div>
           </div>
-        </div>
+        </PageContainer>
 
-        <div
-          className={`overflow-hidden transition-all duration-300 ease-in-out lg:hidden ${isMenuOpen ? 'visible max-h-96 opacity-100' : 'invisible max-h-0 opacity-0'} `}
-        >
-          <Menu
-            type={DeviceTypeEnum.Mobile}
-            ref={menuRef}
-            onClickLink={() => setIsMenuOpen(false)}
-          />
-        </div>
-      </PageContainer>
+        <ScrollProgressBar scroll={scroll} />
+      </header>
 
-      <ScrollProgressBar scroll={scroll} />
-    </header>
+      <BottomDrawer isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} menuRef={menuRef} />
+    </>
   )
 }
 

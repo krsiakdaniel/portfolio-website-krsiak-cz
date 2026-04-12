@@ -10,6 +10,8 @@ export class MobileMenuPage {
   readonly page: Page
   readonly toggleButton: Locator
   readonly menuComponent: Locator
+  readonly drawerElement: Locator
+  readonly backdropElement: Locator
   readonly links: {
     whoIAm: Locator
     workExperience: Locator
@@ -26,6 +28,8 @@ export class MobileMenuPage {
     this.page = page
     this.toggleButton = page.getByTestId(DATA_TEST_IDS.menu.toggle.component)
     this.menuComponent = page.getByTestId(DATA_TEST_IDS.menu.mobile.componentMenu)
+    this.drawerElement = page.getByTestId(DATA_TEST_IDS.menu.bottomDrawer)
+    this.backdropElement = page.getByTestId(DATA_TEST_IDS.menu.bottomDrawerBackdrop)
 
     this.links = {
       whoIAm: page.getByTestId(DATA_TEST_IDS.menu.mobile.links.whoIAm),
@@ -48,12 +52,17 @@ export class MobileMenuPage {
   async openMenu() {
     await this.toggleButton.waitFor({ state: 'visible' })
     await this.toggleButton.click()
-    await expect(this.menuComponent).toBeVisible()
+    await expect(this.drawerElement).toHaveAttribute('aria-hidden', 'false')
   }
 
   async closeMenu() {
     await this.toggleButton.click()
-    await expect(this.menuComponent).not.toBeVisible()
+    await expect(this.drawerElement).toHaveAttribute('aria-hidden', 'true')
+  }
+
+  async closeMenuViaBackdrop() {
+    await this.backdropElement.click()
+    await expect(this.drawerElement).toHaveAttribute('aria-hidden', 'true')
   }
 
   async expectMenuHasCorrectId() {

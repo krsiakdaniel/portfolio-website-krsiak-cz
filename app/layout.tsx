@@ -29,6 +29,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
+  viewportFit: 'cover',
 }
 
 // 'Readonly' make the properties of the object read-only, meaning that after the initial assignment they cannot be reassigned.

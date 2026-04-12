@@ -13,12 +13,21 @@ test.describe('Menu Mobile - Component', () => {
     await mobileMenu.expectMenuHasCorrectId()
   })
 
-  test('closes the mobile menu', async ({ page }) => {
+  test('closes the mobile menu via toggle button', async ({ page }) => {
     const mobileMenu = new MobileMenuPage(page)
     await mobileMenu.setMobileViewport()
     await page.goto(PAGES_URL.home)
 
     await mobileMenu.openMenu()
     await mobileMenu.closeMenu()
+  })
+
+  test('closes the mobile menu via backdrop tap', async ({ page }) => {
+    const mobileMenu = new MobileMenuPage(page)
+    await mobileMenu.setMobileViewport()
+    await page.goto(PAGES_URL.home)
+
+    await mobileMenu.openMenu()
+    await mobileMenu.closeMenuViaBackdrop()
   })
 })

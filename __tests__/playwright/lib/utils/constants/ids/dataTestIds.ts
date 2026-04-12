@@ -73,6 +73,8 @@ const MENU = {
       personalProjects: 'mobile-personal-projects-link',
     },
   },
+  bottomDrawer: 'menu-bottom-drawer',
+  bottomDrawerBackdrop: 'menu-bottom-drawer-backdrop',
   desktop: {
     componentMenu: 'menu-desktop',
     links: {
