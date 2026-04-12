@@ -1,7 +1,6 @@
 'use client' // using hooks
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 
-import { useClickOutside } from '@/lib/hooks/useClickOutside'
 import { useScrollProgress } from '@/lib/hooks/useScrollProgress'
 
 import BottomDrawer from '@/components/layout/header/BottomDrawer'
@@ -22,48 +21,10 @@ const Header = () => {
 
   const menuRef = useRef<HTMLUListElement>(null)
   const toggleRef = useRef<HTMLButtonElement>(null)
-  const drawerRef = useRef<HTMLDivElement>(null)
 
   const handleMenuMobileToggle = (): void => {
     setIsMenuOpen(!isMenuOpen)
   }
-
-  // Memoize the refs array to avoid creating a new array on every render
-  const clickOutsideRefs = useMemo(() => {
-    return isMenuOpen
-      ? [
-          menuRef as React.RefObject<HTMLElement>,
-          toggleRef as React.RefObject<HTMLElement>,
-          drawerRef as React.RefObject<HTMLElement>,
-        ]
-      : []
-  }, [isMenuOpen]) // Only re-create array when isMenuOpen changes
-
-  // Only add click outside listener when menu is open
-  useClickOutside(clickOutsideRefs, () => setIsMenuOpen(false))
-
-  // Lock body scroll when drawer is open
-  useEffect(() => {
-    const previousOverflow = document.body.style.overflow
-    document.body.style.overflow = isMenuOpen ? 'hidden' : previousOverflow
-    return () => {
-      document.body.style.overflow = previousOverflow
-    }
-  }, [isMenuOpen])
-
-  // Keyboard event handling for dialog accessibility
-  useEffect(() => {
-    if (!isMenuOpen) return
-
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        setIsMenuOpen(false)
-      }
-    }
-
-    document.addEventListener('keydown', handleKeyDown)
-    return () => document.removeEventListener('keydown', handleKeyDown)
-  }, [isMenuOpen])
 
   return (
     <>
@@ -99,12 +60,7 @@ const Header = () => {
         <ScrollProgressBar scroll={scroll} />
       </header>
 
-      <BottomDrawer
-        isOpen={isMenuOpen}
-        onClose={() => setIsMenuOpen(false)}
-        menuRef={menuRef}
-        drawerRef={drawerRef}
-      />
+      <BottomDrawer isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} menuRef={menuRef} />
     </>
   )
 }
