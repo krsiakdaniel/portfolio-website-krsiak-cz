@@ -64,7 +64,7 @@ const Header = () => {
       <header
         role="banner"
         aria-label={ARIA_LABELS.siteHeader}
-        className="sticky top-0 z-30 border-b border-neutral-400 bg-white"
+        className="sticky top-0 z-50 border-b border-neutral-400 bg-white"
       >
         <PageContainer marginTop="mt-0">
           <div>

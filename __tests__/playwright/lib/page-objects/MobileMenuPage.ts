@@ -56,6 +56,7 @@ export class MobileMenuPage {
   }
 
   async closeMenu() {
+    await this.toggleButton.waitFor({ state: 'visible' })
     await this.toggleButton.click()
     await expect(this.drawerElement).toHaveAttribute('aria-hidden', 'true')
   }
