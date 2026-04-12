@@ -107,6 +107,14 @@ const OverOptimized = ({ data }: { data: Data[] }) => {
 - Run `bun validate` for a quick CI check (type check + lint + Jest)
 - Run `bun integrate` for a full CI check (includes Playwright E2E)
 
+### Testing After Every Feature or Behaviour Change
+
+- After **any** feature addition, behaviour change, or library swap, identify all tests related to the changed code
+- Run those tests immediately — do not defer to end-of-task
+- If a test fails because the behaviour legitimately changed (e.g. component API, DOM structure, visibility model), **update the test** to match the new behaviour
+- If a test fails because of a regression, **fix the code**
+- Never leave a test in a broken state after a change
+
 ## Code Style & Formatting
 
 ### General Guidelines

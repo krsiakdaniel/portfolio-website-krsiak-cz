@@ -52,18 +52,18 @@ export class MobileMenuPage {
   async openMenu() {
     await this.toggleButton.waitFor({ state: 'visible' })
     await this.toggleButton.click()
-    await expect(this.drawerElement).toHaveAttribute('aria-hidden', 'false')
+    await expect(this.drawerElement).toBeVisible()
   }
 
   async closeMenu() {
-    await this.toggleButton.waitFor({ state: 'visible' })
-    await this.toggleButton.click()
-    await expect(this.drawerElement).toHaveAttribute('aria-hidden', 'true')
+    await expect(this.drawerElement).toBeVisible()
+    await this.page.keyboard.press('Escape')
+    await expect(this.drawerElement).toBeHidden()
   }
 
   async closeMenuViaBackdrop() {
     await this.backdropElement.click()
-    await expect(this.drawerElement).toHaveAttribute('aria-hidden', 'true')
+    await expect(this.drawerElement).toBeHidden()
   }
 
   async expectMenuHasCorrectId() {
