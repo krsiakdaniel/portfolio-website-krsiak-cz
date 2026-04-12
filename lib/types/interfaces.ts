@@ -1,7 +1,6 @@
 import { type StaticImageData } from 'next/image'
 
-import { type DurationUnitEnum, type SkillsEnum } from '@/lib/types/enums'
-import { type SkillCategoryType } from '@/lib/types/types'
+import { type DurationUnitEnum, type SkillCategoryEnum, type SkillsEnum } from '@/lib/types/enums'
 
 // Job
 export interface Job {
@@ -103,7 +102,7 @@ export interface SectionItem {
 // Skill
 export interface Skill {
   readonly id: number
-  readonly description: SkillCategoryType
+  readonly description: SkillCategoryEnum
   readonly skillsList: SkillsEnum[]
 }
 

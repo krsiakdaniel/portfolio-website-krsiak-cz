@@ -13,8 +13,8 @@ import { SCROLL_TO_TOP } from './ScrollToTopButton.constants'
 
 const getButtonCss = (isFadingOut: boolean) =>
   `${isFadingOut ? 'animate-fade-out-scroll' : 'animate-fade-in-scroll'}
-  fixed right-8 bottom-8 z-50 
-  flex h-12 w-12 items-center justify-center 
+  fixed right-8 bottom-8 z-50
+  flex h-12 w-12 items-center justify-center
   rounded-full bg-violet-600 text-white
   transition-all duration-300 ease-in-out
   hover:-translate-y-1 hover:scale-110 hover:bg-violet-700
@@ -29,7 +29,7 @@ const ScrollToTopButton = () => {
   }, [])
 
   const toggleVisibility = useCallback(() => {
-    const aboveThreshold = window.pageYOffset > SCROLL_TO_TOP.THRESHOLD
+    const aboveThreshold = window.scrollY > SCROLL_TO_TOP.THRESHOLD
 
     if (aboveThreshold) {
       setIsFadingOut(false)

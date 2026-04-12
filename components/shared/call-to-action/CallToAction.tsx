@@ -18,6 +18,7 @@ const CallToAction = ({
   textDesktop,
   link,
   linkText,
+  linkTextMobile,
   isLinkExternal = false,
   dataTestId,
   icon,
@@ -46,6 +47,7 @@ const CallToAction = ({
               <LinkButton
                 href={link}
                 linkText={linkText}
+                linkTextMobile={linkTextMobile}
                 isLinkExternal={isLinkExternal}
                 dataTestId={dataTestId}
               />

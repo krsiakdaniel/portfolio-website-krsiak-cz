@@ -1,5 +1,3 @@
-'use client'
-
 import { ID } from '@/lib/utils/constants/ids/elementIds'
 
 import { ARIA_LABELS } from '@/localization'
