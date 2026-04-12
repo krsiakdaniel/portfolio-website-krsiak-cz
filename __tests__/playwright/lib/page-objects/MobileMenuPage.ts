@@ -56,8 +56,8 @@ export class MobileMenuPage {
   }
 
   async closeMenu() {
-    await this.toggleButton.waitFor({ state: 'visible' })
-    await this.toggleButton.click()
+    await expect(this.drawerElement).toBeVisible()
+    await this.page.keyboard.press('Escape')
     await expect(this.drawerElement).toBeHidden()
   }
 

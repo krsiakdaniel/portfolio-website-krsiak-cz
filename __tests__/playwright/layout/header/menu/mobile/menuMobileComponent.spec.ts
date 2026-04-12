@@ -13,7 +13,7 @@ test.describe('Menu Mobile - Component', () => {
     await mobileMenu.expectMenuHasCorrectId()
   })
 
-  test('closes the mobile menu via toggle button', async ({ page }) => {
+  test('closes the mobile menu via Escape key', async ({ page }) => {
     const mobileMenu = new MobileMenuPage(page)
     await mobileMenu.setMobileViewport()
     await page.goto(PAGES_URL.home)
