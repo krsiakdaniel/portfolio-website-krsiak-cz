@@ -9,7 +9,7 @@ import { DeviceTypeEnum } from '@/lib/types/enums'
 
 import { type BottomDrawerProps } from './BottomDrawer.types'
 
-const BottomDrawer = ({ isOpen, onClose, menuRef }: BottomDrawerProps) => {
+const BottomDrawer = ({ isOpen, onClose, menuRef, drawerRef }: BottomDrawerProps) => {
   return (
     <>
       {/* Backdrop */}
@@ -24,12 +24,11 @@ const BottomDrawer = ({ isOpen, onClose, menuRef }: BottomDrawerProps) => {
 
       {/* Drawer */}
       <div
+        ref={drawerRef}
         data-testid={DATA_TEST_IDS.menu.bottomDrawer}
         className={`fixed bottom-0 left-0 right-0 z-50 rounded-t-2xl bg-white shadow-2xl transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? 'translate-y-0' : 'translate-y-full'
         }`}
-        role="dialog"
-        aria-modal="true"
         aria-label={ARIA_LABELS.menu}
         aria-hidden={!isOpen}
       >

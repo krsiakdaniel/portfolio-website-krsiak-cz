@@ -22,6 +22,7 @@ const Header = () => {
 
   const menuRef = useRef<HTMLUListElement>(null)
   const toggleRef = useRef<HTMLButtonElement>(null)
+  const drawerRef = useRef<HTMLDivElement>(null)
 
   const handleMenuMobileToggle = (): void => {
     setIsMenuOpen(!isMenuOpen)
@@ -30,7 +31,11 @@ const Header = () => {
   // Memoize the refs array to avoid creating a new array on every render
   const clickOutsideRefs = useMemo(() => {
     return isMenuOpen
-      ? [menuRef as React.RefObject<HTMLElement>, toggleRef as React.RefObject<HTMLElement>]
+      ? [
+          menuRef as React.RefObject<HTMLElement>,
+          toggleRef as React.RefObject<HTMLElement>,
+          drawerRef as React.RefObject<HTMLElement>,
+        ]
       : []
   }, [isMenuOpen]) // Only re-create array when isMenuOpen changes
 
@@ -39,9 +44,10 @@ const Header = () => {
 
   // Lock body scroll when drawer is open
   useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? 'hidden' : ''
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = isMenuOpen ? 'hidden' : previousOverflow
     return () => {
-      document.body.style.overflow = ''
+      document.body.style.overflow = previousOverflow
     }
   }, [isMenuOpen])
 
@@ -93,7 +99,12 @@ const Header = () => {
         <ScrollProgressBar scroll={scroll} />
       </header>
 
-      <BottomDrawer isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} menuRef={menuRef} />
+      <BottomDrawer
+        isOpen={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
+        menuRef={menuRef}
+        drawerRef={drawerRef}
+      />
     </>
   )
 }

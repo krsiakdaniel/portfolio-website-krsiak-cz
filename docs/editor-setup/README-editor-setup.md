@@ -128,8 +128,10 @@ This is a **global** user-level config — it applies across all VS Code workspa
 | **Playwright**     | stdio | Browser automation, screenshots, interactive E2E debugging        |
 | **Microsoft Docs** | HTTP  | Searches and fetches official Microsoft Learn documentation       |
 | **GitHub**         | stdio | Search repos, read issues/PRs, browse files across GitHub         |
-| **Filesystem**     | stdio | Read/write files under `/Users/krsiak/github`                     |
+| **Filesystem**     | stdio | Read/write files under `$HOME/github`                             |
 | **Vercel**         | HTTP  | Manage deployments, check build logs, browse projects             |
+
+> **Note:** The Filesystem server path is an example and should be customized for each developer's local machine and workspace layout.
 
 ### Authentication
 
