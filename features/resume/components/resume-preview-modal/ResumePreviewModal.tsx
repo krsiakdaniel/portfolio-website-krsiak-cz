@@ -89,6 +89,8 @@ const ResumePreviewModal = ({
     onClose()
   }
 
+  const fileTypeSuffix = fileType.toLowerCase()
+
   const renderDialogContent = () => {
     if (fileType === ResumeFileTypeEnum.PDF) {
       return (
@@ -128,7 +130,7 @@ const ResumePreviewModal = ({
       tabIndex={-1}
       aria-labelledby="modal-title"
       aria-modal="true"
-      data-testid="resume-preview-dialog"
+      data-testid={`resume-preview-dialog-${fileTypeSuffix}`}
       className="m-0 h-screen w-screen max-w-none bg-transparent p-0 outline-none backdrop:bg-black/90"
     >
       <div ref={backdropRef} className="flex h-screen w-full items-center justify-center">
@@ -148,7 +150,7 @@ const ResumePreviewModal = ({
               <button
                 onClick={() => setIsFullscreen((prev) => !prev)}
                 aria-label={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
-                data-testid="resume-preview-button-fullscreen"
+                data-testid={`resume-preview-button-fullscreen-${fileTypeSuffix}`}
                 data-tooltip-id="modal-fullscreen-tooltip"
                 data-tooltip-content={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
                 className="rounded p-1 text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900 focus:outline-hidden focus:ring-2 focus:ring-violet-400"
@@ -162,7 +164,7 @@ const ResumePreviewModal = ({
               <button
                 onClick={onClose}
                 aria-label="Close preview"
-                data-testid="resume-preview-button-close"
+                data-testid={`resume-preview-button-close-${fileTypeSuffix}`}
                 className="rounded p-1 text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900 focus:outline-hidden focus:ring-2 focus:ring-violet-400"
               >
                 <X className="h-5 w-5" aria-hidden="true" />

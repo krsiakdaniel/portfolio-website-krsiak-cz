@@ -15,7 +15,7 @@ test.describe('Resume - Preview button - PDF', () => {
     await page.goto(PAGES_URL.resume)
     await page.getByTestId(DATA_TEST_IDS.resume.buttonPreviewPDF).click()
 
-    const dialog = page.getByTestId(DATA_TEST_IDS.resume.previewDialog)
+    const dialog = page.getByTestId(DATA_TEST_IDS.resume.previewDialogPDF)
 
     await expect(dialog).toBeVisible()
   })
@@ -33,7 +33,7 @@ test.describe('Resume - Preview button - DOCX', () => {
     await page.goto(PAGES_URL.resume)
     await page.getByTestId(DATA_TEST_IDS.resume.buttonPreviewDOCX).click()
 
-    const dialog = page.getByTestId(DATA_TEST_IDS.resume.previewDialog)
+    const dialog = page.getByTestId(DATA_TEST_IDS.resume.previewDialogDOCX)
 
     await expect(dialog).toBeVisible()
   })
@@ -43,25 +43,25 @@ test.describe('Resume - Preview modal - Fullscreen', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto(PAGES_URL.resume)
     await page.getByTestId(DATA_TEST_IDS.resume.buttonPreviewPDF).click()
-    await expect(page.getByTestId(DATA_TEST_IDS.resume.previewDialog)).toBeVisible()
+    await expect(page.getByTestId(DATA_TEST_IDS.resume.previewDialogPDF)).toBeVisible()
   })
 
   test('should render the fullscreen button inside the modal', async ({ page }) => {
-    const button = page.getByTestId(DATA_TEST_IDS.resume.previewButtonFullscreen)
+    const button = page.getByTestId(DATA_TEST_IDS.resume.previewButtonFullscreenPDF)
 
     await expect(button).toBeVisible()
     await expect(button).toHaveAttribute('aria-label', 'Enter fullscreen')
   })
 
   test('should toggle to fullscreen when fullscreen button is clicked', async ({ page }) => {
-    const button = page.getByTestId(DATA_TEST_IDS.resume.previewButtonFullscreen)
+    const button = page.getByTestId(DATA_TEST_IDS.resume.previewButtonFullscreenPDF)
     await button.click()
 
     await expect(button).toHaveAttribute('aria-label', 'Exit fullscreen')
   })
 
   test('should exit fullscreen when fullscreen button is clicked again', async ({ page }) => {
-    const button = page.getByTestId(DATA_TEST_IDS.resume.previewButtonFullscreen)
+    const button = page.getByTestId(DATA_TEST_IDS.resume.previewButtonFullscreenPDF)
     await button.click()
     await button.click()
 
@@ -73,20 +73,20 @@ test.describe('Resume - Preview modal - Close', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto(PAGES_URL.resume)
     await page.getByTestId(DATA_TEST_IDS.resume.buttonPreviewPDF).click()
-    await expect(page.getByTestId(DATA_TEST_IDS.resume.previewDialog)).toBeVisible()
+    await expect(page.getByTestId(DATA_TEST_IDS.resume.previewDialogPDF)).toBeVisible()
   })
 
   test('should render the close button inside the modal', async ({ page }) => {
-    const button = page.getByTestId(DATA_TEST_IDS.resume.previewButtonClose)
+    const button = page.getByTestId(DATA_TEST_IDS.resume.previewButtonClosePDF)
 
     await expect(button).toBeVisible()
     await expect(button).toHaveAttribute('aria-label', 'Close preview')
   })
 
   test('should close the modal when the close button is clicked', async ({ page }) => {
-    await page.getByTestId(DATA_TEST_IDS.resume.previewButtonClose).click()
+    await page.getByTestId(DATA_TEST_IDS.resume.previewButtonClosePDF).click()
 
-    const dialog = page.getByTestId(DATA_TEST_IDS.resume.previewDialog)
+    const dialog = page.getByTestId(DATA_TEST_IDS.resume.previewDialogPDF)
 
     await expect(dialog).not.toBeVisible()
   })

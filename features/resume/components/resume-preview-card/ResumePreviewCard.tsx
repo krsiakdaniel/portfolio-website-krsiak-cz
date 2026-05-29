@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 
+import dynamic from 'next/dynamic'
+
 import { Download, Eye, FileText } from 'lucide-react'
 import { toast } from 'sonner'
 
@@ -13,8 +15,11 @@ import { ARIA_LABELS, RESUME } from '@/localization'
 
 import { ResumeFileTypeEnum } from '@/lib/types/enums'
 
-import ResumePreviewModal from '../resume-preview-modal/ResumePreviewModal'
 import { type ResumePreviewCardProps } from './ResumePreviewCard.types'
+
+const ResumePreviewModal = dynamic(() => import('../resume-preview-modal/ResumePreviewModal'), {
+  ssr: false,
+})
 
 const ResumePreviewCard = ({
   title,
