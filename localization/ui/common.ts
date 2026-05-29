@@ -15,6 +15,7 @@ export const SHARED = {
 
 export const COMMON_VALUES = {
   nameDanielKrsiak: 'Daniel Kršiak',
+  fullstackReactDeveloper: 'Full Stack React Developer',
   reactDeveloper: 'React Developer',
   reactDeveloperNBSP: 'React\u00A0Developer',
   reactDeveloperTypeScript: `React Developer ${EM_DASH} TypeScript & Next.js`,

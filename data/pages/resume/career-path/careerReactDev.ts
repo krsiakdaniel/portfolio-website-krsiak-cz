@@ -5,9 +5,9 @@ import { type SkillsInfo } from '@/lib/types/interfaces'
 export const careerReactDev: SkillsInfo[] = [
   {
     id: 0,
-    icon: ICON_EMOJI.speechBalloon,
-    text: CAREER_REACT_DEV.smartsupp.text,
-    years: CAREER_REACT_DEV.smartsupp.duration,
+    icon: ICON_EMOJI.umbrellaWithRainDrops,
+    text: CAREER_REACT_DEV.kooperativa.text,
+    years: CAREER_REACT_DEV.kooperativa.duration,
   },
   {
     id: 1,
@@ -17,14 +17,8 @@ export const careerReactDev: SkillsInfo[] = [
   },
   {
     id: 2,
-    icon: ICON_EMOJI.umbrellaWithRainDrops,
-    text: CAREER_REACT_DEV.kooperativa.text,
-    years: CAREER_REACT_DEV.kooperativa.duration,
-  },
-  {
-    id: 3,
-    icon: ICON_EMOJI.mobilePhone,
-    text: CAREER_REACT_DEV.o2ItServices.text,
-    years: CAREER_REACT_DEV.o2ItServices.duration,
+    icon: ICON_EMOJI.speechBalloon,
+    text: CAREER_REACT_DEV.smartsupp.text,
+    years: CAREER_REACT_DEV.smartsupp.duration,
   },
 ]
