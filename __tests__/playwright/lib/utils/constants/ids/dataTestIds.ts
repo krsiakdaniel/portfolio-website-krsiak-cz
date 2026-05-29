@@ -236,8 +236,13 @@ const CALL_TO_ACTION = {
 const RESUME = {
   linkImageResumeDownloadPDF: 'link-image-download-resume-pdf',
   linkImageResumeDownloadDOCX: 'link-image-download-resume-docx',
-  linkButtonResumeDownloadPDF: 'link-button-download-resume-pdf',
-  linkButtonResumeDownloadDOCX: 'link-button-download-resume-docx',
+  stripButtonResumeDownloadPDF: 'strip-button-download-resume-pdf',
+  stripButtonResumeDownloadDOCX: 'strip-button-download-resume-docx',
+  buttonPreviewPDF: 'button-preview-resume-pdf',
+  buttonPreviewDOCX: 'button-preview-resume-docx',
+  previewDialog: 'resume-preview-dialog',
+  previewButtonFullscreen: 'resume-preview-button-fullscreen',
+  previewButtonClose: 'resume-preview-button-close',
 }
 
 const EXTERNAL_LINKS = {

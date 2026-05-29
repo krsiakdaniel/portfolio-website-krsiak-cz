@@ -14,7 +14,7 @@ test.describe('Resume - Download links - PDF Format', () => {
 
   test('should render download footer strip PDF correctly', async ({ page }) => {
     await page.goto(PAGES_URL.resume)
-    const link = page.getByTestId(DATA_TEST_IDS.resume.linkButtonResumeDownloadPDF)
+    const link = page.getByTestId(DATA_TEST_IDS.resume.stripButtonResumeDownloadPDF)
 
     await expect(link).toBeVisible()
   })
@@ -31,7 +31,7 @@ test.describe('Resume - Download links - DOCX Format', () => {
 
   test('should render download footer strip DOCX correctly', async ({ page }) => {
     await page.goto(PAGES_URL.resume)
-    const link = page.getByTestId(DATA_TEST_IDS.resume.linkButtonResumeDownloadDOCX)
+    const link = page.getByTestId(DATA_TEST_IDS.resume.stripButtonResumeDownloadDOCX)
 
     await expect(link).toBeVisible()
   })

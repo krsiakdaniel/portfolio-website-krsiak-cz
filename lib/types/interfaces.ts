@@ -423,5 +423,6 @@ export interface ResumePreviewCard {
   readonly dataTestId: {
     readonly image: string
     readonly button: string
+    readonly preview: string
   }
 }

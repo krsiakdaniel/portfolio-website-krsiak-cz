@@ -156,7 +156,7 @@ const nextConfig: NextConfig = {
   },
 }
 
-// Merge the configurations (PWA)
-export default withPWA({
-  ...nextConfig,
-})
+// Apply PWA wrapper only in production — the wrapper intercepts Next.js request handling
+// and calls an internal `handleRequest` API that no longer exists in Next.js 16,
+// breaking image optimization in development.
+export default process.env.NODE_ENV === 'development' ? nextConfig : withPWA({ ...nextConfig })
