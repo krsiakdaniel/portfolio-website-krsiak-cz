@@ -3,6 +3,7 @@ import Highlight from '@/components/shared/highlight/Highlight'
 import Paragraph from '@/components/shared/paragraph/Paragraph'
 
 import { careerReactDev } from '@/data/pages/resume/career-path/careerReactDev'
+import { careerReactFullStackDev } from '@/data/pages/resume/career-path/careerReactFullStackDev'
 import { careerTesting } from '@/data/pages/resume/career-path/careerTesting'
 import { careerWebDev } from '@/data/pages/resume/career-path/careerWebDev'
 
@@ -23,6 +24,12 @@ const CareerPath = () => {
       <div className="mt-10 w-full">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-8">
+            <ExpertiseSection
+              icon={ICON_EMOJI.rocket}
+              ariaLabel={ARIA_LABELS.emoji.rocket}
+              heading={TEXT.fullstackReactDeveloper}
+              listItems={careerReactFullStackDev}
+            />
             <ExpertiseSection
               icon={ICON_EMOJI.atomSymbol}
               ariaLabel={ARIA_LABELS.emoji.atomSymbol}

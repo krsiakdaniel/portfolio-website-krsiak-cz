@@ -45,8 +45,9 @@ export const MY_WORK = {
   skillsForCompany: 'Skills',
   committedMindset: 'Mindset',
   problemSolving: 'Creative',
-  reactDev: 'React Dev',
-  webDev: 'Web Dev',
+  fullstackReactDeveloper: 'Full Stack React Developer',
+  reactDev: 'React Developer',
+  webDev: 'Web Developer',
   testing: 'Testing',
   myJourney: 'My journey:',
 }

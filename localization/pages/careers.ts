@@ -63,8 +63,8 @@ export const JOBS = {
 }
 
 export const CAREER_PATH = {
-  reactDev: 'React Dev',
-  webDev: 'Web Dev',
+  reactDev: 'React Developer',
+  webDev: 'Web Developer',
   testing: 'Testing',
   ibm: `IBM ${MIDDLE_DOT} Mainframes`,
   airport: `Airport ${MIDDLE_DOT} Ticket Agent`,
@@ -88,6 +88,10 @@ export const CAREER_REACT_DEV = {
   o2ItServices: {
     text: `O2 IT Services ${NB_HYPHEN}\u00A0AI\u00A0Chat\u00A0Dashboard`,
     duration: '8\u00A0months',
+  },
+  o2ItServicesFullStackDev: {
+    text: `O2 IT Services ${NB_HYPHEN}\u00A0AI\u00A0Chat\u00A0Dashboard`,
+    duration: '1\u00A0year',
   },
 }
 

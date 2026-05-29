@@ -60,6 +60,6 @@ export const RESUME = {
 
 export const CAREER_PATH = {
   heading: 'Career Path',
-  text1: `My path over the\u00A0years to\u00A0become a\u00A0freelance`,
-  text2: COMMON_VALUES.reactDeveloperNBSP,
+  text1: `My journey to\u00A0become`,
+  text2: COMMON_VALUES.fullstackReactDeveloper,
 }
