@@ -94,6 +94,11 @@ const nextConfig: NextConfig = {
         destination: '/status', // Redirect to 'status'
         permanent: true, // Use 301 for permanent redirect
       },
+      {
+        source: '/downloads', // Redirect directory listing to resume page
+        destination: '/resume', // Redirect to 'resume'
+        permanent: false, // Use 302 — download paths are internal, may change
+      },
     ]
   },
 

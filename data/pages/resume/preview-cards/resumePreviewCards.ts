@@ -1,12 +1,10 @@
-import { EXTERNAL_URL } from '@/lib/utils/constants/urls/externalUrls'
+import { DOWNLOAD_URL } from '@/lib/utils/constants/urls/downloadUrls'
 
-import { IMAGE_ALT, TEXT } from '@/localization'
+import { TEXT } from '@/localization'
 
 import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
-import previewDOCX from '@/public/images/webp/resume/preview-page-docx.webp'
-import previewPDF from '@/public/images/webp/resume/preview-page-pdf.webp'
-
+import { ResumeFileTypeEnum } from '@/lib/types/enums'
 import { type ResumePreviewCard } from '@/lib/types/interfaces'
 
 export const resumePreviewCardData: ResumePreviewCard[] = [
@@ -14,9 +12,8 @@ export const resumePreviewCardData: ResumePreviewCard[] = [
     title: TEXT.versionPDF,
     description: TEXT.descriptionPDF,
     highlight: TEXT.descriptionHighlightPDF,
-    href: EXTERNAL_URL.resumeViewPDF,
-    imageSrc: previewPDF,
-    imageAlt: IMAGE_ALT.resumePreviewPDF,
+    href: DOWNLOAD_URL.resumePDF,
+    fileType: ResumeFileTypeEnum.PDF,
     buttonText: TEXT.downloadResumeShortPDF,
     dataTestId: {
       image: DATA_TEST_IDS.resume.linkImageResumeDownloadPDF,
@@ -27,9 +24,8 @@ export const resumePreviewCardData: ResumePreviewCard[] = [
     title: TEXT.versionDOCX,
     description: TEXT.descriptionDOCX,
     highlight: TEXT.descriptionHighlightDOCX,
-    href: EXTERNAL_URL.resumeViewDOCX,
-    imageSrc: previewDOCX,
-    imageAlt: IMAGE_ALT.resumePreviewDOCX,
+    href: DOWNLOAD_URL.resumeDOCX,
+    fileType: ResumeFileTypeEnum.DOCX,
     buttonText: TEXT.downloadResumeShortDOCX,
     dataTestId: {
       image: DATA_TEST_IDS.resume.linkImageResumeDownloadDOCX,

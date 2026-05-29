@@ -41,6 +41,12 @@ export enum ArrowDirectionEnum {
 }
 
 // Resume
+export enum ResumeFileTypeEnum {
+  PDF = 'PDF',
+  DOCX = 'DOCX',
+}
+
+// Experience Duration
 export enum DurationUnitEnum {
   Month = 'month',
   Year = 'year',
