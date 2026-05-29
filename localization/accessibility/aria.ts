@@ -23,9 +23,9 @@ export const ARIA_LABELS = {
   siteFooter: 'Site footer',
   scrollToTopPage: 'Scroll to top of page',
   pageNavigation: 'Page navigation',
-  resumePreview: 'Open resume preview in new tab',
+  resumePreview: 'Download resume',
   companiesSection: 'Companies I worked for',
-  resumePreviewSection: 'Resume previews',
+  resumePreviewSection: 'Resume downloads',
   callToAction: 'Call to action',
   projectSummary: 'Project summary',
   emoji: {

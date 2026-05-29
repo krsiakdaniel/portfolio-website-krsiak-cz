@@ -10,6 +10,7 @@ import { type ProjectSummaryCardProps } from './ProjectSummaryCard.types'
 const ProjectSummaryCard = ({
   isFeatured,
   image,
+  priority,
   icon,
   ariaLabel,
   title,
@@ -27,7 +28,7 @@ const ProjectSummaryCard = ({
   return (
     <section aria-label={`${ARIA_LABELS.projectSummary}: ${title}`}>
       <div className={`grid grid-cols-1 gap-8 lg:grid-cols-2 ${className}`}>
-        <ProjectImage isFeatured={isFeatured} image={image} title={title} />
+        <ProjectImage isFeatured={isFeatured} image={image} priority={priority} title={title} />
         <div>
           <ProjectDetails
             title={title}

@@ -1,6 +1,11 @@
 import { type StaticImageData } from 'next/image'
 
-import { type DurationUnitEnum, type SkillCategoryEnum, type SkillsEnum } from '@/lib/types/enums'
+import {
+  type DurationUnitEnum,
+  type ResumeFileTypeEnum,
+  type SkillCategoryEnum,
+  type SkillsEnum,
+} from '@/lib/types/enums'
 
 // Job
 export interface Job {
@@ -176,12 +181,16 @@ export interface GalleryImage {
   readonly height?: number
 }
 
+// Download URLs
+export interface DownloadUrls {
+  readonly resumePDF: string
+  readonly resumeDOCX: string
+}
+
 // External URL
 export interface ExternalURL {
   readonly gitHub: string
   readonly linkedIn: string
-  readonly resumeViewPDF: string
-  readonly resumeViewDOCX: string
   readonly uptimeMonitorStatus: string
   readonly uptimeMonitorStatusExternal: string
   readonly graceChurch: string
@@ -409,11 +418,11 @@ export interface ResumePreviewCard {
   readonly description: string
   readonly highlight: string
   readonly href: string
-  readonly imageSrc: string | StaticImageData
-  readonly imageAlt: string
+  readonly fileType: ResumeFileTypeEnum
   readonly buttonText: string
   readonly dataTestId: {
     readonly image: string
     readonly button: string
+    readonly preview: string
   }
 }

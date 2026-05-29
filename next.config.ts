@@ -94,6 +94,11 @@ const nextConfig: NextConfig = {
         destination: '/status', // Redirect to 'status'
         permanent: true, // Use 301 for permanent redirect
       },
+      {
+        source: '/downloads', // Redirect directory listing to resume page
+        destination: '/resume', // Redirect to 'resume'
+        permanent: false, // Use 302 — download paths are internal, may change
+      },
     ]
   },
 
@@ -151,7 +156,7 @@ const nextConfig: NextConfig = {
   },
 }
 
-// Merge the configurations (PWA)
-export default withPWA({
-  ...nextConfig,
-})
+// Apply PWA wrapper only in production — the wrapper intercepts Next.js request handling
+// and calls an internal `handleRequest` API that no longer exists in Next.js 16,
+// breaking image optimization in development.
+export default process.env.NODE_ENV === 'development' ? nextConfig : withPWA({ ...nextConfig })

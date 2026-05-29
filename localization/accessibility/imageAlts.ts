@@ -17,10 +17,6 @@ export const IMAGE_ALT = {
   // Contact
   contactQRCode: 'Contact Me — QR code',
 
-  // Resume
-  resumePreviewPDF: 'Resume PDF Preview',
-  resumePreviewDOCX: 'Resume DOCX Preview',
-
   // Social icons
   gitHub: 'GitHub',
   linkedIn: 'LinkedIn',

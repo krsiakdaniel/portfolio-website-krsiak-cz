@@ -17,6 +17,7 @@ const ProjectSection = ({
           key={item.id}
           isFeatured={item.isFeatured}
           image={item.image}
+          priority={index === 0}
           icon={item.icon}
           ariaLabel={item.ariaLabel}
           title={item.title}

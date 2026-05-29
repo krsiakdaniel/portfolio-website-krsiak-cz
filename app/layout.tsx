@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import { Toaster } from 'sonner'
 
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
 import Hotjar from '@/components/analytics/Hotjar'
@@ -47,6 +48,7 @@ const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
           {children}
         </main>
         <Footer />
+        <Toaster position="bottom-right" richColors />
       </body>
     </html>
   )

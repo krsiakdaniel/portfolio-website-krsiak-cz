@@ -15,8 +15,7 @@ const ResumePreviewSection = () => {
             highlight={card.highlight}
             description={card.description}
             href={card.href}
-            imageSrc={card.imageSrc}
-            imageAlt={card.imageAlt}
+            fileType={card.fileType}
             buttonText={card.buttonText}
             dataTestId={card.dataTestId}
           />
