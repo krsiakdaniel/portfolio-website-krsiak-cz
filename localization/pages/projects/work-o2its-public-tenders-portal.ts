@@ -1,7 +1,4 @@
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { PROJECTS_WORK_URLS } from '@/lib/utils/constants/urls/projectsUrls'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 export const PROJECTS_WORK_O2ITS_PUBLIC_TENDERS_PORTAL = {
   sections: {
@@ -38,13 +35,6 @@ export const PROJECTS_WORK_O2ITS_PUBLIC_TENDERS_PORTAL_OVERVIEW = {
   description:
     'I\u00A0designed structured AI\u00A0prompts and\u00A0refactored the\u00A0frontend architecture for\u00A0a\u00A0Public Tenders Portal application.',
   linkText: 'Project details',
-  projectLinks: [
-    {
-      urlText: 'Website',
-      url: PROJECTS_WORK_URLS.workO2itsExternal,
-      dataTestId: DATA_TEST_IDS.links.O2ITS_PUBLIC_TENDERS_PORTAL,
-    },
-  ],
   customers: 'Enterprise clients',
   linkProjectPage: PAGES_URL.workO2itsPublicTendersPortal,
 }

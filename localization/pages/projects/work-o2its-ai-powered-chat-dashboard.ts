@@ -1,8 +1,5 @@
 import { NB_HYPHEN } from '@/lib/utils/constants/specialCharacters'
 import { PAGES_URL } from '@/lib/utils/constants/urls/pageUrls'
-import { PROJECTS_WORK_URLS } from '@/lib/utils/constants/urls/projectsUrls'
-
-import { DATA_TEST_IDS } from '@/__tests__/playwright/lib/utils/constants/ids/dataTestIds'
 
 export const PROJECTS_WORK_O2ITS_AI_CHAT_DASHBOARD = {
   sections: {
@@ -39,13 +36,6 @@ export const PROJECTS_WORK_O2ITS_AI_CHAT_DASHBOARD_OVERVIEW = {
   description:
     'I\u00A0built an\u00A0AI-powered chat application dashboard with integrated AI\u00A0tools for\u00A0document analysis.',
   linkText: 'Project details',
-  projectLinks: [
-    {
-      urlText: 'Website',
-      url: PROJECTS_WORK_URLS.workO2itsExternal,
-      dataTestId: DATA_TEST_IDS.links.O2ITS_AI_POWERED_CHAT_DASHBOARD,
-    },
-  ],
   customers: 'Enterprise clients',
   linkProjectPage: PAGES_URL.workO2itsAiPoweredChatDashboard,
 }
