@@ -13,11 +13,11 @@ const ProjectInformation = ({
   description,
   skillsOverview,
   customers,
-  projectLinks,
+  projectLinks = [],
   linkGitHub,
 }: ProjectInformationProps) => {
-  const hasMoreLinks = projectLinks.length > 1
-  const hasGithub = linkGitHub ? true : false
+  const hasMoreLinks = projectLinks.length > 1 // multiple links → use plural "Links" heading
+  const hasGithub = !!linkGitHub // GitHub repo link is present
 
   return (
     <>

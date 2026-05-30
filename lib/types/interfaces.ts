@@ -85,7 +85,7 @@ export interface Project extends ProjectBase {
   readonly galleryImages: GalleryImage[]
   readonly years?: string
   readonly skillsOverview: Skill[]
-  readonly projectLinks: Link[]
+  readonly projectLinks?: Link[]
   readonly linkGitHub?: string
 }
 

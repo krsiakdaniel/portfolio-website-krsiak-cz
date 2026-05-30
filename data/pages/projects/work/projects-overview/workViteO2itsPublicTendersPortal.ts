@@ -55,13 +55,6 @@ export const workViteO2itsPublicTendersPortal: Project = {
     },
   ],
   linkText: overview.linkText,
-  projectLinks: [
-    {
-      urlText: overview.projectLinks[0].urlText,
-      url: overview.projectLinks[0].url,
-      dataTestId: overview.projectLinks[0].dataTestId,
-    },
-  ],
   customers: overview.customers,
   linkProjectPage: overview.linkProjectPage,
 }
