@@ -62,7 +62,7 @@ const ResumePreviewCard = ({
             />
           </div>
           <div
-            className="bg-violet-600 py-3 text-center text-sm font-semibold text-white transition-colors duration-300 group-hover:bg-violet-700"
+            className="bg-violet-600 py-3 text-center text-sm font-semibold text-white transition-colors duration-300 group-hover:bg-violet-800"
             data-testid={dataTestId.button}
           >
             <span className="flex items-center justify-center gap-2">
@@ -76,7 +76,7 @@ const ResumePreviewCard = ({
       <button
         onClick={() => setIsPreviewOpen(true)}
         data-testid={dataTestId.preview}
-        className="mt-3 flex min-h-11 w-full items-center justify-center gap-2 rounded-lg border border-violet-600 px-4 text-sm font-medium text-violet-600 transition-colors hover:border-violet-700 hover:bg-violet-50 hover:text-violet-700 active:bg-violet-100 focus:outline-hidden focus:ring-4 focus:ring-violet-400 sm:min-h-9"
+        className="mt-3 hidden min-h-11 w-full items-center justify-center gap-2 rounded-lg border border-violet-600 px-4 text-sm font-medium text-violet-600 transition-colors hover:border-violet-700 hover:bg-violet-50 hover:text-violet-700 active:bg-violet-100 focus:outline-hidden focus:ring-4 focus:ring-violet-400 md:flex md:min-h-9"
       >
         <Eye aria-hidden="true" className="h-4 w-4" />
         Preview document
