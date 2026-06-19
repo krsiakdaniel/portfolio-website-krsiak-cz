@@ -238,14 +238,6 @@ const RESUME = {
   linkImageResumeDownloadDOCX: 'link-image-download-resume-docx',
   stripButtonResumeDownloadPDF: 'strip-button-download-resume-pdf',
   stripButtonResumeDownloadDOCX: 'strip-button-download-resume-docx',
-  buttonPreviewPDF: 'button-preview-resume-pdf',
-  buttonPreviewDOCX: 'button-preview-resume-docx',
-  previewDialogPDF: 'resume-preview-dialog-pdf',
-  previewDialogDOCX: 'resume-preview-dialog-docx',
-  previewButtonFullscreenPDF: 'resume-preview-button-fullscreen-pdf',
-  previewButtonFullscreenDOCX: 'resume-preview-button-fullscreen-docx',
-  previewButtonClosePDF: 'resume-preview-button-close-pdf',
-  previewButtonCloseDOCX: 'resume-preview-button-close-docx',
 }
 
 const EXTERNAL_LINKS = {

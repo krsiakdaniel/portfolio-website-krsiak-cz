@@ -1,10 +1,6 @@
 'use client'
 
-import { useState } from 'react'
-
-import dynamic from 'next/dynamic'
-
-import { Download, Eye, FileText } from 'lucide-react'
+import { Download, FileText } from 'lucide-react'
 import { toast } from 'sonner'
 
 import HeadingSection from '@/components/shared/heading/HeadingSection'
@@ -17,10 +13,6 @@ import { ResumeFileTypeEnum } from '@/lib/types/enums'
 
 import { type ResumePreviewCardProps } from './ResumePreviewCard.types'
 
-const ResumePreviewModal = dynamic(() => import('../resume-preview-modal/ResumePreviewModal'), {
-  ssr: false,
-})
-
 const ResumePreviewCard = ({
   title,
   description,
@@ -30,8 +22,6 @@ const ResumePreviewCard = ({
   buttonText,
   dataTestId,
 }: ResumePreviewCardProps) => {
-  const [isPreviewOpen, setIsPreviewOpen] = useState(false)
-
   const handleDownload = () => {
     const toastText =
       fileType === ResumeFileTypeEnum.PDF ? RESUME.startingDownloadPDF : RESUME.startingDownloadDOCX
@@ -72,23 +62,6 @@ const ResumePreviewCard = ({
           </div>
         </a>
       </div>
-
-      <button
-        onClick={() => setIsPreviewOpen(true)}
-        data-testid={dataTestId.preview}
-        className="mt-3 hidden min-h-11 w-full items-center justify-center gap-2 rounded-lg border border-violet-600 px-4 text-sm font-medium text-violet-600 transition-colors hover:border-violet-700 hover:bg-violet-50 hover:text-violet-700 active:bg-violet-100 focus:outline-hidden focus:ring-4 focus:ring-violet-400 md:flex md:min-h-9"
-      >
-        <Eye aria-hidden="true" className="h-4 w-4" />
-        Preview document
-      </button>
-
-      <ResumePreviewModal
-        isOpen={isPreviewOpen}
-        onClose={() => setIsPreviewOpen(false)}
-        fileType={fileType}
-        href={href}
-        title={`Resume - ${title}`}
-      />
     </div>
   )
 }

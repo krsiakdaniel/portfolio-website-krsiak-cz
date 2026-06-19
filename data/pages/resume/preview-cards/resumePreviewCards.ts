@@ -18,7 +18,6 @@ export const resumePreviewCardData: ResumePreviewCard[] = [
     dataTestId: {
       image: DATA_TEST_IDS.resume.linkImageResumeDownloadPDF,
       button: DATA_TEST_IDS.resume.stripButtonResumeDownloadPDF,
-      preview: DATA_TEST_IDS.resume.buttonPreviewPDF,
     },
   },
   {
@@ -31,7 +30,6 @@ export const resumePreviewCardData: ResumePreviewCard[] = [
     dataTestId: {
       image: DATA_TEST_IDS.resume.linkImageResumeDownloadDOCX,
       button: DATA_TEST_IDS.resume.stripButtonResumeDownloadDOCX,
-      preview: DATA_TEST_IDS.resume.buttonPreviewDOCX,
     },
   },
 ]
